@@ -48,22 +48,12 @@ def website_bestimmen(webseite: str, portal: str, email: str) -> tuple[str, str]
 
 
 def aus_mastr(ausgabe: Path, mastr_dir: Path, rolle_regex: str = "", gebiete: bool = True, log=print) -> list[dict]:
-    import pandas as pd
-    from open_mastr import Mastr
-    from sqlalchemy import inspect
-
     from . import gebiete as gebiete_mod
+    from . import mastr_xml
 
-    mastr_dir.mkdir(parents=True, exist_ok=True)
-    db = Mastr(output_dir=str(mastr_dir))
-    db.download(data=["market", "grid", "solar"] if gebiete else ["market"], date="today")
-    tabellen = inspect(db.engine).get_table_names()
-    t_akteure = next(t for t in tabellen if t.lower() in ("market_actors", "marktakteure"))
-    t_rollen = next(t for t in tabellen if t.lower() in ("market_actors_and_roles", "marktakteureundrollen"))
-    akteure = pd.read_sql_table(t_akteure, db.engine)
-    rollen = pd.read_sql_table(t_rollen, db.engine)
-    out = filtern(akteure, rollen, ausgabe, rolle_regex)
-    sammler, netzinfo = gebiete_mod.aus_mastr_db(db.engine, log) if gebiete else (gebiete_mod.Sammler(), {})
+    zip_pfad = mastr_xml.herunterladen(mastr_dir / "xml_download", gebiete, log)
+    akteure, rollen, sammler, netzinfo, rollen_zaehler = mastr_xml.lesen(zip_pfad, gebiete, log, rolle_regex)
+    out = filtern(akteure, rollen, ausgabe, rolle_regex, rollen_zaehler)
     geschlossen = [e for e in out if netzinfo.get(e["mastr_nr"], {}).get("geschlossen")]
     if geschlossen:
         log(f"  {len(geschlossen)} Betreiber ausschließlich geschlossener Verteilnetze ausgeschlossen")
@@ -77,7 +67,7 @@ def aus_mastr(ausgabe: Path, mastr_dir: Path, rolle_regex: str = "", gebiete: bo
     return out
 
 
-def filtern(akteure, rollen, ausgabe: Path, rolle_regex: str = "") -> list[dict]:
+def filtern(akteure, rollen, ausgabe: Path, rolle_regex: str = "", rollen_zaehler: Counter | None = None) -> list[dict]:
     a_nr = _spalte(akteure, "MastrNummer")
     a_name = _spalte(akteure, "Firmenname")
     a_web = _spalte(akteure, "Webseite")
@@ -91,7 +81,7 @@ def filtern(akteure, rollen, ausgabe: Path, rolle_regex: str = "") -> list[dict]
     r_rolle = _spalte(rollen, "Marktrolle")
     r_mpid = _spalte(rollen, "Marktpartneridentifikationsnummer")
 
-    rollen_zaehler = Counter(_txt(v) for v in rollen[r_rolle])
+    rollen_zaehler = rollen_zaehler or Counter(_txt(v) for v in rollen[r_rolle])
     funktion_zaehler = Counter(_txt(v) for v in akteure[a_funktion]) if a_funktion else Counter()
 
     def rolle_ist_vnb(r: str) -> bool:

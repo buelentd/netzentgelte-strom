@@ -1,5 +1,6 @@
 playwright>=1.48
-open-mastr>=0.15
+open-mastr>=1.0,<2   # nur Download; Auslesen in vnb/mastr_xml.py
+lxml>=5.0
 pdfplumber>=0.11
 openpyxl>=3.1
 xlrd>=2.0

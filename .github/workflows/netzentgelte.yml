@@ -65,9 +65,26 @@ jobs:
       - name: Tests
         run: python -m pytest -q tests
 
+      - name: MaStR-Export aus vorherigem Lauf wiederherstellen
+        id: mastr_cache
+        if: inputs.liste_neu || hashFiles('ergebnis/netzbetreiber.csv') == ''
+        uses: actions/cache/restore@v4
+        with:
+          path: mastr/xml_download
+          key: mastr-export-${{ github.run_id }}
+          restore-keys: mastr-export-
+
       - name: Netzbetreiber-Liste (MaStR)
+        id: liste
         if: inputs.liste_neu || hashFiles('ergebnis/netzbetreiber.csv') == ''
         run: python run.py liste
+
+      - name: MaStR-Export sichern (Cache)
+        if: always() && steps.mastr_cache.outcome == 'success' && hashFiles('mastr/xml_download/*.zip') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: mastr/xml_download
+          key: mastr-export-${{ github.run_id }}
 
       - name: Preisblätter suchen und auslesen
         timeout-minutes: 320
