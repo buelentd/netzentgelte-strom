@@ -1,0 +1,9 @@
+playwright>=1.48
+open-mastr>=0.15
+pdfplumber>=0.11
+openpyxl>=3.1
+xlrd>=2.0
+protego>=0.3
+pandas>=2.0
+reportlab>=4.0   # nur für die Tests
+pytest>=8.0      # nur für die Tests

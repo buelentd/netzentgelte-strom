@@ -1,0 +1,123 @@
+name: Netzentgelte Strom
+
+on:
+  workflow_dispatch:
+    inputs:
+      jahr:
+        description: "Jahr der Preisblätter"
+        required: true
+        default: "2026"
+      limit:
+        description: "Anzahl offener Netzbetreiber in diesem Lauf (leer = alle)"
+        required: false
+        default: "10"
+      worker:
+        description: "parallel bearbeitete Websites"
+        required: true
+        default: "4"
+      wiederholen:
+        description: "Status erneut bearbeiten, z. B. blockiert,kein_preisblatt (leer = keine)"
+        required: false
+        default: ""
+      liste_neu:
+        description: "Netzbetreiber-Liste neu aus dem MaStR laden"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: netzentgelte
+  cancel-in-progress: false
+
+jobs:
+  lauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Systempakete
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Python-Pakete und Chromium
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Fortschritt aus vorherigem Lauf wiederherstellen
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ergebnis/cache
+            ergebnis/pdf
+            ergebnis/fortschritt.jsonl
+          key: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
+          restore-keys: netzentgelte-${{ inputs.jahr }}-
+
+      - name: Tests
+        run: python -m pytest -q tests
+
+      - name: Netzbetreiber-Liste (MaStR)
+        if: inputs.liste_neu || hashFiles('ergebnis/netzbetreiber.csv') == ''
+        run: python run.py liste
+
+      - name: Preisblätter suchen und auslesen
+        timeout-minutes: 320
+        run: >
+          python run.py lauf --jahr "${{ inputs.jahr }}" --worker "${{ inputs.worker }}"
+          ${{ inputs.limit != '' && format('--limit {0}', inputs.limit) || '' }}
+          ${{ inputs.wiederholen != '' && format('--wiederholen {0}', inputs.wiederholen) || '' }}
+
+      - name: Bericht
+        if: always()
+        run: |
+          if [ -f ergebnis/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ inputs.jahr }}"; fi
+          if [ -f ergebnis/zusammenfassung.md ]; then cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Fortschritt sichern (Cache)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ergebnis/cache
+            ergebnis/pdf
+            ergebnis/fortschritt.jsonl
+          key: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
+
+      - name: PDFs und Fortschritt als Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
+          path: |
+            ergebnis/pdf
+            ergebnis/fortschritt.jsonl
+            ergebnis/lauf.log
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Ergebnisse committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in "ergebnis/netzentgelte_${{ inputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/zusammenfassung.md \
+                   ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
+                   ergebnis/fortschritt.jsonl; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Netzentgelte ${{ inputs.jahr }}: Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
