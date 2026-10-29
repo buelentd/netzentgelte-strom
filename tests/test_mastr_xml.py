@@ -20,20 +20,22 @@ def export(ordner):
     pfad = ordner / f"Gesamtdatenexport_{date.today():%Y%m%d}.zip"
     with zipfile.ZipFile(pfad, "w") as z:
         z.writestr("Katalogwerte.xml", _xml("Katalogwerte", "Katalogwert", [
-            {"Id": "1", "Wert": "Netzbetreiber"}, {"Id": "2", "Wert": "Anlagenbetreiber"},
-            {"Id": "3", "Wert": "Stromnetzbetreiber"}, {"Id": "4", "Wert": "Gasnetzbetreiber"},
+            {"Id": "1", "Wert": "Anschlussnetzbetreiber"}, {"Id": "2", "Wert": "Anlagenbetreiber"},
+            {"Id": "3", "Wert": "andere Gase"}, {"Id": "8", "Wert": "Kernenergie"},
             {"Id": "1400", "Wert": "Bayern"}, {"Id": "1401", "Wert": "Baden-Württemberg"},
             {"Id": "50", "Wert": "Strom"}, {"Id": "712", "Wert": "Haushalt"}, {"Id": "812", "Wert": "Gewerbe"}]))
         z.writestr("MarktakteureUndRollen.xml", _xml("MarktakteureUndRollen", "MarktakteurUndRolle", [
             {"MarktakteurMastrNummer": "SNB1", "Marktrolle": "1", "Marktpartneridentifikationsnummer": "9900001"},
             {"MarktakteurMastrNummer": "SNB2", "Marktrolle": "1"},
+            {"MarktakteurMastrNummer": "SNB3", "Marktrolle": "1"},
             {"MarktakteurMastrNummer": "ABR1", "Marktrolle": "2"}]))
         z.writestr("Marktakteure_1.xml", _xml("Marktakteure", "Marktakteur", [
             {"MastrNummer": "ABR1", "Firmenname": "Privat", "Marktfunktion": "2"}]))
         z.writestr("Marktakteure_2.xml", _xml("Marktakteure", "Marktakteur", [
             {"MastrNummer": "SNB1", "Firmenname": "Stadtwerke Musterstadt Netz GmbH", "Webseite": "www.swm-netz.de",
-             "Marktfunktion": "3", "Bundesland": "1400", "Ort": "Musterstadt", "Unbekannt": "x"},
-            {"MastrNummer": "SNB2", "Firmenname": "Geschlossen Netz GmbH", "Webseite": "gn.de", "Marktfunktion": "3"}]))
+             "Marktfunktion": "1", "Bundesland": "1400", "Ort": "Musterstadt", "Unbekannt": "x"},
+            {"MastrNummer": "SNB2", "Firmenname": "Geschlossen Netz GmbH", "Webseite": "gn.de", "Marktfunktion": "1"},
+            {"MastrNummer": "SNB3", "Firmenname": "Gasnetz GmbH", "Webseite": "gas.de", "Marktfunktion": "8"}]))
         z.writestr("Netze.xml", _xml("Netze", "Netz", [
             {"MastrNummer": "N1", "Bundesland": "1400 1401", "Sparte": "50", "GeschlossenesVerteilnetz": "0"},
             {"MastrNummer": "N2", "Bundesland": "1401", "Sparte": "50", "GeschlossenesVerteilnetz": "1"}]))
@@ -53,12 +55,13 @@ def test_export_lesen_und_filtern(tmp_path):
     pfad = export(tmp_path / "xml")
     assert mastr_xml.herunterladen(tmp_path / "xml", log=lambda *a: None) == pfad   # vorhandener Export
     akteure, rollen, sammler, netzinfo, zaehler = mastr_xml.lesen(pfad, log=lambda *a: None)
-    assert set(akteure["MastrNummer"]) == {"SNB1", "SNB2"}                          # nur Netzbetreiber
+    assert set(akteure["MastrNummer"]) == {"SNB1", "SNB2", "SNB3"}                  # nur Netzbetreiber
+    assert set(akteure["Marktfunktion"]) == {"Stromnetzbetreiber", "Gasnetzbetreiber"}  # Systemcodes
     assert zaehler["Anlagenbetreiber"] == 1
     assert netzinfo["SNB2"]["geschlossen"] and not netzinfo["SNB1"]["geschlossen"]
     assert netzinfo["SNB1"]["laender"] == {"Bayern", "Baden-Württemberg"}
     out = filtern(akteure, rollen, tmp_path / "netzbetreiber.csv", "", zaehler)
-    assert {e["mastr_nr"] for e in out} == {"SNB1", "SNB2"}
+    assert {e["mastr_nr"] for e in out} == {"SNB1", "SNB2"}                         # ohne Gasnetz
     e = next(e for e in out if e["mastr_nr"] == "SNB1")
     assert e["sitz_bundesland"] == "Bayern" and e["marktpartner_id"] == "9900001"
     gebiet_ergaenzen(out, sammler, netzinfo)

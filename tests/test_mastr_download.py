@@ -69,7 +69,7 @@ def test_download_mit_abbruechen(tmp_path, schnell):
         for name in z.namelist():
             assert teile.open(name).read() == z.read(name), name   # bytegenau trotz Abbrüchen
     akteure, *_ = mastr_xml.lesen(ziel, log=lambda *a: None)
-    assert set(akteure["MastrNummer"]) == {"SNB1", "SNB2"}
+    assert set(akteure["MastrNummer"]) == {"SNB1", "SNB2", "SNB3"}
 
 
 def test_download_fortsetzen_nach_abbruch(tmp_path, schnell, monkeypatch):
@@ -98,4 +98,4 @@ def test_download_fortsetzen_nach_abbruch(tmp_path, schnell, monkeypatch):
         httpd.shutdown()
     assert mastr_download.vollstaendig(ziel)
     assert schon_fertig <= {p.name for p in ziel.glob("*.deflate")}
-    assert set(mastr_xml.lesen(ziel, log=lambda *a: None)[0]["MastrNummer"]) == {"SNB1", "SNB2"}
+    assert set(mastr_xml.lesen(ziel, log=lambda *a: None)[0]["MastrNummer"]) == {"SNB1", "SNB2", "SNB3"}

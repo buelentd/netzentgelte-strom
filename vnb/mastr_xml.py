@@ -72,9 +72,13 @@ def _dateien(z: zipfile.ZipFile, tabelle: str) -> list[str]:
     return sorted((n for n in z.namelist() if n.lower().split("_")[0].split(".")[0] == tabelle), key=nr)
 
 
-def datensaetze(z: zipfile.ZipFile, tabelle: str, satz_tag: str, felder: set[str]):
+def datensaetze(z: zipfile.ZipFile, tabelle: str, satz_tag: str, felder: set[str], log=None):
     """Liefert je Datensatz ein dict {feld: text} mit den gewünschten Feldern."""
-    for name in _dateien(z, tabelle):
+    dateien = _dateien(z, tabelle)
+    t0 = time.time()
+    for i, name in enumerate(dateien, 1):
+        if log and i > 1 and i % 10 == 1:
+            log(f"    {tabelle}: {i - 1}/{len(dateien)} Dateien gelesen ({(time.time() - t0) / 60:.1f} min)")
         with z.open(name) as f:
             for _, el in etree.iterparse(f, events=("end",), tag=satz_tag, recover=True, huge_tree=True):
                 d = {}
@@ -90,6 +94,13 @@ def datensaetze(z: zipfile.ZipFile, tabelle: str, satz_tag: str, felder: set[str
 def katalog(z) -> dict[str, str]:
     return {d["Id"]: d.get("Wert", "") for d in datensaetze(z, "katalogwerte", "Katalogwert", {"Id", "Wert"})
             if "Id" in d}
+
+
+# Systemkataloge: Codes, die nicht in Katalogwerte.xml stehen (Doku Gesamtdatenexport, wie open-mastr)
+MARKTFUNKTION = {"1": "Stromnetzbetreiber", "2": "Anlagenbetreiber", "3": "Akteur im Strommarkt",
+                 "4": "Organisierter Marktplatz", "5": "Behörde, Verband, Institution",
+                 "6": "Sonstiger Marktakteur", "7": "Bundesnetzagentur", "8": "Gasnetzbetreiber",
+                 "9": "Akteur im Gasmarkt", "10": "Supportpartner"}
 
 
 def werte(roh: str, kat: dict) -> str:
@@ -137,8 +148,8 @@ def lesen(zip_pfad: Path, gebiete: bool = True, log=print, rolle_regex: str = ""
                   "Taetigkeitsende", "Ort", "Bundesland", "Personenart"}
         for d in datensaetze(z, "marktakteure", "Marktakteur", felder):
             if d.get("MastrNummer") in nb_kandidaten:
-                for k in ("Marktfunktion", "Bundesland"):
-                    d[k] = werte(d.get(k, ""), kat)
+                d["Marktfunktion"] = MARKTFUNKTION.get(d.get("Marktfunktion", ""), d.get("Marktfunktion", ""))
+                d["Bundesland"] = werte(d.get("Bundesland", ""), kat)
                 akteure.append(d)
         log(f"  {len(akteure)} Marktakteure gelesen ({(time.time() - t0) / 60:.1f} min)")
 
@@ -146,7 +157,7 @@ def lesen(zip_pfad: Path, gebiete: bool = True, log=print, rolle_regex: str = ""
         if gebiete:
             lok_nb, netz_nb = {}, defaultdict(set)
             for d in datensaetze(z, "netzanschlusspunkte", "Netzanschlusspunkt",
-                                 {"LokationMaStRNummer", "NetzbetreiberMaStRNummer", "NetzMaStRNummer"}):
+                                 {"LokationMaStRNummer", "NetzbetreiberMaStRNummer", "NetzMaStRNummer"}, log):
                 nb = d.get("NetzbetreiberMaStRNummer")
                 if nb in nb_kandidaten:
                     if d.get("LokationMaStRNummer"):
@@ -172,7 +183,7 @@ def lesen(zip_pfad: Path, gebiete: bool = True, log=print, rolle_regex: str = ""
             n = 0
             for d in datensaetze(z, "einheitensolar", "EinheitSolar",
                                  {"LokationMaStRNummer", "Bundesland", "Landkreis", "Gemeinde",
-                                  "Gemeindeschluessel", "Postleitzahl"}):
+                                  "Gemeindeschluessel", "Postleitzahl"}, log):
                 nb = lok_nb.get(d.get("LokationMaStRNummer"))
                 if nb:
                     n += 1
