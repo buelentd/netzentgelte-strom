@@ -108,11 +108,13 @@ Dokumente (PDF, xlsx, xls) werden nach Jahr, Endgültigkeit und Schlagworten ger
 es für § 14a, § 19, fiktiv, 2027, Messstellenbetrieb usw. Die Suche endet, sobald ein plausibles,
 endgültiges 2026-Preisblatt gefunden ist.
 
-**MaStR (vnb/mastr_xml.py):** open-mastr lädt nur die benötigten Tabellen des Gesamtexports
-(Katalogwerte, Marktakteure, Rollen, Netze, Netzanschlusspunkte, Solareinheiten). Die XML-Dateien
-werden direkt aus dem ZIP gestreamt, statt die open-mastr-Datenbank zu erzeugen. Die scheitert an
-Listenfeldern der aktuellen MaStR-Version und braucht viel Zeit und Speicher. Ein vorhandener
-Export bis 14 Tage alt wird wiederverwendet (im Workflow über den Cache).
+**MaStR (vnb/mastr_download.py, vnb/mastr_xml.py):** Aus dem Gesamtexport auf
+download.marktstammdatenregister.de werden nur die benötigten Dateien geladen (Katalogwerte,
+Marktakteure, Rollen, Netze, Netzanschlusspunkte, Solareinheiten). Geladen wird per HTTP-Range
+in 8-MB-Stücken mit Wiederholungen, weil der Server lange Verbindungen oft abbricht. Jedes Stück
+wird sofort gespeichert, ein Neustart setzt fort (im Workflow über den Cache). Die XML-Dateien
+werden gestreamt gelesen, ohne open-mastr-Datenbank. Die scheitert an Listenfeldern der
+aktuellen MaStR-Version. Ein vollständiger Export bis 14 Tage alt wird wiederverwendet.
 
 **Netzgebiet (vnb/gebiete.py):** Solareinheiten → Netzanschlusspunkt → Netzbetreiber; daraus
 Bundesland, Region, Netztyp und PLZ-Zuordnung (Regeln in LEGENDE.md).

@@ -80,7 +80,7 @@ jobs:
         run: python run.py liste
 
       - name: MaStR-Export sichern (Cache)
-        if: always() && steps.mastr_cache.outcome == 'success' && hashFiles('mastr/xml_download/*.zip') != ''
+        if: always() && steps.mastr_cache.outcome == 'success' && hashFiles('mastr/xml_download/**/manifest.json') != ''
         uses: actions/cache/save@v4
         with:
           path: mastr/xml_download

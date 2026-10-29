@@ -23,40 +23,45 @@ TABELLEN = ["katalogwerte", "marktakteure", "marktakteureundrollen", "netze", "n
 
 
 def herunterladen(ordner: Path, gebiete: bool = True, log=print) -> Path:
-    """Lädt die benötigten Teile des heutigen Exports (oder nutzt einen vorhandenen ZIP ≤ 14 Tage)."""
+    """Lädt die benötigten Dateien des Exports (robust, fortsetzbar) oder nutzt einen vorhandenen.
+
+    Vorhanden heißt: vollständiger Download (Ordner) oder ZIP, höchstens 14 Tage alt.
+    """
+    import shutil
+
+    from . import mastr_download
+
     ordner.mkdir(parents=True, exist_ok=True)
     benoetigt = set(TABELLEN if gebiete else ["katalogwerte", "marktakteure", "marktakteureundrollen"])
-    for alt in sorted(ordner.glob("Gesamtdatenexport_*.zip"), reverse=True):
+    for alt in sorted(ordner.glob("Gesamtdatenexport_*"), reverse=True):
         m = re.search(r"(\d{8})", alt.name)
         alter = (date.today() - datetime.strptime(m.group(1), "%Y%m%d").date()).days if m else 999
-        if alter <= 14 and benoetigt <= vorhandene_tabellen(alt):
+        if alter > 14:
+            continue
+        if alt.is_dir() and mastr_download.vollstaendig(alt) and benoetigt <= vorhandene_tabellen(alt):
             log(f"  vorhandener MaStR-Export wird verwendet: {alt.name} ({alter} Tage alt)")
             return alt
-    from open_mastr.utils import constants
-    from open_mastr.xml_download import utils_download_bulk as udb
-
-    # eigene Auswahl an Tabellen (ohne AnlagenEegSolar usw.)
-    constants.BULK_INCLUDE_TABLES_MAP["netzentgelte"] = sorted(benoetigt - {"katalogwerte"})
-    if hasattr(udb, "BULK_INCLUDE_TABLES_MAP"):
-        udb.BULK_INCLUDE_TABLES_MAP["netzentgelte"] = sorted(benoetigt - {"katalogwerte"})
-    heute = date.today().strftime("%Y%m%d")
-    ziel = ordner / f"Gesamtdatenexport_{heute}.zip"
-    t0 = time.time()
-    udb.download_xml_Mastr(str(ziel), heute, ["netzentgelte"], str(ordner))
-    if not ziel.exists():
-        raise SystemExit("MaStR-Export konnte nicht heruntergeladen werden")
-    fehlt = benoetigt - vorhandene_tabellen(ziel)
-    if fehlt:
-        raise SystemExit(f"MaStR-Export unvollständig, es fehlen: {sorted(fehlt)}")
-    log(f"  MaStR-Export geladen in {(time.time() - t0) / 60:.0f} min: {ziel.name}")
+        if alt.suffix == ".zip" and benoetigt <= vorhandene_tabellen(alt):
+            log(f"  vorhandener MaStR-Export wird verwendet: {alt.name} ({alter} Tage alt)")
+            return alt
+    ziel = mastr_download.herunterladen(ordner, benoetigt, log)
+    # unvollständige Downloads anderer Tage verwerfen (deren URL gibt es nicht mehr)
+    for alt in ordner.glob("Gesamtdatenexport_*"):
+        if alt.is_dir() and alt != ziel and not mastr_download.vollstaendig(alt):
+            shutil.rmtree(alt, ignore_errors=True)
     return ziel
+
+
+def _quelle(pfad: Path):
+    from .mastr_download import Teile
+    return Teile(pfad) if Path(pfad).is_dir() else zipfile.ZipFile(pfad)
 
 
 def vorhandene_tabellen(pfad: Path) -> set[str]:
     try:
-        with zipfile.ZipFile(pfad) as z:
+        with _quelle(pfad) as z:
             return {n.lower().split("_")[0].split(".")[0] for n in z.namelist()}
-    except zipfile.BadZipFile:
+    except (zipfile.BadZipFile, FileNotFoundError, ValueError):
         return set()
 
 
@@ -109,7 +114,7 @@ def lesen(zip_pfad: Path, gebiete: bool = True, log=print, rolle_regex: str = ""
     from .gebiete import Sammler
 
     t0 = time.time()
-    with zipfile.ZipFile(zip_pfad) as z:
+    with _quelle(zip_pfad) as z:
         kat = katalog(z)
         log(f"  {len(kat)} Katalogwerte")
         rollen = []
