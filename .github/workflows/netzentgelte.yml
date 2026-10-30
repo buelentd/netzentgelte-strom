@@ -94,8 +94,8 @@ jobs:
         timeout-minutes: 320
         run: >
           python run.py lauf --jahr "${{ inputs.jahr }}" --worker "${{ inputs.worker }}"
-          ${{ inputs.limit != '' && format('--limit {0}', inputs.limit) || '' }}
-          ${{ inputs.wiederholen != '' && format('--wiederholen {0}', inputs.wiederholen) || '' }}
+          ${{ inputs.limit != '' && format('--limit "{0}"', inputs.limit) || '' }}
+          ${{ inputs.wiederholen != '' && format('--wiederholen "{0}"', inputs.wiederholen) || '' }}
 
       - name: Bericht
         if: always()

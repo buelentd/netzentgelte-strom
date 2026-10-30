@@ -278,7 +278,7 @@ async def schritt_lauf(args, log):
     eintraege = liste_mod.lesen(liste_pfad)
     pilot = {p["nr"]: p for p in pilot_mod.lesen(HIER / "pilot_50_vnb_2026.csv")}
     speicher = Speicher(out)
-    wiederholen = tuple(s for s in (args.wiederholen or "").split(",") if s)
+    wiederholen = tuple(s.strip() for s in (args.wiederholen or "").replace(";", ",").split(",") if s.strip())
     gesch = geschwister(eintraege)
 
     offen = [e for e in eintraege if not speicher.erledigt(key_von(e), wiederholen)]
