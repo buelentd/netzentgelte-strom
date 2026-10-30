@@ -55,6 +55,8 @@ FAELLE = {
     # Messstellenbetrieb-Tabellen zwischen den Netzentgelten dürfen keine Grundpreise liefern
     "sw_oranienburg_2026": ((38.79, 6.78, 136.71, 2.87), (27.36, 5.53, 122.46, 1.73), (8.46, 50.00)),
     "sw_lippe_weser_2026": ((20.76, 8.00, 171.13, 1.98), (18.41, 6.41, 145.04, 1.34), (7.55, 79.00)),
+    # Kopf [€/kW * Tag] [€/kWh]; Zeilen "(informatorisch) (15,07 €/kW*Jahr)" dürfen ihn nicht ersetzen
+    "sw_greifswald_2026": ((15.07, 7.01, 115.77, 2.98), None, None),
 }
 
 
@@ -125,3 +127,17 @@ def test_gas_nur_als_wort():
     assert SPARTE_FREMD.search("erdgas netzentgelte")
     assert SPARTE_FREMD.search("Gasnetz Preisblatt 2026")
     assert not SPARTE_FREMD.search("netzentgelte-strom-gasse-2026.pdf")
+
+
+@pytest.mark.parametrize("name, slp", [
+    ("donetz_2026", (5.30, 99.50)),                     # Überschrift mit weitem Spaltenabstand
+    ("netze_magdeburg_lastprofil_2026", (4.18, 100.00)),  # "Entnahme mit Lastprofil"
+    ("stwbo_netz_2026", (6.72, 80.00)),                 # "ohne 1/4-h-Leistungsmessung"
+    ("bhag_2026", (10.04, 84.00)),                      # Sammelzeile mit Wärmepumpen; §-14a-Tabelle danach
+    ("sw_neuburg_2026", (11.35, 80.00)),                # Modul-3-Kopf "ohne Leistungsmessung | Niedriglasttarif …"
+    ("sw_waren_2026", (5.76, 50.00)),                   # "Kleinkunden … / SLP / Pauschalanlagen"
+])
+def test_slp_abschnitt_erkannt(name, slp):
+    e, _ = lesen(name)
+    assert (round(e.slp["ap"], 2), round(e.slp["gp"], 2)) == slp
+    assert not e.slp_unklar, e.slp_unklar

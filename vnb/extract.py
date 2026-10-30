@@ -273,7 +273,8 @@ def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
         for m in AP_EINHEIT.finditer(z):
             faktor = 1.0 if m.group(1).lower() in ("ct", "cent") else 100.0
             einh.append((m.start() + len(m.group()) / 2, "AP", faktor))
-        if len(einh) >= 2:
+        # Einheiten aus Zeilen mit Zahlen ("(informatorisch) (15,07 €/kW*Jahr)") ersetzen keinen Spaltenkopf
+        if len(einh) >= 2 and not (beste_einheiten and ZAHL.search(ohne_spannung(z))):
             beste_einheiten = sorted(einh)
         wl = re.compile(r"leistungs-?\s*preis|\blp\b", re.I)
         wa = re.compile(r"arbeits-?\s*preis|\bap\b", re.I)
@@ -604,8 +605,8 @@ def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
 
 # ---------------------------------------------------------------- SLP
 
-SLP_START = re.compile(r"ohne\s+(?:registrierende\s+)?leistungsmessung|standardlastprofil|\bslp\b|"
-                       r"ohne\s+(?:viertelstunden|lastgang)", re.I)
+SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?leistungsmessung|standardlastprofil|\bslp\b|"
+                       r"ohne\s+(?:viertelstunden|lastgang)|entnahme\s+mit\s+lastprofil", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
                       r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
@@ -696,14 +697,20 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
         if FIKTIV.search(zl) and not zahlen:
             im = False                     # fiktive Entgelte (nur zur Information)
             continue
-        if SLP_START.search(zl) and not zahlen and not fliesstext and len(zl) < 100 and not re.match(r"[•\-–*]", zl):
+        kurz = re.sub(r"\s+", " ", zl)      # Spaltenabstände zählen nicht zur Länge der Überschrift
+        if kurz.lower().endswith(" ohne") and i + 1 < len(zeilen):
+            kurz += " " + zeilen[i + 1].strip()    # "1.2 Kunden ohne" / "Leistungsmessung"
+        if SLP_START.search(kurz) and not zahlen and not fliesstext and len(kurz) < 100 and not re.match(r"[•\-–*]", zl):
             if re.search(r"(?:je|pro)\s+z[äa]hler|messstellen|messung\s+inkl|messentgelt|einspeis|"
                          r"mit\s+(?:registrierender\s+)?leistungsmessung", zl, re.I) or msb_sperre:
                 # zweispaltiger Kopf "ohne … | mit Leistungsmessung" oder Messstellenbetrieb-Tabelle
                 im = False          # z. B. Messstellenbetrieb "ohne Lastgangmessung je Zähler"
                 continue
             # nur kurze Überschriften schließen aus, nicht Fließtext ("… pauschalierten Netzentgelt …")
-            im, start, ausgeschlossen = True, i, bool(SLP_AUSSCHLUSS.search(zl)) and len(zl) < 70
+            # Spaltenköpfe in der Überschrift ("… ohne Leistungsmessung | Niedriglasttarif | Hochlasttarif") zählen mit
+            im, start = True, i
+            spalten = " ".join(re.split(r"\s{3,}", zl)[1:])
+            ausgeschlossen = bool(SLP_AUSSCHLUSS.search(kurz)) and len(kurz) < 70 or bool(SLP_AUSSCHLUSS.search(spalten))
             continue
         if not im:
             continue
@@ -711,7 +718,8 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             im = False
             continue
         if not zahlen:
-            if fliesstext and (len(zl) >= 70 or zl.endswith(".")):
+            erste_spalte = re.split(r"\s{3,}", zl)[0]   # Spaltenköpfe dahinter machen keinen Fließtext
+            if fliesstext and (len(erste_spalte) >= 70 or erste_spalte.endswith(".")):
                 continue        # umbrochener Fließtext; kurze Zwischenzeilen ("bei unterbrechbaren …") zählen
             # Spaltenkopf "Netz- oder Umspannebene" schließt nichts aus
             zl = re.sub(r"netz-?\s*(?:oder|und|/)\s*umspann\w*", " ", zl, flags=re.I).strip()
