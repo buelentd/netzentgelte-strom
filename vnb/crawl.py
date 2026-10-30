@@ -178,8 +178,10 @@ class Crawler:
         ziel_dir = self.cache / a.key
         ziel_dir.mkdir(parents=True, exist_ok=True)
         h = hashlib.sha1(url.encode()).hexdigest()[:12]
-        for vorhanden in ziel_dir.glob(h + ".*"):
-            return vorhanden, ""
+        for endung in ("pdf", "xlsx", "xls"):       # nicht die Begleitdatei <hash>.url
+            vorhanden = ziel_dir / f"{h}.{endung}"
+            if vorhanden.exists():
+                return vorhanden, ""
         erlaubt = await self.robots.erlaubt(url)
         if erlaubt is False:
             return None, "robots"

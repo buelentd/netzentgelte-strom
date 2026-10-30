@@ -117,6 +117,7 @@ class Speicher:
         ps = Counter(d.get("preisstand") for d in ok)
         z += ["", "Preisstand (nur ok): " + ", ".join(f"{k} {v}" for k, v in ps.most_common()), ""]
         def spanne(titel, einheit, werte):
+            werte = [(w, n) for w, n in werte if w is not None]
             if not werte:
                 return []
             lo, hi = min(werte), max(werte)
@@ -139,6 +140,16 @@ class Speicher:
               f"- Website aus E-Mail-Domain abgeleitet: {len(mail)}",
               f"- Bundesland/Region nur aus dem Sitz laut MaStR: {len(sitz)}",
               "- Netztyp: " + ", ".join(f"{k} {v}" for k, v in typen.most_common()), ""]
+        pilot = [d for d in zeilen if d.get("pilot_abgleich")]
+        if pilot:
+            gl = [d for d in pilot if d["pilot_abgleich"] == "gleich"]
+            ab = [d for d in pilot if d["pilot_abgleich"].startswith("abweichend")]
+            ng = [d for d in pilot if d["pilot_abgleich"].startswith("nicht gelesen")]
+            z += ["## Abgleich mit den geprüften Pilotwerten (Neuauslesung der Pilot-Quelle)", "",
+                  f"- NS-Werte exakt gleich: {len(gl)} von {len(pilot)}",
+                  f"- abweichend: {len(ab)}", f"- Quelle nicht lesbar: {len(ng)}", ""]
+            z += [f"- {d.get('nr')}. {d.get('netzbetreiber')}: {d['pilot_abgleich']}" for d in ab + ng]
+            z.append("")
         vorl = [d for d in ok if d.get("preisstand") != "endgültig"]
         if vorl:
             z += [f"## Status ok, aber Preisstand nicht endgültig ({len(vorl)})", ""]

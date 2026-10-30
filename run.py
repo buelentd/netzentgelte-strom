@@ -208,6 +208,12 @@ async def pilot_bearbeiten(crawler: Crawler, req, e: dict, p: dict, a: Auftrag, 
 
     # Quelle erneut auslesen: MS/NS und SLP ergänzen, NS gegenprüfen
     k = await crawler.dokument_pruefen(req, p["quelle"], a)
+    if k.verwendbar:
+        abw = [f"{f} {k.ns.get(f, 0):.2f} statt {ns_pilot[f]:.2f}" for f in FELDER
+               if k.ns.get(f) is None or abs(k.ns[f] - ns_pilot[f]) >= 0.006]
+        satz["pilot_abgleich"] = "gleich" if not abw else "abweichend: " + ", ".join(abw)
+    else:
+        satz["pilot_abgleich"] = f"nicht gelesen ({k.grund[:80]})"
     if k.verwendbar and gleich(k.ns, ns_pilot):
         if k.msns and not plausibel(k.msns, "MS/NS"):
             satz["msns"] = k.msns

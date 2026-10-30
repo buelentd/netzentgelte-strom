@@ -24,18 +24,21 @@ from pathlib import Path
 
 FELDER = ["lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500"]
 
-ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,6}(?![\d,])")
-LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*/\s*kw(?!h)(?:\s*(?:/|\s|pro|je|und|x)\s*(a|jahr|tag|d|monat|mon))?", re.I)
+ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,12}(?![\d,])")
+LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*/\s*\(?\s*kw(?!h)(?:\s*(?:/|\*|·|\s|pro|je|und|x)\s*)*"
+                        r"(a\b|jahr|tag|d\b|monat|mon\b)?\)?", re.I)
 AP_EINHEIT = re.compile(r"(ct|cent|€|eur(?:o)?)\s*/\s*kwh", re.I)
 GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner)\s*(?:als\s*)?2[.\s]?500", re.I)
-GRENZE_UEBER = re.compile(r"(≥|>=|>|über|ueber|ab|größer|groesser|mindestens)\s*(?:als\s*)?2[.\s]?500", re.I)
+GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens)\s*(?:als\s*)?2[.\s]?500", re.I)
 
+FIKTIV = re.compile(r"fiktiv|ohne\s+(?:berücksichtigung\s+des\s+)?(?:\w+\s+)?zuschuss|informationszweck", re.I)
 START = re.compile(r"jahresleistungspreis|jahresbenutzungsdauer|benutzungsdauer|2[.]?500\s*(h|std|stunden)", re.I)
 STOP = re.compile(
     r"monatsleistungspreis|ohne\s+leistungsmessung|ohne\s+registrierende|standardlastprofil|"
     r"§\s*14\s*a|modul\s*[123]|blindarbeit|blindstrom|messstellenbetrieb|messstellenentgelt|"
     r"singul[äa]r|§\s*19|reservekapazit|reserveleistung|einspeis|konzessionsabgabe|"
-    r"kwkg|offshore|stromsteuer|sonderformen|pauschal", re.I)
+    r"kwkg|offshore|stromsteuer|sonderformen|pauschal|fiktiv|ohne\s+(?:berücksichtigung\s+des\s+)?zuschuss|"
+    r"informationszweck", re.I)
 BRUTTO = re.compile(r"\bbrutto\b|inkl(?:usive|\.)?\s*(?:der\s*)?(?:gesetzl(?:ichen|\.)?\s*)?(?:umsatzsteuer|ust|mwst)", re.I)
 AUSSCHLUSS_LABEL = re.compile(r"14\s*a|steuerbar|wärmepumpe|waermepumpe|speicher|ladeeinricht|ladepunkt|"
                               r"nachtstrom|schwachlast|ohne|monat|grundpreis|blind", re.I)
@@ -158,11 +161,50 @@ def norm(s: str) -> str:
     return s
 
 
+def einheit_nach(text: str):
+    """("LP"|"AP", faktor), wenn text (direkt hinter einer Zahl) mit einer Preiseinheit beginnt."""
+    t = text[:16]
+    m = re.match(r"\s*" + LP_EINHEIT.pattern, t, re.I)
+    if m:
+        per = (m.group(1) or "a").lower()
+        if per.startswith("mon"):
+            return None
+        return ("LP", 365.0 if per in ("tag", "d") else 1.0)
+    m = re.match(r"\s*" + AP_EINHEIT.pattern, t, re.I)
+    if m:
+        return ("AP", 1.0 if m.group(1).lower() in ("ct", "cent") else 100.0)
+    return None
+
+
+def ohne_spannung(zeile: str) -> str:
+    """Maskiert Spannungsangaben wie "0,4 kV", damit sie nicht als Preis gelten."""
+    return re.sub(r"\d+,\d+(?=\s*kV\b)", lambda m: "x" * len(m.group()), zeile)
+
+
 def zahlen_mit_pos(zeile: str):
-    return [(m.start() + len(m.group()) / 2, de_zahl(m.group()), m.start()) for m in ZAHL.finditer(zeile)]
+    """(mittlere Position, Wert, Start, Einheit direkt dahinter oder None) je Zahl der Zeile."""
+    zeile = ohne_spannung(zeile)
+    return [(m.start() + len(m.group()) / 2, de_zahl(m.group()), m.start(), einheit_nach(zeile[m.end():]))
+            for m in ZAHL.finditer(zeile)]
+
+
+MWST = 1.19
+
+
+def ist_brutto(netto: float, brutto: float) -> bool:
+    return netto > 0 and abs(brutto - round(netto * MWST, 2)) <= 0.011 + 0.0005 * brutto
+
+
+def ohne_brutto(zahlen):
+    """Entfernt Bruttowerte, wenn die Zeile aus Paaren (netto, netto × 1,19) besteht."""
+    if len(zahlen) >= 2 and len(zahlen) % 2 == 0 and all(
+            ist_brutto(zahlen[i][1], zahlen[i + 1][1]) for i in range(0, len(zahlen), 2)):
+        return zahlen[0::2]
+    return zahlen
 
 
 def label_von(zeile: str) -> str:
+    zeile = ohne_spannung(zeile)
     m = ZAHL.search(zeile)
     return (zeile[: m.start()] if m else zeile).strip()
 
@@ -178,7 +220,7 @@ def ebene(label: str) -> str | None:
         return None
     if len(lab) > 70:
         return None
-    if re.search(r"ms/ns|mittel/nieder|mittelspannung/niederspannung|mittel(spannung)?\s*(und|zu|auf)\s*nieder|"
+    if re.search(r"umspann\w*\s*\d+\s*(kv)?\s*/\s*(0[,x.]4|x{3})|ms/ns|mittel/nieder|mittelspannung/niederspannung|mittel(spannung)?\s*(und|zu|auf)\s*nieder|"
                  r"umspann\w*\s*(ms|mittel)\w*\s*/?\s*(ns|nieder)|umspann\w*\s*(zur\s*)?nieder|"
                  r"umspann\w*.*\bns\b", lab):
         return "MSNS"
@@ -196,6 +238,7 @@ class Kopf:
     worte: list = field(default_factory=list)       # (pos, "LP"/"AP")
     grenzen: list = field(default_factory=list)     # (pos, "unter"/"ueber", zeile_idx)
     brutto: bool = False
+    monats_ab: float | None = None                  # Spalten ab hier gehören zum Monatsleistungspreissystem
 
 
 def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
@@ -232,9 +275,14 @@ def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
             k.grenzen.extend(g)
         if BRUTTO.search(z):
             k.brutto = True
-        if re.search(r"tagesleistungspreis|€\s*/\s*kw\s*/?\s*(tag|d)\b", z, re.I):
+        if re.search(r"tagesleistungspreis|(€|eur)\s*/\s*\(?\s*kw\s*(/|\*|·)?\s*(tag|d)\b", z, re.I):
             erg.tageswerte = True
     k.einheiten = beste_einheiten
+    for i in range(max(0, von - 6), bis):
+        z = zeilen[i]
+        m_mon = re.search(r"monatsleistungspreis", z, re.I)
+        if m_mon and re.search(r"jahresleistungspreis|benutzungsdauer", z[:m_mon.start()], re.I):
+            k.monats_ab = m_mon.start() - 2
     return k
 
 
@@ -247,21 +295,31 @@ def zuordnen(zahlen, kopf: Kopf, zeilen_grenze: str | None):
 
     Rückgabe: (dict feld->wert, grund_falls_unklar)
     """
+    if kopf.monats_ab is not None:
+        zahlen = [z for z in zahlen if z[0] < kopf.monats_ab]
+        einheiten = [e for e in kopf.einheiten if e[0] < kopf.monats_ab]
+    else:
+        einheiten = kopf.einheiten
+    zahlen = ohne_brutto(sorted(zahlen))
     if not zahlen:
         return {}, "keine Zahlen"
     # Art (LP/AP) und Umrechnungsfaktor je Zahl
     art = []
-    zahlen = sorted(zahlen)
-    if len(kopf.einheiten) == len(zahlen):
+    inline = [z[3] for z in zahlen if len(z) > 3]
+    if len(inline) == len(zahlen) and all(inline):
+        # Einheit steht direkt hinter jeder Zahl ("34,10 €/kW  8,33 ct/kWh")
+        for (pos, wert, *_), (a, f) in zip(zahlen, inline):
+            art.append((a, wert * f, pos))
+    elif len(einheiten) == len(zahlen):
         # gleich viele Einheiten wie Zahlen: Zuordnung über die Reihenfolge der Spalten
-        for (pos, wert, _), (p, a, f) in zip(zahlen, kopf.einheiten):
+        for (pos, wert, *_), (p, a, f) in zip(zahlen, einheiten):
             art.append((a, wert * f, pos))
-    elif len(kopf.einheiten) > len(zahlen):
-        for pos, wert, _ in zahlen:
-            p, a, f = _naechster(pos, kopf.einheiten)
+    elif len(einheiten) > len(zahlen):
+        for pos, wert, *_ in zahlen:
+            p, a, f = _naechster(pos, einheiten)
             art.append((a, wert * f, pos))
-    elif len(kopf.worte) == len(zahlen) and not kopf.einheiten:
-        for (pos, wert, _), (p, a) in zip(zahlen, kopf.worte):
+    elif len(kopf.worte) == len(zahlen) and not einheiten:
+        for (pos, wert, *_), (p, a) in zip(zahlen, kopf.worte):
             art.append((a, wert, pos))
     else:
         return {}, "Spaltenreihenfolge nicht aus Kopfzeile bestimmbar"
@@ -300,6 +358,7 @@ def zuordnen(zahlen, kopf: Kopf, zeilen_grenze: str | None):
     out = {}
     for (a, wert, _), gr in zip(art, grenzen):
         feld = f"{a.lower()}_{gr}_2500"
+        wert = runden(wert)
         if feld in out and abs(out[feld] - wert) > 1e-9:
             return {}, f"Feld {feld} mehrfach belegt"
         out[feld] = wert
@@ -321,10 +380,19 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
     start = 0
     offen_label = ""                   # Label einer Zeile ohne Zahlen (Umbruch)
     offen_ebene = None                 # Ebene, deren Zahlen in Folgezeilen stehen
+    fiktiv = False                     # Bereich mit fiktiven Entgelten (nur zur Information)
     for i, z in enumerate(zeilen):
         zl = z.strip()
         if not zl:
             continue
+        if FIKTIV.search(zl):
+            fiktiv, im_abschnitt, offen_ebene = True, False, None
+            continue
+        if fiktiv:
+            if re.match(r"(preisblatt|anlage|kapitel)\s*\d|\d+(\.\d+)*\s+[A-ZÄÖÜ]", zl, re.I):
+                fiktiv = False
+            else:
+                continue
         hat_start = bool(START.search(zl))
         hat_stop = bool(STOP.search(zl)) and not hat_start
         zahlen = zahlen_mit_pos(z)
@@ -350,6 +418,12 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
             werte, grund = zuordnen(zahlen, kopf, gr)
             funde[eb].append({"werte": werte, "grund": grund, "brutto": kopf.brutto, "zeile": i})
             offen_label, offen_ebene = "", None
+        elif zahlen and offen_ebene and not label:
+            # umbrochener Zeilenname ("Umspannung Mittel-/Niederspan-" / Zahlen / "nung")
+            kopf = kopf_lesen(zeilen, start, i, erg)
+            werte, grund = zuordnen(zahlen, kopf, None)
+            funde[offen_ebene].append({"werte": werte, "grund": grund, "brutto": kopf.brutto, "zeile": i})
+            offen_label, offen_ebene = "", None
         elif zahlen and offen_ebene:
             gr = "unter" if GRENZE_UNTER.search(label) else "ueber" if GRENZE_UEBER.search(label) else None
             if gr:
@@ -368,7 +442,127 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
     for eb, ziel in (("NS", erg.ns), ("MSNS", erg.msns)):
         ziel.update(_zusammenfuehren(funde[eb], eb, erg))
     slp_lesen(zeilen, erg)
+
+    # BDEW-Artikel-IDs (1-01-7-001 usw.) sind eindeutig und haben Vorrang vor der Tabellenerkennung
+    artikel, gruende = artikel_lesen(zeilen)
+    genutzt = False
+    for eb, ziel, felder in (("NS", erg.ns, FELDER), ("MSNS", erg.msns, FELDER), ("SLP", erg.slp, ("ap", "gp"))):
+        werte = artikel.get(eb, {})
+        if werte and all(werte.get(f) is not None for f in felder):
+            ziel.clear()
+            ziel.update(werte)
+            genutzt = True
+            praefix = "SLP:" if eb == "SLP" else f"{eb}:"
+            if eb == "SLP":
+                erg.slp_unklar = [u for u in erg.slp_unklar if not u.startswith(praefix)]
+            else:
+                erg.unklar = [u for u in erg.unklar if not u.startswith(praefix)]
+        elif werte:
+            ziel_gruende = [g for g in gruende if (eb == "SLP") == g.startswith("1-02")]
+            (erg.slp_unklar if eb == "SLP" else erg.unklar).extend(
+                f"{eb} Artikel-ID: {g}" for g in ziel_gruende[:3])
+    if genutzt:
+        erg.hinweise.append("Werte über BDEW-Artikel-IDs gelesen")
     return erg
+
+
+# ---------------------------------------------------------------- BDEW-Artikel-IDs (PRICAT)
+
+ARTIKEL = re.compile(r"(?<![\d-])1-0([12])-(\d)-(\d{3})(?![\d-])")
+ARTIKEL_FELD = {
+    ("1", "7", "001"): ("NS", "lp_unter_2500"), ("1", "7", "002"): ("NS", "ap_unter_2500"),
+    ("1", "7", "003"): ("NS", "lp_ueber_2500"), ("1", "7", "004"): ("NS", "ap_ueber_2500"),
+    ("1", "6", "001"): ("MSNS", "lp_unter_2500"), ("1", "6", "002"): ("MSNS", "ap_unter_2500"),
+    ("1", "6", "003"): ("MSNS", "lp_ueber_2500"), ("1", "6", "004"): ("MSNS", "ap_ueber_2500"),
+    ("2", "0", "001"): ("SLP", "gp"), ("2", "0", "002"): ("SLP", "ap"),
+}
+BEREICH = {"LP": (0.5, 400.0), "AP": (0.05, 30.0), "GP": (0.0, 500.0)}
+
+
+def _einheiten_in(text: str):
+    """Alle Preiseinheiten eines Textes: (start, ende, art, faktor)."""
+    out = []
+    for m in LP_EINHEIT.finditer(text):
+        per = (m.group(1) or "a").lower()
+        if not per.startswith("mon"):
+            out.append((m.start(), m.end(), "LP", 365.0 if per in ("tag", "d") else 1.0))
+    for m in AP_EINHEIT.finditer(text):
+        out.append((m.start(), m.end(), "AP", 1.0 if m.group(1).lower() in ("ct", "cent") else 100.0))
+    for m in GP_EINHEIT.finditer(text):
+        out.append((m.start(), m.end(), "GP", GP_FAKTOR[m.group(1).lower()]))
+    return sorted(out)
+
+
+def runden(v: float) -> float:
+    """Entfernt Umrechnungsrauschen (Tageswert × 365, €/kWh × 100), echte Nachkommastellen bleiben."""
+    r2 = round(v, 2)
+    return r2 if abs(v - r2) < 0.0005 else round(v, 4)
+
+
+def _naehe(a: float, b: float) -> bool:
+    return abs(a - b) <= max(0.011, 0.006 * max(abs(a), abs(b)))
+
+
+def artikel_wert(zeile: str, rest: str, art: str):
+    """Wert einer Artikel-ID-Zeile in Zieleinheit (LP €/kW/a, AP ct/kWh, GP €/a) oder (None, Grund).
+
+    Alle Zahlen der Zeile werden über die Einheit direkt dahinter (sonst die Einheiten der Zeile)
+    umgerechnet; Bruttowerte (× 1,19) und Werte außerhalb des plausiblen Bereichs fallen weg;
+    die übrigen müssen übereinstimmen (z. B. 0,051068 €/kW*Tag und 18,64 €/kW/a).
+    """
+    einh = _einheiten_in(rest)
+    faktoren_zeile = {f for _, _, a, f in einh if a == art}
+    kandidaten = []
+    zahlen = list(ZAHL.finditer(rest))
+    for i, m in enumerate(zahlen):
+        x = de_zahl(m.group())
+        if x <= 0:
+            continue
+        ende = zahlen[i + 1].start() if i + 1 < len(zahlen) else len(rest)
+        direkt = [e for e in einh if m.end() <= e[0] < min(ende, m.end() + 16)]
+        start_vorher = zahlen[i - 1].end() if i else 0
+        davor = [e for e in einh if max(start_vorher, m.start() - 16) <= e[1] <= m.start()]
+        if direkt or davor:
+            e = direkt[0] if direkt else davor[-1]
+            if e[2] == art:
+                kandidaten.append((x * e[3], x))
+            continue
+        for f in faktoren_zeile or ({1.0} if art != "LP" else set()):
+            kandidaten.append((x * f, x))
+    lo, hi = BEREICH[art]
+    werte = [v for v, _ in kandidaten if lo <= v <= hi]
+    werte = [v for v in werte if not any(ist_brutto(w, v) for w in werte if w < v)]
+    if not werte:
+        return None, "kein Wert"
+    if all(_naehe(werte[0], v) for v in werte):
+        # bevorzugt der Wert mit wenigen Nachkommastellen (veröffentlichter Preis)
+        return runden(min(werte, key=lambda v: len(f"{v:.6f}".rstrip("0")))), None
+    return None, "widersprüchliche Werte " + ", ".join(f"{v:.4f}" for v in werte[:4])
+
+
+def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
+    """Liest NS, MS/NS und SLP über die BDEW-Artikel-IDs. Rückgabe ({ebene: {feld: wert}}, gruende)."""
+    gefunden, gruende = {}, []
+    for z in zeilen:
+        for m in ARTIKEL.finditer(z):
+            key = ARTIKEL_FELD.get(m.groups())
+            if not key:
+                continue
+            eb, feld = key
+            art = "GP" if feld == "gp" else "AP" if feld.startswith("ap") else "LP"
+            if eb == "SLP" and feld == "ap":
+                art = "AP"
+            w, grund = artikel_wert(z, z[m.end():] + " " + z[:m.start()], art)
+            if w is None:
+                gruende.append(f"{m.group()}: {grund}")
+                continue
+            vorher = gefunden.setdefault(eb, {}).get(feld)
+            if vorher is not None and not _naehe(vorher, w):
+                gruende.append(f"{m.group()}: mehrfach mit abweichenden Werten ({vorher:.4f}, {w:.4f})")
+                gefunden[eb][feld] = None
+            elif vorher is None and feld not in gefunden[eb]:
+                gefunden[eb][feld] = w
+    return {eb: {k: v for k, v in d.items()} for eb, d in gefunden.items()}, gruende
 
 
 # ---------------------------------------------------------------- SLP
@@ -377,12 +571,16 @@ SLP_START = re.compile(r"ohne\s+(?:registrierende\s+)?leistungsmessung|standardl
                        r"ohne\s+(?:viertelstunden|lastgang)", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|konzessionsabgabe|einspeis|"
-                      r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer", re.I)
+                      r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
+                      r"berechnung\s+des|fiktiv|informationszweck", re.I)
 SLP_AUSSCHLUSS = re.compile(r"w[äa]rmepumpe|waermepumpe|speicher|14\s*a|modul\s*[123]|unterbrech|steuerbar|"
                             r"nacht|schwachlast|\bnt\b|\bht\b|hochtarif|niedertarif|zweitarif|doppeltarif|"
                             r"zweizeit|schwach|ladeeinricht|ladepunkt|e-?mobil|heizung|mittelspannung|"
-                            r"hochspannung|umspann|pausch|reduzier|leistungspreis|kw/a|kw\s*/\s*a", re.I)
-SLP_NEUTRAL = re.compile(r"^\s*(niederspannung|eintarif|standard|allgemein|haushalt|gewerbe|entnahme)", re.I)
+                            r"hochspannung|umspann|pausch|reduzier|leistungspreis|kw/a|kw\s*/\s*a|beleuchtung|"
+                            r"elektromobil|mobilit|bestand\s*\d?\)|verbrauchseinrichtung|zeitvariabel|tarifstufe|"
+                            r"hochlast|niedriglast|niedrigtarif|"
+                            r"=", re.I)
+SLP_NEUTRAL = re.compile(r"^\s*(niederspannung|eintarif|standard|allgemein|haushalt|gewerbe)", re.I)
 GP_EINHEIT = re.compile(r"(?:€|eur(?:o)?)\s*/\s*(?:(?:z[äa]hlpunkt|zp|messlokation|malo|marktlokation|anschluss|"
                         r"entnahmestelle)\s*(?:/|und|x|je|pro)?\s*)?(a|jahr|tag|d|monat|mon)\b", re.I)
 GP_FAKTOR = {"a": 1.0, "jahr": 1.0, "tag": 365.0, "d": 365.0, "monat": 12.0, "mon": 12.0}
@@ -429,8 +627,13 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
         if not zl:
             continue
         zahlen = list(ZAHL.finditer(z))
-        if SLP_START.search(zl) and not zahlen:
-            im, start, ausgeschlossen = True, i, bool(SLP_AUSSCHLUSS.search(zl))
+        fliesstext = zl[:1].islower()      # umgebrochener Satz, keine Überschrift
+        if SLP_START.search(zl) and not zahlen and not fliesstext and len(zl) < 100 and not re.match(r"[•\-–*]", zl):
+            if re.search(r"z[äa]hler|messstellen|messung\s+inkl", zl, re.I):
+                im = False          # z. B. Messstellenbetrieb "ohne Lastgangmessung je Zähler"
+                continue
+            # nur kurze Überschriften schließen aus, nicht Fließtext ("… pauschalierten Netzentgelt …")
+            im, start, ausgeschlossen = True, i, bool(SLP_AUSSCHLUSS.search(zl)) and len(zl) < 70
             continue
         if not im:
             continue
@@ -438,14 +641,19 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             im = False
             continue
         if not zahlen:
+            if fliesstext:
+                continue
             if SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = True
-            elif SLP_NEUTRAL.search(zl):
+            elif SLP_NEUTRAL.search(zl) and not SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = False
             continue
         if ausgeschlossen or SLP_AUSSCHLUSS.search(zl):
             continue
         kopf = None
+        if len(zahlen) >= 2 and len(zahlen) % 2 == 0 and all(
+                ist_brutto(de_zahl(zahlen[k].group()), de_zahl(zahlen[k + 1].group())) for k in range(0, len(zahlen), 2)):
+            zahlen = zahlen[0::2]          # Netto/Brutto-Paare: nur netto
         for j, m in enumerate(zahlen):
             ende = zahlen[j + 1].start() if j + 1 < len(zahlen) else len(z)
             danach = z[m.end():ende][:30]
@@ -498,10 +706,10 @@ def _zusammenfuehren(funde, eb, erg: Ergebnis) -> dict:
     if not funde:
         return {}
     netto = [f for f in funde if not f["brutto"]] or funde
-    saetze, aktuell = [], {}
+    saetze, aktuell, gruende = [], {}, []
     for f in netto:
         if f["grund"]:
-            erg.unklar.append(f"{eb}: {f['grund']}")
+            gruende.append(f"{eb}: {f['grund']}")
             continue
         if any(k in aktuell for k in f["werte"]):
             saetze.append(aktuell)
@@ -511,6 +719,7 @@ def _zusammenfuehren(funde, eb, erg: Ergebnis) -> dict:
         saetze.append(aktuell)
     vollst = [s for s in saetze if all(k in s for k in FELDER)]
     if not vollst:
+        erg.unklar.extend(dict.fromkeys(gruende))
         if saetze:
             erg.unklar.append(f"{eb}: Werte unvollständig")
         return {}
@@ -528,12 +737,13 @@ DATUM = re.compile(r"(\d{1,2})\.\s?(\d{1,2})\.\s?(20\d{2}|\d{2})(?!\d)")
 
 def metadaten(erg: Ergebnis, url: str = ""):
     text = erg.text
-    kopf = norm(text[:4000])
+    kopf = norm("\n".join(z for z in text[:4000].splitlines()
+                           if not re.match(r"\s*\d{1,2}\.\d{1,2}\.\d{4}\s", z)))
     u = norm(url)
     erg.jahre = {int(j) for j in re.findall(r"(?<!\d)(202[3-9])(?!\d)", text)}
     # Gültigkeit nur aus dem Kopf des Dokuments (Titel, erste Absätze): im Fließtext stehen oft
     # Verweise wie "seit 01.01.2024 gilt ...", die nichts über das Preisblatt aussagen
-    kopf_text = KOPFZEILEN(text)
+    kopf_text = re.sub(r"(?<!\d)(20[2-3])\s(\d)(?!\d)", r"\1\2", KOPFZEILEN(text))
     erg.kopf_jahre = {int(j) for j in re.findall(r"(?<!\d)(202[3-9])(?!\d)", kopf_text)}
     erg.gueltig_jahre = {int(j) for j in re.findall(
         r"(?:g[üu]ltig|gueltig|ab|zum|vom|seit)\s*(?:dem\s*|den\s*)?(?:0?1\.\s?0?1\.|1\.\s*januar)\s?(20\d{2})",
@@ -593,7 +803,7 @@ def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
             return f"gültig ab {sorted(erg.gueltig_jahre)}, nicht {jahr}"
     elif erg.kopf_jahre and jahr not in erg.kopf_jahre and str(jahr) not in url.rsplit("/", 1)[-1]:
         return f"Kopf nennt {sorted(erg.kopf_jahre)}, nicht {jahr}"
-    if re.search(r"fiktiv", norm(erg.text[:3000])):
+    if re.search(r"fiktiv", norm(KOPFZEILEN(erg.text))):
         return "fiktive Entgelte"
     return None
 

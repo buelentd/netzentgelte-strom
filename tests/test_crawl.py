@@ -130,3 +130,19 @@ def test_crawler_robots_komplett_gesperrt(tmp_path):
 def test_crawler_nicht_erreichbar(tmp_path):
     fund = asyncio.run(_lauf("http://127.0.0.1:9", tmp_path))
     assert fund.status == "blockiert"
+
+
+def test_cache_liefert_dokument_nicht_url_datei(tmp_path):
+    """Zweiter Abruf derselben URL muss das PDF aus dem Cache liefern, nicht <hash>.url."""
+    import hashlib
+
+    from vnb.crawl import Auftrag, Crawler
+    url = "https://x.de/preisblatt.pdf"
+    h = hashlib.sha1(url.encode()).hexdigest()[:12]
+    ordner = tmp_path / "k"
+    ordner.mkdir()
+    (ordner / f"{h}.url").write_text(url)
+    (ordner / f"{h}.pdf").write_bytes(b"%PDF-1.4")
+    c = Crawler(None, None, None, tmp_path, 2026)
+    pfad, fehler = asyncio.run(c.herunterladen(None, url, Auftrag(key="k", nr=1, name="X", mastr_nr="", website="")))
+    assert pfad.suffix == ".pdf" and not fehler
