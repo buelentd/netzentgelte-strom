@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import io
 import json
+import os
 import struct
 import time
 import zipfile
@@ -141,6 +142,8 @@ def herunterladen(ordner: Path, tabellen: set[str], log=print, urls: list[str] |
     """Lädt die Dateien der gewünschten Tabellen; liefert den Ordner mit den Teilen."""
     ordner.mkdir(parents=True, exist_ok=True)
     http = groesse = None
+    if not urls and os.environ.get("MASTR_EXPORT_URL"):
+        urls = [os.environ["MASTR_EXPORT_URL"]]
     for url in urls or export_urls(date.today()):
         h = Http(url, log)
         g = h.groesse()
