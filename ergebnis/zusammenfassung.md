@@ -1,39 +1,40 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 30.10.2026 11:26, 50 Netzbetreiber bzw. Netzgebiete
+Stand 30.10.2026 11:45, 60 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 26 | 52% |
-| pruefen | 24 | 48% |
+| ok | 28 | 47% |
+| pruefen | 30 | 50% |
+| kein_preisblatt | 2 | 3% |
 
-Preisstand (nur ok): endgültig 22, vorläufig 4
+Preisstand (nur ok): endgültig 22, vorläufig 4, unklar 2
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,20 ct/kWh (EWE NETZ GmbH)
 - Maximum: 9,45 ct/kWh (NRM Netzdienste Rhein-Main GmbH)
-- Median: 6,43 ct/kWh (n = 26)
+- Median: 6,54 ct/kWh (n = 31)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 4,35 ct/kWh (Bayernwerk Netz GmbH)
-- Maximum: 7,85 ct/kWh (Stuttgart Netze GmbH)
-- Median: 6,17 ct/kWh (n = 50)
+- Maximum: 8,30 ct/kWh (AllgäuNetz GmbH ＆ Co. KG)
+- Median: 6,17 ct/kWh (n = 54)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 53,56 €/kW/a (Hamburger Energienetze GmbH)
 - Maximum: 219,34 €/kW/a (N-ERGIE Netz GmbH)
-- Median: 123,66 €/kW/a (n = 50)
+- Median: 123,66 €/kW/a (n = 54)
 
 ## Datenherkunft
 
 - Website aus E-Mail-Domain abgeleitet: 0
 - Bundesland/Region nur aus dem Sitz laut MaStR: 0
-- Netztyp: Flächennetz 27, Stadtnetz 19, Regionalnetz 4
+- Netztyp: Flächennetz 29, Stadtnetz 23, Regionalnetz 7, unbekannt 1
 
 ## Abgleich mit den geprüften Pilotwerten (Neuauslesung der Pilot-Quelle)
 
@@ -57,16 +58,18 @@ Preisstand (nur ok): endgültig 22, vorläufig 4
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (4)
+## Status ok, aber Preisstand nicht endgültig (6)
 
 - 8. Westfalen Weser Netz GmbH: vorläufig
 - 9. enercity Netz GmbH: vorläufig
 - 20. Netze Duisburg GmbH: vorläufig
 - 21. Bielefelder Netz GmbH: vorläufig
+- 53. Albstadtwerke GmbH: unklar
+- 55. AllgäuNetz GmbH ＆ Co. KG: unklar
 
-## Restfälle (24)
+## Restfälle (32)
 
-### pruefen (24)
+### pruefen (30)
 
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
 - 14. N-ERGIE Netz GmbH: SLP-Werte nicht gefunden
@@ -92,3 +95,14 @@ Preisstand (nur ok): endgültig 22, vorläufig 4
 - 45. Harz Energie Netz GmbH: SLP-Werte nicht gefunden
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
 - 50. swa Netze GmbH: SLP-Werte nicht gefunden
+- 51. Abita Energie Otterberg GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 52. Ahrtal-Werke GmbH: SLP-Werte nicht gefunden
+- 54. Albwerk GmbH ＆ Co. KG: SLP-Werte nicht gefunden
+- 56. Alliander Netz Heinsberg GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 58. ASCANETZ GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 60. AVU Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.71, 2.19); RLM-Werte nicht gefunden; SLP-Werte auffällig
+
+### kein_preisblatt (2)
+
+- 57. Alzchem Netz GmbH: 5 Dokument(e) geprüft: gültig ab [2024], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
+- 59. Aschaffenburger Versorgungs-GmbH: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
