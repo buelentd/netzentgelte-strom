@@ -1,13 +1,13 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 30.10.2026 08:06, 10 Netzbetreiber bzw. Netzgebiete
+Stand 30.10.2026 08:35, 11 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 1 | 10% |
-| pruefen | 9 | 90% |
+| ok | 1 | 9% |
+| pruefen | 10 | 91% |
 
 Preisstand (nur ok): vorläufig 1
 
@@ -21,27 +21,27 @@ Preisstand (nur ok): vorläufig 1
 
 - Minimum: 4,43 ct/kWh (EWE NETZ GmbH)
 - Maximum: 7,40 ct/kWh (enercity Netz GmbH)
-- Median: 5,51 ct/kWh (n = 10)
+- Median: 5,49 ct/kWh (n = 11)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 63,29 €/kW/a (EWE NETZ GmbH)
 - Maximum: 203,11 €/kW/a (e-netz Südhessen AG)
-- Median: 131,51 €/kW/a (n = 10)
+- Median: 124,45 €/kW/a (n = 11)
 
 ## Datenherkunft
 
 - Website aus E-Mail-Domain abgeleitet: 0
 - Bundesland/Region nur aus dem Sitz laut MaStR: 0
-- Netztyp: Flächennetz 7, Regionalnetz 2, Stadtnetz 1
+- Netztyp: Flächennetz 7, Stadtnetz 2, Regionalnetz 2
 
 ## Status ok, aber Preisstand nicht endgültig (1)
 
 - 9. enercity Netz GmbH: vorläufig
 
-## Restfälle (9)
+## Restfälle (10)
 
-### pruefen (9)
+### pruefen (10)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: SLP-Werte nicht gefunden
@@ -52,3 +52,4 @@ Preisstand (nur ok): vorläufig 1
 - 7. e-netz Südhessen AG: SLP-Werte nicht gefunden
 - 8. Westfalen Weser Netz GmbH: SLP-Werte nicht gefunden
 - 10. Netze ODR GmbH: SLP-Werte nicht gefunden
+- 11. Netz Leipzig GmbH: SLP-Werte nicht gefunden
