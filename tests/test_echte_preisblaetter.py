@@ -136,8 +136,17 @@ def test_gas_nur_als_wort():
     ("bhag_2026", (10.04, 84.00)),                      # Sammelzeile mit Wärmepumpen; §-14a-Tabelle danach
     ("sw_neuburg_2026", (11.35, 80.00)),                # Modul-3-Kopf "ohne Leistungsmessung | Niedriglasttarif …"
     ("sw_waren_2026", (5.76, 50.00)),                   # "Kleinkunden … / SLP / Pauschalanlagen"
+    ("albwerk_2026", (4.56, 96.00)),                    # Spaltenkopf "HT  NT" schließt "Standardkunden" nicht aus
+    ("harz_energie_netz_2026", (6.53, 73.50)),          # "Netz- bwz." / "Umspannebene" über zwei Zeilen
+    ("swa_netze_2026", (6.07, 66.20)),                  # "ohne steuerbare oder unterbrechbare Verbrauchseinrichtungen"
 ])
 def test_slp_abschnitt_erkannt(name, slp):
     e, _ = lesen(name)
     assert (round(e.slp["ap"], 2), round(e.slp["gp"], 2)) == slp
     assert not e.slp_unklar, e.slp_unklar
+
+
+def test_slp_borken_pauschale_reduktion_nicht_vertauscht():
+    # Kopf "Grundpreis | Arbeitspreis | pauschale Reduktion": lieber nichts als vertauschte Werte
+    e, _ = lesen("sw_borken_2026")
+    assert e.slp.get("ap") != 90.0 and e.slp.get("gp") != 9.66

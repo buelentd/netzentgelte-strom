@@ -677,6 +677,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
     zeilen_label = {"AP": [], "GP": []}
     im, start, ausgeschlossen = False, 0, False
     msb_sperre = False                     # nach einer Messstellenbetrieb-Tabelle bis zur nächsten Netzentgelt-Überschrift
+    kopf_ausschluss = False                # Ausschluss kam von einem eingerückten Spaltenkopf
     for i, z in enumerate(zeilen):
         zl = z.strip()
         if not zl:
@@ -708,7 +709,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                 continue
             # nur kurze Überschriften schließen aus, nicht Fließtext ("… pauschalierten Netzentgelt …")
             # Spaltenköpfe in der Überschrift ("… ohne Leistungsmessung | Niedriglasttarif | Hochlasttarif") zählen mit
-            im, start = True, i
+            im, start, kopf_ausschluss = True, i, False
             spalten = " ".join(re.split(r"\s{3,}", zl)[1:])
             ausgeschlossen = bool(SLP_AUSSCHLUSS.search(kurz)) and len(kurz) < 70 or bool(SLP_AUSSCHLUSS.search(spalten))
             continue
@@ -722,15 +723,23 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             if fliesstext and (len(erste_spalte) >= 70 or erste_spalte.endswith(".")):
                 continue        # umbrochener Fließtext; kurze Zwischenzeilen ("bei unterbrechbaren …") zählen
             # Spaltenkopf "Netz- oder Umspannebene" schließt nichts aus
-            zl = re.sub(r"netz-?\s*(?:oder|und|/)\s*umspann\w*", " ", zl, flags=re.I).strip()
+            zl = re.sub(r"netz-?\s*(?:oder|und|/|bzw\.?|bwz\.?)\s*umspann\w*|^umspannebene\b", " ", zl, flags=re.I).strip()
+            # "Entnahmestellen ohne steuerbare oder unterbrechbare Verbrauchseinrichtungen" ist der Standardfall
+            zl = re.sub(r"ohne\s+(?:steuerbare|unterbrechbare)(?:\s*(?:oder|und|/|,)\s*(?:steuerbare|unterbrechbare))*",
+                        " ", zl, flags=re.I).strip()
             if SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = True
+                # weit eingerückter Spaltenkopf ("HT   NT"): betrifft nur Zeilen, die keine Standardzeile sind
+                kopf_ausschluss = len(z) - len(z.lstrip()) >= 20 and bool(
+                    re.fullmatch(r"(?:(?:ht|nt|hochtarif|niedertarif)\s*\d?\)?\s*)+", zl, re.I))
             elif SLP_NEUTRAL.search(zl) and not SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = False
             continue
         label = z[:zahlen[0].start()]
         sammel = bool(SLP_SAMMEL.search(label)) and not SLP_SAMMEL_NEIN.search(label)
-        if ausgeschlossen or (SLP_AUSSCHLUSS.search(zl) and not sammel):
+        standardzeile = bool(re.match(r"\s*(standardkunde|haushalt|allgemein|kleinkunde)", label, re.I)) and not (
+            SLP_AUSSCHLUSS.search(label) or re.search(r"tarif", label, re.I))
+        if (ausgeschlossen and not (kopf_ausschluss and standardzeile)) or (SLP_AUSSCHLUSS.search(zl) and not sammel):
             continue
         kopf = None
         if len(zahlen) >= 2 and len(zahlen) % 2 == 0 and all(
