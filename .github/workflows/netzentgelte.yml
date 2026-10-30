@@ -27,6 +27,10 @@ on:
         description: "Textauszüge der geladenen Dokumente auf den Branch diagnose legen"
         type: boolean
         default: true
+  # Start ohne Formular: Änderung an lauf/anstoss.env auf main pushen (Einstellungen stehen in der Datei)
+  push:
+    branches: [main]
+    paths: [lauf/anstoss.env]
 
 permissions:
   contents: write
@@ -41,6 +45,32 @@ jobs:
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
+
+      - name: Einstellungen
+        id: p
+        env:
+          EREIGNIS: ${{ github.event_name }}
+          IN_JAHR: ${{ inputs.jahr }}
+          IN_LIMIT: ${{ inputs.limit }}
+          IN_WORKER: ${{ inputs.worker }}
+          IN_WIEDERHOLEN: ${{ inputs.wiederholen }}
+          IN_LISTE_NEU: ${{ inputs.liste_neu }}
+          IN_DIAGNOSE: ${{ inputs.diagnose }}
+        run: |
+          if [ "$EREIGNIS" = "push" ]; then
+            # nur KEY=wert-Zeilen übernehmen, nichts ausführen
+            while IFS='=' read -r k v; do
+              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
+            done < lauf/anstoss.env
+          fi
+          {
+            echo "jahr=${IN_JAHR:-2026}"
+            echo "limit=$IN_LIMIT"
+            echo "worker=${IN_WORKER:-8}"
+            echo "wiederholen=$IN_WIEDERHOLEN"
+            echo "liste_neu=${IN_LISTE_NEU:-false}"
+            echo "diagnose=${IN_DIAGNOSE:-true}"
+          } | tee -a "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
         with:
@@ -63,15 +93,15 @@ jobs:
             ergebnis/cache
             ergebnis/pdf
             ergebnis/fortschritt.jsonl
-          key: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
-          restore-keys: netzentgelte-${{ inputs.jahr }}-
+          key: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
+          restore-keys: netzentgelte-${{ steps.p.outputs.jahr }}-
 
       - name: Tests
         run: python -m pytest -q tests
 
       - name: MaStR-Export aus vorherigem Lauf wiederherstellen
         id: mastr_cache
-        if: inputs.liste_neu || hashFiles('ergebnis/netzbetreiber.csv') == ''
+        if: steps.p.outputs.liste_neu == 'true' || hashFiles('ergebnis/netzbetreiber.csv') == ''
         uses: actions/cache/restore@v4
         with:
           path: mastr/xml_download
@@ -80,7 +110,7 @@ jobs:
 
       - name: Netzbetreiber-Liste (MaStR)
         id: liste
-        if: inputs.liste_neu || hashFiles('ergebnis/netzbetreiber.csv') == ''
+        if: steps.p.outputs.liste_neu == 'true' || hashFiles('ergebnis/netzbetreiber.csv') == ''
         run: python run.py liste
 
       - name: MaStR-Export sichern (Cache)
@@ -93,18 +123,18 @@ jobs:
       - name: Preisblätter suchen und auslesen
         timeout-minutes: 320
         run: >
-          python run.py lauf --jahr "${{ inputs.jahr }}" --worker "${{ inputs.worker }}"
-          ${{ inputs.limit != '' && format('--limit "{0}"', inputs.limit) || '' }}
-          ${{ inputs.wiederholen != '' && format('--wiederholen "{0}"', inputs.wiederholen) || '' }}
+          python run.py lauf --jahr "${{ steps.p.outputs.jahr }}" --worker "${{ steps.p.outputs.worker }}"
+          ${{ steps.p.outputs.limit != '' && format('--limit "{0}"', steps.p.outputs.limit) || '' }}
+          ${{ steps.p.outputs.wiederholen != '' && format('--wiederholen "{0}"', steps.p.outputs.wiederholen) || '' }}
 
       - name: Bericht
         if: always()
         run: |
-          if [ -f ergebnis/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ inputs.jahr }}"; fi
+          if [ -f ergebnis/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ steps.p.outputs.jahr }}"; fi
           if [ -f ergebnis/zusammenfassung.md ]; then cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"; fi
 
       - name: Diagnose (Textauszüge auf Branch diagnose)
-        if: always() && inputs.diagnose
+        if: always() && steps.p.outputs.diagnose == 'true'
         run: |
           python run.py diagnose
           rm -rf "$RUNNER_TEMP/diag" && mkdir "$RUNNER_TEMP/diag" && cp -r diagnose/. "$RUNNER_TEMP/diag/"
@@ -123,13 +153,13 @@ jobs:
             ergebnis/cache
             ergebnis/pdf
             ergebnis/fortschritt.jsonl
-          key: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
+          key: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
 
       - name: PDFs und Fortschritt als Artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: netzentgelte-${{ inputs.jahr }}-${{ github.run_id }}
+          name: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
           path: |
             ergebnis/pdf
             ergebnis/fortschritt.jsonl
@@ -142,15 +172,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in "ergebnis/netzentgelte_${{ inputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv ergebnis/zusammenfassung.md \
+          for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv ergebnis/zusammenfassung.md \
                    ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
                    ergebnis/fortschritt.jsonl; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
-          git commit -m "Netzentgelte ${{ inputs.jahr }}: Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"
+          git commit -m "Netzentgelte ${{ steps.p.outputs.jahr }}: Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"
           for i in 1 2 3 4; do
-            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep $((2 ** i))
           done
           exit 1

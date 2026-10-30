@@ -24,6 +24,14 @@ Ganze über GitHub Actions: Actions → „Netzentgelte Strom“ → Run workflo
 PDFs liegen nur im Artifact, nicht im Repo. Der Workflow muss auf dem Standard-Branch liegen,
 damit GitHub ihn manuell startbar anzeigt.
 
+
+### Lauf ohne Formular starten
+
+Der Workflow startet auch, wenn eine Änderung an `lauf/anstoss.env` auf `main` gepusht wird. Die Datei
+enthält dieselben Einstellungen wie das Formular (`JAHR`, `LIMIT`, `WORKER`, `WIEDERHOLEN`, `LISTE_NEU`,
+`DIAGNOSE`); `ANSTOSS` hochzählen, um mit gleichen Einstellungen erneut zu starten. Läuft bereits ein Lauf,
+wartet der neue, bis er fertig ist. Beim Commit der Ergebnisse gewinnt bei Konflikten der neuere Lauf.
+
 ## Setup
 
 ```
