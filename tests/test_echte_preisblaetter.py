@@ -123,4 +123,5 @@ def test_gas_nur_als_wort():
     from vnb.crawl import SPARTE_FREMD
     assert SPARTE_FREMD.search("preisblatt_gas_2026.pdf")
     assert SPARTE_FREMD.search("erdgas netzentgelte")
+    assert SPARTE_FREMD.search("Gasnetz Preisblatt 2026")
     assert not SPARTE_FREMD.search("netzentgelte-strom-gasse-2026.pdf")
