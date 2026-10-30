@@ -28,7 +28,7 @@ ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,12}(?![\d,])")
 LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*/\s*\(?\s*kw(?!h)(?:\s*(?:/|\*|·|\s|pro|je|und|x)\s*)*"
                         r"(a\b|jahr|tag|d\b|monat|mon\b)?\)?", re.I)
 AP_EINHEIT = re.compile(r"(ct|cent|€|eur(?:o)?)\s*/\s*kwh", re.I)
-GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner)\s*(?:als\s*)?2[.\s]?500", re.I)
+GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner|weniger)\s*(?:als\s*)?2[.\s]?500", re.I)
 GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens)\s*(?:als\s*)?2[.\s]?500", re.I)
 
 FIKTIV = re.compile(r"fiktiv|ohne\s+(?:berücksichtigung\s+des\s+)?(?:\w+\s+)?zuschuss|informationszweck", re.I)
@@ -469,7 +469,7 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
     for eb, ziel in (("NS", erg.ns), ("MSNS", erg.msns)):
         ziel.update(_zusammenfuehren(funde[eb], eb, erg))
         if not ziel:
-            werte = bloecke_lesen(zeilen, bereich, eb)
+            werte = bloecke_lesen(zeilen, bereich, eb) or quer_lesen(zeilen, eb)
             if werte:
                 ziel.update(werte)
                 erg.unklar = [u for u in erg.unklar if not u.startswith(f"{eb}:")]
@@ -768,6 +768,73 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
 
 GRENZE_TEXT = re.compile(r"(?:<=|>=|<|≤|≥|>|unter|bis|ab|über|ueber)?\s*2[.]?500\s*(?:h\s*/\s*a|h\b|std\.?|stunden)?",
                          re.I)
+
+
+def quer_lesen(zeilen: list[str], eb: str) -> dict:
+    """Gedrehte Tabelle: Spalten < 2.500 / ≥ 2.500, Zeilen "Arbeitspreis" und "Leistungspreis".
+
+    Die Ebene steht als Zwischenzeile darüber (Netz Leipzig) oder, bei einem Blatt nur für eine Ebene,
+    im Dokumentkopf ("Entnahme aus der Netzebene Niederspannung", SachsenNetze).
+    """
+    kopf = norm(" ".join([z for z in zeilen if z.strip()][:6]))
+    nur_ns = "niederspannung" in kopf and not re.search(r"mittelspannung|umspann|hochspannung", kopf)
+    treffer, aktiv, spalten, aktuelle, fiktiv = [], False, None, None, False
+    satz = {}
+    for z in zeilen:
+        zl = z.strip()
+        if not zl:
+            continue
+        if FIKTIV.search(zl):
+            fiktiv, aktiv = True, False
+            continue
+        u, o = list(GRENZE_UNTER.finditer(z)), list(GRENZE_UEBER.finditer(z))
+        zahlen = zahlen_mit_pos(z)
+        if len(u) == 1 and len(o) == 1 and not zahlen:
+            aktiv, fiktiv, aktuelle, satz = True, False, ("NS" if nur_ns else None), {}
+            spalten = {"unter": u[0].start(), "ueber": o[0].start()}
+            continue
+        if not aktiv or fiktiv:
+            continue
+        if STOP.search(zl) and not START.search(zl):
+            aktiv = False
+            continue
+        label = label_von(z)
+        m = re.match(r"(jahres)?(leistungs|arbeits)-?\s*preis", label, re.I)
+        if not zahlen:
+            e = ebene(zl)
+            if e or re.search(r"spannung|umspann", zl, re.I):
+                if aktuelle and len(satz) == 4:
+                    treffer.append((aktuelle, satz))
+                aktuelle, satz = e, {}
+            continue
+        if not m:
+            continue
+        art = "LP" if m.group(2).lower() == "leistungs" else "AP"
+        rest = label[m.end():]
+        einheit = einheit_nach(rest.strip()) if rest.strip() else None
+        werte = ohne_brutto(sorted(zahlen))
+        if len(werte) != 2:
+            aktiv = False
+            continue
+        eigene = {x[3] for x in werte if x[3]}
+        faktor = None
+        for e in eigene | ({einheit} if einheit else set()):
+            if e[0] != art:
+                faktor = None
+                break
+            faktor = e[1] if faktor in (None, e[1]) else -1
+        if art == "LP" and faktor is None and re.search(r"monat", z, re.I) is None:
+            faktor = 1.0 if re.search(r"(€|eur)\s*/\s*kw\b", z, re.I) else None
+        if faktor in (None, -1) or re.search(r"monat", z, re.I):
+            aktiv = False
+            continue
+        links, rechts = ("unter", "ueber") if spalten["unter"] < spalten["ueber"] else ("ueber", "unter")
+        for (pos, wert, *_), gr in zip(werte, (links, rechts)):
+            satz[f"{art.lower()}_{gr}_2500"] = runden(wert * faktor)
+        if aktuelle and len(satz) == 4:
+            treffer.append((aktuelle, dict(satz)))
+    saetze = {tuple(s[f] for f in FELDER) for e, s in treffer if e == eb}
+    return next(s for e, s in treffer if e == eb) if len(saetze) == 1 else {}
 
 
 def bloecke_lesen(zeilen: list[str], bereich: list[int], eb: str) -> dict:
