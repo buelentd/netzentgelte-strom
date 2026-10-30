@@ -136,3 +136,17 @@ def test_name_im_text():
 
 def test_zahlformat():
     assert zahl(171.87) == "171,87" and zahl(0.28) == "0,28" and zahl(1.2345) == "1,2345" and zahl(None) == ""
+
+
+@pytest.mark.parametrize("text,url,ok", [
+    ("Netze BW GmbH\nPreisblatt Netzentgelte Strom 2026\n" + "x\n" * 40 + "Seit dem 01.01.2024 gilt ...", "", True),
+    ("Preisblatt Netzentgelte Strom\ngültig ab 1. Januar 2026\n", "", True),
+    ("Preisblatt Netzentgelte Strom\ngültig ab 01.01.2027\nVorjahr 2026 zum Vergleich", "", False),
+    ("Preisblatt Aktuell\ngültig ab 01.01.2024\n" + "x\n" * 40 + "Ausblick 2026", "https://x.de/Aktuell.pdf", False),
+    ("Preisblatt\nStand 2025\n" + "x\n" * 40 + "Werte 2026", "https://x.de/preisblatt_2026.pdf", True),
+])
+def test_jahr_pruefen(text, url, ok):
+    from vnb.extract import jahr_pruefen, metadaten, tabellen_lesen
+    e = tabellen_lesen([text])
+    metadaten(e, url)
+    assert (jahr_pruefen(e, 2026, url) is None) == ok

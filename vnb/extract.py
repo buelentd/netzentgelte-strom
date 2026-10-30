@@ -51,6 +51,7 @@ class Ergebnis:
     stand_datum: str = ""
     jahre: set = field(default_factory=set)
     gueltig_jahre: set = field(default_factory=set)
+    kopf_jahre: set = field(default_factory=set)
     text: str = ""
     grenze_le: bool = False                        # "≤ 2.500 / > 2.500" statt "< / ≥"
     tageswerte: bool = False
@@ -530,9 +531,14 @@ def metadaten(erg: Ergebnis, url: str = ""):
     kopf = norm(text[:4000])
     u = norm(url)
     erg.jahre = {int(j) for j in re.findall(r"(?<!\d)(202[3-9])(?!\d)", text)}
+    # Gültigkeit nur aus dem Kopf des Dokuments (Titel, erste Absätze): im Fließtext stehen oft
+    # Verweise wie "seit 01.01.2024 gilt ...", die nichts über das Preisblatt aussagen
+    kopf_text = KOPFZEILEN(text)
+    erg.kopf_jahre = {int(j) for j in re.findall(r"(?<!\d)(202[3-9])(?!\d)", kopf_text)}
     erg.gueltig_jahre = {int(j) for j in re.findall(
-        r"(?:g[üu]ltig|gueltig|ab|zum|vom|seit)\s*(?:dem\s*|den\s*)?0?1\.\s?0?1\.\s?(20\d{2})", text, re.I)}
-    erg.gueltig_jahre |= {int(j) for j in re.findall(r"01\.01\.\s?(20\d{2})\s*(?:-|–|bis)\s*31\.12\.", text)}
+        r"(?:g[üu]ltig|gueltig|ab|zum|vom|seit)\s*(?:dem\s*|den\s*)?(?:0?1\.\s?0?1\.|1\.\s*januar)\s?(20\d{2})",
+        kopf_text, re.I)}
+    erg.gueltig_jahre |= {int(j) for j in re.findall(r"01\.01\.\s?(20\d{2})\s*(?:-|–|bis)\s*31\.12\.", kopf_text)}
 
     def stand(s):
         e = bool(re.search(r"endg[uü]ltig|endgueltig|\bfinal", s))
@@ -569,12 +575,24 @@ def metadaten(erg: Ergebnis, url: str = ""):
                 erg.stand_datum = f"{m.group(3)}.{m.group(2)}.20{m.group(1)}"
 
 
+def KOPFZEILEN(text: str) -> str:
+    """Titelbereich: die ersten 25 nichtleeren Zeilen."""
+    return "\n".join([z for z in text.splitlines() if z.strip()][:25])
+
+
 def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
-    """None wenn das Dokument zum Jahr passt, sonst Grund."""
+    """None wenn das Dokument zum Jahr passt, sonst Grund.
+
+    Abgelehnt wird nur, wenn das Jahr gar nicht vorkommt oder der Kopf ein anderes Jahr nennt und
+    das gesuchte nicht (z. B. Preisblatt 2027 oder veraltete Datei "Aktuell" von 2024).
+    """
     if jahr not in erg.jahre and str(jahr) not in url:
         return f"Jahr {jahr} nicht im Dokument"
-    if erg.gueltig_jahre and jahr not in erg.gueltig_jahre:
-        return f"gültig ab {sorted(erg.gueltig_jahre)}, nicht {jahr}"
+    if erg.gueltig_jahre:
+        if jahr not in erg.gueltig_jahre:
+            return f"gültig ab {sorted(erg.gueltig_jahre)}, nicht {jahr}"
+    elif erg.kopf_jahre and jahr not in erg.kopf_jahre and str(jahr) not in url.rsplit("/", 1)[-1]:
+        return f"Kopf nennt {sorted(erg.kopf_jahre)}, nicht {jahr}"
     if re.search(r"fiktiv", norm(erg.text[:3000])):
         return "fiktive Entgelte"
     return None

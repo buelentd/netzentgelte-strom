@@ -23,6 +23,10 @@ on:
         description: "Netzbetreiber-Liste neu aus dem MaStR laden"
         type: boolean
         default: false
+      diagnose:
+        description: "Textauszüge aller geladenen Dokumente auf den Branch diagnose legen"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -98,6 +102,18 @@ jobs:
         run: |
           if [ -f ergebnis/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ inputs.jahr }}"; fi
           if [ -f ergebnis/zusammenfassung.md ]; then cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Diagnose (Textauszüge auf Branch diagnose)
+        if: always() && inputs.diagnose
+        run: |
+          python run.py diagnose
+          rm -rf "$RUNNER_TEMP/diag" && mkdir "$RUNNER_TEMP/diag" && cp -r diagnose/. "$RUNNER_TEMP/diag/"
+          cd "$RUNNER_TEMP/diag"
+          git init -q -b diagnose
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "Diagnose Lauf ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" diagnose
 
       - name: Fortschritt sichern (Cache)
         if: always()

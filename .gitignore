@@ -3,3 +3,4 @@ __pycache__/
 mastr/
 ergebnis/cache/
 ergebnis/*.tmp
+diagnose/

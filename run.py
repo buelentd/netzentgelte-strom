@@ -348,6 +348,39 @@ async def schritt_lauf(args, log):
     speicher.ausgeben(args.jahr)
 
 
+def schritt_diagnose(args, log):
+    """Textauszüge aller geladenen Dokumente nach diagnose/ (zur Fehlersuche am Parser)."""
+    from vnb.extract import text_aus_datei
+
+    out = Path(args.out)
+    ziel = HIER / "diagnose"
+    shutil.rmtree(ziel, ignore_errors=True)
+    ziel.mkdir()
+    saetze = Speicher(out).daten
+    index = ["# Diagnose: Textauszüge der geladenen Dokumente", "",
+             "| nr | Netzbetreiber | Status | Datei | URL | Ergebnis |", "|---|---|---|---|---|---|"]
+    for ordner in sorted((out / "cache").glob("*")):
+        satz = saetze.get(ordner.name, {})
+        nr = int(satz.get("nr") or 0)
+        ergebnisse = {k.split(" (", 1)[0]: k.split(" (", 1)[-1].rstrip(")") for k in satz.get("kandidaten") or []}
+        for datei in sorted(ordner.iterdir()):
+            if datei.suffix not in (".pdf", ".xlsx", ".xls"):
+                continue
+            url_datei = datei.with_suffix(".url")
+            url = url_datei.read_text() if url_datei.exists() else ""
+            try:
+                text = "\f\n".join(text_aus_datei(datei))
+            except Exception as e:
+                text = f"FEHLER beim Textauszug: {type(e).__name__}: {e}"
+            name = f"{nr:04d}_{datei.stem}.txt"
+            (ziel / name).write_text(f"URL: {url}\nNetzbetreiber: {satz.get('netzbetreiber', '')}\n\n{text[:400_000]}",
+                                     encoding="utf-8")
+            index.append(f"| {nr} | {satz.get('netzbetreiber', '')} | {satz.get('status', '')} | {name} | {url} "
+                         f"| {ergebnisse.get(url, satz.get('grund', ''))[:150]} |")
+    (ziel / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    log(f"Diagnose: {len(index) - 4} Textauszüge in {ziel}")
+
+
 def schritt_bericht(args, log):
     text = Speicher(Path(args.out)).ausgeben(args.jahr)
     log(text)
@@ -355,7 +388,7 @@ def schritt_bericht(args, log):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("schritt", choices=["liste", "lauf", "bericht", "alles"])
+    ap.add_argument("schritt", choices=["liste", "lauf", "bericht", "alles", "diagnose"])
     ap.add_argument("--out", default=str(HIER / "ergebnis"))
     ap.add_argument("--jahr", type=int, default=2026)
     ap.add_argument("--csv", help="MaStR-Export (CSV) statt open-mastr-Download")
@@ -382,6 +415,8 @@ def main():
         asyncio.run(schritt_lauf(args, log))
     if args.schritt in ("bericht", "lauf", "alles"):
         schritt_bericht(args, log)
+    if args.schritt == "diagnose":
+        schritt_diagnose(args, log)
 
 
 if __name__ == "__main__":
