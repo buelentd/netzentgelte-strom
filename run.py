@@ -284,9 +284,11 @@ async def schritt_lauf(args, log):
     offen = [e for e in eintraege if not speicher.erledigt(key_von(e), wiederholen)]
     if args.nur:
         offen = [e for e in offen if norm(args.nur) in norm(e["netzbetreiber"])]
+    alle_offen = len(offen)
     if args.limit:
         offen = offen[: args.limit]
-    log(f"{len(eintraege)} Einträge, {len(eintraege) - len(offen)} bereits erledigt, {len(offen)} offen")
+    log(f"{len(eintraege)} Einträge, {len(eintraege) - alle_offen} bereits erledigt, {alle_offen} offen"
+        + (f", davon {len(offen)} in diesem Lauf (--limit {args.limit})" if len(offen) < alle_offen else ""))
     if not offen:
         return
 
@@ -374,6 +376,9 @@ def schritt_diagnose(args, log):
                 continue
             url_datei = datei.with_suffix(".url")
             url = url_datei.read_text() if url_datei.exists() else ""
+            # ok-Fälle: nur die verwendeten Quellen (hält den Branch beim vollen Lauf klein)
+            if satz.get("status") == "ok" and (not url or url not in (satz.get("quelle_url") or "")):
+                continue
             try:
                 text = "\f\n".join(text_aus_datei(datei))
             except Exception as e:

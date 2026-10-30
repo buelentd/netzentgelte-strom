@@ -10,11 +10,11 @@ on:
       limit:
         description: "Anzahl offener Netzbetreiber in diesem Lauf (leer = alle)"
         required: false
-        default: "10"
+        default: ""
       worker:
         description: "parallel bearbeitete Websites"
         required: true
-        default: "4"
+        default: "8"
       wiederholen:
         description: "Status erneut bearbeiten, z. B. blockiert,kein_preisblatt (leer = keine)"
         required: false
@@ -24,9 +24,9 @@ on:
         type: boolean
         default: false
       diagnose:
-        description: "Textauszüge aller geladenen Dokumente auf den Branch diagnose legen"
+        description: "Textauszüge der geladenen Dokumente auf den Branch diagnose legen"
         type: boolean
-        default: false
+        default: true
 
 permissions:
   contents: write
