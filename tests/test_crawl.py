@@ -146,3 +146,38 @@ def test_cache_liefert_dokument_nicht_url_datei(tmp_path):
     c = Crawler(None, None, None, tmp_path, 2026)
     pfad, fehler = asyncio.run(c.herunterladen(None, url, Auftrag(key="k", nr=1, name="X", mastr_nr="", website="")))
     assert pfad.suffix == ".pdf" and not fehler
+
+
+class _Antwort:
+    def __init__(self, status, text=""):
+        self.status, self._text = status, text
+
+    async def body(self):
+        return self._text.encode()
+
+
+class _Req:
+    def __init__(self, antwort):
+        self.antwort = antwort
+
+    async def get(self, url, **kw):
+        return self.antwort
+
+
+@pytest.mark.parametrize("status,erwartet", [(403, True), (401, True), (404, True), (503, None)])
+def test_robots_statuscodes_nach_rfc9309(status, erwartet):
+    # 4xx: robots.txt "nicht verfügbar" -> keine Einschränkung; 5xx: "nicht erreichbar"
+    from vnb.netz import Drossel, Robots
+    r = Robots(_Req(_Antwort(status)), Drossel(0))
+    assert asyncio.run(r.erlaubt("https://netz.example/preisblatt.pdf")) is erwartet
+
+
+def test_robots_sperre_wird_mit_regel_protokolliert():
+    from vnb.netz import Drossel, Robots, sperrregel
+    meldungen = []
+    txt = "User-agent: *\nDisallow: /content/dam/\nDisallow: /*.pdf$\n"
+    r = Robots(_Req(_Antwort(200, txt)), Drossel(0), log=meldungen.append)
+    assert asyncio.run(r.erlaubt("https://netz.example/content/dam/a.pdf")) is False
+    assert asyncio.run(r.erlaubt("https://netz.example/seite.html")) is True
+    assert len(meldungen) == 1 and "Disallow: /content/dam/" in meldungen[0]
+    assert sperrregel(txt, "https://netz.example/x/y.pdf") == "Disallow: /*.pdf$"

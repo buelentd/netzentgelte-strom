@@ -40,7 +40,8 @@ DOK_PLUS = [("preisblatt", 5), ("preisblaett", 5), ("netzentgelt", 5), ("netznut
 DOK_MINUS = [("14a", 4), ("sonderform", 4), ("atypisch", 4), ("singul", 4), ("fiktiv", 20),
              ("messstell", 4), ("msb", 3), ("konzession", 4), ("kwk", 3), ("umlage", 2), ("verlust", 4),
              ("erloesobergrenze", 6), ("strukturdaten", 5), ("blindarbeit", 2), ("mehrerloes", 5),
-             ("netzverlust", 4), ("kapazitaet", 1), ("einspeis", 20), ("redispatch", 5), ("bilanz", 3)]
+             ("netzverlust", 4), ("kapazitaet", 1), ("einspeis", 20), ("redispatch", 5), ("bilanz", 3),
+             ("vermiedene", 20), ("referenzpreis", 20)]
 
 LINKS_JS = r"""
 () => {

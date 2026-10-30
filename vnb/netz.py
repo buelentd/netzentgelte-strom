@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import re
 import time
 from urllib.parse import urlparse
 
@@ -48,11 +49,14 @@ class Drossel:
 class Robots:
     """Lädt robots.txt je Host einmal und beantwortet can_fetch."""
 
-    def __init__(self, request_context, drossel: Drossel):
+    def __init__(self, request_context, drossel: Drossel, log=None):
         self.req = request_context
         self.drossel = drossel
+        self.log = log
         self._cache: dict[str, Protego | None | str] = {}
         self._locks: dict[str, asyncio.Lock] = {}
+        self._texte: dict[str, str] = {}
+        self._gemeldet: set[str] = set()
 
     async def _laden(self, url: str):
         p = urlparse(url)
@@ -69,12 +73,13 @@ class Robots:
                 if r.status == 200:
                     txt = (await r.body()).decode("utf-8", "replace")
                     # HTML-Fehlerseiten mit Status 200 nicht als robots.txt deuten
-                    regel = None if "<html" in txt[:500].lower() else Protego.parse(txt)
-                elif r.status in (401, 403):
-                    regel = "alles_gesperrt"
+                    if "<html" not in txt[:500].lower():
+                        regel = Protego.parse(txt)
+                        self._texte[key] = txt
                 elif r.status >= 500:
                     regel = "nicht_erreichbar"
-                # 404 usw.: keine Einschränkungen
+                # 4xx (auch 401/403): robots.txt "nicht verfügbar", keine Einschränkungen (RFC 9309, 2.3.1.3);
+                # sperrt der Server die Seiten selbst, wird das beim Abruf als "blockiert" erkannt
             except Exception:
                 regel = "nicht_erreichbar"
             self._cache[key] = regel
@@ -85,14 +90,33 @@ class Robots:
         regel = await self._laden(url)
         if regel is None:
             return True
-        if regel == "alles_gesperrt":
-            return False
         if regel == "nicht_erreichbar":
             return None
-        return regel.can_fetch(url, UA_TOKEN)
+        ok = regel.can_fetch(url, UA_TOKEN)
+        if not ok and self.log:
+            key = "{0.scheme}://{0.netloc}".format(urlparse(url))
+            if key not in self._gemeldet:
+                self._gemeldet.add(key)
+                self.log(f"    robots.txt von {key} sperrt {url[:120]} ({sperrregel(self._texte.get(key, ''), url)})")
+        return ok
 
     async def sitemaps(self, url: str) -> list[str]:
         regel = await self._laden(url)
         if isinstance(regel, Protego):
             return list(regel.sitemaps)[:3]
         return []
+
+
+def sperrregel(txt: str, url: str) -> str:
+    """Die Disallow-Zeile(n), die den Pfad treffen (nur für das Protokoll)."""
+    p = urlparse(url)
+    pfad = (p.path or "/") + ("?" + p.query if p.query else "")
+    treffer = []
+    for zeile in txt.splitlines():
+        k, _, v = zeile.partition(":")
+        v = v.split("#")[0].strip()
+        if k.strip().lower() == "disallow" and v:
+            muster = "^" + ".*".join(map(re.escape, v.rstrip("$").split("*")))
+            if re.match(muster, pfad):
+                treffer.append("Disallow: " + v)
+    return ", ".join(dict.fromkeys(treffer)) or "Regel nicht einzeln bestimmbar"

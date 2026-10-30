@@ -41,7 +41,16 @@ def _kompakt(s: str) -> str:
 
 def lesen(pfad: Path) -> list[dict]:
     with open(pfad, newline="", encoding="utf-8-sig") as f:
-        zeilen = list(csv.DictReader(f, delimiter=";"))
+        roh = list(csv.reader(f, delimiter=";"))
+    kopf, zeilen = roh[0], []
+    for r in roh[1:]:
+        if not any(x.strip() for x in r):
+            continue
+        if len(r) > len(kopf):
+            # Semikolon im Hinweis: Quelle ist das letzte Feld, der Rest gehört zum Hinweis
+            i = kopf.index("hinweis")
+            r = r[:i] + ["; ".join(x.strip() for x in r[i:len(r) - (len(kopf) - 1 - i)])] + r[len(r) - (len(kopf) - 1 - i):]
+        zeilen.append(dict(zip(kopf, r)))
     for z in zeilen:
         for k in ("ns_lp_unter_2500", "ns_ap_unter_2500", "ns_lp_ueber_2500", "ns_ap_ueber_2500"):
             z[k] = de_zahl(z[k]) if z.get(k) else None

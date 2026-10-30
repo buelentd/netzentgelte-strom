@@ -134,11 +134,14 @@ Tabellen je Benutzungsdauer, Zeilen je Benutzungsdauer und umbrochene Labels. �
 × 365 gerechnet, €/kWh × 100. Ohne bestimmbare Kopfzeile wird nichts zugeordnet.
 
 **Prüfung (vnb/bewerten.py):** Jahr 2026 im Dokument, gültig ab nicht ein anderes Jahr, nicht
-fiktiv. NS LP über 2.500 zwischen 40 und 260, LP unter < LP über, AP unter > AP über.
+fiktiv, kein Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV, Referenzpreisblatt, vNE). NS LP über
+2.500 zwischen 40 und 260, LP unter < LP über, AP unter > AP über, AP unter mindestens 1 ct/kWh.
 Netzbetreibername (oder Domain) im Text. Bei mehreren Netzbetreibern mit derselben Website
 (z. B. wesernetz Bremen/Bremerhaven, SachsenNetze/HS.HD) muss das Gebiet passen.
 
-**Rücksicht:** robots.txt je Host (Protego), max. 1 Anfrage pro Sekunde je Host über alle Worker,
+**Rücksicht:** robots.txt je Host (Protego; nach RFC 9309: 4xx = keine Einschränkung, 5xx = nicht
+erreichbar; jede Sperre wird im Log mit der greifenden Disallow-Regel protokolliert), max. 1 Anfrage pro
+Sekunde je Host über alle Worker,
 Timeout 30 s, Bilder/Schriften/Medien werden nicht geladen. User-Agent nennt
 `intersignum-netzentgelte` mit Kontakt-URL.
 

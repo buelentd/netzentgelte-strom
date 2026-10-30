@@ -301,7 +301,7 @@ async def schritt_lauf(args, log):
             browser = await pw.chromium.launch(executable_path=exe, proxy=proxy)
         req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy)
         drossel = Drossel(args.abstand)
-        robots = Robots(req, drossel)
+        robots = Robots(req, drossel, log)
         crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
         sem = asyncio.Semaphore(args.worker)
         fertig = 0

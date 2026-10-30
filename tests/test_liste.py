@@ -85,3 +85,16 @@ def test_netztyp_und_plz():
     gebiet_ergaenzen(e, s, {})
     assert e[0]["netztyp"] == "Stadtnetz" and e[0]["gebiet_quelle"] == "Netzgebiet (MaStR-Einheiten)"
     assert e[1]["bundesland"] == "Sachsen" and e[1]["gebiet_quelle"] == "Sitz laut MaStR"
+
+
+def test_pilot_semikolon_im_hinweis(tmp_path):
+    from vnb.pilot import lesen
+    p = tmp_path / "pilot.csv"
+    p.write_text("nr;netzbetreiber;status;ns_lp_unter_2500;ns_ap_unter_2500;ns_lp_ueber_2500;ns_ap_ueber_2500;"
+                 "preisstand;hinweis;quelle\n"
+                 "25;Hamburger Energienetze;ok;32,91;7,04;53,56;6,22;endgültig;Stand 12.12.2025; frühere Zuordnung "
+                 "falsch;https://filehub.example/v5/deliverFile/abc?download=true\n", encoding="utf-8")
+    z = lesen(p)[0]
+    assert z["quelle"] == "https://filehub.example/v5/deliverFile/abc?download=true"
+    assert z["hinweis"] == "Stand 12.12.2025; frühere Zuordnung falsch"
+    assert z["ns_lp_ueber_2500"] == 53.56
