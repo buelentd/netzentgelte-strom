@@ -46,6 +46,12 @@ FAELLE = {
     # gedrehte Tabellen: Zeilen Arbeits-/Leistungspreis, Spalten < / ≥ 2.500 (Lauf 8)
     "netz_leipzig_2026": ((19.17, 5.96, 82.02, 3.44), (13.12, 5.42, 103.16, 1.82), (4.29, 75.00)),
     "sachsennetze_ns_2026": ((27.83, 8.58, 153.33, 3.56), None, None),
+    # Lauf 9 (erste Nicht-Pilot-Netzbetreiber), von Hand am Text geprüft: Aufzählungszeichen "n "/"●",
+    # "Umspannung (MSP/NSP)", Monatspreis-Spalten in derselben Tabelle, "Niederlasttarif"
+    "abita_2026": ((46.16, 6.16, 126.42, 2.95), (36.96, 6.30, 187.66, 0.27), (7.07, 75.00)),
+    "alliander_heinsberg_2026": ((20.50, 5.94, 134.31, 1.39), (14.65, 5.36, 124.39, 0.97), (6.64, 110.00)),
+    "ascanetz_2026": ((31.69, 6.15, 133.03, 2.10), (25.93, 5.61, 128.87, 1.49), (7.18, 30.00)),
+    "avu_netz_2026": ((19.79, 7.23, 167.82, 1.31), (12.27, 6.74, 154.82, 1.03), (6.71, 70.00)),
 }
 
 

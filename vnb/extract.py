@@ -213,11 +213,14 @@ def label_von(zeile: str) -> str:
 
 def ebene(label: str) -> str | None:
     """Ordnet ein Zeilenlabel der Ebene NS bzw. MSNS zu (sonst None)."""
+    # Aufzählungszeichen aus Symbolschriften erscheinen im Textauszug als "n " (Abita, Alliander)
+    label = re.sub(r"^\s*[n▪■●◼]\s+(?=[A-ZÄÖÜ])", "", label)
     lab = norm(label)
-    lab = re.sub(r"^[\d.)\s\-–•]+", "", lab)
+    lab = re.sub(r"^[\d.)\s\-–•▪■●]+", "", lab)
     lab = re.sub(r"\s*/\s*", "/", lab)
     lab = re.sub(r"\s*-\s*/", "/", lab)
     lab = lab.replace("-/", "/").replace("- ", "")
+    lab = re.sub(r"\s+", " ", re.sub(r"[()]", " ", lab)).strip()     # "Umspannung (MSP/NSP)"
     if not lab or AUSSCHLUSS_LABEL.search(lab):
         return None
     if len(lab) > 70:
@@ -300,8 +303,8 @@ def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
     k.einheiten = beste_einheiten
     for i in range(max(0, von - 6), bis):
         z = zeilen[i]
-        m_mon = re.search(r"monatsleistungspreis", z, re.I)
-        if m_mon and re.search(r"jahresleistungspreis|benutzungsdauer", z[:m_mon.start()], re.I):
+        m_mon = re.search(r"monats(?:leistungs)?preis", z, re.I)
+        if m_mon and re.search(r"jahres(?:leistungs)?preis|benutzungsdauer|2[.]?500", z[:m_mon.start()], re.I):
             k.monats_ab = m_mon.start() - 2
     return k
 
@@ -612,7 +615,7 @@ SLP_AUSSCHLUSS = re.compile(r"w[äa]rmepumpe|waermepumpe|speicher|14\s*a|modul\s
                             r"zweizeit|schwach|ladeeinricht|ladepunkt|e-?mobil|heizung|mittelspannung|"
                             r"hochspannung|umspann|pausch|reduzier|leistungspreis|kw/a|kw\s*/\s*a|beleuchtung|"
                             r"elektromobil|mobilit|bestand\s*\d?\)|verbrauchseinrichtung|zeitvariabel|tarifstufe|"
-                            r"hochlast|niedriglast|niedrigtarif|"
+                            r"hochlast|niedriglast|niederlast|niedrigtarif|"
                             r"=", re.I)
 SLP_NEUTRAL = re.compile(r"^\s*(niederspannung|eintarif|standard|allgemein|haushalt|gewerbe)", re.I)
 GP_EINHEIT = re.compile(r"(?:€|eur(?:o)?)\s*/\s*(?:(?:z[äa]hlpunkt|zp|messlokation|malo|marktlokation|anschluss|"
@@ -928,7 +931,7 @@ def metadaten(erg: Ergebnis, url: str = ""):
     erg.gueltig_jahre |= {int(j) for j in re.findall(r"01\.01\.\s?(20\d{2})\s*(?:-|–|bis)\s*31\.12\.", kopf_text)}
 
     def stand(s):
-        e = bool(re.search(r"endg[uü]ltig|endgueltig|\bfinal", s))
+        e = bool(re.search(r"endg[uü]ltig|endgueltig|\bfinal|(?<![a-z])endg(?![a-z])", s))
         v = bool(re.search(r"vorl[aä]ufig|vorlaeufig|\bvorl\b|\bvorl\.|_vorl|vorl_", s))
         return e, v
     te, tv = stand(kopf)
