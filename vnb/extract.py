@@ -671,9 +671,21 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
     werte = {"AP": [], "GP": []}
     zeilen_label = {"AP": [], "GP": []}
     im, start, ausgeschlossen = False, 0, False
+    msb_sperre = False                     # nach einer Messstellenbetrieb-Tabelle bis zur nächsten Netzentgelt-Überschrift
     for i, z in enumerate(zeilen):
         zl = z.strip()
         if not zl:
+            continue
+        if msb_sperre and re.search(r"netznutzung|netzentgelt|preisblatt", zl, re.I) and not re.search(
+                r"messstellen|messeinrichtung|z[äa]hler", zl, re.I):
+            msb_sperre = False
+        if msb_sperre and not ZAHL.search(z) and re.search(r"grund-?\s*preis", zl, re.I) and re.search(
+                r"arbeits-?\s*preis", zl, re.I):
+            msb_sperre, im, start, ausgeschlossen = False, True, i, False   # Kopf einer Netzentgelt-Tabelle
+            continue
+        if (not ZAHL.search(z) and len(zl) < 70 and not zl.endswith((".", ",")) and not re.search(r"gesetz|§", zl)
+                and re.search(r"messstellen|messeinrichtung|z[äa]hlerart", zl, re.I)):
+            msb_sperre, im = True, False   # Überschrift einer Messstellenbetrieb-Tabelle
             continue
         zahlen = list(ZAHL.finditer(z))
         fliesstext = zl[:1].islower()      # umgebrochener Satz, keine Überschrift
@@ -681,7 +693,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             im = False                     # fiktive Entgelte (nur zur Information)
             continue
         if SLP_START.search(zl) and not zahlen and not fliesstext and len(zl) < 100 and not re.match(r"[•\-–*]", zl):
-            if re.search(r"(?:je|pro)\s+z[äa]hler|messstellen|messung\s+inkl|messentgelt|einspeis", zl, re.I):
+            if re.search(r"(?:je|pro)\s+z[äa]hler|messstellen|messung\s+inkl|messentgelt|einspeis|"
+                         r"mit\s+(?:registrierender\s+)?leistungsmessung", zl, re.I) or msb_sperre:
+                # zweispaltiger Kopf "ohne … | mit Leistungsmessung" oder Messstellenbetrieb-Tabelle
                 im = False          # z. B. Messstellenbetrieb "ohne Lastgangmessung je Zähler"
                 continue
             # nur kurze Überschriften schließen aus, nicht Fließtext ("… pauschalierten Netzentgelt …")
@@ -987,7 +1001,23 @@ def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
         return "fiktive Entgelte"
     if vne_dokument(erg.text, url):
         return "Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV)"
+    if liefer_dokument(erg.text, url):
+        return "Endkunden-Preisblatt (Lieferung), keine Netzentgelte"
     return None
+
+
+LIEFERUNG = re.compile(r"grundversorgung|ersatzversorgung|stromlieferung|lieferbedingungen|sondervertrag|strompreis|"
+                       r"allgemeine preise|oekostrom|naturstrom|heizstrom|waermestrom|autostrom|"
+                       r"preise fuer die belieferung")
+NETZENTGELT = re.compile(r"netzentgelt|netznutzung|netzzugang|nutzungsentgelt|entgelte fuer (die )?(netz|nutzung)")
+
+
+def liefer_dokument(text: str, url: str = "") -> bool:
+    """Preisblatt eines Lieferanten (Grund-/Ersatzversorgung, Tarife), ohne Bezug auf Netzentgelte im Kopf."""
+    datei = norm(url.rsplit("/", 1)[-1].replace("%20", " "))
+    kopf = norm(" ".join([z for z in text.splitlines() if z.strip()][:10]))
+    return bool((LIEFERUNG.search(kopf) or LIEFERUNG.search(datei))
+                and not NETZENTGELT.search(kopf) and not NETZENTGELT.search(datei))
 
 
 def vne_dokument(text: str, url: str = "") -> bool:

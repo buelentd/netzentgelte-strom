@@ -32,7 +32,7 @@ SEITE_PLUS = [("netzentgelt", 6), ("netznutzung", 5), ("preisblatt", 5), ("preis
 SEITE_MINUS = re.compile(r"karriere|jobs|stellen|presse|news|aktuelles|blog|impressum|datenschutz|cookie|"
                          r"kontakt|shop|tarif|ladesaeule|e-?mobil|glasfaser|breitband|internet|telefon|"
                          r"baeder|bad\b|parken|veranstaltung|login|anmelden|warenkorb|faq|stoerung", re.I)
-SPARTE_FREMD = re.compile(r"\bgas|erdgas|waerme|fernwaerme|wasser|abwasser|einspeis|biogas|wasserstoff", re.I)
+SPARTE_FREMD = re.compile(r"(?<![a-z])gas(?![a-z]|se)|erdgas|waerme|fernwaerme|wasser|abwasser|einspeis|biogas|wasserstoff", re.I)
 
 DOK_PLUS = [("preisblatt", 5), ("preisblaett", 5), ("netzentgelt", 5), ("netznutzung", 4), ("nne", 3),
             ("entgelt", 2), ("strom", 2), ("endgueltig", 3), ("final", 3), ("netzzugang", 1),

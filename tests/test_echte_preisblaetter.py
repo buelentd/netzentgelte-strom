@@ -52,6 +52,9 @@ FAELLE = {
     "alliander_heinsberg_2026": ((20.50, 5.94, 134.31, 1.39), (14.65, 5.36, 124.39, 0.97), (6.64, 110.00)),
     "ascanetz_2026": ((31.69, 6.15, 133.03, 2.10), (25.93, 5.61, 128.87, 1.49), (7.18, 30.00)),
     "avu_netz_2026": ((19.79, 7.23, 167.82, 1.31), (12.27, 6.74, 154.82, 1.03), (6.71, 70.00)),
+    # Messstellenbetrieb-Tabellen zwischen den Netzentgelten dürfen keine Grundpreise liefern
+    "sw_oranienburg_2026": ((38.79, 6.78, 136.71, 2.87), (27.36, 5.53, 122.46, 1.73), (8.46, 50.00)),
+    "sw_lippe_weser_2026": ((20.76, 8.00, 171.13, 1.98), (18.41, 6.41, 145.04, 1.34), (7.55, 79.00)),
 }
 
 
@@ -101,3 +104,23 @@ def test_vermiedene_netzentgelte_abgelehnt():
     assert vne_dokument("", "https://x.de/vorlaeufige-preisblaetter-vermiedene-netzentgelte-2026.pdfx")
     assert vne_dokument("Referenzpreisblatt zur Ermittlung vermiedener Netzentgelte\nnach § 18 Abs. 2 StromNEV", "")
     assert not vne_dokument("Preisblatt Netzentgelte Strom 2026", "https://x.de/preisblatt-nne-2026.pdf")
+
+
+def test_altes_preisblatt_schwentinental_abgelehnt():
+    # Dateiname und Kopf "gültig ab 01. Jan 2024": kein Blatt für 2026
+    e, url = lesen("sw_schwentinental_2024")
+    assert jahr_pruefen(e, 2026, url) is not None
+
+
+def test_endkunden_preisblatt_abgelehnt():
+    from vnb.extract import liefer_dokument
+    assert liefer_dokument("Preisblatt Grundversorgung Strom 2026\nAllgemeine Preise", "")
+    assert liefer_dokument("", "https://x.de/heizstrom-preise-2026.pdf")
+    assert not liefer_dokument("Preisblatt Netzentgelte Strom 2026\nEntgelte für die Netznutzung", "")
+
+
+def test_gas_nur_als_wort():
+    from vnb.crawl import SPARTE_FREMD
+    assert SPARTE_FREMD.search("preisblatt_gas_2026.pdf")
+    assert SPARTE_FREMD.search("erdgas netzentgelte")
+    assert not SPARTE_FREMD.search("netzentgelte-strom-gasse-2026.pdf")
