@@ -617,6 +617,10 @@ SLP_AUSSCHLUSS = re.compile(r"w[äa]rmepumpe|waermepumpe|speicher|14\s*a|modul\s
                             r"elektromobil|mobilit|bestand\s*\d?\)|verbrauchseinrichtung|zeitvariabel|tarifstufe|"
                             r"hochlast|niedriglast|niederlast|niedrigtarif|"
                             r"=", re.I)
+# Sammelzeile "Standardlastprofilkunden, Wärmespeicherheizungen, Wärmepumpen und E-Ladestationen": ein Preis für alle
+SLP_SAMMEL = re.compile(r"^\s*(standardlastprofil\w*|slp(-kunden)?\b|haushalt\w*|allgemein\w*)", re.I)
+SLP_SAMMEL_NEIN = re.compile(r"schwach|nacht|\bnt\b|\bht\b|tarif|14\s*a|modul|unterbrech|steuerbar|reduzier|pausch|"
+                             r"zeitvariabel|spannung|umspann|leistungspreis|=", re.I)
 SLP_NEUTRAL = re.compile(r"^\s*(niederspannung|eintarif|standard|allgemein|haushalt|gewerbe)", re.I)
 GP_EINHEIT = re.compile(r"(?:€|eur(?:o)?)\s*/\s*(?:(?:z[äa]hlpunkt|zp|messlokation|malo|marktlokation|anschluss|"
                         r"entnahmestelle)\s*(?:/|und|x|je|pro)?\s*)?(a|jahr|tag|d|monat|mon)\b", re.I)
@@ -716,7 +720,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             elif SLP_NEUTRAL.search(zl) and not SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = False
             continue
-        if ausgeschlossen or SLP_AUSSCHLUSS.search(zl):
+        label = z[:zahlen[0].start()]
+        sammel = bool(SLP_SAMMEL.search(label)) and not SLP_SAMMEL_NEIN.search(label)
+        if ausgeschlossen or (SLP_AUSSCHLUSS.search(zl) and not sammel):
             continue
         kopf = None
         if len(zahlen) >= 2 and len(zahlen) % 2 == 0 and all(

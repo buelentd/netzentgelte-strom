@@ -21,7 +21,8 @@ SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region"
            + ["preisstand", "stand_datum", "hinweis", "quelle_url"])
 REST_SPALTEN = ["nr", "netzbetreiber", "mastr_nr", "website", "status", "grund", "kandidaten", "quelle_url"]
 GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "rlm_ns", "rlm_msns", "slp",
-                    "ns_ct_kwh_bei_4000h", "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "preisstand", "quelle_url"]
+                    "ns_ct_kwh_bei_4000h", "rlm_quelle_url", "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "slp_quelle_url",
+                    "preisstand"]
 NICHT_GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "fehlt", "vorhanden", "grund", "quelle_url"]
 STATUS = ["ok", "pruefen", "kein_preisblatt", "blockiert", "robots", "keine_website"]
 
@@ -33,6 +34,15 @@ def zahl(v) -> str:
     ganz, _, nach = s.partition(".")
     nach = (nach + "00")[: max(2, len(nach))]
     return f"{ganz},{nach}"
+
+
+def quellen(d: dict) -> tuple[str, str]:
+    """(RLM-Quelle, SLP-Quelle) aus quelle_url ("RLM: … | SLP: …" bei getrennten Dokumenten)."""
+    q = d.get("quelle_url", "")
+    if q.startswith("RLM: ") and " | SLP: " in q:
+        rlm, slp = q[5:].split(" | SLP: ", 1)
+        return rlm, slp
+    return (q if d.get("ns") else ""), (q if d.get("slp") else "")
 
 
 class Speicher:
@@ -144,12 +154,13 @@ class Speicher:
                 if d.get("status") not in ("ok", "pruefen") or not (ns or slp):
                     continue
                 ct = ct_kwh_bei(ns, 4000, d.get("grenze_le", False)) if d.get("rlm_ok") else None
+                rlm_url, slp_url = quellen(d)
                 w.writerow([d.get("nr", ""), d.get("netzbetreiber", ""), d.get("website", ""), d.get("status", ""),
                             zustand(ns, d.get("rlm_ok")), zustand(msns, d.get("rlm_ok")),
                             zustand(slp, d.get("slp_ok")),
-                            zahl(round(ct, 2)) if ct is not None else "",
+                            zahl(round(ct, 2)) if ct is not None else "", rlm_url,
                             zahl(slp.get("ap")) if d.get("slp_ok") else "", zahl(slp.get("gp")) if d.get("slp_ok") else "",
-                            d.get("preisstand", ""), d.get("quelle_url", "")])
+                            slp_url, d.get("preisstand", "")])
         ziel.with_suffix(".tmp").replace(ziel)
 
     @staticmethod
