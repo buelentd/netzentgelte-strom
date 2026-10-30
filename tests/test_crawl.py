@@ -111,7 +111,10 @@ def test_crawler_findet_endgueltiges_preisblatt(server, tmp_path):
     # höchstens 1 Anfrage pro Sekunde (Seiten, Dokumente, robots.txt)
     zeiten = [t for t, p in ANFRAGEN if not p.startswith("/favicon")]
     abstaende = [b - a for a, b in zip(zeiten, zeiten[1:])]
-    assert min(abstaende) >= 0.95, abstaende
+    # gemessen wird die Ankunft am Testserver; einzelne Anfragen kommen auf CI-Rechnern bis ~0,15 s
+    # verspätet an (1,12 s, dann 0,88 s). Je zwei Abstände zusammen müssen daher ≥ 1,95 s sein.
+    assert min(abstaende) >= 0.7, abstaende
+    assert all(a + b >= 1.95 for a, b in zip(abstaende, abstaende[1:])), abstaende
 
 
 def test_crawler_robots_komplett_gesperrt(tmp_path):
@@ -181,3 +184,18 @@ def test_robots_sperre_wird_mit_regel_protokolliert():
     assert asyncio.run(r.erlaubt("https://netz.example/seite.html")) is True
     assert len(meldungen) == 1 and "Disallow: /content/dam/" in meldungen[0]
     assert sperrregel(txt, "https://netz.example/x/y.pdf") == "Disallow: /*.pdf$"
+
+
+def test_drossel_mindestabstand():
+    from vnb.netz import Drossel
+    # die Drossel selbst hält den Abstand exakt ein (Zeitpunkt der Freigabe, ohne Netzlaufzeit)
+    async def lauf():
+        d = Drossel(0.2)
+        zeiten = []
+        async def eins():
+            await d.warten("https://x.de/a")
+            zeiten.append(time.monotonic())
+        await asyncio.gather(*(eins() for _ in range(5)))
+        return sorted(zeiten)
+    zeiten = asyncio.run(lauf())
+    assert min(b - a for a, b in zip(zeiten, zeiten[1:])) >= 0.199
