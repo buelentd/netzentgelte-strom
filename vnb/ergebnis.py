@@ -20,6 +20,9 @@ SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region"
            + [f"ns_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN]
            + ["preisstand", "stand_datum", "hinweis", "quelle_url"])
 REST_SPALTEN = ["nr", "netzbetreiber", "mastr_nr", "website", "status", "grund", "kandidaten", "quelle_url"]
+GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "rlm_ns", "rlm_msns", "slp",
+                    "ns_ct_kwh_bei_4000h", "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "preisstand", "quelle_url"]
+NICHT_GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "fehlt", "vorhanden", "grund", "quelle_url"]
 STATUS = ["ok", "pruefen", "kein_preisblatt", "blockiert", "robots", "keine_website"]
 
 
@@ -99,9 +102,55 @@ class Speicher:
                                 d.get("website", ""), d.get("status", ""), d.get("grund", ""),
                                 " | ".join(d.get("kandidaten") or []), d.get("quelle_url", "")])
         rest.with_suffix(".tmp").replace(rest)
+        self.nicht_gefunden(zeilen)
+        self.gefunden(zeilen)
         text = self.zusammenfassung(zeilen, jahr)
         (self.ordner / "zusammenfassung.md").write_text(text, encoding="utf-8")
         return text
+
+    def nicht_gefunden(self, zeilen: list[dict]):
+        """Zeilen, bei denen Preisblatt, SLP- oder RLM-Werte nicht gefunden wurden (zur separaten Nachbearbeitung)."""
+        ziel = self.ordner / "nicht_gefunden.csv"
+        with open(ziel.with_suffix(".tmp"), "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f, delimiter=";")
+            w.writerow(NICHT_GEFUNDEN_SPALTEN)
+            for d in zeilen:
+                grund = d.get("grund", "")
+                if d.get("status") == "kein_preisblatt":
+                    fehlt = "Preisblatt"
+                elif d.get("status") == "pruefen":
+                    fehlt = " + ".join(t for t in ("SLP", "RLM") if f"{t}-Werte nicht gefunden" in grund)
+                else:
+                    fehlt = ""
+                if not fehlt:
+                    continue
+                slp, ns = d.get("slp") or {}, d.get("ns") or {}
+                vorhanden = ", ".join(t for t, ok in (("RLM NS", d.get("rlm_ok") and ns), ("SLP", d.get("slp_ok") and slp))
+                                      if ok)
+                w.writerow([d.get("nr", ""), d.get("netzbetreiber", ""), d.get("website", ""), d.get("status", ""),
+                            fehlt, vorhanden, grund, d.get("quelle_url", "")])
+        ziel.with_suffix(".tmp").replace(ziel)
+
+    def gefunden(self, zeilen: list[dict]):
+        """Zeilen, bei denen ein Preisblatt gefunden und mindestens ein Teil (RLM oder SLP) gelesen wurde."""
+        def zustand(werte, ok):
+            return "ok" if werte and ok else "auffällig" if werte else "fehlt"
+        ziel = self.ordner / "gefunden.csv"
+        with open(ziel.with_suffix(".tmp"), "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f, delimiter=";")
+            w.writerow(GEFUNDEN_SPALTEN)
+            for d in zeilen:
+                ns, msns, slp = d.get("ns") or {}, d.get("msns") or {}, d.get("slp") or {}
+                if d.get("status") not in ("ok", "pruefen") or not (ns or slp):
+                    continue
+                ct = ct_kwh_bei(ns, 4000, d.get("grenze_le", False)) if d.get("rlm_ok") else None
+                w.writerow([d.get("nr", ""), d.get("netzbetreiber", ""), d.get("website", ""), d.get("status", ""),
+                            zustand(ns, d.get("rlm_ok")), zustand(msns, d.get("rlm_ok")),
+                            zustand(slp, d.get("slp_ok")),
+                            zahl(round(ct, 2)) if ct is not None else "",
+                            zahl(slp.get("ap")) if d.get("slp_ok") else "", zahl(slp.get("gp")) if d.get("slp_ok") else "",
+                            d.get("preisstand", ""), d.get("quelle_url", "")])
+        ziel.with_suffix(".tmp").replace(ziel)
 
     @staticmethod
     def zusammenfassung(zeilen: list[dict], jahr: int) -> str:

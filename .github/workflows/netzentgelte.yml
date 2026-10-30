@@ -142,7 +142,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in "ergebnis/netzentgelte_${{ inputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/zusammenfassung.md \
+          for f in "ergebnis/netzentgelte_${{ inputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv ergebnis/zusammenfassung.md \
                    ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
                    ergebnis/fortschritt.jsonl; do
             [ -f "$f" ] && git add "$f"

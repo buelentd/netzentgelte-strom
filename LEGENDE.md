@@ -93,6 +93,8 @@ Plausibilitätsregeln: NS LP ab 2.500 h 40–260 €/kW/a, LP unter < LP ab, AP 
 | Datei | Inhalt |
 |---|---|
 | `restliste.csv` | alle Zeilen mit status ≠ ok: `nr; netzbetreiber; mastr_nr; website; status; grund; kandidaten; quelle_url` (`kandidaten` = geprüfte Dokumente mit Ergebnis) |
+| `nicht_gefunden.csv` | Zeilen, bei denen etwas nicht gefunden wurde, zur separaten Nachbearbeitung: `nr; netzbetreiber; website; status; fehlt; vorhanden; grund; quelle_url`. `fehlt` = `Preisblatt` (kein_preisblatt), `SLP` oder `RLM` (pruefen, Werte im Preisblatt nicht gefunden); `vorhanden` = bereits plausible Teile (`RLM NS`, `SLP`). Blockierte und robots-gesperrte Seiten stehen nur in `restliste.csv` |
+| `gefunden.csv` | Zeilen mit gefundenem und gelesenem Preisblatt (status ok oder pruefen mit Werten): `nr; netzbetreiber; website; status; rlm_ns; rlm_msns; slp; ns_ct_kwh_bei_4000h; slp_ap_ct_kwh; slp_grundpreis_eur_jahr; preisstand; quelle_url`. `rlm_ns`, `rlm_msns`, `slp` = `ok` (plausibel), `auffällig` (gelesen, aber Plausibilitätsprüfung nicht bestanden) oder `fehlt`; Preise nur bei `ok` |
 | `zusammenfassung.md` | Anzahl je Status, Spannen SLP-AP, NS ct/kWh bei 4.000 h und NS LP, Datenherkunft, Restfälle |
 | `netzbetreiber.csv` | Liste aus dem MaStR inkl. Website-Quelle, Sitz, Netzgebiet |
 | `plz_netzbetreiber.csv` | PLZ → Netzbetreiber für den Rechner: `plz; mastr_nr; netzbetreiber; anteil_prozent; einheiten`. Mehrere Zeilen je PLZ, wenn sie in mehreren Netzgebieten liegt; `anteil_prozent` = Anteil der MaStR-Einheiten dieser PLZ beim Netzbetreiber (unter 2 % ausgelassen) |

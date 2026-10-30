@@ -47,7 +47,7 @@ entspricht nacheinander:
 |---|---|
 | `python run.py liste` | MaStR-Bulk-Download (open-mastr: Marktakteure, Netze, Solareinheiten), Filter auf Verteilnetzbetreiber Strom ohne geschlossene Verteilnetze, Netzgebiet, Abgleich mit `pilot_50_vnb_2026.csv` → `ergebnis/netzbetreiber.csv`, `ergebnis/plz_netzbetreiber.csv` |
 | `python run.py lauf` | Pilot übernehmen (Quelle neu auslesen für MS/NS und SLP, sonst SLP-Blatt suchen; bei vorläufig nach endgültigem Preisblatt suchen), alle anderen crawlen und auslesen |
-| `python run.py bericht` | `netzentgelte_2026.csv`, `restliste.csv`, `zusammenfassung.md` aus dem Fortschritt neu schreiben |
+| `python run.py bericht` | `netzentgelte_2026.csv`, `restliste.csv`, `gefunden.csv`, `nicht_gefunden.csv`, `zusammenfassung.md` aus dem Fortschritt neu schreiben |
 
 Der Lauf ist fortsetzbar: Jeder fertige Netzbetreiber wird sofort in `ergebnis/fortschritt.jsonl`
 gespeichert, alle 10 Einträge werden die CSVs aktualisiert. Ein neuer Aufruf überspringt Erledigte.
@@ -70,6 +70,8 @@ Alle Spalten und Dateien sind in `LEGENDE.md` beschrieben. Kurz:
 - `ergebnis/netzentgelte_2026.csv`: Stammdaten, SLP, RLM NS und MS/NS, ct/kWh bei 1.500/2.500/
   4.000/6.000 h, Preisstand, Quelle
 - `ergebnis/restliste.csv`: alle Zeilen mit Status ungleich ok, mit Grund und geprüften Kandidaten
+- `ergebnis/nicht_gefunden.csv`: nur die Fälle, in denen Preisblatt, SLP- oder RLM-Werte nicht gefunden wurden (Spalte `fehlt`), zur separaten Nachbearbeitung
+- `ergebnis/gefunden.csv`: alle Fälle mit gefundenem und gelesenem Preisblatt, je Teil (RLM NS, RLM MS/NS, SLP) mit Zustand ok, auffällig oder fehlt
 - `ergebnis/zusammenfassung.md`: Anzahl je Status, Spannen SLP-AP und NS ct/kWh bei 4.000 h, Restfälle
 - `ergebnis/plz_netzbetreiber.csv`: PLZ → Netzbetreiber für den Rechner
 - `ergebnis/pdf/`: verwendete Preisblätter, `ergebnis/cache/`: alle geladenen Dokumente (nicht im Git)
