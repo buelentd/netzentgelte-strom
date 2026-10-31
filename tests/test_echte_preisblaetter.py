@@ -171,3 +171,13 @@ def test_ewr_bis_einschliesslich_2500():
     e, _ = lesen("ewr_netz_2026")
     assert tuple(round(e.ns[f], 2) for f in FELDER) == (63.46, 8.40, 187.56, 3.43)
     assert e.grenze_le
+
+
+def test_folgejahr_wird_abgelehnt():
+    from vnb.extract import folgejahr_dokument
+    t = "Preisblatt - Netzentgelte Strom (Stand 06.10.2026)\nDie vorläufigen Netzentgelte 2027 sind noch nicht verbindlich."
+    assert folgejahr_dokument(t, "https://x.de/Preisblaetter_AVANG_Strom_01.01.2027.pdf", 2026) == 2027
+    assert folgejahr_dokument("", "https://x.de/20261008-nrm-pb-1-strom-ab-01-01-2027-el-9-0-s-data.xlsx", 2026) == 2027
+    # Preisblatt 2026 mit Hinweis auf 2027 bleibt
+    assert folgejahr_dokument("Preisblatt Netzentgelte Strom 2026\nVorschau Netzentgelte 2027 folgt", "", 2026) is None
+    assert folgejahr_dokument("Preisblatt Netzentgelte Strom gültig ab 01.01.2026", "https://x.de/pb_2026.pdf", 2026) is None

@@ -236,3 +236,22 @@ def test_lokales_preisblatt_statt_download(tmp_path):
     a = Auftrag(key="k", nr=1, name="Musternetz GmbH", mastr_nr="", website="gesperrt.example")
     pfad, fehler = aio.run(c.herunterladen(None, "https://gesperrt.example/p.pdf", a))
     assert fehler == "" and pfad.read_bytes().startswith(b"%PDF")
+
+
+def test_lokales_preisblatt_ohne_namen_mit_zuordnung(tmp_path):
+    # Preisblatt ohne Netzbetreibernamen, von Hand diesem Netzbetreiber zugeordnet: kein Prüfgrund "Name fehlt"
+    import asyncio as aio
+    from vnb.crawl import Auftrag, Crawler, lokale_namen_laden, lokale_preisblaetter_laden
+    from vnb.netz import Drossel
+    (tmp_path / "pb").mkdir()
+    pdf(tmp_path / "pb" / "x.pdf", KOPF_STANDARD[1:] + ["Niederspannung   18,64   7,49   171,87   1,36"])
+    (tmp_path / "preisblaetter.csv").write_text(
+        "url;datei;netzbetreiber\nhttps://gesperrt.example/p.pdf;pb/x.pdf;Musternetz GmbH\n", encoding="utf-8")
+    c = Crawler(None, None, Drossel(0), tmp_path / "cache")
+    c.lokal = lokale_preisblaetter_laden(tmp_path / "preisblaetter.csv")
+    c.lokal_namen = lokale_namen_laden(tmp_path / "preisblaetter.csv")
+    a = Auftrag(key="k", nr=1, name="Musternetz GmbH", mastr_nr="", website="gesperrt.example")
+    k = aio.run(c.dokument_pruefen(None, "https://gesperrt.example/p.pdf", a))
+    assert k.verwendbar and not k.name_fehlt and "Netzbetreibername nicht im Dokument" not in k.pruefen
+    b = Auftrag(key="k", nr=2, name="Anderes Netz GmbH", mastr_nr="", website="gesperrt.example")
+    assert aio.run(c.dokument_pruefen(None, "https://gesperrt.example/p.pdf", b)).name_fehlt

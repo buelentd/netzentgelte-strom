@@ -17,6 +17,7 @@ Prinzip:
 from __future__ import annotations
 
 import re
+from urllib.parse import unquote
 import shutil
 import subprocess
 from dataclasses import dataclass, field
@@ -1064,6 +1065,9 @@ def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
             return f"gültig ab {sorted(erg.gueltig_jahre)}, nicht {jahr}"
     elif erg.kopf_jahre and jahr not in erg.kopf_jahre and str(jahr) not in url.rsplit("/", 1)[-1]:
         return f"Kopf nennt {sorted(erg.kopf_jahre)}, nicht {jahr}"
+    folge = folgejahr_dokument(erg.text, url, jahr)
+    if folge:
+        return f"Preisblatt für {folge}, nicht {jahr}"
     if re.search(r"fiktiv", norm(KOPFZEILEN(erg.text))):
         return "fiktive Entgelte"
     if vne_dokument(erg.text, url):
@@ -1071,6 +1075,22 @@ def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
     if liefer_dokument(erg.text, url):
         return "Endkunden-Preisblatt (Lieferung), keine Netzentgelte"
     return None
+
+
+ZIELJAHR = re.compile(r"(?:netz(?:nutzungs)?entgelte|netznutzung|preisbl(?:a|ae|ä)tt(?:er)?|preise|entgelte)"
+                      r"[^0-9\n]{0,40}?(20\d\d)\b|\b0?1[.\s]\s*0?1[.\s]\s*(20\d\d)\b|1\.\s*januar\s+(20\d\d)\b", re.I)
+
+
+def folgejahr_dokument(text: str, url: str, jahr: int) -> int | None:
+    """Jahr, für das das Blatt laut Titel/Dateiname gilt, wenn es ein anderes als `jahr` ist
+    ("vorläufige Netzentgelte 2027", "..._01.01.2027.pdf"), sonst None. Nur Kopf und Dateiname."""
+    datei = unquote(url.rsplit("/", 1)[-1]).replace("_", " ").replace("-", " ")
+    kopf = "\n".join([z for z in text.splitlines() if z.strip()][:25])
+    jahre = {int(j) for m in ZIELJAHR.finditer(kopf + "\n" + datei) for j in m.groups() if j}
+    if jahr in jahre or not jahre:
+        return None
+    spaeter = [j for j in jahre if j > jahr]
+    return min(spaeter) if spaeter else None
 
 
 LIEFERUNG = re.compile(r"grundversorgung|ersatzversorgung|stromlieferung|lieferbedingungen|sondervertrag|strompreis|"

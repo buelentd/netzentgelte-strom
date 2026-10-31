@@ -156,6 +156,15 @@ def website_domain(website: str) -> str:
     return basis_domain(re.sub(r"^https?://", "", website.strip().lower()).split("/")[0])
 
 
+def lokale_namen_laden(pfad: Path) -> dict[str, str]:
+    """URL → Netzbetreiber aus lauf/preisblaetter.csv (manuelle Zuordnung)."""
+    import csv
+    if not pfad.exists():
+        return {}
+    return {z["url"].strip(): z.get("netzbetreiber", "").strip()
+            for z in csv.DictReader(pfad.read_text(encoding="utf-8-sig").splitlines(), delimiter=";") if z.get("url")}
+
+
 def lokale_preisblaetter_laden(pfad: Path) -> dict[str, Path]:
     """Von Hand heruntergeladene Preisblätter (z. B. bei Bot-Schutz): Spalten url;datei;netzbetreiber.
     Die Datei liegt relativ zur CSV; der Crawler nimmt sie statt des Downloads dieser URL."""
@@ -200,6 +209,7 @@ class Crawler:
         self.max_seiten = max_seiten
         self.log = log
         self.lokal: dict[str, Path] = {}       # URL → lokal abgelegtes Preisblatt
+        self.lokal_namen: dict[str, str] = {}  # URL → Netzbetreiber laut lauf/preisblaetter.csv
 
     async def _kontext(self):
         ctx = await self.browser.new_context(user_agent=USER_AGENT, locale="de-DE",
@@ -262,8 +272,14 @@ class Crawler:
         if not pfad:
             k = Kandidat(url=url, grund=fehler)
             return k
-        return await asyncio.to_thread(bewerten, pfad, url, a.name, a.aliase, a.website, self.jahr,
-                                       a.pflicht, a.ausschluss, kontext)
+        k = await asyncio.to_thread(bewerten, pfad, url, a.name, a.aliase, a.website, self.jahr,
+                                    a.pflicht, a.ausschluss, kontext)
+        if k.name_fehlt and norm(self.lokal_namen.get(url, "")) == norm(a.name):
+            # von Hand heruntergeladen und in lauf/preisblaetter.csv diesem Netzbetreiber zugeordnet
+            k.name_fehlt = False
+            k.pruefen = [p for p in k.pruefen if p != "Netzbetreibername nicht im Dokument"]
+            k.hinweise.append("Netzbetreiber laut manueller Zuordnung (Name nicht im Dokument)")
+        return k
 
     # ------------------------------------------------------------ Hauptablauf
     async def bearbeiten(self, a: Auftrag) -> Fund:

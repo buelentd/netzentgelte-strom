@@ -23,7 +23,8 @@ from pathlib import Path
 
 from vnb import liste as liste_mod
 from vnb import pilot as pilot_mod
-from vnb.crawl import Auftrag, Crawler, Fund, hinweise_laden, lokale_preisblaetter_laden, website_domain
+from vnb.crawl import (Auftrag, Crawler, Fund, hinweise_laden, lokale_namen_laden, lokale_preisblaetter_laden,
+                       website_domain)
 from vnb.ergebnis import Speicher
 from vnb.extract import FELDER, name_tokens, norm, plausibel
 from vnb.netz import USER_AGENT, Drossel, Robots, basis_domain
@@ -282,7 +283,8 @@ async def schritt_lauf(args, log):
     wiederholen = tuple(s.strip() for s in (args.wiederholen or "").replace(";", ",").split(",") if s.strip())
     gesch = geschwister(eintraege)
 
-    offen = [e for e in eintraege if not speicher.erledigt(key_von(e), wiederholen)]
+    neu = {n.strip() for n in (args.neu or "").split(",") if n.strip()}
+    offen = [e for e in eintraege if str(e["nr"]) in neu or not speicher.erledigt(key_von(e), wiederholen)]
     if args.nur:
         offen = [e for e in offen if norm(args.nur) in norm(e["netzbetreiber"])]
     alle_offen = len(offen)
@@ -311,6 +313,7 @@ async def schritt_lauf(args, log):
         for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
             hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
         crawler.lokal = lokale_preisblaetter_laden(HIER / "lauf" / "preisblaetter.csv")
+        crawler.lokal_namen = lokale_namen_laden(HIER / "lauf" / "preisblaetter.csv")
         fertig = 0
         t0 = time.time()
 
@@ -431,6 +434,7 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--nur", help="nur Netzbetreiber, deren Name dies enthält")
     ap.add_argument("--wiederholen", help="Status erneut bearbeiten, z. B. blockiert,kein_preisblatt")
+    ap.add_argument("--neu", help="diese Nummern unabhängig vom Status neu bearbeiten, z. B. 37,285")
     ap.add_argument("--max-seiten", type=int, default=40)
     ap.add_argument("--abstand", type=float, default=1.0, help="Sekunden zwischen Anfragen je Domain (min. 1)")
     ap.add_argument("--ohne-proxy", action="store_true", help="HTTPS_PROXY nicht an Chromium durchreichen")
