@@ -29,6 +29,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Python-Pakete
+        run: pip install -r requirements.txt
 
       - name: Suchen
         env:
@@ -37,6 +42,10 @@ jobs:
           EREIGNIS: ${{ github.event_name }}
           IN_MAX: ${{ inputs.max_abfragen }}
         run: |
+          if [ -z "$SUCHE_SCHLUESSEL" ] || [ -z "$SUCHE_KENNUNG" ]; then
+            echo "::error::Geheimnisse SUCHE_SCHLUESSEL und/oder SUCHE_KENNUNG sind leer (Settings > Secrets and variables > Actions > Repository secrets)"
+            exit 1
+          fi
           if [ "$EREIGNIS" = "push" ]; then
             IN_MAX=$(sed -n 's/^SUCHE_MAX=\([0-9]*\).*/\1/p' lauf/suche_anstoss.env | head -1)
           fi
