@@ -112,7 +112,7 @@ nr;netzbetreiber;website;status;fehlt;vorhanden;grund;quelle_url
 264;Greizer Energienetze GmbH;www.gen-greiz.de;pruefen;SLP;;"MS/NS: AP außerhalb 0–30 ct/kWh; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden";https://www.gen-greiz.de/site/assets/files/2564/preisblatt-strom-nne-endgueltig-01_01_2026.pdf
 265;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;www.gsw-kamen.de;kein_preisblatt;Preisblatt;;"15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden";
 267;Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH;www.stadthafen-sassnitz.de;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (3 Seiten durchsucht);
-274;Herzo Werke GmbH;www.herzowerke.de;kein_preisblatt;Preisblatt;;"6 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; gültig ab [2027], nicht 2026";
+274;Herzo Werke GmbH;www.herzowerke.de;pruefen;RLM;;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden; SLP-Werte auffällig";https://www.herzowerke.de/files/user_upload/herzowerke.de/Aktuell%20Bilder%20Bereichsmenue/Strom%20Dateien%20und%20Formulare/Strom_Netzentgelte_2027_vorl%C3%A4ufig.pdf
 275;HEWA GmbH;www.hewagmbh.de;kein_preisblatt;Preisblatt;;"15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; gültig ab [2025], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden";
 276;IGS Netze GmbH;www.igs-netze.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.igs-netze.de/fileadmin/user_upload_igs-netze/Dokumente/Preisblaetter/finales_Preisblatt_2026_-_IGS_Netze_GmbH.pdf
 278;infra fürth gmbh;www.infra-fuerth.de;kein_preisblatt;Preisblatt;;"15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; kein PDF/Excel; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2025], nicht 2026";
@@ -154,7 +154,7 @@ nr;netzbetreiber;website;status;fehlt;vorhanden;grund;quelle_url
 348;OsthessenNetz GmbH;www.osthessennetz.de;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (40 Seiten durchsucht);
 349;OUTLETCITY AG;www.outletcity.com;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (4 Seiten durchsucht);
 350;Outokumpu Stainless Nirosta GmbH;www.outokumpu.com;kein_preisblatt;Preisblatt;;15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden;
-351;ovag Netz GmbH;www.ovag-netz.de;kein_preisblatt;Preisblatt;;"15 Dokument(e) geprüft: Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; fiktive Entgelte";
+351;ovag Netz GmbH;www.ovag-netz.de;pruefen;RLM;SLP;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden";https://www.ovag-netz.de/files/on/downloads/preisblaetter/netznutzung/ovagNetzGmbH_Preisblatt_Netznutzung_20251223.pdf
 354;Queichtal Energie Offenbach Netz GmbH;www.qeo-netz.de;pruefen;SLP;;"Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden";https://qeo-netz.de/wp-content/uploads/2026/01/Endgueltige-Entgelte-2026-QEO.pdf
 356;REDINET Burgenland GmbH;www.redinet.de;kein_preisblatt;Preisblatt;;"15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; HTTP 404";
 357;Regensburg Netz GmbH;www.regensburg-netz.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.regensburg-netz.de/fileadmin/Downloads/Fuer_Partner/Netzkunden_Lieferanten/Netzentgelte_Umlagen/2026/Preisblaetter_Gesamt_endgueltig_2026.pdf

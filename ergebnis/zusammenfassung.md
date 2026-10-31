@@ -1,14 +1,14 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 31.10.2026 15:53, 831 Netzbetreiber bzw. Netzgebiete
+Stand 31.10.2026 16:11, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 294 | 35% |
-| pruefen | 278 | 33% |
-| kein_preisblatt | 196 | 24% |
+| pruefen | 280 | 34% |
+| kein_preisblatt | 194 | 23% |
 | blockiert | 39 | 5% |
 | robots | 23 | 3% |
 | keine_website | 1 | 0% |
@@ -19,7 +19,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 
 - Minimum: 3,17 ct/kWh (Netzgesellschaft Schwerin mbH (NGS))
 - Maximum: 14,98 ct/kWh (Stadtwerke Eberbach GmbH)
-- Median: 7,28 ct/kWh (n = 386)
+- Median: 7,28 ct/kWh (n = 387)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -250,7 +250,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 
 ## Restfälle (537)
 
-### pruefen (278)
+### pruefen (280)
 
 - 22. Stadtnetze Münster GmbH: SLP-Werte nicht gefunden
 - 25. Hamburger Energienetze GmbH: SLP-Werte nicht gefunden
@@ -335,6 +335,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 264. Greizer Energienetze GmbH: MS/NS: AP außerhalb 0–30 ct/kWh; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 270. Havelstrom Zehdenick GmbH: MS/NS: AP außerhalb 0–30 ct/kWh; RLM-Werte auffällig oder fehlend
 - 272. Hellenstein-Energie-Logistik GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
+- 274. Herzo Werke GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 276. IGS Netze GmbH: SLP-Werte nicht gefunden
 - 285. Keep - Kommunale Eisenberger Energiepartner GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 286. KEW Karwendel Energie und Wasser GmbH: SLP-Werte nicht gefunden
@@ -363,6 +364,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 343. Nordseeheilbad Borkum GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 344. nvb Nordhorner Versorgungsbetriebe GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 345. Oberhausener Netzgesellschaft mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 351. ovag Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 354. Queichtal Energie Offenbach Netz GmbH: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 357. Regensburg Netz GmbH: SLP-Werte nicht gefunden
 - 359. Regionalwerk Bodensee Netze GmbH ＆ Co. KG: NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-01-7-001: kein Wert; NS Artikel-ID: 1-01-6-003: kein Wert; MSNS Artikel-ID: 1-01-6-001: kein Wert; MSNS Artikel-ID: 1-01-7-001: kein Wert; MSNS A
@@ -531,7 +533,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 825. Werraenergie GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 830. YNCORIS GmbH ＆ Co. KG: weitere Preisblätter mit abweichenden NS-Werten: https://www.yncoris.com/fileadmin/_09_Regulierte_Netze/Stromnetz/Hypothetisches_Preissystem_ohne_Bundeszuschuss_fuer_2026.pdf; RLM-Werte auffällig oder
 
-### kein_preisblatt (196)
+### kein_preisblatt (194)
 
 - 57. Alzchem Netz GmbH: 5 Dokument(e) geprüft: gültig ab [2024], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 59. Aschaffenburger Versorgungs-GmbH: 3 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
@@ -587,7 +589,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 262. GIG energy services GmbH: kein Preisblatt-Link gefunden (14 Seiten durchsucht)
 - 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 267. Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 274. Herzo Werke GmbH: 6 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; gültig ab [2027], nicht 2026
 - 275. HEWA GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; gültig ab [2025], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 278. infra fürth gmbh: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; kein PDF/Excel; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2025], nicht 2026
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im D
@@ -609,7 +610,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 348. OsthessenNetz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 349. OUTLETCITY AG: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
 - 350. Outokumpu Stainless Nirosta GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
-- 351. ovag Netz GmbH: 15 Dokument(e) geprüft: Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; fiktive Entgelte
 - 356. REDINET Burgenland GmbH: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; HTTP 404
 - 360. Regionalwerke Wolfhager Land GmbH: 3 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 361. Remstalwerk Netzgesellschaft GmbH: 10 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); gültig ab [2027], nicht 2026; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 202
