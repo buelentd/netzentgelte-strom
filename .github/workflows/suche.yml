@@ -1,0 +1,60 @@
+name: Preisblätter suchen (Such-Schnittstelle)
+
+# Nur die Suche, unabhängig vom großen Lauf (eigene Warteschlange). Die Treffer landen in
+# lauf/suche_treffer.csv und werden vom nächsten Lauf "Netzentgelte Strom" geprüft.
+on:
+  workflow_dispatch:
+    inputs:
+      max_abfragen:
+        description: "Höchstzahl Suchabfragen (100 = kostenloses Tageskontingent)"
+        default: "100"
+  push:
+    branches: [main]
+    paths: [lauf/suche_anstoss.env]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: netzentgelte-suche
+  cancel-in-progress: false
+
+jobs:
+  suche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Suchen
+        env:
+          SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
+          SUCHE_KENNUNG: ${{ secrets.SUCHE_KENNUNG }}
+          EREIGNIS: ${{ github.event_name }}
+          IN_MAX: ${{ inputs.max_abfragen }}
+        run: |
+          if [ "$EREIGNIS" = "push" ]; then
+            IN_MAX=$(sed -n 's/^SUCHE_MAX=\([0-9]*\).*/\1/p' lauf/suche_anstoss.env | head -1)
+          fi
+          python run.py suche --jahr 2026 --max-abfragen "${IN_MAX:-100}"
+          echo "---- Treffer ----"
+          [ -f lauf/suche_treffer.csv ] && tail -n +2 lauf/suche_treffer.csv | awk -F';' '$2!=""' | wc -l
+          [ -f ergebnis/lauf.log ] && grep -E "Suche" ergebnis/lauf.log | tail -40
+
+      - name: Treffer committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -f lauf/suche_treffer.csv ] && git add lauf/suche_treffer.csv
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Suchtreffer aktualisiert (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
