@@ -232,7 +232,7 @@ def ebene(label: str) -> str | None:
     if re.search(r"hoch|hs/|mittelspannung(?!.*nieder)|\bms\b(?!/)", lab):
         return None
     kern = re.sub(r"^(?:(?:anschluss|entnahme)(?:\s+und\s+(?:anschluss|entnahme))?\s+(?:direkt\s+)?"
-                  r"(?:aus|in|an|im|am)?\s*(?:der|dem|die)?\s*|netzebene\s*:?\s*)", "", lab)
+                  r"(?:aus|in|an|im|am)?\s*(?:der|dem|die)?\s*|(?:netz|spannungs)ebene\s*:?\s*)", "", lab)
     if re.search(r"^(netzebene\s*7\s*)?niederspannung\b|^\(?nsp?\)?$|^ne\s*7\b|^netzebene\s*7\b|niederspannungsnetz|"
                  r"^(7\s*)?niederspannung\b", kern) or re.search(r"^(ne|netzebene)\s*7\b", lab):
         return "NS"
@@ -633,7 +633,8 @@ def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
 # ---------------------------------------------------------------- SLP
 
 SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungsmessung|lastgang)|standardlastprofil|\bslp\b|"
-                       r"ohne\s+viertelstunden|entnahme\s+mit\s+lastprofil", re.I)
+                       r"ohne\s+viertelstunden|entnahme\s+mit\s+lastprofil|"
+                       r"entnahme\s+von\s+bis\s+(?:zu\s+)?100\.000\s*kwh", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
                       r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
@@ -750,7 +751,8 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             if fliesstext and (len(erste_spalte) >= 70 or erste_spalte.endswith(".")):
                 continue        # umbrochener Fließtext; kurze Zwischenzeilen ("bei unterbrechbaren …") zählen
             # Spaltenkopf "Netz- oder Umspannebene" schließt nichts aus
-            zl = re.sub(r"netz-?\s*(?:oder|und|/|bzw\.?|bwz\.?)\s*umspann\w*|^umspannebene\b", " ", zl, flags=re.I).strip()
+            zl = re.sub(r"netz-?\s*(?:oder|und|/|bzw\.?|bwz\.?)\s*umspann\w*|^umspannebene\b|"
+                        r"^leistungspreissystem\s+f[üu]r\s*:?", " ", zl, flags=re.I).strip()
             # "Entnahmestellen ohne steuerbare oder unterbrechbare Verbrauchseinrichtungen" ist der Standardfall
             zl = re.sub(r"ohne\s+(?:steuerbare|unterbrechbare)(?:\s*(?:oder|und|/|,)\s*(?:steuerbare|unterbrechbare))*",
                         " ", zl, flags=re.I).strip()

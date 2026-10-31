@@ -156,6 +156,19 @@ def website_domain(website: str) -> str:
     return basis_domain(re.sub(r"^https?://", "", website.strip().lower()).split("/")[0])
 
 
+def lokale_preisblaetter_laden(pfad: Path) -> dict[str, Path]:
+    """Von Hand heruntergeladene Preisblätter (z. B. bei Bot-Schutz): Spalten url;datei;netzbetreiber.
+    Die Datei liegt relativ zur CSV; der Crawler nimmt sie statt des Downloads dieser URL."""
+    import csv
+    if not pfad.exists():
+        return {}
+    out = {}
+    for z in csv.DictReader(pfad.read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+        if z.get("url") and z.get("datei"):
+            out[z["url"].strip()] = pfad.parent / z["datei"].strip()
+    return out
+
+
 def hinweise_laden(pfad: Path) -> dict[str, tuple]:
     """Hinweis-URLs je Website-Domain aus einer CSV (Spalten website;url, Trennzeichen ; oder ,).
 
@@ -186,6 +199,7 @@ class Crawler:
         self.jahr = jahr
         self.max_seiten = max_seiten
         self.log = log
+        self.lokal: dict[str, Path] = {}       # URL → lokal abgelegtes Preisblatt
 
     async def _kontext(self):
         ctx = await self.browser.new_context(user_agent=USER_AGENT, locale="de-DE",
@@ -205,6 +219,12 @@ class Crawler:
         ziel_dir = self.cache / a.key
         ziel_dir.mkdir(parents=True, exist_ok=True)
         h = hashlib.sha1(url.encode()).hexdigest()[:12]
+        lokal = self.lokal.get(url)
+        if lokal and lokal.exists():               # von Hand heruntergeladen (lauf/preisblaetter.csv)
+            pfad = ziel_dir / f"{h}{lokal.suffix.lower()}"
+            pfad.write_bytes(lokal.read_bytes())
+            (ziel_dir / f"{h}.url").write_text(url)
+            return pfad, ""
         for endung in ("pdf", "xlsx", "xls"):       # nicht die Begleitdatei <hash>.url
             vorhanden = ziel_dir / f"{h}.{endung}"
             if vorhanden.exists():

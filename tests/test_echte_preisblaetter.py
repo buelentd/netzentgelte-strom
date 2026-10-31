@@ -61,6 +61,10 @@ FAELLE = {
     "esw_netz_2026": ((18.64, 8.87, 187.49, 2.12), (14.23, 7.78, 166.22, 1.70), None),
     # gedrehte Tabellen je Seite "Netzanschluss … / Messung …", dritte Seite Mittelspannung
     "freital_2026": ((104.39, 6.90, 203.39, 2.94), (72.86, 5.71, 180.86, 1.39), None),
+    # "Spannungsebene NS"; Standardlastprofil-Abschnitt "Entnahme von bis zu 100.000 kWh"
+    "syna_2026": ((23.99, 8.08, 156.65, 2.78), (14.35, 7.94, 183.27, 1.19), (8.67, 91.25)),
+    # Spaltenkopf "Leistungspreissystem für:" schließt den Standardlastprofil-Preis nicht aus
+    "stuttgart_netze_2026": ((34.42, 8.95, 164.89, 3.73), (29.14, 7.85, 160.17, 2.61), (10.16, 55.00)),
 }
 
 

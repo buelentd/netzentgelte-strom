@@ -25,6 +25,13 @@ PDFs liegen nur im Artifact, nicht im Repo. Der Workflow muss auf dem Standard-B
 damit GitHub ihn manuell startbar anzeigt.
 
 
+### Von Hand heruntergeladene Preisblätter
+
+Manche Websites sperren automatische Abrufe (Bot-Schutz). Solche Preisblätter können im Browser
+heruntergeladen und unter `lauf/preisblaetter/` abgelegt werden. `lauf/preisblaetter.csv` ordnet sie der
+Original-Adresse zu (Spalten `url;datei;netzbetreiber;herkunft`). Der Crawler nimmt dann die Datei statt des
+Downloads und liest sie mit demselben Parser aus; die Original-Adresse bleibt die Quelle im Ergebnis.
+
 ### Hinweis-URLs
 
 `lauf/hinweis_urls.csv` (Spalten `website;url;herkunft`) enthält zusätzliche Startpunkte je Netzbetreiber,

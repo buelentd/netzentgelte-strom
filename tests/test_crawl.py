@@ -220,3 +220,19 @@ def test_hinweise_laden(tmp_path):
     assert h["evng.de"] == ("https://www.evng.de/x/netznutzungsentgelte_strom_2026_evng.pdf",)
     assert "gemeinde-x.de" not in h                       # nur Startseite: nichts Neues
     assert h[website_domain("https://www.blomberg-netz.de/")] == ("https://www.blomberg-netz.de/stromnetz/netzentgelte/",)
+
+
+def test_lokales_preisblatt_statt_download(tmp_path):
+    # von Hand heruntergeladenes Preisblatt (Bot-Schutz) wird statt des Downloads genommen, ohne Anfrage
+    import asyncio as aio
+    from vnb.crawl import Auftrag, Crawler, lokale_preisblaetter_laden
+    from vnb.netz import Drossel
+    (tmp_path / "pb").mkdir()
+    pdf(tmp_path / "pb" / "x.pdf", KOPF_STANDARD + ["Niederspannung   18,64   7,49   171,87   1,36"])
+    (tmp_path / "preisblaetter.csv").write_text("url;datei;netzbetreiber\nhttps://gesperrt.example/p.pdf;pb/x.pdf;X\n",
+                                                encoding="utf-8")
+    c = Crawler(None, None, Drossel(0), tmp_path / "cache")
+    c.lokal = lokale_preisblaetter_laden(tmp_path / "preisblaetter.csv")
+    a = Auftrag(key="k", nr=1, name="Musternetz GmbH", mastr_nr="", website="gesperrt.example")
+    pfad, fehler = aio.run(c.herunterladen(None, "https://gesperrt.example/p.pdf", a))
+    assert fehler == "" and pfad.read_bytes().startswith(b"%PDF")

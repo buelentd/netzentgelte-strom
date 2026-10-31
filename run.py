@@ -22,7 +22,7 @@ from pathlib import Path
 
 from vnb import liste as liste_mod
 from vnb import pilot as pilot_mod
-from vnb.crawl import Auftrag, Crawler, Fund, hinweise_laden, website_domain
+from vnb.crawl import Auftrag, Crawler, Fund, hinweise_laden, lokale_preisblaetter_laden, website_domain
 from vnb.ergebnis import Speicher
 from vnb.extract import FELDER, name_tokens, norm, plausibel
 from vnb.netz import USER_AGENT, Drossel, Robots, basis_domain
@@ -307,6 +307,7 @@ async def schritt_lauf(args, log):
         crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
         sem = asyncio.Semaphore(args.worker)
         hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
+        crawler.lokal = lokale_preisblaetter_laden(HIER / "lauf" / "preisblaetter.csv")
         fertig = 0
         t0 = time.time()
 
