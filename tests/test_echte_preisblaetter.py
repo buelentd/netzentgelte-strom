@@ -46,6 +46,12 @@ FAELLE = {
     "sw_hall_2026": ((27.46, 6.65, 120.01, 2.95), (15.75, 6.39, 170.61, 0.20), (5.53, 61.00)),
     "uez_mainfranken_2026": ((30.08, 4.79, 129.53, 0.81), None, (4.52, 77.00)),
     "ewa_riss_2026": ((31.80, 8.30, 176.04, 2.53), (22.43, 8.27, 170.40, 1.30), None),
+    # "bis zu 2.500" / "mehr als 2.500 Vollbenutzungsstunden" in getrennten Tabellen (bayerische Vorlage)
+    "gw_cadolzburg_2026": ((23.50, 8.08, 127.97, 3.90), None, (9.67, 42.00)),
+    # Grenze über mehrere Kopfzeilen verteilt ("Benutzungs-" / "dauer < 2500 h/a" / "≥ 2500 h/a")
+    "sw_meerane_2026": ((37.37, 6.59, 133.45, 2.74), None, (5.28, 66.00)),
+    # zwei Tabellen dicht untereinander (< 2.500 und > 2.500), dürfen nicht als ein Kopf gelten
+    "sw_wedel_2026": ((23.33, 9.97, 169.78, 4.11), (22.46, 7.16, 157.19, 1.77), None),
     "naturenergie_2026": ((21.66, 6.76, 74.56, 4.64), (21.38, 6.72, 143.16, 1.85), (7.30, 90.00)),
     "evh_halle_2026": ((26.76, 8.28, 148.97, 3.39), (24.64, 7.54, 161.58, 2.06), (6.86, 88.00)),
     "netze_duisburg_2026": ((16.95, 7.73, 136.60, 2.94), (12.79, 6.76, 135.60, 1.85), (6.96, 101.00)),

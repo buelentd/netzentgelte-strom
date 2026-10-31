@@ -29,9 +29,9 @@ ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,12}(?![\d,])")
 LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*(?:/|pro\b|je\b)\s*\(?\s*kw(?!h)(?:\s*(?:/|\*|·|\s|pro|je|und|x)\s*)*"
                         r"(a\b|jahr|tag|d\b|monat|mon\b)?\)?", re.I)
 AP_EINHEIT = re.compile(r"(ct|cent|€|eur(?:o)?)\s*(?:/|pro\b|je\b)\s*kwh", re.I)
-GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner|weniger)\s*(?:als\s*|einschlie(?:ß|ss)lich\s*|einschl\.\s*)?"
+GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner|weniger)\s*(?:als\s*|zu\s*|einschlie(?:ß|ss)lich\s*|einschl\.\s*)?"
                           r"2[.\s]?500", re.I)
-GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens|oberhalb)\s*(?:als\s*)?2[.\s]?500", re.I)
+GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens|oberhalb|mehr)\s*(?:als\s*)?2[.\s]?500", re.I)
 
 FIKTIV = re.compile(r"fiktiv|ohne\s+(?:berücksichtigung\s+des\s+)?(?:\w+\s+)?zuschuss|informationszweck", re.I)
 START = re.compile(r"jahresleistungspreis|jahresbenutzungsdauer|benutzungsdauer|benutzungsstunden|"
@@ -253,6 +253,7 @@ class Kopf:
     grenzen: list = field(default_factory=list)     # (pos, "unter"/"ueber", zeile_idx)
     brutto: bool = False
     monats_ab: float | None = None                  # Spalten ab hier gehören zum Monatsleistungspreissystem
+    datenzeilen: list = field(default_factory=list) # Zeilenindizes mit Werten innerhalb des Kopfbereichs
 
 
 def _ergaenzen(spalten: list, zeilen_einzel: list) -> list:
@@ -281,6 +282,7 @@ def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
     for i in range(vor, bis):
         z = zeilen[i]
         if ZAHL.search(z) and ebene(label_von(z)):
+            k.datenzeilen.append(i)
             continue
         einh = []
         for m in LP_EINHEIT.finditer(z):
@@ -358,8 +360,12 @@ def zuordnen(zahlen, kopf: Kopf, zeilen_grenze: str | None):
         # Einheit steht direkt hinter jeder Zahl ("34,10 €/kW  8,33 ct/kWh")
         for (pos, wert, *_), (a, f) in zip(zahlen, inline):
             art.append((a, wert * f, pos))
-    elif len(einheiten) == len(zahlen):
+    elif len(einheiten) == len(zahlen) and not (
+            len(kopf.worte) == len(zahlen) and len(zahlen) == 4
+            and sorted(e[1] for e in einheiten) != ["AP", "AP", "LP", "LP"]
+            and sorted(w[1] for w in kopf.worte) == ["AP", "AP", "LP", "LP"]):
         # gleich viele Einheiten wie Zahlen: Zuordnung über die Reihenfolge der Spalten
+        # (nicht bei offensichtlichem Tippfehler in den Einheiten, z. B. "€/kWa" über der Arbeitspreis-Spalte)
         for (pos, wert, *_), (p, a, f) in zip(zahlen, einheiten):
             art.append((a, wert * f, pos))
     elif len(einheiten) > len(zahlen):
@@ -397,6 +403,11 @@ def zuordnen(zahlen, kopf: Kopf, zeilen_grenze: str | None):
                 rechts = "ueber" if links == "unter" else "unter"
                 grenzen_map = {id(t): (links if i < n // 2 else rechts) for i, t in enumerate(sortiert)}
                 grenzen = [grenzen_map[id(t)] for t in art]
+            elif max(x[2] for x in g) - min(x[2] for x in g) <= 6 and not any(
+                    min(x[2] for x in g) < d < max(x[2] for x in g) for d in kopf.datenzeilen):
+                # ein Kopf über mehrere Zeilen verteilt ("Benutzungs-" / "dauer < 2500 h/a" / "≥ 2500 h/a"):
+                # jede Zahl gehört zur Grenze, die in ihrer Spalte steht
+                grenzen = [_naechster(pos, g)[1] for _, _, pos in art]
             else:
                 # Grenzen in verschiedenen Kopfzeilen (getrennte Tabellen): die zuletzt genannte gilt
                 letzte = max(g, key=lambda x: x[2])
@@ -525,6 +536,9 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
                 f"{eb} Artikel-ID: {g}" for g in ziel_gruende[:3])
     if genutzt:
         erg.hinweise.append("Werte über BDEW-Artikel-IDs gelesen")
+    # getrennte Tabellen "bis zu 2.500" / "mehr als 2.500 Vollbenutzungsstunden": Grenze ≤ 2.500 / > 2.500
+    if erg.ns and re.search(r"bis\s+zu\s+2[.\s]?500", erg.text, re.I) and re.search(r"mehr\s+als\s+2[.\s]?500", erg.text, re.I):
+        erg.grenze_le = True
     return erg
 
 
