@@ -156,6 +156,15 @@ def website_domain(website: str) -> str:
     return basis_domain(re.sub(r"^https?://", "", website.strip().lower()).split("/")[0])
 
 
+def eigene_website(url: str, website: str) -> bool:
+    """Dokument liegt auf der Website des Netzbetreibers oder einer Adresse mit deren Kern ("netze-stwab.de")."""
+    if not website:
+        return False
+    d_url, d_web = website_domain(url), website_domain(website)
+    kern = d_web.rsplit(".", 1)[0]
+    return d_url == d_web or (len(kern) >= 5 and kern in d_url.rsplit(".", 1)[0])
+
+
 def lokale_namen_laden(pfad: Path) -> dict[str, str]:
     """URL → Netzbetreiber aus lauf/preisblaetter.csv (manuelle Zuordnung)."""
     import csv
@@ -278,7 +287,12 @@ class Crawler:
             return k
         k = await asyncio.to_thread(bewerten, pfad, url, a.name, a.aliase, a.website, self.jahr,
                                     a.pflicht, a.ausschluss, kontext)
-        if k.name_fehlt and norm(self.lokal_namen.get(url, "")) == norm(a.name):
+        if k.name_fehlt and eigene_website(url, a.website) and not (a.pflicht or a.ausschluss):
+            # Vorlage ohne Netzbetreibernamen, aber von der eigenen Website (nicht bei geteilter Website)
+            k.name_fehlt = False
+            k.pruefen = [p for p in k.pruefen if p != "Netzbetreibername nicht im Dokument"]
+            k.hinweise.append("Name nicht im Dokument, Preisblatt von der eigenen Website")
+        elif k.name_fehlt and norm(self.lokal_namen.get(url, "")) == norm(a.name):
             # von Hand heruntergeladen und in lauf/preisblaetter.csv diesem Netzbetreiber zugeordnet
             k.name_fehlt = False
             k.pruefen = [p for p in k.pruefen if p != "Netzbetreibername nicht im Dokument"]

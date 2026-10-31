@@ -19,7 +19,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from .crawl import ist_dokument, website_domain
+from .crawl import eigene_website, ist_dokument, website_domain
 
 API = "https://api.search.brave.com/res/v1/web/search"
 SPALTEN = ["website", "url", "herkunft", "nr", "netzbetreiber"]
@@ -39,11 +39,7 @@ def kernname(name: str) -> str:
 
 def eigener_treffer(url: str, website: str, name: str) -> bool:
     """Treffer von der eigenen Website des Netzbetreibers oder mit seinem Namen im Link (keine fremden Preisblätter)."""
-    if website_domain(url) == website_domain(website):
-        return True
-    # Netzgesellschaft unter eigener Adresse: "netze-stwab.de" zu "www.stwab.de" (Kern mindestens 5 Zeichen)
-    kern = website_domain(website).rsplit(".", 1)[0]
-    if len(kern) >= 5 and kern in website_domain(url).rsplit(".", 1)[0]:
+    if eigene_website(url, website):     # auch Netzgesellschaft unter eigener Adresse ("netze-stwab.de")
         return True
     link = re.sub(r"[^a-z0-9äöü]", "", urllib.parse.unquote(url).lower())
     worte = [re.sub(r"[^a-z0-9äöü]", "", w.lower()) for w in kernname(name).split()]

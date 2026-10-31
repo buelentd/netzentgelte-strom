@@ -59,7 +59,7 @@ bereits Erledigte überspringen.
 - SLP-Preise teils in separatem Preisblatt (SachsenNetze: "Standardlastprofil-Kunden")
 - Umbenennungen: Netrion → MVV Netze, Netze Mittelbaden → E-Werk Netze
 - Datei "Aktuell" kann veraltet sein (Bochum: 2024) → Jahr im PDF prüfen
-- PDF ohne Netzbetreibernamen (storyblok) → pruefen
+- PDF ohne Netzbetreibernamen (storyblok) → pruefen; liegt es auf der eigenen Website des Netzbetreibers (laut MaStR, nicht bei geteilter Website), gilt es als zugeordnet (Hinweis „Name nicht im Dokument, Preisblatt von der eigenen Website“)
 - Grenze "≤ 2.500 / > 2.500" statt "< / ≥" → im hinweis vermerken
 
 ## Rechner (`vnb/rechner.py`)

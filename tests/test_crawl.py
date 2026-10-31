@@ -253,7 +253,7 @@ def test_lokales_preisblatt_ohne_namen_mit_zuordnung(tmp_path):
     a = Auftrag(key="k", nr=1, name="Musternetz GmbH", mastr_nr="", website="gesperrt.example")
     k = aio.run(c.dokument_pruefen(None, "https://gesperrt.example/p.pdf", a))
     assert k.verwendbar and not k.name_fehlt and "Netzbetreibername nicht im Dokument" not in k.pruefen
-    b = Auftrag(key="k", nr=2, name="Anderes Netz GmbH", mastr_nr="", website="gesperrt.example")
+    b = Auftrag(key="k", nr=2, name="Anderes Netz GmbH", mastr_nr="", website="anderes-netz.example")   # andere Website: Zuordnung greift nicht
     assert aio.run(c.dokument_pruefen(None, "https://gesperrt.example/p.pdf", b)).name_fehlt
 
 
@@ -278,3 +278,22 @@ def test_neu_auslesen_ohne_netz(tmp_path):
     assert c.zwischenspeicher_urls(leer) == [] and aio.run(c.neu_auslesen(leer)) is None
     pfad, fehler = aio.run(c.herunterladen(None, "https://www.leer.example/x.pdf", leer))
     assert pfad is None and fehler == "nicht im Zwischenspeicher"
+
+
+def test_ohne_namen_von_eigener_website(tmp_path):
+    # Vorlage ohne Netzbetreibernamen: von der eigenen Website zugeordnet, von fremder Adresse weiter "pruefen"
+    import asyncio as aio
+    import hashlib
+    from vnb.crawl import Auftrag, Crawler
+    c = Crawler(None, None, None, tmp_path / "cache")
+    c.offline = True
+    a = Auftrag(key="k", nr=1, name="Gemeindewerke Musterdorf", mastr_nr="", website="www.werke-musterdorf.de")
+    for url in ("https://werke-musterdorf.de/netzentgelte-2026.pdf", "https://fremd.example/netzentgelte-2026.pdf"):
+        d = tmp_path / "cache" / "k"
+        d.mkdir(parents=True, exist_ok=True)
+        h = hashlib.sha1(url.encode()).hexdigest()[:12]
+        pdf(d / f"{h}.pdf", KOPF_STANDARD[1:] + ["Niederspannung   18,64   7,49   171,87   1,36"])
+    eigen = aio.run(c.dokument_pruefen(None, "https://werke-musterdorf.de/netzentgelte-2026.pdf", a))
+    fremd = aio.run(c.dokument_pruefen(None, "https://fremd.example/netzentgelte-2026.pdf", a))
+    assert not eigen.name_fehlt and "Netzbetreibername nicht im Dokument" not in eigen.pruefen
+    assert fremd.name_fehlt and "Netzbetreibername nicht im Dokument" in fremd.pruefen
