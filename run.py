@@ -334,7 +334,9 @@ async def schritt_lauf(args, log):
                             hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
                 if args.offline and not crawler.zwischenspeicher_urls(a) and not e.get("pilot_nr"):
                     return                     # nichts im Zwischenspeicher: bisheriges Ergebnis bleibt
-                if args.nur_hinweise and (e.get("pilot_nr") or not any(ist_dokument(h) for h in a.hinweise)):
+                vorher = speicher.daten.get(key_von(e), {}).get("status")
+                if args.nur_hinweise and (e.get("pilot_nr") or vorher != "kein_preisblatt"
+                                          or not any(ist_dokument(h) for h in a.hinweise)):
                     return                     # kein Suchtreffer: bisheriges Ergebnis bleibt
                 log(f"[{e['nr']}] {e['netzbetreiber']} ({a.website or 'ohne Website'})")
                 try:
@@ -424,8 +426,8 @@ def schritt_suche(args, log):
         return
     tabelle = Path(args.out) / f"netzentgelte_{args.jahr}.csv"
     with open(tabelle, encoding="utf-8") as f:
-        # nur Netzbetreiber ohne Dokument; bei "pruefen" liegt das Preisblatt schon vor (Auslesen statt Suchen)
-        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] in ("kein_preisblatt", "blockiert")]
+        # nur Netzbetreiber, für die kein Preisblatt gefunden wurde (nicht geblockte, nicht "pruefen")
+        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] == "kein_preisblatt"]
     n = suchen(zeilen, schluessel, HIER / "lauf" / "suche_treffer.csv", HIER / "lauf" / "suche_erledigt.csv",
                args.jahr, args.max_abfragen, log=log)
     log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
