@@ -22,7 +22,7 @@ from pathlib import Path
 
 from vnb import liste as liste_mod
 from vnb import pilot as pilot_mod
-from vnb.crawl import Auftrag, Crawler, Fund
+from vnb.crawl import Auftrag, Crawler, Fund, hinweise_laden, website_domain
 from vnb.ergebnis import Speicher
 from vnb.extract import FELDER, name_tokens, norm, plausibel
 from vnb.netz import USER_AGENT, Drossel, Robots, basis_domain
@@ -306,6 +306,7 @@ async def schritt_lauf(args, log):
         robots = Robots(req, drossel, log)
         crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
         sem = asyncio.Semaphore(args.worker)
+        hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
         fertig = 0
         t0 = time.time()
 
@@ -316,7 +317,8 @@ async def schritt_lauf(args, log):
                 a = Auftrag(key=key_von(e), nr=int(e["nr"]), name=e["netzbetreiber"], mastr_nr=e.get("mastr_nr", ""),
                             website=e.get("website", ""), aliase=tuple(pilot_mod.ALIASE.get(
                                 pilot[e["pilot_nr"]]["netzbetreiber"], [])) if e.get("pilot_nr") else (),
-                            pflicht=pflicht, ausschluss=ausschluss)
+                            pflicht=pflicht, ausschluss=ausschluss,
+                            hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
                 log(f"[{e['nr']}] {e['netzbetreiber']} ({a.website or 'ohne Website'})")
                 try:
                     if e.get("pilot_nr"):

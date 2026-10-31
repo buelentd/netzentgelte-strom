@@ -199,3 +199,24 @@ def test_drossel_mindestabstand():
         return sorted(zeiten)
     zeiten = asyncio.run(lauf())
     assert min(b - a for a, b in zip(zeiten, zeiten[1:])) >= 0.199
+
+
+def test_hinweis_url_wird_geprueft(server, tmp_path):
+    # Startseite ohne Links; das Preisblatt kennt der Crawler nur aus der Hinweis-Liste
+    fund = asyncio.run(_lauf(server + "/karriere/", tmp_path,
+                             hinweise=(server + "/dl/NNE_Strom_2026_endgueltig.pdf",)))
+    assert fund.kandidat and fund.kandidat.ns["lp_ueber_2500"] == pytest.approx(171.87)
+
+
+def test_hinweise_laden(tmp_path):
+    from vnb.crawl import hinweise_laden, website_domain
+    p = tmp_path / "h.csv"
+    p.write_text("Netzbetreiber_Website,Preisblatt_URL,Status\n"
+                 "www.evng.de,https://www.evng.de/x/netznutzungsentgelte_strom_2026_evng.pdf,Gefunden (PDF)\n"
+                 "www.gemeinde-x.de,https://www.gemeinde-x.de,Gemeindeportal\n"
+                 "https://www.blomberg-netz.de/,https://www.blomberg-netz.de/stromnetz/netzentgelte/,Gefunden\n",
+                 encoding="utf-8")
+    h = hinweise_laden(p)
+    assert h["evng.de"] == ("https://www.evng.de/x/netznutzungsentgelte_strom_2026_evng.pdf",)
+    assert "gemeinde-x.de" not in h                       # nur Startseite: nichts Neues
+    assert h[website_domain("https://www.blomberg-netz.de/")] == ("https://www.blomberg-netz.de/stromnetz/netzentgelte/",)

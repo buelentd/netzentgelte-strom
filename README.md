@@ -25,6 +25,13 @@ PDFs liegen nur im Artifact, nicht im Repo. Der Workflow muss auf dem Standard-B
 damit GitHub ihn manuell startbar anzeigt.
 
 
+### Hinweis-URLs
+
+`lauf/hinweis_urls.csv` (Spalten `website;url;herkunft`) enthält zusätzliche Startpunkte je Netzbetreiber,
+z. B. eine Unterseite "Netzentgelte" oder den direkten Link auf ein Preisblatt. Der Crawler prüft verlinkte
+Dokumente sofort und besucht Unterseiten direkt nach der Startseite; reine Startseiten werden übergangen.
+Für Hinweis-URLs gelten dieselben Regeln (robots.txt, Drosselung, Jahres-, Sparten- und Plausibilitätsprüfung).
+
 ### Lauf ohne Formular starten
 
 Der Workflow startet auch, wenn eine Änderung an `lauf/anstoss.env` auf `main` gepusht wird. Die Datei

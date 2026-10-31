@@ -87,6 +87,7 @@ class Auftrag:
     ausschluss: tuple = ()    # Kennungen anderer Netzgebiete derselben Website
     nur_endgueltig: bool = False
     nur_slp: bool = False     # nur ein SLP-Preisblatt gesucht (RLM bereits bekannt, z. B. Pilot)
+    hinweise: tuple = ()      # zusätzliche Start-URLs (Unterseiten oder Dokumente), lauf/hinweis_urls.csv
 
 
 @dataclass
@@ -148,6 +149,31 @@ def start_urls(website: str) -> list[str]:
     if p.scheme == "http":
         return [w, "https://" + w[len("http://"):]]
     return [w]
+
+
+def website_domain(website: str) -> str:
+    """"https://www.blomberg-netz.de/" und "www.blomberg-netz.de" → "blomberg-netz.de"."""
+    return basis_domain(re.sub(r"^https?://", "", website.strip().lower()).split("/")[0])
+
+
+def hinweise_laden(pfad: Path) -> dict[str, tuple]:
+    """Hinweis-URLs je Website-Domain aus einer CSV (Spalten website;url, Trennzeichen ; oder ,).
+
+    Startseiten selbst werden übergangen (die besucht der Crawler ohnehin)."""
+    import csv
+    if not pfad.exists():
+        return {}
+    text = pfad.read_text(encoding="utf-8-sig")
+    trenner = ";" if text.splitlines()[0].count(";") >= 1 else ","
+    out: dict[str, list] = {}
+    for zeile in csv.reader(text.splitlines()[1:], delimiter=trenner):
+        if len(zeile) < 2 or not zeile[0].strip() or not zeile[1].strip().lower().startswith("http"):
+            continue
+        website, url = zeile[0].strip(), zeile[1].strip()
+        if urlparse(url).path.strip("/") == "" and not urlparse(url).query:
+            continue
+        out.setdefault(website_domain(website), []).append(url)
+    return {k: tuple(dict.fromkeys(v)) for k, v in out.items()}
 
 
 class Crawler:
@@ -253,6 +279,11 @@ class Crawler:
             break
         heapq.heappush(queue, (-100, next(zaehler), start, 0))
         alternative = start_urls(a.website)[1:]
+        for h in a.hinweise:              # Hinweis-URLs: Dokumente sofort prüfen, Seiten direkt nach der Startseite
+            if ist_dokument(h):
+                dokumente[h] = {"score": 1000, "kontext": "Hinweis-URL", "ref": ""}
+            else:
+                heapq.heappush(queue, (-99, next(zaehler), h, 1))
 
         def bester():
             gut = [k for k in geprueft.values() if k.verwendbar]
