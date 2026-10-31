@@ -32,6 +32,20 @@ heruntergeladen und unter `lauf/preisblaetter/` abgelegt werden. `lauf/preisblae
 Original-Adresse zu (Spalten `url;datei;netzbetreiber;herkunft`). Der Crawler nimmt dann die Datei statt des
 Downloads und liest sie mit demselben Parser aus; die Original-Adresse bleibt die Quelle im Ergebnis.
 
+### Preisblätter über eine Such-Schnittstelle finden
+
+Der Schritt `python run.py suche` fragt für jeden noch nicht fertigen Netzbetreiber (Status nicht `ok`,
+`robots` oder `keine_website`) die Google-Such-Schnittstelle „Custom Search JSON API“ ab, mit dem Suchbegriff
+`"<Name ohne Rechtsform>" Netzentgelte Strom 2026 Preisblatt filetype:pdf`. Bis zu fünf Dokument-Links je
+Netzbetreiber landen in `lauf/suche_treffer.csv`; Links mit Gas, Wasser, Wärme, Grundversorgung oder
+Ersatzversorgung im Namen werden verworfen. Der nächste Lauf prüft die Treffer wie Hinweis-Adressen (robots.txt,
+Drosselung, Jahres-, Sparten-, Namens- und Plausibilitätsprüfung). Bereits gesuchte Netzbetreiber werden
+übersprungen. Die Google-Suche selbst wird nicht abgerufen, nur die offizielle Schnittstelle.
+
+Einrichtung: Schlüssel für die Schnittstelle und Kennung einer „Programmable Search Engine“ (Suche im ganzen Web)
+als Geheimnisse `SUCHE_SCHLUESSEL` und `SUCHE_KENNUNG` im Repository eintragen (Settings, Secrets and variables,
+Actions). Ohne diese Geheimnisse wird der Schritt übersprungen. Höchstens 1.000 Abfragen je Lauf.
+
 ### Hinweis-URLs
 
 `lauf/hinweis_urls.csv` (Spalten `website;url;herkunft`) enthält zusätzliche Startpunkte je Netzbetreiber,

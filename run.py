@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import csv
 import os
 import re
 import shutil
@@ -307,6 +308,8 @@ async def schritt_lauf(args, log):
         crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
         sem = asyncio.Semaphore(args.worker)
         hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
+        for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
+            hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
         crawler.lokal = lokale_preisblaetter_laden(HIER / "lauf" / "preisblaetter.csv")
         fertig = 0
         t0 = time.time()
@@ -395,6 +398,20 @@ def schritt_diagnose(args, log):
     log(f"Diagnose: {len(index) - 4} Textauszüge in {ziel}")
 
 
+def schritt_suche(args, log):
+    """Preisblatt-Kandidaten für alle noch nicht fertigen Netzbetreiber über die Such-Schnittstelle."""
+    from vnb.suche import suchen
+    schluessel, kennung = os.environ.get("SUCHE_SCHLUESSEL", ""), os.environ.get("SUCHE_KENNUNG", "")
+    if not (schluessel and kennung):
+        log("Suche übersprungen: SUCHE_SCHLUESSEL / SUCHE_KENNUNG nicht gesetzt")
+        return
+    tabelle = Path(args.out) / f"netzentgelte_{args.jahr}.csv"
+    with open(tabelle, encoding="utf-8") as f:
+        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] not in ("ok", "robots", "keine_website")]
+    n = suchen(zeilen, schluessel, kennung, HIER / "lauf" / "suche_treffer.csv", args.jahr, args.max_abfragen, log=log)
+    log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
+
+
 def schritt_bericht(args, log):
     text = Speicher(Path(args.out)).ausgeben(args.jahr)
     log(text)
@@ -402,7 +419,7 @@ def schritt_bericht(args, log):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("schritt", choices=["liste", "lauf", "bericht", "alles", "diagnose"])
+    ap.add_argument("schritt", choices=["liste", "suche", "lauf", "bericht", "alles", "diagnose"])
     ap.add_argument("--out", default=str(HIER / "ergebnis"))
     ap.add_argument("--jahr", type=int, default=2026)
     ap.add_argument("--csv", help="MaStR-Export (CSV) statt open-mastr-Download")
@@ -417,6 +434,7 @@ def main():
     ap.add_argument("--max-seiten", type=int, default=40)
     ap.add_argument("--abstand", type=float, default=1.0, help="Sekunden zwischen Anfragen je Domain (min. 1)")
     ap.add_argument("--ohne-proxy", action="store_true", help="HTTPS_PROXY nicht an Chromium durchreichen")
+    ap.add_argument("--max-abfragen", type=int, default=1000, help="Höchstzahl Suchabfragen je Aufruf (Schritt suche)")
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)
     args.max_seiten = min(40, args.max_seiten)
@@ -425,6 +443,8 @@ def main():
     log = Log(out / "lauf.log")
     if args.schritt in ("liste", "alles") and (args.schritt == "liste" or not (out / "netzbetreiber.csv").exists()):
         schritt_liste(args, log)
+    if args.schritt == "suche":
+        schritt_suche(args, log)
     if args.schritt in ("lauf", "alles"):
         asyncio.run(schritt_lauf(args, log))
     if args.schritt in ("bericht", "lauf", "alles"):
