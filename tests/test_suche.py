@@ -33,10 +33,10 @@ def test_suchen_filtert_und_setzt_fort(tmp_path):
     zeilen_csv = list(csv.DictReader(erledigt.read_text(encoding="utf-8").splitlines(), delimiter=";"))
     assert [(z["nr"], z["anzahl_treffer"]) for z in zeilen_csv] == [("1", "1"), ("2", "0")]  # C nicht vermerkt
     assert hinweise_laden(ziel) == {"a.de": ("https://www.a.de/preisblatt_netzentgelte_2026.pdf",)}
-    # zweiter Aufruf: A und B übersprungen, nur C wird abgefragt
+    # zweiter Aufruf: alle werden erneut abgefragt (kein Überspringen, Kosten begrenzt max_abfragen)
     gefragt = []
     suchen(zeilen, "s", ziel, erledigt, abrufen=lambda s, q: gefragt.append(q) or {}, log=lambda *a: None, pause=0)
-    assert len(gefragt) == 1 and "C Netz" in gefragt[0]
+    assert len(gefragt) == 3
 
 
 def test_nur_eigene_treffer():

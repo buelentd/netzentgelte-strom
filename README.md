@@ -52,7 +52,7 @@ wie Hinweis-Adressen (robots.txt, Drosselung, Jahres-, Sparten-, Namens- und Pla
 
 Die Trefferdatei wird nicht ins Repository übernommen, weil die Nutzungsbedingungen von Brave das dauerhafte
 Speichern von Suchergebnissen beschränken. Dauerhaft vermerkt wird nur, welcher Netzbetreiber schon gesucht
-wurde (`lauf/suche_erledigt.csv`), damit niemand doppelt abgefragt wird.
+wurde (`lauf/suche_erledigt.csv`, nur zur Information). Jeder Lauf sucht neu; die Kosten begrenzt `SUCHE_MAX`.
 
 Einrichtung: den Brave-Schlüssel als Repository-Secret `SUCHE_SCHLUESSEL` eintragen (Settings, Secrets and
 variables, Actions, Repository secrets). Ohne den Schlüssel wird der Schritt übersprungen. Höchstens 1.000

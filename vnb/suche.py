@@ -73,7 +73,7 @@ def gesucht(pfad: Path) -> set[str]:
 def suchen(zeilen: list[dict], schluessel: str, ziel: Path, erledigt: Path, jahr: int = 2026,
            max_abfragen: int = 1000, abrufen=_abrufen, log=print, pause: float = 1.1) -> int:
     """zeilen: Netzbetreiber (nr, netzbetreiber, website, status). Rückgabe: Anzahl Abfragen."""
-    schon = gesucht(erledigt)
+    schon = set()                  # jedes Mal neu suchen: ein geänderter Suchbegriff soll alle erreichen
     neu, neu_e = not ziel.exists(), not erledigt.exists()
     n = 0
     with open(ziel, "a", newline="", encoding="utf-8") as f, open(erledigt, "a", newline="", encoding="utf-8") as fe:
