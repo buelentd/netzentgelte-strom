@@ -404,14 +404,15 @@ def schritt_diagnose(args, log):
 def schritt_suche(args, log):
     """Preisblatt-Kandidaten für alle noch nicht fertigen Netzbetreiber über die Such-Schnittstelle."""
     from vnb.suche import suchen
-    schluessel, kennung = os.environ.get("SUCHE_SCHLUESSEL", ""), os.environ.get("SUCHE_KENNUNG", "")
-    if not (schluessel and kennung):
-        log("Suche übersprungen: SUCHE_SCHLUESSEL / SUCHE_KENNUNG nicht gesetzt")
+    schluessel = os.environ.get("SUCHE_SCHLUESSEL", "")
+    if not schluessel:
+        log("Suche übersprungen: SUCHE_SCHLUESSEL nicht gesetzt")
         return
     tabelle = Path(args.out) / f"netzentgelte_{args.jahr}.csv"
     with open(tabelle, encoding="utf-8") as f:
         zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] not in ("ok", "robots", "keine_website")]
-    n = suchen(zeilen, schluessel, kennung, HIER / "lauf" / "suche_treffer.csv", args.jahr, args.max_abfragen, log=log)
+    n = suchen(zeilen, schluessel, HIER / "lauf" / "suche_treffer.csv", HIER / "lauf" / "suche_erledigt.csv",
+               args.jahr, args.max_abfragen, log=log)
     log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
 
 

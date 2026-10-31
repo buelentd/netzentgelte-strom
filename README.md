@@ -34,17 +34,21 @@ Downloads und liest sie mit demselben Parser aus; die Original-Adresse bleibt di
 
 ### Preisblätter über eine Such-Schnittstelle finden
 
-Der Schritt `python run.py suche` fragt für jeden noch nicht fertigen Netzbetreiber (Status nicht `ok`,
-`robots` oder `keine_website`) die Google-Such-Schnittstelle „Custom Search JSON API“ ab, mit dem Suchbegriff
-`"<Name ohne Rechtsform>" Netzentgelte Strom 2026 Preisblatt filetype:pdf`. Bis zu fünf Dokument-Links je
-Netzbetreiber landen in `lauf/suche_treffer.csv`; Links mit Gas, Wasser, Wärme, Grundversorgung oder
-Ersatzversorgung im Namen werden verworfen. Der nächste Lauf prüft die Treffer wie Hinweis-Adressen (robots.txt,
-Drosselung, Jahres-, Sparten-, Namens- und Plausibilitätsprüfung). Bereits gesuchte Netzbetreiber werden
-übersprungen. Die Google-Suche selbst wird nicht abgerufen, nur die offizielle Schnittstelle.
+Der große Lauf ruft direkt vor dem Auslesen den Schritt `python run.py suche` auf. Er fragt für jeden noch
+nicht fertigen Netzbetreiber (Status nicht `ok`, `robots` oder `keine_website`) die Such-Schnittstelle von
+Brave Search ab, mit dem Suchbegriff `"<Name ohne Rechtsform>" Netzentgelte Strom 2026 Preisblatt filetype:pdf`.
+Bis zu fünf Dokument-Links je Netzbetreiber kommen vorübergehend in `lauf/suche_treffer.csv`; Links mit Gas,
+Wasser, Wärme, Grundversorgung oder Ersatzversorgung im Namen werden verworfen. Derselbe Lauf prüft die Treffer
+wie Hinweis-Adressen (robots.txt, Drosselung, Jahres-, Sparten-, Namens- und Plausibilitätsprüfung).
 
-Einrichtung: Schlüssel für die Schnittstelle und Kennung einer „Programmable Search Engine“ (Suche im ganzen Web)
-als Geheimnisse `SUCHE_SCHLUESSEL` und `SUCHE_KENNUNG` im Repository eintragen (Settings, Secrets and variables,
-Actions). Ohne diese Geheimnisse wird der Schritt übersprungen. Höchstens 1.000 Abfragen je Lauf, einstellbar mit `SUCHE_MAX` in `lauf/anstoss.env`.
+Die Trefferdatei wird nicht ins Repository übernommen, weil die Nutzungsbedingungen von Brave das dauerhafte
+Speichern von Suchergebnissen beschränken. Dauerhaft vermerkt wird nur, welcher Netzbetreiber schon gesucht
+wurde (`lauf/suche_erledigt.csv`), damit niemand doppelt abgefragt wird.
+
+Einrichtung: den Brave-Schlüssel als Repository-Secret `SUCHE_SCHLUESSEL` eintragen (Settings, Secrets and
+variables, Actions, Repository secrets). Ohne den Schlüssel wird der Schritt übersprungen. Höchstens 1.000
+Abfragen je Lauf, einstellbar mit `SUCHE_MAX` in `lauf/anstoss.env`. Eine Änderung an
+`lauf/suche_anstoss.env` startet den Workflow „Such-Schlüssel testen“ (drei Probeabfragen, nichts wird gespeichert).
 
 ### Hinweis-URLs
 

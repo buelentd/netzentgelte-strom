@@ -12,28 +12,28 @@ def test_kernname_und_abfrage():
 
 
 def test_suchen_filtert_und_setzt_fort(tmp_path):
-    ziel = tmp_path / "suche_treffer.csv"
+    ziel, erledigt = tmp_path / "suche_treffer.csv", tmp_path / "suche_erledigt.csv"
     zeilen = [{"nr": "1", "netzbetreiber": "A Netz GmbH", "website": "www.a.de", "status": "kein_preisblatt"},
               {"nr": "2", "netzbetreiber": "B Netz GmbH", "website": "www.b.de", "status": "pruefen"},
               {"nr": "3", "netzbetreiber": "C Netz GmbH", "website": "www.c.de", "status": "blockiert"}]
     antworten = {
-        "A Netz": {"items": [{"link": "https://www.a.de/preisblatt_netzentgelte_2026.pdf"},
-                             {"link": "https://www.a.de/grundversorgung_2026.pdf"},
-                             {"link": "https://www.a.de/gas_preisblatt_2026.pdf"},
-                             {"link": "https://www.a.de/seite.html"}]},
+        "A Netz": {"web": {"results": [{"url": "https://www.a.de/preisblatt_netzentgelte_2026.pdf"},
+                                       {"url": "https://www.a.de/grundversorgung_2026.pdf"},
+                                       {"url": "https://www.a.de/gas_preisblatt_2026.pdf"},
+                                       {"url": "https://www.a.de/seite.html"}]}},
         "B Netz": {},
     }
 
-    def abrufen(schluessel, kennung, q):
+    def abrufen(schluessel, q):
         if "C Netz" in q:
             raise RuntimeError("HTTP 429 Kontingent erschöpft")
         return antworten[q.split('"')[1]]
 
-    assert suchen(zeilen, "s", "k", ziel, abrufen=abrufen, log=lambda *a: None) == 2
-    zeilen_csv = list(csv.DictReader(ziel.read_text(encoding="utf-8").splitlines(), delimiter=";"))
-    assert [z["nr"] for z in zeilen_csv] == ["1", "2"]          # C nicht vermerkt: nächster Lauf macht weiter
+    assert suchen(zeilen, "s", ziel, erledigt, abrufen=abrufen, log=lambda *a: None, pause=0) == 2
+    zeilen_csv = list(csv.DictReader(erledigt.read_text(encoding="utf-8").splitlines(), delimiter=";"))
+    assert [(z["nr"], z["anzahl_treffer"]) for z in zeilen_csv] == [("1", "1"), ("2", "0")]  # C nicht vermerkt
     assert hinweise_laden(ziel) == {"a.de": ("https://www.a.de/preisblatt_netzentgelte_2026.pdf",)}
     # zweiter Aufruf: A und B übersprungen, nur C wird abgefragt
     gefragt = []
-    suchen(zeilen, "s", "k", ziel, abrufen=lambda s, k, q: gefragt.append(q) or {}, log=lambda *a: None)
+    suchen(zeilen, "s", ziel, erledigt, abrufen=lambda s, q: gefragt.append(q) or {}, log=lambda *a: None, pause=0)
     assert len(gefragt) == 1 and "C Netz" in gefragt[0]

@@ -126,7 +126,6 @@ jobs:
         continue-on-error: true
         env:
           SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
-          SUCHE_KENNUNG: ${{ secrets.SUCHE_KENNUNG }}
         run: python run.py suche --jahr "${{ steps.p.outputs.jahr }}" --max-abfragen "${{ steps.p.outputs.suche_max }}"
 
       - name: Preisblätter suchen und auslesen
@@ -182,7 +181,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_treffer.csv ergebnis/zusammenfassung.md \
+          for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_erledigt.csv ergebnis/zusammenfassung.md \
                    ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
                    ergebnis/fortschritt.jsonl; do
             [ -f "$f" ] && git add "$f"
