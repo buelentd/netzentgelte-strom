@@ -38,6 +38,14 @@ FAELLE = {
     "offenbach_2026": ((22.95, 6.19, 97.04, 3.22), (22.04, 6.01, 143.27, 1.16), (5.87, 69.00)),
     "ewerk_netze_2026": ((19.28, 7.86, 161.92, 2.15), (16.17, 6.40, 129.10, 1.88), (7.01, 98.00)),
     "mvv_netze_2026": ((17.16, 6.28, 103.91, 2.81), (16.66, 4.52, 107.58, 0.89), (4.32, 90.00)),
+    # Suchtreffer 31.10.2026: Ebenen als Spalten (Nordhausen), Einheiten auf zwei Zeilen und Spalte "pauschale
+    # Reduktion" (Borken), Einheiten nur im Kopf über Zeilenpaaren (Schwäbisch Hall), Fußnote "Niederspannung2)" und
+    # "Umspannung in Niederspannung bzw. Niederspannung" (ÜZ Mainfranken), Spaltenkopf über zwei Zeilen (e.wa riss)
+    "ev_nordhausen_2026": ((15.12, 6.93, 112.69, 3.03), (10.83, 5.49, 135.02, 0.52), (5.37, 78.00)),
+    "sw_borken_nne_2026": ((22.69, 9.68, 169.00, 3.83), (16.19, 7.12, 142.53, 2.07), (9.66, 90.00)),
+    "sw_hall_2026": ((27.46, 6.65, 120.01, 2.95), (15.75, 6.39, 170.61, 0.20), (5.53, 61.00)),
+    "uez_mainfranken_2026": ((30.08, 4.79, 129.53, 0.81), None, (4.52, 77.00)),
+    "ewa_riss_2026": ((31.80, 8.30, 176.04, 2.53), (22.43, 8.27, 170.40, 1.30), None),
     "naturenergie_2026": ((21.66, 6.76, 74.56, 4.64), (21.38, 6.72, 143.16, 1.85), (7.30, 90.00)),
     "evh_halle_2026": ((26.76, 8.28, 148.97, 3.39), (24.64, 7.54, 161.58, 2.06), (6.86, 88.00)),
     "netze_duisburg_2026": ((16.95, 7.73, 136.60, 2.94), (12.79, 6.76, 135.60, 1.85), (6.96, 101.00)),
@@ -155,6 +163,7 @@ def test_gas_nur_als_wort():
     ("bhag_2026", (10.04, 84.00)),                      # Sammelzeile mit Wärmepumpen; §-14a-Tabelle danach
     ("sw_neuburg_2026", (11.35, 80.00)),                # Modul-3-Kopf "ohne Leistungsmessung | Niedriglasttarif …"
     ("sw_waren_2026", (5.76, 50.00)),                   # "Kleinkunden … / SLP / Pauschalanlagen"
+    ("sw_ratingen_slp_2026", (9.00, 40.00)),            # "Preisblatt 1   Entgelte … ohne Leistungsmessung"
     ("albwerk_2026", (4.56, 96.00)),                    # Spaltenkopf "HT  NT" schließt "Standardkunden" nicht aus
     ("harz_energie_netz_2026", (6.53, 73.50)),          # "Netz- bwz." / "Umspannebene" über zwei Zeilen
     ("swa_netze_2026", (6.07, 66.20)),                  # "ohne steuerbare oder unterbrechbare Verbrauchseinrichtungen"
