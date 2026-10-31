@@ -605,8 +605,8 @@ def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
 
 # ---------------------------------------------------------------- SLP
 
-SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?leistungsmessung|standardlastprofil|\bslp\b|"
-                       r"ohne\s+(?:viertelstunden|lastgang)|entnahme\s+mit\s+lastprofil", re.I)
+SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungsmessung|lastgang)|standardlastprofil|\bslp\b|"
+                       r"ohne\s+viertelstunden|entnahme\s+mit\s+lastprofil", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
                       r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
@@ -734,6 +734,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                     re.fullmatch(r"(?:(?:ht|nt|hochtarif|niedertarif)\s*\d?\)?\s*)+", zl, re.I))
             elif SLP_NEUTRAL.search(zl) and not SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = False
+            elif len(z) - len(z.lstrip()) < 5 and re.search(
+                    r"(?:grundpreis|arbeitspreis|entgelt)\s+f[üu]r\s+(?:die\s+)?netznutzung", zl, re.I):
+                ausgeschlossen = False      # neue Zwischenüberschrift "Jährlicher Grundpreis für Netznutzung"
             continue
         label = z[:zahlen[0].start()]
         sammel = bool(SLP_SAMMEL.search(label)) and not SLP_SAMMEL_NEIN.search(label)

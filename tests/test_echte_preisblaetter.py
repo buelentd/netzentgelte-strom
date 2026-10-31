@@ -139,6 +139,8 @@ def test_gas_nur_als_wort():
     ("albwerk_2026", (4.56, 96.00)),                    # Spaltenkopf "HT  NT" schließt "Standardkunden" nicht aus
     ("harz_energie_netz_2026", (6.53, 73.50)),          # "Netz- bwz." / "Umspannebene" über zwei Zeilen
     ("swa_netze_2026", (6.07, 66.20)),                  # "ohne steuerbare oder unterbrechbare Verbrauchseinrichtungen"
+    ("n_ergie_kol_2026", (5.96, 95.00)),                # "ohne registrierende Lastgangmessung", "Grundbetrag"
+    ("netz_duesseldorf_2026", (7.91, 12.00)),           # "Jährlicher Grundpreis für Netznutzung" nach Speicherheizung
 ])
 def test_slp_abschnitt_erkannt(name, slp):
     e, _ = lesen(name)
