@@ -90,9 +90,12 @@ def test_ohne_kopf_wird_nicht_geraten(fx):
     assert any("Spaltenreihenfolge" in u for u in e.unklar)
 
 
-def test_bewerten_2027_verworfen(fx):
+def test_bewerten_2027_nachrangig(fx):
+    # nur ein Preisblatt 2027: wird verwendet (mit Hinweis), aber jedes Blatt 2026 geht vor
     k = bewerten(fx / "jahr2027.pdf", "https://x.de/a.pdf", "Musternetz GmbH")
-    assert not k.verwendbar and "2026" in k.grund
+    assert k.folgejahr and any("2027" in h for h in k.hinweise)
+    k26 = bewerten(fx / "standard.pdf", "https://musternetz.de/p.pdf", "Musternetz GmbH")
+    assert k26.rang() > k.rang()
 
 
 def test_bewerten_ohne_name_pruefen(fx):

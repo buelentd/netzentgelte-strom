@@ -1,7 +1,7 @@
 """Preisblatt-Kandidaten über eine Such-Schnittstelle (Brave Search, Web-Suche).
 
 Für jeden noch nicht fertigen Netzbetreiber eine Abfrage
-    "<Kernname>" Netzentgelte Strom 2026 Preisblatt filetype:pdf
+    <Kernname> netzentgelte strom pdf
 Die Treffer (nur Dokument-Links) landen vorübergehend in lauf/suche_treffer.csv und werden im selben
 Lauf wie Hinweis-URLs geprüft: robots.txt, Drosselung, Jahres-, Sparten-, Namens- und
 Plausibilitätsprüfung gelten unverändert. Die Trefferdatei wird nicht ins Repository übernommen
@@ -49,7 +49,8 @@ def eigener_treffer(url: str, website: str, name: str) -> bool:
 
 
 def abfrage(name: str, jahr: int) -> str:
-    return f'"{kernname(name)}" Netzentgelte Strom {jahr} Preisblatt filetype:pdf'
+    # einfach wie bei einer Suche von Hand; das Jahr prüft das Auslesen, nicht die Suche
+    return f"{kernname(name)} netzentgelte strom pdf"
 
 
 def _abrufen(schluessel: str, q: str) -> dict:
@@ -95,7 +96,7 @@ def suchen(zeilen: list[dict], schluessel: str, ziel: Path, erledigt: Path, jahr
                 break               # z. B. Kontingent erschöpft: nichts vermerken, nächster Lauf macht weiter
             n += 1
             treffer = [u for u in links(antwort) if ist_dokument(u) and not FREMD.search(urllib.parse.unquote(u))
-                       and eigener_treffer(u, z["website"], z["netzbetreiber"])][:5]
+                       and eigener_treffer(u, z["website"], z["netzbetreiber"])][:20]
             for u in treffer:
                 w.writerow([z["website"], u, f"Suchmaschine: {q}", z["nr"], z["netzbetreiber"]])
             we.writerow([z["nr"], z["netzbetreiber"], len(treffer)])

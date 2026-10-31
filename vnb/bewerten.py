@@ -30,6 +30,7 @@ class Kandidat:
     slp_pruefen: list = field(default_factory=list)
     slp_hinweise: list = field(default_factory=list)
     name_fehlt: bool = False
+    folgejahr: bool = False                       # Preisblatt des Folgejahres (kein Blatt für das gesuchte Jahr)
     grund: str = ""                               # warum gar nicht verwendbar
 
     @property
@@ -45,11 +46,11 @@ class Kandidat:
         return d[6:10] + d[3:5] + d[0:2] if len(d) == 10 else ""
 
     def rang(self):
-        return (self.verwendbar, not self.pruefen, PREISSTAND_RANG.get(self.preisstand, 1), self.slp_ok,
+        return (self.verwendbar, not self.folgejahr, not self.pruefen, PREISSTAND_RANG.get(self.preisstand, 1), self.slp_ok,
                 self._datum())
 
     def slp_rang(self):
-        return (self.slp_verwendbar, self.slp_ok, PREISSTAND_RANG.get(self.preisstand, 1), self._datum())
+        return (self.slp_verwendbar, not self.folgejahr, self.slp_ok, PREISSTAND_RANG.get(self.preisstand, 1), self._datum())
 
     def werte_tupel(self):
         return tuple(round(self.ns.get(k, -1), 4) for k in FELDER)
@@ -67,7 +68,12 @@ def bewerten(pfad: Path, url: str, name: str, aliase=(), website: str = "", jahr
         k.grund = "kein Text im Dokument (Scan?)"
         return k
     j = jahr_pruefen(erg, jahr, url)
-    if j:
+    if j and jahr_pruefen(erg, jahr + 1, url) is None:
+        # nur das Blatt des Folgejahres: verwenden, aber nachrangig (jedes Blatt des Jahres geht vor)
+        k.folgejahr = True
+        k.hinweise.append(f"Preisblatt {jahr + 1} (kein Preisblatt {jahr} gefunden)")
+        k.slp_hinweise.append(f"Standardlastprofil aus Preisblatt {jahr + 1}")
+    elif j:
         k.grund = j
         return k
     if not erg.ns_vollstaendig and not erg.slp:

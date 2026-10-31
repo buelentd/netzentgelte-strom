@@ -8,7 +8,7 @@ from vnb.suche import abfrage, kernname, suchen
 def test_kernname_und_abfrage():
     assert kernname("Stadtwerk am See GmbH ＆ Co. KG") == "Stadtwerk am See"
     assert kernname("Elektrizitätsgenossenschaft Unterneukirchen eG") == "Elektrizitätsgenossenschaft Unterneukirchen"
-    assert abfrage("Stadtwerke Elmshorn", 2026) == '"Stadtwerke Elmshorn" Netzentgelte Strom 2026 Preisblatt filetype:pdf'
+    assert abfrage("Stadtwerke Elmshorn", 2026) == "Stadtwerke Elmshorn netzentgelte strom pdf"
 
 
 def test_suchen_filtert_und_setzt_fort(tmp_path):
@@ -27,7 +27,7 @@ def test_suchen_filtert_und_setzt_fort(tmp_path):
     def abrufen(schluessel, q):
         if "C Netz" in q:
             raise RuntimeError("HTTP 429 Kontingent erschöpft")
-        return antworten[q.split('"')[1]]
+        return antworten[" ".join(q.split()[:2])]
 
     assert suchen(zeilen, "s", ziel, erledigt, abrufen=abrufen, log=lambda *a: None, pause=0) == 2
     zeilen_csv = list(csv.DictReader(erledigt.read_text(encoding="utf-8").splitlines(), delimiter=";"))

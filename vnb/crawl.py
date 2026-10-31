@@ -358,11 +358,12 @@ class Crawler:
 
         def fertig():
             """Ziel erreicht: endgültiges, unauffälliges RLM-Blatt und unauffällige SLP-Werte."""
-            slp_gut = any(k.slp_ok and k.preisstand == "endgültig" for k in geprueft.values())
+            slp_gut = any(k.slp_ok and k.preisstand == "endgültig" and not k.folgejahr for k in geprueft.values())
             if a.nur_slp:
                 return slp_gut
             b = bester()
-            return bool(b and not b.pruefen and b.preisstand == "endgültig" and (b.slp_ok or slp_gut))
+            return bool(b and not b.pruefen and not b.folgejahr and b.preisstand == "endgültig"
+                        and (b.slp_ok or slp_gut))
 
         async def pruefe_offene(min_score):
             offen = sorted(((d["score"], u) for u, d in dokumente.items() if u not in geprueft
@@ -511,6 +512,7 @@ class Crawler:
             hinweise = list(b.hinweise)
             pruefen = list(b.pruefen)
             gleichrangig = [k for k in gut[1:] if not k.pruefen and k.preisstand == b.preisstand
+                            and k.folgejahr == b.folgejahr
                             and k.werte_tupel() != b.werte_tupel()]
             if not b.pruefen and gleichrangig:
                 pruefen.append("weitere Preisblätter mit abweichenden NS-Werten: "
