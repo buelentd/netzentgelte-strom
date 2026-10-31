@@ -118,6 +118,13 @@ def test_vermiedene_netzentgelte_abgelehnt():
     assert vne_dokument("", "https://x.de/vorlaeufige-preisblaetter-vermiedene-netzentgelte-2026.pdfx")
     assert vne_dokument("Referenzpreisblatt zur Ermittlung vermiedener Netzentgelte\nnach § 18 Abs. 2 StromNEV", "")
     assert not vne_dokument("Preisblatt Netzentgelte Strom 2026", "https://x.de/preisblatt-nne-2026.pdf")
+    # Butzbach: Netzentgelt-Preisblatt mit Anmerkung zu vermiedenen Netzentgelten in eckigen Klammern
+    butzbach = ("Netznutzung Preisblatt 1/7\n- gültig ab 01.01.2026-\n"
+                "[1] Netznutzung mit fernauslesbarer ¼-h-Leistungsmessung\n"
+                "[Für vermiedene Netzentgelte nur verwendbar, wenn Entnahmeebenenentgelt (das Wertepaar Leistungs-/Arbeitspreis)\n"
+                "niedriger als im separaten „Referenzpreisblatt 2016 zur Ermittlung vermiedener Netzentgelte nach §18 Absatz 2 Strom\n"
+                "NEV, gültig ab 01.01.2018“ ausgewiesen]\n")
+    assert not vne_dokument(butzbach, "https://www.bng-butzbach.de/PB-BNG-NNE-2026-20251217.pdf")
 
 
 def test_altes_preisblatt_schwentinental_abgelehnt():

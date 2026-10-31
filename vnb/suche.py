@@ -1,7 +1,7 @@
 """Preisblatt-Kandidaten über eine Such-Schnittstelle (Brave Search, Web-Suche).
 
 Für jeden noch nicht fertigen Netzbetreiber eine Abfrage
-    <Kernname> netzentgelte strom pdf
+    <Kernname> netzentgelte strom <Jahr> pdf
 Die Treffer (nur Dokument-Links) landen vorübergehend in lauf/suche_treffer.csv und werden im selben
 Lauf wie Hinweis-URLs geprüft: robots.txt, Drosselung, Jahres-, Sparten-, Namens- und
 Plausibilitätsprüfung gelten unverändert. Die Trefferdatei wird nicht ins Repository übernommen
@@ -50,7 +50,7 @@ def eigener_treffer(url: str, website: str, name: str) -> bool:
 
 def abfrage(name: str, jahr: int) -> str:
     # einfach wie bei einer Suche von Hand; das Jahr prüft das Auslesen, nicht die Suche
-    return f"{kernname(name)} netzentgelte strom pdf"
+    return f"{kernname(name)} netzentgelte strom {jahr} pdf"
 
 
 def _abrufen(schluessel: str, q: str) -> dict:

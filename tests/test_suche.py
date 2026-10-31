@@ -8,7 +8,7 @@ from vnb.suche import abfrage, kernname, suchen
 def test_kernname_und_abfrage():
     assert kernname("Stadtwerk am See GmbH ＆ Co. KG") == "Stadtwerk am See"
     assert kernname("Elektrizitätsgenossenschaft Unterneukirchen eG") == "Elektrizitätsgenossenschaft Unterneukirchen"
-    assert abfrage("Stadtwerke Elmshorn", 2026) == "Stadtwerke Elmshorn netzentgelte strom pdf"
+    assert abfrage("Stadtwerke Elmshorn", 2026) == "Stadtwerke Elmshorn netzentgelte strom 2026 pdf"
 
 
 def test_suchen_filtert_und_setzt_fort(tmp_path):

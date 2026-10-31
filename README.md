@@ -44,7 +44,7 @@ Netzbetreiber neu ausgelesen werden, steuern wie sonst `WIEDERHOLEN` und `NEU_PR
 
 Der große Lauf ruft direkt vor dem Auslesen den Schritt `python run.py suche` auf. Er fragt für jeden Netzbetreiber
 ohne Preisblatt (nur Status `kein_preisblatt`, nicht `blockiert`) die Such-Schnittstelle von
-Brave Search ab, mit dem Suchbegriff `<Name ohne Rechtsform> netzentgelte strom pdf` (wie bei einer Suche von Hand; das Jahr
+Brave Search ab, mit dem Suchbegriff `<Name ohne Rechtsform> netzentgelte strom 2026 pdf` (wie bei einer Suche von Hand; das Jahr
 prüft das Auslesen).
 Alle Dokument-Links von der eigenen Website des Netzbetreibers (bis zu 20) kommen vorübergehend in `lauf/suche_treffer.csv`; Links mit Gas,
 Wasser, Wärme, Grundversorgung oder Ersatzversorgung im Namen werden verworfen. Derselbe Lauf prüft die Treffer

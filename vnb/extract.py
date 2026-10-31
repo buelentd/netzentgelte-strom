@@ -1112,7 +1112,13 @@ def vne_dokument(text: str, url: str = "") -> bool:
     datei = norm(url.rsplit("/", 1)[-1].replace("%20", " "))
     if re.search(r"vermiedene|referenzpreis|(^|[_\-\s])vne([_\-\s.]|$)", datei):
         return True
-    kopf = [z for z in text.splitlines() if z.strip()][:8]
+    kopf, klammer = [], False
+    for z in [z.strip() for z in text.splitlines() if z.strip()][:8]:
+        # Anmerkung in eckigen Klammern ("[Für vermiedene Netzentgelte nur verwendbar, wenn …]") ist kein Titel
+        if z.startswith("[") and not re.match(r"\[\d+\]", z) or klammer:
+            klammer = "]" not in z
+            continue
+        kopf.append(z)
     return bool(re.search(r"vermiedene[nr]?\s+netzentgelt|referenzpreisblatt", norm(" ".join(kopf))))
 
 
