@@ -60,7 +60,7 @@ jobs:
           if [ "$EREIGNIS" = "push" ]; then
             # nur KEY=wert-Zeilen übernehmen, nichts ausführen
             while IFS='=' read -r k v; do
-              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
+              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE|SUCHE_MAX) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
             done < lauf/anstoss.env
           fi
           {
@@ -70,6 +70,7 @@ jobs:
             echo "wiederholen=$IN_WIEDERHOLEN"
             echo "liste_neu=${IN_LISTE_NEU:-false}"
             echo "diagnose=${IN_DIAGNOSE:-true}"
+            echo "suche_max=${IN_SUCHE_MAX:-1000}"
           } | tee -a "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
@@ -125,7 +126,7 @@ jobs:
         env:
           SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
           SUCHE_KENNUNG: ${{ secrets.SUCHE_KENNUNG }}
-        run: python run.py suche --jahr "${{ steps.p.outputs.jahr }}" --max-abfragen 1000
+        run: python run.py suche --jahr "${{ steps.p.outputs.jahr }}" --max-abfragen "${{ steps.p.outputs.suche_max }}"
 
       - name: Preisblätter suchen und auslesen
         timeout-minutes: 320

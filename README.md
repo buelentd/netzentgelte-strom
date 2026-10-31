@@ -44,7 +44,7 @@ Drosselung, Jahres-, Sparten-, Namens- und Plausibilitätsprüfung). Bereits ges
 
 Einrichtung: Schlüssel für die Schnittstelle und Kennung einer „Programmable Search Engine“ (Suche im ganzen Web)
 als Geheimnisse `SUCHE_SCHLUESSEL` und `SUCHE_KENNUNG` im Repository eintragen (Settings, Secrets and variables,
-Actions). Ohne diese Geheimnisse wird der Schritt übersprungen. Höchstens 1.000 Abfragen je Lauf.
+Actions). Ohne diese Geheimnisse wird der Schritt übersprungen. Höchstens 1.000 Abfragen je Lauf, einstellbar mit `SUCHE_MAX` in `lauf/anstoss.env`.
 
 ### Hinweis-URLs
 
