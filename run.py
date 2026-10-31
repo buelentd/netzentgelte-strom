@@ -334,10 +334,13 @@ async def schritt_lauf(args, log):
                             hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
                 if args.offline and not crawler.zwischenspeicher_urls(a) and not e.get("pilot_nr"):
                     return                     # nichts im Zwischenspeicher: bisheriges Ergebnis bleibt
-                vorher = speicher.daten.get(key_von(e), {}).get("status")
-                if args.nur_hinweise and (e.get("pilot_nr") or vorher != "kein_preisblatt"
-                                          or not any(ist_dokument(h) for h in a.hinweise)):
-                    return                     # kein Suchtreffer: bisheriges Ergebnis bleibt
+                if args.nur_hinweise:
+                    # bekannte Quellen (bisheriges Preisblatt) direkt neu laden, dazu Suchtreffer und Hinweis-Links
+                    alt = speicher.daten.get(key_von(e), {}).get("quelle_url", "")
+                    bekannt = [u.strip() for u in re.split(r"\s*\|\s*|RLM:\s*|SLP:\s*", alt) if u.strip().startswith("http")]
+                    a = Auftrag(**{**a.__dict__, "hinweise": tuple(dict.fromkeys(bekannt + list(a.hinweise)))})
+                    if not e.get("pilot_nr") and not any(ist_dokument(h) for h in a.hinweise):
+                        return                 # weder Quelle noch Suchtreffer: bisheriges Ergebnis bleibt
                 log(f"[{e['nr']}] {e['netzbetreiber']} ({a.website or 'ohne Website'})")
                 try:
                     if e.get("pilot_nr"):
