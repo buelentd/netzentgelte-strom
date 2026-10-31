@@ -142,7 +142,7 @@ jobs:
           if [ -f ergebnis/zusammenfassung.md ]; then cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"; fi
 
       - name: Diagnose (Textauszüge auf Branch diagnose)
-        if: always() && steps.p.outputs.diagnose == 'true'
+        if: ${{ !cancelled() && steps.p.outputs.diagnose == 'true' }}
         run: |
           python run.py diagnose
           rm -rf "$RUNNER_TEMP/diag" && mkdir "$RUNNER_TEMP/diag" && cp -r diagnose/. "$RUNNER_TEMP/diag/"
