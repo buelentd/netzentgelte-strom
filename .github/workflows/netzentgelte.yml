@@ -60,7 +60,7 @@ jobs:
           if [ "$EREIGNIS" = "push" ]; then
             # nur KEY=wert-Zeilen übernehmen, nichts ausführen
             while IFS='=' read -r k v; do
-              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE|SUCHE_MAX|NEU_PRUEFEN) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
+              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE|SUCHE_MAX|NEU_PRUEFEN|AUSLESEN) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
             done < lauf/anstoss.env
           fi
           {
@@ -72,6 +72,7 @@ jobs:
             echo "diagnose=${IN_DIAGNOSE:-true}"
             echo "suche_max=${IN_SUCHE_MAX:-1000}"
             echo "neu_pruefen=$IN_NEU_PRUEFEN"
+            echo "auslesen=${IN_AUSLESEN:-false}"
           } | tee -a "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
@@ -123,6 +124,7 @@ jobs:
           key: mastr-export-${{ github.run_id }}
 
       - name: Preisblätter über Such-Schnittstelle finden
+        if: ${{ steps.p.outputs.auslesen != 'true' }}
         continue-on-error: true
         env:
           SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
@@ -135,6 +137,7 @@ jobs:
           ${{ steps.p.outputs.limit != '' && format('--limit "{0}"', steps.p.outputs.limit) || '' }}
           ${{ steps.p.outputs.wiederholen != '' && format('--wiederholen "{0}"', steps.p.outputs.wiederholen) || '' }}
           ${{ steps.p.outputs.neu_pruefen != '' && format('--neu "{0}"', steps.p.outputs.neu_pruefen) || '' }}
+          ${{ steps.p.outputs.auslesen == 'true' && '--offline' || '' }}
 
       - name: Bericht
         if: always()

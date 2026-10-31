@@ -299,15 +299,20 @@ async def schritt_lauf(args, log):
     if os.environ.get("HTTPS_PROXY") and not args.ohne_proxy:
         proxy = {"server": os.environ["HTTPS_PROXY"], "bypass": "localhost,127.0.0.1"}
     async with async_playwright() as pw:
-        try:
-            browser = await pw.chromium.launch(proxy=proxy)
-        except Exception:
-            exe = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
-            browser = await pw.chromium.launch(executable_path=exe, proxy=proxy)
-        req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy)
-        drossel = Drossel(args.abstand)
-        robots = Robots(req, drossel, log)
-        crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
+        if args.offline:                       # nur Zwischenspeicher neu auslesen: kein Browser, kein Netz
+            browser = req = None
+            crawler = Crawler(None, None, None, cache, args.jahr, args.max_seiten, log)
+            crawler.offline = True
+        else:
+            try:
+                browser = await pw.chromium.launch(proxy=proxy)
+            except Exception:
+                exe = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
+                browser = await pw.chromium.launch(executable_path=exe, proxy=proxy)
+            req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy)
+            drossel = Drossel(args.abstand)
+            robots = Robots(req, drossel, log)
+            crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
         sem = asyncio.Semaphore(args.worker)
         hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
         for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
@@ -326,6 +331,8 @@ async def schritt_lauf(args, log):
                                 pilot[e["pilot_nr"]]["netzbetreiber"], [])) if e.get("pilot_nr") else (),
                             pflicht=pflicht, ausschluss=ausschluss,
                             hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
+                if args.offline and not crawler.zwischenspeicher_urls(a) and not e.get("pilot_nr"):
+                    return                     # nichts im Zwischenspeicher: bisheriges Ergebnis bleibt
                 log(f"[{e['nr']}] {e['netzbetreiber']} ({a.website or 'ohne Website'})")
                 try:
                     if e.get("pilot_nr"):
@@ -360,8 +367,9 @@ async def schritt_lauf(args, log):
                     log(f"--- {fertig}/{len(offen)} erledigt, ca. {rate * (len(offen) - fertig) / 60:.0f} min verbleibend")
 
         await asyncio.gather(*(eins(e) for e in offen))
-        await req.dispose()
-        await browser.close()
+        if req:
+            await req.dispose()
+            await browser.close()
     speicher.ausgeben(args.jahr)
 
 
@@ -410,7 +418,8 @@ def schritt_suche(args, log):
         return
     tabelle = Path(args.out) / f"netzentgelte_{args.jahr}.csv"
     with open(tabelle, encoding="utf-8") as f:
-        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] not in ("ok", "robots", "keine_website")]
+        # nur Netzbetreiber ohne Dokument; bei "pruefen" liegt das Preisblatt schon vor (Auslesen statt Suchen)
+        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] in ("kein_preisblatt", "blockiert")]
     n = suchen(zeilen, schluessel, HIER / "lauf" / "suche_treffer.csv", HIER / "lauf" / "suche_erledigt.csv",
                args.jahr, args.max_abfragen, log=log)
     log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
@@ -439,6 +448,8 @@ def main():
     ap.add_argument("--max-seiten", type=int, default=40)
     ap.add_argument("--abstand", type=float, default=1.0, help="Sekunden zwischen Anfragen je Domain (min. 1)")
     ap.add_argument("--ohne-proxy", action="store_true", help="HTTPS_PROXY nicht an Chromium durchreichen")
+    ap.add_argument("--offline", action="store_true",
+                    help="Schritt lauf: nur die schon geladenen Dokumente neu auslesen (kein Netzzugriff, Minuten statt Stunden)")
     ap.add_argument("--max-abfragen", type=int, default=1000, help="Höchstzahl Suchabfragen je Aufruf (Schritt suche)")
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)

@@ -210,6 +210,7 @@ class Crawler:
         self.log = log
         self.lokal: dict[str, Path] = {}       # URL → lokal abgelegtes Preisblatt
         self.lokal_namen: dict[str, str] = {}  # URL → Netzbetreiber laut lauf/preisblaetter.csv
+        self.offline = False                   # nur Zwischenspeicher neu auslesen, kein Netzzugriff
 
     async def _kontext(self):
         ctx = await self.browser.new_context(user_agent=USER_AGENT, locale="de-DE",
@@ -239,6 +240,8 @@ class Crawler:
             vorhanden = ziel_dir / f"{h}.{endung}"
             if vorhanden.exists():
                 return vorhanden, ""
+        if self.offline:
+            return None, "nicht im Zwischenspeicher"
         erlaubt = await self.robots.erlaubt(url)
         if erlaubt is False:
             return None, "robots"
@@ -282,7 +285,31 @@ class Crawler:
         return k
 
     # ------------------------------------------------------------ Hauptablauf
+    def zwischenspeicher_urls(self, a: Auftrag) -> list[str]:
+        """URLs der früher geladenen Dokumente dieses Netzbetreibers (Begleitdateien <hash>.url)."""
+        d = self.cache / a.key
+        if not d.is_dir():
+            return []
+        urls = [f.read_text().strip() for f in sorted(d.glob("*.url"))]
+        return [u for u in urls if u] + [u for u in a.hinweise if u in self.lokal and u not in urls]
+
+    async def neu_auslesen(self, a: Auftrag) -> Fund | None:
+        """Alle früher geladenen Dokumente ohne Netzzugriff neu auslesen; None, wenn keine vorhanden."""
+        urls = self.zwischenspeicher_urls(a)
+        if not urls:
+            return None
+        geprueft = {}
+        for u in urls:
+            k = await self.dokument_pruefen(None, u, a, "Zwischenspeicher")
+            if k.grund != "nicht im Zwischenspeicher":
+                geprueft[u] = k
+        if not geprueft:
+            return None
+        return self._entscheiden(a, geprueft, [], [], 0, 1, a.website)
+
     async def bearbeiten(self, a: Auftrag) -> Fund:
+        if self.offline:
+            return await self.neu_auslesen(a) or Fund("kein_preisblatt", grund="keine Dokumente im Zwischenspeicher")
         if not a.website:
             return Fund("keine_website", grund="keine Website im MaStR")
         ctx = await self._kontext()

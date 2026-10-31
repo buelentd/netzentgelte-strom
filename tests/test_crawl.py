@@ -255,3 +255,26 @@ def test_lokales_preisblatt_ohne_namen_mit_zuordnung(tmp_path):
     assert k.verwendbar and not k.name_fehlt and "Netzbetreibername nicht im Dokument" not in k.pruefen
     b = Auftrag(key="k", nr=2, name="Anderes Netz GmbH", mastr_nr="", website="gesperrt.example")
     assert aio.run(c.dokument_pruefen(None, "https://gesperrt.example/p.pdf", b)).name_fehlt
+
+
+def test_neu_auslesen_ohne_netz(tmp_path):
+    # Schritt "lauf --offline": nur die früher geladenen Dokumente im Zwischenspeicher neu auslesen
+    import asyncio as aio
+    import hashlib
+    from vnb.crawl import Auftrag, Crawler
+    url = "https://www.musternetz.example/preisblatt_strom_2026.pdf"
+    d = tmp_path / "cache" / "k"
+    d.mkdir(parents=True)
+    h = hashlib.sha1(url.encode()).hexdigest()[:12]
+    pdf(d / f"{h}.pdf", KOPF_STANDARD + ["Niederspannung   18,64   7,49   171,87   1,36"])
+    (d / f"{h}.url").write_text(url)
+    c = Crawler(None, None, None, tmp_path / "cache")
+    c.offline = True
+    a = Auftrag(key="k", nr=1, name="Musternetz GmbH", mastr_nr="", website="www.musternetz.example")
+    fund = aio.run(c.bearbeiten(a))
+    assert fund.kandidat and fund.kandidat.ns["lp_ueber_2500"] == 171.87
+    # ohne Zwischenspeicher: kein Netzzugriff, nichts gefunden
+    leer = Auftrag(key="leer", nr=2, name="Leer GmbH", mastr_nr="", website="www.leer.example")
+    assert c.zwischenspeicher_urls(leer) == [] and aio.run(c.neu_auslesen(leer)) is None
+    pfad, fehler = aio.run(c.herunterladen(None, "https://www.leer.example/x.pdf", leer))
+    assert pfad is None and fehler == "nicht im Zwischenspeicher"

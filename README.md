@@ -32,10 +32,18 @@ heruntergeladen und unter `lauf/preisblaetter/` abgelegt werden. `lauf/preisblae
 Original-Adresse zu (Spalten `url;datei;netzbetreiber;herkunft`). Der Crawler nimmt dann die Datei statt des
 Downloads und liest sie mit demselben Parser aus; die Original-Adresse bleibt die Quelle im Ergebnis.
 
+### Nur neu auslesen (ohne Internet)
+
+`AUSLESEN=true` in `lauf/anstoss.env` (bzw. `python run.py lauf --offline`) liest nur die Dokumente neu aus,
+die frühere Läufe schon heruntergeladen haben (Zwischenspeicher `ergebnis/cache`, zwischen den Läufen im
+GitHub-Cache). Kein Browser, keine Website, keine Suche: nach einer Verbesserung am Auslesen dauert das Minuten
+statt Stunden. Netzbetreiber ohne Dokument im Zwischenspeicher behalten ihr bisheriges Ergebnis. Welche
+Netzbetreiber neu ausgelesen werden, steuern wie sonst `WIEDERHOLEN` und `NEU_PRUEFEN`.
+
 ### Preisblätter über eine Such-Schnittstelle finden
 
-Der große Lauf ruft direkt vor dem Auslesen den Schritt `python run.py suche` auf. Er fragt für jeden noch
-nicht fertigen Netzbetreiber (Status nicht `ok`, `robots` oder `keine_website`) die Such-Schnittstelle von
+Der große Lauf ruft direkt vor dem Auslesen den Schritt `python run.py suche` auf. Er fragt für jeden Netzbetreiber
+ohne Dokument (Status `kein_preisblatt` oder `blockiert`) die Such-Schnittstelle von
 Brave Search ab, mit dem Suchbegriff `"<Name ohne Rechtsform>" Netzentgelte Strom 2026 Preisblatt filetype:pdf`.
 Bis zu fünf Dokument-Links je Netzbetreiber kommen vorübergehend in `lauf/suche_treffer.csv`; Links mit Gas,
 Wasser, Wärme, Grundversorgung oder Ersatzversorgung im Namen werden verworfen. Derselbe Lauf prüft die Treffer
