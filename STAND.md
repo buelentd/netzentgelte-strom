@@ -1,16 +1,16 @@
-# Stand Netzentgelte Strom 2026 (31.10.2026, 18:45 Uhr)
+# Stand Netzentgelte Strom 2026 (31.10.2026, 19:15 Uhr)
 
 ## Ergebnis
 
-**526 von 831 Netzbetreibern sind nutzbar** (mindestens ein Teil der Preise geprüft und plausibel).
+**566 von 831 Netzbetreibern sind nutzbar** (mindestens ein Teil der Preise geprüft und plausibel).
 
 | | Anzahl |
 |---|---:|
-| Vollständig: Standardlastprofil und registrierende Leistungsmessung | 328 |
-| Nur registrierende Leistungsmessung | 112 |
-| Nur Standardlastprofil | 86 |
-| **Nutzbar zusammen** | **526** |
-| Preisblatt vorhanden, Werte aber auffällig oder unvollständig | 59 |
+| Vollständig: Standardlastprofil und registrierende Leistungsmessung | 375 |
+| Nur registrierende Leistungsmessung | 117 |
+| Nur Standardlastprofil | 74 |
+| **Nutzbar zusammen** | **566** |
+| Preisblatt vorhanden, Werte aber auffällig oder unvollständig | 19 |
 | Kein Preisblatt gefunden | 184 |
 | Website blockiert automatische Abrufe | 38 |
 | robots.txt verbietet den Abruf | 23 |
@@ -18,10 +18,10 @@
 
 Spannen (nur geprüfte Werte):
 
-- Standardlastprofil, Arbeitspreis Niederspannung: 3,17 bis 14,98 Cent pro Kilowattstunde, Median 7,27 (414 Netzbetreiber)
-- Registrierende Leistungsmessung Niederspannung bei 4.000 Benutzungsstunden: 2,80 bis 14,46 Cent pro Kilowattstunde, Median 6,26 (440 Netzbetreiber)
+- Standardlastprofil, Arbeitspreis Niederspannung: 3,17 bis 14,98 Cent pro Kilowattstunde, Median 7,28 (449 Netzbetreiber)
+- Registrierende Leistungsmessung Niederspannung bei 4.000 Benutzungsstunden: 2,80 bis 14,46 Cent pro Kilowattstunde, Median 6,34 (492 Netzbetreiber)
 
-Preisstand der vollständigen: endgültig 115, vorläufig 26, unklar 187.
+Preisstand der vollständigen: unklar 215, endgültig 132, vorläufig 28.
 
 Dateien:
 
@@ -41,6 +41,8 @@ Dateien:
 | Auslesen verbessert (Nordhausen, Borken, Schwäbisch Hall, ÜZ Mainfranken, e.wa riss, Ratingen und andere), neu ausgelesen (Lauf 33) | 517 |
 | Bekannte Preisblätter direkt neu geladen (Lauf 34), 22 weitere vollständig | 522 |
 | Unklare Umspannung macht Niederspannung nicht mehr unbrauchbar (Lauf 35) | 526 |
+| Grenze „bis zu / mehr als 2.500“ und über mehrere Kopfzeilen verteilte Grenzen (Lauf 36), 18 weitere vollständig | 527 |
+| Preisblatt ohne Namen von der eigenen Website gilt als zugeordnet (Lauf 37) | 566 |
 
 ## Was die Brave-Suche gebracht hat
 
@@ -55,7 +57,7 @@ Dateien:
 
 ## Offene Punkte, nach Nutzen geordnet
 
-1. **Weitere Lücken beim Auslesen.** 257 Netzbetreiber haben ein Preisblatt, bei dem ein Teil fehlt oder
+1. **Weitere Lücken beim Auslesen.** 210 Netzbetreiber haben ein Preisblatt, bei dem ein Teil fehlt oder
    auffällig ist (Liste: `ergebnis/nicht_gefunden.csv`, Status `pruefen`). Arbeit an den Textauszügen, danach
    `AUSLESEN=true` (Minuten, ohne Internet). Jede Änderung gegen alle Textauszüge abgleichen (keine Verluste).
 2. **Ramstein:** Drei Netzbetreiber mit derselben Website (Ramstein, Bruchmühlbach-Miesau, Weilerbach); die Regel
