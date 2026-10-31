@@ -1,27 +1,27 @@
-# Stand Netzentgelte Strom 2026 (31.10.2026, 16:45 Uhr)
+# Stand Netzentgelte Strom 2026 (31.10.2026, 18:45 Uhr)
 
 ## Ergebnis
 
-**509 von 831 Netzbetreibern sind nutzbar** (mindestens ein Teil der Preise geprüft und plausibel).
+**526 von 831 Netzbetreibern sind nutzbar** (mindestens ein Teil der Preise geprüft und plausibel).
 
 | | Anzahl |
 |---|---:|
-| Vollständig: Standardlastprofil und registrierende Leistungsmessung | 294 |
-| Nur registrierende Leistungsmessung | 121 |
-| Nur Standardlastprofil | 94 |
-| **Nutzbar zusammen** | **509** |
-| Preisblatt vorhanden, Werte aber auffällig oder unvollständig | 69 |
-| Kein Preisblatt gefunden | 190 |
-| Website blockiert automatische Abrufe | 39 |
+| Vollständig: Standardlastprofil und registrierende Leistungsmessung | 328 |
+| Nur registrierende Leistungsmessung | 112 |
+| Nur Standardlastprofil | 86 |
+| **Nutzbar zusammen** | **526** |
+| Preisblatt vorhanden, Werte aber auffällig oder unvollständig | 59 |
+| Kein Preisblatt gefunden | 184 |
+| Website blockiert automatische Abrufe | 38 |
 | robots.txt verbietet den Abruf | 23 |
 | Keine Website | 1 |
 
 Spannen (nur geprüfte Werte):
 
-- Standardlastprofil, Arbeitspreis Niederspannung: 3,17 bis 14,98 Cent pro Kilowattstunde, Median 7,28 (388 Netzbetreiber)
-- Registrierende Leistungsmessung Niederspannung bei 4.000 Benutzungsstunden: 2,80 bis 14,46 Cent pro Kilowattstunde, Median 6,25 (415 Netzbetreiber)
+- Standardlastprofil, Arbeitspreis Niederspannung: 3,17 bis 14,98 Cent pro Kilowattstunde, Median 7,27 (414 Netzbetreiber)
+- Registrierende Leistungsmessung Niederspannung bei 4.000 Benutzungsstunden: 2,80 bis 14,46 Cent pro Kilowattstunde, Median 6,26 (440 Netzbetreiber)
 
-Preisstand der vollständigen: endgültig 102, vorläufig 22, unklar 170.
+Preisstand der vollständigen: endgültig 115, vorläufig 26, unklar 187.
 
 Dateien:
 
@@ -38,6 +38,9 @@ Dateien:
 | Hochgeladene Preisblätter (Westnetz, Bayernwerk, E.DIS, Schleswig-Holstein Netz, Syna, Stuttgart, Avacon) und Verbesserungen beim Auslesen | 491 |
 | Brave-Suche, erster Suchbegriff (Lauf 30) | 504 |
 | Korrektur „vermiedene Netzentgelte“ und Suchbegriff mit Jahr (Lauf 32) | 509 |
+| Auslesen verbessert (Nordhausen, Borken, Schwäbisch Hall, ÜZ Mainfranken, e.wa riss, Ratingen und andere), neu ausgelesen (Lauf 33) | 517 |
+| Bekannte Preisblätter direkt neu geladen (Lauf 34), 22 weitere vollständig | 522 |
+| Unklare Umspannung macht Niederspannung nicht mehr unbrauchbar (Lauf 35) | 526 |
 
 ## Was die Brave-Suche gebracht hat
 
@@ -52,23 +55,22 @@ Dateien:
 
 ## Offene Punkte, nach Nutzen geordnet
 
-1. **Verbesserungen beim Auslesen übernehmen.** Auf dem Zweig `arbeit-auslesen` liegen Korrekturen für das
-   Standardlastprofil (Münster, Ahrtal-Werke, Röthenbach, Apolda, EnergieSüdwest, Rüsselsheim und ähnliche
-   Fälle). Sie sind getestet, aber noch nicht gegen alle Textauszüge abgeglichen. Danach mit `AUSLESEN=true`
-   ohne Internet neu auslesen (Minuten).
-2. **Weitere Lücken beim Auslesen.** 284 Netzbetreiber haben ein Preisblatt, bei dem ein Teil fehlt oder
-   auffällig ist (Liste: `ergebnis/nicht_gefunden.csv`, Status `pruefen`). Arbeit nur an den Textauszügen,
-   kein Lauf nötig.
+1. **Weitere Lücken beim Auslesen.** 257 Netzbetreiber haben ein Preisblatt, bei dem ein Teil fehlt oder
+   auffällig ist (Liste: `ergebnis/nicht_gefunden.csv`, Status `pruefen`). Arbeit an den Textauszügen, danach
+   `AUSLESEN=true` (Minuten, ohne Internet). Jede Änderung gegen alle Textauszüge abgleichen (keine Verluste).
+2. **Ramstein:** Drei Netzbetreiber mit derselben Website (Ramstein, Bruchmühlbach-Miesau, Weilerbach); die Regel
+   „Zuordnung unklar“ hat Ramstein den Standardlastprofil-Teil genommen. Künftig verliert ein Netzbetreiber beim
+   Neu-Laden oder Neu-Auslesen keinen nutzbaren Teil mehr.
 3. **Netzgesellschaft mit eigener Adresse.** Beispiel Aschaffenburg: Im Marktstammdatenregister steht
    `www.stwab.de`, die Preisblätter liegen auf `www.netze-stwab.de`. Vorschlag: Als eigene Website gilt auch
    eine Adresse, die den Kern der bekannten Adresse enthält (mindestens 5 Zeichen). Für Aschaffenburg liegen
    die Links vor:
    - https://www.netze-stwab.de/Stromnetz/Netzzugang-Entgelte/AVG-Preisblatt-2026-Netznutzung-mit-Leistungsmessung.pdf
    - https://www.netze-stwab.de/Stromnetz/Netzzugang-Entgelte.html
-4. **190 ohne Preisblatt.** Die Suche liefert hier meist alte Jahre. Weiter nur von Hand: Link in
+4. **184 ohne Preisblatt.** Die Suche liefert hier meist alte Jahre. Weiter nur von Hand: Link in
    `lauf/hinweis_urls.csv` eintragen oder PDF in `lauf/preisblaetter/` ablegen und in `lauf/preisblaetter.csv`
    zuordnen (Beispiele dort).
-5. **39 blockiert und 23 robots.txt:** nur von Hand (PDF herunterladen und ablegen wie in Punkt 4).
+5. **38 blockiert und 23 robots.txt:** nur von Hand (PDF herunterladen und ablegen wie in Punkt 4).
 6. **Preisblätter 2027.** Ist für ein Netzbetreiber kein Blatt 2026 auffindbar, wird jetzt das Blatt 2027 mit
    Hinweis genommen. Für eine eigene Tabelle 2027 braucht es noch einen eigenen Ergebnisordner je Jahr
    (sonst vermischen sich die Fortschrittsdateien) und den Ausschluss der Pilotwerte 2026.
