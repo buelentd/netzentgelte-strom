@@ -40,16 +40,29 @@ jobs:
             echo "::error::Repository-Secret SUCHE_SCHLUESSEL ist leer (Settings > Secrets and variables > Actions > Repository secrets)"
             exit 1
           fi
-          python - <<'PY'
-          import os, sys
-          from vnb.suche import _abrufen, abfrage, links
-          gesamt = 0
-          for name in ["Stadtwerke Elmshorn", "Avacon Netz", "Stadtwerke Waren"]:
-              q = abfrage(name, 2026)
-              t = links(_abrufen(os.environ["SUCHE_SCHLUESSEL"], q))
-              gesamt += len(t)
-              print(f"{q}: {len(t)} Treffer")
-              for u in t[:5]:
-                  print("   ", u)
-          print("Schlüssel funktioniert" if gesamt else "Schlüssel angenommen, aber keine Treffer")
+          ANZAHL=$(sed -n 's/^VORSCHAU=\([0-9]*\).*/\1/p' lauf/suche_anstoss.env | head -1)
+          python - "${ANZAHL:-0}" <<'PY'
+          import csv, os, sys, tempfile
+          from pathlib import Path
+          from vnb.suche import _abrufen, abfrage, links, suchen
+          from vnb.crawl import hinweise_laden
+          s = os.environ["SUCHE_SCHLUESSEL"]
+          anzahl = int(sys.argv[1])
+          if not anzahl:
+              t = links(_abrufen(s, abfrage("Stadtwerke Elmshorn", 2026)))
+              print(f"Probeabfrage: {len(t)} Treffer"); print("Schlüssel funktioniert" if t else "keine Treffer"); sys.exit()
+          # Vorschau: offene Netzbetreiber suchen, Treffer nur im Protokoll zeigen, nichts speichern
+          with open("ergebnis/netzentgelte_2026.csv", encoding="utf-8") as f:
+              zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] not in ("ok", "robots", "keine_website")]
+          tmp = Path(tempfile.mkdtemp())
+          suchen(zeilen, s, tmp / "t.csv", tmp / "e.csv", max_abfragen=anzahl, log=lambda *a: None)
+          erledigt = list(csv.DictReader((tmp / "e.csv").read_text(encoding="utf-8").splitlines(), delimiter=";"))
+          treffer = [z for z in csv.DictReader((tmp / "t.csv").read_text(encoding="utf-8").splitlines(), delimiter=";") if z["url"]]
+          mit = sum(1 for z in erledigt if z["anzahl_treffer"] != "0")
+          print(f"VORSCHAU: {len(erledigt)} Netzbetreiber gesucht, {mit} mit Dokument-Treffern, {len(treffer)} Dokumente")
+          for z in erledigt:
+              us = [t["url"] for t in treffer if t["nr"] == z["nr"]]
+              print(f"[{z['nr']}] {z['netzbetreiber']}: {len(us)}")
+              for u in us:
+                  print("    ", u)
           PY
