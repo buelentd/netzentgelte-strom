@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 31.10.2026 16:24, 831 Netzbetreiber bzw. Netzgebiete
+Stand 31.10.2026 17:27, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 294 | 35% |
-| pruefen | 284 | 34% |
-| kein_preisblatt | 190 | 23% |
-| blockiert | 39 | 5% |
+| ok | 298 | 36% |
+| pruefen | 287 | 35% |
+| kein_preisblatt | 184 | 22% |
+| blockiert | 38 | 5% |
 | robots | 23 | 3% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
+Preisstand (nur ok): unklar 172, endgültig 102, vorläufig 24
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,17 ct/kWh (Netzgesellschaft Schwerin mbH (NGS))
 - Maximum: 14,98 ct/kWh (Stadtwerke Eberbach GmbH)
-- Median: 7,28 ct/kWh (n = 388)
+- Median: 7,28 ct/kWh (n = 394)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,80 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,25 ct/kWh (n = 415)
+- Median: 6,24 ct/kWh (n = 421)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 53,56 €/kW/a (Hamburger Energienetze GmbH)
 - Maximum: 259,93 €/kW/a (C. Ensinger GmbH ＆ Co. KG)
-- Median: 148,68 €/kW/a (n = 415)
+- Median: 148,67 €/kW/a (n = 421)
 
 ## Datenherkunft
 
@@ -41,19 +41,24 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 
 ## Abgleich mit den geprüften Pilotwerten (Neuauslesung der Pilot-Quelle)
 
-- NS-Werte exakt gleich: 43 von 50
+- NS-Werte exakt gleich: 38 von 50
 - abweichend: 0
-- Quelle nicht lesbar: 7
+- Quelle nicht lesbar: 12
 
 - 5. EWE NETZ GmbH: nicht gelesen (HTTP 404)
 - 11. Netz Leipzig GmbH: nicht gelesen (keine NS-Werte im Jahresleistungspreissystem (nur SLP))
+- 22. Stadtnetze Münster GmbH: nicht gelesen (nicht im Zwischenspeicher)
 - 24. Braunschweiger Netz GmbH: nicht gelesen (HTTP 404)
-- 26. Energienetze Mittelrhein GmbH ＆ Co. KG: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Benutzungsdauer-Grenze nicht im K)
-- 36. LEW Verteilnetz GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
-- 42. SWKiel Netz GmbH: nicht gelesen (robots)
-- 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
+- 25. Hamburger Energienetze GmbH: nicht gelesen (nicht im Zwischenspeicher)
+- 26. Energienetze Mittelrhein GmbH ＆ Co. KG: nicht gelesen (nicht im Zwischenspeicher)
+- 27. WEMAG Netz GmbH: nicht gelesen (nicht im Zwischenspeicher)
+- 36. LEW Verteilnetz GmbH: nicht gelesen (nicht im Zwischenspeicher)
+- 38. Pfalzwerke Netz AG: nicht gelesen (nicht im Zwischenspeicher)
+- 39. SachsenNetze GmbH: nicht gelesen (nicht im Zwischenspeicher)
+- 42. SWKiel Netz GmbH: nicht gelesen (nicht im Zwischenspeicher)
+- 46. Thüga Energienetze GmbH: nicht gelesen (nicht im Zwischenspeicher)
 
-## Status ok, aber Preisstand nicht endgültig (192)
+## Status ok, aber Preisstand nicht endgültig (196)
 
 - 4. Avacon Netz GmbH: vorläufig
 - 8. Westfalen Weser Netz GmbH: vorläufig
@@ -133,6 +138,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 332. netzplus GmbH ＆ Co. KG: vorläufig
 - 335. Neubrandenburger Stadtwerke GmbH: unklar
 - 336. NEW Netz GmbH: unklar
+- 341. Nordhausen Netz GmbH: vorläufig
 - 342. NordNetz GmbH: unklar
 - 347. Osterholzer Stadtwerke GmbH ＆ Co. KG: unklar
 - 353. QuartiersNetz Bayern GmbH: unklar
@@ -149,6 +155,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 404. Stadtwerke Bad Salzuflen GmbH: unklar
 - 406. Stadtwerke Bad Sooden-Allendorf: unklar
 - 410. Stadtwerke Bad Windsheim: unklar
+- 428. Stadtwerke Borken/Westf. GmbH: unklar
 - 440. Stadtwerke Clausthal-Zellerfeld GmbH: unklar
 - 454. Stadtwerke Dorfen GmbH: unklar
 - 455. Stadtwerke Dreieich GmbH: unklar
@@ -198,6 +205,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 641. Stadtwerke Schneeberg GmbH: unklar
 - 645. Stadtwerke Schramberg GmbH ＆ Co. KG: unklar
 - 646. Stadtwerke Schüttorf - Emsbüren GmbH: unklar
+- 649. Stadtwerke Schwäbisch Hall GmbH: unklar
 - 653. Stadtwerke Schweinfurt GmbH: unklar
 - 655. Stadtwerke Schwerte GmbH: unklar
 - 657. Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG: unklar
@@ -239,6 +247,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 792. Teutoburger Energie Netzwerk eG (TEN eG): unklar
 - 794. TraveNetz GmbH: unklar
 - 800. Überlandwerk Rhön GmbH: unklar
+- 802. ÜZ Mainfranken eG: vorläufig
 - 806. Vereinigte Wertach Elektrizitätswerke GmbH: unklar
 - 810. Versorgungsbetriebe Hann. Münden GmbH: unklar
 - 811. Versorgungsbetriebe Hoyerswerda GmbH: unklar
@@ -248,16 +257,16 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 822. Weißachtal-Kraftwerke eG: unklar
 - 826. wesernetz Bremerhaven GmbH: unklar
 
-## Restfälle (537)
+## Restfälle (533)
 
-### pruefen (284)
+### pruefen (287)
 
 - 22. Stadtnetze Münster GmbH: SLP-Werte nicht gefunden
 - 25. Hamburger Energienetze GmbH: SLP-Werte nicht gefunden
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 27. WEMAG Netz GmbH: SLP-Werte auffällig
+- 27. WEMAG Netz GmbH: SLP-Werte nicht gefunden
 - 36. LEW Verteilnetz GmbH: SLP-Werte nicht gefunden
-- 38. Pfalzwerke Netz AG: SLP-Werte auffällig
+- 38. Pfalzwerke Netz AG: SLP-Werte nicht gefunden
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 42. SWKiel Netz GmbH: SLP-Werte nicht gefunden
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
@@ -271,6 +280,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 71. Butzbacher Netzbetrieb GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 80. Donau-Stadtwerke Dillingen-Lauingen: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 83. E-Werk Rohrdorf Josef Haimmerer: SLP-Arbeitspreis 17.12 ct/kWh außerhalb 3–15; SLP-Werte auffällig
+- 87. e.wa riss Netze GmbH: SLP-Werte nicht gefunden
 - 88. EGC Infrastruktur und Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 89. EGF EnergieGesellschaft Frankenberg mbH: SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 90. EGT Energie GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -441,7 +451,8 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 528. Stadtwerke Husum Netz GmbH: SLP-Werte nicht gefunden
 - 532. Stadtwerke Itzehoe GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 535. Stadtwerke Kaltenkirchen GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 544. Stadtwerke Landshut: MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
+- 544. Stadtwerke Landshut: SLP-Werte nicht gefunden
+- 547. Stadtwerke Lauterbach GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 549. Stadtwerke Leine-Solling GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 550. Stadtwerke Lemgo GmbH: SLP-Werte nicht gefunden
 - 556. Stadtwerke Ludwigsburg - Kornwestheim GmbH: SLP-Werte nicht gefunden
@@ -469,6 +480,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 618. Stadtwerke Quedlinburg GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 622. Stadtwerke Ramstein-Miesenbach GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_GwHh.pdf; RLM-Werte auffällig oder fehlend
 - 623. Stadtwerke Rastatt GmbH: SLP-Werte nicht gefunden
+- 624. Stadtwerke Ratingen GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 626. Stadtwerke Rendsburg GmbH: SLP-Werte nicht gefunden
 - 628. Stadtwerke Rinteln GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 630. Stadtwerke Rosenheim Netze GmbH: SLP-Werte nicht gefunden
@@ -537,7 +549,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 825. Werraenergie GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 830. YNCORIS GmbH ＆ Co. KG: weitere Preisblätter mit abweichenden NS-Werten: https://www.yncoris.com/fileadmin/_09_Regulierte_Netze/Stromnetz/Hypothetisches_Preissystem_ohne_Bundeszuschuss_fuer_2026.pdf; RLM-Werte auffällig oder
 
-### kein_preisblatt (190)
+### kein_preisblatt (184)
 
 - 57. Alzchem Netz GmbH: 5 Dokument(e) geprüft: gültig ab [2024], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 59. Aschaffenburger Versorgungs-GmbH: 3 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
@@ -547,7 +559,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 79. Dessauer Stromversorgung GmbH: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 82. E-Werk Meckenheim/Pfalz: 4 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
-- 87. e.wa riss Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); gültig ab [2027], nich
 - 96. Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG: kein Preisblatt-Link gefunden (18 Seiten durchsucht)
 - 103. Elektrizitätsgenossenschaft e.G. Hasbergen: kein Preisblatt-Link gefunden (6 Seiten durchsucht)
 - 104. Elektrizitätsgenossenschaft Engelsberg eG: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
@@ -607,7 +618,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 318. Netz ＆ Energie Betriebsgesellschaft mbH: 11 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
 - 334. Netzwerke Saarlouis GmbH: 13 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; HTTP 404; HTTP 403
 - 337. NGN Netzgesellschaft Niederrhein mbH: 15 Dokument(e) geprüft: gültig ab [2024], nicht 2026; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Werte unvollständig); HTTP 40
-- 341. Nordhausen Netz GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (SLP: mehrere Arbeitspreise (5.37, 2.6); SLP: mehrere Grundpreise (78.0, 0.0)); Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-We
 - 346. Obermaier und Gerg Grundstücksverwaltung KG: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
 - 348. OsthessenNetz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 349. OUTLETCITY AG: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
@@ -635,7 +645,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 420. Stadtwerke Bernburg GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; kein PDF/Excel; gültig ab [2024], nicht 2026; weder RLM- (NS) noch SLP-Werte gefunden; Download-Fehler: APIRequestContext.
 - 424. Stadtwerke Bliestal GmbH: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 425. Stadtwerke Böblingen GmbH ＆ Co. KG: 7 Dokument(e) geprüft: HTTP 404
-- 428. Stadtwerke Borken/Westf. GmbH: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestim
 - 431. Stadtwerke Brühl GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 433. Stadtwerke Buchen GmbH ＆ Co KG: kein Preisblatt-Link gefunden (16 Seiten durchsucht)
 - 434. Stadtwerke Buchholz in der Nordheide GmbH: 1 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
@@ -680,13 +689,11 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 613. Stadtwerke Pirmasens Versorgungs GmbH: 10 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 615. Stadtwerke Plattling: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 617. Stadtwerke Pritzwalk GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
-- 624. Stadtwerke Ratingen GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS: Feld lp_unter_2500 mehrfach belegt; MSNS: Feld lp_unter_2500 mehrfach belegt); fiktive Ent
 - 633. Stadtwerke Roth: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument; gültig ab [2024], nicht 2026
 - 635. Stadtwerke Saarbrücken Netz AG: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 636. Stadtwerke Sangerhausen GmbH: 11 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?); Jahr 2026 nicht im Dokument
 - 642. Stadtwerke Schneverdingen-Neuenkirchen GmbH: 15 Dokument(e) geprüft: robots; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 648. Stadtwerke Schwäbisch Gmünd GmbH: 4 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
-- 649. Stadtwerke Schwäbisch Hall GmbH: 5 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; NS: Werte unvollständig; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar;
 - 656. Stadtwerke Senftenberg GmbH: kein Preisblatt-Link gefunden (29 Seiten durchsucht)
 - 660. Stadtwerke Soest GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 661. Stadtwerke Soltau GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden; MSNS: Benutzun
@@ -718,7 +725,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 788. Syna Hochspannungsnetz GmbH ＆ Co. KG: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 793. thyssenkrupp Steel Europe AG: 10 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2021], nicht 2026
-- 802. ÜZ Mainfranken eG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; fiktive Entgelte
 - 803. Veolia Industriepark Deutschland GmbH: 1 Dokument(e) geprüft: Kopf nennt [2025], nicht 2026
 - 808. Versorgungsbetriebe Bordesholm GmbH: 1 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 809. VersorgungsBetriebe Elbe GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; kein PDF/Excel; weder RLM- (NS) noch SLP-Werte gefunden
@@ -730,7 +736,7 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: kein Preisblatt-Link gefunden (15 Seiten durchsucht)
 
-### blockiert (39)
+### blockiert (38)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 75. CPM Netz GmbH: HTTP 404 https://www.evonik.de/cpm-netz; HTTP 404 http://www.evonik.de/cpm-netz
@@ -758,7 +764,6 @@ Preisstand (nur ok): unklar 170, endgültig 102, vorläufig 22
 - 527. Stadtwerke Hünfeld GmbH: HTTP 404 https://www.huenfeld.de/stadtwerke; HTTP 404 http://www.huenfeld.de/stadtwerke
 - 539. Stadtwerke Konstanz GmbH: robots.txt nicht erreichbar (https://www.sw-konstanz.de); robots.txt nicht erreichbar (http://www.sw-konstanz.de)
 - 546. Stadtwerke Langenzenn: robots.txt nicht erreichbar (https://www.stadtwerke.langenzenn.de); robots.txt nicht erreichbar (http://www.stadtwerke.langenzenn.de)
-- 547. Stadtwerke Lauterbach GmbH: HTTP 429 https://www.stadtwerke-lauterbach.de; HTTP 429 http://www.stadtwerke-lauterbach.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 607. Stadtwerke Pappenheim GmbH: robots.txt nicht erreichbar (https://www.stadtwerke.pappenheim.de); robots.txt nicht erreichbar (http://www.stadtwerke.pappenheim.de)
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: robots.txt nicht erreichbar (https://www.stwr.de); robots.txt nicht erreichbar (http://www.stwr.de)
