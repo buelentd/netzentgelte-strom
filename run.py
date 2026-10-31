@@ -364,9 +364,12 @@ async def schritt_lauf(args, log):
                     satz.update(status="blockiert", grund=f"Fehler: {type(ex).__name__}: {str(ex)[:200]}")
                 if satz.get("gebiet_quelle") == "Sitz laut MaStR":
                     satz["hinweis"] = "; ".join(filter(None, [satz["hinweis"], "Bundesland/Region laut Sitz (MaStR)"]))
-                if (args.offline or args.nur_hinweise) and satz["status"] not in ("ok", "pruefen"):
+                vorher = speicher.daten.get(key_von(e), {})
+                schlechter = vorher and ((vorher.get("rlm_ok") and not satz.get("rlm_ok"))
+                                         or (vorher.get("slp_ok") and not satz.get("slp_ok")))
+                if (args.offline or args.nur_hinweise) and (satz["status"] not in ("ok", "pruefen") or schlechter):
                     log(f"[{e['nr']}] -> {satz['status']} (bisheriges Ergebnis bleibt)")
-                    return                     # nur Verbesserungen übernehmen
+                    return                     # nur Verbesserungen übernehmen, nie einen nutzbaren Teil verlieren
                 speicher.speichern(satz)
                 fertig += 1
                 ns = satz["ns"].get("lp_ueber_2500")

@@ -100,11 +100,14 @@ def bewerten(pfad: Path, url: str, name: str, aliase=(), website: str = "", jahr
         k.ns, k.msns = dict(erg.ns), dict(erg.msns)
         k.hinweise.extend(erg.hinweise)
         k.pruefen.extend(plausibel(k.ns, "NS"))
-        if k.msns:
-            k.pruefen.extend(plausibel(k.msns, "MS/NS"))
-        else:
+        # Umspannung MS/NS ist Zusatz: Unklarheiten dort leeren nur MS/NS und machen NS nicht unbrauchbar
+        msns_unklar = [u for u in erg.unklar if u.startswith("MSNS")] + (plausibel(k.msns, "MS/NS") if k.msns else [])
+        if msns_unklar:
+            k.msns = {}
+            k.hinweise.extend(f"Umspannung MS/NS weggelassen: {u}" for u in dict.fromkeys(msns_unklar))
+        elif not k.msns:
             k.hinweise.append("Umspannung MS/NS nicht gefunden")
-        k.pruefen.extend(dict.fromkeys(erg.unklar))
+        k.pruefen.extend(dict.fromkeys(u for u in erg.unklar if not u.startswith("MSNS")))
         if k.name_fehlt:
             k.pruefen.append("Netzbetreibername nicht im Dokument")
     else:
