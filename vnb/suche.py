@@ -41,6 +41,10 @@ def eigener_treffer(url: str, website: str, name: str) -> bool:
     """Treffer von der eigenen Website des Netzbetreibers oder mit seinem Namen im Link (keine fremden Preisblätter)."""
     if website_domain(url) == website_domain(website):
         return True
+    # Netzgesellschaft unter eigener Adresse: "netze-stwab.de" zu "www.stwab.de" (Kern mindestens 5 Zeichen)
+    kern = website_domain(website).rsplit(".", 1)[0]
+    if len(kern) >= 5 and kern in website_domain(url).rsplit(".", 1)[0]:
+        return True
     link = re.sub(r"[^a-z0-9äöü]", "", urllib.parse.unquote(url).lower())
     worte = [re.sub(r"[^a-z0-9äöü]", "", w.lower()) for w in kernname(name).split()]
     worte = [w for w in worte if len(w) >= 5 and w not in ("stadtwerke", "stadtwerk", "energie", "netze", "netzgesellschaft",

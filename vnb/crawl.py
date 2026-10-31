@@ -350,8 +350,10 @@ class Crawler:
                 heapq.heappush(queue, (-99, next(zaehler), h, 1))
 
         if self.nur_hinweise:
-            queue.clear()
-            seiten_ok = 1                  # keine Seiten besucht: nicht als "blockiert" werten
+            # nur die Hinweis-Seiten selbst öffnen (z. B. Seite "Netzentgelte"), keine weiteren Seiten
+            queue[:] = [q for q in queue if q[2] in a.hinweise]
+            heapq.heapify(queue)
+            seiten_ok = 1                  # keine Startseite besucht: nicht als "blockiert" werten
         def bester():
             gut = [k for k in geprueft.values() if k.verwendbar]
             return max(gut, key=lambda k: k.rang()) if gut else None
@@ -461,7 +463,7 @@ class Crawler:
                 if ist_dokument(u):
                     dok_merken(u, text, kontext, aktuell)
                     continue
-                if basis_domain(u) not in domains or u in besucht or tiefe + 1 > MAX_TIEFE:
+                if self.nur_hinweise or basis_domain(u) not in domains or u in besucht or tiefe + 1 > MAX_TIEFE:
                     continue
                 sc = seiten_score(u + " " + text)
                 if sc > 0:

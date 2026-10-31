@@ -46,3 +46,10 @@ def test_nur_eigene_treffer():
     # fremde Domain, aber Name im Link (Veröffentlichungsplattform)
     assert eigener_treffer("https://www.enwg-veroeffentlichungen.de/bigge/Netzentgelte-2026.pdf", "www.bigge-energie.de",
                            "BIGGE ENERGIE GmbH ＆ Co. KG")
+
+
+def test_netzgesellschaft_eigene_adresse():
+    from vnb.suche import eigener_treffer
+    assert eigener_treffer("https://www.netze-stwab.de/Stromnetz/AVG-Preisblatt-2026.pdf", "www.stwab.de",
+                           "Aschaffenburger Versorgungs-GmbH")
+    assert not eigener_treffer("https://www.swb-netz.de/p.pdf", "www.swb.de", "Stadtwerke B GmbH")   # Kern zu kurz
