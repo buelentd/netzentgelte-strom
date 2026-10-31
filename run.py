@@ -23,7 +23,7 @@ from pathlib import Path
 
 from vnb import liste as liste_mod
 from vnb import pilot as pilot_mod
-from vnb.crawl import (Auftrag, Crawler, Fund, hinweise_laden, lokale_namen_laden, lokale_preisblaetter_laden,
+from vnb.crawl import (Auftrag, Crawler, Fund, hinweise_laden, ist_dokument, lokale_namen_laden, lokale_preisblaetter_laden,
                        website_domain)
 from vnb.ergebnis import Speicher
 from vnb.extract import FELDER, name_tokens, norm, plausibel
@@ -313,6 +313,7 @@ async def schritt_lauf(args, log):
             drossel = Drossel(args.abstand)
             robots = Robots(req, drossel, log)
             crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
+            crawler.nur_hinweise = args.nur_hinweise
         sem = asyncio.Semaphore(args.worker)
         hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
         for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
@@ -333,6 +334,8 @@ async def schritt_lauf(args, log):
                             hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
                 if args.offline and not crawler.zwischenspeicher_urls(a) and not e.get("pilot_nr"):
                     return                     # nichts im Zwischenspeicher: bisheriges Ergebnis bleibt
+                if args.nur_hinweise and (e.get("pilot_nr") or not any(ist_dokument(h) for h in a.hinweise)):
+                    return                     # kein Suchtreffer: bisheriges Ergebnis bleibt
                 log(f"[{e['nr']}] {e['netzbetreiber']} ({a.website or 'ohne Website'})")
                 try:
                     if e.get("pilot_nr"):
@@ -356,6 +359,9 @@ async def schritt_lauf(args, log):
                     satz.update(status="blockiert", grund=f"Fehler: {type(ex).__name__}: {str(ex)[:200]}")
                 if satz.get("gebiet_quelle") == "Sitz laut MaStR":
                     satz["hinweis"] = "; ".join(filter(None, [satz["hinweis"], "Bundesland/Region laut Sitz (MaStR)"]))
+                if (args.offline or args.nur_hinweise) and satz["status"] not in ("ok", "pruefen"):
+                    log(f"[{e['nr']}] -> {satz['status']} (bisheriges Ergebnis bleibt)")
+                    return                     # nur Verbesserungen übernehmen
                 speicher.speichern(satz)
                 fertig += 1
                 ns = satz["ns"].get("lp_ueber_2500")
@@ -450,6 +456,8 @@ def main():
     ap.add_argument("--ohne-proxy", action="store_true", help="HTTPS_PROXY nicht an Chromium durchreichen")
     ap.add_argument("--offline", action="store_true",
                     help="Schritt lauf: nur die schon geladenen Dokumente neu auslesen (kein Netzzugriff, Minuten statt Stunden)")
+    ap.add_argument("--nur-hinweise", action="store_true",
+                    help="Schritt lauf: nur Hinweis-Dokumente und Suchtreffer prüfen, Websites nicht durchsuchen")
     ap.add_argument("--max-abfragen", type=int, default=1000, help="Höchstzahl Suchabfragen je Aufruf (Schritt suche)")
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)

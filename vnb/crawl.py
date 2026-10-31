@@ -211,6 +211,7 @@ class Crawler:
         self.lokal: dict[str, Path] = {}       # URL → lokal abgelegtes Preisblatt
         self.lokal_namen: dict[str, str] = {}  # URL → Netzbetreiber laut lauf/preisblaetter.csv
         self.offline = False                   # nur Zwischenspeicher neu auslesen, kein Netzzugriff
+        self.nur_hinweise = False              # nur Hinweis-Dokumente (Suchtreffer) prüfen, Website nicht durchsuchen
 
     async def _kontext(self):
         ctx = await self.browser.new_context(user_agent=USER_AGENT, locale="de-DE",
@@ -348,6 +349,9 @@ class Crawler:
             else:
                 heapq.heappush(queue, (-99, next(zaehler), h, 1))
 
+        if self.nur_hinweise:
+            queue.clear()
+            seiten_ok = 1                  # keine Seiten besucht: nicht als "blockiert" werten
         def bester():
             gut = [k for k in geprueft.values() if k.verwendbar]
             return max(gut, key=lambda k: k.rang()) if gut else None

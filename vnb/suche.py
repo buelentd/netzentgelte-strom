@@ -19,7 +19,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from .crawl import ist_dokument
+from .crawl import ist_dokument, website_domain
 
 API = "https://api.search.brave.com/res/v1/web/search"
 SPALTEN = ["website", "url", "herkunft", "nr", "netzbetreiber"]
@@ -35,6 +35,17 @@ def kernname(name: str) -> str:
     n = RECHTSFORM.sub(" ", n)
     n = re.sub(r"[\[(].*?[\])]", " ", n)
     return re.sub(r"\s+", " ", n).strip(" ,-")
+
+
+def eigener_treffer(url: str, website: str, name: str) -> bool:
+    """Treffer von der eigenen Website des Netzbetreibers oder mit seinem Namen im Link (keine fremden Preisblätter)."""
+    if website_domain(url) == website_domain(website):
+        return True
+    link = re.sub(r"[^a-z0-9äöü]", "", urllib.parse.unquote(url).lower())
+    worte = [re.sub(r"[^a-z0-9äöü]", "", w.lower()) for w in kernname(name).split()]
+    worte = [w for w in worte if len(w) >= 5 and w not in ("stadtwerke", "stadtwerk", "energie", "netze", "netzgesellschaft",
+                                                          "versorgung", "energieversorgung", "elektrizitätswerk", "gemeindewerke")]
+    return bool(worte) and all(w in link for w in worte)
 
 
 def abfrage(name: str, jahr: int) -> str:
@@ -83,7 +94,8 @@ def suchen(zeilen: list[dict], schluessel: str, ziel: Path, erledigt: Path, jahr
                 log(f"Suche abgebrochen bei [{z['nr']}] {z['netzbetreiber']}: {type(e).__name__}: {str(e)[:120]}")
                 break               # z. B. Kontingent erschöpft: nichts vermerken, nächster Lauf macht weiter
             n += 1
-            treffer = [u for u in links(antwort) if ist_dokument(u) and not FREMD.search(urllib.parse.unquote(u))][:5]
+            treffer = [u for u in links(antwort) if ist_dokument(u) and not FREMD.search(urllib.parse.unquote(u))
+                       and eigener_treffer(u, z["website"], z["netzbetreiber"])][:5]
             for u in treffer:
                 w.writerow([z["website"], u, f"Suchmaschine: {q}", z["nr"], z["netzbetreiber"]])
             we.writerow([z["nr"], z["netzbetreiber"], len(treffer)])

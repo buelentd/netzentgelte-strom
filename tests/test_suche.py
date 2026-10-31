@@ -37,3 +37,12 @@ def test_suchen_filtert_und_setzt_fort(tmp_path):
     gefragt = []
     suchen(zeilen, "s", ziel, erledigt, abrufen=lambda s, q: gefragt.append(q) or {}, log=lambda *a: None, pause=0)
     assert len(gefragt) == 1 and "C Netz" in gefragt[0]
+
+
+def test_nur_eigene_treffer():
+    from vnb.suche import eigener_treffer
+    assert eigener_treffer("https://www.redinet.de/files/pb_2026.pdf", "www.redinet.de", "REDINET Burgenland GmbH")
+    assert not eigener_treffer("https://qeo-netz.de/Entgelte-2026-QEO.pdf", "www.redinet.de", "REDINET Burgenland GmbH")
+    # fremde Domain, aber Name im Link (Veröffentlichungsplattform)
+    assert eigener_treffer("https://www.enwg-veroeffentlichungen.de/bigge/Netzentgelte-2026.pdf", "www.bigge-energie.de",
+                           "BIGGE ENERGIE GmbH ＆ Co. KG")

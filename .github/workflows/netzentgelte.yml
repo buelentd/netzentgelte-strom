@@ -60,7 +60,7 @@ jobs:
           if [ "$EREIGNIS" = "push" ]; then
             # nur KEY=wert-Zeilen übernehmen, nichts ausführen
             while IFS='=' read -r k v; do
-              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE|SUCHE_MAX|NEU_PRUEFEN|AUSLESEN) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
+              case "$k" in JAHR|LIMIT|WORKER|WIEDERHOLEN|LISTE_NEU|DIAGNOSE|SUCHE_MAX|NEU_PRUEFEN|AUSLESEN|NUR_SUCHTREFFER) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
             done < lauf/anstoss.env
           fi
           {
@@ -73,6 +73,7 @@ jobs:
             echo "suche_max=${IN_SUCHE_MAX:-1000}"
             echo "neu_pruefen=$IN_NEU_PRUEFEN"
             echo "auslesen=${IN_AUSLESEN:-false}"
+            echo "nur_suchtreffer=${IN_NUR_SUCHTREFFER:-false}"
           } | tee -a "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
@@ -98,6 +99,9 @@ jobs:
             ergebnis/fortschritt.jsonl
           key: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
           restore-keys: netzentgelte-${{ steps.p.outputs.jahr }}-
+
+      - name: Fortschritt aus dem Repository hat Vorrang (Zwischenspeicher kann älter sein)
+        run: git checkout -- ergebnis/fortschritt.jsonl
 
       - name: Tests
         run: python -m pytest -q tests
@@ -138,6 +142,7 @@ jobs:
           ${{ steps.p.outputs.wiederholen != '' && format('--wiederholen "{0}"', steps.p.outputs.wiederholen) || '' }}
           ${{ steps.p.outputs.neu_pruefen != '' && format('--neu "{0}"', steps.p.outputs.neu_pruefen) || '' }}
           ${{ steps.p.outputs.auslesen == 'true' && '--offline' || '' }}
+          ${{ steps.p.outputs.nur_suchtreffer == 'true' && '--nur-hinweise' || '' }}
 
       - name: Bericht
         if: always()
