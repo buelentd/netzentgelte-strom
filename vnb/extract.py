@@ -578,11 +578,35 @@ def artikel_wert(zeile: str, rest: str, art: str):
     return None, "widersprüchliche Werte " + ", ".join(f"{v:.4f}" for v in werte[:4])
 
 
+def _artikel_spalten(zeilen: list[str], i: int) -> list[str] | None:
+    """Zeile nur aus Artikel-IDs ("Artikel-ID  1-01-5-001  1-01-6-001  1-01-7-001"): die Werte stehen
+    spaltenweise in einer Zeile darüber, die Einheit ("in €/kW pro Jahr") in der Nähe. Rückgabe je ID
+    "Wert Einheit" oder None."""
+    z = zeilen[i]
+    ids = list(ARTIKEL.finditer(z))
+    if len(ids) < 2 or ZAHL.search(ARTIKEL.sub(" ", z)):
+        return None
+    for k in range(i - 1, max(-1, i - 5), -1):
+        werte = list(ZAHL.finditer(zeilen[k]))
+        if not werte:
+            continue
+        if len(werte) != len(ids) or ARTIKEL.search(zeilen[k]):
+            return None
+        umfeld = range(max(0, k - 2), i)
+        if len({e[2] for n in umfeld for e in _einheiten_in(zeilen[n])}) != 1:
+            return None                  # genau eine Einheitenart rund um die Wertzeile
+        n = min((abs(n - k), n) for n in umfeld if _einheiten_in(zeilen[n]))[1]
+        a, b, _, _ = _einheiten_in(zeilen[n])[0]
+        return [f"{w.group()} {zeilen[n][a:b]}" for w in werte]
+    return None
+
+
 def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
     """Liest NS, MS/NS und SLP über die BDEW-Artikel-IDs. Rückgabe ({ebene: {feld: wert}}, gruende)."""
     gefunden, gruende = {}, []
-    for z in zeilen:
-        for m in ARTIKEL.finditer(z):
+    for i, z in enumerate(zeilen):
+        spalten = _artikel_spalten(zeilen, i)
+        for j, m in enumerate(ARTIKEL.finditer(z)):
             key = ARTIKEL_FELD.get(m.groups())
             if not key:
                 continue
@@ -590,7 +614,10 @@ def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
             art = "GP" if feld == "gp" else "AP" if feld.startswith("ap") else "LP"
             if eb == "SLP" and feld == "ap":
                 art = "AP"
-            w, grund = artikel_wert(z, z[m.end():] + " " + z[:m.start()], art)
+            if spalten:
+                w, grund = artikel_wert(z, spalten[j], art)
+            else:
+                w, grund = artikel_wert(z, z[m.end():] + " " + z[:m.start()], art)
             if w is None:
                 gruende.append(f"{m.group()}: {grund}")
                 continue
@@ -822,10 +849,14 @@ def quer_lesen(zeilen: list[str], eb: str) -> dict:
     kopf = norm(" ".join([z for z in zeilen if z.strip()][:6]))
     nur_ns = "niederspannung" in kopf and not re.search(r"mittelspannung|umspann|hochspannung", kopf)
     treffer, aktiv, spalten, aktuelle, fiktiv = [], False, None, None, False
-    satz = {}
+    satz, seite_ebene, seite_kopf = {}, None, False
     for z in zeilen:
         zl = z.strip()
         if not zl:
+            continue
+        m_anschluss = re.match(r"netzanschluss\s+(.+?)\s*/\s*messung", zl, re.I)
+        if m_anschluss:              # Seitenkopf "Netzanschluss Niederspannung / Messung Niederspannung" (Freital)
+            seite_ebene, seite_kopf = ebene(m_anschluss.group(1)), True    # Mittelspannung → keine Ebene
             continue
         if FIKTIV.search(zl):
             fiktiv, aktiv = True, False
@@ -833,7 +864,10 @@ def quer_lesen(zeilen: list[str], eb: str) -> dict:
         u, o = list(GRENZE_UNTER.finditer(z)), list(GRENZE_UEBER.finditer(z))
         zahlen = zahlen_mit_pos(z)
         if len(u) == 1 and len(o) == 1 and not zahlen:
-            aktiv, fiktiv, aktuelle, satz = True, False, ("NS" if nur_ns else None), {}
+            if aktuelle and len(satz) == 4:
+                treffer.append((aktuelle, satz))      # vorige Tabelle abschließen
+            aktiv, fiktiv, satz = True, False, {}
+            aktuelle = seite_ebene if seite_kopf else ("NS" if nur_ns else None)
             spalten = {"unter": u[0].start(), "ueber": o[0].start()}
             continue
         if not aktiv or fiktiv:

@@ -57,6 +57,10 @@ FAELLE = {
     "sw_lippe_weser_2026": ((20.76, 8.00, 171.13, 1.98), (18.41, 6.41, 145.04, 1.34), (7.55, 79.00)),
     # Kopf [€/kW * Tag] [€/kWh]; Zeilen "(informatorisch) (15,07 €/kW*Jahr)" dürfen ihn nicht ersetzen
     "sw_greifswald_2026": ((15.07, 7.01, 115.77, 2.98), None, None),
+    # Artikel-ID-Zeilen unter den Werten (Werte spaltenweise eine Zeile darüber)
+    "esw_netz_2026": ((18.64, 8.87, 187.49, 2.12), (14.23, 7.78, 166.22, 1.70), None),
+    # gedrehte Tabellen je Seite "Netzanschluss … / Messung …", dritte Seite Mittelspannung
+    "freital_2026": ((104.39, 6.90, 203.39, 2.94), (72.86, 5.71, 180.86, 1.39), None),
 }
 
 
