@@ -25,14 +25,16 @@ from pathlib import Path
 FELDER = ["lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500"]
 
 ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,12}(?![\d,])")
-LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*/\s*\(?\s*kw(?!h)(?:\s*(?:/|\*|·|\s|pro|je|und|x)\s*)*"
+LP_EINHEIT = re.compile(r"(?:€|eur(?:o)?|euro)\s*(?:/|pro\b|je\b)\s*\(?\s*kw(?!h)(?:\s*(?:/|\*|·|\s|pro|je|und|x)\s*)*"
                         r"(a\b|jahr|tag|d\b|monat|mon\b)?\)?", re.I)
-AP_EINHEIT = re.compile(r"(ct|cent|€|eur(?:o)?)\s*/\s*kwh", re.I)
-GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner|weniger)\s*(?:als\s*)?2[.\s]?500", re.I)
-GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens)\s*(?:als\s*)?2[.\s]?500", re.I)
+AP_EINHEIT = re.compile(r"(ct|cent|€|eur(?:o)?)\s*(?:/|pro\b|je\b)\s*kwh", re.I)
+GRENZE_UNTER = re.compile(r"(<|≤|<=|unter|bis|kleiner|weniger)\s*(?:als\s*|einschlie(?:ß|ss)lich\s*|einschl\.\s*)?"
+                          r"2[.\s]?500", re.I)
+GRENZE_UEBER = re.compile(r"(≥|>\s*=|>|über|ueber|ab|größer|groesser|mindestens|oberhalb)\s*(?:als\s*)?2[.\s]?500", re.I)
 
 FIKTIV = re.compile(r"fiktiv|ohne\s+(?:berücksichtigung\s+des\s+)?(?:\w+\s+)?zuschuss|informationszweck", re.I)
-START = re.compile(r"jahresleistungspreis|jahresbenutzungsdauer|benutzungsdauer|2[.]?500\s*(h|std|stunden)", re.I)
+START = re.compile(r"jahresleistungspreis|jahresbenutzungsdauer|benutzungsdauer|benutzungsstunden|"
+                   r"2[.]?500\s*(h|std|stunden|bh\b)", re.I)
 STOP = re.compile(
     r"monatsleistungspreis|ohne\s+leistungsmessung|ohne\s+registrierende|standardlastprofil|"
     r"§\s*14\s*a|modul\s*[123]|blindarbeit|blindstrom|messstellenbetrieb|messstellenentgelt|"
@@ -225,6 +227,9 @@ def ebene(label: str) -> str | None:
         return None
     if len(lab) > 70:
         return None
+    m_bereich = re.match(r"netzbereich\s*([1-7])\b", lab)    # "(Netzbereich 7) >= 2.500 h/a" (Miltenberg)
+    if m_bereich:
+        return {"7": "NS", "6": "MSNS"}.get(m_bereich.group(1))
     if re.search(r"umspann\w*\s*\d+\s*(kv)?\s*/\s*(0[,x.]4|x{3})|ms/ns|mittel/nieder|mittelspannung/niederspannung|mittel(spannung)?\s*(und|zu|auf)\s*nieder|"
                  r"umspann\w*\s*(ms|mittel)\w*\s*/?\s*(ns|nieder)|umspann\w*\s*(zur\s*)?nieder|"
                  r"umspann\w*.*\bns\b", lab):
@@ -294,7 +299,7 @@ def kopf_lesen(zeilen: list[str], von: int, bis: int, erg: Ergebnis) -> Kopf:
                 if "Grenze ab 2.500 h ohne Zeichen ≥ im Textauszug" not in erg.hinweise:
                     erg.hinweise.append("Grenze ab 2.500 h ohne Zeichen ≥ im Textauszug")
         if g:
-            if re.search(r"≤|<=|bis\s*(einschl|zu)?\s*2[.\s]?500", z) and re.search(r"(?<![≥>])>(?!=)\s*2[.\s]?500|über", z):
+            if re.search(r"≤|<=|bis\s*(einschl\w*\.?|zu)?\s*2[.\s]?500", z) and re.search(r"(?<![≥>])>(?!=)\s*2[.\s]?500|über|oberhalb", z):
                 erg.grenze_le = True
             k.grenzen.extend(g)
         if BRUTTO.search(z):
@@ -651,7 +656,7 @@ SLP_SAMMEL = re.compile(r"^\s*(standardlastprofil\w*|slp(-kunden)?\b|haushalt\w*
 SLP_SAMMEL_NEIN = re.compile(r"schwach|nacht|\bnt\b|\bht\b|tarif|14\s*a|modul|unterbrech|steuerbar|reduzier|pausch|"
                              r"zeitvariabel|spannung|umspann|leistungspreis|=", re.I)
 SLP_NEUTRAL = re.compile(r"^\s*(niederspannung|eintarif|standard|allgemein|haushalt|gewerbe)", re.I)
-GP_EINHEIT = re.compile(r"(?:€|eur(?:o)?)\s*/\s*(?:(?:z[äa]hlpunkt|zp|messlokation|malo|marktlokation|anschluss|"
+GP_EINHEIT = re.compile(r"(?:€|eur(?:o)?)\s*(?:/|pro\b|je\b)\s*(?:(?:z[äa]hlpunkt|zp|messlokation|malo|marktlokation|anschluss|"
                         r"entnahmestelle)\s*(?:/|und|x|je|pro)?\s*)?(a|jahr|tag|d|monat|mon)\b", re.I)
 GP_FAKTOR = {"a": 1.0, "jahr": 1.0, "tag": 365.0, "d": 365.0, "monat": 12.0, "mon": 12.0}
 

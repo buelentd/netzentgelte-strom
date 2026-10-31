@@ -65,6 +65,10 @@ FAELLE = {
     "syna_2026": ((23.99, 8.08, 156.65, 2.78), (14.35, 7.94, 183.27, 1.19), (8.67, 91.25)),
     # Spaltenkopf "Leistungspreissystem für:" schließt den Standardlastprofil-Preis nicht aus
     "stuttgart_netze_2026": ((34.42, 8.95, 164.89, 3.73), (29.14, 7.85, 160.17, 2.61), (10.16, 55.00)),
+    # Einheiten "in € pro kW und Jahr" / "in ct pro kWh", zweite Zeile "(Netzbereich 7) >= 2.500 h/a"
+    "emb_miltenberg_2026": ((19.53, 10.48, 244.13, 1.50), (19.39, 10.20, 235.16, 1.57), (8.01, 115.00)),
+    # Kopf "Jahresbenutzungsstunden" / "< 2.500 Bh"
+    "sw_elmshorn_2026": ((27.37, 7.51, 144.78, 2.81), None, None),
 }
 
 
@@ -160,3 +164,10 @@ def test_slp_borken_pauschale_reduktion_nicht_vertauscht():
     # Kopf "Grundpreis | Arbeitspreis | pauschale Reduktion": lieber nichts als vertauschte Werte
     e, _ = lesen("sw_borken_2026")
     assert e.slp.get("ap") != 90.0 and e.slp.get("gp") != 9.66
+
+
+def test_ewr_bis_einschliesslich_2500():
+    # "bis einschließlich 2.500 h" / "oberhalb 2.500 h": Grenze ≤ 2.500 / > 2.500
+    e, _ = lesen("ewr_netz_2026")
+    assert tuple(round(e.ns[f], 2) for f in FELDER) == (63.46, 8.40, 187.56, 3.43)
+    assert e.grenze_le
