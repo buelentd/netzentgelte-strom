@@ -439,6 +439,44 @@ def schritt_suche(args, log):
     log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
 
 
+def schritt_hlzf(args, log):
+    """Hochlastzeitfenster 2026 aus Textauszügen (Diagnose-Format: "URL: …" / "Netzbetreiber: …" / Leerzeile / Text)
+    für die nutzbaren Netzbetreiber nach ergebnis/hochlastzeitfenster_<jahr>.csv."""
+    from vnb.hlzf import SPALTEN, hlzf_lesen, zeilen
+    out = Path(args.out)
+    namen, nutzbar = {}, set()
+    with open(out / "gefunden.csv", encoding="utf-8") as f:
+        for r in csv.DictReader(f, delimiter=";"):
+            namen[r["nr"]] = r["netzbetreiber"]
+            if "ok" in (r["rlm_ns"], r["slp"]):
+                nutzbar.add(r["nr"])
+    beste = {}                              # nr → (Ergebnis, url), je Netzbetreiber das Dokument mit den meisten Fenstern
+    for ordner in args.texte:
+        for datei in sorted(Path(ordner).glob("*.txt")):
+            if not datei.name[:4].isdigit() or str(int(datei.name[:4])) not in nutzbar:
+                continue
+            roh = datei.read_text(encoding="utf-8", errors="ignore")
+            url, text = roh.split("\n", 1)[0][5:].strip(), roh.partition("\n\n")[2]
+            if "hochlast" not in text.lower():
+                continue
+            e = hlzf_lesen(text, url)
+            if not e.gelesen or e.jahr != args.jahr:
+                continue
+            nr = str(int(datei.name[:4]))
+            gewicht = sum(len(v) for eb in e.fenster.values() for v in eb.values()) + 100 * ("NS" in e.fenster)
+            if nr not in beste or gewicht > beste[nr][2]:
+                beste[nr] = (e, url, gewicht)
+    ziel = out / f"hochlastzeitfenster_{args.jahr}.csv"
+    with open(ziel, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(SPALTEN)
+        for nr in sorted(beste, key=int):
+            e, url, _ = beste[nr]
+            w.writerows(zeilen(int(nr), namen[nr], e, url))
+    ns = sum(1 for e, _, _ in beste.values() if "NS" in e.fenster)
+    log(f"Hochlastzeitfenster {args.jahr}: {len(beste)} Netzbetreiber, davon {ns} mit Niederspannung → {ziel}")
+
+
 def schritt_bericht(args, log):
     text = Speicher(Path(args.out)).ausgeben(args.jahr)
     log(text)
@@ -446,7 +484,7 @@ def schritt_bericht(args, log):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("schritt", choices=["liste", "suche", "lauf", "bericht", "alles", "diagnose"])
+    ap.add_argument("schritt", choices=["liste", "suche", "lauf", "bericht", "alles", "diagnose", "hlzf"])
     ap.add_argument("--out", default=str(HIER / "ergebnis"))
     ap.add_argument("--jahr", type=int, default=2026)
     ap.add_argument("--csv", help="MaStR-Export (CSV) statt open-mastr-Download")
@@ -466,6 +504,7 @@ def main():
                     help="Schritt lauf: nur die schon geladenen Dokumente neu auslesen (kein Netzzugriff, Minuten statt Stunden)")
     ap.add_argument("--nur-hinweise", action="store_true",
                     help="Schritt lauf: nur Hinweis-Dokumente und Suchtreffer prüfen, Websites nicht durchsuchen")
+    ap.add_argument("--texte", nargs="*", default=[], help="Schritt hlzf: Ordner mit Textauszügen (Diagnose-Format)")
     ap.add_argument("--max-abfragen", type=int, default=1000, help="Höchstzahl Suchabfragen je Aufruf (Schritt suche)")
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)
@@ -483,6 +522,8 @@ def main():
         schritt_bericht(args, log)
     if args.schritt == "diagnose":
         schritt_diagnose(args, log)
+    if args.schritt == "hlzf":
+        schritt_hlzf(args, log)
 
 
 if __name__ == "__main__":
