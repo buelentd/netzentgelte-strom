@@ -47,3 +47,22 @@ def test_modul3_ist_kein_hochlastzeitfenster():
 def test_mehrere_netzgebiete_nicht_raten():
     e = lesen("gw_zwei_gebiete")
     assert not e.gelesen and "mehrere Netzgebiete" in e.grund
+
+
+def test_export_conplot(tmp_path):
+    # Export: nur geprüfte Werte, beide Tarifgruppen, Grenze, Hochlastzeitfenster, PLZ-Zuordnung
+    import json
+    import shutil
+    from vnb.export import erzeugen
+    for f in ("netzentgelte_2026.csv", "gefunden.csv", "plz_netzbetreiber.csv", "hochlastzeitfenster_2026.csv"):
+        shutil.copy(Path(__file__).parent.parent / "ergebnis" / f, tmp_path / f)
+    zahlen = erzeugen(tmp_path, 2026)
+    assert zahlen["netzbetreiber"] >= 800 and zahlen["rlm_ns"] > 0
+    d = json.loads((tmp_path / "conplot" / "netzbetreiber_2026.json").read_text(encoding="utf-8"))
+    for e in d["netzbetreiber"]:
+        if e["rlm"] and e["rlm"]["ns"]:
+            ns = e["rlm"]["ns"]
+            assert ns["lp_unter_eur_kw_jahr"] < ns["lp_ab_eur_kw_jahr"] and e["grenze"] in ("<2500", "<=2500")
+        assert ("rlm_ns" in e["fehlt"]) == (not (e["rlm"] and e["rlm"]["ns"]))
+    plz = json.loads((tmp_path / "conplot" / "plz_2026.json").read_text(encoding="utf-8"))
+    assert all(isinstance(v, list) and v for v in plz.values())

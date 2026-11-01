@@ -484,7 +484,7 @@ def schritt_bericht(args, log):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("schritt", choices=["liste", "suche", "lauf", "bericht", "alles", "diagnose", "hlzf"])
+    ap.add_argument("schritt", choices=["liste", "suche", "lauf", "bericht", "alles", "diagnose", "hlzf", "export"])
     ap.add_argument("--out", default=str(HIER / "ergebnis"))
     ap.add_argument("--jahr", type=int, default=2026)
     ap.add_argument("--csv", help="MaStR-Export (CSV) statt open-mastr-Download")
@@ -524,6 +524,9 @@ def main():
         schritt_diagnose(args, log)
     if args.schritt == "hlzf":
         schritt_hlzf(args, log)
+    if args.schritt == "export":
+        from vnb.export import erzeugen
+        log(f"Export für conplot: {erzeugen(out, args.jahr)} → {out / 'conplot'}")
 
 
 if __name__ == "__main__":
