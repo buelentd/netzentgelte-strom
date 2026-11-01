@@ -99,3 +99,25 @@ bisherige. Der Fortschritt im Repository hat Vorrang vor dem Zwischenspeicher de
 - Die Liste „schon gesucht“ hat einen Lauf mit neuem Suchbegriff komplett übersprungen (Lauf 31). Entfernt.
 - Eine Anmerkung zu vermiedenen Netzentgelten im Kopf hat echte Preisblätter verworfen (Butzbach, OVAG).
 - Suchtreffer fremder Netzbetreiber wurden geprüft (REDINET). Jetzt nur eigene Website.
+
+## Nachtrag 01.11.2026: conplot.de
+
+Ziel: Die Netzentgelte fließen in den Rechner „Was ein Batteriespeicher in Ihrem Betrieb spart“ auf
+https://www.conplot.de/webanwendung.html (geführte Abschätzung, Schritt 2 Szenario und Ergebnis).
+
+- **Datensatz für conplot:** `ergebnis/conplot/netzbetreiber_2026.json`, `plz_2026.json`, Beschreibung und
+  Rechenweg in `ergebnis/conplot/FORMAT.md`. Erzeugen mit `python run.py export`.
+- **Hochlastzeitfenster 2026:** `ergebnis/hochlastzeitfenster_2026.csv` (112 nutzbare Netzbetreiber mit
+  Niederspannung), gelesen mit `vnb/hlzf.py` aus vorhandenen Textauszügen (`python run.py hlzf --texte …`).
+- **Testseite** (Nachbau der geführten Abschätzung mit unseren Daten): https://claude.ai/artifact/J8UnVGkS6kvUFdF2WFZMiL
+- **Befund bei conplot:** Ein pauschaler Leistungspreis von 12,5 € je kW und Monat (150 € je kW und Jahr)
+  überschätzt die Ersparnis durch Spitzenkappung bei Kunden mit wenig Benutzungsstunden um ein Mehrfaches
+  (Beispiel Meerane: 3.771 statt 15.000 € pro Jahr). Tarifwechsel bei 2.500 h und echte Hochlastzeitfenster
+  fehlen; der Speicher lädt im Modell teils innerhalb der Hochlastzeitfenster nach; Preispfad startet 2025.
+
+Nächste Schritte:
+1. Lauf für die Hochlastzeitfenster der übrigen rund 450 nutzbaren Netzbetreiber: pro Netzbetreiber eine
+   Brave-Suche `site:<Website> hochlastzeitfenster 2026`, nur Treffer prüfen (noch einzubauen).
+2. Preise für die fehlenden Netzbetreiber (Suchmuster mit `site:` und Netzentgelt-Seiten aus den Treffern).
+3. Abstimmung mit conplot: Leistungspreis-Feld durch den Datensatz ersetzen, Basisjahr 2026, Strompreis ohne
+   Netzentgelt, Nachladen nur außerhalb der Hochlastzeitfenster.
