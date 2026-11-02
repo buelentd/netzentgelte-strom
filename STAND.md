@@ -204,3 +204,14 @@ Offen aus dem Vergleich: conplot-Balken Netzentgelt 6.600 € lässt vermuten, d
 erklären lassen; Hochlastzeitfenster e.wa riss Winter: conplot-Grafik etwa 8:00–12:45 und 16:00–18:45, unsere Auslesung
 12:00–13:30 und 16:15–19:15, gegen das Original prüfen (PDF aus dieser Umgebung nicht abrufbar); Handel/Verschieben
 bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Regelleistung bei conplot abgewählt).
+
+### Morgen weiter (Stand 02.11.2026, spätabends)
+1. Kapazitätsabbau 2,5 % je Jahr und Entsorgung 75 €/kWh in den Barwert einbauen (Werte von conplot, nicht belegt).
+   Rechenbeispiel Biberach 220 kWh: Barwert −29.981 € heute, −37.490 € mit Abbau, −45.690 € mit Entsorgung.
+   Zyklen: 6.000 Zyklen bei 1,5 pro Tag halten etwa 11 Jahre (daher die 12 Jahre).
+2. Handelswege FCR, aFRR, Day-Ahead je MW vergleichen, nicht addieren, mit Erklärung auf der Seite. Day-Ahead aus unseren
+   Preisen: etwa 79.000 €/MW und Jahr brutto (Obergrenze), conplot 91.000. aFRR: echte Preise von regelleistung.net für
+   365 Tage holen (Lauf, braucht Ok); conplot 146.000 vermutlich zu hoch (Markt sinkt, nur Modellrechnungen gefunden).
+3. Fragen an conplot (siehe `ergebnis/conplot/VERGLEICH.md`); Hochlastzeitfenster e.wa riss gegen das Preisblatt prüfen.
+4. Preisblätter mit auffälligem Datum prüfen (Nr. 13 TEN, 137 ENA Apolda, 562 Wittenberg).
+5. Danach: Entscheidung Netzentgelte 2027, Hochlastzeitfenster für weitere Netzbetreiber (Brave-Lauf, Ok nötig).
