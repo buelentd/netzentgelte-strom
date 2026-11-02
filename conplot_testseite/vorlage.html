@@ -1,0 +1,425 @@
+<title>Netzentgelt-Abschätzung Testseite</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: zwei Spalten (Eingabe links, Ergebnis rechts, haftend), auf dem Telefon untereinander */
+:root{
+  --bg:#f3f2ee; --flaeche:#ffffff; --feld:#f7f6f2; --linie:#d9d6cc; --text:#22231f; --leise:#6a6a60;
+  --akzent:#2f6b5a; --akzent-hell:#e3efe9; --warn:#a86512; --warn-hell:#fbeedd; --gut:#2f7a3d; --schlecht:#a33a2c;
+  --f-titel:"Archivo",system-ui,sans-serif; --f-text:"IBM Plex Sans",system-ui,sans-serif; --f-zahl:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#2b2a25; --flaeche:#36352f; --feld:#45443d; --linie:#57554c; --text:#ecebe4; --leise:#b4b2a6;
+  --akzent:#7cc4a8; --akzent-hell:#2f4a40; --warn:#e7a54a; --warn-hell:#4a3a22; --gut:#8fd19c; --schlecht:#f08c7c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#2b2a25; --flaeche:#36352f; --feld:#45443d; --linie:#57554c; --text:#ecebe4; --leise:#b4b2a6;
+  --akzent:#7cc4a8; --akzent-hell:#2f4a40; --warn:#e7a54a; --warn-hell:#4a3a22; --gut:#8fd19c; --schlecht:#f08c7c; color-scheme:dark}
+body{background:var(--bg);color:var(--text);font-family:var(--f-text);font-size:15px;line-height:1.5}
+.seite{max-width:1180px;margin:0 auto;padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
+h1{font-family:var(--f-titel);font-weight:800;font-size:1.6rem;margin:0;text-wrap:balance}
+h2{font-family:var(--f-titel);font-weight:700;font-size:1.05rem;margin:0}
+.kopf p{margin:4px 0 0;color:var(--leise);max-width:70ch}
+.marke{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--warn);background:var(--warn-hell);padding:2px 8px;border-radius:4px;margin-bottom:6px}
+.raster{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:860px){.raster{grid-template-columns:minmax(0,1fr)}}
+.karte{background:var(--flaeche);border:1px solid var(--linie);border-radius:10px;padding:18px;display:grid;gap:14px;min-width:0}
+.ergebnis{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+@media (max-width:860px){.ergebnis{position:static}}
+.zeile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:520px){.zeile{grid-template-columns:minmax(0,1fr)}}
+label.titel{display:block;font-weight:600;margin-bottom:4px}
+.pflicht{color:var(--akzent)}
+input[type=text],input[type=number],select,textarea{width:100%;box-sizing:border-box;background:var(--feld);color:var(--text);border:1px solid var(--linie);border-radius:7px;padding:9px 11px;font:inherit}
+textarea{min-height:70px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--akzent);outline-offset:1px}
+.haken{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--leise);margin-top:4px}
+.klein{font-size:.82rem;color:var(--leise)}
+.guete{display:grid;gap:6px}
+.balken{height:8px;border-radius:4px;background:var(--feld);overflow:hidden}
+.balken>i{display:block;height:100%;background:var(--akzent);width:0;transition:width .3s}
+@media (prefers-reduced-motion:reduce){.balken>i{transition:none}}
+.guete-kopf{display:flex;justify-content:space-between;align-items:baseline}
+.guete-kopf b{font-family:var(--f-zahl);color:var(--akzent)}
+.nb-liste{display:grid;gap:6px}
+.nb-liste label{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border:1px solid var(--linie);border-radius:7px;cursor:pointer}
+.nb-liste label:has(input:checked){border-color:var(--akzent);background:var(--akzent-hell)}
+.chip{display:inline-block;font-size:.72rem;padding:1px 7px;border-radius:10px;border:1px solid var(--linie);color:var(--leise);margin-left:4px}
+.chip.ok{color:var(--gut);border-color:var(--gut)}
+.chip.warn{color:var(--warn);border-color:var(--warn)}
+.chip.nein{color:var(--schlecht);border-color:var(--schlecht)}
+.gross{font-family:var(--f-zahl);font-size:2rem;font-weight:500;line-height:1.1}
+.zahlen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.zahl small{display:block;color:var(--leise);font-size:.78rem;letter-spacing:.03em;text-transform:uppercase}
+.zahl span{font-family:var(--f-zahl);font-size:1.15rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:5px 6px;border-bottom:1px solid var(--linie)}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:600;color:var(--leise)}
+tr.aktiv td{background:var(--akzent-hell);font-weight:600}
+.tabelle{overflow-x:auto}
+.hinweise{margin:0;padding-left:18px;display:grid;gap:4px;font-size:.88rem}
+.hinweise li.warn{color:var(--warn)}
+.herkunft{font-size:.82rem;color:var(--leise)}
+.trenner{border:0;border-top:1px solid var(--linie);margin:2px 0}
+.leer{color:var(--leise);font-style:italic}
+a{color:var(--akzent)}
+.beispiele{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.knopf{font:inherit;font-size:.85rem;background:var(--flaeche);color:var(--text);border:1px solid var(--linie);border-radius:6px;padding:5px 10px;cursor:pointer}
+.knopf:hover{border-color:var(--akzent)}
+.anlagen-ergebnis{font-size:.85rem;background:var(--feld);border-radius:7px;padding:8px 10px}
+</style>
+
+<div class="seite">
+  <header class="kopf">
+    <span class="marke">Testseite, nicht conplot.de</span>
+    <div class="beispiele"><span class="klein">Beispiel laden:</span>
+      <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
+      <button type="button" class="knopf" data-bsp="biberach">Bäckerei Biberach (mit Hochlastzeitfenstern)</button></div>
+    <h1>Geführte Abschätzung: Netzentgelt und Speicher</h1>
+    <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto, ohne Strom, Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer. Beispiel vorausgefüllt: Bäckerei in Meerane.</p>
+  </header>
+
+  <div class="raster">
+    <form class="karte" id="form" autocomplete="off">
+      <div class="guete">
+        <div class="guete-kopf"><h2>Datengüte Ihrer Abschätzung</h2><b id="guete-wert">0 %</b></div>
+        <div class="balken"><i id="guete-balken"></i></div>
+        <div class="klein" id="guete-text">Noch keine Angaben</div>
+      </div>
+      <hr class="trenner">
+
+      <div class="zeile">
+        <div>
+          <label class="titel" for="plz">Postleitzahl des Standorts <span class="pflicht">*</span></label>
+          <input type="text" id="plz" inputmode="numeric" maxlength="5" placeholder="z. B. 08393" list="plz-liste" autocomplete="off">
+          <datalist id="plz-liste"></datalist>
+        </div>
+        <div>
+          <label class="titel" for="branche">Branche / Betrieb <span class="pflicht">*</span></label>
+          <select id="branche"></select>
+        </div>
+      </div>
+      <div id="nb-bereich" class="nb-liste"></div>
+
+      <div class="zeile">
+        <div>
+          <label class="titel" for="kwh">Jahresverbrauch (kWh/Jahr) <span class="pflicht">*</span></label>
+          <input type="number" id="kwh" min="0" step="1000" placeholder="z. B. 150000">
+          <label class="haken"><input type="checkbox" id="kwh-sicher"> aus Stromrechnung (sicher)</label>
+        </div>
+        <div>
+          <label class="titel" for="kw">Spitzenlast (kW)</label>
+          <input type="number" id="kw" min="0" step="1" placeholder="leer lassen, wenn unbekannt">
+          <label class="haken"><input type="checkbox" id="kw-sicher"> aus Netzrechnung (sicher)</label>
+        </div>
+      </div>
+
+      <div class="zeile">
+        <div>
+          <label class="titel" for="schicht">Schichtsystem</label>
+          <select id="schicht">
+            <option value="1">1-Schicht</option><option value="2">2-Schicht</option><option value="3">3-Schicht / durchgehend</option>
+          </select>
+        </div>
+        <div>
+          <label class="titel" for="tage">Betriebstage / Woche</label>
+          <select id="tage">
+            <option value="5">5 (Mo–Fr)</option><option value="6">6 (Mo–Sa)</option><option value="7">7 (täglich)</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="titel" for="anlagen">Welche Anlagen ziehen kurz und kräftig Strom?</label>
+        <textarea id="anlagen" placeholder="z. B. 2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW"></textarea>
+        <div class="anlagen-ergebnis" id="anlagen-ergebnis" hidden></div>
+      </div>
+
+      <div class="zeile">
+        <label class="haken"><input type="checkbox" id="pv"> PV-Anlage vorhanden</label>
+        <label class="haken"><input type="checkbox" id="laden"> Ladeinfrastruktur vorhanden</label>
+      </div>
+      <div id="laden-bereich" hidden>
+        <label class="titel" for="ladekw">Gleichzeitige Ladeleistung (kW)</label>
+        <input type="number" id="ladekw" min="0" step="1" placeholder="z. B. 22">
+      </div>
+
+      <hr class="trenner">
+      <h2>Speicher zur Spitzenkappung</h2>
+      <div class="zeile">
+        <div>
+          <label class="titel" for="ziel">Spitzenlast nach Kappung (kW)</label>
+          <input type="number" id="ziel" min="0" step="1" placeholder="Vorschlag wird berechnet">
+        </div>
+        <div>
+          <label class="titel" for="speicherpreis">Speicherpreis (€/kWh Kapazität)</label>
+          <input type="number" id="speicherpreis" min="0" step="10" placeholder="Platzhalter, Anbieterliste folgt">
+        </div>
+      </div>
+      <label class="haken"><input type="checkbox" id="rueckspeisen"> Speicher speist ins Netz zurück</label>
+    </form>
+
+    <aside class="karte ergebnis" id="ergebnis" aria-live="polite"></aside>
+  </div>
+</div>
+
+<script type="application/json" id="daten">__DATEN__</script>
+<script>
+"use strict";
+const D = JSON.parse(document.getElementById("daten").textContent);
+const NB = new Map(D.nb.map(e => [e.n, e]));
+const $ = id => document.getElementById(id);
+const fmt = (v, n = 0) => v == null || !isFinite(v) ? "–" : v.toLocaleString("de-DE", {minimumFractionDigits: n, maximumFractionDigits: n});
+
+// Branchen: Benutzungsstunden (Annahme bei 1-Schicht und Standard-Betriebstagen), BDEW-Profil, typisches Spitzenfenster
+const BRANCHEN = {
+  baeckerei:      {name: "Bäckerei mit Backstube", h: 2500, tage: 6, profil: "G5", fenster: "4–8 Uhr"},
+  imbiss:         {name: "Imbiss", h: 2500, tage: 6, profil: "G2", fenster: "11–14 Uhr"},
+  gastronomie:    {name: "Restaurant / Gastronomie", h: 2500, tage: 6, profil: "G2", fenster: "11–14 und 18–21 Uhr"},
+  systemgastro:   {name: "Systemgastronomie", h: 4000, tage: 7, profil: "G2", fenster: "11–14 Uhr"},
+  einzelhandel:   {name: "Einzelhandel / Laden", h: 2500, tage: 6, profil: "G4", fenster: "9–18 Uhr"},
+  supermarkt:     {name: "Supermarkt", h: 6000, tage: 6, profil: "G3", fenster: "durchgehend (Kühlung)"},
+  buero:          {name: "Büro / Verwaltung", h: 1500, tage: 5, profil: "G1", fenster: "8–17 Uhr"},
+  handwerk:       {name: "Handwerk / Werkstatt", h: 1500, tage: 5, profil: "G1", fenster: "7–16 Uhr"},
+  hotel:          {name: "Hotel", h: 4000, tage: 7, profil: "G0", fenster: "morgens und abends"},
+  produktion:     {name: "Produktion (Zerspanung, Galvanik …)", h: 2500, tage: 5, profil: "G1/G3", fenster: "Schichtbeginn"},
+  kuehlhaus:      {name: "Kühlhaus", h: 6000, tage: 7, profil: "G3", fenster: "durchgehend"},
+  fitness:        {name: "Fitnessstudio", h: 4000, tage: 7, profil: "G2", fenster: "17–21 Uhr"},
+};
+const SCHICHT_H = {1: null, 2: 4000, 3: 6000};
+
+function brancheStunden(b, schicht, tage) {
+  let h = SCHICHT_H[schicht] && SCHICHT_H[schicht] > b.h ? SCHICHT_H[schicht] : b.h;
+  h = h * tage / b.tage;                     // mehr Betriebstage verteilen die Arbeit auf mehr Stunden
+  return Math.min(Math.max(h, 800), 8000);
+}
+
+// Freitext "2 Etagenöfen je 36 kW, morgens 4–7 Uhr; Kältemaschine 12 kW" → Geräte mit eigenem Zeitfenster
+function zeitfenster(t) {
+  const f = t.match(/(\d{1,2})(?::(\d\d))?\s*(?:–|-|bis)\s*(\d{1,2})(?::(\d\d))?\s*Uhr/i);
+  if (!f) return null;
+  const von = +f[1] + (+(f[2] || 0)) / 60, bis = +f[3] + (+(f[4] || 0)) / 60;
+  return {von, bis, dauer: ((bis - von + 24) % 24) || 24, text: f[0].replace(/\s+/g, " ")};
+}
+function anlagenLesen(text) {
+  const anlagen = [];
+  for (const t of text.split(/[;\n]+/)) {
+    const m = t.match(/(?:(\d+)\s*(?:x|×|stk\.?|stück)?\s*)?([A-Za-zÄÖÜäöüß][\wÄÖÜäöüß\-\/ ]*?)\s*(?:je|à|a|mit)?\s*(\d+(?:[.,]\d+)?)\s*kW\b/i);
+    if (m) anlagen.push({anzahl: +(m[1] || 1), name: m[2].trim(), kw: parseFloat(m[3].replace(",", ".")), fenster: zeitfenster(t)});
+  }
+  const mitFenster = anlagen.filter(a => a.fenster);
+  return {anlagen, summe: anlagen.reduce((s, a) => s + a.anzahl * a.kw, 0), fenster: mitFenster.length ? mitFenster[0].fenster : null};
+}
+// Überschneiden sich zwei Uhrzeit-Spannen (auch über Mitternacht)?
+function ueberlappt(a, b) {
+  const teile = f => f.bis > f.von ? [[f.von, f.bis]] : [[f.von, 24], [0, f.bis]];
+  return teile(a).some(([x1, x2]) => teile(b).some(([y1, y2]) => x1 < y2 && y1 < x2));
+}
+function hzSpanne(t) { const [v, b] = t.split("-").map(x => { const [h, m] = x.split(":"); return +h + +m / 60; }); return {von: v, bis: b}; }
+
+function rlm(werte, kwh, kw, le) {
+  const h = kwh / kw;
+  const unter = le ? h <= 2500 : h < 2500;
+  const [lp, ap] = unter ? [werte[0], werte[1]] : [werte[2], werte[3]];
+  const leistung = lp * kw, arbeit = ap * kwh / 100;
+  return {h, unter, lp, ap, leistung, arbeit, summe: leistung + arbeit};
+}
+
+// Vorschläge: nur Postleitzahlen, für die mindestens ein Netzbetreiber geprüfte Preise hat
+const PLZ_MIT_PREISEN = Object.keys(D.plz).filter(p => D.plz[p].some(([n]) => { const e = NB.get(n); return e && (e.ns || e.slp); })).sort();
+function plzVorschlagen() {
+  const ein = $("plz").value.replace(/\D/g, "");
+  const treffer = ein.length >= 2 ? PLZ_MIT_PREISEN.filter(p => p.startsWith(ein)).slice(0, 30) : [];
+  $("plz-liste").innerHTML = treffer.map(p => {
+    const namen = D.plz[p].map(([n]) => NB.get(n)).filter(e => e && (e.ns || e.slp)).map(e => e.name);
+    return `<option value="${p}">${namen.join(" / ")}</option>`;
+  }).join("");
+}
+
+function nbFuerPlz(plz) { return (D.plz[plz] || []).map(([n, anteil]) => ({...NB.get(n), anteil})).filter(e => e.n); }
+
+let gewaehlt = null;
+function nbAnzeigen() {
+  const plz = $("plz").value.trim(), bereich = $("nb-bereich");
+  bereich.innerHTML = "";
+  if (!/^\d{5}$/.test(plz)) { gewaehlt = null; return; }
+  const liste = nbFuerPlz(plz);
+  if (!liste.length || !PLZ_MIT_PREISEN.includes(plz)) { bereich.innerHTML = '<div class="klein">Für diese Postleitzahl liegen noch keine geprüften Netzentgelte vor. Bitte eine Postleitzahl aus der Vorschlagsliste wählen.</div>'; gewaehlt = null; return; }
+  if (!liste.some(e => e.n === gewaehlt)) gewaehlt = liste[0].n;
+  if (liste.length > 1) bereich.insertAdjacentHTML("beforeend", '<div class="klein">Mehrere Netzbetreiber in dieser Postleitzahl. Ihr Netzbetreiber steht auf der Netzrechnung.</div>');
+  for (const e of liste) {
+    const preise = (e.ns ? '<span class="chip ok">Leistungsmessung</span>' : '<span class="chip nein">Leistungsmessung fehlt</span>')
+                 + (e.slp ? '<span class="chip ok">Standardlastprofil</span>' : '<span class="chip nein">Standardlastprofil fehlt</span>');
+    bereich.insertAdjacentHTML("beforeend", `<label><input type="radio" name="nb" value="${e.n}" ${e.n === gewaehlt ? "checked" : ""}>
+      <span><b>${e.name}</b> <span class="klein">${liste.length > 1 ? fmt(e.anteil) + " % der Anschlüsse" : ""}</span><br>${preise}</span></label>`);
+  }
+}
+
+function rechnen() {
+  const b = BRANCHEN[$("branche").value];
+  const kwh = parseFloat($("kwh").value) || 0;
+  const kwEingabe = parseFloat($("kw").value) || 0;
+  const schicht = +$("schicht").value, tage = +$("tage").value;
+  const A = anlagenLesen($("anlagen").value);
+  const laden = $("laden").checked ? (parseFloat($("ladekw").value) || 0) : 0;
+  const nb = gewaehlt ? NB.get(gewaehlt) : null;
+
+  // Anlagen-Rückmeldung
+  const ae = $("anlagen-ergebnis");
+  if (A.anlagen.length) {
+    ae.hidden = false;
+    ae.innerHTML = "Erkannt: " + A.anlagen.map(a => `${a.anzahl > 1 ? a.anzahl + " × " : ""}${a.name} ${fmt(a.anzahl * a.kw)} kW `
+      + (a.fenster ? `(${a.fenster.text})` : "(ohne Zeitangabe, gilt als ganztägig)")).join(" · ") + ` · zusammen <b>${fmt(A.summe)} kW</b>`;
+  } else ae.hidden = true;
+
+  // Datengüte
+  let guete = 0; const teile = [];
+  if (gewaehlt) { guete += 10; teile.push("Netzbetreiber"); }
+  if (kwh) { guete += $("kwh-sicher").checked ? 30 : 15; teile.push($("kwh-sicher").checked ? "Verbrauch laut Rechnung" : "Verbrauch geschätzt"); }
+  if (kwEingabe) { guete += $("kw-sicher").checked ? 40 : 20; teile.push($("kw-sicher").checked ? "Spitzenlast laut Rechnung" : "Spitzenlast angegeben"); }
+  else if (A.summe) { guete += 15; teile.push("Spitzenlast aus Anlagen"); }
+  else if (b) { guete += 5; teile.push("Spitzenlast aus Branche"); }
+  if (b) guete += 5;
+  if (A.fenster) { guete += 10; teile.push("Spitzenzeit"); }
+  guete = Math.min(guete, 100);
+  $("guete-wert").textContent = guete + " %"; $("guete-balken").style.width = guete + "%";
+  $("guete-text").textContent = teile.length ? teile.join(" · ") : "Noch keine Angaben";
+
+  const out = $("ergebnis");
+  if (!nb || !kwh) { out.innerHTML = '<h2>Ergebnis</h2><p class="leer">Postleitzahl, Netzbetreiber und Jahresverbrauch angeben.</p>'; return; }
+
+  // Spitzenlast: Rechnung > Eingabe > Anlagen > Branche
+  const hBranche = brancheStunden(b, schicht, tage);
+  const kwBranche = kwh / hBranche;
+  const betriebsstunden = tage * 52 * ({1: 9, 2: 16, 3: 24}[schicht]);
+  const grundlast = kwh / betriebsstunden;                      // mittlere Leistung während des Betriebs
+  const kwAnlagen = A.summe ? A.summe + 0.5 * grundlast + laden : 0;
+  let kw, herkunft;
+  if (kwEingabe) { kw = kwEingabe + (laden && !$("kw-sicher").checked ? 0 : 0); herkunft = $("kw-sicher").checked ? "laut Netzrechnung" : "Ihre Angabe"; }
+  else if (kwAnlagen) { kw = Math.max(kwAnlagen, kwBranche * 0.8); herkunft = `geschätzt aus Anlagen (${fmt(A.summe)} kW) plus halbe Grundlast (${fmt(grundlast)} kW)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
+  else { kw = kwBranche + laden; herkunft = `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
+
+  const hinweise = [];
+  if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preisstand des Preisblatts: ${nb.ps}${nb.sd ? " (Stand " + nb.sd + ")" : ""}`});
+  let html = `<h2>Ergebnis für ${nb.name}</h2>`;
+
+  const slpFall = kwh < 100000 && !$("kw-sicher").checked;
+  if (slpFall) {
+    if (!nb.slp) { out.innerHTML = html + '<p class="leer">Für diesen Netzbetreiber liegen noch keine geprüften Preise für das Standardlastprofil vor.</p>'; return; }
+    const [ap, gp] = nb.slp, summe = gp + ap * kwh / 100;
+    html += `<div class="gross">${fmt(summe)} €<span class="klein"> / Jahr</span></div>
+      <div class="zahlen"><div class="zahl"><small>je Kilowattstunde</small><span>${fmt(summe / kwh * 100, 2)} ct</span></div>
+      <div class="zahl"><small>Tarif</small><span>Standardlastprofil</span></div>
+      <div class="zahl"><small>Grundpreis</small><span>${fmt(gp, 2)} €</span></div>
+      <div class="zahl"><small>Arbeitspreis</small><span>${fmt(ap, 2)} ct/kWh</span></div></div>
+      <p class="herkunft">Unter 100.000 kWh ohne Leistungsmessung rechnet der Netzbetreiber mit Grund- und Arbeitspreis. Eine Spitzenkappung spart hier kein Netzentgelt.</p>`;
+  } else {
+    if (!nb.ns) { out.innerHTML = html + '<p class="leer">Für diesen Netzbetreiber liegen noch keine geprüften Preise für Kunden mit Leistungsmessung vor.</p>'; return; }
+    const r = rlm(nb.ns, kwh, kw, nb.le);
+    const gtext = nb.le ? (r.unter ? "bis 2.500 h" : "über 2.500 h") : (r.unter ? "unter 2.500 h" : "ab 2.500 h");
+    html += `<div class="gross">${fmt(r.summe)} €<span class="klein"> / Jahr</span></div>
+      <div class="zahlen"><div class="zahl"><small>je Kilowattstunde</small><span>${fmt(r.summe / kwh * 100, 2)} ct</span></div>
+      <div class="zahl"><small>Tarif</small><span>Leistungsmessung, ${gtext}</span></div>
+      <div class="zahl"><small>Leistungsanteil</small><span>${fmt(r.leistung)} €</span></div>
+      <div class="zahl"><small>Arbeitsanteil</small><span>${fmt(r.arbeit)} €</span></div></div>
+      <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
+
+    // Empfindlichkeit
+    const stufen = [0.7, 0.85, 1, 1.2, 1.5].map(f => Math.round(kw * f));
+    html += `<div class="tabelle"><table><thead><tr><th>Spitzenlast</th><th>Stunden</th><th>Tarif</th><th>€/Jahr</th><th>ct/kWh</th></tr></thead><tbody>`
+      + [...new Set(stufen)].map(k => { const x = rlm(nb.ns, kwh, k, nb.le);
+          return `<tr class="${k === Math.round(kw) ? "aktiv" : ""}"><td>${fmt(k)} kW</td><td>${fmt(x.h)}</td><td>${x.unter ? "unter" : "ab"}</td><td>${fmt(x.summe)}</td><td>${fmt(x.summe / kwh * 100, 2)}</td></tr>`; }).join("")
+      + `</tbody></table></div>`;
+
+    // Speicher
+    const zielEingabe = parseFloat($("ziel").value) || 0;
+    const ziel = zielEingabe || Math.round(kw * 0.8);
+    if (ziel < kw) {
+      const gekappt = kw - ziel;
+      const dauer = A.fenster ? A.fenster.dauer : 2;
+      const kapazitaet = Math.ceil(gekappt * dauer / 0.9);
+      const nach = rlm(nb.ns, kwh, ziel, nb.le);
+      const ersparnis = r.summe - nach.summe;
+      const preis = parseFloat($("speicherpreis").value) || 0;
+      html += `<hr class="trenner"><h2>Speicher</h2>
+        <div class="zahlen"><div class="zahl"><small>Kappung</small><span>${fmt(kw)} → ${fmt(ziel)} kW</span></div>
+        <div class="zahl"><small>Ersparnis Netzentgelt</small><span>${fmt(ersparnis)} € / Jahr</span></div>
+        <div class="zahl"><small>Nötige Kapazität</small><span>ca. ${fmt(kapazitaet)} kWh</span></div>
+        <div class="zahl"><small>je gekapptem kW</small><span>${fmt(ersparnis / gekappt)} €</span></div></div>
+        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 90 % nutzbar.${zielEingabe ? "" : " Ziel: 20 % weniger Spitze (Vorschlag)."}</p>`;
+      if (r.unter !== nach.unter) hinweise.push({w: 1, t: `Tarifwechsel: Mit ${fmt(ziel)} kW gilt der Tarif ${nach.unter ? "unter" : "ab"} 2.500 h. Die Ersparnis ist deshalb kleiner als ${fmt(gekappt)} kW × Leistungspreis.`});
+      if (preis) {
+        const kosten = preis * kapazitaet;
+        html += `<p class="herkunft">Speicherkosten ca. <b>${fmt(kosten)} €</b> (${fmt(preis)} €/kWh, Platzhalter) · einfache Amortisation nur über Netzentgelt: <b>${ersparnis > 0 ? fmt(kosten / ersparnis, 1) + " Jahre" : "keine"}</b></p>`;
+      } else html += `<p class="herkunft">Speicherpreis fehlt noch (Anbieter-Preisliste). Zum Testen einen Wert in €/kWh eintragen.</p>`;
+      if ($("rueckspeisen").checked) hinweise.push({w: 0, t: "Rückspeisung: Für zwischengespeicherten und wieder eingespeisten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten (Stichtag und Bedingungen fachlich prüfen). Hier noch nicht eingerechnet."});
+    }
+  }
+  if (!slpFall && nb.ns) html += atypisch(nb, kwh, kw, A, grundlast, laden);
+  if ($("pv").checked) hinweise.push({w: 0, t: "PV-Anlage: senkt den Netzbezug tagsüber. Morgen- und Abendspitzen bleiben; der Speicher kann aus PV geladen werden."});
+  if (!kwEingabe && !slpFall) hinweise.push({w: 1, t: "Spitzenlast ist geschätzt. Mit dem Wert aus der Netzrechnung wird das Ergebnis genau."});
+  if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (BDEW-Profil ${b.profil}).`});
+  html += hinweise.length ? `<ul class="hinweise">${hinweise.map(h => `<li class="${h.w ? "warn" : ""}">${h.t}</li>`).join("")}</ul>` : "";
+  if (nb.q) html += `<p class="herkunft">Quelle: <a href="${nb.q.split(" | ")[0].replace(/^RLM:\s*/, "")}" target="_blank" rel="noopener">Preisblatt des Netzbetreibers</a> · Datenstand ${D.stand}</p>`;
+  out.innerHTML = html;
+}
+
+// Atypische Netznutzung (§ 19 Abs. 2 Satz 1 StromNEV): Leistungspreis nur auf die Spitze in den Hochlastzeitfenstern
+function atypisch(nb, kwh, kw, A, grundlast, laden) {
+  const H = D.hlzf[nb.n];
+  let html = `<hr class="trenner"><h2>Atypische Netznutzung</h2>`;
+  if (!H) return html + `<p class="herkunft">Die Hochlastzeitfenster von ${nb.name} sind noch nicht erfasst. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`;
+  const fenster = Object.entries(H.f).flatMap(([jz, l]) => l.map(t => ({jz, ...hzSpanne(t), text: t})));
+  const liste = Object.entries(H.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
+  html += `<p class="herkunft">Der Netzbetreiber legt Zeiten fest, in denen sein Netz am stärksten belastet ist (Werktage): ${liste}.
+    Wer seine Spitze <b>außerhalb</b> dieser Zeiten hat, kann ein günstigeres, individuelles Netzentgelt vereinbaren.</p>`;
+  if (!A.anlagen.length) return html + `<p class="herkunft">Für die Prüfung bitte oben die Anlagen mit ihren Laufzeiten angeben.</p>`;
+  // Spitze in den Hochlastzeitfenstern: Anlagen, die darin laufen (ohne Zeitangabe: immer), plus halbe Grundlast und Laden
+  const inHz = A.anlagen.filter(a => !a.fenster || fenster.some(f => ueberlappt(a.fenster, f)));
+  const hzSpitze = Math.min(kw, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
+  const abstand = (kw - hzSpitze) / kw * 100, verlagerung = kw - hzSpitze;
+  const r = rlm(nb.ns, kwh, kw, nb.le);
+  const indiv = Math.max(r.lp * hzSpitze + r.arbeit, 0.2 * r.summe);
+  const ersparnis = r.summe - indiv;
+  const pruef = [
+    {ok: abstand >= H.s, t: `Abstand der Spitze im Zeitfenster zur Jahresspitze: ${fmt(abstand)} % (nötig: mindestens ${H.s} %, ${H.sh})`},
+    ...(H.m ? [{ok: verlagerung >= H.m, t: `Verlagerte Leistung: ${fmt(verlagerung)} kW (nötig: mindestens ${H.m} kW laut Netzbetreiber)`}] : []),
+    {ok: ersparnis >= 500, t: `Ersparnis: ${fmt(ersparnis)} € pro Jahr (nötig: mindestens 500 €)`},
+  ];
+  const erfuellt = pruef.every(p => p.ok);
+  html += `<div class="zahlen"><div class="zahl"><small>Spitze im Zeitfenster</small><span>ca. ${fmt(hzSpitze)} kW</span></div>
+    <div class="zahl"><small>Jahresspitze</small><span>${fmt(kw)} kW</span></div></div>
+    <ul class="hinweise">${pruef.map(p => `<li class="${p.ok ? "" : "warn"}">${p.ok ? "✓" : "✗"} ${p.t}</li>`).join("")}</ul>`;
+  html += erfuellt
+    ? `<p><b>Voraussichtlich möglich, ohne Speicher:</b> Netzentgelt ca. ${fmt(indiv)} € statt ${fmt(r.summe)} € pro Jahr. Der Antrag läuft über den Netzbetreiber; ein Speicher darf dann nur außerhalb der Zeitfenster nachladen.</p>`
+    : `<p class="herkunft">Mit diesen Angaben nicht erfüllt.${inHz.length ? " In den Zeitfenstern laufen: " + inHz.map(a => a.name).join(", ") + "." : ""}</p>`;
+  html += `<p class="herkunft">Grobe Prüfung: Die Spitze im Zeitfenster ist aus den Anlagen geschätzt (plus halbe Grundlast). Untergrenze 20 % des normalen Netzentgelts berücksichtigt. <a href="${H.q}" target="_blank" rel="noopener">Hochlastzeitfenster des Netzbetreibers</a></p>`;
+  return html;
+}
+
+// Branchenauswahl befüllen
+$("branche").innerHTML = Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
+
+const BEISPIELE = {
+  meerane: {plz: "08393"}, biberach: {plz: "88400"},
+};
+function beispiel(k) {
+  $("plz").value = BEISPIELE[k].plz; $("branche").value = "baeckerei"; $("kwh").value = 150000; $("kwh-sicher").checked = true;
+  $("kw").value = ""; $("kw-sicher").checked = false; $("ziel").value = ""; $("tage").value = "6"; $("schicht").value = "1";
+  $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
+  nbAnzeigen(); rechnen();
+}
+document.querySelectorAll("[data-bsp]").forEach(b => b.addEventListener("click", () => beispiel(b.dataset.bsp)));
+$("plz").value = "08393"; $("branche").value = "baeckerei"; $("kwh").value = 150000; $("kwh-sicher").checked = true;
+$("tage").value = "6"; $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
+
+$("form").addEventListener("submit", e => e.preventDefault());
+$("form").addEventListener("input", e => {
+  if (e.target.id === "plz") { plzVorschlagen(); nbAnzeigen(); }
+  if (e.target.name === "nb") gewaehlt = +e.target.value;
+  if (e.target.id === "laden") $("laden-bereich").hidden = !e.target.checked;
+  rechnen();
+});
+$("form").addEventListener("change", e => { if (e.target.name === "nb") { gewaehlt = +e.target.value; rechnen(); } });
+nbAnzeigen(); rechnen();
+</script>
