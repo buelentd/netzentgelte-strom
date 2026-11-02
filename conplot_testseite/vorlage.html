@@ -216,12 +216,12 @@ a{color:var(--akzent)}
         <div class="zeile">
           <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh)</label>
             <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern"></div>
-          <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh)</label>
-            <input type="number" id="a-einsp" min="0" step="0.1" value="7" ></div>
+          <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung)</label>
+            <input type="number" id="a-einsp" min="0" step="0.1" placeholder="automatisch"></div>
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh)</label>
             <input type="number" id="a-aufschlag" min="0" step="0.5" value="2"></div>
-          <div><label class="titel" for="a-steuern">Steuern und Umlagen (ct/kWh)</label>
-            <input type="number" id="a-steuern" min="0" step="0.5" value="3"></div>
+          <div><label class="titel" for="a-steuern">Steuern und Umlagen (ct/kWh: Stromsteuer 0,05 nach Entlastung für produzierendes Gewerbe, sonst 2,05; Kraft-Wärme-Kopplung 0,446; Offshore 0,941; besondere Netznutzung 1,559; Konzessionsabgabe 0,11; Stand 2026)</label>
+            <input type="number" id="a-steuern" min="0" step="0.01" value="3.11"></div>
           <div><label class="titel" for="a-zins">Zinssatz für den Barwert (%)</label>
             <input type="number" id="a-zins" min="0" step="0.5" value="6"></div>
           <div><label class="titel" for="a-foerd">Zuschuss auf die Investition (%)</label>
@@ -548,7 +548,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const rVor = rlm(nb.ns, kwh, kw, nb.le);
   const boersenMittel = D.boerse.reduce((a, c) => a + c, 0) / D.boerse.length;
   const strom = num("a-strom") || (boersenMittel + num("a-aufschlag") + num("a-steuern"));
-  const einsp = num("a-einsp"), steuern = num("a-steuern"), arbeitstage = 52 * tage;
+  const steuern = num("a-steuern"), arbeitstage = 52 * tage;
   const tarif = $("tarif").value, dynamisch = tarif === "dynamisch";
   const netz = num("netzanschluss");
   const last = lastProfil(b, kwh, tage);
@@ -556,6 +556,9 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const zielWunsch = num("ziel") || Math.round(kw * 0.8);
   const dauer = A.fenster ? A.fenster.dauer : 2;
   const pvVorhanden = $("pv").checked, kwp = pvVorhanden ? num("pvkwp") : num("dach") / 6.5;
+  // Einspeisevergütung gestaffelt (Bundesnetzagentur, ab 08/2026): bis 10 kW 7,70, bis 40 kW 6,66, bis 100 kW 5,44 ct/kWh; darüber näherungsweise 5,44
+  const einspAuto = k => k > 0 ? (Math.min(k, 10) * 7.70 + Math.max(0, Math.min(k, 40) - 10) * 6.66 + Math.max(0, k - 40) * 5.44) / k : 7.70;
+  const einsp = $("a-einsp").value !== "" ? num("a-einsp") : einspAuto(kwp);
   const land = D.solar[nb.bl] || D.solar.Bayern;
   const preisJe = num("speicherpreis") || 450, zuschuss = num("a-foerd") / 100, zins = num("a-zins") / 100;
   const faktor = zins > 0 ? (1 - Math.pow(1 + zins, -12)) / zins : 12;       // Barwert über 12 Jahre (Batterietausch wie bei conplot)
