@@ -8,7 +8,7 @@ sind hier festgehalten, nicht angeglichen.
 ## Eingaben und Daten
 | Punkt | conplot | Testseite |
 |---|---|---|
-| Lastprofil | synthetisch aus Branche und Jahreshöchstlast (Datengüte 65 bis 80 %); Bäckerei: Grundlast 4,6 kW, Spitze 98,6 kW | Bäckerei: geschätztes Tagesprofil Backstube, Form aus dem conplot-Beispiel abgelesen (nicht gemessen), skaliert auf Verbrauch und Spitzenlast; andere Branchen BDEW-Standardprofile |
+| Lastprofil | hergeleitet, angezeigt als „synthetisiert“ und „ereignisbasiert, aus 66 Werktagen“ (Datengüte 65 % vor, 80 % nach der Analyse); Grundlage nicht erkennbar, laut Hinweis werden Eingaben an einen KI-Dienstleister übermittelt; Bäckerei: Grundlast 4,6 kW, Spitze 98,6 kW | Bäckerei: geschätztes Tagesprofil Backstube, Form aus dem conplot-Beispiel abgelesen (nicht gemessen), skaliert auf Verbrauch und Spitzenlast; andere Branchen BDEW-Standardprofile |
 | Spitzenlast | Eingabe | Eingabe, sonst aus Anlagen geschätzt |
 | Netzbetreiber und Preise | unbekannt | 492 Netzbetreiber mit geprüften Preisblättern 2026 |
 | Leistungspreis | pauschal (Angabe des Nutzers) | je Netzbetreiber, Gruppe unter oder ab 2.500 Benutzungsstunden |
