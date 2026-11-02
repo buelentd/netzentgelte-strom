@@ -1,0 +1,27 @@
+name: Google Solar API testen
+
+# Startet bei Änderung an lauf/solar_test.env (oder von Hand). Nur Protokoll, nichts wird gespeichert.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/solar_test.env]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testen
+        env:
+          SOLAR_SCHLUESSEL: ${{ secrets.SOLAR_SCHLUESSEL }}
+        run: |
+          if [ -z "$SOLAR_SCHLUESSEL" ]; then echo "::error::Repository-Secret SOLAR_SCHLUESSEL fehlt (Settings > Secrets and variables > Actions)"; exit 1; fi
+          python daten/solar_test.py
