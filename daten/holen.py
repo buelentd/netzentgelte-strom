@@ -102,44 +102,50 @@ def boerse_entsoe(bis: date):
 
 
 def regelenergie(bis: date):
-    """Preise für Regelenergie-Vorhaltung (Leistungspreis) von ENTSO-E: FCR (A95), aFRR (A96). Nur Diagnose und Mittelwerte:
-    welche Elemente zurückkommen, wie viele Punkte, Mittelwert je Punkt. Schlüssel: ENTSOE_TOKEN."""
+    """Preise für Regelenergie-Vorhaltung (Leistungspreis) von ENTSO-E (A89): FCR (A95), aFRR (A96).
+    Probiert mehrere Schreibweisen der Parameter und zeigt die Antworten (Diagnose). Schlüssel: ENTSOE_TOKEN."""
     token = os.environ.get("ENTSOE_TOKEN", "")
     if not token:
         print("Regelenergie übersprungen: ENTSOE_TOKEN nicht gesetzt")
         return
     von = bis - timedelta(days=364)
     erg = {"quelle": "ENTSO-E Transparenzplattform, Prices of procured balancing capacity (A89), Regelzone DE-LU",
-           "zeitraum": f"{von}..{bis}"}
+           "zeitraum": f"{von}..{bis}", "versuche": {}}
     kuerzel = lambda t: t.rsplit("}", 1)[-1]
-    for name, typ in (("FCR", "A95"), ("aFRR", "A96")):
-        for richtung in ([None] if name == "FCR" else ["A01", "A02"]):
-            url = ("https://web-api.tp.entsoe.eu/api?documentType=A89&businessType=" + typ + "&controlArea_Domain=10Y1001A1001A82H"
-                   "&type_MarketAgreement.Type=A01" + (f"&flowDirection.direction={richtung}" if richtung else "")
-                   + f"&periodStart={von:%Y%m%d}0000&periodEnd={bis + timedelta(days=1):%Y%m%d}0000&securityToken={token}")
-            marke = name + (f" {richtung}" if richtung else "")
+    zeit = f"&periodStart={von:%Y%m%d}0000&periodEnd={bis + timedelta(days=1):%Y%m%d}0000&securityToken={token}"
+    basis = "https://web-api.tp.entsoe.eu/api?documentType=A89&businessType=A95"
+    DE = "10Y1001A1001A82H"
+    varianten = {
+        "area_Domain": f"&area_Domain={DE}&type_MarketAgreement.Type=A01",
+        "controlArea_Domain": f"&controlArea_Domain={DE}&type_MarketAgreement.Type=A01",
+        "area_Domain ohne Vertragstyp": f"&area_Domain={DE}",
+        "area_Domain mit processType A52": f"&area_Domain={DE}&processType=A52&type_MarketAgreement.Type=A01",
+        "mit psrType": f"&area_Domain={DE}&type_MarketAgreement.Type=A01&psrType=A05",
+    }
+    for name, teil in varianten.items():
+        try:
+            with urllib.request.urlopen(basis + teil + zeit, timeout=120) as r:
+                xml = r.read()
+        except Exception as e:
             try:
-                with urllib.request.urlopen(url, timeout=120) as r:
-                    xml = r.read()
-            except Exception as e:
-                detail = ""
-                try:
-                    detail = e.read().decode("utf-8", "ignore")[:300]
-                except Exception:
-                    pass
-                print(f"{marke}: Fehler {type(e).__name__} {detail}")
-                continue
-            wurzel = ET.fromstring(xml)
-            tags = sorted({kuerzel(x.tag) for x in wurzel.iter()})
-            preise = [float(x.text) for x in wurzel.iter() if kuerzel(x.tag) in ("procurement_Price.amount", "price.amount") and x.text]
-            aufl = sorted({x.text for x in wurzel.iter() if kuerzel(x.tag) == "resolution"})
-            print(f"{marke}: {len(preise)} Preise, Auflösung {aufl}, Elemente {tags[:40]}")
-            if preise:
-                print(f"  Mittel {statistics.mean(preise):.2f}, min {min(preise):.2f}, max {max(preise):.2f} (Einheit laut Dokument, vermutlich EUR je MW und Block)")
-                erg[marke] = {"punkte": len(preise), "mittel": round(statistics.mean(preise), 3), "min": min(preise), "max": max(preise),
-                              "aufloesung": aufl}
-            else:
-                print("  Antwort ohne Preise:", xml[:400].decode("utf-8", "ignore"))
+                text = e.read().decode("utf-8", "ignore")
+                grund = " | ".join(x.text for x in ET.fromstring(text).iter() if kuerzel(x.tag) == "text" and x.text)
+            except Exception:
+                grund = str(e)[:200]
+            print(f"FCR [{name}]: {type(e).__name__}: {grund[:300]}")
+            erg["versuche"][name] = grund[:300]
+            continue
+        wurzel = ET.fromstring(xml)
+        preise = [float(x.text) for x in wurzel.iter() if kuerzel(x.tag) in ("procurement_Price.amount", "price.amount") and x.text]
+        aufl = sorted({x.text for x in wurzel.iter() if kuerzel(x.tag) == "resolution"})
+        tags = sorted({kuerzel(x.tag) for x in wurzel.iter()})
+        print(f"FCR [{name}]: {len(preise)} Preise, Auflösung {aufl}, Elemente {tags[:30]}")
+        if preise:
+            print(f"  Mittel {statistics.mean(preise):.2f}, min {min(preise):.2f}, max {max(preise):.2f}")
+            erg["versuche"][name] = {"punkte": len(preise), "mittel": round(statistics.mean(preise), 3), "min": min(preise),
+                                     "max": max(preise), "aufloesung": aufl}
+            break
+        print("  Antwort ohne Preise:", xml[:300].decode("utf-8", "ignore"))
     (HIER / "regelenergie.json").write_text(json.dumps(erg, ensure_ascii=False, indent=1))
 
 
