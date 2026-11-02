@@ -66,6 +66,19 @@ a{color:var(--akzent)}
 .beispiele{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
 .knopf{font:inherit;font-size:.85rem;background:var(--flaeche);color:var(--text);border:1px solid var(--linie);border-radius:6px;padding:5px 10px;cursor:pointer}
 .knopf:hover{border-color:var(--akzent)}
+.annahmen{border:1px solid var(--linie);border-radius:7px;padding:8px 10px}
+.annahmen summary{cursor:pointer;font-weight:600}
+.annahmen .zeile{margin-top:10px}
+.saeulen{display:grid;gap:8px}
+.saeule{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr) 5.5rem;gap:8px;align-items:center;font-size:.88rem}
+.saeule .spur{position:relative;height:20px;background:var(--feld);border-radius:4px}
+.saeule .spur::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--leise)}
+.saeule .balken-plus,.saeule .balken-minus{position:absolute;top:2px;bottom:2px}
+.saeule .balken-plus{left:50%;background:var(--gut);border-radius:0 3px 3px 0}
+.saeule .balken-minus{right:50%;background:var(--schlecht);border-radius:3px 0 0 3px}
+.saeule b{font-family:var(--f-zahl);text-align:right;font-weight:500}
+.saeule.summe{border-top:1px solid var(--linie);padding-top:8px;font-weight:600}
+.saeule small{color:var(--leise);display:block;font-size:.75rem;line-height:1.2}
 .anlagen-ergebnis{font-size:.85rem;background:var(--feld);border-radius:7px;padding:8px 10px}
 </style>
 
@@ -156,6 +169,45 @@ a{color:var(--akzent)}
           <input type="number" id="speicherpreis" min="0" step="10" placeholder="Platzhalter, Anbieterliste folgt">
         </div>
       </div>
+      <div class="zeile">
+        <div>
+          <label class="titel" for="speicher-kwh">Speicherkapazität (kWh)</label>
+          <input type="number" id="speicher-kwh" min="0" step="10" placeholder="leer = so groß wie für die Kappung nötig">
+        </div>
+        <div>
+          <label class="titel" for="netzanschluss">Netzanschluss für Handel (kW)</label>
+          <input type="number" id="netzanschluss" min="0" step="10" value="100">
+          <div class="klein">0 = kein Börsenhandel, keine Regelenergie</div>
+        </div>
+      </div>
+      <div class="zeile">
+        <div id="pv-feld">
+          <label class="titel" for="pvkwp">Leistung der PV-Anlage (kWp)</label>
+          <input type="number" id="pvkwp" min="0" step="5" placeholder="z. B. 60">
+        </div>
+        <div id="dach-feld">
+          <label class="titel" for="dach">Nutzbare Dachfläche (m²), falls noch keine Anlage</label>
+          <input type="number" id="dach" min="0" step="10" placeholder="z. B. 400">
+        </div>
+      </div>
+      <details class="annahmen">
+        <summary>Annahmen (änderbar)</summary>
+        <div class="zeile">
+          <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh)</label>
+            <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern"></div>
+          <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh)</label>
+            <input type="number" id="a-einsp" min="0" step="0.1" value="7" ></div>
+          <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh)</label>
+            <input type="number" id="a-aufschlag" min="0" step="0.5" value="2"></div>
+          <div><label class="titel" for="a-steuern">Steuern und Umlagen (ct/kWh)</label>
+            <input type="number" id="a-steuern" min="0" step="0.5" value="3"></div>
+          <div><label class="titel" for="a-regel">Regelenergie (€ je MW und Jahr)</label>
+            <input type="number" id="a-regel" min="0" step="1000" value="133000"></div>
+          <div><label class="titel" for="a-verf">Verfügbarkeit Regelenergie (0–1)</label>
+            <input type="number" id="a-verf" min="0" max="1" step="0.05" value="0.5"></div>
+        </div>
+        <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, höchstens 1,5 Ladungen pro Tag. Strompreis, Einspeisevergütung und Steuern sind Platzhalter, bitte fachlich prüfen.</div>
+      </details>
       <label class="haken"><input type="checkbox" id="rueckspeisen"> Speicher speist ins Netz zurück</label>
     </form>
 
@@ -302,6 +354,7 @@ function rechnen() {
   const hinweise = [];
   if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preisstand des Preisblatts: ${nb.ps}${nb.sd ? " (Stand " + nb.sd + ")" : ""}`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
+  let kappungInfo = null;
 
   const slpFall = kwh < 100000 && !$("kw-sicher").checked;
   if (slpFall) {
@@ -331,22 +384,28 @@ function rechnen() {
           return `<tr class="${k === Math.round(kw) ? "aktiv" : ""}"><td>${fmt(k)} kW</td><td>${fmt(x.h)}</td><td>${x.unter ? "unter" : "ab"}</td><td>${fmt(x.summe)}</td><td>${fmt(x.summe / kwh * 100, 2)}</td></tr>`; }).join("")
       + `</tbody></table></div>`;
 
-    // Speicher
+    // Speicher (wie conplot: 10–90 % nutzbar, 2 Stunden Dauer)
     const zielEingabe = parseFloat($("ziel").value) || 0;
-    const ziel = zielEingabe || Math.round(kw * 0.8);
+    let ziel = zielEingabe || Math.round(kw * 0.8);
+    const kapEingabe = parseFloat($("speicher-kwh").value) || 0;
+    const dauer = A.fenster ? A.fenster.dauer : 2;
     if (ziel < kw) {
-      const gekappt = kw - ziel;
-      const dauer = A.fenster ? A.fenster.dauer : 2;
-      const kapazitaet = Math.ceil(gekappt * dauer / 0.9);
+      let gekappt = kw - ziel;
+      if (kapEingabe) {                              // gewählter Speicher begrenzt die mögliche Kappung
+        const moeglich = Math.min(NUTZBAR * kapEingabe / dauer, kapEingabe / SPEICHERDAUER);
+        if (gekappt > moeglich) { gekappt = moeglich; ziel = Math.round((kw - gekappt) * 10) / 10; hinweise.push({w: 1, t: `Der Speicher mit ${fmt(kapEingabe)} kWh schafft nur ${fmt(gekappt)} kW Kappung (nutzbar ${fmt(NUTZBAR * 100)} %, ${fmt(dauer, 1)} h).`}); }
+      }
+      const kapazitaet = kapEingabe || Math.ceil(gekappt * dauer / NUTZBAR);
       const nach = rlm(nb.ns, kwh, ziel, nb.le);
       const ersparnis = r.summe - nach.summe;
+      kappungInfo = {gekappt, ziel, nach, dauer, kapazitaet, ersparnis};
       const preis = parseFloat($("speicherpreis").value) || 0;
       html += `<hr class="trenner"><h2>Speicher</h2>
         <div class="zahlen"><div class="zahl"><small>Kappung</small><span>${fmt(kw)} → ${fmt(ziel)} kW</span></div>
         <div class="zahl"><small>Ersparnis Netzentgelt</small><span>${fmt(ersparnis)} € / Jahr</span></div>
         <div class="zahl"><small>Nötige Kapazität</small><span>ca. ${fmt(kapazitaet)} kWh</span></div>
         <div class="zahl"><small>je gekapptem kW</small><span>${fmt(ersparnis / gekappt)} €</span></div></div>
-        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 90 % nutzbar.${zielEingabe ? "" : " Ziel: 20 % weniger Spitze (Vorschlag)."}</p>`;
+        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 80 % nutzbar.${zielEingabe ? "" : " Ziel: 20 % weniger Spitze (Vorschlag)."}</p>`;
       if (r.unter !== nach.unter) hinweise.push({w: 1, t: `Tarifwechsel: Mit ${fmt(ziel)} kW gilt der Tarif ${nach.unter ? "unter" : "ab"} 2.500 h. Die Ersparnis ist deshalb kleiner als ${fmt(gekappt)} kW × Leistungspreis.`});
       if (preis) {
         const kosten = preis * kapazitaet;
@@ -355,7 +414,9 @@ function rechnen() {
       if ($("rueckspeisen").checked) hinweise.push({w: 0, t: "Rückspeisung: Für zwischengespeicherten und wieder eingespeisten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten (Stichtag und Bedingungen fachlich prüfen). Hier noch nicht eingerechnet."});
     }
   }
-  if (!slpFall && nb.ns) html += atypisch(nb, kwh, kw, A, grundlast, laden);
+  let atyp = {html: "", zusatz: 0, erfuellt: false};
+  if (!slpFall && nb.ns) { atyp = atypisch(nb, kwh, kw, A, grundlast, laden, kappungInfo); html += atyp.html; }
+  if (!slpFall && nb.ns) html = wertschoepfung(html, nb, kwh, kw, b, A, kappungInfo, atyp, tage, hinweise);
   if ($("pv").checked) hinweise.push({w: 0, t: "PV-Anlage: senkt den Netzbezug tagsüber. Morgen- und Abendspitzen bleiben; der Speicher kann aus PV geladen werden."});
   if (!kwEingabe && !slpFall) hinweise.push({w: 1, t: "Spitzenlast ist geschätzt. Mit dem Wert aus der Netzrechnung wird das Ergebnis genau."});
   if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (BDEW-Profil ${b.profil}).`});
@@ -365,20 +426,22 @@ function rechnen() {
 }
 
 // Atypische Netznutzung (§ 19 Abs. 2 Satz 1 StromNEV): Leistungspreis nur auf die Spitze in den Hochlastzeitfenstern
-function atypisch(nb, kwh, kw, A, grundlast, laden) {
+function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   const H = D.hlzf[nb.n];
   let html = `<hr class="trenner"><h2>Atypische Netznutzung</h2>`;
-  if (!H) return html + `<p class="herkunft">Die Hochlastzeitfenster von ${nb.name} sind noch nicht erfasst. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`;
+  const keins = t => ({html: html + t, zusatz: 0, erfuellt: false});
+  if (!H) return keins(`<p class="herkunft">Die Hochlastzeitfenster von ${nb.name} sind noch nicht erfasst. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`);
   const fenster = Object.entries(H.f).flatMap(([jz, l]) => l.map(t => ({jz, ...hzSpanne(t), text: t})));
   const liste = Object.entries(H.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
   html += `<p class="herkunft">Der Netzbetreiber legt Zeiten fest, in denen sein Netz am stärksten belastet ist (Werktage): ${liste}.
     Wer seine Spitze <b>außerhalb</b> dieser Zeiten hat, kann ein günstigeres, individuelles Netzentgelt vereinbaren.</p>`;
-  if (!A.anlagen.length) return html + `<p class="herkunft">Für die Prüfung bitte oben die Anlagen mit ihren Laufzeiten angeben.</p>`;
+  if (!A.anlagen.length) return keins(`<p class="herkunft">Für die Prüfung bitte oben die Anlagen mit ihren Laufzeiten angeben.</p>`);
   // Spitze in den Hochlastzeitfenstern: Anlagen, die darin laufen (ohne Zeitangabe: immer), plus halbe Grundlast und Laden
   const inHz = A.anlagen.filter(a => !a.fenster || fenster.some(f => ueberlappt(a.fenster, f)));
-  const hzSpitze = Math.min(kw, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
-  const abstand = (kw - hzSpitze) / kw * 100, verlagerung = kw - hzSpitze;
-  const r = rlm(nb.ns, kwh, kw, nb.le);
+  const kwJ = kappung ? kappung.ziel : kw;                      // Jahresspitze nach einer möglichen Kappung
+  const hzSpitze = Math.min(kwJ, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
+  const abstand = (kwJ - hzSpitze) / kwJ * 100, verlagerung = kwJ - hzSpitze;
+  const r = kappung ? kappung.nach : rlm(nb.ns, kwh, kw, nb.le);
   const indiv = Math.max(r.lp * hzSpitze + r.arbeit, 0.2 * r.summe);
   const ersparnis = r.summe - indiv;
   const pruef = [
@@ -388,13 +451,118 @@ function atypisch(nb, kwh, kw, A, grundlast, laden) {
   ];
   const erfuellt = pruef.every(p => p.ok);
   html += `<div class="zahlen"><div class="zahl"><small>Spitze im Zeitfenster</small><span>ca. ${fmt(hzSpitze)} kW</span></div>
-    <div class="zahl"><small>Jahresspitze</small><span>${fmt(kw)} kW</span></div></div>
+    <div class="zahl"><small>Jahresspitze</small><span>${fmt(kwJ)} kW</span></div></div>
     <ul class="hinweise">${pruef.map(p => `<li class="${p.ok ? "" : "warn"}">${p.ok ? "✓" : "✗"} ${p.t}</li>`).join("")}</ul>`;
   html += erfuellt
-    ? `<p><b>Voraussichtlich möglich, ohne Speicher:</b> Netzentgelt ca. ${fmt(indiv)} € statt ${fmt(r.summe)} € pro Jahr. Der Antrag läuft über den Netzbetreiber; ein Speicher darf dann nur außerhalb der Zeitfenster nachladen.</p>`
+    ? `<p><b>Voraussichtlich möglich, ohne Speicher:</b> Netzentgelt ca. ${fmt(indiv)} € statt ${fmt(r.summe)} € pro Jahr${kappung ? " (nach der Kappung)" : ""}. Der Antrag läuft über den Netzbetreiber; ein Speicher darf dann nur außerhalb der Zeitfenster nachladen.</p>`
     : `<p class="herkunft">Mit diesen Angaben nicht erfüllt.${inHz.length ? " In den Zeitfenstern laufen: " + inHz.map(a => a.name).join(", ") + "." : ""}</p>`;
   html += `<p class="herkunft">Grobe Prüfung: Die Spitze im Zeitfenster ist aus den Anlagen geschätzt (plus halbe Grundlast). Untergrenze 20 % des normalen Netzentgelts berücksichtigt. <a href="${H.q}" target="_blank" rel="noopener">Hochlastzeitfenster des Netzbetreibers</a></p>`;
-  return html;
+  return {html, zusatz: erfuellt ? ersparnis : 0, erfuellt};
+}
+
+
+// ---------------------------------------------------------------- Wertschöpfung des Speichers: fünf Säulen
+const NUTZBAR = 0.8, SPEICHERDAUER = 2, ETA = 0.92, ZYKLEN = 1.5;      // wie bei conplot
+const MONATSTAGE = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const num = id => parseFloat($(id).value) || 0;
+
+function lastProfil(b, kwh, tage) {
+  const P = D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
+  const wd = P.werktag, sa = tage >= 6 ? (tage === 6 ? P.samstag : P.werktag) : P.sonntag, so = tage >= 7 ? P.werktag : P.sonntag;
+  const total = 261 * wd.reduce((a, c) => a + c, 0) + 52 * sa.reduce((a, c) => a + c, 0) + 52 * so.reduce((a, c) => a + c, 0);
+  const f = kwh / total;
+  return {werktag: wd.map(x => x * f), samstag: sa.map(x => x * f), sonntag: so.map(x => x * f)};
+}
+
+// Ein Tag: wie viel Solarstrom der Betrieb selbst nutzt, ohne und mit Speicher (U nutzbare kWh, P kW)
+function solarTag(last, gen, U, P) {
+  const sq = Math.sqrt(ETA);
+  let ohne = 0, mit = 0, soc = 0;
+  for (let durchlauf = 0; durchlauf < 2; durchlauf++) {
+    ohne = 0; mit = 0;
+    for (let h = 0; h < 24; h++) {
+      const direkt = Math.min(gen[h], last[h]); ohne += direkt; mit += direkt;
+      const netto = gen[h] - last[h];
+      if (netto > 0 && U > 0) soc += Math.min(netto, P, (U - soc) / sq) * sq;
+      else if (netto < 0 && soc > 0) { const zieh = Math.min(soc, P, -netto / sq); soc -= zieh; mit += zieh * sq; }
+    }
+  }
+  return {ohne, mit};
+}
+
+function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise) {
+  const rVor = rlm(nb.ns, kwh, kw, nb.le);
+  const ap = (kappung ? kappung.nach : rVor).ap;                                 // Arbeitspreis des Netzbetreibers nach der Kappung
+  const boersenMittel = D.boerse.reduce((a, c) => a + c, 0) / D.boerse.length;
+  const strom = num("a-strom") || (boersenMittel + num("a-aufschlag") + num("a-steuern"));
+  const bezug = strom + ap;                                                      // ct je kWh, die der Speicher dem Netzbezug erspart
+  const einsp = num("a-einsp");
+  const arbeitstage = 52 * tage;
+  const cap = num("speicher-kwh") || (kappung ? kappung.kapazitaet : 0);
+  const U = NUTZBAR * cap, Psp = cap / SPEICHERDAUER;
+  const gekappt = kappung ? kappung.gekappt : 0, kapKwhTag = gekappt * (kappung ? kappung.dauer : 0);
+
+  // Säule 1: Spitze senken, abzüglich der Ladeverluste
+  const verlust = arbeitstage * kapKwhTag * (1 / ETA - 1) * bezug / 100;
+  const s1 = kappung ? kappung.ersparnis - verlust : 0;
+  // Säule 2: atypische Netznutzung (nur der Teil, der über die Kappung hinausgeht)
+  const s2 = atyp.zusatz;
+  // Säule 3: Eigenverbrauch Solar mit Speicher
+  const pvVorhanden = $("pv").checked, kwp = pvVorhanden ? num("pvkwp") : num("dach") / 6.5;
+  let s3 = 0, deltaJahr = 0, pvEigen = 0, pvInfo = "";
+  if (kwp > 0 && cap > 0) {
+    const land = D.solar[nb.bl] || D.solar.Bayern, last = lastProfil(b, kwh, tage);
+    const reserve = Math.min(kapKwhTag, U), Us = Math.max(0, U - reserve - 0.01);
+    for (let m = 1; m <= 12; m++) {
+      const gen = land[m].map(x => x * kwp), d = MONATSTAGE[m - 1];
+      for (const [typ, anteil] of [["werktag", 5 / 7], ["samstag", 1 / 7], ["sonntag", 1 / 7]]) {
+        const t = solarTag(last[typ], gen, Us, Psp);
+        deltaJahr += (t.mit - t.ohne) * d * anteil; pvEigen += t.ohne * d * anteil;
+      }
+    }
+    s3 = deltaJahr * (bezug - einsp) / 100;
+    if (!pvVorhanden) pvInfo = `Die neue Anlage (${fmt(kwp)} kWp) selbst: ca. ${fmt(pvEigen)} kWh Eigenverbrauch, das sind etwa ${fmt(pvEigen * bezug / 100)} € pro Jahr (ohne Anlagenkosten, nicht in den Säulen).`;
+  }
+  // Ladungen pro Tag: Kappung (Arbeitstage) und Solarverschiebung teilen sich 1,5 Ladungen
+  const genutzt = U > 0 ? (kapKwhTag * arbeitstage + deltaJahr) / 365 / U : 0;
+  const frei = Math.max(0, Math.min(1, ZYKLEN - genutzt));
+  // Säule 4: Börsenhandel (Day-Ahead, stündlich; billig laden, teuer entladen)
+  const netz = num("netzanschluss");
+  const ladeAbgaben = $("rueckspeisen").checked ? 0 : ap + num("a-steuern");   // sonst Netzentgelt und Umlagen auf den Ladestrom
+  const handelKwh = Math.min(U, Math.min(Psp, netz) * SPEICHERDAUER) * frei;
+  let s4 = 0;
+  if (handelKwh > 0) {
+    for (let t = 0; t + 24 <= D.boerse.length; t += 24) {
+      const tag = D.boerse.slice(t, t + 24).sort((x, y) => x - y);
+      const hoch = (tag[23] + tag[22]) / 2, tief = (tag[0] + tag[1]) / 2;
+      s4 += Math.max(0, hoch - (tief + ladeAbgaben) / ETA) * handelKwh / 100;
+    }
+  }
+  // Säule 5: Regelenergie mit der Leistung, die nach der Kappung frei bleibt
+  const pRegel = Math.max(0, Math.min(Psp, netz) - gekappt);
+  const s5 = pRegel / 1000 * num("a-regel") * num("a-verf");
+
+  const saeulen = [
+    ["Spitze senken", s1, kappung ? `${fmt(kappung.ersparnis)} € Netzentgelt, minus ${fmt(verlust)} € Ladeverluste` : "keine Kappung"],
+    ["Atypische Netznutzung", s2, atyp.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Zeitfenster noch nicht erfasst")],
+    ["Eigenverbrauch Solar", s3, kwp > 0 ? `${fmt(deltaJahr)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
+    ["Börsenhandel", s4, netz > 0 ? `${fmt(frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW"],
+    ["Regelenergie", s5, netz > 0 ? `${fmt(pRegel)} kW frei, Verfügbarkeit ${fmt(num("a-verf") * 100)} %` : "Netzanschluss 0 kW"],
+  ];
+  const summe = saeulen.reduce((a, c) => a + c[1], 0);
+  const max = Math.max(1, ...saeulen.map(c => Math.abs(c[1])), Math.abs(summe));
+  const zeile = ([n, v, hin], klasse = "") => `<div class="saeule ${klasse}"><div>${n}<small>${hin}</small></div>
+    <div class="spur">${v >= 0 ? `<i class="balken-plus" style="width:${Math.abs(v) / max * 50}%"></i>` : `<i class="balken-minus" style="width:${Math.abs(v) / max * 50}%"></i>`}</div>
+    <b>${v >= 0 ? "+" : "−"} ${fmt(Math.abs(v))} €</b></div>`;
+  const preis = num("speicherpreis"), kosten = preis * cap;
+  let chart = `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
+  if (cap <= 0) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht: Spitze kappen (Ziel oben) oder die Speicherkapazität angeben.</p>`;
+  else chart += `<p class="herkunft">Speicher ${fmt(cap)} kWh (nutzbar ${fmt(U)} kWh, Leistung ${fmt(Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (typisch erreichbar: Börsenmittel " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}.</p>
+    <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, kosten ? `Speicherkosten ca. ${fmt(kosten)} €, Amortisation ${summe > 0 ? fmt(kosten / summe, 1) + " Jahre" : "nicht erreichbar"}` : "Speicherpreis oben eintragen für die Amortisation"], "summe")}</div>
+    ${pvInfo ? `<p class="herkunft">${pvInfo}</p>` : ""}`;
+  if (cap > 0 && genutzt > ZYKLEN) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(genutzt, 2)} Ladungen pro Tag, mehr als die erlaubten ${ZYKLEN}. Speicher größer wählen.`});
+  if (cap > 0) hinweise.push({w: 0, t: "Börsenhandel und Regelenergie sind einfach gerechnet (Tagesspanne der Börsenpreise, Jahrespreis je Megawatt). Ein Vermarkter und die Zulassung für Regelenergie sind nötig."});
+  return html.replace("</h2>", "</h2>" + chart);
 }
 
 // Branchenauswahl befüllen
@@ -404,6 +572,7 @@ const BEISPIELE = {
   meerane: {plz: "08393"}, biberach: {plz: "88400"},
 };
 function beispiel(k) {
+  $("pv").checked = false; $("pv-feld").hidden = true; $("dach-feld").hidden = false;
   $("plz").value = BEISPIELE[k].plz; $("branche").value = "baeckerei"; $("kwh").value = 150000; $("kwh-sicher").checked = true;
   $("kw").value = ""; $("kw-sicher").checked = false; $("ziel").value = ""; $("tage").value = "6"; $("schicht").value = "1";
   $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
@@ -418,8 +587,10 @@ $("form").addEventListener("input", e => {
   if (e.target.id === "plz") { plzVorschlagen(); nbAnzeigen(); }
   if (e.target.name === "nb") gewaehlt = +e.target.value;
   if (e.target.id === "laden") $("laden-bereich").hidden = !e.target.checked;
+  if (e.target.id === "pv") { $("pv-feld").hidden = !e.target.checked; $("dach-feld").hidden = e.target.checked; }
   rechnen();
 });
 $("form").addEventListener("change", e => { if (e.target.name === "nb") { gewaehlt = +e.target.value; rechnen(); } });
+$("pv-feld").hidden = true;
 nbAnzeigen(); rechnen();
 </script>

@@ -24,7 +24,7 @@ nb, mastr2nr = [], {}
 for nr, r in z.items():
     mastr2nr.setdefault(r["mastr_nr"], nr)
     gr = g.get(nr, {})
-    e = {"n": int(nr), "name": r["netzbetreiber"], "ps": r["preisstand"], "sd": r["stand_datum"], "le": "≤ 2.500" in r["hinweis"]}
+    e = {"n": int(nr), "bl": (r["bundesland"].split(" / ")[0] or "Bayern"), "name": r["netzbetreiber"], "ps": r["preisstand"], "sd": r["stand_datum"], "le": "≤ 2.500" in r["hinweis"]}
     if gr.get("slp") == "ok":
         e["slp"] = [de(r["slp_ap_ct_kwh"]), de(r["slp_grundpreis_eur_jahr"])]
     if gr.get("rlm_ns") == "ok":
@@ -48,7 +48,27 @@ for r in csv.DictReader(open(ERG / "hochlastzeitfenster_2026.csv", encoding="utf
                                        "m": int(r["mindestleistung_kw"]) if r["mindestleistung_kw"] else None,
                                        "q": r["quelle_url"]})
     e["f"][r["jahreszeit"].split(" ")[0]] = [] if r["zeitfenster"] == "keins" else r["zeitfenster"].split(", ")
-daten = json.dumps({"stand": "31.10.2026", "nb": nb, "plz": plz, "hlzf": hlzf}, ensure_ascii=False, separators=(",", ":"))
+# Börsenpreise (Viertelstunden → Stundenmittel, ct/kWh), Solarertrag je Bundesland, Lastprofilformen (Stunden, Anteil am Tag)
+DATEN = HIER.parent / "daten"
+b = json.load(open(next(DATEN.glob("boerse_*.json"))))
+q = [x if x is not None else 0 for x in b["ct_kwh"]]
+boerse = [round(sum(q[i:i + 4]) / 4, 2) for i in range(0, len(q) - 3, 4)]
+solar = json.load(open(DATEN / "solar_je_land.json"))["land"]
+profile = {}
+rows = list(csv.reader(open(DATEN / "lastprofile" / "selp_series.csv", encoding="utf-8")))
+kopf = rows[0]
+for col in ("g0", "g1", "g2", "g3", "g4", "g5", "g6", "h0"):
+    i = kopf.index(col)
+    summe = {1: [0.0] * 24, 6: [0.0] * 24, 7: [0.0] * 24}
+    for r in rows[1:]:
+        tag = int(r[2])
+        tag = 1 if tag <= 5 else tag
+        summe[tag][int(r[0][11:13])] += float(r[i])
+    for k, n in ((1, 15), (6, 3), (7, 3)):        # 3 Zeiträume (Sommer, Winter, Übergang) × 5 Werktage bzw. je 1 Samstag/Sonntag
+        summe[k] = [x / n for x in summe[k]]
+    gesamt = 261 * sum(summe[1]) + 52 * sum(summe[6]) + 52 * sum(summe[7])        # Jahresenergie in diesen Einheiten
+    profile[col] = {k: [round(x / gesamt, 7) for x in v] for k, v in zip(("werktag", "samstag", "sonntag"), (summe[1], summe[6], summe[7]))}
+daten = json.dumps({"stand": "31.10.2026", "nb": nb, "plz": plz, "hlzf": hlzf, "boerse": boerse, "solar": solar, "profile": profile}, ensure_ascii=False, separators=(",", ":"))
 seite = (HIER / "vorlage.html").read_text(encoding="utf-8").replace("__DATEN__", daten.replace("</", "<\\/"))
 (HIER / "netzentgelt_abschaetzung.html").write_text(seite, encoding="utf-8")
 print(f"{len(nb)} Netzbetreiber, {len(plz)} Postleitzahlen, {len(hlzf)} mit Hochlastzeitfenstern")
