@@ -255,7 +255,7 @@ const fmt = (v, n = 0) => v == null || !isFinite(v) ? "–" : v.toLocaleString("
 // Branchen: Benutzungsstunden (Annahme bei 1-Schicht und Standard-Betriebstagen), BDEW-Profil, typisches Spitzenfenster
 const BRANCHEN = {
   baeckerei:      {name: "Bäckerei mit Backstube", h: 2500, tage: 6, profil: "G5", fenster: "4–8 Uhr",
-                   // Backstubenprofil (Form wie im conplot-Beispiel, Winter): Grundlast 5 kW, 2–4:30 Uhr 19 kW, 4:30–7:30 Uhr 95 kW, 7:30–11:30 Uhr 19 kW; Sonntag nur Grundlast
+                   // Backstubenprofil, geschätzt (Form aus einem Beispiel von conplot abgelesen, Winter, nicht gemessen): Grundlast 5 kW, 2–4:30 Uhr 19 kW, 4:30–7:30 Uhr 95 kW, 7:30–11:30 Uhr 19 kW; Sonntag nur Grundlast
                    form: {werktag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
                           samstag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
                           sonntag: new Array(24).fill(5)}},
@@ -452,7 +452,7 @@ function rechnen() {
   if (!slpFall && nb.ns) html = wertschoepfung(html, nb, kwh, kw, b, A, kappungInfo, atyp, tage, hinweise, {grundlast, laden});
   if ($("pv").checked) hinweise.push({w: 0, t: "PV-Anlage: senkt den Netzbezug tagsüber. Morgen- und Abendspitzen bleiben; der Speicher kann aus PV geladen werden."});
   if (!kwEingabe && !slpFall) hinweise.push({w: 1, t: "Spitzenlast ist geschätzt. Mit dem Wert aus der Netzrechnung wird das Ergebnis genau."});
-  if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (BDEW-Profil ${b.profil}).`});
+  if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (${b.form ? "geschätztes Tagesprofil Backstube, nicht gemessen" : "BDEW-Profil " + b.profil}).`});
   html += hinweise.length ? `<ul class="hinweise">${hinweise.map(h => `<li class="${h.w ? "warn" : ""}">${h.t}</li>`).join("")}</ul>` : "";
   if (nb.q) html += `<p class="herkunft">Quelle: <a href="${nb.q.split(" | ")[0].replace(/^RLM:\s*/, "")}" target="_blank" rel="noopener">Preisblatt des Netzbetreibers</a> · Datenstand ${D.stand}</p>`;
   out.innerHTML = html;
