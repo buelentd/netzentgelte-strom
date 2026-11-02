@@ -123,3 +123,14 @@ Nächste Schritte:
 2. Preise für die fehlenden Netzbetreiber (Suchmuster mit `site:` und Netzentgelt-Seiten aus den Treffern).
 3. Abstimmung mit conplot: Leistungspreis-Feld durch den Datensatz ersetzen, Basisjahr 2026, Strompreis ohne
    Netzentgelt, Nachladen nur außerhalb der Hochlastzeitfenster.
+
+## Nächster Ausbau der Testseite (beschlossen 02.11.2026)
+
+Ergebnis als Balkendiagramm mit 5 Säulen (Euro pro Jahr, plus oder minus) und Summe:
+1. Spitze senken (fertig) 2. Atypische Netznutzung (fertig) 3. Eigenverbrauch Solar (mit Anlage: kWp und
+Ausrichtung; ohne: Dachfläche, etwa 6–7 m² je kWp) 4. Börsenhandel 5. Regelenergie.
+Regeln: erst Spitze senken, dann Solar, dann Handel/Regelenergie mit Restkapazität; nie im
+Hochlastzeitfenster nachladen; höchstens 1,5 Ladungen pro Tag (conplot: 10–90 %, 2 h, Wirkungsgrad 0,92).
+Daten: Lastprofile in daten/lastprofile/; fehlen: Börsenpreise 2025 stündlich (Energy-Charts, später
+ENTSO-E) und Solarertrag je Region (PVGIS), beide über einen GitHub-Lauf holen; Einspeisevergütung;
+Speicher- und Solarpreise (Anbieter). Mit Sonnet arbeiten, kurz antworten.
