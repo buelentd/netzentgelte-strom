@@ -113,14 +113,14 @@ def regelenergie(bis: date):
            "zeitraum": f"{von}..{bis}", "versuche": {}}
     kuerzel = lambda t: t.rsplit("}", 1)[-1]
     zeit = f"&periodStart={von:%Y%m%d}0000&periodEnd={bis + timedelta(days=1):%Y%m%d}0000&securityToken={token}"
-    basis = "https://web-api.tp.entsoe.eu/api?documentType=A89&businessType=A95"
+    basis = "https://web-api.tp.entsoe.eu/api?documentType=A81&businessType=A95"
     DE = "10Y1001A1001A82H"
     varianten = {
-        "area_Domain": f"&area_Domain={DE}&type_MarketAgreement.Type=A01",
-        "controlArea_Domain": f"&controlArea_Domain={DE}&type_MarketAgreement.Type=A01",
-        "area_Domain ohne Vertragstyp": f"&area_Domain={DE}",
-        "area_Domain mit processType A52": f"&area_Domain={DE}&processType=A52&type_MarketAgreement.Type=A01",
-        "mit psrType": f"&area_Domain={DE}&type_MarketAgreement.Type=A01&psrType=A05",
+        "A81 controlArea A01 (täglich)": f"&controlArea_Domain={DE}&type_MarketAgreement.Type=A01",
+        "A81 controlArea A02 (wöchentlich)": f"&controlArea_Domain={DE}&type_MarketAgreement.Type=A02",
+        "A81 controlArea ohne Vertragstyp": f"&controlArea_Domain={DE}",
+        "A81 area_Domain": f"&area_Domain={DE}&type_MarketAgreement.Type=A01",
+        "A81 Regelzone Amprion": "&controlArea_Domain=10YDE-RWENET---I&type_MarketAgreement.Type=A01",
     }
     for name, teil in varianten.items():
         try:
