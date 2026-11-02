@@ -1,4 +1,11 @@
 {
  "quelle": "ENTSO-E Transparenzplattform, Prices of procured balancing capacity (A89), Regelzone DE-LU",
- "zeitraum": "2025-11-01..2026-10-31"
+ "zeitraum": "2025-11-01..2026-10-31",
+ "versuche": {
+  "area_Domain": "The combination of [DOCUMENT_TYPE=A89, BUSINESS_TYPE=A95] is not valid, or the requested data is not allowed to be fetched via this service.",
+  "controlArea_Domain": "The combination of [DOCUMENT_TYPE=A89, BUSINESS_TYPE=A95] is not valid, or the requested data is not allowed to be fetched via this service.",
+  "area_Domain ohne Vertragstyp": "The combination of [DOCUMENT_TYPE=A89, BUSINESS_TYPE=A95] is not valid, or the requested data is not allowed to be fetched via this service.",
+  "area_Domain mit processType A52": "The combination of [DOCUMENT_TYPE=A89, PROCESS_TYPE=A52, BUSINESS_TYPE=A95] is not valid, or the requested data is not allowed to be fetched via this service.",
+  "mit psrType": "The combination of [DOCUMENT_TYPE=A89, BUSINESS_TYPE=A95] is not valid, or the requested data is not allowed to be fetched via this service."
+ }
 }
