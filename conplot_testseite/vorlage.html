@@ -666,7 +666,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
     [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW")],
     ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW"],
-    ["Betriebskosten Speicher", -R.opex, "1,5 % der Investition pro Jahr (Annahme, gleicher Wert wie bei conplot)"],
+    ["Betriebskosten Speicher", -R.opex, "1,5 % der Investition pro Jahr (eigene Annahme, nicht belegt)"],
   ];
   const summe = R.summe;
   const max = Math.max(1, ...saeulen.map(c => Math.abs(c[1])), Math.abs(summe));

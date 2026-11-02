@@ -32,7 +32,7 @@ sind hier festgehalten, nicht angeglichen.
 | Verschieben im eigenen Betrieb | nicht vorhanden | +3.867 (Obergrenze mit perfekter Voraussicht etwa 5.300) |
 | Handel (Regelenergie und Arbitrage) | etwa +200 („Trading“), Rechenweg unbekannt | Festpreis: Börsenhandel +2.605 |
 | Regelenergie | abgewählt | +1.619 (Spanne 1.214 bis 2.024) |
-| Betriebskosten Speicher | etwa −3.000 (1,5 % von 200.926) | −1.386 (1,5 % von 92.400) |
+| Betriebskosten Speicher | etwa −3.000, vermutlich die Servicegebühr von conplot (3.000 € fix im Jahr plus 10 % vom Rest), keine Betriebskosten | −1.386 (eigene Annahme 1,5 % von 92.400, nicht belegt) |
 | **Summe** | **2.936** (bis 3.171) | **+7.445** |
 
 ## Kosten und Ergebnis
@@ -43,8 +43,22 @@ sind hier festgehalten, nicht angeglichen.
 | Amortisation | keine | 12,4 Jahre |
 | Bewertung | 10 Jahre kumuliert 26.523 € | Barwert 12 Jahre bei 6 %: −29.981 € |
 
+## Parameter von conplot (vom Nutzer eingefügt, Stand 02.11.2026)
+| Bereich | Wert |
+|---|---|
+| Batterie, Wechselrichter, Installation | 430 €/kWh, 1.500 €, 800 € (bei 220 kWh ergibt das 96.900 €, angezeigt wurden 200.926 €) |
+| Handelserlöse je MW und Jahr | Regelenergie (FCR) 106.000, aFRR 146.000, Day-Ahead 91.000; Gebühr Direktvermarkter 15 % |
+| Betrieb | Lebensdauer 20 Jahre, 6.000 Zyklen, Kapazitätsabbau 2,5 % je Jahr, Entsorgung 75 €/kWh |
+| conplot-Servicegebühr | 3.000 € je Jahr fix plus 10 % vom Restertrag |
+| Atypische Netznutzung | pauschal 60 €/kW und Jahr, C-Rate 2,0 |
+| Energy as a Service | Strompreis 20 ct/kWh, Schwelle Fonds-Rendite 8 % (10 Jahre) |
+
+Folgen: Die Investition von 200.926 € folgt nicht aus diesen Parametern (Faktor etwa 2,1). Das Ergebnis „2.936 € Ihr Anteil“
+ist vermutlich nach Abzug der Servicegebühr, also mit unserer Summe nicht gleichartig. Wir rechnen ohne Kapazitätsabbau und
+ohne Entsorgungskosten und sind dadurch auf lange Sicht optimistischer.
+
 ## Offene Fragen an conplot
-1. Woraus setzen sich 913 €/kWh Investition zusammen?
+1. Woraus setzen sich 913 €/kWh Investition zusammen (die Parameter ergeben für 220 kWh nur 96.900 €)?
 2. Welcher Leistungspreis wird verwendet, und wird der Tarifwechsel bei 2.500 Stunden berücksichtigt?
 3. Wie wird „Trading“ gerechnet, und warum liegt es bei etwa 200 €? (Der Nutzer sagt: keine Quelle.)
 4. Welche Hochlastzeitfenster werden für e.wa riss angesetzt, und woher?
