@@ -101,6 +101,48 @@ def boerse_entsoe(bis: date):
     print(f"ENTSO-E gespeichert: {ziel.name}")
 
 
+def regelenergie(bis: date):
+    """Preise für Regelenergie-Vorhaltung (Leistungspreis) von ENTSO-E: FCR (A95), aFRR (A96). Nur Diagnose und Mittelwerte:
+    welche Elemente zurückkommen, wie viele Punkte, Mittelwert je Punkt. Schlüssel: ENTSOE_TOKEN."""
+    token = os.environ.get("ENTSOE_TOKEN", "")
+    if not token:
+        print("Regelenergie übersprungen: ENTSOE_TOKEN nicht gesetzt")
+        return
+    von = bis - timedelta(days=364)
+    erg = {"quelle": "ENTSO-E Transparenzplattform, Prices of procured balancing capacity (A89), Regelzone DE-LU",
+           "zeitraum": f"{von}..{bis}"}
+    kuerzel = lambda t: t.rsplit("}", 1)[-1]
+    for name, typ in (("FCR", "A95"), ("aFRR", "A96")):
+        for richtung in ([None] if name == "FCR" else ["A01", "A02"]):
+            url = ("https://web-api.tp.entsoe.eu/api?documentType=A89&businessType=" + typ + "&controlArea_Domain=10Y1001A1001A82H"
+                   "&type_MarketAgreement.Type=A01" + (f"&flowDirection.direction={richtung}" if richtung else "")
+                   + f"&periodStart={von:%Y%m%d}0000&periodEnd={bis + timedelta(days=1):%Y%m%d}0000&securityToken={token}")
+            marke = name + (f" {richtung}" if richtung else "")
+            try:
+                with urllib.request.urlopen(url, timeout=120) as r:
+                    xml = r.read()
+            except Exception as e:
+                detail = ""
+                try:
+                    detail = e.read().decode("utf-8", "ignore")[:300]
+                except Exception:
+                    pass
+                print(f"{marke}: Fehler {type(e).__name__} {detail}")
+                continue
+            wurzel = ET.fromstring(xml)
+            tags = sorted({kuerzel(x.tag) for x in wurzel.iter()})
+            preise = [float(x.text) for x in wurzel.iter() if kuerzel(x.tag) in ("procurement_Price.amount", "price.amount") and x.text]
+            aufl = sorted({x.text for x in wurzel.iter() if kuerzel(x.tag) == "resolution"})
+            print(f"{marke}: {len(preise)} Preise, Auflösung {aufl}, Elemente {tags[:40]}")
+            if preise:
+                print(f"  Mittel {statistics.mean(preise):.2f}, min {min(preise):.2f}, max {max(preise):.2f} (Einheit laut Dokument, vermutlich EUR je MW und Block)")
+                erg[marke] = {"punkte": len(preise), "mittel": round(statistics.mean(preise), 3), "min": min(preise), "max": max(preise),
+                              "aufloesung": aufl}
+            else:
+                print("  Antwort ohne Preise:", xml[:400].decode("utf-8", "ignore"))
+    (HIER / "regelenergie.json").write_text(json.dumps(erg, ensure_ascii=False, indent=1))
+
+
 def solar():
     out = {}
     for land, (lat, lon) in LAND.items():
@@ -122,4 +164,5 @@ if __name__ == "__main__":
     heute = date.today() - timedelta(days=2)
     boerse(heute)
     boerse_entsoe(heute)
+    regelenergie(heute)
     solar()
