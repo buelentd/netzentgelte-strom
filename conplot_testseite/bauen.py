@@ -52,7 +52,13 @@ for r in csv.DictReader(open(ERG / "hochlastzeitfenster_2026.csv", encoding="utf
 DATEN = HIER.parent / "daten"
 quelle = next(DATEN.glob("boerse_entsoe_*.json"), None) or next(DATEN.glob("boerse_20*.json"))      # ENTSO-E, sonst Energy-Charts
 b = json.load(open(quelle))
-q = [x if x is not None else 0 for x in b["ct_kwh"]]
+ec = json.load(open(next(DATEN.glob("boerse_20*.json"))))                      # Energy-Charts füllt Lücken der Hauptquelle
+q = []
+for i, x in enumerate(b["ct_kwh"]):
+    if x is None:
+        j = (b["start"] + i * b["schritt_s"] - ec["start"]) // ec["schritt_s"]
+        x = ec["ct_kwh"][j] if 0 <= j < len(ec["ct_kwh"]) and ec["ct_kwh"][j] is not None else 0
+    q.append(x)
 boerse = [round(sum(q[i:i + 4]) / 4, 2) for i in range(0, len(q) - 3, 4)]
 solar = json.load(open(DATEN / "solar_je_land.json"))["land"]
 profile = {}
