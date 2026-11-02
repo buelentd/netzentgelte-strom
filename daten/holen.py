@@ -47,7 +47,7 @@ def boerse(bis: date):
 def solar():
     out = {}
     for land, (lat, lon) in LAND.items():
-        d = abrufen(f"https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat={lat}&lon={lon}&peakpower=1&loss=14&angle=35&aspect=0"
+        d = abrufen(f"https://re.jrc.ec.europa.eu/api/v5_3/seriescalc?lat={lat}&lon={lon}&pvcalculation=1&peakpower=1&loss=14&angle=35&aspect=0"
                     f"&startyear=2020&endyear=2020&outputformat=json")
         monat = {m: [[] for _ in range(24)] for m in range(1, 13)}
         for z in d["outputs"]["hourly"]:
