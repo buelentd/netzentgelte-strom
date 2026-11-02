@@ -134,3 +134,59 @@ Hochlastzeitfenster nachladen; höchstens 1,5 Ladungen pro Tag (conplot: 10–90
 Daten: Lastprofile in daten/lastprofile/; fehlen: Börsenpreise 2025 stündlich (Energy-Charts, später
 ENTSO-E) und Solarertrag je Region (PVGIS), beide über einen GitHub-Lauf holen; Einspeisevergütung;
 Speicher- und Solarpreise (Anbieter). Mit Sonnet arbeiten, kurz antworten.
+
+## Stand der Testseite (02.11.2026, abends)
+
+Aktuelle Adresse: https://claude.ai/artifact/AuKrxs6bAcwhuacUp7LTDA (Version 8). Quelltext
+`conplot_testseite/vorlage.html`, bauen mit `python conplot_testseite/bauen.py`. Die ältere Adresse im Nachtrag
+oben (J8UnVGkS6kvUFdF2WFZMiL) ist überholt.
+
+### Fertig und belegt
+| Posten | Wert | Quelle |
+|---|---|---|
+| Netzentgelte, Hochlastzeitfenster | je Netzbetreiber, 2026 | eigene Erfassung (566 von 831 nutzbar, 112 mit Hochlastzeitfenstern) |
+| Börsenpreise stündlich | Mittel 11,2 ct/kWh (1.11.2025 bis 31.10.2026) | ENTSO-E, mit Energy-Charts verglichen |
+| Solarertrag je Bundesland | 12 Monate mal 24 Stunden je kWp | PVGIS |
+| Regelenergie (Frequenzhaltung) | 148.800 € je MW und Jahr, Mittel von 365 Tagen; Winter 58.000 bis 86.000, Sommer über 200.000 | regelleistung.net, `daten/fcr_roh.json` |
+| Umlagen 2026 | Kraft-Wärme-Kopplung 0,446, Offshore 0,941, besondere Netznutzung 1,559, Konzessionsabgabe 0,11 ct/kWh | EHA, Strom-Report, Cleanthinking (BDEW), Vattenfall |
+| Stromsteuer | 0,05 ct/kWh nach Entlastung (nur produzierendes Gewerbe: Bäckerei mit Backstube, Handwerk, Produktion), sonst 2,05; Voreinstellung nach Branche, Summe der Abgaben 3,11 bzw. 5,11 ct | Bundesregierung, Vattenfall, b2b energy |
+| Einspeisevergütung | gestaffelt 7,70 / 6,66 / 5,44 ct (bis 10 / 40 / 100 kW), Teileinspeisung, Inbetriebnahme ab 1.8.2026; über 100 kW näherungsweise 5,44 | Bundesnetzagentur |
+
+### Richtwerte ohne gute Quelle (auf der Seite so gekennzeichnet)
+- Aufschlag des Stromanbieters 2,5 ct/kWh (Haushalte belegt 3,5 bis 4, Gewerbe 1 bis 3 ohne Quelle).
+- Speicherpreis: bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh. Die Staffel ist geschätzt;
+  belegt sind Gewerbe 100 kWh 410 bis 450 und Heimspeicher 500 bis 800 installiert.
+- Solaranlage 1.100 €/kWp netto (Spanne 800 bis 1.300 für 30 bis 100 kWp), Betrieb 2 % der Investition im Jahr.
+- Spitzenlast: aus Branchenprofil geschätzt (größte Unsicherheit), nur mit Netzrechnung genau.
+- Ladeverluste bei der Spitzenkappung: Annahme täglicher Kappung (zu optimistisch).
+- Verfügbarkeit Regelenergie 50 %, Vermarkteranteil 20 %.
+
+### Neu heute
+- Regelenergie aus 365 Tagen statt zwei Stichproben; Abgaben und Einspeisevergütung belegt statt Platzhalter.
+- Speicherpreis nach Größe gestaffelt; Solaranlage (neu, aus Dachfläche oder kWp) mit Kosten und Barwert über 20 Jahre,
+  zusammen mit dem Speicher dargestellt.
+- Beispiel Bäckerei Biberach (150.000 kWh, dynamischer Tarif, 75 kWh): Summe der Säulen etwa 2.750 € im Jahr,
+  Barwert des Speichers negativ (etwa −6.300 € mit gestaffeltem Preis). Mit neuer Anlage (400 m², 62 kWp) trägt
+  die Anlage selbst (Barwert etwa +94.000 € über 20 Jahre), der Speicher bleibt negativ.
+
+### Was noch fehlt
+1. **Netzentgelte 2027:** Die Preisblätter 2027 mussten bis 15.10.2026 erscheinen. Entscheidung offen, ob die
+   Datenbasis auf 2027 umgestellt wird (großer Lauf über alle Netzbetreiber). Der Bundeszuschuss sinkt 2027 bis 2029
+   auf 5,525 Mrd. € (Kabinettsbeschluss, noch kein Gesetz), Netzentgelte dürften steigen.
+2. **Hochlastzeitfenster** für die übrigen etwa 450 nutzbaren Netzbetreiber (Brave-Lauf, rund 2,25 USD, braucht Ok).
+3. **Preise der fehlenden 265 Netzbetreiber.**
+4. **Belegte Gewerbe-Speicherpreise** (Angebote, nicht nur Ratgeber); Gewerbe-Aufschlag des Stromanbieters aus
+   echten Rechnungen.
+5. **Spitzenlast als Spanne** aus den Lastprofilen (Untergrenze Profil, Obergrenze Branche); Lastprofil-Upload.
+6. **Förderung:** bundesweit nur Kredit (KfW 270, in Baden-Württemberg zusätzlich L-Bank); Zuschüsse regional,
+   für Gewerbe aktuell keine in Baden-Württemberg. Steuerwirkung (Abschreibung, § 7g EStG) nicht eingerechnet.
+7. **Strompreisentwicklung:** Börse zuletzt 14 bis 17 ct/kWh (Sept./Okt. 2026), Jahresmittel 11,2; Rechnung nutzt
+   das Jahresmittel, keine Preispfade über 12 Jahre.
+8. **Stromsteuer-Entlastung** gilt nur für die Produktionsmenge; Mischbetriebe müssen den Wert anpassen
+   (Hinweis am Feld, kein Eingabefeld für den Anteil).
+9. **Google Solar API** live einbinden (Schlüssel nie im Browser, Ergebnisse nicht speichern) und Gespräch mit
+   conplot: Herkunft von `demand_charge_kw_month`, Datensatz ersetzen, Basisjahr, Nachladen nur außerhalb der
+   Hochlastzeitfenster, Strompreis ohne Netzentgelt.
+10. Aufräumen: `regelenergie()` in `daten/holen.py` und `daten/regelenergie.json` (ENTSO-E-Versuch, ungültig) entfernen;
+    ENTSO-E gegen Energy-Charts: 991 Viertelstunden mit mehr als 0,5 ct Abweichung nicht untersucht.
+11. Annahmen im Sonnenstrom-Teil: Einspeisung über 100 kWp läuft über Direktvermarktung (Marktprämie), hier nur näherungsweise.
