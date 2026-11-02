@@ -502,16 +502,16 @@ function lastProfil(b, kwh, tage) {
 }
 
 // Ein Tag: wie viel Solarstrom der Betrieb selbst nutzt, ohne und mit Speicher (U nutzbare kWh, P kW)
-function solarTag(last, gen, U, P) {
+function solarTag(last, gen, U, P, Emax = Infinity) {
   const sq = Math.sqrt(ETA);
-  let ohne = 0, mit = 0, soc = 0;
+  let ohne = 0, mit = 0, soc = 0, entladen = 0;
   for (let durchlauf = 0; durchlauf < 2; durchlauf++) {
-    ohne = 0; mit = 0;
+    ohne = 0; mit = 0; entladen = 0;
     for (let h = 0; h < 24; h++) {
       const direkt = Math.min(gen[h], last[h]); ohne += direkt; mit += direkt;
       const netto = gen[h] - last[h];
       if (netto > 0 && U > 0) soc += Math.min(netto, P, (U - soc) / sq) * sq;
-      else if (netto < 0 && soc > 0) { const zieh = Math.min(soc, P, -netto / sq); soc -= zieh; mit += zieh * sq; }
+      else if (netto < 0 && soc > 0 && entladen < Emax) { const zieh = Math.min(soc, P, -netto / sq, Emax - entladen); soc -= zieh; entladen += zieh; mit += zieh * sq; }
     }
   }
   return {ohne, mit};
@@ -577,13 +577,13 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const s2 = at.zusatz;
     // Säule 3: Solar
     let s3 = 0, delta = 0, pvEigen = 0;
-    const reserve = Math.min(gekappt * dauer, U);
     if (kwp > 0 && cap > 0) {
-      const Us = Math.max(0, U - reserve - 0.01);
+      const Emax = U * Math.max(0, ZYKLEN - kapEff / U);       // Solarverschiebung bekommt die Ladungen, die die Kappung übrig lässt
+      const Us = U;
       for (let m = 1; m <= 12; m++) {
         const gen = land[m].map(x => x * kwp), d = MONATSTAGE[m - 1];
         for (const [typ, anteil] of [["werktag", 5 / 7], ["samstag", 1 / 7], ["sonntag", 1 / 7]]) {
-          const t = solarTag(last[typ], gen, Us, Psp);
+          const t = solarTag(last[typ], gen, Us, Psp, Emax);
           delta += (t.mit - t.ohne) * d * anteil; pvEigen += t.ohne * d * anteil;
         }
       }
