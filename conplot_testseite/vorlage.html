@@ -228,8 +228,8 @@ a{color:var(--akzent)}
             <input type="number" id="a-foerd" min="0" max="100" step="5" value="0"></div>
           <div><label class="titel" for="a-vermarkter">Anteil des Vermarkters (%)</label>
             <input type="number" id="a-vermarkter" min="0" max="100" step="5" value="20"></div>
-          <div><label class="titel" for="a-regel">Regelenergie FCR (€ je MW und Jahr, Mittel aus 2 Tagen 2026: 99.000 und 200.000)</label>
-            <input type="number" id="a-regel" min="0" step="1000" value="150000"></div>
+          <div><label class="titel" for="a-regel">Regelenergie FCR (€ je MW und Jahr, Mittel der letzten 365 Tage bis 01.11.2026 laut regelleistung.net; Monate von 58.000 bis 211.000)</label>
+            <input type="number" id="a-regel" min="0" step="1000" value="148800"></div>
           <div><label class="titel" for="a-verf">Verfügbarkeit Regelenergie (0–1)</label>
             <input type="number" id="a-verf" min="0" max="1" step="0.05" value="0.5"></div>
         </div>
@@ -627,7 +627,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Zeitfenster noch nicht erfasst")],
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
     [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW")],
-    ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis aus zwei Stichproben 2026 (Spanne 99.000 bis 200.000 € je MW), bitte prüfen` : "Netzanschluss 0 kW"],
+    ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW"],
   ];
   const summe = R.summe;
   const max = Math.max(1, ...saeulen.map(c => Math.abs(c[1])), Math.abs(summe));
