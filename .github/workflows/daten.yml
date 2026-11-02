@@ -25,6 +25,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Daten holen
+        env:
+          ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
         run: python daten/holen.py
       - name: Committen
         run: |

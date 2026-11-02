@@ -188,6 +188,18 @@ a{color:var(--akzent)}
         <div id="dach-feld">
           <label class="titel" for="dach">Nutzbare Dachfläche (m²), falls noch keine Anlage</label>
           <input type="number" id="dach" min="0" step="10" placeholder="z. B. 400">
+          <label class="titel" for="dach-adresse" style="margin-top:8px">oder: Dach aus der Adresse (Beispieldaten der Google Solar API)</label>
+          <select id="dach-adresse">
+            <option value="">Adresse wählen …</option>
+            <option value="1907">Meerane, Markt 1: 1.907 m² nutzbar</option>
+            <option value="446">Biberach, Marktplatz 7: 446 m²</option>
+            <option value="369">München, Rathausplatz 1: 369 m²</option>
+            <option value="169">Berlin, Karl-Marx-Allee 1: 169 m²</option>
+            <option value="104">Velden, Hauptstraße 25: 104 m²</option>
+            <option value="189">Kruckow, Dorfstraße 3: 189 m²</option>
+            <option value="10">Fulda, Marktplatz 1: 10 m² (vermutlich falsches Gebäude)</option>
+          </select>
+          <div class="klein" id="dach-hinweis" hidden>Aus der Adresse ermittelt. Bitte prüfen, ob es Ihr Gebäude ist, und die Fläche bei Bedarf korrigieren.</div>
         </div>
       </div>
       <details class="annahmen">
@@ -587,6 +599,8 @@ $("form").addEventListener("input", e => {
   if (e.target.id === "plz") { plzVorschlagen(); nbAnzeigen(); }
   if (e.target.name === "nb") gewaehlt = +e.target.value;
   if (e.target.id === "laden") $("laden-bereich").hidden = !e.target.checked;
+  if (e.target.id === "dach-adresse") { $("dach").value = e.target.value; $("dach-hinweis").hidden = !e.target.value; }
+  if (e.target.id === "dach") { $("dach-adresse").value = ""; $("dach-hinweis").hidden = true; }
   if (e.target.id === "pv") { $("pv-feld").hidden = !e.target.checked; $("dach-feld").hidden = e.target.checked; }
   rechnen();
 });

@@ -50,7 +50,8 @@ for r in csv.DictReader(open(ERG / "hochlastzeitfenster_2026.csv", encoding="utf
     e["f"][r["jahreszeit"].split(" ")[0]] = [] if r["zeitfenster"] == "keins" else r["zeitfenster"].split(", ")
 # Börsenpreise (Viertelstunden → Stundenmittel, ct/kWh), Solarertrag je Bundesland, Lastprofilformen (Stunden, Anteil am Tag)
 DATEN = HIER.parent / "daten"
-b = json.load(open(next(DATEN.glob("boerse_*.json"))))
+quelle = next(DATEN.glob("boerse_entsoe_*.json"), None) or next(DATEN.glob("boerse_20*.json"))      # ENTSO-E, sonst Energy-Charts
+b = json.load(open(quelle))
 q = [x if x is not None else 0 for x in b["ct_kwh"]]
 boerse = [round(sum(q[i:i + 4]) / 4, 2) for i in range(0, len(q) - 3, 4)]
 solar = json.load(open(DATEN / "solar_je_land.json"))["land"]

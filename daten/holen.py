@@ -5,9 +5,11 @@ Ausgabe:
   daten/solar_je_land.json        je Bundesland und Monat ein mittlerer Tagesverlauf (24 Werte) in kWh je kWp und Stunde
 """
 import json
+import os
 import statistics
 import sys
 import time
+import xml.etree.ElementTree as ET
 import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
@@ -44,6 +46,61 @@ def boerse(bis: date):
     print(f"Börse {von}..{bis}: {len(ok)} Werte, Mittel {statistics.mean(ok):.2f} ct/kWh, min {min(ok):.2f}, max {max(ok):.2f}")
 
 
+def boerse_entsoe(bis: date):
+    """Day-Ahead-Preise DE-LU von der ENTSO-E Transparenzplattform (Originalquelle), Abgleich mit Energy-Charts.
+    Schlüssel: Umgebungsvariable ENTSOE_TOKEN; ohne Schlüssel wird übersprungen."""
+    token = os.environ.get("ENTSOE_TOKEN", "")
+    if not token:
+        print("ENTSO-E übersprungen: ENTSOE_TOKEN nicht gesetzt")
+        return
+    von = bis - timedelta(days=364)
+    url = ("https://web-api.tp.entsoe.eu/api?documentType=A44&in_Domain=10Y1001A1001A82H&out_Domain=10Y1001A1001A82H"
+           f"&periodStart={von:%Y%m%d}0000&periodEnd={bis + timedelta(days=1):%Y%m%d}0000&securityToken={token}")
+    for i in range(3):
+        try:
+            with urllib.request.urlopen(url, timeout=120) as r:
+                xml = r.read()
+            break
+        except Exception as e:
+            print(f"  ENTSO-E Fehler {type(e).__name__} (Versuch {i + 1})")
+            time.sleep(2 ** (i + 1))
+    else:
+        print("ENTSO-E nicht erreichbar")
+        return
+    punkte = {}                                                    # Unix-Sekunden (UTC) → ct/kWh
+    kuerzel = lambda t: t.rsplit("}", 1)[-1]
+    for ts in ET.fromstring(xml).iter():
+        if kuerzel(ts.tag) != "TimeSeries":
+            continue
+        for per in [x for x in ts.iter() if kuerzel(x.tag) == "Period"]:
+            start = res = None
+            for x in per.iter():
+                if kuerzel(x.tag) == "start" and start is None:
+                    start = x.text
+                if kuerzel(x.tag) == "resolution":
+                    res = x.text
+            from datetime import datetime, timezone
+            t0 = datetime.strptime(start, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc).timestamp()
+            schritt = {"PT15M": 900, "PT30M": 1800, "PT60M": 3600}[res]
+            for pt in [x for x in per if kuerzel(x.tag) == "Point"]:
+                pos = int([c.text for c in pt if kuerzel(c.tag) == "position"][0])
+                pr = float([c.text for c in pt if kuerzel(c.tag) == "price.amount"][0])
+                for k in range(schritt // 900):                    # auf Viertelstunden ausdehnen
+                    punkte[int(t0 + (pos - 1) * schritt + k * 900)] = round(pr / 10, 3)
+    ec = next(HIER.glob("boerse_20*.json"), None)
+    if ec and punkte:
+        d = json.loads(ec.read_text())
+        diffs = [abs(punkte[d["start"] + i * d["schritt_s"]] - v) for i, v in enumerate(d["ct_kwh"])
+                 if v is not None and (d["start"] + i * d["schritt_s"]) in punkte]
+        print(f"ENTSO-E: {len(punkte)} Werte; Abgleich mit Energy-Charts auf {len(diffs)} Zeitpunkten: "
+              f"mittlere Abweichung {statistics.mean(diffs):.4f} ct/kWh, größte {max(diffs):.3f}")
+    ziel = HIER / f"boerse_entsoe_{von}_{bis}.json"
+    zeiten = sorted(punkte)
+    ziel.write_text(json.dumps({"start": zeiten[0], "schritt_s": 900, "quelle": "ENTSO-E Transparenzplattform, Day-Ahead DE-LU",
+                                "ct_kwh": [punkte.get(t) for t in range(zeiten[0], zeiten[-1] + 900, 900)]}, separators=(",", ":")))
+    print(f"ENTSO-E gespeichert: {ziel.name}")
+
+
 def solar():
     out = {}
     for land, (lat, lon) in LAND.items():
@@ -62,5 +119,7 @@ def solar():
 
 
 if __name__ == "__main__":
-    boerse(date.today() - timedelta(days=2))
+    heute = date.today() - timedelta(days=2)
+    boerse(heute)
+    boerse_entsoe(heute)
     solar()
