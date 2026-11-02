@@ -254,7 +254,11 @@ const fmt = (v, n = 0) => v == null || !isFinite(v) ? "–" : v.toLocaleString("
 
 // Branchen: Benutzungsstunden (Annahme bei 1-Schicht und Standard-Betriebstagen), BDEW-Profil, typisches Spitzenfenster
 const BRANCHEN = {
-  baeckerei:      {name: "Bäckerei mit Backstube", h: 2500, tage: 6, profil: "G5", fenster: "4–8 Uhr"},
+  baeckerei:      {name: "Bäckerei mit Backstube", h: 2500, tage: 6, profil: "G5", fenster: "4–8 Uhr",
+                   // Backstubenprofil (Form wie im conplot-Beispiel, Winter): Grundlast 5 kW, 2–4:30 Uhr 19 kW, 4:30–7:30 Uhr 95 kW, 7:30–11:30 Uhr 19 kW; Sonntag nur Grundlast
+                   form: {werktag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+                          samstag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+                          sonntag: new Array(24).fill(5)}},
   imbiss:         {name: "Imbiss", h: 2500, tage: 6, profil: "G2", fenster: "11–14 Uhr"},
   gastronomie:    {name: "Restaurant / Gastronomie", h: 2500, tage: 6, profil: "G2", fenster: "11–14 und 18–21 Uhr"},
   systemgastro:   {name: "Systemgastronomie", h: 4000, tage: 7, profil: "G2", fenster: "11–14 Uhr"},
@@ -434,7 +438,7 @@ function rechnen() {
         <div class="zahl"><small>Ersparnis Netzentgelt</small><span>${fmt(ersparnis)} € / Jahr</span></div>
         <div class="zahl"><small>Nötige Kapazität</small><span>ca. ${fmt(kapazitaet)} kWh</span></div>
         <div class="zahl"><small>je gekapptem kW</small><span>${fmt(ersparnis / gekappt)} €</span></div></div>
-        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 80 % nutzbar.${zielEingabe ? "" : " Ziel: 20 % weniger Spitze (Vorschlag)."}</p>`;
+        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 80 % nutzbar.${zielEingabe ? "" : " Beispielrechnung mit 20 % weniger Spitze; die Auswertung weiter unten sucht je Speichergröße die beste Zielspitze."}</p>`;
       if (r.unter !== nach.unter) hinweise.push({w: 1, t: `Tarifwechsel: Mit ${fmt(ziel)} kW gilt der Tarif ${nach.unter ? "unter" : "ab"} 2.500 h. Die Ersparnis ist deshalb kleiner als ${fmt(gekappt)} kW × Leistungspreis.`});
       if (preis) {
         const kosten = preis * kapazitaet;
@@ -496,7 +500,7 @@ const MONATSTAGE = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const num = id => parseFloat($(id).value) || 0;
 
 function lastProfil(b, kwh, tage) {
-  const P = D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
+  const P = b.form || D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
   const wd = P.werktag, sa = tage >= 6 ? (tage === 6 ? P.samstag : P.werktag) : P.sonntag, so = tage >= 7 ? P.werktag : P.sonntag;
   const total = 261 * wd.reduce((a, c) => a + c, 0) + 52 * sa.reduce((a, c) => a + c, 0) + 52 * so.reduce((a, c) => a + c, 0);
   const f = kwh / total;
@@ -569,16 +573,28 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
 
   function fuer(cap) {
     const U = NUTZBAR * cap, Psp = cap / SPEICHERDAUER;
-    const moeglich = cap > 0 ? Math.min(NUTZBAR * cap / dauer, Psp) : 0;
-    const gekappt = Math.max(0, Math.min(kw - zielWunsch, moeglich)), ziel = kw - gekappt;
-    const nach = gekappt > 0 ? rlm(nb.ns, kwh, ziel, nb.le) : rVor;
-    const ap = nach.ap, bezug = strom + ap;
-    // Säule 1: Spitze senken. Der Speicher hält an jedem Betriebstag Reserve; entladen wird nur über der Zielspitze
+    // Säule 1: Spitze senken. Beste Zielspitze für diese Speichergröße suchen (nutzbare Energie und Leistung des Speichers
+    // begrenzen, wie tief gekappt werden kann; der Tarif kann dabei wechseln). Eigene Eingabe "Zielspitze" hat Vorrang.
     const skala = kw / lwMax;
-    const kapEff = Math.min(U, lw.reduce((a, c) => a + Math.max(0, c * skala - ziel), 0));
-    const verlust = arbeitstage * kapEff * (1 / ETA - 1) * bezug / 100;
-    const ersparnis = gekappt > 0 ? rVor.summe - nach.summe : 0;
-    const s1 = gekappt > 0 ? ersparnis - verlust : 0;
+    const energieFuer = z => lw.reduce((a, c) => a + Math.max(0, c * skala - z), 0);
+    const ausKappung = z => {
+      const n = rlm(nb.ns, kwh, z, nb.le), kEff = Math.min(U, energieFuer(z));
+      const v = arbeitstage * kEff * (1 / ETA - 1) * (strom + n.ap) / 100, e = rVor.summe - n.summe;
+      return {ziel: z, nach: n, kapEff: kEff, verlust: v, ersparnis: e, s1: e - v};
+    };
+    let beste1 = {ziel: kw, nach: rVor, kapEff: 0, verlust: 0, ersparnis: 0, s1: 0};
+    if (cap > 0) {
+      const festesZiel = num("ziel");
+      for (let z = kw - 1; z >= Math.max(1, kw - Psp); z--) {
+        if (energieFuer(z) > U * 1.001) break;                  // tiefer reicht die Energie des Speichers nicht
+        if (festesZiel && Math.abs(z - festesZiel) > 0.5) continue;
+        const c = ausKappung(z);
+        if (c.s1 > beste1.s1) beste1 = c;
+      }
+    }
+    const ziel = beste1.ziel, gekappt = kw - ziel, nach = beste1.nach, kapEff = beste1.kapEff, verlust = beste1.verlust, ersparnis = beste1.ersparnis;
+    const ap = nach.ap, bezug = strom + ap;
+    const s1 = beste1.s1;
     // Säule 2: atypische Netznutzung, nur der Teil über die Kappung hinaus
     const at = cap > 0 && gekappt > 0 ? atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, {ziel, nach}) : atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, null);
     const s2 = at.zusatz;
@@ -616,8 +632,9 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const pRegel = cap > 0 && netz > 0 ? Math.max(0, Math.min(Psp, netz) - gekappt) : 0;
     const proMW = pRegel / 1000 * num("a-regel") * (1 - num("a-vermarkter") / 100);
     const s5hoch = proMW * num("a-verf"), s5tief = proMW * Math.min(0.3, num("a-verf")), s5 = (s5hoch + s5tief) / 2;
-    const summe = s1 + s2 + s3 + s4 + s5, preisJe = preisFuer(cap), kosten = preisJe * cap * (1 - zuschuss);
-    return {cap, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten,
+    const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
+    const summe = s1 + s2 + s3 + s4 + s5 - opex, kosten = preisJe * cap * (1 - zuschuss);
+    return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten,
             kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch};
   }
 
@@ -644,11 +661,12 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
 
   const R = gewaehlt;
   const saeulen = [
-    ["Spitze senken", R.s[0], R.gekappt > 0 ? `${fmt(R.ersparnis)} € Netzentgelt, minus ${fmt(R.verlust)} € Ladeverluste` : "keine Kappung nötig oder möglich"],
+    ["Spitze senken", R.s[0], R.gekappt > 0 ? `Zielspitze ${fmt(R.ziel)} statt ${fmt(kw)} kW (beste für diese Speichergröße): ${fmt(R.ersparnis)} € Netzentgelt, minus ${fmt(R.verlust)} € Ladeverluste` : "keine Kappung nötig oder möglich"],
     ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Zeitfenster noch nicht erfasst")],
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
     [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW")],
     ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW"],
+    ["Betriebskosten Speicher", -R.opex, "1,5 % der Investition pro Jahr (Annahme, gleicher Wert wie bei conplot)"],
   ];
   const summe = R.summe;
   const max = Math.max(1, ...saeulen.map(c => Math.abs(c[1])), Math.abs(summe));

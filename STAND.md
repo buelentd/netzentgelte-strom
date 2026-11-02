@@ -190,3 +190,17 @@ oben (J8UnVGkS6kvUFdF2WFZMiL) ist überholt.
 10. Aufräumen: `regelenergie()` in `daten/holen.py` und `daten/regelenergie.json` (ENTSO-E-Versuch, ungültig) entfernen;
     ENTSO-E gegen Energy-Charts: 991 Viertelstunden mit mehr als 0,5 ct Abweichung nicht untersucht.
 11. Annahmen im Sonnenstrom-Teil: Einspeisung über 100 kWp läuft über Direktvermarktung (Marktprämie), hier nur näherungsweise.
+
+### Nachtrag 02.11.2026 (Vergleich mit conplot, Biberach 150.000 kWh, 111 kW, 220 kWh)
+conplot: Investition 200.926 € (913 €/kWh), Kappung 111 auf 50 kW, Netzentgelt-Ersparnis 3.639 €/J (Balken Netzentgelt
+etwa 6.600 €, Betriebskosten etwa −3.000 €, Trading etwa +200 €), Ergebnis 2.936 €/J, keine Amortisation.
+Umgesetzt danach: (1) beste Zielspitze je Speichergröße statt fest 20 % (Biberach 220 kWh: 45 kW, conplot 50 kW);
+(2) Betriebskosten Speicher 1,5 % der Investition; (3) Bäckerei-Lastprofil nach conplot-Form (5 kW Grundlast, 4:30–7:30 Uhr
+95 kW, 2–4:30 und 7:30–11:30 Uhr 19 kW).
+Ergebnis unserer Seite danach (220 kWh, dynamisch): Spitze senken +3.346, Verschieben +3.867, Regelenergie +1.619,
+Betriebskosten −1.386, Summe +7.445 €/J, Barwert −29.981 €.
+Offen aus dem Vergleich: conplot-Balken Netzentgelt 6.600 € lässt vermuten, dass dort ein pauschaler Leistungspreis
+(etwa 108 €/kW) gilt, nicht e.wa riss mit 31,80/176 €/kW (unbestätigt, bei conplot erfragen); 913 €/kWh Investition
+erklären lassen; Hochlastzeitfenster e.wa riss Winter: conplot-Grafik etwa 8:00–12:45 und 16:00–18:45, unsere Auslesung
+12:00–13:30 und 16:15–19:15, gegen das Original prüfen (PDF aus dieser Umgebung nicht abrufbar); Handel/Verschieben
+bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Regelleistung bei conplot abgewählt).
