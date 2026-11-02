@@ -381,7 +381,7 @@ function rechnen() {
   else { kw = kwBranche + laden; herkunft = `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
 
   const hinweise = [];
-  if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preisstand des Preisblatts: ${nb.ps}${nb.sd ? " (Stand " + nb.sd + ")" : ""}`});
+  if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preisblatt für 2026${nb.sd ? ", Dokument vom " + nb.sd : ""}. Ob die Preise endgültig oder vorläufig sind: ${nb.ps === "vorläufig" ? "vorläufig" : "im Preisblatt nicht angegeben"}.`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
   let kappungInfo = null;
 
