@@ -1,0 +1,25 @@
+name: vnbdigital.de rohe Antwort ansehen (eine Abfrage)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/vnbdigital_roh.env]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vnbdigital-roh
+
+jobs:
+  roh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install vnbdigital-client==0.4.14
+      - run: python daten/vnbdigital_roh.py
