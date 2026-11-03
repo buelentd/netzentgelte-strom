@@ -1,0 +1,37 @@
+name: Netztransparenz (Zugang prüfen)
+
+# Startet bei Änderung an lauf/netztransparenz.env. Modus pruefen: zeigt gesetzte Secret-Namen (ja/nein), meldet sich an,
+# listet die angebotenen Datensätze. Werte der Secrets werden nie ausgegeben.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/netztransparenz.env]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netztransparenz
+  cancel-in-progress: true
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Prüfen
+        env:
+          NETZTRANSPARENZ: ${{ secrets.NETZTRANSPARENZ }}
+          NETZ_TRANSPARENZ: ${{ secrets.NETZ_TRANSPARENZ }}
+          NETZTRANSPARENZ_SCHLUESSEL: ${{ secrets.NETZTRANSPARENZ_SCHLUESSEL }}
+          NETZTRANSPARENZ_TOKEN: ${{ secrets.NETZTRANSPARENZ_TOKEN }}
+          NETZTRANSPARENZ_CLIENT_ID: ${{ secrets.NETZTRANSPARENZ_CLIENT_ID }}
+          NETZTRANSPARENZ_CLIENT_SECRET: ${{ secrets.NETZTRANSPARENZ_CLIENT_SECRET }}
+          NTP_CLIENT_ID: ${{ secrets.NTP_CLIENT_ID }}
+          NTP_CLIENT_SECRET: ${{ secrets.NTP_CLIENT_SECRET }}
+        run: python daten/netztransparenz.py pruefen
