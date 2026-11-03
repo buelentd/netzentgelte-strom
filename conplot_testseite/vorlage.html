@@ -226,6 +226,10 @@ a{color:var(--akzent)}
             <input type="number" id="a-zins" min="0" step="0.5" value="6"></div>
           <div><label class="titel" for="a-pvpreis">Preis Solaranlage (€/kWp netto, schlüsselfertig; Gewerbe 30 bis 100 kWp etwa 800 bis 1.300, Richtwert 1.100; Betrieb 2 % der Investition pro Jahr)</label>
             <input type="number" id="a-pvpreis" min="0" step="50" value="1100"></div>
+          <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
+            <input type="number" id="a-abbau" min="0" max="20" step="0.5" value="2.5"></div>
+          <div><label class="titel" for="a-entsorg">Entsorgungskosten am Ende (€/kWh; Wert von conplot, nicht belegt)</label>
+            <input type="number" id="a-entsorg" min="0" step="5" value="75"></div>
           <div><label class="titel" for="a-foerd">Zuschuss auf die Investition (%, nicht geprüft. Bundesweit nur zinsgünstiger Kredit der KfW (Programm 270), Zuschüsse nur regional und für Privatpersonen)</label>
             <input type="number" id="a-foerd" min="0" max="100" step="5" value="0"></div>
           <div><label class="titel" for="a-vermarkter">Anteil des Vermarkters (%)</label>
@@ -569,7 +573,11 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   // Speicherpreis: eigene Eingabe, sonst Staffel (geschätzt): bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh
   const preisFuer = c => num("speicherpreis") || (c <= 100 ? 450 : Math.max(350, 450 - (c - 100) / 400 * 100));
   const zuschuss = num("a-foerd") / 100, zins = num("a-zins") / 100;
-  const faktor = zins > 0 ? (1 - Math.pow(1 + zins, -12)) / zins : 12;       // Barwert über 12 Jahre (Batterietausch wie bei conplot)
+  // Barwert über 12 Jahre (6.000 Zyklen bei 1,5 Ladungen pro Tag halten etwa 11 Jahre): Erträge sinken mit dem Kapazitätsabbau, Entsorgung am Ende
+  const abbau = num("a-abbau") / 100, entsorgJe = num("a-entsorg");
+  let faktor = 0;
+  for (let t = 1; t <= 12; t++) faktor += Math.max(0, 1 - abbau * (t - 1)) / Math.pow(1 + zins, t);
+  const entsorgBarwert = c => entsorgJe * c / Math.pow(1 + zins, 12);
 
   function fuer(cap) {
     const U = NUTZBAR * cap, Psp = cap / SPEICHERDAUER;
@@ -634,7 +642,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const s5hoch = proMW * num("a-verf"), s5tief = proMW * Math.min(0.3, num("a-verf")), s5 = (s5hoch + s5tief) / 2;
     const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
     const summe = s1 + s2 + s3 + s4 + s5 - opex, kosten = preisJe * cap * (1 - zuschuss);
-    return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten,
+    return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten - entsorgBarwert(cap),
             kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch};
   }
 
@@ -679,7 +687,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (Börsenmittel " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
-    <p class="herkunft">Barwert über 12 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € minus Kosten ${fmt(R.kosten)} €, Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
+    <p class="herkunft">Barwert über 12 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
     if (!eingabe && !beste.cap) chart += `<p class="herkunft"><b>Bei diesen Angaben lohnt sich kein Speicher.</b> Der Barwert ist bei allen Größen negativ. Prüfen Sie atypische Netznutzung und Solar.</p>`;
     chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert 12 J. €</th></tr></thead><tbody>`
       + kurve.map(k => `<tr class="${k.cap === beste.cap && beste.cap ? "aktiv" : ""}"><td>${fmt(k.cap)} kWh</td><td>${fmt(k.summe)}</td><td>${fmt(k.kosten)}</td><td>${k.barwert >= 0 ? "+" : "−"}${fmt(Math.abs(k.barwert))}</td></tr>`).join("")
