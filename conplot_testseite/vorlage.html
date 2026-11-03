@@ -226,6 +226,8 @@ a{color:var(--akzent)}
             <input type="number" id="a-zins" min="0" step="0.5" value="6"></div>
           <div><label class="titel" for="a-pvpreis">Preis Solaranlage (€/kWp netto, schlüsselfertig; Gewerbe 30 bis 100 kWp etwa 800 bis 1.300, Richtwert 1.100; Betrieb 2 % der Investition pro Jahr)</label>
             <input type="number" id="a-pvpreis" min="0" step="50" value="1100"></div>
+          <div><label class="titel" for="a-afrr">aFRR-Leistungspreis (€ je MW und Jahr, Leistung in beide Richtungen angeboten; gemessen: Mittel der letzten 365 Tage laut regelleistung.net, Durchschnittsgebot 204.000, Grenzpreis 287.000; zuletzt fallend)</label>
+            <input type="number" id="a-afrr" min="0" step="1000" value="204000"></div>
           <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
             <input type="number" id="a-abbau" min="0" max="20" step="0.5" value="2.5"></div>
           <div><label class="titel" for="a-entsorg">Entsorgungskosten am Ende (€/kWh; Wert von conplot, nicht belegt)</label>
@@ -692,6 +694,15 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert 12 J. €</th></tr></thead><tbody>`
       + kurve.map(k => `<tr class="${k.cap === beste.cap && beste.cap ? "aktiv" : ""}"><td>${fmt(k.cap)} kWh</td><td>${fmt(k.summe)}</td><td>${fmt(k.kosten)}</td><td>${k.barwert >= 0 ? "+" : "−"}${fmt(Math.abs(k.barwert))}</td></tr>`).join("")
       + `</tbody></table></div>`;
+    const vm = 1 - num("a-vermarkter") / 100, wege = [["Regelenergie FCR (Frequenzhaltung)", num("a-regel"), "Bereithalten, sofortige Reaktion auf die Netzfrequenz; bezahlt wird die Bereitschaft"],
+      ["aFRR (langsamere Regelenergie)", num("a-afrr"), "Abruf nach Minuten; bezahlt wird die Bereitschaft (je Richtung) und die abgerufene Energie"],
+      ["Day-Ahead-Handel", dayAheadJeMW(), "billig laden, teuer entladen; bezahlt wird die Preisspanne am Strommarkt"]];
+    chart += `<hr class="trenner"><h2>Drei Handelswege für dieselbe Batterieleistung (nicht addieren)</h2>
+      <p class="herkunft">Dieselbe Leistung kann zu einer Zeit nur einen Zweck erfüllen: Wer sie für die Regelenergie bereithält, kann sie nicht zugleich im Handel einsetzen oder für die Spitzenkappung verwenden. Die Werte sind Alternativen, keine Summe. Für Regelenergie braucht man in der Regel einen Vermarkter (Pool) und eine Zulassung, weil die Mindestmengen für einen einzelnen Betrieb zu groß sind.</p>
+      <div class="tabelle"><table><thead><tr><th>Weg</th><th>€ je MW und Jahr</th><th>nach ${fmt(num("a-vermarkter"))} % Vermarkter</th><th>bei Ihrer freien Leistung (${fmt(R.pRegel)} kW), ${fmt(num("a-verf") * 100)} % Verfügbarkeit</th></tr></thead><tbody>`
+      + wege.map(([n, v, h]) => `<tr><td>${n}<br><small>${h}</small></td><td>${fmt(v)}</td><td>${fmt(v * vm)}</td><td>${fmt(v * vm * R.pRegel / 1000 * num("a-verf"))} €</td></tr>`).join("")
+      + `</tbody></table></div>
+      <p class="herkunft">Herkunft: FCR und aFRR gemessen (regelleistung.net, 365 Tage, aFRR in beide Richtungen mit je 1 MW angeboten); Day-Ahead aus unseren Börsenpreisen mit einem 2-Stunden-Speicher und einer Ladung pro Tag (obere Grenze). Die Preise schwanken stark und sind zuletzt gesunken. Nicht eingerechnet: abgerufene Energie bei aFRR, Zulassungskosten, Ausfälle.</p>`;
     if (anlage) chart += `<hr class="trenner"><h2>Neue Solaranlage ${fmt(kwp)} kWp: Anlage und Speicher zusammen</h2>
       <p class="herkunft">Die Anlage erzeugt etwa ${fmt(anlage.erz)} kWh im Jahr, davon ${fmt(anlage.eig)} kWh im Betrieb genutzt, der Rest wird für ${fmt(einsp, 2)} ct/kWh eingespeist. Nutzen ${fmt(anlage.nutzen)} € pro Jahr (nach ${fmt(anlage.betrieb)} € Betriebskosten), Investition ${fmt(anlage.invest)} €, Barwert über 20 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${anlage.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert))} €</b>.</p>
       <p class="herkunft">Zusammen mit dem Speicher (Barwert über 12 Jahre ${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €): <b>${anlage.barwert + R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert + R.barwert))} €</b>. Die Zeiträume sind verschieden (Anlage 20, Speicher 12 Jahre), die Summe ist eine grobe Einordnung. Ohne Förderung, ohne Steuerwirkung, Eigenverbrauch ohne Speicher gerechnet.</p>`;
@@ -699,6 +710,19 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   if (R.cap && R.genutzt > ZYKLEN) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die erlaubten ${ZYKLEN}. Speicher größer wählen.`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
   return html.replace("</h2>", "</h2>" + chart);
+}
+
+// Day-Ahead je MW und Jahr: ein Speicher mit 1 MW Leistung, nutzbar 0,8 * Dauer MWh, lädt in den billigsten, entlädt in den teuersten Stunden des Tages (obere Grenze: Reihenfolge nicht geprüft)
+function dayAheadJeMW() {
+  const T = D.boerse, n = Math.floor(T.length / 24), E = NUTZBAR * SPEICHERDAUER;
+  let summe = 0;
+  for (let d = 0; d < n; d++) {
+    const tag = T.slice(d * 24, d * 24 + 24), hoch = [...tag].sort((a, b) => b - a), tief = [...tag].sort((a, b) => a - b);
+    let rest = E, erl = 0; for (const p of hoch) { const m = Math.min(1, rest); erl += m * p * 10; rest -= m; if (rest <= 1e-9) break; }
+    rest = E / ETA; let kost = 0; for (const p of tief) { const m = Math.min(1, rest); kost += m * p * 10; rest -= m; if (rest <= 1e-9) break; }
+    summe += erl - kost;
+  }
+  return summe / n * 365;
 }
 
 // Branchenauswahl befüllen

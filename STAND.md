@@ -215,3 +215,15 @@ bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Re
 3. Fragen an conplot (siehe `ergebnis/conplot/VERGLEICH.md`); Hochlastzeitfenster e.wa riss gegen das Preisblatt prüfen.
 4. Preisblätter mit auffälligem Datum prüfen (Nr. 13 TEN, 137 ENA Apolda, 562 Wittenberg).
 5. Danach: Entscheidung Netzentgelte 2027, Hochlastzeitfenster für weitere Netzbetreiber (Brave-Lauf, Ok nötig).
+
+### Nachtrag 03.11.2026
+- Barwert mit Kapazitätsabbau (2,5 %/Jahr) und Entsorgung (75 €/kWh), Werte von conplot, nicht belegt (Biberach 220 kWh: −45.688 €).
+- aFRR gemessen (`daten/afrr_roh.json`, 365 Tage, Einheit €/MW und Stunde je 4-Stunden-Block): Grenzpreis Aufwärts 133.115 + Abwärts
+  154.343 = 287.458 €/MW und Jahr; Durchschnittsgebot 204.373. Monatlich stark schwankend (April 533.000, Oktober 196.000,
+  November 88.000 hochgerechnet). Meine frühere Aussage, conplots aFRR-Wert (146.000) sei „vermutlich zu hoch“, war falsch:
+  gemessen liegt aFRR im Jahresmittel darüber, aber der Trend ist fallend.
+- Testseite: Block „Drei Handelswege für dieselbe Batterieleistung (nicht addieren)“: FCR 148.800, aFRR 204.000, Day-Ahead 79.176 €/MW und Jahr.
+- conplot-Schnittstelle „Site Intelligence“ (POST /api/v1/site-intelligence/analyze) kombiniert MaStR, VNB-Datenbank und Förderdaten;
+  VNB-Prozessdatenbank = „Netzentgelt-Strukturen und Anschlussfristen pro Netzbetreiber“; Funktion get_vnb_process(process_key, storage_kw).
+  Mögliche Quelle der VNB-Daten: vnb-monitoring.org (Karte mit 793 VNB: Smart-Meter-Quote, Anzahl Zähler, Netzentgelte 2026,
+  Unterbrechungsdauer 2024, Anschlussdauer 2024), noch nicht bestätigt; die Seite ist aus dieser Umgebung nicht abrufbar.

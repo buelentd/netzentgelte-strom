@@ -68,3 +68,12 @@ ohne Entsorgungskosten und sind dadurch auf lange Sicht optimistischer.
 Der größte Unterschied im Ergebnis ist die Investition (913 gegen 420 €/kWh). Beim Netzentgelt liegt conplot bei einem
 pauschalen Leistungspreis fast doppelt so hoch wie der echte Preis von e.wa riss. Verschieben und Handel sind bei beiden
 unsicher; unser Wert liegt nah an der Obergrenze.
+
+## Nachtrag 03.11.2026
+- aFRR gemessen (regelleistung.net, 365 Tage, beide Richtungen mit je 1 MW): Grenzpreis 287.458, Durchschnittsgebot 204.373 €/MW und Jahr;
+  conplot-Wert 146.000 liegt darunter. Trend fallend (Oktober 196.000, November 88.000 hochgerechnet).
+- Day-Ahead aus unseren Börsenpreisen: etwa 79.000 €/MW und Jahr (obere Grenze), conplot 91.000.
+- conplot-Bausteine laut Angaben des Nutzers: „Site Intelligence“ (MaStR, VNB-Datenbank, Förderdaten) und VNB-Prozessdatenbank
+  („Netzentgelt-Strukturen und Anschlussfristen pro Netzbetreiber“); die Datenbank enthält nach der Beschreibung nicht zwingend Preise.
+- Zusätzliche Fragen: Welche Felder liefert die VNB-Datenbank, woher stammen sie (vnb-monitoring.org?), gelten die Netzentgelte dort für
+  Haushalte oder für Gewerbe, und wie fließen Anschlussdauer und Anschlusskosten in die Wirtschaftlichkeit ein?
