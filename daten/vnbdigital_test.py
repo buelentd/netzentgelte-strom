@@ -134,8 +134,13 @@ def alle():
     teil = liste[chunk::chunks]
     print(f"Abschnitt {chunk + 1} von {chunks}: {len(teil)} von {len(liste)} Postleitzahlen")
     c = VNBDigitalClient()
-    ergebnis = {}
+    datei = HIER / f"vnbdigital_alle_{chunk}.json"
+    ergebnis = json.loads(datei.read_text()) if datei.exists() else {}
+    ergebnis = {k: v for k, v in ergebnis.items() if "fehler" not in v}  # schon Erledigtes überspringen, Fehler wiederholen
+    print(len(ergebnis), "schon erledigt")
     for i, k in enumerate(teil):
+        if k in ergebnis:
+            continue
         eintrag = {"unsere": [(nb.get(e["nr"], "?"), e["anteil_prozent"]) for e in plz[k]]}
         try:
             treffer = c.search(k); time.sleep(2.0)
