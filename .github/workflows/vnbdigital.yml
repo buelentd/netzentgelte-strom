@@ -1,6 +1,6 @@
 name: vnbdigital.de Test (Postleitzahl und Netzbetreiber)
 
-# Startet bei Änderung an lauf/vnbdigital.env. Kleiner Test mit 20 Postleitzahlen, höchstens eine Abfrage je Sekunde.
+# Startet bei Änderung an lauf/vnbdigital.env. Modus test: 20 Postleitzahlen; Modus gegenprobe: alle Postleitzahlen mit mehreren Netzbetreibern, eine Abfrage alle 1,5 Sekunden.
 on:
   workflow_dispatch:
   push:
@@ -17,7 +17,7 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,12 +25,14 @@ jobs:
           python-version: "3.12"
       - run: pip install vnbdigital-client==0.4.14
       - name: Abrufen
-        run: python daten/vnbdigital_test.py
+        run: |
+          MODUS=$(sed -n 's/^MODUS=\([a-z]*\).*/\1/p' lauf/vnbdigital.env | head -1)
+          python daten/vnbdigital_test.py "${MODUS:-test}"
       - name: Committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add daten/vnbdigital_test.json 2>/dev/null || true
+          git add daten/vnbdigital_test.json daten/vnbdigital_gegenprobe.json daten/vnbdigital_details.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
           git commit -m "vnbdigital-Test: Ergebnis (Lauf ${{ github.run_id }})"
           for i in 1 2 3 4; do
