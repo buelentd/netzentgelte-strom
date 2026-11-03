@@ -1,0 +1,49 @@
+name: vnbdigital.de alle Postleitzahlen (acht Abschnitte nacheinander)
+
+# Startet bei Änderung an lauf/vnbdigital_alle.env. Acht Abschnitte, nacheinander (max-parallel 1), eine Abfrage alle 2 Sekunden.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/vnbdigital_alle.env]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vnbdigital-alle
+  cancel-in-progress: false
+
+jobs:
+  abschnitt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install vnbdigital-client==0.4.14
+      - name: Abrufen
+        env:
+          CHUNK: ${{ matrix.chunk }}
+          CHUNKS: "8"
+        run: python daten/vnbdigital_test.py alle
+      - name: Committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daten/vnbdigital_alle_*.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "vnbdigital: Abschnitt ${{ matrix.chunk }} (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1

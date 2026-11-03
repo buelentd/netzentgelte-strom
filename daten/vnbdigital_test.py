@@ -117,6 +117,44 @@ def gegenprobe():
     (HIER / "vnbdigital_details.json").write_text(json.dumps(details, ensure_ascii=False, indent=1, default=str))
 
 
+def alle():
+    """Alle Postleitzahlen mit genau einem Netzbetreiber (und die Fehlerfälle der ersten Gegenprobe) gegen vnbdigital.de prüfen.
+    Abschnitt CHUNK von CHUNKS (Umgebungsvariablen); eine Abfrage alle 2 Sekunden. Ergebnis: daten/vnbdigital_alle_<CHUNK>.json"""
+    import os
+    t = robots()
+    if "Disallow: /" in [z.strip() for z in t.splitlines()] and "User-agent: *" in t:
+        print("robots.txt sperrt alles: Abbruch"); return
+    from vnbdigital_client import VNBDigitalClient
+    chunk, chunks = int(os.environ.get("CHUNK", "0")), int(os.environ.get("CHUNKS", "8"))
+    plz = json.load(open(ERG / "plz_2026.json", encoding="utf-8"))
+    nb = {e["nr"]: e["netzbetreiber"] for e in json.load(open(ERG / "netzbetreiber_2026.json", encoding="utf-8"))["netzbetreiber"]}
+    alt = json.load(open(HIER / "vnbdigital_gegenprobe.json", encoding="utf-8"))
+    fehler = [k for k, v in alt.items() if "fehler" in v]
+    liste = sorted(k for k, v in plz.items() if len(v) == 1) + sorted(fehler)
+    teil = liste[chunk::chunks]
+    print(f"Abschnitt {chunk + 1} von {chunks}: {len(teil)} von {len(liste)} Postleitzahlen")
+    c = VNBDigitalClient()
+    ergebnis = {}
+    for i, k in enumerate(teil):
+        eintrag = {"unsere": [(nb.get(e["nr"], "?"), e["anteil_prozent"]) for e in plz[k]]}
+        try:
+            treffer = c.search(k); time.sleep(2.0)
+            pc = next((r for r in treffer if r.type == "POSTCODE"), None)
+            if pc:
+                d = c.search_by_postcode(pc.id); time.sleep(2.0)
+                eintrag["vnbdigital"] = [v.get("name") for v in d.get("vnbs", [])]
+            else:
+                eintrag["vnbdigital"] = None
+        except Exception as e:
+            eintrag["fehler"] = f"{type(e).__name__}: {str(e)[:150]}"; time.sleep(2.0)
+        ergebnis[k] = eintrag
+        if (i + 1) % 100 == 0:
+            print(i + 1, "von", len(teil))
+            (HIER / f"vnbdigital_alle_{chunk}.json").write_text(json.dumps(ergebnis, ensure_ascii=False))
+    (HIER / f"vnbdigital_alle_{chunk}.json").write_text(json.dumps(ergebnis, ensure_ascii=False))
+    print("fertig:", len(ergebnis), "Postleitzahlen,", sum(1 for v in ergebnis.values() if "fehler" in v), "Fehler")
+
+
 if __name__ == "__main__":
     import sys
-    {"test": main, "gegenprobe": gegenprobe}[sys.argv[1] if len(sys.argv) > 1 else "test"]()
+    {"test": main, "gegenprobe": gegenprobe, "alle": alle}[sys.argv[1] if len(sys.argv) > 1 else "test"]()
