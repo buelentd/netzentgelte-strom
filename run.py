@@ -318,6 +318,12 @@ async def schritt_lauf(args, log):
         hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
         for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
             hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
+        korrektur = {}
+        kp = HIER / "lauf" / "website_korrektur.csv"
+        if kp.exists():
+            import csv as _csv
+            for z in _csv.DictReader(kp.read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+                korrektur[str(z["nr"])] = z["website"].strip()
         crawler.lokal = lokale_preisblaetter_laden(HIER / "lauf" / "preisblaetter.csv")
         crawler.lokal_namen = lokale_namen_laden(HIER / "lauf" / "preisblaetter.csv")
         fertig = 0
@@ -327,6 +333,8 @@ async def schritt_lauf(args, log):
             nonlocal fertig
             async with sem:
                 pflicht, ausschluss, unklar_gebiet = gesch.get(str(e["nr"]), ((), (), False))
+                if str(e["nr"]) in korrektur:     # Website laut vnbdigital.de, weicht von MaStR ab (lauf/website_korrektur.csv)
+                    e = dict(e, website=korrektur[str(e["nr"])])
                 a = Auftrag(key=key_von(e), nr=int(e["nr"]), name=e["netzbetreiber"], mastr_nr=e.get("mastr_nr", ""),
                             website=e.get("website", ""), aliase=tuple(pilot_mod.ALIASE.get(
                                 pilot[e["pilot_nr"]]["netzbetreiber"], [])) if e.get("pilot_nr") else (),

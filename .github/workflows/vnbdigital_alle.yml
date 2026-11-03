@@ -1,6 +1,6 @@
 name: vnbdigital.de alle Postleitzahlen (acht Abschnitte nacheinander)
 
-# Startet bei Änderung an lauf/vnbdigital_alle.env. Acht Abschnitte, nacheinander (max-parallel 1), eine Abfrage alle 2 Sekunden.
+# Startet bei Änderung an lauf/vnbdigital_alle.env. Acht Abschnitte, nacheinander (max-parallel 2), eine Abfrage alle 2 Sekunden.
 on:
   workflow_dispatch:
   push:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 150
     strategy:
-      max-parallel: 1
+      max-parallel: 2
       fail-fast: false
       matrix:
         chunk: [0, 1, 2, 3, 4, 5, 6, 7]
