@@ -26,12 +26,17 @@ jobs:
           python-version: "3.12"
       - name: Prüfen
         env:
-          NETZTRANSPARENZ: ${{ secrets.NETZTRANSPARENZ }}
+          NETZ_TRANSPARENZ_ID: ${{ secrets.NETZ_TRANSPARENZ_ID }}
+          NETZ_TRANSPARENZ_API: ${{ secrets.NETZ_TRANSPARENZ_API }}
+          NETZ_TRANSPARENZ_CLIENT_ID: ${{ secrets.NETZ_TRANSPARENZ_CLIENT_ID }}
+          NETZ_TRANSPARENZ_CLIENTID: ${{ secrets.NETZ_TRANSPARENZ_CLIENTID }}
+          NETZ_TRANSPARENZ_SECRET: ${{ secrets.NETZ_TRANSPARENZ_SECRET }}
+          NETZ_TRANSPARENZ_CLIENT_SECRET: ${{ secrets.NETZ_TRANSPARENZ_CLIENT_SECRET }}
+          NETZ_TRANSPARENZ_KEY: ${{ secrets.NETZ_TRANSPARENZ_KEY }}
           NETZ_TRANSPARENZ: ${{ secrets.NETZ_TRANSPARENZ }}
-          NETZTRANSPARENZ_SCHLUESSEL: ${{ secrets.NETZTRANSPARENZ_SCHLUESSEL }}
-          NETZTRANSPARENZ_TOKEN: ${{ secrets.NETZTRANSPARENZ_TOKEN }}
           NETZTRANSPARENZ_CLIENT_ID: ${{ secrets.NETZTRANSPARENZ_CLIENT_ID }}
           NETZTRANSPARENZ_CLIENT_SECRET: ${{ secrets.NETZTRANSPARENZ_CLIENT_SECRET }}
           NTP_CLIENT_ID: ${{ secrets.NTP_CLIENT_ID }}
           NTP_CLIENT_SECRET: ${{ secrets.NTP_CLIENT_SECRET }}
+          NETZTRANSPARENZ: ${{ secrets.NETZTRANSPARENZ }}
         run: python daten/netztransparenz.py pruefen

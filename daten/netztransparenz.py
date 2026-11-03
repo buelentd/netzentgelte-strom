@@ -9,8 +9,11 @@ import sys
 import urllib.parse
 import urllib.request
 
-NAMEN = ["NETZTRANSPARENZ", "NETZ_TRANSPARENZ", "NETZTRANSPARENZ_SCHLUESSEL", "NETZTRANSPARENZ_TOKEN",
-         "NETZTRANSPARENZ_CLIENT_ID", "NETZTRANSPARENZ_CLIENT_SECRET", "NTP_CLIENT_ID", "NTP_CLIENT_SECRET"]
+ID_NAMEN = ["NETZ_TRANSPARENZ_ID", "NETZ_TRANSPARENZ_API", "NETZ_TRANSPARENZ_CLIENT_ID", "NETZ_TRANSPARENZ_CLIENTID",
+            "NETZTRANSPARENZ_CLIENT_ID", "NTP_CLIENT_ID"]
+SECRET_NAMEN = ["NETZ_TRANSPARENZ_SECRET", "NETZ_TRANSPARENZ_CLIENT_SECRET", "NETZ_TRANSPARENZ_KEY", "NETZ_TRANSPARENZ",
+                "NETZTRANSPARENZ_CLIENT_SECRET", "NTP_CLIENT_SECRET", "NETZTRANSPARENZ"]
+NAMEN = ID_NAMEN + SECRET_NAMEN
 TOKEN_URLS = ["https://identity.netztransparenz.de/users/connect/token"]
 DOKU_URLS = ["https://ds.netztransparenz.de/swagger/v1/swagger.json", "https://ds.netztransparenz.de/api/swagger.json",
              "https://ds.netztransparenz.de/swagger/docs/v1"]
@@ -30,9 +33,8 @@ def abruf(url, daten=None, kopf=None):
 def pruefen():
     gesetzt = {n: bool(os.environ.get(n)) for n in NAMEN}
     print("Gesetzte Secret-Namen:", {n: ("ja" if v else "nein") for n, v in gesetzt.items()})
-    cid = next((os.environ[n] for n in ("NETZTRANSPARENZ_CLIENT_ID", "NTP_CLIENT_ID") if os.environ.get(n)), "")
-    sec = next((os.environ[n] for n in ("NETZTRANSPARENZ_CLIENT_SECRET", "NTP_CLIENT_SECRET", "NETZTRANSPARENZ", "NETZ_TRANSPARENZ",
-                                        "NETZTRANSPARENZ_SCHLUESSEL", "NETZTRANSPARENZ_TOKEN") if os.environ.get(n)), "")
+    cid = next((os.environ[n] for n in ID_NAMEN if os.environ.get(n)), "")
+    sec = next((os.environ[n] for n in SECRET_NAMEN if os.environ.get(n)), "")
     token = ""
     if cid and sec:
         for u in TOKEN_URLS:
@@ -43,6 +45,15 @@ def pruefen():
                 token = json.loads(body).get("access_token", ""); break
     else:
         print("Client-ID und Client-Secret nicht beide gefunden; Anmeldung übersprungen")
+    if token:
+        basis = "https://ds.netztransparenz.de/api/v1/data/"
+        for pfad in ("Spotmarktpreise/2026-10-30T00:00:00/2026-11-01T00:00:00",
+                     "nrvsaldo/AktivierteSRL/Betrieblich/2026-10-30T00:00:00/2026-11-01T00:00:00",
+                     "marktpraemie/2026-09-01T00:00:00/2026-10-01T00:00:00",
+                     "NegativePreise/1/2026-01-01T00:00:00/2026-11-01T00:00:00"):
+            st, body = abruf(basis + pfad, None, {"Authorization": "Bearer " + token})
+            print("Abruf", pfad, "Status", st, "Antwort (Anfang):", body[:260].decode("utf-8", "replace").replace("\n", " "))
+        return
     for u in DOKU_URLS:
         st, body = abruf(u, None, {"Authorization": "Bearer " + token} if token else {})
         print("Beschreibung", u, "Status", st)
