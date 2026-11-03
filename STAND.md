@@ -227,3 +227,14 @@ bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Re
   VNB-Prozessdatenbank = „Netzentgelt-Strukturen und Anschlussfristen pro Netzbetreiber“; Funktion get_vnb_process(process_key, storage_kw).
   Mögliche Quelle der VNB-Daten: vnb-monitoring.org (Karte mit 793 VNB: Smart-Meter-Quote, Anzahl Zähler, Netzentgelte 2026,
   Unterbrechungsdauer 2024, Anschlussdauer 2024), noch nicht bestätigt; die Seite ist aus dieser Umgebung nicht abrufbar.
+
+### Netztransparenz (03.11.2026)
+- Zugang funktioniert (Client_ID als Secret `NETZ_TRANSPARENZ_ID`, Client_Secret als `NETZ_TRANSPARENZ`). Skript `daten/netztransparenz.py`
+  (Modi pruefen, holen), Workflow `.github/workflows/netztransparenz.yml`, Auslöser `lauf/netztransparenz.env`. Die Schnittstelle liefert
+  keine Umlagesätze, nur Marktdaten.
+- Jahresmarktwerte funktionieren: `Jahresmarktpraemie/2025` ergibt JW 8,932, Wind an Land 7,441, Wind auf See 8,059, **Solar 4,508 ct/kWh**.
+  Monatsmarktwerte: `marktpraemie` erwartet Monat/Jahr als getrennte Zahlen (Fehlermeldung: monthFrom 1 bis 12), Reihenfolge noch zu klären.
+- `NegativePreise/1`: 94 % der Stunden „Ja“, unplausibel (die Bedeutung des Produkts ist unklar); nicht verwenden. Aus unseren Börsenpreisen:
+  409 Stunden (4,7 %) unter 0, im Mittel −1,99 ct/kWh.
+- Aktivierte aFRR (`daten/ntp_afrr_aktiviert.csv`, Viertelstunden, MW): Mittel positiv 60,5 MW, negativ 72,0 MW bei zugeteilter Leistung
+  von im Mittel 2.031 / 1.852 MW: Auslastung etwa 3,0 % / 3,9 %. Die Energiepreise (Arbeitspreis) fehlen, daher noch kein Erlös daraus.
