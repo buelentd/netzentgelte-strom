@@ -241,3 +241,8 @@ python -m pytest -q tests
 Synthetische Preisblätter decken die Layout-Varianten ab (`tests/fixtures.py`). Der Crawler wird
 gegen eine lokale Test-Website geprüft: robots.txt-Sperre, JavaScript-Link, vorläufig/2027/Gas als
 Fallen und die Drosselung.
+
+
+## Nebenkosten für Solaranlagen und Speicher
+
+Gerüst, Zählerschrank, Netzanschluss, Fundament, Brandschutz u. a.: `daten/nebenkosten_anlagen.md` (Stand 03.11.2026, mit Quellen und Güte; offene Posten sind als „offen“ gekennzeichnet, nicht geschätzt). Noch nicht in der Rechnung.
