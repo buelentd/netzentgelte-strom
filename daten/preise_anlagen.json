@@ -1,0 +1,43 @@
+{
+  "stand": "2026-11-03",
+  "waehrung": "EUR, netto",
+  "regel": "Liegt eine Spanne mit Minimum und Maximum vor, gilt die Mitte; liegt ein Median vor, gilt der Median; nie Werte verschiedener Definitionen (Gerät, installiert, Heim, Gewerbe) mischen. Die Spanne bleibt als Hinweis stehen.",
+  "hinweis": "Noch nicht an die Rechnung angeschlossen. Die Rechnung der Testseite nutzt weiter ihre bisherigen Annahmen, bis diese Datei freigegeben ist.",
+  "solaranlage": {
+    "hardware_gewerbe_nicht_vorhanden": "Die Hardwarepreise unten stammen aus dem Einzelhandel (Einzelabnahme, Hausanlagen). Für Gewerbegrößen (Stringwechselrichter, Staffelpreise) liegen keine Daten vor.",
+    "hardware": {
+      "modul_standard_eur_wp": {"median": 0.168, "min": 0.153, "max": 0.183, "angebote": 6, "stand": "2026-11-02", "quelle": "green_contracting"},
+      "modul_full_black_eur_wp": {"median": 0.177, "min": 0.156, "max": 0.200, "angebote": 5, "stand": "2026-11-02", "quelle": "green_contracting"},
+      "wechselrichter_hybrid_10kw_fronius_sma_eur_kw": {"median": 230, "min": 214, "max": 249, "angebote": 4, "stand": "2026-11-02", "quelle": "green_contracting"},
+      "wechselrichter_hybrid_10kw_huawei_sungrow_eur_kw": {"median": 99, "min": 92, "max": 109, "angebote": 3, "stand": "2026-11-02", "quelle": "green_contracting"}
+    },
+    "system_installiert_eur_kwp": {
+      "bis_100_kwp": {"mitte": 1050, "min": 800, "max": 1300, "quellen": ["logic_pv", "energiefluss24", "elektronik_zeit", "leospardo"], "art": "Spanne aus Anbieter- und Ratgeberseiten"},
+      "ueber_100_bis_250_kwp": {"mitte": 925, "hinweis": "Zwischenwert, keine eigene Quelle: Mitte zwischen bis_100_kwp (1050) und ab_250_kwp (800)"},
+      "ab_250_kwp": {"mitte": 800, "min": 700, "max": 900, "quellen": ["leospardo"], "art": "Spanne aus einer Ratgeberseite"}
+    },
+    "montage_und_nebenkosten": {"status": "Annahme, nicht belegt", "hinweis": "Der Teil des Anlagenpreises, den die Hardwarepreise nicht erklären (Unterkonstruktion, Elektro, Montage, Planung, Marge); bis Angebote von Installateuren vorliegen, steckt er im Systempreis oben."},
+    "betrieb_prozent_der_investition_je_jahr": {"bis_50_kwp": 1.5, "ab_50_bis_100_kwp": 2.0, "ueber_100_kwp": 2.5, "quelle": "elektronik_zeit"}
+  },
+  "speicher": {
+    "heim_geraet_eur_kwh_nutzbar": {"median": 351, "min": 318, "max": 421, "angebote": 7, "stand": "2026-11-02", "quelle": "green_contracting", "hinweis": "Typischer Heimspeicher (Beispiel 10 kWh für 3.510 €), nur Gerät, ohne Wechselrichter und Einbau. Nicht für Gewerbegrößen verwenden."},
+    "gewerbe_installiert_eur_kwh": {
+      "ab_100_kwh": {"mitte": 430, "min": 410, "max": 450, "quellen": ["logic_speicher_100", "solar_red"], "art": "Spanne aus Anbieterseiten"},
+      "unter_100_kwh": {"untergrenze": 500, "obergrenze": null, "quellen": ["logic_speicher_100"], "hinweis": "Satz bei Logic Energy 'rund 500 bis ...' abgeschnitten, Obergrenze fehlt; vorläufig 500", "anmerkung": "photovoltaik.sh nennt 450 €/kWh für Gewerbespeicher unter 100 kWh (Primärquelle unbekannt, vermutlich dieselbe Zahl wie bei anderen Anbietern, deshalb nicht als zweite Quelle gezählt)"}
+    },
+    "betriebskosten_prozent_je_jahr": {"wert": 1.5, "status": "eigene Annahme, keine Quelle"},
+    "kapazitaetsabbau_prozent_je_jahr": {"wert": 2.5, "status": "von conplot übernommen, ungeprüft"},
+    "entsorgung_eur_kwh": {"wert": 75, "status": "von conplot übernommen, ungeprüft"},
+    "schwelle_leistung_kw": {"wert": 135, "hinweis": "Ab 135 kW Einspeiseleistung Zertifizierungsverfahren nach VDE-AR-N 4110 (laut photovoltaik.sh); Aufwand nicht eingerechnet", "quelle": "photovoltaik_sh"}
+  },
+  "quellen": {
+    "green_contracting": {"name": "Green Contracting – Energiepreise", "url": "https://contracting.green/feeds/pv-preise.xml", "seite": "https://contracting.green/energiepreise/einbinden", "stand": "2026-11-02", "art": "wöchentliche Markterhebung von Shop-Angeboten im Netz, Median, 3 bis 8 Angebote", "lizenz": "CC BY 4.0, Quellenangabe 'Green Contracting – Energiepreise' mit Link auf die Website; kostenfreie, automatisierte und kommerzielle Nutzung erlaubt (Angabe des Betreibers)", "preise": "mit 0 % Umsatzsteuer (§ 12 Abs. 3 UStG), also netto; Einzelhandel, Einzelabnahme, ohne Versand"},
+    "logic_speicher_100": {"name": "Logic Energy: Was kostet ein Stromspeicher mit 100 kWh 2026?", "url": "https://www.logicenergy.de/neuigkeiten/stromspeicher-100-kwh-preis-2026", "art": "Anbieterseite", "hinweis": "ab 100 kWh 410 bis 450 €/kWh laut Suchergebnis; Seite nicht geöffnet"},
+    "logic_pv": {"name": "Logic Energy: PV-Investition 2026", "url": "https://www.logicenergy.de/neuigkeiten/pv-investition-2026", "art": "Anbieterseite, zitiert Fraunhofer ISE (30 bis 100 kWp: 800 bis 1.300 €/kWp netto); Seite nicht geöffnet"},
+    "energiefluss24": {"name": "energiefluss24: Photovoltaik für Gewerbe", "url": "https://www.energiefluss24.de/photovoltaik/fuer-gewerbe", "art": "Ratgeberseite, 50 kWp: 950 bis 1.200 €/kWp; Seite nicht geöffnet"},
+    "elektronik_zeit": {"name": "elektronik-zeit.de: Gewerbe-PV 2026", "url": "https://elektronik-zeit.de/photovoltaik-leitfaden-2026/gewerbe-photovoltaik/", "art": "Ratgeberseite, 100 kWp: 950 bis 1.300 €/kWp, Betriebskosten 1,5 / 2,0 / 2,5 %; Seite nicht geöffnet"},
+    "leospardo": {"name": "leospardo: Photovoltaik Gewerbe Wirtschaftlichkeit", "url": "https://leospardo.de/ratgeber/photovoltaik-gewerbe-wirtschaftlichkeit/", "art": "Ratgeberseite, 100 kWp: 800 bis 1.050, ab 250 kWp: 700 bis 900 €/kWp; Seite nicht geöffnet"},
+    "solar_red": {"name": "solar.red: Batteriespeicher Gewerbe", "url": "https://solar.red/batteriespeicher-gewerbe/", "art": "Anbieterseite, 30 bis 100 kWh: 400 bis 500, 100 bis 250 kWh: 410 bis 450 €/kWh; Seite nicht geöffnet"},
+    "photovoltaik_sh": {"name": "photovoltaik.sh: Gewerbespeicher in Deutschland 2026", "url": "https://www.photovoltaik.sh/news/gewerbespeicher-in-deutschland-2026-starkes-wachstum-sinkende-kosten-und-blick-auf-die-eeg-novelle-2027/", "stand": "2026-10-29", "art": "Installationsbetrieb, Quellen 'S1', 'S3' nicht genannt, Zahlen widersprüchlich (190+101+73=364, nicht 473)"}
+  }
+}

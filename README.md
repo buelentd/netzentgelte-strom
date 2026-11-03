@@ -207,6 +207,31 @@ endgültigen Preisblatt gesucht und dieses bei Status ok übernommen.
 - Downloads, die erst ein Klick per JavaScript ohne URL im DOM auslöst, werden nicht gefunden.
 - Gescannte PDFs ohne Textebene → `kein_preisblatt` mit Grund "Scan?".
 
+## Preisdaten für Solaranlagen und Speicher (`daten/preise_anlagen.json`)
+
+Quellen und Regeln für die Preise, die in die Wirtschaftlichkeitsrechnung (Testseite in `abschaetzung_testseite/`) eingehen sollen.
+Die Datei ist noch nicht an die Rechnung angeschlossen und wird vorher freigegeben.
+
+**Regeln:** Alle Preise netto. Liegt eine Spanne mit Minimum und Maximum vor, gilt die Mitte; liegt ein Median vor, gilt der Median.
+Nie Werte verschiedener Definitionen mischen (Gerät oder installiert, Heim oder Gewerbe). Jeder Wert nennt seine Quelle; was nicht
+belegt ist, steht als "Annahme" da.
+
+| Quelle | Was | Art, Lizenz |
+|---|---|---|
+| Green Contracting – Energiepreise, https://contracting.green/feeds/pv-preise.xml | Modul, Hybrid-Wechselrichter, Heimspeicher (nur Gerät, nutzbare kWh), wöchentlich | Markterhebung von Shop-Angeboten (3 bis 8 Angebote), 0 % Umsatzsteuer, **CC BY 4.0: Quellenangabe "Green Contracting – Energiepreise" mit Link** |
+| Logic Energy, https://www.logicenergy.de/neuigkeiten/stromspeicher-100-kwh-preis-2026 | Gewerbespeicher ab 100 kWh: 410 bis 450 €/kWh installiert; kleine Gewerbespeicher rund 500 und mehr | Anbieterseite |
+| Logic Energy, https://www.logicenergy.de/neuigkeiten/pv-investition-2026 | 30 bis 100 kWp: 800 bis 1.300 €/kWp (zitiert Fraunhofer ISE) | Anbieterseite, sekundär |
+| energiefluss24, https://www.energiefluss24.de/photovoltaik/fuer-gewerbe | 50 kWp: 950 bis 1.200 €/kWp | Ratgeber |
+| elektronik-zeit.de, https://elektronik-zeit.de/photovoltaik-leitfaden-2026/gewerbe-photovoltaik/ | 100 kWp: 950 bis 1.300 €/kWp; Betrieb 1,5 / 2,0 / 2,5 % je Größe | Ratgeber |
+| leospardo, https://leospardo.de/ratgeber/photovoltaik-gewerbe-wirtschaftlichkeit/ | 100 kWp: 800 bis 1.050; ab 250 kWp: 700 bis 900 €/kWp | Ratgeber |
+| solar.red, https://solar.red/batteriespeicher-gewerbe/ | Gewerbespeicher 30 bis 100 kWh: 400 bis 500; 100 bis 250 kWh: 410 bis 450 €/kWh | Anbieterseite |
+| photovoltaik.sh, https://www.photovoltaik.sh/news/gewerbespeicher-in-deutschland-2026-starkes-wachstum-sinkende-kosten-und-blick-auf-die-eeg-novelle-2027/ | 450 €/kWh unter 100 kWh (Primärquelle unbekannt); Schwelle 135 kW (VDE-AR-N 4110); EEG-Novelle 2027 geplant | Installationsbetrieb, Zahlen in sich widersprüchlich |
+
+**Grenzen:** Die Hardwarepreise sind Einzelhandelspreise für Hausanlagen; für Gewerbegrößen (Stringwechselrichter, Staffelpreise) fehlen
+Daten. Für Gewerbespeicher unter 100 kWh fehlt die Obergrenze (Satz bei Logic Energy abgeschnitten). Betriebskosten (1,5 %) sind eine
+eigene Annahme, Kapazitätsabbau (2,5 % je Jahr) und Entsorgung (75 €/kWh) stammen von conplot und sind ungeprüft. Wirtschaftliche Auslegung
+von Gewerbespeichern braucht echte Lastgänge und installierte Systempreise (Aussage von Green Contracting).
+
 ## Tests
 
 ```
