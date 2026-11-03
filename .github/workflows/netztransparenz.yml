@@ -9,7 +9,7 @@ on:
     paths: [lauf/netztransparenz.env]
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: netztransparenz
@@ -39,4 +39,18 @@ jobs:
           NTP_CLIENT_ID: ${{ secrets.NTP_CLIENT_ID }}
           NTP_CLIENT_SECRET: ${{ secrets.NTP_CLIENT_SECRET }}
           NETZTRANSPARENZ: ${{ secrets.NETZTRANSPARENZ }}
-        run: python daten/netztransparenz.py pruefen
+        run: |
+          MODUS=$(sed -n 's/^MODUS=\([a-z]*\).*/\1/p' lauf/netztransparenz.env | head -1)
+          python daten/netztransparenz.py "${MODUS:-pruefen}"
+      - name: Committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add daten/ntp_negative_preise.csv daten/ntp_afrr_aktiviert.csv 2>/dev/null || true
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Netztransparenz-Daten aktualisiert (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
