@@ -263,3 +263,48 @@ höchstens eine Abfrage je Sekunde, keine Fehler.
 **Belege:** Liste in der Unterhaltung und README-Abschnitt "Preisdaten für Solaranlagen und Speicher"; Terminpreis 2027 Base 14,98 ct/kWh, Industrie-Festpreis 2026 15,45 ct (BDEW-PDF), Marktwert Solar 2025 4,508 ct/kWh, Abgaben 2026 bestätigt.
 **Läuft:** vnbdigital, alle Postleitzahlen mit einem Netzbetreiber, acht Abschnitte (`.github/workflows/vnbdigital_alle.yml`), Ergebnis `daten/vnbdigital_alle_0..7.json`; erste Gegenprobe (788 Postleitzahlen mit mehreren Netzbetreibern): gleiche Liste 69 %, unser Hauptnetzbetreiber fehlt bei vnbdigital in 7 %. Erinnerung zur Auswertung gesetzt (trig_01Dv8ysyXi26k3JbygRTud7N, 19:30 UTC). Rohantwort vnbdigital: Kennung `_id`, Dienste, Spannungsebenen, Gebiet; keine Website, keine Netzentgelt-Adresse (Details unter `/vnb/<id>` nicht geprüft).
 **Offen, nicht dringend:** Netzentgelte 2027, Hochlastzeitfenster e.wa riss prüfen, Fragen an conplot (`ergebnis/conplot/VERGLEICH.md`), Lastgänge, rechtliche Fragen beim Verdienen, Anfrage an den BDEW wegen automatischer Abfragen.
+
+---
+
+## Stand 03.11.2026 abends, Übergabe für morgen
+
+### Arbeitsregeln (unverändert)
+Dialog zuerst, nicht sofort loslegen, sehr kurze Antworten, keine Abkürzungen, nichts raten, kein Lauf ohne OK, Mitte der Spanne bei zwei Zahlen, Quellen in README und Dateien, Preise immer 2026, Tokens sparen.
+Abbrechen von Läufen kann nur der Nutzer (mir fehlt die Berechtigung). Dabei wurde einmal versehentlich der Postleitzahlen-Lauf mit abgebrochen.
+Große Antworten vermeiden: `list_workflow_runs` liefert sehr lange Listen, besser `get_workflow_run` mit Lauf-Nummer.
+
+### vnbdigital.de (BDEW-Plattform) – Ergebnisse
+- Liefert Name, Adresse, Telefon, Kontakt, **Website**, Spannungsebenen, Region, Kartenebene. **Keine Preisblätter, keine Netzentgelt-Links**: Feld `documents` ist leer (Meerane geprüft), die vier Dienste (Netzanschluss, Netzausbauplan, Regionalszenario, netzdienliche Steuerung) enthalten keine Links.
+- Prüfung der 222 Problemfälle (`daten/vnbdigital_pruefung.json`, fertig): 156 mit Treffer gleichen Namens; 108 gleiche Website wie bei uns; **48 andere Website** (u. a. Aschaffenburg `netze-stwab.de`, Konstanz, Bebra `-netz`, Bad Kreuznach, Hameln, Hettstedt, Ilmenau); 66 ohne eindeutigen Namenstreffer (alle Treffer gesichert).
+- Postleitzahlen-Lauf (`vnbdigital.yml`/`vnbdigital_alle.yml`, setzt nun fort, max-parallel 2, 2 s je Abfrage und Lauf, zusammen ca. 1 Abfrage/s): Abschnitte 0–2 fertig (2.772 Postleitzahlen), Rest läuft (3–7). Auswertung gegen unsere Zuordnung steht aus. Früher: 69 % identische Listen, Hauptnetzbetreiber fehlt bei 7 % der Mehrfach-PLZ.
+- Alte, überflüssige Hilfsdateien: `daten/vnbdigital_websites.json` (147 Fälle, Teilergebnis), Skripte `vnbdigital_websites.py`, `vnbdigital_roh.py`.
+
+### Preisblatt-Suche mit neuen Quellen (Lauf fertig, Commit c71992e)
+- Neu: `lauf/website_korrektur.csv` (46 Websites laut vnbdigital, `run.py` nutzt sie), `lauf/hinweis_urls.csv` (8 Links aus der Liste des Nutzers; ohne GGEW, GSW Kamen, 2027er Blätter Rottenburg/Stengle, HLZF-Bautzen).
+- Neu bearbeitet: 53 Netzbetreiber (`NEU_PRUEFEN` in `lauf/anstoss.env`; `AUSLESEN=false`!). Ergebnis: ok 375 → **394**, pruefen 210 → 219, kein_preisblatt 184 → **164**, blockiert 38 → 29, robots 23 → 24.
+- Von den 53: 19 ok, 22 kein_preisblatt, 11 pruefen, 1 robots.
+- Die 11 neuen pruefen-Fälle und ihre Gründe:
+  - 59 Aschaffenburg: Grenze ≤/> 2.500; Dokument beginnt mit § 14a; Name nicht im Dokument (eigene Website)
+  - 74 Covestro Brunsbüttel, 529 Stadtwerke Ilmenau: Preisstand unklar, kein Hinweistext
+  - 262 GIG energy services, 666 Stadtwerke Stade, 809 Elbe: Umspannung MS/NS nicht gefunden
+  - 275 HEWA: Grenze ≤/>; Umspannung fehlt; SLP-Arbeitspreis fehlt
+  - 418 Bebra, 667 Stadtroda: Preisstand endgültig, aber ohne Hinweis, warum pruefen (nächster Schritt: Plausibilitätsregel nachsehen)
+  - 622 Ramstein-Miesenbach: weiteres Preisblatt mit abweichenden NS-Werten (GwHh) – geteilte Website, Zuordnung klären
+  - 783 SWS Netze: NS LP 0,24 und AP 0,06 außerhalb der Plausibilität, Einheit €/k…; vermutlich Einheiten falsch gelesen
+- Offen aus der Nutzer-Liste: Hauenstein (`energiehauenstein.de`), Kirchheim (`wp.ew-kirchheim.de`), Bautzen (`enwg-veroeffentlichungen.de`) – Netzbetreiber nicht zuordenbar, Nutzer muss nennen. Bei GETEC net, EnergieSüdwest, EMB Miltenberg (schon ok) Abgleich prüfen.
+
+### Nebenkosten für Solaranlagen und Speicher
+`daten/nebenkosten_anlagen.md` (Commit 5b87ddb): Gerüst, Zählerschrank, Netzanschluss, Bodenplatte, Stellfläche mit Quellen; offen: Kran, Dachfanggerüst, Berliner Bauaufsicht-Gebühren, Brandschutzgutachten, Löschanlage, fertiges Fundament. Noch nicht in der Rechnung. Frage an Nutzer offen: bis dahin Zuschlag oder „offen“ ausweisen?
+
+### 2027 – Prüfung der Pipeline (nur gelesen, nichts gestartet)
+- `run.py` hat `--jahr` (Standard 2026); Bewertung der Dokumente (`dok_score`, `folgejahr`) und die Ergebnisdatei `ergebnis/netzentgelte_<jahr>.csv` sowie `hochlastzeitfenster_<jahr>.csv` sind jahresabhängig.
+- **Gefahr:** `fortschritt.jsonl`, `restliste.csv`, `gefunden.csv`, `nicht_gefunden.csv`, `zusammenfassung.md` und der PDF-Ordner sind **nicht** jahresgetrennt, und der Workflow (`netzentgelte.yml`) übergibt `--out` nicht. Ein Lauf mit `JAHR=2027` würde den 2026-Fortschritt überspringen bzw. überschreiben.
+- **Vor dem Start nötig:** Workflow um `--out ergebnis_2027` (eigener Ordner, eigener Cache-Schlüssel, eigener Commit-Pfad) erweitern, dann `JAHR=2027` mit leerem Fortschritt. Preisstand dort meist „vorläufig“. Bekannte 2027-Quellen: Rottenburg, Stengle, Bovenden, EnergieSüdwest, Hochlastzeitfenster 2027 (ftl, ESW, Ramstein, Bautzen, infraserv).
+- Entscheidung des Nutzers noch offen: ob der 2027-Lauf nach Abschluss der Postleitzahlen starten soll.
+
+### Nächste Schritte (Vorschlag, nur nach OK)
+1. Workflow für 2027 mit eigenem Ausgabeordner vorbereiten, dann starten.
+2. Die 11 neuen pruefen-Fälle klären (erst Bebra, Stadtroda, SWS Netze).
+3. Postleitzahlen-Auswertung, wenn alle acht Abschnitte fertig sind.
+4. Schritt 1 aus der Storyline: Fehler „atypische Netznutzung dem Speicher gutgeschrieben“ (`s2 = at.zusatz` in `abschaetzung_testseite/vorlage.html`) beheben, bereinigte Zahlen zeigen; danach `daten/preise_anlagen.json` in die Rechnung; Test mit ca. 10 Netzbetreibern; „von N bis N kWh“ je Gruppe.
+5. Prüfauftrag `trig_01Dv8ysyXi26k3JbygRTud7N` (19:30 UTC) löschen oder behalten – Entscheidung offen.
