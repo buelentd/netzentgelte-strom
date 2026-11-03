@@ -1,6 +1,6 @@
 """Baut die Testseite (Nachbau der geführten Abschätzung von conplot.de) aus vorlage.html und den Ergebnissen.
 
-Aufruf: python conplot_testseite/bauen.py  →  conplot_testseite/netzentgelt_abschaetzung.html
+Aufruf: python abschaetzung_testseite/bauen.py  →  abschaetzung_testseite/netzentgelt_abschaetzung.html
 Veröffentlicht als Artifact: https://claude.ai/artifact/J8UnVGkS6kvUFdF2WFZMiL (mit dieser URL aktualisieren).
 """
 import collections

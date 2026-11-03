@@ -5,4 +5,4 @@ ergebnis/cache/
 ergebnis/*.tmp
 diagnose/
 lauf/suche_treffer.csv
-conplot_testseite/netzentgelt_abschaetzung.html
+abschaetzung_testseite/netzentgelt_abschaetzung.html

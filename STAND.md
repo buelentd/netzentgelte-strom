@@ -110,7 +110,7 @@ https://www.conplot.de/webanwendung.html (geführte Abschätzung, Schritt 2 Szen
 - **Hochlastzeitfenster 2026:** `ergebnis/hochlastzeitfenster_2026.csv` (112 nutzbare Netzbetreiber mit
   Niederspannung), gelesen mit `vnb/hlzf.py` aus vorhandenen Textauszügen (`python run.py hlzf --texte …`).
 - **Testseite** (Nachbau der geführten Abschätzung mit unseren Daten): https://claude.ai/artifact/J8UnVGkS6kvUFdF2WFZMiL
-  Quelltext `conplot_testseite/vorlage.html`, bauen mit `python conplot_testseite/bauen.py`, dann mit dieser URL
+  Quelltext `abschaetzung_testseite/vorlage.html`, bauen mit `python abschaetzung_testseite/bauen.py`, dann mit dieser URL
   als Artifact aktualisieren. Postleitzahl-Vorschläge nur für Postleitzahlen mit geprüften Preisen.
 - **Befund bei conplot:** Ein pauschaler Leistungspreis von 12,5 € je kW und Monat (150 € je kW und Jahr)
   überschätzt die Ersparnis durch Spitzenkappung bei Kunden mit wenig Benutzungsstunden um ein Mehrfaches
@@ -138,7 +138,7 @@ Speicher- und Solarpreise (Anbieter). Mit Sonnet arbeiten, kurz antworten.
 ## Stand der Testseite (02.11.2026, abends)
 
 Aktuelle Adresse: https://claude.ai/artifact/AuKrxs6bAcwhuacUp7LTDA (Version 8). Quelltext
-`conplot_testseite/vorlage.html`, bauen mit `python conplot_testseite/bauen.py`. Die ältere Adresse im Nachtrag
+`abschaetzung_testseite/vorlage.html`, bauen mit `python abschaetzung_testseite/bauen.py`. Die ältere Adresse im Nachtrag
 oben (J8UnVGkS6kvUFdF2WFZMiL) ist überholt.
 
 ### Fertig und belegt
