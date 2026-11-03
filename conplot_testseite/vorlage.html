@@ -216,7 +216,7 @@ a{color:var(--akzent)}
         <div class="zeile">
           <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh)</label>
             <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern"></div>
-          <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung)</label>
+          <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung; über 100 kWp Direktvermarktung: Marktwert Solar 2025 4,51 ct/kWh plus Marktprämie bis 5,84 ct)</label>
             <input type="number" id="a-einsp" min="0" step="0.1" placeholder="automatisch"></div>
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh: Vertrieb, Marge, Absicherung. Haushalte: etwa 3,5 bis 4 (belegt). Gewerbe: etwa 1 bis 3,5, Richtwert ohne Quelle. Bitte aus der eigenen Rechnung eintragen)</label>
             <input type="number" id="a-aufschlag" min="0" step="0.5" value="2.5"></div>
@@ -228,6 +228,8 @@ a{color:var(--akzent)}
             <input type="number" id="a-pvpreis" min="0" step="50" value="1100"></div>
           <div><label class="titel" for="a-afrr">aFRR-Leistungspreis (€ je MW und Jahr, Leistung in beide Richtungen angeboten; gemessen: Mittel der letzten 365 Tage laut regelleistung.net, Durchschnittsgebot 204.000, Grenzpreis 287.000; zuletzt fallend)</label>
             <input type="number" id="a-afrr" min="0" step="1000" value="204000"></div>
+          <div><label class="titel" for="a-dv">Gebühr Direktvermarkter für Anlagenteile über 100 kWp (ct/kWh; eigene Annahme, nicht belegt)</label>
+            <input type="number" id="a-dv" min="0" step="0.1" value="0.4"></div>
           <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
             <input type="number" id="a-abbau" min="0" max="20" step="0.5" value="2.5"></div>
           <div><label class="titel" for="a-entsorg">Entsorgungskosten am Ende (€/kWh; Wert von conplot, nicht belegt)</label>
@@ -568,8 +570,10 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const zielWunsch = num("ziel") || Math.round(kw * 0.8);
   const dauer = A.fenster ? A.fenster.dauer : 2;
   const pvVorhanden = $("pv").checked, kwp = pvVorhanden ? num("pvkwp") : num("dach") / 6.5;
-  // Einspeisevergütung gestaffelt (Bundesnetzagentur, ab 08/2026): bis 10 kW 7,70, bis 40 kW 6,66, bis 100 kW 5,44 ct/kWh; darüber näherungsweise 5,44
-  const einspAuto = k => k > 0 ? (Math.min(k, 10) * 7.70 + Math.max(0, Math.min(k, 40) - 10) * 6.66 + Math.max(0, k - 40) * 5.44) / k : 7.70;
+  // Einspeisevergütung gestaffelt (Bundesnetzagentur, ab 08/2026): bis 10 kW 7,70, bis 40 kW 6,66, bis 100 kW 5,44 ct/kWh.
+  // Über 100 kWp Direktvermarktung: Marktwert Solar (2025: 4,508 ct/kWh, Netztransparenz) plus Marktprämie bis zum anzulegenden Wert 5,84 ct/kWh, abzüglich Gebühr des Direktvermarkters
+  const dvSatz = Math.max(0, 5.84 - num("a-dv"));
+  const einspAuto = k => k > 0 ? (Math.min(k, 10) * 7.70 + Math.max(0, Math.min(k, 40) - 10) * 6.66 + Math.max(0, Math.min(k, 100) - 40) * 5.44 + Math.max(0, k - 100) * dvSatz) / k : 7.70;
   const einsp = $("a-einsp").value !== "" ? num("a-einsp") : einspAuto(kwp);
   const land = D.solar[nb.bl] || D.solar.Bayern;
   // Speicherpreis: eigene Eingabe, sonst Staffel (geschätzt): bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh

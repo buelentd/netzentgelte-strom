@@ -238,3 +238,6 @@ bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Re
   409 Stunden (4,7 %) unter 0, im Mittel −1,99 ct/kWh.
 - Aktivierte aFRR (`daten/ntp_afrr_aktiviert.csv`, Viertelstunden, MW): Mittel positiv 60,5 MW, negativ 72,0 MW bei zugeteilter Leistung
   von im Mittel 2.031 / 1.852 MW: Auslastung etwa 3,0 % / 3,9 %. Die Energiepreise (Arbeitspreis) fehlen, daher noch kein Erlös daraus.
+- Testseite (03.11.2026): Einspeisung über 100 kWp als Direktvermarktung: anzulegender Wert 5,84 ct minus Gebühr (eigene Annahme 0,4 ct, nicht belegt);
+  Marktwert Solar 2025 4,508 ct/kWh als Hinweis. Beispiel Biberach, Dach 400 m² (62 kWp): Eigenverbrauch mit dem neuen Backstubenprofil
+  nur 33.378 kWh (vorher mit G5 57.466), Barwert der Anlage +42.387 € (vorher +93.960 €): Das Ergebnis der Anlage hängt stark vom Tagesprofil ab.
