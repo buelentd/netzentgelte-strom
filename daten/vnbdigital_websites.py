@@ -10,6 +10,7 @@ from vnbdigital_client import VNBDigitalClient
 HIER = Path(__file__).parent
 CSV = HIER.parent / "ergebnis" / "netzentgelte_2026.csv"
 AUS = HIER / "vnbdigital_websites.json"
+ALLE = HIER / "vnbdigital_treffer.json"
 
 
 def norm(s):
@@ -24,6 +25,25 @@ def domain(u):
         u = "//" + u
     h = (urlparse(u).hostname or "").lower()
     return h[4:] if h.startswith("www.") else h
+
+
+def alle_treffer():
+    """Alle Suchtreffer (Namenssuche) der Problemfälle, ohne Auswahl. Ergebnis: daten/vnbdigital_treffer.json."""
+    zeilen = [r for r in csv.DictReader(open(CSV, encoding="utf-8"), delimiter=";") if r["status"] in ("kein_preisblatt", "blockiert")]
+    erg = json.loads(ALLE.read_text()) if ALLE.exists() else {}
+    c = VNBDigitalClient()
+    for z in zeilen:
+        if z["nr"] in erg:
+            continue
+        e = {"netzbetreiber": z["netzbetreiber"], "unsere_website": z["website"], "status": z["status"]}
+        try:
+            e["treffer"] = [{"id": r.id, "typ": r.type, "titel": r.title, "untertitel": r.subtitle, "url": r.url} for r in c.search(z["netzbetreiber"])]
+        except Exception as ex:
+            e["fehler"] = f"{type(ex).__name__}: {str(ex)[:150]}"
+        time.sleep(2.5)
+        erg[z["nr"]] = e
+        print(z["nr"], len(e.get("treffer", [])), flush=True)
+        ALLE.write_text(json.dumps(erg, ensure_ascii=False, indent=1))
 
 
 def main():
@@ -57,4 +77,8 @@ def main():
         AUS.write_text(json.dumps(erg, ensure_ascii=False, indent=1))
 
 
-main()
+import sys
+if len(sys.argv) > 1 and sys.argv[1] == 'treffer':
+    alle_treffer()
+else:
+    main()
