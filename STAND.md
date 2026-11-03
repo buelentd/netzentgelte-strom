@@ -241,3 +241,14 @@ bei uns (3.867) viel höher als bei conplot (200), Ursache offen (Optimierer, Re
 - Testseite (03.11.2026): Einspeisung über 100 kWp als Direktvermarktung: anzulegender Wert 5,84 ct minus Gebühr (eigene Annahme 0,4 ct, nicht belegt);
   Marktwert Solar 2025 4,508 ct/kWh als Hinweis. Beispiel Biberach, Dach 400 m² (62 kWp): Eigenverbrauch mit dem neuen Backstubenprofil
   nur 33.378 kWh (vorher mit G5 57.466), Barwert der Anlage +42.387 € (vorher +93.960 €): Das Ergebnis der Anlage hängt stark vom Tagesprofil ab.
+
+### vnbdigital.de (Test 03.11.2026)
+Inoffizielle Schnittstelle über das Paket `vnbdigital-client` 0.4.14 (MIT-Lizenz für den Code; Datenbedingungen von vnbdigital.de unbekannt,
+Seite aus der Sitzung nicht erreichbar). Skript `daten/vnbdigital_test.py`, Workflow `.github/workflows/vnbdigital.yml`, Auslöser `lauf/vnbdigital.env`,
+Ergebnis `daten/vnbdigital_test.json`. `robots.txt` hat nicht gesperrt. 20 Postleitzahlen (Biberach, Meerane, 9 mit mehreren, 9 mit einem Netzbetreiber),
+höchstens eine Abfrage je Sekunde, keine Fehler.
+- 17 von 20 gleich. Abweichungen: 88400 (vnbdigital zusätzlich Netze BW), 06578 (zusätzlich Thüringer Energienetze), 85625 (wir zusätzlich
+  „Obermaier und Gerg Grundstücksverwaltung KG“, ein geschlossenes Netz, das vnbdigital nicht führt).
+- Folgerung: unsere Liste ist im Kern richtig, übersieht kleine Netzbetreiber und enthält Rauschen; Anteile in Prozent gibt es nur bei uns.
+- Offen (nur mit Ok): größere Stichprobe (Postleitzahlen mit mehreren Netzbetreibern) als Gegenprobe; Detailabfrage für 2 bis 3 Netzbetreiber
+  (Dokumente, Anschlussfristen); vorher Nutzungsbedingungen klären.
