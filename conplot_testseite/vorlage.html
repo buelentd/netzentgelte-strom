@@ -228,6 +228,9 @@ a{color:var(--akzent)}
             <input type="number" id="a-pvpreis" min="0" step="50" value="1100"></div>
           <div><label class="titel" for="a-afrr">aFRR-Leistungspreis (€ je MW und Jahr, Leistung in beide Richtungen angeboten; gemessen: Mittel der letzten 365 Tage laut regelleistung.net, Durchschnittsgebot 204.000, Grenzpreis 287.000; zuletzt fallend)</label>
             <input type="number" id="a-afrr" min="0" step="1000" value="204000"></div>
+          <div><label class="titel" for="profilwahl">Lastprofil (nur Bäckerei)</label>
+            <select id="profilwahl"><option value="bdew">Standard: BDEW-Profil G5 (Bäckerei mit Backstube, Durchschnitt vieler Betriebe)</option>
+              <option value="test">Testprofil: Form aus einem conplot-Beispiel abgelesen, geschätzt, noch nicht bewertet</option></select></div>
           <div><label class="titel" for="a-dv">Gebühr Direktvermarkter für Anlagenteile über 100 kWp (ct/kWh; eigene Annahme, nicht belegt)</label>
             <input type="number" id="a-dv" min="0" step="0.1" value="0.4"></div>
           <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
@@ -263,7 +266,7 @@ const fmt = (v, n = 0) => v == null || !isFinite(v) ? "–" : v.toLocaleString("
 // Branchen: Benutzungsstunden (Annahme bei 1-Schicht und Standard-Betriebstagen), BDEW-Profil, typisches Spitzenfenster
 const BRANCHEN = {
   baeckerei:      {name: "Bäckerei mit Backstube", h: 2500, tage: 6, profil: "G5", fenster: "4–8 Uhr",
-                   // Backstubenprofil, geschätzt (Form aus einem Beispiel von conplot abgelesen, Winter, nicht gemessen): Grundlast 5 kW, 2–4:30 Uhr 19 kW, 4:30–7:30 Uhr 95 kW, 7:30–11:30 Uhr 19 kW; Sonntag nur Grundlast
+                   // Testprofil Backstube (nur auf Wunsch wählbar), geschätzt: Form aus einem Beispiel von conplot abgelesen, Winter, nicht bewertet, nicht gemessen: Grundlast 5 kW, 2–4:30 Uhr 19 kW, 4:30–7:30 Uhr 95 kW, 7:30–11:30 Uhr 19 kW; Sonntag nur Grundlast
                    form: {werktag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
                           samstag: [5, 5, 19, 19, 57, 95, 95, 57, 19, 19, 19, 12, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
                           sonntag: new Array(24).fill(5)}},
@@ -460,7 +463,7 @@ function rechnen() {
   if (!slpFall && nb.ns) html = wertschoepfung(html, nb, kwh, kw, b, A, kappungInfo, atyp, tage, hinweise, {grundlast, laden});
   if ($("pv").checked) hinweise.push({w: 0, t: "PV-Anlage: senkt den Netzbezug tagsüber. Morgen- und Abendspitzen bleiben; der Speicher kann aus PV geladen werden."});
   if (!kwEingabe && !slpFall) hinweise.push({w: 1, t: "Spitzenlast ist geschätzt. Mit dem Wert aus der Netzrechnung wird das Ergebnis genau."});
-  if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (${b.form ? "geschätztes Tagesprofil Backstube, nicht gemessen" : "BDEW-Profil " + b.profil}).`});
+  if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (${b.form && $("profilwahl").value === "test" ? "Testprofil, geschätzt, nicht gemessen" : "BDEW-Profil " + b.profil + ", Durchschnitt vieler Betriebe, nicht gemessen"}).`});
   html += hinweise.length ? `<ul class="hinweise">${hinweise.map(h => `<li class="${h.w ? "warn" : ""}">${h.t}</li>`).join("")}</ul>` : "";
   if (nb.q) html += `<p class="herkunft">Quelle: <a href="${nb.q.split(" | ")[0].replace(/^RLM:\s*/, "")}" target="_blank" rel="noopener">Preisblatt des Netzbetreibers</a> · Datenstand ${D.stand}</p>`;
   out.innerHTML = html;
@@ -508,7 +511,7 @@ const MONATSTAGE = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const num = id => parseFloat($(id).value) || 0;
 
 function lastProfil(b, kwh, tage) {
-  const P = b.form || D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
+  const P = (b.form && $("profilwahl").value === "test" ? b.form : null) || D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
   const wd = P.werktag, sa = tage >= 6 ? (tage === 6 ? P.samstag : P.werktag) : P.sonntag, so = tage >= 7 ? P.werktag : P.sonntag;
   const total = 261 * wd.reduce((a, c) => a + c, 0) + 52 * sa.reduce((a, c) => a + c, 0) + 52 * so.reduce((a, c) => a + c, 0);
   const f = kwh / total;
