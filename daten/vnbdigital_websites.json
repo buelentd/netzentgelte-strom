@@ -1,0 +1,1620 @@
+{
+ "57": {
+  "netzbetreiber": "Alzchem Netz GmbH",
+  "unsere_website": "www.alzchem.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "oaboR56jqSt8W4HXi",
+  "vnb_website": "https://www.alzchem.com",
+  "gleich": true
+ },
+ "59": {
+  "netzbetreiber": "Aschaffenburger Versorgungs-GmbH",
+  "unsere_website": "www.stwab.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "OPINION",
+   "VNB"
+  ],
+  "vnb_id": "26",
+  "vnb_website": "https://www.netze-stwab.de/",
+  "gleich": false
+ },
+ "63": {
+  "netzbetreiber": "BASF InfraService ＆ Solutions Lausitz GmbH",
+  "unsere_website": "www.industriepark-lausitz.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "73": {
+  "netzbetreiber": "CCF Cassella Chemiepark Frankfurt GmbH",
+  "unsere_website": "https://cassella-standort.de/stromnetz.html",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "74": {
+  "netzbetreiber": "Covestro Brunsbüttel Energie GmbH",
+  "unsere_website": "http://www.covestro.de/de/sites/brunsbuettel/energie-gmbh",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "6HkNNSyQNujkwABuZ",
+  "vnb_website": "https://www.covestro.com/de/company/covestro-worldwide/deutschland/covestro-in-deutschland/standorte/brunsbuettel/energie-gmbh",
+  "gleich": false
+ },
+ "75": {
+  "netzbetreiber": "CPM Netz GmbH",
+  "unsere_website": "www.evonik.de/cpm-netz",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "BNYoauesYcJ3AbRcs",
+  "vnb_website": "https://cpm-netz.evonik.de/de",
+  "gleich": false
+ },
+ "76": {
+  "netzbetreiber": "Cramer - Mühle GmbH ＆ Co. KG",
+  "unsere_website": "www.cramermuehle.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "79": {
+  "netzbetreiber": "Dessauer Stromversorgung GmbH",
+  "unsere_website": "www.dvv-dessau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "796",
+  "vnb_website": "https://www.dvv-dessau.de/",
+  "gleich": true
+ },
+ "82": {
+  "netzbetreiber": "E-Werk Meckenheim/Pfalz",
+  "unsere_website": "www.ewerk-meckenheim-pfalz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7235",
+  "vnb_website": "https://www.ewerk-meckenheim-pfalz.de",
+  "gleich": true
+ },
+ "86": {
+  "netzbetreiber": "E-Werke Haniel Haimhausen GmbH ＆ Co. KG",
+  "unsere_website": "www.e-werke-haniel.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "94": {
+  "netzbetreiber": "Elektra - Genossenschaft Pinzberg eG",
+  "unsere_website": "www.elektra-pinzberg.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "96": {
+  "netzbetreiber": "Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG",
+  "unsere_website": "www.ewg-vagen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "186",
+  "vnb_website": "https://www.ewg-vagen.de",
+  "gleich": true
+ },
+ "102": {
+  "netzbetreiber": "Elektrizitäts-Werk Ottersberg",
+  "unsere_website": "www.ewerk-ottersberg.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7058",
+  "vnb_website": "https://www.ewerk-ottersberg.de/",
+  "gleich": true
+ },
+ "103": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft e.G. Hasbergen",
+  "unsere_website": "www.eg-hasbergen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "104": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft Engelsberg eG",
+  "unsere_website": "www.eg-engelsberg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "106": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.",
+  "unsere_website": "www.eg-nordhalben.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "107": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft Oesterweg eG",
+  "unsere_website": "www.eg-oesterweg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "109": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft Schlachters e.G.",
+  "unsere_website": "www.eg-schlachters.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "111": {
+  "netzbetreiber": "Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG",
+  "unsere_website": "www.eva-siegsdorf.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "114": {
+  "netzbetreiber": "Elektrizitätsvereinigung Böbing eG",
+  "unsere_website": "www.ev-boebing.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7013",
+  "vnb_website": "https://ev-boebing.de/",
+  "gleich": true
+ },
+ "115": {
+  "netzbetreiber": "Elektrizitätswerk Bruchmühlbach-Miesau",
+  "unsere_website": "www.stadtwerke-ramstein.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7162",
+  "vnb_website": "https://www.bruchmuehlbach-miesau.de",
+  "gleich": false
+ },
+ "117": {
+  "netzbetreiber": "Elektrizitätswerk des Kantons Schaffhausen AG",
+  "unsere_website": "www.eks.ch",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "MjMd3FhszYgzaWjQZ",
+  "vnb_website": "https://www.eks.ch/",
+  "gleich": true
+ },
+ "123": {
+  "netzbetreiber": "Elektrizitätswerk Max Peissker",
+  "unsere_website": "www.max-peissker.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "125": {
+  "netzbetreiber": "Elektrizitätswerk Rohmund GmbH",
+  "unsere_website": "www.ew-rohmund.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7219",
+  "vnb_website": "https://ew-rohmund.de/",
+  "gleich": true
+ },
+ "134": {
+  "netzbetreiber": "Elektrizitätswerke Schönau Netze GmbH",
+  "unsere_website": "www.ews-schoenau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7190",
+  "vnb_website": "https://www.ews-schoenau.de/ews/strom-und-gasnetze/",
+  "gleich": true
+ },
+ "142": {
+  "netzbetreiber": "Energie- und Bäderbetrieb Hauenstein",
+  "unsere_website": "www.energie-hauenstein.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "yC5AsSG4vqhrbSdf8",
+  "vnb_website": "https://energiehauenstein.de/netz/",
+  "gleich": false
+ },
+ "145": {
+  "netzbetreiber": "Energie- und Wasserversorgung Bruchsal GmbH",
+  "unsere_website": "www.ewb-bruchsal.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "111",
+  "vnb_website": "https://www.stadtwerke-bruchsal.de/",
+  "gleich": false
+ },
+ "149": {
+  "netzbetreiber": "Energie- und Wasserwerke Bautzen GmbH Energijowe a Wodowezawody Budysin",
+  "unsere_website": "www.ewbautzen-netz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "151": {
+  "netzbetreiber": "Energienetze Bayern GmbH (Stromverteilnetz Germering)",
+  "unsere_website": "www.energienetze-bayern.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "153": {
+  "netzbetreiber": "Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG",
+  "unsere_website": "http://wp-feldheim-2006-kg.de/",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "GZMdCgfzMJC7jpooG",
+  "vnb_website": null,
+  "gleich": false
+ },
+ "156": {
+  "netzbetreiber": "Energieversorgung Beckum GmbH ＆ Co. KG",
+  "unsere_website": "www.evb-beckum.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "162": {
+  "netzbetreiber": "Energieversorgung Limburg GmbH",
+  "unsere_website": "www.evl.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "164": {
+  "netzbetreiber": "Energieversorgung Putzbrunn GmbH ＆ Co. KG",
+  "unsere_website": "www.energieversorgung-putzbrunn.com",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "165": {
+  "netzbetreiber": "Energieversorgung Rottenburg am Neckar GmbH",
+  "unsere_website": "www.evr-gmbh.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "556",
+  "vnb_website": "https://www.evr-gmbh.de",
+  "gleich": true
+ },
+ "180": {
+  "netzbetreiber": "EUROGATE Technical Services GmbH",
+  "unsere_website": "www.eurogate.eu",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "6BwaKk7YJbq6NCgzY",
+  "vnb_website": "https://www1.eurogate.de/leistungen/#energieversorgung",
+  "gleich": false
+ },
+ "184": {
+  "netzbetreiber": "EVI Energieversorgung Hildesheim GmbH ＆ Co. KG",
+  "unsere_website": "www.evi-hildesheim.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "186": {
+  "netzbetreiber": "EVU Langenpreising",
+  "unsere_website": "www.langenpreising.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7307",
+  "vnb_website": "https://www.langenpreising.de",
+  "gleich": true
+ },
+ "188": {
+  "netzbetreiber": "EVU Weilerbach",
+  "unsere_website": "www.stadtwerke-ramstein.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7155",
+  "vnb_website": "https://www.evu-weilerbach.de",
+  "gleich": false
+ },
+ "199": {
+  "netzbetreiber": "Fischereihafen-Betriebsgesellschaft mbH",
+  "unsere_website": "www.fbg-bremerhaven.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "x7mftPcMWF372PcAp",
+  "vnb_website": "https://www.fbg-bremerhaven.de",
+  "gleich": true
+ },
+ "204": {
+  "netzbetreiber": "Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG",
+  "unsere_website": "www.ffew.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "209": {
+  "netzbetreiber": "Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach",
+  "unsere_website": "www.gew-burtenbach.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "121",
+  "vnb_website": "https://www.gew-burtenbach.de/",
+  "gleich": true
+ },
+ "210": {
+  "netzbetreiber": "Gemeindewerke Baiersbronn",
+  "unsere_website": "www.gemeinde-baiersbronn.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "63",
+  "vnb_website": "https://gemeindewerke-baiersbronn.de/",
+  "gleich": false
+ },
+ "212": {
+  "netzbetreiber": "Gemeindewerke Bovenden GmbH ＆ Co. KG",
+  "unsere_website": "www.gemeindewerke-bovenden.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "215": {
+  "netzbetreiber": "Gemeindewerke Dudenhofen",
+  "unsere_website": "www.vgrd.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7165",
+  "vnb_website": "https://werke.vgrd.de",
+  "gleich": false
+ },
+ "218": {
+  "netzbetreiber": "Gemeindewerke Frammersbach",
+  "unsere_website": "www.frammersbach.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "219": {
+  "netzbetreiber": "Gemeindewerke Gangkofen",
+  "unsere_website": "www.gangkofen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "yYa3qCYARDe88K8Zw",
+  "vnb_website": "https://gangkofen.de/",
+  "gleich": true
+ },
+ "220": {
+  "netzbetreiber": "Gemeindewerke Garmisch-Partenkirchen, KU",
+  "unsere_website": "www.gw-gap.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "225": {
+  "netzbetreiber": "Gemeindewerke Halstenbek",
+  "unsere_website": "www.gwhalstenbek.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "257",
+  "vnb_website": "http://www.gwhalstenbek.de",
+  "gleich": true
+ },
+ "226": {
+  "netzbetreiber": "Gemeindewerke Haßloch GmbH",
+  "unsere_website": "www.gwhassloch.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "274",
+  "vnb_website": "https://gwhassloch.de/",
+  "gleich": true
+ },
+ "233": {
+  "netzbetreiber": "Gemeindewerke Kirkel GmbH",
+  "unsere_website": "www.gwkirkel.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "344",
+  "vnb_website": "https://www.gwk-netz.de",
+  "gleich": false
+ },
+ "234": {
+  "netzbetreiber": "Gemeindewerke Lam",
+  "unsere_website": "https://www.markt-lam.de/",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7129",
+  "vnb_website": "https://www.gemeindewerke-lam.de",
+  "gleich": false
+ },
+ "236": {
+  "netzbetreiber": "Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts",
+  "unsere_website": "www.gemeindewerke-muenchweiler.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "240": {
+  "netzbetreiber": "Gemeindewerke Nümbrecht GmbH",
+  "unsere_website": "www.gwn24.de/",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7053",
+  "vnb_website": "https://www.gwn24.de",
+  "gleich": true
+ },
+ "241": {
+  "netzbetreiber": "Gemeindewerke Oberaudorf",
+  "unsere_website": "www.gemeindewerke-oberaudorf.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "484",
+  "vnb_website": "https://www.gemeindewerke-oberaudorf.de/",
+  "gleich": true
+ },
+ "242": {
+  "netzbetreiber": "Gemeindewerke Partenstein",
+  "unsere_website": "www.partenstein.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7134",
+  "vnb_website": "https://www.partenstein.de",
+  "gleich": true
+ },
+ "250": {
+  "netzbetreiber": "Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern",
+  "unsere_website": "www.swk-kl.de/netze/gemeindenetze/weidenthal.html",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "252": {
+  "netzbetreiber": "Gemeindewerke Wildeck",
+  "unsere_website": "www.wildeck.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7146",
+  "vnb_website": "https://www.wildeck.de/",
+  "gleich": true
+ },
+ "253": {
+  "netzbetreiber": "Gemeindliche Werke Hengersberg",
+  "unsere_website": "www.gw-hengersberg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "74R9Bmq7QAgEn2KYG",
+  "vnb_website": "https://www.gw-hengersberg.de",
+  "gleich": true
+ },
+ "256": {
+  "netzbetreiber": "GETEC grid solutions GmbH",
+  "unsere_website": "https://www.getec-net.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "258": {
+  "netzbetreiber": "GETEC Quartier GmbH",
+  "unsere_website": "https://www.getec-net.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "MZzWJ7kHcsAnco6Qd",
+  "vnb_website": "https://www.getec-net.de",
+  "gleich": true
+ },
+ "261": {
+  "netzbetreiber": "GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG",
+  "unsere_website": "www.ggew.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "262": {
+  "netzbetreiber": "GIG energy services GmbH",
+  "unsere_website": "www.gig24.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "BppAYTnAroRQk9hsZ",
+  "vnb_website": "https://bbtp-netz.de/",
+  "gleich": false
+ },
+ "265": {
+  "netzbetreiber": "GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen",
+  "unsere_website": "www.gsw-kamen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "267": {
+  "netzbetreiber": "Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH",
+  "unsere_website": "www.stadthafen-sassnitz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "271": {
+  "netzbetreiber": "Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG",
+  "unsere_website": "www.gebr-heinzelmann.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "275": {
+  "netzbetreiber": "HEWA GmbH",
+  "unsere_website": "www.hewagmbh.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "292",
+  "vnb_website": "https://www.hewagmbh.de/",
+  "gleich": true
+ },
+ "278": {
+  "netzbetreiber": "infra fürth gmbh",
+  "unsere_website": "www.infra-fuerth.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "207",
+  "vnb_website": "https://www.infra-fuerth.de",
+  "gleich": true
+ },
+ "279": {
+  "netzbetreiber": "InfraLeuna GmbH",
+  "unsere_website": "www.infraleuna.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "r64GtRvxzvgKM3LPs",
+  "vnb_website": "https://www.infraleuna.de",
+  "gleich": true
+ },
+ "280": {
+  "netzbetreiber": "InfraServ Gendorf Netze GmbH",
+  "unsere_website": "https://www.infraserv.gendorf-netze.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "yiDXEDhddCy2auyAS",
+  "vnb_website": "https://infraserv.gendorf-netze.de/",
+  "gleich": true
+ },
+ "281": {
+  "netzbetreiber": "InfraServ GmbH ＆ Co. Wiesbaden KG",
+  "unsere_website": "www.infraserv-wi.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "Lebo3xgLi9ko5Lrgx",
+  "vnb_website": "https://www.infraserv-wi.de/",
+  "gleich": true
+ },
+ "282": {
+  "netzbetreiber": "Infrastrukturbetrieb der Stadt Arneburg",
+  "unsere_website": "www.infrastrukturbetrieb-stadt-arneburg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "8qYN75EviSjXRcjDZ",
+  "vnb_website": "https://www.infrastrukturbetrieb-stadt-arneburg.de",
+  "gleich": true
+ },
+ "283": {
+  "netzbetreiber": "Karl Stengle GmbH ＆ Co. KG",
+  "unsere_website": "www.e-werk-stengle.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "289": {
+  "netzbetreiber": "Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG",
+  "unsere_website": "www.ken-is.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "291": {
+  "netzbetreiber": "Kommunalunternehmen Gemeindewerke Peißenberg",
+  "unsere_website": "www.gemeindewerke-peissenberg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "293": {
+  "netzbetreiber": "Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR)",
+  "unsere_website": "www.stadtwerke-klingenberg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "294": {
+  "netzbetreiber": "Kraftwerk Farchant A. Poettinger ＆ Co. KG",
+  "unsere_website": "www.kw-farchant.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "301": {
+  "netzbetreiber": "Licht-, Kraft- und Wasserwerke Kitzingen GmbH",
+  "unsere_website": "www.lkw-kitzingen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "346",
+  "vnb_website": "https://www.lkw-kitzingen.de/",
+  "gleich": true
+ },
+ "308": {
+  "netzbetreiber": "Markt Egloffstein",
+  "unsere_website": "www.egloffstein.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "310": {
+  "netzbetreiber": "MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH",
+  "unsere_website": "www.mega-monheim.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "312": {
+  "netzbetreiber": "Merck Site Management GmbH",
+  "unsere_website": "www.fluxum-gernsheim.com",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "316": {
+  "netzbetreiber": "Nahwerk-Energie GmbH ＆ Co. KG",
+  "unsere_website": "www.nahwerk-energie.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "318": {
+  "netzbetreiber": "Netz ＆ Energie Betriebsgesellschaft mbH",
+  "unsere_website": "www.netz-energie.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "334": {
+  "netzbetreiber": "Netzwerke Saarlouis GmbH",
+  "unsere_website": "www.nwsls.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "563",
+  "vnb_website": "https://www.nwsls.de/",
+  "gleich": true
+ },
+ "337": {
+  "netzbetreiber": "NGN Netzgesellschaft Niederrhein mbH",
+  "unsere_website": "www.ngn-mbh.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "360",
+  "vnb_website": "https://www.ngn-mbh.de/",
+  "gleich": true
+ },
+ "346": {
+  "netzbetreiber": "Obermaier und Gerg Grundstücksverwaltung KG",
+  "unsere_website": "www.piusheim.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "348": {
+  "netzbetreiber": "OsthessenNetz GmbH",
+  "unsere_website": "www.osthessennetz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "209",
+  "vnb_website": "https://www.osthessennetz.de/",
+  "gleich": true
+ },
+ "349": {
+  "netzbetreiber": "OUTLETCITY AG",
+  "unsere_website": "www.outletcity.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "h8XHsoFszEjZ6SEwB",
+  "vnb_website": "https://www.outletcity.com",
+  "gleich": true
+ },
+ "350": {
+  "netzbetreiber": "Outokumpu Stainless Nirosta GmbH",
+  "unsere_website": "www.outokumpu.com",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "356": {
+  "netzbetreiber": "REDINET Burgenland GmbH",
+  "unsere_website": "www.redinet.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "938",
+  "vnb_website": "https://www.redinet.de/",
+  "gleich": true
+ },
+ "360": {
+  "netzbetreiber": "Regionalwerke Wolfhager Land GmbH",
+  "unsere_website": "www.stadtwerke-wolfhagen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7118",
+  "vnb_website": "https://rwl.gmbh/",
+  "gleich": false
+ },
+ "361": {
+  "netzbetreiber": "Remstalwerk Netzgesellschaft GmbH",
+  "unsere_website": "www.remstalwerk.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7758",
+  "vnb_website": "https://www.remstalwerk.de/",
+  "gleich": true
+ },
+ "362": {
+  "netzbetreiber": "Reußenköge Netz ＆ Infrastruktur GmbH",
+  "unsere_website": "https://www.reussenkoege-netz.de/",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7EmsZEPhNhHtaCZQu",
+  "vnb_website": "https://www.reussenkoege-netz.de/",
+  "gleich": true
+ },
+ "363": {
+  "netzbetreiber": "Rheinhessische Energie- und Wasserversorgungs-GmbH",
+  "unsere_website": "www.rheinhessische.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "313",
+  "vnb_website": "https://www.rheinhessische-netze.de/",
+  "gleich": false
+ },
+ "366": {
+  "netzbetreiber": "SachsenNetze HS.HD GmbH",
+  "unsere_website": "www.sachsen-netz.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "OPINION",
+   "VNB"
+  ],
+  "vnb_id": "726",
+  "vnb_website": "https://www.sachsen-netze.de",
+  "gleich": false
+ },
+ "367": {
+  "netzbetreiber": "Saerbecker Ver- und Entsorgungsnetzgesellschaft mbH",
+  "unsere_website": "https://www.swl-unser-stadtwerk.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "371": {
+  "netzbetreiber": "SSW Netz GmbH",
+  "unsere_website": "www.ssw-netz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "939",
+  "vnb_website": "https://www.ssw-netz.de/",
+  "gleich": true
+ },
+ "372": {
+  "netzbetreiber": "Stadt Burgbernheim - Stadtwerke",
+  "unsere_website": "www.burgbernheim.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "374": {
+  "netzbetreiber": "Stadtwerk am See GmbH ＆ Co. KG",
+  "unsere_website": "www.stadtwerk-am-see.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "380": {
+  "netzbetreiber": "Stadtwerke Altensteig",
+  "unsere_website": "www.stadtwerke-altensteig.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "19",
+  "vnb_website": "https://www.stadtwerke-altensteig.de/de/Privatkunden",
+  "gleich": true
+ },
+ "383": {
+  "netzbetreiber": "Stadtwerke Annaberg-Buchholz Energie AG",
+  "unsere_website": "www.swa-b.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "799",
+  "vnb_website": "https://swa-b.de",
+  "gleich": true
+ },
+ "391": {
+  "netzbetreiber": "Stadtwerke Bad Bramstedt Netz GmbH",
+  "unsere_website": "www.badbramstedtnetz.de/marktpartner.html",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "984",
+  "vnb_website": "https://www.badbramstedtnetz.de",
+  "gleich": true
+ },
+ "394": {
+  "netzbetreiber": "Stadtwerke Bad Harzburg GmbH",
+  "unsere_website": "https://www.harzenergie-netz.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "395": {
+  "netzbetreiber": "Stadtwerke Bad Herrenalb GmbH",
+  "unsere_website": "www.stw-badherrenalb.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "35",
+  "vnb_website": "https://www.stw-badherrenalb.de/",
+  "gleich": true
+ },
+ "397": {
+  "netzbetreiber": "Stadtwerke Bad Kissingen GmbH",
+  "unsere_website": "www.stwkiss.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "39",
+  "vnb_website": "https://www.stwkiss.de",
+  "gleich": true
+ },
+ "398": {
+  "netzbetreiber": "Stadtwerke Bad Nauheim GmbH",
+  "unsere_website": "www.stadtwerke-bad-nauheim.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "44",
+  "vnb_website": "https://www.stadtwerke-bad-nauheim.de/",
+  "gleich": true
+ },
+ "402": {
+  "netzbetreiber": "Stadtwerke Bad Rodach",
+  "unsere_website": "www.bad-rodach.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "547",
+  "vnb_website": "https://www.stw-bad-rodach.de",
+  "gleich": false
+ },
+ "405": {
+  "netzbetreiber": "Stadtwerke Bad Saulgau",
+  "unsere_website": "www.stadtwerke-bad-saulgau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "568",
+  "vnb_website": "https://bad-saulgau.de/stadtwerke/index.php",
+  "gleich": false
+ },
+ "407": {
+  "netzbetreiber": "Stadtwerke Bad Tölz GmbH",
+  "unsere_website": "www.stw.toelz.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "57",
+  "vnb_website": "https://www.stw-toelz.de",
+  "gleich": false
+ },
+ "408": {
+  "netzbetreiber": "Stadtwerke Bad Vilbel GmbH",
+  "unsere_website": "www.sw-bv.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7205",
+  "vnb_website": "https://www.sw-bv.de/",
+  "gleich": true
+ },
+ "411": {
+  "netzbetreiber": "Stadtwerke Bad Wörishofen",
+  "unsere_website": "www.swbw.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "59",
+  "vnb_website": "https://www.swbw.de",
+  "gleich": true
+ },
+ "412": {
+  "netzbetreiber": "Stadtwerke Baden-Baden",
+  "unsere_website": "www.stadtwerke-baden-baden.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "61",
+  "vnb_website": "https://www.stadtwerke-baden-baden.de/",
+  "gleich": true
+ },
+ "418": {
+  "netzbetreiber": "Stadtwerke Bebra GmbH",
+  "unsere_website": "www.stadtwerke-bebra.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "76",
+  "vnb_website": "https://www.stadtwerke-bebra-netz.de",
+  "gleich": false
+ },
+ "420": {
+  "netzbetreiber": "Stadtwerke Bernburg GmbH",
+  "unsere_website": "www.stadtwerke-bernburg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "755",
+  "vnb_website": "https://www.stadtwerke-bernburg.de/",
+  "gleich": true
+ },
+ "424": {
+  "netzbetreiber": "Stadtwerke Bliestal GmbH",
+  "unsere_website": "www.biosphaeren-stadtwerke.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "89",
+  "vnb_website": "https://www.stadtwerke-bliestal.de",
+  "gleich": false
+ },
+ "425": {
+  "netzbetreiber": "Stadtwerke Böblingen GmbH ＆ Co. KG",
+  "unsere_website": "https://www.stadtwerke-boeblingen.de/",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "431": {
+  "netzbetreiber": "Stadtwerke Brühl GmbH",
+  "unsere_website": "www.stadtwerke-bruehl.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "112",
+  "vnb_website": "https://www.stadtwerke-bruehl.de/",
+  "gleich": true
+ },
+ "433": {
+  "netzbetreiber": "Stadtwerke Buchen GmbH ＆ Co KG",
+  "unsere_website": "www.stadtwerke-buchen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "434": {
+  "netzbetreiber": "Stadtwerke Buchholz in der Nordheide GmbH",
+  "unsere_website": "www.buchholz-stw.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "3mJAfA6qrRB4LrydM",
+  "vnb_website": "https://www.buchholz-stadtwerke.de",
+  "gleich": false
+ },
+ "441": {
+  "netzbetreiber": "Stadtwerke Coesfeld GmbH",
+  "unsere_website": "www.stadtwerke-coesfeld.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "130",
+  "vnb_website": "https://www.stadtwerke-coesfeld.de/",
+  "gleich": true
+ },
+ "443": {
+  "netzbetreiber": "Stadtwerke Dachau Eigenbetr. d. Stadt Dachau",
+  "unsere_website": "www.stadtwerke-dachau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "446": {
+  "netzbetreiber": "Stadtwerke Delitzsch GmbH",
+  "unsere_website": "www.sw-delitzsch.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "800",
+  "vnb_website": "https://www.sw-delitzsch.de",
+  "gleich": true
+ },
+ "448": {
+  "netzbetreiber": "Stadtwerke Dettelbach",
+  "unsere_website": "www.dettelbach.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7089",
+  "vnb_website": "https://dettelbach-stadtwerke.de/",
+  "gleich": false
+ },
+ "453": {
+  "netzbetreiber": "Stadtwerke Döbeln GmbH",
+  "unsere_website": "www.stadtwerke-doebeln.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "921",
+  "vnb_website": "https://www.stadtwerke-doebeln.de/",
+  "gleich": true
+ },
+ "458": {
+  "netzbetreiber": "Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH",
+  "unsere_website": "www.stadtwerke-ebermannstadt.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "156",
+  "vnb_website": "https://www.stadtwerke-ebermannstadt.de/",
+  "gleich": true
+ },
+ "459": {
+  "netzbetreiber": "Stadtwerke Eckernförde GmbH",
+  "unsere_website": "www.stadtwerke-eckernfoerde.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "157",
+  "vnb_website": "https://www.stadtwerke-sh.de",
+  "gleich": false
+ },
+ "461": {
+  "netzbetreiber": "Stadtwerke Eilenburg GmbH",
+  "unsere_website": "www.eilenburger-stadtwerke.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7182",
+  "vnb_website": "https://www.eilenburger-stadtwerke.de/netz/stromnetz.html",
+  "gleich": true
+ },
+ "466": {
+  "netzbetreiber": "Stadtwerke Emden GmbH",
+  "unsere_website": "www.stadtwerke-emden.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "170",
+  "vnb_website": "https://www.stadtwerke-emden.de",
+  "gleich": true
+ },
+ "467": {
+  "netzbetreiber": "Stadtwerke Emmendingen GmbH",
+  "unsere_website": "www.swe-emmendingen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7356",
+  "vnb_website": "https://netz.swe-emmendingen.de/unser-netz/netzgebiet-strom-und-erdgas/",
+  "gleich": false
+ },
+ "470": {
+  "netzbetreiber": "Stadtwerke Engen GmbH",
+  "unsere_website": "www.stadtwerke-engen.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7022",
+  "vnb_website": "https://www.stadtwerke-engen.de/",
+  "gleich": true
+ },
+ "484": {
+  "netzbetreiber": "Stadtwerke Fürstenfeldbruck GmbH",
+  "unsere_website": "www.stadtwerke-ffb.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "206",
+  "vnb_website": "https://www.stadtwerke-ffb.de/",
+  "gleich": true
+ },
+ "487": {
+  "netzbetreiber": "Stadtwerke Geesthacht GmbH",
+  "unsere_website": "www.stadtwerke-geesthacht.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "743",
+  "vnb_website": "https://www.stadtwerke-geesthacht.de/startseite",
+  "gleich": true
+ },
+ "492": {
+  "netzbetreiber": "Stadtwerke Glauchau Dienstleistungsgesellschaft mbH",
+  "unsere_website": "www.stadtwerke-glauchau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "494": {
+  "netzbetreiber": "Stadtwerke GmbH Bad Kreuznach",
+  "unsere_website": "www.stadtwerke-kh.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "40",
+  "vnb_website": "https://www.kreuznacherstadtwerke.de/",
+  "gleich": false
+ },
+ "495": {
+  "netzbetreiber": "Stadtwerke Goch GmbH",
+  "unsere_website": "www.stadtwerke-goch.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7028",
+  "vnb_website": "https://www.stadtwerke-goch.de/strom-gas-wassernetze/",
+  "gleich": true
+ },
+ "500": {
+  "netzbetreiber": "Stadtwerke Gronau GmbH",
+  "unsere_website": "www.stadtwerke-gronau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "244",
+  "vnb_website": "https://www.stadtwerke-gronau.de/",
+  "gleich": true
+ },
+ "507": {
+  "netzbetreiber": "Stadtwerke Haldensleben GmbH",
+  "unsere_website": "www.swhdl.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "738",
+  "vnb_website": "https://www.swhdl.de",
+  "gleich": true
+ },
+ "508": {
+  "netzbetreiber": "Stadtwerke Haltern am See GmbH",
+  "unsere_website": "www.stadtwerke-haltern.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "258",
+  "vnb_website": "https://www.stadtwerke-haltern.de",
+  "gleich": true
+ },
+ "509": {
+  "netzbetreiber": "Stadtwerke Hameln Weserbergland GmbH",
+  "unsere_website": "www.stwhw.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "261",
+  "vnb_website": "https://www.stwhw-netze.de",
+  "gleich": false
+ },
+ "510": {
+  "netzbetreiber": "Stadtwerke Hammelburg GmbH",
+  "unsere_website": "www.stadtwerke-hammelburg.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7087",
+  "vnb_website": "https://www.stadtwerke-hammelburg.de",
+  "gleich": true
+ },
+ "521": {
+  "netzbetreiber": "Stadtwerke Hettstedt GmbH",
+  "unsere_website": "www.stadtwerke-hettstedt.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7639",
+  "vnb_website": "https://www.stadtwerke-hettstedt-netz.de/",
+  "gleich": false
+ },
+ "527": {
+  "netzbetreiber": "Stadtwerke Hünfeld GmbH",
+  "unsere_website": "www.huenfeld.de/stadtwerke",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7035",
+  "vnb_website": "https://www.stadtwerke-huenfeld.de",
+  "gleich": false
+ },
+ "529": {
+  "netzbetreiber": "Stadtwerke Ilmenau GmbH",
+  "unsere_website": "www.stadtwerke-ilmenau.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "926",
+  "vnb_website": "https://www.stadtwerke-ilmenau.net",
+  "gleich": false
+ },
+ "538": {
+  "netzbetreiber": "Stadtwerke Kleve GmbH",
+  "unsere_website": "www.stadtwerke-kleve.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "795",
+  "vnb_website": "https://www.stadtwerke-kleve.de",
+  "gleich": true
+ },
+ "539": {
+  "netzbetreiber": "Stadtwerke Konstanz GmbH",
+  "unsere_website": "www.sw-konstanz.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "355",
+  "vnb_website": "https://www.stadtwerke-konstanz.de",
+  "gleich": false
+ },
+ "540": {
+  "netzbetreiber": "Stadtwerke Kusel GmbH",
+  "unsere_website": "www.stadtwerke.kusel.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION"
+  ],
+  "ergebnis": "kein eindeutiger Treffer"
+ },
+ "546": {
+  "netzbetreiber": "Stadtwerke Langenzenn",
+  "unsere_website": "www.stadtwerke.langenzenn.de",
+  "status": "blockiert",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "7040",
+  "vnb_website": "https://www.stadtwerke-langenzenn.de",
+  "gleich": false
+ },
+ "564": {
+  "netzbetreiber": "Stadtwerke Marburg GmbH",
+  "unsere_website": "www.stadtwerke-marburg.de",
+  "status": "kein_preisblatt",
+  "treffertypen": [
+   "LOCATION",
+   "VNB"
+  ],
+  "vnb_id": "410",
+  "vnb_website": "https://www.stadtwerke-marburg.de/",
+  "gleich": true
+ }
+}
