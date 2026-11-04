@@ -1,0 +1,39 @@
+name: Links der Recherche prüfen (PDF und HTML)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/link_pruefung.env]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: link-pruefung
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: pip install requests
+      - run: python daten/link_pruefung.py
+      - name: Committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ergebnis/link_pruefung.csv 2>/dev/null || true
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Link-Prüfung (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
