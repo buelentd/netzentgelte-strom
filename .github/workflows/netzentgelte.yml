@@ -208,6 +208,7 @@ jobs:
           done
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
           git commit -m "Netzentgelte ${{ steps.p.outputs.jahr }}: Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"
+          git checkout -- .            # übrige, nicht übernommene Änderungen verwerfen, sonst scheitert das Rebase ("unstaged changes")
           for i in 1 2 3 4; do
             git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
             sleep $((2 ** i))
