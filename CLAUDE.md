@@ -84,3 +84,7 @@ Ersparnis je kW, Hinweis auf Tarifwechsel durch Spitzenkappung.
 Repository `buelentd/netzentgelte-strom`, Code im Wurzelverzeichnis: `run.py` und `vnb/`, Bedienung in README.md, Spalten in LEGENDE.md.
 Tests: `python -m pytest -q tests`. Lauf über GitHub Actions (`.github/workflows/netzentgelte.yml`),
 weil die Claude-Code-Cloud-Umgebung Netzbetreiber-Websites und MaStR sperrt.
+
+## Regel: HTML immer mitdenken (Festlegung Nutzer, 04.11.2026)
+
+Bei jeder Suche im Netz gelten HTML-Seiten genauso wie PDF und Excel: Preise können als Tabelle in einer Webseite, in einem Portal (EnWG-Tool, Netzveröffentlichung) oder auf einer sichtbaren Sitemap-Seite stehen. Das gilt für Preisblätter, Hochlastzeitfenster, Sitemaps und alles, was wir sonst suchen. Nie nur auf Dateiendungen (.pdf, .xlsx) oder XML-Sitemaps verlassen.
