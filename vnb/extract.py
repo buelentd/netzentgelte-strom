@@ -51,6 +51,8 @@ AUSSCHLUSS_LABEL = re.compile(r"14\s*a|steuerbar|wärmepumpe|waermepumpe|speiche
 class Ergebnis:
     ns: dict = field(default_factory=dict)        # FELDER -> float
     msns: dict = field(default_factory=dict)
+    ms: dict = field(default_factory=dict)       # Mittelspannung (Netzebene 5), nur aus Tabellenzeilen gelesen
+    hsms: dict = field(default_factory=dict)     # Umspannung HS/MS (Netzebene 4), optional
     hinweise: list = field(default_factory=list)
     unklar: list = field(default_factory=list)    # Gründe, die eine Prüfung erfordern
     preisstand: str = "unklar"
@@ -214,6 +216,26 @@ def label_von(zeile: str) -> str:
     zeile = ohne_spannung(zeile)
     m = ZAHL.search(zeile)
     return (zeile[: m.start()] if m else zeile).strip()
+
+
+def ebene_mshs(label: str) -> str | None:
+    """Mittelspannung (MS) und Umspannung HS/MS (HSMS) für Tabellenzeilen. Getrennt von ebene(), damit die übrigen Leser
+    (die Mittelspannung bewusst ausblenden) unverändert bleiben."""
+    lab = norm(re.sub(r"^\s*[n▪■●◼]\s+(?=[A-ZÄÖÜ])", "", label))
+    lab = re.sub(r"^[\d.)\s\-–•▪■●]+", "", lab)
+    lab = re.sub(r"\s*/\s*", "/", lab)
+    lab = re.sub(r"[()]", " ", lab).replace("-/", "/").replace("- ", "")
+    lab = re.sub(r"\s+", " ", lab).strip()
+    lab = re.sub(r"(?<=[a-zäöüß])\d{1,2}\*?$", "", lab)
+    if not lab or len(lab) > 70 or AUSSCHLUSS_LABEL.search(lab):
+        return None
+    if re.search(r"hs/ms|hoch\w*/mittel|umspann\w*\s*(hs|hoch)|netz(ebene|bereich)\s*4\b|^ne\s*4\b", lab):
+        return "HSMS"
+    if re.search(r"nieder|\bns\b|ms/ns|umspann|hoch", lab):
+        return None
+    if re.search(r"^(netz(ebene|bereich)\s*5\s*)?mittelspannung(?:s?ebene)?\b|^\(?msp?\)?$|^ne\s*5\b|^netz(ebene|bereich)\s*5\b", lab):
+        return "MS"
+    return None
 
 
 def ebene(label: str) -> str | None:
@@ -439,7 +461,7 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
         zeilen.append("")
     erg.text = "\n".join(zeilen)
 
-    funde = {"NS": [], "MSNS": []}   # Liste von dicts je Tabelle
+    funde = {"NS": [], "MSNS": [], "MS": [], "HSMS": []}   # Liste von dicts je Tabelle
     im_abschnitt = False
     start = 0
     offen_label = ""                   # Label einer Zeile ohne Zahlen (Umbruch)
@@ -475,9 +497,9 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
             continue
         bereich.append(i)
         label = label_von(z)
-        eb = ebene(label)
+        eb = ebene(label) or ebene_mshs(label)
         if not eb and offen_label and not offen_ebene and len(label) < 40:
-            eb = ebene(offen_label + " " + label)
+            eb = ebene(offen_label + " " + label) or ebene_mshs(offen_label + " " + label)
         if zahlen and eb:
             kopf = kopf_lesen(zeilen, start, i, erg)
             gr = "unter" if GRENZE_UNTER.search(label) else "ueber" if GRENZE_UEBER.search(label) else None
@@ -516,6 +538,11 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
                 erg.unklar = [u for u in erg.unklar if not u.startswith(f"{eb}:")]
                 if "Werte aus Zeilenpaaren je Benutzungsdauer gelesen" not in erg.hinweise:
                     erg.hinweise.append("Werte aus Zeilenpaaren je Benutzungsdauer gelesen")
+    for eb, ziel in (("MS", erg.ms), ("HSMS", erg.hsms)):          # nur aus Tabellenzeilen; Lücken machen den Fall nicht unsicher
+        try:
+            ziel.update(_zusammenfuehren(funde[eb], eb, Ergebnis()))
+        except Exception:
+            pass
     slp_lesen(zeilen, erg)
 
     # BDEW-Artikel-IDs (1-01-7-001 usw.) sind eindeutig und haben Vorrang vor der Tabellenerkennung
