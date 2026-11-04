@@ -139,13 +139,14 @@ def texte_sichern():
                     t = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, timeout=120).stdout.decode("utf-8", "replace")
             else:
                 t = r.text[:200000]
-            (out / f"{i:02d}.txt").write_text(f"{url}\n\n{t[:120000]}", encoding="utf-8")
+            (out / f"{i:02d}.txt").write_text(f"{url}\n\n{t[:40000]}", encoding="utf-8")
         except Exception as e:
             (out / f"{i:02d}.txt").write_text(f"{url}\nFehler {type(e).__name__}", encoding="utf-8")
 
 
 def main():
     texte_sichern()
+    if (W / "lauf" / "nur_texte").exists(): return
     g = list(csv.DictReader(open(W / "ergebnis" / "quellen_164_geprueft.csv", encoding="utf-8-sig"), delimiter=";"))
     jobs = []
     for z in g:
