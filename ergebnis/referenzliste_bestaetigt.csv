@@ -1,0 +1,128 @@
+﻿nr_bei_uns;netzbetreiber;status;ebenen_bestaetigt;ebenen_nicht_bestaetigt;werte
+6;Mitteldeutsche Netzgesellschaft Strom mbH;ok;msns,ns;;msns=41,40/4,37/128,15/0,90 | ns=46,88/4,99/146,63/1,00
+10;Netze ODR GmbH;ok;msns,ns;;msns=17,74/7,43/139,96/2,54 | ns=10,75/6,26/138,57/1,14
+23;Stadtwerke Bochum Netz GmbH;ok;ms,msns,ns,hsms;;ms=12,91/4,98/80,34/2,29 | msns=16,81/5,65/86,85/2,85 | ns=35,90/5,94/66,73/4,70 | hsms=11,19/4,26/87,68/1,20
+33;Syna GmbH;ok;msns,ns;;msns=14,35/7,94/183,27/1,19 | ns=23,99/8,08/156,65/2,78
+34;Stuttgart Netze GmbH;ok;msns,ns;;msns=29,14/7,85/160,17/2,61 | ns=34,42/8,95/164,89/3,73
+61;Bad Honnef AG;ok;ms,msns,ns;;ms=22,67/5,35/117,12/1,57 | msns=23,49/8,54/197,13/1,60 | ns=31,59/9,91/222,41/2,27
+69;Brücken-Center Ansbach GmbH;pruefen;ns;;ns=63,11/10,10/273,57/1,68
+72;C. Ensinger GmbH ＆ Co. KG;pruefen;ms,msns,ns;;ms=19,19/10,75/249,54/1,53 | msns=19,93/12,16/254,26/2,79 | ns=20,95/12,57/259,93/3,01
+91;EHINGER ENERGIE GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=24,70/6,82/174,57/0,83 | msns=24,82/6,85/175,40/0,83 | ns=28,77/8,04/206,78/0,92
+93;ELE Verteilnetz GmbH;pruefen;ms,ns,hsms;;ms=4,45/5,89/132,20/0,78 | ns=11,18/7,22/111,43/3,21 | hsms=3,91/5,09/125,66/0,22
+100;Elektrizitäts-Genossenschaft Tacherting-Feichten eG;pruefen;ms,msns,ns;;ms=11,66/4,89/110,91/0,92 | msns=11,63/4,96/112,48/0,93 | ns=10,13/5,67/111,47/1,62
+103;Elektrizitätsgenossenschaft e.G. Hasbergen;pruefen;ms,msns,ns;;ms=7,03/8,03/197,24/0,42 | msns=10,59/8,24/161,91/2,18 | ns=13,34/8,53/139,58/3,48
+105;Elektrizitätsgenossenschaft Karlstein eG;ok;msns,ns;ms;ms=10,13/5,85/145,40/0,44 | msns=14,52/6,98/159,00/1,20 | ns=19,51/8,36/178,13/2,02
+108;Elektrizitätsgenossenschaft Ohlstadt eG;pruefen;ms,msns,ns;;ms=13,42/6,44/136,98/1,50 | msns=17,31/6,83/143,94/1,76 | ns=28,38/9,60/169,40/3,96
+111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;ok;ms,msns,ns;;ms=16,85/6,06/143,59/1,00 | msns=17,26/6,69/139,30/1,81 | ns=17,81/6,79/135,56/2,08
+112;Elektrizitätsgenossenschaft Wolkersdorf und Umgebung eG;pruefen;ms,msns,ns;;ms=18,52/7,29/157,50/1,73 | msns=23,15/7,41/159,48/1,95 | ns=27,04/7,98/137,08/3,58
+113;Elektrizitätsnetze Allgäu GmbH;pruefen;ns;ms;ms=7,68/3,96/91,08/0,62 | ns=12,48/6,08/128,28/1,39
+124;Elektrizitätswerk Oberwössen e.G.;ok;msns,ns;ms;ms=19,09/7,75/188,79/0,96 | msns=22,11/8,62/196,59/1,64 | ns=22,55/9,83/211,76/2,26
+130;Elektrizitätswerk Unterwössen Döllerer＆Greimel Netz GmbH＆Co.KG;pruefen;ms,msns,ns;;ms=17,58/7,50/169,95/1,40 | msns=19,38/8,27/187,36/1,55 | ns=20,19/9,73/193,23/2,80
+135;Elektroenergieversorgung Cottbus GmbH;ok;msns,ns,hsms;ms;ms=31,14/5,61/115,22/2,24 | msns=35,22/6,73/128,49/3,00 | ns=57,78/9,94/197,79/4,34 | hsms=15,80/3,32/59,24/1,58
+139;eneREGIO GmbH;ok;ms,msns,ns;;ms=11,61/7,80/173,22/1,33 | msns=11,63/7,89/175,45/1,34 | ns=17,38/9,66/214,49/1,77
+143;energie- und wassergesellschaft mbh;pruefen;ms,ns;;ms=21,17/5,46/136,04/0,86 | ns=43,57/6,43/111,92/3,70
+161;Energieversorgung Klettgau-Rheintal GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=27,63/7,32/184,28/1,05 | msns=29,11/7,68/193,32/1,12 | ns=35,47/8,39/201,38/1,75
+167;Energieversorgung Selb-Marktredwitz GmbH;ok;ms,msns,ns;;ms=19,14/5,81/153,73/0,43 | msns=26,25/6,98/176,04/0,99 | ns=42,64/6,53/117,92/3,52
+170;Energieversorgung Trossingen GmbH;pruefen;ms,msns,ns;;ms=12,42/8,04/188,31/1,00 | msns=12,56/8,88/216,79/0,71 | ns=14,84/9,00/138,01/4,07
+171;Energieversorgung Wolfgang Schmid;ok;msns,ns;ms;ms=14,17/6,62/157,23/0,90 | msns=16,33/7,28/168,95/1,18 | ns=18,49/7,88/178,60/1,48
+187;EVU Späth e.K.;pruefen;ms,msns,ns;;ms=11,67/5,13/102,75/1,49 | msns=15,75/5,21/111,72/1,37 | ns=27,30/7,51/164,55/2,02
+196;FairNetz GmbH;pruefen;msns,ns;ms;ms=13,89/5,65/146,72/0,34 | msns=19,04/7,07/177,36/0,73 | ns=24,08/7,59/177,28/1,46
+202;Freisinger Stadtwerke Versorgungs-GmbH;ok;msns,ns,hsms;ms;ms=4,27/5,38/109,01/1,19 | msns=5,82/7,33/148,49/1,63 | ns=6,97/8,78/177,76/1,95 | hsms=3,82/4,82/97,54/1,07
+208;Gemeinde Glattbach;pruefen;ms,msns,ns;;ms=20,37/7,67/202,22/0,39 | msns=20,53/7,89/204,65/0,52 | ns=26,52/9,92/228,58/1,84
+215;Gemeindewerke Dudenhofen;ok;ms,msns,ns;;ms=5,72/6,35/153,92/0,42 | msns=6,98/6,57/146,82/0,98 | ns=9,71/6,66/117,17/2,36
+219;Gemeindewerke Gangkofen;pruefen;ms,msns,ns;;ms=11,67/4,37/119,60/0,05 | msns=12,58/4,90/132,54/0,10 | ns=14,55/5,62/126,18/1,15
+220;Gemeindewerke Garmisch-Partenkirchen, KU;pruefen;ms,msns,ns;;ms=12,44/8,39/211,59/0,43 | msns=13,82/8,97/222,65/0,61 | ns=15,67/9,94/244,61/0,79
+229;Gemeindewerke Holzkirchen GmbH;ok;msns,ns;ms;ms=13,75/4,99/102,22/1,45 | msns=15,16/5,62/116,75/1,55 | ns=16,15/6,28/124,99/1,93
+230;Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH;ok;ms,msns,ns;;ms=6,63/6,69/167,84/0,25 | msns=7,65/7,18/174,67/0,50 | ns=9,07/8,35/159,80/2,32
+232;Gemeindewerke Kiefersfelden;pruefen;ms,msns,ns;;ms=25,73/7,22/130,40/3,03 | msns=26,42/7,31/127,95/3,25 | ns=28,63/7,89/142,90/3,32
+239;Gemeindewerke Nüdlingen;pruefen;ms,msns,ns;;ms=16,66/6,14/165,76/0,18 | msns=19,59/7,29/185,86/0,64 | ns=20,13/7,48/153,72/2,14
+249;Gemeindewerke Waging a. See;ok;ms,msns,ns;;ms=20,40/6,63/143,97/1,68 | msns=22,84/7,24/154,88/1,96 | ns=26,79/7,59/150,30/2,65
+260;GEW Wilhelmshaven GmbH;ok;ms,msns,ns;;ms=15,03/3,49/83,22/0,77 | msns=16,77/5,01/131,90/0,41 | ns=34,54/6,77/147,08/2,26
+266;GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG;pruefen;msns,ns;ms;ms=22,28/5,80/144,78/0,90 | msns=28,32/6,61/167,82/1,03 | ns=31,87/7,26/183,37/1,20
+268;Halberstadtwerke GmbH;ok;ms,msns,ns;;ms=16,59/4,28/106,59/0,68 | msns=23,16/7,98/219,00/0,14 | ns=44,89/8,14/148,32/4,00
+285;Keep - Kommunale Eisenberger Energiepartner GmbH;ok;ms,msns,ns;;ms=23,97/8,63/229,04/0,43 | msns=30,87/10,63/278,06/0,74 | ns=53,46/11,54/241,43/4,03
+294;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;ms,msns,ns;;ms=19,58/8,93/183,35/2,38 | msns=21,76/9,40/185,53/2,85 | ns=27,11/11,21/189,37/4,72
+297;LeineNetz GmbH;pruefen;ms,msns,ns;;ms=28,57/6,83/164,71/1,38 | msns=37,12/9,80/246,39/1,42 | ns=52,27/12,92/316,51/2,35
+298;Leitungspartner GmbH;pruefen;msns,ns;;msns=15,13/6,31/155,50/0,69 | ns=15,86/7,32/120,00/3,16
+303;LSW Netz GmbH ＆ Co. KG;ok;ms,msns,ns,hsms;;ms=18,46/5,42/117,00/1,47 | msns=26,08/5,66/85,83/3,27 | ns=32,15/6,22/91,41/3,85 | hsms=11,22/4,41/95,41/1,05
+307;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;ms,msns,ns;;ms=19,12/4,85/120,09/0,81 | msns=23,19/5,23/122,95/1,24 | ns=26,11/5,49/124,46/1,56
+311;Meißener Stadtwerke GmbH;ok;ms,msns,ns;;ms=7,03/8,03/197,24/0,42 | msns=10,59/8,24/161,91/2,18 | ns=13,34/8,53/139,58/3,48
+319;Netzbetrieb Hirschberg GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=22,04/6,02/147,68/0,99 | msns=26,06/7,24/182,47/0,99 | ns=50,13/10,27/225,21/3,27
+325;Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG;ok;ms,msns,ns;;ms=6,61/5,95/148,04/0,30 | msns=8,55/7,68/190,63/0,39 | ns=9,95/8,37/152,83/2,66
+332;netzplus GmbH ＆ Co. KG;pruefen;msns,ns;;msns=2,35/6,42/134,31/1,14 | ns=2,67/6,79/134,77/1,51
+339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=21,23/8,77/238,59/0,08 | msns=22,17/9,23/248,97/0,15 | ns=24,47/9,15/185,77/2,70
+344;nvb Nordhorner Versorgungsbetriebe GmbH;pruefen;ms,msns,ns;;ms=17,16/4,85/84,84/2,14 | msns=18,29/5,34/87,29/2,59 | ns=18,55/6,37/87,77/3,60
+375;Stadtwerk Haßfurt GmbH;pruefen;msns,ns;ms;ms=12,00/4,22/102,72/0,48 | msns=9,89/5,10/116,27/0,84 | ns=10,11/5,79/134,16/0,82
+376;Stadtwerk Tauberfranken GmbH;ok;ms,msns,ns;;ms=8,03/8,43/199,33/0,78 | msns=7,26/10,75/270,46/0,23 | ns=9,94/11,39/213,84/3,23
+385;Stadtwerke Ansbach GmbH;pruefen;ms,msns,ns;;ms=51,27/5,12/148,49/1,23 | msns=52,21/7,31/224,53/0,42 | ns=63,11/10,10/273,57/1,68
+389;Stadtwerke Bad Aibling;pruefen;ms,msns,ns;;ms=7,57/8,42/193,12/1,00 | msns=11,24/8,84/175,48/2,27 | ns=12,62/8,97/174,05/2,51
+392;Stadtwerke Bad Brückenau GmbH;pruefen;ms,msns,ns;;ms=12,13/10,41/268,34/0,16 | msns=21,13/10,25/222,65/2,19 | ns=23,17/10,68/134,07/6,25
+399;Stadtwerke Bad Neustadt a. d. Saale;pruefen;ms,msns,ns;;ms=21,12/10,38/233,63/1,88 | msns=22,50/10,91/243,71/2,06 | ns=25,46/11,72/267,28/2,05
+402;Stadtwerke Bad Rodach;ok;ms,msns,ns;;ms=19,99/6,66/168,18/0,73 | msns=22,46/7,26/176,16/1,12 | ns=23,53/8,66/165,12/3,00
+410;Stadtwerke Bad Windsheim;ok;ms,msns,ns;;ms=19,97/8,38/221,44/0,32 | msns=18,88/8,95/231,96/0,43 | ns=20,57/10,00/183,16/3,50
+427;Stadtwerke Bogen GmbH;ok;ms,msns,ns;;ms=23,31/7,86/214,39/0,21 | msns=33,16/7,60/179,74/1,73 | ns=34,93/7,84/183,82/1,89
+428;Stadtwerke Borken/Westf. GmbH;ok;msns,ns;;msns=16,19/7,12/142,53/2,07 | ns=22,69/9,68/169,00/3,83
+438;Stadtwerke Buxtehude GmbH;ok;ms,msns,ns;;ms=16,32/3,34/74,50/1,01 | msns=20,30/3,86/82,54/1,37 | ns=23,57/4,20/85,79/1,71
+441;Stadtwerke Coesfeld GmbH;pruefen;msns,ns;;msns=17,96/7,66/173,77/1,43 | ns=19,40/8,28/187,68/1,55
+454;Stadtwerke Dorfen GmbH;ok;ms,msns,ns;;ms=13,70/6,16/161,75/0,24 | msns=16,37/9,33/240,27/0,37 | ns=12,59/10,20/248,64/0,75
+455;Stadtwerke Dreieich GmbH;ok;ms,msns,ns;;ms=8,61/7,53/160,96/1,44 | msns=8,80/7,95/173,15/1,37 | ns=9,50/8,44/182,23/1,53
+476;Stadtwerke Fellbach GmbH;pruefen;ms,ns;;ms=11,90/7,06/168,72/0,79 | ns=14,04/7,12/128,69/2,54
+482;Stadtwerke Freudenstadt GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=18,13/6,60/165,88/0,69 | msns=18,87/7,69/169,81/1,65 | ns=19,80/8,90/180,91/2,46
+488;Stadtwerke Geldern Netz GmbH;pruefen;ms,msns,ns;;ms=19,40/5,43/139,68/0,62 | msns=23,90/6,69/172,12/0,76 | ns=45,05/12,62/324,45/1,44
+490;Stadtwerke Georgsmarienhütte Netz GmbH;ok;msns,ns;ms;ms=23,38/8,36/191,72/1,62 | msns=24,33/8,43/164,20/2,83 | ns=26,31/8,49/152,77/3,43
+491;Stadtwerke Germersheim GmbH;ok;ms,msns,ns;;ms=9,52/7,79/190,82/0,54 | msns=11,50/8,83/172,08/2,41 | ns=14,72/8,92/136,63/4,04
+498;Stadtwerke Greven GmbH;pruefen;msns,ns;;msns=15,27/7,33/155,79/1,71 | ns=17,18/8,25/175,30/1,92
+503;Stadtwerke Güstrow GmbH;ok;ms,msns,ns;;ms=13,88/2,89/65,03/0,84 | msns=21,65/4,70/108,12/1,24 | ns=38,30/5,75/101,84/3,21
+507;Stadtwerke Haldensleben GmbH;ok;ms,msns,ns;;ms=83,06/3,03/158,10/0,03 | msns=73,19/5,19/197,75/0,21 | ns=101,94/5,11/199,13/1,22
+515;Stadtwerke Heilbad Heiligenstadt GmbH;pruefen;msns,ns;ms;ms=23,52/4,54/97,97/1,57 | msns=26,31/5,26/115,86/1,68 | ns=29,10/6,14/139,25/1,73
+517;Stadtwerke Heilsbronn;pruefen;ms,msns,ns;;ms=18,12/7,29/168,97/1,25 | msns=21,23/8,30/183,16/1,82 | ns=24,52/8,54/191,00/1,88
+526;Stadtwerke Homburg GmbH;ok;ms,msns,ns;;ms=18,04/6,41/153,36/0,99 | msns=23,18/8,70/221,04/0,79 | ns=27,16/9,60/227,45/1,59
+530;Stadtwerke Ingolstadt Netze GmbH;ok;msns,ns,hsms;ms;ms=12,45/3,99/107,32/0,20 | msns=6,65/6,01/122,36/1,38 | ns=7,25/6,32/115,50/1,99 | hsms=12,45/3,99/107,32/0,20
+531;Stadtwerke Iserlohn GmbH;pruefen;msns,ns;ms;ms=7,43/5,39/139,18/0,12 | msns=12,43/7,20/169,18/0,93 | ns=14,94/8,01/181,69/1,34
+534;Stadtwerke Jülich GmbH;pruefen;msns,ns;ms;ms=16,29/5,27/141,54/0,26 | msns=24,93/6,22/152,43/1,12 | ns=28,50/6,41/150,50/1,53
+537;Stadtwerke Kempen GmbH;pruefen;ns;ms,msns;ms=15,64/8,34/195,94/1,13 | msns=16,94/9,02/185,66/2,28 | ns=18,43/9,40/170,64/3,31
+555;Stadtwerke Löbau GmbH;ok;ms,msns,ns;;ms=22,99/4,81/116,94/1,05 | msns=30,69/5,50/123,89/1,77 | ns=40,95/6,22/126,21/2,81
+557;Stadtwerke Ludwigsfelde GmbH;ok;ms,msns,ns;;ms=11,48/4,05/81,24/1,26 | msns=12,06/4,68/93,23/1,44 | ns=15,32/5,78/101,29/2,34
+562;Stadtwerke Lutherstadt Wittenberg GmbH;ok;msns,ns;ms;ms=32,21/4,90/130,60/0,96 | msns=39,53/5,38/138,13/1,43 | ns=64,08/8,03/200,03/2,59
+569;Stadtwerke Merseburg GmbH;ok;msns,ns,hsms;ms;ms=36,75/5,42/144,35/1,11 | msns=54,22/6,78/177,64/1,84 | ns=64,79/12,96/285,23/4,14 | hsms=21,41/2,70/79,58/0,38
+570;Stadtwerke Metzingen;pruefen;ms,msns,ns;;ms=24,75/7,52/187,92/0,99 | msns=26,61/7,53/189,86/1,00 | ns=30,34/7,62/161,18/2,38
+572;Stadtwerke Mosbach GmbH;ok;msns,ns,hsms;ms;ms=6,73/5,46/129,73/0,54 | msns=14,42/7,74/175,86/1,28 | ns=19,40/10,25/230,71/1,80 | hsms=6,73/5,46/129,73/0,54
+575;Stadtwerke Mühlheim am Main GmbH;pruefen;msns,ns;ms;ms=31,62/6,40/142,62/1,96 | msns=31,87/6,49/144,87/1,97 | ns=33,79/6,60/142,54/2,25
+584;Stadtwerke Neuruppin GmbH;ok;ms,msns,ns;;ms=27,59/4,74/112,77/1,34 | msns=34,93/5,38/121,01/1,94 | ns=45,96/6,41/135,52/2,82
+592;Stadtwerke Niesky GmbH;ok;ms,msns,ns;;ms=31,79/7,63/184,45/1,52 | msns=43,74/9,16/206,82/2,63 | ns=56,05/10,38/217,85/3,91
+601;Stadtwerke Oerlinghausen GmbH;pruefen;ms,msns,ns;hsms;ms=14,53/8,07/191,23/1,01 | msns=15,20/8,66/179,56/2,08 | ns=15,97/8,92/174,80/2,56 | hsms=19,00/4,00/118,00/2,00
+604;Stadtwerke Oldenburg in Holstein GmbH;ok;ms,msns,ns;;ms=18,09/3,98/98,89/0,75 | msns=25,93/5,56/136,79/1,13 | ns=30,44/6,70/142,06/2,24
+614;Stadtwerke Pirna Energie GmbH;ok;ms,msns,ns;;ms=18,31/5,75/153,66/0,34 | msns=22,50/7,37/199,36/0,29 | ns=46,25/7,40/138,84/3,69
+619;Stadtwerke Quickborn GmbH;pruefen;msns,ns;ms;ms=24,75/6,00/142,93/1,27 | msns=28,85/7,32/161,32/2,02 | ns=30,35/10,45/187,84/4,15
+620;Stadtwerke Radevormwald GmbH;ok;msns,ns;ms;ms=19,73/5,83/133,23/1,29 | msns=23,77/6,41/152,52/1,26 | ns=26,07/7,08/168,32/1,39
+631;Stadtwerke Rostock Netzgesellschaft mbH;ok;ms,msns,ns,hsms;;ms=2,93/4,74/111,42/0,40 | msns=3,02/4,86/113,99/0,42 | ns=3,30/5,11/120,03/0,44 | hsms=2,27/3,56/82,30/0,36
+634;Stadtwerke Rothenburg o.d.T. GmbH;pruefen;msns,ns;;msns=10,77/8,46/203,65/0,75 | ns=11,12/8,77/125,05/4,21
+636;Stadtwerke Sangerhausen GmbH;pruefen;msns,ns;ms;ms=34,14/4,57/139,63/0,35 | msns=45,25/6,03/153,92/1,69 | ns=51,06/8,17/153,36/4,08
+637;Stadtwerke Scheinfeld;pruefen;ms,msns,ns;;ms=17,39/7,12/181,01/0,58 | msns=17,60/7,29/160,35/1,58 | ns=19,58/7,73/167,44/1,81
+646;Stadtwerke Schüttorf - Emsbüren GmbH;pruefen;ms,msns,ns;;ms=17,53/3,61/80,93/1,08 | msns=19,95/4,69/112,32/1,00 | ns=18,93/6,14/131,05/1,65
+654;Stadtwerke Schwentinental GmbH;ok;ms,msns,ns;;ms=18,98/3,86/92,79/0,91 | msns=24,37/5,49/137,82/0,96 | ns=37,04/7,34/174,20/1,86
+663;Stadtwerke Speyer GmbH;ok;ms,msns,ns;;ms=13,09/5,59/126,58/1,05 | msns=14,26/6,40/117,32/2,28 | ns=14,93/6,72/106,88/3,04
+664;Stadtwerke Springe GmbH;ok;ns;ms,msns,hsms;ms=33,60/4,45/106,76/1,52 | msns=38,57/5,49/136,00/1,59 | ns=44,33/6,77/172,55/1,64 | hsms=26,36/2,98/65,97/1,40
+670;Stadtwerke Steinfurt GmbH;ok;ms,msns,ns;;ms=14,34/5,33/124,58/0,92 | msns=14,96/5,68/120,20/1,47 | ns=15,60/5,98/111,09/2,16
+676;Stadtwerke Suhl/Zella-Mehlis Netz GmbH;pruefen;msns,ns;;msns=11,17/6,68/121,85/2,25 | ns=12,24/6,83/116,50/2,66
+681;Stadtwerke Traunstein GmbH ＆ Co. KG;ok;ms,msns,ns,hsms;;ms=14,84/6,77/178,52/0,22 | msns=16,61/7,49/196,72/0,28 | ns=24,04/8,99/188,20/2,43 | hsms=11,59/5,04/134,71/0,12
+688;Stadtwerke Uffenheim;pruefen;ms,msns,ns;;ms=29,62/9,70/253,49/0,74 | msns=29,46/10,06/251,40/1,18 | ns=31,12/10,24/231,60/2,22
+691;Stadtwerke Uslar GmbH;pruefen;ms,msns,ns;;ms=19,78/9,11/238,09/0,37 | msns=19,61/8,88/240,21/0,06 | ns=37,03/9,83/201,05/3,27
+696;Stadtwerke Villingen-Schwenningen GmbH;ok;msns,ns;ms;ms=23,69/6,03/149,63/1,00 | msns=23,42/7,47/200,73/0,38 | ns=43,40/7,50/149,92/3,24
+713;Stadtwerke Wasserburg a. Inn;pruefen;ms,msns,ns;;ms=16,97/5,34/106,27/1,77 | msns=24,72/6,14/124,37/2,15 | ns=27,71/7,54/165,88/2,01
+719;Stadtwerke Weißwasser GmbH;ok;ms,msns,ns;;ms=26,25/4,17/77,67/2,11 | msns=35,25/6,31/139,61/2,14 | ns=35,18/9,87/193,85/3,52
+722;Stadtwerke Wernigerode GmbH;ok;ms,msns,ns;;ms=13,96/4,47/120,03/0,22 | msns=16,61/5,32/143,06/0,26 | ns=25,52/5,38/121,90/1,52
+729;Stadtwerke Witten Mittelspannungsnetz GmbH;pruefen;msns,ns;;msns=15,29/7,69/166,79/1,63 | ns=18,73/8,75/182,98/2,18
+732;Stadtwerke Wolfenbüttel GmbH;pruefen;ms,msns,ns;;ms=20,84/7,14/160,21/1,57 | msns=24,66/7,82/176,93/1,73 | ns=24,66/7,82/176,93/1,73
+734;Stadtwerke Zeil a. Main;pruefen;ms,msns,ns;;ms=14,96/7,02/175,93/0,58 | msns=17,90/7,02/180,32/0,53 | ns=21,70/7,20/161,96/1,59
+746;Stauferwerk  GmbH ＆ Co. KG;ok;msns,ns;ms;ms=13,30/8,55/211,39/0,62 | msns=13,45/8,86/221,39/0,54 | ns=14,49/9,14/224,43/0,75
+753;Stromnetz Weiden i.d.OPf. GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=6,16/4,79/114,62/0,45 | msns=6,29/5,98/155,34/0,02 | ns=10,07/6,17/129,57/1,39
+760;Stromversorgung Schierling eG;ok;msns,ns;ms;ms=10,61/3,81/87,61/0,73 | msns=13,46/4,42/96,76/1,09 | ns=17,96/4,90/94,26/1,85
+768;SVH Stromversorgung Haar GmbH;ok;msns,ns;ms;ms=7,88/3,96/86,69/0,81 | msns=9,85/4,75/101,22/1,09 | ns=12,34/5,41/108,14/1,58
+789;T.W.O. Technische Werke Osning GmbH;ok;ms,msns,ns,hsms;;ms=20,77/8,03/171,70/1,99 | msns=20,87/9,22/178,01/2,93 | ns=21,68/9,54/171,67/3,54 | hsms=18,65/6,54/167,24/0,60
+790;TauberEnergie Kuhn, Karl und Andreas Kuhn OHG;ok;ms,msns,ns;;ms=37,55/8,15/187,69/2,14 | msns=41,22/9,20/215,04/2,25 | ns=44,84/9,92/230,64/2,49
+800;Überlandwerk Rhön GmbH;ok;ms,msns,ns;;ms=22,73/4,22/91,13/1,48 | msns=23,60/4,95/94,53/2,12 | ns=37,69/5,08/106,55/2,32
+811;Versorgungsbetriebe Hoyerswerda GmbH;ok;ms,msns,ns;;ms=14,73/2,70/75,92/0,25 | msns=17,47/3,78/106,96/0,20 | ns=22,96/7,87/176,64/1,73
+815;VersorgungsWerke Heddesheim GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=19,11/5,59/142,08/0,67 | msns=19,25/5,68/145,04/0,65 | ns=37,46/7,60/165,82/2,47
+816;Verteilnetz Plauen GmbH;ok;ms,msns,ns;;ms=39,14/3,20/88,64/1,22 | msns=41,51/3,95/113,26/1,08 | ns=45,13/4,39/126,63/1,13
+825;Werraenergie GmbH;ok;ms,msns,ns;;ms=20,89/7,28/179,56/0,93 | msns=19,51/10,33/277,53/0,01 | ns=21,32/10,38/250,98/1,19

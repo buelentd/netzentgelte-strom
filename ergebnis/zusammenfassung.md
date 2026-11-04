@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 15:52, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 16:08, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 343 | 41% |
-| pruefen | 425 | 51% |
+| ok | 344 | 41% |
+| pruefen | 424 | 51% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 342,  1
+Preisstand (nur ok): endgültig 343,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 342,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (488)
+## Restfälle (487)
 
-### pruefen (425)
+### pruefen (424)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -150,7 +150,6 @@ Preisstand (nur ok): endgültig 342,  1
 - 183. EVG Energieversorgung Gemünden GmbH: SLP-Werte nicht gefunden
 - 184. EVI Energieversorgung Hildesheim GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 185. EVU der Gemeinde Gochsheim: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 186. EVU Langenpreising: 
 - 187. EVU Späth e.K.: 
 - 191. EWR GmbH (Remscheid): 
 - 192. EWR Netz GmbH: 
