@@ -1,0 +1,22 @@
+https://www.ascanetz.de/wp-content/uploads/HLFZ-asc26_mit_logo.pdf
+
+Hochlastzeiten Werktage                                                      2026
+Nicht an Wochenenden, Feiertagen, einem Brückentag und zwischen Weihnachten und Silvester.
+Angaben in gesetzl. Zeit DE
+                                      Mittelspannung                  Umspannung MS/NS       Niederspannung
+
+
+Frühling                                   entfällt                         entfällt              entfällt
+
+
+Sommer                                     entfällt                         entfällt              entfällt
+
+
+Herbst                               07:00 - 12:00 Uhr                      entfällt              entfällt
+                                     17:45 - 19:00 Uhr
+
+Winter                               07:00 - 14:15 Uhr                 11:30 - 12:15 Uhr     11:30 - 12:15 Uhr
+                                     16:45 - 19:00 Uhr                 17:30 - 19:00 Uhr     17:30 - 19:00 Uhr
+Hinweis: Die Zeitfenster sind als Uhrzeit, nicht als Lastgangzeitstempel angegeben
+(z.B. 11:45 bis 13:00 Uhr entspricht ¼-h-Werte 12:00 bis 13:00 Uhr)
+

@@ -1,0 +1,97 @@
+https://www.stadtwerke-duelmen.de/wp-content/uploads/hochlastzeitfenster-2026.pdf
+
+                Stadtwerke Dülmen GmbH
+                      § 19 StromNEV - Sonderformen der Netznutzung
+
+
+
+
+                 Hochlastzeitfenster nach § 19 Abs. 2 Satz 1 StromNEV für das
+                        Geschäftsjahr 2026 der Stadtwerke Dülmen GmbH
+                      (Datenbasis: Lastgangdaten vom 01.09.2024 - 31.08.2025)
+
+
+      Netzebene            Jahreszeit                                                       Zeitfenster
+                           Frühling
+                                                                                           12:15 - 14:45
+                           (1. März - 31. Mai)
+                           Sommer
+                                                                                           12:15 - 14:15
+                           (1. Juni - 31. August)
+   Mittelspannung
+                           Herbst
+                                                                                                ---
+                           (1. September - 30. November)
+                           Winter
+                                                                                                ---
+                           (1. Dezember - 28/29. Februar)
+
+
+      Netzebene            Jahreszeit                                                       Zeitfenster
+                           Frühling
+                                                                                                ---
+                           (1. März - 31. Mai)
+                           Sommer
+                                                                                                ---
+     Umspannung            (1. Juni - 31. August)
+    (U Msp / Nsp)          Herbst
+                                                                                           17:30 - 18:15
+                           (1. September - 30. November)
+                           Winter
+                                                                                           17:00 - 19:15
+                           (1. Dezember - 28/29. Februar)
+
+
+      Netzebene            Jahreszeit                                                       Zeitfenster
+                           Frühling
+                                                                                           12:00 - 14:45
+                           (1. März - 31. Mai)
+                           Sommer
+                                                                                           12:00 - 14:00
+                           (1. Juni - 31. August)
+   Niederspannung
+                           Herbst
+                                                                                                ---
+                           (1. September - 30. November)
+                           Winter                                                               ---
+                            (1. Dezember - 28/29. Februar)
+Die Angaben beziehen sich auf den Zeitraum und nicht auf den Viertelstundenwert.
+Bspw. bezieht sich der Zeitraum "08:00 - 09:15" auf die Dauer von 08:00:00 bis 09:14:59.
+
+
+Die Hochlastzeiten sind ausschließlich an Werktagen gültig. Wochenenden, Feiertage sowie die Zeiten zwischen
+Weihnachten und Neujahr gelten als Nebenzeiten. Brückentage werden wie Werktage berücksichtigt.
+Es gelten die Feiertagsprofile (VDEW).
+
+
+Weitere Voraussetzungen:
+"Leitfaden zur Genehmigung individueller Netzentgeltvereinbarung nach
+§ 19 Abs. 2 S. 1 StromNEV und von Befreiung von Netzentgelten nach
+§ 19 Abs. 2 S. 2 StromNEV (Stand Dezember 2012)"                                           Quelle: BNetzA
+
+
+
+Erheblichkeitsschwelle - Auszug aus dem Leitfaden der BNetzA:
+
+"Um sicherzustellen, dass der Höchstlastbetrag des Letztverbrauchers vorhersehbar erheblich von der prognostizierten zeitgleichen
+Jahreshöchstlast der übrigen Entnahmen des Netzes abweichen wird, ist ein individuelles Entgelt nur dann anzubieten, wenn die
+voraussichtliche Höchstlast des betroffenen Letzverbrauchers innerhalb der Hochlastzeitfenster einen ausreichenden Abstand zur
+voraussichtlichen Jahreshöchstlast außerhalb der Hochlastzeitfenster aufweisen wird. Insoweit sind für die betreffenden Netzebenen
+prozentuale Mindestabstände (Erheblichkeitsschwellen) einzuhalten. Die jeweilige Erheblichkeitsschwelle ist prozentual anhand der
+Lastreduzierung zu bestimmen. Hierbei wird die Jahreshöchstlast des Netznutzers ins Verhältnis gesetzt zur höchsten Last im
+Hochlastzeitfenster des Netznutzers"
+
+      Netzebene                          Erheblichkeitsschwelle
+Mittelspannung                                       20%
+Umspannung (U Msp/Nsp)                               30%
+Niederspannung                                       30%
+
+"Darüber hinaus ist eine Mindestverlagerung von 100 kW in allen Netz- und Umspannebenen erforderlich."
+
+Bagatellgrenze - Auszug aus dem Leifaden der BNetzA:
+
+"Um zu verhindern, dass die mit der Bearbeitung des Antrags verbundenen Transaktionskosten der beteiligten Unternehmen die im Falle
+einer Genehmigung zu erzielenden Kostenreduktion übersteigen, ist ein Antrag auf Genehmigung eines individuellen Netzentgelts nach
+§ 19 Abs. 2 S. 1 StromNEV nur dann genehmigungsfähig, wenn die anhand der Prognose zu erwartende Entgeltreduzierung mindestens
+500,00 € beträgt."
+

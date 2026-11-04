@@ -1,0 +1,444 @@
+https://netze.mega-monheim.de/fileadmin/SW-MEGA/user_upload/Downloads/HLZF_2025.pdf
+
+Hochlastzeitfenster 2025
+
+
+
+
+auf Basis 2023/2024
+
+
+Nach §19 Abs.2 Satz 1 StromNEV sind Verteilnetzbetreiber zur Berechnung von
+Hochlastzeitfenstern je Spannungsebene und deren Veröffentlichung verpflichtet. Die
+Berechnung ist nach dem Beschluss der BK 4 der BNetzA (BK4-13-739A02) mit Wirkung ab
+dem 01.01.2017 erfolgt.
+Netzkunden mit atypischem Verbrauchsverhalten können nach § 19 Abs. 2 Satz 1 der
+Stromnetzzugangsverordnung ein Sonderentgelt für die Netznutzung beantragen.
+Atypisches Verbrauchsverhalten liegt vor, wenn die Zeitpunkte des maximalen
+Energiebezugs (Maximallast) eines Netzkunden außerhalb der vom Netzbetreiber
+veröffentlichen Hochlastzeitfenster (Zeitraum der maximalen Netzlast) liegen.
+Die Bereiche der Hochlastzeitfenster werden nach dem durch die Bundesnetzagentur
+veröffentlichten „Leitfaden zur Genehmigung individueller Netzentgeltvereinbarungen nach
+§19 Abs. 2 Satz 1 StromNEV und von Befreiungen von Netzentgelten nach § 19 Abs. 2 S.2
+StromNEV" ermittelt. Jeder Netzbetreiber ermittelt die für sein Netz geltenden individuellen
+Zeitfenster. Die Bereiche der Hochlastzeitfenster werden für die vier Jahreszeiten und für
+jede Netz- und Umspannebene bestimmt. Relevant ist jeweils die Netz- oder
+Umspannebene, aus welcher der Letztverbraucher elektrische Energie entnimmt.
+Auf Basis der Daten des Referenzzeitraums ergeben sich nach den Vorgaben des Leitfadens
+der Bundesnetzagentur zur Genehmigung individueller Netzentgeltvereinbarungen, die auf
+den nachfolgenden Seiten ausgewiesenen Hochlastzeitfenster für das Jahr 2025.
+Die Beantragung von reduzierten Entgelten hat nach den Vorschriften des o.g.
+Beschluss der BNetzA zu erfolgen.
+Hieraus ergeben sich alle Voraussetzungen, die erfüllt sein müssen, um ein reduziertes
+Entgelt nach §19 Abs. 2 Satz 1 StromNEV zu erhalten. Unter anderem ist eine Voraussetzung
+zur Beantragung von reduzierten Netzentgelten nach §19 Abs.2 Satz 1 StromNEV eine vom
+Netznutzer und Verteilnetzbetreiber unterzeichnete Vereinbarung zu dieser Regelung.
+Innerhalb der von der MEGA Monheim GmbH versendeten Lastgangdaten wird jeder
+Viertelstundenwert mit einem Zeitstempel versehen. Der Zeitstempel kennzeichnet das
+Ende der jeweiligen Messperiode.
+
+
+Beispiele:
+
+
+Zeitstempel 01.01.20XX 00:15 entspricht dem Messwert von 00:00 bis 00:15
+Zeitstempel 12.03.20XX 16:15 entspricht dem Messwert von 16:00 bis 16:15
+Ergebnis HLZF-Berechnung
+Netzbetreiber:                                        Monheimer Elektrizitäts- und Gasversorgung GmbH
+Jahr:                                                 2025
+
+Zusammenfassung
+Spannungsebene       Frühling              Sommer                Herbst                Winter
+HöS/HS               –                     –                     –                     –
+HS                   –                     –                     –                     –
+HS/MS                –                     –                     –                     –
+MS                   –                     –                     08:15 – 08:30         –
+                                                                 08:45 – 09:15
+                                                                 10:15 – 11:45
+                                                                 13:15 – 13:30
+                                                                   2,50 Stunden
+MS/NS                –                     –                     13:00 – 14:15         –
+                                                                   1,25 Stunden
+NS                   –                     –                     –                     17:15 – 20:00
+                                                                                        2,75 Stunden
+
+Bei den Zeiten ist jeweils das Ende des entsprechenden ¼-h-Intervalls angegeben (z.B. ein HLFZ von
+08:00-11:30 entspricht den Messwerten mit den Zeitstempeln von 08:15 bis 11:30).
+               MS
+
+
+2600 kW
+               Frühling                                                       HLZF         5% Abschlag
+
+
+2000 kW
+
+
+
+
+1400 kW
+
+
+
+
+800 kW
+   00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+           Ermittelte HLZF                                    -
+           HLZF Gesamtzeit                                    -
+           Hinweise                                           -
+                MS
+
+
+2600 kW
+                Sommer                                                       HLZF         5% Abschlag
+2400 kW
+
+
+2200 kW
+
+
+2000 kW
+
+
+1800 kW
+
+
+1600 kW
+
+
+1400 kW
+
+
+1200 kW
+    00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+            Ermittelte HLZF                                  -
+            HLZF Gesamtzeit                                  -
+            Hinweise                                         -
+               MS
+
+
+2700 kW
+               Herbst                                                                 HLZF            5% Abschlag
+
+
+2100 kW
+
+
+
+
+1500 kW
+
+
+
+
+900 kW
+   00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+           Ermittelte HLZF                                  08:15 - 08:30
+                                                            08:45 - 09:15
+                                                            10:15 - 11:45
+                                                            13:15 - 13:30
+           HLZF Gesamtzeit                                  2,50 Stunden
+           Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                            ausdehnen.
+               MS
+
+
+2600 kW
+               Winter                                                       HLZF         5% Abschlag
+
+2260 kW
+
+
+
+
+1920 kW
+
+
+
+
+1580 kW
+
+
+
+
+1240 kW
+
+
+
+
+900 kW
+   00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+           Ermittelte HLZF                                  -
+           HLZF Gesamtzeit                                  -
+           Hinweise                                         -
+              MS/NS
+
+
+200 kW
+              Frühling                                                       HLZF         5% Abschlag
+
+160 kW
+
+
+
+
+120 kW
+
+
+
+
+80 kW
+
+
+
+
+40 kW
+
+
+
+
+ 0 kW
+  00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+          Ermittelte HLZF                                    -
+          HLZF Gesamtzeit                                    -
+          Hinweise                                           -
+              MS/NS
+
+
+200 kW
+              Sommer                                                       HLZF         5% Abschlag
+
+160 kW
+
+
+
+
+120 kW
+
+
+
+
+80 kW
+
+
+
+
+40 kW
+
+
+
+
+ 0 kW
+  00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+          Ermittelte HLZF                                  -
+          HLZF Gesamtzeit                                  -
+          Hinweise                                         -
+              MS/NS
+
+
+200 kW
+              Herbst                                                                 HLZF            5% Abschlag
+
+160 kW
+
+
+
+
+120 kW
+
+
+
+
+80 kW
+
+
+
+
+40 kW
+
+
+
+
+ 0 kW
+  00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+          Ermittelte HLZF                                  13:00 - 14:15
+          HLZF Gesamtzeit                                  1,25 Stunden
+          Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                           ausdehnen.
+              MS/NS
+
+
+200 kW
+              Winter                                                       HLZF         5% Abschlag
+
+160 kW
+
+
+
+
+120 kW
+
+
+
+
+80 kW
+
+
+
+
+40 kW
+
+
+
+
+ 0 kW
+  00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+          Ermittelte HLZF                                  -
+          HLZF Gesamtzeit                                  -
+          Hinweise                                         -
+                NS
+
+
+13700 kW
+                Frühling                                                       HLZF         5% Abschlag
+
+12040 kW
+
+
+
+
+10380 kW
+
+
+
+
+8720 kW
+
+
+
+
+7060 kW
+
+
+
+
+5400 kW
+    00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+            Ermittelte HLZF                                    -
+            HLZF Gesamtzeit                                    -
+            Hinweise                                           -
+                NS
+
+
+13700 kW
+                Sommer                                                       HLZF         5% Abschlag
+
+
+10600 kW
+
+
+
+
+7500 kW
+
+
+
+
+4400 kW
+    00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+            Ermittelte HLZF                                  -
+            HLZF Gesamtzeit                                  -
+            Hinweise                                         -
+                NS
+
+
+13700 kW
+                Herbst                                                       HLZF         5% Abschlag
+
+12040 kW
+
+
+
+
+10380 kW
+
+
+
+
+8720 kW
+
+
+
+
+7060 kW
+
+
+
+
+5400 kW
+    00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+            Ermittelte HLZF                                  -
+            HLZF Gesamtzeit                                  -
+            Hinweise                                         -
+                                                   NS
+
+
+                               14400 kW
+                                                   Winter                                                                 HLZF            5% Abschlag
+
+                               12680 kW
+
+
+
+
+                               10960 kW
+
+
+
+
+                                   9240 kW
+
+
+
+
+                                   7520 kW
+
+
+
+
+                                   5800 kW
+                                       00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+                                               Ermittelte HLZF                                  17:15 - 20:00
+                                               HLZF Gesamtzeit                                  2,75 Stunden
+                                               Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                                                                ausdehnen.
+
+
+
+
+Powered by TCPDF (www.tcpdf.org)
+
