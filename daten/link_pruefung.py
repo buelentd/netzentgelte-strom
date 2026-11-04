@@ -46,9 +46,11 @@ MARK = re.compile(r"leistungspreis|arbeitspreis|grundpreis|jahresleistungspreis|
 
 def werte(pfad, url):
     e = auswerten(pfad, url, 2026)
-    ns = e.ns or {}; slp = e.slp or {}
-    if not (ns or slp): return ["", "", "", "", "", "", ""]
-    return [ns.get("lp_ueber_2500", ""), ns.get("ap_ueber_2500", ""), ns.get("lp_unter_2500", ""), slp.get("ap", ""), slp.get("gp", ""), f"{e.preisstand} {e.stand_datum or ''}".strip(), url]
+    ns = e.ns or {}; ms = e.msns or {}; slp = e.slp or {}
+    if not (ns or slp or ms): return [""] * 14
+    return [ns.get("lp_ueber_2500", ""), ns.get("ap_ueber_2500", ""), ns.get("lp_unter_2500", ""), ns.get("ap_unter_2500", ""),
+            ms.get("lp_unter_2500", ""), ms.get("ap_unter_2500", ""), ms.get("lp_ueber_2500", ""), ms.get("ap_ueber_2500", ""),
+            slp.get("ap", ""), slp.get("gp", ""), f"{e.preisstand} {e.stand_datum or ''}".strip(), "ja" if e.grenze_le else "", url]
 
 
 def pruefe(z, jahr, url, art):
@@ -91,7 +93,7 @@ def pruefe(z, jahr, url, art):
         typ = "HTML"
     else:
         typ = ct or "unbekannt"
-    wert = ["", "", "", "", "", "", ""]
+    wert = [""] * 13
     try:
         if typ == "PDF":
             with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
@@ -110,7 +112,7 @@ def pruefe(z, jahr, url, art):
                         f.write(r2.content); f.flush(); w2 = werte(Path(f.name), k2)
                     if w2[0]: wert = w2; break
     except Exception as e:
-        wert = ["", "", "", "", "", "", f"Fehler beim Auslesen: {type(e).__name__}"]
+        wert = [""] * 12 + [f"Fehler beim Auslesen: {type(e).__name__}"]
     kopf = text[:3000]
     jahre = sorted(set(re.findall(r"(?<!\d)(202[5-8])(?!\d)", kopf)))
     k = kern(z["netzbetreiber_liste"])
@@ -129,7 +131,7 @@ def main():
                 jobs.append((z, jahr, q, a))
     print(len(jobs), "Links", flush=True)
     kopf = ["nr", "netzbetreiber", "jahr", "link", "art_laut_liste", "http", "inhaltstyp", "bytes", "typ_erkannt", "jahre_im_kopf",
-            "name_im_text", "preiswoerter", "dezimalzahlen", "fiktiv", "preisstand_im_kopf", "pdf_links_auf_der_seite", "ns_lp_ab_2500h", "ns_ap_ab_2500h", "ns_lp_unter_2500h", "slp_ap", "slp_grundpreis", "preisstand_datum", "werte_gefunden_in"]
+            "name_im_text", "preiswoerter", "dezimalzahlen", "fiktiv", "preisstand_im_kopf", "pdf_links_auf_der_seite", "ns_lp_ab_2500h", "ns_ap_ab_2500h", "ns_lp_unter_2500h", "ns_ap_unter_2500h", "msns_lp_unter_2500h", "msns_ap_unter_2500h", "msns_lp_ab_2500h", "msns_ap_ab_2500h", "slp_ap", "slp_grundpreis", "preisstand_datum", "grenze_le", "werte_gefunden_in"]
     with ThreadPoolExecutor(8) as ex:
         res = list(ex.map(lambda j: pruefe(*j), jobs))
     for r in res:
