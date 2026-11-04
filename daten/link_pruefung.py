@@ -122,7 +122,30 @@ def pruefe(z, jahr, url, art):
                     pdfs] + wert
 
 
+def texte_sichern():
+    """lauf/link_text.liste (eine URL je Zeile): den vollständigen Text (pdftotext -layout) je Link nach ergebnis/link_text/ schreiben,
+    damit ich sehe, wie ein Preisblatt aufgebaut ist, wenn die Auswertung nichts findet."""
+    liste = W / "lauf" / "link_text.liste"
+    if not liste.exists(): return
+    out = W / "ergebnis" / "link_text"; out.mkdir(exist_ok=True)
+    for i, url in enumerate(x.strip() for x in liste.read_text().splitlines() if x.strip().startswith("http")):
+        try:
+            if not robots_ok(url): continue
+            warten(urlparse(url).netloc)
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+            if r.content[:4] == b"%PDF":
+                with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+                    f.write(r.content); f.flush()
+                    t = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, timeout=120).stdout.decode("utf-8", "replace")
+            else:
+                t = r.text[:200000]
+            (out / f"{i:02d}.txt").write_text(f"{url}\n\n{t[:120000]}", encoding="utf-8")
+        except Exception as e:
+            (out / f"{i:02d}.txt").write_text(f"{url}\nFehler {type(e).__name__}", encoding="utf-8")
+
+
 def main():
+    texte_sichern()
     g = list(csv.DictReader(open(W / "ergebnis" / "quellen_164_geprueft.csv", encoding="utf-8-sig"), delimiter=";"))
     jobs = []
     for z in g:
