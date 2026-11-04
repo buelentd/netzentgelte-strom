@@ -30,3 +30,17 @@ def test_manuelle_preise_machen_ok(tmp_path):
     z = {d["nr"]: d for d in sp.zeilen()}
     assert z[5]["status"] == "ok" and z[5]["ns"]["lp_ueber_2500"] == 118.4 and z[5]["slp"]["gp"] == 45.0
     assert z[6]["status"] == "pruefen" and "SLP-Arbeitspreis" in z[6]["hinweis"]
+
+
+def test_status_v2_verlangt_alle_ebenen(tmp_path):
+    (tmp_path / "ergebnis").mkdir()
+    sp = Speicher(tmp_path / "ergebnis")
+    w = {"lp_unter_2500": 10, "ap_unter_2500": 6, "lp_ueber_2500": 100, "ap_ueber_2500": 2}
+    voll = {"key": "a", "nr": 1, "status": "ok", "v2": True, "ns": w, "msns": w, "ms": w, "slp": {"ap": 7, "gp": 50}}
+    ohne_ms = {"key": "b", "nr": 2, "status": "ok", "v2": True, "ns": w, "msns": w, "ms": {}, "slp": {"ap": 7, "gp": 50}}
+    gross = dict(voll, key="c", nr=3, hs_erwaehnt=True)
+    sp.daten = {d["key"]: d for d in (voll, ohne_ms, gross)}
+    z = {d["nr"]: d for d in sp.zeilen()}
+    assert z[1]["status"] == "ok" and z[1]["hsms_status"] == "nicht ausgewiesen"
+    assert z[2]["status"] == "pruefen" and "Mittelspannung" in z[2]["hinweis"]
+    assert z[3]["status"] == "pruefen" and z[3]["hsms_status"] == "fehlt"

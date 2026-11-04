@@ -9,7 +9,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from .extract import FELDER, auswerten, jahr_pruefen, name_im_text, norm, plausibel, plausibel_slp
+from .extract import FELDER, auswerten, jahr_pruefen, name_im_text, norm, plausibel, plausibel_reihenfolge, plausibel_slp
 
 PREISSTAND_RANG = {"endgültig": 2, "unklar": 1, "vorläufig": 0}
 
@@ -21,6 +21,9 @@ class Kandidat:
     verwendbar: bool = False                      # RLM-NS-Werte vollständig gelesen
     ns: dict = field(default_factory=dict)
     msns: dict = field(default_factory=dict)
+    ms: dict = field(default_factory=dict)        # Mittelspannung
+    hsms: dict = field(default_factory=dict)      # Umspannung HS/MS
+    hs_erwaehnt: bool = False                     # Dokument nennt Hochspannung / HS/MS (dann ist HS/MS erwartet)
     slp: dict = field(default_factory=dict)       # "ap" ct/kWh, "gp" €/a
     preisstand: str = "unklar"
     stand_datum: str = ""
@@ -94,6 +97,19 @@ def bewerten(pfad: Path, url: str, name: str, aliase=(), website: str = "", jahr
 
     k.preisstand, k.stand_datum, k.grenze_le = erg.preisstand, erg.stand_datum, erg.grenze_le
     k.name_fehlt = not name_im_text(name, erg.text, aliase, website)
+    k.hs_erwaehnt = bool(re.search(r"hochspannung|hs/ms|hsp/msp|umspannung\s*hs", erg.text, re.I))
+    k.ms = dict(erg.ms) if len(erg.ms) == 4 else {}
+    k.hsms = dict(erg.hsms) if len(erg.hsms) == 4 else {}
+    for eb, w in (("Mittelspannung", k.ms), ("HS/MS", k.hsms)):
+        bad = plausibel(w, eb) if w else []
+        bad = [g for g in bad if "außerhalb 40–260" not in g]     # die NS-Grenze gilt nur für Niederspannung
+        if bad:
+            k.hinweise.append(f"{eb} weggelassen: {bad[0]}")
+            w.clear()
+    reihenfolge = plausibel_reihenfolge(k.ms, erg.msns if len(erg.msns) == 4 else {}, erg.ns if len(erg.ns) == 4 else {}) if k.ms else []
+    if reihenfolge:
+        k.hinweise.append(f"Mittelspannung weggelassen: {reihenfolge[0]}")
+        k.ms = {}
 
     if erg.ns_vollstaendig:
         k.verwendbar = True

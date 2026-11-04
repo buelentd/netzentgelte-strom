@@ -17,7 +17,10 @@ RLM_NAMEN = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ueber_25
              "ap_ueber_2500h_ct_kwh")
 SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region", "netztyp", "status",
             "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"]
-           + [f"ns_{n}" for n in RLM_NAMEN] + [f"msns_{n}" for n in RLM_NAMEN]
+           + [f"ms_{n}" for n in RLM_NAMEN] + [f"msns_{n}" for n in RLM_NAMEN]
+           + [f"ns_{n}" for n in RLM_NAMEN] + [f"hsms_{n}" for n in RLM_NAMEN]
+           + ["hsms_status", "grenze_2500h"]
+           + [f"ms_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN] + ["msns_ct_kwh_bei_4000h"]
            + [f"ns_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN]
            + ["preisstand", "stand_datum", "hinweis", "quelle_url"])
 REST_SPALTEN = ["nr", "netzbetreiber", "mastr_nr", "website", "status", "grund", "kandidaten", "quelle_url"]
@@ -119,7 +122,30 @@ class Speicher:
         if self.ordner.name != "ergebnis":      # Recherche und manuelle Preise gelten nur für 2026
             return sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"]))
         man = self._manuell()
-        return [self._mit_manuell(d, man) for d in self._zeilen_recherche()]
+        return [self._status_v2(self._mit_manuell(d, man)) for d in self._zeilen_recherche()]
+
+    @staticmethod
+    def _status_v2(d: dict) -> dict:
+        """Zielbild (Festlegung Nutzer 04.11.2026): ok nur mit Mittelspannung, MS/NS, Niederspannung und SLP.
+        HS/MS: gelesen, 'nicht ausgewiesen' (Dokument nennt keine Hochspannung) oder 'fehlt' (erwartet, aber nicht gelesen)."""
+        if not d.get("v2") or d.get("status") not in ("ok", "pruefen"):
+            return d
+        d = dict(d)
+        fehlt = []
+        if len(d.get("ns") or {}) < 4: fehlt.append("Niederspannung")
+        if len(d.get("msns") or {}) < 4: fehlt.append("MS/NS")
+        if len(d.get("ms") or {}) < 4: fehlt.append("Mittelspannung")
+        slp = d.get("slp") or {}
+        if slp.get("ap") is None or slp.get("gp") is None: fehlt.append("SLP")
+        if len(d.get("hsms") or {}) == 4: d["hsms_status"] = "gelesen"
+        elif d.get("hs_erwaehnt"):
+            d["hsms_status"] = "fehlt"; fehlt.append("HS/MS")
+        else: d["hsms_status"] = "nicht ausgewiesen"
+        if fehlt and d["status"] == "ok":
+            d["status"] = "pruefen"
+            alt = d.get("hinweis", "")
+            d["hinweis"] = "Fehlt: " + ", ".join(fehlt) + (f"; {alt}" if alt else "")
+        return d
 
     def _mit_manuell(self, d: dict, man: dict) -> dict:
         m = man.get(str(d.get("nr")))
@@ -162,14 +188,22 @@ class Speicher:
     @staticmethod
     def zeile(d: dict) -> list:
         ns, msns, slp = d.get("ns") or {}, d.get("msns") or {}, d.get("slp") or {}
-        ct = [ct_kwh_bei(ns, h, d.get("grenze_le", False)) if d.get("rlm_ok") else None for h in TYPISCHE_STUNDEN]
+        ms, hsms = d.get("ms") or {}, d.get("hsms") or {}
+        g = d.get("grenze_le", False)
+        ct_ns = [ct_kwh_bei(ns, h, g) if d.get("rlm_ok") else None for h in TYPISCHE_STUNDEN]
+        ct_ms = [ct_kwh_bei(ms, h, g) if len(ms) == 4 else None for h in TYPISCHE_STUNDEN]
+        ct_mn = ct_kwh_bei(msns, 4000, g) if len(msns) == 4 else None
         hinweis = d.get("hinweis", "")
         return [d.get("nr", ""), d.get("netzbetreiber", ""), d.get("mastr_nr", ""), d.get("website", ""),
                 d.get("bundesland", ""), d.get("region", ""), d.get("netztyp", ""), d.get("status", ""),
                 zahl(slp.get("ap")), zahl(slp.get("gp")),
-                *[zahl(ns.get(k)) for k in RLM], *[zahl(msns.get(k)) for k in RLM],
-                *[zahl(round(c, 2)) if c is not None else "" for c in ct],
-                d.get("preisstand", "") if (ns or slp) else "", d.get("stand_datum", ""), hinweis,
+                *[zahl(ms.get(k)) for k in RLM], *[zahl(msns.get(k)) for k in RLM],
+                *[zahl(ns.get(k)) for k in RLM], *[zahl(hsms.get(k)) for k in RLM],
+                d.get("hsms_status", ""), ("≤ / >" if g else "< / ≥") if (ns or ms or msns) else "",
+                *[zahl(round(c, 2)) if c is not None else "" for c in ct_ms],
+                zahl(round(ct_mn, 2)) if ct_mn is not None else "",
+                *[zahl(round(c, 2)) if c is not None else "" for c in ct_ns],
+                d.get("preisstand", "") if (ns or slp or ms) else "", d.get("stand_datum", ""), hinweis,
                 d.get("quelle_url", "")]
 
     @staticmethod

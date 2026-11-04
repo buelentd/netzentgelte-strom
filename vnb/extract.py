@@ -1337,6 +1337,21 @@ def plausibel(werte: dict, ebene_name: str = "NS") -> list[str]:
     return g
 
 
+def plausibel_reihenfolge(ms: dict, msns: dict, ns: dict) -> list[str]:
+    """Gesamtkosten in ct/kWh bei 4.000 Stunden: Mittelspannung <= MS/NS <= Niederspannung (Leistungspreise allein dürfen anders liegen)."""
+    def c(d):
+        return d["ap_ueber_2500"] + d["lp_ueber_2500"] * 100 / 4000 if d and len(d) == 4 else None
+    a, b, n = c(ms), c(msns), c(ns)
+    g = []
+    if a is not None and b is not None and a > b * 1.05:
+        g.append(f"MS ({a:.2f} ct/kWh bei 4.000 h) teurer als MS/NS ({b:.2f})")
+    if a is not None and n is not None and a > n * 1.05:
+        g.append(f"MS ({a:.2f} ct/kWh bei 4.000 h) teurer als NS ({n:.2f})")
+    if b is not None and n is not None and b > n * 1.25:
+        g.append(f"MS/NS ({b:.2f} ct/kWh bei 4.000 h) deutlich teurer als NS ({n:.2f})")
+    return g
+
+
 def plausibel_slp(slp: dict) -> list[str]:
     g = []
     ap, gp = slp.get("ap"), slp.get("gp")

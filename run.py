@@ -125,7 +125,7 @@ def basis_satz(e: dict) -> dict:
             "mastr_nr": e.get("mastr_nr", ""), "website": e.get("website", ""),
             "bundesland": e.get("bundesland", ""), "region": e.get("region", ""), "netztyp": e.get("netztyp", ""),
             "gebiet_quelle": e.get("gebiet_quelle", ""), "status": "",
-            "ns": {}, "msns": {}, "slp": {}, "rlm_ok": False, "slp_ok": False, "grenze_le": False,
+            "ns": {}, "msns": {}, "ms": {}, "hsms": {}, "hs_erwaehnt": False, "v2": False, "slp": {}, "rlm_ok": False, "slp_ok": False, "grenze_le": False,
             "preisstand": "", "stand_datum": "", "hinweis": "", "quelle_url": "",
             "grund": "", "kandidaten": [], "datei": ""}
 
@@ -142,6 +142,7 @@ def datei_ablegen(k, satz: dict, out: Path, zusatz: str = ""):
 def rlm_setzen(satz: dict, k, hinweise: list, out: Path):
     msns_ok = not plausibel(k.msns, "MS/NS")
     satz["ns"], satz["msns"] = k.ns, (k.msns if msns_ok else {})
+    satz["ms"], satz["hsms"], satz["hs_erwaehnt"], satz["v2"] = k.ms, k.hsms, k.hs_erwaehnt, True
     if k.msns and not msns_ok:
         hinweise.append("MS/NS-Werte unplausibel, nicht übernommen")
     satz["preisstand"], satz["stand_datum"], satz["grenze_le"] = k.preisstand, k.stand_datum, k.grenze_le
@@ -378,7 +379,8 @@ async def schritt_lauf(args, log):
                 vorher = speicher.daten.get(key_von(e), {})
                 schlechter = vorher and ((vorher.get("rlm_ok") and not satz.get("rlm_ok"))
                                          or (vorher.get("slp_ok") and not satz.get("slp_ok")))
-                if (args.offline or args.nur_hinweise) and (satz["status"] not in ("ok", "pruefen") or schlechter):
+                verloren = vorher.get("status") in ("ok", "pruefen") and satz["status"] not in ("ok", "pruefen")
+                if ((args.offline or args.nur_hinweise) and (satz["status"] not in ("ok", "pruefen") or schlechter)) or schlechter or verloren:
                     log(f"[{e['nr']}] -> {satz['status']} (bisheriges Ergebnis bleibt)")
                     return                     # nur Verbesserungen übernehmen, nie einen nutzbaren Teil verlieren
                 speicher.speichern(satz)

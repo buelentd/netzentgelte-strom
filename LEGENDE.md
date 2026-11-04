@@ -106,3 +106,9 @@ Plausibilitätsregeln: NS LP ab 2.500 h 40–260 €/kW/a, LP unter < LP ab, AP 
 **Preisstand 2026:** „vorläufig“ und „unklar“ gelten bei einem gelesenen 2026-Blatt als endgültig (Festlegung 04.11.2026); leer bleibt er, wenn nichts gelesen wurde.
 
 **Status pruefen bei vorhandener Quelle:** Hat ein Netzbetreiber einen von Hand recherchierten Link (`lauf/quellen_recherche.csv`), steht nie `kein_preisblatt`, sondern `pruefen` mit Hinweis „Quelle aus Recherche vorhanden, noch nicht ausgelesen“. `kein_preisblatt` heißt nur: weder wir noch die Recherche haben eine Quelle.
+
+## Ebenen und Status (Festlegung 04.11.2026)
+
+Spalten je Ebene `ms_`, `msns_`, `ns_`, `hsms_`: Leistungspreis und Arbeitspreis unter und ab 2.500 Stunden (€/kW im Jahr, ct/kWh). `hsms_status`: `gelesen`, `nicht ausgewiesen` (Preisblatt nennt keine Hochspannung) oder `fehlt` (Preisblatt nennt Hochspannung, Werte nicht gelesen). `grenze_2500h`: `< / ≥` oder `≤ / >`.
+**ok** nur mit Mittelspannung, MS/NS, Niederspannung und SLP (Datensätze ab Version 2); fehlt eines, steht `pruefen` mit „Fehlt: …“ im Hinweis.
+Plausibilität der Ebenen: ct/kWh bei 4.000 Stunden muss MS ≤ MS/NS ≤ NS sein.
