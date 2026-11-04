@@ -184,6 +184,11 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
+      - name: SLP-Diagnose auf den frisch geladenen Dokumenten (nur wenn lauf/slp_diagnose.liste existiert)
+        if: ${{ always() && hashFiles('lauf/slp_diagnose.liste') != '' }}
+        continue-on-error: true
+        run: python daten/slp_diagnose.py
+
       - name: Ergebnisse committen
         if: always()
         run: |
@@ -191,8 +196,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_erledigt.csv ergebnis/zusammenfassung.md \
                    ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
-                   ergebnis/fortschritt.jsonl; do
-            [ -f "$f" ] && git add "$f"
+                   ergebnis/fortschritt.jsonl ergebnis/slp_diagnose.csv ergebnis/slp_diagnose; do
+            [ -e "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
           git commit -m "Netzentgelte ${{ steps.p.outputs.jahr }}: Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"

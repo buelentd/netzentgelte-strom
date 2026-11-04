@@ -11,8 +11,11 @@ SLP = re.compile(r"standardlast|ohne\s+leistungsmessung|nicht\s+leistungsgemesse
 
 
 def main():
+    liste = W / "lauf" / "slp_diagnose.liste"      # Nummern, durch Komma getrennt; sonst Filter
+    nrs = set(liste.read_text().strip().split(",")) if liste.exists() and liste.read_text().strip() else None
     z = [r for r in csv.DictReader(open(W / "ergebnis" / "netzentgelte_2026.csv", encoding="utf-8"), delimiter=";")
-         if r["status"] == "pruefen" and r["ns_lp_ueber_2500h_eur_kw_jahr"] and not r["slp_ap_ct_kwh"]]
+         if (r["nr"] in nrs if nrs else r["status"] == "pruefen" and r["ns_lp_ueber_2500h_eur_kw_jahr"] and not r["slp_ap_ct_kwh"])]
+    (W / "ergebnis" / "slp_diagnose").mkdir(exist_ok=True)
     key = {}
     for l in open(W / "ergebnis" / "fortschritt.jsonl", encoding="utf-8"):
         try:
@@ -39,7 +42,12 @@ def main():
             except Exception as ex:
                 aus.writerow([r["nr"], r["netzbetreiber"], url, f"nicht lesbar: {type(ex).__name__}"] + [""] * 8)
                 continue
-            zeilen = [re.sub(r"\s+", " ", t).strip()[:110] for t in e.text.splitlines() if SLP.search(t)]
+            alle = e.text.splitlines()
+            zeilen = [re.sub(r"\s+", " ", t).strip()[:110] for t in alle if SLP.search(t)]
+            treffer = [i for i, t in enumerate(alle) if SLP.search(t)]
+            keep = sorted({j for i in treffer for j in range(max(0, i - 2), min(len(alle), i + 3))})[:80]
+            with open(W / "ergebnis" / "slp_diagnose" / f"{r['nr']}.txt", "a", encoding="utf-8") as f:
+                f.write(f"### {r['netzbetreiber']} | {url}\n" + "\n".join(re.sub(r"\s+", " ", alle[j]).strip()[:140] for j in keep) + "\n\n")
             slp = e.slp or {}
             aus.writerow([r["nr"], r["netzbetreiber"], url, sorted(e.kopf_jahre), sorted(e.jahre), sorted(e.gueltig_jahre),
                           e.preisstand, slp.get("ap", ""), slp.get("gp", ""), (e.ns or {}).get("lp_ueber_2500", ""),
