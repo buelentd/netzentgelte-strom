@@ -23,9 +23,9 @@ def test_manuelle_preise_machen_ok(tmp_path):
     (tmp_path / "lauf" / "preise_manuell.csv").write_text(
         "nr;preisstand;stand_datum;ms_lp_unter_2500h_eur_kw_jahr;ms_ap_unter_2500h_ct_kwh;ms_lp_ab_2500h_eur_kw_jahr;ms_ap_ab_2500h_ct_kwh;"
         "msns_lp_unter_2500h_eur_kw_jahr;msns_ap_unter_2500h_ct_kwh;msns_lp_ab_2500h_eur_kw_jahr;msns_ap_ab_2500h_ct_kwh;"
-        "ns_lp_unter_2500h_eur_kw_jahr;ns_ap_unter_2500h_ct_kwh;ns_lp_ab_2500h_eur_kw_jahr;ns_ap_ab_2500h_ct_kwh;slp_ap;slp_gp;quelle_url\n"
-        "5;endgültig;01.01.2026;12;4,5;150;0,9;15;5,2;130;1,4;21,5;6,1;118,4;2,35;7,3;45;https://x.de\n"
-        "6;endgültig;01.01.2026;12;4,5;150;0,9;15;5,2;130;1,4;21,5;6,1;118,4;2,35;70;45;https://x.de\n", encoding="utf-8")
+        "ns_lp_unter_2500h_eur_kw_jahr;ns_ap_unter_2500h_ct_kwh;ns_lp_ab_2500h_eur_kw_jahr;ns_ap_ab_2500h_ct_kwh;slp_ap;slp_gp;quelle_url;geprueft\n"
+        "5;endgültig;01.01.2026;12;4,5;150;0,9;15;5,2;130;1,4;21,5;6,1;118,4;2,35;7,3;45;https://x.de;ja\n"
+        "6;endgültig;01.01.2026;12;4,5;150;0,9;15;5,2;130;1,4;21,5;6,1;118,4;2,35;70;45;https://x.de;ja\n", encoding="utf-8")
     sp = Speicher(tmp_path / "ergebnis")
     sp.daten = {"k1": {"key": "k1", "nr": 5, "status": "kein_preisblatt", "netzbetreiber": "A"},
                 "k2": {"key": "k2", "nr": 6, "status": "robots", "netzbetreiber": "B"}}

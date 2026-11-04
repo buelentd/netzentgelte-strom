@@ -114,7 +114,8 @@ class Speicher:
                 m = {"ebenen": {}, "slp": {"ap": f(z.get("slp_ap_ct_kwh") or z.get("slp_ap")), "gp": f(z.get("slp_grundpreis_eur_jahr") or z.get("slp_gp"))},
                      "preisstand": (z.get("preisstand") or "").strip(), "stand_datum": (z.get("stand_datum") or "").strip(),
                      "le": (z.get("grenze") or z.get("grenze_2500h") or "").strip() in ("<=", "≤", "≤ / >", ">", "le"),
-                     "url": (z.get("quelle_url") or "").strip(), "hinweis": (z.get("hinweis") or "").strip()}
+                     "url": (z.get("quelle_url") or "").strip(), "hinweis": (z.get("hinweis") or "").strip(),
+                     "geprueft": (z.get("geprueft") or "").strip().lower() == "ja"}
                 for eb in ("ms", "msns", "ns", "hsms"):
                     w = {k: f(z.get(f"{eb}_{n}_{'eur_kw_jahr' if k.startswith('lp') else 'ct_kwh'}")) for k, n in namen}
                     if all(v is not None for v in w.values()):
@@ -178,6 +179,8 @@ class Speicher:
         if m["preisstand"]: d["preisstand"] = m["preisstand"]
         if m["stand_datum"]: d["stand_datum"] = m["stand_datum"]
         if m["le"]: d["grenze_le"] = True
+        if not m["geprueft"]:                 # eingetragene Werte gelten erst als ok, wenn sie gegen das Dokument geprüft sind
+            grund.append("noch nicht gegen das Dokument geprüft")
         d["status"] = "ok" if not grund else "pruefen"
         d["hinweis"] = "Werte aus Liste des Nutzers" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
         return d
