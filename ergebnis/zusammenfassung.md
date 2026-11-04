@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 16:18, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 17:06, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
