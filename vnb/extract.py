@@ -562,7 +562,7 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
                 erg.slp_unklar = [u for u in erg.slp_unklar if not u.startswith(praefix)]
             else:
                 erg.unklar = [u for u in erg.unklar if not u.startswith(praefix)]
-        elif werte:
+        elif werte and eb not in ("MS", "HSMS"):      # MS/HS-Lücken machen den Fall nicht unsicher
             ziel_gruende = [g for g in gruende if (eb == "SLP") == g.startswith("1-02")]
             (erg.slp_unklar if eb == "SLP" else erg.unklar).extend(
                 f"{eb} Artikel-ID: {g}" for g in ziel_gruende[:3])
