@@ -19,16 +19,20 @@ O = [dict(zip(SPALTEN, Speicher.zeile(d))) for d in Speicher(W / "ergebnis").dat
 O = [{k: ("" if v is None else str(v)) for k, v in o.items()} for o in O]
 idx = collections.defaultdict(list)
 for o in O: idx[n(o["netzbetreiber"])].append(o)
-H = ["nr", "netzbetreiber", "preisstand", "stand_datum", *[f"{e}_{k}" for e in ("ms", "msns", "ns", "hsms") for k in K], "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "grenze_2500h", "quelle_url", "hinweis"]
+H = ["nr", "netzbetreiber", "preisstand", "stand_datum", "geprueft", *[f"{e}_{k}" for e in ("ms", "msns", "ns", "hsms") for k in K], "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "grenze_2500h", "quelle_url", "hinweis"]
 aus, abw, c = [], [], collections.Counter()
 for r in U:
     m = idx.get(n(r["netzbetreiber"]))
     if not m or len(m) > 1: c["nicht eindeutig zugeordnet"] += 1; continue
     o = m[0]; row = dict.fromkeys(H, ""); row.update(nr=o["nr"], netzbetreiber=o["netzbetreiber"], stand_datum=r["stand_datum"], quelle_url=r["quelle_url"], hinweis="Quelle: Liste des Nutzers 04.11.2026")
-    neu = 0
+    neu = 0; sauber = r.get("status", "") == "ok"           # Nutzerliste: ok = Werte im Quelltext gefunden
+    ctw = lambda v: (v[3] + v[2] * 100 / 4000) if v and None not in v else None
+    a_, b_, n_ = (ctw([f(r[f"{e}_{k}"]) for k in K]) for e in ("ms", "msns", "ns"))
+    if (a_ and b_ and a_ > b_ * 1.05) or (a_ and n_ and a_ > n_ * 1.05): sauber = False      # Kostenreihenfolge verletzt
     for e in ("ms", "msns", "ns", "hsms"):
         u = [f(r[f"{e}_{k}"]) for k in K]; v = [f(o[f"{e}_{k}"]) for k in K]
         if None in u: continue
+        if all(abs(x - round(x)) < 0.001 for x in u): sauber = False                              # lauter glatte Zahlen: verdächtig
         if None in v:
             for k, x in zip(K, u): row[f"{e}_{k}"] = str(x).replace(".", ","); 
             neu += 1; c[f"{e} ergänzt"] += 1
@@ -37,6 +41,8 @@ for r in U:
     sa, sg = f(r["slp_ap_ct_kwh"]), f(r["slp_grundpreis_eur_jahr"])
     if sa is not None and sg is not None and not f(o["slp_ap_ct_kwh"]):
         row["slp_ap_ct_kwh"], row["slp_grundpreis_eur_jahr"] = str(sa).replace(".", ","), str(sg).replace(".", ","); neu += 1; c["SLP ergänzt"] += 1
+    row["geprueft"] = "ja" if (neu and sauber) else ""
+    if r.get("hinweis"): row["hinweis"] = row["hinweis"] + "; Liste: " + r["hinweis"][:120]
     if neu: aus.append([row[h] for h in H])
 csv.writer(open(W / "lauf" / "preise_manuell.csv", "w", encoding="utf-8", newline=""), delimiter=";").writerows([H] + aus)
 csv.writer(open(W / "ergebnis" / "abweichungen_nutzerliste.csv", "w", encoding="utf-8-sig", newline=""), delimiter=";").writerows([["nr", "netzbetreiber", "ebene", "unser_wert_lp_unter|ap_unter|lp_ab|ap_ab", "wert_nutzerliste", "quelle_url"]] + abw)
