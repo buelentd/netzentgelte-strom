@@ -13,7 +13,10 @@ def f(x):
     except ValueError: return None
 K = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
 U = list(csv.DictReader(open(sorted(glob.glob(str(W / "daten" / "format_neu_final_alle_nutzer_*.csv")))[-1], encoding="utf-8-sig"), delimiter=";"))
-O = list(csv.DictReader(open(W / "ergebnis" / "netzentgelte_2026.csv", encoding="utf-8"), delimiter=";"))
+import sys; sys.path.insert(0, str(W))
+from vnb.ergebnis import Speicher, SPALTEN                      # unsere gelesenen Werte ohne Überlagerung durch frühere Listen
+O = [dict(zip(SPALTEN, Speicher.zeile(d))) for d in Speicher(W / "ergebnis").daten.values()]
+O = [{k: ("" if v is None else str(v)) for k, v in o.items()} for o in O]
 idx = collections.defaultdict(list)
 for o in O: idx[n(o["netzbetreiber"])].append(o)
 H = ["nr", "netzbetreiber", "preisstand", "stand_datum", *[f"{e}_{k}" for e in ("ms", "msns", "ns", "hsms") for k in K], "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "grenze_2500h", "quelle_url", "hinweis"]
