@@ -20,8 +20,9 @@ def slp_parser(zeilen):
     for i, kopf in enumerate(zeilen):
         k = kopf.lower()
         if "grundpreis" not in k and "grundentgelt" not in k: continue
-        if "arbeitspreis" not in k and "arbeitsentgelt" not in k: continue
-        gp_zuerst = k.find("grund") < min(x for x in (k.find("arbeitsp"), k.find("arbeitse")) if x >= 0)
+        k3 = " ".join(zeilen[i:i + 3]).lower()
+        if "arbeitspreis" not in k3 and "arbeitsentgelt" not in k3: continue
+        gp_zuerst = k3.find("grund") < min(x for x in (k3.find("arbeitsp"), k3.find("arbeitse")) if x >= 0)
         for j in range(i + 1, min(n, i + 14)):
             l = zeilen[j]
             if not l.strip(): continue
@@ -35,7 +36,8 @@ def slp_parser(zeilen):
             zahlen = _paar(l)
             if len(zahlen) < 2: continue
             kopf_text = " ".join(zeilen[i:i + 4]).lower()
-            if len(zahlen) >= 4 and "brutto" in kopf_text:      # netto | brutto | netto | brutto
+            mwst = len(zahlen) >= 4 and zahlen[0] > 0 and abs(zahlen[1] / zahlen[0] - 1.19) < 0.012
+            if len(zahlen) >= 4 and ("brutto" in kopf_text or mwst):      # netto | brutto | netto | brutto
                 gp, ap = (zahlen[0], zahlen[2]) if gp_zuerst else (zahlen[2], zahlen[0])
             else:
                 gp, ap = (zahlen[0], zahlen[1]) if gp_zuerst else (zahlen[1], zahlen[0])
