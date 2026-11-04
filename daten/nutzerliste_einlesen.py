@@ -25,7 +25,8 @@ for r in U:
     m = idx.get(n(r["netzbetreiber"]))
     if not m or len(m) > 1: c["nicht eindeutig zugeordnet"] += 1; continue
     o = m[0]; row = dict.fromkeys(H, ""); row.update(nr=o["nr"], netzbetreiber=o["netzbetreiber"], stand_datum=r["stand_datum"], quelle_url=r["quelle_url"], hinweis="Quelle: Liste des Nutzers 04.11.2026")
-    neu = 0; sauber = r.get("status", "") == "ok"           # Nutzerliste: ok = Werte im Quelltext gefunden
+    neu = 0; hin = r.get("hinweis", "")
+    sauber = r.get("status", "") == "ok" or ("alle Werte gegen Quelltext verifiziert" in hin and not re.search(r"nur \d/4|verworfen", hin))
     ctw = lambda v: (v[3] + v[2] * 100 / 4000) if v and None not in v else None
     a_, b_, n_ = (ctw([f(r[f"{e}_{k}"]) for k in K]) for e in ("ms", "msns", "ns"))
     if (a_ and b_ and a_ > b_ * 1.05) or (a_ and n_ and a_ > n_ * 1.05): sauber = False      # Kostenreihenfolge verletzt
