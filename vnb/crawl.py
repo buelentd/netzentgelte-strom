@@ -37,7 +37,7 @@ SPARTE_FREMD = re.compile(r"(?<![a-z])gas(?!se|t)|erdgas|waerme|fernwaerme|wasse
 DOK_PLUS = [("preisblatt", 5), ("preisblaett", 5), ("netzentgelt", 5), ("netznutzung", 4), ("nne", 3),
             ("entgelt", 2), ("strom", 2), ("endgueltig", 3), ("final", 3), ("netzzugang", 1),
             ("standardlastprofil", 3), ("slp", 2), ("ohne leistungsmessung", 3)]
-DOK_MINUS = [("14a", 4), ("sonderform", 4), ("atypisch", 4), ("singul", 4), ("fiktiv", 20),
+DOK_MINUS = [("14a", 4), ("sonderform", 4), ("atypisch", 4), ("singul", 4), ("fiktiv", 0),
              ("messstell", 4), ("msb", 3), ("konzession", 4), ("kwk", 3), ("umlage", 2), ("verlust", 4),
              ("erloesobergrenze", 6), ("strukturdaten", 5), ("blindarbeit", 2), ("mehrerloes", 5),
              ("netzverlust", 4), ("kapazitaet", 1), ("einspeis", 20), ("redispatch", 5), ("bilanz", 3),

@@ -170,8 +170,18 @@ class Speicher:
                 d.get("preisstand", "") if (ns or slp) else "", d.get("stand_datum", ""), hinweis,
                 d.get("quelle_url", "")]
 
+    @staticmethod
+    def _stand_2026(d: dict, jahr: int) -> dict:
+        """„vorläufig“ ist für 2026 überholt: Die Preise galten das ganze Jahr (Festlegung Nutzer 04.11.2026)."""
+        if jahr == 2026 and d.get("preisstand") == "vorläufig":
+            d = dict(d)
+            d["preisstand"] = "endgültig"
+            alt = d.get("hinweis", "")
+            d["hinweis"] = "Dokument als vorläufig bezeichnet, Preise galten 2026 das ganze Jahr" + (f"; {alt}" if alt else "")
+        return d
+
     def ausgeben(self, jahr: int) -> str:
-        zeilen = self.zeilen()
+        zeilen = [self._stand_2026(d, jahr) for d in self.zeilen()]
         ziel = self.ordner / f"netzentgelte_{jahr}.csv"
         tmp = ziel.with_suffix(".tmp")
         with open(tmp, "w", newline="", encoding="utf-8") as f:

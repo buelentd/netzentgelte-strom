@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 08:51, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 09:09, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -13,7 +13,7 @@ Stand 04.11.2026 08:51, 831 Netzbetreiber bzw. Netzgebiete
 | robots | 24 | 3% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
+Preisstand (nur ok): unklar 233, endgültig 170
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -53,15 +53,8 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 42. SWKiel Netz GmbH: nicht gelesen (nicht im Zwischenspeicher)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (265)
+## Status ok, aber Preisstand nicht endgültig (233)
 
-- 4. Avacon Netz GmbH: vorläufig
-- 8. Westfalen Weser Netz GmbH: vorläufig
-- 9. enercity Netz GmbH: vorläufig
-- 20. Netze Duisburg GmbH: vorläufig
-- 21. Bielefelder Netz GmbH: vorläufig
-- 24. Braunschweiger Netz GmbH: vorläufig
-- 34. Stuttgart Netze GmbH: vorläufig
 - 51. Abita Energie Otterberg GmbH: unklar
 - 53. Albstadtwerke GmbH: unklar
 - 54. Albwerk GmbH ＆ Co. KG: unklar
@@ -92,11 +85,9 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 136. EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG: unklar
 - 139. eneREGIO GmbH: unklar
 - 141. Energie Waldeck-Frankenberg GmbH: unklar
-- 142. Energie- und Bäderbetrieb Hauenstein: vorläufig
 - 147. Energie- und Wasserversorgung Kirchzarten GmbH: unklar
 - 158. Energieversorgung Filstal GmbH ＆ Co. KG: unklar
 - 161. Energieversorgung Klettgau-Rheintal GmbH ＆ Co. KG: unklar
-- 169. Energieversorgung Sylt GmbH: vorläufig
 - 171. Energieversorgung Wolfgang Schmid: unklar
 - 173. ENERVIE Vernetzt GmbH: unklar
 - 175. EnR Energienetze Rudolstadt GmbH: unklar
@@ -104,27 +95,19 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 177. ENRW Energieversorgung Rottweil GmbH ＆ Co. KG: unklar
 - 180. EUROGATE Technical Services GmbH: unklar
 - 182. EVE Netz GmbH: unklar
-- 187. EVU Späth e.K.: vorläufig
 - 188. EVU Weilerbach: unklar
 - 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: unklar
 - 191. EWR GmbH (Remscheid): unklar
 - 192. EWR Netz GmbH: unklar
-- 193. EWR Netze GmbH (Lichtenstein-Unterhausen): vorläufig
 - 194. ews - Netz GmbH: unklar
 - 196. FairNetz GmbH: unklar
 - 203. Freitaler Stadtwerke GmbH: unklar
 - 205. Gebrüder Eirich GmbH ＆ Co. KG: unklar
-- 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: vorläufig
-- 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: vorläufig
 - 215. Gemeindewerke Dudenhofen: unklar
 - 227. Gemeindewerke Heikendorf AöR: unklar
-- 229. Gemeindewerke Holzkirchen GmbH: vorläufig
 - 230. Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH: unklar
-- 232. Gemeindewerke Kiefersfelden: vorläufig
 - 234. Gemeindewerke Lam: unklar
 - 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: unklar
-- 237. Gemeindewerke Neuendettelsau: vorläufig
-- 239. Gemeindewerke Nüdlingen: vorläufig
 - 244. Gemeindewerke Schönkirchen GmbH: unklar
 - 248. Gemeindewerke Wadgassen GmbH: unklar
 - 249. Gemeindewerke Waging a. See: unklar
@@ -132,13 +115,10 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 255. GeraNetz GmbH: unklar
 - 257. GETEC net GmbH: unklar
 - 259. Getreidemühle Zwiefalten eG: unklar
-- 260. GEW Wilhelmshaven GmbH: vorläufig
 - 263. Gothaer Stadtwerke NETZ GmbH: unklar
 - 268. Halberstadtwerke GmbH: unklar
-- 269. Hanau Netz GmbH: vorläufig
 - 272. Hellenstein-Energie-Logistik GmbH: unklar
 - 273. Hertener Stadtwerke GmbH: unklar
-- 274. Herzo Werke GmbH: vorläufig
 - 284. KBG Kraftstrom- Bezugsgenossenschaft Homberg eG: unklar
 - 292. Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach: unklar
 - 300. Licht- und Kraftwerke Sonneberg GmbH: unklar
@@ -153,11 +133,9 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 328. Netzgesellschaft Lübbecke mbH: unklar
 - 330. Netzgesellschaft Potsdam GmbH: unklar
 - 331. Netzgesellschaft Schwerin mbH (NGS): unklar
-- 332. netzplus GmbH ＆ Co. KG: vorläufig
 - 335. Neubrandenburger Stadtwerke GmbH: unklar
 - 336. NEW Netz GmbH: unklar
 - 339. NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG: unklar
-- 341. Nordhausen Netz GmbH: vorläufig
 - 342. NordNetz GmbH: unklar
 - 347. Osterholzer Stadtwerke GmbH ＆ Co. KG: unklar
 - 353. QuartiersNetz Bayern GmbH: unklar
@@ -179,7 +157,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 406. Stadtwerke Bad Sooden-Allendorf: unklar
 - 407. Stadtwerke Bad Tölz GmbH: unklar
 - 410. Stadtwerke Bad Windsheim: unklar
-- 411. Stadtwerke Bad Wörishofen: vorläufig
 - 428. Stadtwerke Borken/Westf. GmbH: unklar
 - 431. Stadtwerke Brühl GmbH: unklar
 - 439. Stadtwerke Cham GmbH: unklar
@@ -207,7 +184,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 511. Stadtwerke Haslach i.K.: unklar
 - 515. Stadtwerke Heilbad Heiligenstadt GmbH: unklar
 - 516. Stadtwerke Heiligenhaus GmbH: unklar
-- 517. Stadtwerke Heilsbronn: vorläufig
 - 518. Stadtwerke Hemau: unklar
 - 519. Stadtwerke Herborn GmbH: unklar
 - 521. Stadtwerke Hettstedt GmbH: unklar
@@ -224,7 +200,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 551. Stadtwerke Lindau (B) GmbH ＆ Co. KG: unklar
 - 552. Stadtwerke Lingen GmbH: unklar
 - 555. Stadtwerke Löbau GmbH: unklar
-- 557. Stadtwerke Ludwigsfelde GmbH: vorläufig
 - 558. Stadtwerke Ludwigslust-Grabow GmbH: unklar
 - 562. Stadtwerke Lutherstadt Wittenberg GmbH: unklar
 - 563. Stadtwerke Malchow: unklar
@@ -262,7 +237,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 657. Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG: unklar
 - 659. Stadtwerke Sindelfingen GmbH: unklar
 - 669. Stadtwerke Stein GmbH ＆ Co. KG: unklar
-- 670. Stadtwerke Steinfurt GmbH: vorläufig
 - 672. Stadtwerke Stockach GmbH: unklar
 - 673. Stadtwerke Straubing Strom und Gas GmbH: unklar
 - 674. Stadtwerke Strausberg GmbH: unklar
@@ -282,8 +256,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 699. Stadtwerke Vlotho Stromnetz GmbH: unklar
 - 701. Stadtwerke Wachenheim: unklar
 - 707. Stadtwerke Waldshut-Tiengen GmbH: unklar
-- 713. Stadtwerke Wasserburg a. Inn: vorläufig
-- 717. STADTWERKE WEISSENBURG GmbH: vorläufig
 - 718. Stadtwerke Weißenfels Energienetze GmbH: unklar
 - 722. Stadtwerke Wernigerode GmbH: unklar
 - 723. Stadtwerke Wertheim GmbH: unklar
@@ -291,13 +263,10 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 727. Stadtwerke Winsen (Luhe) GmbH: unklar
 - 728. Stadtwerke Witten GmbH: unklar
 - 729. Stadtwerke Witten Mittelspannungsnetz GmbH: unklar
-- 734. Stadtwerke Zeil a. Main: vorläufig
 - 735. Stadtwerke Zeven GmbH: unklar
 - 746. Stauferwerk  GmbH ＆ Co. KG: unklar
 - 747. Strom- und Gasnetz Wismar GmbH: unklar
 - 753. Stromnetz Weiden i.d.OPf. GmbH ＆ Co. KG: unklar
-- 755. Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG: vorläufig
-- 756. Stromversorgung Angermünde GmbH: vorläufig
 - 760. Stromversorgung Schierling eG: unklar
 - 761. Stromversorgung Seebruck eG: unklar
 - 768. SVH Stromversorgung Haar GmbH: unklar
@@ -309,7 +278,6 @@ Preisstand (nur ok): unklar 233, endgültig 138, vorläufig 32
 - 792. Teutoburger Energie Netzwerk eG (TEN eG): unklar
 - 794. TraveNetz GmbH: unklar
 - 800. Überlandwerk Rhön GmbH: unklar
-- 802. ÜZ Mainfranken eG: vorläufig
 - 804. Verbandsgemeindewerke Enkenbach-Alsenborn: unklar
 - 806. Vereinigte Wertach Elektrizitätswerke GmbH: unklar
 - 810. Versorgungsbetriebe Hann. Münden GmbH: unklar
