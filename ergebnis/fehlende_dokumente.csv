@@ -1,0 +1,131 @@
+﻿mastr_nr;unsere_nr;netzbetreiber;status;grund;werte_komplett;url
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;blockiert;blockiert;nein;
+SNB956923775696;75;CPM Netz GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB978299965228;86;E-Werke Haniel Haimhausen GmbH ＆ Co. KG;kein_preisblatt;kein_preisblatt;nein;
+SNB985979481190;96;Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://ewg-vagen.de/phoca/7-allgemein/14-strom-preise-tarife
+SNB981887803796;104;Elektrizitätsgenossenschaft Engelsberg eG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.eg-engelsberg.de/download/preisblatt-netznutzung-2026-endgueltig/
+SNB987451707521;115;Elektrizitätswerk Bruchmühlbach-Miesau;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.bruchmuehlbach-miesau.de/
+SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;blockiert;blockiert;nein;
+SNB921080203146;125;Elektrizitätswerk Rohmund GmbH;blockiert;blockiert;nein;
+SNB928258126528;129;Elektrizitätswerk Tegernsee Carl Miller KG;kein_preisblatt;kein_preisblatt;nein;
+SNB976371748981;140;Energie Calw GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.encw.de/sommer-sonne-und-urlaubsfeeling-ueber-den-daechern-von-calw-eroeffnung-des-encw-beach/
+SNB934514392514;144;Energie- und Wasserversorgung Altenburg GmbH;blockiert;blockiert;nein;
+SNB994111700501;151;Energienetze Bayern GmbH (Stromverteilnetz Germering);pruefen;nutzer:BLOCKIERT_403;nein;https://www.energienetze-bayern.com/
+SNB932549440224;153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;kein_preisblatt;kein_preisblatt;nein;
+SNB942173666990;156;Energieversorgung Beckum GmbH ＆ Co. KG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.evb-beckum.de/netz/strom/netzentgelte/
+SNB965281540327;162;Energieversorgung Limburg GmbH;pruefen;nutzer:TIMEOUT;nein;https://limburg.enwg-veroeffentlichungen.de/
+SNB986363918520;164;Energieversorgung Putzbrunn GmbH ＆ Co. KG;blockiert;blockiert;nein;
+SNB980449174619;184;EVI Energieversorgung Hildesheim GmbH ＆ Co. KG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.evi-netz.de/
+SNB944723161733;198;Feuchter Gemeindewerke GmbH (FGW);robots;robots;nein;
+SNB960098459084;200;FischerStrom GmbH ＆ Co. KG;keine_website;keine_website;nein;
+SNB984338214660;209;Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach;kein_preisblatt;kein_preisblatt;nein;
+SNB947727983103;218;Gemeindewerke Frammersbach;blockiert;blockiert;nein;
+SNB928557841498;225;Gemeindewerke Halstenbek;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.gwhalstenbek.netzveroeffentlichung.com/
+SNB991400668603;226;Gemeindewerke Haßloch GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://gwhassloch.de/download/anlage-2-info-netzentgelte-strom-der-gemeindewerke-hassloch-gmbh-gueltig-ab-01-01-2026/
+SNB972265030262;236;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;blockiert;blockiert;nein;
+SNB950777700255;241;Gemeindewerke Oberaudorf;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.gemeindewerke-oberaudorf.de/strom/netzzugang/netzentgelte/
+SNB955872978110;242;Gemeindewerke Partenstein;blockiert;blockiert;nein;
+SNB944419421783;246;Gemeindewerke Schwarzenbruck GmbH (GWS);robots;robots;nein;
+SNB968670865650;261;GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.ggew.de/
+SNB935600499711;265;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;pruefen;nutzer:TOTER_LINK_404;nein;https://www.gipsprojekt.de/featureGips/gsw-kamen/
+SNB975462731697;271;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;blockiert;blockiert;nein;
+SNB911960309587;278;infra fürth gmbh;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.infra-fuerth.de/
+SNB982722829230;279;InfraLeuna GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.infraleuna.de/preisbl%C3%A4tter
+SNB942732578894;280;InfraServ Gendorf Netze GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://infraserv.gendorf-netze.de/
+SNB971962135690;282;Infrastrukturbetrieb der Stadt Arneburg;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.infrastrukturbetrieb-stadt-arneburg.de/
+SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;blockiert;blockiert;nein;https://ken-is.de/wp/wp-content/uploads/KEN-IS-Strom-Preisblatt-Netznutzung-2026-01-01-endgueltig.pdf
+SNB990329664031;293;Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR);pruefen;nutzer:HTML_PORTAL_SEITE;nein;http://www.stadtwerke-klingenberg.de/seite/de/service/47/-/Netznutzung.html
+SNB997826747014;308;Markt Egloffstein;blockiert;blockiert;nein;
+SNB933391394338;312;Merck Site Management GmbH;blockiert;blockiert;nein;
+SNB915471253889;334;Netzwerke Saarlouis GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.nwsls.de/
+SNB911144461377;337;NGN Netzgesellschaft Niederrhein mbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.ngn-mbh.de/de/marktpartner/preisblaetter-netznutzung
+SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;kein_preisblatt;kein_preisblatt;nein;
+SNB942224012479;349;OUTLETCITY AG;kein_preisblatt;kein_preisblatt;nein;
+SNB965394941448;350;Outokumpu Stainless Nirosta GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.outokumpu.com/
+SNB988532040636;352;PVU Energienetze GmbH;robots;robots;nein;
+SNB912239808732;363;Rheinhessische Energie- und Wasserversorgungs-GmbH;pruefen;nutzer:BLOCKIERT_403;nein;https://www.enwg-veroeffentlichungen.de/rheinhessische/
+SNB953868012787;368;Schleswiger Stadtwerke GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB950960779068;369;SEW Stromversorgungs GmbH;robots;robots;nein;
+SNB947709605108;380;Stadtwerke Altensteig;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-altensteig.de/
+SNB936769439815;383;Stadtwerke Annaberg-Buchholz Energie AG;blockiert;blockiert;nein;
+SNB960502792271;391;Stadtwerke Bad Bramstedt Netz GmbH;blockiert;blockiert;nein;https://badbramstedtnetz.netzveroeffentlichung.com/
+SNB941424038838;398;Stadtwerke Bad Nauheim GmbH;pruefen;nutzer:BLOCKIERT_403;nein;https://www.enwg-veroeffentlichungen.de/badnauheim/
+SNB943203125821;405;Stadtwerke Bad Saulgau;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.bad-saulgau.de/
+SNB959373877170;408;Stadtwerke Bad Vilbel GmbH;pruefen;nutzer:TIMEOUT;nein;https://sitemap.sw-bv.de/netze/netznutzung/preisblaetter-1.html
+SNB931622346583;412;Stadtwerke Baden-Baden;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-baden-baden.de/
+SNB953669866350;420;Stadtwerke Bernburg GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=vr9weJWct0WDIzaED-dxkVxLjcKPuf8Uk2BkoIFYS8o&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2749%3B%7D&d=attachment&f=20260101_preisblatt_strom_2026.pdf&p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fnetzentgelte-strom%2F20260101_preisblatt_strom_2026.pdf
+SNB931805295141;425;Stadtwerke Böblingen GmbH ＆ Co. KG;pruefen;nutzer:TOTER_LINK_404;nein;https://www.stadtwerke-boeblingen.de/files/public/133_Netze/Strom-Gasnetz/nnv_SW_Boeblingen_Preisblatt_Strom_2026_V3.pdf
+SNB922393870476;433;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-buchen.de/
+SNB968489334224;434;Stadtwerke Buchholz in der Nordheide GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://buchholz-stadtwerke.de/preiszusammensetzung.html
+SNB945149216045;443;Stadtwerke Dachau Eigenbetr. d. Stadt Dachau;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-dachau.de/
+SNB937001443546;446;Stadtwerke Delitzsch GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.sw-delitzsch.de/netz/strom/nutzungsentgelt
+SNB977581070640;448;Stadtwerke Dettelbach;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.dettelbach-stadtwerke.de/
+SNB990562890006;451;Stadtwerke Dinkelsbühl;robots;robots;nein;https://www.sw-dinkelsbuehl.de/netze
+SNB976679550309;453;Stadtwerke Döbeln GmbH;blockiert;blockiert;nein;https://stadtwerke-doebeln.de/netze/strom/netzzugang-entgelte/netznutzungsvertrag/
+SNB914522191989;458;Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-ebermannstadt.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/Preisblatt-NN-Strom-01-01-2026-endgueltig.pdf
+SNB968646876970;459;Stadtwerke Eckernförde GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.eckernfoerdernetz-sh.de/
+SNB977174706994;461;Stadtwerke Eilenburg GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.eilenburger-stadtwerke.de/netz/stromnetz/netzzugang.html
+SNB941183960449;466;Stadtwerke Emden GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-emden.de/
+SNB959959730332;470;Stadtwerke Engen GmbH;pruefen;nutzer:BLOCKIERT_403;nein;https://www.enwg-veroeffentlichungen.de/sw_engen/
+SNB985701689504;484;Stadtwerke Fürstenfeldbruck GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB960882503184;487;Stadtwerke Geesthacht GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://stadtwerke-geesthacht.netzveroeffentlichung.com/
+SNB922793626642;489;Stadtwerke Gengenbach- Versorgungsbetriebe;robots;robots;nein;
+SNB963070917732;492;Stadtwerke Glauchau Dienstleistungsgesellschaft mbH;pruefen;nutzer:TIMEOUT;nein;https://netze.stadtwerke-glauchau.de/
+SNB985431470335;494;Stadtwerke GmbH Bad Kreuznach;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.kreuznacherstadtwerke.de/
+SNB941004899811;495;Stadtwerke Goch GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-goch.de/netznutzungsentgelte/
+SNB934949020686;500;Stadtwerke Gronau GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB916711029424;510;Stadtwerke Hammelburg GmbH;blockiert;blockiert;nein;https://www.stadtwerke-hammelburg.de/
+SNB964375043041;527;Stadtwerke Hünfeld GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-huenfeld.de/netzugang-entgelte-strom
+SNB935814055062;538;Stadtwerke Kleve GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-kleve.de/
+SNB971124937612;539;Stadtwerke Konstanz GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-konstanz.de/hilfe/artikel/preisblatt-seeenergie-erdgasbasis-konstanz/
+SNB945021456095;540;Stadtwerke Kusel GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke.kusel.de/
+SNB985347645049;578;Stadtwerke Nettetal GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-nettetal.de/netze/stromnetz/netzzugang-und-entgelte.html
+SNB988769717073;585;Stadtwerke Neustadt a. d. Donau;blockiert;blockiert;nein;
+SNB942305388936;588;Stadtwerke Neustadt an der Weinstraße GmbH;blockiert;blockiert;nein;
+SNB933386930565;589;Stadtwerke Neustadt in Holstein;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://swnh.netzveroeffentlichung.com/
+SNB985965721965;594;Stadtwerke Norderstedt;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-norderstedt.de/fileadmin/user_upload/Dokumente/Energiewirtschaftsgesetz/Strom/Lieferantenrahmenvertrag_Strom/260101_Preisblatt_Strom.pdf
+SNB951791941969;595;Stadtwerke Nordfriesland - Netz GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://sw-nf.netzveroeffentlichung.com/
+SNB965813404431;596;Stadtwerke Nortorf AöR;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://stadtwerke-nortorf.netzveroeffentlichung.com/
+SNB948186469375;597;Stadtwerke Nürtingen GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.sw-nuertingen.de/
+SNB941314694489;600;Stadtwerke Oelsnitz/V. GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-oelsnitz.de/netznutzung-strom
+SNB940478286561;603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;pruefen;nutzer:BLOCKIERT_403;nein;https://assets.stromnetz-olching.de/media/downloads/2026/03/03/stadtwerke-olching-preisblatt-strom-2026.pdf
+SNB999125588145;608;Stadtwerke Parchim GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.swp-energieverteilnetze.de/netzzugangentgelte.html
+SNB917615238004;615;Stadtwerke Plattling;kein_preisblatt;kein_preisblatt;nein;
+SNB964802985821;629;Stadtwerke Röthenbach a. d. Pegnitz GmbH;blockiert;blockiert;nein;
+SNB927574397889;633;Stadtwerke Roth;kein_preisblatt;kein_preisblatt;nein;
+SNB935144085258;644;Stadtwerke Schorndorf GmbH;robots;robots;nein;
+SNB962618092306;648;Stadtwerke Schwäbisch Gmünd GmbH;pruefen;nutzer:XLSX_HIER_GELADEN;ja;https://www.stwgd-netze.de/netzentgelte-strom.html?_hash=xW29cYPHmdvSfROunHH-21L9-79X4w5TS0bbqt0C6mU&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A87%3B%7D&d=attachment&f=2026+Elektronisches+Preisblatt+CS.xlsx&p=stadtwerke_gd%2Fuserfiles%2Fpdf%2FNetz%2FVer%C3%B6ffentlichungspflichten%2F2026+Elektronisches+Preisblatt+CS.xlsx
+SNB995034381532;656;Stadtwerke Senftenberg GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-senftenberg.de/netznutzung-strom/
+SNB965118678667;660;Stadtwerke Soest GmbH;pruefen;nutzer:TIMEOUT;nein;https://www.stadtwerke-soest.de/sites/default/files/downloads/preisblattstrom2026.pdf
+SNB947030954821;661;Stadtwerke Soltau GmbH ＆ Co. KG;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.sw-soltau.de/netze/stromnetz/preisblaetter
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://stadtwerke-stassfurt.de/fileadmin/user_upload/Netz/Netzbetrieb/Veroeffentlichungen/Netzentgelte/Daten/Preisblaetter/Preisblatt_Netzentgelte_StW_2026.pdf
+SNB932509765411;678;Stadtwerke Teterow GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://sw-teterow.de/aktuelles/dreh-am-rad-gewinne-regional
+SNB976987786759;682;Stadtwerke Treuchtlingen KU;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.sw-trl.de/download/preisblaetter-netzentgelte-strom26/
+SNB921695080347;685;Stadtwerke Tübingen GmbH;pruefen;nutzer:XLSX_HIER_GELADEN;ja;https://www.swtue.de/fileadmin/user_upload/5Netze/Netznutzung/Netzentgelte_Strom/elektronisches_Preisblatt_Strom_2026.xlsx
+SNB965557517831;687;Stadtwerke Uelzen GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://stadtwerke-uelzen.netzveroeffentlichung.com/
+SNB969058795651;702;Stadtwerke Waiblingen GmbH;blockiert;blockiert;nein;https://www.stadtwerke-waiblingen.de/Netze/Stromnetz/Netznutzungsentgelte
+SNB960416123321;705;Stadtwerke Waldkraiburg GmbH;ok;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.stadtwerke-waldkraiburg.de/cdn/uploads/20251015-ne-endgueltig-11-08-2026.pdf
+SNB911692402044;710;Stadtwerke Warburg GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://stadtwerke-warburg.de/download/vorlaeufige-netzentgelte-strom-2026/
+SNB959966681252;737;Stadtwerke Zittau GmbH;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://stadtwerke-zittau.de/netz/stromnetz/netzzugang/
+SNB923190544898;738;Stadtwerke Zweibrücken GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.stadtwerke-zw.de/
+SNB943531720705;742;Städtische Betriebswerke Luckenwalde GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB926394976090;745;Städtische Werke Spremberg (Lausitz) GmbH;robots;robots;nein;
+SNB924577059684;750;Stromnetz Erdinger und Freisinger Land GmbH ＆ Co. KG;blockiert;blockiert;nein;https://www.stadtwerke-erding.de/de/Kopfnavigation/Netze/Netz-Stromnetz-Erdinger-Freisinger-Land/Entgelte-Netzzugang.html
+SNB929262647085;754;Stromnetz Weilheim GmbH ＆ Co. KG;pruefen;nutzer:BLOCKIERT_403;nein;https://assets.stromnetz-weilheim.de/media/downloads/2026/01/28/Netzentgelte_2026.pdf
+SNB948673048298;755;Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG;pruefen;nutzer:XLSX_HIER_GELADEN;ja;https://stromnetz-herrenberg.de/wp-content/uploads/2025/12/endgueltiges_elektr._Preisblatt_fuer-NN_2026_SNG_Herrenberg.xlsx
+SNB968862623211;767;SÜC Energie und H²O GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.suec-netze.de/
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;blockiert;nein;https://www.swt.de/seite/vermiedene-netznutzung-durch-dezentrale-einspeisung
+SNB967812386411;787;SWW Wunsiedel GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB980986433484;788;Syna Hochspannungsnetz GmbH ＆ Co. KG;ok;nutzer:BLOCKIERT_403;nein;https://www.syna.de/content/dam/syna-de/dokumente/netz/netzentgelte-strom/preisblaetter-strom-2026-syna-gmbh.pdf
+SNB986916159257;793;thyssenkrupp Steel Europe AG;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.thyssenkrupp-steel.com/
+SNB957632855181;798;Überlandwerk Erding GmbH ＆ Co. KG;pruefen;nutzer:PDF_GESCRAPHT_UNGEPRUEFT;nein;https://www.stadtwerke-erding.de/de/Kopfnavigation/Netze/stromnetz/UE-Preisblatt-01.01.2026.pdf
+SNB973519584647;808;Versorgungsbetriebe Bordesholm GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://vb-bordesholm.netzveroeffentlichung.com/
+SNB911104987275;813;Versorgungsbetriebe Röttingen;robots;robots;nein;
+SNB946115797155;814;Versorgungsbetriebe Zellingen;blockiert;blockiert;nein;
+SNB978865527096;820;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;blockiert;nein;
+SNB946373984786;823;Wendelsteinbahn Verteilnetz GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://www.wendelsteinbahn.de/nutzungsentgelte
+SNB979973883449;827;Westenthanner Energieversorgung GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://ew-westenthanner.de/tag/preisblatt/
+SNB914508596067;828;WiDe Flex Bau + Service GmbH;kein_preisblatt;kein_preisblatt;nein;
+SNB919649671758;829;Wirtschaftsbetriebe der Stadt Norden GmbH;pruefen;nutzer:HTML_PORTAL_SEITE;nein;https://stadtwerke-norden.de/
+SNB925823629552;831;Zwickauer Energieversorgung GmbH;robots;robots;nein;
