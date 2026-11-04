@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 15:50, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 15:52, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 342 | 41% |
-| pruefen | 426 | 51% |
+| ok | 343 | 41% |
+| pruefen | 425 | 51% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 341,  1
+Preisstand (nur ok): endgültig 342,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 341,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (489)
+## Restfälle (488)
 
-### pruefen (426)
+### pruefen (425)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -172,7 +172,6 @@ Preisstand (nur ok): endgültig 341,  1
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 228. Gemeindewerke Herxheim: SLP-Werte nicht gefunden
 - 232. Gemeindewerke Kiefersfelden: 
-- 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: 
 - 239. Gemeindewerke Nüdlingen: 
 - 240. Gemeindewerke Nümbrecht GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 241. Gemeindewerke Oberaudorf: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
