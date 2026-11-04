@@ -1,0 +1,449 @@
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Technische%20Anschlussbedingungen%20MS/2026%20Technische%20Anschlussbedingungen%20%28G%C3%BCltigkeit%20ab%2001.03.2026%29.pdf&cid=2351
+
+7.6 Datenfernübertragung
+Erfolgt der Messstellenbetrieb durch den VNB als gMSB, so setzt er für die Zählerfernauslesung
+standardmäßig eine Funklösung ein. Bei Anbindung mittels Mobilfunk ist ggf. eine Außenan-
+tenne erforderlich. Auf Anforderung des MSB müssen unentgeltlich geeignete Kabelwege und
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Technische%20Anschlussbedingungen%20NS/2026%20Technische%20Anschlussbedingungen%20%28G%C3%BCltig%20ab%2001.10.2026%29.pdf&cid=1703
+MaStR Marktstammdatenregister
+MSB Messstellenbetreiber
+MsbG Messstellenbetriebsgesetz
+NA-Schutz Netz- und Anlagenschutz
+NAR Netzseitiger Anschlussraum
+Die Kommunikations- und Steuerungseinrichtungen sind entsprechend VDE-AR-N 4100 anzu-
+bringen. Die Einbindung des Messsystems in ein Kommunikationsnetz legt der Messstellenbe-
+treiber unter Maßgabe des Messstellenbetriebsgesetzes (MsbG) [7] fest.
+(2) Je nach Übertragungsart (z.B. Mobilfunk, Powerline oder Internet) hat der Anschlussneh-
+mer dahingehend mitzuwirken, dass die erforderlichen technischen Voraussetzungen geschaf-
+mögliche vorausschauende Steuerungsmaßnahmen, Version 1.1“.
+[6] Ladesäulenverordnung (LSV) vom 23. Dezember 2025 (BGBl. 2025 I Nr. 367).–
+[7] Messstellenbetriebsgesetz (MsbG) vom 29. August 2016 (BGBl. I S. 2034), zuletzt geän-
+dert durch Artikel 12 des Gesetzes vom 22. Dezember 2023 (BGBl. 2023 I Nr. 405).–
+[8] Forum Netztechnik/Netzbetrieb im VDE (VDE FNN) (2023): VDE FNN Hinweis “Zähler-
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Unterlagen%20zum%20Installateurportal/Preisblatt.pdf&cid=1981
+
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2026%20Preisblatt.pdf&cid=2346
+Jahresbenutzungsdauer
+Netz- oder Umspannebene < 2.500 h/a ≥ 2.500 h/a
+Leistungspreis €/kWa Arbeitspreis ct/kWh Leistungspreis €/kWa Arbeitspreis ct/kWh
+Mittelspannung (MS) 15,55 6,09 145,97 0,87
+Umspannung (MS/NS) 17,64 6,69 146,80 1,52
+
+
+Entgelte für die Netznutzung - Entnahmestellen ohne Leistungsmessung
+Ebene Grundpreis €/a Arbeitspreis ct/kWh
+Entnahme ohne
+Niederspannung (NS) 96,00 6,59
+
+Steuerbare Verbrauchseinrichtungen nach § 14a EnWG
+Modul 1 & 2 Ebene Pauschaler Rabatt €/a Arbeitspreis ct/kWh
+Modul 1 Niederspannung (NS) 116,65 -
+Modul 2 (nur wählbar mit
+
+Modul 3 (nur in Verbindung mit
+NT Arbeitspreis ct/kWh ST Arbeitspreis ct/kWh HT Arbeitspreis ct/kWh
+iMSys und Modul 1)
+Arbeitspreis Ebene
+2,64 6,59 9,86
+Niederspannung (NS)
+
+Sonderformen der Netznutzung gemäß § 19 Abs. 1 StromNEV --- Monatsleistungspreise ---
+Netz- oder Umspannebene Leistungspreis €/kW/Monat Arbeitspreis ct/kWh
+Mittelspannung (MS) 24,33 0,87
+Umspannung (MS/NS) 24,47 1,52
+1/3
+
+Entgelte für Messstellenbetrieb
+Das Entgelt für Messstellenbetrieb umfasst auch die Messdienstleistung.
+Die Entgelte für den Messstellenbetrieb moderner Messeinrichtungen (mME) und intelligenter Messsysteme (iMSys) gemäß
+Messstellenbetriebsgesetz sind in einem eigenen Preisblatt des grundzuständigen Messstellenbetreibers ausgewiesen.
+
+Entgelte für Messstellenbetrieb
+je Zählpunkt mit Messstellenbetrieb €/a
+Leistungsmessung
+Mittelspannungsmessung je
+Zählpunkt
+
+Entgelte für Messstellenbetrieb
+je Zählpunkt ohne
+Messstellenbetrieb €/a
+Leistungsmessung (Preise je
+Turnusablesung)
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2023%20Preisblatt.pdf&cid=1646
+< 2.500 h/a ≥ 2.500 h/a
+Netz- oder Umspannebene
+Leistungspreis Arbeitspreis Leistungspreis Arbeitspreis
+€/kWa ct/kWh €/kWa ct/kWh
+Mittelspannung (MS) 20,51 8,09 194,59 1,12
+Niederspannung (NS) 27,75 9,29 162,49 3,90
+1): Diese Preise kommen bei Einspeisungen in die höchste selbstbetriebene Ebene zum Ansatz.
+Entgelte für die Netznutzung von Entnahmestellen ohne Leistungsmessung
+
+Grundpreis Arbeitspreis
+Ebene
+€/a ct/kWh
+Entnahme ohne Leistungsmessung Niederspannung (NS) 96,00 8,96
+
+Unterbrechbare Versorgungseinrichtungen § 14a EnWG:
+
+Sonderformen der Netznutzung gemäß § 19 Abs. 1 StromNEV (Monatsleistungspreise)
+Leistungspreis Arbeitspreis
+Netz- oder Umspannebene
+€/kW/Monat ct/kWh
+
+
+Entgelte für Messstellenbetrieb
+Das Entgelt für Messstellenbetrieb umfasst auch die Messdienstleistung.
+Die Entgelte für den Messstellenbetrieb moderner Messeinrichtungen (mME) und intelligenter Messsysteme (iMSys) gemäß
+Messstellenbetriebsgesetz sind in einem eigenen Preisblatt des grundzuständigen Messstellenbetreibers ausgewiesen.
+
+
+Entgelte für Messstellenbetrieb je Zählpunkt mit Messstellenbetrieb
+Leistungsmessung €/a
+Mittelspannungsmessung je Zählpunkt 695,00
+
+
+Entgelte für Messstellenbetrieb je Zählpunkt ohne Messstellenbetrieb
+Leistungsmessung (Preise je Turnusablesung) €/a
+Eintarifzähler 11,80
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Preisblatt%20f%C3%BCr%20Netzanschl%C3%BCsse/Preisblatt%20zur%20Niederspannungsanschlussverordnung%20%28NAV%29.pdf&cid=2389
+
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Kommunikation%20mit%20Marktpartnern/Messstellenbetreiberrahmenvertrag%20Strom%20ab%2001.07.2026.pdf&cid=2355
+Messstellenbetreiberrahmenvertrag Strom
+zwischen Netzbetreiber und Messstellenbetreiber
+nach § 9 Abs. 1 Nr. 3 Messstellenbetriebsgesetz (MsbG)
+
+
+
+§1 Gegenstand des Vertrages
+1Dieser Vertrag regelt die Rechte und Pflichten zur Durchführung des Messstellenbetriebs einschließlich
+
+der mess- und eichrechtskonformen Messung an den Messstellen von Letztverbrauchern und Anlagen­
+Netzbetreiber den Abschluss der ergänzenden Regelungen jedem Messstellenbetreiber diskriminie­
+rungsfrei anbietet. 4Der Abschluss der ergänzenden Regelungen darf nicht zur Bedingung für den Ab­
+schluss dieses Vertrages bzw. für die Aufnahme des Messstellenbetriebs gemacht werden. 5Eine Mess­
+stelle umfasst gemäß § 2 Nr. 11 MsbG sämtliche Mess-, Steuerungs- und Kommunikationseinrichtun­
+gen zur sicheren Verarbeitung von Messdaten und Steuerungsinformationen und zur sicheren Anbin­
+
+
+§4 Geschäftsprozesse und Datenaustausch zur Abwicklung des Messstellenbetriebs
+1
+1. Die Abwicklung des Messstellenbetriebs sowie des Wechsels des Messstellenbetreibers erfolgt
+unter Anwendung der von der Bundesnetzagentur erlassenen Festlegungen zur Ausgestaltung der
+Marktkommunikation, insbesondere der Festlegungen „Wechselprozesse im Messwesen“ (WiM,
+1
+1. Die Durchführung der Installation hat unter Beachtung der technischen Mindestanforderungen an
+den Messstellenbetrieb nach § 8 Abs. 2 MsbG oder einer entsprechenden Festlegung der Bundes­
+netzagentur nach § 47 Abs. 2 Nr. 15 MsbG zu erfolgen. 2Für die ordnungsgemäße Errichtung, Er­
+weiterung, Änderung und Instandhaltung der technischen Einrichtungen der Messstelle ist der
+
+§6 Wechsel des Messstellenbetreibers
+1. 1Die Vertragspartner verpflichten sich, beim Übergang des Messstellenbetriebs dem neuen Mess­
+
+stellenbetreiber nach dessen Wahl die zur Messung vorhandenen technischen Einrichtungen,
+
+
+§7 Messstellenbetrieb
+1. 1Der Messstellenbetreiber hat die Aufgabe, den Messstellenbetrieb nach näherer Maßgabe des
+
+§ 3 Abs. 2 MsbG durchzuführen.
+
+stellenbetreiber auf Verlangen des grundzuständigen Messstellenbetreibers verpflichtet, für einen
+Übergangszeitraum von längstens drei Monaten den Messstellenbetrieb fortzuführen, bis der
+Messstellenbetrieb auf Grundlage eines Auftrages des neuen Anschlussnutzers oder des neuen
+Anschlussnehmers durchgeführt werden kann. 2Der Messstellenbetreiber hat Anspruch auf ein
+vom grundzuständigen Messstellenbetreiber zu entrichtendes angemessenes Entgelt. 3In ande­
+stelle wieder dem grundzuständigen Messstellenbetreiber zuzuordnen wäre, ist dieser in entspre­
+chender Anwendung dieses Absatzes für einen Übergangszeitraum von längstens einem Monat
+berechtigt, vom bisherigen Messstellenbetreiber die Fortführung des Messstellenbetriebs gegen
+ein angemessenes Entgelt zu verlangen, sofern dieser in der Lage ist, den Messstellenbetrieb
+ordnungsgemäß fortzusetzen. 4Bei der Beurteilung der Angemessenheit der Entgelte sind die
+verbauten technischen Einrichtungen an der Messstelle maßgeblich. 5Kommt es im Rahmen des
+
+12. Der Messstellenbetreiber unternimmt alle zumutbaren Anstrengungen, um Störungen, wie z.B.
+auch wiederkehrende Messwertausfälle, oder Unterbrechungen des Messstellenbetriebs unver­
+züglich zu beheben.
+
+Zeitpunkt der Inbetriebsetzung der elektrischen Anlage zu vergeben.
+2. Der Netzbetreiber verpflichtet sich zur unverzüglichen Übergabe aller für die Realisierung des
+Messstellenbetriebs erforderlichen Informationen (z.B. Identifikationsnummern, Ausgestaltung
+der Messstelle, Tarifschalt- und Unterbrechungszeiten).
+3. 1Führt der Netzbetreiber erforderliche Maßnahmen in seinen Anlagen durch, die erkennbar Aus­
+
+§ 10 Erfüllung eichrechtlicher Vorschriften
+1Der Messstellenbetreiber ist mit Blick auf die Durchführung des Messstellenbetriebs Messgerätever­
+
+wender im Sinne des Eichrechts und verantwortlich für die Einhaltung aller sich aus dem Eichrecht
+treiber die erforderlichen Anpassungen der Messstelle an die anderweitigen Mindestanforderun­
+gen zu verlangen. 2Erfolgt keine Anpassung an die anzuwendenden Mindestanforderungen, ist
+der Netzbetreiber berechtigt, den Vertrag über den Messstellenbetrieb für diese Messstelle bei
+einer wesentlichen Abweichung von den Mindestanforderungen zu beenden.
+3. 1Der Netzbetreiber ist berechtigt, die Mindestanforderungen gemäß § 8 Abs. 2 MsbG bei Bedarf
+sonenbezogene Daten sind gemäß den Anforderungen des § 52 Abs. 3 MsbG zu anonymisieren
+oder zu pseudonymisieren. 5Die Vertragspartner sind berechtigt, Messwerte und Stammdaten so­
+wie weitere für den Messstellenbetrieb erforderliche Informationen an Dritte in dem Umfang wei­
+terzugeben, wie dies zur ordnungsgemäßen technischen und kommerziellen Abwicklung der je­
+weiligen Pflichten erforderlich ist. 6Diese Regelungen schließen eine Weitergabe an Behörden
+
+§ 14 Entgelt, Abrechnung, Zahlung und Verzug
+1. 1Der Messstellenbetreiber ist berechtigt, nach Maßgabe des MsbG für den Messstellenbetrieb
+
+von intelligenten Messsystemen vom Netzbetreiber ein jährliches Entgelt zu verlangen, welches
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Grundzust%C3%A4ndiger%20Messstellenbetrieb/Messstellenvertrag%20Strom%20%28Letztverbraucher%20%26%20Anlagenbetreiber%29%20ab%2001.07.2026.pdf&cid=1664
+
+Messstellenvertrag Strom
+über den Messstellenbetrieb von intelligenten Messsystemen
+und modernen Messeinrichtungen
+durch den Messstellenbetreiber nach § 9 Abs. 1 Nr. 1 Messstellenbetriebsgesetz
+
+
+
+1. 1Dieser Vertrag regelt die gegenseitigen Rechte und Pflichten im Zusammenhang mit der
+Durchführung des Messstellenbetriebs im Bereich Elektrizität für Messstellen mit modernen
+Messeinrichtungen oder intelligenten Messsystemen durch den grundzuständigen
+Messstellenbetreiber an den Messstellen des Anschlussnutzers. 2Vertragspartner des
+dadurch zustande, dass der Anschlussnutzer Energie aus dem Netz der allgemeinen
+Versorgung über einen Zählpunkt entnimmt oder einspeist (vgl. § 9 Abs. 3
+Messstellenbetriebsgesetz (MsbG)), ist diejenige Messstelle vertragsgegenständlich, über die
+dies erfolgt. 4Dies gilt nicht, wenn der Anschlussnehmer sein Auswahlrecht nach § 6 Abs. 1
+MsbG ausgeübt hat oder bereits ein kombinierter Vertrag nach § 9 Abs. 2 MsbG vorliegt. 5Der
+Vertrag enthält keine Vorgaben zum Messstellenbetrieb für Messstellen, die mit konventioneller
+Messtechnik ausgestattet sind; diese sind den Regelungen des Netznutzungsvertrags
+zugeordnet. 6Zusatzleistungen im Sinne des § 34 Abs. 2 und 3 MsbG sind nicht Gegenstand
+1. 1Die Durchführung der Installation hat unter Beachtung der technischen Mindestanforderungen
+
+an den Messstellenbetrieb nach § 8 Abs. 2 MsbG oder einer entsprechenden Festlegung der
+Bundesnetzagentur nach § 47 Abs. 2 Nr. 15 MsbG zu erfolgen. 2Der Messstellenbetreiber ist
+für die ordnungsgemäße Errichtung, Erweiterung, Änderung und Instandhaltung der
+
+
+§3 Messstellenbetrieb
+
+1. Der Messstellenbetreiber verpflichtet sich gegenüber dem Anschlussnutzer/-nehmer, die mit
+dem Messstellenbetrieb nach § 3 MsbG zusammenhängenden Leistungen zu erbringen.
+2. 1Der Messstellenbetreiber bestimmt im Rahmen der gesetzlichen Anforderungen, insbesondere
+
+des § 8 Abs. 1 MsbG Ort, Art, Zahl und Größe von Messeinrichtungen, sowie, soweit
+erforderlich, Steuerungseinrichtungen. 2In den Fällen des § 14 Abs. 3 der Verordnung über
+Allgemeine Bedingungen für die Grundversorgung von Haushaltskunden und die
+Ersatzversorgung mit Elektrizität aus dem Niederspannungsnetz
+(Stromgrundversorgungsverordnung (StromGVV)) hat der Messstellenbetreiber die Belange
+§5 Erfüllung eichrechtlicher Vorschriften
+
+1Der Messstellenbetreiber ist mit Blick auf die Durchführung des Messstellenbetriebs
+Messgeräteverwender im Sinne des Eichrechts und verantwortlich für die Einhaltung aller sich aus dem
+Eichrecht ergebenden Anforderungen und Verpflichtungen. 2Mit Vertragsabschluss bestätigt der
+Bundesnetzagentur „Wechselprozesse im Messwesen (WiM)“ (BK6-09-034) in jeweils
+geltender Fassung und richtet sich im Übrigen nach den Regeln des MsbG. 2Die
+Messeinrichtungen für Marktlokationen von Kunden mit Standardlastprofil werden in möglichst
+gleichen Zeitabständen, die ein Jahr nicht wesentlich unter- bzw. überschreiten dürfen, nach
+einem vom Messstellenbetreiber festzulegenden Turnus und Zeitpunkt abgelesen.
+behördlicher oder gerichtlicher Vorgabe ergibt. 3Sämtliche Kosten und Auslagen des
+Messstellenbetreibers für die Vorbereitung, Durchführung und Abwicklung des
+Messstellenbetriebs gelten als mit dem Entgelt abgegolten.
+3. 1Änderungen des Entgelts durch den Messstellenbetreiber erfolgen im Wege der einseitigen
+
+Umsatzsteuersätze ergeben, bedarf es keiner Mitteilung nach Satz 1; dabei entsteht kein
+außerordentliches Kündigungsrecht nach § 14 Abs. 5 S. 2 lit. c.
+5. Sollten neben den Entgelten für den Messstellenbetrieb Abgaben und Umlagen bezogen auf
+diese eingeführt, abgeschafft oder geändert werden, tritt die Änderung mit Wirkung zu dem
+gesetzlich oder sonst hoheitlich hierfür vorgesehenen Zeitpunkt in Kraft.
+mitzuteilen, wenn ein Dritter die Entgelte an seiner Stelle zahlt. 2Der Messstellenbetreiber ist
+berechtigt, Zahlungen Dritter abzulehnen.
+7. Die Abrechnung der Entgelte für den Messstellenbetrieb erfolgt in Textform.
+8. 1Die Zahlung von Entgelten, Steuern und sonstigen Belastungen nach diesem Vertrag erfolgt
+
+der jährlichen Gesamtsumme übersteigt, in Verzug geraten ist und auch auf eine nach
+Verzugseintritt erklärte Aufforderung sowie Androhung der Einstellung des
+Messstellenbetriebs in Textform nicht oder nicht vollständig gezahlt hat,
+b. der Anschlussnutzer/-nehmer bei monatlichen Teilzahlungen innerhalb von zwölf Monaten
+zweimal mit einer fälligen Zahlung in Verzug war und auch auf eine daraufhin erklärte
+vor Abschluss dieses Vertrages nach § 14 Abs. 5 wirksam durch den Messstellenbetreiber
+gekündigt worden ist; in diesem Fall entfällt das Erfordernis des Abs. 1 S. 2.
+3. 1Die Zahlung für den Messstellenbetrieb für den jeweiligen Vorauszahlungszeitraum ist auf
+Anforderung des Messstellenbetreibers im Voraus in voller Höhe zu entrichten. 2Der
+Messstellenbetreiber bestimmt den Zeitpunkt der ersten Vorauszahlung und teilt dem
+Vorauszahlungszeitraum angepasst und entspricht den voraussichtlich anfallenden
+Entgelten für den im Vorauszahlungszeitraum in Anspruch genommenen
+Messstellenbetrieb. 2Dabei hat der Messstellenbetreiber Änderungen im aktuellen
+Kundenbestand sowie die Umstände des Einzelfalles angemessen zu berücksichtigen.
+3Der Messstellenbetreiber teilt dem Vertragspartner in diesen Fällen die Höhe und den
+
+
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Hochlastzeitfenster/2026%20Hochlastzeitfenster.pdf&cid=2390
+
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Grundzust%C3%A4ndiger%20Messstellenbetrieb/Messstellenvertrag%20Strom%20%28Lieferant%29%20ab%2001.07.2026.pdf&cid=2356
+
+Messstellenvertrag Strom
+über den Messstellenbetrieb von intelligenten Messsystemen
+und modernen Messeinrichtungen
+durch den Messstellenbetreiber nach § 9 Abs. 1 Nr. 2 Messstellenbetriebsgesetz
+
+
+1. 1Dieser Rahmenvertrag regelt die gegenseitigen Rechte und Pflichten im Zusammenhang mit
+
+der Durchführung des Messstellenbetriebs im Bereich Elektrizität für Messstellen mit modernen
+Messeinrichtungen oder intelligenten Messsystemen durch den grundzuständigen
+Messstellenbetreiber an den Messstellen des Anschlussnutzers. 2Vertragspartner des
+Messstellenbetreibers ist der durch den Anschlussnutzer oder Anschlussnehmer beauftragte
+Lieferant, der als Anbieter eines kombinierten Vertrags im Sinne des § 9 Abs. 2
+Messstellenbetriebsgesetz (MsbG) tätig wird. 3Die Zuordnung erfolgt über die Marktprozesse
+nach § 6 dieses Vertrages. 4Der Vertrag enthält keine Vorgaben zum Messstellenbetrieb für
+Messstellen, die mit konventioneller Messtechnik ausgestattet sind; diese sind den Regelungen
+des Netznutzungsvertrags zugeordnet. 5Zusatzleistungen im Sinne des § 34 Abs. 2 und 3 MsbG
+1. 1Die Durchführung der Installation hat unter Beachtung der technischen Mindestanforderungen
+
+an den Messstellenbetrieb nach § 8 Abs. 2 MsbG oder einer entsprechenden Festlegung der
+Bundesnetzagentur nach § 47 Abs. 2 Nr. 15 MsbG zu erfolgen. 2Der Messstellenbetreiber ist
+für die ordnungsgemäße Errichtung, Erweiterung, Änderung und Instandhaltung der
+
+
+§3 Messstellenbetrieb
+
+1. Der Messstellenbetreiber verpflichtet sich gegenüber dem Lieferanten, die mit dem
+Messstellenbetrieb nach § 3 MsbG zusammenhängenden Leistungen zu erbringen.
+2. 1Der Messstellenbetreiber bestimmt im Rahmen der gesetzlichen Anforderungen, insbesondere
+
+nehmer auf das Recht des Messstellenbetreibers nach Satz 1 hinzuweisen. 3In den Fällen des
+§ 14 Abs. 3 der Verordnung über Allgemeine Bedingungen für die Grundversorgung von
+Haushaltskunden und die Ersatzversorgung mit Elektrizität aus dem Niederspannungsnetz
+
+2
+§5 Erfüllung eichrechtlicher Vorschriften
+
+1Der Messstellenbetreiber ist mit Blick auf die Durchführung des Messstellenbetriebs
+Messgeräteverwender im Sinne des Eichrechts und verantwortlich für die Einhaltung aller sich aus dem
+Eichrecht ergebenden Anforderungen und Verpflichtungen. 2Mit Vertragsabschluss bestätigt der
+
+
+§6 Geschäftsprozesse und Datenaustausch zur Abwicklung des Messstellenbetriebs
+
+1. Die Abwicklung des Messstellenbetriebs und insbesondere die Datenübermittlung erfolgen
+a. unter Anwendung der von der Bundesnetzagentur erlassenen „Festlegung einheitlicher
+Geschäftsprozesse und Datenformate zur Abwicklung der Belieferung von Kunden mit
+
+geltender Fassung und richtet sich im Übrigen nach den Regeln des MsbG. 2Die
+Messeinrichtungen für Marktlokationen von Kunden mit Standardlastprofil werden in möglichst
+gleichen Zeitabständen, die ein Jahr nicht wesentlich unter- bzw. überschreiten dürfen, nach
+einem vom Messstellenbetreiber festzulegenden Turnus und Zeitpunkt abgelesen.
+behördlicher oder gerichtlicher Vorgabe ergibt. 3Sämtliche Kosten und Auslagen des
+Messstellenbetreibers für die Vorbereitung, Durchführung und Abwicklung des
+Messstellenbetriebs gelten als mit dem Entgelt abgegolten.
+3. 1Änderungen des Entgelts durch den Messstellenbetreiber erfolgen im Wege der einseitigen
+
+4. Der Messstellenbetreiber teilt Änderungen des Entgelts entsprechend den Vorgaben der WiM
+(BK6-09-034) in ihrer jeweils geltenden Fassung mit.
+5. Sollten neben den Entgelten für den Messstellenbetrieb Abgaben und Umlagen bezogen auf
+diese eingeführt, abgeschafft oder geändert werden, tritt die Änderung mit Wirkung zu dem
+gesetzlich oder sonst hoheitlich hierfür vorgesehenen Zeitpunkt in Kraft.
+1. 1Der Messstellenbetreiber rechnet die Entgelte jährlich nachschüssig ab. 2Es steht ihm dabei
+
+frei, angemessene Teilzahlungen zu verlangen. 3Die Abrechnung des Messstellenbetriebs im
+Rahmen kombinierter Verträge erfolgt gegenüber dem Lieferanten. 4Der Messstellenbetreiber
+teilt dem Lieferanten den gewählten Abrechnungsturnus und die Höhe der Teilzahlungen mit
+Dritter die Entgelte anstelle des Lieferanten zahlt. 2Der Messstellenbetreiber ist berechtigt,
+Zahlungen Dritter abzulehnen. 3Der Lieferant kann bei ausdrücklicher Vereinbarung der
+Vertragspartner für den Messstellenbetrieb für moderne Messeinrichtungen und intelligente
+Messsysteme auf den Anfrageprozess zur Rechnungsübernahme verzichten, solange und
+soweit der Lieferant die Rechnungsübernahme nicht abbestellt.
+a. der Lieferant mit einer fälligen Zahlung in einer Gesamthöhe, die die Hälfte der jährlichen
+Gesamtsumme übersteigt, in Verzug geraten ist und auch auf eine nach Verzugseintritt
+erklärte Aufforderung sowie Androhung der Einstellung des Messstellenbetriebs in Textform
+nicht oder nicht vollständig gezahlt hat,
+b. der Lieferant bei monatlichen Teilzahlungen innerhalb von zwölf Monaten zweimal mit einer
+vor Abschluss dieses Vertrages nach § 16 Abs. 5 wirksam durch den Messstellenbetreiber
+gekündigt worden ist; in diesem Fall entfällt das Erfordernis des Abs. 1 S. 2.
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Grundzust%C3%A4ndiger%20Messstellenbetrieb/Preisblatt%20Messstellenbetrieb%20ab%2001.03.2026.pdf&cid=2342
+Entgelte gültig ab: 01.03.2026
+
+Abrechnung Messstellenbetrieb für die Sparte Strom - Preisobergrenzen, die vom Messtellenbetreiber (MSB)
+ggü. dem Anschlussnutzer, Anschlussnehmer oder dritten Beauftragten erhoben werden.
+
+Entgelte für Standardleistungen für Anschlussnutzer nach § 33 MsbG
+
+Entgelte für den Messstellenbetrieb von Preis je MeLo* Preis je MeLo*
+modernen Messeinrichtungen €/a (netto) 1) €/a (brutto) 1)
+
+Entgelte gültig ab: 01.03.2026
+
+Abrechnung Messstellenbetrieb für die Sparte Strom - Preisobergrenzen, die vom Messtellenbetreiber (MSB)
+ggü. dem Anschlussnutzer, Anschlussnehmer oder dritten Beauftragten erhoben werden.
+
+Mittelspannung, Wandlersatz für
+€/a 288,00 342,72
+Messstellenbetrieb bei iMS
+Niederspannung, Wandlersatz für
+€/a 24,00 28,56
+Messstellenbetrieb bei iMS
+Schaltgerät/Tarifschaltung, das/die nicht
+€/a 15,00 17,85
+Rahmen von unterjährigen Ablesungen €/Auftrag auf Anfrage auf Anfrage
+nach § 40 EnWG, Abs.3
+Entgelt für Messstellenbetrieb bei
+€/a auf Anfrage auf Anfrage
+individuellem Angebot
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2024%20Preisblatt.pdf&cid=2192
+
+
+### Elektrizitätswerk Simbach GmbH | https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2025%20Preisblatt.pdf&cid=1705
+
+Netz- oder Umspannebene < 2.500 h/a ≥ 2.500 h/a
+Leistungspreis Arbeitspreis Leistungspreis Arbeitspreis
+€/kWa ct/kWh €/kWa ct/kWh
+Mittelspannung (MS) 23,90 9,43 226,80 1,31
+
+
+Entgelte für die Netznutzung - Entnahmestellen ohne Leistungsmessung
+Grundpreis Arbeitspreis
+Ebene
+€/a ct/kWh
+Entnahme ohne Leistungsmessung Niederspannung (NS) 96,00 8,42
+Unterbrechbare Versorgungseinrichtungen § 14a EnWG:
+Bestandsanlagen Speicherheizung, Elektromobilität, Niederspannung (NS) 0,00 2,63
+
+Steuerbare Verbrauchseinrichtungen nach § 14.a EnWG
+Pauschaler Rabatt Arbeitspreis
+Modul 1 & 2 Ebene
+€/a ct/kWh
+
+
+NT Arbeitspreis ST Arbeitspreis HT Arbeitspreis
+Modul 3 (nur in Verbindung mit iMSys und Modul 1)
+ct/kWh ct/kWh ct/kWh
+Arbeitspreis Ebene Niederspannung 3,37 8,42 10,05
+Zeitfenster Ebene Niederspannung Niedriglasttarif Standardtarif Hochtarif
+
+
+Sonderformen der Netznutzung gemäß § 19 Abs. 1 StromNEV --- Monatsleistungspreise ---
+Leistungspreis Arbeitspreis
+Netz- oder Umspannebene
+€/kW/Monat ct/kWh
+
+
+Entgelte für Messstellenbetrieb
+
+Das Entgelt für Messstellenbetrieb umfasst auch die Messdienstleistung.
+Die Entgelte für den Messstellenbetrieb moderner Messeinrichtungen (mME) und intelligenter Messsysteme (iMSys) gemäß
+Messstellenbetriebsgesetz sind in einem eigenen Preisblatt des grundzuständigen Messstellenbetreibers ausgewiesen.
+
+
+Entgelte für Messstellenbetrieb je Zählpunkt mit Messstellenbetrieb
+Leistungsmessung €/a
+Mittelspannungsmessung je Zählpunkt 695,00
+Niederspannungsmessung je Zählpunkt 475,00
+
+Entgelte für Messstellenbetrieb je Zählpunkt ohne Messstellenbetrieb
+Leistungsmessung (Preise je Turnusablesung) €/a
+Eintarifzähler 11,80
+

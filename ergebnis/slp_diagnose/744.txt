@@ -1,0 +1,519 @@
+### Städtische Werke Netz+Service GmbH | https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Preisblatt_Strom_2026.pdf
+Inhaltsverzeichnis
+Hinweise ...................................................................................................................................
+1. Entgelte für Entnahmestellen ohne Leistungsmessung .................................................................... 3
+1.1. Haushalt/Gewerbe und Anlagen gem. § 14a EnWG ........................................................................ 3
+1.2. Neuanlagen gem. § 14a EnWG ......................................................................................................... 4
+2. Entgelte für Entnahmestellen mit Leistungsmessung....................................................................... 6
+2.3 Tagesleistungspreissystem ..............................................................................................................
+2.4 Individuelles Netzentgelt für Stromspeicher gem. § 19 Abs. 4 StromNEV........................................ 8
+3. Entgelte für Messstellenbetrieb (MSB) ............................................................................................. 9
+3.1 Entgelte für Messstellenbetrieb für Entnahmestellen ohne Leistungsmessung .............................. 9
+3.2 Entgelte für Messstellenbetrieb für Entnahmestellen mit Leistungsmessung ............................... 10
+3.3 Entgelte für Zusatzeinrichtungen .................................................................................................... 10
+4. Umsatzsteuer ............................................................................................................................
+2
+
+1. Entgelte für Entnahmestellen ohne Leistungsmessung
+
+Entnahmestellen mit einem Jahresverbrauch < 100.000 kWh werden nach einem analytischen
+Lastprofil versorgt. Es handelt sich um Entnahmestellen ohne Leistungsmessung. Die
+Zuordnung der Entnahmestellen zu einer Lastprofilgruppe nimmt der Netzbetreiber,
+Städtische Werke Netz + Service GmbH, vor.
+
+
+1.1. Haushalt/Gewerbe und Anlagen gem. § 14a EnWG
+
+Gemäß § 14a EnWG werden Lieferanten und Letztverbraucher im Bereich der
+Entgelte für Netznutzung/Altverträge bis 2023 (bei Übergangsregelung längstens bis 2028)
+
+Grundpreis Arbeitspreis
+€ 𝐶𝑒𝑛𝑡
+[ ] [
+]
+a
+Haushalt / Gewerbe 98,50 6,29
+Steuerbare Elektro-Speicherheizungen** - 2,46
+Steuerbare Elektro-Wärmepumpen** - 2,46
+grundsätzlich drei Optionen in Form des Modul 1 (pauschale Netzentgeltreduzierung), des
+Modul 2 (prozentuale Netzentgeltreduzierung) und des Modul 3 (zeitvariables Netzentgelt ab
+01.04.2025). Die Höhe der Reduzierung berechnet sich je abhängig vom Arbeitspreis.
+
+Letztverbraucher in der Niederspannung ohne Leistungsmessung (SLP) können frei zwischen
+den beiden Modulen wählen. Sollte kein Modul aktiv gewählt werden, fällt dieser
+Letztverbraucher automatisch in das Modul 1 („Default“). Voraussetzung für Modul 2 ist, dass
+Unterbrechbare / steuerbare Verbraucher, gem. § 14a / Neuverträge ab 2024
+
+Grundpreis 𝑐𝑡 Pauschale
+€ Arbeitspreis (AP) [ ] €
+[ ] kWh Reduktion * [ ]
+a a
+den ausgewiesenen Quartalen.
+
+Arbeitspreis
+Tarifstufe 𝐶𝑒𝑛𝑡
+[ ]
+kWh
+Hochlasttarifstufe 8,17
+Standardlasttarifstufe 6,29
+Niedriglasttarifstufe 0,75
+
+
+Die ausgewiesenen Tarifstufen finden zu folgenden Zeiten Anwendung. In dem 2. Quartal
+(01.04 – 30.06) und dem 3. Quartal (01.07 – 30.09) kommt nur die Standardlasttarifstufe zur
+Anwendung.
+
+17:15 - 21:15 17:15 - 21:15
+06:45 – 08:30 06:45 – 08:30
+Standardlastzeitfenster 15:15 – 17:15 15:15 – 17:15
+21:15 – 23:00 21:15 – 23:00
+Niedriglastzeitfenster 23:00 - 06:45 23:00 - 06:45
+
+Das Netzentgelt nach Modul 3 ergibt sich aus:
+Grundpreis + Pauschalreduktion wie Modul 1 + Zeitvariabler AP je Zeitzone
+
+
+
+Die Netzentgelte richten sich nach der Anschlussnetz– bzw. Umspannebene und der
+Jahresbenutzungsdauer. Der Arbeitspreis (AP) ist für die im Abrechnungszeitraum von einem
+Jahr bezogene Wirkarbeit zu zahlen. Für die Abrechnung des Jahresleistungspreises wird die
+Jahreshöchstleistung berücksichtigt.
+8
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Netznutzungsvertrag_Strom_BK6-20-160.pdf
+§ 4 Geschäftsprozesse und Datenaustausch zur Abwicklung der Netznutzung ................... 4
+§ 5 Registrierende Lastgangmessung, Zählerstandsgangmessung und
+Standardlastprofilverfahren ................................................................................................. 4
+§ 6 Messstellenbetrieb......................................................................................................... 5
+§ 7 Entgelte ......................................................................................................................... 6
+§ 8 Abrechnung, Zahlung und Verzug ................................................................................. 8
+Bundesnetzagentur vorgegeben (Az. BK6-13-042 in der Fassung der Festlegung BK6-20-
+160, Beschl. v. 21.12.2020). 2Der Vereinbarung liegen das Energiewirtschaftsgesetz
+(EnWG), das Messstellenbetriebsgesetz (MsbG) sowie die auf diesen Grundlagen
+erlassenen Rechtsverordnungen und behördlichen Festlegungen in jeweils aktueller
+Fassung zu Grunde. 3Zukünftige Festlegungen werden mit Datum ihres Inkrafttretens
+1. 1Dieser Vertrag regelt die gegenseitigen Rechte und Pflichten der Vertragspartner im
+Zusammenhang mit der Netznutzung. 2Soweit nicht ein Dritter nach § 5 MsbG den
+Messstellenbetrieb an den betroffenen Messlokationen durchführt, umfasst die Netznutzung
+bei konventioneller Messtechnik (Messtechnik, bei der es sich weder um eine moderne
+Messeinrichtung noch um ein intelligentes Messsystem handelt) auch die Durchführung des
+Messstellenbetriebs durch den Netzbetreiber als grundzuständiger Messstellenbetreiber.
+
+2
+BK6-20-160, Beschluss 21.12.2020 gültig ab 01.04.2022 NNV_S_2022_V01
+
+3Dieser Vertrag enthält keine Vorgaben zum Messstellenbetrieb für Messstellen, die mit
+modernen Messeinrichtungen oder intelligenten Messsystemen ausgestattet sind.
+
+
+§ 5 Registrierende Lastgangmessung, Zählerstandsgangmessung und
+Standardlastprofilverfahren
+1. Zur Feststellung der Leistungswerte bzw. Energiemenge je ¼-h-Messperiode für die
+Bilanzierung, Abrechnung der Netznutzung sowie Energieabrechnung werden Zeitreihen
+3. Lastprofilverfahren
+
+1Der Netzbetreiber bestimmt, welches Standardlastprofilverfahren und welche
+Standardlastprofile zur Anwendung kommen. 2Die Standardlastprofile setzt der
+Netzbetreiber auf der Grundlage des synthetischen oder des erweiterten analytischen
+Verfahrens ein. 3Der Netzbetreiber ordnet jeder Marktlokation ein dem Abnahmeverhalten
+entsprechendes Standardlastprofil zu und stellt eine Jahresverbrauchsprognose auf, die in
+der Regel auf dem Vorjahresverbrauch basiert. 4Hierbei sind die berechtigten Interessen
+des Lieferanten zu wahren. 5Dem Lieferanten steht das Recht zu, unplausiblen Prognosen
+und Lastprofilzuordnungen zu widersprechen und dem Netzbetreiber einen eigenen
+Vorschlag zu unterbreiten. 6Kommt keine Einigung zustande, legt der Netzbetreiber die
+Prognose über den Jahresverbrauch und das Standardlastprofil fest. 7Die Zuordnung und
+Prognose teilt er dem Lieferanten nach erstmaliger Festlegung sowie im Falle jeglicher
+Änderung unverzüglich unter Beachtung der unter § 4 Abs. 1 genannten Festlegungen mit.
+
+
+§ 6 Messstellenbetrieb
+1. 1Der Messstellenbetrieb nach § 1 Absatz 1 dieses Vertrages ist Aufgabe des
+Netzbetreibers, solange und soweit nicht ein Dritter nach § 5 MsbG den Messstellenbetrieb
+durchführt. 2Der Netzbetreiber ist – soweit er Messstellenbetreiber nach Satz 1 ist – mit
+Blick auf die Durchführung des Messstellenbetriebs Messgeräteverwender im Sinne des
+Eichrechts und verantwortlich für die Einhaltung aller sich aus dem Eichrecht ergebenden
+Anforderungen und Verpflichtungen. 3Er bestätigt hiermit insoweit die Erfüllung dieser
+eine eindeutige Identifikationsnummer zuzuordnen und diese zu verwalten. 2Die einmal
+zugeordneten Identifikationsnummern sind unveränderlich. 3Soweit der Netzbetreiber den
+Messstellenbetrieb durchführt oder eine Festlegung der Bundesnetzagentur dies für
+darüber hinaus gehende Fälle bestimmt, hat er auch die abrechnungsrelevanten
+Messwerte zu verarbeiten, aufzubereiten und an die berechtigten Stellen weiterzuleiten.
+anlassbezogen in den Fallgruppen und Fristen gemäß der Festlegung WiM in jeweils
+geltender Fassung. 2Die Messeinrichtungen für Marktlokationen von Kunden mit
+Standardlastprofil werden in möglichst gleichen Zeitabständen, die 12 Monate nicht
+wesentlich überschreiten dürfen, nach einem vom Messstellenbetreiber festzulegenden
+Turnus und Zeitpunkt abgelesen. 3Liegt eine Vereinbarung zwischen Lieferant und
+
+2. 1Neben dem Netzentgelt stellt der Netzbetreiber dem Netznutzer für jede Messlokation
+ein Entgelt für den Messstellenbetrieb in Rechnung, soweit er diesen auf Grundlage dieses
+Vertrages nach Maßgabe des § 1 Abs. 1 durchführt. 2Das Entgelt für den
+Messstellenbetrieb umfasst insbesondere die für die Messeinrichtung, den Wandler
+sowie vorhandene technische Steuer- und Telekommunikationseinrichtungen zu
+entrichtenden Kosten. 3Die Höhe dieser Entgelte ist den geltenden Preisblättern zu
+jeweils gemäß den Vorschriften der ARegV sowie des Teils 2 der StromNEV anpassen.
+
+6. 1Eine Anpassung der Netzentgelte sowie der Entgelte für den Messstellenbetrieb auf
+Grundlage dieses Vertrages erfolgt immer zum 1. Januar eines Kalenderjahres, soweit
+nicht durch Gesetz, behördliche oder gerichtliche Entscheidung etwas anderes vorgegeben
+aus. 4Ändern sich die für die Berechnung der Abschlagszahlungen relevanten Parameter
+(z. B. Preise, Jahresprognose, Wegfall von Leistungen des Netzbetreibers aus Netznutzung
+oder aus Messstellenbetrieb) können die Vertragspartner auch unterjährig eine Anpassung
+der Abschlagszahlungen verlangen.
+
+
+
+### Städtische Werke Netz+Service GmbH | https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Preisblatt_Strom_IndNE_2026.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/LP_Kassel_SP_-_Format_BDEW.xlsx
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Strom_-_Erlaubnisschein_-_Staedtische_Werke_Netz___Service_GmbH.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/KOV/KOV_XIV.2_ab_01.01.2026/251028_KoV_HT_KoV_XIV.2.pdf
+§ 28 Datenaustausch und Mengenanmeldung 50
+§ 29 Betretungs- und Kontrollrechte 50
+§ 30 Messstellenbetrieb 51
+§ 31 Reduzierung oder Einstellung der Gasübergabe/-übernahme 52
+
+§ 47 Allokationsclearing 67
+§ 48 Formate und Datenaustausch 71
+§ 49 SLP-Mehr-/Mindermengenabrechnung 71
+§ 50 Netzkontensystematik und Anreizsystem 74
+
+6 und 10)
+• Preisblätter (Anlage 1)
+• Konkretisierung Standardlastprofilverfahren (Anlage 5)
+d) Bilanzkreisvertrag mit Anlagen zum Biogas-Bilanzkreisvertrag und zur Speicherum-
+lage, abzuschließen zwischen Marktgebietsverantwortlichem und Bilanzkreisverant-
+vermutet, wenn die Leitfäden
+a) Leitfaden Marktprozesse Bilanzkreismanagement Gas,
+b) Leitfaden Abwicklung von Standardlastprofilen Gas,
+c) Leitfaden Bilanzierung Biogas,
+d) Leitfaden Kostenwälzung Biogas,
+von seiner Herkunft aus:
+• unterschiedlichen vorgelagerten Netzen,
+• Arbeits-, Leistungs- oder Grundpreisen oder spezifischen Kapazitätsentgelten sowie
+• anteiligen Biogaskosten gemäß § 7 und
+• anteiligen Kosten für die Marktraumumstellung von L- auf H-Gas gemäß § 10.
+b) Nach abgeschlossener Ermittlung im Sinne des vorstehenden lit. a) veranlasst der
+qualitätsumstellende Netzbetreiber die erforderlichen und notwendigen Anpas-
+sungsmaßnahmen von Verbrauchsgeräten und Kundenanlagen bei SLP-Kunden mit
+Standard-Gasanwendungen. Die Kosten der als erforderlich identifizierten Anpas-
+sungsmaßnahmen werden durch die jeweiligen Netzbetreiber ermittelt, in deren
+Netz die Maßnahmen anfallen. Die anfallenden Kosten müssen notwendig und an-
+gemessen sein.
+c) Für RLM- und SLP-Kunden als Betreiber der Kundenanlage gemäß § 19a EnWG, die
+durch keine Standard-Gasanwendungen gekennzeichnet sind, müssen Anpassungs-
+maßnahmen durch den qualitätsumstellenden Netzbetreiber veranlasst werden. Die
+ben und
+dd) nicht in Härtegrad I oder II fallen, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+aa) im Rahmen der kommunalen Wärmeplanung ein Prüfgebiet veröffentlicht wurde
+oder eine dezentrale Wärmeversorgung oder Wärmenetzgebiete geplant wurden
+und ein Wasserstoff-Lieferant verfügbar sind, der Wasserstoff zu einem marktgerech-
+ten Preis anbietet, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+Kunden gemäß lit. a) existieren.
+9. Der Härtegrad I der Wasserstoff-Prognose enthält die Bedarfe
+treiber und Kunde mit finanzieller Komponente, z. B. Plankostenzuschuss, ge-
+schlossen wurde, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+aa) im Rahmen der kommunalen Wärmeplanung Wasserstoffnetzgebiete veröffent-
+licht wurden oder in denen Kunden gemäß lit. a) existieren, oder
+zielle Förderung mit öffentlichen Geldern (z. B. IPCEI-Projekte) existiert.
+11. In einem Gebiet, für das keine kommunale Wärmeplanung vorliegt, können Wärmekun-
+den, die aktuell im Erdgasbereich SLP-Kunden sind, maximal dem gleichen Härtegrad zu-
+geordnet werden, wie die Kunden dieses Gebiets, die keine solche Wärmekunden sind.
+
+
+
+§ 30 Messstellenbetrieb
+1. Die Netzbetreiber am Netzkopplungspunkt legen im Rahmen der gesonderten Verein-
+barung bzw. mittels eines Datenblatts fest, welcher Netzbetreiber für den Messstellen-
+Netzbetreiber für die Meldung verantwortlich ist. In diesem Fall informiert der nachgela-
+gerte Netzbetreiber den Marktgebietsverantwortlichen hierüber in Textform.
+Der für den Messstellenbetrieb verantwortliche Netzbetreiber stellt dem jeweils ande-
+ren Netzbetreiber des Netzkopplungspunktes die Messwerte auf Anforderung als Ge-
+schäftsnachricht mittels EDIFACT-Kommunikation zur Verfügung und ist für die Abstim-
+mung einer Netzkopplungszeitreihe mit dem anderen Netzbetreiber verantwortlich. Der
+für den Messstellenbetrieb verantwortliche Netzbetreiber teilt dem jeweils anderen
+Netzbetreiber des Netzkopplungspunktes bei geplanten Arbeiten mit einer Vorlaufzeit
+von mindestens 14 Kalendertagen Änderungen der Stammdaten mit, insbesondere An-
+einschließlich entsprechender Kommunikationseinrichtungen und/oder Messeinrichtun-
+gen für Prüfzwecke auf eigene Kosten einzubauen bzw. einbauen zu lassen.
+3. Der für den Messstellenbetrieb verantwortliche Netzbetreiber ist mit Blick auf die Durch-
+führung des Messstellenbetriebs Messgeräteverwender im Sinne des Eichrechts und
+diesbezüglich verantwortlich für die Einhaltung aller sich aus dem Eichrecht ergebenden
+Anforderungen und Verpflichtungen. Der Netzbetreiber – soweit er Messstellenbetrei-
+Kooperationsvereinbarung Gas, Stand 28.10.2025 Seite 51 von 90
+
+4. Der für den Messstellenbetrieb verantwortliche Netzbetreiber ist verpflichtet, die
+Eichung auch von solchen Messgeräten sicherzustellen, die zumindest für einen maxima-
+len Durchfluss von 150 000 m³/h im Normzustand ausgelegt sind, sofern die Messwerte
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Hochlastzeitfenster_2026.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Preisblatt_Strom_2026.pdf
+Inhaltsverzeichnis
+Hinweise ...................................................................................................................................
+1. Entgelte für Entnahmestellen ohne Leistungsmessung .................................................................... 3
+1.1. Haushalt/Gewerbe und Anlagen gem. § 14a EnWG ........................................................................ 3
+1.2. Neuanlagen gem. § 14a EnWG ......................................................................................................... 4
+2. Entgelte für Entnahmestellen mit Leistungsmessung....................................................................... 6
+2.3 Tagesleistungspreissystem ..............................................................................................................
+2.4 Individuelles Netzentgelt für Stromspeicher gem. § 19 Abs. 4 StromNEV........................................ 8
+3. Entgelte für Messstellenbetrieb (MSB) ............................................................................................. 9
+3.1 Entgelte für Messstellenbetrieb für Entnahmestellen ohne Leistungsmessung .............................. 9
+3.2 Entgelte für Messstellenbetrieb für Entnahmestellen mit Leistungsmessung ............................... 10
+3.3 Entgelte für Zusatzeinrichtungen .................................................................................................... 10
+4. Umsatzsteuer ............................................................................................................................
+2
+
+1. Entgelte für Entnahmestellen ohne Leistungsmessung
+
+Entnahmestellen mit einem Jahresverbrauch < 100.000 kWh werden nach einem analytischen
+Lastprofil versorgt. Es handelt sich um Entnahmestellen ohne Leistungsmessung. Die
+Zuordnung der Entnahmestellen zu einer Lastprofilgruppe nimmt der Netzbetreiber,
+Städtische Werke Netz + Service GmbH, vor.
+
+
+1.1. Haushalt/Gewerbe und Anlagen gem. § 14a EnWG
+
+Gemäß § 14a EnWG werden Lieferanten und Letztverbraucher im Bereich der
+Entgelte für Netznutzung/Altverträge bis 2023 (bei Übergangsregelung längstens bis 2028)
+
+Grundpreis Arbeitspreis
+€ 𝐶𝑒𝑛𝑡
+[ ] [
+]
+a
+Haushalt / Gewerbe 98,50 6,29
+Steuerbare Elektro-Speicherheizungen** - 2,46
+Steuerbare Elektro-Wärmepumpen** - 2,46
+grundsätzlich drei Optionen in Form des Modul 1 (pauschale Netzentgeltreduzierung), des
+Modul 2 (prozentuale Netzentgeltreduzierung) und des Modul 3 (zeitvariables Netzentgelt ab
+01.04.2025). Die Höhe der Reduzierung berechnet sich je abhängig vom Arbeitspreis.
+
+Letztverbraucher in der Niederspannung ohne Leistungsmessung (SLP) können frei zwischen
+den beiden Modulen wählen. Sollte kein Modul aktiv gewählt werden, fällt dieser
+Letztverbraucher automatisch in das Modul 1 („Default“). Voraussetzung für Modul 2 ist, dass
+Unterbrechbare / steuerbare Verbraucher, gem. § 14a / Neuverträge ab 2024
+
+Grundpreis 𝑐𝑡 Pauschale
+€ Arbeitspreis (AP) [ ] €
+[ ] kWh Reduktion * [ ]
+a a
+den ausgewiesenen Quartalen.
+
+Arbeitspreis
+Tarifstufe 𝐶𝑒𝑛𝑡
+[ ]
+kWh
+Hochlasttarifstufe 8,17
+Standardlasttarifstufe 6,29
+Niedriglasttarifstufe 0,75
+
+
+Die ausgewiesenen Tarifstufen finden zu folgenden Zeiten Anwendung. In dem 2. Quartal
+(01.04 – 30.06) und dem 3. Quartal (01.07 – 30.09) kommt nur die Standardlasttarifstufe zur
+Anwendung.
+
+17:15 - 21:15 17:15 - 21:15
+06:45 – 08:30 06:45 – 08:30
+Standardlastzeitfenster 15:15 – 17:15 15:15 – 17:15
+21:15 – 23:00 21:15 – 23:00
+Niedriglastzeitfenster 23:00 - 06:45 23:00 - 06:45
+
+Das Netzentgelt nach Modul 3 ergibt sich aus:
+Grundpreis + Pauschalreduktion wie Modul 1 + Zeitvariabler AP je Zeitzone
+
+
+
+Die Netzentgelte richten sich nach der Anschlussnetz– bzw. Umspannebene und der
+Jahresbenutzungsdauer. Der Arbeitspreis (AP) ist für die im Abrechnungszeitraum von einem
+Jahr bezogene Wirkarbeit zu zahlen. Für die Abrechnung des Jahresleistungspreises wird die
+Jahreshöchstleistung berücksichtigt.
+8
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/dokumente/Preisblatt_BKZ_2026.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Preisblatt_Strom_IndNE_2026.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Netznutzungsvertrag_Strom_BK6-20-160.pdf
+§ 4 Geschäftsprozesse und Datenaustausch zur Abwicklung der Netznutzung ................... 4
+§ 5 Registrierende Lastgangmessung, Zählerstandsgangmessung und
+Standardlastprofilverfahren ................................................................................................. 4
+§ 6 Messstellenbetrieb......................................................................................................... 5
+§ 7 Entgelte ......................................................................................................................... 6
+§ 8 Abrechnung, Zahlung und Verzug ................................................................................. 8
+Bundesnetzagentur vorgegeben (Az. BK6-13-042 in der Fassung der Festlegung BK6-20-
+160, Beschl. v. 21.12.2020). 2Der Vereinbarung liegen das Energiewirtschaftsgesetz
+(EnWG), das Messstellenbetriebsgesetz (MsbG) sowie die auf diesen Grundlagen
+erlassenen Rechtsverordnungen und behördlichen Festlegungen in jeweils aktueller
+Fassung zu Grunde. 3Zukünftige Festlegungen werden mit Datum ihres Inkrafttretens
+1. 1Dieser Vertrag regelt die gegenseitigen Rechte und Pflichten der Vertragspartner im
+Zusammenhang mit der Netznutzung. 2Soweit nicht ein Dritter nach § 5 MsbG den
+Messstellenbetrieb an den betroffenen Messlokationen durchführt, umfasst die Netznutzung
+bei konventioneller Messtechnik (Messtechnik, bei der es sich weder um eine moderne
+Messeinrichtung noch um ein intelligentes Messsystem handelt) auch die Durchführung des
+Messstellenbetriebs durch den Netzbetreiber als grundzuständiger Messstellenbetreiber.
+
+2
+BK6-20-160, Beschluss 21.12.2020 gültig ab 01.04.2022 NNV_S_2022_V01
+
+3Dieser Vertrag enthält keine Vorgaben zum Messstellenbetrieb für Messstellen, die mit
+modernen Messeinrichtungen oder intelligenten Messsystemen ausgestattet sind.
+
+
+§ 5 Registrierende Lastgangmessung, Zählerstandsgangmessung und
+Standardlastprofilverfahren
+1. Zur Feststellung der Leistungswerte bzw. Energiemenge je ¼-h-Messperiode für die
+Bilanzierung, Abrechnung der Netznutzung sowie Energieabrechnung werden Zeitreihen
+3. Lastprofilverfahren
+
+1Der Netzbetreiber bestimmt, welches Standardlastprofilverfahren und welche
+Standardlastprofile zur Anwendung kommen. 2Die Standardlastprofile setzt der
+Netzbetreiber auf der Grundlage des synthetischen oder des erweiterten analytischen
+Verfahrens ein. 3Der Netzbetreiber ordnet jeder Marktlokation ein dem Abnahmeverhalten
+entsprechendes Standardlastprofil zu und stellt eine Jahresverbrauchsprognose auf, die in
+der Regel auf dem Vorjahresverbrauch basiert. 4Hierbei sind die berechtigten Interessen
+des Lieferanten zu wahren. 5Dem Lieferanten steht das Recht zu, unplausiblen Prognosen
+und Lastprofilzuordnungen zu widersprechen und dem Netzbetreiber einen eigenen
+Vorschlag zu unterbreiten. 6Kommt keine Einigung zustande, legt der Netzbetreiber die
+Prognose über den Jahresverbrauch und das Standardlastprofil fest. 7Die Zuordnung und
+Prognose teilt er dem Lieferanten nach erstmaliger Festlegung sowie im Falle jeglicher
+Änderung unverzüglich unter Beachtung der unter § 4 Abs. 1 genannten Festlegungen mit.
+
+
+§ 6 Messstellenbetrieb
+1. 1Der Messstellenbetrieb nach § 1 Absatz 1 dieses Vertrages ist Aufgabe des
+Netzbetreibers, solange und soweit nicht ein Dritter nach § 5 MsbG den Messstellenbetrieb
+durchführt. 2Der Netzbetreiber ist – soweit er Messstellenbetreiber nach Satz 1 ist – mit
+Blick auf die Durchführung des Messstellenbetriebs Messgeräteverwender im Sinne des
+Eichrechts und verantwortlich für die Einhaltung aller sich aus dem Eichrecht ergebenden
+Anforderungen und Verpflichtungen. 3Er bestätigt hiermit insoweit die Erfüllung dieser
+eine eindeutige Identifikationsnummer zuzuordnen und diese zu verwalten. 2Die einmal
+zugeordneten Identifikationsnummern sind unveränderlich. 3Soweit der Netzbetreiber den
+Messstellenbetrieb durchführt oder eine Festlegung der Bundesnetzagentur dies für
+darüber hinaus gehende Fälle bestimmt, hat er auch die abrechnungsrelevanten
+Messwerte zu verarbeiten, aufzubereiten und an die berechtigten Stellen weiterzuleiten.
+anlassbezogen in den Fallgruppen und Fristen gemäß der Festlegung WiM in jeweils
+geltender Fassung. 2Die Messeinrichtungen für Marktlokationen von Kunden mit
+Standardlastprofil werden in möglichst gleichen Zeitabständen, die 12 Monate nicht
+wesentlich überschreiten dürfen, nach einem vom Messstellenbetreiber festzulegenden
+Turnus und Zeitpunkt abgelesen. 3Liegt eine Vereinbarung zwischen Lieferant und
+
+2. 1Neben dem Netzentgelt stellt der Netzbetreiber dem Netznutzer für jede Messlokation
+ein Entgelt für den Messstellenbetrieb in Rechnung, soweit er diesen auf Grundlage dieses
+Vertrages nach Maßgabe des § 1 Abs. 1 durchführt. 2Das Entgelt für den
+Messstellenbetrieb umfasst insbesondere die für die Messeinrichtung, den Wandler
+sowie vorhandene technische Steuer- und Telekommunikationseinrichtungen zu
+entrichtenden Kosten. 3Die Höhe dieser Entgelte ist den geltenden Preisblättern zu
+jeweils gemäß den Vorschriften der ARegV sowie des Teils 2 der StromNEV anpassen.
+
+6. 1Eine Anpassung der Netzentgelte sowie der Entgelte für den Messstellenbetrieb auf
+Grundlage dieses Vertrages erfolgt immer zum 1. Januar eines Kalenderjahres, soweit
+nicht durch Gesetz, behördliche oder gerichtliche Entscheidung etwas anderes vorgegeben
+aus. 4Ändern sich die für die Berechnung der Abschlagszahlungen relevanten Parameter
+(z. B. Preise, Jahresprognose, Wegfall von Leistungen des Netzbetreibers aus Netznutzung
+oder aus Messstellenbetrieb) können die Vertragspartner auch unterjährig eine Anpassung
+der Abschlagszahlungen verlangen.
+
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/KOV/KOV_XIV.2_ab_01.01.2026/251028_KoV_HT_KoV_XIV.2.pdf
+§ 28 Datenaustausch und Mengenanmeldung 50
+§ 29 Betretungs- und Kontrollrechte 50
+§ 30 Messstellenbetrieb 51
+§ 31 Reduzierung oder Einstellung der Gasübergabe/-übernahme 52
+
+§ 47 Allokationsclearing 67
+§ 48 Formate und Datenaustausch 71
+§ 49 SLP-Mehr-/Mindermengenabrechnung 71
+§ 50 Netzkontensystematik und Anreizsystem 74
+
+6 und 10)
+• Preisblätter (Anlage 1)
+• Konkretisierung Standardlastprofilverfahren (Anlage 5)
+d) Bilanzkreisvertrag mit Anlagen zum Biogas-Bilanzkreisvertrag und zur Speicherum-
+lage, abzuschließen zwischen Marktgebietsverantwortlichem und Bilanzkreisverant-
+vermutet, wenn die Leitfäden
+a) Leitfaden Marktprozesse Bilanzkreismanagement Gas,
+b) Leitfaden Abwicklung von Standardlastprofilen Gas,
+c) Leitfaden Bilanzierung Biogas,
+d) Leitfaden Kostenwälzung Biogas,
+von seiner Herkunft aus:
+• unterschiedlichen vorgelagerten Netzen,
+• Arbeits-, Leistungs- oder Grundpreisen oder spezifischen Kapazitätsentgelten sowie
+• anteiligen Biogaskosten gemäß § 7 und
+• anteiligen Kosten für die Marktraumumstellung von L- auf H-Gas gemäß § 10.
+b) Nach abgeschlossener Ermittlung im Sinne des vorstehenden lit. a) veranlasst der
+qualitätsumstellende Netzbetreiber die erforderlichen und notwendigen Anpas-
+sungsmaßnahmen von Verbrauchsgeräten und Kundenanlagen bei SLP-Kunden mit
+Standard-Gasanwendungen. Die Kosten der als erforderlich identifizierten Anpas-
+sungsmaßnahmen werden durch die jeweiligen Netzbetreiber ermittelt, in deren
+Netz die Maßnahmen anfallen. Die anfallenden Kosten müssen notwendig und an-
+gemessen sein.
+c) Für RLM- und SLP-Kunden als Betreiber der Kundenanlage gemäß § 19a EnWG, die
+durch keine Standard-Gasanwendungen gekennzeichnet sind, müssen Anpassungs-
+maßnahmen durch den qualitätsumstellenden Netzbetreiber veranlasst werden. Die
+ben und
+dd) nicht in Härtegrad I oder II fallen, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+aa) im Rahmen der kommunalen Wärmeplanung ein Prüfgebiet veröffentlicht wurde
+oder eine dezentrale Wärmeversorgung oder Wärmenetzgebiete geplant wurden
+und ein Wasserstoff-Lieferant verfügbar sind, der Wasserstoff zu einem marktgerech-
+ten Preis anbietet, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+Kunden gemäß lit. a) existieren.
+9. Der Härtegrad I der Wasserstoff-Prognose enthält die Bedarfe
+treiber und Kunde mit finanzieller Komponente, z. B. Plankostenzuschuss, ge-
+schlossen wurde, sowie
+b) von Wärmekunden, die aktuell im Erdgasbereich SLP-Kunden sind, in Gebieten, für die
+aa) im Rahmen der kommunalen Wärmeplanung Wasserstoffnetzgebiete veröffent-
+licht wurden oder in denen Kunden gemäß lit. a) existieren, oder
+zielle Förderung mit öffentlichen Geldern (z. B. IPCEI-Projekte) existiert.
+11. In einem Gebiet, für das keine kommunale Wärmeplanung vorliegt, können Wärmekun-
+den, die aktuell im Erdgasbereich SLP-Kunden sind, maximal dem gleichen Härtegrad zu-
+geordnet werden, wie die Kunden dieses Gebiets, die keine solche Wärmekunden sind.
+
+
+
+§ 30 Messstellenbetrieb
+1. Die Netzbetreiber am Netzkopplungspunkt legen im Rahmen der gesonderten Verein-
+barung bzw. mittels eines Datenblatts fest, welcher Netzbetreiber für den Messstellen-
+Netzbetreiber für die Meldung verantwortlich ist. In diesem Fall informiert der nachgela-
+gerte Netzbetreiber den Marktgebietsverantwortlichen hierüber in Textform.
+Der für den Messstellenbetrieb verantwortliche Netzbetreiber stellt dem jeweils ande-
+ren Netzbetreiber des Netzkopplungspunktes die Messwerte auf Anforderung als Ge-
+schäftsnachricht mittels EDIFACT-Kommunikation zur Verfügung und ist für die Abstim-
+mung einer Netzkopplungszeitreihe mit dem anderen Netzbetreiber verantwortlich. Der
+für den Messstellenbetrieb verantwortliche Netzbetreiber teilt dem jeweils anderen
+Netzbetreiber des Netzkopplungspunktes bei geplanten Arbeiten mit einer Vorlaufzeit
+von mindestens 14 Kalendertagen Änderungen der Stammdaten mit, insbesondere An-
+einschließlich entsprechender Kommunikationseinrichtungen und/oder Messeinrichtun-
+gen für Prüfzwecke auf eigene Kosten einzubauen bzw. einbauen zu lassen.
+3. Der für den Messstellenbetrieb verantwortliche Netzbetreiber ist mit Blick auf die Durch-
+führung des Messstellenbetriebs Messgeräteverwender im Sinne des Eichrechts und
+diesbezüglich verantwortlich für die Einhaltung aller sich aus dem Eichrecht ergebenden
+Anforderungen und Verpflichtungen. Der Netzbetreiber – soweit er Messstellenbetrei-
+Kooperationsvereinbarung Gas, Stand 28.10.2025 Seite 51 von 90
+
+4. Der für den Messstellenbetrieb verantwortliche Netzbetreiber ist verpflichtet, die
+Eichung auch von solchen Messgeräten sicherzustellen, die zumindest für einen maxima-
+len Durchfluss von 150 000 m³/h im Normzustand ausgelegt sind, sofern die Messwerte
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/LP_Kassel_WP_-_Format_BDEW.xlsx
+
+
+### Städtische Werke Netz+Service GmbH | https://www.netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Anlage_c_Zuordnungsvereinbarung.pdf
+
+
+### Städtische Werke Netz+Service GmbH | https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Hochlastzeitfenster_2026.pdf
+
+
