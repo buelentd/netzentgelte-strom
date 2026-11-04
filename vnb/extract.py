@@ -260,6 +260,8 @@ def ebene(label: str) -> str | None:
                  r"umspann\w*\s*(ms|mittel)\w*\s*/?\s*(ns|nieder)|umspann\w*\s*(zur\s*|in\s*(die\s*)?|auf\s*(die\s*)?)?nieder|"
                  r"umspann\w*.*\bns\b", lab):
         return "MSNS"
+    if re.fullmatch(r"umspannung\*?", lab):         # nur "Umspannung" zwischen Mittel- und Niederspannung (EW Geiger)
+        return "MSNS"
     if re.search(r"hoch|hs/|mittelspannung(?!.*nieder)|\bms\b(?!/)", lab):
         return None
     kern = re.sub(r"^(?:(?:anschluss|entnahme)(?:\s+und\s+(?:anschluss|entnahme))?\s+(?:direkt\s+)?"
