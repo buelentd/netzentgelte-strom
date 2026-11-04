@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 17:06, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 17:07, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 338 | 41% |
-| pruefen | 430 | 52% |
+| ok | 339 | 41% |
+| pruefen | 429 | 52% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 337,  1
+Preisstand (nur ok): endgültig 338,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 337,  1
 
 - Minimum: 2,80 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,36 ct/kWh (n = 591)
+- Median: 6,36 ct/kWh (n = 592)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 43,80 €/kW/a (Butzbacher Netzbetrieb GmbH ＆ Co. KG)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 149,75 €/kW/a (n = 591)
+- Median: 149,62 €/kW/a (n = 592)
 
 ## Datenherkunft
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 337,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (493)
+## Restfälle (492)
 
-### pruefen (430)
+### pruefen (429)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -443,7 +443,6 @@ Preisstand (nur ok): endgültig 337,  1
 - 725. Stadtwerke Wilster: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 729. Stadtwerke Witten Mittelspannungsnetz GmbH: 
 - 730. Stadtwerke Wittenberge GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
-- 732. Stadtwerke Wolfenbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 733. Stadtwerke Wolmirstedt GmbH: SLP-Werte nicht gefunden
 - 734. Stadtwerke Zeil a. Main: 
 - 736. Stadtwerke Zirndorf GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
