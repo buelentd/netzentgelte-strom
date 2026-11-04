@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 19:46, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 19:49, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 327 | 39% |
-| pruefen | 450 | 54% |
+| ok | 316 | 38% |
+| pruefen | 462 | 56% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 25 | 3% |
-| robots | 12 | 1% |
+| robots | 11 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 327
+Preisstand (nur ok): endgültig 316
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 327
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,38 ct/kWh (n = 620)
+- Median: 6,38 ct/kWh (n = 627)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 149,98 €/kW/a (n = 620)
+- Median: 149,75 €/kW/a (n = 627)
 
 ## Datenherkunft
 
@@ -52,20 +52,30 @@ Preisstand (nur ok): endgültig 327
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Restfälle (504)
+## Restfälle (515)
 
-### pruefen (450)
+### pruefen (462)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
+- 4. Avacon Netz GmbH: 
+- 6. Mitteldeutsche Netzgesellschaft Strom mbH: 
+- 8. Westfalen Weser Netz GmbH: 
 - 12. RheinNetz GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
+- 14. N-ERGIE Netz GmbH: 
 - 21. Bielefelder Netz GmbH: 
 - 25. Hamburger Energienetze GmbH: SLP-Werte nicht gefunden
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 28. WSW Netz GmbH: 
+- 29. Westnetz GmbH: 
+- 31. Schleswig-Holstein Netz GmbH: 
+- 32. E.DIS Netz GmbH: 
+- 33. Syna GmbH: 
+- 34. Stuttgart Netze GmbH: 
 - 35. wesernetz Bremen GmbH: 
 - 36. LEW Verteilnetz GmbH: SLP-Werte nicht gefunden
+- 37. NRM Netzdienste Rhein-Main GmbH: 
 - 38. Pfalzwerke Netz AG: SLP-Werte auffällig
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 42. SWKiel Netz GmbH: SLP-Werte nicht gefunden
@@ -436,6 +446,7 @@ Preisstand (nur ok): endgültig 327
 - 676. Stadtwerke Suhl/Zella-Mehlis Netz GmbH: 
 - 678. Stadtwerke Teterow GmbH: 8 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 682. Stadtwerke Treuchtlingen KU: kein Preisblatt-Link gefunden (31 Seiten durchsucht)
+- 683. Stadtwerke Troisdorf GmbH: 
 - 684. Stadtwerke Trostberg Stromversorgung GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 685. Stadtwerke Tübingen GmbH: 
 - 686. Stadtwerke Tuttlingen GmbH: SLP-Werte nicht gefunden
@@ -474,6 +485,7 @@ Preisstand (nur ok): endgültig 327
 - 755. Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG: 
 - 757. Stromversorgung Inzell eG: 
 - 759. Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG: SLP-Werte nicht gefunden
+- 762. Stromversorgung Sulz am Neckar GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.stromversorgung-sulz.de/fileadmin/Dateien/Dateien/Downloads/Preisblatt_16_/Preisblatt_NNE_2026.pdf, https://www.stromversorgung-sulz.de/fileadmin/
 - 763. Stromversorgung Zerbst GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.stromversorgung-zerbst.de/svz/); robots.txt nicht erreichbar (http://www.stromversorgung-zerbst.de/svz/)
 - 764. strotög GmbH Strom für Töging: SLP-Werte nicht gefunden
 - 765. StWB Stadtwerke Brandenburg an der Havel GmbH ＆ Co. KG: SLP-Werte nicht gefunden
@@ -554,7 +566,7 @@ Preisstand (nur ok): endgültig 327
 - 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 403 http://www.markt-zellingen.de
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
-### robots (12)
+### robots (11)
 
 - 198. Feuchter Gemeindewerke GmbH (FGW): Preisblatt-Links per robots.txt gesperrt: https://www.feucht-gw.de/fileadmin/Dateien/Feuchter_Gemeindewerke/Dateien/Netze/Stromnetz/Preisblatt_FWG_20251015_final_mit_Logo.pdf, https://www.feucht-gw.de
 - 246. Gemeindewerke Schwarzenbruck GmbH (GWS): Preisblatt-Links per robots.txt gesperrt: https://www.feucht-gw.de/fileadmin/Dateien/Feuchter_Gemeindewerke/Dateien/Netze/Stromnetz/Preisblatt_FWG_20251015_final_mit_Logo.pdf, https://www.feucht-gw.de
@@ -565,7 +577,6 @@ Preisstand (nur ok): endgültig 327
 - 644. Stadtwerke Schorndorf GmbH: Startseite per robots.txt gesperrt
 - 726. Stadtwerke Windsbach: Preisblatt-Links per robots.txt gesperrt: https://www.stadtwerke-windsbach.de/fileadmin/Dateien/Stadtwerke/Dateien/Preisbl%C3%A4tter/Preisblatt_Windsbach_Netzentgelt_2025_final_20241231.pdf, https://w
 - 745. Städtische Werke Spremberg (Lausitz) GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.swspremberg.de/fileadmin/user_upload/NNE_Strom_2026.pdf, https://www.swspremberg.de/fileadmin/Netze/Dokumente_Strom/Netznutzung/NNE2019.pdf, https
-- 762. Stromversorgung Sulz am Neckar GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.stromversorgung-sulz.de/fileadmin/Dateien/Dateien/Downloads/Preisblatt_16_/Preisblatt_NNE_2026.pdf, https://www.stromversorgung-sulz.de/fileadmin/
 - 813. Versorgungsbetriebe Röttingen: Preisblatt-Links per robots.txt gesperrt: https://www.roettingen.de/fileadmin/Dateien/Dateien/Versorgungsbetriebe/Netzentgelte/2026_Netzentgelt_VSB_R%C3%B6ttingen.pdf, https://www.roettingen.de/filead
 - 831. Zwickauer Energieversorgung GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.zev-energie.de/download.php?download=vorlPreisblatt_SLP_Strom_27.pdf, https://www.zev-energie.de/download.php?download=Preisblatt_SLP_Strom_26.pdf
 
