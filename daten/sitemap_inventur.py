@@ -1,7 +1,7 @@
 """Sitemap-Inventur für alle Netzbetreiber-Websites: robots.txt lesen, Sitemaps (auch verschachtelt, auch .gz) laden und alle Adressen
 nach Netzentgelten, Jahr 2026/2027 und Hochlastzeitfenstern durchsuchen, egal ob PDF oder Seite.
 Regeln: robots.txt beachtet, höchstens eine Anfrage je Sekunde und Domain, Timeout 30 s, höchstens 40 Sitemap-Dateien je Website.
-Ergebnis: ergebnis/sitemap_inventur.csv (eine Zeile je Netzbetreiber) und ergebnis/sitemap_kandidaten.csv (eine Zeile je Fundstelle)."""
+Ergebnis: ergebnis/sitemap_inventur.csv, eine Zeile je Netzbetreiber (Sitemap ja/nein, beste Fundstelle für Preise 2026/2027 und Hochlastzeitfenster)."""
 import csv, gzip, re, time, threading, urllib.robotparser
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
@@ -88,11 +88,21 @@ def main():
     rows = [(r["nr"], r["netzbetreiber"], korr.get(r["nr"]) or r["website"]) for r in csv.DictReader(open(W / "ergebnis" / "netzentgelte_2026.csv", encoding="utf-8"), delimiter=";") if (korr.get(r["nr"]) or r["website"]).strip()]
     print(len(rows), "Websites", flush=True)
     with ThreadPoolExecutor(16) as ex: res = list(ex.map(einer, rows))
-    k = ["nr", "netzbetreiber", "website", "robots", "sitemap", "sitemap_dateien", "urls", "kandidaten", "fehler"]
+    def beste(kand, art, jahr):
+        c = [x for x in kand if x[3] == art and (jahr in x[4].split(",") if jahr else True)]
+        def pk(x):
+            t = unquote(x[2]).lower()
+            return (x[5] == "Dokument", bool(re.search(r"preisblatt|nne|netznutzungsentgelt|netzentgelt", t)), not re.search(r"14a|fiktiv|gas|messstellen|msb", t), -len(t))
+        c.sort(key=pk, reverse=True)
+        return " | ".join(x[2] for x in c[:2])
+    k = ["nr", "netzbetreiber", "website", "robots_txt", "sitemap", "sitemap_dateien", "adressen_in_sitemap", "fundstellen",
+         "preis_2026", "preis_2027", "hochlastzeitfenster_2026", "hochlastzeitfenster_2027", "hochlastzeitfenster_ohne_jahr", "fehler"]
     with open(W / "ergebnis" / "sitemap_inventur.csv", "w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f, delimiter=";"); w.writerow(k); [w.writerow([r[0].get(c, "") for c in k]) for r in res]
-    with open(W / "ergebnis" / "sitemap_kandidaten.csv", "w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f, delimiter=";"); w.writerow(["nr", "netzbetreiber", "url", "art", "jahr", "typ"]); [w.writerow(x) for r in res for x in r[1]]
+        w = csv.writer(f, delimiter=";"); w.writerow(k)
+        for r, kd in res:
+            w.writerow([r["nr"], r["netzbetreiber"], r["website"], r["robots"], r["sitemap"], r["sitemap_dateien"], r["urls"], r["kandidaten"],
+                        beste(kd, "preis", "2026"), beste(kd, "preis", "2027"), beste(kd, "hlzf", "2026"), beste(kd, "hlzf", "2027"),
+                        beste([x for x in kd if not x[4]], "hlzf", ""), r["fehler"]])
     print("fertig; Sitemap vorhanden bei", sum(1 for r in res if r[0]["sitemap"] == "ja"), "von", len(res))
 
 
