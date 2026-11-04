@@ -136,6 +136,13 @@ def datei_ablegen(k, satz: dict, out: Path, zusatz: str = ""):
     slug = re.sub(r"[^a-z0-9]+", "_", norm(satz["netzbetreiber"]))[:50].strip("_")
     ziel = out / "pdf" / f"{satz['nr']:04d}_{slug}{zusatz}{Path(k.datei).suffix}"
     shutil.copyfile(k.datei, ziel)
+    try:                                     # Text des Hauptdokuments ins Repository, damit der Leser ohne Lauf geprüft werden kann
+        from vnb.extract import text_aus_datei
+        (out / "texte").mkdir(exist_ok=True)
+        t = "\n\f".join(text_aus_datei(Path(k.datei)))[:60000]
+        (out / "texte" / f"{satz['nr']:04d}{zusatz}.txt").write_text(f"{k.url}\n\n{t}", encoding="utf-8")
+    except Exception:
+        pass
     satz["datei"] = ", ".join(filter(None, [satz.get("datei", ""), str(ziel.relative_to(out))]))
 
 

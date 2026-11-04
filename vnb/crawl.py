@@ -312,7 +312,7 @@ class Crawler:
             k = Kandidat(url=url, grund=fehler)
             return k
         k = await asyncio.to_thread(bewerten, pfad, url, a.name, a.aliase, a.website, self.jahr,
-                                    a.pflicht, a.ausschluss, kontext)
+                                    a.pflicht, a.ausschluss, kontext, url in a.hinweise)
         if k.name_fehlt and eigene_website(url, a.website) and not (a.pflicht or a.ausschluss):
             # Vorlage ohne Netzbetreibernamen, aber von der eigenen Website (nicht bei geteilter Website)
             k.name_fehlt = False

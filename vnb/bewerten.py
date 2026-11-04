@@ -60,7 +60,7 @@ class Kandidat:
 
 
 def bewerten(pfad: Path, url: str, name: str, aliase=(), website: str = "", jahr: int = 2026,
-             pflicht=(), ausschluss=(), kontext: str = "") -> Kandidat:
+             pflicht=(), ausschluss=(), kontext: str = "", vertraut: bool = False) -> Kandidat:
     k = Kandidat(url=url, datei=pfad)
     try:
         erg = auswerten(pfad, url, jahr)
@@ -70,8 +70,8 @@ def bewerten(pfad: Path, url: str, name: str, aliase=(), website: str = "", jahr
     if len(erg.text.strip()) < 200:
         k.grund = "kein Text im Dokument (Scan?)"
         return k
-    j = jahr_pruefen(erg, jahr, url)
-    if j and jahr_pruefen(erg, jahr + 1, url) is None:
+    j = jahr_pruefen(erg, jahr, url, vertraut)
+    if j and jahr_pruefen(erg, jahr + 1, url, vertraut) is None:
         # nur das Blatt des Folgejahres: verwenden, aber nachrangig (jedes Blatt des Jahres geht vor)
         k.folgejahr = True
         k.hinweise.append(f"Preisblatt {jahr + 1} (kein Preisblatt {jahr} gefunden)")

@@ -1246,13 +1246,13 @@ def KOPFZEILEN(text: str) -> str:
     return "\n".join([z for z in text.splitlines() if z.strip()][:25])
 
 
-def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
+def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "", vertraut: bool = False) -> str | None:
     """None wenn das Dokument zum Jahr passt, sonst Grund.
 
     Abgelehnt wird nur, wenn das Jahr gar nicht vorkommt oder der Kopf ein anderes Jahr nennt und
     das gesuchte nicht (z. B. Preisblatt 2027 oder veraltete Datei "Aktuell" von 2024).
     """
-    if jahr not in erg.jahre and str(jahr) not in url:
+    if jahr not in erg.jahre and str(jahr) not in url and not vertraut:   # vertraut: Link vom Nutzer, Jahr nicht als Ausschluss werten
         return f"Jahr {jahr} nicht im Dokument"
     if erg.gueltig_jahre:
         if jahr not in erg.gueltig_jahre:
@@ -1262,7 +1262,7 @@ def jahr_pruefen(erg: Ergebnis, jahr: int, url: str = "") -> str | None:
     folge = folgejahr_dokument(erg.text, url, jahr)
     if folge:
         return f"Preisblatt für {folge}, nicht {jahr}"
-    if re.search(r"fiktiv", norm(KOPFZEILEN(erg.text))):
+    if re.search(r"fiktiv", norm(KOPFZEILEN(erg.text))) and not vertraut:
         return "fiktive Entgelte"
     if vne_dokument(erg.text, url):
         return "Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV)"
