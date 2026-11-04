@@ -1,0 +1,918 @@
+   Preisblatt Netzentgelte Strom
+Sollte aufgrund regulierungsbehördlicher Entscheidungen eine neue Erlösobergrenze für das Jahr 2026 festgelegt
+werden bzw. die gesetzlichen oder regulatorischen Voraussetzungen für eine unterjährige Anpassung der Netz-
+entgelte vorliegen, behält sich der Netzbetreiber eine Anpassung der Netzentgelte für das Jahr 2026 vor. Dies kann
+gegebenenfalls zur Nachforderung von Netzentgelten führen.
+
+Die Kalkulation erfolgte gem. StromNEV und unter Berücksichtigung der Festlegung zur Verteilung EE-bedingter
+Mehrkosten (BK8-24-001-A) der Bundesnetzagentur.
+
+Abkürzungsverzeichnis
+    -    AP               Arbeitspreis
+    -    Bh               Benutzungsstunden
+    -    EnWG             Energiewirtschaftsgesetz
+    -    HLZF             Hochlastzeitfenster
+    -    JLP              Jahresleistungspreis
+    -    KWK              Kraft-Wärme-Kopplung
+    -    LP               Leistungspreis
+    -    MLP              Monatsleistungspreis
+    -    MSB              Messstellenbetrieb
+    -    NRK              Netzreservekapazität
+    -    RLM              Registrierte Leistungsmessung
+    -    SBL              Straßenbeleuchtungsanlagen
+    -    SLP              Standardlastprofil
+    -    StromNEV         Stromnetzentgeltverordnung
+    -    sVE              Steuerbare Verbrauchseinrichtung
+    -    ZUW              Zahlungsverzug, Unterbrechung und Wiederherstellung
+
+
+
+
+                                                     1 von 19
+                                                                        Inhalt
+Preisblatt Netzentgelte Strom.............................................................................................................................. 1
+1. Netzentgelte für Entnahmestellen mit Leistungsmessung ............................................................................... 3
+   – Jahresleistungspreis – Preisblatt LG JLP .................................................................................................... 3
+2. Netzentgelte für Entnahmestellen mit Leistungsmessung ............................................................................... 5
+   – Monatsleistungspreis – Preisblatt LG MLP .................................................................................................. 5
+3. Entgelte für Messstellenbetrieb für Kunden mit registrierender Leistungsmessung ........................................ 7
+   Preisblatt LG MSB .......................................................................................................................................... 7
+4. Netzentgelte für Entnahmestellen ohne Leistungsmessung ........................................................................... 8
+   Preisblatt SLP ................................................................................................................................................. 8
+5. Hinweis zur Preisbildung für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG ................................... 9
+5a. Netzentgelte für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG .................................................. 10
+   Preisblatt sVE - Bestandsanlagen vor 01. Januar 2024 ................................................................................ 10
+5b. Netzentgelte für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG .................................................. 11
+   Preisblatt sVE – Modul 1............................................................................................................................... 11
+5c. Netzentgelte für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG .................................................. 12
+   Preisblatt sVE – Modul 1............................................................................................................................... 12
+5d. Netzentgelte für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG .................................................. 13
+   Preisblatt sVE – Modul 2............................................................................................................................... 13
+5e. Netzentgelte für steuerbare Verbrauchseinrichtungen gem. § 14a EnWG .................................................. 14
+   Preisblatt sVE – Modul 3 – nur in Ergänzung zu Modul 1 ............................................................................. 14
+6. Netzentgelte für öffentliche Straßenbeleuchtungsanlagen ............................................................................ 16
+   Preisblatt SBL ............................................................................................................................................... 16
+7. Entgelte für Messstellenbetrieb für Kunden ohne registrierende Leistungsmessung .................................... 17
+   Preisblatt SLP MSB ...................................................................................................................................... 17
+8. Gesetzliche Umlagen .................................................................................................................................... 18
+   Preisblatt Umlagen........................................................................................................................................ 18
+9. Zahlungsverzug, Unterbrechung und Wiederherstellung der Anschlussnutzung .......................................... 19
+   Preisblatt ZUW .............................................................................................................................................. 19
+
+
+
+
+                                                                          2 von 19
+                                                                        – Jahresleistungspreis – Preisblatt LG JLP
+
+
+
+
+  1. Netzentgelte für Entnahmestellen mit
+     Leistungsmessung
+– Jahresleistungspreis – Preisblatt LG JLP
+Gültig ab 01. Januar 2026
+
+Das Entgelt für die Vorhaltung sowie die Inanspruchnahme der Netzkapazität während eines Abrechnungsjahres
+wird anhand der Jahresabrechnungsleistung in Abhängigkeit der erreichten Benutzungsstunden bestimmt.
+
+
+Jahresbenutzungsdauer                                    < 2.500 Bh                        ≥ 2.500 Bh
+                                            Leistungspreis      Arbeitspreis    Leistungspreis     Arbeitspreis
+                                                  €                  𝒄𝒕               €                 𝒄𝒕
+                                                𝒌𝑾 ∗ 𝒂             𝒌𝑾𝒉              𝒌𝑾 ∗ 𝒂            𝒌𝑾𝒉
+Entnahmestelle
+Mittelspannung                                    9,39                4,48           107,34             0,56
+
+Umspannung Mittel-/ Niederspannung               11,83                4,69           112,35             0,67
+
+Niederspannung                                   13,17                4,94           103,49             1,32
+
+                             ℎ
+Die Jahresbenutzungsdauer ( ) wird als Quotient aus der im Abrechnungsjahr bezogenen Verrechnungswirkarbeit
+                           𝑎
+(kWh) und der Verrechnungsleistung (kW) ermittelt.
+
+            €
+Der Preis in ( ) für die Nutzung des Netzes ergibt sich als Summe der beiden Produkte:
+              𝑎
+- ‚Maximale jährliche Leistung P' x ‚Leistungspreis LP' sowie
+- ‚Jahresenergie W' x ‚Arbeitspreis AP'
+
+
+
+
+                                                    3 von 19
+                                                                               – Jahresleistungspreis – Preisblatt LG JLP
+
+
+
+
+Beispielrechnung für eine Entnahme in der Mittelspannung
+
+Basisdaten des Kunden und Preise für die Netznutzung:
+                                                                      𝑘𝑊ℎ
+Netzkunde mit einer Jahresarbeit   WKunde =                250.000
+                                                                       𝑎
+und einer Jahreshöchstleistung     PKunde =                100 kW
+
+                                                           €
+Leistungspreis            𝐿𝑃       =          107,34                           (Preisblatt LG JLP, Mittelspannung)
+                                                       𝑘𝑊∗𝑎
+                                                     𝑐𝑡
+Arbeitspreis              𝐴𝑃       =          0,56                             (Preisblatt LG JLP, Mittelspannung)
+                                                     𝑘𝑊ℎ
+
+
+
+
+                                          𝐽𝑎ℎ𝑟𝑒𝑠𝑒𝑛𝑒𝑟𝑔𝑖𝑒 𝑊
+     Jahresbenutzugsdauer          =
+                                         𝑚𝑎𝑥𝑖𝑚𝑎𝑙𝑒 𝐿𝑒𝑖𝑠𝑡𝑢𝑛𝑔 𝑃
+
+                                                      𝑘𝑊ℎ
+    𝑱𝒂𝒉𝒓𝒆𝒔𝒃𝒆𝒏𝒖𝒕𝒖𝒏𝒈𝒔𝒅𝒂𝒖𝒆𝒓           =          250.000
+                                                       𝑎
+                                                 100 kW
+
+                                                            𝒉
+                                   =            𝟐. 𝟓𝟎𝟎
+                                                            𝒂
+
+
+
+                                                                                                    €
+       𝑃𝑟𝑒𝑖𝑠𝑔𝑒𝑠𝑎𝑚𝑡        =        𝐿𝑃           ∗      𝑃𝐾𝑢𝑛𝑑𝑒        +        𝐴𝑃         ∗   0,01      ∗     𝑊𝐾𝑢𝑛𝑑𝑒
+                                                                                                    𝑐𝑡
+
+
+                                         €                                         𝑐𝑡               €
+      𝑷𝒓𝒆𝒊𝒔 𝒈𝒆𝒔𝒂𝒎𝒕        =     107,34          ∗     100 kW         +      0,56         ∗   0,01      ∗   250.000 kWh
+                                         𝑘𝑊                                        𝑘𝑊ℎ              𝑐𝑡
+
+
+                          =    12.134,00 €
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Bei Entnahme der elektrischen Energie aus der Mittelspannungsebene und deren Erfassung durch eine nieder-
+spannungsseitige Messeinrichtung wird ein Zuschlag für Transformatorenverluste in Höhe von 1,5% auf die Ar-
+beitsmengen und die Leistungswerte erhoben.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Alle Preise sind Nettopreise und werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                           4 von 19
+                                                                       – Monatsleistungspreis – Preisblatt LG MLP
+
+
+
+
+  2. Netzentgelte für Entnahmestellen
+     mit Leistungsmessung
+– Monatsleistungspreis – Preisblatt LG MLP
+Gültig ab 01. Januar 2026
+
+Für Letztverbraucher mit einer zeitlich begrenzten hohen Leistungsaufnahme, der in der übrigen Zeit eine deutlich
+geringere oder keine Leistungsaufnahme gegenübersteht, bietet die Stromversorgung Pfaffenhofen GmbH & Co.
+KG alternativ zum Jahresleistungspreissystem eine Abrechnung auf Basis von Monatsleistungspreisen gemäß §19
+Abs.1 StromNEV an.
+
+
+                                                                               Preise
+                                                          Leistungspreis                   Arbeitspreis
+                                                                €                               𝒄𝒕
+Entnahmestelle                                             𝒌𝑾 ∗ 𝑴𝒐𝒏𝒂𝒕                         𝒌𝑾𝒉
+Mittelspannung                                                 17,89                           0,56
+
+Umspannung Mittel-/ Niederspannung                             18,73                           0,67
+
+Niederspannung                                                 17,25                           1,32
+
+                     €
+Der Monatspreis in       für die Nutzung des Netzes ergibt sich als Summe der beiden Produkte:
+                   𝑀𝑜𝑛𝑎𝑡
+- ‚Maximale monatliche Leistung PM‘ x ‚Monatsleistungspreis MLP‘ sowie
+- ‚Monatsenergie WM‘ x ‚Arbeitspreis AP‘
+
+
+
+
+                                                    5 von 19
+                                                                              – Monatsleistungspreis – Preisblatt LG MLP
+
+
+
+
+Beispielrechnung für eine Entnahme in der Mittelspannung für 3 Monate
+
+Basisdaten des Kunden und Preise für die Netznutzung:
+
+                                                                        1. Monat            2. Monat          3. Monat
+Maximale monatliche Leistung           𝑃 𝑀𝑎𝑥 𝑀𝑜𝑛𝑎𝑡          =           100 kW              50 kW             75 kW
+Monatsenergie                          𝑊 𝑀𝑜𝑛𝑎𝑡              =           25.000 kWh          12.500 kWh        18.750 kWh
+                                                    €
+Leistungspreis LP           =          17,89
+                                               𝑘𝑊∗𝑀𝑜𝑛𝑎𝑡
+                                               𝑐𝑡
+Arbeitspreis AP             =          0,56
+                                              𝑘𝑊ℎ
+
+
+
+
+                                                                                        €
+ 𝑃𝑟𝑒𝑖𝑠 𝑀𝑜𝑛𝑎𝑡    =      𝐿𝑃          ∗    𝑃 𝑀𝑎𝑥 𝑀𝑜𝑛𝑎𝑡 +             AP         ∗   0,01      ∗     𝑊 𝑀𝑜𝑛𝑎𝑡
+                                                                                        𝑐𝑡
+
+
+                            €                                          𝑐𝑡               €
+ 𝑃𝑟𝑒𝑖𝑠 1.𝑀𝑜𝑛𝑎𝑡 =    17,89          ∗     100 𝑘𝑊         +       0,56         ∗   0,01      ∗    25.000 𝑘𝑊ℎ      = 1.929,00 €
+                            𝑘𝑊                                         𝑘𝑊ℎ              𝑐𝑡
+
+                            €                                          𝑐𝑡               €
+ 𝑃𝑟𝑒𝑖𝑠 2.𝑀𝑜𝑛𝑎𝑡 =    17,89          ∗      50 𝑘𝑊         +       0,56         ∗   0,01      ∗    12.500 𝑘𝑊ℎ       = 964,50 €
+                            𝑘𝑊                                         𝑘𝑊ℎ              𝑐𝑡
+
+                            €                                          𝑐𝑡               €
+ 𝑃𝑟𝑒𝑖𝑠 3.𝑀𝑜𝑛𝑎𝑡 =    17,89          ∗      75 𝑘𝑊         +       0,56         ∗   0,01      ∗    18.750 𝑘𝑊ℎ      = 1.446,75 €
+                            𝑘𝑊                                         𝑘𝑊ℎ              𝑐𝑡
+
+
+
+
+ 𝑃𝑟𝑒𝑖𝑠 𝑔𝑒𝑠𝑎𝑚𝑡   = 𝐾𝑜𝑠𝑡𝑒𝑛 1.𝑀𝑜𝑛𝑎𝑡               +            𝐾𝑜𝑠𝑡𝑒𝑛 2.𝑀𝑜𝑛𝑎𝑡              +                𝐾𝑜𝑠𝑡𝑒𝑛 3.𝑀𝑜𝑛𝑎𝑡
+
+
+
+ 𝑷𝒓𝒆𝒊𝒔 𝒈𝒆𝒔𝒂𝒎𝒕 =     1.929,00 €                 +                964,50 €                +                 1.446,75 €
+
+
+
+                =   4.340,25 €
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Bei Entnahme der elektrischen Energie aus der Mittelspannungsebene und deren Erfassung durch eine nieder-
+spannungsseitige Messeinrichtung wird ein Zuschlag für Transformatorenverluste in Höhe von 1,5% auf die Ar-
+beitsmengen und die Leistungswerte erhoben.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Alle Preise sind Nettopreise und werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                            6 von 19
+                                                                                              Preisblatt LG MSB
+
+
+
+
+  3. Entgelte für Messstellenbetrieb
+     (inkl. Messdienstleistung) für Kunden mit
+     registrierender Leistungsmessung
+
+Preisblatt LG MSB
+Gültig ab 01. Januar 2026
+
+Die Übergabe der ¼-h-Lastgänge an Lieferanten und Netznutzer erfolgt entsprechend der derzeit gültigen gesetz-
+lich und behördlich vorgegebenen Fristen und Formate und ist mit dem Messstellenbetriebspreis abgegolten.
+
+                                                                               Preis je Messeinrichtung
+                                                                                    (Messlokation)
+                                                                                  Messstellenbetrieb
+                                                                                           €
+Entgelt für Messstellenbetrieb (Entnahme)                                                  𝒂
+
+Mittelspannung                                             Zähler                        379,49
+einschließlich Umspannung Hoch-/ Mittelspannung            Wandlersatz                   221,39
+
+Niederspannung                                             Zähler                        270,17
+einschließlich Umspannung Mittel-/ Niederspannung          Wandlersatz                    14,87
+
+Alle Spannungsebenen:
+
+Gestellten Telekommunikationsanschluss                                                    20,35
+
+
+Das Entgelt für den Messstellenbetrieb wird dann in Ansatz gebracht, wenn die Stromversorgung Pfaffenhofen
+GmbH & Co. KG Messstellenbetreiber ist. Das Entgelt für den Messstellenbetrieb beinhaltet die Messeinrichtung
+sowie deren Einbau, Betrieb und Wartung im Sinne des § 3 Nr. 26b EnWG sowie die Messung im Sinne des § 3
+Nr. 26c EnWG.
+Alle Preise sind Nettopreise und werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                    7 von 19
+                                                                                                          Preisblatt SLP
+
+
+
+
+  4. Netzentgelte für Entnahmestellen
+     ohne Leistungsmessung
+Preisblatt SLP
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels Standardlastprofilen
+
+Entnahmestellen ohne Leistungsmessung, die im Niederspannungsnetz angeschlossen sind, werden auf Basis von
+vorgegebenen Standardlastprofilen beliefert und mit einem pauschalierten Netzentgelt abgerechnet. Um das Ver-
+brauchsverhalten möglichst genau nachzubilden, werden dabei je nach Bedarfsart verschiedene Lastprofile ver-
+wendet.
+
+Die Verwendung von Lastprofilen erfolgt bei einer Jahresenergieentnahme von ≤ 100.000 kWh.
+
+Preise                                                        Grundpreis                        Arbeitspreis
+                                                                  €                                  𝒄𝒕
+                                                                  𝒂                                𝒌𝑾𝒉
+Entnahme                                                 Netto         Brutto               Netto          Brutto
+
+Niederspannung                                           62,05                  73,84       4,77             5,68
+
+Basisdaten des Kunden:
+                                                         𝑘𝑊ℎ
+𝐽𝑎ℎ𝑟𝑒𝑠𝑎𝑟𝑏𝑒𝑖𝑡𝑁𝑖𝑒𝑑𝑒𝑟𝑠𝑝𝑎𝑛𝑛𝑢𝑛𝑔           =         3.500
+                                                          𝑎
+
+
+
+
+                                                                                €
+ Preis    =   𝐺𝑟𝑢𝑛𝑑𝑝𝑟𝑒𝑖𝑠 𝑁𝑒𝑡𝑡𝑜   +       𝐴𝑟𝑏𝑒𝑖𝑡𝑠𝑝𝑟𝑒𝑖𝑠 𝑁𝑒𝑡𝑡𝑜       ∗      0,01        ∗   𝐽𝑎ℎ𝑟𝑒𝑠𝑎𝑟𝑏𝑒𝑖𝑡𝑁𝑖𝑒𝑑𝑒𝑟𝑠𝑝𝑎𝑛𝑛𝑢𝑛𝑔
+                                                                                𝑐𝑡
+
+
+                                                    𝑐𝑡                          €
+ 𝑷𝒓𝒆𝒊𝒔    =       62,05 €        +           4,77                 ∗      0,01        ∗          3.500 kWh
+                                                    𝑘𝑊ℎ                         𝑐𝑡
+
+
+          =       229,00 €
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und      Deckung       der      Übertragungsverluste    sind      in      den       Netzentgelten      enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                              8 von 19
+  5. Hinweis zur Preisbildung für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+Anwendungsbereich und Anwendungsfälle der netzorientieren Steuerung von steuerbaren Verbrauchseinrichtun-
+gen mit Wirkung ab dem 01. Januar 2024 werden durch die Festlegung der Beschlusskammer 6 (BK6-22/300)
+definiert. Netzentgeltliche Regelungen steuerbarer Verbrauchseinrichtungen gem. § 14a EnWG werden ab dem 01.
+Januar 2024 durch die Festlegung der Beschlusskammer 8 (BK8-22/010-A) definiert. Die nachfolgenden Preise für
+steuerbare Verbrauchseinrichtungen (Bestandsanlagen, Modul 1, 2 und 3) wurden auf Grundlage dieses Festle-
+gungsbeschlusses ermittelt.
+
+Für Anlagen, die ab dem 01.01.2024 an das Netz angeschlossen werden, sind für die Preisbildung drei Module
+vorgesehen.
+
+Modul 1:
+
+Dies entspricht einer pauschalen Netzentgeltreduzierung je Netzbetreiber, welche sich als Summe von 80€ für
+die Einrichtung der Steuerbarkeit und einer netzbetreiberindividuellen Stabilitätsprämie ergibt. Die Stabilitätsprämie
+ist als Produkt des Arbeitspreises in der Niederspannung für Entnahme ohne Lastgangmessung im jeweiligen Netz-
+gebiet, der Annahme eines Verbrauchs von 3.750 kWh einer durchschnittlichen steuerbaren Verbrauchseinrichtung
+und eines Stabilitätsfaktors von 20% zur Berechnung vorgesehen.
+
+Modul 2:
+
+Der reduzierte Arbeitspreis entspricht bundeseinheitlich 40% vom Arbeitspreis des jeweiligen Netzbetreibers
+für die Entnahme ohne Leistungsmessung in der Niederspannung.
+
+Modul 3:
+
+Dies ist ein zeitvariables Netzentgelt mit insgesamt drei Tarifstufen (Arbeitspreisstufen). Ausgehend vom Arbeits-
+preis für die Entnahme ohne Leistungsmessung, der Standardtarifstufe (ST), hat der Netzbetreiber eine Hoch-
+lasttarifstufe (HT) und eine Niedriglasttarifstufe (NT) zu bilden und in mindestens zwei Quartalen eines Jahres
+abzurechnen. Im übrigen Zeitraum gilt die Standardtarifstufe. Die Hochlasttarifstufe muss in mindestens 2 Stun-
+den eines Tages abgerechnet werden und darf die Standardtarifstufe um maximal 100% übersteigen. Die Nied-
+riglasttarifstufe ist im Korridor zwischen 10 und 40% der Standardtarifstufe zu bilden.
+Für das Verhältnis HT zu NT gilt: Ein hypothetischer Verbraucher mit einem dem Standardlastprofil für Haushalts-
+kunden (H0) identischen Verbrauchsprofil wäre bei einer existierenden Wahlmöglichkeit indifferent zwischen dem
+Arbeitspreis für Entnahme ohne Leistungsmessung und dem Modul 3. Die Abrechnung von Modul 3 erfolgt erstmals
+ab dem 01. April 2025.
+
+Zusätzliche Informationen:
+
+Die Module 1 und 2 können von Betreibern steuerbarer Verbrauchseinrichtungen ausgewählt werden. Eine Wahl-
+möglichkeit zwischen den beiden Modulen besteht ausschließlich für Verbraucher mit Entnahme ohne Leistungs-
+messung. Betreibern von steuerbaren Verbrauchseinrichtungen in den Netzebenen 6 und 7 mit leistungsgemesse-
+ner Entnahme steht ausschließlich Modul 1 zu Verfügung. Für Betreiber steuerbarer Verbrauchseinrichtungen (mit
+Inbetriebnahme Datum ab 01.01.2024), die keine Entscheidung für ein Modul getroffen haben (z.B. Kunden mit
+sVE      in   der    Grundversorgung),     ist   das     Modul     1     als   "Grundmodul"      anzuwenden.
+
+Bestandsanlagen:
+
+Für steuerbare Verbrauchseinrichtungen, für die bereits vor dem 01.01.2024 ein reduziertes Netzentgelt nach
+§ 14a EnWG bzw. der korrespondierenden Vorgängerregelung abgerechnet wurde, ist auf die prozentual gewährte
+Reduzierung des Arbeitspreises, sowie der Reduzierung des Grundpreises aus dem Preisblatt des Jahres 2023
+abzustellen. Auf Wunsch des Anlagenbetreibers ist für die Zukunft ein Wechsel in eine netzorientierte Steuerung
+auf Grundlage der Module 1 oder 2 möglich.
+
+
+
+
+                                                       9 von 19
+                                                          Preisblatt sVE – Bestandsanlagen vor 01. Januar 2024
+
+
+
+
+    5a. Netzentgelte für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+Preisblatt sVE – Bestandsanlagen vor 01. Januar 2024
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels Standardlastprofilen
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei-
+steuerbaren Bestandsanlagen (technische Inbetriebnahme vor dem 01.01.2024) einzuhalten:
+
+•    bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+•    technische Möglichkeit zur vollständigen Unterbrechung der Verbrauchseinrichtung durch den Netzbetreiber
+     zur Netzentlastung in den vorgegebenen Zeiten
+•    steuerbare Verbrauchseinrichtung besitzt einen separaten Zähler und technischen Zählpunkt
+
+Nachfolgende Preise gelten für steuerbare Bestandsanlagen mit Gewährung eines reduzierten Netzentgeltes nach
+§ 14a EnWG bzw. der korrespondierenden Vorgängerregelung vor dem 01.01.2024.
+
+Netzentgelte für Entnahmestellen mit steuerbaren Verbrauchseinrichtungen in der Niederspannung
+(Bestandsanlagen vor 01.01.2024):
+
+                                                             Grundpreis                  Arbeitspreis
+                                                                 €                            𝒄𝒕
+Entnahme durch                                                   𝒂                          𝒌𝑾𝒉
+                                                         Netto       Brutto           Netto        Brutto
+
+Nachtspeicherheizung                                       -              -            2,99           3,56
+
+sonstige Verbrauchseinrichtungen                           -              -            2,99           3,56
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                    10 von 19
+                                                                                                   Preisblatt sVE – Modul 1
+
+
+
+
+    5b. Netzentgelte für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+Preisblatt sVE – Modul 1
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels Standardlastprofilen
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei
+steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 1 einzuhalten:
+
+•      bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+•      technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung
+       durch den Netzbetreiber zur Netzentlastung
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elekt-
+romobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich der Stromentnahme (Einspeicherung) mit einer
+Netzanschlussleistung von mehr als 4,2 kW gem. Festlegung BK6-22/300 Ziffer 2.4.1.
+
+Die pauschale Netzentgeltreduzierung nach Modul 1 darf das an einer Entnahmestelle zu zahlende Netzentgelt
+0,00 Euro nicht unterschreiten (negative Netzentgelte sind nicht möglich).
+
+Die Verwendung von Lastprofilen erfolgt bei einer Jahresenergieentnahme von ≤ 100.000 kWh.
+
+                                                                                  Grundpreis           Arbeitspreis
+    Preise                                                                            €                     𝒄𝒕
+                                                                                      𝒂                    𝒌𝑾𝒉
+    Entnahme                                                                  Netto       Brutto     Netto     Brutto
+
+    Niederspannung                                                            62,05       73,84       4,77        5,68
+
+
+                                                                                €          €
+    Pauschale Netzentgeltreduzierung für Entnahmestellen
+    mit steuerbaren Verbrauchseinrichtungen gem. Modul 1                        𝒂          𝒂
+                                                                               Netto     Brutto
+    Pauschale Reduzierung* =                                                   -103,00   -122,57
+
+*) Berechnung gem. Festlegung BK8-22/010-A Ziffer 3.3.1, Rz. 92
+
+Über den Installateur bzw. einen Energiedienstleister kann die Verbrauchseinrichtung vor Ort genau analysiert wer-
+den und eine Information erfolgen, welche Aufwendungen / Kosten auf den Kunden zukommen.
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb -inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                                  11 von 19
+                                                                                                    Preisblatt sVE – Modul 1
+
+
+
+
+    5c. Netzentgelte für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+Preisblatt sVE – Modul 1
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels registrierender Leistungsmessung
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei
+steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 1 einzuhalten:
+
+•      bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+•      technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung
+       durch den Netzbetreiber zur Netzentlastung
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elekt-
+romobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich der Stromentnahme (Einspeicherung) mit einer
+Netzanschlussleistung von mehr als 4,2 kW gem. Festlegung BK6-22/300 Ziffer 2.4.1.
+
+Die pauschale Netzentgeltreduzierung nach Modul 1 darf das an einer Entnahmestelle zu zahlende Netzentgelt
+0,00 Euro nicht unterschreiten (negative Netzentgelte sind nicht möglich).
+
+    Jahresbenutzungsdauer                                                      < 2.500 Bh                ≥ 2.500 Bh
+                                                                        Leistungs-      Arbeits-   Leistungs-   Arbeits-
+                                                                           preis         preis        preis      preis
+                                                                             €             𝒄𝒕           €          𝒄𝒕
+    Entnahmestelle                                                        𝒌𝑾 ∗ 𝒂         𝒌𝑾𝒉         𝒌𝑾 ∗ 𝒂      𝒌𝑾𝒉
+
+    Umspannung Mittel-/ Niederspannung                                    11,83          4,69       112,35        0,67
+
+    Niederspannung                                                        13,17          4,94       103,49        1,32
+
+
+                                                                               €
+    Pauschale Netzentgeltreduzierung für Entnahmestellen
+    mit steuerbaren Verbrauchseinrichtungen gem. Modul 1                       𝒂
+                                                                              Netto
+    Pauschale Reduzierung* =                                                  -103,00
+
+*) Berechnung gem. Festlegung BK8-22/010-A Ziffer 3.3.1, Rz. 92
+
+Über den Installateur bzw. einen Energiedienstleister kann die Verbrauchseinrichtung vor Ort genau analysiert wer-
+den und eine Information erfolgen, welche Aufwendungen / Kosten auf den Kunden zukommen.
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Alle Preise sind Nettopreise und werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                                  12 von 19
+                                                                                         Preisblatt sVE – Modul 2
+
+
+
+
+    5d. Netzentgelte für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+Preisblatt sVE – Modul 2
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels Standardlastprofilen
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei
+steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 2 einzuhalten:
+
+•      bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+•      technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung
+       durch den Netzbetreiber zur Netzentlastung
+•      steuerbare Verbrauchseinrichtung besitzt einen separaten Zähler und technischen Zählpunkt
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elekt-
+romobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich der Stromentnahme (Einspeicherung) mit einer
+Netzanschlussleistung von mehr als 4,2 kW gem. Festlegung BK6-22/300 Ziffer 2.4.1.
+
+Bei Wahl des Moduls 2 erfolgt eine prozentuale Reduzierung des Arbeitspreises für den Verbrauch der steuerbaren
+Verbrauchseinrichtung.
+
+Netzentgelte für Entnahmestellen mit steuerbaren Verbrauchseinrichtungen gem. Modul 2:
+
+                                                                 Grundpreis                 Arbeitspreis
+                                                                     €                           𝒄𝒕
+    Entnahme durch                                                   𝒂                          𝒌𝑾𝒉
+                                                              Netto     Brutto            Netto      Brutto
+
+    steuerbare Verbrauchseinrichtung                             -            -           1,91          2,27
+
+Über den Installateur bzw. einen Energiedienstleister kann die Verbrauchseinrichtung vor Ort genau analysiert wer-
+den und eine Information erfolgen, welche Aufwendungen / Kosten auf den Kunden zukommen.
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                     13 von 19
+                                                                      Preisblatt sVE – Modul 3 – nur in Ergänzung zu Modul 1
+
+
+
+
+    5e. Netzentgelte für steuerbare
+     Verbrauchseinrichtungen gem. § 14a EnWG
+
+Preisblatt sVE – Modul 3 – nur in Ergänzung zu Modul 1
+Gültig ab 01. Januar 2026
+
+Netznutzung mittels Standardlastprofilen
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei
+steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 3 einzuhalten:
+
+•       bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+•       technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung
+        durch den Netzbetreiber zur Netzentlastung
+•       ausschließlich in Ergänzung zu Abrechnungsmodul 1 von Betreibern mit intelligentem Messsystem und ohne
+        registrierende Leistungsmessung wählbar
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elekt-
+romobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich der Stromentnahme (Einspeicherung) mit einer
+Netzanschlussleistung von mehr als 4,2 kW gem. Festlegung BK6-22/300 Ziffer 2.4.1.
+
+Modul 3 beinhaltet ein zeitvariables Netzentgelt mit insgesamt drei Tarifstufen (Arbeitspreisstufen):
+•  ST (Standardtarifstufe = Arbeitspreis für die Entnahme ohne Leistungsmessung)
+•  HT (Hochlasttarifstufe)
+•  NT (Niedriglasttarifstufe)
+
+Die Anwendung der drei Tarifstufen nach Modul 3 erfolgt gem. nachfolgender Tabelle*:
+
+                               Standardtarifstufe (ST)               Hochlasttarifstufe (HT)      Niedriglasttarifstufe (NT)
+    Preise                               𝒄𝒕                                    𝒄𝒕                             𝒄𝒕
+                                       𝒌𝑾𝒉                                   𝒌𝑾𝒉                            𝒌𝑾𝒉
+    Entnahme                    Netto         Brutto                  Netto         Brutto          Netto          Brutto
+
+    Niederspannung                4,77              5,68               5,93              7,04         1,30              1,55
+
+
+    Quartal                              Zeitraum                             Zeitraum                       Zeitraum
+                                    05:00 – 10:00 Uhr
+    Quartal 1                       12:00 – 17:00 Uhr
+                                                                        10:00 – 12:00 Uhr
+                                                                                                        00:00 – 05:00 Uhr
+    (01.01. – 31.03.)                                                   17:00 – 20:00 Uhr
+                                    20:00 – 00:00 Uhr
+                                    05:00 – 10:00 Uhr
+    Quartal 2                       12:00 – 17:00 Uhr
+                                                                        10:00 – 12:00 Uhr
+                                                                                                        00:00 – 05:00 Uhr
+    (01.04. – 30.06.)                                                   17:00 – 20:00 Uhr
+                                    20:00 – 00:00 Uhr
+                                    05:00 – 10:00 Uhr
+    Quartal 3                       12:00 – 17:00 Uhr
+                                                                        10:00 – 12:00 Uhr
+                                                                                                        00:00 – 05:00 Uhr
+    (01.07. – 30.09.)                                                   17:00 – 20:00 Uhr
+                                    20:00 – 00:00 Uhr
+                                    05:00 – 10:00 Uhr
+    Quartal 4                       12:00 – 17:00 Uhr
+                                                                        10:00 – 12:00 Uhr
+                                                                                                        00:00 – 05:00 Uhr
+    (01.10. – 31.12.)                                                   17:00 – 20:00 Uhr
+                                    20:00 – 00:00 Uhr
+
+*) Berechnung gem. Festlegung BK8-22/010-A Ziffer 3.3.3, Rz. 124
+
+
+
+      Beispiele                                                                Umsetzung
+      07:30 – 08:45 Uhr bedeutet von 07:30:00 bis 08:44:59                     Die drei Tarifstufen sind gem. der dargestell-
+      16:30 – 19:30 Uhr bedeutet von 16:30:00 bis 19:29:59                     ten Tabelle an allen Tagen gültig.
+
+
+
+                                                                   14 von 19
+                                                        Preisblatt sVE – Modul 3 – nur in Ergänzung zu Modul 1
+
+
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                    15 von 19
+                                                                                                        Preisblatt SBL
+
+
+
+
+  6. Netzentgelte für öffentliche
+     Straßenbeleuchtungsanlagen
+Preisblatt SBL
+Gültig ab 01. Januar 2026
+
+Öffentliche Straßenbeleuchtungsanlagen, die im Niederspannungsnetz angeschlossen sind, werden auf Basis des
+Standardlastprofils                                                                                beliefert.
+
+Für Straßenbeleuchtungsanlagen wird seit dem 1. Januar 2014 entsprechend der Ergänzung von § 17 der Strom-
+netzentgeltverordnung vom 14. August 2013 das zu entrichtende Netzentgelt aus den Netzentgelten für leistungs-
+gemessene Anlagen ermittelt. Dabei wird mit den veröffentlichten Preisen für die Entnahme in der Niederspannung
+                                         ℎ
+mit einer Benutzungsdauer von > 2.500 über die durchschnittliche Brenndauer der Straßenbeleuchtungsanlagen
+                                         𝑎
+ein Mischpreis gebildet und als reines Arbeitspreismodell abgerechnet.
+
+                                                                                                Arbeitspreis
+                                                                                                 𝑨𝑷 𝑴𝒊𝒔𝒄𝒉
+                                                                                                     𝒄𝒕
+                                                                                                   𝒌𝑾𝒉
+ Netzentgelt für öffentliche Straßenbeleuchtungsanlagen
+                                                                                                      3,88
+ gem. § 17 StromNEV
+
+                                                                                                  1    𝑎
+Im Netzgebiet der Stromversorgung Pfaffenhofen GmbH & Co. KG gilt eine Brenndauer von         . Die Netzent-
+                                                                                      4.050 ℎ
+geltermittlung erfolgt somit nach der folgenden Formel:
+
+
+                          𝑐𝑡                            €         1    𝑎
+ 𝐴𝑃 𝑀𝑖𝑠𝑐ℎ   =       100           ∗ 𝐿𝑃𝑁𝑆 ≥2.500 𝐵ℎ           ∗             +   𝐴𝑃𝑁𝑆 ≥2.500 𝐵ℎ
+                          €                           𝑘𝑊∗𝑎       4.050 ℎ
+
+
+
+                          𝑐𝑡                      €          1     𝑎                    𝑐𝑡
+ 𝑨𝑷 𝑴𝒊𝒔𝒄𝒉   =       100           ∗     103,49          ∗                  +     1,32
+                          €                      𝑘𝑊∗𝑎       4.050 ℎ                     𝑘𝑊ℎ
+
+
+
+                          𝑐𝑡
+            =      3,88
+                          𝑘𝑊ℎ
+
+
+
+Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen
+und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. eines Entgelts für Messstellenbetrieb inkl. Messdienstleistung sowie gesetzliche
+Umlagen und Aufschläge und ggf. der Konzessionsabgabe.
+
+Alle Preise sind Nettopreise und werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                        16 von 19
+                                                                                              Preisblatt SLP MSB
+
+
+
+
+  7. Entgelte für Messstellenbetrieb
+     (inkl. Messdienstleistung) für Kunden
+     ohne registrierende Leistungsmessung
+Preisblatt SLP MSB
+Gültig ab 01. Januar 2026
+
+Das Entgelt für den Messstellenbetrieb wird dann in Ansatz gebracht, wenn die Stromversorgung Pfaffenhofen
+GmbH & Co. KG Messstellenbetreiber ist. Das Entgelt für den Messstellenbetrieb beinhaltet die Messeinrichtung
+sowie deren Einbau, Betrieb und Wartung im Sinne des § 3 Nr. 26b EnWG sowie die Messung im Sinne des § 3
+Nr. 26c EnWG.
+
+                                                                                   Preis je Messeinrichtung
+                                                                                          (Zählpunkt)
+                                                                                      Messstellenbetrieb
+                                                                                               €
+                                                                                               𝒂
+ Entgelt für Messstellenbetrieb (Entnahme)                                           Netto          Brutto
+
+ Wechsel- und Drehstrom Eintarifzähler*)                                             10,45            12,44
+
+ Wechsel- und Drehstrom Zweitarifzähler**)                                           11,84            14,09
+
+ Prepaymentzähler ***)                                                               57,15            68,01
+
+ Schaltgeräte                                                                        10,93            13,01
+
+ Preis für Telekommunikationskomponente                                              20,35            24,22
+
+ Wandler                                                                             14,87            17,70
+
+*) gilt auch für Eintarif-2-Energie-Richtungszähler und EDL21-Zähler
+**) gilt auch für Mehrtarif- und Mehrtarif-2-Richtungszähler. Tarifschaltung: HT-Zeiten: Mo.Fr- 6-22 Uhr, Sa. 6-13
+Uhr, restliche Zeit NT. Die Zeitschaltungen erfolgen in Lastgruppen, so dass die Zeiten jeweils um mehrere Minuten
+variieren können.
+***) nur für den Grundversorger nach § 8 MsbG
+
+In den o.g. Preisen ist eine einmalige Ablesung enthalten.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19% in Rechnung gestellt.
+
+
+
+
+                                                     17 von 19
+                                                                                        Preisblatt Umlagen
+
+
+
+
+    8. Gesetzliche Umlagen
+Preisblatt Umlagen
+Gültig ab 01. Januar 2026
+
+Zusätzlich gelten die nachfolgenden gesetzlichen Umlagen:
+
+•   KWKG-Umlage,
+•   Aufschlag für besondere Netznutzung,
+•   Offshore-Netzumlage nach § 17f EnWG.
+
+Die Höhe der aktuell geltenden gesetzlichen Umlagen sowie weiterführende Informationen zu den Umlagen ent-
+nehmen Sie bitte der gemeinsamen Internetplattform der deutschen Übertragungsnetzbetreiber:
+
+www.netztransparenz.de
+
+
+
+
+                                                   18 von 19
+                                                                                           Preisblatt ZUW
+
+
+
+
+  9. Zahlungsverzug, Unterbrechung und
+      Wiederherstellung der Anschlussnutzung
+Preisblatt ZUW
+Gültig ab 01. Januar 2026
+
+
+ Unterbrechung und Wiederherstellung des Anschlusses und der                               €
+ Anschlussnutzung in der Niederspannung
+                                                                                  Netto        Brutto
+ Bei Durchführung der Maßnahmen an einer vorhandenen Trenneinrichtung:
+
+ Für die Unterbrechung                                                            73,79        87,81
+
+ Für die Wiederherstellung                                                        81,58        97,09
+
+Bei physischer Trennung des Netzanschlusses sowie in höheren Spannungsebenen werden die Kosten für Unter-
+brechung und Wiederherstellung nach Aufwand berechnet, mindestens jedoch vorgenannte Pauschalen.
+
+Die Bruttopreise beinhalten einen Umsatzsteuersatz von 19%.
+
+
+
+
+                                                  19 von 19
+

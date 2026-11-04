@@ -1,0 +1,118 @@
+Entgelte für die Nutzung der Strom-Netzinfrastruktur
+
+Maintal-Werke GmbH                                                                                                                        gültig ab:    01. Jan 2026
+
+
+Die Entgelte sind Nettopreise und bestehen aus Netznutzung und Messstellenbetrieb (incl. Messung) zzgl. gesetzliche Abgaben und Umsatzsteuer.
+
+
+
+
+Netznutzungsentgelt für Entnahmestellen mit registrierender Lastgangmessung (RLM)
+
+
+Entnahme in                                                                          Jahrespreissystem                                      Monatspreissystem
+                                                                    b < 2.500 h/a                        b >= 2.500 h/a                   § 19 Abs. 1 StromNEV
+
+                                                             Leistung               Arbeit        Leistung                Arbeit        Leistung                Arbeit
+                                                           Euro/kW/a               Ct/kWh       Euro/kW/a            Ct/kWh        Euro/kW/Mon.               Ct/kWh
+Mittelspannung                     MS                           19,12                4,85          120,09                  0,81           20,02                  0,81
+Umspannung MS/NS                   MS/NS                        23,19                5,23          122,95                  1,24           20,49                  1,24
+Niederspannung                     NS                           26,11                5,49          124,46                  1,56           20,74                  1,56
+
+
+Blindmehrarbeit
+
+
+Übersteigt der Bezug von Blindarbeit im Abrechnungszeitraum 50% der gleichzeitig übertragenen Wirkarbeit (entspr. cos phi = 0,90),
+so ist die zusätzlich bezogene Blindarbeit zu vergüten. Der Preis für die Lieferung beträgt in allen Spannungsebenen 1,10 ct/kvarh.
+
+
+Netznutzungsentgelt für die Reservenetzkapazität bei Ausfall der Eigenerzeugung
+
+
+Benutzungsdauer                                              bis 200 h       200 bis 400 h       bis 600 h
+Leistung in                                                Euro/kW/a         Euro/kW/a          Euro/kW/a
+Mittelspannung                     MS                           47,79               57,35            66,91
+Umspannung MS/NS                   MS/NS                        57,97               69,57            81,16
+Niederspannung                     NS                           65,28               78,34            91,39
+Zur Absicherung des Ausfalles einer Erzeugungsanlage kann für den Zeitpunkt und den Umfang des Reservestrombezuges
+eine Reserve-Netzkapazität bis zur Höhe der Engpassleistung der Erzeugungsanlage pro Jahr bestellt werden.
+
+
+Netznutzungsentgelt für Entnahmestellen ohne registrierende Lastgangmessung (SLP)
+
+
+Kleinkundengruppe (SLP NS)                                                                                                            Grundpreis            Arbeitspreis
+                                                                                                                                          Euro/a               Ct/kWh
+Haushalt/Kleingewerbe                                    ohne Bedarfsartendifferenzierung                                                 30,00                  6,11
+unterbrechb./steuerbare Verbraucher §14a                 Bestandsanlagen
+Elektro-Speicherheizungen                                unterbrechbar/steuerbar                                                           0,00                  1,99
+Wärmepumpen                                              unterbrechbar/steuerbar                                                           0,00                  1,99
+Ladestationen Elektromobile                              unterbrechbar/steuerbar                                                           0,00                  1,99
+
+
+unterbrechb./steuerbare Verbraucher §14a                    Grundpreis                        Arbeitspreis (AP)                           Pauschale Reduktion *
+Neuverträge ab 2024                                             Euro/a                           Ct/kWh                                            Euro/a
+     Modul 1            Pauschale Reduktion *                   30,00                               6,11                                           -113,05
+     Modul 2            AP rabattiert auf: 40 %                  0,00                               2,44
+     Modul 3            GP+Pauschalred. wie Modul 1                                 HT              NT                    ST
+                                                                            11:00-13:00       23:00-07:00            Restzeit
+                        + zeitvariabler AP je Zeitzone
+                                                                            17:00-19:00
+                        AP gilt nur in Quartal:
+                                         Q1 + Q4                30,00               9,17            2,04              6,11                         -113,05
+* Pauschalreduktion ist begrenzt auf die Höhe des zu zahlenden Normalentgeltes, auch anwendbar für RLM-Kunden MS/NS und NS
+
+
+Kommunalrabatt
+
+
+Kommunale Entnahmestellen ohne Lastgangmessung in Niederspannung erhalten einen Rabatt auf den Nettobetrag Netznutzung
+(nur Arbeitspreis, Leistungspreis, Grundpreis) in Höhe von 10 %. Dieser unterliegt nicht der Umsatzsteuer und ist auf der Rechnung separat auszuweisen.
+
+
+Jahresentgelte für Messstellenbetrieb (MSB)
+
+
+Kunden mit Leistungsmessung
+MSB incl. monatlicher Messung                                                                        MSB
+                                                                                                    Euro/a
+MS-Lastprofil ohne Wandler                                                                         409,00
+Wandlersatz MS                                                                                     376,00
+NS-Lastprofil ohne Wandler                                                                         409,00
+Wandlersatz NS                                                                                       18,00
+
+
+Kunden ohne Leistungsmessung
+MSB incl. jährlicher Messung                                                                        MSB           Zusatzmessung
+                                                                                                    Euro/a        Euro/Messung
+kME Einrichtungszähler Eintarif                                                                      11,20                 2,35
+kME Einrichtungszähler Zweitarif                                                                     15,00                 2,35
+kME EDL21 Zähler                                                                                     20,65                 2,35
+Bei nicht leistungsgemessenen Kunden ist im MSB standardmäßig ein Messentgelt pro Jahr enthalten. Auf Wunsch des Kunden kann eine Messung
+halbjährlich, vierteljährlich oder monatlich erfolgen. Dadurch erhöht sich das MSB-Entgelt um die Anzahl der Zusatzmessungen.
+
+
+Zusatzeinrichtungen
+MSB                                                                                                  MSB
+                                                                                                 Euro/St/a
+NS-Wandlersatz SLP                                                                                   18,00
+Schaltgerät oder Rundsteuerempfänger                                                                  6,00
+Telekommunikationsanschluss durch NB (automatische Ablesung)                                         56,00
+
+
+KA
+Die Höhe der Konzessionsabgabe richtet sich nach den in der Konzessionsabgabeverordnung festgelegten Höchstpreisen.
+Fassung vom 9.1.1992 (BGBl. I S. 12, 407), zuletzt geändert durch Artikel 3 Absatz 4 der Verordnung vom 1. November 2006 (BGBl. I S. 2477).
+
+
+Netzumlagen ( Aufschlag besondere Netznutzung, KWKG-, Offshore-Umlage )
+Die zu berechnenden Umlagen sind auf folgender Seite zu entnehmen:
+http://www.netztransparenz.de
+
+
+BKZ / HAK
+Die Erhebung von Baukostenzuschüssen (BKZ) und Netzanschlusskosten (NAK) richtet sich nach den auf der Internetseite
+des Netzbetreibers publizierten Bedingungen und Preisen.
+

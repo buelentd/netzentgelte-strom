@@ -1,0 +1,290 @@
+Seite 1                                                                                              Netzentgelte Strom (final), gültig ab dem 01.01.2026
+                                                                                                     Stadtwerke Lehrte GmbH
+
+                                                            ENTGELTE FÜR DIE NUTZUNG DER NETZINFRASTRUKTUR 1) 2)
+LEISTUNGSPREISSYSTEM FÜR ENTNAHME MIT LEISTUNGSMESSUNG
+Der Leistungspreis der Netznutzung für die Vorhaltung und die Inanspruchnahme der Netzkapazität beträgt für die während eines Abrechnungsjahres ermittelte
+Jahresabrechnungsleistung in Abhängigkeit der erreichten Benutzungsstunden:
+
+Ebene                                                                                                                                                                  Jahresleistungspreissystem
+
+                                                                                                                                            < 2.500 h/a                                                         >= 2.500 h/a
+                                                                                                                                  Leistungspreis    Arbeitspreis                                       Leistungspreis Arbeitspreis
+Mittelspannung (MS)                                                                                                                 3,81 €/kW       5,42 ct/kWh                                         116,94 €/kW     0,90 ct/kWh
+Umspannung MS/NS                                                                                                                    4,58 €/kW       6,53 ct/kWh                                         140,74 €/kW     1,08 ct/kWh
+Niederspannung (NS)                                                                                                                 6,49 €/kW       9,25 ct/kWh                                         199,59 €/kW     1,53 ct/kWh
+
+Bei Mittelspannungskunden mit niederspannungsseitiger Messung werden die Transformatorverluste mit 1,5 % (bezogen auf die Summe der Messwerte, Jahreshöchsleistung und
+Jahresarbeit) in Rechnung gestellt.
+
+Die Benutzungsstunden (h/a) werden als Quotient aus der im Abrechnungsjahr bezogenen Verrechnungswirkarbeit und der Verrechnungsleistung ermittelt.
+
+Der Preis in €/a für die Nutzung des Netzes ergibt sich als Summe der beiden Produkte:
+- max. jährl. Leistung x Leistungspreis
+- Jahresenergie x Arbeitspreis
+Beispielrechnung:
+
+Basisdaten:
+Maximale Leistung:                                                                                   100 kW
+Jahresenergie:                                                                                       250.000 kWh/a
+Entnahmeebene:                                                                                       Mittelspannung
+
+                                                                                                         250.000 kWh/a
+Jahresbenutzungsdauer:                                                                                                                      =                 2.500 h/a
+                                                                                                            100 kW
+
+Leistungspreis:                                                                                               116,94 €/kW/a
+Arbeitspreis:                                                                                                   0,90 ct/kWh
+
+Berechneter Preis:
+
+Leistungskomponente:                                                                                          116,94 €/kW/a              x                   100 kW                        =             11.694,00 €/a
+Arbeitskomponente:                                                                                              0,90 ct/kWh         / 100 ct/€ x        250.000 kWh/a                      =              2.250,00 €/a
+Gesamt:                                                                                                        13.944,00 €/a
+
+MONATSLEISTUNGSPREISSYSTEM FÜR ENTNAHME MIT LEISTUNGSMESSUNG
+
+Für Netzkunden mit einer zeitlich begrenzten hohen Leistungsaufnahme, der in der übrigen Zeit eine deutlich geringere oder keine Leistungsaufnahme gegenüber steht, bietet die
+Stadtwerke Lehrte GmbH alternativ zum Jahresleistungspreissystem eine Abrechnung auf der Basis von Monatsleistungspreisen gemäß §19 Abs. 1 StromNEV an.
+
+
+
+Ebene                                                                                                                                                                  Monatsleistungspreissystem
+
+                                                                                                                                    Leistungspreis [€/kW u. Monat]                                                   Arbeitspreis
+Mittelspannung (MS)                                                                                                                           9,75 €/kW                                                              0,90 ct/kWh
+Umspannung MS/NS                                                                                                                             11,73 €/kW                                                              1,08 ct/kWh
+Niederspannung (NS)                                                                                                                          16,63 €/kW                                                              1,53 ct/kWh
+
+Bei Mittelspannungskunden mit niederspannungsseitiger Messung werden die Transformatorverluste mit 1,5 % (bezogen auf die Summe der Messwerte, Jahreshöchsleistung und
+Jahresarbeit) in Rechnung gestellt.
+
+Der Monatspreis in €/Monat für die Nutzung des Netzes ergibt sich aus der Summe der beiden Produkte:
+- max. monatl. Leistung x Monatsleistungspreis
+- Monatsenergie x Monatsarbeitspreis
+
+
+Beispielrechnung:
+
+Basisdaten:                                                                                                 1. Monat                  2. Monat               3. Monat
+Maximale monatliche Leistung:                                                                        100 kW                       50 kW                 75 kW
+Monatsenergie:                                                                                       25.000 kWh                   12.500 kWh            7.000 kWh
+Entnahmeebene:                                                                                       Mittelspannung
+
+Leistungspreis:                                                                                                    9,75 €/kW
+Arbeitspreis:                                                                                                    0,90 ct/kWh
+
+Berechneter Preis:
+
+1. Monat Leistungskomponente:                                                                                      9,75 €/kW             x            100 kW                               =                     975,00 €
+1. Monat Arbeitskomponente:                                                                                      0,90 ct/kWh        / 100 ct/€ x 25.000 kWh                                =                     225,00 €
+2. Monat Leistungskomponente:                                                                                      9,75 €/kW             x             50 kW                               =                     487,50 €
+2. Monat Arbeitskomponente:                                                                                      0,90 ct/kWh        / 100 ct/€ x 12.500 kWh                                =                     112,50 €
+3. Monat Leistungskomponente:                                                                                      9,75 €/kW             x             75 kW                               =                     731,25 €
+3. Monat Arbeitskomponente:                                                                                      0,90 ct/kWh        / 100 ct/€ x 7.000 kWh                                 =                      63,00 €
+Gesamt:                                                                                                          2.594,25 €/a
+
+1)
+ Die Kosten für vorgelagerte Netzebenen, Kosten für die Abrechnung, Kosten für die Netzinfrastruktur, Bereitstellung von Systemdienstleistungen und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+Die Preise verstehen sich zzg. einem Entgelt für Messtellenbetrieb - inkl. Messdienstleistung, Mehrkosten gem. Kraft-Wärme-Kopplungsgesetz, § 19 Abs. 2 StromNEV-Umlage, Offshore Haftungsumlage, Umlage aufgrund der Verordnung über
+Vereinbarungen zu abschaltbaren Lasten und aus der Umsetzung weiterer gesetzlicher Vorgaben und ggf. Konzessionsabgaben in der jeweiligen gesetzlichen Höhe.
+Nettopreise werden zzg. der gesetzlichen Umsatzsteuer von derzeit 19 % in Rechnung gestellt.
+
+
+
+
+2)
+ Die Stadtwerke Lehrte GmbH weist darauf hin, dass sie aufgrund der aktuell noch nicht vollständig vorliegenden Datengrundlage von einer Veröffentlichung endgültiger Netzentgelte für das Jahr 2025 gem. § 20 Absatz 1 Satz 1 EnWG absehen
+musste. Stattdessen erfolgt gem. § 20 Abs. 1 Satz 2 EnWG zum 15.10.2024 eine Veröffentlichung vorläufiger Netzentgelte. Die verbindlichen bzw. endgültigen Netzentgelte für das Jahr 2025 können insoweit von den vorstehenden vorläufigen
+Netzentgelten abweichen.
+Seite 2                                                                                              Netzentgelte Strom (final), gültig ab dem 01.01.2026
+                                                                                                     Stadtwerke Lehrte GmbH
+
+INDIVIDUELLE NETZENTGELTE NACH § 19 Abs. 2 Satz 1 StromNEV (Stand 30.09.2025)
+
+Marktlokation des Letztverbrauchers                                                                  Netzebene
+50434709702                                                                                          MS
+
+
+
+PREISSYSTEM FÜR ENTNAHME OHNE LEISTUNGSMESSUNG
+
+Entnahmestellen ohne Leistungsmessung werden auf der Basis von vorgegebenen Standardlastprofilen beliefert und mit einem pauschalierten Netzentgelt abgerechnet. Um das
+Verbrauchsverhalten möglichst genau nachzubilden, werden dabei je Bedarfsart verschiedene Lastprofile verwendet.
+
+Die Verwendung von Standardlastprofilen erfolgt bei einer Energieentnahme von ≤ 100.000 kWh.
+
+
+Ebene                                                                                                                                                                         Jahrespreissystem
+
+                                                                                                                                                 Grundpreis                                                          Arbeitspreis
+Niederspannung (NS)                                                                                                                               45,00 €/a                                                          8,51 ct/kWh
+
+Beispielrechnung:
+
+Basisdaten:
+Jahresarbeit:                                                                                                3.500 kWh/a
+Entnahmeebene:                                                                                       Niederspannung
+
+Grundpreis:                                                                                                            45 €/a
+Arbeitspreis:                                                                                                    8,51 ct/kWh
+
+Berechneter Preis:
+
+Gesamt:                                                                                                              45,00 €/a      + 8,51 ct/kWh         / 100 ct/€ x           3500 kWh =            342,85 €/a
+
+ENTNAHME FÜR STEUERBARE VERBRAUCHSEINRICHTUNGEN OHNE LEISTUNGSMESSUNG
+
+Entsprechend des § 14 a EnWG sind folgende Bedingungen für eine Anerkennung als steuerbare Verbrauchseinrichtung einzuhalten (Definition):
+
+- bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher.
+- technische Möglichkeit zur vollständigen Unterbrechung der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung in vorgegebenen Zeiten.
+- steuerbare Verbrauchseinrichtung besitzt einen separaten Zähler und technischen Zählpunkt.
+
+Anwendungsbereich und Anwendungsfälle der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen mit Wirkung ab dem 01. Januar 2024 werden durch die Festlegung
+der Beschlusskammer 6 (BK6-22/300) definiert. Netzentgeltliche Regelungen steuerbarer Verbrauchseinrichtungen gem. § 14a EnWG werden ab dem 01. Januar 2024 durch die Festlegung
+der Beschlusskammer 8 (BK8-22/010-A) definiert.
+
+Zu steuerbaren Verbrauchseinrichtungen gehören u.a. Elektrospeicherheizungen, Elektro-Wärmepumpen, gesteuerte Elektro-Warmwasserspeicher und Elektromobile.
+Ebene                                                                                                Jahresleistungspreissystem
+
+                                                                                                                    < 2.500 h/a                                                           >= 2.500 h/a
+                                                                                                          Leistungspreis      Arbeitspreis                                       Leistungspreis Arbeitspreis
+Mittelspannung (MS)                                                                                         3,81 €/kW          5,42 ct/kWh                                        116,94 €/kW      0,90 ct/kWh
+Umspannung MS/NS                                                                                            4,58 €/kW          6,53 ct/kWh                                        140,74 €/kW      1,08 ct/kWh
+Pauschaler Rabatt nach Modul 1 in €/a                                                                                                                     131,05 €/a
+
+Ebene Niederspannung (NS ohne Leistungsmessung)
+Modul 1 - Pauschale Netzentgeltreduzierung                                                                                                  Pauschale Netzentgeltreduzierung                               131,05 €/a
+Modul 2 - Prozentuale Reduzierung des Arbeitspreises                                                                                       Prozentual reduzierter Arbeitspreis                            3,40 ct/kWh
+Modul 3 - Grundpreis SLP und zeitvariable Arbeitspreise in drei Preisstufen
+                                                                                                                    Zeitfenster
+                                                                       HT (Hochlasttarif)                                                                                                                Arbeitspreis
+                                                                                                              Beginn                     Ende
+                                                                                         Quartal 1             16:45                     20:30                                                           10,67 ct/kWh
+                                                                                         Quartal 2
+                                                                                         Quartal 3
+                                                                                         Quartal 4             16:45                     20:30                                                           10,67 ct/kWh
+                                                                       ST (Standardtarif)            außerhalb der HT- und NT-Zeitfenster                                                                 8,51 ct/kWh
+                                                                                                                    Zeitfenster
+                                                                         NT (Niederlasttarif)
+                                                                                                              Beginn                     Ende
+                                                                                         Quartal 1             0:00                      5:45                                                             3,40 ct/kWh
+                                                                                         Quartal 2
+                                                                                         Quartal 3
+                                                                                         Quartal 4              0:00                      5:45                                                            3,40 ct/kWh
+                                                                                          Beispiel: Beginn 09:45 und Ende 20:15 bedeutet von 09:30:01 bis 20:15:00
+                                                                                                                                                 Grundpreis                                   Arbeitspreis
+Bestandsanlagen - Prozentuale Reduzierung des Arbeitspreises auf Niveau Preisblatt 2023:
+                                                                                                                                                  0,00 €/a                                     3,98 ct/kWh
+
+Die Kosten für vorgelagerte Netzebenen, Kosten für die Abrechnung, Kosten für die Netzinfrastruktur, Bereitstellung von Systemdienstleistungen und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+Die Preise verstehen sich zzgl. einem Entgelt für Messtellenbetrieb - inkl. Messdienstleistung, Mehrkosten gem. Kraft-Wärme-Kopplungsgesetz, § 19 Abs. 2 StromNEV-Umlage, Offshore Haftungsumlage, Umlage aufgrund der Verordnung über
+Vereinbarungen zu abschaltbaren Lasten und aus der Umsetzung weiterer gesetzlicher Vorgaben und ggf. Konzessionsabgaben sind exklusive und gelten in der jeweiligen gesetzlichen Höhe.
+
+Nettopreise werden zzgl. der gesetzlichen Umsatzsteuer von derzeit 19 % in Rechnung gestellt.
+Seite 3                                                                             Netzentgelte Strom (final), gültig ab dem 01.01.2026
+                                                                                    Stadtwerke Lehrte GmbH
+
+ENTGELTE FÜR MESSSTELLENBETRIEB MIT LEISTUNGSMESSUNG (inkl. Messdienstleistung)
+
+Die Übergabe der 1/4-h-Lastgänge an Lieferanten und Netznutzer erfolgt entsprechend der derzeit gültigen gesetzlich und behördlich vorgegebenen Fristen und Formate und die mit dem
+Messstellenbetriebspreis abgegolten.
+
+Ebene                                                                                                                    Preis je Messeinrichtung (Zählpunkt) brutto
+                                                                                                                                                        kundenseitig gestellter Wandlersatz
+
+Mittelspannung (MS)                                                                                                         450 €/a                                 400 €/a
+Niederspannung (NS) inkl. Umspannung MS/NS                                                                                  300 €/a                                 250 €/a
+
+ENTGELTE FÜR INTELLIGENTE MESSSYSTEME (iMS) UND MODERNE MESSEINRICHTUNGEN (mME) GEMÄß
+MESSSTELLENBETRIEBSGESETZ (MsbG) (inkl. Messdienstleistung)
+
+iMs für Letztverbraucher (an Messlokationen mit einem Energieverbrauch von):
+                                                                                                                            Netto                                   Brutto
+über 100.000 kWh1)                                                                                                        142,86 €/a                              170,00 €/a
+über 50.000 bis einschließlich 100.000 kWh                                                                                117,65 €/a                              140,00 €/a
+über 20.000 bis einschließlich 50.000 kWh                                                                                  92,44 €/a                              110,00 €/a
+über 10.000 bis einschließlich 20.000 kWh                                                                                  42,02 €/a                               50,00 €/a
+über 6.000 bis einschließlich 10.000 kWh                                                                                   33,61 €/a                               40,00 €/a
+< 6.001 kWh                                                                                                                25,21 €/a                               30,00 €/a
+Verbrauchseinrichtungen nach § 14a EnWG                                                                                    42,02 €/a                               50,00 €/a
+
+iMs für Anlagenbetreiber (an Messlokationen mit einer installierten Leistung von):
+                                                                                                                            Netto                                   Brutto
+größer 100 kW1)                                                                                                           142,86 €/a                              170,00 €/a
+über 25 bis einschließlich 100 kW                                                                                         117,65 €/a                              140,00 €/a
+über 15 bis einschließlich 25 kW                                                                                           92,44 €/a                              110,00 €/a
+über 7 bis einschließlich 15 kW                                                                                            42,02 €/a                               50,00 €/a
+bis einschließlich 7 kW                                                                                                    25,21 €/a                               30,00 €/a
+
+moderne Messeinrichtung
+                                                                                                                             Netto                                  Brutto
+mME für Letztverbraucher/Anlagenbetreiber                                                                                   21,01 €/a                              25,00 €/a
+
+In den Preisen ist eine einmalige Ablesung enthalten.
+1)
+   Gilt nur für intelligente Messsysteme, die nicht über den Tarifanwendungsfall (TAF) 8 verfügen (Leistungswerterfassung). Für die TAF8-Messsysteme wird
+ein separater Preis veröffentlicht, sobald diese verfügbar sind.
+
+
+ENTGELTE FÜR MESSSTELLENBETRIEB OHNE LEISTUNGSMESSUNG (inkl. Messdienstleistung)
+
+                                            Zählertyp                                                             Messstellenbetrieb (netto)
+Eintarifzähler ET                                                                                                            9,04 €/a
+Zwei-/Mehrtarifzähler ZT                                                                                                    11,10 €/a
+Prepaymentzähler                                                                                                            57,67 €/a
+Pauschalanlage                                                                                                              10,00 €/a
+
+Das Entgelt für den Messstellenbetrieb wird dann in Ansatz gebracht, wenn die Stadtwerke Lehrte GmbH Messstellenbetreiber ist. Das Entgelt für den Messstellenbetrieb beinhaltet die
+Messeinrichtung sowie deren Einbau, Betrieb und Wartung im Sinne des § 3 Nr. 26b EnWG sowie die Messung im Sinne des § 3 Nr. 26c EnWG.
+
+PREISE FÜR ZUSATZLEISTUNGEN GEM. § 34 Abs. 2 UND 3 SOWIE § 35 MsbG
+
+Zusatzleistungen
+                                                                                                                             Netto                                  Brutto
+je Wandler in Mittelspannung                                                                                              378,15 €/a                              450,00 €/a
+je Wandler in Mittelspannung                                                                                              336,13 €/a                              400,00 €/a
+je Wandler in Niederspannung                                                                                              252,10 €/a                              300,00 €/a
+je Wandler in Niederspannung                                                                                              210,08 €/a                              250,00 €/a
+Schaltgerät oder Tarifschaltung bei mME                                                                                     8,40 €/a                               10,00 €/a
+je Zusatzablesung bei mME
+                           1)
+                                                                                                                            8,40 €/a                               10,00 €/a
+je Erstellung Zwischenrechnung                                                                                              8,40 €/a                               10,00 €/a
+Steuerung von Verbrauchseinrichtungen und Netzanschlüssen nach §14a EnWG                                                    8,40 €/a                               10,00 €/a
+Datenkommunikation zur Wirkleistung- oder Blindleistungsbezug nach §13 EnWG                                                 8,40 €/a                               10,00 €/a
+Datenkommunikation über SMGW zur Direktvermarktung von Erzeugeranlagen                                                      8,40 €/a                               10,00 €/a
+Zusätzliche Hardware mit Steuerungshandlungen                                                                              25,21 €/a                               30,00 €/a
+Übermittlung von Submetering-Messdaten nach Heizkostenverordnung                                                            8,40 €/a                               10,00 €/a
+Anbindung Hauptmesseinrichtung zur Datenkommunikation einer weiteren Sparte                                                 8,40 €/a                               10,00 €/a
+Erheben und Übermitteln von minütlichen Netzzustandsdaten                                                                  25,21 €/a                               30,00 €/a
+Erhebung und Übermittlungen von Mehrwertdiensten                                                                            8,40 €/a                               10,00 €/a
+Schwarzfallfeste Datenkommunikation für Standard- oder Zusatzleistungen                                                     8,40 €/a                               10,00 €/a
+
+1)
+     z.b. im Rahmen von unterjährigen Ablesungen nach § 40 Absatz 3 EnWG.
+
+
+HINWEISE ZUR VERRECHNUNG VON BLINDLEISTUNG/-ARBEIT
+
+Aufgrund laufenden Beschlussverfahren wird die Verrechnung der Blindarbeitsmengen vorläufig ausgesetzt bis eine abschließende Regelung/Vorgabe für die Verrechnung der
+Blindleistung/-arbeit erfolgt. Diese Aussetzung stellt keinen Verzicht des Netzbetreibers auf diesbezüglich bestehende vertragliche Ansprüche dar.
+
+Wir behalten uns eine nachträgliche Verrechnung der Entgelte für Blindleistung/-arbeit bzw. die Geltendmachung einer anderweitigen Kompensation bei Überschreitung der Grenzen für
+die Blindarbeit ausdrücklich vor.
+
+
+UNTERBRECHUNG UND WIEDERHERSTELLUNG DER ANSCHLUSSNUTZUNG
+                              Zählertyp                                                                         € (Netto)          € (Brutto)
+Unterbrechung der Anschlussnutzung                                                                                 83,62              99,51
+Erfolglose Unterbrechung                                                                                           75,39              89,71
+Wiederherstellung der Anschlussnutzung                                                                             83,62              99,51
+Stornierung der Unterbrechung der Anschlussnutzung bis zum Vortag der Sperrung                                     25,00              29,75
+Stornierung der Unterbrechung der Anschlussnutzung am Tag der Sperrung                                             50,00              59,50
+Wiederherstellung der Anschlussnutzung außerhalb der regulären Arbeitszeit                                        104,53             124,39
+
+* Derzeit gültiger MwSt.-Satz von 19%
+Preise außerhalb der Niederspannung werden individuell nach Aufwand berechnet.
+

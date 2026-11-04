@@ -1,0 +1,845 @@
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                Nachkomma-
+          gemäß                                             Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                               8
+                                                                                                                                                   stellen
+      § 17 StromNEV
+
+     Preis       Einheit         ID                                                        Bezeichnung                                            Einheit    Preis für PRICAT
+
+                           Kapitel 3.1.1   Entgelte des Jahresleistungspreissystems
+
+                           1-01-1          Jahresleistungspreissystem Höchstspannung
+
+                           1-01-3          Hochspannung
+
+     13,05       €/kW/a    1-01-3-001      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis        €/(kW*Tag)    0,03575342000
+
+      3,97       ct/kWh    1-01-3-002      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis            €/kWh       0,03970000000
+
+     104,97      €/kW/a    1-01-3-003      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis       €/(kW*Tag)    0,28758904000
+
+      0,29       ct/kWh    1-01-3-004      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis           €/kWh       0,00290000000
+
+                           1-01-4          Umspannung Hoch-/Mittelspannung
+
+                                           Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a
+     13,03       €/kW/a    1-01-4-001                                                                                                           €/(kW*Tag)    0,03569863000
+                                           Leistungspreis
+                                           Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a
+      4,06       ct/kWh    1-01-4-002                                                                                                             €/kWh       0,04060000000
+                                           Arbeitspreis
+                                           Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a
+     108,39      €/kW/a    1-01-4-003                                                                                                           €/(kW*Tag)    0,29695890000
+                                           Leistungspreis
+                                           Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a
+      0,25       ct/kWh    1-01-4-004                                                                                                             €/kWh       0,00250000000
+                                           Arbeitspreis
+
+                           1-01-5          Mittelspannung
+
+     15,88       €/kW/a    1-01-5-001      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis      €/(kW*Tag)    0,04350685000
+
+      4,95       ct/kWh    1-01-5-002      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis          €/kWh       0,04950000000
+
+     132,13      €/kW/a    1-01-5-003      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis     €/(kW*Tag)    0,36200000000
+
+      0,30       ct/kWh    1-01-5-004      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis         €/kWh       0,00300000000
+
+Seite 1 von 21                                                                                                                                                     Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                       Nachkomma-
+          gemäß                                          Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                         8
+                                                                                                                                                          stellen
+      § 17 StromNEV
+
+     Preis       Einheit        ID                                                      Bezeichnung                                                      Einheit    Preis für PRICAT
+
+                           1-01-6       Umspannung Mittel-/Niederspannung
+
+                                        Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a
+     17,32       €/kW/a    1-01-6-001                                                                                                                  €/(kW*Tag)    0,04745205000
+                                        Leistungspreis
+
+                                        Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a
+      5,40       ct/kWh    1-01-6-002                                                                                                                    €/kWh       0,05400000000
+                                        Arbeitspreis
+
+                                        Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a
+     144,11      €/kW/a    1-01-6-003                                                                                                                  €/(kW*Tag)    0,39482192000
+                                        Leistungspreis
+
+                                        Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a
+      0,33       ct/kWh    1-01-6-004                                                                                                                    €/kWh       0,00330000000
+                                        Arbeitspreis
+
+                           1-01-7       Niederspannung
+
+     24,39       €/kW/a    1-01-7-001   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis                €/(kW*Tag)    0,06682192000
+
+      6,19       ct/kWh    1-01-7-002   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis                    €/kWh       0,06190000000
+
+     153,13      €/kW/a    1-01-7-003   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis               €/(kW*Tag)    0,41953425000
+
+      1,04       ct/kWh    1-01-7-004   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis                   €/kWh       0,01040000000
+
+                           1-01-8       § 14a EnWG – Entgelt für RLM-Kunden
+
+                                        Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a für Marktlokationen nach §
+     24,39       €/kW/a    1-01-8-001                                                                                                                  €/(kW*Tag)    0,06682192000
+                                        14a EnWG - Entgelt für RLM-Kunden Leistungspreis
+
+                                        Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a für Marktlokationen nach §
+      6,19       ct/kWh    1-01-8-002                                                                                                                    €/kWh       0,06190000000
+                                        14a EnWG - Entgelt für RLM-Kunden Arbeitspreis
+
+                                        Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a für Marktlokationen nach §
+     153,13      €/kW/a    1-01-8-003                                                                                                                  €/(kW*Tag)    0,41953425000
+                                        14a EnWG - Entgelt für RLM-Kunden Leistungspreis
+
+
+
+Seite 2 von 21                                                                                                                                                            Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                       Nachkomma-
+          gemäß                                           Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                        8
+                                                                                                                                                          stellen
+      § 17 StromNEV
+
+     Preis       Einheit        ID                                                       Bezeichnung                                                     Einheit    Preis für PRICAT
+
+                                        Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a für Marktlokationen nach §
+      1,04       ct/kWh    1-01-8-004                                                                                                                    €/kWh       0,01040000000
+                                        14a EnWG - Entgelt für RLM-Kunden Arbeitspreis
+
+                                        Jahresleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+    -115,75        €/a     1-01-9-001   Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und           €/Tag      -0,31712329000
+                                        steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+
+                                        Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der
+                                        Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren
+    -115,75        €/a     1-01-9-002                                                                                                                    €/Tag      -0,31712329000
+                                        Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und
+                                        BK8-22/010-A
+
+
+
+
+Seite 3 von 21                                                                                                                                                            Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                                 Nachkomma-
+          gemäß                                              Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                               8
+                                                                                                                                                                    stellen
+      § 17 StromNEV
+
+     Preis       Einheit         ID                                                           Bezeichnung                                                          Einheit    Preis für PRICAT
+
+
+                           Kapitel 3.1.2   Entgelte des Grundpreis-/Arbeitspreissystems
+
+
+     63,27         €/a     1-02-0-001      Grundpreis-/ Arbeitspreissystem Marktlokation Grundpreis für Arbeitspreissystem Grundpreis                              €/Tag       0,17334247000
+
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere
+                                           Kategorie fällt) sowie für Marktlokationen, die nach Modul 1 und/oder 3 der Festlegungen zu Netzentgelten bei
+      6,47       ct/kWh    1-02-0-002      Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                        €/kWh       0,06470000000
+                                           Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A abgerechnet werden
+                                           Arbeitspreis
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung, insbesondere nach § 14a
+      1,71       ct/kWh    1-02-0-003                                                                                                                              €/kWh       0,01710000000
+                                           Arbeitspreis
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe, insbesondere nach § 14a
+      3,43       ct/kWh    1-02-0-004                                                                                                                              €/kWh       0,03430000000
+                                           Arbeitspreis
+
+      6,47       ct/kWh    1-02-0-005      Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie öffentlicher Straßenbeleuchtung Arbeitspreis                €/kWh       0,06470000000
+
+                                           Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität, insbesondere nach § 14a
+      4,28       ct/kWh    1-02-0-006                                                                                                                              €/kWh       0,04280000000
+                                           Arbeitspreis
+                                           Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a
+      4,28       ct/kWh    1-02-0-007                                                                                                                              €/kWh       0,04280000000
+                                           EnWG, für die es keine genauer spezifizierte Artikel-ID gibt Arbeitspreis
+                                           Grundpreis-/ Arbeitspreissystem Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei
+    -115,75        €/a     1-02-0-015      Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                        €/Tag      -0,31712329000
+                                           Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 2 der Festlegungen zu Netzentgelten bei Anwendung der
+      2,59       ct/kWh    1-02-0-016      netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a           €/kWh       0,02590000000
+                                           EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der
+      7,14       ct/kWh    1-02-0-017      netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a           €/kWh       0,07140000000
+                                           EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis HT
+                                           Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der
+      2,59       ct/kWh    1-02-0-018      netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a           €/kWh       0,02590000000
+                                           EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis NT
+
+Seite 4 von 21                                                                                                                                                                      Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                Nachkomma-
+          gemäß                                               Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                             8
+                                                                                                                                                   stellen
+      § 17 StromNEV
+
+     Preis        Einheit         ID                                                         Bezeichnung                                          Einheit    Preis für PRICAT
+
+
+                            Kapitel 3.1.3   Entgelte des Monatsleistungspreissystems
+
+
+                            1-03-3          Monatsleistungspreissystem Hochspannung
+
+     17,50       €/kW/Monat 1-03-3-001      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 28 Tagen                      €/(kW*Tag)    0,62500000000
+
+     17,50       €/kW/Monat 1-03-3-002      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 29 Tagen                      €/(kW*Tag)    0,60344828000
+
+     17,50       €/kW/Monat 1-03-3-003      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 30 Tagen                      €/(kW*Tag)    0,58333333000
+
+     17,50       €/kW/Monat 1-03-3-004      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 31 Tagen                      €/(kW*Tag)    0,56451613000
+
+      0,29         ct/kWh   1-03-3-005      Monatsleistungspreissystem Hochspannung Arbeitspreis                                                  €/kWh       0,00290000000
+
+                            1-03-4          Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung
+
+     18,07       €/kW/Monat 1-03-4-001      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 28 Tagen   €/(kW*Tag)    0,64535714000
+
+     18,07       €/kW/Monat 1-03-4-002      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 29 Tagen   €/(kW*Tag)    0,62310345000
+
+     18,07       €/kW/Monat 1-03-4-003      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 30 Tagen   €/(kW*Tag)    0,60233333000
+
+     18,07       €/kW/Monat 1-03-4-004      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 31 Tagen   €/(kW*Tag)    0,58290323000
+
+      0,25         ct/kWh   1-03-4-005      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Arbeitspreis                               €/kWh       0,00250000000
+
+                            1-03-5          Monatsleistungspreissystem Mittelspannung
+
+     22,02       €/kW/Monat 1-03-5-001      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen                    €/(kW*Tag)    0,78642857000
+
+     22,02       €/kW/Monat 1-03-5-002      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen                    €/(kW*Tag)    0,75931034000
+
+     22,02       €/kW/Monat 1-03-5-003      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen                    €/(kW*Tag)    0,73400000000
+
+
+Seite 5 von 21                                                                                                                                                     Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                               Nachkomma-
+          gemäß                                            Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                               8
+                                                                                                                                                  stellen
+      § 17 StromNEV
+
+     Preis        Einheit         ID                                                      Bezeichnung                                            Einheit    Preis für PRICAT
+
+     22,02       €/kW/Monat 1-03-5-004   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen                      €/(kW*Tag)    0,71032258000
+
+      0,30         ct/kWh   1-03-5-005   Monatsleistungspreissystem Mittelspannung Arbeitspreis                                                  €/kWh       0,00300000000
+
+                            1-03-6       Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+
+     24,02       €/kW/Monat 1-03-6-001   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen   €/(kW*Tag)    0,85785714000
+
+     24,02       €/kW/Monat 1-03-6-002   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen   €/(kW*Tag)    0,82827586000
+
+     24,02       €/kW/Monat 1-03-6-003   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen   €/(kW*Tag)    0,80066667000
+
+     24,02       €/kW/Monat 1-03-6-004   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen   €/(kW*Tag)    0,77483871000
+
+      0,33         ct/kWh   1-03-6-005   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Arbeitspreis                               €/kWh       0,00330000000
+
+                            1-03-7       Monatsleistungspreissystem Niederspannung
+
+     25,52       €/kW/Monat 1-03-7-001   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 28 Tagen                      €/(kW*Tag)    0,91142857000
+
+     25,52       €/kW/Monat 1-03-7-002   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 29 Tagen                      €/(kW*Tag)    0,88000000000
+
+     25,52       €/kW/Monat 1-03-7-003   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 30 Tagen                      €/(kW*Tag)    0,85066667000
+
+     25,52       €/kW/Monat 1-03-7-004   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 31 Tagen                      €/(kW*Tag)    0,82322581000
+
+      1,04         ct/kWh   1-03-7-005   Monatsleistungspreissystem Niederspannung Arbeitspreis                                                  €/kWh       0,01040000000
+
+
+
+
+Seite 6 von 21                                                                                                                                                    Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                             Nachkomma-
+          gemäß                                              Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                           8
+                                                                                                                                stellen
+      § 17 StromNEV
+
+     Preis       Einheit         ID                                                          Bezeichnung                       Einheit    Preis für PRICAT
+
+
+                           Kapitel 3.1.4   Entgelte des Stromspeichers gemäß § 19 Abs. 4 StromNEV
+
+
+                           Kapitel 3.1.5   Netzreservekapazität
+
+
+                           1-05-3          Hochspannung
+
+     32,64       €/kW/a    1-05-3-001      Netzreservekapazität Hochspannung bis 200 h/a                                     €/(kW*Tag)    0,08942466000
+
+     39,16       €/kW/a    1-05-3-002      Netzreservekapazität Hochspannung über 200 h/a bis 400 h/a                        €/(kW*Tag)    0,10728767000
+
+     45,69       €/kW/a    1-05-3-003      Netzreservekapazität Hochspannung über 400 h/a bis 600 h/a                        €/(kW*Tag)    0,12517808000
+
+                           1-05-4          Umspannung Hoch-/Mittelspannung
+
+     32,57       €/kW/a    1-05-4-001      Netzreservekapazität Umspannung Hoch-/Mittelspannung bis 200 h/a                  €/(kW*Tag)    0,08923288000
+
+     39,08       €/kW/a    1-05-4-002      Netzreservekapazität Umspannung Hoch-/Mittelspannung über 200 h/a bis 400 h/a     €/(kW*Tag)    0,10706849000
+
+     45,59       €/kW/a    1-05-4-003      Netzreservekapazität Umspannung Hoch-/Mittelspannung über 400 h/a bis 600 h/a     €/(kW*Tag)    0,12490411000
+
+                           1-05-5          Mittelspannung
+
+     39,70       €/kW/a    1-05-5-001      Netzreservekapazität Mittelspannung bis 200 h/a                                   €/(kW*Tag)    0,10876712000
+
+     47,64       €/kW/a    1-05-5-002      Netzreservekapazität Mittelspannung über 200 h/a bis 400 h/a                      €/(kW*Tag)    0,13052055000
+
+     55,58       €/kW/a    1-05-5-003      Netzreservekapazität Mittelspannung über 400 h/a bis 600 h/a                      €/(kW*Tag)    0,15227397000
+
+                           1-05-6          Umspannung Mittel-/Niederspannung
+
+     43,30       €/kW/a    1-05-6-001      Netzreservekapazität Umspannung Mittel-/Niederspannung bis 200 h/a                €/(kW*Tag)    0,11863014000
+
+     51,96       €/kW/a    1-05-6-002      Netzreservekapazität Umspannung Mittel-/Niederspannung über 200 h/a bis 400 h/a   €/(kW*Tag)    0,14235616000
+
+Seite 7 von 21                                                                                                                                  Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                   Nachkomma-
+          gemäß                                              Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                 8
+                                                                                                                                                      stellen
+      § 17 StromNEV
+
+     Preis       Einheit         ID                                                          Bezeichnung                                             Einheit    Preis für PRICAT
+
+     60,62       €/kW/a    1-05-6-003      Netzreservekapazität Umspannung Mittel-/Niederspannung über 400 h/a bis 600 h/a                         €/(kW*Tag)    0,16608219000
+
+                           1-05-7          Niederspannung
+
+     60,98       €/kW/a    1-05-7-001      Netzreservekapazität Niederspannung bis 200 h/a                                                         €/(kW*Tag)    0,16706849000
+
+     73,17       €/kW/a    1-05-7-002      Netzreservekapazität Niederspannung über 200 h/a bis 400 h/a                                            €/(kW*Tag)    0,20046575000
+
+     85,37       €/kW/a    1-05-7-003      Netzreservekapazität Niederspannung über 400 h/a bis 600 h/a                                            €/(kW*Tag)    0,23389041000
+
+
+                           Kapitel 3.1.6   Entgelte des Messstellenbetriebs bei konventionellen Messeinrichtungen (kME)
+
+     491,60        €/a     1-06-3-001      Messstellenbetrieb bei kME, Hochspannung, kME mit registrierender Last-/Einspeisemessung                  €/Tag       1,34684932000
+
+     501,20        €/a     1-06-3-002      Messstellenbetrieb bei kME, Hochspannung, Wandlersatz für Messstellenbetrieb bei kME                      €/Tag       1,37315068000
+
+     491,60        €/a     1-06-5-001      Messstellenbetrieb bei kME, Mittelspannung, kME mit registrierender Last-/Einspeisemessung                €/Tag       1,34684932000
+
+     110,40        €/a     1-06-5-002      Messstellenbetrieb bei kME, Mittelspannung, Wandlersatz für Messstellenbetrieb bei kME                    €/Tag       0,30246575000
+
+     361,35        €/a     1-06-7-001      Messstellenbetrieb bei kME, Niederspannung, kME mit registrierender Last-/Einspeisemessung                €/Tag       0,99000000000
+
+     29,22         €/a     1-06-7-002      Messstellenbetrieb bei kME, Niederspannung, Wandlersatz für Messstellenbetrieb bei kME                    €/Tag       0,08005479000
+
+     14,60         €/a     1-06-7-003      Messstellenbetrieb bei kME, Niederspannung, Schaltgerät oder Rundsteuerempfänger                          €/Tag       0,04000000000
+
+     10,00         €/a     1-06-7-004      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Eintarif       €/Tag       0,02739726000
+
+     16,00         €/a     1-06-7-005      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Zweitarif      €/Tag       0,04383562000
+
+     10,00         €/a     1-06-7-006      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler Eintarif      €/Tag       0,02739726000
+
+     16,00         €/a     1-06-7-007      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler Zweitarif     €/Tag       0,04383562000
+
+
+Seite 8 von 21                                                                                                                                                        Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                         Nachkomma-
+          gemäß                                            Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                         8
+                                                                                                                                                            stellen
+      § 17 StromNEV
+
+     Preis        Einheit        ID                                                         Bezeichnung                                                    Einheit    Preis für PRICAT
+
+     45,00          €/a     1-06-7-010   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Maximumzähler                             €/Tag       0,12328767000
+
+     14,00          €/a     1-06-7-012   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Eintarif           €/Tag       0,03835616000
+
+     21,00          €/a     1-06-7-013   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Zweitarif          €/Tag       0,05753425000
+
+     14,00          €/a     1-06-7-014   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler Eintarif          €/Tag       0,03835616000
+
+     21,00          €/a     1-06-7-015   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler Zweitarif         €/Tag       0,05753425000
+
+     60,00          €/a     1-06-7-018   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Maximumzähler                         €/Tag       0,16438356000
+
+     22,00          €/a     1-06-7-020   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Eintarif        €/Tag       0,06027397000
+
+     31,00          €/a     1-06-7-021   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Zweitarif        €/Tag      0,08493151000
+
+     22,00          €/a     1-06-7-022   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Zweirichtungszähler Eintarif        €/Tag      0,06027397000
+
+     31,00          €/a     1-06-7-023   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Zweirichtungszähler Zweitarif       €/Tag      0,08493151000
+
+     90,00          €/a     1-06-7-026   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Maximumzähler                       €/Tag      0,24657534000
+
+     54,00          €/a     1-06-7-028   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Eintarif               €/Tag      0,14794521000
+
+     71,00          €/a     1-06-7-029   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Zweitarif              €/Tag      0,19452055000
+
+     54,00          €/a     1-06-7-030   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler Eintarif              €/Tag      0,14794521000
+
+     71,00          €/a     1-06-7-031   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler Zweitarif             €/Tag      0,19452055000
+
+     210,00         €/a     1-06-7-034   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Maximumzähler                             €/Tag      0,57534247000
+
+                                         Messstellenbetrieb bei kME, alle Spannungsebenen, manuelle vor Ort Ablesung bei kME mit registrierender Last-
+     142,35      €/Vorgang 1-06-0-038                                                                                                                     €/Vorgang   142,35000000000
+                                         /Einspeisemessung
+
+
+Seite 9 von 21                                                                                                                                                              Stand: 12/2025
+Netzentgelte Strom 2026 - Netznutzung
+   Netznutzungsentgelte
+                                                                                                                                                             Nachkomma-
+          gemäß                                                Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.6                                                         8
+                                                                                                                                                                stellen
+      § 17 StromNEV
+
+     Preis        Einheit         ID                                                           Bezeichnung                                                     Einheit    Preis für PRICAT
+
+
+                            Kapitel 3.1.7    Individuelle Netzentgelte (siehe nachfolgende Seiten)
+
+
+                            Kapitel 3.1.8    Konzessionsabgaben
+
+                                             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden in Schwachlastzeiten gem.
+      0,61        ct/kWh    1-08-1-001                                                                                                                         €/kWh       0,00610000000
+                                             § 2 Abs. 2 Satz 1 a) KAV
+
+                                             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Sondervertragskunden gem. § 2 Abs. 3
+      0,11        ct/kWh    1-08-3-001                                                                                                                         €/kWh       0,00110000000
+                                             Satz 1 KAV
+
+                                             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b)
+      1,32        ct/kWh    1-08-4-001                                                                                                                         €/kWh       0,01320000000
+                                             KAV bis 25.000 Einwohner
+
+                                             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b)
+      1,59        ct/kWh    1-08-4-002                                                                                                                         €/kWh       0,01590000000
+                                             KAV von 25.000 bis 100.000 Einwohner
+
+                                             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b)
+      2,39        ct/kWh    1-08-4-004                                                                                                                         €/kWh       0,02390000000
+                                             KAV über 500.000 Einwohner
+
+                            Kapitel 3.1.9    Entgelte des Tagesleistungspreissystems
+
+                                             Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und
+                            Kapitel 3.1.10
+                                             veröffentlicht werden (siehe www.netztransparenz.de)
+
+
+
+
+Seite 10 von 21                                                                                                                                                                 Stand: 12/2025
+Netzentgelte 2026 - Typisierte Abnahmefälle
+gem. § 118 Abs. 5a Satz 2 EnWG (fiktive Netzentgelte ohne ÜNB-Zuschuss)
+
+Gemäß § 118 Absätze 5 und 5a EnWG sind Stromlieferanten verpflichtet, die sich aus der Netzentgeltminderung
+ergebende Kostenentlastung an ihre Kundinnen und Kunden weiterzugeben und über die Wirkung des Zuschusses
+transparent zu informieren.
+
+Betreiber von Übertragungsnetzen haben zudem einmalig sowohl das mit Zuschuss als auch das ohne Zuschuss
+berechnete bundeseinheitliche Übertragungsnetzentgelt zu veröffentlichen. Die Verteilnetzbetreiber sind einmalig
+für das Kalenderjahr 2026 verpflichtet, auf ihrer Internetseite für typisierte Abnahmefälle neben dem Netzentgelt,
+das sich unter Berücksichtigung des reduzierten Übertragungsnetzentgelts ergibt, auch ein fiktives Netzentgelt zu
+veröffentlichen, wie es sich ohne Berücksichtigung des reduzierten Übertragungsnetzentgelts ergäbe.
+
+Die nachfolgende Berechnung verdeutlicht beispielhaft für die typisierten Abnahmefälle die Wirkung des Zuschusses im
+Netzgebiet der SWM Infrastruktur GmbH & Co. KG.
+
+Alle genannten Preise zuzüglich der Entgelte für den Messstellenbetrieb, der Konzessionsabgabe und anfallenden
+Netzentgeltumlagen sowie der gesetzlichen Umsatzsteuer.
+
+
+
+                                          Netzentgelt mit Berücksichtigung des Netzentgelt ohne Berücksichtigung des
+           Typisierter Abnahmefall                 ÜNB-Zuschusses                         ÜNB-Zuschusses
+
+Haushaltskunde in der NS mit einem
+Jahresverbrauch von 3.500 kWh
+                                                                          289,72 €                                    349,22 €
+
+Gewerbekunde in der NS mit einem
+Jahresverbrauch von 50.000 kWh
+                                                                        3.298,27 €                                   4.148,27 €
+Industriekunde in der MS mit einem
+Jahresverbrauch von 24 GWh und
+6.000 Jahresbenutzungsstunden                                        600.520,00 €                                806.160,00 €
+
+Seite 11 von 21                                                                                                                   Stand: 12/2025
+Netzentgelte Strom 2026 - singuläre Netznutzung
+                                Entgelt für singulär                                             Entgelt für singulär                                                            Entgelt für singulär
+         Marktlokation               genutzte                           Marktlokation                 genutzte                                   Marktlokation                        genutzte
+                                  Betriebsmittel                                                   Betriebsmittel                                                                  Betriebsmittel
+
+Die in diesem Preisblatt genannten Abnahmestellen weisen eine physikalische Anschlusssituation mit singulär genutzten Betriebsmitteln auf. Die Netznutzung wird für diese Abnahmestellen mittels einer
+Bestabrechnung durchgeführt. Das heißt, es wird jeweils pro Abrechnungsjahr verglichen, ob die Netznutzung zu den Konditionen der allgemeinen Netzentgelten der Netzanschlussebene (z. B.
+Mittelspannung) oder gemäß § 19 Abs. 3 StromNEV zu den Konditionen des nachstehenden Sonderentgelts für das singulär genutzte Betriebsmittel zuzüglich des allgemeinen Netzentgelts für die dem
+singulär genutzten Betriebsmittel vorgelagerte Netz- oder Umspannebene (z. B. Umspannebene HS/MS) günstiger ist.
+
+50309706396                               9.256,40 €            50805679667                               56.695,45 €            50809606567                                              20.253,85 €
+50309891379                              26.758,15 €            50805905004                                9.566,65 €            50809711796                                               9.588,55 €
+50310056946                              41.883,75 €            50805990716                               37.646,10 €            50809774679                                              46.654,30 €
+50831218819                             821.523,75 €            50806033789                               10.574,05 €            50810077963                                              18.947,15 €
+50831218827                             427.593,85 €            50806070541                               20.173,55 €            50810088423                                              16.556,40 €
+50802320346                               8.606,70 €            50806097024                               17.454,30 €            50810287786                                              10.741,95 €
+50802421269                              12.201,95 €            50806098056                               37.894,30 €            50810662889                                               9.588,55 €
+50802438876                               5.080,80 €            50806140336                               19.921,70 €            50810806289                                              30.747,60 €
+50802495082                               6.212,30 €            50806371692                               68.411,95 €            50810824645                                               5.310,75 €
+50802501764                              16.968,85 €            50806403495                              107.010,70 €            50810910387                                               9.289,25 €
+50802505675                              18.396,00 €            50806480592                                5.734,15 €            50811016580                                               9.588,55 €
+50802617058                              11.033,95 €            50806706609                               13.424,70 €            50811281521                                              37.814,00 €
+50802632519                               7.416,80 €            50806706683                               20.918,15 €            50811401012                                              23.429,35 €
+50802784328                              17.417,80 €            50806726334                               13.464,85 €            50811746913                                              34.591,05 €
+50802902194                               6.263,40 €            50806890816                             125.691,40 €             50811996641                                              27.791,10 €
+50802913795                              30.207,40 €            50806922578                               40.989,50 €            50812116264                                              41.212,15 €
+50803039277                              12.380,80 €            50807302836                                8.099,35 €            50812237721                                               7.639,45 €
+50803120539                              18.177,00 €            50807302852                             190.303,70 €             50812582332                                              22.100,75 €
+50803215843                              12.340,65 €            50807304874                               65.802,20 €            50812609392                                              23.057,05 €
+50803255196                              20.374,30 €            50807328189                               62.488,00 €            50812628780                                              25.133,90 €
+50803369369                               8.402,30 €            50807530437                               46.077,60 €            50812657763                                              18.907,00 €
+50803377453                              12.530,45 €            50807601072                               17.220,70 €            50812704366                                              14.727,75 €
+50803708004                              14.749,65 €            50807996895                              141.795,20 €            50812867247                                              12.610,75 €
+
+Seite 12 von 21                                                                                                                                                                            Stand: 12/2025
+Netzentgelte Strom 2026 - singuläre Netznutzung
+                                Entgelt für singulär                                             Entgelt für singulär                                                            Entgelt für singulär
+         Marktlokation               genutzte                           Marktlokation                 genutzte                                   Marktlokation                        genutzte
+                                  Betriebsmittel                                                   Betriebsmittel                                                                  Betriebsmittel
+
+Die in diesem Preisblatt genannten Abnahmestellen weisen eine physikalische Anschlusssituation mit singulär genutzten Betriebsmitteln auf. Die Netznutzung wird für diese Abnahmestellen mittels einer
+Bestabrechnung durchgeführt. Das heißt, es wird jeweils pro Abrechnungsjahr verglichen, ob die Netznutzung zu den Konditionen der allgemeinen Netzentgelten der Netzanschlussebene (z. B.
+Mittelspannung) oder gemäß § 19 Abs. 3 StromNEV zu den Konditionen des nachstehenden Sonderentgelts für das singulär genutzte Betriebsmittel zuzüglich des allgemeinen Netzentgelts für die dem
+singulär genutzten Betriebsmittel vorgelagerte Netz- oder Umspannebene (z. B. Umspannebene HS/MS) günstiger ist.
+
+50803741616                              20.374,30 €            50808039321                                4.047,85 €            50813069610                                              35.978,05 €
+50804176672                              12.840,70 €            50808059767                               12.862,60 €            50813567854                                              23.217,65 €
+50804195218                              20.958,30 €            50819730562                               13.494,05 €            50813847876                                               3.573,35 €
+50805338784                              26.630,40 €            50819730570                               13.494,05 €            50814971046                                              10.168,90 €
+50805478324                              57.567,80 €            50808410787                                7.811,00 €            50831213207                                              15.811,80 €
+50805609101                              17.169,60 €            50808505926                               17.651,40 €            50819860814                                              16.074,60 €
+50805612865                              27.966,30 €            50809143353                               52.143,90 €            50819986751                                              46.825,85 €
+50805613780                              83.654,35 €            50809479922                               14.486,85 €            50820107164                                             121.092,40 €
+50805675235                              97.845,55 €            50809597203                               29.280,30 €
+
+
+
+
+Seite 13 von 21                                                                                                                                                                            Stand: 12/2025
+Netzentgelte Strom 2026 - individuelle Netznutzung
+
+                                BNetzA-Beschluss-                                               BNetzA-Beschluss-                                                   BNetzA-Beschluss-
+         Marktlokation                                                 Marktlokation                                                      Marktlokation
+                                 kammernummer                                                    kammernummer                                                        kammernummer
+
+Für Entnahmestellen ohne Beschlusskammernummer hat die SWM Infrastruktur GmbH & Co. KG noch keine Eingangsbestätigung der Bundesnetzagentur erhalten, zudem sind noch nicht alle
+Entnahmestellen durch die Bundesnetzagentur im Rahmen des Anzeigeverfahrens auf Vollständigkeit der Unterlagen geprüft.
+
+50802343257                       BK4S1-0000408                 50818724293                       BK4S1-0009316                 50810488748                           BK4S1-0012831
+50812928809                       BK4S1-0000409                 50813339295                       BK4S1-0009317                 50808300368                           BK4S1-0012889
+50802896214                       BK4S1-0000747                 50813208523                       BK4S1-0009318                 50811998176                           BK4S1-0012943
+50806403495                       BK4S1-0000868                 50808463736                       BK4S1-0009319                 50810105102                           BK4S1-0013100
+50803513841                       BK4S1-0001011                 50804038541                       BK4S1-0009336                 50819907327                           BK4S1-0013106
+50811696720                       BK4S1-0001063                 50809814186                       BK4S1-0009354                 50802289138                           BK4S1-0013125
+50802899432                       BK4S1-0001067                 50831217431                       BK4S1-0009360                 50803402698                           BK4S1-0013134
+50806245342                       BK4S1-0001276                 50804470107                       BK4S1-0009543                 50819219045                           BK4S1-0013192
+50809731570                       BK4S1-0001376                 50807269036                       BK4S1-0009571                 50802514501                           BK4S1-0013220
+50802489407                       BK4S1-0001405                 50333316484                       BK4S1-0009637                 50806016727                           BK4S1-0013243
+50802609790                       BK4S1-0001744                 50327733123                       BK4S1-0009712                 50812116264                           BK4S1-0013246
+50802720942                       BK4S1-0002891                 50311180140                       BK4S1-0009716                 50831218439                           BK4S1-0013254
+50804011521                       BK4S1-0002962                 50819590122                       BK4S1-0009793                 50809554427                           BK4S1-0013256
+50806480592                       BK4S1-0003185                 50807304874                       BK4S1-0009971                 50819123999                           BK4S1-0013272
+50806512402                       BK4S1-0003186                 50812129316                       BK4S1-0009984                 50804066922                           BK4S1-0013273
+50809581579                       BK4S1-0003199                 50807321406                       BK4S1-0009999                 50806098056                           BK4S1-0013274
+50804195218                       BK4S1-0003437                 50332029624                       BK4S1-0010004                 50804283998                           BK4S1-0013278
+50802617016                       BK4S1-0003575                 50805636097                       BK4S1-0010026                 50806371692                           BK4S1-0013322
+50802494076                       BK4S1-0003620                 50806923089                       BK4S1-0010180                 50819577956                           BK4S1-0013358
+50804209746                       BK4S1-0003719                 50811328654                       BK4S1-0010181                 50818727974                           BK4S1-0013378
+50802658341                       BK4S1-0003921                 50802915759                       BK4S1-0010184                 50803846804                           BK4S1-0013401
+50806088445                       BK4S1-0003935                 50809279760                       BK4S1-0010206                 50809836297                           BK4S1-0013420
+50808498014                       BK4S1-0004086                 50802428207                       BK4S1-0010232                 50808216028                           BK4S1-0013509
+50802937787                       BK4S1-0004154                 50332765020                       BK4S1-0010264                 50806899834                           BK4S1-0012729
+50806534894                       BK4S1-0004185                 50818745926                       BK4S1-0010282                 50819666519
+
+Seite 14 von 21                                                                                                                                                               Stand: 12/2025
+Netzentgelte Strom 2026 - individuelle Netznutzung
+
+                                BNetzA-Beschluss-                                               BNetzA-Beschluss-                                                   BNetzA-Beschluss-
+         Marktlokation                                                 Marktlokation                                                      Marktlokation
+                                 kammernummer                                                    kammernummer                                                        kammernummer
+
+Für Entnahmestellen ohne Beschlusskammernummer hat die SWM Infrastruktur GmbH & Co. KG noch keine Eingangsbestätigung der Bundesnetzagentur erhalten, zudem sind noch nicht alle
+Entnahmestellen durch die Bundesnetzagentur im Rahmen des Anzeigeverfahrens auf Vollständigkeit der Unterlagen geprüft.
+
+50802493052                       BK4S1-0004227                 50806139892                       BK4S1-0010371                 50802293915
+50806237860                       BK4S1-0004647                 50812912860                       BK4S1-0010417                 50807559106
+50814093634                       BK4S1-0005845                 50807463323                       BK4S1-0010449                 50812071616
+50805683006                       BK4S1-0005887                 50802288271                       BK4S1-0010450                 50819352879                           BK4S1-0013721
+50811572095                       BK4S1-0005888                 50818953040                       BK4S1-0010506                 50819352887                           BK4S1-0013906
+50806887714                       BK4S1-0005894                 50813189393                       BK4S1-0010546                 50819353124                           BK4S1-0013751
+50805689624                       BK4S1-0005895                 50806943368                       BK4S1-0010601                 50819353174                           BK4S1-0013723
+50806394412                       BK4S1-0005896                 50803463442                       BK4S1-0010650                 50819353190                           BK4S1-0013752
+50812746110                       BK4S1-0005898                 50807137316                       BK4S1-0010698                 50819353455                           BK4S1-0013737
+50812746144                       BK4S1-0005899                 50812657763                       BK4S1-0010723                 50819384145                           BK4S1-0013741
+50811087507                       BK4S1-0005900                 50326425482                       BK4S1-0010746                 50819384559                           BK4S1-0013713
+50802295995                       BK4S1-0005926                 50813335152                       BK4S1-0010763                 50819384567                           BK4S1-0013784
+50807302836                       BK4S1-0006673                 50811044284                       BK4S1-0010765                 50819384632                           BK4S1-0013712
+50807677627                       BK4S1-0006746                 50831217118                       BK4S1-0010768                 50819384971                           BK4S1-0013739
+50803145561                       BK4S1-0006795                 50803908175                       BK4S1-0011184                 50819419455                           BK4S1-0013738
+50805837405                       BK4S1-0006812                 50806237307                       BK4S1-0011187                 50819472320                           BK4S1-0013740
+50802479739                       BK4S1-0006819                 50802320346                       BK4S1-0011189                 50802292024                           BK4S1-0013703
+50810257507                       BK4S1-0006820                 50806109796                       BK4S1-0011191                 50314607183
+50802337581                       BK4S1-0006923                 50803120539                       BK4S1-0011278                 50805632748
+50812866281                       BK4S1-0006925                 50802658911                       BK4S1-0011279                 50807294869
+50803673869                       BK4S1-0007206                 50803369369                       BK4S1-0011288                 50806771496
+50812402621                       BK4S1-0007208                 50818968015                       BK4S1-0011298                 50818865766                           BK4S1-0013866
+50804177729                       BK4S1-0007238                 50806881162                       BK4S1-0011299                 50313287671
+50804371355                       BK4S1-0007313                 50811969648                       BK4S1-0011302                 50802591509
+50814964322                       BK4S1-0007314                 50804539466                       BK4S1-0012002                 50803742284
+
+Seite 15 von 21                                                                                                                                                               Stand: 12/2025
+Netzentgelte Strom 2026 - individuelle Netznutzung
+
+                                BNetzA-Beschluss-                                               BNetzA-Beschluss-                                                   BNetzA-Beschluss-
+         Marktlokation                                                 Marktlokation                                                      Marktlokation
+                                 kammernummer                                                    kammernummer                                                        kammernummer
+
+Für Entnahmestellen ohne Beschlusskammernummer hat die SWM Infrastruktur GmbH & Co. KG noch keine Eingangsbestätigung der Bundesnetzagentur erhalten, zudem sind noch nicht alle
+Entnahmestellen durch die Bundesnetzagentur im Rahmen des Anzeigeverfahrens auf Vollständigkeit der Unterlagen geprüft.
+
+50805613780                       BK4S1-0007337                 50802290911                       BK4S1-0012004                 50812426093
+50812730056                       BK4S1-0007535                 50811369070                       BK4S1-0012045                 50812256052
+50805338784                       BK4S1-0007585                 50805568521                       BK4S1-0012056                 50806922578
+50802492723                       BK4S1-0007702                 50812994008                       BK4S1-0012059                 50819785038
+50802216412                       BK4S1-0007703                 50807106353                       BK4S1-0012325                 50805478324
+50803294590                       BK4S1-0008197                 50307891884                       BK4S1-0012334                 50831218471                           BK4S1-0013959
+50806915119                       BK4S1-0008198                 50819238235                       BK4S1-0012341                 50831218447                           BK4S1-0013961
+50807162230                       BK4S1-0008199                 50819388486                       BK4S1-0012342                 50831218463                           BK4S1-0013969
+50804496111                       BK4S1-0008825                 50802239571                       BK4S1-0012351                 50811507216                           BK4S2-0000113
+50831215914                       BK4S1-0008987                 50808079632                       BK4S1-0012553                 50802501764                           BK4S2-0000498
+50805972772                       BK4S1-0009274                 50807459299                       BK4S1-0012621                 50812867247                           BK4S2-0000402
+50804734595                       BK4S1-0009275                 50807677198                       BK4S1-0012622                 50805679667                           BK4S2-0000256
+50807056475                       BK4S1-0009276                 50819331493                       BK4S1-0012623                 50309891379                           BK4S2-0001095
+50804608592                       BK4S1-0009315                 50806800774                       BK4S1-0012624
+
+
+
+
+Seite 16 von 21                                                                                                                                                               Stand: 12/2025
+Netzentgelte Strom 2026 - Einzelleistungen
+   Netznutzungsentgelte
+                                                                                                                                            Nachkomma-
+          gemäß                                               Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.4                                         8
+                                                                                                                                               stellen
+      § 17 StromNEV
+
+     Preis        Einheit     ID            Bezeichnung                                                                                       Einheit    Preis für PRICAT
+
+
+                              Kapitel 3.2   Separat bestellbare Einzelleistungen für Marktlokationen und Verzugskosten
+
+
+     52,69        €/Anfahrt   2-01-7-001    Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit                                  €/Auftrag   52,69000000000
+
+
+     66,25        €/Anfahrt   2-01-7-002    Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit                              €/Auftrag   66,25000000000
+
+
+     59,47        €/Anfahrt   2-01-7-003    Erfolglose Unterbrechung                                                                         €/Auftrag   59,47000000000
+
+
+     29,74        €/Anfahrt   2-01-7-004    Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung bis zum Vortag der Sperrung    €/Auftrag   29,74000000000
+
+
+     59,47        €/Anfahrt   2-01-7-005    Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung am Tag der Sperrung            €/Auftrag   59,47000000000
+
+
+
+
+Seite 17 von 21                                                                                                                                                Stand: 12/2025
+Netzentgelte Strom 2026 - sonstige Netznutzung
+   Netznutzungsentgelte
+                                                                                                                       Nachkomma-
+          gemäß                                            Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste 5.4                       8
+                                                                                                                          stellen
+      § 17 StromNEV
+
+
+     Preis        Einheit   ID            Bezeichnung                                                                    Einheit    Preis für PRICAT
+
+
+
+                            Kapitel 3.3   Freiwillige Abrechnung sonstiger Leistungen8
+
+
+
+
+Seite 18 von 21                                                                                                                           Stand: 12/2025
+Netzentgelte Strom 2026 - Erläuterungen
+
+                  ID                                                                                    Erläuterungen
+
+
+alle                        zzgl. Steuern, Abgaben, gesetzlichen Zuschlägen und Umlage
+
+                            HT-Zeiten: Montag bis Freitag 6:00 bis 21:00 Uhr
+
+                            abweichend davon in den Netzgebieten von:
+                             - Aschheim (PLZ 85609)
+                             - Feldkirchen (PLZ 85622)
+                             - Garching (inkl. Hochbrück, PLZ 85748)
+1-02-0-xxx                   - Kirchheim (PLZ 85551)
+                             - Ottobrunn (PLZ 85521)
+                            HT-Zeiten: Montag bis Freitag 6:00 bis 22:00 Uhr und Samstag 6:00 bis 13:00 Uhr
+
+                            (gilt nur für Messeinrichtungen ohne Lastgangmessung)
+
+                            Die übrigen Zeiten sind NT-Zeiten.
+                            Bedingungen für die Einstufung als steuerbare Verbrauchseinrichtung ("alte Regelung" für Anlagen mit Inbetriebnahme vor dem 01.01.2024 und für alle Speicherheizungen
+                            unabhängig von der Inbetriebnahme):
+                             - Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher, der dem Netzbetreiber die netzdienliche Steuerung der Verbrauchseinrichtung
+                            ermöglicht
+1-02-0-003 bis 1-02-0-007    - Technische Möglichkeit zur Steuerung und vollständigen Unterbrechung der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung
+                             - Verbrauchseinrichtung besitzt eine separate Messeinrichtung und separaten Zählpunkt
+
+                            Steuerbare Verbrauchseinrichtungen werden nach Maßgabe der Ergänzenden Bedingungen zur NAV ausschließlich durch den Netzbetreiber gesteuert. Dazu sind
+                            geeignete Steuer- und Schalteinrichtungen (z. B. Rundsteuerempfänger, Relais und ggf. Sperrschütz) vom Kunden vorzuhalten.
+                            Zeitfenster nach Modul 3 für steuerbare Verbrauchseinrichtungen nach § 14a EnWG gemäß BNetzA-Beschlüsse BK6-22-300 und BK8-22/010-A:
+                            Gilt vom 01.01.2026 bis 31.03.2026 sowie vom 01.10.2026 bis 31.12.2026.
+1-02-0-017
+                            Hochtarif (HT): 08:30 Uhr bis 20:45 Uhr
+1-02-0-018
+                            Niedertarif (NT): 00:45 bis 06:45 Uhr
+
+                            Die Zeitangaben stellen Uhrzeiten dar. (jeweils Anfang und Ende des relevanten Viertelstundenwertes)
+                            Sofern ein Netznutzer mit einer zeitlich begrenzten hohen Leistungsaufnahme i.S.v. § 19 Abs. 1 StromNEV einen Wechsel in das Monatsleistungspreissystem wünscht,
+1-03-x-xxx                  teilt er dies dem Netzbetreiber verbindlich spätestens einen Monat vor Beginn des Abrechnungsjahres mit. Ein Wechsel zwischen den Leistungspreissystemen (monatlich
+                            /jährlich) ist somit nur kalenderjährlich möglich.
+
+
+
+
+Seite 19 von 21                                                                                                                                                                      Stand: 12/2025
+Netzentgelte Strom 2026 - Erläuterungen
+
+                  ID                                                                                     Erläuterungen
+
+                             Für Entnahmestellen mit Eigenerzeugungsanlagen kann bei Ausfall oder Revision von Eigenerzeugungsanlagen beim Netzbetreiber Netzreservekapazitäten mit einer
+                             bestimmten Maximalleistung und mit einer zeitlichen Inanspruchnahme von bis zu 600 Stunden p. a. bestellt werden. Die Inanspruchnahme der bestellten
+                             Netzreservekapazität ist begrenzt auf Zeiten des störungs- oder revisionsbedingten Stillstands der Stromerzeugungsanlagen und ist in der Höhe begrenzt auf die dadurch
+                             im Einzelfall tatsächlich nicht zur Verfügung stehende Erzeugungsleistung. Bei Kraft-Wärme-KopplungsAnlagen gilt der fehlende Wärmeabsatz nicht als Störung.
+
+                             Die bestellte Netzreservekapazität wird unabhängig von Ihrer Inanspruchnahme in Rechnung gestellt. Wird die bestellte Netzreservekapazität um bis zu 10% überschritten,
+                             so wird für die Leistungsüberschreitung der gleiche Preis wie für die bestellte Netzreservekapazität verrechnet. Wird der Bestellwert um mehr als 10% überschritten, so
+                             wird die nach Preisblatt 1 abgerechnete Bezugskurve um den Überschreitungswert erhöht. Bei einer Inanspruchnahme der bestellten Netzreservekapazität von mehr als
+1-05-x-xxx                   600 Stunden kommt stattdessen die allgemeine Gleichzeitigkeitskurve des betroffenen Netzbetreibers für den Gesamtbezug zur Anwendung; der Gleichzeitigkeitsgrad
+                             beträgt jedoch mindestens 0,35.
+
+                             Die bestellte Netzreservekapazität kann jährlich angepasst werden. Die Netzreservekapazität ist bis zum 01. Dezember für das darauffolgende Jahr beim Netzbetreiber zu
+                             bestellen, ansonsten gelten die im Vorjahr in Anspruch genommenen Werte als bestellt.
+
+                             Beginn, voraussichtliche Dauer und Ende der Netzreservekapazitätsinanspruchnahme müssen bei
+                             revisionsbedingter Inanspruchnahme im Voraus sowie bei störungsbedingter Inanspruchnahme unverzüglich nach Eintritt von Störungen an Stromerzeugungsanlagen im
+                             Netzbereich des Netzkunden dem Netzbetreiber gemeldet und auf Verlangen nachgewiesen werden.
+
+1-06-3-001                   Die Entgelte verstehen sich inkl. Vergleichszählung, Modem für Fernauslesung sowie einer werktäglichen Datenlieferung
+
+1-06-5-001
+                             Die Entgelte verstehen sich inkl. Modem für Fernauslesung sowie einer werktäglichen Datenlieferung
+1-06-7-001
+
+1-06-3-002
+                             Wandlersatz = Strom- und Spannungswandler
+1-06-5-002
+
+1-06-7-002                   Wandlersatz = Stromwandler
+
+
+1-06-7-004 bis 1-06-7-0035   Entgelte für Entnahmen und Einspeisungen ohne Lastgangzählung verstehen sich grundsätzlich inkl. Modem für Fernauslesung aber ohne Wandler und Tarifschaltung.
+
+1-06-7-004 / 1-06-7-006
+1-06-7-012 / 1-06-7-014
+                             Dieses Entgelt bezieht sich auf einen Arbeitsmengenzähler mit nur einer Messung (sowohl Wechsel- als auch Drehstromzähler).
+1-06-7-020 / 1-06-7-022
+1-06-7-028 / 1-06-7-030
+
+
+
+
+Seite 20 von 21                                                                                                                                                                         Stand: 12/2025
+Netzentgelte Strom 2026 - Erläuterungen
+
+                  ID                                                                                     Erläuterungen
+
+1-06-7-005 / 1-06-7-007
+1-06-7-013 / 1-06-7-015      Dieses Entgelt bezieht sich auf einen Arbeitsmengenzähler mit zwei Messungen (sowohl Wechsel- als auch Drehstromzähler). Die notwendige Tarifschaltung (Uhr, TRE,
+1-06-7-021 / 1-06-7-023      Funkmodul) und ggf. ein Wandler werden separat verrechnet.
+1-06-7-029 / 1-06-7-031
+                             Vereinfachte Zählung im Niederspannungsnetz: Die vereinfachte Zählung im Niederspannungsnetz beinhaltet je 12 Monatswerte für Wirkarbeit und Leistungsmaxima. Die
+1-06-7-010
+                             Wirkarbeit wird dabei entsprechend Preisblatt 2 (Stromnetzentgelte für die Entnahme mit einem Jahresverbrauch von maximal 100.000 kWh und ohne Lastgangmessung
+1-06-7-018
+                             bei konventioneller Messtechnik) abgerechnet. Eine vereinfachte Zählung mittels Wirk- / Blindarbeitszähler mit Maximumzählwerk ohne Fernauslesung ist bei
+1-06-7-026
+                             Übergabepunkten im Niederspannungsnetz unter der Voraussetzung möglich, dass der Abnahmestelle ein Abnahmeverhalten einem bei der SWM Infrastruktur GmbH &
+1-06-7-034
+                             Co. KG angewendeten Lastprofil zugeordnet werden kann.
+                             Die Ablesung von Zählwerten und die Abrechnung der Netzentgelte erfolgt bei Entnahmen und Einspeisungen ohne Lastgangzählung grundsätzlich jährlich. Auf
+1-06-7-012 bis 1-06-7-0019
+                             Kundenwunsch können die Ablesung und die Rechnungsstellung halbjährlich, vierteljährlich oder monatlich zu den angegebenen Entgelten erfolgen. Der Kundenwunsch
+1-06-7-020 bis 1-06-7-0027
+                             zur abweichenden jährlichen Ablesung bzw. Netzentgeltabrechnung ist uns in Schriftform mitzuteilen. Die unterjährliche Abrechnung der Netznutzung setzt eine
+1-06-7-028 bis 1-06-7-0035
+                             entsprechende unterjährliche Ablesung voraus. Ebenso hat eine unterjährliche Ablesung automatisch eine unterjährliche Netznutzungsabrechnung zur Folge.
+
+
+1-06-0-038                   Auf Grund fehlender Kommunikationsmöglichkeit, die durch den Kunden zu vertreten ist.
+
+1-08-1-001
+                             gilt für alle betroffenen Abnahmestellen in allen Konzessionsgebieten
+1-08-3-001
+
+                             gilt für alle betroffenen Abnahmestellen in allen Konzessionsgebieten Aschheim, Berglern, Bruckberg, Eitting, Feldkirchen, Gammelsdorf, Garching (inkl. Hochbrück),
+1-08-4-001
+                             Kirchheim, Langenbach, Stadt Moosburg, Mauern, Ottobunn, Wang
+
+1-08-4-004                   gilt für alle betroffenen Abnahmestellen im Konzessionsgebiet der Landeshauptstadt München
+
+                             Die Höhe der aktuell geltenden gesetzlichen Umlagen sowie weiterführende Informationen zu den Umlagen entnehmen Sie bitte der gemeinsamen Internetplattform der
+1-10-xx-xxx
+                             deutschen Übertragungsnetzbetreiber unter www.netztransparenz.de
+
+2-01-7-001 bis 2-01-7-006    Unterbrechungen und Wiederherstellungen der Anschlussnutzung werden ausschließlich innerhalb der regulären Arbeitszeiten durchgeführt.
+
+                             Bei Stornierungen des Sperrauftrages vor 12 Uhr des letzten Werktages vor der Durchführung des Sperrversuches durch den Netzbetreiber, zahlt der Lieferant 50% des
+2-01-7-004
+                             genannten Entgeltes.
+
+                             Bei Stornierungen des Sperrauftrages nach 12 Uhr des letzten Werktages vor der Durchführung des Sperrversuches durch den Netzbetreiber, zahlt der Lieferant das
+2-01-7-005
+                             komplette genannte Entgelt.
+
+
+
+
+Seite 21 von 21                                                                                                                                                                          Stand: 12/2025
+

@@ -1,0 +1,900 @@
+Preisblatt der Stromnetz Berlin GmbH
+Entgelte für den Netzzugang
+gültig ab 01.01.2026
+
+ID lt. EDI-
+                Bezeichnung                                                                                                           Netto          Brutto      Einheit
+Codeliste
+Kapitel 3.1     Netznutzung für Marktlokationen
+
+Kapitel 3.1.1   Entgelte des Jahresleistungspreissystems
+
+1-01-3          Hochspannung
+
+1-01-3-001      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis                               3,17        3,77   €/kW/a
+
+1-01-3-002      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis                                 2,82        3,36   ct/kWh
+
+1-01-3-003      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis                          39,85          47,42   €/kW/a
+
+1-01-3-004      Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis                                1,35        1,61   ct/kWh
+
+1-01-4          Umspannung Hoch-/Mittelspannung
+
+1-01-4-001      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis            3,95        4,70   €/kW/a
+
+1-01-4-002      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis              3,37        4,01   ct/kWh
+
+1-01-4-003      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis       44,48          52,93   €/kW/a
+
+1-01-4-004      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis             1,75        2,08   ct/kWh
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                 Seite 1
+ID lt. EDI-
+                Bezeichnung                                                                                                             Netto          Brutto       Einheit
+Codeliste
+1-01-5          Mittelspannung
+
+1-01-5-001      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis                               5,14        6,12    €/kW/a
+
+1-01-5-002      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis                                 4,19        4,99    ct/kWh
+
+1-01-5-003      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis                          51,13          60,84    €/kW/a
+
+1-01-5-004      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis                                2,35        2,80    ct/kWh
+
+1-01-6          Umspannung Mittel-/Niederspannung
+
+1-01-6-001      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis            6,14        7,31    €/kW/a
+
+1-01-6-002      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis              5,66        6,74    ct/kWh
+
+1-01-6-003      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis       84,20         100,20    €/kW/a
+
+1-01-6-004      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis             2,54        3,02    ct/kWh
+                Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-01-9-002      Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren        -123,18         -146,58     €/a
+                Netzanschlüssen
+1-01-7          Niederspannung
+
+1-01-7-001      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis                               8,39        9,98    €/kW/a
+
+1-01-7-002      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis                                 7,14        8,50    ct/kWh
+
+1-01-7-003      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis                          93,87         111,71    €/kW/a
+
+1-01-7-004      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis                                3,72        4,43    ct/kWh
+                Jahresleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-01-9-001      Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren        -123,18         -146,58     €/a
+                Netzanschlüssen
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                    Seite 2
+ID lt. EDI-
+                Bezeichnung                                                                                                                         Netto          Brutto       Einheit
+Codeliste
+Kapitel 3.1.2   Entgelte des Grundpreis-/Arbeitspreissystems
+
+1-02-0-001      Grundpreis-/ Arbeitspreissystem Marktlokation Grundpreis für Arbeitspreissystem Grundpreis                                              33,36          39,70      €/a
+
+                Arbeitspreis Standardlasttarifzeit (sonst. Verbrauch und Modul 1/3, § 14a EnWG) (Tarifzeit in Erläuterungen): Grundpreis-/
+                Arbeitspreissystem Marktlokation der Kategorie sonst. Verbrauch (Marktlokation, die in keine andere Kategorie fällt) sowie für
+1-02-0-002                                                                                                                                                  7,46        8,88    ct/kWh
+                Marktlokationen, die nach Modul 1 und/oder 3 der Festlegungen zu Netzentgelten für steuerbare Verbrauchseinrichtungen und
+                steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A abgerechnet werden
+
+1-02-0-003      Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung Arbeitspreis                                         2,91        3,46    ct/kWh
+
+1-02-0-004      Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe Arbeitspreis                                              2,91        3,46    ct/kWh
+
+1-02-0-006      Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität Arbeitspreis                                      2,91        3,46    ct/kWh
+
+1-02-0-011      Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung mit erweiterter Steuerbarkeit Arbeitspreis           1,49        1,77    ct/kWh
+
+1-02-0-012      Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe mit erweiterter Steuerbarkeit Arbeitspreis                1,49        1,77    ct/kWh
+                Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität mit erweiterter Steuerbarkeit
+1-02-0-013                                                                                                                                                  1,49        1,77    ct/kWh
+                Arbeitspreis
+                Pauschale Netzentgeltreduzierung nach Modul 1, § 14a EnWG: Grundpreis-/ Arbeitspreissystem Pauschale Reduzierung nach
+1-02-0-015      Modul 1 der Festlegungen zu Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a             -123,18         -146,58     €/a
+                EnWG, BK6-22-300 und BK8-22/010-A
+                Arbeitspreis nach Modul 2, § 14a EnWG: Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 2 der Festlegungen zu
+1-02-0-016      Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-                     2,98        3,55    ct/kWh
+                22/010-A
+                Arbeitspreis Hochlasttarifzeit nach Modul 3, § 14a EnWG (Tarifzeit in Erläuterungen): Grundpreis-/ Arbeitspreissystem
+1-02-0-017      Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare                      13,94          16,59    ct/kWh
+                Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A
+                Arbeitspreis Niedriglasttarifzeit nach Modul 3, §14a EnWG (Tarifzeit in Erläuterungen): Grundpreis-/ Arbeitspreissystem
+1-02-0-018      Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare                          2,61        3,11    ct/kWh
+                Netzanschlüssen nach § 14a EnWG, BK6-22-300 und BK8-22/010-A
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                                Seite 3
+ID lt. EDI-
+                Bezeichnung                                                                                         Netto          Brutto       Einheit
+Codeliste
+Kapitel 3.1.3   Entgelte des Monatsleistungspreissystems
+
+1-03-3          Monatsleistungspreissystem Hochspannung
+
+1-03-3-001      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 28 Tagen                              6,64        7,90   €/kW/Monat
+
+1-03-3-002      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 29 Tagen                              6,64        7,90   €/kW/Monat
+
+1-03-3-003      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 30 Tagen                              6,64        7,90   €/kW/Monat
+
+1-03-3-004      Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 31 Tagen                              6,64        7,90   €/kW/Monat
+
+1-03-3-005      Monatsleistungspreissystem Hochspannung Arbeitspreis                                                        1,35        1,61     ct/kWh
+
+1-03-4          Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung
+
+1-03-4-001      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 28 Tagen           7,41        8,82   €/kW/Monat
+
+1-03-4-002      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 29 Tagen           7,41        8,82   €/kW/Monat
+
+1-03-4-003      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 30 Tagen           7,41        8,82   €/kW/Monat
+
+1-03-4-004      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 31 Tagen           7,41        8,82   €/kW/Monat
+
+1-03-4-005      Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Arbeitspreis                                     1,75        2,08     ct/kWh
+
+1-03-5          Monatsleistungspreissystem Mittelspannung
+
+1-03-5-001      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen                            8,52       10,14   €/kW/Monat
+
+1-03-5-002      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen                            8,52       10,14   €/kW/Monat
+
+1-03-5-003      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen                            8,52       10,14   €/kW/Monat
+
+1-03-5-004      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen                            8,52       10,14   €/kW/Monat
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                 Seite 4
+ID lt. EDI-
+                Bezeichnung                                                                                                               Netto          Brutto        Einheit
+Codeliste
+1-03-5-005      Monatsleistungspreissystem Mittelspannung Arbeitspreis                                                                            2,35        2,80      ct/kWh
+
+1-03-6          Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+
+1-03-6-001      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen                           14,03          16,70    €/kW/Monat
+
+1-03-6-002      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen                           14,03          16,70    €/kW/Monat
+
+1-03-6-003      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen                           14,03          16,70    €/kW/Monat
+
+1-03-6-004      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen                           14,03          16,70    €/kW/Monat
+
+1-03-6-005      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Arbeitspreis                                                         2,54        3,02      ct/kWh
+
+                Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-03-8-001      Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-      -10,27          -12,22    €/Monat
+                22/010-A für Monate mit 28 Tagen
+                Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-03-8-002      Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-      -10,27          -12,22    €/Monat
+                22/010-A für Monate mit 29 Tagen
+                Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-03-8-003      Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-      -10,27          -12,22    €/Monat
+                22/010-A für Monate mit 30 Tagen
+                Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+1-03-8-004      Netzentgelten für steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-      -10,27          -12,22    €/Monat
+                22/010-A für Monate mit 31 Tagen
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                        Seite 5
+ID lt. EDI-
+                Bezeichnung                                                                                                          Netto          Brutto        Einheit
+Codeliste
+1-03-7   .
+                Monatsleistungspreissystem Niederspannung
+
+1-03-7-001      Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 28 Tagen                                         15,65          18,62    €/kW/Monat
+
+1-03-7-002      Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 29 Tagen                                         15,65          18,62    €/kW/Monat
+
+1-03-7-003      Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 30 Tagen                                         15,65          18,62    €/kW/Monat
+
+1-03-7-004      Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 31 Tagen                                         15,65          18,62    €/kW/Monat
+
+1-03-7-005      Monatsleistungspreissystem Niederspannung Arbeitspreis                                                                       3,72        4,43      ct/kWh
+
+                Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten für
+1-03-9-001      steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A für       -10,27          -12,22    €/Monat
+                Monate mit 28 Tagen
+
+                Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten für
+1-03-9-002      steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A für       -10,27          -12,22    €/Monat
+                Monate mit 29 Tagen
+
+                Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten für
+1-03-9-003      steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A für       -10,27          -12,22    €/Monat
+                Monate mit 30 Tagen
+
+                Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten für
+1-03-9-004      steuerbare Verbrauchseinrichtungen und steuerbare Netzanschlüsse nach § 14a EnWG, BK6-22-300 und BK8-22/010-A für       -10,27          -12,22    €/Monat
+                Monate mit 31 Tagen
+
+Kapitel 3.1.4   Entgelte des Stromspeichers gemäß § 19 Abs. 4 StromNEV
+
+Kapitel 3.1.5   Netzreservekapazität
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                   Seite 6
+ID lt. EDI-
+                Bezeichnung                                                                                            Netto          Brutto       Einheit
+Codeliste
+Kapitel 3.1.6   Entgelte des Messstellenbetriebs bei konventionellen Messeinrichtungen (kME)
+
+1-06-3   .
+                Hochspannung
+
+1-06-3-001      Messstellenbetrieb bei kME, Hochspannung, kME mit registrierender Last-/Einspeisemessung                2.004,74        2.385,64     €/a
+
+1-06-3-002      Messstellenbetrieb bei kME, Hochspannung, Wandlersatz für Messstellenbetrieb bei kME                      145,96         173,69      €/a
+
+1-06-5   .
+                Mittelspannung
+
+1-06-5-001      Messstellenbetrieb bei kME, Mittelspannung, kME mit registrierender Last-/Einspeisemessung                347,53         413,56      €/a
+
+1-06-5-002      Messstellenbetrieb bei kME, Mittelspannung, Wandlersatz für Messstellenbetrieb bei kME                    145,96         173,69      €/a
+
+1-06-7   .
+                Niederspannung
+
+1-06-7-001      Messstellenbetrieb bei kME, Niederspannung, kME mit registrierender Last-/Einspeisemessung                331,40         394,37      €/a
+
+1-06-7-002      Messstellenbetrieb bei kME, Niederspannung, Wandlersatz für Messstellenbetrieb bei kME                     29,31          34,88      €/a
+
+1-06-7-003      Messstellenbetrieb bei kME, Niederspannung, Schaltgerät oder Rundsteuerempfänger                           13,24          15,76      €/a
+
+                Bei jährlicher Ablesung
+
+1-06-7-004      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Eintarif            9,95       11,84      €/a
+
+1-06-7-005      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Zweitarif       19,08          22,71      €/a
+
+1-06-7-010      Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Maximumzähler                      37,92          45,12      €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                  Seite 7
+ID lt. EDI-
+                Bezeichnung                                                                                                   Netto       Brutto       Einheit
+Codeliste
+                Bei halbjährlicher Ablesung
+
+1-06-7-012      Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Eintarif           27,15       32,31      €/a
+
+1-06-7-013      Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Zweitarif          36,28       43,17      €/a
+
+1-06-7-018      Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Maximumzähler                         55,12       65,59      €/a
+
+                Bei vierteljährlicher Ablesung
+
+1-06-7-020      Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Eintarif        61,55       73,24      €/a
+
+1-06-7-021      Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Zweitarif       70,68       84,11      €/a
+
+1-06-7-026      Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Maximumzähler                      89,52      106,53      €/a
+
+                Bei monatlicher Ablesung
+
+1-06-7-028      Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Eintarif             199,15      236,99      €/a
+
+1-06-7-029      Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Zweitarif            208,28      247,85      €/a
+
+1-06-7-034      Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Maximumzähler                           227,12      270,27      €/a
+
+1-06-0   .      Alle Spannungsebenen
+
+1-06-0-038      Messstellenbetrieb bei kME, manuelle vor Ort Ablesung bei kME mit registrierender Last- / Einspeisemessung        71,49       85,07   €/Vorgang
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                      Seite 8
+ID lt. EDI-
+                Bezeichnung                                                                                                                 Netto          Brutto         Einheit
+Codeliste
+Kapitel 3.1.7   Individuelle Netzentgelte (siehe Seiten nach Erläuterungen)
+
+Kapitel 3.1.8   Konzessionsabgaben
+                Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden in Schwachlastzeiten, § 2 Abs. 2 Satz
+1-08-1-001                                                                                                                                          0,61           0,73   ct/kWh
+                1a) KAV)
+1-08-3-001      Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Sondervertragskunden, § 2 Abs. 3 Satz 1 KAV                 0,11           0,13   ct/kWh
+                Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden, § 2 Abs. 2 Satz 1b) KAV > 500 Tsd.
+1-08-4-004                                                                                                                                          2,39           2,84   ct/kWh
+                Einwohner
+Kapitel 3.1.9   Entgelte des Tagesleistungspreissystems
+
+Kapitel 3.1.10 Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und veröffentlicht werden: www.netztransparenz.de
+                Aufschläge aufgrund des § 26 KWKG,
+1-10-1
+                www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/KWKG/KWKG-Umlage
+         .
+
+
+
+
+                Aufschläge aufgrund des KWKG für nicht privilegierte Letztverbraucher, www.netztransparenz.de/KWKG/KWKG-Umlagen-
+1-10-1-001                                                                                                                                    0,00446           0,00530   €/kWh
+                Uebersicht
+1-10-1-002      Für Marktlokationen deren (Teil-)Menge von dem Aufschlag des § 26 KWKG befreit ist                                            0,00000           0,00000   €/kWh
+
+1-10-1-003      100 % Privilegierung nach EnFG des Aufschlags aufgrund des § 26 KWKG                                                          0,00000           0,00000   €/kWh
+
+1-10-1-004      80 % Privilegierung nach EnFG des Aufschlags aufgrund des § 26 KWKG                                                           0,00089           0,00110   €/kWh
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                          Seite 9
+ID lt. EDI-
+                Bezeichnung                                                                                                    Netto          Brutto       Einheit
+Codeliste
+                Aufschläge aufgrund der Offshore-Haftungsumlage nach § 17f EnWG,
+1-10-2
+                www.netztransparenz.de/de-de/Erneuerbare-Energien-und-Umlagen/Sonstige-Umlagen/Offshore-Netzumlage
+         .
+
+
+
+
+                Aufschläge aufgrund der Offshore-Haftungsumlage für nicht privilegierte Letztverbraucher,
+1-10-2-001                                                                                                                       0,00941        0,01120    €/kWh
+                www.netztransparenz.de/EnWG/Offshore-Netzumlage/Offshore-Netzumlagen-Uebersicht
+1-10-2-002      Für Marktlokationen deren (Teil-)Menge von dem Aufschlag der Offshore Netzumlage nach § 17f EnWG befreit ist     0,00000        0,00000    €/kWh
+
+1-10-2-003      100 % Privilegierung nach EnFG des Aufschlags aufgrund der Offshore Netzumlage nach § 17f EnWG                   0,00000        0,00000    €/kWh
+
+1-10-2-004       80 % Privilegierung nach EnFG des Aufschlags aufgrund der Offshore Netzumlage nach § 17f EnWG                   0,00188        0,00220    €/kWh
+                Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV,
+1-10-4
+                www.netztransparenz.de/EnWG/-19-StromNEV-Umlage/-19-StromNEV-Umlagen-Uebersicht
+         .
+
+
+
+
+1-10-4-001      Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe A                       0,01559        0,01860    €/kWh
+
+1-10-4-002      Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe B                       0,00050        0,00060    €/kWh
+
+1-10-4-003      Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe C                       0,00025        0,00030    €/kWh
+
+Kapitel 3.2     Separat bestellbare Einzelleistungen für Marktlokationen
+
+2-01-7-001      Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit                                                    65,44          77,87   €/Vorgang
+
+2-01-7-002      Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit                                                61,09          72,70   €/Vorgang
+
+2-01-7-003      Erfolglose Unterbrechung                                                                                           65,44          77,87   €/Vorgang
+
+2-01-7-004      Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung bis zum Vortag der Sperrung                          6,33        7,53   €/Vorgang
+
+2-01-7-005      Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung am Tag der Sperrung                              32,72          38,94   €/Vorgang
+                Wiederherstellung der Anschlussnutzung außerhalb der regulären Arbeitszeit
+2-01-7-006      (Rechnungsstellung erfolgt durch vom Anschlussnutzer beauftragten Dienstleister an Anschlussnutzer                     0,00        0,00   €/Vorgang
+                in Höhe des vom beauftragten Dienstleister angebotenen Preises)
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                       Seite 10
+ID lt. EDI-
+                Erläuterungen
+Codeliste
+                Die Nettoentgelte verstehen sich zzgl. der jeweils gültigen gesetzlichen Umsatzsteuer und sind kaufmännisch gerundet. Für jede Mahnung wird ein Entgelt in Höhe von 1,25 EUR
+alle
+                erhoben.
+                Als Tarifzeit für den Standardlasttarif nach Modul 3 der Festlegungen zu Netzentgelten nach § 14a EnWG gem. BNetzA-Festlegung BK8-22/010-A gelten
+1-02-0-002
+                die Zeitbereiche 06:30 - 17:15 Uhr und 20:15 - 22:15 Uhr.
+                Als Tarifzeit für den Hochlasttarif nach Modul 3 der Festlegungen zu Netzentgelten nach § 14a EnWG gem. BNetzA-Festlegung BK8-22/010-A gilt
+1-02-0-017
+                der Zeitbereich 17:15 - 20:15 Uhr.
+                Als Tarifzeit für den Niedriglasttarif nach Modul 3 der Festlegungen zu Netzentgelten nach § 14a EnWG gem. BNetzA-Festlegung BK8-22/010-A gilt
+1-02-0-018
+                der Zeitbereich 22:15 - 06:30 Uhr.
+                Die Artikelnummern gelten grundsätzlich für Kund*innen, deren steuerbare Verbrauchseinrichtungen vor dem 31.12.2023 in Betrieb genommen wurden und über eigene
+1-02-0-003 -    Messlokationen verfügen. Für diese wird kein Grundpreis berechnet. Als steuerbare Verbrauchseinrichtungen gelten z.B. unterbrechbare Nachtspeicherheizungen und
+1-02-0-013      Wärmepumpen sowie Elektromobile nach Maßgabe des § 14a EnWG vor Novellierung. Eine Steuerung bzw. Unterbrechung der Verbrauchseinrichtung erfolgt hierbei über ein
+                Schaltgerät.
+1-01-9-001
+1-01-9-002
+1-02-0-002
+1-02-0-015 -    Die Artikelnummern gelten für Kund*innen, deren steuerbare Verbrauchseinrichtungen nach dem 31.12.2023 in Betrieb genommen wurden oder, die aktiv in die ab dem 01.01.2024
+1-02-0-018      geltende neue Regelung zum §14a EnWG gewechselt sind. Weitergehende Regelungen zur Gültigkeit des geänderten §14a EnWG ergeben sich aus den BNetzA-Festlegungen
+1-03-8-001 -    BK6-22-300 und BK8-22/010-A.
+1-03-8-004
+1-03-9-001 -
+1-03-9-004
+                Die Entgelte richten sich nach der Netz- bzw. Umspannungsebene, an die die jeweilige Entnahmestelle angeschlossen ist. Der Arbeitspreis ist für die gesamte im
+1-03-x-xxx      Abrechnungsmonat bezogene Wirkarbeit zu bezahlen. Der Leistungspreis ist für den höchsten auf die Dauer einer Viertelstunde beanspruchten Mittelwert der Wirkleistung im
+                Abrechnungsmonat zu bezahlen.
+1-01-3   .      Bei Hochspannungsanlagen, die mittelspannungsseitig gemessen werden, werden die Arbeits- und Leistungswerte zum Ausgleich der Transformatorenverluste um 0,463 % und
+1-01-5   .
+                bei Mittelspannungsanlagen, die niederspannungsseitig gemessen werden, werden die Arbeits- und Leistungswerte zum Ausgleich der Transformatorenverluste um 2,65 % erhöht.
+2-01-7-001 -
+                Unterbrechungen und Wiederherstellungen der Anschlussnutzung werden innerhalb der regulären Arbeitszeiten durchgeführt.
+2-01-7-005
+                Die Wiederherstellung der Anschlussnutzung außerhalb der regulären Arbeitszeit wird durch den vom Anschlussnutzer beauftragten Dienstleister durchgeführt. Der Dienstleister
+2-01-7-006
+                stellt die Dienstleistung dem Anschlussnutzer zum vereinbarten Preis in Rechnung.
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                                  Seite 11
+Individuelle Netzentgelte nach § 19 Abs. 2 StromNEV, Stand 22.05.2026
+
+
+Für die nachfolgenden Entnahmestellen liegt eine Anzeige über individuelle Netzentgelte nach § 19 Abs. 2 StromNEV bei der Bundesnetzagentur vor.
+Die Vereinbarungen über die individuellen Netzentgelte treten zum jeweils vereinbarten Zeitpunkt in Kraft. Vorsorglich weisen wir darauf hin, dass die Bundesnetzagentur gemäß § 19
+Abs. 2 S. 8 StromNEV die angezeigte getroffene Vereinbarung individueller Netzentgelte untersagen kann, falls sie nicht die Voraussetzungen nach § 19 Abs. 2 Sätze 1 bis 4
+StromNEV sowie der Festlegung der Bundesnetzagentur erfüllt oder im Hinblick auf ihre Rechtsfolgen von den gesetzlichen Vorgaben abweicht.
+
+ID lt. EDI-
+                                                                    Marktlokation                                                         Regelung          Geschäftszeichen
+Codeliste
+1-07-1                                                              50727621902                                                            atypisch          BK4S1-0006236
+
+1-07-1                                                              50727517622                                                            atypisch          BK4S1-0006227
+
+1-07-1                                                              50711616878                                                            atypisch          BK4S1-0003943
+
+1-07-1                                                              50705478771                                                            atypisch          BK4S1-0002172
+
+1-07-1                                                              50705478002                                                            atypisch          BK4S1-0002173
+
+1-07-1                                                              50727583277                                                            atypisch          BK4S1-0006679
+
+1-07-1                                                              50727565720                                                            atypisch          BK4S1-0000035
+
+1-07-1                                                              50705184823                                                            atypisch          BK4S1-0007578
+
+1-07-1                                                              50721085807                                                            atypisch          BK4S1-0003972
+
+1-07-1                                                              50706507488                                                            atypisch          BK4S1-0000031
+
+1-07-1                                                              50705211155                                                            atypisch          BK4S1-0008422
+
+1-07-1                                                              50727511252                                                            atypisch          BK4S1-0003794
+
+1-07-1                                                              50725672254                                                            atypisch          BK4S1-0006886
+
+1-07-1                                                              50705448865                                                            atypisch          BK4S1-0006185
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                      Seite 12
+ID lt. EDI-
+                                            Marktlokation   Regelung   Geschäftszeichen
+Codeliste
+1-07-1                                      50727565548     atypisch    BK4S1-0006619
+
+1-07-1                                      50706500565     atypisch    BK4S1-0008823
+
+1-07-1                                      50727511434     atypisch    BK4S1-0003784
+
+1-07-1                                      50719290997     atypisch    BK4S1-0003974
+
+1-07-1                                      50706209604     atypisch    BK4S1-0013971
+
+1-07-1                                      50727599381     atypisch    BK4S1-0003817
+
+1-07-1                                      50729225223     atypisch    BK4S1-0003753
+
+1-07-1                                      50706817077     atypisch    BK4S1-0003413
+
+1-07-1                                      50707378664     atypisch    BK4S1-0006044
+
+1-07-1                                      50705363162     atypisch    BK4S1-0006632
+
+1-07-1                                      50704919908     atypisch    BK4S1-0005040
+
+1-07-1                                      50727599894     atypisch    BK4S1-0009911
+
+1-07-1                                      50727544617     atypisch    BK4S1-0003790
+
+1-07-1                                      50727601483     atypisch    BK4S1-0003800
+
+1-07-1                                      50707124596     atypisch    BK4S1-0000011
+
+1-07-1                                      50709012830     atypisch    BK4S1-0009111
+
+1-07-1                                      50708240705     atypisch    BK4S1-0010772
+
+1-07-1                                      50722468416     atypisch    BK4S1-0009386
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                 Seite 13
+ID lt. EDI-
+                                            Marktlokation   Regelung   Geschäftszeichen
+Codeliste
+1-07-1                                      50705229570     atypisch    BK4S1-0009591
+
+1-07-1                                      50728225737     atypisch    BK4S1-0010370
+
+1-07-1                                      50722051089     atypisch    BK4S1-0010842
+
+1-07-1                                      50727565697     atypisch    BK4S1-0011418
+
+1-07-1                                      50728951027     atypisch    BK4S1-0010945
+
+1-07-1                                      50705328174     atypisch    BK4S1-0011077
+
+1-07-1                                      50707262338     atypisch    BK4S1-0010936
+
+1-07-1                                      50727582857     atypisch    BK4S1-0011316
+
+1-07-1                                      50729463419     atypisch    BK4S1-0012073
+
+1-07-1                                      50725253301     atypisch    BK4S1-0009578
+
+1-07-1                                      50727601649     atypisch    BK4S1-0012003
+
+1-07-1                                      50705331747     atypisch    BK4S1-0012357
+
+1-07-1                                      50729489514     atypisch    BK4S1-0011317
+
+1-07-1                                      50729772430     atypisch    BK4S1-0011318
+
+1-07-1                                      50709066118     atypisch    BK4S1-0012048
+
+1-07-1                                      50728529428     atypisch    BK4S1-0012173
+
+1-07-1                                      50705242887     atypisch    BK4S1-0014203
+
+1-07-1                                      50727579896     atypisch    BK4S1-0010961
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                 Seite 14
+ID lt. EDI-
+                                            Marktlokation   Regelung   Geschäftszeichen
+Codeliste
+1-07-1                                      50707142845     atypisch    BK4S1-0010816
+
+1-07-1                                      50726118455     atypisch    BK4S1-0011263
+
+1-07-1                                      50705316583     atypisch    BK4S1-0011063
+
+1-07-1                                      50725231737     atypisch    BK4S1-0012916
+
+1-07-1                                      50708754144     atypisch    BK4S1-0012867
+
+1-07-1                                      50709466045     atypisch    BK4S1-0013283
+
+1-07-1                                      50727601376     atypisch    BK4S1-0005719
+
+1-07-1                                      50727583376     atypisch    BK4S1-0013178
+
+1-07-1                                      50727566603     atypisch    BK4S1-0013392
+
+1-07-1                                      50727578682     atypisch    BK4S1-0013360
+
+1-07-1                                      50727599670     atypisch    BK4S1-0013374
+
+1-07-1                                      50727511418     atypisch    BK4S1-0013377
+
+1-07-1                                      50727511004     atypisch    BK4S1-0013369
+
+1-07-1                                      50708198566     atypisch    BK4S1-0013464
+
+1-07-1                                      50727566786     atypisch    BK4S1-0013431
+
+1-07-1                                      50708439382     atypisch    BK4S1-0013177
+
+1-07-1                                      50706028939     atypisch    BK4S1-0013173
+
+1-07-1                                      50727583970     atypisch    BK4S1-0013101
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                 Seite 15
+ID lt. EDI-
+                                            Marktlokation   Regelung   Geschäftszeichen
+Codeliste
+1-07-1                                      50710388973     atypisch    BK4S1-0013479
+
+1-07-1                                      50730172009     atypisch    BK4S1-0013550
+
+1-07-1                                      50707035636     atypisch    BK4S1-0012613
+
+1-07-1                                      50704919809     atypisch    BK4S1-0012825
+
+1-07-1                                      50705183073     atypisch    BK4S1-0012608
+
+1-07-1                                      50727599951     atypisch    BK4S1-0012760
+
+1-07-1                                      50723747504     atypisch    BK4S1-0012741
+
+1-07-1                                      50729346087     atypisch    BK4S1-0013815
+
+1-07-1                                      50705402845     atypisch    BK4S1-0013692
+
+1-07-1                                      50727599315     atypisch    BK4S1-0013794
+
+1-07-1                                      50711489754     atypisch    BK4S1-0013798
+
+1-07-1                                      50725150200     atypisch    BK4S1-0013796
+
+1-07-1                                      50721459010     atypisch    BK4S1-0013797
+
+1-07-1                                      50729543005     atypisch    BK4S1-0013939
+
+1-07-1                                      50710301371     atypisch    BK4S1-0013819
+
+1-07-1                                      50707261778     atypisch    BK4S1-0014013
+
+1-07-1                                      50706009658     atypisch    BK4S1-0013701
+
+1-07-1                                      50705241409     atypisch    BK4S1-0013956
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                 Seite 16
+ID lt. EDI-
+                                            Marktlokation    Regelung       Geschäftszeichen
+Codeliste
+1-07-1                                      50708750738       atypisch       BK4S1-0013981
+
+1-07-1                                      50732712499       atypisch       BK4S1-0014061
+
+1-07-1                                      50706480064       atypisch       BK4S1-0013780
+
+1-07-1                                      50705214133       atypisch       BK4S1-0013982
+
+1-07-1                                      50704921870       atypisch       BK4S1-0013933
+
+1-07-1                                      50705190367       atypisch       BK4S1-0013934
+
+1-07-1                                      50722448054       atypisch       BK4S1-0013690
+
+1-07-1                                      50733268821       atypisch       BK4S1-0014134
+
+1-07-1                                      50705323075       atypisch       BK4S1-0014211
+
+1-07-1                                      50705220015       atypisch       BK4S1-0014225
+
+1-07-1                                      50706963953       atypisch       BK4S1-0014069
+
+1-07-2                                      50727576892     stromintensiv    BK4S2-0000827
+
+1-07-2                                      50706284367     stromintensiv    BK4S2-0000871
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                      Seite 17
+Entgelt für singulär genutzte Betriebsmittel nach § 19 Abs. 3 StromNEV, Stand 18.12.2025
+
+
+Folgende Marktlokationen werden bezüglich ihres Entgeltes so gestellt, als seien sie direkt an die vorgelagerte Netz- oder Umspannebene angeschlossen. Das zu zahlende
+Netzentgelt setzt sich gemäß § 19 Abs. 3 StromNEV zusammen aus den Entgelten für die Netznutzung und den nachfolgend aufgelisteten individuellen Entgelten.
+
+ID lt. EDI-
+                                                                           Marktlokation                                                                Netto            Einheit
+Codeliste
+1-07-3-001                                                                 50704919742                                                                   14.282,13         €/a
+
+1-07-3-001                                                                 50707222332                                                                   41.971,04         €/a
+
+1-07-3-001                                                                 50727606475                                                                   43.076,75         €/a
+
+1-07-3-001                                                                 50709239020                                                                   20.593,91         €/a
+
+1-07-3-001                                                                 50727601152                                                                   34.553,54         €/a
+
+1-07-3-001                                                                 50710262234                                                                   19.419,09         €/a
+
+1-07-3-001                                                                 50729699139                                                                   47.246,21         €/a
+
+1-07-3-001                                                                 50727517755                                                                   11.909,45         €/a
+
+1-07-3-001                                                                 50707627277                                                                   22.920,52         €/a
+
+1-07-3-001                                                                 50711204566                                                                   23.058,73         €/a
+
+1-07-3-001                                                                 50727601483                                                                   57.082,45         €/a
+
+1-07-3-001                                                                 50727602085                                                                   57.589,24         €/a
+
+1-07-3-001                                                                 50727601699                                                                   25.500,52         €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                                                                        Seite 18
+ID lt. EDI-
+                                            Marktlokation   Netto        Einheit
+Codeliste
+1-07-3-001                                  50727517929      21.423,20     €/a
+
+1-07-3-001                                  50710197986      40.082,11     €/a
+
+1-07-3-001                                  50727601350      78.851,19     €/a
+
+1-07-3-001                                  50727583532      23.035,70     €/a
+
+1-07-3-001                                  50727601475      21.538,38     €/a
+
+1-07-3-001                                  50727589100      18.729,63     €/a
+
+1-07-3-001                                  50727601897     120.914,37     €/a
+
+1-07-3-001                                  50704918025      14.765,88     €/a
+
+1-07-3-001                                  50704918124      19.188,73     €/a
+
+1-07-3-001                                  50727580546      96.197,07     €/a
+
+1-07-3-001                                  50708438871      30.407,12     €/a
+
+1-07-3-001                                  50707999212      14.834,99     €/a
+
+1-07-3-001                                  50705184790      12.669,63     €/a
+
+1-07-3-001                                  50705254816      23.772,84     €/a
+
+1-07-3-001                                  50706628094      59.754,59     €/a
+
+1-07-3-001                                  50708331314      39.252,83     €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                        Seite 19
+ID lt. EDI-
+                                            Marktlokation   Netto       Einheit
+Codeliste
+1-07-3-001                                  50727588574      3.800,89     €/a
+
+1-07-3-001                                  50709455543     22.183,38     €/a
+
+1-07-3-001                                  50706650774     22.943,55     €/a
+
+1-07-3-001                                  50727598896     32.710,69     €/a
+
+1-07-3-001                                  50710925353     34.184,97     €/a
+
+1-07-3-001                                  50707488041     24.878,55     €/a
+
+1-07-3-001                                  50706284367     15.088,38     €/a
+
+1-07-3-001                                  50719867960     44.919,61     €/a
+
+1-07-3-001                                  50721020241     82.467,79     €/a
+
+1-07-3-001                                  50727601186     32.825,87     €/a
+
+1-07-3-001                                  50705185201     35.336,76     €/a
+
+1-07-3-001                                  50706009658     27.412,48     €/a
+
+1-07-3-001                                  50727544592     36.488,54     €/a
+
+1-07-3-001                                  50727576892     65.766,91     €/a
+
+1-07-3-001                                  50727601649     32.756,76     €/a
+
+1-07-3-001                                  50729568805     38.239,26     €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                       Seite 20
+ID lt. EDI-
+                                            Marktlokation   Netto        Einheit
+Codeliste
+1-07-3-001                                  50727544576      37.202,65     €/a
+
+1-07-3-001                                  50706651102      38.147,11     €/a
+
+1-07-3-001                                  50727544500      29.946,40     €/a
+
+1-07-3-001                                  50706014722      68.416,02     €/a
+
+1-07-3-001                                  50706621048      22.252,48     €/a
+
+1-07-3-001                                  50727598838      47.937,28     €/a
+
+1-07-3-001                                  50727602134       2.303,57     €/a
+
+1-07-3-001                                  50727598903      49.595,85     €/a
+
+1-07-3-001                                  50727587691      40.888,36     €/a
+
+1-07-3-001                                  50707927619      25.293,19     €/a
+
+1-07-3-001                                  50727599357       8.062,49     €/a
+
+1-07-3-001                                  50706841977       3.916,07     €/a
+
+1-07-3-001                                  50727601318      38.008,90     €/a
+
+1-07-3-001                                  50727583384      45.315,39     €/a
+
+1-07-3-001                                  50727576751     470.000,00     €/a
+
+1-07-3-001                                  50707807746      49.526,75     €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                        Seite 21
+ID lt. EDI-
+                                            Marktlokation   Netto          Einheit
+Codeliste
+1-07-3-001                                  50727601144      44.228,54       €/a
+
+1-07-3-001                                  50708497629      21.054,63       €/a
+
+1-07-3-001                                  50727600584       5.920,17       €/a
+
+1-07-3-001                                  50707083198      24.509,99       €/a
+
+1-07-3-001                                  50711828176      27.182,13       €/a
+
+1-07-3-001                                  50706726062      50.609,42       €/a
+
+1-07-3-001                                  50727601855      40.888,36       €/a
+
+1-07-3-001                                  50704920228      15.756,41       €/a
+
+1-07-3-001                                  50727601300     124.438,83       €/a
+
+1-07-3-001                                  50733422998      26.928,73       €/a
+
+1-07-3-001                                  50727601871      19.326,95       €/a
+
+1-07-3-001                                  50705137799      13.038,20       €/a
+
+1-07-3-001                                  50727576777             0,00     €/a
+
+1-07-3-001                                  50727576785     400.000,00       €/a
+
+1-07-3-001                                  50727599878      22.736,23       €/a
+
+1-07-3-001                                  50732965783      34.092,83       €/a
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                          Seite 22
+ID lt. EDI-
+                                                                                Marktlokation                       Netto       Einheit
+Codeliste
+1-07-3-001                                                                      50733079947                         19.580,34     €/a
+
+1-07-3-001                                                                      50733189043                         20.732,13     €/a
+
+1-07-3-001                                                                      50732606428                         29.946,40     €/a
+
+
+
+
+                                                                      Änderungen gegenüber Version vom 18.12.2025
+
+1-07-1          Aktualisierung der Marktlokationen mit individuellem Netzentgelt nach § 19 Abs. 2 StromNEV
+
+
+
+
+Stromnetz Berlin GmbH, Version 22.05.2026                                                                                               Seite 23
+

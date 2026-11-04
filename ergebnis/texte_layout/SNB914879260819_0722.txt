@@ -1,0 +1,189 @@
+Entgelte für die Nutzung der Netzinfrastruktur Strom
+gültig ab 01.01.2026
+
+
+1. Entgelte für Kunden mit Leistungsmessung (RLM)
+(alle Angaben netto zzgl. Umsatzsteuer von derzeit 19 %)
+
+
+Netznutzungsentgelt für       Jahresleistungspreissystem                    b < 2.500 h/Jahr                      b >= 2.500 h/Jahr
+Kunden mit Leistungs-         Entnahme                                Leistungspreis     Arbeitspreis       Leistungspreis     Arbeitspreis
+messung (RLM)
+                                                                       EUR/kW/Jahr               ct/kWh      EUR/kW/Jahr                ct/kWh
+                              Mittelspannung *                                 13,96                4,47            120,03                   0,22
+                              Umspannung MS/NS                                 16,61                5,32            143,06                   0,26
+                              Niederspannung                                   25,52                5,38            121,90                   1,52
+
+
+                              Jahresleistungspreissystem                    b < 2.500 h/Jahr                      b >= 2.500 h/Jahr
+                              Entnahme                                Leistungspreis     Arbeitspreis       Leistungspreis     Arbeitspreis
+                              Preise gem. Rechnungsangabe              EUR/kW/Tag                ct/kWh      EUR/kW/Tag                 ct/kWh
+                              Mittelspannung *                          0,03824658                  4,47      0,32884932                     0,22
+                              Umspannung MS/NS                          0,04550685                  5,32      0,39194521                     0,26
+                              Niederspannung                            0,06991781                  5,38      0,33397260                     1,52
+
+
+                              Monatsleistungspreissystem              Leistungspreis        Arbeitspreis
+                              Entnahme                               EUR/kW/Monat               ct/kWh
+                              Mittelspannung *                                 20,01                0,22
+                              Umspannung MS/NS                                 23,84                0,26
+                              Niederspannung                                   20,32                1,52
+
+                              Bei kommunalem Verbrauch wird auf das Netznutzungsentgelt ein Rabatt von 10 % gewährt.
+                              Die Preise verstehen sich zzgl. Entgelte für MSB sowie zzgl. Mehrkosten gem. Ziffer 3.
+                              *) Bei einer Entnahme (bzw. Einspeisung) in Mittelspannung und Messung in Niederspannung wird zur
+                              Berücksichtigung der Umspannverluste ein individueller Mengenaufschlag (bzw. -abschlag) auf die Arbeits- und
+                              Leistungswerte erhoben.
+
+
+Entgelt für Messstellen-      Messstellenbetrieb inkl. monatlicher Messung                                       EUR/Jahr             EUR/Tag
+betrieb MSB                   MS-Lastprofil, ohne Wandler, mit TK-Komponente                                        500,00        1,36986301
+(inkl. Messung) mit
+                              NS-Lastprofil, ohne Wandler, mit TK-Komponente                                        500,00        1,36986301
+Leistungsmessung (RLM)
+                              Aufschlag MS-Wandlersatz                                                              160,00        0,43835616
+                              Aufschlag NS-Wandlersatz                                                               18,00        0,04931507
+                              Schaltgerät                                                                            11,40        0,03123288
+
+
+Entgelt für Baukosten-        arithmetisches Mittel                   Leistungspreis
+zuschüsse in Mittel-                                                        EUR/kW
+spannung und
+                              Mittelspannung                                  160,16
+Umspannung
+                              Umspannung MS/NS                                185,91
+
+                              Für die Berechnung des Baukostenzuschusses (BKZ) für Anschlussnehmer die oberhalb Niederspannung, d.h. aus
+                              bzw. in Mittelspannung versorgt werden, gilt die Berechnung nach dem "Positionspapier zur Erhebung von
+                              Baukostenzuschüssen" der Bundesnetzagentur vom November 2024. Gemäß Positionspapier erfolgt die Ermittlung
+                              des BKZ in den jeweiligen Anschlussebenen als arithmetisches Mittel aus den geltenden veröffentlichten
+                              Leistungspreisen (> 2.500 Benutzungsstunden pro Jahr) des aktuellen Jahres und der vergangenen vier Jahre
+                              multipliziert mit der bestellten Leistung.
+
+
+
+
+                                                                                                                                    1 von 3
+2. Entgelte für Kunden ohne Leistungsmessung (SLP)
+(alle Angaben netto zzgl. Umsatzsteuer von derzeit 19 %)
+
+
+Netznutzungsentgelt für       Kundengruppe                                                  Grundpreis        Arbeitspreis       p. Reduktion
+Kunden ohne Leistungs-                                                                       EUR/Jahr             ct/kWh         EUR/Jahr***
+messung (SLP)
+                              Haushalt / Kleingewerbe                                             50,00               5,35
+                              Verbraucher nach § 14a EnWG **:
+                                Altanlagen bis 2023 (bei Übergangsregelungen bis längstens 2028):
+                                   Elektro-Speicherheizungen                                      10,00               1,08
+                                   Wärmepumpen                                                    10,00               1,08
+                                   Ladestationen Elektromobile                                    10,00               1,08
+                                Neuanlagen ab 2024:
+                                   Modul 1: pauschale Reduktion                                   50,00               5,35             -107,35
+                                   Modul 2: Arbeitspreis rabattiert auf 40 %                                          2,14
+                                   Modul 3: zeitlich variabler Arbeitspreis                                      HT: 6,42
+                                                                                                  50,00          NT: 1,38              -107,35
+                                                                                                                  ST: 5,35
+
+                              Tarifstufe         Netzlast          Zeitzone
+                              HT                 Hochlast          Jan.-Mrz. + Okt.-Dez.: 08:30-15:15 Uhr + 17:15-21:15 Uhr
+                              NT                 Niedriglast       Jan.-Mrz. + Okt.-Dez.: 23:00-06:45 Uhr
+                              ST                 Standardlast      Restzeit
+
+                              Bei kommunalem Verbrauch ist ein Rabatt von 10 % auf das reguläre Netznutzungsentgelt berücksichtigt.
+                              Die Preise verstehen sich zzgl. Entgelte für MSB sowie zzgl. Mehrkosten gem. Ziffer 3.
+                              **) Verbrauchseinrichtungen müssen gemäß § 14a EnWG steuerbar und unterbrechbar sein.
+                              ***) die Gesamtkosten der Netznutzung können nicht negativ werden und betragen mindestens 0,00 EUR/Jahr, auch
+                              anwendbar für RLM-Kunden MS/NS und NS.
+
+
+Netzentgelte für                                                                                                                  Arbeitspreis
+öffentliche Straßen-                                                                                                                  ct/kWh
+beleuchtungsanlagen
+                              öffentliche Straßenbeleuchtungsanlagen gem. § 17 StromNEV                                                   4,48
+
+                              Der Arbeitspreis berechnet sich als Mischpreis aus dem Leistungs- und Arbeitspreis > 2.500 Benutzungsstunden pro
+                              Jahr für leistungsgemessene Verbraucher bei einer Jahresbenutzungsdauer von 4.126 Benutzungsstunden für das
+                              verwendete Straßenbeleuchtungslastprofil.
+
+
+Entgelt für Mess-             Messstellenbetrieb pro Messsatz                                                        MSB      Zusatzmessung
+stellenbetrieb MSB                                                                                               EUR/Jahr               EUR
+(inkl. Messung) ohne
+                              Eintarifzähler, ohne Wandler                                                            9,03                3,04
+Leistungsmessung (SLP)
+                              Zweitarifzähler, ohne Wandler                                                          13,84                3,04
+                              Pmax-Zähler                                                                            35,99               12,83
+                              Zweitarif-2-Richtungszähler                                                            43,17               12,83
+                              Elektronischer Dienstleistungszähler (EDL 21)                                          46,99                3,04
+                              I-Wandlersatz                                                                          18,00
+                              Schaltgerät                                                                            11,40
+                              Funk-Modem (z.B. GSM)                                                                  60,00
+
+                              Bei Kunden ohne Leistungsmessung ist im MSB standardmäßig ein Messentgelt pro Jahr enthalten. Auf Wunsch des
+                              Kunden kann eine Messung halbjährlich, vierteljährlich oder monatlich erfolgen. Dementsprechend erhöht sich das
+                              MSB-Entgelt um die Anzahl der Zusatzmessungen.
+
+
+Entgelt für Baukosten-        Die Baukostenzuschüsse für Anschlussnehmer in Niederspannung sind den jeweils gültigen
+zuschüsse in Nieder-          Ergänzenden Bedingungen der Stadtwerke Wernigerode GmbH zu entnehmen.
+spannung
+
+                                                                                                                                    2 von 3
+3. Umlagen und Konzessionsabgaben
+(alle Angaben netto zzgl. Umsatzsteuer von derzeit 19 %)
+
+
+KWKG-Umlage,                  Die Aufschläge der KWKG-Umlage, Offshore-Netzumlage und besondere Netznutzung richten sich
+Offshore-Netzumlage,          nach den aktuellen Veröffentlichungen der Übertragungsnetzbetreiber (ÜNB). Die Höhe der aktuell
+Aufschlag besondere           geltenden gesetzlichen Umlagen sowie weiterführende Informationen zu den Umlagen entnehmen Sie
+Netznutzung                   bitte der gemeinsamen Internetplattform der deutschen Übertragungsnetzbetreiber:
+                              www.netztransparenz.de.
+
+Konzessionsabgabe                                                                                               Wernigerode, Benzingerode,
+                                                                                               Drübeck,       Silstedt, Minsleben, Reddeber,
+                                                                                           Darlingerode                             Schierke
+                                                                                                 ct/kWh                              ct/kWh
+                              Tarifkunden (außerhalb Schwachlast)                                   1,32                                  1,59
+                              Tarifkunden (Schwachlast)                                             0,61                                  0,61
+                              Sondervertragskunden                                                  0,11                                  0,11
+                              Die Höhe der Konzessionsabgabe richtet sich nach den in der Konzessionsabgabeverordnung festgelegten
+                              Höchstpreisen. Fassung vom 09.01.1992 (BGBl. I S. 12, 407), zuletzt geändert durch Artikel 3 Abs. 4 der
+                              Verordnung vom 01.11.2006 (BGBl. I S. 2477).
+
+
+
+
+4. Individuelle Netzentgelte nach § 19 StromNEV
+
+Individuelle Netzentgelte     Individuelle Netzentgelte nach § 19 Abs. 2 S. 1 und 2 StromNEV können nach Erfüllung der
+gemäß § 19 Abs. 2 S. 1        Voraussetzungen mit dem Netzbetreiber vereinbart werden. Das jeweils gültige Hochlastzeitfenster
+und 2 StromNEV                des Netzbetreibers ist bei Anwendung individueller Netzentgelte nach § 19 Abs. 2 S. 1 StromNEV zu
+                              berücksichtigen.
+                                                                       Individuelle Netzentgelte gemäß § 19 Abs. 2 S. 1 StromNEV
+                              Lfd. Nr.                                    Zählpunktbezeichnung         Netz-oder Spannungsebene
+                              1                           DE0007733885501000000000000008476                                   MS
+                              2                           DE0007733885501000000000000004792                                   MS
+
+                                                                       Individuelle Netzentgelte gemäß § 19 Abs. 2 S. 2 StromNEV
+                              Lfd. Nr.                                    Zählpunktbezeichnung         Netz-oder Spannungsebene
+                              1                           DE0007733885501000000000000030183                                   MS
+                              2                           DE0007733885501000000000000938771                                   MS
+
+
+Individuelle Netzentgelte     Individuelle Netzentgelte nach § 19 Abs. 3 StromNEV können nach Erfüllung der Voraussetzungen mit
+nach § 19 Abs. 3              dem Netzbetreiber vereinbart werden. Dies ist nur für Kunden ab der Mittelspannungsebene aufwärts
+StromNEV                      möglich. Bei singulärer Entnahme nach §19 Abs. 3 StromNEV kommt zusätzlich zu den individuell zu
+                              kalkulierenden singulär genutzten Betriebsmitteln das Netzentgelt der vorgelagerten Netzebene zur
+                              Anwendung.
+
+Individuelle Netzentgelte     Individuelle Netzentgelte für Stromspeicher nach § 19 Abs. 4 StromNEV können nach Erfüllung der
+nach § 19 Abs. 4              Voraussetzungen mit dem Netzbetreiber vereinbart werden. Dieses individuelle Netzentgelt besteht
+StromNEV                      ausschließlich aus dem Leistungspreis für den Kunden mit Lastgangmessung (Benutzungsdauer >
+                              2.500 h) reduziert auf den Anteil der nicht zurückgespeisten Strommenge (Speicherverlust) an der
+                              Bezugsmenge.
+
+
+
+
+                                                                                                                                    3 von 3
+
