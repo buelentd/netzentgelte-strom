@@ -9,7 +9,7 @@ from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
-from .extract import plausibel, plausibel_slp
+from .extract import plausibel, plausibel_reihenfolge, plausibel_slp
 from .rechner import TYPISCHE_STUNDEN, ct_kwh_bei
 
 RLM = ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")
@@ -90,32 +90,37 @@ class Speicher:
         return out
 
     def _manuell(self) -> dict:
-        """lauf/preise_manuell.csv: von Hand eingetragene Preise (Dezimalkomma erlaubt), siehe LEGENDE.md."""
+        """lauf/preise_manuell.csv: von Hand oder aus der Liste des Nutzers eingetragene Werte (Dezimalkomma erlaubt).
+        Je Ebene (ms_, msns_, ns_, hsms_) zählen nur vollständige Vierergruppen; SLP als slp_ap_ct_kwh und slp_grundpreis_eur_jahr."""
         pfad = self.ordner.parent / "lauf" / "preise_manuell.csv"
         out: dict = {}
         if not pfad.exists():
             return out
         def f(x):
-            x = (x or "").strip().replace(",", ".")
+            x = (x or "").strip().replace(" ", "")
+            if "," in x:
+                x = x.replace(".", "").replace(",", ".")
             try:
                 return float(x) if x else None
             except ValueError:
                 return None
+        namen = (("lp_unter_2500", "lp_unter_2500h"), ("ap_unter_2500", "ap_unter_2500h"),
+                 ("lp_ueber_2500", "lp_ab_2500h"), ("ap_ueber_2500", "ap_ab_2500h"))
         with open(pfad, encoding="utf-8-sig", newline="") as fh:
             for z in csv.DictReader(fh, delimiter=";"):
                 nr = str(z.get("nr", "")).strip()
                 if not nr:
                     continue
-                ns = {"lp_unter_2500": f(z.get("ns_lp_unter_2500h")), "ap_unter_2500": f(z.get("ns_ap_unter_2500h")),
-                      "lp_ueber_2500": f(z.get("ns_lp_ab_2500h")), "ap_ueber_2500": f(z.get("ns_ap_ab_2500h"))}
-                ms = {"lp_unter_2500": f(z.get("msns_lp_unter_2500h")), "ap_unter_2500": f(z.get("msns_ap_unter_2500h")),
-                      "lp_ueber_2500": f(z.get("msns_lp_ab_2500h")), "ap_ueber_2500": f(z.get("msns_ap_ab_2500h"))}
-                if all(v is None for v in (*ns.values(), *ms.values(), f(z.get("slp_ap")), f(z.get("slp_gp")))):
-                    continue
-                out[nr] = {"ns": ns, "ms": ms, "slp": {"ap": f(z.get("slp_ap")), "gp": f(z.get("slp_gp"))},
-                           "preisstand": (z.get("preisstand") or "").strip() or "unklar", "stand_datum": (z.get("stand_datum") or "").strip(),
-                           "le": (z.get("grenze") or "").strip() in ("<=", "≤", ">", "le"), "url": (z.get("quelle_url") or "").strip(),
-                           "hinweis": (z.get("hinweis") or "").strip()}
+                m = {"ebenen": {}, "slp": {"ap": f(z.get("slp_ap_ct_kwh") or z.get("slp_ap")), "gp": f(z.get("slp_grundpreis_eur_jahr") or z.get("slp_gp"))},
+                     "preisstand": (z.get("preisstand") or "").strip(), "stand_datum": (z.get("stand_datum") or "").strip(),
+                     "le": (z.get("grenze") or z.get("grenze_2500h") or "").strip() in ("<=", "≤", "≤ / >", ">", "le"),
+                     "url": (z.get("quelle_url") or "").strip(), "hinweis": (z.get("hinweis") or "").strip()}
+                for eb in ("ms", "msns", "ns", "hsms"):
+                    w = {k: f(z.get(f"{eb}_{n}_{'eur_kw_jahr' if k.startswith('lp') else 'ct_kwh'}")) for k, n in namen}
+                    if all(v is not None for v in w.values()):
+                        m["ebenen"][eb] = w
+                if m["ebenen"] or any(v is not None for v in m["slp"].values()):
+                    out[nr] = m
         return out
 
     def zeilen(self) -> list[dict]:
@@ -148,26 +153,33 @@ class Speicher:
         return d
 
     def _mit_manuell(self, d: dict, man: dict) -> dict:
+        """Eingetragene Werte ergänzen und überschreiben die gelesenen je Ebene; vollständige Gruppen werden geprüft."""
         m = man.get(str(d.get("nr")))
         if not m:
             return d
         d = dict(d)
-        ns = {k: v for k, v in m["ns"].items() if v is not None}
-        ms = {k: v for k, v in m["ms"].items() if v is not None}
-        slp = {k: v for k, v in m["slp"].items() if v is not None}
         grund = []
-        if ns:
-            grund += plausibel(ns, "NS") if len(ns) == 4 else ["NS: Werte unvollständig"]
-        else:
-            grund.append("NS fehlt")
-        if ms:
-            grund += plausibel(ms, "MS/NS") if len(ms) == 4 else ["MS/NS: Werte unvollständig"]
-        grund += plausibel_slp(slp) if slp else ["SLP fehlt"]
-        d.update(ns=ns if len(ns) == 4 else {}, msns=ms if len(ms) == 4 else {}, slp=slp, rlm_ok=len(ns) == 4 and not any(g.startswith("NS") for g in grund),
-                 slp_ok=bool(slp) and not plausibel_slp(slp), grenze_le=m["le"], preisstand=m["preisstand"], stand_datum=m["stand_datum"],
+        for eb, w in m["ebenen"].items():
+            bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
+                   if eb == "ns" or "außerhalb 40–260" not in g]
+            if bad:
+                grund.append(f"{eb}: {bad[0]}")
+            else:
+                d[eb] = w
+        slp = {k: v for k, v in m["slp"].items() if v is not None}
+        if len(slp) == 2 and not plausibel_slp(slp):
+            d["slp"] = slp
+        elif slp:
+            grund.append("SLP: " + "; ".join(plausibel_slp(slp) or ["unvollständig"]))
+        red = plausibel_reihenfolge(d.get("ms") or {}, d.get("msns") or {}, d.get("ns") or {})
+        grund += red
+        d.update(v2=True, rlm_ok=len(d.get("ns") or {}) == 4, slp_ok=len(d.get("slp") or {}) == 2,
                  quelle_url=m["url"] or d.get("quelle_url", ""))
+        if m["preisstand"]: d["preisstand"] = m["preisstand"]
+        if m["stand_datum"]: d["stand_datum"] = m["stand_datum"]
+        if m["le"]: d["grenze_le"] = True
         d["status"] = "ok" if not grund else "pruefen"
-        d["hinweis"] = "manuell eingetragen" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
+        d["hinweis"] = "Werte aus Liste des Nutzers" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
         return d
 
     def _zeilen_recherche(self) -> list[dict]:
