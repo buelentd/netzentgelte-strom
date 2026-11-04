@@ -46,3 +46,12 @@ def test_status_v2_verlangt_alle_ebenen(tmp_path):
     assert z[1]["status"] == "ok" and z[1]["hsms_status"] == "nicht ausgewiesen"
     assert z[2]["status"] == "pruefen" and "Mittelspannung" in z[2]["hinweis"]
     assert z[3]["status"] == "pruefen" and z[3]["hsms_status"] == "fehlt"
+
+
+def test_sperrliste_leert_werte():
+    """Nummern in lauf/zuordnung_unbelegt.csv geben keine Werte aus und stehen auf 'pruefen'."""
+    from vnb.ergebnis import Speicher as Ergebnisse
+    d = {"nr": "186", "status": "ok", "ns": {"x": 1}, "ms": {}, "msns": {}, "hsms": {}, "slp": {"ap": 1, "gp": 2}}
+    out = Ergebnisse._gesperrt(d, {"186": "grund"})
+    assert out["status"] == "pruefen" and out["ns"] == {} and out["slp"] == {} and out["hinweis"] == "grund"
+    assert Ergebnisse._gesperrt(d, {})["status"] == "ok"

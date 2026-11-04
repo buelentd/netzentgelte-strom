@@ -128,7 +128,28 @@ class Speicher:
         if self.ordner.name != "ergebnis":      # Recherche und manuelle Preise gelten nur für 2026
             return sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"]))
         man = self._manuell()
-        return [self._status_v2(self._mit_manuell(d, man)) for d in self._zeilen_recherche()]
+        sperre = self._sperre()
+        return [self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre) for d in self._zeilen_recherche()]
+
+    def _sperre(self) -> dict:
+        """lauf/zuordnung_unbelegt.csv (nr;grund): Netzbetreiber, deren Zuordnung zum gelesenen Preisblatt nicht belegt ist."""
+        pfad = self.ordner.parent / "lauf" / "zuordnung_unbelegt.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["nr"].strip(): r["grund"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    @staticmethod
+    def _gesperrt(d: dict, sperre: dict) -> dict:
+        grund = sperre.get(str(d.get("nr")))
+        if not grund:
+            return d
+        d = dict(d)
+        for k in ("ms", "msns", "ns", "hsms", "slp"):
+            d[k] = {}
+        d["status"] = "pruefen"
+        d["hinweis"] = grund
+        return d
 
     @staticmethod
     def _status_v2(d: dict) -> dict:

@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 16:08, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 16:10, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 344 | 41% |
-| pruefen | 424 | 51% |
+| ok | 343 | 41% |
+| pruefen | 425 | 51% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 343,  1
+Preisstand (nur ok): endgültig 342,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 14,98 ct/kWh (Stadtwerke Eberbach GmbH)
-- Median: 7,24 ct/kWh (n = 524)
+- Median: 7,24 ct/kWh (n = 523)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,80 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,36 ct/kWh (n = 593)
+- Median: 6,36 ct/kWh (n = 592)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 43,80 €/kW/a (Butzbacher Netzbetrieb GmbH ＆ Co. KG)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 149,75 €/kW/a (n = 593)
+- Median: 149,62 €/kW/a (n = 592)
 
 ## Datenherkunft
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 343,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (487)
+## Restfälle (488)
 
-### pruefen (424)
+### pruefen (425)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -150,6 +150,7 @@ Preisstand (nur ok): endgültig 343,  1
 - 183. EVG Energieversorgung Gemünden GmbH: SLP-Werte nicht gefunden
 - 184. EVI Energieversorgung Hildesheim GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 185. EVU der Gemeinde Gochsheim: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 186. EVU Langenpreising: 
 - 187. EVU Späth e.K.: 
 - 191. EWR GmbH (Remscheid): 
 - 192. EWR Netz GmbH: 
