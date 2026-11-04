@@ -103,4 +103,6 @@ Plausibilitätsregeln: NS LP ab 2.500 h 40–260 €/kW/a, LP unter < LP ab, AP 
 | `fortschritt.jsonl` | Bearbeitungsstand je Netzbetreiber (für den Neustart) |
 | `pdf/` | verwendete Preisblätter `<nr>_<name>.pdf`, separates SLP-Blatt als `<nr>_<name>_slp.pdf` |
 
+**Preisstand 2026:** „vorläufig“ und „unklar“ gelten bei einem gelesenen 2026-Blatt als endgültig (Festlegung 04.11.2026); leer bleibt er, wenn nichts gelesen wurde.
+
 **Status pruefen bei vorhandener Quelle:** Hat ein Netzbetreiber einen von Hand recherchierten Link (`lauf/quellen_recherche.csv`), steht nie `kein_preisblatt`, sondern `pruefen` mit Hinweis „Quelle aus Recherche vorhanden, noch nicht ausgelesen“. `kein_preisblatt` heißt nur: weder wir noch die Recherche haben eine Quelle.

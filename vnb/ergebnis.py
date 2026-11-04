@@ -180,6 +180,9 @@ class Speicher:
             d["preisstand"] = "endgültig"
             alt = d.get("hinweis", "")
             d["hinweis"] = "Dokument als vorläufig bezeichnet, Preise galten 2026 das ganze Jahr" + (f"; {alt}" if alt else "")
+        elif jahr == 2026 and d.get("preisstand") == "unklar" and (d.get("ns") or d.get("slp")):
+            d = dict(d)           # Blatt für 2026 gelesen, ohne Hinweis im Dokument: gilt als endgültig (Festlegung Nutzer 04.11.2026)
+            d["preisstand"] = "endgültig"
         return d
 
     def ausgeben(self, jahr: int) -> str:
