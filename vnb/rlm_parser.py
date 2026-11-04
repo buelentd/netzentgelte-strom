@@ -14,7 +14,10 @@ def zahlen(zeile):
     return [float(m.group().replace(".", "").replace(",", ".")) if "," in m.group() else float(m.group()) for m in ZAHL.finditer(z)]
 
 def label_von(zeile):
-    return re.sub(r"[\d.,€/*()%-]+", " ", zeile).strip()
+    """Text vor dem ersten Preis (Zeilenname mit Bindestrichen und Ziffern, z. B. "NS - NE 7 - Niederspannung")."""
+    m = re.search(r"\d+,\d", zeile)
+    kopf = zeile[:m.start()] if m else zeile
+    return re.sub(r"\s+", " ", kopf).strip(" .:|*") if m else re.sub(r"[\d.,€/*()%-]+", " ", zeile).strip()
 
 def plausibel(w, tag):
     lp1, ap1, lp2, ap2 = w

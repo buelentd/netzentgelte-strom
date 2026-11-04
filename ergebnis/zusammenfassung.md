@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 19:59, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 20:00, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 316 | 38% |
-| pruefen | 462 | 56% |
+| ok | 314 | 38% |
+| pruefen | 464 | 56% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 25 | 3% |
 | robots | 11 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 316
+Preisstand (nur ok): endgültig 314
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,17 +25,17 @@ Preisstand (nur ok): endgültig 316
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,38 ct/kWh (n = 627)
+- Median: 6,40 ct/kWh (n = 649)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 149,75 €/kW/a (n = 627)
+- Median: 150,30 €/kW/a (n = 649)
 
 ## Datenherkunft
 
-- Website aus E-Mail-Domain abgeleitet: 5
+- Website aus E-Mail-Domain abgeleitet: 4
 - Bundesland/Region nur aus dem Sitz laut MaStR: 15
 - Netztyp: Stadtnetz 616, Regionalnetz 116, Flächennetz 59, unbekannt 40
 
@@ -52,9 +52,9 @@ Preisstand (nur ok): endgültig 316
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Restfälle (515)
+## Restfälle (517)
 
-### pruefen (462)
+### pruefen (464)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -78,6 +78,7 @@ Preisstand (nur ok): endgültig 316
 - 37. NRM Netzdienste Rhein-Main GmbH: 
 - 38. Pfalzwerke Netz AG: SLP-Werte auffällig
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
+- 40. Netze Magdeburg GmbH: 
 - 42. SWKiel Netz GmbH: SLP-Werte nicht gefunden
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
 - 47. Stadtwerke Karlsruhe Netzservice GmbH: 
@@ -435,6 +436,7 @@ Preisstand (nur ok): endgültig 316
 - 655. Stadtwerke Schwerte GmbH: 
 - 656. Stadtwerke Senftenberg GmbH: kein Preisblatt-Link gefunden (25 Seiten durchsucht)
 - 658. Stadtwerke Sigmaringen GmbH: SLP-Werte nicht gefunden
+- 659. Stadtwerke Sindelfingen GmbH: 
 - 660. Stadtwerke Soest GmbH: 5 Dokument(e) geprüft: Download-Fehler: APIRequestContext.get: unable to verify the first certificate; if the root CA is installed locally, ; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Wert
 - 661. Stadtwerke Soltau GmbH ＆ Co. KG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden; MSNS: Benutzungsdauer-Grenze nicht im Kopf 
 - 665. Stadtwerke St. Ingbert GmbH: 
