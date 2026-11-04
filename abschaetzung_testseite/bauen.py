@@ -31,6 +31,8 @@ for nr, r in z.items():
         w = [de(r.get(f"{eb}_{k}", "")) for k in FELDER]
         if all(x is not None for x in w):
             e[eb] = w
+    if all(k in e for k in ("slp", "ns", "msns", "ms")) and r.get("hsms_status", "") != "fehlt":
+        e["voll"] = 1                                              # alles da: SLP, Niederspannung, MS/NS und Mittelspannung
     if "noch nicht gegen das Dokument" in r["hinweis"]:
         e["ug"] = 1                                                # Werte aus Liste, noch nicht gegen das Dokument geprüft
     if "teurer als" in r["hinweis"]:

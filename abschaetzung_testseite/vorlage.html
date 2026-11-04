@@ -325,18 +325,18 @@ function rlm(werte, kwh, kw, le) {
   return {h, unter, lp, ap, leistung, arbeit, summe: leistung + arbeit};
 }
 
-// Vorschläge: nur Postleitzahlen, für die mindestens ein Netzbetreiber geprüfte Preise hat
-const PLZ_MIT_PREISEN = Object.keys(D.plz).filter(p => D.plz[p].some(([n]) => { const e = NB.get(n); return e && (e.ns || e.slp); })).sort();
+// Vorschläge: nur Postleitzahlen, für die mindestens ein Netzbetreiber alle Werte hat (SLP, Niederspannung, MS/NS, Mittelspannung)
+const PLZ_MIT_PREISEN = Object.keys(D.plz).filter(p => D.plz[p].some(([n]) => { const e = NB.get(n); return e && e.voll; })).sort();
 function plzVorschlagen() {
   const ein = $("plz").value.replace(/\D/g, "");
   const treffer = ein.length >= 2 ? PLZ_MIT_PREISEN.filter(p => p.startsWith(ein)).slice(0, 30) : [];
   $("plz-liste").innerHTML = treffer.map(p => {
-    const namen = D.plz[p].map(([n]) => NB.get(n)).filter(e => e && (e.ns || e.slp)).map(e => e.name);
+    const namen = D.plz[p].map(([n]) => NB.get(n)).filter(e => e && e.voll).map(e => e.name);
     return `<option value="${p}">${namen.join(" / ")}</option>`;
   }).join("");
 }
 
-function nbFuerPlz(plz) { return (D.plz[plz] || []).map(([n, anteil]) => ({...NB.get(n), anteil})).filter(e => e.n); }
+function nbFuerPlz(plz) { return (D.plz[plz] || []).map(([n, anteil]) => ({...NB.get(n), anteil})).filter(e => e.n && e.voll); }
 
 let gewaehlt = null;
 function nbAnzeigen() {
