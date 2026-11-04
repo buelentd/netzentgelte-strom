@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 20:00, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 20:04, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 314 | 38% |
-| pruefen | 464 | 56% |
+| ok | 312 | 38% |
+| pruefen | 466 | 56% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 25 | 3% |
 | robots | 11 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 314
+Preisstand (nur ok): endgültig 312
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 314
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,40 ct/kWh (n = 649)
+- Median: 6,39 ct/kWh (n = 650)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 150,30 €/kW/a (n = 649)
+- Median: 150,40 €/kW/a (n = 650)
 
 ## Datenherkunft
 
@@ -52,9 +52,9 @@ Preisstand (nur ok): endgültig 314
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Restfälle (517)
+## Restfälle (519)
 
-### pruefen (464)
+### pruefen (466)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -396,6 +396,7 @@ Preisstand (nur ok): endgültig 314
 - 586. Stadtwerke Neustadt a.d. Aisch GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (12.92, 15.37); SLP-Werte auffällig
 - 587. Stadtwerke Neustadt an der Orla GmbH: Preisblatt-Links per robots.txt gesperrt: https://cms.stadtwerke-neustadt-orla.de/fileadmin/user_upload/content/marktpartner/strom/Netznutzungsentgelte_Strom_2026-01-01.pdf, https://cms.stadtwerke-neu
 - 589. Stadtwerke Neustadt in Holstein: 2 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
+- 591. Stadtwerke Neuwied GmbH: 
 - 593. Stadtwerke Norderney GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 594. Stadtwerke Norderstedt: SLP-Werte nicht gefunden
 - 595. Stadtwerke Nordfriesland - Netz GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
@@ -431,6 +432,7 @@ Preisstand (nur ok): endgültig 314
 - 646. Stadtwerke Schüttorf - Emsbüren GmbH: 
 - 647. Stadtwerke Schwabach GmbH: SLP-Werte nicht gefunden
 - 648. Stadtwerke Schwäbisch Gmünd GmbH: 
+- 649. Stadtwerke Schwäbisch Hall GmbH: 
 - 650. Stadtwerke Schwarzenbach/Saale: 
 - 652. Stadtwerke Schwedt GmbH: Preisblatt-Links per robots.txt gesperrt: https://stadtwerke-schwedt.de/strom/assets/files/energie/downloads/strom/aktuell/sdt/2026%2009%2023%20Preisblatt_SDT_Strom_2026.pdf, https://stadtwerke-schwed
 - 655. Stadtwerke Schwerte GmbH: 
