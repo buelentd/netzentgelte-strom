@@ -116,6 +116,8 @@ class Speicher:
         return out
 
     def zeilen(self) -> list[dict]:
+        if self.ordner.name != "ergebnis":      # Recherche und manuelle Preise gelten nur für 2026
+            return sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"]))
         man = self._manuell()
         return [self._mit_manuell(d, man) for d in self._zeilen_recherche()]
 

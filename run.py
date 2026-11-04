@@ -315,9 +315,12 @@ async def schritt_lauf(args, log):
             crawler = Crawler(browser, robots, drossel, cache, args.jahr, args.max_seiten, log)
             crawler.nur_hinweise = args.nur_hinweise
         sem = asyncio.Semaphore(args.worker)
-        hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
-        for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
-            hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
+        if args.jahr == 2026:
+            hinweise = hinweise_laden(HIER / "lauf" / "hinweis_urls.csv")
+            for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():
+                hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
+        else:                                                          # andere Jahre: eigene Startadressen (lauf/hinweis_urls_<jahr>.csv)
+            hinweise = hinweise_laden(HIER / "lauf" / f"hinweis_urls_{args.jahr}.csv")
         korrektur = {}
         kp = HIER / "lauf" / "website_korrektur.csv"
         if kp.exists():
@@ -517,8 +520,15 @@ def main():
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)
     args.max_seiten = min(40, args.max_seiten)
+    if args.jahr != 2026 and args.out == str(HIER / "ergebnis"):      # jedes Jahr hat einen eigenen Ordner mit eigenem Fortschritt
+        args.out = str(HIER / f"ergebnis_{args.jahr}")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
+    if out.name != "ergebnis":                                         # Netzbetreiber-Liste aus dem Hauptordner übernehmen
+        import shutil
+        for n in ("netzbetreiber.csv", "plz_netzbetreiber.csv", "mastr_rollen.txt"):
+            if not (out / n).exists() and (HIER / "ergebnis" / n).exists():
+                shutil.copy(HIER / "ergebnis" / n, out / n)
     log = Log(out / "lauf.log")
     if args.schritt in ("liste", "alles") and (args.schritt == "liste" or not (out / "netzbetreiber.csv").exists()):
         schritt_liste(args, log)

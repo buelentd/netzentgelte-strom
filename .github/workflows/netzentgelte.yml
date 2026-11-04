@@ -97,11 +97,14 @@ jobs:
             ergebnis/cache
             ergebnis/pdf
             ergebnis/fortschritt.jsonl
+            ergebnis_2027/cache
+            ergebnis_2027/pdf
+            ergebnis_2027/fortschritt.jsonl
           key: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
           restore-keys: netzentgelte-${{ steps.p.outputs.jahr }}-
 
       - name: Fortschritt aus dem Repository hat Vorrang (Zwischenspeicher kann älter sein)
-        run: git checkout -- ergebnis/fortschritt.jsonl
+        run: git checkout -- ergebnis/fortschritt.jsonl ergebnis_2027/fortschritt.jsonl 2>/dev/null || git checkout -- ergebnis/fortschritt.jsonl
 
       - name: Tests
         run: python -m pytest -q tests
@@ -147,7 +150,7 @@ jobs:
       - name: Bericht
         if: always()
         run: |
-          if [ -f ergebnis/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ steps.p.outputs.jahr }}"; fi
+          if [ -f ergebnis/fortschritt.jsonl ] || [ -f ergebnis_2027/fortschritt.jsonl ]; then python run.py bericht --jahr "${{ steps.p.outputs.jahr }}"; fi
           if [ -f ergebnis/zusammenfassung.md ]; then cat ergebnis/zusammenfassung.md >> "$GITHUB_STEP_SUMMARY"; fi
 
       - name: Diagnose (Textauszüge auf Branch diagnose)
@@ -170,6 +173,9 @@ jobs:
             ergebnis/cache
             ergebnis/pdf
             ergebnis/fortschritt.jsonl
+            ergebnis_2027/cache
+            ergebnis_2027/pdf
+            ergebnis_2027/fortschritt.jsonl
           key: netzentgelte-${{ steps.p.outputs.jahr }}-${{ github.run_id }}
 
       - name: PDFs und Fortschritt als Artifact
@@ -196,7 +202,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_erledigt.csv ergebnis/zusammenfassung.md \
                    ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
-                   ergebnis/fortschritt.jsonl ergebnis/slp_diagnose.csv ergebnis/slp_diagnose; do
+                   ergebnis/fortschritt.jsonl ergebnis/slp_diagnose.csv ergebnis/slp_diagnose \
+                   ergebnis_2027/netzentgelte_2027.csv ergebnis_2027/restliste.csv ergebnis_2027/fortschritt.jsonl ergebnis_2027/zusammenfassung.md ergebnis_2027/hochlastzeitfenster_2027.csv; do
             [ -e "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
