@@ -23,15 +23,17 @@ FELDER = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eu
 nb, mastr2nr = [], {}
 for nr, r in z.items():
     mastr2nr.setdefault(r["mastr_nr"], nr)
-    gr = g.get(nr, {})
-    e = {"n": int(nr), "bl": (r["bundesland"].split(" / ")[0] or "Bayern"), "name": r["netzbetreiber"], "ps": r["preisstand"], "sd": r["stand_datum"], "le": "≤ 2.500" in r["hinweis"]}
-    if gr.get("slp") == "ok":
+    e = {"n": int(nr), "bl": (r["bundesland"].split(" / ")[0] or "Bayern"), "name": r["netzbetreiber"], "ps": r["preisstand"], "sd": r["stand_datum"],
+         "le": r.get("grenze_2500h", "").startswith("≤") or "≤ 2.500" in r["hinweis"]}
+    if r["slp_ap_ct_kwh"] and r["slp_grundpreis_eur_jahr"]:
         e["slp"] = [de(r["slp_ap_ct_kwh"]), de(r["slp_grundpreis_eur_jahr"])]
-    if gr.get("rlm_ns") == "ok":
-        e["ns"] = [de(r[f"ns_{k}"]) for k in FELDER]
-        m = [de(r[f"msns_{k}"]) for k in FELDER]
-        if gr.get("rlm_msns") == "ok" and all(x is not None for x in m):
-            e["msns"] = m
+    for eb in ("ns", "msns", "ms", "hsms"):                       # Ebenen, wenn alle vier Werte da sind
+        w = [de(r.get(f"{eb}_{k}", "")) for k in FELDER]
+        if all(x is not None for x in w):
+            e[eb] = w
+    if "noch nicht gegen das Dokument" in r["hinweis"]:
+        e["ug"] = 1                                                # Werte aus Liste, noch nicht gegen das Dokument geprüft
+        e.pop("ms", None); e.pop("hsms", None)                     # ungeprüfte Ebenen nicht rechnen
     if r["quelle_url"]:
         e["q"] = r["quelle_url"]
     nb.append(e)

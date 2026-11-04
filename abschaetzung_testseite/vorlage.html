@@ -125,6 +125,10 @@ a{color:var(--akzent)}
           <input type="number" id="kw" min="0" step="1" placeholder="leer lassen, wenn unbekannt">
           <label class="haken"><input type="checkbox" id="kw-sicher"> aus Netzrechnung (sicher)</label>
         </div>
+        <div>
+          <label class="titel" for="ebene">Anschluss</label>
+          <select id="ebene"><option value="ns">Niederspannung</option><option value="msns">Umspannung MS/NS</option><option value="ms">Mittelspannung (eigener Trafo)</option><option value="hsms">Umspannung HS/MS</option></select>
+        </div>
       </div>
 
       <div class="zeile">
@@ -358,7 +362,11 @@ function rechnen() {
   const schicht = +$("schicht").value, tage = +$("tage").value;
   const A = anlagenLesen($("anlagen").value);
   const laden = $("laden").checked ? (parseFloat($("ladekw").value) || 0) : 0;
-  const nb = gewaehlt ? NB.get(gewaehlt) : null;
+  const nb0 = gewaehlt ? NB.get(gewaehlt) : null;
+  const ebeneKey = $("ebene") ? $("ebene").value : "ns";
+  // Gewählte Anschlussebene: deren Werte ersetzen die Niederspannung in allen folgenden Rechnungen; fehlt sie, bleibt die Niederspannung stehen
+  const nb = nb0 && ebeneKey !== "ns" && nb0[ebeneKey] ? {...nb0, ns: nb0[ebeneKey]} : nb0;
+  const ebeneFehlt = !!(nb0 && ebeneKey !== "ns" && !nb0[ebeneKey]);
 
   // Anlagen-Rückmeldung
   const ae = $("anlagen-ergebnis");
@@ -398,6 +406,8 @@ function rechnen() {
   const hinweise = [];
   if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preise 2026 laut Preisblatt des Netzbetreibers. ${nb.ps === "vorläufig" ? "Das Preisblatt ist als vorläufig gekennzeichnet." : "Ob endgültig oder vorläufig, steht im Preisblatt nicht."}`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
+  if (ebeneFehlt) html += `<p class="leer">Für die gewählte Ebene liegen bei diesem Netzbetreiber noch keine Preise vor. Die Rechnung nutzt die Niederspannung.</p>`;
+  if (nb0 && nb0.ug) html += `<p class="leer">Die Preise dieses Netzbetreibers stammen aus einer Liste und sind noch nicht gegen das Preisblatt geprüft.</p>`;
   let kappungInfo = null;
 
   const slpFall = kwh < 100000 && !$("kw-sicher").checked;
