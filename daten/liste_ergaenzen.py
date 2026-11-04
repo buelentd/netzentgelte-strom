@@ -22,7 +22,8 @@ O = [dict(zip(SPALTEN, Speicher.zeile(d))) for d in Speicher(W / "ergebnis").dat
 O = [{k: ("" if v is None else str(v)) for k, v in o.items()} for o in O]
 idx = collections.defaultdict(list)
 for o in O: idx[n(o["netzbetreiber"])].append(o)
-HL = {x["nr"]: x for x in csv.DictReader(open(W / "ergebnis" / "hlzf_ergebnis.csv", encoding="utf-8-sig"), delimiter=";") if x["hlzf_status"].startswith("gelesen")}
+HL = {x["nr"]: x for x in csv.DictReader(open(W / "ergebnis" / "hlzf_ergebnis.csv", encoding="utf-8-sig"), delimiter=";")
+      if x["hlzf_status"] == "gelesen" and x["hlzf_jahr"] == "2026"}        # nur Dokumente, die ausdrücklich für 2026 gelten
 def ct(w, h, le=False):
     if None in w: return None
     return w[3] + w[2] * 100 / h if (h >= 2500 if not le else h > 2500) else w[1] + w[0] * 100 / h
