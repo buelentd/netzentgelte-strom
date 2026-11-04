@@ -184,7 +184,13 @@ class Speicher:
         for eb, w in m["ebenen"].items():
             bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
                    if eb == "ns" or "außerhalb 40–260" not in g]
-            if bad:
+            gel = d.get(eb) or {}
+            abw = len(gel) == 4 and len(w) == 4 and any(abs(gel[k] - w[k]) > 0.006 for k in w) \
+                and not str(m["hinweis"]).startswith("Korrigiert")
+            if abw and not plausibel(gel, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS")):
+                # Der Leser hat die Ebene am Dokument gelesen, die Liste weicht ab: gelesener Wert bleibt, Abweichung wird gemeldet
+                grund.append(f"{eb}: Liste weicht vom gelesenen Wert ab ({'/'.join(str(w[k]) for k in w)}); gelesener Wert behalten")
+            elif bad:
                 grund.append(f"{eb}: {bad[0]}")
             else:
                 d[eb] = w

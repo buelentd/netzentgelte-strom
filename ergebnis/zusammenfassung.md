@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 16:10, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 16:14, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 343 | 41% |
-| pruefen | 425 | 51% |
+| ok | 339 | 41% |
+| pruefen | 429 | 52% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 342,  1
+Preisstand (nur ok): endgültig 338,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 342,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (488)
+## Restfälle (492)
 
-### pruefen (425)
+### pruefen (429)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -304,6 +304,7 @@ Preisstand (nur ok): endgültig 342,  1
 - 465. Stadtwerke Elmshorn: SLP-Werte nicht gefunden
 - 466. Stadtwerke Emden GmbH: 4 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 468. Stadtwerke Emmerich GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (23.72, 0.065, 0.0648); SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 23.7200, 0.0650, 0.0648
+- 469. Stadtwerke Emsdetten GmbH: 
 - 470. Stadtwerke Engen GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument
 - 474. Stadtwerke EVB Huntetal GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 475. Stadtwerke EVB Huntetal Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -333,6 +334,7 @@ Preisstand (nur ok): endgültig 342,  1
 - 527. Stadtwerke Hünfeld GmbH: kein Preisblatt-Link gefunden (34 Seiten durchsucht)
 - 528. Stadtwerke Husum Netz GmbH: SLP-Werte nicht gefunden
 - 529. Stadtwerke Ilmenau GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 530. Stadtwerke Ingolstadt Netze GmbH: 
 - 531. Stadtwerke Iserlohn GmbH: 
 - 532. Stadtwerke Itzehoe GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 534. Stadtwerke Jülich GmbH: 
@@ -355,6 +357,7 @@ Preisstand (nur ok): endgültig 342,  1
 - 568. Stadtwerke Mengen: 
 - 570. Stadtwerke Metzingen: 
 - 571. Stadtwerke Mössingen: SLP-Werte nicht gefunden
+- 572. Stadtwerke Mosbach GmbH: 
 - 573. Stadtwerke Mühlacker GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 574. Stadtwerke Mühlhausen Netz GmbH: 
 - 575. Stadtwerke Mühlheim am Main GmbH: 
@@ -452,6 +455,7 @@ Preisstand (nur ok): endgültig 342,  1
 - 744. Städtische Werke Netz+Service GmbH: SLP-Werte nicht gefunden
 - 747. Strom- und Gasnetz Wismar GmbH: 
 - 751. Stromnetz Kulmbach GmbH ＆ Co. KG: SLP-Werte nicht gefunden
+- 752. Stromnetz Pullach GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://assets.stromnetz-pullach.de/media/downloads/2026/07/16/Stromnetz-Pullach-Netzentgelte-2019.pdf, https://assets.stromnetz-pullach.de/media/downl
 - 754. Stromnetz Weilheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 755. Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG: 
 - 757. Stromversorgung Inzell eG: 
