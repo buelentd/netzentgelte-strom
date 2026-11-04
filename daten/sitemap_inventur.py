@@ -6,7 +6,7 @@ import csv, gzip, re, time, threading, urllib.robotparser
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, urljoin
 import requests
 
 W = Path(__file__).parent.parent
@@ -36,11 +36,26 @@ def locs(r):
     return re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", t), "<sitemapindex" in t[:2000].lower()
 
 
+def html_sitemap_seiten(basis, start, rp):
+    """Mögliche sichtbare Sitemap-Seiten: Link „Sitemap/Seitenübersicht/Inhaltsverzeichnis“ auf der Startseite, sonst übliche Pfade."""
+    kand = []
+    try:
+        r = get(start)
+        if r.status_code == 200:
+            for h, t in re.findall(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', r.text, re.I | re.S):
+                if re.search(r"sitemap|seitenuebersicht|seitenübersicht|inhaltsverzeichnis|seitenindex|seiten.?karte", h + " " + re.sub(r"<[^>]+>", "", t), re.I):
+                    kand.append(urljoin(r.url, h.split("#")[0]))
+    except Exception:
+        pass
+    kand += [basis + p for p in ("/sitemap.html", "/sitemap", "/sitemap/", "/seitenuebersicht", "/seitenuebersicht.html", "/inhaltsverzeichnis", "/sitemap.htm")]
+    return [x for x in dict.fromkeys(kand) if rp.can_fetch(UA, x)][:6]
+
+
 def einer(z):
     nr, name, web = z
     w = web if web.startswith("http") else "https://" + web.lstrip("/")
     u = urlparse(w); basis = f"{u.scheme}://{u.netloc}"
-    res = {"nr": nr, "netzbetreiber": name, "website": web, "robots": "", "sitemap": "nein", "sitemap_dateien": 0, "urls": 0, "fehler": ""}
+    res = {"nr": nr, "netzbetreiber": name, "website": web, "robots": "", "sitemap": "nein", "sitemap_dateien": 0, "urls": 0, "fehler": "", "sitemap_adresse": "", "html_sitemap": ""}
     kand = []; sitemaps = []
     try:
         rp = urllib.robotparser.RobotFileParser()
@@ -63,8 +78,20 @@ def einer(z):
             l, idx = locs(r)
             if not l: continue
             res["sitemap"] = "ja"; res["sitemap_dateien"] += 1
+            if not res["sitemap_adresse"]: res["sitemap_adresse"] = s
             if idx: todo += [x for x in l if x not in gesehen]
             else: urls += l
+        if res["sitemap"] != "ja":                                   # sichtbare Sitemap-Seite (HTML), z. B. /sitemap.html oder Link im Seitenfuß
+            for sp in html_sitemap_seiten(basis, w, rp):
+                try:
+                    r = get(sp)
+                    if r.status_code != 200 or "html" not in (r.headers.get("content-type") or ""): continue
+                    links = [urljoin(r.url, x) for x in re.findall(r'href=["\']([^"\'#]+)', r.text, re.I)]
+                    links = [x for x in links if x.startswith("http")]
+                    if len(links) >= 10:
+                        res["sitemap"] = "html"; res["sitemap_adresse"] = sp; res["html_sitemap"] = sp; res["sitemap_dateien"] += 1; urls += links; break
+                except Exception:
+                    continue
         res["urls"] = len(urls)
         for x in dict.fromkeys(urls):
             t = unquote(x)
@@ -95,12 +122,12 @@ def main():
             return (x[5] == "Dokument", bool(re.search(r"preisblatt|nne|netznutzungsentgelt|netzentgelt", t)), not re.search(r"14a|fiktiv|gas|messstellen|msb", t), -len(t))
         c.sort(key=pk, reverse=True)
         return " | ".join(x[2] for x in c[:2])
-    k = ["nr", "netzbetreiber", "website", "robots_txt", "sitemap", "sitemap_dateien", "adressen_in_sitemap", "fundstellen",
+    k = ["nr", "netzbetreiber", "website", "robots_txt", "sitemap", "sitemap_adresse", "sitemap_dateien", "adressen_in_sitemap", "fundstellen",
          "preis_2026", "preis_2027", "hochlastzeitfenster_2026", "hochlastzeitfenster_2027", "hochlastzeitfenster_ohne_jahr", "fehler"]
     with open(W / "ergebnis" / "sitemap_inventur.csv", "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, delimiter=";"); w.writerow(k)
         for r, kd in res:
-            w.writerow([r["nr"], r["netzbetreiber"], r["website"], r["robots"], r["sitemap"], r["sitemap_dateien"], r["urls"], r["kandidaten"],
+            w.writerow([r["nr"], r["netzbetreiber"], r["website"], r["robots"], r["sitemap"], r["sitemap_adresse"], r["sitemap_dateien"], r["urls"], r["kandidaten"],
                         beste(kd, "preis", "2026"), beste(kd, "preis", "2027"), beste(kd, "hlzf", "2026"), beste(kd, "hlzf", "2027"),
                         beste([x for x in kd if not x[4]], "hlzf", ""), r["fehler"]])
     print("fertig; Sitemap vorhanden bei", sum(1 for r in res if r[0]["sitemap"] == "ja"), "von", len(res))
