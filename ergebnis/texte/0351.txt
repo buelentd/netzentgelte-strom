@@ -1,0 +1,413 @@
+https://www.ovag-netz.de/files/on/downloads/preisblaetter/netznutzung/ovagNetzGmbH_Preisblatt_Netznutzung_20251223.pdf
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                          Netznutzung Preisblatt 1/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                       - gültig ab 01.01.2026-
+
+
+                     [1] Netznutzung mit fernauslesbarer ¼-h-Leistungsmessung
+                            [Für vermiedene Netzentgelte nur verwendbar, wenn Entnahmeebenenentgelt (das Wertepaar Leistungs-/Arbeitspreis)
+                            niedriger als im separaten „Referenzpreisblatt 2016 zur Ermittlung vermiedener Netzentgelte nach § 18 Absatz 2 Strom
+                            NEV, gültig ab 01.01.2018“ ausgewiesen]
+                                                                  Benutzungsdauer < 2.500 h/a                      Benutzungsdauer >= 2.500 h/a
+                                                              Leistungspreis             Arbeitspreis           Leistungspreis             Arbeitspreis
+                              Entnahmeebene                       €/kWa                    ct/kWh                   €/kWa                    ct/kWh
+                         4 - Umspannung HS/MS                       20,80                     4,61                   107,22                     1,15
+                         5 - MS-Mittelspannung 1)                   29,17                     6,95                   167,49                     1,42
+                         6 - Umspannung MS/NS                       32,66                     7,54                   179,11                     1,68
+                         7 - NS-Niederspannung                      37,68                     8,04                   183,35                     2,21
+                    1) Bei Messung auf der 0,4-kV-Seite werden gem. § 6 (7) des BNetzA-Standardvertrages die bei der Messung nicht erfassten Verluste durch
+
+                         einen angemessenen Korrekturfaktor bei den Messwerten berücksichtigt. Die mit dem Korrekturfaktor beaufschlagten Messergebnisse
+                         werden einer Marktlokation zugewiesen, dessen Werte Grundlage für die weitere Abrechnung (Bilanzierung, Netznutzung) sind. Der
+                         Korrekturfaktor beträgt, soweit keine besonderen Umstände des Einzelfalls vorliegen, jeweils +2,95 % (Faktor 1,0295).
+
+
+                    [2] Monatsleistungspreissystem für Netznutzung mit fernauslesbarer
+                        ¼-h-Leistungsmessung (§19 Abs. 1 StromNEV)
+                                                                            Leistungspreis                                      Arbeitspreis
+                           Entnahmeebene                                    €/kW u. Monat                                         ct/kWh
+                     4 - Umspannung HS/MS                                         17,87                                              1,15
+                     5 - MS-Mittelspannung 1)                                     27,92                                              1,42
+                     6 - Umspannung MS/NS                                         29,85                                              1,68
+                     7 - NS-Niederspannung                                        30,56                                              2,21
+
+                    [3] Blindstrommehrbedarf für letztverbrauchende Kunden mit ¼-h-Leistungsmessung
+                         innerhalb cos ϕ = 0,95 2) induktiv bis cos ϕ = 1                                             Im Netznutzungsentgelt enthalten
+                         außerhalb cos ϕ = 0,95 2) induktiv bis cos ϕ = 1                                                     1,10 ct/kVArh
+                    2)
+                         Bei Entnahme in Niederspannung gilt die Grenze cos ϕ 0,90
+                         cosϕ 0,95  --> 32,87% der Wirkarbeit | cosϕ 0,90 --> 48,43% der Wirkarbeit
+
+
+                    [4] Reservenetzkapazität (Ausfall von Eigenerzeugungsanlagen)
+                                                                                                  Reserveinanspruchnahme
+                                                                              0 – 200 h/a               201 – 400 h/a                   401 – 600 h/a
+                                   Entnahmeebene                                 €/kWa                        €/kWa                         €/kWa
+                         4 - Umspannung HS/MS                                     51,99                        62,39                         72,79
+                         5 - MS-Mittelspannung                                    72,93                        87,52                         102,11
+                         6 - Umspannung MS/NS                                     81,65                        97,98                         114,30
+                         7 - NS-Niederspannung                                    94,21                        113,05                        131,89
+
+                    [5] Entgelte für singulär genutzte Betriebsmittel gemäß § 19 Abs. 3 StromNEV
+                                                          Betriebsmittel                                                                   Preis
+                          20 kV Leistungsschalterfeld im Umspannwerk                                                                   8.620,00 €/a/Feld
+                          20 kV Mittelspannungskabel                                                                                   4.940,00 €/a/km
+
+                    [6] Netznutzung ohne ¼-h-Leistungsmessung
+                            Derzeit synthetisches Verfahren bei Kunden bis max. 100.000 kWh/a
+                                                                                                          Grundpreis (GP)            Arbeitspreis (AP)
+                                                      Entnahmeebene                                                 €/a                      ct/kWh
+                         NS-Niederspannung             Bezug allgemein                                            80,30                        7,33
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                        Netznutzung Preisblatt 2/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                     - gültig ab 01.01.2026-
+
+                    [7] Netznutzung für vom Netzbetreiber steuerbare Verbrauchseinrichtungen
+                        ohne ¼-h-Leistungsmessung 4) - Bestandsanlagen -
+                                                                                                                        Grundpreis       Arbeitspreis
+                                           Art / Entnahmeebene = 0,4-kV-Netz                                                €/a             ct/kWh
+                         Speicherheizung Profilschar „ON1“ Bestandsschutz bis Ausserbetriebnahme                           16,06             2,44
+                         Direktheizung   Profilschar „OD1“          Bestandsschutz bis 31.08.2028                          16,06             2,44
+                         Wärmepumpe      Profilschar „OW1“          Bestandsschutz bis 31.08.2028                          16,06             2,44
+                         E-Ladepunkt     SLP-Profile „OEP“/“OEO“    Bestandsschutz bis 31.08.2028                          16,06             2,44
+
+                    4)
+                         Die Anwendung des Preissystems setzt voraus, dass der Netzbetreiber – z. B. über Rundsteuerempfänger oder CLS –
+                         die Verbrauchseinrichtungen zu- und abschalten kann.
+
+                         - Speicherheizung: Freigabezeit 21:30 Uhr (früheste) bis 06:00 Uhr (späteste) Sperrzeit
+                         - Direktheizungen, Wärmepumpen und E-Ladepunkte mit Sperrzeit: Der Netzbetreiber kann innerhalb von 24 h bis zu 6 h
+                           sperren. Eine Sperrzeit darf nicht länger als 2 h und die nachfolgende Betriebszeit nicht kürzer als die vorangegangene
+                           Sperrzeit sein.
+
+                    [7a] §14 a EnWG - Modul 1 | Modul 2 | Modul 3
+                         Netznutzung für/mit vom Netzbetreiber steuerbaren Verbrauchseinrichtungen
+                         (stVE) ohne ¼-h-Leistungsmessung im Niederspannungsnetz
+
+                            Maximalbezug bei Steuerung 4,2 kW je stVE / Letztverbraucher – ggf. Anwendung eines Gleichzeitigkeitsfaktors bei mehr
+                            als einer stVE bzw. Verbrauchsart.
+                            Die Anwendung des Preissystems setzt voraus, dass der Netzbetreiber – z. B. über Rundsteuerempfänger oder CLS –
+                            die Verbrauchseinrichtungen zu-/abschalten bzw. reduzieren kann. Die kundenseitig geschaffene technische Bereitschaft
+                            ist durch Bestätigung eines Elektrofachbetriebs (konzessioniert) zu belegen.
+                                                                                                             GP              AP         Pauschaler
+                                                                                                            netto           netto       Rabatt netto
+                                              Modulbeschreibung | Hinweis                                    €/a           ct/kWh             €/a
+                         Modul 1 - Pauschale Reduktion | kein separater Zähler erforderlich                 80,30           7,33            -122,20
+                         Modul 2 - AP = 40% des normalen AP | mit separatem Zähler                           ----           2,93          ---------------
+
+
+
+                         Modul 3 unter                                                                           HT             NT             ST
+                         Voraussetzungen anwendbar:                                               GP             AP             AP             AP
+                                                                                                 netto          netto          netto          netto
+                                        Modulbeschreibung | Hinweis                               €/a          ct/kWh         ct/kWh         ct/kWh
+                         Modul 3 - Zeitvariable Netztarife | nur mit iMSys                       80,30          12,77          2,93           7,33
+
+                    HINWEIS: Für das „Modul 3“ ist der Einsatz eines Intelligentes Messsystems (iMSys) - keine RLM-Messung - zwingende Vo-
+                    raussetzung. Modul 3 ist nur in Verbindung mit Modul 1 wählbar.
+
+                    Tarife HT und NT kommen nur in Q1 und Q4 zur Anwendung
+
+                    Tarif                            Anwendungsquartale            Zeitfenster                 .
+                     HT Hochlasttarif                Q1 | Q2 | Q3 | Q4             Mo-So 17:00 -20:15 Uhr
+                     NT Niedriglasttarif             Q1 | Q2 | Q3 | Q4             Mo-So 00:00 -07:30 Uhr
+                     ST Standardlasttarif            Q1 | Q2 | Q3 | Q4             übrige Zeit
+
+
+                    [7b] Sonderentgelt nach § 19 Abs. 4 StromNEV
+                    Für Strom, der dem Netz ausschließlich zur Speicherung in einem Stromspeicher entnommen und der zurückge-
+                    wonnene Strom wieder in das Netz einspeist wird, besteht ein Anspruch auf ein individuelles Netzentgelt.
+                                                                                                                                    Leistungspreis
+                                                              Art / Entnahmeebene                                                       €/kWa
+                         Individuelles Netzentgelt Stromspeicher (§19 Abs.4 StromNEV)                                                Auf Anfrage
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                           Netznutzung Preisblatt 3/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                        - gültig ab 01.01.2026-
+
+
+                    [8] Mengenabweichungen für Kunden ohne ¼-h-Leistungsmessung
+                            Vergütung 5)        Siehe: www.bdew.de/internet.nsf/id/DE_Mehr-Mindermengen-Abrechnung
+                             Entgelt 6)         Siehe: www.bdew.de/internet.nsf/id/DE_Mehr-Mindermengen-Abrechnung
+
+                    5)
+                         bei Minderabnahme gegenüber den eingespeisten Mengen (ungewollte Mehreinspeisung)
+                    6)
+                         bei Mehrabnahme gegenüber den eingespeisten Mengen (Zusatzstromlieferung)
+
+                    [9] Entgelt für Ersatzversorgung
+                             Ersatzversorgung 7)                                       Siehe Tarife der/des Grundversorger/s*)
+                    *) www.ovag-netz.de  Veröffentlichungen  Feststellung Grundversorger
+                    7)
+                         soweit die Entnahmestelle nach §38 EnWG berechtigt ist
+
+                    [10] Umlage Kraft-Wärme-Kopplungsgesetz (KWKG)
+
+                          LV-Mengen mit voller KWKG-Umlage (§ 26 – nicht privilegierter Letztverbrauch)                                   0,446 ct/kWh
+
+                    Quelle: www.netztransparenz.de, 24.10.2025
+
+                    [11] Aufschlag für besondere Netznutzung | § 19 StromNEV-Umlage
+                         LV A’ ≤ 1.000.000 kWh/a             LV B’ > 1.000.000 kWh/a           LV C’ > 1.000.000 kWh/a 8)              LV nach § 21 ENFG
+                              1,559 ct/kWh                       0,050 ct/kWh                        0,025 ct/kWh                          0,000 ct/kWh
+                    Quelle: www.netztransparenz.de, 24.10.20245
+                    8) Hinweis Letztverbrauchergruppe C‘ (LV C‘):
+
+                    Letztverbraucher, die dem produzierenden Gewerbe, dem schienengebundenen Verkehr oder der Eisenbahninfrastruktur zuzuordnen sind und
+                    deren Stromkosten im vorangegangenen Kalenderjahr vier Prozent des Umsatzes überstiegen haben, zahlen für über 1.000.000 kWh/a hinausge-
+                    hende Strombezüge den für C‘ ausgewiesenen Betrag. Entsprechende Nachweise/Testate sind vorzulegen
+
+
+                    [12] Offshore-Netzumlage nach § 17 EnWG
+                         LV-Mengen mit voller Offshore-Netzumlage (nicht privilegierter Letztverbrauch)                                   0,941 ct/kWh
+                    Quelle: www.netztransparenz.de, 24.10.2025
+
+                    HINWEIS:              Die Ausweisung der Umlagen in den Positionen [10] bis [12] erfolgt rein informativ und somit unverbindlich.
+                                          Verbindlich gelten ausschließlich die auf der Internetseite der Übertragungsnetzbetreiber
+                                          www.netztransparenz.de veröffentlichten Umlagen.
+
+                    [13] Konzessionsabgabe
+                             Laut "Verordnung über Konzessionsabgaben für Elektrizität und Erdgas (Konzessionsabgabenverordnung - KAV)"
+                             vom 09.Juni 1999 an die Gemeinde abzuführen. Höchstbeträge:
+
+                                    bis 25.000 Einwohner 1,32 ct/kWh                                      bis 100.000 Einwohner 1,59 ct/kWh
+                                    bis 500.000 Einwohner 1,99 ct/kWh                                    über 500.000 Einwohner 2,39 ct/kWh
+                                         Schwachlaststrom* 0,61 ct/kWh                                     Sondervertragskunden 0,11 ct/kWh
+                    * Die Anwendung der Konzessionsabgabe für Schwachlaststrom ist an entsprechende Nachweispflichten gebunden.
+
+                    HINWEIS:
+                    Preise für „Moderne Messeinrichtungen“ (§ 2 Nr. 15 MsbG) und „Intelligente Messsysteme“ (§ 2 Nr. 7 MsbG)
+                    nach dem „Gesetz zur Digitalisierung der Energiewende“ / “Messstellenbetriebsgesetz (MsbG)“ sowie ggf. dazu-
+                    gehörige Dienstleistungen werden vom grundzuständigen Messstellenbetreiber veröffentlicht.
+                     https://digitalisierung.ovag-netz.de
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                    Netznutzung Preisblatt 4/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                 - gültig ab 01.01.2026-
+
+
+                    [14] VNB-Basispreise ¼-h-Leistungsmessungen mit Fernauslesung („RLM“)
+                                                                                   Messstellenbetrieb €/a (inkl. Wandler)
+                            Messspannung 20 kV                                                 750,44 9)10)
+                            Messspannung 0,4 kV                                                344,54 9)10)
+                    9)
+                        Sofern der Anschlussnutzer keinen durchwahlfähigen Telekommunikationsanschluss kostenfrei bereitstellt, kommen
+                        entsprechende Bereitstellungsentgelte nach Pos. [15] hinzu! Der Preis beinhaltet die bis 31.12.2016 separat ausgewiesene
+                        Messdienstleistung (Messung: „MDL“)
+                    10)
+                        Der Preis versteht sich für eine werktägliche Lastgangbereitstellung an eine E-Mail-Adresse im EDIFACT-Format MSCONS.
+
+                    [15] VNB-Zusatzpreise ¼-h-Leistungsmessungen „RLM“ (optional)
+
+                          Preisabschlag kundenseitige Wandlersatzbeistellung Niederspannung                                        -28,47 €/a
+                          Preisabschlag kundenseitige Wandlersatzbeistellung Mittelspannung                                       -434,37 €/a
+                          Übermittlung von historischen Lastgängen (1 bis 12 Monate)                                             20,00 €/Vorgang
+                          Mehrpreis Bereitstellung und Betrieb GSM–Modem inkl. Karte                                              109,50 €/a
+                          Signalimpulsaus- und -weitergabe aus Messeinrichtungen je Gerät                                          61,32 €/a
+                          Vermietung Kombiwandlersatz 20 kV (Strom/Spannung dreiphasig)                                           434,37 €/a
+                          Vermietung Stromwandler 20 kV (1 Phase / 1 Gerät)                                                        73,00 €/a
+                          Vermietung Spannungswandler 20 kV (1 Phase / 1 Gerät)                                                    73,00 €/a
+                          Vermietung Stromwandlersatz 0,4 kV (dreiphasig)                                                          28,47 €/a
+
+
+                         [16] Sonstige konventionellen VNB-Zähleinrichtungen
+                                                                                                                                Messstellenbetrieb
+                              Niederspannung (NS)                                                                                       €/a
+                         Eintarifzähler12)                                                                                            10,22
+                         Zweitarifzähler12) [ohne Tarifschaltung]                                                                     12,41
+                         Geräte- und Tarifschaltung 14)                                                                               14,60
+                         Stromwandlersatz dreiphasig                                                                                  28,47
+                         Zweirichtungszähler 12)                                                                                      12,41
+                         Preisaufteilung Zweirichtungszähler auf Bezug / Einspeisung                                               10,22 / 2,19
+                         ¼-h-Maximumzähler (ohne Lastgang)                                                                            43,80
+                         Mehrpreis halbjährliche Ablesung                                                                              2,19
+                         Mehrpreis vierteljährliche Ablesung                                                                           6,57
+                         Mehrpreis monatliche Ablesung                                                                                24,09
+                    12)
+                        Vereinzelt noch im Bestand sind elektronischer Zähler „EDL21“. Für diese Fälle gilt: Die Preise beinhalten lediglich den
+                        Zähler ohne Kommunikationsmodul, ohne Home-Display, ohne (W)LAN-Einbindung und ohne sonstige Kommunikations-
+                        anschlüsse.
+                    14)
+                        Preis je Schaltkontakt
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                    Netznutzung Preisblatt 5/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                 - gültig ab 01.01.2026-
+
+
+                     [17] Sonstige Dienstleistungen des Netzbetreibers
+                          Preise für „Moderne Messeinrichtungen“ (§ 2 Nr. 15 MsbG) und „Intelligente Messsysteme“ (§ 2 Nr. 7
+                          MsbG) nach dem „Gesetz zur Digitalisierung der Energiewende“ / “Messstellenbetriebsgesetz
+                          (MsbG)“ sowie ggf. dazugehörige Dienstleistungen werden vom grundzuständigen Messstellen-
+                          betreiber veröffentlicht.  https://digitalisierung.ovag-netz.de
+                                                                                                                                          € je Vorgang
+                     Zählerablesungen                                                                                                      bzw. Gerät
+                     Kontrollablesung Wirkarbeitszähler auf Wunsch eines Lieferanten/Kunden/MSB                                              92,20
+                     manuelle Ablesung inkl. Lastgangerfassung bei ¼-h-Leistungsmessung („RLM“)                                             184,40
+
+                     Inbetriebsetzungen RLM-Messeinrichtungen
+                     konventionelle ¼-h-Leistungsmessung („RLM“) 0,4 kV                                                                     255,38
+                     konventionelle ¼-h-Leistungsmessung („RLM“) 20 kV                                                                      510,75
+
+                     Sperrung/Entsperrung
+                     Erfolgreiche Abschaltung (Sperrung + Entsperrung) innerhalb der Regelarbeitszeit 16)18)
+                                                                                                                                            207,27
+                     [Sperrung 95,98 € | Wiederherstellung 111,29 €]
+                     Erfolglose Abschaltung (Sperrversuch) innerhalb der Regelarbeitszeit 16)                                                66,85
+                     Bearbeitungsentgelt Stornierung eines Sperrauftrags (Außendienst noch nicht aktiv)                                       7,61
+                     Bearbeitungsentgelt Stornierung eines Sperrauftrags (Außendienst bereits aktiv)                                         57,63
+
+                     Befundprüfungen durch staatlich anerkannte Prüfstelle
+                     Befundprüfung Einphasenzähler (SLP) [Anteil gemäß MessEGebV: 169,20 €]                                                261,40
+                     Befundprüfung Mehrphasenzähler (SLP) [Anteil gemäß MessEGebV: 180,60 €]                                               272,80
+                     Befundprüfung ¼-h-Leistungsmessung (RLM)                                                                            Auf Anfrage
+
+                     Zählerum- und rückbauten | Zusatzeinrichtungen
+                     Umbau SLP oder Maximumzähler auf RLM inkl. Inbetriebsetzung (Messspg.20 kV o. 0,4 kV)                                  255,38
+                     Umbau Eintarifmessung auf ¼-Stunden Maximumerfassung o. Lastgang inkl. Inbetriebsetzung                                92,20
+                     Rückbau einer VNB-Messeinrichtung bei dauerhafter Anlagenauflösung (z. B. Abrisshäuser,
+                                                                                                                                          Kostenfrei
+                     Auflösung von Elektrospeicherheizungen mit getrennter Messung)
+                     Neu-Plombierung und Bearbeitungspauschale bei Rückbau einer Messeinrichtung (SLP) bei
+                                                                                                                                             46,10
+                     Zusammenschaltung von Verbrauchsanlagen 17)
+                     Montage und Einrichtung Signalimpuls (laufende Kosten siehe Preisposition [15])                                         92,20
+
+
+                                                                                                                                         € je Vorgang
+                     Inbetriebnahmen Erzeugungsanlagen                                                                                    bzw. Gerät
+                     Erzeugungsanlage größer/gleich 30 kW/kWp bis einschl. 100 kW/kWp 19)                                                    92,20
+                     Erzeugungsanlage größer 100 kW/kWp 19)                                                                                  92,20
+                     Zweite Anfahrt aufgrund von Mängeln in der Anlage                                                                       92,20
+
+                    16)
+                        Als Regelarbeitszeit gilt Montag bis Freitag zwischen 06:00 und 20:00 Uhr. Samstage, Sonntage, Feiertage in Hessen sowie
+                       der 24. und 31.12. sind nicht Bestandteil der Regelarbeitszeit.
+                    18)
+                        Bei erfolgreicher Unterbrechung werden die Entgelte für die Abschaltung (Sperrung) und die Wiedereinschaltung (Entsper-
+                       rung) gleichzeitig in einem Betrag erhoben.
+                    19)
+                        Beinhaltet u.a. die Überprüfung der Schutzeinstellungen, Kontrolle der Einhaltung der technischen und gesetzlichen Vorga-
+                       ben/Richtlinien (wie z. B. Einspeisemanagement, Energieflussverriegelungen usw.)
+
+                      Weitere Leistungen werden zu Preisen und Bedingungen gemäß „Preisblatt zu den ergänzenden Bedingungen
+                      der ovag Netz GmbH für Netzanschlüsse im Niederspannungsnetz (Netzebene 7)“ in der jeweils gültigen
+                      Fassung erbracht.
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+                     ovag Netz GmbH
+                     Hanauer Straße 9-13                       Netznutzung Preisblatt 6/6
+                     61169 Friedberg
+                     netznutzung@ovag-netz.de                    - gültig ab 01.01.2026-
+
+                    [18] Baukostenzuschüsse (BKZ) oberhalb der Niederspannungsebene
+
+                     Angaben zu BKZ in der Niederspannungsebene = Netzebene 7 finden Sie im Preisblatt zu den Er-
+                     gänzenden Bedingungen der ovag Netz GmbH zu der „Verordnung über Allgemeine
+                     Bedingungen für den Netzanschluss und dessen Nutzung für die Elektrizitätsversorgung in
+                     Niederspannung (Niederspannungsanschlussverordnung - NAV)“ vom 01.11.2006, zuletzt geändert
+                     durch Artikel 3 des Gesetzes vom 14.März 2019 (BGBl. I S. 333).
+                     Diese sind als PDF-Datei auf unserer Website www.ovag-netz.de ab Ende Dezember 2025 verfüg-
+                     bar.
+                     Für die Netzebenen 4, 5 und 6 beträgt der BKZ 50% des jeweiligen Jahresleistungspreises
+                     2024 der Benutzungsdauerstufe > 2.500 h/a – siehe Pos. [1] dieses Preisblattes 2024.                                 €/kVA
+                     Baukostenzuschuss (BKZ) je bereitgestellte kVA in Netzebene 4 - Umspannung HS/MS                                      49,96
+                     Baukostenzuschuss (BKZ) je bereitgestellte kVA in Netzebene 5 - MS                                                    78,83
+                     Baukostenzuschuss (BKZ) je bereitgestellte kVA in Netzebene 6 - Umspannung MS/NS                                      81,24
+
+
+
+                    [19] Sonderprüfung                                                                                                   €/Stück
+                     Klärungen von Anlagenzuordnungen vor Ort bei Beauftragung                                                        Nach Aufwand
+
+
+
+                    [20] Verkauf Rundsteuerempfänger (TRE) für Einspeisemanagement                                                       €/Stück
+                     Lieferung TRE zur Leistungsreduzierung inkl. Programmierung 20)                                                      333,53
+                     Programmierung TRE zur Leistungsreduzierung                                                                          218,90
+
+                    20)
+                          inklusive Parametrierung und Funktionstest sowie Versand an die Adresse des Bestellers (nur Deutschland).
+
+                    [21] Sonderdienstleistung – Vermietung von Öl- Verteilnetztransformatoren
+
+                             Die Vermietung von Öl-Transformatoren stellt eine freiwillige Dienstleistung der Oberhessischen
+                             Versorgungsbetriebe AG dar. Angebot und Verfügbarkeit ist im konkreten Fall frühzeitig anzufragen.
+
+
+
+                    Allgemeine Preisinformationen, gültig für die Preisblätter 1 – 7
+                    Alle Preise sind - soweit nicht anders ausgewiesen - Nettopreise und verstehen sich zuzüglich der jeweils geltenden Umsatz-
+                    steuer. Die Konzessionsabgabe, sonstige gesetzliche Steuern und Abgaben sowie Umlagen sind in den Preisen nicht enthalten
+                    und werden in der jeweils gültigen Höhe zusätzlich berechnet.
+                    Wir behalten uns vor, erhöhte Kosten, die uns als Verteilnetzbetreiber aufgrund von neuen oder geänderten Gesetzen und Ver-
+                    ordnungen entstehen, zusätzlich und - sofern zulässig - auch rückwirkend im Zuge der Netznutzung weiter zu berechnen.
+                    Uns vorgelagerte Verteilnetzbetreiber (VNB) sind die Avacon Netz GmbH, Schillerstraße 3, 38350 Helmstedt sowie die EAM
+                    Netz GmbH, Monteverdistraße 2, 34131 Kassel. Unser vorgelagerter Übertragungsnetzbetreiber (ÜNB) ist die TenneT TSO
+                    GmbH, Bernecker Str. 70, 95448 Bayreuth.
+
+                    Hinweise auf mögliche Änderungen der Netzentgelte
+                    Die ovag Netz GmbH hat Beschwerde gegen die Festlegungen von Eigenkapitalzinssätzen für Alt- und Neuanlagen und den
+                    kalkulatorischen Fremdkapitalzinssatz für Betreiber von Versorgungsnetzen für die vierte Regulierungsperiode der BNetzA ein-
+                    gelegt (Ausgangsbasis und Kapitalkostenaufschlag). Das Verfahren ist beim OLG Düsseldorf anhängig. Hieraus können sich
+                    noch Änderungen der Netzentgelte ergeben.
+                    Weiter können sich Änderungen aus den noch ausstehenden Genehmigungen der BNetzA bspw. zum Regulierungskonto 2022
+                    und 2023, zum Qualitätselement, zum Kapitalkostenaufschlag 2026 und/oder zu Anträgen aus § 26 ARegV ergeben.
+                    Eine Anpassung der Netzentgelte der ovag Netz GmbH aus den vorgenannten Gründen bleibt - ggf. auch rückwirkend vorbehal-
+                    ten.
+
+
+
+
+Stand: 23.12.2025
+
+
+VÖ: 31.12.2025
+
+
