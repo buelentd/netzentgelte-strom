@@ -411,7 +411,7 @@ def schritt_diagnose(args, log):
         nr = int(satz.get("nr") or 0)
         ergebnisse = {k.split(" (", 1)[0]: k.split(" (", 1)[-1].rstrip(")") for k in satz.get("kandidaten") or []}
         for datei in sorted(ordner.iterdir()):
-            if datei.suffix not in (".pdf", ".xlsx", ".xls"):
+            if datei.suffix not in (".pdf", ".xlsx", ".xls", ".html"):
                 continue
             url_datei = datei.with_suffix(".url")
             url = url_datei.read_text() if url_datei.exists() else ""

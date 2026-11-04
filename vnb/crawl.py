@@ -235,6 +235,32 @@ class Crawler:
         await ctx.route("**/*", route)
         return ctx
 
+    # ------------------------------------------------------------ Webseiten mit Preistabellen
+    HTML_JS = """() => { const t = [];
+        document.querySelectorAll('table').forEach(tb => { tb.querySelectorAll('tr').forEach(r =>
+          t.push([...r.children].map(c => c.innerText.replace(/\\s+/g, ' ').trim()).join('   '))); t.push(''); });
+        return (document.body ? document.body.innerText : '').replace(/\\t/g, '   ') + '\\n\\n' + t.join('\\n'); }"""
+    HTML_MARKER = re.compile(r"leistungspreis|arbeitspreis|netznutzungsentgelt|netzentgelt", re.I)
+    HTML_EINHEIT = re.compile(r"€\s*/\s*kw|ct\s*/\s*kwh|cent\s*/\s*kwh|euro\s*/\s*kw", re.I)
+
+    async def html_speichern(self, page, url: str, a: Auftrag) -> bool:
+        """Preise stehen manchmal als Tabelle direkt in der Webseite (kein PDF). Dann den Seitentext (Tabellen spaltentreu)
+        wie ein Dokument im Zwischenspeicher ablegen: <hash>.html + <hash>.url. True, wenn die Seite nach Preisen aussieht."""
+        try:
+            text = await page.evaluate(self.HTML_JS)
+        except Exception:
+            return False
+        if not text or len(text) < 300 or len(self.HTML_MARKER.findall(text)) < 2 or len(self.HTML_EINHEIT.findall(text)) < 3:
+            return False
+        if len(re.findall(r"\d+[.,]\d+", text)) < 8:
+            return False
+        ziel_dir = self.cache / a.key
+        ziel_dir.mkdir(parents=True, exist_ok=True)
+        h = hashlib.sha1(url.encode()).hexdigest()[:12]
+        (ziel_dir / f"{h}.html").write_text(text[:400_000], encoding="utf-8")
+        (ziel_dir / f"{h}.url").write_text(url)
+        return True
+
     # ------------------------------------------------------------ Dokumente
     async def herunterladen(self, ctx_request, url: str, a: Auftrag, referer: str = "") -> tuple[Path | None, str]:
         ziel_dir = self.cache / a.key
@@ -246,7 +272,7 @@ class Crawler:
             pfad.write_bytes(lokal.read_bytes())
             (ziel_dir / f"{h}.url").write_text(url)
             return pfad, ""
-        for endung in ("pdf", "xlsx", "xls"):       # nicht die Begleitdatei <hash>.url
+        for endung in ("pdf", "xlsx", "xls", "html"):  # nicht die Begleitdatei <hash>.url; html = Preistabelle aus einer Webseite
             vorhanden = ziel_dir / f"{h}.{endung}"
             if vorhanden.exists():
                 return vorhanden, ""
@@ -453,6 +479,8 @@ class Crawler:
                 continue
             seiten_ok += 1
             aktuell = page.url
+            if not self.offline and await self.html_speichern(page, aktuell, a):
+                dok_merken(aktuell, "Preisblatt Netzentgelte Strom Netznutzung", "Preise als Tabelle in der Webseite", aktuell)
             if tiefe == 0:
                 domains.add(basis_domain(aktuell))
                 domains.add(basis_domain(url))

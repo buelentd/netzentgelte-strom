@@ -74,6 +74,8 @@ class Ergebnis:
 
 def text_aus_datei(pfad: Path) -> list[str]:
     """Liefert eine Liste von Seiten (bzw. Tabellenblättern) als spaltentreuen Text."""
+    if pfad.suffix.lower() == ".html":      # Preistabelle aus einer Webseite (vom Crawler als Text abgelegt)
+        return [pfad.read_text(encoding="utf-8", errors="replace")]
     daten = pfad.read_bytes()[:8]
     if daten.startswith(b"%PDF"):
         return pdf_seiten(pfad)
