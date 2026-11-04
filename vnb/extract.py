@@ -550,7 +550,8 @@ def tabellen_lesen(seiten: list[str]) -> Ergebnis:
     # BDEW-Artikel-IDs (1-01-7-001 usw.) sind eindeutig und haben Vorrang vor der Tabellenerkennung
     artikel, gruende = artikel_lesen(zeilen)
     genutzt = False
-    for eb, ziel, felder in (("NS", erg.ns, FELDER), ("MSNS", erg.msns, FELDER), ("SLP", erg.slp, ("ap", "gp"))):
+    for eb, ziel, felder in (("NS", erg.ns, FELDER), ("MSNS", erg.msns, FELDER), ("SLP", erg.slp, ("ap", "gp")),
+                             ("MS", erg.ms, FELDER), ("HSMS", erg.hsms, FELDER)):
         werte = artikel.get(eb, {})
         if werte and all(werte.get(f) is not None for f in felder):
             ziel.clear()
@@ -581,6 +582,10 @@ ARTIKEL_FELD = {
     ("1", "7", "003"): ("NS", "lp_ueber_2500"), ("1", "7", "004"): ("NS", "ap_ueber_2500"),
     ("1", "6", "001"): ("MSNS", "lp_unter_2500"), ("1", "6", "002"): ("MSNS", "ap_unter_2500"),
     ("1", "6", "003"): ("MSNS", "lp_ueber_2500"), ("1", "6", "004"): ("MSNS", "ap_ueber_2500"),
+    ("1", "5", "001"): ("MS", "lp_unter_2500"), ("1", "5", "002"): ("MS", "ap_unter_2500"),
+    ("1", "5", "003"): ("MS", "lp_ueber_2500"), ("1", "5", "004"): ("MS", "ap_ueber_2500"),
+    ("1", "4", "001"): ("HSMS", "lp_unter_2500"), ("1", "4", "002"): ("HSMS", "ap_unter_2500"),
+    ("1", "4", "003"): ("HSMS", "lp_ueber_2500"), ("1", "4", "004"): ("HSMS", "ap_ueber_2500"),
     ("2", "0", "001"): ("SLP", "gp"), ("2", "0", "002"): ("SLP", "ap"),
 }
 BEREICH = {"LP": (0.5, 400.0), "AP": (0.05, 30.0), "GP": (0.0, 500.0)}
