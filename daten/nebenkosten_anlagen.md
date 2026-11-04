@@ -37,3 +37,17 @@ Die Quellen sind überwiegend Ratgeberportale und Foren, keine amtliche Statisti
 ## Offen, nur mit Angeboten zu klären
 Kran, Dachfanggerüst, Gebühren der Berliner Bauaufsicht, Brandschutzgutachten, Löschanlage, fertiges Fundament.
 Vorschlag: bei zwei bis drei Fachbetrieben je Posten ein Angebot erfragen oder öffentliche Gebührenverordnung / HOAI-Honorartafeln auswerten.
+
+## Gerüst nach Gebäudehöhe (Stand 04.11.2026)
+
+Gerüstfläche in m² = Länge der Gerüstseite × Traufhöhe; Preis = Fläche × Preis je m² (4 Wochen mit Auf- und Abbau und Miete).
+
+| Traufhöhe | Dachart | Absturzsicherung | Preis je m² | Quelle |
+|---|---|---|---|---|
+| bis 2 m | Flachdach, sehr niedrige Gebäude | Randsicherung oder Anschlagpunkte, meist kein Gerüst | **offen** | [Baunetzwissen: PV im Bestand](https://www.baunetzwissen.de/flachdach/fachwissen/absturzsicherungen/arbeitsschutz-bei-der-installation-von-photovoltaik-im-bestand-8044116) |
+| über 2 m bis 5 m | Steildach, normales Haus ab Erdgeschoss | Gerüst bis zur Traufkante, Geländerholm, Zwischenholm, Bordbrett | **8 bis 15 €, Mitte 11,50 €** | [photovoltaik.info](https://www.photovoltaik.info/geruestkosten-pv-angebot/) |
+| über 5 m (etwa dritte Etage) | Steildach | Gerüst mit Treppenturm (TRBS 2121 Teil 2) | **offen** | [photovoltaik.info: Arbeitssicherheit](https://www.photovoltaik.info/arbeitssicherheit-pv-montage-geruest-absturzsicherung/) |
+
+Schwelle der Pflicht: 2 m nach [photovoltaik.info](https://www.photovoltaik.info/arbeitssicherheit-pv-montage-geruest-absturzsicherung/) und [DGUV Information 203-080](https://www.umwelt-online.de/recht/arbeitss/uvv/i200/203_080in.htm), 3 m nach [Baunetzwissen](https://www.baunetzwissen.de/flachdach/fachwissen/absturzsicherungen/vorschriften-fuer-sicherungssysteme-156153). Nicht geklärt, vor der Umsetzung gegen den Wortlaut der DGUV Vorschrift 38 prüfen.
+
+Beispiel der Quelle: 12 m × 6 m = 72 m², also 576 bis 1.080 €. Gegenprobe: Einfamilienhaus 1.200 bis 2.000 €, Kleinanlagen 90 bis 140 € je kWp.
