@@ -73,7 +73,6 @@ nr;netzbetreiber;website;status;fehlt;vorhanden;grund;quelle_url
 370;Sömmerdaer Energieversorgung GmbH;http://www.sev-soemmerda.de/;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.sev-soemmerda.de/soemmerdaGips/Soemmerda/EnwgTool/Stromnetz/Netzzugang__Entgelte/Preisblaetter_Lieferantenvertrag/Anlage-e-Preisblatt-Netzentgelte-Strom-ab-01.01.2026.pdf
 386;Stadtwerke Arnstadt Netz GmbH ＆ Co. KG;www.arnstadt-netz.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.arnstadt-netz.de/fileadmin/user_upload/Stadtwerke_Arnstadt_Netz/Elektrizitaetsnetz/Netznutzung/Netzentgelte/2025-12-17_Preisblatt_SWANKG_NN_Strom_ab_01-01-2026_endgueltig.pdf
 393;Stadtwerke Bad Dürkheim GmbH;www.sw-duerkheim.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://sw-duerkheim.de/de/Portfolio/Netze1/Stromnetz/Netzentgelte-Strom-der-Stadtwerke-Bad-Duerkheim-GmbH-zum-01.01.2026-endgueltig.pdf
-395;Stadtwerke Bad Herrenalb GmbH;www.stw-badherrenalb.de;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (40 Seiten durchsucht);
 396;Stadtwerke Bad Hersfeld GmbH;www.stadtwerke-hef.de;pruefen;RLM;SLP;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden";https://www.stadtwerke-hef.de/de/Kopfnavigation/Netze1/Stromnetz/Preisblatt-Strom-2026-SW-Bad-Hersfeld-GmbH-endgueltig.pdf
 397;Stadtwerke Bad Kissingen GmbH;www.stwkiss.de;pruefen;RLM;;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig";https://stwkiss.de/download/endgueltiges-preisblatt-netzentgelt-strom/?tmstv=1793751338
 401;Stadtwerke Bad Reichenhall KU;www.stadtwerke-bad-reichenhall.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.stadtwerke-bad-reichenhall.de/de/Kopfnavigation1/Netz/PreisblattNNE-Strom20260101.pdf
@@ -181,7 +180,6 @@ nr;netzbetreiber;website;status;fehlt;vorhanden;grund;quelle_url
 801;Überlandzentrale Wörth/I.-Altheim Netz AG;www.uezw-strom.de;pruefen;RLM;SLP;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden";https://www.uezw-energie.de/wp-content/uploads/2025/12/Preisblatt-Netznutzung_2026.pdf
 805;Vereinigte Stadtwerke Netz GmbH;www.vereinigte-stadtwerke.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.vereinigte-stadtwerke.de/wp-content/uploads/2026/10/Preisblatt_Netzentgelte-Strom_Stand-01.01.2026.pdf
 809;VersorgungsBetriebe Elbe GmbH;https://www.versorgungsbetriebe-elbe.net;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.versorgungsbetriebe-elbe.net/files/uploads/2026/preise-strom-nne-vbe-ab-01-01-2026.pdf
-818;Vorarlberger Energienetze GmbH;www.vorarlbergnetz.de;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (10 Seiten durchsucht);
 824;werkkraft GmbH;www.werkkraft.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.werkkraft.de/wp-content/uploads/2025/12/20251222_werkkraft-GmbH_Preisblatt_2026.pdf
 827;Westenthanner Energieversorgung GmbH;www.ew-westenthanner.de;kein_preisblatt;Preisblatt;;1 Dokument(e) geprüft: Jahr 2026 nicht im Dokument;
 828;WiDe Flex Bau + Service GmbH;www.wideflex.de;kein_preisblatt;Preisblatt;;kein Preisblatt-Link gefunden (12 Seiten durchsucht);
