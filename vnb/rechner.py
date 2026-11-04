@@ -71,7 +71,7 @@ class Tarif:
             for f in RLM_FELDER:
                 art, grenze = f.split("_", 1)
                 einheit = "eur_kw_jahr" if art == "lp" else "ct_kwh"
-                w[f] = _de(z.get(f"{prefix}_{art}_{grenze}h_{einheit}"))
+                w[f] = _de(z.get(f"{prefix}_{art}_{grenze.replace('ueber', 'ab')}h_{einheit}"))
             return w if all(v is not None for v in w.values()) else {}
         return cls(netzbetreiber=z.get("netzbetreiber", ""), ns=ebene("ns"), msns=ebene("msns"),
                    slp_ap=_de(z.get("slp_ap_ct_kwh")), slp_gp=_de(z.get("slp_grundpreis_eur_jahr")),
