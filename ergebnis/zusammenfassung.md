@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 16:14, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 16:18, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 339 | 41% |
-| pruefen | 429 | 52% |
+| ok | 338 | 41% |
+| pruefen | 430 | 52% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 28 | 3% |
 | robots | 18 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 338,  1
+Preisstand (nur ok): endgültig 337,  1
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 14,98 ct/kWh (Stadtwerke Eberbach GmbH)
-- Median: 7,24 ct/kWh (n = 523)
+- Median: 7,25 ct/kWh (n = 522)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,80 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,36 ct/kWh (n = 592)
+- Median: 6,36 ct/kWh (n = 591)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 43,80 €/kW/a (Butzbacher Netzbetrieb GmbH ＆ Co. KG)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 149,62 €/kW/a (n = 592)
+- Median: 149,75 €/kW/a (n = 591)
 
 ## Datenherkunft
 
@@ -57,9 +57,9 @@ Preisstand (nur ok): endgültig 338,  1
 
 - 221. Gemeindewerke Georgensgmünd: 
 
-## Restfälle (492)
+## Restfälle (493)
 
-### pruefen (429)
+### pruefen (430)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -210,6 +210,7 @@ Preisstand (nur ok): endgültig 338,  1
 - 304. Mainfranken Netze GmbH: 
 - 306. Mainsite GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 310. MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP: mehrere Arbeitspreise (10.58, 0.029); RLM-W
+- 311. Meißener Stadtwerke GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 313. Mittelhessen Netz GmbH: 
 - 315. MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 316. Nahwerk-Energie GmbH ＆ Co. KG: 1 Dokument(e) geprüft: fiktive Entgelte

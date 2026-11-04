@@ -10,7 +10,6 @@
 91;EHINGER ENERGIE GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=24,70/6,82/174,57/0,83 | msns=24,82/6,85/175,40/0,83 | ns=28,77/8,04/206,78/0,92
 93;ELE Verteilnetz GmbH;pruefen;ms,ns,hsms;;ms=4,45/5,89/132,20/0,78 | ns=11,18/7,22/111,43/3,21 | hsms=3,91/5,09/125,66/0,22
 100;Elektrizitäts-Genossenschaft Tacherting-Feichten eG;pruefen;ms,msns,ns;;ms=11,66/4,89/110,91/0,92 | msns=11,63/4,96/112,48/0,93 | ns=10,13/5,67/111,47/1,62
-103;Elektrizitätsgenossenschaft e.G. Hasbergen;pruefen;ms,msns,ns;;ms=7,03/8,03/197,24/0,42 | msns=10,59/8,24/161,91/2,18 | ns=13,34/8,53/139,58/3,48
 105;Elektrizitätsgenossenschaft Karlstein eG;ok;msns,ns;ms;ms=10,13/5,85/145,40/0,44 | msns=14,52/6,98/159,00/1,20 | ns=19,51/8,36/178,13/2,02
 108;Elektrizitätsgenossenschaft Ohlstadt eG;pruefen;ms,msns,ns;;ms=13,42/6,44/136,98/1,50 | msns=17,31/6,83/143,94/1,76 | ns=28,38/9,60/169,40/3,96
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;ok;ms,msns,ns;;ms=16,85/6,06/143,59/1,00 | msns=17,26/6,69/139,30/1,81 | ns=17,81/6,79/135,56/2,08
@@ -46,13 +45,12 @@
 298;Leitungspartner GmbH;pruefen;msns,ns;;msns=15,13/6,31/155,50/0,69 | ns=15,86/7,32/120,00/3,16
 303;LSW Netz GmbH ＆ Co. KG;ok;ms,msns,ns,hsms;;ms=18,46/5,42/117,00/1,47 | msns=26,08/5,66/85,83/3,27 | ns=32,15/6,22/91,41/3,85 | hsms=11,22/4,41/95,41/1,05
 307;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;ms,msns,ns;;ms=19,12/4,85/120,09/0,81 | msns=23,19/5,23/122,95/1,24 | ns=26,11/5,49/124,46/1,56
-311;Meißener Stadtwerke GmbH;ok;ms,msns,ns;;ms=7,03/8,03/197,24/0,42 | msns=10,59/8,24/161,91/2,18 | ns=13,34/8,53/139,58/3,48
 319;Netzbetrieb Hirschberg GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=22,04/6,02/147,68/0,99 | msns=26,06/7,24/182,47/0,99 | ns=50,13/10,27/225,21/3,27
 325;Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG;ok;ms,msns,ns;;ms=6,61/5,95/148,04/0,30 | msns=8,55/7,68/190,63/0,39 | ns=9,95/8,37/152,83/2,66
 332;netzplus GmbH ＆ Co. KG;pruefen;msns,ns;;msns=2,35/6,42/134,31/1,14 | ns=2,67/6,79/134,77/1,51
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;ok;ms,msns,ns;;ms=21,23/8,77/238,59/0,08 | msns=22,17/9,23/248,97/0,15 | ns=24,47/9,15/185,77/2,70
 344;nvb Nordhorner Versorgungsbetriebe GmbH;pruefen;ms,msns,ns;;ms=17,16/4,85/84,84/2,14 | msns=18,29/5,34/87,29/2,59 | ns=18,55/6,37/87,77/3,60
-375;Stadtwerk Haßfurt GmbH;pruefen;msns,ns;ms;ms=12,00/4,22/102,72/0,48 | msns=9,89/5,10/116,27/0,84 | ns=10,11/5,79/134,16/0,82
+375;Stadtwerk Haßfurt GmbH;pruefen;ms,msns,ns;;ms=9,12/4,22/102,72/0,48 | msns=9,89/5,10/116,27/0,84 | ns=10,11/5,79/134,16/0,82
 376;Stadtwerk Tauberfranken GmbH;ok;ms,msns,ns;;ms=8,03/8,43/199,33/0,78 | msns=7,26/10,75/270,46/0,23 | ns=9,94/11,39/213,84/3,23
 385;Stadtwerke Ansbach GmbH;pruefen;ms,msns,ns;;ms=51,27/5,12/148,49/1,23 | msns=52,21/7,31/224,53/0,42 | ns=63,11/10,10/273,57/1,68
 389;Stadtwerke Bad Aibling;pruefen;ms,msns,ns;;ms=7,57/8,42/193,12/1,00 | msns=11,24/8,84/175,48/2,27 | ns=12,62/8,97/174,05/2,51
@@ -77,7 +75,7 @@
 515;Stadtwerke Heilbad Heiligenstadt GmbH;pruefen;msns,ns;ms;ms=23,52/4,54/97,97/1,57 | msns=26,31/5,26/115,86/1,68 | ns=29,10/6,14/139,25/1,73
 517;Stadtwerke Heilsbronn;pruefen;ms,msns,ns;;ms=18,12/7,29/168,97/1,25 | msns=21,23/8,30/183,16/1,82 | ns=24,52/8,54/191,00/1,88
 526;Stadtwerke Homburg GmbH;ok;ms,msns,ns;;ms=18,04/6,41/153,36/0,99 | msns=23,18/8,70/221,04/0,79 | ns=27,16/9,60/227,45/1,59
-530;Stadtwerke Ingolstadt Netze GmbH;ok;msns,ns,hsms;ms;ms=12,45/3,99/107,32/0,20 | msns=6,65/6,01/122,36/1,38 | ns=7,25/6,32/115,50/1,99 | hsms=12,45/3,99/107,32/0,20
+530;Stadtwerke Ingolstadt Netze GmbH;pruefen;ms,msns,ns,hsms;;ms=6,11/5,97/128,13/1,09 | msns=6,65/6,01/122,36/1,38 | ns=7,25/6,32/115,50/1,99 | hsms=12,45/3,99/107,32/0,20
 531;Stadtwerke Iserlohn GmbH;pruefen;msns,ns;ms;ms=7,43/5,39/139,18/0,12 | msns=12,43/7,20/169,18/0,93 | ns=14,94/8,01/181,69/1,34
 534;Stadtwerke Jülich GmbH;pruefen;msns,ns;ms;ms=16,29/5,27/141,54/0,26 | msns=24,93/6,22/152,43/1,12 | ns=28,50/6,41/150,50/1,53
 537;Stadtwerke Kempen GmbH;pruefen;ns;ms,msns;ms=15,64/8,34/195,94/1,13 | msns=16,94/9,02/185,66/2,28 | ns=18,43/9,40/170,64/3,31
@@ -86,7 +84,7 @@
 562;Stadtwerke Lutherstadt Wittenberg GmbH;ok;msns,ns;ms;ms=32,21/4,90/130,60/0,96 | msns=39,53/5,38/138,13/1,43 | ns=64,08/8,03/200,03/2,59
 569;Stadtwerke Merseburg GmbH;ok;msns,ns,hsms;ms;ms=36,75/5,42/144,35/1,11 | msns=54,22/6,78/177,64/1,84 | ns=64,79/12,96/285,23/4,14 | hsms=21,41/2,70/79,58/0,38
 570;Stadtwerke Metzingen;pruefen;ms,msns,ns;;ms=24,75/7,52/187,92/0,99 | msns=26,61/7,53/189,86/1,00 | ns=30,34/7,62/161,18/2,38
-572;Stadtwerke Mosbach GmbH;ok;msns,ns,hsms;ms;ms=6,73/5,46/129,73/0,54 | msns=14,42/7,74/175,86/1,28 | ns=19,40/10,25/230,71/1,80 | hsms=6,73/5,46/129,73/0,54
+572;Stadtwerke Mosbach GmbH;pruefen;ms,msns,ns,hsms;;ms=9,17/5,55/133,62/0,57 | msns=14,42/7,74/175,86/1,28 | ns=19,40/10,25/230,71/1,80 | hsms=6,73/5,46/129,73/0,54
 575;Stadtwerke Mühlheim am Main GmbH;pruefen;msns,ns;ms;ms=31,62/6,40/142,62/1,96 | msns=31,87/6,49/144,87/1,97 | ns=33,79/6,60/142,54/2,25
 584;Stadtwerke Neuruppin GmbH;ok;ms,msns,ns;;ms=27,59/4,74/112,77/1,34 | msns=34,93/5,38/121,01/1,94 | ns=45,96/6,41/135,52/2,82
 592;Stadtwerke Niesky GmbH;ok;ms,msns,ns;;ms=31,79/7,63/184,45/1,52 | msns=43,74/9,16/206,82/2,63 | ns=56,05/10,38/217,85/3,91
