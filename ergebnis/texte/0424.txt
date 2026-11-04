@@ -1,0 +1,273 @@
+https://www.biosphaeren-stadtwerke.de/app/uploads/sites/4/2025/12/SWB_endgueltige-Netzentgelte-Strom-ab-01.01.2026.pdf
+
+                                               Stadtwerke Bliestal GmbH
+
+                               Netzentgelte für den Netzzugang nach § 20 Abs. 1 Satz 1 EnWG
+                               zum Elektrizitätsversorgungsnetz der Stadtwerke Bliestal GmbH
+
+                                                   Gültig ab 01. Januar 2026
+
+
+1. Entgelte des Jahresleistungspreissystems
+
+
+Mittelspannung
+Jahresbenutzungsdauer < 2.500 Stunden                Preise elektr. Datenaustausch                Preise nach Strom NEV
+Artikel-ID 1-01-5-001       Jahresleistungspreis                    0,04835616438 € / kW * Tag                     17,65 € / kW
+Artikel-ID 1-01-5-002       Jahresarbeitspreis                              0,0902 € / kWh                          9,02 ct / kWh
+Jahresbenutzungsdauer >= 2.500 Stunden
+Artikel-ID 1-01-5-003       Jahresleistungspreis                     0,50315068493 € / kW * Tag                  183,65 € / kW
+Artikel-ID 1-01-5-004       Jahresarbeitspreis                               0,0238 € / kWh                        2,38 ct / kWh
+
+Umspannung
+Jahresbenutzungsdauer < 2.500 Stunden                Preise elektr. Datenaustausch                Preise nach Strom NEV
+Artikel-ID 1-01-6-001       Jahresleistungspreis                    0,06287671233 € / kW * Tag                     22,95 € / kW
+Artikel-ID 1-01-6-002       Jahresarbeitspreis                              0,0991 € / kWh                          9,91 ct / kWh
+Jahresbenutzungsdauer >= 2.500 Stunden
+Artikel-ID 1-01-6-003       Jahresleistungspreis                     0,53602739726 € / kW * Tag                  195,65 € / kW
+Artikel-ID 1-01-6-004       Jahresarbeitspreis                               0,0301 € / kWh                        3,01 ct / kWh
+
+Niederspannung
+Jahresbenutzungsdauer < 2.500 Stunden                Preise elektr. Datenaustausch                Preise nach Strom NEV
+Artikel-ID 1-01-7-001       Jahresleistungspreis                    0,07224657534 € / kW * Tag                     26,37 € / kW
+Artikel-ID 1-01-7-002       Jahresarbeitspreis                              0,1040 € / kWh                         10,40 ct / kWh
+Jahresbenutzungsdauer >= 2.500 Stunden
+Artikel-ID 1-01-7-003       Jahresleistungspreis                     0,54356164384 € / kW * Tag                  198,40 € / kW
+Artikel-ID 1-01-7-004       Jahresarbeitspreis                               0,0352 € / kWh                        3,52 ct / kWh
+
+Im Standardfall sind die Spannungsebene der Entnahmestelle und die der Messung identisch. Bei einer Entnahmestelle in der
+Mittelspannung mit niederspannungsseitiger Messung, werden die bei der Messung nicht erfassten Umspannverluste durch einen
+Korrekturfaktor in Höhe von 3,0% auf das niederspannungsseitige Messergebnis berücksichtigt.
+
+
+
+Jahresleistungspreissystem Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a
+EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+                                                     Preise elektr. Datenaustausch                Preise nach Strom NEV
+Artikel-ID 1-01-9-001        Niederspannung                         -0,41328767123 € / Tag                      -150,85 € / Jahr
+                             Umspannung Mittel-/
+Artikel-ID 1-01-9-002                                                0,00000000000 € / Tag                         0,00 € / Jahr
+                             Niederspannung
+
+
+
+
+Stand 12.12.2025                                       Stadtwerke Bliestal GmbH                                              1 von 5
+
+2. Entgelte des Grundpreis-/ Arbeitspreissystems
+
+Grundpreis für Arbeitspreissystem
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-001    Grundpreis Standard                                                            0,19 € / Tag                    69,35 € / Zähler
+
+Arbeitspreis Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere Kategorie fällt) sowie für Marktlokationen, die nach Modul 1
+und/oder 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und
+steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A abgerechnet werden
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-002    Arbeitspreis Standard                                                        0,1115 € / kWh                    11,15 ct / kWh
+
+Arbeitspreis Kategorie steuerbare Speicherheizung, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-003    Arbeitspreis SPH                                                             0,0360 € / kWh                     3,60 ct / kWh
+
+Arbeitspreis Kategorie steuerbare Wärmepumpe, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-004    Arbeitspreis WP                                                              0,0360 € / kWh                     3,60 ct / kWh
+
+Arbeitspreis Kategorie steuerbare Elektromobilität, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-006    Arbeitspreis Elektromobilität                                                0,0360 € / kWh                     3,60 ct / kWh
+
+Arbeitspreis der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-007    Arbeitspreis Verbrauchseinrichtung § 14a EnWG                                0,0360 € / kWh                     3,60 ct / kWh
+
+Grundpreis der Kategorie steuerbare Speicherheizung, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-008    Grundpreis SPH                                                                 0,19 € / Tag                    69,35 €
+
+Grundpreis der Kategorie steuerbare Wärmepumpe, insbesondere nach § 14a EnWG Grundpreis
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-009    Grundpreis WP                                                                  0,00 € / Tag                     0,00 €
+
+Grundpreis der Kategorie steuerbare Elektromobilität, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-010    Grundpreis Elektromobilität                                                    0,00 € / Tag                     0,00 €
+
+Arbeitspreis der Kategorie steuerbare Speicherheizung mit erweiterter Steuerbarkeit, insbesondere nach § 14a
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-011    Arbeitspreis SPH erweitert                                                   0,0360 € / kWh                     3,60 ct / kWh
+
+Arbeitspreis der Kategorie steuerbare Wärmepumpe mit erweiterter Steuerbarkeit, insbesondere nach § 14a
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-012    Arbeitspreis WP erweitert                                                    0,0360 € / kWh                     3,60 ct / kWh
+
+Arbeitspreis der Kategorie steuerbare Elektromobilität mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-013    Arbeitspreis Elektromobilität erweitert                                      0,0360 € / kWh                     3,60 ct / kWh
+
+Grundpreis der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-014    Grundpreis Verbrauchseinrichtung §14a EnWG                                     0,19 € / Tag                    69,35 €
+
+Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren
+                                                                                                                                       1)
+Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-015    Reduzierung nach Modul 1 sowie nach Modul 3                         -0,41328767123 € / Tag                   -150,85 €
+                         i.V.m. Modul 1
+Arbeitspreis nach Modul 2 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren
+Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A 2)
+                                                                               Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-02-0-016    Arbeitspreis Modul 2                                                         0,0446 € / kWh                     4,46 ct / kWh
+
+
+
+
+Stand 12.12.2025                                                   Stadtwerke Bliestal GmbH                                                           2 von 5
+
+Arbeitspreis HT nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren
+Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A 1)
+                                                                            Preise elektr. Datenaustausch               Preise nach Strom NEV
+Artikel-ID 1-02-0-017         Arbeitspreis HT Modul 3                                              0,1276 € / kWh                        12,76 ct / kWh
+                              Zeiten: 11:30 - 20:30 Uhr
+                              für Quartal 1 und 4
+
+Arbeitspreis NT nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren
+Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A 1)
+                                                                            Preise elektr. Datenaustausch               Preise nach Strom NEV
+Artikel-ID 1-02-0-018         Arbeitspreis NT Modul 3                                              0,0446 € / kWh                         4,46 ct / kWh
+                              Zeiten: 00:00 - 06:00 Uhr
+                              für Quartal 1 und 4
+
+         1) Das Modul 1 kann von Betreibern steuerbarer Verbrauchseinrichtungen ausgewählt werden, die ab dem 01.01.2024 eine steuerbare
+            Verbrauchseinrichtung an das Netz des Verteilnetzbetreibers anschließen.
+            Das Modul 3 kann nur in Verbindung mit Modul 1 von Betreibern steuerbarer Verbrauchseinrichtungen ausgewählt werden. Die Anwendung von
+            Modul 3 ist gemäß den Festlegungen der BNetzA BK6-22-300 und BK8-22/010-A erst ab dem 01.04.2025 möglich.
+
+         2) Das Modul 2 entspricht einer prozentualen Reduzierung des Arbeitspreises um 60%. Das Modul 2 kann von Betreibern steuerbarer
+            Verbrauchseinrichtungen ausgewählt werden, die ab dem 01.01.2024 eine steuerbare Verbrauchseinrichtung an das Netz des
+            Verteilnetzbetreibers anschließen. Voraussetzung für die Anwendung von Modul 2 bei der steuerbaren Verbrauchseinrichtung ist eine
+            Messeinrichtung, die ausschließlich diesen Verbrauch misst.
+
+
+
+
+3. Entgelte des Monatsleistungspreissystems
+
+
+Monatspreissystem nach § 19 Abs. 1 Strom NEV für Letztverbraucher mit einer zeitlich begrenzten hohen Leistungsaufnahme, der in der übrigen Zeit eine
+deutlich geringere oder keine Leistungsaufnahme gegenübersteht.
+
+Mittelspannung
+                                                                            Preise elektr. Datenaustausch               Preise nach Strom NEV
+Artikel-ID 1-03-5-001         Monatsleistungspreis MS für 28 Tage                          1,09321428571 € / kW * Tag                    30,61 € / kW
+Artikel-ID 1-03-5-002         Monatsleistungspreis MS für 29 Tage                          1,05551724138 € / kW * Tag                    30,61 € / kW
+Artikel-ID 1-03-5-003         Monatsleistungspreis MS für 30 Tage                          1,02033333333 € / kW * Tag                    30,61 € / kW
+Artikel-ID 1-03-5-004         Monatsleistungspreis MS für 31 Tage                          0,98741935484 € / kW * Tag                    30,61 € / kW
+Artikel-ID 1-03-5-005         Monatsarbeitspreis MS                                                0,0238 € / kWh                         2,38 ct / kWh
+
+Umspannung
+                                                                            Preise elektr. Datenaustausch               Preise nach Strom NEV
+Artikel-ID 1-03-6-001         Monatsleistungspreis MS/NS für 28 Tage                       1,16464285714 € / kW * Tag                    32,61 € / kW
+Artikel-ID 1-03-6-002         Monatsleistungspreis MS/NS für 29 Tage                       1,12448275862 € / kW * Tag                    32,61 € / kW
+Artikel-ID 1-03-6-003         Monatsleistungspreis MS/NS für 30 Tage                       1,08700000000 € / kW * Tag                    32,61 € / kW
+Artikel-ID 1-03-6-004         Monatsleistungspreis MS/NS für 31 Tage                       1,05193548387 € / kW * Tag                    32,61 € / kW
+Artikel-ID 1-03-6-005         Monatsarbeitspreis MS/NS                                             0,0301 € / kWh                         3,01 ct / kWh
+
+Niederspannung
+                                                                            Preise elektr. Datenaustausch               Preise nach Strom NEV
+Artikel-ID 1-03-7-001         Monatsleistungspreis NS für 28 Tage                          1,18107142857 € / kW * Tag                    33,07 € / kW
+Artikel-ID 1-03-7-002         Monatsleistungspreis NS für 29 Tage                          1,14034482759 € / kW * Tag                    33,07 € / kW
+Artikel-ID 1-03-7-003         Monatsleistungspreis NS für 30 Tage                          1,10233333333 € / kW * Tag                    33,07 € / kW
+Artikel-ID 1-03-7-004         Monatsleistungspreis NS für 31 Tage                          1,06677419355 € / kW * Tag                    33,07 € / kW
+Artikel-ID 1-03-7-005         Monatsarbeitspreis NS                                                0,0352 € / kWh                         3,52 ct / kWh
+
+
+
+
+Stand 12.12.2025                                                    Stadtwerke Bliestal GmbH                                                        3 von 5
+
+ 4. Entgelte des Messstellenbetriebs bei kME
+
+
+Mittelspannung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-5-001   MSB bei kME mit registrierender Last-/Einspeisemessung                        1,08493150685 € / Tag                    396,00 €
+Artikel-ID 1-06-5-002   Wandlersatz für MSB bei kME                                                   0,59178082192 € / Tag                    216,00 €
+
+Niederspannung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-7-001   MSB bei kME mit registrierender Last-/Einspeisemessung                        1,08493150685 € / Tag                    396,00 €
+Artikel-ID 1-06-7-002   Wandlersatz für MSB bei kME                                                   0,06575342466 € / Tag                     24,00 €
+Artikel-ID 1-06-7-003   MSB bei kME Schaltgerät/Rundsteuerempfänger                                   0,02279452055 € / Tag                      8,32 €
+
+bei jährlicher Ablesung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-7-004   MSB bei kME Einrichtungszähler Eintarif                                       0,01808219178 € / Tag                      6,60 €
+Artikel-ID 1-06-7-005   MSB bei kME Einrichtungszähler Zweitarif                                      0,02734246575 € / Tag                      9,98 €
+Artikel-ID 1-06-7-006   MSB bei kME Zweirichtungszähler Eintarif                                      0,01808219178 € / Tag                      6,60 €
+Artikel-ID 1-06-7-007   MSB bei kME Zweirichtungszähler Zweitarif                                     0,02734246575 € / Tag                      9,98 €
+Artikel-ID 1-06-7-009   MSB bei kME Prepaymentzähler                                                            0,19 € / Tag                    69,35 €
+
+bei halbjährlicher Ablesung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-7-012   MSB bei kME Einrichtungszähler Eintarif                                       0,02400000000 € / Tag                      8,76 €
+Artikel-ID 1-06-7-013   MSB bei kME Einrichtungszähler Zweitarif                                      0,04180821918 € / Tag                     15,26 €
+Artikel-ID 1-06-7-014   MSB bei kME Zweirichtungszähler Eintarif                                      0,02400000000 € / Tag                      8,76 €
+Artikel-ID 1-06-7-015   MSB bei kME Zweirichtungszähler Zweitarif                                     0,04180821918 € / Tag                     15,26 €
+Artikel-ID 1-06-7-017   MSB bei kME Prepaymentzähler                                                  0,25219178082 € / Tag                     92,05 €
+
+bei vierteljährlicher Ablesung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-7-020   MSB bei kME Einrichtungszähler Eintarif                                       0,03649315068 € / Tag                     13,32 €
+Artikel-ID 1-06-7-021   MSB bei kME Einrichtungszähler Zweitarif                                      0,07041095890 € / Tag                     25,70 €
+Artikel-ID 1-06-7-022   MSB bei kME Zweirichtungszähler Eintarif                                      0,03649315068 € / Tag                     13,32 €
+Artikel-ID 1-06-7-023   MSB bei kME Zweirichtungszähler Zweitarif                                     0,07041095890 € / Tag                     25,70 €
+Artikel-ID 1-06-7-025   MSB bei kME Prepaymentzähler                                                  0,38345205479 € / Tag                    139,96 €
+
+bei monatlicher Ablesung
+                                                                                       Preise elektr. Datenaustausch           Preise nach Strom NEV
+Artikel-ID 1-06-7-028   MSB bei kME Einrichtungszähler Eintarif                                       0,08580821918 € / Tag                     31,32 €
+Artikel-ID 1-06-7-029   MSB bei kME Einrichtungszähler Zweitarif                                      0,18547945205 € / Tag                     67,70 €
+Artikel-ID 1-06-7-030   MSB bei kME Zweirichtungszähler Eintarif                                      0,08580821918 € / Tag                     31,32 €
+Artikel-ID 1-06-7-031   MSB bei kME Zweirichtungszähler Zweitarif                                     0,18547945205 € / Tag                     67,70 €
+Artikel-ID 1-06-7-033   MSB bei kME Prepaymentzähler                                                  0,90164383562 € / Tag                    329,10 €
+
+
+
+
+Stand 12.12.2025                                                       Stadtwerke Bliestal GmbH                                                           4 von 5
+
+6. Konzessionsabgabe gem. KAV
+                                                                                                   Preise elektr. Datenaustausch                 Preise nach Strom NEV
+Artikel-ID    1-08-1-001   Konzessionsabgabe für Entnahme von Marktlokationen von                                         0,0061 € / kWh                           0,61 ct / kWh
+                           Tarifkunden in Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV
+Artikel-ID    1-08-3-001   Konzessionsabgabe für Entnahme von Marktlokationen von                                          0,0011 € / kWh                          0,11 ct / kWh
+                           Sondervertragskunden gem. § 2 Abs. 3 Satz 1 KAV
+Artikel-ID    1-08-4-001   Konzessionsabgabe für Entnahme von Marktlokationen von                                          0,0132 € / kWh                          1,32 ct / kWh
+                           Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV bis 25.000 Einwohner
+
+Für den Nachweis der Unterschreitung des Grenzpreises lt. § 2 Abs. 4 KAV bedarf es des Testats eines Wirtschaftsprüfers.
+
+
+
+
+7. Gesetzliche Umlagen
+
+
+Informationen zur KWK-Umlage, § 19-Umlage, Offshore-Umlage finden Sie unter:
+
+https://www.netztransparenz.de
+
+
+Die in diesem Preisblatt genannten Entgelte verstehen sich zzgl. Konzessionsabgabe gem. KAV, zzgl. sonstiger Steuern, Abgaben, Umlagen und sofern nicht anders ausgewiesen, der
+gesetzlichen Umsatzsteuer.
+
+
+
+
+Stand 12.12.2025                                                                  Stadtwerke Bliestal GmbH                                                                        5 von 5
+
+
