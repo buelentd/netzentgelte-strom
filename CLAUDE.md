@@ -88,3 +88,16 @@ weil die Claude-Code-Cloud-Umgebung Netzbetreiber-Websites und MaStR sperrt.
 ## Regel: HTML immer mitdenken (Festlegung Nutzer, 04.11.2026)
 
 Bei jeder Suche im Netz gelten HTML-Seiten genauso wie PDF und Excel: Preise können als Tabelle in einer Webseite, in einem Portal (EnWG-Tool, Netzveröffentlichung) oder auf einer sichtbaren Sitemap-Seite stehen. Das gilt für Preisblätter, Hochlastzeitfenster, Sitemaps und alles, was wir sonst suchen. Nie nur auf Dateiendungen (.pdf, .xlsx) oder XML-Sitemaps verlassen.
+
+
+## Regel: Erwartete Ebenen und fehlende Werte (Festlegung Nutzer, 04.11.2026)
+
+Es zählen nicht nur die Dokumente, sondern auch die fehlenden Werte. Für jeden Netzbetreiber und jede Ebene (MS, MS/NS, NS, HS/MS, SLP) wird festgehalten, warum ein Wert fehlt: `ergebnis/ebenen_erwartung.csv` (Skript `daten/ebenen_erwartung.py`, nach jedem Lauf neu erzeugen).
+
+- **gelesen**: alle vier Werte vorhanden.
+- **im_dokument_nicht_gelesen**: im Dokumenttext steht eine Zeile mit dem Ebenennamen und mindestens drei Zahlen, der Leser hat keinen Wert. Das ist eine Leser-Lücke und muss behoben werden.
+- **nicht_ausgewiesen**: Dokument vorhanden und gelesen, aber keine solche Zeile. Nur dann darf die Ebene leer bleiben, und das Ergebnis sagt es so ("nicht ausgewiesen"), es ist kein Fehler.
+- **kein_dokument**: Dokument fehlt. Die Veröffentlichung ist gesetzlich vorgeschrieben, das Dokument existiert also; es ist unsere Lücke und wird gesucht (PDF, Excel, HTML, Portale).
+- Es gilt: **Niederspannung und SLP hat jeder Netzbetreiber**; fehlen sie, ist es nie "nicht ausgewiesen", sondern ein Lese- oder Suchfehler.
+- **Mittelspannung und MS/NS** haben nicht alle Stadtwerke. Eine Ebene gilt erst als "nicht ausgewiesen", wenn das gelesene Dokument sie nicht nennt. HS/MS nur bei großen Netzbetreibern (Dokument nennt Hochspannung).
+- Ziel sind alle 831 Netzbetreiber mit allen Ebenen, die ihr Dokument ausweist. Sonderfälle (Industrie- und Arealnetze) bleiben in der Liste und werden als Sonderfall markiert.
