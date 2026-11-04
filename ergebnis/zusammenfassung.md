@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 04.11.2026 09:48, 831 Netzbetreiber bzw. Netzgebiete
+Stand 04.11.2026 10:52, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 423 | 51% |
-| pruefen | 323 | 39% |
-| kein_preisblatt | 30 | 4% |
-| blockiert | 30 | 4% |
+| pruefen | 319 | 38% |
+| kein_preisblatt | 32 | 4% |
+| blockiert | 32 | 4% |
 | robots | 24 | 3% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 423
+Preisstand (nur ok): unklar 244, endgültig 144, vorläufig 35
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 423
 
 - Minimum: 2,80 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,38 ct/kWh (n = 547)
+- Median: 6,38 ct/kWh (n = 546)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 53,56 €/kW/a (Hamburger Energienetze GmbH)
 - Maximum: 259,93 €/kW/a (C. Ensinger GmbH ＆ Co. KG)
-- Median: 149,75 €/kW/a (n = 547)
+- Median: 149,62 €/kW/a (n = 546)
 
 ## Datenherkunft
 
@@ -53,9 +53,291 @@ Preisstand (nur ok): endgültig 423
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
+## Status ok, aber Preisstand nicht endgültig (279)
+
+- 4. Avacon Netz GmbH: vorläufig
+- 8. Westfalen Weser Netz GmbH: vorläufig
+- 9. enercity Netz GmbH: vorläufig
+- 20. Netze Duisburg GmbH: vorläufig
+- 21. Bielefelder Netz GmbH: vorläufig
+- 24. Braunschweiger Netz GmbH: vorläufig
+- 34. Stuttgart Netze GmbH: vorläufig
+- 51. Abita Energie Otterberg GmbH: unklar
+- 53. Albstadtwerke GmbH: unklar
+- 54. Albwerk GmbH ＆ Co. KG: unklar
+- 55. AllgäuNetz GmbH ＆ Co. KG: unklar
+- 58. ASCANETZ GmbH: unklar
+- 61. Bad Honnef AG: unklar
+- 64. Bauer Netz GmbH ＆ Co. KG: unklar
+- 70. BTT Bauteam Tretzel GmbH: unklar
+- 72. C. Ensinger GmbH ＆ Co. KG: unklar
+- 78. DB Energie GmbH (Bahnstromnetz 16,7 Hz): unklar
+- 79. Dessauer Stromversorgung GmbH: unklar
+- 81. e-regio Netz GmbH: unklar
+- 85. E-Werk Wanfried von Scharfenberg GmbH ＆ Co. KG: unklar
+- 90. EGT Energie GmbH: unklar
+- 91. EHINGER ENERGIE GmbH ＆ Co. KG: unklar
+- 93. ELE Verteilnetz GmbH: unklar
+- 95. Elektra-Genossenschaft Effeltrich eG: unklar
+- 97. Elektrizitäts-Genossenschaft Rettenberg eG: unklar
+- 98. Elektrizitäts-Genossenschaft Röthenbach eG: unklar
+- 99. Elektrizitäts-Genossenschaft Schonstett eG: unklar
+- 107. Elektrizitätsgenossenschaft Oesterweg eG: unklar
+- 108. Elektrizitätsgenossenschaft Ohlstadt eG: unklar
+- 111. Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG: unklar
+- 116. Elektrizitätswerk Dahner Felsenland: unklar
+- 122. Elektrizitätswerk Mainbernheim GmbH: unklar
+- 124. Elektrizitätswerk Oberwössen e.G.: unklar
+- 128. Elektrizitätswerk Stern KG Bad Endorf: unklar
+- 132. Elektrizitätswerk Wörth a. d. Donau Rupert Heider GmbH ＆ Co. KG: unklar
+- 133. Elektrizitätswerke Reutte GmbH ＆ Co. KG: unklar
+- 135. Elektroenergieversorgung Cottbus GmbH: unklar
+- 136. EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG: unklar
+- 139. eneREGIO GmbH: unklar
+- 141. Energie Waldeck-Frankenberg GmbH: unklar
+- 142. Energie- und Bäderbetrieb Hauenstein: vorläufig
+- 147. Energie- und Wasserversorgung Kirchzarten GmbH: unklar
+- 158. Energieversorgung Filstal GmbH ＆ Co. KG: unklar
+- 159. Energieversorgung Guben GmbH: unklar
+- 161. Energieversorgung Klettgau-Rheintal GmbH ＆ Co. KG: unklar
+- 169. Energieversorgung Sylt GmbH: vorläufig
+- 171. Energieversorgung Wolfgang Schmid: unklar
+- 173. ENERVIE Vernetzt GmbH: unklar
+- 175. EnR Energienetze Rudolstadt GmbH: unklar
+- 176. ENRO Ludwigsfelde Netz GmbH: unklar
+- 177. ENRW Energieversorgung Rottweil GmbH ＆ Co. KG: unklar
+- 180. EUROGATE Technical Services GmbH: unklar
+- 182. EVE Netz GmbH: unklar
+- 186. EVU Langenpreising: unklar
+- 187. EVU Späth e.K.: vorläufig
+- 188. EVU Weilerbach: unklar
+- 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: unklar
+- 191. EWR GmbH (Remscheid): unklar
+- 192. EWR Netz GmbH: unklar
+- 193. EWR Netze GmbH (Lichtenstein-Unterhausen): vorläufig
+- 194. ews - Netz GmbH: unklar
+- 196. FairNetz GmbH: unklar
+- 203. Freitaler Stadtwerke GmbH: unklar
+- 204. Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG: vorläufig
+- 205. Gebrüder Eirich GmbH ＆ Co. KG: unklar
+- 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: vorläufig
+- 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: vorläufig
+- 215. Gemeindewerke Dudenhofen: unklar
+- 219. Gemeindewerke Gangkofen: vorläufig
+- 227. Gemeindewerke Heikendorf AöR: unklar
+- 229. Gemeindewerke Holzkirchen GmbH: vorläufig
+- 230. Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH: unklar
+- 232. Gemeindewerke Kiefersfelden: vorläufig
+- 234. Gemeindewerke Lam: unklar
+- 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: unklar
+- 237. Gemeindewerke Neuendettelsau: vorläufig
+- 239. Gemeindewerke Nüdlingen: vorläufig
+- 244. Gemeindewerke Schönkirchen GmbH: unklar
+- 248. Gemeindewerke Wadgassen GmbH: unklar
+- 249. Gemeindewerke Waging a. See: unklar
+- 254. gemeinsames Kommunalunternehmen oberes Egertal: unklar
+- 255. GeraNetz GmbH: unklar
+- 257. GETEC net GmbH: unklar
+- 259. Getreidemühle Zwiefalten eG: unklar
+- 260. GEW Wilhelmshaven GmbH: vorläufig
+- 263. Gothaer Stadtwerke NETZ GmbH: unklar
+- 267. Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH: unklar
+- 268. Halberstadtwerke GmbH: unklar
+- 269. Hanau Netz GmbH: vorläufig
+- 272. Hellenstein-Energie-Logistik GmbH: unklar
+- 273. Hertener Stadtwerke GmbH: unklar
+- 274. Herzo Werke GmbH: vorläufig
+- 284. KBG Kraftstrom- Bezugsgenossenschaft Homberg eG: unklar
+- 291. Kommunalunternehmen Gemeindewerke Peißenberg: vorläufig
+- 292. Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach: unklar
+- 294. Kraftwerk Farchant A. Poettinger ＆ Co. KG: unklar
+- 298. Leitungspartner GmbH: unklar
+- 300. Licht- und Kraftwerke Sonneberg GmbH: unklar
+- 302. LokalWerke GmbH: unklar
+- 304. Mainfranken Netze GmbH: unklar
+- 313. Mittelhessen Netz GmbH: unklar
+- 314. Müller - Mühle GmbH ＆ Co. KG: unklar
+- 317. NETCUR GmbH: unklar
+- 319. Netzbetrieb Hirschberg GmbH ＆ Co. KG: unklar
+- 325. Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG: unklar
+- 326. Netzgesellschaft Frankfurt (Oder) mbH: unklar
+- 328. Netzgesellschaft Lübbecke mbH: unklar
+- 330. Netzgesellschaft Potsdam GmbH: unklar
+- 331. Netzgesellschaft Schwerin mbH (NGS): unklar
+- 332. netzplus GmbH ＆ Co. KG: vorläufig
+- 335. Neubrandenburger Stadtwerke GmbH: unklar
+- 336. NEW Netz GmbH: unklar
+- 339. NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG: unklar
+- 341. Nordhausen Netz GmbH: vorläufig
+- 342. NordNetz GmbH: unklar
+- 347. Osterholzer Stadtwerke GmbH ＆ Co. KG: unklar
+- 353. QuartiersNetz Bayern GmbH: unklar
+- 360. Regionalwerke Wolfhager Land GmbH: unklar
+- 365. Saalfelder Energienetze GmbH: unklar
+- 375. Stadtwerk Haßfurt GmbH: unklar
+- 377. Stadtwerke Aalen GmbH: unklar
+- 378. Stadtwerke Achim AG: unklar
+- 382. Stadtwerke Andernach Energie GmbH: unklar
+- 384. Stadtwerke Annweiler am Trifels: unklar
+- 387. Stadtwerke Aue - Bad Schlema GmbH: unklar
+- 388. Stadtwerke Backnang GmbH: unklar
+- 390. Stadtwerke Bad Bergzabern GmbH: unklar
+- 392. Stadtwerke Bad Brückenau GmbH: unklar
+- 400. Stadtwerke Bad Pyrmont GmbH: unklar
+- 402. Stadtwerke Bad Rodach: unklar
+- 403. Stadtwerke Bad Säckingen GmbH: unklar
+- 404. Stadtwerke Bad Salzuflen GmbH: unklar
+- 406. Stadtwerke Bad Sooden-Allendorf: unklar
+- 407. Stadtwerke Bad Tölz GmbH: unklar
+- 410. Stadtwerke Bad Windsheim: unklar
+- 411. Stadtwerke Bad Wörishofen: vorläufig
+- 428. Stadtwerke Borken/Westf. GmbH: unklar
+- 431. Stadtwerke Brühl GmbH: unklar
+- 439. Stadtwerke Cham GmbH: unklar
+- 440. Stadtwerke Clausthal-Zellerfeld GmbH: unklar
+- 450. Stadtwerke Dingolfing GmbH: unklar
+- 454. Stadtwerke Dorfen GmbH: unklar
+- 455. Stadtwerke Dreieich GmbH: unklar
+- 456. Stadtwerke Dülmen GmbH: unklar
+- 469. Stadtwerke Emsdetten GmbH: unklar
+- 472. Stadtwerke Eschwege GmbH: unklar
+- 476. Stadtwerke Fellbach GmbH: unklar
+- 479. Stadtwerke Flensburg GmbH: unklar
+- 480. Stadtwerke Forchheim GmbH: unklar
+- 481. Stadtwerke Frankenthal GmbH: unklar
+- 483. Stadtwerke Fröndenberg Wickede GmbH: unklar
+- 485. Stadtwerke Furth im Wald GmbH ＆ Co. KG: unklar
+- 490. Stadtwerke Georgsmarienhütte Netz GmbH: unklar
+- 498. Stadtwerke Greven GmbH: unklar
+- 499. Stadtwerke Grevesmühlen GmbH: unklar
+- 502. Stadtwerke Grünstadt GmbH: unklar
+- 503. Stadtwerke Güstrow GmbH: unklar
+- 506. Stadtwerke Haiger: unklar
+- 507. Stadtwerke Haldensleben GmbH: unklar
+- 509. Stadtwerke Hameln Weserbergland GmbH: unklar
+- 511. Stadtwerke Haslach i.K.: unklar
+- 515. Stadtwerke Heilbad Heiligenstadt GmbH: unklar
+- 516. Stadtwerke Heiligenhaus GmbH: unklar
+- 517. Stadtwerke Heilsbronn: vorläufig
+- 518. Stadtwerke Hemau: unklar
+- 519. Stadtwerke Herborn GmbH: unklar
+- 521. Stadtwerke Hettstedt GmbH: unklar
+- 525. Stadtwerke Hollfeld: unklar
+- 526. Stadtwerke Homburg GmbH: unklar
+- 530. Stadtwerke Ingolstadt Netze GmbH: unklar
+- 533. Stadtwerke Jena Netze GmbH: unklar
+- 534. Stadtwerke Jülich GmbH: unklar
+- 536. STADTWERKE KELHEIM GmbH ＆ Co KG: unklar
+- 537. Stadtwerke Kempen GmbH: unklar
+- 542. Stadtwerke Landau a.d.Isar: unklar
+- 543. Stadtwerke Landsberg KU: unklar
+- 545. Stadtwerke Langen GmbH: unklar
+- 551. Stadtwerke Lindau (B) GmbH ＆ Co. KG: unklar
+- 552. Stadtwerke Lingen GmbH: unklar
+- 555. Stadtwerke Löbau GmbH: unklar
+- 557. Stadtwerke Ludwigsfelde GmbH: vorläufig
+- 558. Stadtwerke Ludwigslust-Grabow GmbH: unklar
+- 562. Stadtwerke Lutherstadt Wittenberg GmbH: unklar
+- 563. Stadtwerke Malchow: unklar
+- 565. Stadtwerke Meerane GmbH: unklar
+- 567. Stadtwerke Menden GmbH: unklar
+- 568. Stadtwerke Mengen: unklar
+- 570. Stadtwerke Metzingen: unklar
+- 574. Stadtwerke Mühlhausen Netz GmbH: unklar
+- 577. Stadtwerke Munster-Bispingen GmbH: unklar
+- 580. Stadtwerke Neuburg a. d. Donau: unklar
+- 584. Stadtwerke Neuruppin GmbH: unklar
+- 591. Stadtwerke Neuwied GmbH: unklar
+- 592. Stadtwerke Niesky GmbH: unklar
+- 601. Stadtwerke Oerlinghausen GmbH: unklar
+- 602. Stadtwerke Olbernhau GmbH: unklar
+- 604. Stadtwerke Oldenburg in Holstein GmbH: unklar
+- 605. Stadtwerke Oranienburg GmbH: unklar
+- 609. Stadtwerke Pasewalk GmbH: unklar
+- 611. Stadtwerke Peine GmbH: unklar
+- 618. Stadtwerke Quedlinburg GmbH: unklar
+- 619. Stadtwerke Quickborn GmbH: unklar
+- 620. Stadtwerke Radevormwald GmbH: unklar
+- 621. Stadtwerke Radolfzell GmbH: unklar
+- 627. Stadtwerke Riesa GmbH: unklar
+- 634. Stadtwerke Rothenburg o.d.T. GmbH: unklar
+- 636. Stadtwerke Sangerhausen GmbH: unklar
+- 639. Stadtwerke Schkeuditz GmbH: unklar
+- 641. Stadtwerke Schneeberg GmbH: unklar
+- 645. Stadtwerke Schramberg GmbH ＆ Co. KG: unklar
+- 646. Stadtwerke Schüttorf - Emsbüren GmbH: unklar
+- 648. Stadtwerke Schwäbisch Gmünd GmbH: unklar
+- 649. Stadtwerke Schwäbisch Hall GmbH: unklar
+- 651. Stadtwerke Schwarzenberg GmbH: unklar
+- 653. Stadtwerke Schweinfurt GmbH: unklar
+- 655. Stadtwerke Schwerte GmbH: unklar
+- 657. Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG: unklar
+- 659. Stadtwerke Sindelfingen GmbH: unklar
+- 669. Stadtwerke Stein GmbH ＆ Co. KG: unklar
+- 670. Stadtwerke Steinfurt GmbH: vorläufig
+- 672. Stadtwerke Stockach GmbH: unklar
+- 673. Stadtwerke Straubing Strom und Gas GmbH: unklar
+- 674. Stadtwerke Strausberg GmbH: unklar
+- 676. Stadtwerke Suhl/Zella-Mehlis Netz GmbH: unklar
+- 679. Stadtwerke Tirschenreuth: unklar
+- 680. Stadtwerke Torgau GmbH: unklar
+- 681. Stadtwerke Traunstein GmbH ＆ Co. KG: unklar
+- 683. Stadtwerke Troisdorf GmbH: unklar
+- 685. Stadtwerke Tübingen GmbH: unklar
+- 690. Stadtwerke Unna GmbH: unklar
+- 691. Stadtwerke Uslar GmbH: unklar
+- 692. Stadtwerke Velbert GmbH: unklar
+- 693. Stadtwerke Velten GmbH: unklar
+- 695. Stadtwerke Viernheim Netz GmbH: unklar
+- 696. Stadtwerke Villingen-Schwenningen GmbH: unklar
+- 698. Stadtwerke Vilshofen GmbH: unklar
+- 699. Stadtwerke Vlotho Stromnetz GmbH: unklar
+- 701. Stadtwerke Wachenheim: unklar
+- 707. Stadtwerke Waldshut-Tiengen GmbH: unklar
+- 713. Stadtwerke Wasserburg a. Inn: vorläufig
+- 717. STADTWERKE WEISSENBURG GmbH: vorläufig
+- 718. Stadtwerke Weißenfels Energienetze GmbH: unklar
+- 722. Stadtwerke Wernigerode GmbH: unklar
+- 723. Stadtwerke Wertheim GmbH: unklar
+- 724. Stadtwerke Wiesbaden Netz GmbH: unklar
+- 727. Stadtwerke Winsen (Luhe) GmbH: unklar
+- 728. Stadtwerke Witten GmbH: unklar
+- 729. Stadtwerke Witten Mittelspannungsnetz GmbH: unklar
+- 734. Stadtwerke Zeil a. Main: vorläufig
+- 735. Stadtwerke Zeven GmbH: unklar
+- 746. Stauferwerk  GmbH ＆ Co. KG: unklar
+- 747. Strom- und Gasnetz Wismar GmbH: unklar
+- 753. Stromnetz Weiden i.d.OPf. GmbH ＆ Co. KG: unklar
+- 755. Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG: vorläufig
+- 756. Stromversorgung Angermünde GmbH: vorläufig
+- 757. Stromversorgung Inzell eG: unklar
+- 760. Stromversorgung Schierling eG: unklar
+- 761. Stromversorgung Seebruck eG: unklar
+- 768. SVH Stromversorgung Haar GmbH: unklar
+- 771. SWB Stadtwerke Biedenkopf GmbH: unklar
+- 774. SWK Stadtwerke Kaiserslautern Versorgungs-AG: unklar
+- 779. SWN Stadtwerke Northeim GmbH: unklar
+- 788. Syna Hochspannungsnetz GmbH ＆ Co. KG: unklar
+- 789. T.W.O. Technische Werke Osning GmbH: unklar
+- 791. Technische Werke Naumburg GmbH: unklar
+- 792. Teutoburger Energie Netzwerk eG (TEN eG): unklar
+- 794. TraveNetz GmbH: unklar
+- 800. Überlandwerk Rhön GmbH: unklar
+- 802. ÜZ Mainfranken eG: vorläufig
+- 804. Verbandsgemeindewerke Enkenbach-Alsenborn: unklar
+- 806. Vereinigte Wertach Elektrizitätswerke GmbH: unklar
+- 810. Versorgungsbetriebe Hann. Münden GmbH: unklar
+- 811. Versorgungsbetriebe Hoyerswerda GmbH: unklar
+- 812. Versorgungsbetriebe Kronshagen GmbH: unklar
+- 815. VersorgungsWerke Heddesheim GmbH ＆ Co. KG: unklar
+- 817. Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG: unklar
+- 822. Weißachtal-Kraftwerke eG: unklar
+- 826. wesernetz Bremerhaven GmbH: unklar
+- 830. YNCORIS GmbH ＆ Co. KG: unklar
+
 ## Restfälle (408)
 
-### pruefen (323)
+### pruefen (319)
 
 - 25. Hamburger Energienetze GmbH: SLP-Werte nicht gefunden
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
@@ -147,7 +429,6 @@ Preisstand (nur ok): endgültig 423
 - 278. infra fürth gmbh: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2025], nicht 2026
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im Dokument; fiktive
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
-- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 282. Infrastrukturbetrieb der Stadt Arneburg: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
 - 283. Karl Stengle GmbH ＆ Co. KG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden); Jahr 2026 nicht im Dokument
 - 286. KEW Karwendel Energie und Wasser GmbH: SLP-Werte nicht gefunden
@@ -218,7 +499,6 @@ Preisstand (nur ok): endgültig 423
 - 425. Stadtwerke Böblingen GmbH ＆ Co. KG: 8 Dokument(e) geprüft: HTTP 404
 - 426. Stadtwerke Böhmetal GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 429. Stadtwerke Bramsche GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 430. Stadtwerke Bretten GmbH: SLP-Werte nicht gefunden
 - 432. Stadtwerke Brunsbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 433. Stadtwerke Buchen GmbH ＆ Co KG: kein Preisblatt-Link gefunden (17 Seiten durchsucht)
 - 434. Stadtwerke Buchholz in der Nordheide GmbH: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
@@ -264,7 +544,7 @@ Preisstand (nur ok): endgültig 423
 - 520. Stadtwerke Herne AG: SLP-Werte nicht gefunden
 - 522. Stadtwerke Hilden GmbH: SLP-Arbeitspreis fehlt; SLP-Grundpreis 249.96 €/a außerhalb 0–200; SLP: Einheit nicht bestimmbar; SLP: mehrere Arbeitspreise (32.08, 24.79); SLP-Werte auffällig
 - 523. Stadtwerke Hockenheim: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
-- 527. Stadtwerke Hünfeld GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+- 527. Stadtwerke Hünfeld GmbH: kein Preisblatt-Link gefunden (34 Seiten durchsucht)
 - 528. Stadtwerke Husum Netz GmbH: SLP-Werte nicht gefunden
 - 529. Stadtwerke Ilmenau GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 532. Stadtwerke Itzehoe GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
@@ -366,7 +646,7 @@ Preisstand (nur ok): endgültig 423
 - 781. SWP Stadtwerke Pforzheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 782. SWR Energie GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 783. SWS Netze GmbH: NS LP über 2.500 h = 0.24 außerhalb 40–260 €/kW/a; NS: AP unter 2.500 h = 0.06 ct/kWh, Einheit €/kWh?; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
-- 793. thyssenkrupp Steel Europe AG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+- 793. thyssenkrupp Steel Europe AG: 10 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2021], nicht 2026
 - 795. TWL Netze GmbH: SLP-Werte nicht gefunden
 - 798. Überlandwerk Erding GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 801. Überlandzentrale Wörth/I.-Altheim Netz AG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -374,14 +654,13 @@ Preisstand (nur ok): endgültig 423
 - 805. Vereinigte Stadtwerke Netz GmbH: SLP-Werte nicht gefunden
 - 808. Versorgungsbetriebe Bordesholm GmbH: 1 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 809. VersorgungsBetriebe Elbe GmbH: SLP-Werte nicht gefunden
-- 818. Vorarlberger Energienetze GmbH: kein Preisblatt-Link gefunden (10 Seiten durchsucht)
 - 819. VSE Verteilnetz GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel; Jahr 2026 nicht im Dokument
 - 821. Weiler Wärme eG: 1 Dokument(e) geprüft: fiktive Entgelte
 - 823. Wendelsteinbahn Verteilnetz GmbH: 2 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
 - 824. werkkraft GmbH: SLP-Werte nicht gefunden
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: kein Preisblatt-Link gefunden (15 Seiten durchsucht)
 
-### kein_preisblatt (30)
+### kein_preisblatt (32)
 
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
@@ -395,6 +674,8 @@ Preisstand (nur ok): endgültig 423
 - 346. Obermaier und Gerg Grundstücksverwaltung KG: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
 - 349. OUTLETCITY AG: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
 - 368. Schleswiger Stadtwerke GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument
+- 395. Stadtwerke Bad Herrenalb GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+- 430. Stadtwerke Bretten GmbH: kein Preisblatt-Link gefunden (5 Seiten durchsucht)
 - 477. Stadtwerke Feuchtwangen KU: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 484. Stadtwerke Fürstenfeldbruck GmbH: 4 Dokument(e) geprüft: kein Text im Dokument (Scan?)
 - 500. Stadtwerke Gronau GmbH: 15 Dokument(e) geprüft: gültig ab [2024], nicht 2026; fiktive Entgelte; Jahr 2026 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
@@ -402,7 +683,6 @@ Preisstand (nur ok): endgültig 423
 - 539. Stadtwerke Konstanz GmbH: 14 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 544. Stadtwerke Landshut: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 550. Stadtwerke Lemgo GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2023], nicht 2026; Jahr 2026 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
-- 588. Stadtwerke Neustadt an der Weinstraße GmbH: kein Preisblatt-Link gefunden (17 Seiten durchsucht)
 - 600. Stadtwerke Oelsnitz/V. GmbH: kein Preisblatt-Link gefunden (7 Seiten durchsucht)
 - 615. Stadtwerke Plattling: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 633. Stadtwerke Roth: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument; gültig ab [2024], nicht 2026
@@ -411,10 +691,11 @@ Preisstand (nur ok): endgültig 423
 - 778. SWN Stadtwerke Neustadt GmbH: 9 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?)
 - 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 797. Überlandwerk Eppler GmbH: 15 Dokument(e) geprüft: HTTP 404
+- 818. Vorarlberger Energienetze GmbH: kein Preisblatt-Link gefunden (10 Seiten durchsucht)
 - 827. Westenthanner Energieversorgung GmbH: 1 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (30)
+### blockiert (32)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 94. Elektra - Genossenschaft Pinzberg eG: robots.txt nicht erreichbar (https://www.elektra-pinzberg.de); robots.txt nicht erreichbar (http://www.elektra-pinzberg.de)
@@ -429,6 +710,7 @@ Preisstand (nur ok): endgültig 423
 - 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 403 http://www.partenstein.de
 - 250. Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern: HTTP 404 https://www.swk-kl.de/netze/gemeindenetze/weidenthal.html; HTTP 404 http://www.swk-kl.de/netze/gemeindenetze/weidenthal.html
 - 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
+- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: HTTP 403 https://www.infraserv-wi.de; HTTP 403 http://www.infraserv-wi.de
 - 289. Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.ken-is.de); robots.txt nicht erreichbar (http://www.ken-is.de)
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 403 http://www.egloffstein.de
 - 312. Merck Site Management GmbH: Seite nicht lesbar: Error
@@ -437,6 +719,7 @@ Preisstand (nur ok): endgültig 423
 - 453. Stadtwerke Döbeln GmbH: robots.txt nicht erreichbar (https://www.stadtwerke-doebeln.de); robots.txt nicht erreichbar (http://www.stadtwerke-doebeln.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 403 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
+- 588. Stadtwerke Neustadt an der Weinstraße GmbH: HTTP 429 https://www.SWNeustadt.de; HTTP 429 http://www.SWNeustadt.de
 - 607. Stadtwerke Pappenheim GmbH: robots.txt nicht erreichbar (https://www.stadtwerke.pappenheim.de); robots.txt nicht erreichbar (http://www.stadtwerke.pappenheim.de)
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: robots.txt nicht erreichbar (https://www.stwr.de); robots.txt nicht erreichbar (http://www.stwr.de)
 - 638. Stadtwerke Schifferstadt: Gesamtzeit je Website überschritten (20 min)
