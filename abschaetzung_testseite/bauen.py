@@ -33,7 +33,8 @@ for nr, r in z.items():
             e[eb] = w
     if "noch nicht gegen das Dokument" in r["hinweis"]:
         e["ug"] = 1                                                # Werte aus Liste, noch nicht gegen das Dokument geprüft
-        e.pop("ms", None); e.pop("hsms", None)                     # ungeprüfte Ebenen nicht rechnen
+    if "teurer als" in r["hinweis"]:
+        e["bad"] = 1                                               # Kostenreihenfolge MS <= MS/NS <= NS verletzt: Werte unplausibel
     if r["quelle_url"]:
         e["q"] = r["quelle_url"]
     nb.append(e)
