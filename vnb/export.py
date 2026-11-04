@@ -19,8 +19,8 @@ def _rlm(z: dict, prefix: str) -> dict | None:
     w = {
         "lp_unter_eur_kw_jahr": _de(z[f"{prefix}_lp_unter_2500h_eur_kw_jahr"]),
         "ap_unter_ct_kwh": _de(z[f"{prefix}_ap_unter_2500h_ct_kwh"]),
-        "lp_ab_eur_kw_jahr": _de(z[f"{prefix}_lp_ueber_2500h_eur_kw_jahr"]),
-        "ap_ab_ct_kwh": _de(z[f"{prefix}_ap_ueber_2500h_ct_kwh"]),
+        "lp_ab_eur_kw_jahr": _de(z[f"{prefix}_lp_ab_2500h_eur_kw_jahr"]),
+        "ap_ab_ct_kwh": _de(z[f"{prefix}_ap_ab_2500h_ct_kwh"]),
     }
     return w if all(v is not None for v in w.values()) else None
 

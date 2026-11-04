@@ -21,8 +21,8 @@ pro Netzbetreiber bzw. Netzgebiet. Einheit im Spaltennamen. Alle Spalten erklär
 
 - Stammdaten: nr; netzbetreiber; mastr_nr; website; bundesland; region; netztyp; status
 - SLP Niederspannung: slp_ap_ct_kwh; slp_grundpreis_eur_jahr
-- RLM NS: ns_lp_unter_2500h_eur_kw_jahr; ns_ap_unter_2500h_ct_kwh; ns_lp_ueber_2500h_eur_kw_jahr;
-  ns_ap_ueber_2500h_ct_kwh
+- RLM NS: ns_lp_unter_2500h_eur_kw_jahr; ns_ap_unter_2500h_ct_kwh; ns_lp_ab_2500h_eur_kw_jahr;
+  ns_ap_ab_2500h_ct_kwh
 - RLM MS/NS: msns_… analog
 - Berechnet: ns_ct_kwh_bei_1500h; …_2500h; …_4000h; …_6000h = AP + LP × 100 / h mit dem Tarif der
   passenden Gruppe laut Preisblatt, nur wenn die RLM-Werte ok sind

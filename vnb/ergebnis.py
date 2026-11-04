@@ -13,8 +13,8 @@ from .extract import plausibel, plausibel_slp
 from .rechner import TYPISCHE_STUNDEN, ct_kwh_bei
 
 RLM = ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")
-RLM_NAMEN = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ueber_2500h_eur_kw_jahr",
-             "ap_ueber_2500h_ct_kwh")
+RLM_NAMEN = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr",
+             "ap_ab_2500h_ct_kwh")
 SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region", "netztyp", "status",
             "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"]
            + [f"ms_{n}" for n in RLM_NAMEN] + [f"msns_{n}" for n in RLM_NAMEN]

@@ -14,7 +14,7 @@ def main():
     liste = W / "lauf" / "slp_diagnose.liste"      # Nummern, durch Komma getrennt; sonst Filter
     nrs = set(liste.read_text().strip().split(",")) if liste.exists() and liste.read_text().strip() else None
     z = [r for r in csv.DictReader(open(W / "ergebnis" / "netzentgelte_2026.csv", encoding="utf-8"), delimiter=";")
-         if (r["nr"] in nrs if nrs else r["status"] == "pruefen" and r["ns_lp_ueber_2500h_eur_kw_jahr"] and not r["slp_ap_ct_kwh"])]
+         if (r["nr"] in nrs if nrs else r["status"] == "pruefen" and r["ns_lp_ab_2500h_eur_kw_jahr"] and not r["slp_ap_ct_kwh"])]
     (W / "ergebnis" / "slp_diagnose").mkdir(exist_ok=True)
     key = {}
     for l in open(W / "ergebnis" / "fortschritt.jsonl", encoding="utf-8"):

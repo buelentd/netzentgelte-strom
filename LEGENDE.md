@@ -40,12 +40,12 @@ Unter 10 Einheiten bleibt der Netztyp leer.
 |---|---|---|
 | `ns_lp_unter_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Niederspannung, Benutzungsdauer unter 2.500 h |
 | `ns_ap_unter_2500h_ct_kwh` | ct/kWh | Arbeitspreis Niederspannung, unter 2.500 h |
-| `ns_lp_ueber_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Niederspannung, ab 2.500 h |
-| `ns_ap_ueber_2500h_ct_kwh` | ct/kWh | Arbeitspreis Niederspannung, ab 2.500 h |
+| `ns_lp_ab_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Niederspannung, ab 2.500 h |
+| `ns_ap_ab_2500h_ct_kwh` | ct/kWh | Arbeitspreis Niederspannung, ab 2.500 h |
 | `msns_lp_unter_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Umspannung MS/NS, unter 2.500 h |
 | `msns_ap_unter_2500h_ct_kwh` | ct/kWh | Arbeitspreis Umspannung MS/NS, unter 2.500 h |
-| `msns_lp_ueber_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Umspannung MS/NS, ab 2.500 h |
-| `msns_ap_ueber_2500h_ct_kwh` | ct/kWh | Arbeitspreis Umspannung MS/NS, ab 2.500 h |
+| `msns_lp_ab_2500h_eur_kw_jahr` | €/kW/a | Leistungspreis Umspannung MS/NS, ab 2.500 h |
+| `msns_ap_ab_2500h_ct_kwh` | ct/kWh | Arbeitspreis Umspannung MS/NS, ab 2.500 h |
 
 Tagesleistungspreise (€/kW/Tag) sind × 365 umgerechnet, Arbeitspreise in €/kWh × 100.
 Grenze: Standard ist „< 2.500 h / ≥ 2.500 h“. Steht im `hinweis` „Grenze ≤ 2.500 / > 2.500 h“,

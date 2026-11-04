@@ -19,7 +19,7 @@ def de(v):
 
 z = {r["nr"]: r for r in csv.DictReader(open(ERG / "netzentgelte_2026.csv", encoding="utf-8"), delimiter=";")}
 g = {r["nr"]: r for r in csv.DictReader(open(ERG / "gefunden.csv", encoding="utf-8"), delimiter=";")}
-FELDER = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ueber_2500h_eur_kw_jahr", "ap_ueber_2500h_ct_kwh")
+FELDER = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
 nb, mastr2nr = [], {}
 for nr, r in z.items():
     mastr2nr.setdefault(r["mastr_nr"], nr)

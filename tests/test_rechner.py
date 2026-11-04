@@ -80,7 +80,7 @@ def test_kappung_mit_tarifwechsel():
 
 def test_tarif_aus_zeile():
     z = {"netzbetreiber": "X", "ns_lp_unter_2500h_eur_kw_jahr": "20,00", "ns_ap_unter_2500h_ct_kwh": "7,00",
-         "ns_lp_ueber_2500h_eur_kw_jahr": "150,00", "ns_ap_ueber_2500h_ct_kwh": "1,50",
+         "ns_lp_ab_2500h_eur_kw_jahr": "150,00", "ns_ap_ab_2500h_ct_kwh": "1,50",
          "slp_ap_ct_kwh": "8,00", "slp_grundpreis_eur_jahr": "60,00", "hinweis": "Grenze ≤ 2.500 / > 2.500 h"}
     t = Tarif.aus_zeile(z)
     assert t.ns == NS and t.slp_gp == 60 and t.grenze_le and t.msns == {}
