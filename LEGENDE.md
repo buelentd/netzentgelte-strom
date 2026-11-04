@@ -102,3 +102,5 @@ Plausibilitätsregeln: NS LP ab 2.500 h 40–260 €/kW/a, LP unter < LP ab, AP 
 | `mastr_rollen.txt` | Marktrollen und -funktionen im MaStR mit Anzahl, zur Kontrolle des Filters |
 | `fortschritt.jsonl` | Bearbeitungsstand je Netzbetreiber (für den Neustart) |
 | `pdf/` | verwendete Preisblätter `<nr>_<name>.pdf`, separates SLP-Blatt als `<nr>_<name>_slp.pdf` |
+
+**Status pruefen bei vorhandener Quelle:** Hat ein Netzbetreiber einen von Hand recherchierten Link (`lauf/quellen_recherche.csv`), steht nie `kein_preisblatt`, sondern `pruefen` mit Hinweis „Quelle aus Recherche vorhanden, noch nicht ausgelesen“. `kein_preisblatt` heißt nur: weder wir noch die Recherche haben eine Quelle.

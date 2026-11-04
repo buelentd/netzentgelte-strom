@@ -74,8 +74,30 @@ class Speicher:
             f.flush()
             os.fsync(f.fileno())
 
+    def _recherche(self) -> dict:
+        """lauf/quellen_recherche.csv (nr;url;art): Links, die von Hand recherchiert wurden. Hat ein Netzbetreiber so einen
+        Link, ist „kein_preisblatt“ falsch: Die Quelle gibt es, wir konnten sie nur (noch) nicht auslesen."""
+        pfad = self.ordner.parent / "lauf" / "quellen_recherche.csv"
+        out: dict = {}
+        if pfad.exists():
+            with open(pfad, encoding="utf-8-sig", newline="") as f:
+                for z in csv.DictReader(f, delimiter=";"):
+                    out.setdefault(str(z["nr"]).strip(), (z["url"].strip(), z.get("art", "").strip()))
+        return out
+
     def zeilen(self) -> list[dict]:
-        return sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"]))
+        ueber = self._recherche()
+        erg = []
+        for d in sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"])):
+            if d.get("status") == "kein_preisblatt" and str(d.get("nr")) in ueber:
+                url, art = ueber[str(d.get("nr"))]
+                d = dict(d)
+                d["status"] = "pruefen"
+                d["quelle_url"] = d.get("quelle_url") or url
+                alt = d.get("hinweis", "")
+                d["hinweis"] = f"Quelle aus Recherche vorhanden ({art}), noch nicht ausgelesen: {url}" + (f"; {alt}" if alt else "")
+            erg.append(d)
+        return erg
 
     # ------------------------------------------------------------ Ausgabe
     @staticmethod
