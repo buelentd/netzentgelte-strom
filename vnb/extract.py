@@ -242,8 +242,8 @@ def ebene(label: str) -> str | None:
         return None
     kern = re.sub(r"^(?:(?:anschluss|entnahme)(?:\s+und\s+(?:anschluss|entnahme))?\s+(?:direkt\s+)?"
                   r"(?:aus|in|an|im|am)?\s*(?:der|dem|die)?\s*|(?:netz|spannungs)ebene\s*:?\s*)", "", lab)
-    if re.search(r"^(netzebene\s*7\s*)?niederspannung\b|^\(?nsp?\)?$|^ne\s*7\b|^netzebene\s*7\b|niederspannungsnetz|"
-                 r"^(7\s*)?niederspannung\b", kern) or re.search(r"^(ne|netzebene)\s*7\b", lab):
+    if re.search(r"^(netzebene\s*7\s*)?niederspannung(?:s?ebene)?\b|^\(?nsp?\)?$|^ne\s*7\b|^netzebene\s*7\b|niederspannungsnetz|"
+                 r"^(7\s*)?niederspannung(?:s?ebene)?\b", kern) or re.search(r"^(ne|netzebene)\s*7\b", lab):
         return "NS"
     return None
 
