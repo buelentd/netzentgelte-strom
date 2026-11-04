@@ -222,6 +222,7 @@ def ebene_mshs(label: str) -> str | None:
     """Mittelspannung (MS) und Umspannung HS/MS (HSMS) für Tabellenzeilen. Getrennt von ebene(), damit die übrigen Leser
     (die Mittelspannung bewusst ausblenden) unverändert bleiben."""
     lab = norm(re.sub(r"^\s*[n▪■●◼]\s+(?=[A-ZÄÖÜ])", "", label))
+    lab = re.sub(r"^(?:hs/ms|ms/ns|ms|ns)\s*-\s*ne\s*\d\s*-\s*", "", lab)      # "NS - NE 7 - Niederspannung"
     lab = re.sub(r"^[\d.)\s\-–•▪■●]+", "", lab)
     lab = re.sub(r"\s*/\s*", "/", lab)
     lab = re.sub(r"[()]", " ", lab).replace("-/", "/").replace("- ", "")
@@ -243,6 +244,7 @@ def ebene(label: str) -> str | None:
     # Aufzählungszeichen aus Symbolschriften erscheinen im Textauszug als "n " (Abita, Alliander)
     label = re.sub(r"^\s*[n▪■●◼]\s+(?=[A-ZÄÖÜ])", "", label)
     lab = norm(label)
+    lab = re.sub(r"^(?:hs/ms|ms/ns|ms|ns)\s*-\s*ne\s*\d\s*-\s*", "", lab)      # "NS - NE 7 - Niederspannung"
     lab = re.sub(r"^[\d.)\s\-–•▪■●]+", "", lab)
     lab = re.sub(r"\s*/\s*", "/", lab)
     lab = re.sub(r"\s*-\s*/", "/", lab)
