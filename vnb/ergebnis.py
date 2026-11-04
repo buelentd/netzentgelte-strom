@@ -9,6 +9,7 @@ from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
+from .extract import plausibel, plausibel_slp
 from .rechner import TYPISCHE_STUNDEN, ct_kwh_bei
 
 RLM = ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")
@@ -85,7 +86,63 @@ class Speicher:
                     out.setdefault(str(z["nr"]).strip(), (z["url"].strip(), z.get("art", "").strip()))
         return out
 
+    def _manuell(self) -> dict:
+        """lauf/preise_manuell.csv: von Hand eingetragene Preise (Dezimalkomma erlaubt), siehe LEGENDE.md."""
+        pfad = self.ordner.parent / "lauf" / "preise_manuell.csv"
+        out: dict = {}
+        if not pfad.exists():
+            return out
+        def f(x):
+            x = (x or "").strip().replace(",", ".")
+            try:
+                return float(x) if x else None
+            except ValueError:
+                return None
+        with open(pfad, encoding="utf-8-sig", newline="") as fh:
+            for z in csv.DictReader(fh, delimiter=";"):
+                nr = str(z.get("nr", "")).strip()
+                if not nr:
+                    continue
+                ns = {"lp_unter_2500": f(z.get("ns_lp_unter_2500h")), "ap_unter_2500": f(z.get("ns_ap_unter_2500h")),
+                      "lp_ueber_2500": f(z.get("ns_lp_ab_2500h")), "ap_ueber_2500": f(z.get("ns_ap_ab_2500h"))}
+                ms = {"lp_unter_2500": f(z.get("msns_lp_unter_2500h")), "ap_unter_2500": f(z.get("msns_ap_unter_2500h")),
+                      "lp_ueber_2500": f(z.get("msns_lp_ab_2500h")), "ap_ueber_2500": f(z.get("msns_ap_ab_2500h"))}
+                if all(v is None for v in (*ns.values(), *ms.values(), f(z.get("slp_ap")), f(z.get("slp_gp")))):
+                    continue
+                out[nr] = {"ns": ns, "ms": ms, "slp": {"ap": f(z.get("slp_ap")), "gp": f(z.get("slp_gp"))},
+                           "preisstand": (z.get("preisstand") or "").strip() or "unklar", "stand_datum": (z.get("stand_datum") or "").strip(),
+                           "le": (z.get("grenze") or "").strip() in ("<=", "≤", ">", "le"), "url": (z.get("quelle_url") or "").strip(),
+                           "hinweis": (z.get("hinweis") or "").strip()}
+        return out
+
     def zeilen(self) -> list[dict]:
+        man = self._manuell()
+        return [self._mit_manuell(d, man) for d in self._zeilen_recherche()]
+
+    def _mit_manuell(self, d: dict, man: dict) -> dict:
+        m = man.get(str(d.get("nr")))
+        if not m:
+            return d
+        d = dict(d)
+        ns = {k: v for k, v in m["ns"].items() if v is not None}
+        ms = {k: v for k, v in m["ms"].items() if v is not None}
+        slp = {k: v for k, v in m["slp"].items() if v is not None}
+        grund = []
+        if ns:
+            grund += plausibel(ns, "NS") if len(ns) == 4 else ["NS: Werte unvollständig"]
+        else:
+            grund.append("NS fehlt")
+        if ms:
+            grund += plausibel(ms, "MS/NS") if len(ms) == 4 else ["MS/NS: Werte unvollständig"]
+        grund += plausibel_slp(slp) if slp else ["SLP fehlt"]
+        d.update(ns=ns if len(ns) == 4 else {}, msns=ms if len(ms) == 4 else {}, slp=slp, rlm_ok=len(ns) == 4 and not any(g.startswith("NS") for g in grund),
+                 slp_ok=bool(slp) and not plausibel_slp(slp), grenze_le=m["le"], preisstand=m["preisstand"], stand_datum=m["stand_datum"],
+                 quelle_url=m["url"] or d.get("quelle_url", ""))
+        d["status"] = "ok" if not grund else "pruefen"
+        d["hinweis"] = "manuell eingetragen" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
+        return d
+
+    def _zeilen_recherche(self) -> list[dict]:
         ueber = self._recherche()
         erg = []
         for d in sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"])):
