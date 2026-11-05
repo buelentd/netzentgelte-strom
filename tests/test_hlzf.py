@@ -108,3 +108,26 @@ Entnahmeebene     Winter      Frühling      Sommer      Herbst
 """
     e = hlzf_lesen(t)
     assert not e.fenster or e.fenster.get("NS", {}).get("sommer") != []
+
+
+def test_block_je_ebene_mit_mittigem_namen_und_zweitem_fenster():
+    from vnb.hlzf import hlzf_lesen
+    t = """Hochlastzeitfenster 2026
+           Netzebene                     Jahreszeit                       Zeiten
+                                            Winter                     09:30 – 13:00
+                                           Frühling                         –
+        Mittelspannung
+                                           Sommer                           –
+                                            Herbst                     11:15 – 12:30
+           Netzebene                     Jahreszeit                       Zeiten
+                                                                       10:15 – 12:30
+                                            Winter
+                                                                       17:30 – 18:15
+                                           Frühling                         –
+       Niederspannung
+                                           Sommer                           –
+                                            Herbst                          –
+"""
+    e = hlzf_lesen(t)
+    assert e.fenster["NS"]["winter"] == ["10:15-12:30", "17:30-18:15"]
+    assert e.fenster["NS"]["herbst"] == [] and e.fenster["NS"]["frühling" if False else "fruehling"] == []
