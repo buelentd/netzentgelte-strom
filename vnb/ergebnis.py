@@ -15,6 +15,9 @@ from .rechner import TYPISCHE_STUNDEN, ct_kwh_bei
 RLM = ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")
 RLM_NAMEN = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr",
              "ap_ab_2500h_ct_kwh")
+HLZF_JAHRESZEITEN = ("fruehling", "sommer", "herbst", "winter")
+HLZF_COLS = ([f"hlzf_ns_{x}" for x in HLZF_JAHRESZEITEN] + [f"hlzf_msns_{x}" for x in HLZF_JAHRESZEITEN]
+             + ["hlzf_schwelle_prozent", "hlzf_mindestleistung_kw", "hlzf_quelle_url"])
 SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region", "netztyp", "status",
             "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"]
            + [f"ms_{n}" for n in RLM_NAMEN] + [f"msns_{n}" for n in RLM_NAMEN]
@@ -22,6 +25,7 @@ SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region"
            + ["hsms_status", "grenze_2500h"]
            + [f"ms_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN] + ["msns_ct_kwh_bei_4000h"]
            + [f"ns_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN]
+           + HLZF_COLS + ["hlzf_status"]
            + ["preisstand", "stand_datum", "hinweis", "quelle_url"])
 REST_SPALTEN = ["nr", "netzbetreiber", "mastr_nr", "website", "status", "grund", "kandidaten", "quelle_url"]
 GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "rlm_ns", "rlm_msns", "slp",
@@ -130,7 +134,19 @@ class Speicher:
         man = self._manuell()
         sperre = self._sperre()
         gruende = self._hsms_gruende()
-        return [self._hsms_grund(self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre), gruende) for d in self._zeilen_recherche()]
+        hlzf = self._hlzf()
+        zeilen = [self._hsms_grund(self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre), gruende) for d in self._zeilen_recherche()]
+        for d in zeilen:
+            d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
+        return zeilen
+
+    def _hlzf(self) -> dict:
+        """lauf/hlzf_zusammen.csv (Skript daten/hlzf_zusammenfuehren.py): Hochlastzeitfenster und Grund je Netzbetreiber, Schlüssel MaStR-Nr."""
+        pfad = self.ordner.parent / "lauf" / "hlzf_zusammen.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["mastr_nr"]: r for r in csv.DictReader(f, delimiter=";") if r.get("mastr_nr")}
 
     def _hsms_gruende(self) -> dict:
         """lauf/hsms_grund.csv (mastr_nr;hsms_status): warum HS/MS fehlt (Skript daten/hsms_grund.py)."""
@@ -263,6 +279,7 @@ class Speicher:
                 *[zahl(round(c, 2)) if c is not None else "" for c in ct_ms],
                 zahl(round(ct_mn, 2)) if ct_mn is not None else "",
                 *[zahl(round(c, 2)) if c is not None else "" for c in ct_ns],
+                *[(d.get("hlzf") or {}).get(c, "") for c in HLZF_COLS], (d.get("hlzf") or {}).get("hlzf_status", ""),
                 d.get("preisstand", "") if (ns or slp or ms) else "", d.get("stand_datum", ""), hinweis,
                 d.get("quelle_url", "")]
 
