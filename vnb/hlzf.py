@@ -233,20 +233,36 @@ def _form_d(zeilen):
                  if re.search(r"jahreszeit|saison", zeilen[i], re.I)), max(0, erste - 4))
     bereich = list(range(kopf + 1, min(kopf + 80, len(zeilen))))
     marken = {}                                          # Zeilenindex → (ebene, allein?)
+    fort = None                                          # Bezeichnung endet auf "in" ("Mittelspannung in" / "Niederspannung")
     for i in bereich:
         erst = _label(zeilen[i])
         teile = re.split(r"\s{2,}", zeilen[i].strip())
+        if fort is not None and erst and EBENE_WORT.search(erst) and not JZ_WORT.match(erst):
+            vorher = marken[fort[0]]
+            marken[fort[0]] = (_ebene_wort(fort[1] + " " + erst) or "andere", vorher[1])
+            fort = None
+            continue                                     # die Fortsetzung ist keine eigene Ebene
         if erst and EBENE_WORT.search(erst) and not JZ_WORT.match(erst):
+            fort = None
             marken[i] = (_ebene_text(erst) or "andere", not JZ_WORT.search(" ".join(teile[1:2])))
+            if re.search(r"(?:spannung|ebene)\s+in$", erst.strip(), re.I):
+                fort = (i, erst.strip())
     if not marken:
         return {}
-    out, aktuell = {}, None
+    out, aktuell, letzte = {}, None, None
     for i in bereich:
         z = zeilen[i]
         if i in marken and not marken[i][1]:
             aktuell = marken[i][0]
         m = JZ_WORT.search(z)
         zeiten = _zeiten(z)
+        zpos = (ZEIT.search(z).start() if ZEIT.search(z) else -99)
+        if (not m and zeiten and letzte and i - letzte[2] <= 1 and abs(zpos - letzte[3]) <= 3
+                and not any(letzte[2] < k <= i for k in marken)):
+            if letzte[0] not in (None, "andere"):                       # weiteres Fenster derselben Jahreszeit direkt darunter, gleiche Spalte
+                out.setdefault(letzte[0], {}).setdefault(letzte[1], []).extend(f for _, f in zeiten)
+            letzte = (letzte[0], letzte[1], i, letzte[3])
+            continue
         if not m or not zeiten:
             if m and i in marken:
                 aktuell = marken[i][0]
@@ -257,6 +273,7 @@ def _form_d(zeilen):
         if eb in (None, "andere"):
             continue
         out.setdefault(eb, {}).setdefault(_jz(m.group()), []).extend(f for _, f in zeiten)
+        letzte = (eb, _jz(m.group()), i, (ZEIT.search(z).start() if ZEIT.search(z) else -99))
     for eb in out:
         for jz in JAHRESZEITEN:
             out[eb].setdefault(jz, [])
@@ -432,7 +449,7 @@ def _form_g(zeilen):
 
 
 _IGN = [0]          # Fenster anderer Ebenen (HS, HS/MS, MS), die die neuen Formen sehen, aber nicht ausgeben
-NEUE_FORMEN = {"Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)", "Tabelle nach Positionen"}
+NEUE_FORMEN = {"Zeile je Ebene und Jahreszeit", "Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)", "Tabelle nach Positionen"}
 ZEIT_DOPPELPUNKT = re.compile(r"(?<![\d:.])[0-2]?\d:[0-5]\d(?::\d\d)?(?![\d:])(?!\s*h\b)")
 ZEIT_PUNKT = re.compile(r"(?<![\d:.])[0-2]?\d\.([0-5]\d)(?![\d:.])(?!\s*h\b)")
 ZEITLIKE = re.compile(r"(?<![\d:.])[0-2]?\d[:.][0-5]\d(?::\d\d)?(?![\d:])(?![.]?\d)(?!\.)(?!\s*h\b)")
@@ -542,6 +559,8 @@ def _ebene_wort(label: str):
         return "NS"
     if mitt and not nied:
         return "MS"
+    if mitt and nied:
+        return "MSNS"                                            # "Mittelspannung in Niederspannung"
     return None
 
 
