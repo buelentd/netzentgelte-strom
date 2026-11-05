@@ -336,6 +336,7 @@ def _form_e(zeilen):
     """Zeile je Fenster mit Jahreszeit am Zeilenanfang ("Winter 07:45 Uhr 10:15 Uhr", "Herbst 1 06:15 10:15"); Ebene steht als Überschrift darüber."""
     out, eb, jz_alt = {}, None, None
     gesehen = {}                                              # je Ebene die Jahreszeiten, die schon vorkamen
+    leer_zellen = {}                                          # je Ebene: Jahreszeiten, die nur aus einer leeren Zelle als "kein Fenster" gelesen wurden
     for z in zeilen:
         st = z.strip()
         if not st:
@@ -370,10 +371,15 @@ def _form_e(zeilen):
             jz_alt = jz
         elif (len(KEIN.findall(rest)) >= 1 or not rest.strip()) and not UHR.search(rest):
             out.setdefault(eb, {}).setdefault(jz, [])         # "-", "keine", "entfällt" oder leere Zelle: kein Fenster in dieser Jahreszeit
+            if not rest.strip():
+                leer_zellen.setdefault(eb, set()).add(jz)
             jz_alt = jz
         elif UHR.search(rest):
             return {}                                       # Zeiten in der Zeile, aber nicht als Paar lesbar: lieber nichts als falsch
     _IGN[0] += sum(len(v) for e in out if e not in ("NS", "MSNS") for v in out[e].values())
+    for e_ in list(out):
+        if not any(out[e_].values()) and leer_zellen.get(e_) and all(j in leer_zellen[e_] for j in out[e_]):
+            del out[e_]                                           # nur leere Zellen gelesen, kein einziges Fenster: keine belastbare Aussage
     return {e: {j: out[e].get(j, []) for j in JAHRESZEITEN} for e in out if e in ("NS", "MSNS")}
 
 
@@ -484,6 +490,7 @@ def _vollstaendig(text: str, out: dict) -> bool:
 
 def _spaltenname(t: str):
     """Ebene einer Spalte aus ihrem Kopftext: "Mittel-/ Niederspannung" = MSNS, "Niederspannung" = NS, "Mittelspannung" = MS, sonst None."""
+    t = t.replace("|", "/")
     mehrfach = bool(re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|usp\.?\s*ms", t, re.I))
     t = re.sub(r"\(.*?\)", " ", t)
     t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene|für entnahmen aus:?|\bnetz\b", " ", t, flags=re.I)
@@ -553,9 +560,9 @@ def _form_h(zeilen):
         for k in range(3):
             lo, hi = pos[2 * k] - 10, pos[2 * k + 1] + 14
             teile = []
-            for j in range(max(0, i - 5), i):
+            for j in range(max(0, i - 3), i):
                 for m in re.finditer(r"\S+(?:[ ]\S+)*", zeilen[j]):
-                    if lo <= (m.start() + m.end()) / 2 <= hi:
+                    if lo <= (m.start() + m.end()) / 2 <= hi and len(m.group()) <= 40:     # Fließtext (lange Teile) gehört nicht zum Spaltenkopf
                         teile.append(m.group())
             namen.append(_spaltenname(" ".join(teile)))
         if None in namen:
