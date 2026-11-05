@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 19:35, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 19:41, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 488 | 59% |
+| ok | 489 | 59% |
 | pruefen | 306 | 37% |
-| kein_preisblatt | 3 | 0% |
+| kein_preisblatt | 2 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 421,  67
+Preisstand (nur ok): endgültig 420,  69
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
-- Maximum: 15,00 ct/kWh (GIG energy services GmbH)
-- Median: 7,25 ct/kWh (n = 701)
+- Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
+- Median: 7,26 ct/kWh (n = 709)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 723)
+- Median: 6,41 ct/kWh (n = 733)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 150,84 €/kW/a (n = 723)
+- Median: 151,19 €/kW/a (n = 733)
 
 ## Datenherkunft
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 421,  67
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (67)
+## Status ok, aber Preisstand nicht endgültig (69)
 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
@@ -70,10 +70,10 @@ Preisstand (nur ok): endgültig 421,  67
 - 241. Gemeindewerke Oberaudorf: 
 - 250. Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern: 
 - 277. inetz GmbH: 
+- 278. infra fürth gmbh: 
 - 282. Infrastrukturbetrieb der Stadt Arneburg: 
 - 334. Netzwerke Saarlouis GmbH: 
 - 368. Schleswiger Stadtwerke GmbH: 
-- 380. Stadtwerke Altensteig: 
 - 394. Stadtwerke Bad Harzburg GmbH: 
 - 398. Stadtwerke Bad Nauheim GmbH: 
 - 405. Stadtwerke Bad Saulgau: 
@@ -82,6 +82,7 @@ Preisstand (nur ok): endgültig 421,  67
 - 433. Stadtwerke Buchen GmbH ＆ Co KG: 
 - 446. Stadtwerke Delitzsch GmbH: 
 - 448. Stadtwerke Dettelbach: 
+- 459. Stadtwerke Eckernförde GmbH: 
 - 461. Stadtwerke Eilenburg GmbH: 
 - 466. Stadtwerke Emden GmbH: 
 - 477. Stadtwerke Feuchtwangen KU: 
@@ -105,6 +106,7 @@ Preisstand (nur ok): endgültig 421,  67
 - 633. Stadtwerke Roth: 
 - 638. Stadtwerke Schifferstadt: 
 - 652. Stadtwerke Schwedt GmbH: 
+- 656. Stadtwerke Senftenberg GmbH: 
 - 660. Stadtwerke Soest GmbH: 
 - 682. Stadtwerke Treuchtlingen KU: 
 - 687. Stadtwerke Uelzen GmbH: 
@@ -122,7 +124,7 @@ Preisstand (nur ok): endgültig 421,  67
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 
-## Restfälle (343)
+## Restfälle (342)
 
 ### pruefen (306)
 
@@ -248,7 +250,6 @@ Preisstand (nur ok): endgültig 421,  67
 - 270. Havelstrom Zehdenick GmbH: 
 - 275. HEWA GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 276. IGS Netze GmbH: SLP-Werte nicht gefunden
-- 278. infra fürth gmbh: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2025], nicht 2026
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
 - 281. InfraServ GmbH ＆ Co. Wiesbaden KG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
@@ -293,6 +294,7 @@ Preisstand (nur ok): endgültig 421,  67
 - 370. Sömmerdaer Energieversorgung GmbH: SLP-Werte nicht gefunden
 - 373. Stadt- und Überlandwerke GmbH Luckau-Lübbenau: 
 - 375. Stadtwerk Haßfurt GmbH: 
+- 380. Stadtwerke Altensteig: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 381. Stadtwerke Amberg Versorgungs GmbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 386. Stadtwerke Arnstadt Netz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 388. Stadtwerke Backnang GmbH: 
@@ -318,15 +320,16 @@ Preisstand (nur ok): endgültig 421,  67
 - 441. Stadtwerke Coesfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-coesfeld.de/fileadmin/2_stadtwerke_coesfeld/4_netze/1_stromnetz/netzzugang-entgelte/Preisblatt_NNE_Strom_ohne_Bundeszuschuss_010
 - 442. Stadtwerke Crailsheim GmbH: SLP-Werte nicht gefunden
 - 443. Stadtwerke Dachau Eigenbetr. d. Stadt Dachau: 15 Dokument(e) geprüft: gültig ab [2024], nicht 2026; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?); Endkunden-Preisblatt (Lieferung), keine Netze
+- 444. Stadtwerke Deggendorf GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 445. Stadtwerke Deidesheim GmbH: SLP-Werte nicht gefunden
 - 458. Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH: SLP-Werte nicht gefunden
-- 459. Stadtwerke Eckernförde GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument
 - 463. Stadtwerke Elbtal GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 468. Stadtwerke Emmerich GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (23.72, 0.065, 0.0648); SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 23.7200, 0.0650, 0.0648
 - 469. Stadtwerke Emsdetten GmbH: 
 - 470. Stadtwerke Engen GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument
 - 476. Stadtwerke Fellbach GmbH: 
 - 480. Stadtwerke Forchheim GmbH: 
+- 484. Stadtwerke Fürstenfeldbruck GmbH: 4 Dokument(e) geprüft: kein Text im Dokument (Scan?)
 - 488. Stadtwerke Geldern Netz GmbH: NS LP über 2.500 h = 324.45 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 493. Stadtwerke Glückstadt GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 494. Stadtwerke GmbH Bad Kreuznach: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2026 nicht im Dokument; gültig ab [2024], nicht 2026
@@ -382,7 +385,6 @@ Preisstand (nur ok): endgültig 421,  67
 - 648. Stadtwerke Schwäbisch Gmünd GmbH: 
 - 650. Stadtwerke Schwarzenbach/Saale: 
 - 655. Stadtwerke Schwerte GmbH: 
-- 656. Stadtwerke Senftenberg GmbH: kein Preisblatt-Link gefunden (25 Seiten durchsucht)
 - 658. Stadtwerke Sigmaringen GmbH: SLP-Werte nicht gefunden
 - 661. Stadtwerke Soltau GmbH ＆ Co. KG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden; MSNS: Benutzungsdauer-Grenze nicht im Kopf 
 - 665. Stadtwerke St. Ingbert GmbH: 
@@ -433,9 +435,8 @@ Preisstand (nur ok): endgültig 421,  67
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: kein Preisblatt-Link gefunden (15 Seiten durchsucht)
 - 830. YNCORIS GmbH ＆ Co. KG: 
 
-### kein_preisblatt (3)
+### kein_preisblatt (2)
 
-- 484. Stadtwerke Fürstenfeldbruck GmbH: 4 Dokument(e) geprüft: kein Text im Dokument (Scan?)
 - 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
