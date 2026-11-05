@@ -348,8 +348,8 @@ function nbAnzeigen() {
   if (!liste.some(e => e.n === gewaehlt)) gewaehlt = liste[0].n;
   if (liste.length > 1) bereich.insertAdjacentHTML("beforeend", '<div class="klein">Mehrere Netzbetreiber in dieser Postleitzahl. Ihr Netzbetreiber steht auf der Netzrechnung.</div>');
   for (const e of liste) {
-    const preise = (e.ns ? '<span class="chip ok">Leistungsmessung</span>' : '<span class="chip nein">Leistungsmessung fehlt</span>')
-                 + (e.slp ? '<span class="chip ok">Standardlastprofil</span>' : '<span class="chip nein">Standardlastprofil fehlt</span>');
+    const preise = (e.ns ? '<span class="chip ok">Leistungsmessung</span>' : '<span class="chip nein">Leistungsmessung: Werte nicht vorhanden</span>')
+                 + (e.slp ? '<span class="chip ok">Standardlastprofil</span>' : '<span class="chip nein">Standardlastprofil: Werte nicht vorhanden</span>');
     bereich.insertAdjacentHTML("beforeend", `<label><input type="radio" name="nb" value="${e.n}" ${e.n === gewaehlt ? "checked" : ""}>
       <span><b>${e.name}</b> <span class="klein">${liste.length > 1 ? fmt(e.anteil) + " % der Anschlüsse" : ""}</span><br>${preise}</span></label>`);
   }
@@ -406,8 +406,8 @@ function rechnen() {
   const hinweise = [];
   if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preise 2026 laut Preisblatt des Netzbetreibers. ${nb.ps === "vorläufig" ? "Das Preisblatt ist als vorläufig gekennzeichnet." : "Ob endgültig oder vorläufig, steht im Preisblatt nicht."}`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
-  if (ebeneFehlt) html += `<p class="leer">Für die gewählte Ebene liegen bei diesem Netzbetreiber noch keine Preise vor. Die Rechnung nutzt die Niederspannung.</p>`;
-  if (nb0 && nb0.ug && (ebeneKey === "ms" || ebeneKey === "hsms" || nb0.bad)) html += `<p class="leer">Achtung: Die Preise der gewählten Ebene stammen aus einer Liste und sind noch nicht gegen das Preisblatt geprüft.${nb0.bad ? " Sie widersprechen außerdem der üblichen Reihenfolge (Mittelspannung nicht teurer als Niederspannung) und sind vermutlich fehlerhaft." : ""}</p>`;
+  if (ebeneFehlt) html += `<p class="leer">Für die gewählte Ebene: Werte nicht vorhanden. Die Rechnung nutzt die Niederspannung.</p>`;
+  if (nb0 && nb0.ug && (ebeneKey === "ms" || ebeneKey === "hsms" || nb0.bad)) html += `<p class="leer">Achtung: Die Preise der gewählten Ebene stammen aus einer Liste und sind noch nicht am Preisblatt bestätigt.${nb0.bad ? " Sie widersprechen außerdem der üblichen Reihenfolge (Mittelspannung nicht teurer als Niederspannung) und sind vermutlich fehlerhaft." : ""}</p>`;
   let kappungInfo = null;
 
   const slpFall = kwh < 100000 && !$("kw-sicher").checked;
@@ -484,7 +484,7 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   const H = D.hlzf[nb.n];
   let html = `<hr class="trenner"><h2>Atypische Netznutzung</h2>`;
   const keins = t => ({html: html + t, zusatz: 0, erfuellt: false});
-  if (!H) return keins(`<p class="herkunft">Die Hochlastzeitfenster von ${nb.name} sind noch nicht erfasst. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`);
+  if (!H) return keins(`<p class="herkunft">Hochlastzeitfenster von ${nb.name}: Werte nicht vorhanden. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`);
   const fenster = Object.entries(H.f).flatMap(([jz, l]) => l.map(t => ({jz, ...hzSpanne(t), text: t})));
   const liste = Object.entries(H.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
   html += `<p class="herkunft">Der Netzbetreiber legt Zeiten fest, in denen sein Netz am stärksten belastet ist (Werktage): ${liste}.
@@ -689,7 +689,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const R = gewaehlt;
   const saeulen = [
     ["Spitze senken", R.s[0], R.gekappt > 0 ? `Zielspitze ${fmt(R.ziel)} statt ${fmt(kw)} kW (beste für diese Speichergröße): ${fmt(R.ersparnis)} € Netzentgelt, minus ${fmt(R.verlust)} € Ladeverluste` : "keine Kappung nötig oder möglich"],
-    ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Zeitfenster noch nicht erfasst")],
+    ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Hochlastzeitfenster: Werte nicht vorhanden")],
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
     [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW")],
     ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW"],
