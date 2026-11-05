@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 18:52, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 18:56, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 334 | 40% |
-| pruefen | 460 | 55% |
+| ok | 335 | 40% |
+| pruefen | 459 | 55% |
 | kein_preisblatt | 3 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 303,  31
+Preisstand (nur ok): endgültig 304,  31
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 303,  31
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,40 ct/kWh (n = 720)
+- Median: 6,41 ct/kWh (n = 726)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
-- Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 150,60 €/kW/a (n = 720)
+- Maximum: 374,00 €/kW/a (Covestro Brunsbüttel Energie GmbH)
+- Median: 151,12 €/kW/a (n = 726)
 
 ## Datenherkunft
 
@@ -86,9 +86,9 @@ Preisstand (nur ok): endgültig 303,  31
 - 778. SWN Stadtwerke Neustadt GmbH: 
 - 797. Überlandwerk Eppler GmbH: 
 
-## Restfälle (497)
+## Restfälle (496)
 
-### pruefen (460)
+### pruefen (459)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -128,7 +128,6 @@ Preisstand (nur ok): endgültig 303,  31
 - 70. BTT Bauteam Tretzel GmbH: 
 - 71. Butzbacher Netzbetrieb GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 72. C. Ensinger GmbH ＆ Co. KG: 
-- 74. Covestro Brunsbüttel Energie GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 77. Creos Deutschland GmbH: 
 - 78. DB Energie GmbH (Bahnstromnetz 16,7 Hz): 

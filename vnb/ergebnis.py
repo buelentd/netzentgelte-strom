@@ -249,7 +249,7 @@ class Speicher:
         grund = []
         for eb, w in m["ebenen"].items():
             bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
-                   if eb == "ns" or "außerhalb 40–260" not in g]
+                   if eb == "ns" or "außerhalb 40–500" not in g]
             gel = d.get(eb) or {}
             abw = len(gel) == 4 and len(w) == 4 and any(abs(gel[k] - w[k]) > 0.006 for k in w) \
                 and not str(m["hinweis"]).startswith("Korrigiert")
