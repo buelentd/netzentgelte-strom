@@ -37,7 +37,10 @@ def main():
     os.makedirs("ergebnis/hlzf_texte", exist_ok=True); os.makedirs("eingang/verarbeitet_hlzf", exist_ok=True)
     bericht = []
     gruppen = {}
-    for f in sorted(glob.glob("eingang/pdfs_neu/*_hlzf*.*")):
+    dateien = {}
+    for f in sorted(glob.glob("eingang/pdfs_neu/**/*_hlzf*.*", recursive=True)):
+        dateien[Path(f).name] = f                      # gleicher Dateiname in mehreren Ordnern: der spätere zählt
+    for f in sorted(dateien.values()):
         m = re.match(r"SNB\d+_(\d+)_hlzf", Path(f).name)
         if not m: continue
         if Path(f).suffix.lower() in (".png", ".jpg", ".jpeg"):
