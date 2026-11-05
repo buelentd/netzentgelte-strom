@@ -1,0 +1,2 @@
+Hier die PDFs ablegen, benannt nach der Spalte dateiname_speichern_als (MaStR-Nr_unsere-Nr.pdf).
+Dann committen und pushen; daten/eingang_verarbeiten.py wandelt sie um und rechnet die Tabelle neu.
