@@ -3,7 +3,7 @@ Unabhängig von den RLM-Parsern. Liefert (gp, ap, beleg) oder None."""
 import re
 
 ZAHL = re.compile(r"(?<![\d.,])-?\d{1,3}(?:\.\d{3})*,\d{1,4}(?![\d])|(?<![\d.,])-?\d+[.,]\d{1,4}(?![\d])")
-AUSSCHLUSS = re.compile(r"speicher|w[äa]rmepumpe|elektromobil|ladestation|steuerbar|unterbrech|14\s*a|modul|heiz|pauschal|reduz|nachtstrom|zweitarif|ht\b|nt\b|hochtarif|niedertarif|beleucht|kommunal|rabatt|lastg|leistungsmessung\s*\(?rlm", re.I)
+AUSSCHLUSS = re.compile(r"speicher|w[äa]rmepumpe|elektromobil|ladestation|steuerbar|(?<!nicht )(?<!nicht\s)unterbrech|14\s*a|modul|heiz|pauschal|reduz|nachtstrom|zweitarif|ht\b|nt\b|hochtarif|niedertarif|beleucht|kommunal|rabatt|lastg|leistungsmessung\s*\(?rlm", re.I)
 STANDARD = re.compile(r"niederspannung|\bns\b|kleinkunde|haushalt|gewerbe|standard|allgemein|eintarif|ohne\s+(?:registrierende\s+)?(?:leistungsmessung|lastgang)|slp|sonstige", re.I)
 
 def zahl(s):
@@ -19,10 +19,13 @@ def slp_parser(zeilen):
     n = len(zeilen)
     for i, kopf in enumerate(zeilen):
         k = kopf.lower()
-        if "grundpreis" not in k and "grundentgelt" not in k: continue
         k3 = " ".join(zeilen[i:i + 3]).lower()
-        if "arbeitspreis" not in k3 and "arbeitsentgelt" not in k3: continue
-        gp_zuerst = k3.find("grund") < min(x for x in (k3.find("arbeitsp"), k3.find("arbeitse")) if x >= 0)
+        if ("grundpreis" in k or "grundentgelt" in k) and ("arbeitspreis" in k3 or "arbeitsentgelt" in k3):
+            gp_zuerst = k3.find("grund") < min(x for x in (k3.find("arbeitsp"), k3.find("arbeitse")) if x >= 0)
+        elif re.search(r"(?:€|eur)\s*/\s*(?:a|jahr)", k) and re.search(r"ct\s*/\s*kwh|cent\s*/\s*kwh", k):   # Kopf nur mit Einheiten ("EUR/a  Ct/kWh")
+            gp_zuerst = re.search(r"(?:€|eur)\s*/\s*(?:a|jahr)", k).start() < re.search(r"ct\s*/\s*kwh|cent\s*/\s*kwh", k).start()
+        else:
+            continue
         for j in range(i + 1, min(n, i + 14)):
             l = zeilen[j]
             if not l.strip(): continue
