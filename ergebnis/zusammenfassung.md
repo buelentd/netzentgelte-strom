@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 14:48, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 14:58, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 312 | 38% |
-| pruefen | 469 | 56% |
+| ok | 317 | 38% |
+| pruefen | 464 | 56% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 306,  6
+Preisstand (nur ok): endgültig 311,  6
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 306,  6
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,40 ct/kWh (n = 662)
+- Median: 6,41 ct/kWh (n = 663)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 150,75 €/kW/a (n = 662)
+- Median: 150,66 €/kW/a (n = 663)
 
 ## Datenherkunft
 
@@ -61,9 +61,9 @@ Preisstand (nur ok): endgültig 306,  6
 - 704. Stadtwerke Waldkirchen: 
 - 797. Überlandwerk Eppler GmbH: 
 
-## Restfälle (519)
+## Restfälle (514)
 
-### pruefen (469)
+### pruefen (464)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -84,7 +84,6 @@ Preisstand (nur ok): endgültig 306,  6
 - 34. Stuttgart Netze GmbH: 
 - 35. wesernetz Bremen GmbH: 
 - 36. LEW Verteilnetz GmbH: SLP-Werte nicht gefunden
-- 37. NRM Netzdienste Rhein-Main GmbH: 
 - 38. Pfalzwerke Netz AG: SLP-Werte auffällig
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 40. Netze Magdeburg GmbH: 
@@ -96,7 +95,6 @@ Preisstand (nur ok): endgültig 306,  6
 - 57. Alzchem Netz GmbH: 6 Dokument(e) geprüft: gültig ab [2024], nicht 2026; fiktive Entgelte; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 59. Aschaffenburger Versorgungs-GmbH: SLP-Werte nicht gefunden
 - 60. AVU Netz GmbH: 
-- 62. badenovaNETZE GmbH: Netzbetreibername nicht im Dokument; RLM-Werte auffällig oder fehlend
 - 63. BASF InfraService ＆ Solutions Lausitz GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 65. BEW Netze GmbH: SLP-Werte nicht gefunden
 - 66. BIGGE ENERGIE GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 30.05 ct/kWh außerhalb 3–15; RLM-Werte nicht gefunden; SLP-Werte auffällig
@@ -164,7 +162,6 @@ Preisstand (nur ok): endgültig 306,  6
 - 166. Energieversorgung Rüsselsheim GmbH: 
 - 168. Energieversorgung Südbaar GmbH ＆ Co. KG: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 172. energis-Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (7.61, 1.4); SLP-Werte auffällig
-- 173. ENERVIE Vernetzt GmbH: 
 - 174. ENGIE Deutschland GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 175. EnR Energienetze Rudolstadt GmbH: 
 - 176. ENRO Ludwigsfelde Netz GmbH: 
@@ -464,7 +461,6 @@ Preisstand (nur ok): endgültig 306,  6
 - 682. Stadtwerke Treuchtlingen KU: kein Preisblatt-Link gefunden (31 Seiten durchsucht)
 - 683. Stadtwerke Troisdorf GmbH: 
 - 684. Stadtwerke Trostberg Stromversorgung GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 685. Stadtwerke Tübingen GmbH: 
 - 686. Stadtwerke Tuttlingen GmbH: SLP-Werte nicht gefunden
 - 687. Stadtwerke Uelzen GmbH: 3 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?)
 - 688. Stadtwerke Uffenheim: 
@@ -497,7 +493,6 @@ Preisstand (nur ok): endgültig 306,  6
 - 751. Stromnetz Kulmbach GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 752. Stromnetz Pullach GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://assets.stromnetz-pullach.de/media/downloads/2026/07/16/Stromnetz-Pullach-Netzentgelte-2019.pdf, https://assets.stromnetz-pullach.de/media/downl
 - 754. Stromnetz Weilheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 755. Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG: 
 - 757. Stromversorgung Inzell eG: 
 - 759. Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 762. Stromversorgung Sulz am Neckar GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.stromversorgung-sulz.de/fileadmin/Dateien/Dateien/Downloads/Preisblatt_16_/Preisblatt_NNE_2026.pdf, https://www.stromversorgung-sulz.de/fileadmin/
