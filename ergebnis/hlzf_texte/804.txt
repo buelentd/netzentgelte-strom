@@ -1,336 +1,62 @@
-https://www.werke-enkenbach-alsenborn.de/netzbetrieb-strom/informationen-veroeffentlichungen-datenschutz/hochlastzeitfenster/
+SNB932161540975_0804_hlzf.pdf
 
-Hochlastzeitfenster | Werke
-Suchbegriff eingeben...
-Seiten {{ sa2search.resultSets['self:live'].result.totalCount > sa2search.resultSets['self:live'].perPage ? '> ' + sa2search.resultSets['self:live'].perPage : sa2search.resultSets['self:live'].result.totalCount}}
-Amtsblatt {{ sa2search.resultSets['wittichendpoint:wittich'].result.totalCount > sa2search.resultSets['wittichendpoint:wittich'].perPage ? '> ' + sa2search.resultSets['wittichendpoint:wittich'].perPage : sa2search.resultSets['wittichendpoint:wittich'].result.totalCount}}
-Leistungen {{ sa2search.resultSets['bwc:entry'].result.totalCount > sa2search.resultSets['bwc:entry'].perPage ? '> ' + sa2search.resultSets['bwc:entry'].perPage : sa2search.resultSets['bwc:entry'].result.totalCount}}
-Abteilungen {{ sa2search.resultSets['bwc:department'].result.totalCount > sa2search.resultSets['bwc:department'].perPage ? '> ' + sa2search.resultSets['bwc:department'].perPage : sa2search.resultSets['bwc:department'].result.totalCount}}
-Mitarbeitende {{ sa2search.resultSets['bwc:employee'].result.totalCount > sa2search.resultSets['bwc:employee'].perPage ? '> ' + sa2search.resultSets['bwc:employee'].perPage : sa2search.resultSets['bwc:employee'].result.totalCount}}
-Formulare {{ sa2search.resultSets['bwc:form'].result.totalCount > sa2search.resultSets['bwc:form'].perPage ? '> ' + sa2search.resultSets['bwc:form'].perPage : sa2search.resultSets['bwc:form'].result.totalCount}}
-Online-Verfahren {{ sa2search.resultSets['bwc:procedure'].result.totalCount > sa2search.resultSets['bwc:procedure'].perPage ? '> ' + sa2search.resultSets['bwc:procedure'].perPage : sa2search.resultSets['bwc:procedure'].result.totalCount}}
-OZG Lebenslagen {{ sa2search.resultSets['bwc:ozgcircumstance'].result.totalCount > sa2search.resultSets['bwc:ozgcircumstance'].perPage ? '> ' + sa2search.resultSets['bwc:ozgcircumstance'].perPage : sa2search.resultSets['bwc:ozgcircumstance'].result.totalCount}}
-OZG Leistungen {{ sa2search.resultSets['bwc:ozgentry'].result.totalCount > sa2search.resultSets['bwc:ozgentry'].perPage ? '> ' + sa2search.resultSets['bwc:ozgentry'].perPage : sa2search.resultSets['bwc:ozgentry'].result.totalCount}}
-Sitzungen {{ sa2search.resultSets['bwc:rismeeting'].result.totalCount > sa2search.resultSets['bwc:rismeeting'].perPage ? '> ' + sa2search.resultSets['bwc:rismeeting'].perPage : sa2search.resultSets['bwc:rismeeting'].result.totalCount}}
-Gremien {{ sa2search.resultSets['bwc:risorganization'].result.totalCount > sa2search.resultSets['bwc:risorganization'].perPage ? '> ' + sa2search.resultSets['bwc:risorganization'].perPage : sa2search.resultSets['bwc:risorganization'].result.totalCount}}
-Vorlagen {{ sa2search.resultSets['bwc:rispaper'].result.totalCount > sa2search.resultSets['bwc:rispaper'].perPage ? '> ' + sa2search.resultSets['bwc:rispaper'].perPage : sa2search.resultSets['bwc:rispaper'].result.totalCount}}
-Mandatstragende {{ sa2search.resultSets['bwc:risperson'].result.totalCount > sa2search.resultSets['bwc:risperson'].perPage ? '> ' + sa2search.resultSets['bwc:risperson'].perPage : sa2search.resultSets['bwc:risperson'].result.totalCount}}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-{{ item.kommuneName }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-{{ item.kommuneName }}
-{{ telephone }}
-{{faxNumber}}
-{{email}}
-{{ website }}
-Öffnungszeiten
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.honorificPrefix +' '+ item.familyName +', '+ item.givenName | trim }}
-{{ item.kommuneName }}
-{{telephone}}
-{{faxNumber}}
-{{item.mobil}}
-{{email}}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-{{ item.start | date:"short"}}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.name }}
-{{ item.classification }}
-{{ item.website }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{body.name}}
--
-{{underDirectionOf.name}}
-{{ item.paperType }} - {{ item.reference }}
-Die Suche konnte nicht ausgeführt werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.
-{{ item.formOfAddress +' '+ item.title[0] +' '+ item.familyName +', '+ item.givenName | trim }}
-{{phone}}
-{{mail}}
-Menü
-Strom
-Wasser
-Abwasser
-Wärme
-Netzbetrieb Strom
-Formular Center
-E-Rechnung
-Mehr
-Quicklinks
-Notruf- und Informationsstellen
-Strom Strompreise Allgemeine Preise Grundversorgung
-Allgemeine Preise Ersatzversorgung
-Allgemeine Preise Kunden > 10.000 kWh
-Sondertarife Privat Profi
-Sonderabkommen / Raumheizung
-Naturstrom
-EnergieMix
-StromGVV Ergänzende Bedingungen / Strom GVV
-Stromversorgung
-Abwendungsvereinbarung
-Informationen/Datenschutz Stromzähler
-Widerrufsformular
-Streitbeilegung
-123energie
-Energieeffiziens
-"Strom-Anbieter"
-Jahresabrechnung / Zählerstände melden / meter reading
-Datenaustausch / Kontaktdatenblatt
-Wasser Wasserpreise
-Wasserqualität / Wasserhärte Wasserhärte umrechnen
-Wasserzähler Kennzeichnung
-Zählerwechsel
-Satzungen
-Jahresabrechnung / Zählerstände melden / meter reading
-Informationen / Veröffentlichungen / Datenschutz
-Abwasser Grundstücksanschluss
-Abwasserpreise
-Anschlusszwang
-Regenwasserzisterne
-Gruben
-Satzungen
-Informationen/Datenschutz Kanalisation - Fremdstoffe
-Abfall-Zerkleinerer
-Rattenplage
-Wärme Wärmenetze
-Wärmepreise
-Wärmepreisbremse
-Netzbetrieb Strom Netzanschluss / Anschlussnutzung / NAV & erg. Bedingungen Netzanschluss / Anschlusspflicht / Netzanschlussvertrag
-NAV für Strom - Bedingungen für Netzanschluss
-Hinweis zu Satzungen, Verträgen, (technische) Bedingungen
-Netznutzung / Vertrag und Entgelte Verträge - NNV/LRV
-Entgelte - NNE
-Messwesen / Messstellenbetrieb / Messstellenvertrag mME & iMS - Vertrag & Entgelte
-Messstellenbetreiberrahmenvertrag / Messwertverwender-Stromzähler
-Informationen / Veröffentlichungen / Datenschutz Grundversorger
-Hochlastzeitfenster
-Netzdaten
-Lastprofile
-Netzengpass
-Streitbeilegung
-Elektro - Installateurverzeichnis
-Einspeiser / EEG & KWK / PV-Anlagen Registrierung - Meldepflicht - MaStR
-Vereinbarung Anlagenbetreiberwechsel
-technische Anforderungen
-Datenaustausch / Kontaktdaten / Zertifikate
-Formular Center Ver- / Entsorgungsgebiet Enkenbach-Alsenborn
-Ver- / Entsorgungsgebiet Hochspeyer
-E-Rechnung
-Strom Strompreise Allgemeine Preise Grundversorgung
-Allgemeine Preise Ersatzversorgung
-Allgemeine Preise Kunden > 10.000 kWh
-Sondertarife Privat Profi
-Sonderabkommen / Raumheizung
-Naturstrom
-EnergieMix
-StromGVV Ergänzende Bedingungen / Strom GVV
-Stromversorgung
-Abwendungsvereinbarung
-Informationen/Datenschutz Stromzähler
-Widerrufsformular
-Streitbeilegung
-123energie
-Energieeffiziens
-"Strom-Anbieter"
-Jahresabrechnung / Zählerstände melden / meter reading
-Datenaustausch / Kontaktdatenblatt
-Wasser Wasserpreise
-Wasserqualität / Wasserhärte Wasserhärte umrechnen
-Wasserzähler Kennzeichnung
-Zählerwechsel
-Satzungen
-Jahresabrechnung / Zählerstände melden / meter reading
-Informationen / Veröffentlichungen / Datenschutz
-Abwasser Grundstücksanschluss
-Abwasserpreise
-Anschlusszwang
-Regenwasserzisterne
-Gruben
-Satzungen
-Informationen/Datenschutz Kanalisation - Fremdstoffe
-Abfall-Zerkleinerer
-Rattenplage
-Wärme Wärmenetze
-Wärmepreise
-Wärmepreisbremse
-Netzbetrieb Strom Netzanschluss / Anschlussnutzung / NAV & erg. Bedingungen Netzanschluss / Anschlusspflicht / Netzanschlussvertrag
-NAV für Strom - Bedingungen für Netzanschluss
-Hinweis zu Satzungen, Verträgen, (technische) Bedingungen
-Netznutzung / Vertrag und Entgelte Verträge - NNV/LRV
-Entgelte - NNE
-Messwesen / Messstellenbetrieb / Messstellenvertrag mME & iMS - Vertrag & Entgelte
-Messstellenbetreiberrahmenvertrag / Messwertverwender-Stromzähler
-Informationen / Veröffentlichungen / Datenschutz Grundversorger
-Hochlastzeitfenster
-Netzdaten
-Lastprofile
-Netzengpass
-Streitbeilegung
-Elektro - Installateurverzeichnis
-Einspeiser / EEG & KWK / PV-Anlagen Registrierung - Meldepflicht - MaStR
-Vereinbarung Anlagenbetreiberwechsel
-technische Anforderungen
-Datenaustausch / Kontaktdaten / Zertifikate
-Formular Center Ver- / Entsorgungsgebiet Enkenbach-Alsenborn
-Ver- / Entsorgungsgebiet Hochspeyer
-E-Rechnung
-Seite einstellen
-Sie sind hier:
-Netzbetrieb Strom
-Informationen / Veröffentlichungen / Datenschutz
-Hochlastzeitfenster
-Hochlastzeitfenster - Verbandsgemeindewerke Enkenbach-Alsenborn
-Veröffentlichungspflicht gemäß StromNEV:
-die netzrelevanten Daten der Verbandsgemeindewerke Enkenbach-Alsenborn für das Versorgungsgebiet Hochspeyer können Sie aus den nachfolgenden PDF-Dateien entnehmen.
-Hochlastzeitfenster 2026
-Hochlastzeitfenster 2025
-Hochlastzeitfenster 2024
-Hochlastzeitfenster 2023
-Hochlastzeitfenster 2022
-Hochlastzeitfenster 2021
-Hochlastzeitfenster - Gemeindewerke Enkenbach-Alsenborn
-Veröffentlichungspflicht gemäß StromNEV:
-die netzrelevanten Daten der Gemeindewerke Enkenbach-Alsenborn für das Versorgungsgebiet Enkenbach-Alsenborn können Sie aus den nachfolgenden PDF-Dateien entnehmen.
-Hochlastzeitfenster 2025
-Hochlastzeitfenster 2024
-Hochlastzeitfenster 2023
-Hochlastzeitfenster 2022
-Hochlastzeitfenster 2021
-Hochlastzeitfenster 2020
-Hochlastzeitfenster - Individuelle Netzentgelte
-Gemäß § 16 StromNEV werden die von Lieferanten und Letztverbrauchern zu zahlenden allgemeinen Netzentgelte ausgehend vom Prinzip der Verursachungsgerechtigkeit auf der Basis der sog. Gleichzeitigkeitsfunktion ermittelt. Abweichend hiervon eröffnet § 19 Abs. 2 StromNEV die Möglichkeit, einem Letztverbraucher unter bestimmten Voraussetzungen ein individuelles Netzentgelt anzubieten.
-Netzkunden mit atypischen Verbrauchsverhalten können nach § 19 Abs. 2 Nr. 1 StromNEV ein individuelles Netznutzungsentgelt beantragen. Ein atypisches Verbrauchsverhalten ist entsprechend dem Leitfaden zur Ermittlung individueller Netzentgelte der Bundesnetzagentur anhand von Hochlastzeitfenstern zu bestimmen.
-KONTAKT
-Verbandsgemeindewerke Enkenbach-Alsenborn Gemeindewerke Enkenbach-Alsenborn
-Hauptstraße 18
-67677 Enkenbach-Alsenborn
-Besucheranschrift
-Hauptstraße 121
-Rathaus Hochspeyer
-67691 Hochspeyer
-+49 6305 71-0
-RECHTLICHES
-Kontakt
-Barrierefreiheitserklärung
-Feedback zur Barrierefreiheit
-Impressum
-Datenschutz
-Gemeindewerke Leitweg ID 073355002000-002-09
-Verbandsgemeindewerke Leitweg ID 073355002000-003-06
-Einfache Sprache
-ÖFFNUNGSZEITEN
-Verwaltung:
-Klicken, um weitere Öffnungs- oder Schließzeiten auszublenden Geschlossen: öffnet nächsten Donnerstag um 08:30 Uhr
-Montag
-08:30 - 12:30 Uhr Von 08:30 bis 12:30 Uhr 14:00 - 18:00 Uhr Von 14:00 bis 18:00 Uhr
-Dienstag
-08:30 - 12:30 Uhr Von 08:30 bis 12:30 Uhr 14:00 - 16:00 Uhr Von 14:00 bis 16:00 Uhr
-Mittwoch
-08:30 - 12:30 Uhr Von 08:30 bis 12:30 Uhr
-Donnerstag
-08:30 - 12:30 Uhr Von 08:30 bis 12:30 Uhr 14:00 - 16:00 Uhr Von 14:00 bis 16:00 Uhr
-Freitag
-08:30 - 12:30 Uhr Von 08:30 bis 12:30 Uhr
-Seite einstellen
-Suchen
-Seite einstellen
-Startseite
-Netzbetrieb Strom
-Informationen / Veröffentlichungen / Datenschutz
-Netzbetrieb Strom Informationen / Veröffentlichungen / Datenschutz
-Grundversorger
-Hochlastzeitfenster
-Netzdaten
-Lastprofile
-Netzengpass
-Streitbeilegung
-Elektro - Installateurverzeichnis
-Grundversorger
-Hochlastzeitfenster
-Netzdaten
-Lastprofile
-Netzengpass
-Streitbeilegung
-Elektro - Installateurverzeichnis
-Hilfe zur Barrierefreiheit
-Allgemein
-Wir sind bemüht, unsere Webseiten barrierefrei zugänglich zu gestalten. Details hierzu finden Sie in unserer Erklärung zur Barrierefreiheit. Verbesserungsvorschläge können Sie uns über unser Feedback-Formular Barriere melden zukommen lassen.
-Schriftgröße
-Um die Schriftgröße anzupassen, verwenden Sie bitte folgende Tastenkombinationen:
-Größer
-⌘ command
-+
-Kleiner
-⌘ command
-–
-Größer
-Strg
-+
-Kleiner
-Strg
-–
-Tastaturnavigation
-Verwenden Sie TAB und SHIFT + TAB , um durch nächste / vorherige Links, Formularelemente und Schaltflächen zu navigieren.
-Verwenden Sie ENTER , um Links zu öffnen und mit Elementen zu interagieren.
-Kontrastmodus
-Drücken Sie die folgende Tastenkombination, um den Kontrast zu verringern bzw. zu vergrößern:
-Vergrößern
-⌃ control
-⌥ option
-⌘ command
-.
-Verringern
-⌃ control
-⌥ option
-⌘ command
-,
-Hinweis: Die Kurzbefehle müssen in den Systemeinstellungen des Betriebssystems aktiviert sein.
-Drücken Sie die linke ALT-TASTE + linke UMSCHALTTASTE + DRUCK , um den Modus für hohen Kontrast schnell ein- oder auszuschalten.
-Farben umkehren
-Drücken Sie folgende Tastenkombination, um die Farbumkehrung ein- und auszuschalten:
-⌃ control
-⌥ option
-⌘ command
-8
-Hinweis: Die Kurzbefehle müssen in den Systemeinstellungen des Betriebssystems aktiviert sein.
-Aktivieren Sie zuerst die Bildschirmlupe und schalten Sie dann die Farbumkehrung mit folgenden Tastenkombinationen ein und aus:
-1. Bildschirmlupe
-+
-2. Farben umkehren
-Strg
-Alt
-I
-Bildschirmlupe
-Drücken sie folgende Tastenkombinationen, um die Bildschirmlupe zu verwenden:
-Ein-/ausschalten
-⌥ option
-⌘ command
-8
-Ansicht vergrößern
-⌥ option
-⌘ command
-=
-Ansicht verkleinern
-⌥ option
-⌘ command
-–
-Hinweis: Die Kurzbefehle müssen in den Systemeinstellungen des Betriebssystems aktiviert sein.
-Einschalten / Ansicht vergrößern
-+
-Ansicht verkleinern
-–
-Seite einstellen
+Verbandsgemeindewerke Enkenbach-
+Alsenborn
+Individuelle Netzentgelte nach § 19 Abs. 2 S. 1 StromNEV
+Netzkunden mit atypischen Verbrauchsverhalten können nach § 19 Abs. 2 Satz 1 der
+Stromnetzentgeltverordnung (StromNEV) ein individuelles Netzentgelt für die
+Netznutzung bei der Bundesnetzagentur (BNetzA) beantragen.
+
+Atypisches Verbrauchsverhalten liegt vor, wenn die Zeitpunkte des maximalen
+Energiebezugs eines Netzkunden außerhalb der vom Netzbetreiber veröffentlichten
+Hochlastzeitfenster liegen.
+
+Nach der Festlegung der BNetzA BK4-13-739 vom 11. Dezember 2013 veröffentlichen
+wir folgende Hochlastzeitfenster:
+
+
+
+Hochlastzeitfenster gemäß Festlegung BK4-13-739 der BNetzA für 2026
+
+                    FRÜHLING             SOMMER         HERBST          WINTER
+ENTNAHME
+                      Mrz. - Mai         Jun. - Aug.   Sep. - Nov.      Dez. - Feb.
+
+
+NETZEBENE 5                -                  -        17:00 - 20:00   17:00 - 20:00
+
+
+
+NETZEBENE 6                -                  -        17:00 - 20:00   17:00 - 20:00
+
+
+                                                                       11:00 - 14:00
+NETZEBENE 7          11:00 - 14:00   11:00 - 14:00     17:00 - 20:00
+                                                                       17:00 - 19:15
+
+
+
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig. Brückentage werden
+als Werktage betrachtet. Wochenenden, Feiertage sowie die Zeit zwischen
+Weihnachten und Neujahr gelten als Nebenzeiten/Schwachlastzeiten. Die
+Hochlastzeitfenster können jährlich aktualisiert werden.
+
+Zur Inanspruchnahme des Sonderentgelts müssen gemäß des oben genannten
+Beschlusses weiterführende Bedingungen erfüllt sein. Insbesondere sind das:
+▪ eine Bagatellgrenze, die jährliche Entgeltreduzierung muss mindestens 500,00 €
+   betragen.
+▪ der maximale Energiebezug (Maximallast) des Netzkunden innerhalb der
+   Hochlastzeitfenster muss erheblich unter seiner Jahreshöchstlast liegen.
+   Die hierfür geltenden Erheblichkeitsschwellen sind der folgenden Tabelle zu
+   entnehmen:
+
+ENTNAHME            ERHEBLICHKEITSSCHWELLE
+NETZEBENE 5                        20%
+NETZEBENE 6                        30%
+NETZEBENE 7                        30%
+
+▪ die Differenz zwischen der Jahreshöchstlast des Netzkunden und seiner
+  Maximallast innerhalb der Hochlastzeitfenster muss mindestens 100 kW
+  betragen.
+

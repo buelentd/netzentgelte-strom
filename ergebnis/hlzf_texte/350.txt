@@ -1,28 +1,28 @@
-https://www.outokumpu.com/-/media/files/locations/krefeld/hochlastzeitfenster-bersichtsblatt-hlzf-otk-2027.pdf
+SNB965394941448_0350_hlzf.pdf
 
-Hochlastzeitfenster für das Kalenderjahr 2027 nach § 19 Abs. 2 Satz 1 StromNEV (atypische Netznutzung)
+Hochlastzeitfenster für das Kalenderjahr 2026 nach § 19 Abs. 2 Satz 1 StromNEV (atypische Netznutzung)
   Netz- oder Umspannebene     Jahreszeit     Zeiträume
 
-                              Herbst
-                              Winter          7:15 - 8:00     8:45 - 9:15    10:00 - 10:30
+                              Herbst          0:15 - 0:45     4:15 - 4:30     6:45 - 7:00     8:00 - 12:15   15:00 - 16:00    16:45 - 17:00    18:30 - 18:45   20:30 - 20:45   22:30 - 22:45   23:45 - 0:00
+                              Winter          0:30 - 1:15     2:30 - 2:45     8:00 - 9:45    16:15 - 17:15   22:00 - 22:15    23:45 - 0:00
        Mittelspannung
-                              Frühling        3:30 - 3:45    16:00 - 17:15
+                              Frühling        9:30 - 9:45    16:45 - 17:30
                               Sommer
 
-                           Herbst             8:30 - 8:45
- Umspannung Mittelspannung Winter             7:45 - 8:30
+                           Herbst
+ Umspannung Mittelspannung Winter             8:00 - 8:45     9:30 - 9:45
      / Niederspannung      Frühling
                            Sommer
 
-                              Herbst          8:30 - 8:45
-                              Winter          7:45 - 8:30
+                              Herbst
+                              Winter          8:00 - 8:45     9:30 - 9:45
       Niederspannung
                               Frühling
                               Sommer
 
                    Hinweis:
                               Die Angaben beziehen sich auf den Zeitraum und nicht auf den Viertelstundenwert. Bspw. bezieht sich der Zeitraum "8:00 - 9:15" auf die Dauer von 08:00:00 bis 09:14:59.
-                              Zur Berechnung der Hochlastzeiten wurden die Lastgangdaten vom 01.09.2025 - 31.08.2026 verwendet.
+                              Zur Berechnung der Hochlastzeiten wurden die Lastgangdaten vom 01.09.2024 - 31.08.2025 verwendet.
                               Die Hochlastzeiten sind ausschließlich an Werktagen gültig. Wochenenden, Feiertage sowie die Zeiten zwischen Weihnachten und Neujahr gelten als Nebe          -
                               Alle Brückentage werden wie Werktage berücksichtigt.
 
@@ -35,7 +35,7 @@ Hochlastzeitfenster für das Kalenderjahr 2027 nach § 19 Abs. 2 Satz 1 StromNEV
 
      Voraussetzungen gemäß
       Beschluss BK4-13-739:
-                              Netz- oder Umspannebene       Erheblichkeitsschwelle Mindestverlagerung       Bagatellgrenze
+                              Netz- oder Umspannebene       Erheblichkeitsschwelle Mindestverlagerung        Bagatellgrenze
 
                               Umspannung HS/MS                       20%
                               Mittelspannung                         20%

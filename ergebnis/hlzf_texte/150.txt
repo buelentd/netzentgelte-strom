@@ -1,257 +1,52 @@
-https://www.eg-wittmund.de/unternehmen/unser-netz/hochlastzeitfenster
+SNB914735995145_0150_hlzf.pdf
 
-Hochlastzeitfenster | EG-Wittmund
-{
-textWidth = $refs.text.offsetWidth;
-let tl = gsap.timeline({ paused: true });
-gsap.set($el, { width: '4rem' });
-gsap.set($refs.hoverContent, { scale: 0, opacity: 0, transformOrigin: 'left center' });
-gsap.set($refs.defaultIcon, { scale: 1, opacity: 1 });
-tl.to($el, {
-width: `${textWidth + 96}px`,
-duration: 0.3,
-//ease: 'power2.out'
-})
-.to($refs.hoverContent, {
-scale: 1,
-opacity: 1,
-duration: 0.3,
-ease: 'power2.out'
-}, ' tl.play());
-$el.addEventListener('mouseleave', () => tl.reverse());
-});
-"
->
-Kundenlogin
-{
-textWidth = $refs.text.offsetWidth;
-let tl = gsap.timeline({ paused: true });
-gsap.set($el, { width: '4rem' });
-gsap.set($refs.hoverContent, { scale: 0, opacity: 0, transformOrigin: 'left center' });
-gsap.set($refs.defaultIcon, { scale: 1, opacity: 1 });
-tl.to($el, {
-width: `${textWidth + 96}px`,
-duration: 0.3,
-//ease: 'power2.out'
-})
-.to($refs.hoverContent, {
-scale: 1,
-opacity: 1,
-duration: 0.3,
-ease: 'power2.out'
-}, ' tl.play());
-$el.addEventListener('mouseleave', () => tl.reverse());
-});
-"
->
-Tarif berechnen
-{
-if (isOpen) {
-scrollPosition = disableScroll();
-gsap.to($el, {
-scaleY: 1,
-duration: 0.5,
-ease: 'power2.inOut',
-onComplete: () => {
-gsap.to(items, {
-opacity: 1,
-x: 0,
-duration: 0.3,
-stagger: 0.05,
-ease: 'power2.out'
-});
-}
-});
-} else {
-gsap.to(items, {
-opacity: 0,
-x: 25,
-duration: 0.2,
-stagger: 0.05,
-ease: 'power2.in'
-});
-gsap.to($el, {
-scaleY: 0,
-duration: 0.5,
-ease: 'power2.inOut',
-onComplete: () => {
-enableScroll(scrollPosition);
-}
-});
-}
-});
-"
->
-Produkte
-Strom
-Erdgas
-Hüggelstrom
-Hüggelgas
-E-Mobilität
-EG Wärme
-PV-Pachtmodell
-Umzug
-Energieausweis
-Unternehmen
-Aktuelles
-Ansprechpartner
-Historie
-Unser Netz
-Karriere
-Mitgliedschaft
-Downloads
-Netz
-Kundenbereich
-Marktpartner
-Installateure
-Kontakt
-Tarif berechnen
-Kundenlogin
-{
-// Plugins registrieren
-gsap.set($el, {
-yPercent: -150,
-});
-let lastScrollTop = 0;
-const showAnim = gsap.to($el, {
-yPercent: 0,
-duration: 0.5,
-paused: true,
-ease: 'power2.inOut',
-onStart: () => isVisible = true,
-onReverseComplete: () => isVisible = false
-});
-ScrollTrigger.create({
-start: 'top top',
-end: 'max',
-onUpdate: (self) => {
-let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if (scrollTop lastScrollTop) {
-showAnim.reverse();
-} else {
-showAnim.play();
-}
-lastScrollTop = scrollTop
-Produkte
-Strom
-Unsere Stromtarife sind fair, günstig und zuverlässig - einfach wechseln und sparen!
-Erdgas
-Mit unserem Erdgas heizen Sie effizient und komfortabel – zuverlässig versorgt, fair im Preis.
-Hüggelstrom
-Wir liefern den Strom für Hasbergen!
-Hüggelgas
-Unsere attraktiven Gastarife für Hasbergen!
-E-Mobilität
-Mit unseren Ladelösungen und regionaler Ladeinfrastruktur bringen wir E-Mobilität komfortabel in Bewegung
-EG Wärme
-Neue Heizung ohne hohe Investitionskosten: Mit EG Wärme übernehmen wir Anschaffung, Installation und Wartung
-PV-Pachtmodell
-Nehmen Sie Ihre Energie selbst in die Hand
-Umzug
-Alle Informationen rund um das Thema Umzug finden Sie hier.
-Energieausweis
-Als Ihr qualifizierter Gebäudeenergieberater stehen wir Ihnen beratend zur Seite
-Unternehmen
-Aktuelles
-Erfahren Sie hier alle Neuigkeiten rund um EG Wittmund
-Ansprechpartner
-Lernen Sie unser Team kennen
-Historie
-Die Energiegenossenschaft für Wittmund eG
-Unser Netz
-Das Netzgebiet der EG Wittmund
-Karriere
-Mitgliedschaft
-Downloads
-Netz
-Kundenbereich
-Marktpartner
-Installateure
-Kontakt
-Tarif berechnen
-Suche
-Unser Netz
-Kundenlogin
-Einspeiserlogin
-Produkte
-Strom
-Unsere Stromtarife sind fair, günstig und zuverlässig - einfach wechseln und sparen!
-Erdgas
-Mit unserem Erdgas heizen Sie effizient und komfortabel – zuverlässig versorgt, fair im Preis.
-Hüggelstrom
-Wir liefern den Strom für Hasbergen!
-Hüggelgas
-Unsere attraktiven Gastarife für Hasbergen!
-E-Mobilität
-Mit unseren Ladelösungen und regionaler Ladeinfrastruktur bringen wir E-Mobilität komfortabel in Bewegung
-EG Wärme
-Neue Heizung ohne hohe Investitionskosten: Mit EG Wärme übernehmen wir Anschaffung, Installation und Wartung
-PV-Pachtmodell
-Nehmen Sie Ihre Energie selbst in die Hand
-Umzug
-Alle Informationen rund um das Thema Umzug finden Sie hier.
-Energieausweis
-Als Ihr qualifizierter Gebäudeenergieberater stehen wir Ihnen beratend zur Seite
-Unternehmen
-Aktuelles
-Erfahren Sie hier alle Neuigkeiten rund um EG Wittmund
-Ansprechpartner
-Lernen Sie unser Team kennen
-Historie
-Die Energiegenossenschaft für Wittmund eG
-Unser Netz
-Das Netzgebiet der EG Wittmund
-Karriere
-Mitgliedschaft
-Downloads
-Netz
-Kundenbereich
-Marktpartner
-Installateure
-Kontakt
-Tarif berechnen
-Unternehmen
-Unser Netz
-Hochlastzeitfenster
-Hochlastzeitfenster nach § 19 Abs. 2 Satz 1 StromNEV
-Hochlastzeitfenster
-Nach § 19 Abs. 2 Satz 1 StromNEV können Letztverbraucher mit atypischen Verbrauchsverhalten unter bestimmten Voraussetzungen ein individuelles Netzentgelt beantragen.
-Wenn auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder Umspannebene abweicht, ist der Betreiber von Elektrizitätsversorgungsnetzen verpflichtet diesem Letztverbraucher in Abweichung von § 16 StromNEV ein individuelles Netzengelt anzubieten, das dem besonderen Nutzungsverhalten des Netzkunden angemessen Rechnung zu tragen hat.
-Die Energiegenossenschaft für Wittmund eG hat gemäß den Vorgaben der Bundesnetzagentur (BNetzA) das Hochlastzeitfenster für die Niederspannungsebene und für die vier Jahreszeiten ermittelt und stellt das Hochlastzeitfenster im nachfolgenden PDF-Dokument zur Verfügung.
-Die mit dem Netznutzer zu treffende Vereinbarung über ein reduziertes Netzentgelt gemäß § 19 Abs. 2 Satz 1 StromNEV unterliegt der Genehmigungspflicht durch die BNetzA und erlangt erst nach Vorliegen des Genehmigungsbescheides ihre Gültigkeit.
-Hochlastzeitfenster 2027
-Hochlastzeitfenster 2026
-Energiegenossenschaft für Wittmund eG
-Am Markt 16
-26409 Wittmund
-Mo. & Di.: 09:00-14:30 Uhr
-Mi: geschlossen
-Do. & Fr.: 09:00-12:00 Uhr
-Termine können auch außerhalb der Öffnungszeiten vereinbart werden.
-04462 / 20660
-0152 / 51749162
-info@eg-wittmund.de
-technik@eg-wittmund.de
-24h Störungshilfe:
-04462 / 206620
-Produkte
-Strom
-Erdgas
-E-Mobilität
-EG Wärme
-PV-Pachtmodell
-Energieausweis
-Informationen
-Suche
-Kundenlogin
-Umzug
-Einspeiserlogin
-Unser Netz
-Kontakt
-Kündigung
-Widerruf
-Rechtliches
-Impressum
-Datenschutz
-Barrierefreiheitserklärung
-powered by
+            Hochlastzeitfenster 2026 für atypische Netznutzung
+
+                      nach § 19 Abs. 2 Satz 1 StromNEV
+
+
+Letztverbraucher mit atypischem Verbrauchsverhalten können nach § 19 Abs. 2 Satz 1 der
+Stromnetzentgeltverordnung ein Sonderentgelt für die Netznutzung beantragen.
+
+Ist aufgrund vorliegender oder prognostizierter Verbrauchsdaten oder aufgrund technischer
+oder vertraglicher Gegebenheiten offensichtlich, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitglichen Jahreshöchstlast aller
+Entnahmen der jeweiligen Netz- oder Umspannebene abweicht, so haben Betreiber von
+Elektrizitätsversorgungsnetzen diesem Letztverbraucher in Abweichung von § 16 StromNEV
+ein individuelles Netzentgelt anzubieten, das dem besonderen Nutzungsverhalten des
+Netzkunden angemessen Rechnung zu tragen hat.
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig. Wochenenden, Feiertage und
+maximal ein Brückentag sowie die Zeit zwischen Weihnachten und Neujahr gelten
+grundsätzlich als Nebenzeiten.
+
+Eine Bagatellgrenze, die jährliche Entgeltreduzierung muss mindestens 500,00 EUR betragen.
+
+
+
+
+ Hochlastzeiten Werktage                   Niederspannung
+
+ Frühling                                  entfällt
+
+ Sommer                                    entfällt
+
+ Herbst                                    13:00:00 Uhr – 13:29:59 Uhr
+                                           18:00:00 Uhr – 18:14:59 Uhr
+
+
+ Winter                                    10:30:00 Uhr – 13:59:59 Uhr
+                                           14:15:00 Uhr – 14:29:59 Uhr
+                                           16:30:00 Uhr – 18:29:59 Uhr
+
+
+Jahreszeiten nach BNetzA:
+
+Frühling      01.03. – 31.05.
+
+Sommer        01.06. – 31.08.
+
+Herbst        01.09. – 30.11.
+
+Winter        01.12. – 28./29.02.
+
