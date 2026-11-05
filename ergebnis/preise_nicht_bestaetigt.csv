@@ -1,42 +1,27 @@
 ﻿nr;netzbetreiber;ebene;lp_unter;ap_unter;lp_ab;ap_ab;status;grund;naechste_dokumentzeile;textdatei
 5;EWE NETZ GmbH;Niederspannung;13,14;4,85;63,29;2,85;ok;Ebenenzeile im Dokument nicht gefunden;;SNB951051725711_0005.txt
-7;e-netz Südhessen AG;HS/MS;18,65;5,52;144,71;0,48;ok;Ebenenzeile im Dokument nicht gefunden;;SNB956958990736_0007.txt
 9;enercity Netz GmbH;Mittelspannung;10,95;7,00;146,00;1,60;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannung 0,03060274 7,00 0,40027397 1,60;SNB971746988153_0009.txt
 9;enercity Netz GmbH;HS/MS;7,30;5,51;125,93;0,77;ok;nächste Zeile hat 2 von 4 Werten;Umspannung Hoch-/Mittelspan- 0,02068493 5,51 0,34504110 0,77;SNB971746988153_0009.txt
-21;Bielefelder Netz GmbH;Mittelspannung;6,47;4,81;112,65;0,56;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung Hoch-/Mittelspannung 6,47;SNB918516395612_0021.txt
-22;Stadtnetze Münster GmbH;HS/MS;6,97;5,59;132,22;0,58;ok;nächste Zeile hat 0 von 4 Werten;(einschl. Umsp. HS/MS) 407,16;SNB980883363112_0022.txt
-24;Braunschweiger Netz GmbH;HS/MS;29,38;4,43;137,53;0,11;ok;nächste Zeile hat 0 von 4 Werten; Messeinrichtung in Mittelspannung einschließlich Umspannung Hoch-/Mittelspannung 209,68;SNB926644622999_0024.txt
-25;Hamburger Energienetze GmbH;HS/MS;3,88;13,10;72,00;0,20;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung Hoch-/Mittelspannung 0,18910714 €/(kW*d) 1,78 ct/kWh;SNB968295079586_0025.txt
-35;wesernetz Bremen GmbH;HS/MS;8,10;4,50;114,99;0,23;pruefen;nächste Zeile hat 1 von 4 Werten;Entnahme aus Umspannung HS/MS 19,17 0,23;SNB942238573102_0035.txt
 36;LEW Verteilnetz GmbH;Niederspannung;8,02;5,51;97,34;1,94;pruefen;nächste Zeile hat 0 von 4 Werten;NS Niederspannung;SNB911705062982_0036.txt
-38;Pfalzwerke Netz AG;HS/MS;21,15;4,99;133,86;0,48;pruefen;nächste Zeile hat 0 von 4 Werten;MS-Zähler, sowie Zähler der Usp. HS/MS 754,65;SNB961471621746_0038.txt
 39;SachsenNetze GmbH;Niederspannung;27,83;8,58;153,33;3,56;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahme aus der Netzebene Niederspannung;SNB980808485264_0039.txt
 40;Netze Magdeburg GmbH;Niederspannung;3,55;8,08;110,77;3,79;pruefen;nächste Zeile hat 2 von 4 Werten;Anschluss und Entnahme aus Niederspannung >= 2.500 h/a 110,77 EUR/kW a 3,79 ct/kWh;SNB933459598975_0040.txt
-42;SWKiel Netz GmbH;HS/MS;7,61;1,63;44,59;0,16;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB973742186519_0042.txt
+42;SWKiel Netz GmbH;HS/MS;7,61;1,63;44,59;0,16;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung (HSP/MSP) 7,43 €/kW/Monat 0,16 ct/kWh;SNB973742186519_0042.txt
 44;Energienetze Offenbach GmbH;HS/MS;15,81;5,10;137,43;0,24;ok;nächste Zeile hat 0 von 4 Werten;Umspannung zur Hoch-/Mittelspannung 39,61 47,54 55,46;SNB915100694458_0044.txt
 46;Thüga Energienetze GmbH;Niederspannung;44,85;8,62;185,30;3,00;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 37,52 44,65 0,79 0,94 Niederspannungsnetz 30,88 36,75 3,00 3,57;SNB990887002092_0046.txt
-52;Ahrtal-Werke GmbH;HS/MS;5,69;6,77;109,91;2,00;ok;Ebenenzeile im Dokument nicht gefunden;;SNB983315496327_0052.txt
-57;Alzchem Netz GmbH;HS/MS;16,12;3,81;97,35;0,56;pruefen;nächste Zeile hat 1 von 4 Werten;Entnahme aus Umspannung HS/MS LNE41 16,23 ANE41 0,56;SNB922722422505_0057.txt
 71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;Niederspannung;12,00;12,41;43,80;2,19;pruefen;nächste Zeile hat 0 von 4 Werten;6 – Umspannung MS/NS 8,43 6,79 137,23 1,64;SNB972511582064_0071.txt
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;Niederspannung;17,81;6,79;135,56;2,08;ok;nächste Zeile hat 0 von 4 Werten;Technische Anschlussbedingungen für den Anschluss an das Niederspannungsnetz (TAB 2007);SNB930134015819_0111.txt
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;MS/NS;17,26;6,69;139,30;1,81;ok;Ebenenzeile im Dokument nicht gefunden;;SNB930134015819_0111.txt
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;Mittelspannung;16,85;6,06;143,59;1,00;ok;Ebenenzeile im Dokument nicht gefunden;;SNB930134015819_0111.txt
 114;Elektrizitätsvereinigung Böbing eG;Niederspannung;19,66;7,59;96,65;4,51;pruefen;nächste Zeile hat 1 von 4 Werten;Niederspannung (NS) 19,66;SNB916027833432_0114.txt
 135;Elektroenergieversorgung Cottbus GmbH;HS/MS;15,80;3,32;59,24;1,58;ok;Ebenenzeile im Dokument nicht gefunden;;SNB931431136771_0135.txt
-148;Energie- und Wasserversorgung Rheine GmbH;HS/MS;10,57;4,09;110,84;0,08;ok;Ebenenzeile im Dokument nicht gefunden;;SNB932516649124_0148.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Niederspannung;40,20;5,60;91,56;3,55;pruefen;nächste Zeile hat 1 von 4 Werten;Niederspannungsnetz 40,20;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;MS/NS;41,64;3,83;81,24;2,24;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 41,64;SNB932549440224_0153.txt
 154;EnergieSüdwest Netz GmbH;Niederspannung;18,64;8,87;187,49;2,12;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung Niederspannung;SNB911521002599_0154.txt
 154;EnergieSüdwest Netz GmbH;MS/NS;14,23;7,78;166,22;1,70;pruefen;nächste Zeile hat 0 von 4 Werten;dauer Umspannung;SNB911521002599_0154.txt
 154;EnergieSüdwest Netz GmbH;Mittelspannung;13,65;5,98;121,58;1,67;pruefen;nächste Zeile hat 0 von 4 Werten;Artikel-IDs: 1: [] | 2: [] | 3: [] | 4: [];SNB911521002599_0154.txt
-193;EWR Netze GmbH (Lichtenstein-Unterhausen);HS/MS;10,57;4,09;110,84;0,08;ok;Ebenenzeile im Dokument nicht gefunden;;SNB923953358557_0193.txt
-194;ews - Netz GmbH;HS/MS;10,06;10,06;100,00;2,00;ok;nächste Zeile hat 0 von 4 Werten;Umspannung Hoch-/Mittelspannung;SNB911838879365_0194.txt
-202;Freisinger Stadtwerke Versorgungs-GmbH;HS/MS;3,82;4,82;97,54;1,07;ok;Ebenenzeile im Dokument nicht gefunden;;SNB977384143473_0202.txt
 203;Freitaler Stadtwerke GmbH;Niederspannung;104,39;6,90;203,39;2,94;pruefen;nächste Zeile hat 0 von 4 Werten;Netzanschluss Niederspannung / ohne registrierende Lastgangmessung;SNB982241851170_0203.txt
 203;Freitaler Stadtwerke GmbH;MS/NS;72,86;5,71;180,86;1,39;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB982241851170_0203.txt
 206;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;HS/MS;9,27;1,85;40,83;0,59;ok;Ebenenzeile im Dokument nicht gefunden;;SNB926427521488_0206.txt
-276;IGS Netze GmbH;HS/MS;20,90;5,02;121,44;1,00;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB974319144116_0276.txt
-283;Karl Stengle GmbH ＆ Co. KG;Niederspannung;17,62;15,74;247,00;5,00;pruefen;nächste Zeile hat 2 von 4 Werten;Niederspannung 17,62 15,74;SNB942908692218_0283.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;Niederspannung;17,21;10,79;172,31;4,58;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB922269370765_0299.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;MS/NS;14,54;10,47;270,45;0,23;ok;Ebenenzeile im Dokument nicht gefunden;;SNB922269370765_0299.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;Mittelspannung;22,13;7,03;166,26;1,26;ok;Ebenenzeile im Dokument nicht gefunden;;SNB922269370765_0299.txt
@@ -55,7 +40,6 @@
 359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;Mittelspannung;6,38;6,64;150,39;0,88;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 1-01-5-001 0,01747945 1-01-5-002 0,06640000;SNB974239978785_0359.txt
 362;Reußenköge Netz ＆ Infrastruktur GmbH;HS/MS;12,79;2,15;45,08;0,86;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung (USp. HS/MS);SNB953011641437_0362.txt
 366;SachsenNetze HS.HD GmbH;Niederspannung;27,83;8,58;153,33;3,56;pruefen;nächste Zeile hat 0 von 4 Werten;Anschluss in Niederspannung | Strom;SNB968914838013_0366.txt
-370;Sömmerdaer Energieversorgung GmbH;MS/NS;26,74;2,83;247,00;1,01;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung MSp – NSp 158,79 188,96 1,42 1,69 Niederspannung 142,31 169,35 2,37 2,82;SNB932006596143_0370.txt
 374;Stadtwerk am See GmbH ＆ Co. KG;Niederspannung;22,75;7,80;115,43;4,09;ok;nächste Zeile hat 0 von 4 Werten;1. Niederspannung RLM;SNB993059842564_0374.txt
 374;Stadtwerk am See GmbH ＆ Co. KG;MS/NS;22,70;6,52;166,07;1,09;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993059842564_0374.txt
 374;Stadtwerk am See GmbH ＆ Co. KG;Mittelspannung;22,51;6,37;154,61;1,09;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993059842564_0374.txt
@@ -68,7 +52,6 @@
 380;Stadtwerke Altensteig;Mittelspannung;2,22;11,67;281,03;0,52;pruefen;nächste Zeile hat 2 von 4 Werten;Mittelspannung (MS) ≥ 2.500 h 281,03 0,52;SNB947709605108_0380.txt
 420;Stadtwerke Bernburg GmbH;Niederspannung;48,09;11,54;279,01;2,30;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
 420;Stadtwerke Bernburg GmbH;MS/NS;25,74;5,05;119,40;1,31;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
-422;Stadtwerke Bietigheim-Bissingen GmbH;HS/MS;17,91;4,51;107,46;0,93;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB910950265032_0422.txt
 441;Stadtwerke Coesfeld GmbH;Niederspannung;19,40;8,28;187,68;1,55;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB943480673763_0441.txt
 441;Stadtwerke Coesfeld GmbH;MS/NS;17,96;7,66;173,77;1,43;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB943480673763_0441.txt
 444;Stadtwerke Deggendorf GmbH;Niederspannung;35,18;6,93;153,32;2,20;pruefen;nächste Zeile hat 2 von 4 Werten;Niederspannung > 2.500 153,32 2,20;SNB924793953759_0444.txt
@@ -77,15 +60,13 @@
 458;Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH;Niederspannung;27,14;10,50;169,25;4,82;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB914522191989_0458.txt
 463;Stadtwerke Elbtal GmbH;Niederspannung;20,47;6,58;156,72;1,13;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahme aus der Netzebene Niederspannung für Standardlastprofilkunden;SNB920699937404_0463.txt
 497;Stadtwerke Greifswald GmbH;Mittelspannung;15,07;7,01;115,77;2,98;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 0,020164 0,047200 0,289260 0,007900;SNB926442995943_0497.txt
-508;Stadtwerke Haltern am See GmbH;Mittelspannung;32,14;1,54;186,50;1,00;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahme aus dem Mittelspannungsnetz;SNB921816651920_0508.txt
-553;Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG;Mittelspannung;20,76;8,00;145,04;1,34;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannungsnetz 130,93 1,21 Umspannung Mittel-/Niederspannung 145,04 1,34;SNB916255659316_0553.txt
 569;Stadtwerke Merseburg GmbH;HS/MS;21,41;2,70;79,58;0,38;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung (einschl. Umsp HS/MS) 455,20 541,69;SNB913006238462_0569.txt
 573;Stadtwerke Mühlacker GmbH;HS/MS;12,36;6,28;166,00;0,14;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung Hoch-/ Mittelspannung 27,67 0,14;SNB953132482766_0573.txt
 594;Stadtwerke Norderstedt;Niederspannung;20,31;5,90;146,61;0,85;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 594;Stadtwerke Norderstedt;MS/NS;19,08;5,51;136,62;0,81;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 599;Stadtwerke Ochtrup;Niederspannung;48,76;7,80;146,45;3,89;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt
 599;Stadtwerke Ochtrup;MS/NS;29,48;7,78;195,77;1,13;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt
-617;Stadtwerke Pritzwalk GmbH;Mittelspannung;14,91;2,99;58,19;0,68;pruefen;nächste Zeile hat 2 von 4 Werten;Mittelspannung > 2.500 h/a 58,19 69,25 0,68 0,81;SNB922354559020_0617.txt
+617;Stadtwerke Pritzwalk GmbH;Mittelspannung;12,53;2,51;58,19;0,68;pruefen;nächste Zeile hat 2 von 4 Werten;Mittelspannung > 2.500 h/a 58,19 69,25 0,68 0,81;SNB922354559020_0617.txt
 630;Stadtwerke Rosenheim Netze GmbH;Niederspannung;11,97;6,91;104,15;3,22;pruefen;nächste Zeile hat 0 von 4 Werten;RLM mit Entnahmestelle in der MS/NS oder NS inkl. Wandlersatz 225,00;SNB988838479086_0630.txt
 630;Stadtwerke Rosenheim Netze GmbH;MS/NS;10,46;6,89;168,80;0,56;pruefen;nächste Zeile hat 0 von 4 Werten;RLM mit Entnahmestelle in der MS/NS oder NS inkl. Wandlersatz 225,00;SNB988838479086_0630.txt
 638;Stadtwerke Schifferstadt;MS/NS;21,51;10,27;173,54;1,50;pruefen;nächste Zeile hat 2 von 4 Werten;Umspannung MS/NS 18,94 22,54 8,84 10,52 Niederspannung 21,51 25,60 10,27 12,22;SNB924685554682_0638.txt
@@ -93,8 +74,6 @@
 648;Stadtwerke Schwäbisch Gmünd GmbH;MS/NS;28,85;5,47;116,41;1,96;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
 649;Stadtwerke Schwäbisch Hall GmbH;HS/MS;6,69;2,67;72,29;0,04;pruefen;nächste Zeile hat 2 von 4 Werten;HS/MS ≥ 2.500 h 72,29 0,04;SNB982660786343_0649.txt
 660;Stadtwerke Soest GmbH;HS/MS;5,74;1,72;45,38;0,14;ok;nächste Zeile hat 0 von 4 Werten;Umspannung HS/MS;SNB965118678667_0660.txt
-662;Stadtwerke Sondershausen Netz GmbH;MS/NS;30,67;7,53;183,97;1,40;ok;nächste Zeile hat 0 von 4 Werten;Umspannung Mittelspannung in;SNB987483520273_0662.txt
-664;Stadtwerke Springe GmbH;HS/MS;26,36;2,98;65,97;1,40;ok;Ebenenzeile im Dokument nicht gefunden;;SNB954187049256_0664.txt
 668;Stadtwerke Staßfurt GmbH;Niederspannung;8,11;10,61;202,52;2,83;pruefen;nächste Zeile hat 0 von 4 Werten;Spannungsebene NS 2027 (pdf);SNB910474681448_0668.txt
 668;Stadtwerke Staßfurt GmbH;MS/NS;8,07;8,63;212,54;0,45;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB910474681448_0668.txt
 671;Stadtwerke Stendal GmbH;HS/MS;11,80;3,51;96,46;0,12;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung (einschl. Umsp HS/MS) 424,40 505,04;SNB957404386462_0671.txt
@@ -110,7 +89,6 @@
 798;Überlandwerk Erding GmbH ＆ Co. KG;MS/NS;12,06;9,08;162,40;3,06;pruefen;nächste Zeile hat 0 von 4 Werten;Ist auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich, dass der Höchstlastbeitrag ei;SNB957632855181_0798.txt
 821;Weiler Wärme eG;Niederspannung;18,88;7,33;175,32;1,08;pruefen;nächste Zeile hat 2 von 4 Werten;Niederspannung >= 2.500 h 175,32 1,08;SNB910224319560_0821.txt
 821;Weiler Wärme eG;MS/NS;17,04;6,14;153,42;0,68;pruefen;nächste Zeile hat 2 von 4 Werten;Umspannung (MS/NS) >= 2.500 h 153,42 0,68;SNB910224319560_0821.txt
-826;wesernetz Bremerhaven GmbH;HS/MS;9,12;3,17;87,30;0,05;pruefen;nächste Zeile hat 1 von 4 Werten;Entnahme aus Umspannung HS/MS 14,55 0,05;SNB985704986426_0826.txt
 4;Avacon Netz GmbH;Niederspannung;24,16;6,27;124,45;2,26;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;MS/NS;19,38;5,71;123,78;1,54;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;Mittelspannung;14,87;4,94;118,41;0,80;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;

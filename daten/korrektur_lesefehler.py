@@ -5,8 +5,8 @@ Die Dokumentzeile: Zeile mit dem Ebenennamen und genau vier Dezimalzahlen mit Ko
 Aufruf: PYTHONPATH=. python daten/korrektur_lesefehler.py [--schreiben]"""
 import csv, glob, io, re, sys
 K = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
-LAB = {"ms": r"^\s*(?:mittelspannung(?:snetz)?\b(?!.*nieder)|ms\b(?!\s*/))", "msns": r"umspann|mittel.{0,12}nieder|ms\s*/\s*ns",
-       "ns": r"^\s*niederspannung", "hsms": r"hoch.{0,20}mittel|hs\s*/\s*ms"}
+LAB = {"ms": r"^\s*(?:mittelspannung(?:snetz)?\b(?!.*nieder)|ms\b(?!\s*/))", "msns": r"umspann|mittel.{0,12}nieder|ms\s*/\s*ns|msp\s*/\s*nsp|(?:10|20|30)\s*/\s*0[,.]4\s*kv",
+       "ns": r"^\s*niederspannung", "hsms": r"hoch.{0,20}mittel|hs\s*/\s*ms|hsp\s*/\s*msp|110\s*/\s*(?:10|20|30)\s*kv"}
 ZAHL = r"(\d{1,3}(?:\.\d{3})*,\d{1,4})"
 de = lambda v: float(v.replace(".", "").replace(",", ".")) if v else None
 fmt = lambda v: f"{v:.4f}".rstrip("0").replace(".", ",") if abs(v * 100 - round(v * 100)) > 1e-6 else f"{v:.2f}".replace(".", ",")
