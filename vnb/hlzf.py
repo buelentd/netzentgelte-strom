@@ -22,8 +22,8 @@ from .extract import ebene
 JAHRESZEITEN = ("fruehling", "sommer", "herbst", "winter")
 JZ_WORT = re.compile(r"fr[üu]e?hling|fr[üu]hjahr|sommer|herbst|winter", re.I)
 ZEIT = re.compile(r"(?<![\d:.])([0-2]?\d):([0-5]\d)\s*(?:uhr)?\s*(?:-|–|bis)\s*([0-2]?\d):([0-5]\d)(?![\d:])", re.I)
-KEIN = re.compile(r"(?<![\w])(?:-|–|—|kein(?:e)?\s*(?:hlf|hlzf|hochlastzeit\w*)?|keine?)(?![\w:])", re.I)
-EBENE_WORT = re.compile(r"(?:umspann\w*\s*(?:in\s*|zur\s*|auf\s*)?)?(?:hoch|mittel|nieder)spannung\w*|"
+KEIN = re.compile(r"(?<![\w])(?:-|–|—|kein(?:e)?\s*(?:hlf|hlzf|hochlastzeit\w*)?|keine?|entf[äa]llt|entfallen|nicht\s+vorhanden|n\.\s?v\.)(?![\w:])", re.I)
+EBENE_WORT = re.compile(r"(?:umspann\w*\s*(?:in\s*|zur\s*|auf\s*)?)?(?:hoch|mittel|nieder)spannung\w*|umspann\w*ebene(?:\s*\(?[\d,./\s]*kv\)?)?|"
                         r"umspann\w*\s*(?:hs|ms)\s*/\s*(?:ms|ns)|\b(?:hs/ms|ms/ns|hs|ms|ns)\b", re.I)
 # Standard laut BNetzA-Festlegung (fachlich zu bestätigen); nur genutzt, wenn das Dokument nichts nennt
 STANDARD_SCHWELLE = {"NS": 30, "MSNS": 30}
@@ -51,6 +51,10 @@ def _jz(wort: str) -> str:
 def _ebene_text(t: str) -> str | None:
     """"Niederspannung" → NS, "Umspannung MS/NS" → MSNS, "Mittelspannung" → None (nicht gebraucht)."""
     t = t.strip()
+    if re.search(r"umspann\w*.{0,15}\b20\s*/\s*0[,.]4", t, re.I):
+        return "MSNS"                                               # Umspannung 20 / 0,4 kV = MS/NS
+    if re.search(r"umspann\w*.{0,15}\b110\s*/\s*20", t, re.I):
+        return None
     if re.fullmatch(r"ns", t, re.I):
         return "NS"
     if re.fullmatch(r"ms\s*/\s*ns|umspann\w*\s*ms\s*/\s*ns", t, re.I):
@@ -271,6 +275,7 @@ def _form_d(zeilen):
         eb = marken[i][0] if i in marken else (
             marken[min(allein, key=lambda k: (abs(k - i), k > i))][0] if allein else aktuell)
         if eb in (None, "andere"):
+            _IGN[0] += len(zeiten)                                      # Fenster anderer Ebenen (HS, MS ...): nicht ausgegeben, aber gezählt
             continue
         out.setdefault(eb, {}).setdefault(_jz(m.group()), []).extend(f for _, f in zeiten)
         letzte = (eb, _jz(m.group()), i, (ZEIT.search(z).start() if ZEIT.search(z) else -99))
@@ -330,6 +335,8 @@ def _paare(z: str):
 def _form_e(zeilen):
     """Zeile je Fenster mit Jahreszeit am Zeilenanfang ("Winter 07:45 Uhr 10:15 Uhr", "Herbst 1 06:15 10:15"); Ebene steht als Überschrift darüber."""
     out, eb, jz_alt = {}, None, None
+    gesehen = {}                                              # je Ebene die Jahreszeiten, die schon vorkamen
+    leer_zellen = {}                                          # je Ebene: Jahreszeiten, die nur aus einer leeren Zelle als "kein Fenster" gelesen wurden
     for z in zeilen:
         st = z.strip()
         if not st:
@@ -345,19 +352,34 @@ def _form_e(zeilen):
             continue
         jz = _jz(m.group())
         rest = st[m.end():]
+        if re.search(r"\d{1,2}\.\s?(?:\d{1,2}\.|januar|februar|märz|mai|juni|august|september|november|dezember)", rest, re.I) and not UHR.search(rest):
+            # Zeile mit Datumsbereich: Tabellenzeile ("Herbst 1. September - 30. November HLZF 1 ---") oder Definition der Jahreszeiten ("Frühling: 01. März bis 31. Mai")
+            ohne = re.sub(r"\d{1,2}\.\s?(?:\d{1,2}\.|[A-Za-zä]+)\.?(?:\s?\d{4})?|\bbis\b|[-–—]\s?(?=\d)", " ", rest, flags=re.I)
+            if eb not in (None, "andere") and re.search(r"HLZF\s*\d", ohne) and re.search(r"(?:---|—|–\s*–|-\s+-)", ohne):
+                out.setdefault(eb, {}).setdefault(jz, [])
+                jz_alt = jz
+            continue
         if eb in (None, "andere"):
             _IGN[0] += len(_paare(rest))
             continue
+        if jz in gesehen.setdefault(eb, set()) and jz != jz_alt:
+            return {}                                         # Jahreszeit kommt in dieser Ebene noch einmal vor, nicht direkt darunter: mehrere Tabellen vermischt
+        gesehen[eb].add(jz)
         zeit = _paare(rest)
         if zeit:
             out.setdefault(eb, {}).setdefault(jz, []).extend(f for _, f in zeit)
             jz_alt = jz
-        elif len(KEIN.findall(rest)) >= 1 and not UHR.search(rest):
-            out.setdefault(eb, {}).setdefault(jz, [])
+        elif (len(KEIN.findall(rest)) >= 1 or not rest.strip()) and not UHR.search(rest):
+            out.setdefault(eb, {}).setdefault(jz, [])         # "-", "keine", "entfällt" oder leere Zelle: kein Fenster in dieser Jahreszeit
+            if not rest.strip():
+                leer_zellen.setdefault(eb, set()).add(jz)
             jz_alt = jz
         elif UHR.search(rest):
             return {}                                       # Zeiten in der Zeile, aber nicht als Paar lesbar: lieber nichts als falsch
     _IGN[0] += sum(len(v) for e in out if e not in ("NS", "MSNS") for v in out[e].values())
+    for e_ in list(out):
+        if not any(out[e_].values()) and leer_zellen.get(e_) and all(j in leer_zellen[e_] for j in out[e_]):
+            del out[e_]                                           # nur leere Zellen gelesen, kein einziges Fenster: keine belastbare Aussage
     return {e: {j: out[e].get(j, []) for j in JAHRESZEITEN} for e in out if e in ("NS", "MSNS")}
 
 
@@ -461,20 +483,66 @@ def _vollstaendig(text: str, out: dict) -> bool:
     text = "\n".join(z for z in text.splitlines() if not re.search(r"bedeutet|beispiel|entspricht|z\.\s?b\.", z, re.I)   # Erläuterungszeilen mit Beispielzeiten
                      and not re.fullmatch(r"\s*[0-2]?\d:[0-5]\d(?::\d\d)?\s*", z))                                     # Rasterzeilen: eine einzelne Uhrzeit allein in der Zeile
     alle = len(ZEIT_DOPPELPUNKT.findall(text)) + sum(1 for m in ZEIT_PUNKT.finditer(text) if m.group(1) == "00" or int(m.group(1)) > 12)   # "9.15" zählt, Datum "29.02" nicht
+    if fenster == 0 and alle >= 2:
+        return False                                              # nur "keins" gelesen, aber Uhrzeiten im Text
     return alle <= 2 * fenster + 4
 
 
 def _spaltenname(t: str):
     """Ebene einer Spalte aus ihrem Kopftext: "Mittel-/ Niederspannung" = MSNS, "Niederspannung" = NS, "Mittelspannung" = MS, sonst None."""
-    t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene", " ", t, flags=re.I)
+    t = t.replace("|", "/")
+    mehrfach = bool(re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|usp\.?\s*ms", t, re.I))
+    t = re.sub(r"\(.*?\)", " ", t)
+    t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene|für entnahmen aus:?|\bnetz\b", " ", t, flags=re.I)
     t = re.sub(r"\s+", " ", t).strip().lower()
-    if re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|mittelspannung\s*/\s*niederspannung", t):
+    if mehrfach or re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|mittelspannung\s*/\s*niederspannung", t):
         return "MSNS"
     if re.fullmatch(r"nieder\w*|ns|nsp", t):
         return "NS"
     if re.fullmatch(r"mittelspannung\w*|ms|msp", t):
         return "MS"
     return None
+
+
+def _hlzf_bloecke(zeilen, i, pos, namen):
+    """Zeilen "HLZF 1 / HLZF 2 / HLZF 3" je Jahreszeit, der Jahreszeitenname steht in einer der Zeilen des Blocks (oft mittig); Spalten wie _form_h."""
+    bloecke, aktuell = [], None
+    for z in zeilen[i + 1:i + 60]:
+        if not z.strip():
+            continue
+        m = re.search(r"\bHLZF\s*(\d)", z)
+        if not m:
+            if re.search(r"[A-Za-zÄÖÜäöüß]{3,}", z) and aktuell is not None:
+                break                                             # Textzeile: Tabelle zu Ende
+            continue
+        if m.group(1) == "1" or aktuell is None:
+            aktuell = []
+            bloecke.append(aktuell)
+        aktuell.append(z)
+    out = {}
+    if len(bloecke) != 4:
+        return {}
+    for blk in bloecke:
+        jz = next((_jz(JZ_WORT.search(z).group()) for z in blk if JZ_WORT.search(z)), None)
+        if jz is None:
+            return {}
+        for z in blk:
+            ts = [(mm.start(), f"{int(mm.group(1)):02d}:{mm.group(2)}") for mm in UHR.finditer(z)]
+            idx = {}
+            for p_, t_ in ts:
+                k = min(range(6), key=lambda n: abs(pos[n] - p_))
+                if k in idx:
+                    return {}
+                idx[k] = t_
+            for k in range(3):
+                v, b = idx.get(2 * k), idx.get(2 * k + 1)
+                if (v is None) != (b is None) or (v and v >= b):
+                    return {}
+                e = out.setdefault(namen[k], {})
+                e.setdefault(jz, [])
+                if v:
+                    e[jz].append(f"{v}-{b}")
+    return out
 
 
 def _form_h(zeilen):
@@ -492,13 +560,19 @@ def _form_h(zeilen):
         for k in range(3):
             lo, hi = pos[2 * k] - 10, pos[2 * k + 1] + 14
             teile = []
-            for j in range(max(0, i - 5), i):
+            for j in range(max(0, i - 3), i):
                 for m in re.finditer(r"\S+(?:[ ]\S+)*", zeilen[j]):
-                    if lo <= (m.start() + m.end()) / 2 <= hi:
+                    if lo <= (m.start() + m.end()) / 2 <= hi and len(m.group()) <= 40:     # Fließtext (lange Teile) gehört nicht zum Spaltenkopf
                         teile.append(m.group())
             namen.append(_spaltenname(" ".join(teile)))
         if None in namen:
             return {}
+        if any(re.search(r"\bHLZF\s*\d", z2) for z2 in zeilen[i + 1:i + 6]):
+            out_h = _hlzf_bloecke(zeilen, i, pos, namen)
+            for e_, d_ in out_h.items():
+                for j_, v_ in d_.items():
+                    out.setdefault(e_, {}).setdefault(j_, []).extend(v_)
+            continue
         jz, leer = None, 0
         for z2 in zeilen[i + 1:]:
             if not z2.strip():
@@ -543,7 +617,7 @@ def _ebene_wort(label: str):
     if not t:
         return None
     umsp = re.search(r"umspann|\busp\b|ms\s*/\s*ns|msp\s*/\s*nsp|mittel-?\s*/\s*nieder|mittelspannung\s*/\s*niederspannung|\bmitt?el\b.*\bnieder", t)
-    hoch = re.search(r"hoch|\bhs\b|\bhsp\b", t)
+    hoch = re.search(r"hochspannung|\bhs\b|\bhsp\b", t)
     nied = re.search(r"nieder|\bns\b|\bnsp\b", t)
     mitt = re.search(r"mittel|\bms\b|\bmsp\b", t)
     if umsp and nied and not hoch:
@@ -725,7 +799,20 @@ def _form_block(zeilen):
     return out
 
 
+def _sekunden(text: str) -> str:
+    """"11:45:00 - 14:44:59" -> "11:45 - 14:45": Sekunden weg, ein Ende bei :59 Sekunden zählt zur nächsten Minute."""
+    def ersatz(m):
+        h, mi, sek = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if sek == 59:
+            mi += 1
+            if mi == 60:
+                h, mi = (h + 1) % 24, 0
+        return f"{h:02d}:{mi:02d}"
+    return re.sub(r"(?<![\d:.])([0-2]?\d):([0-5]\d):([0-5]\d)(?![\d:])", ersatz, text)
+
+
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
+    text = _sekunden(text)
     erg = Hlzf(jahr=jahr_lesen(text, url))
     _IGN[0] = 0
     if not re.search(r"hochlast", text, re.I):
@@ -756,6 +843,9 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
             break
     schwellen_text(text, erg)
     if not erg.fenster and not erg.grund:
+        kopf = text.lower()
+        if re.search(r"mittelspannung", kopf) and not re.search(r"niederspannung|umspann|\bns\b|\bnsp\b|ms\s*/\s*ns", kopf):
+            erg.grund = "Dokument gilt nur für Mittelspannung"
         erg.grund = ("Raster mit markierten Viertelstunden (Markierung nicht im Text)"
                      if re.search(r"1/4-?h-?intervall|viertelstunde", text, re.I) else "Zeitfenster nicht lesbar")
     return erg

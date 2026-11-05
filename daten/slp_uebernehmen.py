@@ -9,11 +9,13 @@ def text(r):
     f = glob.glob(f"ergebnis/texte_layout/{r['mastr_nr']}_*.txt") or glob.glob(f"ergebnis/texte/{int(r['nr']):04d}.txt")
     return Path(f[0]).read_text(encoding="utf8", errors="replace").split("\n") if f else None
 
+NICHT_UEBERNEHMEN = {"275": "Arbeitspreis nur für HT/NT-Mengen, kein Standardpreis", "445": "Wert stammt aus Modul 3 (§ 14a), nicht Standard"}
+
 def main(schreiben):
     sperre = {r["nr"] for r in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
     plan = []
     for r in csv.DictReader(open("ergebnis/ebenen_erwartung.csv", encoding="utf-8-sig"), delimiter=";"):
-        if r["slp"] != "fehlt" or r["nr"] in sperre: continue
+        if r["slp"] != "fehlt" or r["nr"] in sperre or r["nr"] in NICHT_UEBERNEHMEN: continue
         L = text(r)
         res = slp_parser(L) if L else None
         if res and 3 <= res[1] <= 15 and 0 < res[0] <= 200:

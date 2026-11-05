@@ -44,7 +44,8 @@ def main(schreiben):
         zeilen = open(fs[0], errors="ignore").read().splitlines()
         for eb in ("ms", "msns", "ns", "hsms"):
             alt = [de(x[f"{eb}_{k}"]) for k in K]
-            if None in alt:
+            fehlend = None in alt
+            if fehlend and (eb == "hsms" or "--fehlend" not in sys.argv):
                 continue
             cand = []
             for l in zeilen:
@@ -56,6 +57,13 @@ def main(schreiben):
             if len(cand) != 1:
                 continue
             neu = cand[0]
+            if fehlend:
+                lpu, apu, lpo, apo = neu
+                sperre = {r["nr"] for r in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
+                if nr in sperre or not (lpo > lpu * 1.2 and apu > apo > 0 and lpu >= 5 and 10 < lpo < 400 and 2 <= apu <= 25):
+                    continue                                                           # streng: nur klar plausible Zeilen füllen
+                plan.append((nr, x["netzbetreiber"], eb, "D", [None] * 4, neu))       # Regel D: Ebene fehlt, genau eine plausible Dokumentzeile
+                continue
             if all(abs(a - b) < 0.011 for a, b in zip(alt, neu)):
                 continue
             regel = "A" if muell(alt) else ("B" if all(abs(a - b) < 0.011 for a, b in zip(alt[:3], neu[:3])) else None)
@@ -81,7 +89,10 @@ def main(schreiben):
             r[I["quelle_url"]] = tab[nr]["quelle_url"]; rows.append(r); byn[nr] = r
         for k, v in zip(K, neu):
             r[I[f"{eb}_{k}"]] = fmt(v)
-        note = f"Korrigiert: {eb.upper()} aus der Dokumentzeile gelesen (vorher {', '.join(fmt(a) for a in alt)}), Lesefehler Regel {regel}"
+        if regel == "D":
+            note = f"{eb.upper()} aus der Dokumentzeile gelesen (Ebene fehlte), nicht gegen das Dokument bestätigt"
+        else:
+            note = f"Korrigiert: {eb.upper()} aus der Dokumentzeile gelesen (vorher {', '.join(fmt(a) for a in alt)}), Lesefehler Regel {regel}"
         r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
         if "geprueft" in I:
             r[I["geprueft"]] = ""

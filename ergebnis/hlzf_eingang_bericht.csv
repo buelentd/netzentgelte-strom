@@ -2,64 +2,75 @@
 405;SNB943203125821_0405_hlzf.png;Bilddatei: nicht lesbar (kein OCR);
 138;SNB905238986457_0138_hlzf.xls;nicht gelesen: keine Hochlastzeitfenster im Dokument;
 668;SNB910474681448_0668_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-792;SNB910696207785_0792_hlzf.pdf;gelesen;Jahr 2026
+792;SNB910696207785_0792_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
 799;SNB910956210043_0799_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-397;SNB911031559460_0397_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-59;SNB911081401368_0059_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+397;SNB911031559460_0397_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+59;SNB911081401368_0059_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 337;SNB911144461377_0337_hlzf.pdf;gelesen;Jahr 2026
-530;SNB911347846643_0530_hlzf.pdf;gelesen;Jahr 2026
+530;SNB911347846643_0530_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 19;SNB911641710114_0019_hlzf.pdf;gelesen;Jahr 2026
 710;SNB911692402044_0710_hlzf.pdf;gelesen;Jahr 2026
 167;SNB911696239035_0167_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 36;SNB911705062982_0036_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 483;SNB912063565672_0483_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-146;SNB912743424114_0146_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-569;SNB913006238462_0569_hlzf.pdf;gelesen;Jahr 2026
+146;SNB912743424114_0146_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+569;SNB913006238462_0569_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+331;SNB913130054136_0331_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 137;SNB913563830420_0137_hlzf.pdf;gelesen;Jahr 2026
-775;SNB914027640531_0775_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+775;SNB914027640531_0775_hlzf.pdf;gelesen;Jahr 2026
 211;SNB914092143906_0211_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-150;SNB914735995145_0150_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-319;SNB915030239484_0319_hlzf.pdf;gelesen;Jahr 2026
+311;SNB914103081760_0311_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+150;SNB914735995145_0150_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+319;SNB915030239484_0319_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
 44;SNB915100694458_0044_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+304;SNB915316807789_0304_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 559;SNB915358347793_0559_hlzf.pdf;gelesen;Jahr 2026
+334;SNB915471253889_0334_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 102;SNB916008519201_0102_hlzf.pdf;gelesen;Jahr 2026
-759;SNB916151866986_0759_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-76;SNB916672506194_0076_hlzf.pdf;gelesen;Jahr 2026
+759;SNB916151866986_0759_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+247;SNB916657570554_0247_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+76;SNB916672506194_0076_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 360;SNB917014884420_0360_hlzf.pdf;gelesen;Jahr 2026
 565;SNB918070278383_0565_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-116;SNB918689434309_0116_hlzf.pdf;gelesen;Jahr 2026
+116;SNB918689434309_0116_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 769;SNB919067474511_0769_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-173;SNB921319639913_0173_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+300;SNB919657321775_0300_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+230;SNB919708421706_0230_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+260;SNB920157746937_0260_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+173;SNB921319639913_0173_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 477;SNB921471558077_0477_hlzf.pdf;gelesen;Jahr 2026
 82;SNB921550647487_0082_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 174;SNB921629791202_0174_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-37;SNB921899277833_0037_hlzf.pdf;gelesen;Jahr 2026
-686;SNB922074927642_0686_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-213;SNB922361841965_0213_hlzf.pdf;gelesen;Jahr 2026
+37;SNB921899277833_0037_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+686;SNB922074927642_0686_hlzf.pdf;gelesen;Jahr 2026
+213;SNB922361841965_0213_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 23;SNB922607376381_0023_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-193;SNB923953358557_0193_hlzf.pdf;gelesen;Jahr 2026
+193;SNB923953358557_0193_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 581;SNB924181641435_0581_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-394;SNB924330086940_0394_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-628;SNB924409922308_0628_hlzf.pdf;gelesen;Jahr 2026
+394;SNB924330086940_0394_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+628;SNB924409922308_0628_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+272;SNB924453035597_0272_hlzf.html;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
+191;SNB924747450655_0191_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
 444;SNB924793953759_0444_hlzf.pdf;gelesen;Jahr 2026
-497;SNB926442995943_0497_hlzf.pdf;gelesen;Jahr 2026
+497;SNB926442995943_0497_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 24;SNB926644622999_0024_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-456;SNB926697076725_0456_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-54;SNB926699071292_0054_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+456;SNB926697076725_0456_hlzf.pdf;gelesen;Jahr 2026
+54;SNB926699071292_0054_hlzf.pdf;gelesen;Jahr 2026
 109;SNB927462109518_0109_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 126;SNB927892816017_0126_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 558;SNB928200943784_0558_hlzf.pdf;gelesen;Jahr 2026
 129;SNB928258126528_0129_hlzf.pdf;nicht gelesen: kein Text (Scan?);
 771;SNB928340368768_0771_hlzf.pdf;gelesen;Jahr 2026
 225;SNB928557841498_0225_hlzf.pdf;gelesen;Jahr 2026
-544;SNB928992067729_0544_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-330;SNB929027950139_0330_hlzf.pdf;gelesen;Jahr 2026
-713;SNB929073868471_0713_hlzf.pdf;gelesen;Jahr 2026
-333;SNB929088252340_0333_hlzf.pdf;gelesen;Jahr 2026
-127;SNB929383206369_0127_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-180;SNB929575518928_0180_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-815;SNB929840763916_0815_hlzf.pdf;gelesen;Jahr 2026
+544;SNB928992067729_0544_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+330;SNB929027950139_0330_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+713;SNB929073868471_0713_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+333;SNB929088252340_0333_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+127;SNB929383206369_0127_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);alte Zeile bleibt
+180;SNB929575518928_0180_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+815;SNB929840763916_0815_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
 8;SNB929881052512_0008_hlzf.pdf;gelesen;Jahr 2026
+274;SNB930312838582_0274_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 101;SNB930558787330_0101_hlzf.pdf;nicht gelesen: kein Text (Scan?);alte Zeile bleibt
 56;SNB931070025696_0056_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 135;SNB931431136771_0135_hlzf.pdf;nicht gelesen: kein Text (Scan?);
@@ -69,105 +80,130 @@
 804;SNB932161540975_0804_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 593;SNB932374739180_0593_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 697;SNB932685335767_0697_hlzf.html;gelesen, Prüfung offen;Jahr None
-718;SNB933274941888_0718_hlzf.pdf;gelesen;Jahr 2026
+718;SNB933274941888_0718_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
 589;SNB933386930565_0589_hlzf.pdf;gelesen;Jahr 2026
-803;SNB933760214908_0803_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-749;SNB933869654360_0749_hlzf.xlsx;gelesen;Jahr 2026
-144;SNB934514392514_0144_hlzf.pdf;gelesen;Jahr 2026
+259;SNB933529129573_0259_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+803;SNB933760214908_0803_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+749;SNB933869654360_0749_hlzf.xlsx;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+348;SNB934071779865_0348_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+144;SNB934514392514_0144_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 599;SNB934961797092_0599_hlzf.pdf;nicht gelesen: kein Text (Scan?);alte Zeile bleibt
-100;SNB935303204162_0100_hlzf.pdf;gelesen;Jahr 2026
-795;SNB935578300972_0795_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+100;SNB935303204162_0100_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+795;SNB935578300972_0795_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 538;SNB935814055062_0538_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-473;SNB937094451244_0473_hlzf.pdf;gelesen;Jahr 2026
-296;SNB937858140285_0296_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+473;SNB937094451244_0473_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+296;SNB937858140285_0296_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+170;SNB938624241519_0170_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+335;SNB939624707241_0335_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 51;SNB939688186686_0051_hlzf.pdf;gelesen;Jahr 2026
 472;SNB940847187345_0472_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 495;SNB941004899811_0495_hlzf.pdf;gelesen;Jahr 2026
 761;SNB941555074781_0761_hlzf.pdf;gelesen;Jahr 2026
 819;SNB941650885558_0819_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-790;SNB942630156484_0790_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+790;SNB942630156484_0790_hlzf.pdf;gelesen;Jahr 2026
+280;SNB942732578894_0280_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 441;SNB943480673763_0441_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 457;SNB943604361118_0457_hlzf.pdf;gelesen, Jahr 2027;Jahr 2027
-521;SNB944962954653_0521_hlzf.pdf;gelesen;Jahr 2026
+521;SNB944962954653_0521_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 443;SNB945149216045_0443_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 811;SNB946612539746_0811_hlzf.pdf;gelesen, Jahr 2027;Jahr 2027
-751;SNB947514936855_0751_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+751;SNB947514936855_0751_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 455;SNB947698671429_0455_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
-380;SNB947709605108_0380_hlzf.pdf;gelesen;Jahr 2026
-830;SNB948485211972_0830_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-177;SNB951180867351_0177_hlzf.pdf;gelesen;Jahr 2026
+380;SNB947709605108_0380_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+830;SNB948485211972_0830_hlzf.pdf;gelesen;Jahr 2026
+255;SNB948816192529_0255_hlzf.pdf;gelesen;Jahr 2026
+177;SNB951180867351_0177_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+214;SNB951232597106_0214_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+285;SNB951760950909_0285_hlzf.pdf;gelesen;Jahr 2026
 595;SNB951791941969_0595_hlzf.pdf;gelesen;Jahr 2026
 297;SNB952845016893_0297_hlzf.pdf;gelesen;Jahr 2026
-659;SNB953453232156_0659_hlzf.pdf;gelesen;Jahr 2026
+659;SNB953453232156_0659_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 420;SNB953669866350_0420_hlzf.pdf;nicht gelesen: kein Text (Scan?);
+368;SNB953868012787_0368_hlzf.pdf;gelesen, Jahr 2027;Jahr 2027
 395;SNB953975499051_0395_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
 219;SNB954239007623_0219_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 526;SNB954537392643_0526_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+326;SNB954814647626_0326_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 613;SNB955001358523_0613_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-421;SNB955586052717_0421_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+421;SNB955586052717_0421_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 234;SNB955706777742_0234_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-583;SNB955718588763_0583_hlzf.pdf;gelesen;Jahr 2026
-693;SNB957440824454_0693_hlzf.pdf;gelesen;Jahr 2026
-798;SNB957632855181_0798_hlzf.pdf;gelesen;Jahr 2026
+583;SNB955718588763_0583_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+212;SNB957268511697_0212_hlzf.pdf;gelesen;Jahr 2026
+693;SNB957440824454_0693_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+798;SNB957632855181_0798_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+303;SNB957862279702_0303_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+341;SNB959176447266_0341_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 408;SNB959373877170_0408_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
 705;SNB960416123321_0705_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 391;SNB960502792271_0391_hlzf.pdf;gelesen;Jahr 2026
-512;SNB960729432592_0512_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+512;SNB960729432592_0512_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+263;SNB961316124487_0263_hlzf.pdf;gelesen;Jahr 2026
 38;SNB961471621746_0038_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-481;SNB961745390019_0481_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+207;SNB961497906636_0207_hlzf.pdf;nicht gelesen: mehrere Netzgebiete im Dokument: Stolzenau/Rehburg-Loccum, Unna Südwest/Westmünsterland;
+481;SNB961745390019_0481_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+231;SNB962006136537_0231_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 648;SNB962618092306_0648_hlzf.html;gelesen;Jahr 2026
+223;SNB962736090291_0223_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 410;SNB963795614626_0410_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 598;SNB963821222269_0598_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-356;SNB963995572245_0356_hlzf.pdf;gelesen;Jahr 2026
-747;SNB964045995373_0747_hlzf.pdf;gelesen;Jahr 2026
-251;SNB964137069203_0251_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-350;SNB965394941448_0350_hlzf.pdf;gelesen;Jahr 2026
+356;SNB963995572245_0356_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
+747;SNB964045995373_0747_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+251;SNB964137069203_0251_hlzf.pdf;gelesen;Jahr 2026
+350;SNB965394941448_0350_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 687;SNB965557517831_0687_hlzf.pdf;gelesen;Jahr 2026
 596;SNB965813404431_0596_hlzf.pdf;gelesen;Jahr 2026
-777;SNB967148688999_0777_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+254;SNB967068117678_0254_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+777;SNB967148688999_0777_hlzf.pdf;gelesen;Jahr 2026
 516;SNB968694358282_0516_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-767;SNB968862623211_0767_hlzf.pdf;gelesen;Jahr 2026
-366;SNB968914838013_0366_hlzf.pdf;gelesen;Jahr 2026
+767;SNB968862623211_0767_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+366;SNB968914838013_0366_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 192;SNB969068596941_0192_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 2;SNB969473762610_0002_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
 351;SNB969534177940_0351_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-53;SNB969871992015_0053_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+233;SNB969688824103_0233_hlzf.pdf;gelesen;Jahr 2026
+53;SNB969871992015_0053_hlzf.pdf;gelesen;Jahr 2026
 618;SNB970223838288_0618_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-13;SNB970821959712_0013_hlzf.pdf;gelesen;Jahr 2026
+13;SNB970821959712_0013_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 15;SNB971311555230_0015_hlzf.pdf;gelesen;Jahr 2026
 9;SNB971746988153_0009_hlzf.xls;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+289;SNB972153058149_0289_hlzf.pdf;gelesen;Jahr 2026
 564;SNB972740218178_0564_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-61;SNB973356062049_0061_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+61;SNB973356062049_0061_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 825;SNB973501936539_0825_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 808;SNB973519584647_0808_hlzf.pdf;gelesen;Jahr 2026
-306;SNB974647435931_0306_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+306;SNB974647435931_0306_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+160;SNB974763887737_0160_hlzf.pdf;gelesen;Jahr 2026
 112;SNB974959002937_0112_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-714;SNB975283859389_0714_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-674;SNB975846871759_0674_hlzf.pdf;gelesen;Jahr 2026
-632;SNB976170444053_0632_hlzf.pdf;gelesen;Jahr 2026
+714;SNB975283859389_0714_hlzf.pdf;gelesen;Jahr 2026
+674;SNB975846871759_0674_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+632;SNB976170444053_0632_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+249;SNB976297675927_0249_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 682;SNB976987786759_0682_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+268;SNB977374861035_0268_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+302;SNB977443469322_0302_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 189;SNB977966674678_0189_hlzf.pdf;gelesen;Jahr 2026
-791;SNB978071940108_0791_hlzf.pdf;gelesen;Jahr 2026
-84;SNB978963778161_0084_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+791;SNB978071940108_0791_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+84;SNB978963778161_0084_hlzf.pdf;gelesen;Jahr 2026
 361;SNB979950878543_0361_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
-580;SNB980054996408_0580_hlzf.pdf;gelesen;Jahr 2026
+580;SNB980054996408_0580_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 184;SNB980449174619_0184_hlzf.pdf;gelesen;Jahr 2026
-39;SNB980808485264_0039_hlzf.pdf;gelesen;Jahr 2026
-17;SNB981060961299_0017_hlzf.pdf;gelesen;Jahr 2026
-748;SNB981122608278_0748_hlzf.xlsx;gelesen;Jahr 2026
+39;SNB980808485264_0039_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
+17;SNB981060961299_0017_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+748;SNB981122608278_0748_hlzf.xlsx;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 104;SNB981887803796_0104_hlzf.pdf;gelesen;Jahr 2026
-427;SNB982380015723_0427_hlzf.pdf;gelesen;Jahr 2026
+427;SNB982380015723_0427_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 428;SNB982432856366_0428_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-279;SNB982722829230_0279_hlzf.pdf;gelesen;Jahr 2026
-794;SNB983425156814_0794_hlzf.pdf;gelesen;Jahr 2026
+279;SNB982722829230_0279_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+794;SNB983425156814_0794_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+305;SNB983526428810_0305_hlzf.pdf;gelesen;Jahr 2026
 237;SNB984571613121_0237_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 572;SNB984863778941_0572_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-651;SNB985072256732_0651_hlzf.pdf;gelesen;Jahr 2026
-182;SNB985172238775_0182_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+651;SNB985072256732_0651_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
+182;SNB985172238775_0182_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 635;SNB985382489820_0635_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
 494;SNB985431470335_0494_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-291;SNB985871274975_0291_hlzf.pdf;gelesen;Jahr 2026
-386;SNB985993443181_0386_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+291;SNB985871274975_0291_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+386;SNB985993443181_0386_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 468;SNB986190606218_0468_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 793;SNB986916159257_0793_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 217;SNB986931195988_0217_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
@@ -175,7 +211,13 @@
 132;SNB988980270319_0132_hlzf.html;gelesen;Jahr 2026
 201;SNB990971435621_0201_hlzf.pdf;gelesen;Jahr 2026
 226;SNB991400668603_0226_hlzf_MS.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+216;SNB991410365127_0216_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+196;SNB991882909515_0196_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 81;SNB992632801288_0081_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 222;SNB993724515038_0222_hlzf.pdf;gelesen;Jahr 2026
+316;SNB993755128542_0316_hlzf.pdf;gelesen;Jahr 2026
+235;SNB994196581439_0235_hlzf.pdf;gelesen;Jahr 2026
+169;SNB994749019716_0169_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 480;SNB996457394093_0480_hlzf.pdf;gelesen;Jahr 2026
+142;SNB997465895442_0142_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 176;SNB999405828558_0176_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
