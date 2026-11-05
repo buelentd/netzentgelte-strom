@@ -1,0 +1,115 @@
+
+/* Brotkrumenpfad
+------------------*/
+
+	.sgdownloadlist-breadcrumb ul {
+		margin: 0 0 20px 0;
+		padding: 0;
+	}
+
+	.sgdownloadlist-breadcrumb ul li {
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.sgdownloadlist-breadcrumb ul li:before {
+		content: '/';
+		margin-right: 5px;
+	}
+
+	.sgdownloadlist-breadcrumb ul li:first-of-type:before {
+		display: none;
+	}
+
+/* Verzeichnisliste
+--------------------*/
+
+	.sgdownloadlist-folders ul {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+		list-style-type: none;
+		column-gap: 20px;
+		margin: 0;
+		padding: 0;
+	}
+
+	@media screen and (max-width: 1023px) {
+		.sgdownloadlist-folders ul {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+
+	.sgdownloadlist-folders li {
+		background-color: #F2F2F2;
+		padding: 10px 10px 10px 45px;
+		margin-bottom: 20px;
+		background-image: url('/plugins/content/sgdownloadlist/pub/img/black/folder.svg');
+		background-repeat: no-repeat;
+		background-size: 24px auto;
+		background-position: 10px 12px;
+	}
+
+	.sgdownloadlist-folders li:hover {
+		background-color: #CCCCCC;
+	}
+
+	.sgdownloadlist-folders li a,
+	.sgdownloadlist-folders li a * {
+		position: relative;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.sgdownloadlist-folders-decription,
+	.sgdownloadlist-folders-decription * {
+		font-size: inherit;
+	}
+
+/* Dateiliste
+--------------------*/
+
+	.sgdownloadlist-files ul {
+		display: block;
+		list-style-type: none;
+		column-gap: 20px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sgdownloadlist-files li {
+		background-color: #F2F2F2;
+		padding: 10px 10px 10px 45px;
+		margin-bottom: 20px;
+		background-image: url('/plugins/content/sgdownloadlist/pub/img/black/file-text.svg');
+		background-repeat: no-repeat;
+		background-size: 24px auto;
+		background-position: 10px 12px;
+	}
+
+	.sgdownloadlist-files li:hover {
+		background-color: #CCCCCC;
+	}
+
+	.sgdownloadlist-files li a,
+	.sgdownloadlist-files li a * {
+		position: relative;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.sgdownloadlist-files .filesize {
+		float: right;
+	}
+
+	.sgdownloadlist-files-decription,
+	.sgdownloadlist-files-decription * {
+		font-size: inherit;
+	}
+
+/* Titel
+---------*/
+
+	/*
+
+
+	*/
