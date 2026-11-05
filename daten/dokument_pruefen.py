@@ -4,6 +4,8 @@
 Preisblatt:   python3 dokument_pruefen.py preis  <Datei> "<Netzbetreibername>"
 Hochlastzeit: python3 dokument_pruefen.py hlzf   <Datei> "<Netzbetreibername>"
 Mehrere:      python3 dokument_pruefen.py preis --liste liste.csv      (Spalten: datei;netzbetreiber, Trennzeichen ;)
+Ohne pdftotext: pip install pypdf (oder pdfplumber / pdfminer.six), oder den eigenen Extraktor angeben:
+              python3 dokument_pruefen.py preis datei.pdf "Name" --extraktor "python3 deepextract2.py"
 
 Ausgabe je Datei: OK, PRUEFEN (Mensch schaut hin) oder FALSCH (nicht ablegen), mit Gründen.
 Excel (.xlsx, .xls) und HTML werden gelesen, Scans ohne Text melden PRUEFEN. Es wird nichts geschätzt und nichts umgangen."""
@@ -16,13 +18,60 @@ FUELL = {"stadtwerke", "stadtwerk", "gemeindewerke", "netzgesellschaft", "vertei
          "elektrizitäts", "elektrizitätswerk", "genossenschaft", "gmbh", "gesellschaft", "kommunalunternehmen", "betriebe", "werke", "mbh"}
 
 
+EXTRAKTOR = None          # eigener Befehl, z. B. "python3 deepextract2.py" (gibt den Text auf stdout aus); per --extraktor "…" setzen
+
+
+def pdf_text(pfad: str) -> str:
+    """PDF -> Text: eigener Extraktor, sonst pdftotext, sonst pypdf, pdfplumber, pdfminer, PyMuPDF (was installiert ist)."""
+    import shlex
+    if EXTRAKTOR:
+        try:
+            t = subprocess.run(shlex.split(EXTRAKTOR) + [pfad], capture_output=True, timeout=120).stdout.decode("utf-8", "replace")
+            if len(t.strip()) > 50:
+                return t
+        except Exception:
+            pass
+    try:
+        t = subprocess.run(["pdftotext", "-layout", pfad, "-"], capture_output=True, timeout=90).stdout.decode("utf-8", "replace")
+        if len(t.strip()) > 50:
+            return t
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        pass
+    for versuch in (_pypdf, _pdfplumber, _pdfminer, _fitz):
+        try:
+            t = versuch(pfad)
+            if len(t.strip()) > 50:
+                return t
+        except Exception:
+            continue
+    return ""
+
+
+def _pypdf(p):
+    import pypdf
+    return "\n".join((pg.extract_text() or "") for pg in pypdf.PdfReader(p).pages)
+
+
+def _pdfplumber(p):
+    import pdfplumber
+    with pdfplumber.open(p) as f:
+        return "\n".join((pg.extract_text() or "") for pg in f.pages)
+
+
+def _pdfminer(p):
+    from pdfminer.high_level import extract_text
+    return extract_text(p)
+
+
+def _fitz(p):
+    import fitz
+    return "\n".join(pg.get_text() for pg in fitz.open(p))
+
+
 def text_lesen(pfad: str) -> str:
     ext = Path(pfad).suffix.lower()
     if ext == ".pdf":
-        try:
-            return subprocess.run(["pdftotext", "-layout", pfad, "-"], capture_output=True, timeout=90).stdout.decode("utf-8", "replace")
-        except (FileNotFoundError, subprocess.TimeoutExpired):
-            return ""
+        return pdf_text(pfad)
     if ext in (".xlsx", ".xlsm"):
         import openpyxl
         wb = openpyxl.load_workbook(pfad, data_only=True, read_only=True)
@@ -81,7 +130,10 @@ def pruefen(art: str, pfad: str, name: str):
 
 
 def main():
+    global EXTRAKTOR
     a = sys.argv[1:]
+    if "--extraktor" in a:
+        i = a.index("--extraktor"); EXTRAKTOR = a[i + 1]; del a[i:i + 2]
     if len(a) < 3 or a[0] not in ("preis", "hlzf"):
         print(__doc__); return 1
     art = a[0]
