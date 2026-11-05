@@ -1,0 +1,214 @@
+## elekt.Preisbl.2026
+1-01            Entgelte des Jahresleistungspreissystems
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+1-01-5   Mittelspannung   --   --
+1-01-5-001   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.03273972602739726   €/kW*Tag   11.95   €/kW*a
+1-01-5-002   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.0391   €/kWh   3.91   ct/kWh
+1-01-5-003   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.21967123287671234   €/kW*Tag   80.18   €/kW*a
+1-01-5-004   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.0118   €/kWh   1.18   ct/kWh
+1-01-6   Umspannung Mittel-/Niederspannung    --   --
+1-01-6-001   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.03347945205479452   €/kW*Tag   12.22   €/kW*a
+1-01-6-002   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.04650000000000001   €/kWh   4.65   ct/kWh
+1-01-6-003   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.2619178082191781   €/kW*Tag   95.6   €/kW*a
+1-01-6-004   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.0131   €/kWh   1.31   ct/kWh
+1-01-9-002   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung 
+Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbruchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegung BK6-22-300 und BK8-22/010-A   X   X   -0.2879589041095891   €/Tag   -105.105   €/a
+1-01-7   Niederspannung    --   --
+1-01-7-001   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.04698630136986301   €/kW*Tag   17.15   €/kW*a
+1-01-7-002   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.0512   €/kWh   5.12   ct/kWh
+1-01-7-003   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)   X   X   0.26663013698630134   €/kW*Tag   97.32   €/kW*a
+1-01-7-004   Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)   X   X   0.0189   €/kWh   1.89   ct/kWh
+1-01-9-001   Jahresleistungspreissystem Niederspannung
+Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbruchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegung BK6-22-300 und BK8-22/010-A   X   X   -0.2879589041095891   €/Tag   -105.105   €/a
+1-02            Entgelte des Grundpreis-/Arbeitspreissystems
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+1-02-0-001   Grundpreis-/ Arbeitspreissystem Marktlokation Grundpreis für Arbeitspreissystem Grundpreis   X   X   0.1917808219178082   €/Tag   70   €/a
+1-02-0-002   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere Kategorie fällt) sowie für Marktlokationen, die nach Modul 1 und/oder 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A abgerechnet werden Arbeitspreis    X   X   0.050499999999999996   €/kWh   5.05   ct/kWh
+1-02-0-003   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-004   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-005   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie öffentlicher Straßenbeleuchtung Arbeitspreis   X   X   0.04207142857142857   €/kWh   4.207142857142857   ct/kWh
+1-02-0-006   Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-007   Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-008   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung, insbesondere nach § 14a EnWG Grundpreis   X   X   0   €/Tag   0   €/a
+1-02-0-009   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe, insbesondere nach § 14a EnWG Grundpreis   X   X   0   €/Tag   0   €/a
+1-02-0-010   Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität, insbesondere nach § 14a EnWG Grundpreis   X   X   0   €/Tag   0   €/a
+1-02-0-011   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-012   Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-013   Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis   X   X   0.035   €/kWh   3.5   ct/kWh
+1-02-0-014   Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt Grundpreis   X   X   0   €/Tag   0   €/a
+1-02-0-015   Grundpreis-/ Arbeitspreissystem Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A   X   X   -0.2879589041095891   €/Tag   -105.105   €/a
+1-02-0-016   Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 2 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis   X   X   0.0202   €/kWh   2.02   ct/kWh
+1-02-0-017   Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis HT   X   X   0.053099999999999994   €/kWh   5.31   ct/kWh
+1-02-0-018   Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A Arbeitspreis NT   X   X   0.0202   €/kWh   2.02   ct/kWh
+1-03           Entgelte des Monatsleistungspreissystems
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+1-03-5   Monatsleistungspreissystem Mittelspannung   --   --
+1-03-5-001   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)   X   X   12.298520547945206   €/kW*Tag   13.36   €/kW*Monat
+1-03-5-002   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)   X   X   12.737753424657534   €/kW*Tag
+1-03-5-003   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)   X   X   13.176986301369862   €/kW*Tag
+1-03-5-004   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)   X   X   13.616219178082192   €/kW*Tag
+1-03-5-005   Monatsleistungspreissystem Mittelspannung Arbeitspreis (Einheit: €/kWh)   X   X   0.0118   €/kWh   1.18   ct/kWh
+1-03-6   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung   --   --
+1-03-6-001   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)   X   X   14.664328767123287   €/kW*Tag   15.93   €/kW*Monat
+1-03-6-002   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)   X   X   15.188054794520548   €/kW*Tag
+1-03-6-003   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)   X   X   15.711780821917808   €/kW*Tag
+1-03-6-004   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)   X   X   16.23550684931507   €/kW*Tag
+1-03-6-005   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Arbeitspreis (Einheit €/kWh)   X   X   0.0131   €/kWh   1.31   ct/kWh
+1-03-7   Monatsleistungspreissystem Niederspannung   --   --
+1-03-7-001   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)   X   X   14.931287671232875   €/kW*Tag   16.22   €/kW*Monat
+1-03-7-002   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)   X   X   15.464547945205478   €/kW*Tag
+1-03-7-003   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)   X   X   15.99780821917808   €/kW*Tag
+1-03-7-004   Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)   X   X   16.531068493150684   €/kW*Tag
+1-03-7-005   Monatsleistungspreissystem Niederspannung Arbeitspreis (Einheit: €/kWh)   X   X   0.0189   €/kWh   1.89   ct/kWh
+1-03-8   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a 
+EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A   --   --
+1-03-8-001   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 28 Tagen   X   X   -8.062849315068494   €/Tag   -105.105   €/a
+1-03-8-002   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 29 Tagen   X   X   -8.350808219178083   €/Tag   -105.105   €/a
+1-03-8-003   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 30 Tagen   X   X   -8.638767123287673   €/Tag   -105.105   €/a
+1-03-8-004   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 31 Tagen   X   X   -8.926726027397262   €/Tag   -105.105   €/a
+1-03-9   Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A   --   --
+1-03-9-001   Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 28 Tagen   X   X   -8.062849315068494   €/Tag   -105.105   €/a
+1-03-9-002   Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 29 Tagen   X   X   -8.350808219178083   €/Tag   -105.105   €/a
+1-03-9-003   Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 30 Tagen   X   X   -8.638767123287673   €/Tag   -105.105   €/a
+1-03-9-004   Monatsleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A für Monate mit 31 Tagen   X   X   -8.926726027397262   €/Tag   -105.105   €/a
+
+1-05            Netzreservekapazität
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+1-05-5   Mittelspannung   --   --
+1-05-5-001   Netzreservekapazität Mittelspannung bis 200 h/a (Einheit: €/kW*Tag)   X   X   0.12572602739726027   €/kW*Tag   45.89   €/kW*a
+1-05-5-002   Netzreservekapazität Mittelspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)   X   X   0.15084931506849317   €/kW*Tag   55.06   €/kW*a
+1-05-5-003   Netzreservekapazität Mittelspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)   X   X   0.176   €/kW*Tag   64.24   €/kW*a
+1-05-6   Umspannung Mittel-/Niederspannung   --   --
+1-05-6-001   Netzreservekapazität Umspannung Mittel-/Niederspannung bis 200 h/a (Einheit: €/kW*Tag)   X   X   0.14408219178082193   €/kW*Tag   52.59   €/kW*a
+1-05-6-002   Netzreservekapazität Umspannung Mittel-/Niederspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)   X   X   0.1729041095890411   €/kW*Tag   63.11   €/kW*a
+1-05-6-003   Netzreservekapazität Umspannung Mittel-/Niederspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)   X   X   0.2016986301369863   €/kW*Tag   73.62   €/kW*a
+1-05-7   Niederspannung   --   --
+1-05-7-001   Netzreservekapazität Niederspannung bis 200 h/a (Einheit: €/kW*Tag)   X   X   0.18005479452054793   €/kW*Tag   65.72   €/kW*a
+1-05-7-002   Netzreservekapazität Niederspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)   X   X   0.21608219178082194   €/kW*Tag   78.87   €/kW*a
+1-05-7-003   Netzreservekapazität Niederspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)   X   X   0.2520821917808219   €/kW*Tag   92.01   €/kW*a
+
+1-06            Entgelte des Messstellenbetriebs bei kME
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+1-06-5-001   Messstellenbetrieb bei kME, Mittelspannung, kME mit registrierender Last-/Einspeisemessung (Einheit: €/Tag)   X   X   0.9061643835616439   €/Tag   330.75   €/a
+1-06-5-002   Messstellenbetrieb bei kME, Mittelspannung, Wandlersatz für Messstellenbetrieb bei kME (Einheit: €/Tag)   X   X   0.8409041095890412   €/Tag   306.93   €/a
+1-06-7-001   Messstellenbetrieb bei kME, Niederspannung, kME mit registrierender Last-/Einspeisemessung (Einheit: €/Tag)   X   X   0.5921095890410959   €/Tag   216.12   €/a
+1-06-7-002   Messstellenbetrieb bei kME, Niederspannung, Wandlersatz für Messstellenbetrieb bei kME (Einheit: €/Tag)   X   X   0.07528767123287672   €/Tag   27.48   €/a
+1-06-7-004   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.034849315068493154   €/Tag   12.72   €/a
+1-06-7-005   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.09402739726027397   €/Tag   34.32   €/a
+1-06-7-006   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.034849315068493154   €/Tag   12.72   €/a
+1-06-7-007   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.09402739726027397   €/Tag   34.32   €/a
+1-06-7-011   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)   X   X   0.034849315068493154   €/Tag   12.72   €/a
+1-06-7-012   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.04580821917808219   €/Tag   16.72   €/a
+1-06-7-013   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.10498630136986302   €/Tag   38.32   €/a
+1-06-7-014   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.04580821917808219   €/Tag   16.72   €/a
+1-06-7-015   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.10498630136986302   €/Tag   38.32   €/a
+1-06-7-019   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)   X   X   0.04580821917808219   €/Tag   16.72   €/a
+1-06-7-020   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.06772602739726027   €/Tag   24.72   €/a
+1-06-7-021   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.1269041095890411   €/Tag   46.32   €/a
+1-06-7-022   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.06772602739726027   €/Tag   24.72   €/a
+1-06-7-023   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.1269041095890411   €/Tag   46.32   €/a
+1-06-7-027   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)   X   X   0.06772602739726027   €/Tag   24.72   €/a
+1-06-7-028   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.1553972602739726   €/Tag   56.72   €/a
+1-06-7-029   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.2145753424657534   €/Tag   78.32   €/a
+1-06-7-030   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)   X   X   0.1553972602739726   €/Tag   56.72   €/a
+1-06-7-031   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)   X   X   0.2145753424657534   €/Tag   78.32   €/a
+1-06-7-035   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)   X   X   0.1553972602739726   €/Tag   56.72   €/a
+1-06-0-036   Messstellenbetrieb bei kME, alle Spannungsebenen, Telekommunikationsanschluss durch NB (Fernauslesung) (Einheit: €/Tag)   X   X   0.2465753424657534   €/Tag   90   €/a
+1-08            Konzessionsabgaben
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV
+gem. § 2 Abs. 2 Satz 1 a) KAV   Einheit
+Codever-wendung   Preisangabe
+1-08-1-001   Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden in Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV (Einheit: €/kWh)   X   --   0.0060999999999999995   €/kWh   0.61   ct/kWh
+1-08-3-001   Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Sondervertragskunden gem. § 2 Abs. 3 Satz 1 KAV (Einheit: €/kWh)   X   --   0.0011   €/kWh   0.11   ct/kWh
+1-08-4-001   Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV    X   --   0.0132   €/kWh   1.32   ct/kWh
+bis 25.000 Einwohner (Einheit: €/kWh)
+1-08-4-003   Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV    X   --   0.0199   €/kWh   1.99   ct/kWh
+von 100.000 bis  500.000 Einwohner (Einheit: €/kWh)
+2-01                     Separat bestellbare Einzelleistungen für Marktlokationen und Verzugskosten
+ID   Bezeichnung   PRICAT   Preis für PRICAT
+8 Stellen nach Komma   Einheit   Netznutzungsentgelte
+gem. §17 StromNEV   Einheit
+Codever-wendung   Preisangabe
+2-01-7-001   Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit (€/Auftrag)   X   X   65.1   €/Auftrag   65.1   €/Auftrag
+2-01-7-002   Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit (€/Auftrag)   X   X   65.1   €/Auftrag   65.1   €/Auftrag
+2-01-7-003   Erfolglose Unterbrechung (€/Auftrag)   X   X   32.1   €/Auftrag   32.1   €/Auftrag
+2-01-7-004   Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung bis zum Vortag der Sperrung (€/Auftrag)   X   X   32.55   €/Auftrag   32.55   €/Auftrag
+2-01-7-005   Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung am Tag der Sperrung (€/Auftrag)   X   X   65.1   €/Auftrag   65.1   €/Auftrag
+2-02-0-001   Verzugskosten pauschal (€/Fall)   X   X   1.5   €/ Fall   1.5   €/ Fall
+4-02                  Abrechnung Messstellenbetrieb vom MSB an LF
+ID   Bezeichnung   Preis für PRICAT
+6 Stellen nach Komma   Einheit   POG (Netto)   Einheit
+für gMSB   Preisangabe
+4-02-0-001   Preis bei verbrauchender Marktlokation > 100.000 kWh/a mit iMS § 30 MsbG, Abs. 1 Punkt 1   X   --   --   €/Tag   auf Anfrage   €/a
+Angemessenes, jährliches Entgelt für mit iMS ausgestattete Marktlokation mit einem Jahresstromverbrauch von über 100.000 kWh
+4-02-0-002   POG bei verbrauchender Marktlokation ]50.000 kWh/a; 100.000 kWh/a] mit iMS § 30 MsbG, Abs. 1 Punkt 2   X   X   0.32232070910556004   €/Tag   117.64705882352942   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit einem Jahresstromverbrauch von über 50.000 bis einschließlich 100.000 kWh
+4-02-0-003   POG bei verbrauchender Marktlokation ]20.000 kWh/a; 50.000 kWh/a] mit iMS § 30 MsbG, Abs. 1 Punkt 3   X   X   0.25325198572579716   €/Tag   92.43697478991596   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit einem Jahresstromverbrauch von über 20.000 bis einschließlich 50.000 kWh
+4-02-0-004   POG bei verbrauchender Marktlokation ]10.000 kWh/a; 20.000 kWh/a] mit iMS § 30 MsbG, Abs. 1 Punkt 4   X   X   0.11511453896627144   €/Tag   42.016806722689076   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit einem Jahresstromverbrauch von über 10.000 bis einschließlich 20.000 kWh
+4-02-0-005   POG bei verbrauchender Marktlokation mit einer steuerbaren Verbrauchseinrichtung oder an steuerbaren Netzanschlüssen nach § 14a EnWG mit iMS ausgestattet § 30 MsbG, Abs. 1 Punkt 5   X   X   0.11511453896627144   €/Tag   42.016806722689076   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit unterbrechbaren Verbrauchseinrichtung nach § 14a EnWG
+4-02-0-006   POG bei verbrauchender Marktlokation ]6.000 kWh/a; 10.000 kWh/a] mit iMS § 30 MsbG, Abs. 1 Punkt 6   X   X   0.09209163117301715   €/Tag   33.61344537815126   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit einem Jahresstromverbrauch von über 6.000 bis einschließlich 10.000 kWh
+4-02-0-007   POG bei erzeugender Marktlokation ]7 kW; 15 kW] mit iMS § 30 MsbG, Abs. 2 Punkt 1   X   X   0.11511453896627144   €/Tag   42.016806722689076   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit installierter Leistung über 7 bis einschließlich 15 kW
+4-02-0-008   POG bei erzeugender Marktlokation ]15 kW; 25 kW] mit iMS § 30 MsbG, Abs. 2 Punkt 2   X   X   0.25325198572579716   €/Tag   92.43697478991596   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit installierter Leistung über 15 bis einschließlich 25 kW
+4-02-0-009   POG bei erzeugender Marktlokation ]25 kW; 100 kW] mit iMS § 30 MsbG, Abs. 2 Punkt 3   X   X   0.32232070910556004   €/Tag   117.64705882352942   €/a
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit installierter Leistung über 25 bis einschließlich 100 kW
+4-02-0-010   Preis bei erzeugender Marktlokation > 100 kW mit iMS § 30 MsbG, Abs. 2 Punkt 4   X   --   --   €/Tag   auf Anfrage   €/a
+Angemessenes, jährliches Entgelt für mit iMS ausgestattete Marktlokation mit installierter Leistung über 100 kW
+4-02-0-011   POG bei Marktlokation mit mME § 32 MsbG Abs. 1   X   X   0.05755726948313572   €/Tag   21.008403361344538   €/a
+Jährliches Entgelt für mit mME ausgestattete Marktlokation
+4-02-0-014   POG bei erzeugender Marktlokation ]1 kW; 7 kW] mit iMS § 30 MsbG, Abs. 3 in Verbindung mit § 29 Abs. 2 Nummer 2
+Jährliches Entgelt für mit iMS ausgestattete Marktlokation mit installierter Leistung über 1 bis einschließlich 7 kW   X   X   0.06906872337976287   €/Tag   25.210084033613448   €/a
+4-02-0-019   Schaltgerät/Tarifschaltung, das/die nicht an ein Smart Meter Gateway (SMGW) angebunden ist   X   X   0.05917808219178083   €/Tag   21.6   €/a
+4-02-0-022   Einbau und Betrieb einer Steuereinrichtung am Netzanschlusspunkt   X   X   0.11511453896627144   €/Tag   42.016806722689076   €/a
+4-02-0-023   Jährliches Zusatzentgelt bei vorzeitiger Ausstattung von optionalen Einbaufällen   X   X   0.06906872337976287   €/Tag   25.210084033613448   €/a
+4-02-0-024   POG bei verbrauchender Marktlokation [0 kWh/a; 6.000 kWh/a] mit iMS   X   X   0.06906872337976287   €/Tag   25.210084033613448   €/a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,303 @@
+## el. PB 1
+Netznutzungspreisblatt für Marktlokationen (Preisblatt 1)    Codeliste Version:   5.6
+Netzbetreiber [MP-ID]   9901066000003
+Preisblatt-ID
+Gültig ab [YYYYMMDD]   #VALUE!
+Version (YYYYMMDDHHMM)   #VALUE!
+
+Preisblattteil 1 Entgelte für Jahresleistungspreissystem
+Artikel-ID   Preis   Einheit
+Gruppenartikel-ID [1-01-1]   Höchstspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-1-001   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+1-01-1-002   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-1-003   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+1-01-1-004   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Gruppenartikel-ID [1-01-2]   Umspannung Höchst-/Hochspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-2-001   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+1-01-2-002   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-2-003   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+1-01-2-004   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Gruppenartikel-ID [1-01-3]   Hochspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-3-001   Leistungspreis   0.07972603   €/(kW*Tag)
+1-01-3-002   Arbeitspreis   0.065   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-3-003   Leistungspreis   0.49865753   €/(kW*Tag)
+1-01-3-004   Arbeitspreis   0.0038   €/kWh
+Gruppenartikel-ID [1-01-4]   Umspannung Hoch-/Mittelspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-4-001   Leistungspreis   0.09742466   €/(kW*Tag)
+1-01-4-002   Arbeitspreis   0.0679   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-4-003   Leistungspreis   0.46282192   €/(kW*Tag)
+1-01-4-004   Arbeitspreis   0.0145   €/kWh
+Gruppenartikel-ID [1-01-5]   Mittelspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-5-001   Leistungspreis   0.11126027   €/(kW*Tag)
+1-01-5-002   Arbeitspreis   0.0721   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-5-003   Leistungspreis   0.47643836   €/(kW*Tag)
+1-01-5-004   Arbeitspreis   0.0188   €/kWh
+Gruppenartikel-ID [1-01-6]   Umspannung Mittel-/Niederspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-6-001   Leistungspreis   0.13586301   €/(kW*Tag)
+1-01-6-002   Arbeitspreis   0.0742   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-6-003   Leistungspreis   0.42915068   €/(kW*Tag)
+1-01-6-004   Arbeitspreis   0.0313   €/kWh
+Gruppenartikel-ID [1-01-7]   Niederspannung
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-7-001   Leistungspreis   0.13632877   €/(kW*Tag)
+1-01-7-002   Arbeitspreis   0.0744   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-7-003   Leistungspreis   0.35909589   €/(kW*Tag)
+1-01-7-004   Arbeitspreis   0.0418   €/kWh
+Gruppenartikel-ID [1-01-8]   § 14a EnWG - Entgelt für RLM Kunden
+Jahresbenutzungsdauerstunden <2500 h/a
+1-01-8-001   Leistungspreis NS   0.13632877   €/(kW*Tag)
+1-01-8-002   Arbeitspreis NS   0.0744   €/kWh
+Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-8-003   Leistungspreis NS   0.35909589   €/(kW*Tag)
+1-01-8-004   Arbeitspreis NS   0.0418   €/kWh
+1-01-9-001   Pauschale Reduzierung nach Modul 1 NS   -0.3339726   €/Tag
+1-01-9-002   Pauschale Reduzierung nach Modul 1 MS/NS   -0.3339726   €/Tag
+Preisblattteil 2 Entgelte für Grundpreis-/ Arbeitspreissystem
+Marktlokation Grundpreis für Arbeitspreissystem
+1-02-0-001   Grundpreis   0.20547945   €/Tag
+Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere Kategorie fällt)
+1-02-0-002   Arbeitspreis (Standard + Modul 1 + Modul 3 in Restzeit   0.0729   €/kWh
+Marktlokation der Kategorie steuerbare Speicherheizung
+1-02-0-003   Arbeitspreis SH Bestand   0.0244   €/kWh
+Marktlokation der Kategorie steuerbare Wärmepumpe
+1-02-0-004   Arbeitspreis WP Bestand   0.0244   €/kWh
+Marktlokation der Kategorie öffentlicher Straßenbeleuchtung (hier RLM)
+1-02-0-005   Arbeitspreis SB   0.073   €/kWh
+Marktlokationen der Kategorie steuerbare Elektromobilität
+1-02-0-006   Arbeitspreis EM Bestand   0.0244   €/kWh
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nicht genauer spezifiziert
+1-02-0-007   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Marktlokation der Kategorie steuerbare Speicherheizung
+1-02-0-008   Grundpreis SH Bestand   0   €/Tag
+Marktlokation der Kategorie steuerbare Wärmepumpe
+1-02-0-009   Grundpreis WP Bestand   0   €/Tag
+Marktlokationen der Kategorie steuerbare Elektromobilität
+1-02-0-010   Grundpreis EM Bestand   0   €/Tag
+Marktlokationen der Kategorie steuerbare Speicherheizung mit erweiterter Steuerbarkeit
+1-02-0-011   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Marktlokationen der Kategorie steuerbare Wärmepumpe mit erweiterter Steuerbarkeit
+1-02-0-012   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Marktlokationen der Kategorie steuerbare Elektromobilität mit erweiterter Steuerbarkeit
+1-02-0-013   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nicht genauer spezifiziert
+1-02-0-014   Grundpreis   x,xxxxxxxxxxx   €/Tag
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen §14a EnWG Pauschalreduzierung Modul 1
+1-02-0-015   Pauschale Reduzierung nach Modul 1   -0.3339726   €/Tag
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen §14a EnWG AP reduziert Modul 2
+1-02-0-016   Arbeitspreis Modul 2   0.0292   €/kWh
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen §14a EnWG AP HT Modul 3
+1-02-0-017   Arbeitspreis HT Modul 3   0.0875   €/kWh
+Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen §14a EnWG AP NT Modul 3
+1-02-0-018   Arbeitspreis NT Modul 3   0.0251   €/kWh
+Preisblattteil 3 Entgelte für Monatsleistungspreissystem
+Höchstspannung
+1-03-1-001   Leistungspreis für Monate mit 28 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-1-002   Leistungspreis für Monate mit 29 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-1-003   Leistungspreis für Monate mit 30 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-1-004   Leistungspreis für Monate mit 31 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-1-005   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Umspannung Höchst-/Hochspannung
+1-03-2-001   Leistungspreis für Monate mit 28 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-2-002   Leistungspreis für Monate mit 29 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-2-003   Leistungspreis für Monate mit 30 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-2-004   Leistungspreis für Monate mit 31 Tagen   x,xxxxxxxxxxx   €/(kW*Tag)
+1-03-2-005   Arbeitspreis   x,xxxxxxxxxxx   €/kWh
+Hochspannung
+1-03-3-001   Leistungspreis für Monate mit 28 Tagen   1.08357143   €/(kW*Tag)
+1-03-3-002   Leistungspreis für Monate mit 29 Tagen   1.0462069   €/(kW*Tag)
+1-03-3-003   Leistungspreis für Monate mit 30 Tagen   1.01133333   €/(kW*Tag)
+1-03-3-004   Leistungspreis für Monate mit 31 Tagen   0.97870968   €/(kW*Tag)
+1-03-3-005   Arbeitspreis   0.0038   €/kWh
+Umspannung Hoch-/Mittelspannung
+1-03-4-001   Leistungspreis für Monate mit 28 Tagen   1.00571429   €/(kW*Tag)
+1-03-4-002   Leistungspreis für Monate mit 29 Tagen   0.97103448   €/(kW*Tag)
+1-03-4-003   Leistungspreis für Monate mit 30 Tagen   0.93866667   €/(kW*Tag)
+1-03-4-004   Leistungspreis für Monate mit 31 Tagen   0.9083871   €/(kW*Tag)
+1-03-4-005   Arbeitspreis   0.0145   €/kWh
+Mittelspannung
+1-03-5-001   Leistungspreis für Monate mit 28 Tagen   1.035   €/(kW*Tag)
+1-03-5-002   Leistungspreis für Monate mit 29 Tagen   0.99931034   €/(kW*Tag)
+1-03-5-003   Leistungspreis für Monate mit 30 Tagen   0.966   €/(kW*Tag)
+1-03-5-004   Leistungspreis für Monate mit 31 Tagen   0.93483871   €/(kW*Tag)
+1-03-5-005   Arbeitspreis   0.0188   €/kWh
+Umspannung Mittel-/Niederspannung
+1-03-6-001   Leistungspreis für Monate mit 28 Tagen   0.9325   €/(kW*Tag)
+1-03-6-002   Leistungspreis für Monate mit 29 Tagen   0.90034483   €/(kW*Tag)
+1-03-6-003   Leistungspreis für Monate mit 30 Tagen   0.87033333   €/(kW*Tag)
+1-03-6-004   Leistungspreis für Monate mit 31 Tagen   0.84225806   €/(kW*Tag)
+1-03-6-005   Arbeitspreis   0.0313   €/kWh
+Niederspannung
+1-03-7-001   Leistungspreis für Monate mit 28 Tagen   0.78035714   €/(kW*Tag)
+1-03-7-002   Leistungspreis für Monate mit 29 Tagen   0.75344828   €/(kW*Tag)
+1-03-7-003   Leistungspreis für Monate mit 30 Tagen   0.72833333   €/(kW*Tag)
+1-03-7-004   Leistungspreis für Monate mit 31 Tagen   0.70483871   €/(kW*Tag)
+1-03-7-005   Arbeitspreis   0.0418   €/kWh
+Pauschalreduzierung Modul 1 MS/NS
+1-03-8-001   Pauschalreduzierung Modul 1 für Monate mit 28 Tagen   -0.3339726   €/Tag
+1-03-8-002   Pauschalreduzierung Modul 1 für Monate mit 29 Tagen   -0.3339726   €/Tag
+1-03-8-003   Pauschalreduzierung Modul 1 für Monate mit 30 Tagen   -0.3339726   €/Tag
+1-03-8-004   Pauschalreduzierung Modul 1 für Monate mit 31 Tagen   -0.3339726   €/Tag
+Pauschalreduzierung Modul 1 NS
+1-03-9-001   Pauschalreduzierung Modul 1 für Monate mit 28 Tagen   -0.3339726   €/Tag
+1-03-9-002   Pauschalreduzierung Modul 1 für Monate mit 29 Tagen   -0.3339726   €/Tag
+1-03-9-003   Pauschalreduzierung Modul 1 für Monate mit 30 Tagen   -0.3339726   €/Tag
+1-03-9-004   Pauschalreduzierung Modul 1 für Monate mit 31 Tagen   -0.3339726   €/Tag
+Preisblattteil 4 Entgelte für Stromspeicher gem. § 19 Abs. 4 StromNEV
+Höchstspannung
+1-04-1-001   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+Umspannung Höchst-/Hochspannung
+1-04-2-001   Leistungspreis   x,xxxxxxxxxxx   €/(kW*Tag)
+Hochspannung
+1-04-3-001   Leistungspreis   0.49865753   €/(kW*Tag)
+Umspannung Hoch-/Mittelspannung
+1-04-4-001   Leistungspreis   0.46282192   €/(kW*Tag)
+Mittelspannung
+1-04-5-001   Leistungspreis   0.47643836   €/(kW*Tag)
+Umspannung Mittel-/Niederspannung
+1-04-6-001   Leistungspreis   0.42915068   €/(kW*Tag)
+Niederspannung
+1-04-7-001   Leistungspreis   0.35909589   €/(kW*Tag)
+Preisblattteil 5 Netzreservekapazität 
+Gruppenartikel-ID [1-05-1]   Höchstspannung
+1-05-1-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-1-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-1-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-2]   Umspannung Höchst-/Hochspannung
+1-05-2-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-2-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-2-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-3]   Hochspannung
+1-05-3-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-3-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-3-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-4]   Umspannung Hoch-/Mittelspannung
+1-05-4-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-4-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-4-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-5]   Mittelspannung
+1-05-5-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-5-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-5-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-6]   Umspannung Mittel-/Niederspannung
+1-05-6-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-6-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-6-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Gruppenartikel-ID [1-05-7]   Niederspannung
+1-05-7-001   bis 200 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-7-002   über 200 h/a bis 400 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+1-05-7-003   über 400 h/a bis 600 h/a   x,xxxxxxxxxxx   €/(kW*Tag)
+Preisblattteil 6 Entgelte für Messstellenbetrieb bei kME (sobald mME bzw. iMS verbaut ist erfolgt die Abrechnung über den MSB)
+Höchstspannung
+1-06-1-001   kME mit registrierender Last-/Einspeisemessung   x,xxxxxxxxxxx   €/Tag
+1-06-1-002   Wandlersatz für Messstellenbetrieb bei kME   x,xxxxxxxxxxx   €/Tag
+Hochspannung
+1-06-3-001   kME mit registrierender Last-/Einspeisemessung   4.66243836   €/Tag
+1-06-3-002   Wandlersatz für Messstellenbetrieb bei kME   0.64156164   €/Tag
+Mittelspannung
+1-06-5-001   kME mit registrierender Last-/Einspeisemessung   0.86093151   €/Tag
+1-06-5-002   Wandlersatz für Messstellenbetrieb bei kME   0.64156164   €/Tag
+Niederspannung
+1-06-7-001   kME mit registrierender Last-/Einspeisemessung   0.86093151   €/Tag
+1-06-7-002   Wandlersatz für Messstellenbetrieb bei kME   0.12328767   €/Tag
+1-06-7-003   Schaltgerät oder Rundsteuerempfänger   x,xxxxxxxxxxx   €/Tag
+Bei jährlicher Ablesung
+1-06-7-004   kME Einrichtungszähler Eintarif   0.02216438   €/Tag
+1-06-7-005   kME Einrichtungszähler Zweitarif   0.03764384   €/Tag
+1-06-7-006   kME Zweirichtungszähler Eintarif   0.02216438   €/Tag
+1-06-7-007   kME Zweirichtungszähler Zweitarif   0.03764384   €/Tag
+1-06-7-008   kME Mehrtarifzähler   0.03764384   €/Tag
+1-06-7-009   kME Prepaymentzähler   x,xxxxxxxxxxx   €/Tag
+1-06-7-010   kME Maximumzähler   0.05312329   €/Tag
+1-06-7-011   kME EDL21 Zähler   0.02216438   €/Tag
+Bei halbjährlicher Ablesung
+1-06-7-012   kME Einrichtungszähler Eintarif   0.02887671   €/Tag
+1-06-7-013   kME Einrichtungszähler Zweitarif   0.04435616   €/Tag
+1-06-7-014   kME Zweirichtungszähler Eintarif   0.02887671   €/Tag
+1-06-7-015   kME Zweirichtungszähler Zweitarif   0.04435616   €/Tag
+1-06-7-016   kME Mehrtarifzähler    0.04435616   €/Tag
+1-06-7-017   kME Prepaymentzähler   x,xxxxxxxxxxx   €/Tag
+1-06-7-018   kME Maximumzähler   0.05983562   €/Tag
+1-06-7-019   kME EDL21 Zähler   0.02887671   €/Tag
+Bei vierteljährlicher Ablesung
+1-06-7-020   kME Einrichtungszähler Eintarif   0.04230137   €/Tag
+1-06-7-021   kME Einrichtungszähler Zweitarif   0.05778082   €/Tag
+1-06-7-022   kME Zweirichtungszähler Eintarif   0.04230137   €/Tag
+1-06-7-023   kME Zweirichtungszähler Zweitarif   0.05778082   €/Tag
+1-06-7-024   kME Mehrtarifzähler   0.05778082   €/Tag
+1-06-7-025   kME Prepaymentzähler   x,xxxxxxxxxxx   €/Tag
+1-06-7-026   kME Maximumzähler   0.07326027   €/Tag
+1-06-7-027   kME EDL21 Zähler   0.04230137   €/Tag
+Bei monatlicher Ablesung
+1-06-7-028   kME Einrichtungszähler Eintarif   0.096   €/Tag
+1-06-7-029   kME Einrichtungszähler Zweitarif   0.11147945   €/Tag
+1-06-7-030   kME Zweirichtungszähler Eintarif   0.096   €/Tag
+1-06-7-031   kME Zweirichtungszähler Zweitarif   0.11147945   €/Tag
+1-06-7-032   kME Mehrtarifzähler   0.11147945   €/Tag
+1-06-7-033   kME Prepaymentzähler   x,xxxxxxxxxxx   €/Tag
+1-06-7-034   kME Maximumzähler   0.1269589   €/Tag
+1-06-7-035   kME EDL21 Zähler   0.096   €/Tag
+Alle Spannungsebenen
+1-06-0-036   Telekommunikationsanschluss durch NB (automatische Ablesung)   0.11641096   €/Tag
+1-06-0-037   Telekommunikationsanschluss durch AN (automatische Ablesung)   0   €/Tag
+1-06-0-038   Manuelle vor Ort Ablesung bei kME mit registrierender Last-/Einspeisemessung   0   €/Vorgang
+1-06-0-039   Entgelt Impulsweitergabe   0.11641096   €/Tag
+## el. PB 2
+
+
+Preisblatt für separat bestellbare Einzelleistungen für Marktlokationen und Verzugskosten (Preisblatt 2)   Codeliste Version:   5.6
+Netzbetreiber [MP-ID]   9901066000003
+Preisblatt-ID
+Gültig ab [YYYYMMDD]   2026-01-01 00:00:00
+Version (YYYYMMDDHHMM)   2026-01-01 00:00:00
+
+Preisblattteil 2 Separat bestellbare Einzelleistungen für Marktlokationen und Verzugskosten
+Artikel-ID   Preis   Einheit
+2-01-7-001   Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit (€/Auftrag)   80.89   €/Auftrag
+2-01-7-002   Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit (€/Auftrag)   54.47   €/Auftrag
+2-01-7-003   Erfolglose Unterbrechung (€/Auftrag)   80.89   €/Auftrag
+2-01-7-004   Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung bis zum Vortag der Sperrung (€/Auftrag)   0   €/Auftrag
+2-01-7-005   Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung am Tag der Sperrung (€/Auftrag)   80.89   €/Auftrag
+2-01-7-006   Wiederherstellung der Anschlussnutzung außerhalb der regulären Arbeitszeit (€/Auftrag)   68.09   €/Auftrag
+2-02-0-001   Verzugskosten pauschal (€/Fall)   0   €/Fall
+2-02-0-002   Verzugskosten variabel (€)   0   €
+
+
+
+
+
+Allg. Hinweise:
+Im Fall der Angabe von xx,xx Preis/Einheit ist im Preisblatt der konkrete Preis zu nennen. 
+Im Fall der Angabe von --,-- Preis/Einheit ist im Preisblatt kein Preis zu nennen. 
+## el. PB 3
+
+
+Preisblatt für freiwillige Abrechnung sonstiger Leistungen (Preisblatt 3)    Codeliste Version:   5.6
+Netzbetreiber [MP-ID]   9901066000003
+Preisblatt-ID
+Gültig ab [YYYYMMDD]
+Version (YYYYMMDDHHMM)
+
+Preisblattteil 1 Freiwillige Abrechnung von Blindstrom als Anschlussnutzerposition
+Artikel-ID   Preis   Einheit
+3-01-0-001   Blindarbeit (€/kvarh)   0   €/kvarh
+Gruppenartikel-ID [3-02-0]   Tarifierte Blindarbeit
+3-02-0-001   Blindarbeit 1 (€/kvarh)   x,xxxxxxxxxxx   €/kvarh
+3-02-0-002   Blindarbeit 2 (€/kvarh)   x,xxxxxxxxxxx   €/kvarh
+
+
+Allg. Hinweise:
+Im Fall der Angabe von xx,xx Preis/Einheit ist im Preisblatt der konkrete Preis zu nennen. 
+Im Fall der Angabe von --,-- Preis/Einheit ist im Preisblatt kein Preis zu nennen. 
