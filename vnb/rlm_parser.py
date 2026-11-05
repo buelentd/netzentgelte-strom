@@ -23,7 +23,7 @@ def plausibel(w, tag):
     lp1, ap1, lp2, ap2 = w
     if tag:
         pass
-    return 0 < lp1 <= 450 and 20 <= lp2 <= 700 and 0.05 <= ap1 <= 25 and 0 <= ap2 <= 15 and ap1 >= ap2 * 0.95 and lp2 > lp1 * 0.4 and lp1 < lp2 * 1.5
+    return 1 <= lp1 <= 450 and 20 <= lp2 <= 700 and 1.0 <= ap1 <= 25 and 0 <= ap2 <= 15 and ap1 >= ap2 * 0.95 and lp2 > lp1 * 0.4 and lp1 < lp2 * 1.5
 
 def rlm_parser(zeilen, eb):
     # BDEW-Artikel-IDs (1-01-5-001 ... 004): eindeutig, Tages-/Jahres-/Bruttowerte werden dort aufgelöst (Saalfeld)
@@ -89,7 +89,7 @@ def _zeilenpaar(zeilen, eb):
         if h:
             reihen.append((i, h))
     for (i1, h1), (i2, h2) in zip(reihen, reihen[1:]):
-        if 0 < i2 - i1 <= 8:
+        if 0 < i2 - i1 <= 14:
             w = [h1[0], h1[1], h2[0], h2[1]]
             if plausibel(w, False):
                 return [round(v, 2) for v in w], "zwei Zeilen mit Ebenenname: " + " ".join(zeilen[i1].split())[:50]

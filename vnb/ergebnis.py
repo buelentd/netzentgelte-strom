@@ -129,7 +129,25 @@ class Speicher:
             return sorted(self.daten.values(), key=lambda d: (int(d.get("nr") or 0), d["key"]))
         man = self._manuell()
         sperre = self._sperre()
-        return [self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre) for d in self._zeilen_recherche()]
+        gruende = self._hsms_gruende()
+        return [self._hsms_grund(self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre), gruende) for d in self._zeilen_recherche()]
+
+    def _hsms_gruende(self) -> dict:
+        """lauf/hsms_grund.csv (mastr_nr;hsms_status): warum HS/MS fehlt (Skript daten/hsms_grund.py)."""
+        pfad = self.ordner.parent / "lauf" / "hsms_grund.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["mastr_nr"]: r["hsms_status"] for r in csv.DictReader(f, delimiter=";") if r.get("mastr_nr")}
+
+    @staticmethod
+    def _hsms_grund(d: dict, gruende: dict) -> dict:
+        g = gruende.get(d.get("mastr_nr"))
+        if not g or len(d.get("hsms") or {}) == 4:
+            return d
+        d = dict(d)
+        d["hsms_status"] = g
+        return d
 
     def _sperre(self) -> dict:
         """lauf/zuordnung_unbelegt.csv (nr;grund): Netzbetreiber, deren Zuordnung zum gelesenen Preisblatt nicht belegt ist."""

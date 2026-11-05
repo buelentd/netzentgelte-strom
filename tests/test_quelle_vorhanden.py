@@ -55,3 +55,11 @@ def test_sperrliste_leert_werte():
     out = Ergebnisse._gesperrt(d, {"186": "grund"})
     assert out["status"] == "pruefen" and out["ns"] == {} and out["slp"] == {} and out["hinweis"] == "grund"
     assert Ergebnisse._gesperrt(d, {})["status"] == "ok"
+
+
+def test_hsms_grund_wird_uebernommen():
+    from vnb.ergebnis import Speicher
+    d = {"mastr_nr": "SNB1", "hsms": {}}
+    assert Speicher._hsms_grund(d, {"SNB1": "nicht_ausgewiesen"})["hsms_status"] == "nicht_ausgewiesen"
+    voll = {"mastr_nr": "SNB1", "hsms": {"a": 1, "b": 2, "c": 3, "d": 4}, "hsms_status": "gelesen"}
+    assert Speicher._hsms_grund(voll, {"SNB1": "nicht_ausgewiesen"})["hsms_status"] == "gelesen"
