@@ -82,7 +82,7 @@ SNB974556654430;gelesen_unser;keins;11:45-13:30;keins;keins;;;;;;;https://www.ds
 SNB992632801288;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB992632801288_0081_hlzf.pdf
 SNB921550647487;jahr_nicht_2026;;;;;;;;;;;https://www.ewerk-meckenheim-pfalz.de/html/versorgungsnetz_strom/last_und_leistungsdaten/Hochlastzeitfenster%20E%20Werk%202025%20.pdf
 SNB958060904298;gelesen_nutzer;keins;keins;10:15-13:15;keins;keins;keins;10:15-13:15;keins;;;https://ewerk-geiger.de/storage/2025/09/Hochlastzeitfenster-2026.pdf
-SNB978963778161;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB978963778161_0084_hlzf.pdf
+SNB978963778161;gelesen_ungeprueft;keins;keins;17:00-19:00;16:45-19:45;keins;keins;17:00-19:00;17:00-19:45;30;;SNB978963778161_0084_hlzf.pdf
 SNB945186990991;gelesen_unser;keins;keins;keins;12:30-14:45;keins;keins;keins;keins;;;https://www.ewwanfried.de/wp-content/uploads/2025/10/03-Hochlastzeitfenster-2026.pdf
 SNB978299965228;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB925685357501;gelesen_unser;keins;keins;16:45-18:00;12:00-13:30, 16:15-19:15;keins;keins;16:45-18:00;12:00-12:30, 16:15-19:15;30;100;https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-fuer-2026-nach-19-Abs.-2-Satz-1-StromNEV.pdf
@@ -788,7 +788,7 @@ SNB950006175489;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB967812386411;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB980986433484;gelesen_nutzer;11:45-12:00;11:45-12:00;11:45-12:00;11:45-12:00;11:45-12:00;11:45-12:00;11:45-12:00;11:45-12:00;;;https://www.swk-kl.de/_Resources/Persistent/2/2/9/3/2293d697d0cacfd405de593e05eaf6da75e6f969/SWKVersorgung_Hochlastzeitfenster_2026.pdf
 SNB974739102161;gelesen_unser;;;;;keins;keins;16:45-20:00;16:45-17:45;;;https://two.de/wp-content/uploads/TWO_Hochlastzeitfenster_2026.pdf
-SNB942630156484;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB942630156484_0790_hlzf.pdf
+SNB942630156484;gelesen_ungeprueft;keins;keins;11:45-14:45;keins;keins;keins;11:45-14:45;keins;30;;SNB942630156484_0790_hlzf.pdf
 SNB978071940108;gelesen_unser;keins;keins;16:30-19:00;10:00-13:00, 16:30-19:30;;;;;;;eingang: SNB978071940108_0791_hlzf.pdf
 SNB910696207785;gelesen_unser;10:15-10:45;keins;keins;keins;keins;keins;17:45-18:15;17:15-19:15;;;eingang: SNB910696207785_0792_hlzf.pdf
 SNB986916159257;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB986916159257_0793_hlzf.pdf

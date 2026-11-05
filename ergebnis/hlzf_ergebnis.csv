@@ -50,7 +50,7 @@
 80;gelesen;keins;11:45-13:30;keins;keins;;;;;;;https://www.dsdl.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026_Homepage.pdf;2026;
 81;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB992632801288_0081_hlzf.pdf;;
 82;gelesen, Jahr 2025;;;;;keins;keins;keins;17:45-19:15;;;https://www.ewerk-meckenheim-pfalz.de/html/versorgungsnetz_strom/last_und_leistungsdaten/Hochlastzeitfenster%20E%20Werk%202025%20.pdf;2025;
-84;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB978963778161_0084_hlzf.pdf;;
+84;gelesen, Prüfung offen;keins;keins;17:00-19:00;16:45-19:45;keins;keins;17:00-19:00;17:00-19:45;30;;SNB978963778161_0084_hlzf.pdf;2026;ungeprüft neu gelesen (Form: Zeile je Ebene und Jahreszeit), Zuordnung der Zeilen zu den Ebenen nicht am Dokument bestätigt
 85;gelesen;keins;keins;keins;12:30-14:45;keins;keins;keins;keins;;;https://www.ewwanfried.de/wp-content/uploads/2025/10/03-Hochlastzeitfenster-2026.pdf;2026;
 87;gelesen;keins;keins;16:45-18:00;12:00-13:30, 16:15-19:15;keins;keins;16:45-18:00;12:00-12:30, 16:15-19:15;30;100;https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-fuer-2026-nach-19-Abs.-2-Satz-1-StromNEV.pdf;2026;
 89;gelesen;keins;13:45-14:00;keins;keins;keins;13:45-14:30;keins;17:15-19:15;30;;https://www.egf-frankenberg.de/de/Kopfnavigation/Netze/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-EGF-2026.pdf;2026;neu gelesen (Form: Zeile je Ebene und Jahreszeit)
@@ -519,7 +519,7 @@
 785;fehlt: swt.de/api/media/file/Hochlastzeitfenster_2026.pdf: nicht erreichbar (ConnectTimeout);;;;;;;;;;;;;
 788;fehlt: atypische-netznutzung-nach-19-abs2-S1-stromnev.pdf: HTTP 403;;;;;;;;;;;;;
 789;gelesen;;;;;keins;keins;16:45-20:00;16:45-17:45;;;https://two.de/wp-content/uploads/TWO_Hochlastzeitfenster_2026.pdf;2026;
-790;fehlt: Zeiten im Dokument nicht vollständig gelesen;;;;;;;;;;;SNB942630156484_0790_hlzf.pdf;;
+790;gelesen, Prüfung offen;keins;keins;11:45-14:45;keins;keins;keins;11:45-14:45;keins;30;;SNB942630156484_0790_hlzf.pdf;2026;ungeprüft neu gelesen (Form: Jahreszeiten als Spalten), Zuordnung der Zeilen zu den Ebenen nicht am Dokument bestätigt
 791;gelesen;keins;keins;16:30-19:00;10:00-13:00, 16:30-19:30;;;;;;;eingang: SNB978071940108_0791_hlzf.pdf;2026;
 792;gelesen;10:15-10:45;keins;keins;keins;keins;keins;17:45-18:15;17:15-19:15;;;eingang: SNB910696207785_0792_hlzf.pdf;2026;
 793;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB986916159257_0793_hlzf.pdf;;

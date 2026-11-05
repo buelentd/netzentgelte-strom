@@ -781,7 +781,20 @@ def _form_block(zeilen):
     return out
 
 
+def _sekunden(text: str) -> str:
+    """"11:45:00 - 14:44:59" -> "11:45 - 14:45": Sekunden weg, ein Ende bei :59 Sekunden zählt zur nächsten Minute."""
+    def ersatz(m):
+        h, mi, sek = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if sek == 59:
+            mi += 1
+            if mi == 60:
+                h, mi = (h + 1) % 24, 0
+        return f"{h:02d}:{mi:02d}"
+    return re.sub(r"(?<![\d:.])([0-2]?\d):([0-5]\d):([0-5]\d)(?![\d:])", ersatz, text)
+
+
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
+    text = _sekunden(text)
     erg = Hlzf(jahr=jahr_lesen(text, url))
     _IGN[0] = 0
     if not re.search(r"hochlast", text, re.I):
