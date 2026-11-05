@@ -26,6 +26,15 @@ def plausibel(w, tag):
     return 0 < lp1 <= 450 and 0 < lp2 <= 700 and 0.05 <= ap1 <= 25 and 0 <= ap2 <= 15 and ap1 >= ap2 * 0.95 and lp2 > lp1 * 0.4
 
 def rlm_parser(zeilen, eb):
+    # BDEW-Artikel-IDs (1-01-5-001 ... 004): eindeutig, Tages-/Jahres-/Bruttowerte werden dort aufgelöst (Saalfeld)
+    try:
+        from vnb.extract import artikel_lesen
+        art, _ = artikel_lesen(zeilen)
+        d = art.get({"ms": "MS", "msns": "MSNS", "ns": "NS", "hsms": "HSMS"}[eb])
+        if d and all(d.get(k) is not None for k in ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")):
+            return [round(d[k], 2) for k in ("lp_unter_2500", "ap_unter_2500", "lp_ueber_2500", "ap_ueber_2500")], "BDEW-Artikel-ID-Zeilen"
+    except Exception:
+        pass
     n = len(zeilen)
     for i, l in enumerate(zeilen):
         lab = label_von(l)
