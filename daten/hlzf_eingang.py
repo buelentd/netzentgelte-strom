@@ -12,6 +12,67 @@ def zeit_ok(z):
     a, b = int(m[1]) * 60 + int(m[2]), int(m[3]) * 60 + int(m[4])
     return 5 * 60 <= a < b <= 23 * 60 + 59 and b - a <= 6 * 60
 
+from html.parser import HTMLParser
+
+
+class _Tab(HTMLParser):
+    """HTML -> Text; Tabellen spaltentreu (jede Zelle auf feste Breite), damit die Leser die Spalten über die Position zuordnen können."""
+    BLOCK = {"p", "div", "li", "h1", "h2", "h3", "h4", "h5", "h6", "br", "section", "ul", "ol", "article", "header", "footer", "nav"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.zeilen, self.tab, self.zeile, self.zelle, self.skip = [], None, None, None, 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"): self.skip += 1
+        elif tag == "table": self.tab = []
+        elif tag == "tr" and self.tab is not None: self.zeile = []
+        elif tag in ("td", "th") and self.zeile is not None: self.zelle = []
+        elif tag in self.BLOCK and self.tab is None: self.zeilen.append("")
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style"): self.skip = max(0, self.skip - 1)
+        elif tag in ("td", "th") and self.zelle is not None and self.zeile is not None:
+            self.zeile.append(re.sub(r"\s+", " ", "".join(self.zelle)).strip()); self.zelle = None
+        elif tag == "tr" and self.zeile is not None and self.tab is not None:
+            if any(self.zeile): self.tab.append(self.zeile)
+            self.zeile = None
+        elif tag == "table" and self.tab is not None:
+            n = max((len(r) for r in self.tab), default=0)
+            w = [max((len(r[k]) for r in self.tab if k < len(r)), default=0) + 3 for k in range(n)]
+            for r in self.tab:
+                self.zeilen.append("".join((c if c else "-").ljust(w[k]) for k, c in enumerate(r)).rstrip())
+            self.tab = None; self.zeilen.append("")
+        elif tag in self.BLOCK and self.tab is None: self.zeilen.append("")
+
+    def handle_data(self, d):
+        if self.skip: return
+        if self.zelle is not None: self.zelle.append(d)
+        elif self.tab is None:
+            if not self.zeilen: self.zeilen.append("")
+            self.zeilen[-1] += d
+
+
+def html_text(h):
+    t = _Tab(); t.feed(h)
+    return "\n".join(re.sub(r"[ \t]+", " ", z).strip() if "   " not in z else z for z in t.zeilen if z.strip())
+
+
+def nur_2026(text):
+    """Webseiten zeigen oft mehrere Jahre untereinander: nur die Abschnitte mit Jahr 2026 behalten (Marker: Zeile mit Jahr und Hochlast/HLZF/Angaben in MEZ)."""
+    z = text.splitlines()
+    marker = [(i, int(m.group(1))) for i, l in enumerate(z) if len(l) < 140 and re.search(r"hochlast|hlzf|angaben in mez|f[üu]r:", l, re.I)
+              for m in [re.search(r"(?<!\d)(20[2-3]\d)(?!\d)", l)] if m]
+    if len({j for _, j in marker}) < 2:
+        return text
+    ende = len(z); teile = []
+    for k, (i, j) in enumerate(marker):
+        nxt = marker[k + 1][0] if k + 1 < len(marker) else ende
+        if j == 2026:
+            teile.append("\n".join(z[i:nxt]))
+    return "\n".join(teile) if teile else text
+
+
 def text_aus(pfad):
     ext = Path(pfad).suffix.lower()
     if ext == ".pdf":
@@ -25,10 +86,7 @@ def text_aus(pfad):
         wb = xlrd.open_workbook(pfad)
         return "\n".join(f"## {ws.name}\n" + "\n".join("   ".join(str(c) for c in ws.row_values(i) if c != "") for i in range(ws.nrows)) for ws in wb.sheets())
     if ext in (".html", ".htm"):
-        import html as hm
-        h = re.sub(r"(?is)<(script|style).*?</\1>", " ", Path(pfad).read_text(encoding="utf-8", errors="replace"))
-        h = re.sub(r"(?i)</t[dh]\s*>", "   ", h); h = re.sub(r"(?i)</(tr|p|div|li|h\d)\s*>|<br\s*/?>", "\n", h)
-        return "\n".join(l.strip() for l in hm.unescape(re.sub(r"<[^>]+>", " ", h)).splitlines() if l.strip())
+        return nur_2026(html_text(Path(pfad).read_text(encoding="utf-8", errors="replace")))
     return ""
 
 def main():
@@ -75,6 +133,8 @@ def main():
         d["hlzf_mindestleistung_kw"] = e.mindest_kw.get("NS", "") or e.mindest_kw.get("MSNS", "")
         d["hlzf_quelle_url"] = "eingang: " + Path(f).name; d["hlzf_jahr"] = e.jahr or ""; d["hlzf_pruefung"] = "; ".join(pr)
         d["hlzf_status"] = "gelesen" if not pr and e.jahr in (2026, None) else ("gelesen, Jahr " + str(e.jahr) if e.jahr not in (2026, None) else "gelesen, Prüfung offen")
+        if any(Path(x).suffix.lower() in (".html", ".htm") for x in fs) and not e.jahr:
+            d["hlzf_status"] = "gelesen, Prüfung offen"; d["hlzf_pruefung"] = (d["hlzf_pruefung"] + "; " if d["hlzf_pruefung"] else "") + "Webseite: Jahr nicht belegt"
         rows[nr] = [d[h] for h in H]
         bericht.append([nr, Path(f).name, d["hlzf_status"], f"Jahr {e.jahr}"])
     out = sorted(rows.values(), key=lambda r: int(r[0]))

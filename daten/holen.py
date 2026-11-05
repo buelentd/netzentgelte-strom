@@ -11,7 +11,7 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 import urllib.request
-from datetime import date, timedelta
+from datetime import timezone, datetime, date, timedelta
 from pathlib import Path
 
 HIER = Path(__file__).parent
@@ -39,8 +39,11 @@ def boerse(bis: date):
     von = bis - timedelta(days=364)
     d = abrufen(f"https://api.energy-charts.info/price?bzn=DE-LU&start={von}&end={bis}")
     preise = [None if p is None else round(p / 10, 3) for p in d["price"]]      # €/MWh → ct/kWh
-    ziel = HIER / f"boerse_{von}_{bis}.json"
+    for alt in HIER.glob("boerse_20*.json"):
+        alt.unlink()                                       # alte Dateien mit Datum im Namen entfallen, es gibt nur noch boerse_aktuell.json
+    ziel = HIER / "boerse_aktuell.json"
     ziel.write_text(json.dumps({"start": d["unix_seconds"][0], "schritt_s": d["unix_seconds"][1] - d["unix_seconds"][0],
+                                "bis": str(bis), "abgerufen": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                                 "quelle": "Energy-Charts (Fraunhofer ISE), Day-Ahead DE-LU", "ct_kwh": preise}, separators=(",", ":")))
     ok = [p for p in preise if p is not None]
     print(f"Börse {von}..{bis}: {len(ok)} Werte, Mittel {statistics.mean(ok):.2f} ct/kWh, min {min(ok):.2f}, max {max(ok):.2f}")
@@ -167,8 +170,11 @@ def solar():
 
 
 if __name__ == "__main__":
-    heute = date.today() - timedelta(days=2)
-    boerse(heute)
-    boerse_entsoe(heute)
-    regelenergie(heute)
-    solar()
+    if os.environ.get("NUR_BOERSE"):
+        boerse(date.today() + timedelta(days=1))           # mehrmals täglich: Day-Ahead bis morgen (steht gegen 13 Uhr MEZ fest)
+    else:
+        heute = date.today() - timedelta(days=2)
+        boerse(heute)
+        boerse_entsoe(heute)
+        regelenergie(heute)
+        solar()

@@ -3,6 +3,12 @@ name: Börsenpreise und Solarertrag holen
 # Startet bei Änderung an lauf/daten_anstoss.env (oder von Hand). Holt Börsenpreise der letzten 12 Monate
 # (Energy-Charts) und Solarertrag je Bundesland (PVGIS) nach daten/ und committet sie.
 on:
+  schedule:
+    # Day-Ahead-Preise für morgen stehen gegen 13 Uhr MEZ fest: vier Läufe am Tag (UTC), keine vollen Stunden
+    - cron: "17 5 * * *"
+    - cron: "47 11 * * *"
+    - cron: "47 12 * * *"
+    - cron: "23 17 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -27,12 +33,14 @@ jobs:
       - name: Daten holen
         env:
           ENTSOE_TOKEN: ${{ secrets.ENTSOE_TOKEN }}
+          # Zeitplan: nur die Börsenpreise holen (kein Solar, keine Regelenergie); von Hand oder per Anstoß: alles
+          NUR_BOERSE: ${{ github.event_name == 'schedule' && '1' || '' }}
         run: python daten/holen.py
       - name: Committen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add daten/boerse_*.json daten/solar_je_land.json daten/regelenergie.json
+          git add -A daten/boerse_*.json daten/solar_je_land.json daten/regelenergie.json
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
           git commit -m "Börsenpreise und Solarertrag aktualisiert (Lauf ${{ github.run_id }})"
           for i in 1 2 3 4; do
