@@ -16,6 +16,10 @@ def domain(w):
     h = urlparse(w if w.startswith("http") else "http://" + w).netloc or w
     return re.sub(r"^www\.", "", h).lower()
 
+try:
+    OHNE_BELEG = set(open("ergebnis/preise_ohne_beleg.txt").read().split())
+except FileNotFoundError:
+    OHNE_BELEG = set()
 zeilen = []
 for x in tab:
     nr = x["nr"]; e = erw.get(nr, {})
@@ -47,6 +51,10 @@ for x in tab:
             preis_wer, preis_aktion = "Kollege", "Dokument ist vermutlich das falsche (keine Niederspannung ausgewiesen): richtiges Preisblatt suchen"
         else:
             preis_wer, preis_aktion = "Claude", "Dokument liegt vor, Leser muss es lesen"
+    if nr in OHNE_BELEG and not preis_wer.startswith("Nutzer"):
+        if "Niederspannung/Preise ohne Beleg" not in fehlt:
+            fehlt.append("Preise ohne Beleg im Dokument")
+        preis_wer, preis_aktion = "Kollege", "Das vorliegende Dokument bestätigt die Preise nicht (falsches Dokument?): richtiges Preisblatt Strom 2026 liefern"
     # Hochlastzeitfenster: wer?
     hlzf_wer, hlzf_aktion = "", ""
     if hlzf_offen:

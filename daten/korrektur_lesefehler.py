@@ -5,8 +5,8 @@ Die Dokumentzeile: Zeile mit dem Ebenennamen und genau vier Dezimalzahlen mit Ko
 Aufruf: PYTHONPATH=. python daten/korrektur_lesefehler.py [--schreiben]"""
 import csv, glob, io, re, sys
 K = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
-LAB = {"ms": r"^\s*(?:mittelspannung(?:snetz)?\b(?!.*nieder)|ms\b(?!\s*/))", "msns": r"umspann|mittel.{0,12}nieder|ms\s*/\s*ns",
-       "ns": r"^\s*niederspannung", "hsms": r"hoch.{0,20}mittel|hs\s*/\s*ms"}
+LAB = {"ms": r"^\s*(?:mittelspannung(?:snetz)?\b(?!.*nieder)|ms\b(?!\s*/))", "msns": r"umspann|mittel.{0,12}nieder|ms\s*/\s*ns|msp\s*/\s*nsp|(?:10|20|30)\s*/\s*0[,.]4\s*kv",
+       "ns": r"^\s*niederspannung", "hsms": r"hoch.{0,20}mittel|hs\s*/\s*ms|hsp\s*/\s*msp|110\s*/\s*(?:10|20|30)\s*kv"}
 ZAHL = r"(\d{1,3}(?:\.\d{3})*,\d{1,4})"
 de = lambda v: float(v.replace(".", "").replace(",", ".")) if v else None
 fmt = lambda v: f"{v:.4f}".rstrip("0").replace(".", ",") if abs(v * 100 - round(v * 100)) > 1e-6 else f"{v:.2f}".replace(".", ",")
@@ -32,7 +32,31 @@ def plausibel(v, eb):
 
 def muell(v):
     ganz = sum(1 for x in v if abs(x - round(x)) < 1e-9)
-    return ganz >= 3 or any(x in (365, 366, 1095, 28, 29, 30, 31) for x in v)
+    return ganz >= 3 or any(x in (365, 366, 1095, 28, 29, 30, 31) for x in v) or abs(v[1] - 2.5) < 1e-9 or abs(v[0] - 2.5) < 1e-9   # 2.500 h/a als Preis gelesen
+
+AUSGENOMMEN = {("444", "ns"): "bereits von Hand am Dokument korrigiert; die Dokumentzeile mit Brutto- und Nettospalten ist nicht eindeutig"}
+UNBEST = {}
+if "--unbestaetigt" in sys.argv:
+    EBN = {"Niederspannung": "ns", "MS/NS": "msns", "Mittelspannung": "ms", "HS/MS": "hsms"}
+    for r_ in csv.DictReader(open("ergebnis/preise_nicht_bestaetigt.csv", encoding="utf-8-sig"), delimiter=";"):
+        if not r_["grund"].startswith("kein Text"):
+            UNBEST[(r_["nr"], EBN[r_["ebene"]])] = True
+
+
+EBENE_ID = {"ns": "7", "msns": "6", "ms": "5", "hsms": "4"}
+
+
+def artikel_werte(zeilen, eb):
+    """Vier Nettowerte aus BDEW-Artikel-IDs (1-01-X-001..004), eine Zeile je Wert; nur wenn alle vier vorhanden und plausibel."""
+    w = {}
+    for i, l in enumerate(zeilen):
+        m = re.search(r"(?<!\d)1-01-" + EBENE_ID[eb] + r"-0*([1-4])(?!\d)", l)
+        if m:
+            zs = [de(x) for x in re.findall(ZAHL, l)] or [de(x) for x in re.findall(ZAHL, zeilen[i + 1] if i + 1 < len(zeilen) else "")]
+            if zs:
+                w.setdefault(int(m.group(1)), zs[0])
+    return [w[k] for k in (1, 2, 3, 4)] if all(k in w for k in (1, 2, 3, 4)) else None
+
 
 def main(schreiben):
     tab = {r["nr"]: r for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
@@ -48,6 +72,10 @@ def main(schreiben):
             if fehlend and (eb == "hsms" or "--fehlend" not in sys.argv):
                 continue
             cand = []
+            aw = artikel_werte(zeilen, eb) if UNBEST.get((nr, eb)) else None
+            if aw and plausibel(aw, eb) and not all(abs(a - b) < 0.011 for a, b in zip(alt, aw)) and (nr, eb) not in AUSGENOMMEN:
+                plan.append((nr, x["netzbetreiber"], eb, "F", alt, aw))                   # Regel F: Artikel-IDs ergeben andere Werte als die Tabelle
+                continue
             for l in zeilen:
                 if re.search(LAB[eb], l, re.I):
                     zeilenwerte.brutto = []
@@ -66,7 +94,12 @@ def main(schreiben):
                 continue
             if all(abs(a - b) < 0.011 for a, b in zip(alt, neu)):
                 continue
+            unb = UNBEST.get((nr, eb))
+            if (nr, eb) in AUSGENOMMEN:
+                continue
             regel = "A" if muell(alt) else ("B" if all(abs(a - b) < 0.011 for a, b in zip(alt[:3], neu[:3])) else None)
+            if regel is None and unb and "--unbestaetigt" in sys.argv:
+                regel = "E"                              # Block laut Prüfung nicht im Dokument bestätigt, eindeutige plausible Zeile weicht ab
             if regel is None and brutto and any(abs(a - b) < 0.011 for a in alt for b in brutto) and not any(abs(a - b) < 0.011 for a in alt for b in neu[:1]):
                 regel = "C"                              # Bruttozahlen als Preise gelesen
             if regel:

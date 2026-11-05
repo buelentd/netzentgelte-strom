@@ -1,0 +1,104 @@
+"""Prüft jeden gelesenen Preisblock (ns, msns, ms, hsms: je vier Werte) gegen die Dokumentzeilen und schreibt die nicht bestätigten nach ergebnis/preise_nicht_bestaetigt.csv.
+Bestätigt = im Dokumenttext steht in einer Zeile (oder zwei aufeinanderfolgenden) mit dem Ebenennamen jeder der vier Werte.
+Aufruf: PYTHONPATH=. python daten/preise_bestaetigung.py"""
+import csv, glob, re, collections
+t = list(csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";"))
+de = lambda v: float(v.replace(".", "").replace(",", ".")) if v else None
+K = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
+Z = re.compile(r"\d{1,3}(?:\.\d{3})*,\d{1,4}")
+LAB = {"ms": r"mittelspannung|\bms\b", "msns": r"umspann|ms\s*/\s*ns|mittel.{0,12}nieder|msp\s*/\s*nsp|(?:10|20|30)\s*/\s*0[,.]4\s*kv", "ns": r"niederspannung|\bns\b", "hsms": r"hoch.{0,15}mittel|hs\s*/\s*ms|hsp\s*/\s*msp|110\s*/\s*(?:10|20|30)\s*kv"}
+NAME = {"ns": "Niederspannung", "msns": "MS/NS", "ms": "Mittelspannung", "hsms": "HS/MS"}
+zahlen = lambda l: [de(m) for m in Z.findall(l)]
+EBENE_ID = {"7": "ns", "6": "msns", "5": "ms", "4": "hsms"}
+
+def artikel(L):
+    """BDEW-Artikel-IDs: {(ebene, 1..4): [Zahlen der Zeile]} (eine Zeile je Wert: 1-01-7-001 ... 8,39 9,98 €/kW/a)."""
+    d = {}
+    for i, l in enumerate(L):
+        m = re.search(r"(?<!\d)1-01-(\d)-0*(\d)(?!\d)", l)
+        if m and m.group(1) in EBENE_ID and m.group(2) in "1234":
+            zs = zahlen(l) or zahlen(L[i + 1] if i + 1 < len(L) else "")
+            for mm in re.findall(r"(?<![\d.,])\d+\.\d{3,}(?!\d)", l):                     # Excel-Text: Dezimalpunkt, Preis je Tag oder je kWh
+                v_ = float(mm)
+                zs = zs + [v_, v_ * 365, v_ * 100]
+            d.setdefault((EBENE_ID[m.group(1)], int(m.group(2))), zs)
+    return d
+zaehler = collections.Counter()
+ohne_beleg = set()
+# 05.11.2026 von Hand am Dokumenttext bestätigt: alle vier Werte stehen in der Ebenenzeile bzw. in den Zeilen < / ≥ 2.500 h derselben Ebene
+VON_HAND = {(str(n), e) for n, es in {39: "ns", 40: "ns", 42: "hsms", 44: "hsms", 135: "hsms", 362: "hsms", 380: "ns msns ms", 444: "ns msns ms",
+    569: "hsms", 573: "hsms", 617: "ms", 649: "hsms", 660: "hsms", 671: "hsms", 683: "ns ms", 716: "hsms", 733: "ns", 744: "hsms", 821: "ns msns"}.items() for e in es.split()}
+out = []
+for x in t:
+    fs = glob.glob(f"ergebnis/texte_layout/{x['mastr_nr']}_{int(x['nr']):04d}.txt")
+    L = open(fs[0], errors="ignore").read().splitlines() if fs else None
+    for eb in ("ns", "msns", "ms", "hsms"):
+        v = [de(x[f"{eb}_{k}"]) for k in K]
+        if None in v:
+            continue
+        if L is None:
+            zaehler["kein Text"] += 1
+            out.append([x["nr"], x["netzbetreiber"], NAME[eb], *[f"{a:.2f}".replace(".", ",") for a in v], x["status"], "kein Text zum Abgleich (Wert aus der Liste des Nutzers)", "", ""]); continue
+        beste, treffer = "", -1
+        bestaetigt = False
+        art = artikel(L)
+        if all((eb, n) in art for n in (1, 2, 3, 4)):
+            bestaetigt = all(any(abs(a - b) < 0.011 for b in art[(eb, n)]) for n, a in enumerate(v, 1))
+            if bestaetigt:
+                zaehler["bestätigt"] += 1; continue
+            beste, treffer = "Artikel-IDs: " + " | ".join(f"{n}: {art[(eb, n)][:3]}" for n in (1, 2, 3, 4)), 0
+        for i, l in enumerate(L):
+            if not re.search(LAB[eb], l, re.I):
+                continue
+            for text in (l, l + " " + (L[i + 1] if i + 1 < len(L) else "")):
+                zs = zahlen(text)
+                n = sum(1 for a in v if any(abs(a - b) < 0.011 for b in zs))
+                if n > treffer:
+                    beste, treffer = text, n
+                if n == 4:
+                    bestaetigt = True; break
+            if bestaetigt:
+                break
+        if not bestaetigt:
+            # LP-Tabelle und AP-Tabelle getrennt: (LP unter, LP ab) in einer Zeile mit dem Ebenennamen, (AP unter, AP ab) in einer anderen
+            def paar(a1, a2):
+                for i2, l2 in enumerate(L):
+                    if re.search(LAB[eb], l2, re.I):
+                        for text in (l2, l2 + " " + (L[i2 + 1] if i2 + 1 < len(L) else "")):
+                            zs2 = zahlen(text)
+                            if any(abs(a1 - b) < 0.011 for b in zs2) and any(abs(a2 - b) < 0.011 for b in zs2):
+                                return True
+                return False
+            bestaetigt = (paar(v[0], v[2]) and paar(v[1], v[3])) or (paar(v[0], v[1]) and paar(v[2], v[3]))        # LP/AP getrennt oder unter/ab getrennt
+        if not bestaetigt:
+            # Zeilen eines Blocks verteilt (Ebenenname, dann Werte in den nächsten Zeilen; Preise je Tag werden mit 365 umgerechnet)
+            for i3, l3 in enumerate(L):
+                if re.search(LAB[eb], l3, re.I):
+                    fenster = " ".join(L[i3:i3 + 4])
+                    zs3 = zahlen(fenster)
+                    zs3 += [q * 365 for q in [float(m_.replace(",", ".")) for m_ in re.findall(r"\b0,\d{5,}\b", fenster)]]
+                    zs3 += [float(m_) * 365 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)] + [float(m_) * 100 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)]
+                    if all(any(abs(a_ - b_) < 0.02 for b_ in zs3) for a_ in v):
+                        bestaetigt = True; break
+        if (x["nr"], eb) in VON_HAND:
+            bestaetigt = True
+        if bestaetigt:
+            zaehler["bestätigt"] += 1; continue
+        zaehler["nicht bestätigt"] += 1
+        # ohne jeden Beleg: keine Zeile im ganzen Dokument mit mindestens zwei der vier Werte
+        anz = 0
+        for l5 in L:
+            zs5 = zahlen(l5)
+            if sum(1 for a_ in v if any(abs(a_ - b_) < 0.011 for b_ in zs5)) >= 2:
+                anz += 1; break
+        if anz == 0:
+            ohne_beleg.add(x["nr"]); zaehler["ohne Beleg im Dokument"] += 1
+        art = "Ebenenzeile im Dokument nicht gefunden" if treffer < 0 else f"nächste Zeile hat {treffer} von 4 Werten"
+        out.append([x["nr"], x["netzbetreiber"], NAME[eb], *[f"{a:.2f}".replace(".", ",") for a in v], x["status"], art, " ".join(beste.split())[:170], fs[0].split("/")[-1]])
+out.sort(key=lambda r: (r[8].startswith("kein Text"), int(r[0])))
+with open("ergebnis/preise_nicht_bestaetigt.csv", "w", encoding="utf-8-sig", newline="") as f:
+    w = csv.writer(f, delimiter=";")
+    w.writerow(["nr", "netzbetreiber", "ebene", "lp_unter", "ap_unter", "lp_ab", "ap_ab", "status", "grund", "naechste_dokumentzeile", "textdatei"])
+    w.writerows(out)
+open("ergebnis/preise_ohne_beleg.txt", "w").write("\n".join(sorted(ohne_beleg, key=int)))
+print(dict(zaehler), "| Netzbetreiber ohne Beleg:", len(ohne_beleg))

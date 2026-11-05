@@ -1333,8 +1333,8 @@ def plausibel(werte: dict, ebene_name: str = "NS") -> list[str]:
     lp_hi, ap_hi = werte.get("lp_ueber_2500"), werte.get("ap_ueber_2500")
     if None in (lp_lo, ap_lo, lp_hi, ap_hi):
         return [f"{ebene_name}: Werte unvollständig"]
-    if ebene_name == "NS" and not (40 <= lp_hi <= 260):
-        g.append(f"NS LP über 2.500 h = {lp_hi:.2f} außerhalb 40–260 €/kW/a")
+    if ebene_name == "NS" and not (40 <= lp_hi <= 500):
+        g.append(f"NS LP über 2.500 h = {lp_hi:.2f} außerhalb 40–500 €/kW/a")
     if not lp_lo < lp_hi:
         g.append(f"{ebene_name}: LP unter 2.500 ({lp_lo:.2f}) nicht kleiner als LP über ({lp_hi:.2f})")
     if not ap_lo > ap_hi:

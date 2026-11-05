@@ -47,7 +47,7 @@ bereits Erledigte überspringen.
    - RLM: Jahresleistungspreis-Tabelle < 2.500 / ≥ 2.500, Zeilen NS und Umspannung MS/NS
    - SLP: Abschnitt ohne Leistungsmessung / Standardlastprofil, Niederspannung, Standard-AP und
      Grundpreis (nicht Wärmepumpe, Speicherheizung, § 14a Modul 2/3)
-5. Plausibilität, sonst pruefen: NS LP ab 2.500 h 40–260 €/kW/a; LP unter < LP ab; AP unter > AP ab;
+5. Plausibilität, sonst pruefen: NS LP ab 2.500 h 40–500 €/kW/a (Dokumentprüfung 05.11.2026: echte Werte bis 463, z. B. Eisleben, Barmstedt); LP unter < LP ab; AP unter > AP ab;
    SLP-AP 3–15 ct/kWh; Grundpreis 0–200 €/a; Netzbetreibername im PDF.
 
 ## Bekannte Sonderfälle aus dem Pilot
