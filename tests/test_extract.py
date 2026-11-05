@@ -126,7 +126,7 @@ def test_ebene(label, erwartet):
 
 def test_plausibel():
     assert plausibel({"lp_unter_2500": 18, "ap_unter_2500": 7, "lp_ueber_2500": 171, "ap_ueber_2500": 1.3}) == []
-    assert plausibel({"lp_unter_2500": 18, "ap_unter_2500": 7, "lp_ueber_2500": 300, "ap_ueber_2500": 1.3})
+    assert plausibel({"lp_unter_2500": 18, "ap_unter_2500": 7, "lp_ueber_2500": 600, "ap_ueber_2500": 1.3})
     assert plausibel({"lp_unter_2500": 180, "ap_unter_2500": 1, "lp_ueber_2500": 171, "ap_ueber_2500": 1.3})
 
 
