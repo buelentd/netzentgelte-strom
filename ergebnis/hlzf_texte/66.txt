@@ -1,0 +1,508 @@
+SNB990174285078_0066_hlzf.pdf
+
+Ergebnis HLZF-Berechnung
+Netzbetreiber:                                        BIGGE ENERGIE GmbH & Co. KG
+Jahr:                                                 2026
+
+Zusammenfassung
+Spannungsebene       Frühling              Sommer                Herbst                Winter
+HöS/HS               –                     –                     –                     –
+HS                   –                     –                     –                     –
+HS/MS                07:00 – 08:45         –                     07:15 – 09:00         06:30 – 14:15
+                     10:15 – 11:00                               09:15 – 13:45         15:15 – 15:30
+                       2,50 Stunden                                6,25 Stunden        17:30 – 18:00
+                                                                                       18:45 – 19:00
+                                                                                         8,75 Stunden
+MS                   –                     –                     13:00 – 13:30         07:30 – 09:00
+                                                                  0,50 Stunden         09:30 – 12:00
+                                                                                       13:00 – 13:15
+                                                                                         4,25 Stunden
+MS/NS                –                     –                     17:30 – 18:30         08:00 – 09:15
+                                                                  1,00 Stunden         09:30 – 10:00
+                                                                                       16:45 – 19:30
+                                                                                         4,50 Stunden
+NS                   –                     –                     17:30 – 18:30         08:00 – 08:45
+                                                                  1,00 Stunden         16:30 – 19:30
+                                                                                         3,75 Stunden
+
+Bei den Zeiten ist jeweils das Ende des entsprechenden ¼-h-Intervalls angegeben (z.B. ein HLFZ von
+08:00-11:30 entspricht den Messwerten mit den Zeitstempeln von 08:15 bis 11:30).
+                 HS/MS
+
+
+94500 kW
+                 Frühling                                                                 HLZF            5% Abschlag
+
+87100 kW
+
+
+
+
+79700 kW
+
+
+
+
+72300 kW
+
+
+
+
+64900 kW
+
+
+
+
+57500 kW
+     00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+             Ermittelte HLZF                                    07:00 - 08:45
+                                                                10:15 - 11:00
+             HLZF Gesamtzeit                                    2,50 Stunden
+             Hinweise                                           Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                                ausdehnen.
+                 HS/MS
+
+
+91800 kW
+                 Sommer                                                       HLZF         5% Abschlag
+85900 kW
+
+
+80000 kW
+
+
+74100 kW
+
+
+68200 kW
+
+
+62300 kW
+
+
+56400 kW
+
+
+50500 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  -
+             HLZF Gesamtzeit                                  -
+             Hinweise                                         -
+                 HS/MS
+
+
+95600 kW
+                 Herbst                                                              HLZF         5% Abschlag
+
+87540 kW
+
+
+
+
+79480 kW
+
+
+
+
+71420 kW
+
+
+
+
+63360 kW
+
+
+
+
+55300 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  07:15 - 09:00
+                                                              09:15 - 13:45
+             HLZF Gesamtzeit                                  6,25 Stunden
+             Hinweise                                          -
+                 HS/MS
+
+
+96600 kW
+                 Winter                                                              HLZF         5% Abschlag
+
+
+85100 kW
+
+
+
+
+73600 kW
+
+
+
+
+62100 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  06:30 - 14:15
+                                                              15:15 - 15:30
+                                                              17:30 - 18:00
+                                                              18:45 - 19:00
+             HLZF Gesamtzeit                                  8,75 Stunden
+             Hinweise                                          -
+                 MS
+
+
+97000 kW
+                 Frühling                                                       HLZF         5% Abschlag
+
+88400 kW
+
+
+
+
+79800 kW
+
+
+
+
+71200 kW
+
+
+
+
+62600 kW
+
+
+
+
+54000 kW
+     00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                    -
+             HLZF Gesamtzeit                                    -
+             Hinweise                                           -
+                 MS
+
+
+97000 kW
+                 Sommer                                                       HLZF         5% Abschlag
+
+86940 kW
+
+
+
+
+76880 kW
+
+
+
+
+66820 kW
+
+
+
+
+56760 kW
+
+
+
+
+46700 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  -
+             HLZF Gesamtzeit                                  -
+             Hinweise                                         -
+                 MS
+
+
+97400 kW
+                 Herbst                                                                 HLZF            5% Abschlag
+
+
+83600 kW
+
+
+
+
+69800 kW
+
+
+
+
+56000 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+             Ermittelte HLZF                                  13:00 - 13:30
+             HLZF Gesamtzeit                                  0,50 Stunden
+             Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                              ausdehnen.
+                 MS
+
+
+102100 kW
+                 Winter                                                              HLZF         5% Abschlag
+
+
+88200 kW
+
+
+
+
+74300 kW
+
+
+
+
+60400 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  07:30 - 09:00
+                                                              09:30 - 12:00
+                                                              13:00 - 13:15
+             HLZF Gesamtzeit                                  4,25 Stunden
+             Hinweise                                          -
+                 MS/NS
+
+
+41500 kW
+                 Frühling                                                       HLZF         5% Abschlag
+
+37520 kW
+
+
+
+
+33540 kW
+
+
+
+
+29560 kW
+
+
+
+
+25580 kW
+
+
+
+
+21600 kW
+     00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                    -
+             HLZF Gesamtzeit                                    -
+             Hinweise                                           -
+                 MS/NS
+
+
+41500 kW
+                 Sommer                                                       HLZF         5% Abschlag
+
+
+32000 kW
+
+
+
+
+22500 kW
+
+
+
+
+13000 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  -
+             HLZF Gesamtzeit                                  -
+             Hinweise                                         -
+                 MS/NS
+
+
+42500 kW
+                 Herbst                                                                 HLZF            5% Abschlag
+39600 kW
+
+
+36700 kW
+
+
+33800 kW
+
+
+30900 kW
+
+
+28000 kW
+
+
+25100 kW
+
+
+22200 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+             Ermittelte HLZF                                  17:30 - 18:30
+             HLZF Gesamtzeit                                  1,00 Stunden
+             Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                              ausdehnen.
+                 MS/NS
+
+
+43700 kW
+                 Winter                                                              HLZF         5% Abschlag
+
+
+38300 kW
+
+
+
+
+32900 kW
+
+
+
+
+27500 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  08:00 - 09:15
+                                                              09:30 - 10:00
+                                                              16:45 - 19:30
+             HLZF Gesamtzeit                                  4,50 Stunden
+             Hinweise                                          -
+                 NS
+
+
+40400 kW
+                 Frühling                                                       HLZF         5% Abschlag
+
+36520 kW
+
+
+
+
+32640 kW
+
+
+
+
+28760 kW
+
+
+
+
+24880 kW
+
+
+
+
+21000 kW
+     00:00 Uhr              04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                    -
+             HLZF Gesamtzeit                                    -
+             Hinweise                                           -
+                 NS
+
+
+40400 kW
+                 Sommer                                                       HLZF         5% Abschlag
+
+
+31100 kW
+
+
+
+
+21800 kW
+
+
+
+
+12500 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr       16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+             Ermittelte HLZF                                  -
+             HLZF Gesamtzeit                                  -
+             Hinweise                                         -
+                 NS
+
+
+41400 kW
+                 Herbst                                                                 HLZF            5% Abschlag
+
+
+34800 kW
+
+
+
+
+28200 kW
+
+
+
+
+21600 kW
+     00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr        20:00 Uhr         24:00 Uhr
+
+
+             Ermittelte HLZF                                  17:30 - 18:30
+             HLZF Gesamtzeit                                  1,00 Stunden
+             Hinweise                                         Sie können die HLZF in dieser Jahreszeit auf 3 Stunden
+                                                              ausdehnen.
+                                                NS
+
+
+                               42500 kW
+                                                Winter                                                              HLZF         5% Abschlag
+
+                               39340 kW
+
+
+
+
+                               36180 kW
+
+
+
+
+                               33020 kW
+
+
+
+
+                               29860 kW
+
+
+
+
+                               26700 kW
+                                    00:00 Uhr            04:00 Uhr   08:00 Uhr   12:00 Uhr              16:00 Uhr    20:00 Uhr      24:00 Uhr
+
+
+                                            Ermittelte HLZF                                  08:00 - 08:45
+                                                                                             16:30 - 19:30
+                                            HLZF Gesamtzeit                                  3,75 Stunden
+                                            Hinweise                                          -
+
+
+
+
+Powered by TCPDF (www.tcpdf.org)
+
