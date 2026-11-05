@@ -1,56 +1,129 @@
-Stadtwerke Geesthacht - stadtwerke-geesthacht.netzveroeffentlichung.com
-Kontakt
-Unternehmen
-Stromnetz     Allgemeines    Geschäftsberichte
-Gleichbehandlungsbericht
-Schlichtungsverfahren
-Bilanzkreissystem    Ausgleichsleistungen
-Differenzbilanzierung
-Mehr- und Mindermengen
-Netzanschluss    Netzanschlussbedingungen
-Technische Anforderungen
-Anschluss steuerbarer Verbrauchseinrichtungen
-Netzbetreiberwechsel
-Netzstrukturdaten    Netzrelevante Daten
-Durchschnittsverluste
-Strukturdaten
-Hochlastzeitfenster
-Netzzugang und Entgelte    Netzzugangsbedingungen
-Entgelte
-Netzengpässe
-Grundversorgung
-Ersatzversorgung
-Sonstiges    Rahmenvertrag Messstellenbetreiber
-Spitzenkappung
-Gasnetz     Allgemeines    Geschäftsberichte
-Gleichbehandlungsbericht
-Schlichtungsverfahren
-Netzanschluss    Netzanschlussbedingungen
-Technische Anforderungen
-Netzbetreiberwechsel
-Netzstrukturdaten    Strukturdaten
-Gasbeschaffenheit
-Umstellung Gasqualität
-Netzzugang und Entgelte    Netzzugangsbedingungen
-Entgelte
-Grundversorgung
-Ersatzversorgung
-Sonstiges    Rahmenvertrag Messstellenbetreiber
-Ausgleichsleistungen
-Messstellenbetrieb     Allgemeines    Preisblatt und Rollout
-Schlichtungsverfahren
-Verträge    Messstellenverträge mME/iMSys für Endkunden
-Messstellenverträge mME/iMSys für Marktpartner
-ESA-Rahmenvertrag
-Netzveröffentlichungen der Stadtwerke Geesthacht
-Erfahren Sie mehr >
-Stromnetz
-Hier finden Sie die aktuell geltenden   Netzentgelte Strom   sowie Referenzpreise zur Ermittlung der vermiedenen Netzentgelte für Anlagenbetreiber.
-Erfahren Sie mehr >
-Gasnetz
-Hier finden Sie die aktuell geltenden   Netzentgelte Gas  .
-Erfahren Sie mehr >
-Messstellenbetrieb
-Hier finden Sie das aktuell geltende   Preisblatt   für moderne Messeinrichtungen und intelligente Messsysteme.
-Erfahren Sie mehr >
-Impressum      Datenschutz      Erklärung zur Barrierefreiheit
+Entgelte für die Nutzung der Strom-Netzinfrastruktur
+
+Stadtwerke Geesthacht GmbH                                                                                                                 gültig ab:     01. Jan 2026
+
+
+Die Entgelte sind Nettopreise und bestehen aus Netznutzung und Messstellenbetrieb (incl. Messung) zzgl. gesetzliche Abgaben und Umsatzsteuer.
+
+
+
+Netznutzungsentgelt für Entnahmestellen mit registrierender Lastgangmessung (RLM)
+
+
+Entnahme in                                                                        Jahrespreissystem                                         Monatspreissystem
+                                                                  b < 2.500 h/a                          b >= 2.500 h/a                    § 19 Abs. 1 StromNEV
+                                                             Leistung               Arbeit         Leistung                Arbeit         Leistung                  Arbeit
+                                                           Euro/kW/a              Ct/kWh         Euro/kW/a                Ct/kWh      Euro/kW/Mon.                Ct/kWh
+Mittelspannung                     MS                          19,79                   4,71          113,60                    0,96          18,93                   0,96
+Umspannung MS/NS                   MS/NS                       24,85                   5,31          121,17                    1,45          20,20                   1,45
+Niederspannung                     NS                          29,73                   5,86          127,79                    1,93          21,30                   1,93
+
+
+Blindmehrarbeit
+
+
+Entnahme aus                                                                 induktiv             kapazitiv          Entgelt
+                                                                              cos phi             cos phi           ct/kVarh
+Mittelspannung                                                                   < 0,95            < 1,00             1,00
+Umspannung MS/NS                                                                 < 0,95            < 1,00             1,00
+Niederspannung                                                                   < 0,90            < 0,90             1,00
+Bei Kunden mit registrierender Leistungsmessung wird die Blindarbeit separat erfasst. Der Netzkunde hat dafür Sorge zu tragen,
+dass die festgelegten Grenzwerte gemäß den vertraglichen Regelungen eingehalten werden. Sofern er hiervon abweicht,
+wird das ausgewiesene Entgelt erhoben.
+
+
+Netznutzungsentgelt für die Reservenetzkapazität bei Ausfall der Eigenerzeugung
+
+
+Benutzungsdauer                                            bis 200 h      200 bis 400 h          bis 600 h
+Leistung in                                                Euro/kW/a        Euro/kW/a            Euro/kW/a
+Mittelspannung                     MS                          49,46                59,36              69,25
+Umspannung MS/NS                   MS/NS                       62,13                74,56              86,98
+Niederspannung                     NS                          74,31                89,18            104,04
+Zur Absicherung des Ausfalles einer Erzeugungsanlage kann für den Zeitpunkt und den Umfang des Reservestrombezuges
+eine Reserve-Netzkapazität bis zur Höhe der Engpassleistung der Erzeugungsanlage pro Jahr bestellt werden.
+
+
+Netznutzungsentgelt für Entnahmestellen ohne registrierende Lastgangmessung (SLP)
+
+
+Kleinkundengruppe (SLP NS)                                                                                                              Grundpreis            Arbeitspreis
+                                                                                                                                            Euro/a               Ct/kWh
+Haushalt/Kleingewerbe                                  ohne Bedarfsartendifferenzierung                                                      40,00                   6,64
+unterbrechb./steuerbare Verbraucher §14a               Bestandsanlagen
+Elektro-Speicherheizungen                              unterbrechbar/steuerbar                                                                0,00                   2,19
+Wärmepumpen                                            unterbrechbar/steuerbar                                                                0,00                   2,19
+Ladestationen Elektromobile                            unterbrechbar/steuerbar                                                                0,00                   2,19
+
+
+unterbrechb./steuerbare Verbraucher §14a                  Grundpreis                          Arbeitspreis (AP)                            Pauschale Reduktion *
+Neuverträge ab 2024                                           Euro/a                             Ct/kWh                                              Euro/a
+  Modul 1             Pauschale Reduktion *                    40,00                                6,64                                         -117,03
+  Modul 2             AP rabattiert auf: 40 %                    0,00                               2,66
+  Modul 3             GP+Pauschalred. wie Modul 1                                 HT                NT                    ST
+                                                                           11:00-13:00          23:00-06:00          Restzeit
+                      + zeitvariabler AP je Zeitzone
+                                                                           17:00-19:00
+                      AP gilt nur in Quartal:
+                                        Q1 + Q4                40,00              9,96              1,22              6,64                       -117,03
+* Pauschalreduktion ist begrenzt auf die Höhe des zu zahlenden Normalentgeltes, auch anwendbar für RLM-Kunden MS/NS und NS
+
+
+Kommunalrabatt
+
+
+Kommunale Entnahmestellen ohne Lastgangmessung in Niederspannung erhalten einen Rabatt auf den Nettobetrag Netznutzung
+(nur Arbeitspreis, Leistungspreis, Grundpreis) in Höhe von 10 %. Dieser unterliegt nicht der Umsatzsteuer und ist auf der Rechnung separat auszuweisen.
+Entgelte für die Nutzung der Strom-Netzinfrastruktur
+
+Stadtwerke Geesthacht GmbH                                                                                                       gültig ab:     01. Jan 2026
+
+
+Die Entgelte sind Nettopreise und bestehen aus Netznutzung und Messstellenbetrieb (incl. Messung) zzgl. gesetzliche Abgaben und Umsatzsteuer.
+
+
+
+
+Jahresentgelte für Messstellenbetrieb (MSB)
+
+
+Kunden mit Leistungsmessung
+MSB incl. monatlicher Messung                                                                    MSB
+                                                                                              Euro/a
+MS-Lastprofil ohne Wandler                                                                     381,03
+Wandlersatz MS                                                                                 180,00
+NS-Lastprofil ohne Wandler                                                                     381,03
+Wandlersatz NS                                                                                   18,00
+
+
+Kunden ohne Leistungsmessung
+MSB incl. jährlicher Messung                                                                  MSB          Zusatzmessung
+                                                                                              Euro/a       Euro/Messung
+kME Einrichtungszähler Eintarif                                                                   5,12              2,19
+kME Einrichtungszähler Zweitarif                                                                 20,39              2,19
+kME Maximumzähler                                                                                37,19              2,19
+kME EDL21 Zähler                                                                                 31,11              2,19
+Bei nicht leistungsgemessenen Kunden ist im MSB standardmäßig ein Messentgelt pro Jahr enthalten. Auf Wunsch des Kunden kann eine Messung
+halbjährlich, vierteljährlich oder monatlich erfolgen. Dadurch erhöht sich das MSB-Entgelt um die Anzahl der Zusatzmessungen.
+
+
+Zusatzeinrichtungen
+MSB                                                                                              MSB
+                                                                                             Euro/St/a
+NS-Wandlersatz SLP                                                                               18,00
+Schaltgerät oder Rundsteuerempfänger                                                             12,00
+
+
+KA
+Die Höhe der Konzessionsabgabe richtet sich nach den in der Konzessionsabgabeverordnung festgelegten Höchstpreisen.
+Fassung vom 9.1.1992 (BGBl. I S. 12, 407), zuletzt geändert durch Artikel 3 Absatz 4 der Verordnung vom 1. November 2006 (BGBl. I S. 2477).
+
+
+Netzumlagen ( Aufschlag besondere Netznutzung, KWKG-, Offshore-Umlage )
+Die zu berechnenden Umlagen sind auf folgender Seite zu entnehmen:
+http://www.netztransparenz.de
+
+BKZ / HAK
+Die Erhebung von Baukostenzuschüssen (BKZ) und Netzanschlusskosten (NAK) richtet sich nach den auf der Internetseite
+des Netzbetreibers publizierten Bedingungen und Preisen.
+
