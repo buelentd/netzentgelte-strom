@@ -10,7 +10,7 @@ def zeit_ok(z):
     m = re.fullmatch(r"(\d\d):(\d\d)-(\d\d):(\d\d)", z.strip())
     if not m: return False
     a, b = int(m[1]) * 60 + int(m[2]), int(m[3]) * 60 + int(m[4])
-    return 5 * 60 <= a < b <= 23 * 60 + 59 and b - a <= 6 * 60
+    return 5 * 60 <= a < b <= 23 * 60 + 59 and b - a <= 11 * 60
 
 from html.parser import HTMLParser
 

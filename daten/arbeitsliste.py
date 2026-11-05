@@ -29,7 +29,7 @@ for x in tab:
                 continue                                 # Stadtwerke haben MS und MS/NS nicht immer: nicht ausgewiesen ist kein Fehler
             fehlt.append(n)
     hl = x["hlzf_status"]
-    hlzf_offen = not hl.startswith("gelesen")
+    hlzf_offen = hl not in ("gelesen_nutzer", "gelesen_unser")
     if hlzf_offen:
         fehlt.append("Hochlastzeitfenster")
     if not fehlt:
@@ -54,6 +54,8 @@ for x in tab:
             hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2026 suchen und laden (Suche site:Domain Hochlastzeitfenster 2026)"
         elif hl == "jahr_nicht_2026":
             hlzf_wer, hlzf_aktion = "Kollege", "Dokument ist nicht für 2026: Datei für 2026 suchen"
+        elif hl == "gelesen_ungeprueft":
+            hlzf_wer, hlzf_aktion = "Claude", "Werte gelesen, Zuordnung zu den Ebenen am Dokument prüfen"
         elif hl in ("raster_grafik",):
             hlzf_wer, hlzf_aktion = "Kollege", "Raster/Grafik: Zeiten als Text abschreiben (Ebene, Jahreszeit, von-bis)"
         else:

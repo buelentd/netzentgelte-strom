@@ -13,8 +13,21 @@ geaendert = []
 UEBERNEHMEN = {"91", "137", "676"}
 # Am Dokumenttext von Hand als unsicher erkannt (Zeiten stehen mittig zwischen den Ebenennamen): bleiben auf Prüfung offen
 ZWEIFEL = {"142": "Zeiten zwischen den Ebenennamen: Zuordnung zu NS/MS/NS unsicher", "214": "viele Fenster, Zuordnung der Zeilen zu den Ebenen unsicher"}
+import re as _re
+def _zeit_ok(z):
+    m = _re.fullmatch(r"(\d\d):(\d\d)-(\d\d):(\d\d)", z.strip())
+    if not m: return False
+    a, b = int(m[1]) * 60 + int(m[2]), int(m[3]) * 60 + int(m[4])
+    return 5 * 60 <= a < b <= 23 * 60 + 59 and b - a <= 11 * 60
+
 for r in rows:
     nr = r[0]
+    if r[ix["hlzf_status"]] == "gelesen, Prüfung offen" and "Zeit unplausibel" in r[ix["hlzf_pruefung"]] and "Leser" not in r[ix["hlzf_pruefung"]]:
+        alle = [z.strip() for eb in ("ns", "msns") for j in JAHRESZEITEN for z in r[ix[f"hlzf_{eb}_{j}"]].split(",") if z.strip() and z.strip() != "keins"]
+        if all(_zeit_ok(z) for z in alle):
+            r[ix["hlzf_status"]] = "gelesen"
+            r[ix["hlzf_pruefung"]] = "Fenster bis 11 Stunden gelten als plausibel"
+        continue
     if nr in ZWEIFEL:
         r[ix["hlzf_status"]] = "gelesen, Prüfung offen"
         if "Leser" not in r[ix["hlzf_pruefung"]]:

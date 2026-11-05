@@ -271,6 +271,7 @@ def _form_d(zeilen):
         eb = marken[i][0] if i in marken else (
             marken[min(allein, key=lambda k: (abs(k - i), k > i))][0] if allein else aktuell)
         if eb in (None, "andere"):
+            _IGN[0] += len(zeiten)                                      # Fenster anderer Ebenen (HS, MS ...): nicht ausgegeben, aber gezählt
             continue
         out.setdefault(eb, {}).setdefault(_jz(m.group()), []).extend(f for _, f in zeiten)
         letzte = (eb, _jz(m.group()), i, (ZEIT.search(z).start() if ZEIT.search(z) else -99))
@@ -330,6 +331,7 @@ def _paare(z: str):
 def _form_e(zeilen):
     """Zeile je Fenster mit Jahreszeit am Zeilenanfang ("Winter 07:45 Uhr 10:15 Uhr", "Herbst 1 06:15 10:15"); Ebene steht als Überschrift darüber."""
     out, eb, jz_alt = {}, None, None
+    gesehen = {}                                              # je Ebene die Jahreszeiten, die schon vorkamen
     for z in zeilen:
         st = z.strip()
         if not st:
@@ -348,6 +350,9 @@ def _form_e(zeilen):
         if eb in (None, "andere"):
             _IGN[0] += len(_paare(rest))
             continue
+        if jz in gesehen.setdefault(eb, set()) and jz != jz_alt:
+            return {}                                         # Jahreszeit kommt in dieser Ebene noch einmal vor, nicht direkt darunter: mehrere Tabellen vermischt
+        gesehen[eb].add(jz)
         zeit = _paare(rest)
         if zeit:
             out.setdefault(eb, {}).setdefault(jz, []).extend(f for _, f in zeit)
@@ -461,20 +466,65 @@ def _vollstaendig(text: str, out: dict) -> bool:
     text = "\n".join(z for z in text.splitlines() if not re.search(r"bedeutet|beispiel|entspricht|z\.\s?b\.", z, re.I)   # Erläuterungszeilen mit Beispielzeiten
                      and not re.fullmatch(r"\s*[0-2]?\d:[0-5]\d(?::\d\d)?\s*", z))                                     # Rasterzeilen: eine einzelne Uhrzeit allein in der Zeile
     alle = len(ZEIT_DOPPELPUNKT.findall(text)) + sum(1 for m in ZEIT_PUNKT.finditer(text) if m.group(1) == "00" or int(m.group(1)) > 12)   # "9.15" zählt, Datum "29.02" nicht
+    if fenster == 0 and alle >= 2:
+        return False                                              # nur "keins" gelesen, aber Uhrzeiten im Text
     return alle <= 2 * fenster + 4
 
 
 def _spaltenname(t: str):
     """Ebene einer Spalte aus ihrem Kopftext: "Mittel-/ Niederspannung" = MSNS, "Niederspannung" = NS, "Mittelspannung" = MS, sonst None."""
-    t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene", " ", t, flags=re.I)
+    mehrfach = bool(re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|usp\.?\s*ms", t, re.I))
+    t = re.sub(r"\(.*?\)", " ", t)
+    t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene|für entnahmen aus:?|\bnetz\b", " ", t, flags=re.I)
     t = re.sub(r"\s+", " ", t).strip().lower()
-    if re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|mittelspannung\s*/\s*niederspannung", t):
+    if mehrfach or re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|mittelspannung\s*/\s*niederspannung", t):
         return "MSNS"
     if re.fullmatch(r"nieder\w*|ns|nsp", t):
         return "NS"
     if re.fullmatch(r"mittelspannung\w*|ms|msp", t):
         return "MS"
     return None
+
+
+def _hlzf_bloecke(zeilen, i, pos, namen):
+    """Zeilen "HLZF 1 / HLZF 2 / HLZF 3" je Jahreszeit, der Jahreszeitenname steht in einer der Zeilen des Blocks (oft mittig); Spalten wie _form_h."""
+    bloecke, aktuell = [], None
+    for z in zeilen[i + 1:i + 60]:
+        if not z.strip():
+            continue
+        m = re.search(r"\bHLZF\s*(\d)", z)
+        if not m:
+            if re.search(r"[A-Za-zÄÖÜäöüß]{3,}", z) and aktuell is not None:
+                break                                             # Textzeile: Tabelle zu Ende
+            continue
+        if m.group(1) == "1" or aktuell is None:
+            aktuell = []
+            bloecke.append(aktuell)
+        aktuell.append(z)
+    out = {}
+    if len(bloecke) != 4:
+        return {}
+    for blk in bloecke:
+        jz = next((_jz(JZ_WORT.search(z).group()) for z in blk if JZ_WORT.search(z)), None)
+        if jz is None:
+            return {}
+        for z in blk:
+            ts = [(mm.start(), f"{int(mm.group(1)):02d}:{mm.group(2)}") for mm in UHR.finditer(z)]
+            idx = {}
+            for p_, t_ in ts:
+                k = min(range(6), key=lambda n: abs(pos[n] - p_))
+                if k in idx:
+                    return {}
+                idx[k] = t_
+            for k in range(3):
+                v, b = idx.get(2 * k), idx.get(2 * k + 1)
+                if (v is None) != (b is None) or (v and v >= b):
+                    return {}
+                e = out.setdefault(namen[k], {})
+                e.setdefault(jz, [])
+                if v:
+                    e[jz].append(f"{v}-{b}")
+    return out
 
 
 def _form_h(zeilen):
@@ -499,6 +549,12 @@ def _form_h(zeilen):
             namen.append(_spaltenname(" ".join(teile)))
         if None in namen:
             return {}
+        if any(re.search(r"\bHLZF\s*\d", z2) for z2 in zeilen[i + 1:i + 6]):
+            out_h = _hlzf_bloecke(zeilen, i, pos, namen)
+            for e_, d_ in out_h.items():
+                for j_, v_ in d_.items():
+                    out.setdefault(e_, {}).setdefault(j_, []).extend(v_)
+            continue
         jz, leer = None, 0
         for z2 in zeilen[i + 1:]:
             if not z2.strip():

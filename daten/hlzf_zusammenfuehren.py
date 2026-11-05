@@ -7,8 +7,9 @@ from collections import Counter
 J = ["fruehling", "sommer", "herbst", "winter"]
 COLS = [f"hlzf_ns_{x}" for x in J] + [f"hlzf_msns_{x}" for x in J] + ["hlzf_schwelle_prozent", "hlzf_mindestleistung_kw", "hlzf_quelle_url"]
 
-def status_unser(s, jahr):
+def status_unser(s, jahr, pruefung=""):
     if s == "gelesen" and jahr == "2026": return "gelesen_unser"
+    if s == "gelesen, Prüfung offen" and pruefung.startswith("ungeprüft neu gelesen"): return "gelesen_ungeprueft"
     if s.startswith("gelesen, Jahr") or (s == "gelesen" and jahr not in ("2026", "")): return "jahr_nicht_2026"
     if s == "gelesen, Prüfung offen": return "pruefung_offen"
     if "Raster" in s: return "raster_grafik"
@@ -28,8 +29,8 @@ def main():
             for c in COLS: werte[c] = n.get(c, "")
             st = "gelesen_nutzer"
         elif u:
-            st = status_unser(u["hlzf_status"], u["hlzf_jahr"])
-            if st == "gelesen_unser":
+            st = status_unser(u["hlzf_status"], u["hlzf_jahr"], u.get("hlzf_pruefung", ""))
+            if st in ("gelesen_unser", "gelesen_ungeprueft"):
                 for c in COLS: werte[c] = u.get(c, "")
             else:
                 werte["hlzf_quelle_url"] = u.get("hlzf_quelle_url", "")
