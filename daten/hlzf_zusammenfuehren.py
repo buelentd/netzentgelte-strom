@@ -14,6 +14,7 @@ def status_unser(s, jahr, pruefung=""):
     if s == "gelesen, Prüfung offen": return "pruefung_offen"
     if "Raster" in s: return "raster_grafik"
     if "keine Hochlastzeitfenster" in s: return "keine_im_dokument"
+    if "nur für Mittelspannung" in s: return "nur_mittelspannung"
     if "nicht lesbar" in s or "nicht vollständig gelesen" in s or "Scan" in s: return "zeitfenster_nicht_lesbar"
     return "kein_dokument_oder_adresse"
 

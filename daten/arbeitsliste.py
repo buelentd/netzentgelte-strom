@@ -54,6 +54,8 @@ for x in tab:
             hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2026 suchen und laden (Suche site:Domain Hochlastzeitfenster 2026)"
         elif hl == "jahr_nicht_2026":
             hlzf_wer, hlzf_aktion = "Kollege", "Dokument ist nicht für 2026: Datei für 2026 suchen"
+        elif hl == "nur_mittelspannung":
+            hlzf_wer, hlzf_aktion = "Kollege", "Dokument gilt nur für Mittelspannung: Dokument für Umspannung MS/NS und Niederspannung suchen"
         elif hl == "gelesen_ungeprueft":
             hlzf_wer, hlzf_aktion = "Claude", "Werte gelesen, Zuordnung zu den Ebenen am Dokument prüfen"
         elif hl in ("raster_grafik",):

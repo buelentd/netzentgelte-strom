@@ -22,8 +22,8 @@ from .extract import ebene
 JAHRESZEITEN = ("fruehling", "sommer", "herbst", "winter")
 JZ_WORT = re.compile(r"fr[üu]e?hling|fr[üu]hjahr|sommer|herbst|winter", re.I)
 ZEIT = re.compile(r"(?<![\d:.])([0-2]?\d):([0-5]\d)\s*(?:uhr)?\s*(?:-|–|bis)\s*([0-2]?\d):([0-5]\d)(?![\d:])", re.I)
-KEIN = re.compile(r"(?<![\w])(?:-|–|—|kein(?:e)?\s*(?:hlf|hlzf|hochlastzeit\w*)?|keine?)(?![\w:])", re.I)
-EBENE_WORT = re.compile(r"(?:umspann\w*\s*(?:in\s*|zur\s*|auf\s*)?)?(?:hoch|mittel|nieder)spannung\w*|"
+KEIN = re.compile(r"(?<![\w])(?:-|–|—|kein(?:e)?\s*(?:hlf|hlzf|hochlastzeit\w*)?|keine?|entf[äa]llt|entfallen|nicht\s+vorhanden|n\.\s?v\.)(?![\w:])", re.I)
+EBENE_WORT = re.compile(r"(?:umspann\w*\s*(?:in\s*|zur\s*|auf\s*)?)?(?:hoch|mittel|nieder)spannung\w*|umspann\w*ebene(?:\s*\(?[\d,./\s]*kv\)?)?|"
                         r"umspann\w*\s*(?:hs|ms)\s*/\s*(?:ms|ns)|\b(?:hs/ms|ms/ns|hs|ms|ns)\b", re.I)
 # Standard laut BNetzA-Festlegung (fachlich zu bestätigen); nur genutzt, wenn das Dokument nichts nennt
 STANDARD_SCHWELLE = {"NS": 30, "MSNS": 30}
@@ -51,6 +51,10 @@ def _jz(wort: str) -> str:
 def _ebene_text(t: str) -> str | None:
     """"Niederspannung" → NS, "Umspannung MS/NS" → MSNS, "Mittelspannung" → None (nicht gebraucht)."""
     t = t.strip()
+    if re.search(r"umspann\w*.{0,15}\b20\s*/\s*0[,.]4", t, re.I):
+        return "MSNS"                                               # Umspannung 20 / 0,4 kV = MS/NS
+    if re.search(r"umspann\w*.{0,15}\b110\s*/\s*20", t, re.I):
+        return None
     if re.fullmatch(r"ns", t, re.I):
         return "NS"
     if re.fullmatch(r"ms\s*/\s*ns|umspann\w*\s*ms\s*/\s*ns", t, re.I):
@@ -347,6 +351,13 @@ def _form_e(zeilen):
             continue
         jz = _jz(m.group())
         rest = st[m.end():]
+        if re.search(r"\d{1,2}\.\s?(?:\d{1,2}\.|januar|februar|märz|mai|juni|august|september|november|dezember)", rest, re.I) and not UHR.search(rest):
+            # Zeile mit Datumsbereich: Tabellenzeile ("Herbst 1. September - 30. November HLZF 1 ---") oder Definition der Jahreszeiten ("Frühling: 01. März bis 31. Mai")
+            ohne = re.sub(r"\d{1,2}\.\s?(?:\d{1,2}\.|[A-Za-zä]+)\.?(?:\s?\d{4})?|\bbis\b|[-–—]\s?(?=\d)", " ", rest, flags=re.I)
+            if eb not in (None, "andere") and re.search(r"HLZF\s*\d", ohne) and re.search(r"(?:---|—|–\s*–|-\s+-)", ohne):
+                out.setdefault(eb, {}).setdefault(jz, [])
+                jz_alt = jz
+            continue
         if eb in (None, "andere"):
             _IGN[0] += len(_paare(rest))
             continue
@@ -357,8 +368,8 @@ def _form_e(zeilen):
         if zeit:
             out.setdefault(eb, {}).setdefault(jz, []).extend(f for _, f in zeit)
             jz_alt = jz
-        elif len(KEIN.findall(rest)) >= 1 and not UHR.search(rest):
-            out.setdefault(eb, {}).setdefault(jz, [])
+        elif (len(KEIN.findall(rest)) >= 1 or not rest.strip()) and not UHR.search(rest):
+            out.setdefault(eb, {}).setdefault(jz, [])         # "-", "keine", "entfällt" oder leere Zelle: kein Fenster in dieser Jahreszeit
             jz_alt = jz
         elif UHR.search(rest):
             return {}                                       # Zeiten in der Zeile, aber nicht als Paar lesbar: lieber nichts als falsch
@@ -599,7 +610,7 @@ def _ebene_wort(label: str):
     if not t:
         return None
     umsp = re.search(r"umspann|\busp\b|ms\s*/\s*ns|msp\s*/\s*nsp|mittel-?\s*/\s*nieder|mittelspannung\s*/\s*niederspannung|\bmitt?el\b.*\bnieder", t)
-    hoch = re.search(r"hoch|\bhs\b|\bhsp\b", t)
+    hoch = re.search(r"hochspannung|\bhs\b|\bhsp\b", t)
     nied = re.search(r"nieder|\bns\b|\bnsp\b", t)
     mitt = re.search(r"mittel|\bms\b|\bmsp\b", t)
     if umsp and nied and not hoch:
@@ -825,6 +836,9 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
             break
     schwellen_text(text, erg)
     if not erg.fenster and not erg.grund:
+        kopf = text.lower()
+        if re.search(r"mittelspannung", kopf) and not re.search(r"niederspannung|umspann|\bns\b|\bnsp\b|ms\s*/\s*ns", kopf):
+            erg.grund = "Dokument gilt nur für Mittelspannung"
         erg.grund = ("Raster mit markierten Viertelstunden (Markierung nicht im Text)"
                      if re.search(r"1/4-?h-?intervall|viertelstunde", text, re.I) else "Zeitfenster nicht lesbar")
     return erg
