@@ -74,3 +74,16 @@ import collections
 print(len(zeilen), "Netzbetreiber mit Lücken")
 print("Preise:", dict(collections.Counter(z[6] for z in zeilen if z[6])))
 print("Hochlastzeitfenster:", dict(collections.Counter(z[8] for z in zeilen if z[8])))
+
+# Zwei fertige Teillisten für den Kollegen: MaStR-Nummer zuerst
+def teil(wer_spalte, datei, felder):
+    rows = [z for z in zeilen if z[wer_spalte] == "Kollege"]
+    idx = {h: i for i, h in enumerate(H)}
+    with open(datei, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f, delimiter=";"); w.writerow(["mastr_nr", "nr", "netzbetreiber", "domain"] + felder)
+        for z in rows:
+            w.writerow([z[idx["mastr_nr"]], z[idx["nr"]], z[idx["netzbetreiber"]], z[idx["domain"]]] + [z[idx[c]] for c in felder])
+    return len(rows)
+n1 = teil(6, "ergebnis/kollege_preise.csv", ["status_preise", "es_fehlt", "preise_aktion", "bekannte_preisblatt_url", "suche_preisblatt", "dateiname_preisblatt"])
+n2 = teil(8, "ergebnis/kollege_hochlastzeitfenster.csv", ["hlzf_status", "hlzf_aktion", "suche_hochlastzeitfenster", "dateiname_hochlastzeitfenster"])
+print("Kollege Preise:", n1, "| Kollege Hochlastzeitfenster:", n2)
