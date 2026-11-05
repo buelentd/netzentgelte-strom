@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 14:58, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 15:02, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 317 | 38% |
-| pruefen | 464 | 56% |
+| ok | 313 | 38% |
+| pruefen | 468 | 56% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 311,  6
+Preisstand (nur ok): endgültig 307,  6
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 311,  6
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 663)
+- Median: 6,41 ct/kWh (n = 661)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 150,66 €/kW/a (n = 663)
+- Median: 150,66 €/kW/a (n = 661)
 
 ## Datenherkunft
 
@@ -61,9 +61,9 @@ Preisstand (nur ok): endgültig 311,  6
 - 704. Stadtwerke Waldkirchen: 
 - 797. Überlandwerk Eppler GmbH: 
 
-## Restfälle (514)
+## Restfälle (518)
 
-### pruefen (464)
+### pruefen (468)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -189,6 +189,7 @@ Preisstand (nur ok): endgültig 311,  6
 - 216. Gemeindewerke Ebersdorf: weitere Preisblätter mit abweichenden NS-Werten: https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentgelte-2017.pdf, https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentg
 - 219. Gemeindewerke Gangkofen: 
 - 220. Gemeindewerke Garmisch-Partenkirchen, KU: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
+- 221. Gemeindewerke Georgensgmünd: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 222. Gemeindewerke Grefrath GmbH: SLP-Werte nicht gefunden
 - 223. Gemeindewerke Großkrotzenburg GmbH: 
 - 224. Gemeindewerke Gundelfingen GmbH: 
@@ -355,6 +356,7 @@ Preisstand (nur ok): endgültig 311,  6
 - 495. Stadtwerke Goch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 497. Stadtwerke Greifswald GmbH: SLP-Werte nicht gefunden
 - 498. Stadtwerke Greven GmbH: 
+- 501. Stadtwerke Groß-Gerau Versorgungs GmbH: SLP-Werte nicht gefunden
 - 504. Stadtwerke Gunzenhausen GmbH: SLP-Werte nicht gefunden
 - 505. Stadtwerke Hagenow GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 508. Stadtwerke Haltern am See GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -390,6 +392,7 @@ Preisstand (nur ok): endgültig 311,  6
 - 560. Stadtwerke Lünen GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.9, 8.32); RLM-Werte auffällig oder fehlend; SLP-W
 - 561. Stadtwerke Lutherstadt Eisleben GmbH: NS LP über 2.500 h = 463.24 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 564. Stadtwerke Marburg GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
+- 565. Stadtwerke Meerane GmbH: 
 - 567. Stadtwerke Menden GmbH: 
 - 570. Stadtwerke Metzingen: 
 - 571. Stadtwerke Mössingen: SLP-Werte nicht gefunden
@@ -476,6 +479,7 @@ Preisstand (nur ok): endgültig 311,  6
 - 714. Stadtwerke Wedel GmbH: SLP-Werte nicht gefunden
 - 715. Stadtwerke Weilburg GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 716. Stadtwerke Weinheim GmbH: SLP-Werte nicht gefunden
+- 717. STADTWERKE WEISSENBURG GmbH: 
 - 721. Stadtwerke Werl GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.8, 2.72); SLP-Werte auffällig
 - 725. Stadtwerke Wilster: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 726. Stadtwerke Windsbach: Preisblatt-Links per robots.txt gesperrt: https://www.stadtwerke-windsbach.de/fileadmin/Dateien/Stadtwerke/Dateien/Preisbl%C3%A4tter/Preisblatt_Windsbach_Netzentgelt_2025_final_20241231.pdf, https://w

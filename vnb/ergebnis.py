@@ -135,10 +135,42 @@ class Speicher:
         sperre = self._sperre()
         gruende = self._hsms_gruende()
         hlzf = self._hlzf()
-        zeilen = [self._hsms_grund(self._gesperrt(self._status_v2(self._mit_manuell(d, man)), sperre), gruende) for d in self._zeilen_recherche()]
+        ent = self._entfernt()
+        zeilen = [self._entfernt_hinweis(self._hsms_grund(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), gruende), ent)
+                  for d in self._zeilen_recherche()]
         for d in zeilen:
             d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
         return zeilen
+
+    def _entfernt(self) -> dict:
+        """lauf/werte_entfernt.csv (nr;ebene;grund): erkannte Lesefehler (Tage oder Zeilennummern als Preise gelesen), die ohne Dokumentzeile bleiben; Wert wird leer ausgegeben."""
+        pfad = self.ordner.parent / "lauf" / "werte_entfernt.csv"
+        out: dict = {}
+        if pfad.exists():
+            with open(pfad, encoding="utf-8-sig") as f:
+                for r in csv.DictReader(f, delimiter=";"):
+                    out.setdefault(str(r["nr"]), {})[r["ebene"]] = r["grund"]
+        return out
+
+    @staticmethod
+    def _entfernt_leeren(d: dict, ent: dict) -> dict:
+        e = ent.get(str(d.get("nr")))
+        if not e:
+            return d
+        d = dict(d)
+        for eb in e:
+            d[eb] = {}
+        return d
+
+    @staticmethod
+    def _entfernt_hinweis(d: dict, ent: dict) -> dict:
+        e = ent.get(str(d.get("nr")))
+        if not e:
+            return d
+        d["hinweis"] = "Lesefehler entfernt: " + "; ".join(f"{eb.upper()} ({g})" for eb, g in e.items()) + ("; " + d["hinweis"] if d.get("hinweis") else "")
+        if d.get("status") == "ok":
+            d["status"] = "pruefen"
+        return d
 
     def _hlzf(self) -> dict:
         """lauf/hlzf_zusammen.csv (Skript daten/hlzf_zusammenfuehren.py): Hochlastzeitfenster und Grund je Netzbetreiber, Schlüssel MaStR-Nr."""
