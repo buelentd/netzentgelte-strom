@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 18:56, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 19:05, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 335 | 40% |
-| pruefen | 459 | 55% |
+| ok | 331 | 40% |
+| pruefen | 463 | 56% |
 | kein_preisblatt | 3 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 304,  31
+Preisstand (nur ok): endgültig 300,  31
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 304,  31
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 726)
+- Median: 6,41 ct/kWh (n = 723)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
-- Maximum: 374,00 €/kW/a (Covestro Brunsbüttel Energie GmbH)
-- Median: 151,12 €/kW/a (n = 726)
+- Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
+- Median: 150,84 €/kW/a (n = 723)
 
 ## Datenherkunft
 
@@ -86,9 +86,9 @@ Preisstand (nur ok): endgültig 304,  31
 - 778. SWN Stadtwerke Neustadt GmbH: 
 - 797. Überlandwerk Eppler GmbH: 
 
-## Restfälle (496)
+## Restfälle (500)
 
-### pruefen (459)
+### pruefen (463)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -97,6 +97,7 @@ Preisstand (nur ok): endgültig 304,  31
 - 12. RheinNetz GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
 - 14. N-ERGIE Netz GmbH: 
+- 16. Netzgesellschaft Düsseldorf mbH: 
 - 21. Bielefelder Netz GmbH: 
 - 25. Hamburger Energienetze GmbH: SLP-Werte nicht gefunden
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
@@ -128,6 +129,7 @@ Preisstand (nur ok): endgültig 304,  31
 - 70. BTT Bauteam Tretzel GmbH: 
 - 71. Butzbacher Netzbetrieb GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 72. C. Ensinger GmbH ＆ Co. KG: 
+- 74. Covestro Brunsbüttel Energie GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 77. Creos Deutschland GmbH: 
 - 78. DB Energie GmbH (Bahnstromnetz 16,7 Hz): 
@@ -196,6 +198,7 @@ Preisstand (nur ok): endgültig 304,  31
 - 185. EVU der Gemeinde Gochsheim: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 186. EVU Langenpreising: 
 - 187. EVU Späth e.K.: 
+- 189. EW Geiger GmbH: 
 - 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: 
 - 191. EWR GmbH (Remscheid): 
 - 192. EWR Netz GmbH: 
@@ -484,6 +487,7 @@ Preisstand (nur ok): endgültig 304,  31
 - 688. Stadtwerke Uffenheim: 
 - 689. Stadtwerke Ulm/Neu-Ulm Netze GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 691. Stadtwerke Uslar GmbH: 
+- 694. Stadtwerke Verden GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 697. Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.45, 6.81); SLP-Werte auffällig
 - 698. Stadtwerke Vilshofen GmbH: 
 - 700. Stadtwerke Völklingen Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (12.09, 2.24, 28.16, 85.57); RLM-Werte nicht gefunden; SLP-Werte auffällig

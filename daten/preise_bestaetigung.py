@@ -18,6 +18,9 @@ def artikel(L):
         m = re.search(r"(?<!\d)1-01-(\d)-0*(\d)(?!\d)", l)
         if m and m.group(1) in EBENE_ID and m.group(2) in "1234":
             zs = zahlen(l) or zahlen(L[i + 1] if i + 1 < len(L) else "")
+            for mm in re.findall(r"(?<![\d.,])\d+\.\d{3,}(?!\d)", l):                     # Excel-Text: Dezimalpunkt, Preis je Tag oder je kWh
+                v_ = float(mm)
+                zs = zs + [v_, v_ * 365, v_ * 100]
             d.setdefault((EBENE_ID[m.group(1)], int(m.group(2))), zs)
     return d
 zaehler = collections.Counter()
@@ -63,6 +66,16 @@ for x in t:
                                 return True
                 return False
             bestaetigt = (paar(v[0], v[2]) and paar(v[1], v[3])) or (paar(v[0], v[1]) and paar(v[2], v[3]))        # LP/AP getrennt oder unter/ab getrennt
+        if not bestaetigt:
+            # Zeilen eines Blocks verteilt (Ebenenname, dann Werte in den nächsten Zeilen; Preise je Tag werden mit 365 umgerechnet)
+            for i3, l3 in enumerate(L):
+                if re.search(LAB[eb], l3, re.I):
+                    fenster = " ".join(L[i3:i3 + 4])
+                    zs3 = zahlen(fenster)
+                    zs3 += [q * 365 for q in [float(m_.replace(",", ".")) for m_ in re.findall(r"\b0,\d{5,}\b", fenster)]]
+                    zs3 += [float(m_) * 365 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)] + [float(m_) * 100 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)]
+                    if all(any(abs(a_ - b_) < 0.02 for b_ in zs3) for a_ in v):
+                        bestaetigt = True; break
         if bestaetigt:
             zaehler["bestätigt"] += 1; continue
         zaehler["nicht bestätigt"] += 1
