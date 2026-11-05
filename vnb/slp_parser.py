@@ -46,4 +46,61 @@ def slp_parser(zeilen):
                 gp, ap = (zahlen[0], zahlen[1]) if gp_zuerst else (zahlen[1], zahlen[0])
             if 0 <= gp <= 300 and 2 <= ap <= 25 and (STANDARD.search(lab) or STANDARD.search(ctx) or j == i + 1 or j == i + 2 or j == i + 3):
                 return gp, ap, f"{lab[:40]} | {l.strip()[:60]}"
+    return slp_untereinander(zeilen) or slp_bdew(zeilen)
+
+
+EINHEIT_GP = re.compile(r"(?:€|eur|euro)\s*/\s*(?:a|jahr)", re.I)
+EINHEIT_AP = re.compile(r"(?:ct|cent)\s*/\s*kwh", re.I)
+
+
+def slp_untereinander(zeilen):
+    """Grundpreis und Arbeitspreis in getrennten Zeilen ("Grundpreis  67,80 €/Jahr" / "Arbeitspreis  4,95 ct/kWh"), der Block mit Hinweis auf
+    Niederspannung / ohne Leistungsmessung / Standardlastprofil und ohne 14a, Modul, Wärmepumpe, Heizung davor."""
+    n = len(zeilen)
+    for i, l in enumerate(zeilen):
+        if not re.search(r"grundpreis|grundentgelt", l, re.I) or not EINHEIT_GP.search(l):
+            continue
+        for j in range(i + 1, min(n, i + 6)):
+            m = zeilen[j]
+            if re.search(r"arbeitspreis|arbeitsentgelt", m, re.I) and EINHEIT_AP.search(m):
+                kopf = " ".join(zeilen[max(0, i - 8):i]).lower()
+                if AUSSCHLUSS.search(kopf) or not (STANDARD.search(kopf) or STANDARD.search(l)):
+                    break
+                gz, az = _paar(re.sub(r"(?:€|eur|euro)\s*/\s*(?:a|jahr)", " ", l, flags=re.I)), _paar(re.sub(r"(?:ct|cent)\s*/\s*kwh", " ", m, flags=re.I))
+                if not gz or not az:
+                    break
+                gp, ap = gz[0], az[0]
+                if len(gz) >= 2 and gz[0] > 0 and abs(gz[1] / gz[0] - 1.19) < 0.012 and len(az) >= 2 and az[0] > 0 and abs(az[1] / az[0] - 1.19) < 0.012:
+                    gp, ap = gz[0], az[0]                       # netto | brutto
+                if 0 <= gp <= 300 and 2 <= ap <= 25:
+                    return gp, ap, f"{l.strip()[:45]} | {m.strip()[:45]}"
+                break
+    return None
+
+
+def _kleine(zeile):
+    """Dezimalzahlen mit bis zu 8 Stellen (BDEW: Preise je Tag und je kWh in Euro)."""
+    return [float(m.replace(",", ".")) for m in re.findall(r"(?<![\d.,])\d+,\d{3,8}(?!\d)", zeile)]
+
+
+def slp_bdew(zeilen):
+    """BDEW-Preisblattteil 2: "Marktlokation Grundpreis für Arbeitspreissystem 0,1986 (€/Tag)" und Arbeitspreis "sonstiger Verbrauch" in €/kWh."""
+    gp = ap = None
+    beleg = ""
+    for l in zeilen:
+        t = l.lower()
+        if gp is None and "grundpreis für arbeitspreissystem" in t:
+            z = _kleine(l)
+            if z:
+                gp = z[0] * 365 if z[0] < 2 else z[0]
+                beleg = l.strip()[:60]
+        elif ap is None and "sonstiger verbrauch" in t:
+            idx = zeilen.index(l)
+            for k in range(idx, min(len(zeilen), idx + 5)):
+                z = [v for v in _kleine(zeilen[k]) if 0 < v < 1]
+                if z:
+                    ap = z[0] * 100
+                    break
+    if gp is not None and ap is not None and 0 <= gp <= 300 and 2 <= ap <= 25:
+        return round(gp, 2), round(ap, 4), beleg
     return None

@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 15:13, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 16:42, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -19,7 +19,7 @@ Preisstand (nur ok): endgültig 307,  6
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 15,00 ct/kWh (GIG energy services GmbH)
-- Median: 7,26 ct/kWh (n = 642)
+- Median: 7,24 ct/kWh (n = 648)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
