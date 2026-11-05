@@ -1,37 +1,55 @@
-https://www1.eurogate.de/wp-content/uploads/2024/10/hochlastzeitfenster_2025.pdf
+SNB985172238775_0182_hlzf.pdf
 
-Hochlastzeitfenster 2025
+Hochlastzeitfenster für atypische Netznutzung
+nach § 19 Abs. 2 Satz 1 StromNEV
+  Kalenderjahr 2026
+    Stand 29.09.2025
+
+                                 Mittelspannungsnetz          Umspannung Mittel-/          Niederspannungsnetz
+für Entnahmen aus
+                                         (MS)                  Niederspannung                      (NS)
+                                  von          bis             von         bis               von         bis
+Jahreszeit
+                             1     08:30         14:15         09:00          14:15         09:00      14:15
+  Winter                     2     17:30         18:15         17:30          19:00         17:30      19:00
+                             3       -             -           22:45          23:45         22:45      23:45
+                             4       -             -             -              -             -          -
+                             5       -             -             -              -             -          -
+                             1       -             -           11:30          14:15         11:30      14:15
+  Frühling                   2       -             -             -              -             -          -
+                             3       -             -             -              -             -          -
+                             4       -             -             -              -             -          -
+                             5       -             -             -              -             -          -
+                             1       -             -             -              -             -          -
+  Sommer                     2       -             -             -              -             -          -
+                             3       -             -             -              -             -          -
+                             4       -             -             -              -             -          -
+                             5       -             -             -              -             -          -
+                             1       -             -             -              -             -          -
+  Herbst                     2       -             -             -              -             -          -
+                             3       -             -             -              -             -          -
+                             4       -             -             -              -             -          -
+                             5       -             -             -              -             -          -
+                             1     08:30         14:15         09:00          14:15         09:00      14:15
+  Winter                     2     17:30         18:15         17:30          19:00         17:30      19:00
+                             3       -             -           22:45          23:45         22:45      23:45
+                             4       -             -             -              -             -          -
+                             5       -             -             -              -             -          -
+
+  Winter                         01. Januar bis 28./ 29. Februar
+  Frühling                       01. März bis 31. Mai
+  Sommer                         01. Juni bis 31. August
+  Herbst                         01. September bis 30. November
+  Winter                         01. Dezember bis 31. Dezember
 
 
-          Spannungsebene                        Frühling                        Sommer                             Herbst                                  Winter
-                                                März - Mai                     Juni - August                September - November                      Dezember – Februar
 
 
-           Mittelspannung                  11:15 – 12:30 Uhr                        ---                              ---                             08:30 – 11:15 Uhr
+Die Ermittlung des Hochlastzeitfensters erfolgte anhand der Vorgaben der Bundesnetzagentur
+BK4-13-739 vom 11.12.2013.
 
-           Niederspannung                          ---                              ---                              ---                             07:00 – 08:15 Uhr
+Die Zeiten sind als Uhrzeiten zu verstehen, die einen Zeitraum angeben (kein Lastgangzeitstempel).
 
-
-In den Spannungsebenen „Umspannung MS/NS“ ergeben sich keine Hochlastzeitfenster.
-
-Bei den Zeitangaben handelt es sich um Uhrzeiten und nicht um Zeitstempel aus den Lastgängen.
-
-Individuelle Netzentgelte nach § 19 Absatz 2 Satz 1 StromNEV
-
-Gemäß § 19 Absatz 2 Satz 1 StromNEV haben Betreiber von Energieversorgungsnetzen einem Letztverbraucher ein individuelles Netzentgelt anzubieten, wenn auf Grund
-vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
-Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Entnahmeebene abweicht (atypisches Lastverhalten).
-
-Die EUROGATE Technical Services GmbH hat nach den Vorgaben der Bundesnetzagentur (BNetzA) die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für ihre
-Netzanschlussebenen (Mittelspannung, Umspannung MS/NS, Niederspannung) ermittelt und bietet auf dieser Basis Letztverbrauchern ein individuelles Netzentgelt gemäß § 19
-Absatz 2 Satz 1 StromNEV an.
-
-Weitere Informationen zu den Voraussetzungen eines individuellen Netzentgelts nach § 19 Absatz 2 Satz 1 StromNEV sowie zur Befreiung von den Netzentgelten nach § 19
-Absatz 2 Satz 2 StromNEV finden sie unter www.bundesnetzagentur.de
-
-
-
-
-                                                                     Die Ermittlung der Hochlastzeitfenster erfolgte gemäß den geltenden Vorgaben zur Genehmigung von individuellen
-                                                     Netzentgelten nach §19 Abs. 2 S.1 StromNEV und von Befreiung von den Netzentgelten nach § 19 Abs. 2 S. 2 StromNEV (BK4-13-739)
+Die Hochlastzeiten gelten nicht an Sonnabenden, an Sonntagen, an bundeseinheitlichen Feiertagen,
+regionalen Feiertagen sowie der Tag nach Christi Himmelfahrt als Brückentag.
 

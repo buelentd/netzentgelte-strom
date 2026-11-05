@@ -66,3 +66,32 @@ def test_export_conplot(tmp_path):
         assert ("rlm_ns" in e["fehlt"]) == (not (e["rlm"] and e["rlm"]["ns"]))
     plz = json.loads((tmp_path / "conplot" / "plz_2026.json").read_text(encoding="utf-8"))
     assert all(isinstance(v, list) and v for v in plz.values())
+
+
+def test_zeile_je_fenster_mit_dauer():
+    from vnb.hlzf import hlzf_lesen
+    t = """Hochlastzeitfenster 2026
+Umspannung Mittelspannung/Niederspannung
+ Jahreszeit  Beginn        Ende       Dauer
+Frühjahr         -           -           -
+Herbst      17:45 Uhr    18:15 Uhr    00:30 h
+Winter      17:15 Uhr    19:15 Uhr    02:00 h
+Niederspannungsnetz
+ Jahreszeit   Beginn             Ende          Dauer
+Frühjahr     10:15 Uhr         10:45 Uhr       00:30 h
+Sommer           -                 -              -
+"""
+    e = hlzf_lesen(t)
+    assert e.fenster["MSNS"]["winter"] == ["17:15-19:15"] and e.fenster["MSNS"]["herbst"] == ["17:45-18:15"]
+    assert e.fenster["NS"]["fruehling"] == ["10:15-10:45"] and e.fenster["NS"]["sommer"] == []
+
+
+def test_ebene_mit_von_bis_spalten():
+    from vnb.hlzf import hlzf_lesen
+    t = """Hochlastzeitfenster 2026
+NS                             Frühling               Sommer                   Herbst                     Winter
+                       von                bis   von            bis       von            bis         von            bis
+                           -                -     -              -       16:45          19:45      16:30           19:30
+"""
+    e = hlzf_lesen(t)
+    assert e.fenster["NS"] == {"fruehling": [], "sommer": [], "herbst": ["16:45-19:45"], "winter": ["16:30-19:30"]}

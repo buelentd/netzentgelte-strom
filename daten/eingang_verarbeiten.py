@@ -32,7 +32,7 @@ def main(neu, rechnen):
     os.makedirs("ergebnis/texte_layout", exist_ok=True); os.makedirs("eingang/verarbeitet", exist_ok=True)
     bericht = []
     for f in sorted(glob.glob("eingang/**/*.pdf", recursive=True)):
-        if "verarbeitet" in f: continue
+        if "verarbeitet" in f or "_hlzf" in f: continue   # HLZF-Dateien: daten/hlzf_eingang.py
         z = ziel(f, n2m, unser)
         if not z:
             bericht.append([f, "", "", "keine Zuordnung (Dateiname nicht erkannt)"]); continue

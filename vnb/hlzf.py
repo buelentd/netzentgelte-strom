@@ -141,6 +141,8 @@ def _form_a(zeilen):
             for z, eb in zuordnung:
                 if eb in (None, "andere"):
                     continue
+                if not ZEIT.search(z) and len(KEIN.findall(re.sub(r"^\s*\S.*?\s{3,}", "", z.strip() + "   ", count=1))) >= 3:
+                    out.setdefault(eb, {})              # Ebene mit "kein/-" in allen Spalten: keine Hochlastzeitfenster
                 for pos, f in _zeiten(z):
                     _, jz = _naechste(pos, spalten)
                     out.setdefault(eb, {}).setdefault(jz, []).append(f)
@@ -291,6 +293,74 @@ def schwellen_text(text: str, erg: Hlzf):
         erg.mindest_kw.setdefault("NS", int(m.group(1)))
 
 
+UHR = re.compile(r"(?<![\d:.])([0-2]?\d):([0-5]\d)(?:\s*uhr)?(?![\d:])(?!\s*h\b)", re.I)     # "02:30 h" ist die Dauer, kein Zeitpunkt
+
+
+def _paare(z: str):
+    """[(pos, "07:45-10:15")] aus Zeiten, die paarweise (von, bis) in einer Zeile stehen, auch ohne Strich dazwischen."""
+    ts = [(m.start(), f"{int(m.group(1)):02d}:{m.group(2)}") for m in UHR.finditer(z)]
+    if len(ts) < 2 or len(ts) % 2:
+        return []
+    out = []
+    for k in range(0, len(ts), 2):
+        if ts[k][1] >= ts[k + 1][1]:
+            return []
+        out.append(((ts[k][0] + ts[k + 1][0]) / 2, f"{ts[k][1]}-{ts[k + 1][1]}"))
+    return out
+
+
+def _form_e(zeilen):
+    """Zeile je Fenster mit Jahreszeit am Zeilenanfang ("Winter 07:45 Uhr 10:15 Uhr", "Herbst 1 06:15 10:15"); Ebene steht als Überschrift darüber."""
+    out, eb, jz_alt = {}, None, None
+    for z in zeilen:
+        st = z.strip()
+        if not st:
+            continue
+        m = JZ_WORT.match(st)
+        if not m:
+            if jz_alt and _paare(z) and re.match(r"^\s*(?:\d\.?\s{2,}|\d+\s)?\s*[0-2]?\d[:.]", st):
+                out.setdefault(eb, {}).setdefault(jz_alt, []).extend(f for _, f in _paare(z))   # Fortsetzungszeile derselben Jahreszeit
+                continue
+            if EBENE_WORT.search(st) and not UHR.search(st) and len(st) < 90:
+                nxt = _ebene_text(EBENE_WORT.search(st).group()) or _ebene_text(st)
+                eb, jz_alt = (nxt if nxt in ("NS", "MSNS") else "andere"), None
+            continue
+        if eb in (None, "andere"):
+            continue
+        jz = _jz(m.group())
+        rest = st[m.end():]
+        zeit = _paare(rest)
+        if zeit:
+            out.setdefault(eb, {}).setdefault(jz, []).extend(f for _, f in zeit)
+            jz_alt = jz
+        elif len(KEIN.findall(rest)) >= 1 and not UHR.search(rest):
+            out.setdefault(eb, {}).setdefault(jz, [])
+            jz_alt = jz
+        elif UHR.search(rest):
+            return {}                                       # Zeiten in der Zeile, aber nicht als Paar lesbar: lieber nichts als falsch
+    return {e: {j: out[e].get(j, []) for j in JAHRESZEITEN} for e in out if e in ("NS", "MSNS")}
+
+
+def _form_f(zeilen):
+    """Je Ebene ein Kopf mit vier Jahreszeiten-Spalten (jede "von / bis"), darunter Zeilen mit Zeitpaaren nach Spalte."""
+    out = {}
+    koepfe = [i for i, z in enumerate(zeilen) if not UHR.search(z) and len(JZ_WORT.findall(z)) == 4]
+    for n, i in enumerate(koepfe):
+        ende = koepfe[n + 1] if n + 1 < len(koepfe) else min(i + 25, len(zeilen))
+        label = re.split(r"\s{3,}", zeilen[i].strip())[0]
+        if JZ_WORT.search(label):
+            continue
+        eb = _ebene_text(label)
+        if eb not in ("NS", "MSNS"):
+            continue
+        spalten = [(m.start() + len(m.group()) / 2, _jz(m.group())) for m in JZ_WORT.finditer(zeilen[i])]
+        out.setdefault(eb, {j: [] for j in JAHRESZEITEN})
+        for z in zeilen[i + 1:ende]:
+            for pos, f in _paare(z):
+                out[eb][_naechste(pos, spalten)[1]].append(f)
+    return out if any(v for e in out.values() for v in e.values()) or out else {}
+
+
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     erg = Hlzf(jahr=jahr_lesen(text, url))
     if not re.search(r"hochlast", text, re.I):
@@ -304,7 +374,9 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     for name, f in (("Jahreszeiten als Spalten", lambda: _form_a(zeilen)),
                     ("Ebenen als Spalten", lambda: _form_b(zeilen, erg)),
                     ("Zeile je Ebene und Jahreszeit", lambda: _form_d(zeilen)),
-                    ("ganzjährig", lambda: _form_c(zeilen))):
+                    ("ganzjährig", lambda: _form_c(zeilen)),
+                    ("Zeile je Fenster", lambda: _form_e(zeilen)),
+                    ("Ebene mit Jahreszeiten-Spalten (von/bis)", lambda: _form_f(zeilen))):
         out = f()
         if out:
             erg.fenster, erg.form = out, name
