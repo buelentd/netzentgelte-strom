@@ -107,14 +107,14 @@ def main():
         gruppen.setdefault(str(int(m[1])), []).append(f)
     for nr, fs in gruppen.items():           # mehrere Dateien je Netzbetreiber (z. B. MS / NS / Umspannung): Texte zusammen lesen
         f = fs[0] if len(fs) == 1 else ";".join(fs)
-        try: t = "\n\n".join(text_aus(x) for x in fs)
+        try: t = "\n\n".join((f"=== Datei {Path(x).name} ===\n" if len(fs) > 1 else "") + text_aus(x) for x in fs)
         except Exception as e:
             bericht.append([nr, Path(fs[0]).name, "Datei nicht lesbar: " + type(e).__name__, ""]); continue
         f = Path(fs[0])
         e = hlzf_lesen(t, str(f))
         stf = stufe(nr, t, e) if e.gelesen else None
         gew = sum(len(v) for eb in e.fenster.values() for v in eb.values()) + 100 * ("NS" in e.fenster) if stf else 0
-        Path(f"ergebnis/hlzf_texte/{nr}.txt").write_text(Path(f).name + "\n\n" + t[:40000], encoding="utf-8")
+        Path(f"ergebnis/hlzf_texte/{nr}.txt").write_text(" | ".join(Path(x).name for x in fs) + "\n\n" + t[:60000], encoding="utf-8")
         alt = rows.get(nr)
         alt_gew = 1 if alt and alt[1].startswith("gelesen") else 0
         d = dict.fromkeys(H, ""); d["nr"] = nr

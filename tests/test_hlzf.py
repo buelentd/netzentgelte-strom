@@ -131,3 +131,15 @@ def test_block_je_ebene_mit_mittigem_namen_und_zweitem_fenster():
     e = hlzf_lesen(t)
     assert e.fenster["NS"]["winter"] == ["10:15-12:30", "17:30-18:15"]
     assert e.fenster["NS"]["herbst"] == [] and e.fenster["NS"]["frühling" if False else "fruehling"] == []
+
+
+def test_mehrere_dokumente_je_netzbetreiber_zusammen_gelesen():
+    """Getrennte Dokumente je Ebene (MS / Umspannung / NS) werden mit Datei-Trennzeile hintereinander gelesen (daten/hlzf_eingang.py)."""
+    def doc(ebene, herbst, winter):
+        return (f"Hochlastzeitfenster 2026\n\nNetzebene {ebene}\n"
+                f"Frühling      -\nSommer        -\nHerbst        {herbst}\nWinter        {winter}\n\n"
+                "Frühling 01.03. - 31.05.\nSommer 01.06. - 31.08.\nHerbst 01.09. - 30.11.\nWinter 01.12. - 28./29.02.\n")
+    t = ("=== Datei SNB1_0001_hlzf_MS.pdf ===\n" + doc("Mittelspannung", "08:00 - 09:00", "09:00 - 12:00") + "\n\n"
+         "=== Datei SNB1_0001_hlzf_NS.pdf ===\n" + doc("Niederspannung", "-", "17:00 - 19:00"))
+    e = hlzf_lesen(t, "x")
+    assert e.gelesen and e.fenster["NS"]["winter"] == ["17:00-19:00"] and not e.fenster["NS"]["herbst"]   # nie Werte der MS-Datei bei NS
