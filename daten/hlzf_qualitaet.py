@@ -24,6 +24,20 @@ for r in rows:
             r[ix["hlzf_status"]] = "gelesen"
             r[ix["hlzf_pruefung"]] = "neu gelesen und am Dokument geprüft (05.11.2026)"
         continue
+    if r[ix["hlzf_status"]] == "gelesen, Prüfung offen" and "Leser" in r[ix["hlzf_pruefung"]]:
+        # früher geflaggt: wieder gelesen, wenn der Leser jetzt dieselben Werte liest und die Prüfung besteht (Fehlalarm)
+        try:
+            t = open(f"ergebnis/hlzf_texte/{nr}.txt", encoding="utf-8").read()
+        except FileNotFoundError:
+            continue
+        e = hlzf_lesen(t, r[ix["hlzf_quelle_url"]])
+        gleich = e.gelesen and all(
+            (", ".join(e.fenster.get(eb, {}).get(j, [])) or ("keins" if eb in e.fenster else "")) == r[ix[f"hlzf_{eb.lower()}_{j}"]]
+            for eb in ("NS", "MSNS") for j in JAHRESZEITEN)
+        if gleich:
+            r[ix["hlzf_status"]] = "gelesen"
+            r[ix["hlzf_pruefung"]] = "Prüfung bestanden (Rasterzeilen herausgerechnet)"
+        continue
     if r[ix["hlzf_status"]] != "gelesen":
         continue
     try:

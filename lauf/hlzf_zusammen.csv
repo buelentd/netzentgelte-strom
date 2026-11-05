@@ -424,7 +424,7 @@ SNB910950265032;gelesen_nutzer;keins;keins;17:00-18:45;16:45-19:30;;;;;30;;https
 SNB919654931526;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB922514070884;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB931805295141;gelesen_unser;keins;keins;keins;17:00-20:45;;;;;;;https://www.stadtwerke-boeblingen.de/files/public/133_Netze/427_Stromnetz/Downloads/hochlastzeitfenster-2026-swbb.pdf
-SNB930423383254;pruefung_offen;;;;;;;;;;;https://swbt-netz.de/_Resources/Persistent/1/0/b/c/10bc7a7b1ef422e85457f32313ad4ed1f2ff590f/HLZF%202026%20-%20Stadtwerke%20B%C3%B6hmetal%20GmbH_final.pdf
+SNB930423383254;gelesen_unser;keins;keins;keins;08:30-12:45;keins;keins;keins;08:30-12:45;;;https://swbt-netz.de/_Resources/Persistent/1/0/b/c/10bc7a7b1ef422e85457f32313ad4ed1f2ff590f/HLZF%202026%20-%20Stadtwerke%20B%C3%B6hmetal%20GmbH_final.pdf
 SNB982380015723;gelesen_unser;keins;keins;keins;11:00-13:00, 16:45-18:45;keins;keins;keins;16:45-18:45;30;100;eingang: SNB982380015723_0427_hlzf.pdf
 SNB982432856366;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB982432856366_0428_hlzf.pdf
 SNB955266506998;gelesen_unser;keins;keins;keins;17:45-18:00, 12:15-12:30, 17:15-19:00;;;;;;;https://www.stadtwerke-bramsche.de/ceasy/resource/?id=2647&download=1
@@ -547,7 +547,7 @@ SNB965379905076;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB935738221819;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB980345455409;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB950039201827;pruefung_offen;;;;;;;;;;;https://www.stadtwerke-lehrte.de/de/Netze1/Strom/Hochlastzeitfenster-2026.pdf
-SNB946090906887;pruefung_offen;;;;;;;;;;;https://netze.stadtwerke-leine-solling.de/fileadmin/user_upload/web2/pdf/Gas/Transport_und_Netz/Netznutzung/Hochlastzeitfenster_2026_SWLS.pdf
+SNB946090906887;gelesen_unser;;;;;keins;keins;keins;17:45-19:45;;;https://netze.stadtwerke-leine-solling.de/fileadmin/user_upload/web2/pdf/Gas/Transport_und_Netz/Netznutzung/Hochlastzeitfenster_2026_SWLS.pdf
 SNB967075358620;gelesen_unser;14:30-15:00, 15:30-16:00;keins;17:30-18:15, 18:30-19:15;16:45-19:15;keins;keins;17:30-18:00, 18:30-19:00;16:45-19:15;;;https://www.stadtwerke-lemgo.de/fileadmin/user_upload/08_Netze/Docs/Netznutzung/Hochlastzeitfenster_SW_LE_2026.pdf
 SNB949152526504;gelesen_nutzer;12:00-12:15;11:45-12:00;keins;keins;keins;keins;keins;11:30-12:45, 16:30-18:15;;;https://www.stw-badnes.de/de/Strom/Netz/Netzzugang-Entgelte/Hochlast-Zeitfenster-2026.pdf
 SNB982030394239;gelesen_nutzer;;;;;keins;keins;16:45-18:15;15:00-18:30;;;https://www.stadtwerke-bad-reichenhall.de/de/Kopfnavigation1/Netz/Stromnetz/Hochlastzeitfenster-2026.pdf
@@ -638,7 +638,7 @@ SNB922861338965;gelesen_nutzer;;11:45-16:15;11:45-16:15;09:00-13:00;;11:45-16:15
 SNB924120395771;gelesen_unser;12:15-12:30, 13:15-13:30;keins;keins;keins;13:45-14:00;13:15-13:30;keins;17:00-18:45;;;https://www.stadtwerke-scheinfeld.de/files/52/Hochlastzeitfenster/95/Hochlastzeitfenster2026
 SNB924685554682;gelesen_nutzer;11:30-12:00;keins;keins;10:30-12:30, 09:30-12:30, 18:00-18:30, 10:45-12:30, 17:45-18:45;;;;;30;;https://www.rendsburgernetz-sh.de/fileadmin/redakteure/Netze_RD/SWSH_2500_PP_151_Hochlastzeitfenster_atypische_Netznutzung_barrierefrei_RD.pdf
 SNB942159258331;kein_dokument_oder_adresse;;;;;;;;;;;
-SNB987617847795;pruefung_offen;;;;;;;;;;;https://www.stadtwerke-schlitz.de/strom/stromnetz/dokumente-stromnetz/dok-stromnetz-hochlastzeitfenster/hlzf-2026-stw.-schlitz.pdf?cid=utf
+SNB987617847795;gelesen_unser;;;;;keins;keins;keins;08:30-09:30, 18:45-20:00;;;https://www.stadtwerke-schlitz.de/strom/stromnetz/dokumente-stromnetz/dok-stromnetz-hochlastzeitfenster/hlzf-2026-stw.-schlitz.pdf?cid=utf
 SNB979429791342;gelesen_nutzer;12:15-12:30, 13:15-13:30;keins;keins;keins;13:45-14:00;13:15-13:30;keins;17:00-18:45;;;https://www.stadtwerke-scheinfeld.de/files/52/Hochlastzeitfenster/95/Hochlastzeitfenster2026
 SNB950028563172;pruefung_offen;;;;;;;;;;;https://www.enwg-veroeffentlichungen.de/schneverdingen/Netze/preisblatt/HLZF-2026.pdf
 SNB936461984224;gelesen_nutzer;16:45-18:00;;08:45-09:30;08:00-12:30;16:45-18:00;;08:45-09:30;08:00-12:30;;;https://www.enwg-veroeffentlichungen.de/schneverdingen/Netze/preisblatt/HLZF-2026.pdf

@@ -458,7 +458,8 @@ ZEITLIKE = re.compile(r"(?<![\d:.])[0-2]?\d[:.][0-5]\d(?::\d\d)?(?![\d:])(?![.]?
 def _vollstaendig(text: str, out: dict) -> bool:
     """Absicherung der neuen Formen: Gibt es im Text deutlich mehr Uhrzeiten (auch 9.15 / 08:30:00) als gelesene Fenster, ist etwas übersehen."""
     fenster = sum(len(v) for eb in out.values() for v in eb.values()) + _IGN[0]
-    text = "\n".join(z for z in text.splitlines() if not re.search(r"bedeutet|beispiel|entspricht|z\.\s?b\.", z, re.I))   # Erläuterungszeilen mit Beispielzeiten
+    text = "\n".join(z for z in text.splitlines() if not re.search(r"bedeutet|beispiel|entspricht|z\.\s?b\.", z, re.I)   # Erläuterungszeilen mit Beispielzeiten
+                     and not re.fullmatch(r"\s*[0-2]?\d:[0-5]\d(?::\d\d)?\s*", z))                                     # Rasterzeilen: eine einzelne Uhrzeit allein in der Zeile
     alle = len(ZEIT_DOPPELPUNKT.findall(text)) + sum(1 for m in ZEIT_PUNKT.finditer(text) if m.group(1) == "00" or int(m.group(1)) > 12)   # "9.15" zählt, Datum "29.02" nicht
     return alle <= 2 * fenster + 4
 
