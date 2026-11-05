@@ -431,15 +431,87 @@ def _form_g(zeilen):
 
 
 _IGN = [0]          # Fenster anderer Ebenen (HS, HS/MS, MS), die die neuen Formen sehen, aber nicht ausgeben
-NEUE_FORMEN = {"Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)"}
+NEUE_FORMEN = {"Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)"}
+ZEIT_DOPPELPUNKT = re.compile(r"(?<![\d:.])[0-2]?\d:[0-5]\d(?::\d\d)?(?![\d:])(?!\s*h\b)")
+ZEIT_PUNKT = re.compile(r"(?<![\d:.])[0-2]?\d\.([0-5]\d)(?![\d:.])(?!\s*h\b)")
 ZEITLIKE = re.compile(r"(?<![\d:.])[0-2]?\d[:.][0-5]\d(?::\d\d)?(?![\d:])(?![.]?\d)(?!\.)(?!\s*h\b)")
 
 
 def _vollstaendig(text: str, out: dict) -> bool:
     """Absicherung der neuen Formen: Gibt es im Text deutlich mehr Uhrzeiten (auch 9.15 / 08:30:00) als gelesene Fenster, ist etwas übersehen."""
     fenster = sum(len(v) for eb in out.values() for v in eb.values()) + _IGN[0]
-    alle = len(ZEITLIKE.findall(text))
+    text = "\n".join(z for z in text.splitlines() if not re.search(r"bedeutet|beispiel|entspricht|z\.\s?b\.", z, re.I))   # Erläuterungszeilen mit Beispielzeiten
+    alle = len(ZEIT_DOPPELPUNKT.findall(text)) + sum(1 for m in ZEIT_PUNKT.finditer(text) if m.group(1) == "00" or int(m.group(1)) > 12)   # "9.15" zählt, Datum "29.02" nicht
     return alle <= 2 * fenster + 4
+
+
+def _spaltenname(t: str):
+    """Ebene einer Spalte aus ihrem Kopftext: "Mittel-/ Niederspannung" = MSNS, "Niederspannung" = NS, "Mittelspannung" = MS, sonst None."""
+    t = re.sub(r"umspann\w*|für entnahmen aus der netzebene|netzebene", " ", t, flags=re.I)
+    t = re.sub(r"\s+", " ", t).strip().lower()
+    if re.search(r"mittel-?\s*/\s*nieder|ms\s*/\s*ns|mittelspannung\s*/\s*niederspannung", t):
+        return "MSNS"
+    if re.fullmatch(r"nieder\w*|ns|nsp", t):
+        return "NS"
+    if re.fullmatch(r"mittelspannung\w*|ms|msp", t):
+        return "MS"
+    return None
+
+
+def _form_h(zeilen):
+    """Ebenen als Spalten, je Spalte von / bis; Zeilen je Jahreszeit (Folgezeilen ohne Jahreszeit = weitere Fenster derselben Jahreszeit)."""
+    out = {}
+    for i, z in enumerate(zeilen):
+        if UHR.search(z):
+            continue
+        vb = [(m.start(), m.group().lower()) for m in re.finditer(r"\b(?:von|bis)\b", z, re.I)]
+        if len(vb) != 6 or [w for _, w in vb] != ["von", "bis"] * 3:
+            continue
+        pos = [p for p, _ in vb]
+        # Ebenen aus den Kopfzeilen darüber: Text, dessen Mitte über dem von/bis-Paar liegt
+        namen = []
+        for k in range(3):
+            lo, hi = pos[2 * k] - 10, pos[2 * k + 1] + 14
+            teile = []
+            for j in range(max(0, i - 5), i):
+                for m in re.finditer(r"\S+(?:[ ]\S+)*", zeilen[j]):
+                    if lo <= (m.start() + m.end()) / 2 <= hi:
+                        teile.append(m.group())
+            namen.append(_spaltenname(" ".join(teile)))
+        if None in namen:
+            return {}
+        jz, leer = None, 0
+        for z2 in zeilen[i + 1:]:
+            if not z2.strip():
+                leer += 1
+                if leer > 2:
+                    break
+                continue
+            leer = 0
+            m = JZ_WORT.match(z2.strip())
+            if m:
+                jz = _jz(m.group())
+            elif jz is not None and re.search(r"[A-Za-zÄÖÜäöüß]{3,}", z2):
+                break                                           # Textzeile: Tabelle zu Ende
+            if jz is None:
+                continue
+            ts = [(mm.start(), f"{int(mm.group(1)):02d}:{mm.group(2)}") for mm in UHR.finditer(z2)]
+            idx = {}
+            for p_, t_ in ts:
+                k = min(range(6), key=lambda n: abs(pos[n] - p_))
+                if k in idx:
+                    return {}                                   # zwei Zeiten in einer Spalte: unsicher
+                idx[k] = t_
+            for k in range(3):
+                v, b = idx.get(2 * k), idx.get(2 * k + 1)
+                if (v is None) != (b is None) or (v and v >= b):
+                    return {}
+                e = out.setdefault(namen[k], {})
+                e.setdefault(jz, [])
+                if v:
+                    e[jz].append(f"{v}-{b}")
+    _IGN[0] += sum(len(v) for e in out if e not in ("NS", "MSNS") for v in out[e].values())
+    return {e: {j: out[e].get(j, []) for j in JAHRESZEITEN} for e in out if e in ("NS", "MSNS")}
 
 
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
@@ -457,9 +529,10 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
                     ("Ebenen als Spalten", lambda: _form_b(zeilen, erg)),
                     ("Zeile je Ebene und Jahreszeit", lambda: _form_d(zeilen)),
                     ("ganzjährig", lambda: _form_c(zeilen)),
-                    ("Zeile je Fenster", lambda: _form_e(zeilen)),
+                    ("Ebenen als Spalten (von/bis)", lambda: _form_h(zeilen)),          # spezifischere Formen vor "Zeile je Fenster"
                     ("Ebene mit Jahreszeiten-Spalten (von/bis)", lambda: _form_f(zeilen)),
-                    ("Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", lambda: _form_g(zeilen))):
+                    ("Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", lambda: _form_g(zeilen)),
+                    ("Zeile je Fenster", lambda: _form_e(zeilen))):
         _IGN[0] = 0
         out = f()
         if out and name in NEUE_FORMEN and not _vollstaendig(text, out):
@@ -469,7 +542,7 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
             erg.fenster, erg.form = out, name
             break
     schwellen_text(text, erg)
-    if not erg.fenster:
+    if not erg.fenster and not erg.grund:
         erg.grund = ("Raster mit markierten Viertelstunden (Markierung nicht im Text)"
                      if re.search(r"1/4-?h-?intervall|viertelstunde", text, re.I) else "Zeitfenster nicht lesbar")
     return erg
