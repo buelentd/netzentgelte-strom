@@ -1,0 +1,689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="de-de" lang="de-de" >
+<head>
+<link rel="icon" type="image/png" href="/templates/heider-energie/favicon.png" />
+
+<meta charset="utf-8">
+	<meta name="author" content="Super User">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Heider Energie – Hochlast-Zeitfenster gemäß Leitfaden BNetzA</title>
+<link href="/media/com_attachments/css/attachments_hide.css" rel="stylesheet">
+	<link href="/media/com_attachments/css/attachments_list.css" rel="stylesheet">
+	<link href="/media/com_attachments/css/attachments_list_dark.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/screen.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/stoerungsdienstLookup.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/energieloesungen.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/slicknav.css" rel="stylesheet">
+	<link href="/templates/heider-energie/css/screen_mobile.css" rel="stylesheet">
+<script src="/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/media/legacy/js/jquery-noconflict.min.js?504da4"></script>
+	<script src="/media/mod_menu/js/menu.min.js?ad0f7c" type="module"></script>
+	<script type="application/json" class="joomla-script-options new">{"bootstrap.modal":{"a.modal-button":{"keyboard":true,"focus":true}},"joomla.jtext":{"MOD_FINDER_SEARCH_VALUE":"Suche &hellip;"},"system.paths":{"root":"","rootFull":"https:\/\/heider-energie.de\/","base":"","baseFull":"https:\/\/heider-energie.de\/"},"csrf.token":"c1fae73a15d54629d32aaeea821eb9d0"}</script>
+	<script src="/media/system/js/core.min.js?a3d8f8"></script>
+	<script src="/media/vendor/bootstrap/js/modal.min.js?5.3.8" type="module"></script>
+	<script src="/media/com_finder/js/finder.min.js?755761" type="module"></script>
+	<script src="/media/com_attachments/js/attachments_refresh.js"></script>
+	<script src="/templates/heider-energie/js/modernizr.custom.js"></script>
+	<script src="/templates/heider-energie/js/hideEmptyAttachments.js"></script>
+	<script src="/templates/heider-energie/js/checkForScrollingMenu.js"></script>
+	<script src="/templates/heider-energie/js/preloadjs-0.6.0.min.js"></script>
+	<script src="/templates/heider-energie/js/jquery.csv.min.js"></script>
+	<script src="/templates/heider-energie/js/jquery.stoerungsdienstLookup.js"></script>
+	<script src="/templates/heider-energie/js/jquery.energieloesungen.js"></script>
+	<script src="/templates/heider-energie/js/jquery.slicknav.min.js"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://heider-energie.de/#/schema/BreadcrumbList/17","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://heider-energie.de/","name":"Startseite"}},{"@type":"ListItem","position":2,"item":{"@id":"https://heider-energie.de/elektrizitaetswerk","name":"Elektrizitätswerk"}},{"@type":"ListItem","position":3,"item":{"@id":"https://heider-energie.de/elektrizitaetswerk/netznutzung/hochlastzeitfenster","name":"Netznutzung"}},{"@type":"ListItem","position":4,"item":{"@id":"https://heider-energie.de/elektrizitaetswerk/netznutzung/hochlastzeitfenster","name":"Hochlastzeitfenster"}}]}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://heider-energie.de/#/schema/Organization/base","name":"Heider Energie","url":"https://heider-energie.de/"},{"@type":"WebSite","@id":"https://heider-energie.de/#/schema/WebSite/base","url":"https://heider-energie.de/","name":"Heider Energie","publisher":{"@id":"https://heider-energie.de/#/schema/Organization/base"},"potentialAction":{"@type":"SearchAction","target":"https://heider-energie.de/suche?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://heider-energie.de/#/schema/WebPage/base","url":"https://heider-energie.de/elektrizitaetswerk/netznutzung/hochlastzeitfenster","name":"Heider Energie – Hochlast-Zeitfenster gemäß Leitfaden BNetzA","isPartOf":{"@id":"https://heider-energie.de/#/schema/WebSite/base"},"about":{"@id":"https://heider-energie.de/#/schema/Organization/base"},"inLanguage":"de-DE","breadcrumb":{"@id":"https://heider-energie.de/#/schema/BreadcrumbList/17"}},{"@type":"Article","@id":"https://heider-energie.de/#/schema/com_content/article/1","name":"Hochlast-Zeitfenster gemäß Leitfaden BNetzA","headline":"Hochlast-Zeitfenster gemäß Leitfaden BNetzA","inLanguage":"de-DE","dateModified":"2026-10-30T00:00:00+00:00","isPartOf":{"@id":"https://heider-energie.de/#/schema/WebPage/base"}}]}</script>
+
+<script type="text/javascript">
+
+	/**
+	 * The preload queue;
+	 */
+	var queue;
+
+	function updatePreloadProgress(event) {
+		var progressValue = document.getElementById("progress-value");
+		var progressBar = document.getElementById("progress-bar");
+		var percentage = Math.floor(event.progress * 100);
+		progressValue.firstChild.nodeValue = percentage + "%"; 
+		progressBar.style.width = percentage + "%";
+	}
+	
+	function closePreloader() {
+		var preloader = document.getElementById("preloader-container");
+		var contentContainer = document.getElementById("container");
+		contentContainer.className = contentContainer.className + " ready";
+		preloader.className = preloader.className + " finished";
+	}
+	
+	/**
+	 * The method to be invoked, when loading the manifest
+	 * has finished.
+	 */ 
+	function initPage() {
+		closePreloader();
+		initStartpage();
+	}
+	
+	function preventImageLoading(){
+		jQuery("div.main div.content  div.blog div.blog-item img").each(function(){
+			var imageUrl = jQuery(this).prop("src");
+			jQuery(this).prop("src", "");
+			jQuery(this).prop("data-src", imageUrl);
+		});
+	}
+	
+	/**
+	 * Preloading all the images from the manifest file
+	 */
+	function preload() {
+        initMobileMenu();
+		if (document.getElementById("preloader-container") != null) {
+			if(document.referrer.indexOf(location.protocol + "//" + location.host) === 0) {
+				console.log("Already preloaded, skipping");
+				closePreloader();
+				initStartpage();
+			} else {
+				queue = new createjs.LoadQueue();
+				queue.on("complete", initPage, this);
+				queue.on("progress", updatePreloadProgress, this);
+				queue.loadManifest("/templates/heider-energie/manifest.json");
+			}
+		} else {
+          	initStartpage();
+        }
+	}
+
+
+	function detachComAttachment() {
+       if(jQuery(window).width() >= 1024){
+		if(jQuery(".detached-attachments").find(".attachmentsContainer").length > 0){
+			var a = jQuery("div.attachmentsContainer").detach();
+			jQuery("div.infobox-column").prepend('<div id="attachmentBox" class="infobox download"></div>');
+			jQuery("#attachmentBox").append(a);
+		}
+       }
+	}
+
+	function detachIntroImages() {
+		if ( jQuery( "#intro-images" ).length ) {
+			jQuery("div.main div.content  div.blog div.blog-item").each(function(index) {
+				var imageUrl = jQuery(this).find("figure.item-image img").prop("data-src");
+				var href = jQuery(this).find("h4 a").prop("href");
+				if (imageUrl.length) {
+					var divContainer = document.createElement("div");
+					jQuery(divContainer).addClass("intro-image");
+					jQuery(divContainer).css('background-image', 'url(' + imageUrl + ')');
+					jQuery("#intro-images").append(divContainer); 
+				}
+				jQuery(this).wrap('<a href="' + href +'" />');
+				jQuery(this).hover(function(){
+						showIntroImage(index);
+					}, function(){});
+			});
+		}
+	}
+
+	function showIntroImage(introImageIndex) {
+		if ( jQuery( "#intro-images" ).length ) {
+			jQuery("#intro-images div.intro-image").each(function(index) {
+				if (index == introImageIndex){
+					jQuery(this).addClass("show");
+				} else {
+					jQuery(this).removeClass("show");
+				}
+			});
+			jQuery("div.main div.content  div.blog div.blog-item").each(function(index) {
+				if (index == introImageIndex){
+					checkIntroImageParentHeight();
+					jQuery(this).addClass("active");
+				} else {
+					jQuery(this).removeClass("active");
+				}
+			});
+		}
+	}
+
+	function checkIntroImageParentHeight() {
+			jQuery( "#header .content").addClass("expanded");
+			jQuery( ".container").addClass("top");
+	}
+
+  	function initMobileMenu(){
+      		// Embedding side-menu into the slicknav (to have a single instance)
+      		jQuery('#mobile-menu-sidemenu').children().prependTo('#mobile-menu');
+            jQuery('#mobile-menu').slicknav({
+                  	label: '',
+                  	allowParentLinks : false,
+              		appendTo : '#mobileStaticMenu',
+            });
+    }
+  
+	function initStartpage() {
+
+			detachComAttachment();
+			detachIntroImages();
+			initCheckForScrollingMenu();
+			jQuery( ".stoerungsdienstLookup" ).stoerungsdienstLookup();
+			jQuery( ".energieloesungen" ).energieloesungen();
+			var scrollIndicator = jQuery('#header-menu').offset().top;
+			jQuery(window).bind('scroll', function() {
+				checkForScrollingMenu();
+				var currentScollIdx = jQuery(window).scrollTop();
+				if(currentScollIdx > scrollIndicator){
+					jQuery('#header').addClass("fixed");
+					var height = jQuery('#header').outerHeight();
+					var percentage = (currentScollIdx - scrollIndicator) / height;
+					percentage = Number(Math.round(percentage+'e1')+'e-1');
+				if (percentage < 0) {
+					percentage = 0;
+				} else if ( percentage > 1) {
+					percentage = 1.0;
+				}
+					jQuery('#dynamic-logo').css('transform', "translateX(" + (percentage * 100 - 100) + "%)");
+				} else {
+					jQuery('#header').removeClass("fixed");
+				}
+			});
+	}
+	
+</script>
+
+</head>
+<body onload="preload()">
+
+	<noscript>
+	    <div class="browser-warning">
+	      <b>Hinweis:</b> Um den vollen Funktionsumfang dieser Webseite zu erfahren, müssen Sie JavaScript in Ihren 
+	      <a href="http://www.enable-javascript.com/de/" target="_blank">Browsereinstellungen aktivieren</a>.
+	  </div>
+	</noscript>
+	
+	  <div class="browser-warning modernizr-msg">
+	      <b>Hinweis:</b> Die Version Ihres Browser ist leider veraltet. Die <i>HTML5</i> Spezifikation wird nicht ausreichend unterstützt.<br />
+	      Um den vollen Funktionsumfang dieser Webseite zu erfahren, müssen Sie Ihren
+	      <a href="http://www.browser-update.org/de/update.html" target="_blank">Browser aktualisieren</a>.
+	  </div>
+  
+	<div id="container" class="container">
+
+        <div id="mobileStaticMenu" class="mobileStaticMenu">
+          <a href="/"><div class="logo"></div></a>
+                        <!-- Start - Header-Menu -->
+              <div class="menu header-menu">
+                <ul class="mod-menu mod-list nav ">
+<li class="nav-item item-285"><a href="/kundenportal" class=" kundenportal">Kundenportal</a></li><li class="nav-item item-284"><a href="https://go.heider-energie.de/" class=" anmeldeportalInstallateure">Anmeldeportal für Installateure</a></li><li class="nav-item item-259"><a href="/einspeiseanfrage" class=" einspeiseanfrage">Einspeiseanfrage</a></li><li class="nav-item item-226 parent"><a href="/stoerungsdienst" class=" stoerungsdienst">Störungsdienst</a></li></ul>
+
+              </div>
+              <!-- End - Header-Menu -->
+                </div>
+  
+	
+	  <div class="static-height" style="width: 100%;">
+	  
+		  <div class="top-menu">
+			<div class="content centered">
+				<div class="menu horizontal">
+					<ul class="mod-menu mod-list nav ">
+<li class="nav-item item-116 default"><a href="/" class="home">Start</a></li><li class="nav-item item-282"><a href="/karriere" class=" karriere">Karriere</a></li><li class="nav-item item-117"><a href="/elektrizitaetswerk/impressum-ewerk" class="impressum">Impressum</a></li><li class="nav-item item-283"><a href="/barrierefreiheit" class=" barrierefreiheit">Barrierefreiheit</a></li><li class="nav-item item-250"><a href="/elektrizitaetswerk/datenschutzerklaerung-eww" class="datenschutz">Datenschutz</a></li><li class="nav-item item-163"><a href="/sitemap?view=html&amp;id=2" class="sitemap">Sitemap</a></li></ul>
+
+				</div>
+				<div class="search-panel">
+					
+<form class="mod-finder js-finder-searchform form-search" action="/suche" method="get" role="search">
+  	<i class="fa fa-search"></i>
+    <label for="mod-finder-searchword126" class="visually-hidden finder"></label><input type="text" name="q" id="mod-finder-searchword126" class="js-finder-search-query form-control" value="" placeholder="Suche &hellip;">
+            </form>
+
+				</div>
+			</div>
+		  </div>
+		  
+		  
+		  		  
+		  <div id="header" class="header">
+				<div class="menu horizontal dynamic">
+					<div class="spacer">
+						<div id="dynamic-logo" class="logo"></div>
+					</div>
+					<ul class="mod-menu mod-list nav ">
+<li class="nav-item item-102 parent"><a href="/energieversorgung" >Energieversorgung</a></li><li class="nav-item item-101 active parent"><a href="/elektrizitaetswerk" >Elektrizitätswerk</a></li><li class="nav-item item-103 parent"><a href="/hoellbachkraftwerke" >Höllbachkraftwerke</a></li></ul>
+
+					<div class="spacer"></div>
+			</div>
+			
+			<div id="header-menu" class="menu horizontal">
+				<div class="spacer"></div>
+				<ul class="mod-menu mod-list nav ">
+<li class="nav-item item-102 parent"><a href="/energieversorgung" >Energieversorgung</a></li><li class="nav-item item-101 active parent"><a href="/elektrizitaetswerk" >Elektrizitätswerk</a></li><li class="nav-item item-103 parent"><a href="/hoellbachkraftwerke" >Höllbachkraftwerke</a></li></ul>
+
+				<div class="spacer"></div>
+			</div>
+			
+			
+			
+			<div class="content centered">
+				<div class="logo"></div>
+              
+              	                  <!-- Start - Header-Menu -->
+                  <div class="menu header-menu ">
+                          <ul class="mod-menu mod-list nav ">
+<li class="nav-item item-285"><a href="/kundenportal" class=" kundenportal">Kundenportal</a></li><li class="nav-item item-284"><a href="https://go.heider-energie.de/" class=" anmeldeportalInstallateure">Anmeldeportal für Installateure</a></li><li class="nav-item item-259"><a href="/einspeiseanfrage" class=" einspeiseanfrage">Einspeiseanfrage</a></li><li class="nav-item item-226 parent"><a href="/stoerungsdienst" class=" stoerungsdienst">Störungsdienst</a></li></ul>
+
+                  </div>
+                  <!-- End - Header-Menu -->
+                
+              
+                                  
+                
+			</div>
+		   
+		  </div>
+		  
+		  <div class="main">
+			<div class="content centered">
+              
+            <div class="heider-logo-container"></div>
+			
+			<!-- Start - Breadcrumbs -->
+			<div class="breadcrumbs">
+					<nav class="mod-breadcrumbs__wrapper" aria-label="Breadcrumbs">
+    <ol class="mod-breadcrumbs breadcrumb px-3 py-2">
+                    <li class="mod-breadcrumbs__here float-start">
+                Aktuelle Seite: &#160;
+            </li>
+        
+        <li class="mod-breadcrumbs__item breadcrumb-item"><a href="/" class="pathway"><span>Startseite</span></a></li><li class="mod-breadcrumbs__item breadcrumb-item"><a href="/elektrizitaetswerk" class="pathway"><span>Elektrizitätswerk</span></a></li><li class="mod-breadcrumbs__item breadcrumb-item"><a href="/elektrizitaetswerk/netznutzung/hochlastzeitfenster" class="pathway"><span>Netznutzung</span></a></li><li class="mod-breadcrumbs__item breadcrumb-item active"><span>Hochlastzeitfenster</span></li>    </ol>
+    </nav>
+
+			</div>
+			<!-- End - Breadcrumbs -->
+			
+            <div class="flex-full-width-row">
+              
+            			<!-- Start - Side-Menu -->
+			<div class="menu side-menu">
+					<ul id="side-menu" class="mod-menu mod-list nav ">
+<li class="nav-item item-111 parent"><a href="/elektrizitaetswerk/ueber-uns/100-jahre-heider-energie" >Über uns</a></li><li class="nav-item item-112 parent"><a href="/elektrizitaetswerk/netzanschluss/netzvertraege-bedingungen" >Netzanschluss</a></li><li class="nav-item item-118 current active deeper parent"><a href="/elektrizitaetswerk/netznutzung/hochlastzeitfenster" >Netznutzung</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-119 current active"><a href="/elektrizitaetswerk/netznutzung/hochlastzeitfenster" aria-current="page">Hochlastzeitfenster</a></li><li class="nav-item item-120 parent"><a href="/elektrizitaetswerk/netznutzung/vertraege/lieferanten-netznutzungsvertrag-und-edi" >Verträge</a></li><li class="nav-item item-121"><a href="/elektrizitaetswerk/netznutzung/netznutzungsentgelte" >Netznutzungsentgelte</a></li><li class="nav-item item-123"><a href="/elektrizitaetswerk/netznutzung/mehr-mindermengen" >Mehr-/Mindermengen</a></li><li class="nav-item item-124"><a href="/elektrizitaetswerk/netznutzung/verschluesselung" >Verschlüsselung </a></li></ul></li><li class="nav-item item-236 parent"><a href="/elektrizitaetswerk/messstellenbetrieb/messstellenvertraege" >Messstellenbetrieb</a></li><li class="nav-item item-113"><a href="/elektrizitaetswerk/grundversorger" >Grundversorger</a></li><li class="nav-item item-125 parent"><a href="/elektrizitaetswerk/eeg-kwk-g/presse" >EEG / KWK-G</a></li><li class="nav-item item-133 parent"><a href="/elektrizitaetswerk/formulare" >Formulare</a></li><li class="nav-item item-138 parent"><a href="/elektrizitaetswerk/service/befundpruefung" >Service</a></li><li class="nav-item item-147 parent"><a href="/elektrizitaetswerk/kontakt-ewerk/firmensitz" >Kontakt</a></li><li class="nav-item item-155"><a href="/elektrizitaetswerk/links" >Links</a></li><li class="nav-item item-225"><a href="/karriere" >Karriere</a></li><li class="nav-item item-156"><a href="/elektrizitaetswerk/impressum-ewerk" >Impressum</a></li><li class="nav-item item-244"><a href="/elektrizitaetswerk/datenschutzerklaerung-eww" >Datenschutzerklärung</a></li></ul>
+
+			</div>
+			<!-- End - Side-Menu -->
+                          
+              <!-- Start - Text -->
+              <div id="componentBox" class="text">
+                <div class="com-content-article detached-attachments item-page" itemscope itemtype="https://schema.org/Article">
+    <meta itemprop="inLanguage" content="de-DE">
+    
+    
+        <div class="page-header">
+        <h1 itemprop="headline">
+            Hochlast-Zeitfenster gemäß Leitfaden BNetzA        </h1>
+                            </div>
+        
+        
+    
+    
+        
+                                                <div itemprop="articleBody" class="com-content-article__body">
+        <h3>Hochlast-Zeitfenster gemäß Leitfaden BNetzA für: 2027</h3>
+<p>Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres</p>
+<p>Auf Basis des Referenzzeitraums ergeben sich nach dem Leitfaden der Bundesnetzagentur zur Genehmigung individueller  Netzentgeltvereinbarungen folgende Hochlastzeitfenster:</p>
+<table>
+<tbody>
+<tr>
+<td class="first" style="height: 30px;"> </td>
+<td class="first" style="height: 30px;"><strong>Frühling</strong><br>Mrz. - Mai</td>
+<td class="first" style="height: 30px;"><strong>Sommer</strong><br>Jun. - Aug.</td>
+<td class="first" style="height: 30px;"><strong>Herbst</strong><br>Sep. - Nov.</td>
+<td class="first" style="height: 30px;"><strong>Winter</strong><br>Dez. - Feb.</td>
+</tr>
+<tr>
+<td class="first" style="height: 30px;"><strong>Netzebene</strong> der<br>Entnahmestelle</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Mittelspannung</strong></td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">
+<p>07:00 - 09:30</p>
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Umspg. MS/NS</strong></td>
+<td style="height: 15px;"><br>-</td>
+<td style="height: 15px;"><br>-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 22.3333px;" valign="top">
+<p><strong>Niederspannung</strong></p>
+</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top">
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Inanspruchnahme des Sonderentgelts müssen weiterführende Bedingungen erfüllt sein. Diese orientieren sich ebenfalls am Leitfaden der Bundesnetzagentur.</p>
+<p></p>
+<h3>Hochlast-Zeitfenster gemäß Leitfaden BNetzA für: 2026</h3>
+<p>Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres</p>
+<p>Auf Basis des Referenzzeitraums ergeben sich nach dem Leitfaden der Bundesnetzagentur zur Genehmigung individueller  Netzentgeltvereinbarungen folgende Hochlastzeitfenster:</p>
+<table>
+<tbody>
+<tr>
+<td class="first" style="height: 30px;"> </td>
+<td class="first" style="height: 30px;"><strong>Frühling</strong><br>Mrz. - Mai</td>
+<td class="first" style="height: 30px;"><strong>Sommer</strong><br>Jun. - Aug.</td>
+<td class="first" style="height: 30px;"><strong>Herbst</strong><br>Sep. - Nov.</td>
+<td class="first" style="height: 30px;"><strong>Winter</strong><br>Dez. - Feb.</td>
+</tr>
+<tr>
+<td class="first" style="height: 30px;"><strong>Netzebene</strong> der<br>Entnahmestelle</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Mittelspannung</strong></td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">16:15 - 19:15</td>
+<td style="height: 15px;">
+<p>16:15 - 19:15</p>
+</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Umspg. MS/NS</strong></td>
+<td style="height: 15px;"><br>-</td>
+<td style="height: 15px;"><br>-</td>
+<td style="height: 15px;">16:30 - 19:30</td>
+<td style="height: 15px;">
+<p>11:00 - 12:30</p>
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 22.3333px;" valign="top">
+<p><strong>Niederspannung</strong></p>
+</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top">
+<p>10:30 - 13:30</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Inanspruchnahme des Sonderentgelts müssen weiterführende Bedingungen erfüllt sein. Diese orientieren sich ebenfalls am Leitfaden der Bundesnetzagentur.</p>
+<h3></h3>
+<h3>Hochlast-Zeitfenster gemäß Leitfaden BNetzA für: 2025</h3>
+<p>Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres</p>
+<p>Auf Basis des Referenzzeitraums ergeben sich nach dem Leitfaden der Bundesnetzagentur zur Genehmigung individueller  Netzentgeltvereinbarungen folgende Hochlastzeitfenster:</p>
+<table>
+<tbody>
+<tr>
+<td class="first" style="height: 30px;"> </td>
+<td class="first" style="height: 30px;"><strong>Frühling</strong><br>Mrz. - Mai</td>
+<td class="first" style="height: 30px;"><strong>Sommer</strong><br>Jun. - Aug.</td>
+<td class="first" style="height: 30px;"><strong>Herbst</strong><br>Sep. - Nov.</td>
+<td class="first" style="height: 30px;"><strong>Winter</strong><br>Dez. - Feb.</td>
+</tr>
+<tr>
+<td class="first" style="height: 30px;"><strong>Netzebene</strong> der<br>Entnahmestelle</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Mittelspannung</strong></td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;"><br>
+<p></p>
+</td>
+<td style="height: 15px;">
+<p>  8:00 - 11:00</p>
+<p>16:00 - 19:00</p>
+</td>
+</tr>
+<tr>
+<td style="height: 15px;" valign="top"><strong>Umspg. MS/NS</strong></td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top">
+<p>11:00 - 12:00</p>
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 22.3333px;" valign="top">
+<p><strong>Niederspannung</strong></p>
+</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top">
+<p>10:30 - 13:00</p>
+<p>16:45 - 19:45</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Inanspruchnahme des Sonderentgelts müssen weiterführende Bedingungen erfüllt sein. Diese orientieren sich ebenfalls am Leitfaden der Bundesnetzagentur.</p>
+<h3></h3>
+<h3></h3>
+<h3>Hochlast-Zeitfenster gemäß Leitfaden BNetzA für: 2024</h3>
+<p>Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres</p>
+<p>Auf Basis des Referenzzeitraums ergeben sich nach dem Leitfaden der Bundesnetzagentur zur Genehmigung individueller  Netzentgeltvereinbarungen folgende Hochlastzeitfenster:</p>
+<table>
+<tbody>
+<tr>
+<td class="first" style="height: 30px;"> </td>
+<td class="first" style="height: 30px;"><strong>Frühling</strong><br>Mrz. - Mai</td>
+<td class="first" style="height: 30px;"><strong>Sommer</strong><br>Jun. - Aug.</td>
+<td class="first" style="height: 30px;"><strong>Herbst</strong><br>Sep. - Nov.</td>
+<td class="first" style="height: 30px;"><strong>Winter</strong><br>Dez. - Feb.</td>
+</tr>
+<tr>
+<td class="first" style="height: 30px;"><strong>Netzebene</strong> der<br>Entnahmestelle</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Mittelspannung</strong></td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;"><br>
+<p>16:45 - 19:45</p>
+</td>
+<td style="height: 15px;">
+<p>  8:00 - 10:15</p>
+<p>13:00 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 15px;" valign="top"><strong>Umspg. MS/NS</strong></td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top"><br>-</td>
+<td style="height: 15px;" valign="top">
+<p>11:00 - 12:00</p>
+<p>16:15 - 19:15</p>
+</td>
+</tr>
+<tr>
+<td style="height: 22.3333px;" valign="top">
+<p><strong>Niederspannung</strong></p>
+</td>
+<td style="height: 22.3333px;" valign="top"><br>11:00 - 12:00</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top"><br>-</td>
+<td style="height: 22.3333px;" valign="top">
+<p>10:30 - 12:00</p>
+<p>16:45 - 19:45</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Inanspruchnahme des Sonderentgelts müssen weiterführende Bedingungen erfüllt sein. Diese orientieren sich ebenfalls am Leitfaden der Bundesnetzagentur.</p>
+<h3></h3>
+<h3>Hochlast-Zeitfenster gemäß Leitfaden BNetzA für: 2023</h3>
+<p>Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres</p>
+<p>Auf Basis des Referenzzeitraums ergeben sich nach dem Leitfaden der Bundesnetzagentur zur Genehmigung individueller  Netzentgeltvereinbarungen folgende Hochlastzeitfenster:</p>
+<table>
+<tbody>
+<tr>
+<td class="first" style="height: 30px;"> </td>
+<td class="first" style="height: 30px;"><strong>Frühling</strong><br>Mrz. - Mai</td>
+<td class="first" style="height: 30px;"><strong>Sommer</strong><br>Jun. - Aug.</td>
+<td class="first" style="height: 30px;"><strong>Herbst</strong><br>Sep. - Nov.</td>
+<td class="first" style="height: 30px;"><strong>Winter</strong><br>Dez. - Feb.</td>
+</tr>
+<tr>
+<td class="first" style="height: 30px;"><strong>Netzebene</strong> der<br>Entnahmestelle</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+<td class="first" style="height: 30px;"><strong>Uhrzeit</strong><br>von - bis</td>
+</tr>
+<tr>
+<td style="height: 15px;"><strong>Mittelspannung</strong></td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">-</td>
+<td style="height: 15px;">
+<p>10:45 - 12:45</p>
+<p>13:30 - 15:30</p>
+<p>16:30 - 19:30</p>
+</td>
+<td style="height: 15px;">
+<p>  9:45 - 12:45</p>
+<p>16:30 - 19:30</p>
+</td>
+</tr>
+<tr>
+<td style="height: 15px;" valign="top"><strong>Umspg. MS/NS</strong></td>
+<td style="height: 15px;" valign="top">-</td>
+<td style="height: 15px;" valign="top">-</td>
+<td style="height: 15px;" valign="top">-</td>
+<td style="height: 15px;" valign="top">16:45 - 19:45</td>
+</tr>
+<tr>
+<td style="height: 22.3333px;" valign="top">
+<p><strong>Niederspannung</strong></p>
+</td>
+<td style="height: 22.3333px;" valign="top">-</td>
+<td style="height: 22.3333px;" valign="top">-</td>
+<td style="height: 22.3333px;" valign="top">
+<p>11:00 - 12:00</p>
+</td>
+<td style="height: 22.3333px;" valign="top">
+<p>16:45 - 19:45</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Zur Inanspruchnahme des Sonderentgelts müssen weiterführende Bedingungen erfüllt sein. Diese orientieren sich ebenfalls am Leitfaden der Bundesnetzagentur.</p><div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_1"></div>
+
+</div>    </div>
+
+                                    <dl class="article-info text-muted">
+
+            <dt class="article-info-term">
+                        Details                    </dt>
+
+        
+        
+        
+        
+        
+    
+            
+                    <dd class="modified">
+    <span class="icon-calendar icon-fw" aria-hidden="true"></span>
+    <time datetime="2026-10-30T11:19:10+00:00">
+        Zuletzt aktualisiert: 30. Oktober 2026    </time>
+</dd>
+        
+            </dl>
+                                
+                                        </div>
+
+              </div>
+              <!-- End - Text -->
+				
+				<!-- Start - Infobox -->
+				<div class="infobox-column">
+
+					
+
+<div class="infobox  newsletter"  >
+	<h3>Newsletter</h3>
+  	<div class="text">
+      <p>Mit dem <span class="heiderEnergie">Heider-Energie</span> Newsletter erfahren Sie alles Aktuelle rund um die Energieversorgung und den Stromnetzbetrieb in der Region.</p>
+<p><a href="/elektrizitaetswerk/service/newsletter">Newsletter abonnieren</a></p>  	</div>
+</div>
+
+				
+				</div>
+				<!-- End - Infobox -->
+			</div>
+			</div>
+            
+                   		  </div>
+        
+ 
+      
+	  </div>
+
+	  <div class="footer">
+		<div class="content centered">
+		  <div class="contact">
+			
+<div id="mod-custom92" class="mod-custom custom">
+    <h4>Elektrizitätswerk Wörth a.d. Donau Rupert Heider GmbH &amp; Co. KG</h4>
+<p>Regensburger Straße 21<br /> 93086 Wörth a.d. Donau <br /> <i class="fa fa-phone"></i>09482 / 204-0<br /> <i class="fa fa-fax"></i>09482 / 204-105<br /> <i class="fa fa-envelope"></i>info<span class="displaynone">null</span>@heider-energie.de</p></div>
+
+		  </div>
+		  <div class="copyright">
+			  &copy; 2026 Heider Energie
+		  </div>
+		</div>
+	   </div>
+	</div>
+	
+		
+        <!-- Start - Mobile-Menu -->
+    <div class="mobile-menu">
+      <ul id="mobile-menu" class="mod-menu mod-list nav ">
+<li class="nav-item item-102 deeper parent"><a href="/energieversorgung" >Energieversorgung</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-107 deeper parent"><a href="/energieversorgung/ueber-uns/100-jahre-heider-energie" >Über uns</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-164"><a href="/energieversorgung/ueber-uns/100-jahre-heider-energie" >100 Jahre HEIDER ENERGIE </a></li><li class="nav-item item-165"><a href="/energieversorgung/ueber-uns/aktuelles-evers" >Aktuelles</a></li></ul></li><li class="nav-item item-108 deeper parent"><a href="/energieversorgung/preise-vertraege/aktuelles-preise-vertraege" >Preise &amp; Verträge</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-168"><a href="/energieversorgung/preise-vertraege/aktuelles-preise-vertraege" >Aktuelles</a></li><li class="nav-item item-169"><a href="/energieversorgung/preise-vertraege/enwg" >EnWG</a></li><li class="nav-item item-170"><a href="/energieversorgung/preise-vertraege/schwachlastregelung" >Schwachlastregelung</a></li><li class="nav-item item-172 deeper parent"><a href="/energieversorgung/preise-vertraege/preise-evers/was-ist-ein-kwh" >Preise</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-171"><a href="/energieversorgung/preise-vertraege/preise-evers/was-ist-ein-kwh" >Was ist ein kWh?</a></li><li class="nav-item item-173"><a href="/energieversorgung/preise-vertraege/preise-evers/jahresabrechnung" >Jahresabrechnung</a></li><li class="nav-item item-174"><a href="/energieversorgung/preise-vertraege/preise-evers/grund-ersatzversorgung" >Grund- &amp; Ersatzversorgung</a></li><li class="nav-item item-175"><a href="/energieversorgung/preise-vertraege/preise-evers/waerme" >Wärme</a></li></ul></li><li class="nav-item item-176"><a href="/energieversorgung/preise-vertraege/vertraege" >Verträge</a></li><li class="nav-item item-177 deeper parent"><a href="/energieversorgung/preise-vertraege/steuern-abgaben/allgemeins-steuern-abgaben" >Steuern &amp; Abgaben</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-178"><a href="/energieversorgung/preise-vertraege/steuern-abgaben/allgemeins-steuern-abgaben" >Allgemeines</a></li><li class="nav-item item-179"><a href="/energieversorgung/preise-vertraege/steuern-abgaben/stromstg" >StromStG</a></li></ul></li><li class="nav-item item-180"><a href="/energieversorgung/preise-vertraege/ergaenzende-bedingungen" >Ergänzende Bedingungen</a></li><li class="nav-item item-181"><a href="/energieversorgung/preise-vertraege/stromkennzeichnung" >Stromkennzeichnung</a></li></ul></li><li class="nav-item item-110"><a href="/energieversorgung/formulare" >Formulare</a></li><li class="nav-item item-186 deeper parent"><a href="/energieversorgung/service-evers/newsletter-evers/newsletter-anmeldung-evers" >Service</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-191 deeper parent"><a href="/energieversorgung/service-evers/newsletter-evers/newsletter-anmeldung-evers" >Newsletter</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-190"><a href="/energieversorgung/service-evers/newsletter-evers/newsletter-anmeldung-evers" >Anmelden</a></li></ul></li><li class="nav-item item-193"><a href="/energieversorgung/service-evers/email-senden-evers" >E-Mail senden</a></li><li class="nav-item item-194"><a href="/energieversorgung/service-evers/schlichtungsstelle" >Schlichtungsstelle</a></li><li class="nav-item item-195"><a href="/energieversorgung/service-evers/energiemessgeraet" >Energiemessgerät</a></li><li class="nav-item item-234"><a href="https://heider-energie.meine-energiedaten.com" onclick="window.open(this.href, 'targetWindow', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,'); return false;">Großkundenportal</a></li></ul></li><li class="nav-item item-198 deeper parent"><a href="/energieversorgung/marktpartner/kommunikationsdaten" >Marktpartner</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-197"><a href="/energieversorgung/marktpartner/kommunikationsdaten" >Kommunikationsdaten</a></li><li class="nav-item item-199"><a href="/energieversorgung/marktpartner/verschluesselung-evers" >Verschlüsselung</a></li></ul></li><li class="nav-item item-200 deeper parent"><a href="/energieversorgung/kontakt-evers/firmensitz-evers" >Kontakt</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-201"><a href="/energieversorgung/kontakt-evers/firmensitz-evers" >Firmensitz</a></li><li class="nav-item item-202"><a href="/energieversorgung/kontakt-evers/team-evers" >Team</a></li><li class="nav-item item-203 deeper parent"><a href="/energieversorgung/kontakt-evers/bezirksstellen-evers/bezirksstelle-woerth" >Bezirksstellen</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-204"><a href="/energieversorgung/kontakt-evers/bezirksstellen-evers/bezirksstelle-woerth" >Wörth/Donau</a></li></ul></li></ul></li><li class="nav-item item-207"><a href="/energieversorgung/links-evers" >Links</a></li><li class="nav-item item-224"><a href="/karriere" >Karriere</a></li><li class="nav-item item-208"><a href="/energieversorgung/impressum-evers" >Impressum</a></li><li class="nav-item item-243"><a href="/energieversorgung/datenschutzerklaerung" >Datenschutzerklärung</a></li></ul></li><li class="nav-item item-101 active deeper parent"><a href="/elektrizitaetswerk" >Elektrizitätswerk</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-111 deeper parent"><a href="/elektrizitaetswerk/ueber-uns/100-jahre-heider-energie" >Über uns</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-157"><a href="/elektrizitaetswerk/ueber-uns/100-jahre-heider-energie" >100 Jahre HEIDER ENERGIE</a></li><li class="nav-item item-160"><a href="/elektrizitaetswerk/ueber-uns/aktuelles-ewerk" >Aktuelles</a></li><li class="nav-item item-158"><a href="/elektrizitaetswerk/ueber-uns/netzgebiet" >Netzgebiet</a></li></ul></li><li class="nav-item item-112 deeper parent"><a href="/elektrizitaetswerk/netzanschluss/netzvertraege-bedingungen" >Netzanschluss</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-122"><a href="/elektrizitaetswerk/netzanschluss/netzvertraege-bedingungen" >Netzverträge &amp; Bedingungen</a></li></ul></li><li class="nav-item item-118 current active deeper parent"><a href="/elektrizitaetswerk/netznutzung/hochlastzeitfenster" >Netznutzung</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-119 current active"><a href="/elektrizitaetswerk/netznutzung/hochlastzeitfenster" aria-current="page">Hochlastzeitfenster</a></li><li class="nav-item item-120 deeper parent"><a href="/elektrizitaetswerk/netznutzung/vertraege/lieferanten-netznutzungsvertrag-und-edi" >Verträge</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-217"><a href="/elektrizitaetswerk/netznutzung/vertraege/lieferanten-netznutzungsvertrag-und-edi" >Lieferanten- / Netznutzungsvertrag  und EDI</a></li></ul></li><li class="nav-item item-121"><a href="/elektrizitaetswerk/netznutzung/netznutzungsentgelte" >Netznutzungsentgelte</a></li><li class="nav-item item-123"><a href="/elektrizitaetswerk/netznutzung/mehr-mindermengen" >Mehr-/Mindermengen</a></li><li class="nav-item item-124"><a href="/elektrizitaetswerk/netznutzung/verschluesselung" >Verschlüsselung </a></li></ul></li><li class="nav-item item-236 deeper parent"><a href="/elektrizitaetswerk/messstellenbetrieb/messstellenvertraege" >Messstellenbetrieb</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-216"><a href="/elektrizitaetswerk/messstellenbetrieb/messstellenvertraege" >Messstellenverträge</a></li><li class="nav-item item-237"><a href="/elektrizitaetswerk/messstellenbetrieb/messstellengesetz" >Gesetz</a></li><li class="nav-item item-246"><a href="/elektrizitaetswerk/messstellenbetrieb/handbuecher-zaehler" >Handbücher Zähler</a></li></ul></li><li class="nav-item item-113"><a href="/elektrizitaetswerk/grundversorger" >Grundversorger</a></li><li class="nav-item item-125 deeper parent"><a href="/elektrizitaetswerk/eeg-kwk-g/presse" >EEG / KWK-G</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-126"><a href="/elektrizitaetswerk/eeg-kwk-g/presse" >Presse</a></li><li class="nav-item item-128"><a href="/elektrizitaetswerk/eeg-kwk-g/fragen-und-antworten" >Fragen und Antworten</a></li><li class="nav-item item-129"><a href="/elektrizitaetswerk/eeg-kwk-g/verguetungssaetze" >Vergütungssätze</a></li><li class="nav-item item-130 deeper parent"><a href="/elektrizitaetswerk/eeg-kwk-g/gesetze/eeg-gesetz" >Gesetze</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-131"><a href="/elektrizitaetswerk/eeg-kwk-g/gesetze/eeg-gesetz" >EEG-Gesetz</a></li><li class="nav-item item-132"><a href="/elektrizitaetswerk/eeg-kwk-g/gesetze/kwk-gesetz" >KWK-Gesetz</a></li></ul></li></ul></li><li class="nav-item item-133 deeper parent"><a href="/elektrizitaetswerk/formulare" >Formulare</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-137"><a href="/elektrizitaetswerk/formulare/netzanschluss" >Netzanschluss</a></li><li class="nav-item item-134 deeper parent"><a href="/elektrizitaetswerk/formulare/erzeugungsanlagen" >Erzeugungsanlagen</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-135"><a href="/elektrizitaetswerk/formulare/erzeugungsanlagen/mittelspannung" >Mittelspannung</a></li><li class="nav-item item-136"><a href="/elektrizitaetswerk/formulare/erzeugungsanlagen/niederspannung" >Niederspannung</a></li></ul></li></ul></li><li class="nav-item item-138 deeper parent"><a href="/elektrizitaetswerk/service/befundpruefung" >Service</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-139"><a href="/elektrizitaetswerk/service/befundpruefung" >Befundprüfung</a></li><li class="nav-item item-145"><a href="/elektrizitaetswerk/service/e-mail" >E-Mail</a></li><li class="nav-item item-143"><a href="/elektrizitaetswerk/service/newsletter" >Newsletter</a></li></ul></li><li class="nav-item item-147 deeper parent"><a href="/elektrizitaetswerk/kontakt-ewerk/firmensitz" >Kontakt</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-146"><a href="/elektrizitaetswerk/kontakt-ewerk/firmensitz" >Firmensitz</a></li><li class="nav-item item-148"><a href="/elektrizitaetswerk/kontakt-ewerk/team" >Team</a></li><li class="nav-item item-151 deeper parent"><a href="/elektrizitaetswerk/kontakt-ewerk/bezirksstellen-ewerk/bezirksstelle-woerth" >Bezirksstellen</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-150"><a href="/elektrizitaetswerk/kontakt-ewerk/bezirksstellen-ewerk/bezirksstelle-woerth" >Bezirksstelle Wörth</a></li></ul></li></ul></li><li class="nav-item item-155"><a href="/elektrizitaetswerk/links" >Links</a></li><li class="nav-item item-225"><a href="/karriere" >Karriere</a></li><li class="nav-item item-156"><a href="/elektrizitaetswerk/impressum-ewerk" >Impressum</a></li><li class="nav-item item-244"><a href="/elektrizitaetswerk/datenschutzerklaerung-eww" >Datenschutzerklärung</a></li></ul></li><li class="nav-item item-103 deeper parent"><a href="/hoellbachkraftwerke" >Höllbachkraftwerke</a><ul class="mod-menu__sub list-unstyled small"><li class="nav-item item-114"><a href="/hoellbachkraftwerke/hoellbachkraftwerke" >Höllbachkraftwerke</a></li><li class="nav-item item-115"><a href="/hoellbachkraftwerke/kontakt-hwk" >Kontakt</a></li><li class="nav-item item-209"><a href="/hoellbachkraftwerke/links-hwk" >Links</a></li><li class="nav-item item-210"><a href="/hoellbachkraftwerke/impressum-hkw" >Impressum</a></li><li class="nav-item item-245"><a href="/hoellbachkraftwerke/datenschutzerklaerung-hwk" >Datenschutzerklärung</a></li></ul></li></ul>
+<ul id="mobile-menu-sidemenu" class="mod-menu mod-list nav ">
+<li class="nav-item item-285"><a href="/kundenportal" class=" kundenportal">Kundenportal</a></li><li class="nav-item item-284"><a href="https://go.heider-energie.de/" class=" anmeldeportalInstallateure">Anmeldeportal für Installateure</a></li><li class="nav-item item-259"><a href="/einspeiseanfrage" class=" einspeiseanfrage">Einspeiseanfrage</a></li><li class="nav-item item-226 parent"><a href="/stoerungsdienst" class=" stoerungsdienst">Störungsdienst</a></li></ul>
+
+    </div>
+    <!-- End - Mobile-Menu -->
+      
+</body>
+</html>
