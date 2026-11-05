@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Preisblätter - ELT-/GAS-Netz</title>
+<base href="https://www.netz.stadtwerke-bernburg.de/">
+<meta name="robots" content="index,follow">
+<meta name="description" content="Preisblätter">
+<meta name="generator" content="Contao Open Source CMS">
+<link rel="canonical" href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
+<link rel="stylesheet" href="/bundles/contaocookiebar/default.00b012e7.css">
+<link rel="stylesheet" href="/assets/css/charset.css,tiny-slider.css,font.css,_stickyheader.css,_pushnavi...-8f05dd04.css"><script src="/assets/js/stickyheader.js,jquery.min.js,pushnavigation.js,a11y.js,effects....-36416832.js"></script><script>const navAriaLabels={menu_main:'Hauptmenü',menu_sub:'Untermenü',menu_toggle:'Menü umschalten: ',menu_expand:'Menü ausklappen: ',menu_collapse:'Menü zuklappen: ',menu_back:'Zurück',menu_to:'Zum Menübutton',scroll_to_top:'Scroll nach oben'}</script><meta name="generator" content="Contao ThemeManager"><script>new ResizeObserver(e=>{e[0].target.style.setProperty('--lvw',e[0].contentBoxSize[0].inlineSize+'px')}).observe(document.documentElement)</script><script>window.addEventListener('load',()=>{window.sh=new StickyHeader({scrollSettings:{stopPosition:0,breakPosition:0,},logo:{autoScale:!1,}})})</script><script>window.addEventListener('load',()=>{window.pn=new PushNavigation({modules:[{prepend:'ul.level_1',markup:document.querySelector('header .page-select-navigation')?.innerHTML??'',}]})})</script><script>window.addEventListener('load',()=>{window.a11y=new Accessibility()})</script><style>body{overflow-x:clip}</style><style>@media(max-width:1023.98px){header .nav:not(.pn-show){opacity:0;pointer-events:none}}</style>
+<link rel="icon" type="image/png" href="https://www.netz.stadtwerke-bernburg.de/files/theme/skin/assets/favicon/favicon-96x96.png?v=20260427" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="https://www.netz.stadtwerke-bernburg.de/files/theme/skin/assets/favicon/favicon.svg?v=20260427" />
+<link rel="shortcut icon" href="https://www.netz.stadtwerke-bernburg.de/files/theme/skin/assets/favicon/favicon.ico?v=20260427" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.netz.stadtwerke-bernburg.de/files/theme/skin/assets/favicon/apple-touch-icon.png?v=20260427" />
+<meta name="apple-mobile-web-app-title" content="SWB" />
+<link rel="manifest" href="https://www.netz.stadtwerke-bernburg.de/files/theme/skin/assets/favicon/site.webmanifest?v=20260427" />
+<meta name="msapplication-TileColor" content="#0068b4" />
+<meta name="theme-color" content="#0068b4" />
+<meta name="format-detection" content="telephone=no" />
+
+<script src="/bundles/contaocookiebar/cookiebar.f2d9506d.js"></script>
+</head>
+<body id="top" class="art-px-2 art-py-2 fixed undock">
+<div id="wrapper">
+<header id="header">
+<div class="inside">
+<div class="h-wrapper controls">
+<div class="inside">
+<!-- indexer::stop -->
+<div class="mod_logo block">
+<div class="inside">
+<a href="https://www.netz.stadtwerke-bernburg.de/" title="Stadtwerke Bernburg GmbH">
+<figure class="image_container">
+<img src="/assets/images/8/stadtwerke-bernburg-gmbh-logo-vqppb5xpdrehd42.svg" width="200" height="80" alt="Stadtwerke Bernburg GmbH" title="Stadtwerke Bernburg GmbH">
+</figure>
+</a>
+</div>
+</div>
+<!-- indexer::continue -->
+<!-- indexer::stop -->
+<nav class="mod_customnav block" aria-label="Menü für die Seiten">
+<div class="inside">
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation48" class="invisible">Navigation überspringen</a>
+<ul class="page-select-navigation" hidden style="display:none !important;">
+<li class="page-navigation-container">
+<form>
+<div class="widget select page-navigation pl-parent">
+<div class="input-container">
+<select id="page-navigation" class="level_1" onchange="window.location.href=this.value">
+<option  value="//www.stadtwerke-bernburg.de/privatkunden.html">Privatkunden</option>
+<option  value="//www.stadtwerke-bernburg.de/geschaeftskunden/geschaeftskunden">Geschäftskunden</option>
+<option  value="//www.fernwaermeversorgung.stadtwerke-bernburg.de/fernwaerme.html">Fernwärmenetz</option>
+<option  selected value="/elt-gas-netz.html">ELT-/GAS-Netz</option>
+</select>
+</div>
+<label for="page-navigation">Seite</label>
+</div>
+</form>
+</li>
+</ul>
+<ul class="level_1">
+<li><a href="//www.stadtwerke-bernburg.de/privatkunden.html" title="Stadtwerke Bernburg GmbH">Privatkunden</a></li>
+<li><a href="//www.stadtwerke-bernburg.de/geschaeftskunden/geschaeftskunden" title="Geschäftskunden">Geschäftskunden</a></li>
+<li><a href="//www.fernwaermeversorgung.stadtwerke-bernburg.de/fernwaerme.html" title="Fernwärmenetz">Fernwärmenetz</a></li>
+<li class="trail"><a href="/elt-gas-netz.html" title="ELT-/GAS-Netz" class="trail">ELT-/GAS-Netz</a></li>
+</ul>
+<span id="skipNavigation48" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<div class="header-cta">
+<a href="/suche.html" title="Jetzt suchen" class="c_link search i-search" aria-label="Suche"><span>Suche</span></a>
+<a href="/leichte-sprache.html" title="Leichte Sprache" class="c_link search i-leichte-sprache" aria-label="Leichte Sprache"></a>
+<a href="https://onlineservice.stadtwerke-bernburg.de/powercommerce/csit3/fo/portal/start" title="Login Online Service Stadtwerke Bernburg" class="c_link account i-user" aria-label="Mein Konto" target="_blank"><span>Mein Konto</span></a>
+</div>
+</div>
+</div>
+<div class="h-wrapper navigation">
+<div class="inside"><!-- indexer::stop -->
+<nav class="mod_navigation nav nav-x block">
+<div class="inside">
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation2" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li class="submenu"><a href="/stromanschluesse.html" title="Stromanschlüsse" class="submenu" aria-haspopup="true">Stromanschlüsse</a>
+<ul class="level_2">
+<li><a href="/hausanschluss.html" title="Hausanschluss">Hausanschluss</a></li>
+<li><a href="/hausanschluss-grosskunden-2.html" title="Hausanschluss &#40;Großkunden&#41;">Hausanschluss &#40;Großkunden&#41;</a></li>
+<li><a href="/erzeugungsanlagen-2.html" title="Erzeugungsanlagen">Erzeugungsanlagen</a></li>
+<li><a href="/e-ladesaeulen.html" title="E-Ladesäulen">E-Ladesäulen</a></li>
+<li><a href="/installateure-strom.html" title="Installateure &#40;Strom&#41;">Installateure &#40;Strom&#41;</a></li>
+</ul>
+</li>
+<li class="submenu"><a href="/erdgasanschluesse.html" title="Erdgasanschlüsse" class="submenu" aria-haspopup="true">Erdgasanschlüsse</a>
+<ul class="level_2">
+<li><a href="/hausanschluss-gas.html" title="Hausanschluss">Hausanschluss</a></li>
+<li><a href="/hausanschluss-grosskunden.html" title="Hausanschluss &#40;Großkunden&#41;">Hausanschluss &#40;Großkunden&#41;</a></li>
+<li><a href="/erzeugungsanlagen.html" title="Erzeugungsanlagen">Erzeugungsanlagen</a></li>
+<li><a href="/biogas-einspeisung.html" title="Biogas-Einspeisung">Biogas-Einspeisung</a></li>
+<li><a href="/waermecontracting.html" title="Wärmecontracting">Wärmecontracting</a></li>
+<li><a href="/installateure-gas.html" title="Installateure &#40;Gas&#41;">Installateure &#40;Gas&#41;</a></li>
+</ul>
+</li>
+<li class="submenu"><a href="/zaehlerwesen.html" title="Zählerwelt &#40;Messstellenbetrieb&#41;" class="submenu" aria-haspopup="true">Zählerwesen</a>
+<ul class="level_2">
+<li><a href="/messeinrichtungen.html" title="Messeinrichtungen">Messeinrichtungen</a></li>
+<li><a href="/videos.html" title="Videos">Videos</a></li>
+<li><a href="/smart-meter.html" title="Smart Meter">Smart Meter</a></li>
+<li><a href="/fragen-und-antworten.html" title="Fragen und Antworten">Fragen und Antworten</a></li>
+<li><a href="/befundpruefung.html" title="Befundprüfung">Befundprüfung</a></li>
+</ul>
+</li>
+<li class="submenu trail"><a href="/veroeffentlichungen.html" title="Veröffentlichungen" class="submenu trail" aria-haspopup="true">Veröffentlichungen</a>
+<ul class="level_2">
+<li class="sibling"><a href="/ansprechpartner-netz.html" title="Ansprechpartner" class="sibling">Ansprechpartner</a></li>
+<li class="submenu sibling"><a href="/gesetzliche-grundlagen.html" title="Gesetzliche Grundlagen" class="submenu sibling" aria-haspopup="true">Gesetzliche Grundlagen</a>
+<ul class="level_3">
+<li><a href="/strom-2.html" title="Gesetzliche Grundlagen Strom">Strom</a></li>
+<li><a href="/gas-2.html" title="Gas">Gas</a></li>
+</ul>
+</li>
+<li class="sibling"><a href="/downloads.html" title="Downloads" class="sibling">Downloads</a></li>
+<li class="active"><strong class="active">Preisblätter</strong></li>
+<li class="sibling"><a href="/strom.html" title="Strom" class="sibling">Strom</a></li>
+<li class="sibling"><a href="/gas.html" title="Gas" class="sibling">Gas</a></li>
+<li class="sibling"><a href="/krisenvorsorge.html" title="Krisenvorsorge" class="sibling">Krisenvorsorge</a></li>
+<li class="sibling"><a href="/information-zum-datenschutz.html" title="Information zum Datenschutz" class="sibling">Information zum Datenschutz</a></li>
+</ul>
+</li>
+<li><a href="https://www.portal.stadtwerke-bernburg.de" title="Installateurportal der Stadtwerke Bernburg GmbH" target="_blank" rel="noreferrer noopener">Installateurportal</a></li>
+<li><a href="/netzanschlussportal.html" title="Netzanschlussportal">Netzanschlussportal</a></li>
+</ul>
+<span id="skipNavigation2" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<div class="mod_toggle sh-el">
+<div class="burger-box">
+<div class="burger-inner"></div>
+</div>
+</div>
+</div>
+</header>
+<main id="main-wrapper">
+<div id="main-above">
+<div class="inside">
+<div id="m_69" class="modal_tabs">
+<button class="handle btn-reset" aria-expanded="false">
+<span>
+<span aria-hidden="true" class="icon" data-icon="&#xe975;"></span>
+<span class="invisible">Kontaktlasche öffnen</span>
+</span>
+<span class="close">
+<svg aria-hidden="true" class="close" fill="#fff" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M61.9 50 99 12.9A3.4 3.4 0 0 0 99 8l-7-7a3.4 3.4 0 0 0-5 0L50 38 12.9 1A3.4 3.4 0 0 0 8 1L1 8a3.4 3.4 0 0 0 0 5l37 37L1 87.1A3.4 3.4 0 0 0 1 92l7 7a3.4 3.4 0 0 0 4.9 0L50 62l37.1 37a3.4 3.4 0 0 0 4.8 0l7.1-7a3.4 3.4 0 0 0 0-4.9L62 50z"/></svg>
+<span class="invisible">Kontaktlasche schließen</span>
+</span>
+</button>
+<div class="content text-left" inert>
+<nav>
+<ul>
+<li>
+<button class="nav-btn btn-reset" data-m-tab-for="m_69_c_0" aria-expanded="true" id="m_69_tab_0">
+Kontakt              </button>
+</li>
+<li>
+<button class="nav-btn btn-reset" data-m-tab-for="m_69_c_1" aria-expanded="false" id="m_69_tab_1">
+24/7- Störungsdienst              </button>
+</li>
+</ul>
+</nav>
+<div class="tabs-container">
+<div class="tab-item m_69_c_0 active">
+<div class="tab-content">
+<p class="headline h4">Bereich Netz Strom & Gas</p>
+<div class="c_text">
+<p class="name">Herr Burchardt</p>                <p class="position">Teamleiter Netz-Gas</p>                                  <a class="contact-flex email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#x75;&#114;&#x63;&#104;&#x61;&#114;&#x64;&#116;&#x40;&#115;&#x74;&#97;&#x64;&#116;&#x77;&#101;&#x72;&#107;&#x65;&#45;&#x62;&#101;&#x72;&#110;&#x62;&#117;&#x72;&#103;&#x2E;&#100;&#x65;" title="burchardt@stadtwerke-bernburg.de">
+<span class="icon contact-icon" data-icon="&#xe9d2;"></span>                    <span class="email">&#98;&#x75;&#114;&#x63;&#104;&#x61;&#114;&#x64;&#116;&#x40;&#115;&#x74;&#97;&#x64;&#116;&#x77;&#101;&#x72;&#107;&#x65;&#45;&#x62;&#101;&#x72;&#110;&#x62;&#117;&#x72;&#103;&#x2E;&#100;&#x65;</span>
+</a>
+<a class="contact-flex phone" href="tel:03471 377 81 15" title="03471 377 81 15">
+<span class="icon contact-icon" data-icon="&#xe9dd;"></span>                    <span class="value">03471 377 81 15</span>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-item m_69_c_1">
+<div class="tab-content">
+<p class="headline h4">Bereitschaftsdienst</p>
+<div class="c_text">
+<p class="name">24-Stunden-Service</p>                                                                  <a class="contact-flex phone" href="tel:03471 32 16 16" title="03471 32 16 16">
+<span class="icon contact-icon" data-icon="&#xe9df;"></span>                    <span class="value">03471 32 16 16</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="#" class="mtab_close invisible">MSC.back</a>
+</div>
+<script>(()=>{const m_tab=document.querySelector('#m_69');const handle=m_tab.querySelector('.handle');const content=m_tab.querySelector(':scope > .content');const m_nav=m_tab.querySelectorAll('.nav-btn');const m_content=m_tab.querySelectorAll('.tab-item');let closer=m_tab.querySelector('.mtab_close');closer.onclick=e=>e.preventDefault();const modal_ft=(e)=>{if(!(e.key==='Tab'||e.keyCode===9))return;if(document.activeElement===closer&&!e.shiftKey){e.preventDefault();handle.focus()}
+if(document.activeElement===handle&&e.shiftKey){e.preventDefault();closer.focus()}}
+const show_modal_tabs=(state)=>{state?m_tab.classList.add('open'):m_tab.classList.remove('open');handle.ariaExpanded=state?'true':'false';content.inert=!state;if(state){content.role='dialog';content.ariaModal=!0;content.tabIndex=-1;document.addEventListener('keydown',modal_ft,!1)}else{content.removeAttribute('role');content.removeAttribute('aria-modal');content.removeAttribute('tabIndex');document.removeEventListener('keydown',modal_ft,!1)}}
+handle.onclick=()=>show_modal_tabs(handle.ariaExpanded==='false');document.addEventListener('keyup',e=>{e.key==='Escape'&&show_modal_tabs(!1)})
+const show_modal_tab_c=(btn)=>{const match=btn.dataset.mTabFor;m_content.forEach(node=>{node.classList.contains(match)?node.classList.add('active'):node.classList.remove('active')})}
+m_nav.forEach(nav=>{nav.onclick=()=>{m_nav.forEach(i=>{if(nav!==i){i.ariaExpanded='false'}});show_modal_tab_c(nav);nav.ariaExpanded='true'}})})()</script>
+<div id="article-1230" class="mod_article art-hero v--image_small justify-center items-center gtr-0 bg-light grid block">
+<div class="inside article_inside">
+<div class="img--overlay dark content-image ce_image">    <div class="inside">
+<figure class="image_container">
+<picture>
+<source srcset="/assets/images/5/preisblaetter-dcm2t11xj6k88gm.webp" media="(max-width: 599px)" type="image/webp" width="600" height="1000">
+<source srcset="/assets/images/3/preisblaetter-shad94d09tdfhk1.jpg" media="(max-width: 599px)" width="600" height="1000">
+<source srcset="/assets/images/e/preisblaetter-x9ez7v04s30qybt.webp" media="(max-width: 1023px)" type="image/webp" width="1024" height="750">
+<source srcset="/assets/images/x/preisblaetter-m83nmd93vd7kj8h.jpg" media="(max-width: 1023px)" width="1024" height="750">
+<source srcset="/assets/images/r/preisblaetter-5z2jcgrefvh5fsb.webp" media="(max-width: 1263px)" type="image/webp" width="1264" height="700">
+<source srcset="/assets/images/1/preisblaetter-8qt26t8j13be68c.jpg" media="(max-width: 1263px)" width="1264" height="700">
+<source srcset="/assets/images/8/preisblaetter-egy5ckyyr00q3ek.webp" media="(max-width: 1920px)" type="image/webp" width="1920" height="900">
+<source srcset="/assets/images/9/preisblaetter-b54wr4qn5ah1ky8.jpg" media="(max-width: 1920px)" width="1920" height="900">
+<source srcset="/assets/images/2/preisblaetter-ag3ertkbz66pgrs.webp" type="image/webp" width="2560" height="900">
+<img src="/assets/images/1/preisblaetter-t9qc87x1pr2ynr5.jpg" alt="Preisblätter" title="Preisblätter" width="2560" height="900">
+</picture>
+</figure>
+</div>
+</div>
+<div class="ce_wrapper article-wrapper block grid ce_wrapperStart hero-content col-l-6 col-m-8 col-xl-5 color-text-inv">
+<div class="inside c_slider">
+<div class="text-center content-headline ce_headline">    <div class="c_headline">
+<h1>Preisblätter</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1231" class="mod_article art-breadcrumb grid block">
+<div class="inside article_inside">
+<!-- indexer::stop -->
+<nav class="mod_breadcrumb block" aria-label="Breadcrumb">
+<div class="inside">
+<ul>
+<li><a href="/" title="ELT-/GAS-Netz">ELT-/GAS-Netz</a></li>
+<li><a href="/veroeffentlichungen.html" title="Veröffentlichungen">Veröffentlichungen</a></li>
+<li class="active" aria-current="page">Preisblätter</li>
+</ul>
+</div>
+</nav>
+<!-- indexer::continue -->
+</div>
+</div>
+</div>
+</div>
+<div id="container">
+<div class="inside">
+<div id="main" class="main-section">
+<div class="inside">
+<div id="article-1268" class="mod_article art-text v--default grid block">
+<div class="inside article_inside">
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h2>Preisblätter - Bereich: Strom</h2>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1267" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="ce_rsce_text text block">
+<div class="inside">
+<div class="c_headline">
+<h3>Ergänzende Bedingungen der Stadtwerke Bernburg GmbH</h3>
+</div>
+<div class="c_text">
+<p>Aktuelles Preisblatt der SWB zu den ergänzenden Bedingungen.</p>      </div>
+</div></div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=kFn4VWEZ5AtxHg36VYirQshjhbTbfxG3swTqrcGb9Dg&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;d=attachment&amp;f=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preisblatt der ergänzenden Bedingungen ab 01.09.2026</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=eF6EO2euEMplsUUc9UzmVTvwo6fBoM9d6_LUBsrb2sA&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;d=attachment&amp;f=2024-01-01_preisblatt_ergaenzende_bedingungen-2.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2F2024-01-01_preisblatt_ergaenzende_bedingungen-2.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preisblatt der ergänzenden Bedingungen ab 01.01.2024</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1269" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=ZbVda17-d1aG3KCsVMt2xcPnlInJlnviYpPzzaAuQ0o&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2749%3B%7D&amp;d=attachment&amp;f=20261015_vorl_netzentgelte_strom_2027_stadtwerke_bernburg_gmbh.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fnetzentgelte-strom%2F20261015_vorl_netzentgelte_strom_2027_stadtwerke_bernburg_gmbh.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">vorläufiges Preisblatt Strom 2027</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=n1w5ZinHKVo6dvugk3Int5O2XbD2pwOPpcDila0vLgA&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2749%3B%7D&amp;d=attachment&amp;f=20260101_preisblatt_strom_2026.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fnetzentgelte-strom%2F20260101_preisblatt_strom_2026.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preisblatt Strom 2026</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1270" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="ce_rsce_text text block">
+<div class="inside">
+<div class="c_headline">
+<h3>Individuelle Netzentgelte Strom</h3>
+</div>
+<div class="c_text">
+<p>Aktuelle und zurückliegende Preisblätter zu den individuellen Netzentgelten &#34;Strom&#34;.</p>      </div>
+</div></div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=b6E7-XVYfutlq2iWPZaRzPC-kyc6wfXje-koxaSKh60&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2752%3B%7D&amp;d=attachment&amp;f=2018_individuelle_netzentgelte_-19abs-2_stromnev_swb.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Findividuelle-netzentgelte-strom%2F2018_individuelle_netzentgelte_-19abs-2_stromnev_swb.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preisblatt individuelle Netzentgelte Strom</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1271" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="ce_rsce_text text block">
+<div class="inside">
+<div class="c_headline">
+<h3>Vermiedene Netzentgelte Strom</h3>
+</div>
+<div class="c_text">
+<p>Aktuelle und zurückliegende Referenzpreisblätter zur Ermittlung der vermiedenen Netzentgelte.</p>      </div>
+</div></div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=C_acAqHYDwFsLeRWJQo1_UoMnLeTY_NJSfsh5mvO4cc&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2755%3B%7D&amp;d=attachment&amp;f=preisblatt-vermiedene-netzentgelte-strom.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fvermiedene-netzentgelte-strom%2Fpreisblatt-vermiedene-netzentgelte-strom.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Referenzpreisblatt zur Ermittlung vNE nach § 18 Abs. 2 StromNEV</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1272" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="ce_rsce_text text block">
+<div class="inside">
+<div class="c_headline">
+<h3>Messstellenbetrieb für moderne Messeinrichtungen und intelligente Messsysteme</h3>
+</div>
+<div class="c_text">
+<p>Veröffentlicht werden aktuelle und zurückliegende Preisblätter für den Messstellenbetrieb bei modernen Messeinrichtungen und intelligente Messsysteme.<span id="page89R_mcid6" class="markedContent"></span></p>      </div>
+</div></div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div class="c_headline">
+<p
+>Gültig ab 01.01.2027</p>
+</div>
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=1syAUYEOglg-69h2JZfCjuS24pIKvWnFyAg2cdzmn0g&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A5679%3B%7D&amp;d=attachment&amp;f=20261026_preisblatt_mme_und_ims.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fmessstellenbetrieb-fuer-moderne-messeinrichtungen%2F20261026_preisblatt_mme_und_ims.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preise für den Messstellenbetrieb von mME und iMSys im Sinne MsbG 2027</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div class="c_headline">
+<p
+>Gültig ab 01.08.2025</p>
+</div>
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=r1-E0rsujo9fj70MoA4yWXqmTrazLW3PPSN0jULrt-k&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A5478%3B%7D&amp;d=attachment&amp;f=2025-08-01_preisblatt_mme_und_ims_nach_msbg_2025_2-2.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fmessstellenbetrieb-fuer-moderne-messeinrichtungen%2F2025-08-01_preisblatt_mme_und_ims_nach_msbg_2025_2-2.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preise für den Messstellenbetrieb von mME und iMSys im Sinne MsbG 2025</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="article-1273" class="mod_article art-downloads v--custom grid block">
+<div class="inside article_inside">
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h2>Bereich: Gas</h2>
+</div>
+</div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h3>Netzentgelte Gas</h3>
+</div>
+</div>
+<div class="content-headline ce_headline">    <div class="c_headline">
+<h4>Download</h4>
+</div>
+</div>
+<div class="box box-shadow color-text-base content-downloads">    <div class="inside">
+<div     class="grid-list icon_text icon_left box-list auto-height c_list gtr-1"
+>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=kz-oBcpSdp-2sQg_rB2OHbji8MrIQpV-ihiB718CTrs&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2763%3B%7D&amp;d=attachment&amp;f=20261015_vorl_netzentgelte_gas_2027_stadtwerke_bernburg_gmbh.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fnetzentgelte-gas%2Fjahr-2026%2F20261015_vorl_netzentgelte_gas_2027_stadtwerke_bernburg_gmbh.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">vorläufiges Preisblatt Gas 2027</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+<div class="download-element reverse item ext-pdf">
+<a   href="https://www.netz.stadtwerke-bernburg.de/preisblaetter.html?_hash=6EGit-ov5QH4jh-O42llNPRc-Ztccs_YrpM2aGWOGjo&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2763%3B%7D&amp;d=attachment&amp;f=preisblatt_gas_2026.pdf&amp;p=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fnetzentgelte-gas%2Fjahr-2026%2Fpreisblatt_gas_2026.pdf" type="application/pdf" class="inside"
+>  <div class="c_icon">
+<span class="icon color-primary size--tiny rounded filled" data-icon=""></span>
+</div>
+<div class="c_text">
+<div class="title">Preisblatt Gas 2026</div>
+<div class="size">
+<span class="extension">pdf</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside id="right" class="grid">
+<div class="inside">
+<div id="article-1232" class="mod_article sticky-nav grid block">
+<div class="inside article_inside">
+<!-- indexer::stop -->
+<nav class="mod_navigation nav-c box block" aria-label="Navigation rechte Spalte">
+<div class="inside p-m-2">
+<div class="c_headline">
+<p class="h5">Veröffentlichungen</p>
+</div>
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp;amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp;amp%3Bd=attachment&amp;amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp;amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation3" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li class="sibling"><a href="/ansprechpartner-netz.html" title="Ansprechpartner" class="sibling">Ansprechpartner</a></li>
+<li class="submenu sibling"><a href="/gesetzliche-grundlagen.html" title="Gesetzliche Grundlagen" class="submenu sibling" aria-haspopup="true">Gesetzliche Grundlagen</a>
+<ul class="level_2">
+<li><a href="/strom-2.html" title="Gesetzliche Grundlagen Strom">Strom</a></li>
+<li><a href="/gas-2.html" title="Gas">Gas</a></li>
+</ul>
+</li>
+<li class="sibling"><a href="/downloads.html" title="Downloads" class="sibling">Downloads</a></li>
+<li class="active"><strong class="active">Preisblätter</strong></li>
+<li class="sibling"><a href="/strom.html" title="Strom" class="sibling">Strom</a></li>
+<li class="sibling"><a href="/gas.html" title="Gas" class="sibling">Gas</a></li>
+<li class="sibling"><a href="/krisenvorsorge.html" title="Krisenvorsorge" class="sibling">Krisenvorsorge</a></li>
+<li class="sibling"><a href="/information-zum-datenschutz.html" title="Information zum Datenschutz" class="sibling">Information zum Datenschutz</a></li>
+</ul>
+<span id="skipNavigation3" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<div class="ce_rsce_team_list team-5 obj--top block">
+<div class="inside image_text img--flex pos-y pos-t img--inset box-list box-shadow color-text-base">
+<div class="item team_item block">
+<div class="inside">
+<div class="c_text">
+<strong class="title">Ansprechpartner</strong>
+<div class="name"><span>Herr Uhlenhaut</span></div>
+<div class="position"><span>Planauskunft Planung/Dokumentation</span></div>
+<div class="email">
+<a class="email" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#x68;&#108;&#x65;&#110;&#x68;&#97;&#x75;&#116;&#x40;&#115;&#x74;&#97;&#x64;&#116;&#x77;&#101;&#x72;&#107;&#x65;&#45;&#x62;&#101;&#x72;&#110;&#x62;&#117;&#x72;&#103;&#x2E;&#100;&#x65;" title="uhlenhaut@stadtwerke-bernburg.de">
+<span class="value">&#117;&#x68;&#108;&#x65;&#110;&#x68;&#97;&#x75;&#116;&#x40;&#115;&#x74;&#97;&#x64;&#116;&#x77;&#101;&#x72;&#107;&#x65;&#45;&#x62;&#101;&#x72;&#110;&#x62;&#117;&#x72;&#103;&#x2E;&#100;&#x65;</span>
+</a>
+</div>
+<div class="phone">
+<a class="phone" href="tel:03471 37 77 60" title="03471 37 77 60">
+<span class="value">03471 37 77 60</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<footer id="footer">
+<div class="inside">
+<div class="mod_article art-footer_sb justify-center art-px-2 art-py-2 bg-primary color-text-inv grid block">
+<div class="inside article_inside">
+<div class="mod_logo mb-2 mb-s-3 content-image ce_image">    <div class="inside">
+<figure class="image_container">
+<img src="/assets/images/j/stadtwerke-bernburg-gmbh-logo-invert-n7teq7z67z4gzmx.svg" alt width="200" height="72">
+</figure>
+</div>
+</div>
+<div class="text-center text-xs-left grid col-m-3 col-xs-6 content-element-group">    <div class="inside">
+<div class="ce_rsce_text text block">
+<div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p>Stadtwerke Bernburg GmbH</p>
+</div>
+<div class="c_text">
+<p>Bereich Netz Strom &amp; Gas<br>Mühlstraße 14<br>06406 Bernburg &#40;Saale&#41;</p>      </div>
+</div></div>
+<div class="content-element-group">    <div class="inside">
+<div class="contact-link phone content-hyperlink">    <div class="inside">
+<a href="tel:03471 37 77 31" class="c_link i-phone-sharp-light">03471 37 77 31</a>
+</div>
+</div>
+<div class="contact-link mail content-hyperlink">    <div class="inside">
+<a href="mailto:&#105;&#x6E;&#102;&#x6F;&#64;&#x73;&#116;&#x61;&#100;&#x74;&#119;&#x65;&#114;&#x6B;&#101;&#x2D;&#98;&#x65;&#114;&#x6E;&#98;&#x75;&#114;&#x67;&#46;&#x64;&#101;" class="c_link i-mail">E-Mail Kundencenter</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="art-bernburg_footer open text-center text-xs-left col-m-3 col-xs-6 content-list ce_list">    <div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p
+>Öffnungszeiten</p>
+</div>
+<ul     class="c_list gtr-1 li-none"
+>
+<li
+>        <span class="li-content">Montag: <span>08:00 - 15:00</span></span>
+</li>
+<li
+>        <span class="li-content">Dienstag: <span>08:00 - 17:00</span></span>
+</li>
+<li
+>        <span class="li-content">Mittwoch: <span>08:00 - 15:00</span></span>
+</li>
+<li
+>        <span class="li-content">Donnerstag: <span>08:00 - 15:30</span></span>
+</li>
+<li
+>        <span class="li-content">Freitag: <span>08:00 - 12:30</span></span>
+</li>
+</ul>
+</div>
+</div>
+<div class="text-center text-xs-left grid col-m-6 content-element-group">    <div class="inside">
+<div class="content-headline ce_headline">    <div class="c_headline hl-mb-auto-1">
+<p>Service</p>
+</div>
+</div>
+<div class="ce_rsce_image_list seal-list block">
+<div class="inside box-list color-text-base">
+<div class="c_list grid-list list-3 list-xs-5 list-s-6 list-m-4 list-l-5 gtr-1 auto-height">
+<div class="item block">
+<a href="//www.stadtwerke-bernburg.de/din-en-iso-50001.html" class="inside">
+<div class="c_image">
+<figure class="image_container">
+<img src="/files/img-footer-zertifikate/logo-gutcert-iso50001.png" width="267" height="189" alt="Logo Gutcert ISO50001" title="Logo Gutcert ISO50001">
+</figure>
+</div>
+</a>      </div>
+<div class="item block">
+<a href="//www.stadtwerke-bernburg.de/sicherheitsmanagement-tsm.html" class="inside">
+<div class="c_image">
+<figure class="image_container">
+<img src="/files/img-footer-zertifikate/logo-dvgw-tsm.png" width="602" height="344" alt="Logo DVGW TSM" title="Logo DVGW TSM">
+</figure>
+</div>
+</a>      </div>
+<div class="item block">
+<a href="//www.stadtwerke-bernburg.de/sicherheitsmanagement-tsm.html" class="inside">
+<div class="c_image">
+<figure class="image_container">
+<img src="/files/img-footer-zertifikate/vde_tsm_geprueft.jpg" width="600" height="238" alt="Logo VDE TSM" title="Logo VDE TSM">
+</figure>
+</div>
+</a>      </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="f-nav-wrapper grid col-12 content-element-group">    <div class="inside">
+<!-- indexer::stop -->
+<nav class="mod_customnav col-m-3 col-xs-6 block">
+<div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p>Stromanschlüsse</p>
+</div>
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation88" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li><a href="/hausanschluss.html" title="Hausanschluss">Hausanschluss</a></li>
+<li><a href="/hausanschluss-grosskunden-2.html" title="Hausanschluss &#40;Großkunden&#41;">Hausanschluss &#40;Großkunden&#41;</a></li>
+<li><a href="/erzeugungsanlagen-2.html" title="Erzeugungsanlagen">Erzeugungsanlagen</a></li>
+<li><a href="/e-ladesaeulen.html" title="E-Ladesäulen">E-Ladesäulen</a></li>
+<li><a href="/installateure-strom.html" title="Installateure &#40;Strom&#41;">Installateure &#40;Strom&#41;</a></li>
+</ul>
+<span id="skipNavigation88" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<!-- indexer::stop -->
+<nav class="mod_customnav col-m-3 col-xs-6 block">
+<div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p>Erdgasanschlüsse</p>
+</div>
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation89" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li><a href="/hausanschluss-gas.html" title="Hausanschluss">Hausanschluss</a></li>
+<li><a href="/hausanschluss-grosskunden.html" title="Hausanschluss &#40;Großkunden&#41;">Hausanschluss &#40;Großkunden&#41;</a></li>
+<li><a href="/erzeugungsanlagen.html" title="Erzeugungsanlagen">Erzeugungsanlagen</a></li>
+<li><a href="/biogas-einspeisung.html" title="Biogas-Einspeisung">Biogas-Einspeisung</a></li>
+<li><a href="/waermecontracting.html" title="Wärmecontracting">Wärmecontracting</a></li>
+<li><a href="/installateure-gas.html" title="Installateure &#40;Gas&#41;">Installateure &#40;Gas&#41;</a></li>
+</ul>
+<span id="skipNavigation89" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<!-- indexer::stop -->
+<nav class="mod_customnav col-m-3 col-xs-6 block">
+<div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p>Zählerwelt</p>
+</div>
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation90" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li><a href="/messeinrichtungen.html" title="Messeinrichtungen">Messeinrichtungen</a></li>
+<li><a href="/videos.html" title="Videos">Videos</a></li>
+<li><a href="/smart-meter.html" title="Smart Meter">Smart Meter</a></li>
+<li><a href="/fragen-und-antworten.html" title="Fragen und Antworten">Fragen und Antworten</a></li>
+<li><a href="/befundpruefung.html" title="Befundprüfung">Befundprüfung</a></li>
+</ul>
+<span id="skipNavigation90" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+<!-- indexer::stop -->
+<nav class="mod_customnav col-m-3 col-xs-6 block">
+<div class="inside">
+<div class="c_headline hl-mb-auto-1">
+<p>Kundenservice</p>
+</div>
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation86" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li><a href="/leichte-sprache.html" title="Leichte Sprache">Leichte Sprache</a></li>
+<li><a href="/barrierefreiheit.html" title="Barrierefreiheit">Barrierefreiheit</a></li>
+<li><a href="/barriere-melden.html" title="Barriere melden">Barriere melden</a></li>
+</ul>
+<span id="skipNavigation86" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+</div>
+</div>
+</div>
+</div>
+<div class="f-wrapper">
+<div class="inside">
+<div class="copyright">
+<span>© Stadtwerke Bernburg GmbH 2026</span>
+</div><!-- indexer::stop -->
+<nav class="mod_customnav block">
+<div class="inside">
+<a href="/preisblaetter.html?_hash=HMbPf9PG1NRMfAhFmhWkucoLQ3aOJMODMCxXYO0eygw&amp%3Bctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A2745%3B%7D&amp%3Bd=attachment&amp%3Bf=preisblatt_ergaenzende-bedingungen-2026-07-13.pdf&amp%3Bp=elt-gas-netz%2Fdownloads%2Fveroeffentlichungen%2Fpreisblaetter%2Fergaenzende-bedingungen%2Fpreisblatt_ergaenzende-bedingungen-2026-07-13.pdf#skipNavigation32" class="invisible">Navigation überspringen</a>
+<ul class="level_1">
+<li class="ccb-trigger ccb-prefill"><a href="/datenschutzerklaerung" title="Privatsphäre-Einstellungen" class="ccb-trigger ccb-prefill">Privatsphäre-Einstellungen</a></li>
+<li><a href="//www.stadtwerke-bernburg.de/impressum.html" title="Impressum">Impressum</a></li>
+<li><a href="//www.stadtwerke-bernburg.de/datenschutz.html" title="Datenschutz">Datenschutz</a></li>
+</ul>
+<span id="skipNavigation32" class="invisible"></span>
+</div>
+</nav>
+<!-- indexer::continue -->
+</div>
+</div>    <div id="scrollTop" class="i-navigate_forward"><svg width="44" height="44"><circle cx="22" cy="22" r="21" stroke="var(--clr-primary)" stroke-width="2" fill="none" transform="rotate(-90 22 22)" stroke-dasharray="140"></svg></div>
+</div>
+</footer>
+</div>
+<script src="bundles/contaofieldsetduplication/jquery.fieldset.duplication.min.js?v=c3917b07"></script><script>(function($){$('fieldset.allow-duplication.zaehlerstaende').fieldsetDuplication({buttonAdd:'Möchten Sie einen weiteren Zähler angeben?'});$('fieldset.allow-duplication.abschlaege').fieldsetDuplication({buttonAdd:'Möchten Sie einen weiteren Abschlag angeben?'});$('fieldset.allow-duplication.abschlaege').not('.abschlaege').not('.zaehlerstaende').fieldsetDuplication()})(jQuery);window.addEventListener('load',()=>{const pLabelForms=document.querySelectorAll('form.pl-init');pLabelForms.forEach(form=>{form.addEventListener('DOMNodeInserted',(e)=>{delete e.currentTarget.phl
+new PlaceholderLabel({})})})})</script>
+<script>window.addEventListener('load',()=>{useCtmEffects()})</script>
+<script>window.addEventListener('load',()=>{new Accordion()})</script>
+<script>window.addEventListener('load',()=>{new Tabs()})</script>
+<script>var extend=function(){var extended={};var deep=!1;var i=0;var length=arguments.length;if(Object.prototype.toString.call(arguments[0])==='[object Boolean]'){deep=arguments[0];i++}
+var merge=function(obj){for(var prop in obj){if(Object.prototype.hasOwnProperty.call(obj,prop)){if(deep&&Object.prototype.toString.call(obj[prop])==='[object Object]'){extended[prop]=extend(!0,extended[prop],obj[prop])}else{extended[prop]=obj[prop]}}}};for(;i<length;i++){var obj=arguments[i];merge(obj)}
+return extended};var parseJSON=function(strJson){try{var o=JSON.parse(strJson);if(o&&typeof o==="object"){return o}}catch(e){}
+return!1};(function(){const tnsBreakpoints={'slider':0,'sliderXs':600,'sliderS':768,'sliderM':1024,'sliderL':1264,'sliderXl':1920};let defaults={controls:!1,nav:!1,mouseDrag:!0,swipeAngle:30,controlsPosition:'bottom',navPosition:'bottom',autoplayPosition:'bottom',gutter:0,preventScrollOnTouch:'auto',controlsText:['<p class="prev invisible">Vorheriger Slide</p>','<p class="next invisible">Nächster Slide</p>'],navText:['Wechseln zu Slide ',' (aktiver Slide)'],autoplayText:['<span class="start">Start</span>','<span class="stop">Stop</span>']};let tnsSliders=document.querySelectorAll('.init-slider'),i=0;for(;i<tnsSliders.length;i++){let tnsSlider=tnsSliders[i].querySelector('.c_list, .c_slider');if(!tnsSlider){continue}
+let settings={container:tnsSlider};let config=tnsSlider.dataset;if(config.hasOwnProperty('sliderConfig')){let jsonConfig=parseJSON(config.sliderConfig);if(jsonConfig&&jsonConfig.hasOwnProperty('preset')){let preset=parseJSON(jsonConfig.preset);if(preset){defaults=extend(!0,defaults,preset)}}
+delete config.sliderConfig}
+for(let k in config){if(tnsBreakpoints.hasOwnProperty(k)){let data=JSON.parse(config[k]);if(tnsBreakpoints[k]!==0){if(data.hasOwnProperty('disable')&&data.disable){data={disable:!0}}
+let objResponsive={'responsive':{}};objResponsive.responsive[tnsBreakpoints[k]]=data;settings=extend(!0,settings,objResponsive)}else{settings=extend(!0,settings,data)}}}
+tnsSlider.tinySlider=tns(extend(!0,defaults,settings))}})()</script>
+<script src="/files/theme/london/assets/layout/layout.js?v=a4cb08ea"></script><script type="application/ld+json">
+{
+    "@context": "https:\/\/schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage"
+        },
+        {
+            "@id": "#\/schema\/image\/87abcb0e-4b00-11f1-b8bf-d95962fdadc8",
+            "@type": "ImageObject",
+            "contentUrl": "\/assets\/images\/8\/stadtwerke-bernburg-gmbh-logo-vqppb5xpdrehd42.svg",
+            "name": "Stadtwerke Bernburg GmbH"
+        },
+        {
+            "@id": "#\/schema\/image\/1694b3f8-4b01-11f1-a965-9b1a0c025688",
+            "@type": "ImageObject",
+            "contentUrl": "\/assets\/images\/j\/stadtwerke-bernburg-gmbh-logo-invert-n7teq7z67z4gzmx.svg"
+        },
+        {
+            "@id": "#\/schema\/image\/56180014-5833-11f0-956f-4d15a2358231",
+            "@type": "ImageObject",
+            "contentUrl": "\/files\/img-footer-zertifikate\/logo-gutcert-iso50001.png",
+            "name": "Logo Gutcert ISO50001"
+        },
+        {
+            "@id": "#\/schema\/image\/5611f9ee-5833-11f0-8f6d-4d15a2358231",
+            "@type": "ImageObject",
+            "contentUrl": "\/files\/img-footer-zertifikate\/logo-dvgw-tsm.png",
+            "name": "Logo DVGW TSM"
+        },
+        {
+            "@id": "#\/schema\/image\/561eaf5e-5833-11f0-ad1e-4d15a2358231",
+            "@type": "ImageObject",
+            "contentUrl": "\/files\/img-footer-zertifikate\/vde_tsm_geprueft.jpg",
+            "name": "Logo VDE TSM"
+        },
+        {
+            "@id": "#\/schema\/image\/79cdba22-caad-11ef-84e7-5a57455a7528",
+            "@type": "ImageObject",
+            "contentUrl": "\/assets\/images\/1\/preisblaetter-t9qc87x1pr2ynr5.jpg",
+            "name": "Preisblätter"
+        },
+        {
+            "@id": "#\/schema\/file\/c692db0e-7e82-11f1-abb7-e5812fbb35cd",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/ergaenzende-bedingungen\/preisblatt_ergaenzende-bedingungen-2026-07-13.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preisblatt der ergänzenden Bedingungen ab 01.09.2026"
+        },
+        {
+            "@id": "#\/schema\/file\/1e598b7d-cb72-11ef-84e7-5a57455a7528",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/ergaenzende-bedingungen\/2024-01-01_preisblatt_ergaenzende_bedingungen-2.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preisblatt der ergänzenden Bedingungen ab 01.01.2024"
+        },
+        {
+            "@id": "#\/schema\/file\/08588a24-c86c-11f1-9c55-f36c32afee78",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/netzentgelte-strom\/20261015_vorl_netzentgelte_strom_2027_stadtwerke_bernburg_gmbh.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "vorläufiges Preisblatt Strom 2027"
+        },
+        {
+            "@id": "#\/schema\/file\/58bd728a-dbf1-11f0-86ac-41e14c777049",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/netzentgelte-strom\/20260101_preisblatt_strom_2026.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preisblatt Strom 2026"
+        },
+        {
+            "@id": "#\/schema\/file\/3839b579-cb73-11ef-84e7-5a57455a7528",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/individuelle-netzentgelte-strom\/2018_individuelle_netzentgelte_-19abs-2_stromnev_swb.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preisblatt individuelle Netzentgelte Strom"
+        },
+        {
+            "@id": "#\/schema\/file\/1878445e-cb74-11ef-84e7-5a57455a7528",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/vermiedene-netzentgelte-strom\/preisblatt-vermiedene-netzentgelte-strom.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Referenzpreisblatt zur Ermittlung vNE nach § 18 Abs. 2 StromNEV"
+        },
+        {
+            "@id": "#\/schema\/file\/f1387872-d121-11f1-a13e-27c322893eb5",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/messstellenbetrieb-fuer-moderne-messeinrichtungen\/20261026_preisblatt_mme_und_ims.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preise für den Messstellenbetrieb von mME und iMSys im Sinne MsbG 2027"
+        },
+        {
+            "@id": "#\/schema\/file\/76e9dfda-8d79-11f0-a1e5-8d4cbfcf8b92",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/messstellenbetrieb-fuer-moderne-messeinrichtungen\/2025-08-01_preisblatt_mme_und_ims_nach_msbg_2025_2-2.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preise für den Messstellenbetrieb von mME und iMSys im Sinne MsbG 2025"
+        },
+        {
+            "@id": "#\/schema\/file\/8c248814-c923-11f1-b4d2-718964990b58",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/netzentgelte-gas\/jahr-2026\/20261015_vorl_netzentgelte_gas_2027_stadtwerke_bernburg_gmbh.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "vorläufiges Preisblatt Gas 2027"
+        },
+        {
+            "@id": "#\/schema\/file\/5653312e-0810-11f1-8a0c-d5b7dfde966f",
+            "@type": "DigitalDocument",
+            "contentUrl": "elt-gas-netz\/downloads\/veroeffentlichungen\/preisblaetter\/netzentgelte-gas\/jahr-2026\/preisblatt_gas_2026.pdf",
+            "encodingFormat": "application\/pdf",
+            "name": "Preisblatt Gas 2026"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "item": {
+                        "@id": "\/",
+                        "name": "ELT-\/GAS-Netz"
+                    },
+                    "position": 1
+                },
+                {
+                    "@type": "ListItem",
+                    "item": {
+                        "@id": "\/veroeffentlichungen.html",
+                        "name": "Veröffentlichungen"
+                    },
+                    "position": 2
+                },
+                {
+                    "@type": "ListItem",
+                    "item": {
+                        "@id": "\/preisblaetter.html",
+                        "name": "Preisblätter"
+                    },
+                    "position": 3
+                }
+            ]
+        }
+    ]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https:\/\/schema.contao.org",
+    "@graph": [
+        {
+            "@type": "Page",
+            "fePreview": false,
+            "groups": [],
+            "memberGroups": [],
+            "noSearch": false,
+            "pageId": 268,
+            "protected": false,
+            "searchIndexer": "",
+            "title": "Preisblätter"
+        }
+    ]
+}
+</script>
+<!-- indexer::stop -->
+<div class="contao-cookiebar cc-wrap cc-bottom" role="complementary" aria-describedby="cookiebar-desc" data-nosnippet>
+    <div class="cc-inner" aria-live="assertive" role="alert">
+        <div id="cookiebar-desc" class="cc-head">
+                            <p><strong>Datenschutzeinstellungen </strong></p>
+<p>Wir nutzen Cookies auf unserer Webseite. Einige von ihnen sind essenziell, während andere uns helfen, diese Webseite und Ihre Erfahrung zu verbessern.</p>
+                    </div>
+
+                    <div class="cc-groups">
+                                    <div class="cc-group">
+                            <input type="checkbox" name="group[]" id="g1" value="1" data-toggle-cookies disabled checked>
+                        <label for="g1" class="group">Essenziell</label>
+
+                            <button class="cc-detail-btn cc-focus" data-toggle-group aria-expanded="false" aria-controls="cg1">
+                    <span>Details einblenden<span class="cc-invisible"> für Essenziell</span></span>
+                    <span>Details ausblenden<span class="cc-invisible"> für Essenziell</span></span>
+                </button>
+            
+            <div id="cg1" class="cc-cookies toggle-group">
+                    
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c2" value="2"  disabled checked>
+            <label for="c2" class="cookie">Contao HTTPS CSRF Token</label>
+            <p>Schützt vor Cross-Site-Request-Forgery Angriffen.</p>
+            <div class="cc-cookie-info"><div><span>Speicherdauer:</span> Dieses Cookie bleibt nur für die aktuelle Browsersitzung bestehen.</div></div>                    </div>
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c3" value="3"  disabled checked>
+            <label for="c3" class="cookie">PHP SESSION ID</label>
+            <p>Speichert die aktuelle PHP-Session.</p>
+            <div class="cc-cookie-info"><div><span>Speicherdauer:</span> Dieses Cookie bleibt nur für die aktuelle Browsersitzung bestehen.</div></div>                    </div>
+    
+            </div>
+        </div>
+                    <div class="cc-group">
+                            <input type="checkbox" name="group[]" id="g2" value="2" data-toggle-cookies>
+                        <label for="g2" class="group">Komfort</label>
+
+                            <button class="cc-detail-btn cc-focus" data-toggle-group aria-expanded="false" aria-controls="cg2">
+                    <span>Details einblenden<span class="cc-invisible"> für Komfort</span></span>
+                    <span>Details ausblenden<span class="cc-invisible"> für Komfort</span></span>
+                </button>
+            
+            <div id="cg2" class="cc-cookies toggle-group">
+                    
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c4" value="4" >
+            <label for="c4" class="cookie">Google Maps</label>
+            
+            <div class="cc-cookie-info"><div><span>Anbieter:</span> Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland</div><div><span>Speicherdauer:</span> Speicherdauer des Cookies erfahren https://policies.google.com/privacy.</div></div>                    </div>
+    
+            </div>
+        </div>
+                    <div class="cc-group">
+                            <input type="checkbox" name="group[]" id="g3" value="3" data-toggle-cookies>
+                        <label for="g3" class="group">Medien</label>
+
+                            <button class="cc-detail-btn cc-focus" data-toggle-group aria-expanded="false" aria-controls="cg3">
+                    <span>Details einblenden<span class="cc-invisible"> für Medien</span></span>
+                    <span>Details ausblenden<span class="cc-invisible"> für Medien</span></span>
+                </button>
+            
+            <div id="cg3" class="cc-cookies toggle-group">
+                    
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c5" value="5" >
+            <label for="c5" class="cookie">YouTube</label>
+            
+            <div class="cc-cookie-info"><div><span>Anbieter:</span> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland</div></div>                    </div>
+    
+            </div>
+        </div>
+                    <div class="cc-group">
+                            <input type="checkbox" name="group[]" id="g4" value="4" data-toggle-cookies>
+                        <label for="g4" class="group">Analyse</label>
+
+                            <button class="cc-detail-btn cc-focus" data-toggle-group aria-expanded="false" aria-controls="cg4">
+                    <span>Details einblenden<span class="cc-invisible"> für Analyse</span></span>
+                    <span>Details ausblenden<span class="cc-invisible"> für Analyse</span></span>
+                </button>
+            
+            <div id="cg4" class="cc-cookies toggle-group">
+                    
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c7" value="7" >
+            <label for="c7" class="cookie">Google Analytics</label>
+            
+            <div class="cc-cookie-info"><div><span>Anbieter:</span> Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland</div><div><span>Speicherdauer:</span> You can find out more about the storage duration of the cookie here https://policies.google.com/privacy.</div></div>                    </div>
+                    <div class="cc-cookie">
+            <input type="checkbox" name="cookie[]" id="c6" value="6" >
+            <label for="c6" class="cookie">Matomo</label>
+            <p><a href="https://matomo.org/docs/privacy/" target="_blank" rel="noopener">https://matomo.org/docs/privacy/</a></p>
+<p>Cookie von Matomo für Website-Analysen. Erzeugt statistische Daten darüber, wie der Besucher die Website nutzt.</p>
+            <div class="cc-cookie-info"><div><span>Anbieter:</span> https://matomo.org</div><div><span>Speicherdauer:</span> 14 Tage</div></div>                    </div>
+    
+            </div>
+        </div>
+    
+            </div>
+        
+        <div class="cc-footer highlight">
+                                <button class="cc-btn cc-focus save" data-save>Auswahl speichern</button>
+                <button class="cc-btn cc-focus success" data-accept-all>Alle akzeptieren</button>
+            
+    <button class="cc-btn cc-focus deny" data-deny-all>Alle ablehnen</button>
+                    </div>
+
+        <div class="cc-info">
+                            
+                                    <a class="cc-focus" href="https://www.netz.stadtwerke-bernburg.de/impressum">Impressum</a>
+                                    <a class="cc-focus" href="https://www.netz.stadtwerke-bernburg.de/datenschutzerklaerung">Datenschutzerklärung</a>
+                                    </div>
+    </div>
+</div>
+<!-- indexer::continue -->
+
+    <script>var cookiebar = new ContaoCookiebar({configId:1,pageId:105,hideOnInit:0,blocking:0,focusTrap:1,version:1,lifetime:63072000,consentLog:0,token:'ccb_contao_token',doNotTrack:0,currentPageId:268,excludedPageIds:null,cookies:{"4":{"id":4,"type":"iframe","checked":false,"token":null,"resources":[],"priority":0,"scripts":[],"iframeType":"googlemaps"},"5":{"id":5,"type":"iframe","checked":false,"token":null,"resources":[],"priority":0,"scripts":[],"iframeType":"youtube"},"7":{"id":7,"type":"googleAnalytics","checked":false,"token":["_ga","_gat_gtag_UA_126026089_1","_gid"],"resources":[{"src":"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-126026089-1","flags":["async"],"mode":1}],"priority":1,"scripts":[{"script":"window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)} gtag('js',new Date());gtag('config','UA-126026089-1')","position":3,"mode":1},{"script":"try{ let keys = []; Object.keys(window.google_tag_manager).forEach((key) => { if (key.indexOf('G-') === 0 || key.indexOf('GTM-') === 0){ window['ga-disable-' + key] = true; } }); }catch (e) {}","position":3,"mode":2}]},"6":{"id":6,"type":"matomo","checked":false,"token":["MATOMO_SESSID","matomo_lang"],"resources":[],"priority":0,"scripts":[{"script":"var _paq = window._paq = window._paq || []; _paq.push(['disableCookies']);\n_paq.push(['trackPageView']);\n_paq.push(['enableLinkTracking']); (function() { var u='https:\/\/analyse.stadtwerke-bernburg.de\/'; _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', 2]); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text\/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);})();","position":3,"mode":1}]}},configs:[],disableTracking:0,texts:{acceptAndDisplay:'tl_cookiebar.acceptAndDisplayLabel'}});</script>
+</body>
+</html>
