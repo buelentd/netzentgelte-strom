@@ -9,8 +9,21 @@ zeilen = list(csv.reader(open("ergebnis/hlzf_ergebnis.csv", encoding="utf-8-sig"
 H, rows = zeilen[0], zeilen[1:]
 ix = {h: i for i, h in enumerate(H)}
 geaendert = []
+# Am Dokumenttext von Hand geprüft (05.11.2026): der neue Leser liest richtig, die gespeicherten Werte waren unvollständig oder vermischt
+UEBERNEHMEN = {"91", "137", "676"}
 for r in rows:
     nr = r[0]
+    if nr in UEBERNEHMEN:
+        t = open(f"ergebnis/hlzf_texte/{nr}.txt", encoding="utf-8").read()
+        e = hlzf_lesen(t, r[ix["hlzf_quelle_url"]])
+        if e.gelesen:
+            for eb in ("NS", "MSNS"):
+                for j in JAHRESZEITEN:
+                    v = e.fenster.get(eb, {}).get(j)
+                    r[ix[f"hlzf_{eb.lower()}_{j}"]] = ", ".join(v) if v else ("keins" if eb in e.fenster else "")
+            r[ix["hlzf_status"]] = "gelesen"
+            r[ix["hlzf_pruefung"]] = "neu gelesen und am Dokument geprüft (05.11.2026)"
+        continue
     if r[ix["hlzf_status"]] != "gelesen":
         continue
     try:

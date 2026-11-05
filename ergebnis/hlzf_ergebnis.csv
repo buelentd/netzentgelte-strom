@@ -55,7 +55,7 @@
 87;gelesen;keins;keins;16:45-18:00;12:00-13:30, 16:15-19:15;keins;keins;16:45-18:00;12:00-12:30, 16:15-19:15;30;100;https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-fuer-2026-nach-19-Abs.-2-Satz-1-StromNEV.pdf;2026;
 89;gelesen, Prüfung offen;keins;13:45-14:00;keins;keins;keins;13:45-14:30;keins;17:15-19:15;30;;https://www.egf-frankenberg.de/de/Kopfnavigation/Netze/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-EGF-2026.pdf;2026;Leser lehnt nach Prüfung ab: Zeiten im Dokument nicht vollständig gelesen
 90;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;https://www.egt-energie.de/fileadmin/egt/EGT_Energie/Veroeffentlichungspflichten/Strom/2026_EGT_Hochlastzeitfenster.pdf;;
-91;gelesen, Prüfung offen;keins;keins;keins;11:30-12:30;keins;keins;keins;17:00-19:30;;;https://www.ehinger-energie.de/wp-content/uploads/2026/06/Hochlastzeitfenster-fuer-atypische-Netznutzung-2026.pdf;2026;Leser liest jetzt anders als gespeichert
+91;gelesen;keins;keins;keins;11:30-12:30, 17:00-19:30;keins;keins;keins;17:00-19:30;;;https://www.ehinger-energie.de/wp-content/uploads/2026/06/Hochlastzeitfenster-fuer-atypische-Netznutzung-2026.pdf;2026;neu gelesen und am Dokument geprüft (05.11.2026)
 92;gelesen, Prüfung offen;keins;keins;keins;17:30-19:15;keins;keins;keins;17:30-19:15;;;https://www.ewb-duderstadt.de/de/Strom/Netze/Stromnetz/Netzzugang-Entgelte/HLZF-2026-Eichsfelder-Energie-und-Wasserversorgungsgesellschaft-mbH.pdf;2026;Leser lehnt nach Prüfung ab: Zeiten im Dokument nicht vollständig gelesen
 97;gelesen;keins;keins;keins;17:00-20:00;keins;keins;keins;17:00-20:00;;;https://www.eg-rettenberg.de/download/egr_hochlastzeitfenster_2026.pdf;2026;
 100;gelesen;keins;keins;06:30-08:30, 18:00-19:00;18:00-19:00;;;;;;;eingang: SNB935303204162_0100_hlzf.pdf;2026;
@@ -85,7 +85,7 @@
 134;gelesen;13:30-15:30;11:45-13:45;09:45-10:45, 11:45-12:45;keins;keins;keins;17:15-19:30;08:15-09:00;;;https://netze.ews-schoenau.de/fileadmin/ews-netze/Hochlastzeitfenster_2026_EWS.pdf;2026;
 135;fehlt: kein Text (Scan?);;;;;;;;;;;SNB931431136771_0135_hlzf.pdf;;
 136;gelesen;keins;keins;keins;09:00-13:00;keins;keins;09:45-13:00;07:45-13:15, 15:15-19:30;;;https://we-are-energy.de/wp-content/uploads/2025/10/Hochlastzeitfenster_2026_EMB.pdf;2026;
-137;gelesen, Prüfung offen;keins;keins;18:15-18:30;11:15-12:45;keins;keins;17:45-18:45;11:15-12:30;30;;eingang: SNB913563830420_0137_hlzf.pdf;2026;Leser liest jetzt anders als gespeichert
+137;gelesen;keins;keins;18:15-18:30;11:15-12:45, 17:30-19:30;keins;keins;17:45-18:45;11:15-12:30, 17:15-19:30;30;;eingang: SNB913563830420_0137_hlzf.pdf;2026;neu gelesen und am Dokument geprüft (05.11.2026)
 138;fehlt: keine Hochlastzeitfenster im Dokument;;;;;;;;;;;SNB905238986457_0138_hlzf.xls;;
 141;gelesen;keins;keins;09:00-12:00;11:00-14:00;keins;keins;keins;15:30-19:15;;;https://www.ewf.de/fileadmin/user_upload/netz/strom/hochlastzeitfenster/Hochlastzeitfenster_2026.pdf;2026;
 143;gelesen;;;;;keins;keins;17:15-18:15;11:30-12:45, 16:30-19:15;;;https://www.enwag.de/de/Netze/Veroeffentlichungen-Auskuenfte/Stromnetzdaten1/Hochlastzeitfenster-2026-Datengrundlage-2024-2025.pdf;2026;
@@ -401,7 +401,7 @@
 673;fehlt: keine Hochlastzeitfenster im Dokument;;;;;;;;;;;https://www.stadtwerke-straubing-netz.de/fileserver/ar040010/filesdb/Hochlastzeitfenster_VER%C3%B6ffentlichung_Par19NEV_20261.pdf;;
 674;gelesen;keins;keins;keins;16:30-19:00;keins;keins;keins;16:30-19:00;30;100;eingang: SNB975846871759_0674_hlzf.pdf;2026;
 675;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;https://netze.sw-suedholstein.de/files/downloads/strom/netzzugang_entgelte/hochlastzeitfenster/HLZF%202027.pdf;;
-676;gelesen, Jahr 2020;keins;keins;11:15-12:30;keins;;;;;;;https://www.swsz-netz.de/images/swsz-netz/downloads/stromnetz/netznutzung/hochlastzeitfenster/Hochlastzeitfenster%202026.pdf;2020;
+676;gelesen;keins;keins;keins;10:15-12:30, 17:30-18:15;keins;keins;11:15-12:30;10:15-12:30, 17:15-18:30;;;https://www.swsz-netz.de/images/swsz-netz/downloads/stromnetz/netznutzung/hochlastzeitfenster/Hochlastzeitfenster%202026.pdf;2020;neu gelesen und am Dokument geprüft (05.11.2026)
 677;gelesen;keins;keins;11:15-13:15;11:00-14:00;11:15-11:45, 12:15-12:30;07:30-13:15;keins;10:00-10:15;;;https://www.stadtwerke-sulzbach.de/media/nets/downloads/Hochlastzeitfenster_SW_Sulzbach_2026.pdf;2026;
 682;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB976987786759_0682_hlzf.pdf;;
 684;gelesen;keins;keins;keins;11:30-12:30, 18:00-20:00;keins;11:00-14:00;07:30-09:15, 12:15-13:30;06:30-08:30;;;https://stadtwerke-trostberg.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026V1.pdf;2026;

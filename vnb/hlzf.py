@@ -449,7 +449,7 @@ def _form_g(zeilen):
 
 
 _IGN = [0]          # Fenster anderer Ebenen (HS, HS/MS, MS), die die neuen Formen sehen, aber nicht ausgeben
-NEUE_FORMEN = {"Zeile je Ebene und Jahreszeit", "Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)", "Tabelle nach Positionen"}
+NEUE_FORMEN = {"Block je Ebene (Netzebene / Jahreszeit / Zeiten)", "Zeile je Ebene und Jahreszeit", "Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)", "Tabelle nach Positionen"}
 ZEIT_DOPPELPUNKT = re.compile(r"(?<![\d:.])[0-2]?\d:[0-5]\d(?::\d\d)?(?![\d:])(?!\s*h\b)")
 ZEIT_PUNKT = re.compile(r"(?<![\d:.])[0-2]?\d\.([0-5]\d)(?![\d:.])(?!\s*h\b)")
 ZEITLIKE = re.compile(r"(?<![\d:.])[0-2]?\d[:.][0-5]\d(?::\d\d)?(?![\d:])(?![.]?\d)(?!\.)(?!\s*h\b)")
@@ -648,6 +648,82 @@ def _form_t(zeilen):
     return {e: out[e] for e in ("NS", "MSNS") if e in out}
 
 
+KOPF_BLOCK = re.compile(r"netzebene.*jahreszeit|jahreszeit.*(?:zeit|uhr)|spannungsebene.*jahreszeit", re.I)
+STRICH = re.compile(r"^(?:[-–—]+|kein(?:e)?(?:\s+(?:hlzf|zeitfenster|hochlastzeitfenster))?|entf[äa]llt)$", re.I)
+
+
+def _form_block(zeilen):
+    """Je Ebene ein Block mit Kopf "Netzebene / Jahreszeit / Zeiten": Ebenenname (auch mehrzeilig oder mittig), vier Jahreszeiten,
+    je Jahreszeit ein oder mehrere Fenster untereinander. Fenster zwischen zwei Jahreszeitnamen gehören zur oberen, wenn die untere
+    Jahreszeit in ihrer eigenen Zeile schon einen Eintrag hat; sonst ist die Zuordnung unsicher und der Fall wird nicht gelesen."""
+    koepfe = [i for i, z in enumerate(zeilen) if KOPF_BLOCK.search(z) and len(z.split()) <= 12]
+    if not koepfe:
+        return {}
+    out = {}
+    for n, i in enumerate(koepfe):
+        ende = koepfe[n + 1] if n + 1 < len(koepfe) else min(i + 30, len(zeilen))
+        ebene_teile, saisons, zellen = [], [], []
+        for k in range(i + 1, ende):
+            z = zeilen[k]
+            if not z.strip():
+                continue
+            teile = [(m.start(), m.group()) for m in re.finditer(r"\S+(?:[ ]\S+)*", z)]
+            nur_text = [t for _, t in teile]
+            if len(z.split()) >= 9 and not ZEIT.search(z):
+                ende = k
+                break                                          # Fließtext: Block zu Ende
+            for pos, t in teile:
+                if JZ_WORT.fullmatch(t.strip()):
+                    saisons.append((k, _jz(t.strip())))
+                elif ZEIT.search(t):
+                    zellen.append((k, [f"{int(m.group(1)):02d}:{m.group(2)}-{int(m.group(3)):02d}:{m.group(4)}" for m in ZEIT.finditer(t)]))
+                elif STRICH.match(t.strip()):
+                    zellen.append((k, []))
+                elif re.search(r"[A-Za-zÄÖÜäöüß]{2,}", t) and not re.search(r"hochlast|stand|seite|definition", t, re.I):
+                    ebene_teile.append(t.strip())
+        if not saisons:
+            continue
+        if sorted(j for _, j in saisons) != sorted(JAHRESZEITEN):
+            return {}                                          # nicht alle vier Jahreszeiten im Block: unsicher
+        eb = _ebene_wort(" ".join(ebene_teile))
+        ordnung = sorted(saisons)
+        gruppen = {j: [] for _, j in ordnung}
+        for q, w in zellen:
+            idx = None
+            for a, (lz, j) in enumerate(ordnung):
+                if q == lz:
+                    idx = a
+                    break
+            if idx is None:
+                oben = max((a for a, (lz, _) in enumerate(ordnung) if lz < q), default=None)
+                if oben is None:
+                    idx = 0                                    # vor der ersten Jahreszeit: gehört zu ihr
+                elif oben + 1 >= len(ordnung):
+                    idx = oben                                 # nach der letzten Jahreszeit
+                else:
+                    o_lz, u_lz = ordnung[oben][0], ordnung[oben + 1][0]
+                    o_eigen = any(qq == o_lz for qq, _ in zellen)
+                    u_eigen = any(qq == u_lz for qq, _ in zellen)
+                    if not o_eigen and u_eigen:
+                        idx = oben                             # obere Jahreszeit steht allein in ihrer Zeile (mittig): ihre Fenster oben und unten
+                    elif o_eigen and not u_eigen:
+                        idx = oben + 1
+                    elif q - o_lz < u_lz - q:
+                        idx = oben                             # beide haben einen eigenen Eintrag: die näher stehende gilt
+                    elif q - o_lz > u_lz - q:
+                        idx = oben + 1
+                    else:
+                        return {}                              # gleich weit entfernt: unsicher
+            gruppen[ordnung[idx][1]].extend(w)
+        if eb is None:
+            continue
+        if eb in ("NS", "MSNS"):
+            out[eb] = {j: gruppen[j] for j in JAHRESZEITEN}
+        else:
+            _IGN[0] += sum(len(v) for v in gruppen.values())
+    return out
+
+
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     erg = Hlzf(jahr=jahr_lesen(text, url))
     _IGN[0] = 0
@@ -659,7 +735,8 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     if len(gebiete) > 1:
         erg.grund = "mehrere Netzgebiete im Dokument: " + ", ".join(sorted(gebiete))[:150]
         return erg
-    for name, f in (("Jahreszeiten als Spalten", lambda: _form_a(zeilen)),
+    for name, f in (("Block je Ebene (Netzebene / Jahreszeit / Zeiten)", lambda: _form_block(zeilen)),
+                    ("Jahreszeiten als Spalten", lambda: _form_a(zeilen)),
                     ("Ebenen als Spalten", lambda: _form_b(zeilen, erg)),
                     ("Zeile je Ebene und Jahreszeit", lambda: _form_d(zeilen)),
                     ("ganzjährig", lambda: _form_c(zeilen)),
