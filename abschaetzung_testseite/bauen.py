@@ -47,9 +47,17 @@ for d in db.alle():
                          "m": h["mindestleistung"], "q": h["quelle_url"]}
 # Börsenpreise (Viertelstunden → Stundenmittel, ct/kWh), Solarertrag je Bundesland, Lastprofilformen (Stunden, Anteil am Tag)
 DATEN = HIER.parent / "daten"
-quelle = next(DATEN.glob("boerse_entsoe_*.json"), None) or next(DATEN.glob("boerse_20*.json"))      # ENTSO-E, sonst Energy-Charts
+aktuell = DATEN / "boerse_aktuell.json"                                      # vom täglichen Lauf (Energy-Charts, bis morgen)
+if aktuell.exists():
+    quelle = ec_datei = aktuell
+else:
+    quelle = next(DATEN.glob("boerse_entsoe_*.json"), None) or next(DATEN.glob("boerse_20*.json"))      # ENTSO-E, sonst Energy-Charts
+    ec_datei = next(DATEN.glob("boerse_20*.json"))
 b = json.load(open(quelle))
-ec = json.load(open(next(DATEN.glob("boerse_20*.json"))))                      # Energy-Charts füllt Lücken der Hauptquelle
+ec = json.load(open(ec_datei))                                                 # Energy-Charts füllt Lücken der Hauptquelle
+import datetime as _dt
+_ende = _dt.datetime.fromtimestamp(b["start"] + len(b["ct_kwh"]) * b["schritt_s"] - 1, _dt.timezone.utc).astimezone(_dt.timezone(_dt.timedelta(hours=1)))
+stand_boerse = _ende.strftime("%d.%m.%Y")
 q = []
 for i, x in enumerate(b["ct_kwh"]):
     if x is None:
@@ -72,7 +80,7 @@ for col in ("g0", "g1", "g2", "g3", "g4", "g5", "g6", "h0"):
         summe[k] = [x / n for x in summe[k]]
     gesamt = 261 * sum(summe[1]) + 52 * sum(summe[6]) + 52 * sum(summe[7])        # Jahresenergie in diesen Einheiten
     profile[col] = {k: [round(x / gesamt, 7) for x in v] for k, v in zip(("werktag", "samstag", "sonntag"), (summe[1], summe[6], summe[7]))}
-daten = json.dumps({"stand": "31.10.2026", "nb": nb, "plz": plz, "hlzf": hlzf, "boerse": boerse, "solar": solar, "profile": profile}, ensure_ascii=False, separators=(",", ":"))
+daten = json.dumps({"stand": "31.10.2026", "boerse_stand": stand_boerse, "nb": nb, "plz": plz, "hlzf": hlzf, "boerse": boerse, "solar": solar, "profile": profile}, ensure_ascii=False, separators=(",", ":"))
 seite = (HIER / "vorlage.html").read_text(encoding="utf-8").replace("__DATEN__", daten.replace("</", "<\\/"))
 (HIER / "netzentgelt_abschaetzung.html").write_text(seite, encoding="utf-8")
 print(f"{len(nb)} Netzbetreiber, {len(plz)} Postleitzahlen, {len(hlzf)} mit Hochlastzeitfenstern")

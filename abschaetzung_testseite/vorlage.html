@@ -89,7 +89,7 @@ a{color:var(--akzent)}
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
       <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
     <h1>Geführte Abschätzung: Netzentgelt und Speicher</h1>
-    <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto, ohne Strom, Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer. Beispiel vorausgefüllt: Bäckerei in Meerane.</p>
+    <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto, ohne Strom, Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer. Beispiel vorausgefüllt: Bäckerei in Meerane. Börsenpreise (Day-Ahead) bis <b id="boerse-stand"></b>.</p>
   </header>
 
   <div class="raster">
@@ -263,6 +263,7 @@ a{color:var(--akzent)}
 <script>
 "use strict";
 const D = JSON.parse(document.getElementById("daten").textContent);
+document.getElementById("boerse-stand").textContent = D.boerse_stand || D.stand;
 const NB = new Map(D.nb.map(e => [e.n, e]));
 const $ = id => document.getElementById(id);
 const fmt = (v, n = 0) => v == null || !isFinite(v) ? "–" : v.toLocaleString("de-DE", {minimumFractionDigits: n, maximumFractionDigits: n});
