@@ -19,7 +19,7 @@ def ziel(datei, n2m, unser):
     m = re.match(r"(SNB\d+)_(\d+)", stem)
     if m and m.group(2).lstrip("0") in unser:
         return m.group(1), m.group(2).lstrip("0")
-    m = re.match(r"p_(\d+)$", stem)
+    m = re.match(r"pb?_(\d+)(?:_d)?$", stem)         # p_<Nutzer-Nr>, pb_<Nutzer-Nr>, pb_<Nutzer-Nr>_d (umgewandelte HTML-Seite)
     if m and m.group(1) in n2m:
         return n2m[m.group(1)]
     m = re.match(r"(\d+)", stem)             # nur die Nummer (unsere Nr.)
@@ -27,11 +27,45 @@ def ziel(datei, n2m, unser):
         return unser[m.group(1).lstrip("0")], m.group(1).lstrip("0")
     return None
 
+def datei_text(f, txt):
+    """Datei -> Text (pdftotext -layout; Excel Blatt für Blatt; HTML ohne Skripte). Rückgabe: Fehlertext oder ''."""
+    ext = Path(f).suffix.lower()
+    try:
+        if ext == ".pdf":
+            subprocess.run(["pdftotext", "-layout", f, txt], capture_output=True, timeout=60)
+            return ""
+        if ext == ".xlsx":
+            import openpyxl
+            wb = openpyxl.load_workbook(f, data_only=True, read_only=True)
+            t = "\n".join(f"## {ws.title}\n" + "\n".join("   ".join(str(c) for c in r if c is not None) for r in ws.iter_rows(values_only=True)) for ws in wb)
+        elif ext == ".xlsm":
+            import openpyxl
+            wb = openpyxl.load_workbook(f, data_only=True, read_only=True, keep_vba=False)
+            t = "\n".join(f"## {ws.title}\n" + "\n".join("   ".join(str(c) for c in r if c is not None) for r in ws.iter_rows(values_only=True)) for ws in wb)
+        elif ext == ".xls":
+            import xlrd
+            wb = xlrd.open_workbook(f)
+            t = "\n".join(f"## {ws.name}\n" + "\n".join("   ".join(str(c) for c in ws.row_values(i) if c != "") for i in range(ws.nrows)) for ws in wb.sheets())
+        else:                                              # html, htm
+            import html as hm
+            h = Path(f).read_text(encoding="utf-8", errors="replace")
+            h = re.sub(r"(?is)<(script|style).*?</\1>", " ", h)
+            h = re.sub(r"(?i)</t[dh]\s*>", "   ", h); h = re.sub(r"(?i)</(tr|p|div|li|h\d)\s*>|<br\s*/?>", "\n", h)
+            t = "\n".join(l.strip() for l in hm.unescape(re.sub(r"<[^>]+>", " ", h)).splitlines() if l.strip())
+        Path(txt).write_text(t, encoding="utf-8")
+        return ""
+    except subprocess.TimeoutExpired:
+        return "Zeitüberschreitung"
+    except Exception as e:
+        return f"nicht lesbar ({type(e).__name__})"
+
+
 def main(neu, rechnen):
     n2m, unser = zuordnung()
     os.makedirs("ergebnis/texte_layout", exist_ok=True); os.makedirs("eingang/verarbeitet", exist_ok=True)
     bericht = []
-    for f in sorted(glob.glob("eingang/**/*.pdf", recursive=True)):
+    dateien = [f for e in ("pdf", "xlsx", "xlsm", "xls", "html", "htm") for f in glob.glob(f"eingang/**/*.{e}", recursive=True)]
+    for f in sorted(dateien):
         if "verarbeitet" in f or "_hlzf" in f: continue   # HLZF-Dateien: daten/hlzf_eingang.py
         z = ziel(f, n2m, unser)
         if not z:
@@ -40,10 +74,9 @@ def main(neu, rechnen):
         txt = f"ergebnis/texte_layout/{mastr}_{int(nr):04d}.txt"
         if os.path.exists(txt) and os.path.getsize(txt) > 200 and not neu:
             bericht.append([f, mastr, nr, "Text liegt schon vor, übersprungen"]); continue
-        try:
-            subprocess.run(["pdftotext", "-layout", f, txt], capture_output=True, timeout=60)
-        except subprocess.TimeoutExpired:
-            bericht.append([f, mastr, nr, "Zeitüberschreitung bei pdftotext"]); continue
+        fehler = datei_text(f, txt)
+        if fehler:
+            bericht.append([f, mastr, nr, fehler]); continue
         groesse = os.path.getsize(txt) if os.path.exists(txt) else 0
         if groesse < 200:
             bericht.append([f, mastr, nr, f"kaum Text ({groesse} Byte): Bild-PDF oder leer"]); continue
