@@ -3,6 +3,11 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 KORRIGIEREN = {
+    ("9", "ms"): [11.17, 7.00, 146.10, 1.60],             # enercity: Tagesleistungspreis (0,03060274 / 0,40027397) x 365, vorher gerundet
+    ("9", "hsms"): [7.55, 5.51, 125.94, 0.77],            # enercity: 0,02068493 / 0,34504110 x 365
+    ("638", "ms"): [15.24, 7.83, 173.54, 1.50],           # Schifferstadt: zwei Tabellen (< und > 2.500 h), Ebenen vermischt gelesen
+    ("638", "msns"): [18.94, 8.84, 184.55, 2.22],
+    ("638", "ns"): [21.51, 10.27, 217.43, 2.43],
     ("553", "ms"): [16.58, 5.79, 130.93, 1.21],           # Lippe-Weser: drei Ebenen waren verschoben gelesen
     ("553", "msns"): [18.41, 6.41, 145.04, 1.34],
     ("553", "ns"): [20.76, 8.00, 171.13, 1.98],

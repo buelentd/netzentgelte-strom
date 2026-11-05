@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 19:10, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 19:11, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 327 | 39% |
-| pruefen | 467 | 56% |
+| ok | 326 | 39% |
+| pruefen | 468 | 56% |
 | kein_preisblatt | 3 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 296,  31
+Preisstand (nur ok): endgültig 295,  31
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -86,14 +86,15 @@ Preisstand (nur ok): endgültig 296,  31
 - 778. SWN Stadtwerke Neustadt GmbH: 
 - 797. Überlandwerk Eppler GmbH: 
 
-## Restfälle (504)
+## Restfälle (505)
 
-### pruefen (467)
+### pruefen (468)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
 - 8. Westfalen Weser Netz GmbH: 
+- 9. enercity Netz GmbH: 
 - 12. RheinNetz GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
 - 14. N-ERGIE Netz GmbH: 

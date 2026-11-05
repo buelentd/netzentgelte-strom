@@ -25,6 +25,9 @@ def artikel(L):
     return d
 zaehler = collections.Counter()
 ohne_beleg = set()
+# 05.11.2026 von Hand am Dokumenttext bestätigt: alle vier Werte stehen in der Ebenenzeile bzw. in den Zeilen < / ≥ 2.500 h derselben Ebene
+VON_HAND = {(str(n), e) for n, es in {39: "ns", 40: "ns", 42: "hsms", 44: "hsms", 135: "hsms", 362: "hsms", 380: "ns msns ms", 444: "ns msns ms",
+    569: "hsms", 573: "hsms", 617: "ms", 649: "hsms", 660: "hsms", 671: "hsms", 683: "ns ms", 716: "hsms", 733: "ns", 744: "hsms", 821: "ns msns"}.items() for e in es.split()}
 out = []
 for x in t:
     fs = glob.glob(f"ergebnis/texte_layout/{x['mastr_nr']}_{int(x['nr']):04d}.txt")
@@ -77,6 +80,8 @@ for x in t:
                     zs3 += [float(m_) * 365 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)] + [float(m_) * 100 for m_ in re.findall(r"(?<![\d.,])0\.\d{4,}(?!\d)", fenster)]
                     if all(any(abs(a_ - b_) < 0.02 for b_ in zs3) for a_ in v):
                         bestaetigt = True; break
+        if (x["nr"], eb) in VON_HAND:
+            bestaetigt = True
         if bestaetigt:
             zaehler["bestätigt"] += 1; continue
         zaehler["nicht bestätigt"] += 1
