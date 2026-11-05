@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 05.11.2026 07:22, 831 Netzbetreiber bzw. Netzgebiete
+Stand 05.11.2026 07:29, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 324 | 39% |
-| pruefen | 454 | 55% |
+| ok | 322 | 39% |
+| pruefen | 456 | 55% |
 | kein_preisblatt | 16 | 2% |
 | blockiert | 25 | 3% |
 | robots | 11 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 324
+Preisstand (nur ok): endgültig 322
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 324
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,39 ct/kWh (n = 650)
+- Median: 6,41 ct/kWh (n = 655)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 285,23 €/kW/a (Stadtwerke Merseburg GmbH)
-- Median: 150,40 €/kW/a (n = 650)
+- Median: 150,66 €/kW/a (n = 655)
 
 ## Datenherkunft
 
@@ -52,9 +52,9 @@ Preisstand (nur ok): endgültig 324
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Restfälle (507)
+## Restfälle (509)
 
-### pruefen (454)
+### pruefen (456)
 
 - 1. Stromnetz Berlin GmbH: 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
@@ -367,11 +367,13 @@ Preisstand (nur ok): endgültig 324
 - 547. Stadtwerke Lauterbach GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 549. Stadtwerke Leine-Solling GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 550. Stadtwerke Lemgo GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2023], nicht 2026; Jahr 2026 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+- 551. Stadtwerke Lindau (B) GmbH ＆ Co. KG: 
 - 556. Stadtwerke Ludwigsburg - Kornwestheim GmbH: SLP-Werte nicht gefunden
 - 558. Stadtwerke Ludwigslust-Grabow GmbH: 
 - 560. Stadtwerke Lünen GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.9, 8.32); RLM-Werte auffällig oder fehlend; SLP-W
 - 561. Stadtwerke Lutherstadt Eisleben GmbH: NS LP über 2.500 h = 463.24 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 564. Stadtwerke Marburg GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
+- 567. Stadtwerke Menden GmbH: 
 - 570. Stadtwerke Metzingen: 
 - 571. Stadtwerke Mössingen: SLP-Werte nicht gefunden
 - 572. Stadtwerke Mosbach GmbH: 

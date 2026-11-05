@@ -14,7 +14,7 @@ def main(schreiben):
     sperre = {r["nr"] for r in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
     plan = {}
     for r in csv.DictReader(open("ergebnis/ebenen_erwartung.csv", encoding="utf-8-sig"), delimiter=";"):
-        if r["nr"] in sperre: continue
+        if r["nr"] in sperre or r["nr"] in ("30", "34", "40"): continue
         L = text(r)
         if not L: continue
         for eb in ("ms", "msns", "ns", "hsms"):

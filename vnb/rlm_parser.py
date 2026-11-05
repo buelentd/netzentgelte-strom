@@ -23,7 +23,7 @@ def plausibel(w, tag):
     lp1, ap1, lp2, ap2 = w
     if tag:
         pass
-    return 0 < lp1 <= 450 and 0 < lp2 <= 700 and 0.05 <= ap1 <= 25 and 0 <= ap2 <= 15 and ap1 >= ap2 * 0.95 and lp2 > lp1 * 0.4
+    return 0 < lp1 <= 450 and 20 <= lp2 <= 700 and 0.05 <= ap1 <= 25 and 0 <= ap2 <= 15 and ap1 >= ap2 * 0.95 and lp2 > lp1 * 0.4 and lp1 < lp2 * 1.5
 
 def rlm_parser(zeilen, eb):
     # BDEW-Artikel-IDs (1-01-5-001 ... 004): eindeutig, Tages-/Jahres-/Bruttowerte werden dort aufgelöst (Saalfeld)
@@ -55,12 +55,42 @@ def rlm_parser(zeilen, eb):
         kopf = " ".join(zeilen[max(0, i - 8):i]).lower()
         tag = bool(re.search(r"kw\s*[*/]\s*tag|/\s*tag|je tag|täglich", kopf + l.lower()))
         kandidaten = []
-        if len(zs) >= 8 and "brutto" in kopf:
+        mwst = len(zs) >= 2 and zs[0] > 0 and abs(zs[1] / zs[0] - 1.19) < 0.012
+        if len(zs) >= 8 and ("brutto" in kopf or mwst):
             kandidaten.append(zs[0:8:2])               # netto | brutto | netto | brutto ...
+            kandidaten.append([zs[0], zs[4], zs[2], zs[6]])   # LP< | brutto | LP>= | brutto | AP< | brutto | AP>= | brutto (Rinteln)
         if len(zs) >= 4:
             kandidaten.append(zs[:4])
         for k in kandidaten:
             w = [v * 365 if (tag and ix in (0, 2) and v < 2) else v for ix, v in enumerate(k)]
             if plausibel(w, tag):
                 return [round(v, 2) for v in w], " | ".join(x.strip()[:70] for x in belegzeilen[:2])
+    return _zeilenpaar(zeilen, eb)
+
+
+def _halb(zs):
+    """(LP, AP) einer Zeile: zwei Zahlen oder vier mit 19 %-Aufschlag (netto, brutto, netto, brutto)."""
+    if len(zs) >= 4 and zs[0] > 0 and zs[2] > 0 and abs(zs[1] / zs[0] - 1.19) < 0.012 and abs(zs[3] / zs[2] - 1.19) < 0.012:
+        return zs[0], zs[2]
+    if len(zs) == 2:
+        return zs[0], zs[1]
+    return None
+
+
+def _zeilenpaar(zeilen, eb):
+    """Ebenenname steht in zwei aufeinanderfolgenden Zeilen (unter 2.500 h, dann ab 2.500 h), Schifferstadt, Sulz am Neckar."""
+    reihen = []
+    for i, l in enumerate(zeilen):
+        lab = label_von(l)
+        e = ebene_mshs(lab) or ebene(lab)
+        if MAP.get(e) != eb or AUS.search(lab):
+            continue
+        h = _halb(zahlen(l))
+        if h:
+            reihen.append((i, h))
+    for (i1, h1), (i2, h2) in zip(reihen, reihen[1:]):
+        if 0 < i2 - i1 <= 8:
+            w = [h1[0], h1[1], h2[0], h2[1]]
+            if plausibel(w, False):
+                return [round(v, 2) for v in w], "zwei Zeilen mit Ebenenname: " + " ".join(zeilen[i1].split())[:50]
     return None
