@@ -5,6 +5,7 @@ import csv, glob, re, shutil, subprocess, sys, os
 from pathlib import Path
 sys.path.insert(0, ".")
 from vnb.hlzf import hlzf_lesen, JAHRESZEITEN
+from daten.hlzf_regeln import stufe
 
 def zeit_ok(z):
     m = re.fullmatch(r"(\d\d):(\d\d)-(\d\d):(\d\d)", z.strip())
@@ -111,7 +112,8 @@ def main():
             bericht.append([nr, Path(fs[0]).name, "Datei nicht lesbar: " + type(e).__name__, ""]); continue
         f = Path(fs[0])
         e = hlzf_lesen(t, str(f))
-        gew = sum(len(v) for eb in e.fenster.values() for v in eb.values()) + 100 * ("NS" in e.fenster) if e.gelesen else 0
+        stf = stufe(nr, t, e) if e.gelesen else None
+        gew = sum(len(v) for eb in e.fenster.values() for v in eb.values()) + 100 * ("NS" in e.fenster) if stf else 0
         Path(f"ergebnis/hlzf_texte/{nr}.txt").write_text(Path(f).name + "\n\n" + t[:40000], encoding="utf-8")
         alt = rows.get(nr)
         alt_gew = 1 if alt and alt[1].startswith("gelesen") else 0
@@ -133,6 +135,9 @@ def main():
         d["hlzf_mindestleistung_kw"] = e.mindest_kw.get("NS", "") or e.mindest_kw.get("MSNS", "")
         d["hlzf_quelle_url"] = "eingang: " + Path(f).name; d["hlzf_jahr"] = e.jahr or ""; d["hlzf_pruefung"] = "; ".join(pr)
         d["hlzf_status"] = "gelesen" if not pr and e.jahr in (2026, None) else ("gelesen, Jahr " + str(e.jahr) if e.jahr not in (2026, None) else "gelesen, Prüfung offen")
+        if d["hlzf_status"] == "gelesen" and stf == "ungeprueft":
+            d["hlzf_status"] = "gelesen, Prüfung offen"
+            d["hlzf_pruefung"] = ("; ".join(x for x in (d["hlzf_pruefung"],) if x) + "; " if d["hlzf_pruefung"] else "") + "ungeprüft neu gelesen (Form: " + e.form + "), Zuordnung der Zeilen zu den Ebenen nicht am Dokument bestätigt"
         if any(Path(x).suffix.lower() in (".html", ".htm") for x in fs) and not e.jahr:
             d["hlzf_status"] = "gelesen, Prüfung offen"; d["hlzf_pruefung"] = (d["hlzf_pruefung"] + "; " if d["hlzf_pruefung"] else "") + "Webseite: Jahr nicht belegt"
         rows[nr] = [d[h] for h in H]
