@@ -25,6 +25,21 @@ def artikel(L):
     return d
 zaehler = collections.Counter()
 ohne_beleg = set()
+unbest = set()            # Netzbetreiber mit mindestens einem unbestätigten Block oder ohne Text
+
+
+def slp_bestaetigt(L, x):
+    """SLP: Arbeitspreis (ct/kWh, auch €/kWh) und Grundpreis (€/Jahr, auch €/Tag oder €/Monat) stehen im Dokumenttext."""
+    ap, gp = de(x["slp_ap_ct_kwh"]), de(x["slp_grundpreis_eur_jahr"])
+    if ap is None or gp is None:
+        return False
+    zs = set()
+    for l in L:
+        zs.update(z for z in zahlen(l) if z is not None)
+    ok_ap = any(abs(z - ap) < 0.011 or abs(z * 100 - ap) < 0.011 for z in zs)
+    ok_gp = gp == 0 or any(abs(z - gp) < 0.011 or abs(z * 365 - gp) < 0.02 or abs(z * 12 - gp) < 0.02 for z in zs)
+    return ok_ap and ok_gp
+
 # 05.11.2026 von Hand am Dokumenttext bestätigt: alle vier Werte stehen in der Ebenenzeile bzw. in den Zeilen < / ≥ 2.500 h derselben Ebene
 VON_HAND = {(str(n), e) for n, es in {39: "ns", 40: "ns", 42: "hsms", 44: "hsms", 135: "hsms", 362: "hsms", 380: "ns msns ms", 444: "ns msns ms",
     569: "hsms", 573: "hsms", 617: "ms", 649: "hsms", 660: "hsms", 671: "hsms", 683: "ns ms", 716: "hsms", 733: "ns", 744: "hsms", 821: "ns msns"}.items() for e in es.split()}
@@ -37,7 +52,7 @@ for x in t:
         if None in v:
             continue
         if L is None:
-            zaehler["kein Text"] += 1
+            zaehler["kein Text"] += 1; unbest.add(x["nr"])
             out.append([x["nr"], x["netzbetreiber"], NAME[eb], *[f"{a:.2f}".replace(".", ",") for a in v], x["status"], "kein Text zum Abgleich (Wert aus der Liste des Nutzers)", "", ""]); continue
         beste, treffer = "", -1
         bestaetigt = False
@@ -84,7 +99,7 @@ for x in t:
             bestaetigt = True
         if bestaetigt:
             zaehler["bestätigt"] += 1; continue
-        zaehler["nicht bestätigt"] += 1
+        zaehler["nicht bestätigt"] += 1; unbest.add(x["nr"])
         # ohne jeden Beleg: keine Zeile im ganzen Dokument mit mindestens zwei der vier Werte
         anz = 0
         for l5 in L:
@@ -102,3 +117,15 @@ with open("ergebnis/preise_nicht_bestaetigt.csv", "w", encoding="utf-8-sig", new
     w.writerows(out)
 open("ergebnis/preise_ohne_beleg.txt", "w").write("\n".join(sorted(ohne_beleg, key=int)))
 print(dict(zaehler), "| Netzbetreiber ohne Beleg:", len(ohne_beleg))
+
+# Netzbetreiber, deren gelesene RLM-Blöcke und SLP alle am Dokumenttext bestätigt sind
+bestaetigt_nr = []
+for x in t:
+    fs = glob.glob(f"ergebnis/texte_layout/{x['mastr_nr']}_{int(x['nr']):04d}.txt")
+    if not fs or x["nr"] in unbest:
+        continue
+    L = open(fs[0], errors="ignore").read().splitlines()
+    if slp_bestaetigt(L, x):
+        bestaetigt_nr.append(x["nr"])
+open("ergebnis/preise_dokument_bestaetigt.txt", "w").write("\n".join(sorted(bestaetigt_nr, key=int)))
+print("Netzbetreiber mit allen Preisen am Dokument bestätigt (RLM + SLP):", len(bestaetigt_nr))
