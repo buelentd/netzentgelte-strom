@@ -95,3 +95,16 @@ NS                             Frühling               Sommer                   
 """
     e = hlzf_lesen(t)
     assert e.fenster["NS"] == {"fruehling": [], "sommer": [], "herbst": ["16:45-19:45"], "winter": ["16:30-19:30"]}
+
+
+def test_neue_form_wird_abgelehnt_wenn_zeiten_uebersehen_werden():
+    from vnb.hlzf import hlzf_lesen
+    # Uhrzeiten im Format 08:30:00 und eine Ebene ohne lesbare Zeilen: nicht "keins" melden
+    t = """Hochlastzeitfenster 2026
+Entnahmeebene     Winter      Frühling      Sommer      Herbst
+                  von  bis    von  bis      von bis     von bis
+1. Mittelspannung   08:30:00 - 13:15:00
+3. Niederspannung                          12:00:00 - 12:30:00     10:45:00 - 12:30:00
+"""
+    e = hlzf_lesen(t)
+    assert not e.fenster or e.fenster.get("NS", {}).get("sommer") != []
