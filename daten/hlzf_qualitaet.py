@@ -11,8 +11,15 @@ ix = {h: i for i, h in enumerate(H)}
 geaendert = []
 # Am Dokumenttext von Hand geprüft (05.11.2026): der neue Leser liest richtig, die gespeicherten Werte waren unvollständig oder vermischt
 UEBERNEHMEN = {"91", "137", "676"}
+# Am Dokumenttext von Hand als unsicher erkannt (Zeiten stehen mittig zwischen den Ebenennamen): bleiben auf Prüfung offen
+ZWEIFEL = {"142": "Zeiten zwischen den Ebenennamen: Zuordnung zu NS/MS/NS unsicher", "214": "viele Fenster, Zuordnung der Zeilen zu den Ebenen unsicher"}
 for r in rows:
     nr = r[0]
+    if nr in ZWEIFEL:
+        r[ix["hlzf_status"]] = "gelesen, Prüfung offen"
+        if "Leser" not in r[ix["hlzf_pruefung"]]:
+            r[ix["hlzf_pruefung"]] = (r[ix["hlzf_pruefung"]] + "; " if r[ix["hlzf_pruefung"]] else "") + "Leser unsicher: " + ZWEIFEL[nr]
+        continue
     if nr in UEBERNEHMEN:
         t = open(f"ergebnis/hlzf_texte/{nr}.txt", encoding="utf-8").read()
         e = hlzf_lesen(t, r[ix["hlzf_quelle_url"]])
