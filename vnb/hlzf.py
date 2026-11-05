@@ -13,6 +13,7 @@ Nichts wird geschätzt: Was nicht eindeutig ist, bleibt leer und steht im Grund.
 """
 from __future__ import annotations
 
+import os
 import re
 from dataclasses import dataclass, field
 
@@ -431,7 +432,7 @@ def _form_g(zeilen):
 
 
 _IGN = [0]          # Fenster anderer Ebenen (HS, HS/MS, MS), die die neuen Formen sehen, aber nicht ausgeben
-NEUE_FORMEN = {"Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)"}
+NEUE_FORMEN = {"Zeile je Fenster", "Ebene mit Jahreszeiten-Spalten (von/bis)", "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Ebenen als Spalten (von/bis)", "Tabelle nach Positionen"}
 ZEIT_DOPPELPUNKT = re.compile(r"(?<![\d:.])[0-2]?\d:[0-5]\d(?::\d\d)?(?![\d:])(?!\s*h\b)")
 ZEIT_PUNKT = re.compile(r"(?<![\d:.])[0-2]?\d\.([0-5]\d)(?![\d:.])(?!\s*h\b)")
 ZEITLIKE = re.compile(r"(?<![\d:.])[0-2]?\d[:.][0-5]\d(?::\d\d)?(?![\d:])(?![.]?\d)(?!\.)(?!\s*h\b)")
@@ -514,6 +515,120 @@ def _form_h(zeilen):
     return {e: {j: out[e].get(j, []) for j in JAHRESZEITEN} for e in out if e in ("NS", "MSNS")}
 
 
+FUELL = re.compile(r"\b(?:bei|in|aus|der|die|das|dem|den|entnahme|entnahmen|netzebene|spannungsebene|ebene|entnahmestelle|netz|zur|zum|im|am|und)\b|[().:,*]", re.I)
+
+
+def _ebene_wort(label: str):
+    """Ebene aus einer Zeilenbezeichnung: NS, MSNS, MS, HSMS, HS; None, wenn nicht eindeutig oder unvollständig ("Umspannung in")."""
+    t = FUELL.sub(" ", label.lower().replace("ö", "oe"))
+    t = re.sub(r"\s+", " ", t).strip()
+    if not t:
+        return None
+    umsp = re.search(r"umspann|\busp\b|ms\s*/\s*ns|msp\s*/\s*nsp|mittel-?\s*/\s*nieder|mittelspannung\s*/\s*niederspannung|\bmitt?el\b.*\bnieder", t)
+    hoch = re.search(r"hoch|\bhs\b|\bhsp\b", t)
+    nied = re.search(r"nieder|\bns\b|\bnsp\b", t)
+    mitt = re.search(r"mittel|\bms\b|\bmsp\b", t)
+    if umsp and nied and not hoch:
+        return "MSNS"
+    if umsp and hoch and mitt:
+        return "HSMS"
+    if umsp:
+        return None                                              # "Umspannung" allein: HS/MS oder MS/NS unklar
+    if hoch and mitt:
+        return "HSMS"
+    if hoch:
+        return "HS"
+    if nied and not mitt:
+        return "NS"
+    if mitt and not nied:
+        return "MS"
+    return None
+
+
+def _form_t(zeilen):
+    """Tabelle nach Positionen: Kopf mit vier Jahreszeiten, darunter Zeilen mit Ebenenbezeichnung (auch über mehrere Zeilen) und Zeitfenstern."""
+    out = {}
+    koepfe = []
+    for i, z in enumerate(zeilen):
+        if UHR.search(z):
+            continue
+        w = {_jz(m.group()) for m in JZ_WORT.finditer(z)}
+        if len(w) == 4:
+            koepfe.append(i)
+    for n, i in enumerate(koepfe):
+        ende = koepfe[n + 1] if n + 1 < len(koepfe) else min(i + 45, len(zeilen))
+        spalten = [(m.start() + len(m.group()) / 2, _jz(m.group())) for m in JZ_WORT.finditer(zeilen[i])]
+        links = min(p for p, _ in spalten) - 8
+        eb, acc, offen, leer = None, "", [], 0
+        titel = " ".join(zeilen[k] for k in range(max(0, i - 3), i) if zeilen[k].strip() and len(zeilen[k]) < 90)
+
+        def abschluss():
+            nonlocal offen
+            if offen and eb is None:
+                raise ValueError
+            for jz, f in offen:
+                if eb in ("NS", "MSNS"):
+                    out.setdefault(eb, {j: [] for j in JAHRESZEITEN})[jz].append(f)
+                elif eb:
+                    out.setdefault("_andere", {j: [] for j in JAHRESZEITEN})[jz].append(f)
+            offen = []
+        try:
+            for z in zeilen[i + 1:ende]:
+                if not z.strip():
+                    leer += 1
+                    if leer > 3:
+                        break
+                    continue
+                leer = 0
+                st = z.strip()
+                if not UHR.search(z) and re.search(r"\b(?:von|bis|uhrzeit|beginn|ende|anfang)\b", z, re.I) \
+                        and not re.sub(r"\b(?:von|bis|uhrzeit|uhr|beginn|ende|anfang)\b|[-–:\s]", "", z, flags=re.I):
+                    continue                                       # Unterkopf "von bis"
+                fenster = [(m.start(), m.end(), f"{int(m.group(1)):02d}:{m.group(2)}-{int(m.group(3)):02d}:{m.group(4)}")
+                           for m in ZEIT.finditer(z) if (m.group(1), m.group(2)) != (m.group(3), m.group(4))]
+                if not fenster:
+                    pr = _paare(z)
+                    if pr:
+                        ts = [m.start() for m in UHR.finditer(z)]
+                        fenster = [(ts[2 * k], ts[2 * k + 1] + 5, f) for k, (_, f) in enumerate(pr)]
+                    elif UHR.search(z):
+                        raise ValueError                           # Zeiten, die sich nicht zu Fenstern ordnen lassen
+                erstes = min([a for a, _, _ in fenster] + [len(z)])
+                lab = re.split(r"\s{3,}", z[:erstes].strip())[0] if z[:erstes].strip() else ""
+                kein = len(KEIN.findall(z[len(lab) + (len(z) - len(z.lstrip())):erstes if fenster else len(z)])) if True else 0
+                daten = bool(fenster) or kein >= 2
+                if lab and re.search(r"[A-Za-zÄÖÜäöüß]{2,}", lab) and len(lab.split()) <= 8 and (not daten or True) and lab.lower().split()[0] not in ("die", "das", "wenn", "für", "gemäß"):
+                    if daten:
+                        abschluss(); acc = lab; eb = _ebene_wort(acc)
+                    elif eb is None:
+                        acc += " " + lab; eb = _ebene_wort(acc)       # Bezeichnung läuft in der nächsten Zeile weiter
+                    else:
+                        raise ValueError                            # Bezeichnung nach den Daten, schon eindeutig: mittig gesetzt, unsicher
+                    if daten and eb is None and offen is not None:
+                        pass
+                elif not daten and len(z.split()) >= 8:
+                    break                                          # Fließtext: Tabelle zu Ende
+                if not daten:
+                    continue
+                if eb is None and not offen and not acc:
+                    eb = _ebene_wort(titel)
+                for a, b, f in fenster:
+                    jz = min(spalten, key=lambda s: abs(s[0] - (a + b) / 2))[1]
+                    offen.append((jz, f))
+                if eb:
+                    abschluss()
+                    out.setdefault(eb if eb in ("NS", "MSNS") else "_andere", {j: [] for j in JAHRESZEITEN})
+                    if eb in ("NS", "MSNS") or True:
+                        pass
+            abschluss()
+        except ValueError:
+            if os.environ.get("HLZF_DEBUG"):
+                raise
+            return {}
+    _IGN[0] += sum(len(v) for v in out.get("_andere", {}).values())
+    return {e: out[e] for e in ("NS", "MSNS") if e in out}
+
+
 def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     erg = Hlzf(jahr=jahr_lesen(text, url))
     _IGN[0] = 0
@@ -532,7 +647,8 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
                     ("Ebenen als Spalten (von/bis)", lambda: _form_h(zeilen)),          # spezifischere Formen vor "Zeile je Fenster"
                     ("Ebene mit Jahreszeiten-Spalten (von/bis)", lambda: _form_f(zeilen)),
                     ("Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", lambda: _form_g(zeilen)),
-                    ("Zeile je Fenster", lambda: _form_e(zeilen))):
+                    ("Zeile je Fenster", lambda: _form_e(zeilen)),
+                    ("Tabelle nach Positionen", lambda: _form_t(zeilen))):
         _IGN[0] = 0
         out = f()
         if out and name in NEUE_FORMEN and not _vollstaendig(text, out):

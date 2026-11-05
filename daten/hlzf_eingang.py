@@ -24,6 +24,11 @@ def text_aus(pfad):
         import xlrd
         wb = xlrd.open_workbook(pfad)
         return "\n".join(f"## {ws.name}\n" + "\n".join("   ".join(str(c) for c in ws.row_values(i) if c != "") for i in range(ws.nrows)) for ws in wb.sheets())
+    if ext in (".html", ".htm"):
+        import html as hm
+        h = re.sub(r"(?is)<(script|style).*?</\1>", " ", Path(pfad).read_text(encoding="utf-8", errors="replace"))
+        h = re.sub(r"(?i)</t[dh]\s*>", "   ", h); h = re.sub(r"(?i)</(tr|p|div|li|h\d)\s*>|<br\s*/?>", "\n", h)
+        return "\n".join(l.strip() for l in hm.unescape(re.sub(r"<[^>]+>", " ", h)).splitlines() if l.strip())
     return ""
 
 def main():
@@ -31,14 +36,23 @@ def main():
     H, rows = zeilen[0], {r[0]: r for r in zeilen[1:]}
     os.makedirs("ergebnis/hlzf_texte", exist_ok=True); os.makedirs("eingang/verarbeitet_hlzf", exist_ok=True)
     bericht = []
-    for f in sorted(glob.glob("eingang/pdfs_neu/*_hlzf.*")):
+    gruppen = {}
+    dateien = {}
+    for f in sorted(glob.glob("eingang/pdfs_neu/**/*_hlzf*.*", recursive=True)):
+        dateien[Path(f).name] = f                      # gleicher Dateiname in mehreren Ordnern: der spätere zählt
+    for f in sorted(dateien.values()):
         m = re.match(r"SNB\d+_(\d+)_hlzf", Path(f).name)
         if not m: continue
-        nr = str(int(m[1]))
-        try: t = text_aus(f)
+        if Path(f).suffix.lower() in (".png", ".jpg", ".jpeg"):
+            bericht.append([str(int(m[1])), Path(f).name, "Bilddatei: nicht lesbar (kein OCR)", ""]); continue
+        gruppen.setdefault(str(int(m[1])), []).append(f)
+    for nr, fs in gruppen.items():           # mehrere Dateien je Netzbetreiber (z. B. MS / NS / Umspannung): Texte zusammen lesen
+        f = fs[0] if len(fs) == 1 else ";".join(fs)
+        try: t = "\n\n".join(text_aus(x) for x in fs)
         except Exception as e:
-            bericht.append([nr, Path(f).name, "Datei nicht lesbar: " + type(e).__name__, ""]); continue
-        e = hlzf_lesen(t, f)
+            bericht.append([nr, Path(fs[0]).name, "Datei nicht lesbar: " + type(e).__name__, ""]); continue
+        f = Path(fs[0])
+        e = hlzf_lesen(t, str(f))
         gew = sum(len(v) for eb in e.fenster.values() for v in eb.values()) + 100 * ("NS" in e.fenster) if e.gelesen else 0
         Path(f"ergebnis/hlzf_texte/{nr}.txt").write_text(Path(f).name + "\n\n" + t[:40000], encoding="utf-8")
         alt = rows.get(nr)

@@ -87,7 +87,7 @@ a{color:var(--akzent)}
     <span class="marke">Testseite, nicht conplot.de</span>
     <div class="beispiele"><span class="klein">Beispiel laden:</span>
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
-      <button type="button" class="knopf" data-bsp="biberach">Bäckerei Biberach (mit Hochlastzeitfenstern)</button></div>
+      <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
     <h1>Geführte Abschätzung: Netzentgelt und Speicher</h1>
     <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto, ohne Strom, Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer. Beispiel vorausgefüllt: Bäckerei in Meerane.</p>
   </header>
@@ -754,7 +754,7 @@ $("branche").addEventListener("change", steuernVorschlagen);
 $("branche").innerHTML = Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
 
 const BEISPIELE = {
-  meerane: {plz: "08393"}, biberach: {plz: "88400"},
+  meerane: {plz: "08393"}, biberach: {plz: "88045"},
 };
 function beispiel(k) {
   $("pv").checked = false; $("pv-feld").hidden = true; $("dach-feld").hidden = false; $("tarif").value = k === "biberach" ? "dynamisch" : "unbekannt";
