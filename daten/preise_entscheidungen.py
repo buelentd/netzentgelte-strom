@@ -6,6 +6,36 @@ NOTIZ = {("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbe
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
 TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("361", "msns"): [30.55, 7.02, 166.31, 1.59],         # Remstalwerk: Umspannung Mittel- auf Niederspannungsnetz
+    ("558", "ms"): [5.79, 3.87, 97.20, 0.21],             # Ludwigslust-Grabow: Jahresleistungspreissystem (Monatssystem ignoriert)
+    ("558", "msns"): [6.15, 5.91, 153.79, 0.00],
+    ("558", "ns"): [11.81, 6.71, 94.16, 3.42],
+    ("802", "hsms"): [21.86, 4.07, 114.88, 0.35],         # ÜZ Mainfranken: Umspannung in Mittelspannung
+    ("802", "msns"): [24.76, 4.90, 140.26, 0.28],
+    ("802", "ns"): [30.08, 4.79, 129.53, 0.81],
+    ("528", "ms"): [6.29, 5.19, 118.31, 0.71],            # Husum: Tabellen < / ≥ 2.500 h, netto
+    ("528", "msns"): [8.31, 6.50, 152.46, 0.74],
+    ("528", "ns"): [13.18, 7.13, 116.99, 2.98],
+    ("616", "ms"): [18.04, 2.75, 65.95, 0.83],            # Prenzlau: Leistungspreise (1.1) und Arbeitspreise (2.) getrennt
+    ("616", "msns"): [24.61, 3.87, 94.34, 1.08],
+    ("616", "ns"): [31.90, 4.78, 113.98, 1.50],
+    ("262", "msns"): [35.00, 7.50, 199.00, 3.75],         # GIG energy services: Jahresleistungspreissystem (Monatssystem ignoriert)
+    ("262", "ns"): [41.10, 10.90, 255.00, 4.90],
+    ("262", "slp"): [15.00, 35.00],                       # Entnahme ohne Leistungsmessung, Niederspannung: Grundpreis 35 €/a, 15 ct/kWh
+    ("283", "ms"): [11.65, 12.59, 270.44, 2.23],          # Stengle: Tabellen 1.2 (< 2.500 h) und 1.1 (≥ 2.500 h), Spalte Leistungspreis dann Arbeitspreis
+    ("283", "ns"): [17.62, 15.74, 340.82, 2.82],
+    ("331", "hsms"): [2.74, 3.94, 86.86, 0.57],           # Schwerin: Spalten Arbeitspreis (ct/kWh) vor Leistungspreis (€/kW a) vertauscht
+    ("331", "ms"): [2.80, 4.28, 97.89, 0.48],
+    ("331", "msns"): [3.48, 5.14, 115.10, 0.67],
+    ("331", "ns"): [7.47, 6.98, 105.33, 3.06],
+    ("494", "ms"): [9.14, 6.67, 151.47, 0.98],            # Bad Kreuznach: Tabelle mit Leistungsmessung, Netto-Spalten, < / ≥ 2.500 h
+    ("494", "msns"): [11.76, 7.54, 164.35, 1.44],
+    ("494", "ns"): [14.16, 8.48, 147.55, 3.14],
+    ("494", "slp"): [6.81, 93.00],                        # Haushalts-, landwirtschaftlicher, gewerblicher Bedarf in Niederspannung (netto: 93 €/a, 6,81 ct)
+    ("762", "ms"): [16.47, 6.40, 174.43, 0.08],           # Sulz am Neckar: Tabellen 1.1.a und 1.1.b
+    ("762", "msns"): [13.20, 7.50, 185.32, 0.62],
+    ("762", "ns"): [16.35, 8.63, 169.02, 2.52],
+    ("762", "slp"): [7.38, 80.00],                        # 2.1.a Kunden der Grundversorgung: Grundpreis 80 €/Jahr, Arbeitspreis 7,38 ct
     ("179", "slp"): [6.16, 39.60],                        # Erlangen: Niederspannung ohne Leistungsmessung, Nettopreis
     ("381", "slp"): [6.16, 55.00],                        # Amberg: Grundpreis 55 €/Jahr, Arbeitspreis 6,16 ct
     ("393", "slp"): [9.05, 0.00],                         # Bad Dürkheim: Entnahmestellen ohne Leistungsmessung, nur Arbeitspreis
@@ -110,10 +140,10 @@ KORRIGIEREN = {
     ("25", "hsms"): [28.15, 1.92, 31.77, 1.78],           # Hamburger Energienetze: zwei Tabellen (unter und ab 2.500 h), Zeile Umspannung Hoch-/Mittelspannung
 }
 ENTFERNEN = {
+    ("262", "ms"): "Im Jahresleistungspreissystem des Dokuments gibt es keine Mittelspannung (nur Monatssystem): gelesene Werte waren Müll",
     ("508", "ms"): "Werte waren NS-Preise (32,14 / 186,50), im Jahresleistungspreissystem keine MS-Preise im Dokument",
     ("52", "hsms"): "Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument",
     ("194", "hsms"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
-    ("283", "ns"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
     ("370", "msns"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
 }
 F = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
@@ -142,6 +172,12 @@ def main():
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
         r[I["geprueft"]] = "" if nr in TEXTAUSZUG else "ja"     # am Dokumenttext von Hand geprüft; Textauszug des Kollegen: nicht am Dokument bestätigt
+    for (nr, eb) in ENTFERNEN:                          # entfernte Ebenen auch in der Handtabelle leeren
+        r = byn.get(nr)
+        if r is not None and (nr, eb) not in KORRIGIEREN:
+            for k in F:
+                if f"{eb}_{k}" in I:
+                    r[I[f"{eb}_{k}"]] = ""
     out = io.StringIO(); w = csv.writer(out, delimiter=";", lineterminator=nl); w.writerows(rows)
     open(p, "w", encoding="utf-8", newline="").write(("﻿" if bom else "") + out.getvalue())
     # Entfernen: lauf/werte_entfernt.csv ergänzen

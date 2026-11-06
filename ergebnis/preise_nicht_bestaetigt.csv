@@ -31,6 +31,7 @@
 316;Nahwerk-Energie GmbH ＆ Co. KG;Niederspannung;32,52;7,80;133,00;3,79;ok;nächste Zeile hat 0 von 4 Werten;Niederspannung: Haushalts-;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;MS/NS;18,37;8,32;211,81;0,58;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;Mittelspannung;15,83;7,55;195,81;0,35;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung: Industriekunde;SNB993755128542_0316.txt
+331;Netzgesellschaft Schwerin mbH (NGS);HS/MS;2,74;3,94;86,86;0,57;ok;Ebenenzeile im Dokument nicht gefunden;;SNB913130054136_0331.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;Niederspannung;24,47;9,15;185,77;2,70;ok;nächste Zeile hat 0 von 4 Werten;Wandler Niederspannung 23.5 0;SNB978108787379_0339.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;MS/NS;22,17;9,23;248,97;0,15;ok;nächste Zeile hat 0 von 4 Werten;Umspannung MS/NS 294.74 0;SNB978108787379_0339.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;Mittelspannung;21,23;8,77;238,59;0,08;ok;nächste Zeile hat 0 von 4 Werten;Spannungsebene bitte auswählen Mittelspannung;SNB978108787379_0339.txt
@@ -78,6 +79,7 @@
 783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;pruefen;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
 798;Überlandwerk Erding GmbH ＆ Co. KG;Niederspannung;13,02;9,40;154,35;3,74;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB957632855181_0798.txt
 798;Überlandwerk Erding GmbH ＆ Co. KG;MS/NS;12,06;9,08;162,40;3,06;pruefen;nächste Zeile hat 0 von 4 Werten;Ist auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich, dass der Höchstlastbeitrag ei;SNB957632855181_0798.txt
+802;ÜZ Mainfranken eG;HS/MS;21,86;4,07;114,88;0,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB929185184919_0802.txt
 4;Avacon Netz GmbH;Niederspannung;24,16;6,27;124,45;2,26;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;MS/NS;19,38;5,71;123,78;1,54;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;Mittelspannung;14,87;4,94;118,41;0,80;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;

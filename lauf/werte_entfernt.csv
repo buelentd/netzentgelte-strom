@@ -10,8 +10,7 @@
 128;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 189;msns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 194;hsms;Werte im Dokument nicht belegt (von Hand am Text geprüft)
-262;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-283;ns;Werte im Dokument nicht belegt (von Hand am Text geprüft)
+262;ms;Im Jahresleistungspreissystem des Dokuments gibt es keine Mittelspannung (nur Monatssystem): gelesene Werte waren Müll
 370;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 370;msns;Werte im Dokument nicht belegt (von Hand am Text geprüft)
 424;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
@@ -19,9 +18,7 @@
 435;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 480;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 508;ms;Werte waren NS-Preise (32,14 / 186,50), im Jahresleistungspreissystem keine MS-Preise im Dokument
-528;msns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 556;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-558;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 586;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 586;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 601;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
