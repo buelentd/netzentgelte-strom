@@ -168749,3 +168749,36 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/07/Waerme-Eintarif-2026-220726.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
 [782] -> pruefen NS LP>2500 150.50 SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; SLP-Werte auffällig
 [793] thyssenkrupp Steel Europe AG (www.thyssenkrupp-steel.com)
+    Dokument https://www.thyssenkrupp-steel.com/media/content_1/publikationen/zertifikate/tkse_iatf_16949_ferndorf_2026-06- -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thyssenkrupp-steel.com/media/content_1/compact/compact_2026/thyssenkrupp_steel_compact_de_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+[793] -> kein_preisblatt 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+[803] Veolia Industriepark Deutschland GmbH (www.veolia.de)
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/sondertarife_haushaltskunden/2026/sww_tarifblatt_zenob_freiraum_ -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/sondertarife_haushaltskunden/2026/gku_tarifblatt_zenob_freiraum_ -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/sondertarife_geschaeftskunden/2026/sww_preisblatt_zenob_macher_a -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/sondertarife_geschaeftskunden/2026/gku_preisblatt_macher_ab_01.0 -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/grundversorgung/2026/sww_preisblatt_grundversorgung_ab_01.01.26_ -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.veolia.de/sites/g/files/dvc2511/files/document/2025/12/Anlage%205_LRV_Preisblatt_I-Parks_2026_endg -> verwendbar endgültig
+    robots.txt von https://www.veolia.de sperrt https://www.veolia.de/node/10191 (Disallow: */node/*, Disallow: /node/*)
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/grundversorgung/2026/preisblatt_ersatzversorgung_rlm_ab_01.01.26 -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/grundversorgung/2026/gku_preisblatt_grundversorgung_ab_01.01.26_ -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/sww_getrennte_messung_nt_ab_01.01.2 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/sww_getrennte_messung_dt_ab_01.01.2 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/sww_gemeinsame_messung_preisblatt_a -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/gku_getrennte_messung_dt_ab_01.01.2 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/gku_gemeinsame_messung_preisblatt_a -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.veolia.de/sites/g/files/dvc2511/files/document/2026/06/Veolia_Nachhaltigkeitsbericht_2025_bf.pdf -> Kopf nennt [2025], nicht 2026
+[803] -> pruefen NS LP>2500 258.69 SLP-Werte nicht gefunden
+[809] VersorgungsBetriebe Elbe GmbH (https://www.versorgungsbetriebe-elbe.net)
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/2026/preise-strom-nne-vbe-ab-01-01-2026.pdf -> verwendbar unklar
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/elektrische_raumheizung/2026/sww_getrennte_messung___14_ab_01.01 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/2026/fiktives-preisblatt-strom-nne-vbe-ab-01-01-2026.pd -> fiktive Entgelte
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/netzinformationen/wiederplombierungskarte-2026-komprimiert.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.s-w-w.com/fileadmin/content/strom/netzinformationen/inbetriebsetzungsprotokoll_fuer_erzeugungsanla -> weder RLM- (NS) noch SLP-Werte gefunden
+[787] -> kein_preisblatt 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
+[814] Versorgungsbetriebe Zellingen (www.markt-zellingen.de)
+    Dokument https://www.versorgungsbetriebe-elbe.net/preisblatt-strom.html?_hash=MEIRSddI738%2BivihJliRTBlrsU%2F3%2BQRNSxP -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.versorgungsbetriebe-elbe.net/preisblatt-strom.html?_hash=MEIRSddI738%2BivihJliRTBlrsU%2F3%2BQRNSxP -> kein PDF/Excel
+[814] -> blockiert HTTP 403 https://www.markt-zellingen.de; HTTP 405 http://www.markt-zellingen.de
+[818] Vorarlberger Energienetze GmbH (www.vorarlbergnetz.de)
+    Dokument https://www.vorarlbergnetz.at/media/Preisblatt_NNE_2026_NEU.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
