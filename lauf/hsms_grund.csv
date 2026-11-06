@@ -284,7 +284,7 @@ SNB971962135690;hochspannung_nur_im_text
 SNB942908692218;nicht_ausgewiesen
 SNB913273314623;nicht_ausgewiesen
 SNB951760950909;nicht_ausgewiesen
-SNB964573708865;nicht_ausgewiesen
+SNB964573708865;gelesen
 SNB943841101959;gelesen
 SNB986580518855;hochspannung_nur_im_text
 SNB972153058149;nicht_ausgewiesen
@@ -628,7 +628,7 @@ SNB926119738552;nur_hochspannung
 SNB951305396193;nicht_ausgewiesen
 SNB924409922308;nicht_ausgewiesen
 SNB964802985821;kein_dokument
-SNB988838479086;nicht_ausgewiesen
+SNB988838479086;gelesen
 SNB939724292715;gelesen
 SNB976170444053;nicht_ausgewiesen
 SNB927574397889;hochspannung_nur_im_text
@@ -666,7 +666,7 @@ SNB954187049256;gelesen
 SNB926470603247;nicht_ausgewiesen
 SNB975659838086;nicht_ausgewiesen
 SNB976240506834;hochspannung_nur_im_text
-SNB910474681448;nicht_ausgewiesen
+SNB910474681448;im_dokument_nicht_gelesen
 SNB943984165313;nicht_ausgewiesen
 SNB900123507953;nicht_ausgewiesen
 SNB957404386462;gelesen
@@ -698,7 +698,7 @@ SNB916927144072;nicht_ausgewiesen
 SNB932685335767;nicht_ausgewiesen
 SNB967967636034;nicht_ausgewiesen
 SNB991263248615;nur_hochspannung
-SNB945413736880;nicht_ausgewiesen
+SNB945413736880;gelesen
 SNB968648650424;nicht_ausgewiesen
 SNB969058795651;nicht_ausgewiesen
 SNB920730809172;hochspannung_nur_im_text

@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 15:10, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 15:14, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 542 | 65% |
-| pruefen | 260 | 31% |
+| ok | 545 | 66% |
+| pruefen | 257 | 31% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 18 | 2% |
 | robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 455,  87
+Preisstand (nur ok): endgültig 458,  87
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 744)
+- Median: 7,28 ct/kWh (n = 752)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 752)
+- Median: 6,41 ct/kWh (n = 755)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 151,12 €/kW/a (n = 752)
+- Median: 151,05 €/kW/a (n = 755)
 
 ## Datenherkunft
 
@@ -142,9 +142,9 @@ Preisstand (nur ok): endgültig 455,  87
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (289)
+## Restfälle (286)
 
-### pruefen (260)
+### pruefen (257)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -349,14 +349,12 @@ Preisstand (nur ok): endgültig 455,  87
 - 575. Stadtwerke Mühlheim am Main GmbH: 
 - 586. Stadtwerke Neustadt a.d. Aisch GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (12.92, 15.37); SLP-Werte auffällig
 - 588. Stadtwerke Neustadt an der Weinstraße GmbH: HTTP 429 https://www.SWNeustadt.de; HTTP 429 http://www.SWNeustadt.de
-- 594. Stadtwerke Norderstedt: SLP-Werte nicht gefunden
 - 598. Stadtwerke Oberkirch GmbH: SLP-Werte nicht gefunden
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
 - 601. Stadtwerke Oerlinghausen GmbH: 
 - 611. Stadtwerke Peine GmbH: 
 - 613. Stadtwerke Pirmasens Versorgungs GmbH: 
 - 624. Stadtwerke Ratingen GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 630. Stadtwerke Rosenheim Netze GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 636. Stadtwerke Sangerhausen GmbH: 
 - 637. Stadtwerke Scheinfeld: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 646. Stadtwerke Schüttorf - Emsbüren GmbH: 
@@ -373,7 +371,6 @@ Preisstand (nur ok): endgültig 455,  87
 - 686. Stadtwerke Tuttlingen GmbH: SLP-Werte nicht gefunden
 - 688. Stadtwerke Uffenheim: 
 - 689. Stadtwerke Ulm/Neu-Ulm Netze GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 700. Stadtwerke Völklingen Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (12.09, 2.24, 28.16, 85.57); RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 706. Stadtwerke Waldmünchen: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 713. Stadtwerke Wasserburg a. Inn: 
 - 715. Stadtwerke Weilburg GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)

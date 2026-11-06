@@ -1,6 +1,6 @@
 ﻿mastr_nr;hlzf_status;hlzf_ns_fruehling;hlzf_ns_sommer;hlzf_ns_herbst;hlzf_ns_winter;hlzf_msns_fruehling;hlzf_msns_sommer;hlzf_msns_herbst;hlzf_msns_winter;hlzf_schwelle_prozent;hlzf_mindestleistung_kw;hlzf_quelle_url
 SNB979269087643;gelesen_nutzer;keins;keins;17:30-18:45;17:15-19:30;keins;keins;17:15-19:15;17:15-19:30;;;https://www.abita-energie.de/fileadmin/dokumente/Netze/Entgelte/Hochlastzeitfenster2021.pdf
-SNB969473762610;raster_grafik;;;;;;;;;;;SNB969473762610_0002_hlzf.pdf
+SNB969473762610;keine_im_dokument;;;;;;;;;;;SNB969473762610_0002_hlzf.pdf
 SNB948311994307;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB948311994307_0003_hlzf.pdf
 SNB990362338043;gelesen_nutzer;15:00-18:15;15:00-18:15;15:00-18:15;15:00-18:15;15:00-18:15;15:00-18:15;15:00-18:15;15:00-18:15;;;https://www.albwerk.de/de/Metanavigation/Stromnetz/Albwerk-Netze/Stromnetz/Individuelle-Netzentgelte-2026-N031.pdf
 SNB951051725711;gelesen_nutzer;keins;keins;keins;17:30-19:15;keins;keins;keins;17:45-19:45;;;http://www.allgaeunetz.com/download/2025_10_31_hochlastzeitfenster_2026.pdf
@@ -163,7 +163,7 @@ SNB962013221356;gelesen_unser;keins;11:15-12:15;keins;keins;keins;keins;17:15-18
 SNB965281540327;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB991797615686;gelesen_unser;keins;keins;15:30-18:30;15:30-18:30;keins;keins;16:00-19:00;09:30-12:30, 16:00-19:00;;;SNB991797615686_0163_hlzf.pdf
 SNB986363918520;kein_dokument_oder_adresse;;;;;;;;;;;
-SNB935932937127;kein_dokument_oder_adresse;;;;;;;;;;;https://www.ewr-netze.eu/wp-content/uploads/2025/09/Hochlastzeitfenster_2026.pdf
+SNB935932937127;kein_dokument_oder_adresse;;;;;;;;;;;eingang: SNB935932937127_0165_hlzf.pdf
 SNB931930462517;gelesen_unser;keins;keins;keins;16:45-20:00, 21:30-22:15;keins;keins;keins;16:45-20:00, 21:30-22:15;;;SNB931930462517_0166_hlzf.pdf
 SNB911696239035;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB911696239035_0167_hlzf.pdf
 SNB921611512679;gelesen_unser;keins;keins;keins;11:45-12:15;keins;keins;17:15-19:00;17:15-19:15;;;https://www.esb-energie.de/ceasy/resource/?id=2711&download=1
@@ -175,7 +175,7 @@ SNB921319639913;gelesen_unser;keins;keins;keins;12:15-15:30, 17:15-19:45;keins;k
 SNB921629791202;gelesen_unser;keins;keins;08:45-09:15, 09:45-10:00, 11:15-11:30;keins;;;;;;;SNB921629791202_0174_hlzf.pdf
 SNB953495670831;gelesen_unser;keins;keins;09:45-11:00;09:00-12:15, 17:15-18:45;keins;keins;09:45-11:00;08:15-13:00, 17:15-18:45;;;https://www.energienetze-rudolstadt.de/fileadmin/user_upload/01_Strom/Netzentgelte/Hochlastzeitfenster/hochlastzeitfenster_2026.pdf
 SNB999405828558;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB999405828558_0176_hlzf.pdf
-SNB951180867351;kein_dokument_oder_adresse;;;;;;;;;;;eingang: SNB951180867351_0177_hlzf.pdf
+SNB951180867351;kein_dokument_oder_adresse;;;;;;;;;;;SNB951180867351_0177_hlzf.pdf
 SNB963792700889;gelesen_nutzer;keins;keins;17:00-19:00;16:45-19:30;;;;;;;https://www.regensburg-netz.de/fileadmin/Downloads/Fuer_Partner/Netzkunden_Lieferanten/Netzentgelte_Umlagen/2026/Preisblaetter_Gesamt_endgueltig_2026.pdf
 SNB967982606159;gelesen_unser;keins;keins;17:00-19:15;16:45-19:45;;;;;;;https://netze.estw.de/de/Stromnetz/Netzzugang-Entgelte/Netzzugang-Entgelte/Hochlastzeitfenster-2026.pdf
 SNB929575518928;pruefung_offen;;;;;;;;;;;eingang: SNB929575518928_0180_hlzf.pdf
@@ -228,7 +228,7 @@ SNB991400668603;gelesen_unser;09:00-10:00;keins;keins;keins;keins;keins;keins;17
 SNB971174411018;gelesen_nutzer;07:45-13:45;07:45-13:45;07:45-13:45;07:45-13:45;07:45-13:45;07:45-13:45;07:45-13:45;07:45-13:45;;;https://www.stadtwerke-emsdetten.de/wp-content/uploads/Veroeffentlichung_Hochlastzeitfenster_2026.pdf
 SNB961322866920;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB924819944297;gelesen_unser;keins;keins;keins;18:15-20:00;keins;keins;keins;18:15-20:00;;;https://netze.gemeindewerke-bovenden.de/fileadmin/user_upload/Bovenden_Download/Netze_Strom_Entgelte/GWB_Netze_Strom_Hochlastzeitfenster_2026_WEB.pdf
-SNB919708421706;kein_dokument_oder_adresse;;;;;;;;;;;eingang: SNB919708421706_0230_hlzf.pdf
+SNB919708421706;kein_dokument_oder_adresse;;;;;;;;;;;SNB919708421706_0230_hlzf.pdf
 SNB962006136537;gelesen_unser;keins;keins;keins;14:00-14:30, 18:30-20:00;keins;keins;keins;17:45-20:00;;;eingang: SNB962006136537_0231_hlzf.pdf
 SNB981193584808;gelesen_unser;keins;14:15-15:00;keins;keins;keins;keins;keins;12:45-18:45;;;https://www.gemeindewerke-kiefersfelden.de/?dl_name=https://www.gemeindewerke-kiefersfelden.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026.pdf
 SNB969688824103;gelesen_unser;keins;keins;keins;keins;keins;keins;17:15-18:15;08:30-11:15, 13:00-14:00, 17:45-20:00;;;eingang: SNB969688824103_0233_hlzf.pdf
@@ -323,7 +323,7 @@ SNB934214092950;gelesen_nutzer;keins;keins;16:00-19:00;16:00-19:00;keins;keins;1
 SNB933767388565;gelesen_unser;13:45-14:45;keins;10:45-13:45;keins;keins;keins;17:15-18:15;16:45-18:45;;;https://www.netzgesellschaft-ahlen.de/_Resources/Persistent/1/a/d/0/1ad090fde040aa3069ccaa7424ca7a7e759cb55f/HLZF%20Strom%202026.pdf
 SNB978051166283;gelesen_nutzer;08:45-11:45;07:15-10:15;06:45-13:15;07:45-13:30;08:45-11:45;07:15-10:15;06:45-13:15;07:45-13:30;;;https://www.stwgd-netze.de/hochlastzeitfenster.html
 SNB917432806905;gelesen_nutzer;keins;keins;keins;17:15-20:15;keins;keins;16:30-19:30;10:15-13:15, 16:30-19:30;;;https://stadtwerke-hall.de/fileadmin/files/Downloads/Netzdaten_Strom/4_Netzentgelte/4Hochlastzeitfenster_2027_21102026.pdf
-SNB922055731633;raster_grafik;;;;;;;;;;;https://www.netzgesellschaft-forst.de/fileadmin/user_upload/hochlastzeitfenster_strom_2026.pdf
+SNB922055731633;raster_grafik;;;;;;;;;;;SNB922055731633_0325_hlzf.pdf
 SNB954814647626;gelesen_unser;11:15-12:45;keins;keins;10:15-15:15, 17:15-18:45;keins;keins;10:45-13:00, 17:15-18:15;09:30-15:15, 16:15-18:45;30;100;eingang: SNB954814647626_0326_hlzf.pdf
 SNB931546188436;gelesen_nutzer;keins;keins;keins;keins;keins;keins;keins;keins;;;https://www.stadtwerke-sindelfingen.de/fileadmin/stadtwerke-sindelfingen.de/assets/netze/stromnetz/Netzentgelte/hochlastzeitfenster/Strom_Hochlastzeitfenster-2025.pdf?t=1772010406
 SNB934185023519;gelesen_nutzer;keins;11:30-14:30;keins;keins;;;;;;;https://www.stadtwerke-speyer.de/de/Ueber-uns/Netze1/Stromnetz/Netzzugang-Entgelte/2026-Hochlastzeitfenster.pdf
@@ -375,7 +375,7 @@ SNB922689183730;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB922689183730_0373_hlzf.pdf
 SNB993059842564;gelesen_nutzer;16:15-19:15;16:15-19:15;16:15-19:15;16:15-19:15;16:15-19:15;16:15-19:15;16:15-19:15;16:15-19:15;;;https://www.stromnetz.berlin/files/globalassets/dokumente/entgelte/zugang/hochlastzeitfenster-2026-berlin.pdf
 SNB964046129302;gelesen_unser;keins;keins;keins;11:00-11:15, 12:45-13:00, 13:45-14:15, 16:00-16:15;keins;keins;14:15-14:30, 16:15-16:30, 17:15-17:30, 19:00-19:15;11:00-11:15, 13:45-14:00, 16:00-16:15, 18:30-18:45, 19:00-19:15;30;;https://stwhas.de/app/uploads/2025/11/Hochlastfenster_HLF_2025.pdf
 SNB936176430474;gelesen_nutzer;12:00-13:45;12:00-13:45;12:00-13:45;12:00-13:45;12:00-13:45;12:00-13:45;12:00-13:45;12:00-13:45;;;https://stromnetz-herrenberg.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026_Stromnetzgesellschaft-Herrenberg.pdf
-SNB982726407335;kein_dokument_oder_adresse;;;;;;;;;;;SNB982726407335_0377_hlzf.pdf
+SNB982726407335;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB931930462517_0377_hlzf.pdf
 SNB942257679137;gelesen_nutzer;keins;keins;keins;17:00-20:30;keins;keins;keins;17:00-20:00;30;;https://www.stromversorgung-inzell.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026.pdf
 SNB947092763157;gelesen_nutzer;;09:00-15:00;09:00-15:00;09:00-15:00;;09:00-15:00;09:00-15:00;09:00-15:00;;;https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Staedtischen-Werke-Lauf/Netzzugang-Entgelte/StWL-HLZ-2026.pdf
 SNB947709605108;gelesen_unser;keins;keins;keins;12:00-14:15, 17:45-20:00;keins;keins;keins;17:30-19:00;30;;eingang: SNB947709605108_0380_hlzf.pdf
@@ -449,7 +449,7 @@ SNB924774487556;gelesen_unser;keins;keins;16:45-19:00;16:45-19:30;keins;keins;16
 SNB977581070640;gelesen_nutzer;12:00-14:15;12:00-14:30;keins;17:00-19:30;keins;keins;keins;17:00-20:00;;;https://www.ewhindelang.de/download/hochlastzeitfenster_2026.pdf
 SNB991561247815;gelesen_unser;keins;keins;keins;11:45-15:00, 16:30-19:15;keins;keins;keins;12:15-14:00, 16:45-19:15;;;SNB991561247815_0449_hlzf.pdf
 SNB944601935326;gelesen_unser;keins;keins;keins;09:45-12:45, 17:45-18:15;keins;keins;16:00-18:30;16:00-19:00;;;https://www.stadtwerke-dingolfing.de/wp-content/uploads/dokumente/strom/strom_netzdaten/hochlast/Hochlastzeitfenster_2026.pdf
-SNB990562890006;kein_dokument_oder_adresse;;;;;;;;;;;
+SNB990562890006;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB990562890006_0451_hlzf.pdf
 SNB990892864395;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB976679550309;gelesen_nutzer;09:30-10:30;09:30-10:30;09:30-10:30;09:30-10:30;09:30-10:30;09:30-10:30;09:30-10:30;09:30-10:30;;;https://netze.ews-schoenau.de/fileadmin/ews-netze/Hochlastzeitfenster_2026_EWS.pdf
 SNB925050442719;gelesen_unser;keins;keins;keins;08:00-09:30, 18:00-19:30;keins;keins;keins;08:15-09:15;;;https://www.stadtwerke-dorfen.de/wp-content/uploads/2026_01_hochlastzeitfenster_strom.pdf
@@ -547,7 +547,7 @@ SNB965379905076;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB935738221819;gelesen_unser;13:00-14:45;13:30-15:00;keins;keins;keins;keins;keins;08:15-11:00, 16:45-19:00;;;eingang: SNB935738221819_0546_hlzf.pdf
 SNB980345455409;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB980345455409_0547_hlzf.pdf
 SNB950039201827;pruefung_offen;;;;;;;;;;;https://www.stadtwerke-lehrte.de/de/Netze1/Strom/Hochlastzeitfenster-2026.pdf
-SNB946090906887;raster_grafik;;;;;;;;;;;https://netze.stadtwerke-leine-solling.de/fileadmin/user_upload/web2/pdf/Gas/Transport_und_Netz/Netznutzung/Hochlastzeitfenster_2026_SWLS.pdf
+SNB946090906887;raster_grafik;;;;;;;;;;;SNB946090906887_0549_hlzf.pdf
 SNB967075358620;gelesen_unser;14:30-15:00, 15:30-16:00;keins;17:30-18:15, 18:30-19:15;16:45-19:15;keins;keins;17:30-18:00, 18:30-19:00;16:45-19:15;;;https://www.stadtwerke-lemgo.de/fileadmin/user_upload/08_Netze/Docs/Netznutzung/Hochlastzeitfenster_SW_LE_2026.pdf
 SNB949152526504;gelesen_nutzer;12:00-12:15;11:45-12:00;keins;keins;keins;keins;keins;11:30-12:45, 16:30-18:15;;;https://www.stw-badnes.de/de/Strom/Netz/Netzzugang-Entgelte/Hochlast-Zeitfenster-2026.pdf
 SNB982030394239;gelesen_nutzer;;;;;keins;keins;16:45-18:15;15:00-18:30;;;https://www.stadtwerke-bad-reichenhall.de/de/Kopfnavigation1/Netz/Stromnetz/Hochlastzeitfenster-2026.pdf
@@ -638,7 +638,7 @@ SNB922861338965;gelesen_nutzer;;11:45-16:15;11:45-16:15;09:00-13:00;;11:45-16:15
 SNB924120395771;gelesen_unser;12:15-12:30, 13:15-13:30;keins;keins;keins;13:45-14:00;13:15-13:30;keins;17:00-18:45;;;https://www.stadtwerke-scheinfeld.de/files/52/Hochlastzeitfenster/95/Hochlastzeitfenster2026
 SNB924685554682;gelesen_nutzer;11:30-12:00;keins;keins;10:30-12:30, 09:30-12:30, 18:00-18:30, 10:45-12:30, 17:45-18:45;;;;;30;;https://www.rendsburgernetz-sh.de/fileadmin/redakteure/Netze_RD/SWSH_2500_PP_151_Hochlastzeitfenster_atypische_Netznutzung_barrierefrei_RD.pdf
 SNB942159258331;gelesen_unser;keins;keins;keins;07:30-11:30;06:00-07:15;10:45-12:45, 14:00-15:30;keins;07:30-09:30, 18:30-19:45;;;SNB942159258331_0639_hlzf.pdf
-SNB987617847795;raster_grafik;;;;;;;;;;;https://www.stadtwerke-schlitz.de/strom/stromnetz/dokumente-stromnetz/dok-stromnetz-hochlastzeitfenster/hlzf-2026-stw.-schlitz.pdf?cid=utf
+SNB987617847795;raster_grafik;;;;;;;;;;;eingang: SNB987617847795_0640_hlzf.pdf
 SNB979429791342;gelesen_nutzer;12:15-12:30, 13:15-13:30;keins;keins;keins;13:45-14:00;13:15-13:30;keins;17:00-18:45;;;https://www.stadtwerke-scheinfeld.de/files/52/Hochlastzeitfenster/95/Hochlastzeitfenster2026
 SNB950028563172;gelesen_unser;keins;keins;keins;19:00-20:00;keins;keins;keins;18:45-20:00;;;https://www.enwg-veroeffentlichungen.de/schneverdingen/Netze/preisblatt/HLZF-2026.pdf
 SNB936461984224;gelesen_nutzer;16:45-18:00;;08:45-09:30;08:00-12:30;16:45-18:00;;08:45-09:30;08:00-12:30;;;https://www.enwg-veroeffentlichungen.de/schneverdingen/Netze/preisblatt/HLZF-2026.pdf
@@ -679,7 +679,7 @@ SNB943261073362;gelesen_unser;keins;keins;11:15-13:15;11:00-14:00;11:15-11:45, 1
 SNB932509765411;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB932509765411_0678_hlzf.pdf
 SNB938620426132;gelesen_nutzer;10:00-10:15, 11:30-11:45;keins;keins;10:00-10:45, 11:00-11:15;keins;keins;13:00-13:30, 16:45-17:30, 18:15-18:45;12:15-12:30, 17:00-18:00;;;https://www.stadtwerke-zwiesel.de/media/download/stadtwerke_zwiesel_hochlastzeitfenster_par19nev_2026.pdf
 SNB933235634552;kein_dokument_oder_adresse;;;;;;;;;;;
-SNB940718804685;kein_dokument_oder_adresse;;;;;;;;;;;
+SNB940718804685;keine_im_dokument;;;;;;;;;;;SNB940718804685_0681_hlzf.pdf
 SNB976987786759;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB976987786759_0682_hlzf.pdf
 SNB924659713978;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB914963192408;gelesen_nutzer;15:00-08:44;15:00-08:44;15:00-08:44;15:00-08:44;15:00-08:44;15:00-08:44;15:00-08:44;15:00-08:44;;;https://www.stromversorgung-pfaffenhofen.de/upload/files/Hochlast-Zeitfenster_nach_%C2%A7_19_Abs._2_Satz_1_StromNEV_im_Jahr_2025_.pdf
@@ -728,7 +728,7 @@ SNB957988771050;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB957988771050_0726_hlzf.pdf
 SNB972723368326;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB972723368326_0727_hlzf.pdf
 SNB971007500575;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB975680234468;kein_dokument_oder_adresse;;;;;;;;;;;
-SNB941081544895;kein_dokument_oder_adresse;;;;;;;;;;;https://stadtwerke-wittenberge.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026.pdf
+SNB941081544895;kein_dokument_oder_adresse;;;;;;;;;;;SNB941081544895_0730_hlzf.pdf
 SNB937722627607;gelesen_unser;keins;keins;18:00-19:00;17:00-19:30;keins;keins;keins;18:00-19:00;;;SNB937722627607_0731_hlzf.pdf
 SNB983546347757;gelesen_unser;keins;keins;keins;17:15-19:00;keins;keins;17:30-18:00;17:15-19:00;;;eingang: SNB983546347757_0732_hlzf.html
 SNB971345683381;gelesen_nutzer;keins;keins;keins;keins;keins;keins;keins;keins;;;https://kew-netz.de/media/pages/dokumente/strom/marktpartner/kew-hochlastzeitfenster-2026/c8b3d6d08d-1765351468/2026_kew-hochlastzeitfenster-gesamtliste.pdf

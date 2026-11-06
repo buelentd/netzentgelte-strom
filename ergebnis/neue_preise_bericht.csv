@@ -1,7 +1,61 @@
 ﻿nr;netzbetreiber;datei;pruefung;gruende
-193;EWR Netze GmbH (Lichtenstein-Unterhausen);SNB923953358557_0193.pdf;PRUEFEN;Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?)
-754;Stromnetz Weilheim GmbH ＆ Co. KG;SNB929262647085_0754.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
-603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;SNB940478286561_0603.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
-117;Elektrizitätswerk des Kantons Schaffhausen AG;SNB985099151188_0117.pdf;OK;Jahr 2026, Name und Inhalt passen
-117;Elektrizitätswerk des Kantons Schaffhausen AG;SNB985099151188_0117_2.pdf;FALSCH;"Preisblatt unvollständig? fehlt: Niederspannung/Umspannung, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht); Gas/Wärme/Was"
-151;Energienetze Bayern GmbH (Stromverteilnetz Germering);SNB994111700501_0151.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+668;Stadtwerke Staßfurt GmbH;SNB910474681448_0668.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: ct/kWh, €/kW
+59;Aschaffenburger Versorgungs-GmbH;SNB911081401368_0059.pdf;FALSCH;"Preisblatt unvollständig? fehlt: Niederspannung/Umspannung, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht); Gas/Wärme/Was"
+36;LEW Verteilnetz GmbH;SNB911705062982_0036.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Be"
+197;FASTR GmbH;SNB913413777899_0197.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+63;BASF InfraService ＆ Solutions Lausitz GmbH;SNB914411628732_0063.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+684;Stadtwerke Trostberg Stromversorgung GmbH;SNB914963192408_0684.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+118;Elektrizitätswerk Dießen Stadler GmbH;SNB916328839515_0118.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+324;Netzgesellschaft Eisenberg mbH;SNB917432806905_0324.pdf;OK;Jahr 2026, Name und Inhalt passen
+57;Alzchem Netz GmbH;SNB922722422505_0057.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: €/kW
+206;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;SNB926427521488_0206.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+715;Stadtwerke Weilburg GmbH;SNB926480464456_0715.pdf;OK;Jahr 2026, Name und Inhalt passen
+126;Elektrizitätswerk S c h w e i g e r  o.H.G;SNB927892816017_0126.pdf;PRUEFEN;Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?)
+544;Stadtwerke Landshut;SNB928992067729_0544.pdf;FALSCH;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); kein Preisblatt: es fehlen ct/kWh, €/kW, Leistungs-/Arbeits-/Grundpreis"
+776;SWL Übertragungsnetzgesellschaft mbH;SNB930325069232_0776.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+186;EVU Langenpreising;SNB930329896650_0186.pdf;OK;Jahr 2026, Name und Inhalt passen
+736;Stadtwerke Zirndorf GmbH;SNB931316685899_0736.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: €/kW
+412;Stadtwerke Baden-Baden;SNB931622346583_0412.pdf;OK;Jahr 2026, Name und Inhalt passen
+123;Elektrizitätswerk Max Peissker;SNB936480897581_0123.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+238;Gemeindewerke Niefern-Öschelbronn;SNB940436967099_0238.pdf;OK;Jahr 2026, Name und Inhalt passen
+819;VSE Verteilnetz GmbH;SNB941650885558_0819.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+588;Stadtwerke Neustadt an der Weinstraße GmbH;SNB942305388936_0588.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+280;InfraServ Gendorf Netze GmbH;SNB942732578894_0280.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+65;BEW Netze GmbH;SNB944057190867_0065.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: ct/kWh"
+700;Stadtwerke Völklingen Netz GmbH;SNB945413736880_0700.pdf;OK;Jahr 2026, Name und Inhalt passen
+743;Städtische Werke Borna Netz GmbH;SNB946013720880_0743.pdf;PRUEFEN;kaum Text (Scan, Bild oder leere Seite): von Hand ansehen
+661;Stadtwerke Soltau GmbH ＆ Co. KG;SNB947030954821_0661.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+362;Reußenköge Netz ＆ Infrastruktur GmbH;SNB953011641437_0362.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+624;Stadtwerke Ratingen GmbH;SNB953661539375_0624.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: €/kW
+420;Stadtwerke Bernburg GmbH;SNB953669866350_0420.pdf;PRUEFEN;Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?)
+413;Stadtwerke Baiersdorf KU;SNB956377097702_0413.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: €/kW"
+341;Nordhausen Netz GmbH;SNB959176447266_0341.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+391;Stadtwerke Bad Bramstedt Netz GmbH;SNB960502792271_0391.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+281;InfraServ GmbH ＆ Co. Wiesbaden KG;SNB960884494671_0281.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+476;Stadtwerke Fellbach GmbH;SNB964273276183_0476.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+286;KEW Karwendel Energie und Wasser GmbH;SNB964573708865_0286.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+818;Vorarlberger Energienetze GmbH;SNB964630351430_0818.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: Niederspannung/Umspannung
+586;Stadtwerke Neustadt a.d. Aisch GmbH;SNB965315499379_0586.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+350;Outokumpu Stainless Nirosta GmbH;SNB965394941448_0350.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingunge"
+261;GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG;SNB968670865650_0261.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+366;SachsenNetze HS.HD GmbH;SNB968914838013_0366.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: €/kW
+706;Stadtwerke Waldmünchen;SNB971196250442_0706.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: €/kW"
+733;Stadtwerke Wolmirstedt GmbH;SNB971345683381_0733.pdf;PRUEFEN;Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?)
+809;VersorgungsBetriebe Elbe GmbH;SNB971770548286_0809.pdf;OK;Jahr 2026, Name und Inhalt passen
+71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;SNB972511582064_0071.pdf;OK;Jahr 2026, Name und Inhalt passen
+14;N-ERGIE Netz GmbH;SNB973875583315_0014.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;SNB974239978785_0359.pdf;OK;Jahr 2026, Name und Inhalt passen
+276;IGS Netze GmbH;SNB974319144116_0276.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+74;Covestro Brunsbüttel Energie GmbH;SNB975268997129_0074.pdf;OK;Jahr 2026, Name und Inhalt passen
+26;Energienetze Mittelrhein GmbH ＆ Co. KG;SNB980055629275_0026.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+39;SachsenNetze GmbH;SNB980808485264_0039.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: €/kW
+782;SWR Energie GmbH ＆ Co. KG;SNB981113965977_0782.pdf;FALSCH;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: Niederspannung/Umspannung, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbet"
+279;InfraLeuna GmbH;SNB982722829230_0279.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+445;Stadtwerke Deidesheim GmbH;SNB984269982003_0445.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+594;Stadtwerke Norderstedt;SNB985965721965_0594.pdf;OK;Jahr 2026, Name und Inhalt passen
+468;Stadtwerke Emmerich GmbH;SNB986190606218_0468.pdf;PRUEFEN;Preisblatt unvollständig? fehlt: ct/kWh
+630;Stadtwerke Rosenheim Netze GmbH;SNB988838479086_0630.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+181;EVB Netze GmbH;SNB989700422711_0181.pdf;PRUEFEN;"Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?); Preisblatt unvollständig? fehlt: €/kW"
+451;Stadtwerke Dinkelsbühl;SNB990562890006_0451.pdf;OK;Jahr 2026, Name und Inhalt passen
+46;Thüga Energienetze GmbH;SNB990887002092_0046.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
+226;Gemeindewerke Haßloch GmbH;SNB991400668603_0226.pdf;OK;Jahr 2026, Name und Inhalt passen

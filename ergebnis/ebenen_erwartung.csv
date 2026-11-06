@@ -37,7 +37,7 @@ SNB942238573102;35;wesernetz Bremen GmbH;pruefen;nicht_ausgewiesen;gelesen;geles
 SNB911705062982;36;LEW Verteilnetz GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
 SNB921899277833;37;NRM Netzdienste Rhein-Main GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB961471621746;38;Pfalzwerke Netz AG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB980808485264;39;SachsenNetze GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
+SNB980808485264;39;SachsenNetze GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB933459598975;40;Netze Magdeburg GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB982934611074;41;Energieversorgung Halle Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB973742186519;42;SWKiel Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -284,7 +284,7 @@ SNB971962135690;282;Infrastrukturbetrieb der Stadt Arneburg;ok;gelesen;gelesen;g
 SNB942908692218;283;Karl Stengle GmbH ＆ Co. KG;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB913273314623;284;KBG Kraftstrom- Bezugsgenossenschaft Homberg eG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB951760950909;285;Keep - Kommunale Eisenberger Energiepartner GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB964573708865;286;KEW Karwendel Energie und Wasser GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB964573708865;286;KEW Karwendel Energie und Wasser GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB943841101959;287;KEW Kommunale Energie- und Wasserversorgung AG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB986580518855;288;KommEnergie GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -364,7 +364,7 @@ SNB953011641437;362;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;gelesen;gel
 SNB912239808732;363;Rheinhessische Energie- und Wasserversorgungs-GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB976863966633;364;Rothmoser GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB958237843443;365;Saalfelder Energienetze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB968914838013;366;SachsenNetze HS.HD GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
+SNB968914838013;366;SachsenNetze HS.HD GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB956986612075;367;Saerbecker Ver- und Entsorgungsnetzgesellschaft mbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB953868012787;368;Schleswiger Stadtwerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB950960779068;369;SEW Stromversorgungs GmbH;robots;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
@@ -592,7 +592,7 @@ SNB914630088973;590;Stadtwerke Neustrelitz GmbH;ok;gelesen;gelesen;gelesen;nicht
 SNB925999725461;591;Stadtwerke Neuwied GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB961943991735;592;Stadtwerke Niesky GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB932374739180;593;Stadtwerke Norderney GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB985965721965;594;Stadtwerke Norderstedt;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB985965721965;594;Stadtwerke Norderstedt;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB951791941969;595;Stadtwerke Nordfriesland - Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB965813404431;596;Stadtwerke Nortorf AöR;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB948186469375;597;Stadtwerke Nürtingen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -628,7 +628,7 @@ SNB926119738552;626;Stadtwerke Rendsburg GmbH;ok;gelesen;gelesen;gelesen;nicht_a
 SNB951305396193;627;Stadtwerke Riesa GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB924409922308;628;Stadtwerke Rinteln GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB964802985821;629;Stadtwerke Röthenbach a. d. Pegnitz GmbH;blockiert;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
-SNB988838479086;630;Stadtwerke Rosenheim Netze GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB988838479086;630;Stadtwerke Rosenheim Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB939724292715;631;Stadtwerke Rostock Netzgesellschaft mbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB976170444053;632;Stadtwerke Rotenburg (Wümme) GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB927574397889;633;Stadtwerke Roth;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -666,7 +666,7 @@ SNB954187049256;664;Stadtwerke Springe GmbH;ok;gelesen;gelesen;gelesen;gelesen;g
 SNB926470603247;665;Stadtwerke St. Ingbert GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB975659838086;666;Stadtwerke Stade GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB976240506834;667;Stadtwerke Stadtroda GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB910474681448;668;Stadtwerke Staßfurt GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;pruefen;im_dokument_nicht_gelesen;gelesen;gelesen;im_dokument_nicht_gelesen;gelesen
 SNB943984165313;669;Stadtwerke Stein GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB900123507953;670;Stadtwerke Steinfurt GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB957404386462;671;Stadtwerke Stendal GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -682,7 +682,7 @@ SNB933235634552;680;Stadtwerke Torgau GmbH;ok;gelesen;gelesen;gelesen;nicht_ausg
 SNB940718804685;681;Stadtwerke Traunstein GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB976987786759;682;Stadtwerke Treuchtlingen KU;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB924659713978;683;Stadtwerke Troisdorf GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
-SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
+SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB921695080347;685;Stadtwerke Tübingen GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB922074927642;686;Stadtwerke Tuttlingen GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB965557517831;687;Stadtwerke Uelzen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -698,7 +698,7 @@ SNB916927144072;696;Stadtwerke Villingen-Schwenningen GmbH;ok;gelesen;gelesen;ge
 SNB932685335767;697;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB967967636034;698;Stadtwerke Vilshofen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB991263248615;699;Stadtwerke Vlotho Stromnetz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
+SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB968648650424;701;Stadtwerke Wachenheim;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969058795651;702;Stadtwerke Waiblingen GmbH;blockiert;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;fehlt
 SNB920730809172;703;Stadtwerke Waldkirch GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -713,7 +713,7 @@ SNB973505068113;711;Stadtwerke Waren GmbH;ok;gelesen;gelesen;gelesen;nicht_ausge
 SNB969345305204;712;Stadtwerke Warendorf GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB929073868471;713;Stadtwerke Wasserburg a. Inn;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB975283859389;714;Stadtwerke Wedel GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB926480464456;715;Stadtwerke Weilburg GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
+SNB926480464456;715;Stadtwerke Weilburg GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB935723521351;716;Stadtwerke Weinheim GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;gelesen;gelesen
 SNB965819408044;717;STADTWERKE WEISSENBURG GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB933274941888;718;Stadtwerke Weißenfels Energienetze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
