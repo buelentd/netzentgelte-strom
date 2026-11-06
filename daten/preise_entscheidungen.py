@@ -2,7 +2,17 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
+TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("603", "hsms"): [5.16, 1.82, 45.09, 0.22],           # Olching (Textauszug_2026): Jahresleistungspreis RLM
+    ("603", "ms"): [6.27, 2.59, 63.53, 0.30],
+    ("603", "msns"): [10.50, 2.97, 58.86, 1.04],
+    ("603", "ns"): [12.18, 4.05, 61.51, 2.08],
+    ("603", "slp"): [2.77, 73.00],
+    ("151", "ms"): [2.98, 5.25, 121.18, 0.52],            # Energienetze Bayern (Textauszug_2026, OCR geprüft)
+    ("151", "msns"): [3.30, 5.52, 117.21, 0.96],
+    ("151", "ns"): [3.65, 6.20, 125.92, 1.31],
+    ("151", "slp"): [4.25, 62.05],
     ("42", "slp"): [4.95, 67.80],                         # SWKiel: Netznutzungsentgelt netto Grundpreis €/Jahr, Arbeitspreis ct/kWh
     ("275", "slp"): [10.93, 72.00],                       # HEWA: Arbeitspreis HT- und NT-Mengen (ein Preis)
     ("434", "slp"): [7.55, 30.00],                        # Buchholz: Kleinkunden ohne Bedarfsartendifferenzierung / SLP netto
@@ -102,10 +112,10 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} von Hand am Dokument geprüft und korrigiert"
+        note = f"Korrigiert: {eb.upper()} " + ("aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)" if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
-        r[I["geprueft"]] = "ja"                         # am Dokumenttext von Hand geprüft
+        r[I["geprueft"]] = "" if nr in TEXTAUSZUG else "ja"     # am Dokumenttext von Hand geprüft; Textauszug des Kollegen: nicht am Dokument bestätigt
     out = io.StringIO(); w = csv.writer(out, delimiter=";", lineterminator=nl); w.writerows(rows)
     open(p, "w", encoding="utf-8", newline="").write(("﻿" if bom else "") + out.getvalue())
     # Entfernen: lauf/werte_entfernt.csv ergänzen

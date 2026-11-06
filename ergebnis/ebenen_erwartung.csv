@@ -149,7 +149,7 @@ SNB966380208811;147;Energie- und Wasserversorgung Kirchzarten GmbH;ok;gelesen;ge
 SNB932516649124;148;Energie- und Wasserversorgung Rheine GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB943962034624;149;Energie- und Wasserwerke Bautzen GmbH Energijowe a Wodowezawody Budysin;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914735995145;150;Energiegenossenschaft für Wittmund eG;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB994111700501;151;Energienetze Bayern GmbH (Stromverteilnetz Germering);pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
+SNB994111700501;151;Energienetze Bayern GmbH (Stromverteilnetz Germering);pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB917314328846;152;Energienetze Berlin GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB932549440224;153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
 SNB911521002599;154;EnergieSüdwest Netz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -601,7 +601,7 @@ SNB934961797092;599;Stadtwerke Ochtrup;pruefen;nicht_ausgewiesen;gelesen;gelesen
 SNB941314694489;600;Stadtwerke Oelsnitz/V. GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB967490557615;601;Stadtwerke Oerlinghausen GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB991836941189;602;Stadtwerke Olbernhau GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB940478286561;603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;kein_dokument;kein_dokument
+SNB940478286561;603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;gelesen;kein_dokument
 SNB975581504646;604;Stadtwerke Oldenburg in Holstein GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB951105240061;605;Stadtwerke Oranienburg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB932375556731;606;Stadtwerke Ostmünsterland GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
