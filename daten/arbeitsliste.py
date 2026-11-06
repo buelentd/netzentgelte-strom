@@ -16,6 +16,12 @@ def domain(w):
     h = urlparse(w if w.startswith("http") else "http://" + w).netloc or w
     return re.sub(r"^www\.", "", h).lower()
 
+GRUND_LUECKE = {}
+try:
+    for _r in csv.DictReader(open("lauf/ebene_geprueft.csv", encoding="utf-8-sig"), delimiter=";"):
+        if _r["status"] == "dokument_luecke": GRUND_LUECKE[(_r["nr"], _r["ebene"])] = _r["grund"]
+except FileNotFoundError:
+    pass
 try:
     SPERRE = {r["nr"] for r in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
     OHNE_BELEG = set(open("ergebnis/preise_ohne_beleg.txt").read().split())
@@ -50,6 +56,8 @@ for x in tab:
             preis_wer, preis_aktion = "Kollege", "Preisblatt Strom 2026 suchen und laden (Suche site:Domain Netzentgelte Strom 2026 Preisblatt)"
         elif e.get("ns") == "nicht_ausgewiesen":
             preis_wer, preis_aktion = "Kollege", "Dokument ist vermutlich das falsche (keine Niederspannung ausgewiesen): richtiges Preisblatt suchen"
+        elif "dokument_luecke" in e.values():
+            preis_wer, preis_aktion = "Kollege", "Dokument selbst ist an dieser Stelle lückenhaft oder mehrdeutig: Original-PDF prüfen, bei Bedarf besseres Preisblatt liefern (" + "; ".join(v for (n_, eb_), v in GRUND_LUECKE.items() if n_ == nr)[:230] + ")"
         elif e.get("slp") == "fehlt" and "SLP" in pf and len(pf) == 1:
             preis_wer, preis_aktion = "Kollege", "SLP-Preis (Grund- und Arbeitspreis Niederspannung) steht nicht vollständig im Dokument: separates SLP-Preisblatt liefern (Datei SNB…_NNNN_SLP.pdf)"
         elif e.get("ns") == "im_dokument_nicht_gelesen" or e.get("slp") == "fehlt" or any(e.get(k) == "im_dokument_nicht_gelesen" for k in ("ms", "msns", "hsms")):

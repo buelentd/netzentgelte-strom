@@ -260,10 +260,10 @@ SNB995332374861;258;GETEC Quartier GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewie
 SNB933529129573;259;Getreidemühle Zwiefalten eG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB920157746937;260;GEW Wilhelmshaven GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB968670865650;261;GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
-SNB918100919279;262;GIG energy services GmbH;pruefen;im_dokument_nicht_gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB918100919279;262;GIG energy services GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB961316124487;263;Gothaer Stadtwerke NETZ GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB930067626847;264;Greizer Energienetze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB935600499711;265;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;gelesen
+SNB935600499711;265;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;dokument_luecke;nicht_ausgewiesen;gelesen
 SNB915686229082;266;GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB944323025954;267;Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB977374861035;268;Halberstadtwerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -393,7 +393,7 @@ SNB960502792271;391;Stadtwerke Bad Bramstedt Netz GmbH;blockiert;nicht_ausgewies
 SNB983359308570;392;Stadtwerke Bad Brückenau GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB918290153354;393;Stadtwerke Bad Dürkheim GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB924330086940;394;Stadtwerke Bad Harzburg GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB953975499051;395;Stadtwerke Bad Herrenalb GmbH;pruefen;im_dokument_nicht_gelesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;gelesen
+SNB953975499051;395;Stadtwerke Bad Herrenalb GmbH;pruefen;dokument_luecke;nicht_ausgewiesen;dokument_luecke;nicht_ausgewiesen;gelesen
 SNB968949417344;396;Stadtwerke Bad Hersfeld GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB911031559460;397;Stadtwerke Bad Kissingen GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB941424038838;398;Stadtwerke Bad Nauheim GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -474,7 +474,7 @@ SNB940847187345;472;Stadtwerke Eschwege GmbH;ok;gelesen;gelesen;gelesen;nicht_au
 SNB937094451244;473;Stadtwerke Eutin GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB922030852827;474;Stadtwerke EVB Huntetal GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB922060347560;475;Stadtwerke EVB Huntetal Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB964273276183;476;Stadtwerke Fellbach GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB964273276183;476;Stadtwerke Fellbach GmbH;pruefen;gelesen;dokument_luecke;gelesen;nicht_ausgewiesen;gelesen
 SNB921471558077;477;Stadtwerke Feuchtwangen KU;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB957549782006;478;Stadtwerke Finsterwalde GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB922220582657;479;Stadtwerke Flensburg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -495,7 +495,7 @@ SNB980181102130;493;Stadtwerke Glückstadt GmbH;pruefen;gelesen;nicht_ausgewiese
 SNB985431470335;494;Stadtwerke GmbH Bad Kreuznach;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB941004899811;495;Stadtwerke Goch GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
 SNB938672757734;496;Stadtwerke Görlitz AG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB926442995943;497;Stadtwerke Greifswald GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB926442995943;497;Stadtwerke Greifswald GmbH;pruefen;gelesen;dokument_luecke;gelesen;nicht_ausgewiesen;gelesen
 SNB998044089535;498;Stadtwerke Greven GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB991689251534;499;Stadtwerke Grevesmühlen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934949020686;500;Stadtwerke Gronau GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
