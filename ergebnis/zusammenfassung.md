@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 10:10, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 10:25, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 533 | 64% |
-| pruefen | 263 | 32% |
+| ok | 535 | 64% |
+| pruefen | 265 | 32% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 23 | 3% |
-| robots | 10 | 1% |
+| blockiert | 20 | 2% |
+| robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 449,  84
+Preisstand (nur ok): endgültig 451,  84
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 737)
+- Median: 7,26 ct/kWh (n = 740)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 747)
+- Median: 6,41 ct/kWh (n = 751)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 151,31 €/kW/a (n = 747)
+- Median: 151,19 €/kW/a (n = 751)
 
 ## Datenherkunft
 
@@ -139,9 +139,9 @@ Preisstand (nur ok): endgültig 449,  84
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (298)
+## Restfälle (296)
 
-### pruefen (263)
+### pruefen (265)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -290,14 +290,13 @@ Preisstand (nur ok): endgültig 449,  84
 - 366. SachsenNetze HS.HD GmbH: SLP-Werte nicht gefunden
 - 370. Sömmerdaer Energieversorgung GmbH: SLP-Werte nicht gefunden
 - 375. Stadtwerk Haßfurt GmbH: 
-- 381. Stadtwerke Amberg Versorgungs GmbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 386. Stadtwerke Arnstadt Netz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 388. Stadtwerke Backnang GmbH: 
 - 389. Stadtwerke Bad Aibling: 
 - 390. Stadtwerke Bad Bergzabern GmbH: 
+- 391. Stadtwerke Bad Bramstedt Netz GmbH: HTTP 404 https://www.badbramstedtnetz.de/marktpartner.html; HTTP 404 http://www.badbramstedtnetz.de/marktpartner.html
 - 392. Stadtwerke Bad Brückenau GmbH: 
 - 395. Stadtwerke Bad Herrenalb GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 397. Stadtwerke Bad Kissingen GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 399. Stadtwerke Bad Neustadt a. d. Saale: NS LP über 2.500 h = 267.28 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 407. Stadtwerke Bad Tölz GmbH: 
 - 408. Stadtwerke Bad Vilbel GmbH: 8 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2018], nicht 2026; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; gültig ab [2024], nicht 2026; gültig ab [2014], nich
@@ -312,6 +311,7 @@ Preisstand (nur ok): endgültig 449,  84
 - 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-01-7-001: kein Wert; NS Artikel-ID: 1-01-6-002: widersprüchliche Werte 5.8200, 0.0582; RLM-Werte auffällig oder fehlend
 - 441. Stadtwerke Coesfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-coesfeld.de/fileadmin/2_stadtwerke_coesfeld/4_netze/1_stromnetz/netzzugang-entgelte/Preisblatt_NNE_Strom_ohne_Bundeszuschuss_010
 - 445. Stadtwerke Deidesheim GmbH: SLP-Werte nicht gefunden
+- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/Netzentgelte_Strom_202
 - 458. Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH: SLP-Werte nicht gefunden
 - 463. Stadtwerke Elbtal GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 469. Stadtwerke Emsdetten GmbH: 
@@ -347,6 +347,7 @@ Preisstand (nur ok): endgültig 449,  84
 - 574. Stadtwerke Mühlhausen Netz GmbH: 
 - 575. Stadtwerke Mühlheim am Main GmbH: 
 - 586. Stadtwerke Neustadt a.d. Aisch GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (12.92, 15.37); SLP-Werte auffällig
+- 588. Stadtwerke Neustadt an der Weinstraße GmbH: HTTP 429 https://www.SWNeustadt.de; HTTP 429 http://www.SWNeustadt.de
 - 594. Stadtwerke Norderstedt: SLP-Werte nicht gefunden
 - 598. Stadtwerke Oberkirch GmbH: SLP-Werte nicht gefunden
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
@@ -387,6 +388,7 @@ Preisstand (nur ok): endgültig 449,  84
 - 740. stadtwerker GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 742. Städtische Betriebswerke Luckenwalde GmbH: 15 Dokument(e) geprüft: HTTP 404; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2027], nicht 2026; Kopf nennt [2027], nicht 2026; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 743. Städtische Werke Borna Netz GmbH: 6 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden
+- 750. Stromnetz Erdinger und Freisinger Land GmbH ＆ Co. KG: HTTP 404 https://www.stadtwerke-erding.de/de/Home/Startseite/Stadtwerke-Erding.html
 - 752. Stromnetz Pullach GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://assets.stromnetz-pullach.de/media/downloads/2026/07/16/Stromnetz-Pullach-Netzentgelte-2019.pdf, https://assets.stromnetz-pullach.de/media/downl
 - 754. Stromnetz Weilheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 765. StWB Stadtwerke Brandenburg an der Havel GmbH ＆ Co. KG: SLP-Werte nicht gefunden
@@ -411,7 +413,7 @@ Preisstand (nur ok): endgültig 449,  84
 
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (23)
+### blockiert (20)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 117. Elektrizitätswerk des Kantons Schaffhausen AG: HTTP 403 https://www.eks.ch; HTTP 403 http://www.eks.ch
@@ -425,25 +427,21 @@ Preisstand (nur ok): endgültig 449,  84
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 403 http://www.egloffstein.de
 - 312. Merck Site Management GmbH: Seite nicht lesbar: Error
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
-- 391. Stadtwerke Bad Bramstedt Netz GmbH: HTTP 404 https://www.badbramstedtnetz.de/marktpartner.html; HTTP 404 http://www.badbramstedtnetz.de/marktpartner.html
 - 453. Stadtwerke Döbeln GmbH: robots.txt nicht erreichbar (https://www.stadtwerke-doebeln.de); robots.txt nicht erreichbar (http://www.stadtwerke-doebeln.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 403 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
-- 588. Stadtwerke Neustadt an der Weinstraße GmbH: HTTP 429 https://www.SWNeustadt.de; HTTP 429 http://www.SWNeustadt.de
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: robots.txt nicht erreichbar (https://www.stwr.de); robots.txt nicht erreichbar (http://www.stwr.de)
 - 702. Stadtwerke Waiblingen GmbH: HTTP 404 https://www.stadtwerke-waiblingen.de/Stromnetz.html
-- 750. Stromnetz Erdinger und Freisinger Land GmbH ＆ Co. KG: HTTP 404 https://www.stadtwerke-erding.de/de/Home/Startseite/Stadtwerke-Erding.html
 - 785. SWT Stadtwerke Trier Versorgungs-GmbH: robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de)
 - 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 403 http://www.markt-zellingen.de
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
-### robots (10)
+### robots (9)
 
 - 198. Feuchter Gemeindewerke GmbH (FGW): Preisblatt-Links per robots.txt gesperrt: https://www.feucht-gw.de/fileadmin/Dateien/Feuchter_Gemeindewerke/Dateien/Netze/Stromnetz/Preisblatt_FWG_20251015_final_mit_Logo.pdf, https://www.feucht-gw.de
 - 246. Gemeindewerke Schwarzenbruck GmbH (GWS): Preisblatt-Links per robots.txt gesperrt: https://www.feucht-gw.de/fileadmin/Dateien/Feuchter_Gemeindewerke/Dateien/Netze/Stromnetz/Preisblatt_FWG_20251015_final_mit_Logo.pdf, https://www.feucht-gw.de
 - 352. PVU Energienetze GmbH: Startseite per robots.txt gesperrt
 - 369. SEW Stromversorgungs GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.sewerding.de/dl/NNE_2027_15-10-2026_20261015.pdf, https://www.sewerding.de/dl/NNE_2026_01-01-20251219.pdf, https://www.sewerding.de/dl/nne_2018.pd
-- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/Netzentgelte_Strom_202
 - 489. Stadtwerke Gengenbach- Versorgungsbetriebe: Preisblatt-Links per robots.txt gesperrt: https://www.stadtwerke-gengenbach.de/fileadmin/Dateien/Webseite/Dateien/Deine_Stadtwerke/Netze_Strom/Netznutzung/Netznutzungsentgelte_aktuell/Schattenpreise_A
 - 644. Stadtwerke Schorndorf GmbH: Startseite per robots.txt gesperrt
 - 745. Städtische Werke Spremberg (Lausitz) GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.swspremberg.de/fileadmin/user_upload/NNE_Strom_2026.pdf, https://www.swspremberg.de/fileadmin/Netze/Dokumente_Strom/Netznutzung/NNE2019.pdf, https

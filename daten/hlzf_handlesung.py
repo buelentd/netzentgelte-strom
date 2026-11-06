@@ -134,7 +134,6 @@ LEER = {"61": "Dokument zeigt Zeiträume 2024/25 (kein Fenster für 2026), textg
         "640": "Raster (Viertelstunden), Markierung nicht im Text",
         "730": "Spaltenzuordnung nicht eindeutig",
         "177": "Zeilen der Ebenen nicht eindeutig zuzuordnen",
-        "377": "Dokument ist textgleich mit dem von Energieversorgung Rüsselsheim (166, liegt auf deren Website); kein Netzbetreibername im Dokument",
         "277": "Dokument (netzplusservice.de) gehört zu Städtische Werke Netz+Service (744), nicht zu inetz"}
 J = ["fruehling", "sommer", "herbst", "winter"]
 

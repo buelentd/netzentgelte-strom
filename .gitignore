@@ -7,3 +7,6 @@ diagnose/
 lauf/suche_treffer.csv
 abschaetzung_testseite/netzentgelt_abschaetzung.html
 ergebnis/texte_layout/*.alt
+eingang/_tmp_preis/
+eingang/_tmp_hlzf/
+eingang/_tmp_preis2/
