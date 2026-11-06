@@ -565,16 +565,16 @@
 717;gelesen;12:15-12:30, 12:45-13:00, 13:15-13:30, 13:45-14:00;11:45-12:00, 13:30-14:15, 14:45-15:00;keins;keins;keins;keins;keins;09:30-12:15;;;https://sw-wug.de/wp-content/uploads/2025/10/Hochlastzeitfenster_NEV_WEISSENBURG_2026_Veroeffentlichung.pdf;2026;
 718;gelesen;keins;keins;keins;10:00-13:00, 16:30-19:30;keins;keins;keins;10:00-13:00, 16:30-19:30;;;eingang: SNB933274941888_0718_hlzf.pdf;2026;neu gelesen (Form: Zeile je Fenster)
 719;gelesen, Prüfung offen;keins;09:30-09:45;keins;09:00-11:30;;;;;;;https://www.stadtwerke-weisswasser.de/fileadmin/PDF/Stromnetz/SWW_Hochlastzeitfenster_2026.pdf;2026;Leser liest jetzt anders als gespeichert
-720;fehlt: Zeiten im Dokument nicht vollständig gelesen;;;;;;;;;;;SNB962389410347_0720_hlzf.pdf;;
+720;gelesen;keins;keins;keins;09:15-12:15;keins;keins;keins;09:00-12:00, 16:45-19:45;;;SNB962389410347_0720_hlzf.pdf;2026;"von Hand am Dokumenttext abgelesen: Spalten MS, Umspannung MS/NS, NS; Zeilen Winter 1 und 2 (Fenster 1 und 2)"
 721;gelesen;11:30-13:30;keins;keins;keins;;;;;;;https://www.stadtwerke-werl.de/_Resources/Persistent/e/3/d/a/e3dae44c30d8d5872ded4f3dab84f12f87143c61/Hochlastzeitfenster%202026.pdf;2026;
 722;gelesen;19:00-20:00;18:00-19:30;16:30-17:30;09:15-13:15, 16:30-19:00;19:00-20:00;11:15-12:15, 18:00-19:30;16:30-17:30;10:30-13:30, 16:45-19:00;;;https://www.stadtwerke-wernigerode.de/_Resources/Persistent/1/c/c/1/1cc116bebfdc5dce8884a563c22f2a10c98d8bc4/SWWR_Hochlastzeitfenster_2026.pdf;2026;
 723;gelesen;keins;keins;keins;10:00-11:00, 16:15-20:00;keins;keins;keins;16:15-19:45;;;https://www.stadtwerke-wertheim.de/de/Fussnavigation/Netze/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-2026.pdf;2026;
-724;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB950584553167_0724_hlzf.pdf;;
-725;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB919230329570_0725_hlzf.pdf;;
+724;gelesen;keins;keins;keins;16:30-18:45;keins;keins;16:45-18:15;15:45-18:45;;;SNB950584553167_0724_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Zeilen HS, HS/MS, MS, MS/NS, NS mit Spalten Frühjahr, Sommer, Herbst, Winter
+725;gelesen;keins;keins;17:00-19:00;17:00-19:00;keins;keins;17:00-19:00;17:00-19:00;;;SNB919230329570_0725_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Tabellen Mittelspannung, Umspannung MS/NS, Niederspannung mit Datumszeilen 2026
 726;fehlt: kein Text (Scan?);;;;;;;;;;;SNB957988771050_0726_hlzf.pdf;;
 727;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB972723368326_0727_hlzf.pdf;;
 730;gelesen;;;;;11:15-12:45, 13:30-13:45;13:30-13:45, 14:00-14:15;keins;keins;;;https://stadtwerke-wittenberge.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026.pdf;2026;
-731;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB937722627607_0731_hlzf.pdf;;
+731;gelesen;keins;keins;18:00-19:00;17:00-19:30;keins;keins;keins;18:00-19:00;;;SNB937722627607_0731_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Spalten Frühling-Winter, Zeilen MS, Umspg. MS/NS, NS (HLZF 1)
 732;gelesen;keins;keins;keins;17:15-19:00;keins;keins;17:30-18:00;17:15-19:00;;;eingang: SNB983546347757_0732_hlzf.html;2026;
 733;gelesen, Prüfung offen;;;;;keins;keins;17:15-19:00;13:00-15:00, 13:00-14:30, 17:45-18:45, 17:15-19:15;;;https://stadtwerke-wolmirstedt.de/dateien/41/Netznutzung-Strom/153/Hochlastzeitfenster-2026.pdf?preview=1;2026;ungeprüft neu gelesen (Form: Zeile je Fenster), Zuordnung der Zeilen zu den Ebenen nicht am Dokument bestätigt
 735;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB980783618473_0735_hlzf.pdf;;
@@ -606,11 +606,11 @@
 765;gelesen;keins;keins;keins;09:45-13:15;;;;;;;https://www.stwb.de/wp-content/uploads/Hochlastzeitfenster-fuer-2026.pdf;2026;
 766;gelesen;keins;keins;16:30-19:30;11:30-14:30, 16:30-19:30;keins;keins;16:30-19:30;16:30-19:30;;;https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Staedtischen-Werke-Lauf/Netzzugang-Entgelte/StWL-HLZ-2026.pdf;2026;
 767;gelesen;keins;keins;10:15-12:15, 17:15-18:15;10:15-13:00, 16:45-19:15;;;;;;;eingang: SNB968862623211_0767_hlzf.pdf;2026;
-768;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB983964953738_0768_hlzf.pdf;;
-769;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB919067474511_0769_hlzf.pdf;;
-770;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB955238223991_0770_hlzf.pdf;;
+768;gelesen;keins;keins;17:00-19:00;16:45-19:45;keins;keins;17:00-19:00;16:45-19:45;;;SNB983964953738_0768_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Blöcke Mittelspannungsnetz, Umspannung MS auf NS, Niederspannungsnetz (zwei Fenster je Jahreszeit, leeres Fenster = -)
+769;gelesen;keins;keins;keins;09:00-14:00;keins;keins;keins;08:45-13:30;;;SNB919067474511_0769_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Blöcke Mittelspannungsnetz, Umspannung MS auf NS, Niederspannung
+770;gelesen;keins;keins;keins;16:45-19:45;keins;keins;17:15-17:30;16:45-19:45;;;SNB955238223991_0770_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Dokument enthält Tabellen 2024/2025/2026: Tabelle Hochlastzeitfenster 2026 verwendet
 771;gelesen;keins;12:30-13:30;12:30-13:00;10:30-13:15, 17:30-19:00;keins;keins;keins;10:30-13:15, 17:30-19:00;;;eingang: SNB928340368768_0771_hlzf.pdf;2026;
-772;fehlt: Zeiten im Dokument nicht vollständig gelesen;;;;;;;;;;;SNB950262883869_0772_hlzf.pdf;;
+772;gelesen;keins;keins;17:30-18:30;17:15-19:30;keins;keins;17:30-18:30;16:30-19:30;;;SNB950262883869_0772_hlzf.pdf;2026;von Hand am Dokumenttext abgelesen: Blöcke HS, Umspannung HS/MS, MS, Umspannung MS in NS, NS
 773;gelesen;keins;keins;17:00-17:15, 18:00-18:30;09:00-10:00, 12:00-12:30, 16:45-19:45;;;;;30;;https://www.sw-ettlingen.de/de/Netze1/Stromnetz/Netzzugang-Entgelte/2025-09-26-Uebersichtsblatt-HLZF-Ettlingen.pdf;2026;
 774;gelesen;keins;keins;17:00-19:00;10:30-13:15, 13:45-14:15, 17:15-19:15;keins;keins;16:45-19:00;17:00-19:45;;;https://www.swk-kl.de/_Resources/Persistent/2/2/9/3/2293d697d0cacfd405de593e05eaf6da75e6f969/SWKVersorgung_Hochlastzeitfenster_2026.pdf;2026;
 775;gelesen;11:30-13:45;12:15-12:45;10:45-17:45;09:00-18:00;keins;keins;18:30-20:30;08:00-13:45, 19:00-19:30;;;eingang: SNB914027640531_0775_hlzf.pdf;2026;
@@ -621,9 +621,9 @@
 781;gelesen;keins;keins;keins;10:30-12:00, 12:30-12:45, 17:45-19:00;keins;keins;17:15-17:30, 18:00-18:15;16:30-20:00;;;https://www.stadtwerke-pforzheim.de/fileadmin/user_upload/Downloads/Netze/Netznutzung_Strom/Hochlastzeitfenster_2026.pdf;2026;
 782;gelesen;12:00-13:45;13:15-14:30;keins;keins;12:00-13:45;13:15-14:30;keins;keins;;;https://www.stadtwerke-roedental.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026.pdf;2026;
 783;gelesen;keins;keins;keins;11:00-13:00, 18:15-19:15;keins;keins;17:30-20:30;10:45-11:45, 17:00-19:00;;;eingang: SNB915638224585_0783_hlzf.pdf;2026;neu gelesen (Form: Zeile je Fenster)
-784;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB969362778135_0784_hlzf.pdf;;
+784;gelesen;keins;keins;17:00-20:00;16:30-19:30;keins;keins;16:45-19:45;16:30-19:30;;;SNB969362778135_0784_hlzf.pdf;2026;"von Hand am Dokumenttext abgelesen: Spalten Winter (Jan-Feb), Frühling, Sommer, Herbst, Winter (Dez); Zeilen Mittelspannung, Mittel-/Niederspannung, Niederspannung"
 785;gelesen;11:30-13:15;keins;17:15-19:00, 21:15-22:00;09:30-15:45, 16:45-19:30, 21:00-22:30;keins;10:15-13:00;11:15-12:45, 13:30-14:15, 14:45-15:45;keins;;;eingang: SNB966813503780_0785_hlzf.pdf;2026;"von Hand am Dokumenttext abgelesen: Blöcke mit Zeilen Winter, Frühling, Sommer, Herbst; Ebene HS, HS/MS, MS, MS/NS, NS; Ebenenname mittig"
-786;fehlt: Zeitfenster nicht lesbar;;;;;;;;;;;SNB950006175489_0786_hlzf.pdf;;
+786;gelesen;keins;keins;keins;17:00-19:30;keins;keins;keins;17:00-19:30;;;SNB950006175489_0786_hlzf.pdf;2026;"von Hand am Dokumenttext abgelesen: Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"
 788;fehlt: atypische-netznutzung-nach-19-abs2-S1-stromnev.pdf: HTTP 403;;;;;;;;;;;;;
 789;gelesen;;;;;keins;keins;16:45-20:00;16:45-17:45;;;https://two.de/wp-content/uploads/TWO_Hochlastzeitfenster_2026.pdf;2026;
 790;gelesen;keins;keins;11:45-14:45;keins;keins;keins;11:45-14:45;keins;30;;eingang: SNB942630156484_0790_hlzf.pdf;2026;

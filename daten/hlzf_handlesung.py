@@ -5,6 +5,16 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "784": ("k|k|17:00-20:00|16:30-19:30", "k|k|16:45-19:45|16:30-19:30", "Spalten Winter (Jan-Feb), Frühling, Sommer, Herbst, Winter (Dez); Zeilen Mittelspannung, Mittel-/Niederspannung, Niederspannung"),
+    "786": ("k|k|k|17:00-19:30", "k|k|k|17:00-19:30", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"),
+    "768": ("k|k|17:00-19:00|16:45-19:45", "k|k|17:00-19:00|16:45-19:45", "Blöcke Mittelspannungsnetz, Umspannung MS auf NS, Niederspannungsnetz (zwei Fenster je Jahreszeit, leeres Fenster = -)"),
+    "769": ("k|k|k|09:00-14:00", "k|k|k|08:45-13:30", "Blöcke Mittelspannungsnetz, Umspannung MS auf NS, Niederspannung"),
+    "770": ("k|k|k|16:45-19:45", "k|k|17:15-17:30|16:45-19:45", "Dokument enthält Tabellen 2024/2025/2026: Tabelle Hochlastzeitfenster 2026 verwendet"),
+    "772": ("k|k|17:30-18:30|17:15-19:30", "k|k|17:30-18:30|16:30-19:30", "Blöcke HS, Umspannung HS/MS, MS, Umspannung MS in NS, NS"),
+    "720": ("k|k|k|09:15-12:15", "k|k|k|09:00-12:00, 16:45-19:45", "Spalten MS, Umspannung MS/NS, NS; Zeilen Winter 1 und 2 (Fenster 1 und 2)"),
+    "724": ("k|k|k|16:30-18:45", "k|k|16:45-18:15|15:45-18:45", "Zeilen HS, HS/MS, MS, MS/NS, NS mit Spalten Frühjahr, Sommer, Herbst, Winter"),
+    "725": ("k|k|17:00-19:00|17:00-19:00", "k|k|17:00-19:00|17:00-19:00", "Tabellen Mittelspannung, Umspannung MS/NS, Niederspannung mit Datumszeilen 2026"),
+    "731": ("k|k|18:00-19:00|17:00-19:30", "k|k|k|18:00-19:00", "Spalten Frühling-Winter, Zeilen MS, Umspg. MS/NS, NS (HLZF 1)"),
     "660": ("13:00-16:00|k|k|k", "k|k|16:30-19:30|16:30-19:30", "Spalten Mittelspannung, USP MS/NS, Niederspannung; Zeilen je Jahreszeit"),
     "622": ("k|11:00-14:30|k|k", "k|07:00-08:00, 11:00-14:30|k|k", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen MS, Umspannung MS/NS, NS"),
     "639": ("k|k|k|07:30-11:30", "06:00-07:15|10:45-12:45, 14:00-15:30|k|07:30-09:30, 18:30-19:45", "Spalten Winter, Frühling, Sommer, Herbst je 1. und 2. Zeit; Zeilen MS, MN (Umspannung MS/NS), NS"),
