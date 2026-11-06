@@ -3,6 +3,13 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 KORRIGIEREN = {
+    ("42", "slp"): [4.95, 67.80],                         # SWKiel: Netznutzungsentgelt netto Grundpreis €/Jahr, Arbeitspreis ct/kWh
+    ("275", "slp"): [10.93, 72.00],                       # HEWA: Arbeitspreis HT- und NT-Mengen (ein Preis)
+    ("434", "slp"): [7.55, 30.00],                        # Buchholz: Kleinkunden ohne Bedarfsartendifferenzierung / SLP netto
+    ("495", "slp"): [13.03, 43.00],                       # Goch: Entnahme ohne registrierende Lastgangmessung, Kleinkunden
+    ("770", "slp"): [5.30, 57.84],                        # SVO Netz
+    ("787", "slp"): [8.94, 0.00],                         # Wunsiedel
+    ("829", "slp"): [5.41, 60.00],                        # Kleinkunden ohne Bedarfsartendifferenzierung / SLP netto
     ("82", "slp"): [6.88, 50.00],                         # Meckenheim: Grundpreis für SLP NS 50 €/Jahr, Arbeitspreis 6,88 ct
     ("222", "slp"): [8.25, 108.00],                       # Grefrath: Grundpreis per anno 108 €, AP 8,25 ct (Niederspannung ohne Leistungsmessung)
     ("87", "slp"): [7.89, 90.00],                         # SLP: Kunde im Niederspannungsnetz ohne Lastgangzählung (Netto €/Jahr, ct/kWh)

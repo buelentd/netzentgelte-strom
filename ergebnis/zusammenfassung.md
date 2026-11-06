@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 08:20, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 08:27, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 509 | 61% |
-| pruefen | 286 | 34% |
-| kein_preisblatt | 2 | 0% |
+| ok | 513 | 62% |
+| pruefen | 283 | 34% |
+| kein_preisblatt | 1 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 430,  79
+Preisstand (nur ok): endgültig 432,  81
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 720)
+- Median: 7,26 ct/kWh (n = 727)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 745)
+- Median: 6,41 ct/kWh (n = 744)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 151,38 €/kW/a (n = 745)
+- Median: 151,34 €/kW/a (n = 744)
 
 ## Datenherkunft
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 430,  79
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (79)
+## Status ok, aber Preisstand nicht endgültig (81)
 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
@@ -83,6 +83,7 @@ Preisstand (nur ok): endgültig 430,  79
 - 425. Stadtwerke Böblingen GmbH ＆ Co. KG: 
 - 430. Stadtwerke Bretten GmbH: 
 - 433. Stadtwerke Buchen GmbH ＆ Co KG: 
+- 434. Stadtwerke Buchholz in der Nordheide GmbH: 
 - 443. Stadtwerke Dachau Eigenbetr. d. Stadt Dachau: 
 - 446. Stadtwerke Delitzsch GmbH: 
 - 448. Stadtwerke Dettelbach: 
@@ -133,10 +134,11 @@ Preisstand (nur ok): endgültig 430,  79
 - 797. Überlandwerk Eppler GmbH: 
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
+- 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (322)
+## Restfälle (318)
 
-### pruefen (286)
+### pruefen (283)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -156,7 +158,6 @@ Preisstand (nur ok): endgültig 430,  79
 - 36. LEW Verteilnetz GmbH: SLP-Werte nicht gefunden
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 40. Netze Magdeburg GmbH: 
-- 42. SWKiel Netz GmbH: SLP-Werte nicht gefunden
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
 - 50. swa Netze GmbH: 
 - 52. Ahrtal-Werke GmbH: 
@@ -253,7 +254,6 @@ Preisstand (nur ok): endgültig 430,  79
 - 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 266. GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG: 
 - 270. Havelstrom Zehdenick GmbH: 
-- 275. HEWA GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 276. IGS Netze GmbH: SLP-Werte nicht gefunden
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
@@ -316,7 +316,6 @@ Preisstand (nur ok): endgültig 430,  79
 - 424. Stadtwerke Bliestal GmbH: 
 - 429. Stadtwerke Bramsche GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 432. Stadtwerke Brunsbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
-- 434. Stadtwerke Buchholz in der Nordheide GmbH: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-01-7-001: kein Wert; NS Artikel-ID: 1-01-6-002: widersprüchliche Werte 5.8200, 0.0582; RLM-Werte auffällig oder fehlend
 - 441. Stadtwerke Coesfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-coesfeld.de/fileadmin/2_stadtwerke_coesfeld/4_netze/1_stromnetz/netzzugang-entgelte/Preisblatt_NNE_Strom_ohne_Bundeszuschuss_010
 - 442. Stadtwerke Crailsheim GmbH: SLP-Werte nicht gefunden
@@ -412,6 +411,7 @@ Preisstand (nur ok): endgültig 430,  79
 - 780. SWO Netz GmbH: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 782. SWR Energie GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 783. SWS Netze GmbH: NS LP über 2.500 h = 0.24 außerhalb 40–260 €/kW/a; NS: AP unter 2.500 h = 0.06 ct/kWh, Einheit €/kWh?; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
+- 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 793. thyssenkrupp Steel Europe AG: 10 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2021], nicht 2026
 - 798. Überlandwerk Erding GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 802. ÜZ Mainfranken eG: 
@@ -422,12 +422,10 @@ Preisstand (nur ok): endgültig 430,  79
 - 821. Weiler Wärme eG: 1 Dokument(e) geprüft: fiktive Entgelte
 - 826. wesernetz Bremerhaven GmbH: 
 - 827. Westenthanner Energieversorgung GmbH: 1 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
-- 829. Wirtschaftsbetriebe der Stadt Norden GmbH: kein Preisblatt-Link gefunden (15 Seiten durchsucht)
 - 830. YNCORIS GmbH ＆ Co. KG: 
 
-### kein_preisblatt (2)
+### kein_preisblatt (1)
 
-- 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
 ### blockiert (23)
