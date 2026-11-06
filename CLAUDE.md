@@ -101,3 +101,8 @@ Es zählen nicht nur die Dokumente, sondern auch die fehlenden Werte. Für jeden
 - Es gilt: **Niederspannung und SLP hat jeder Netzbetreiber**; fehlen sie, ist es nie "nicht ausgewiesen", sondern ein Lese- oder Suchfehler.
 - **Mittelspannung und MS/NS** haben nicht alle Stadtwerke. Eine Ebene gilt erst als "nicht ausgewiesen", wenn das gelesene Dokument sie nicht nennt. HS/MS nur bei großen Netzbetreibern (Dokument nennt Hochspannung).
 - Ziel sind alle 831 Netzbetreiber mit allen Ebenen, die ihr Dokument ausweist. Sonderfälle (Industrie- und Arealnetze) bleiben in der Liste und werden als Sonderfall markiert.
+
+
+## Regel: Suchlinks für den Browser (Festlegung Nutzer, 06.11.2026)
+
+Wenn dem Nutzer Dokumente zum Holen im Browser aufgelistet werden, gibt es zu jedem Netzbetreiber Google-Suchlinks mit mehreren Suchbegriffen und `site:` **ohne www.** (also `site:eks.ch`, nicht `site:www.eks.ch`). Erzeugt von `daten/browser_liste.py`, Ergebnis `ergebnis/BROWSER_DOWNLOADS_33.md`.
