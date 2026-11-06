@@ -1,15 +1,15 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 19:45, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 19:47, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 573 | 69% |
-| pruefen | 236 | 28% |
+| pruefen | 237 | 29% |
 | kein_preisblatt | 2 | 0% |
-| blockiert | 15 | 2% |
+| blockiert | 14 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
@@ -155,7 +155,7 @@ Preisstand (nur ok): endgültig 475,  98
 
 ## Restfälle (258)
 
-### pruefen (236)
+### pruefen (237)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -298,7 +298,7 @@ Preisstand (nur ok): endgültig 475,  98
 - 389. Stadtwerke Bad Aibling: 
 - 390. Stadtwerke Bad Bergzabern GmbH: 
 - 392. Stadtwerke Bad Brückenau GmbH: 
-- 395. Stadtwerke Bad Herrenalb GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+- 395. Stadtwerke Bad Herrenalb GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 399. Stadtwerke Bad Neustadt a. d. Saale: NS LP über 2.500 h = 267.28 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 407. Stadtwerke Bad Tölz GmbH: 
 - 408. Stadtwerke Bad Vilbel GmbH: 8 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2018], nicht 2026; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; gültig ab [2024], nicht 2026; gültig ab [2014], nich
@@ -311,7 +311,8 @@ Preisstand (nur ok): endgültig 475,  98
 - 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-01-7-001: kein Wert; NS Artikel-ID: 1-01-6-002: widersprüchliche Werte 5.8200, 0.0582; RLM-Werte auffällig oder fehlend
 - 441. Stadtwerke Coesfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-coesfeld.de/fileadmin/2_stadtwerke_coesfeld/4_netze/1_stromnetz/netzzugang-entgelte/Preisblatt_NNE_Strom_ohne_Bundeszuschuss_010
 - 445. Stadtwerke Deidesheim GmbH: SLP-Werte nicht gefunden
-- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/Netzentgelte_Strom_202
+- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/fiktive_Netzentgelte_S
+- 453. Stadtwerke Döbeln GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 458. Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH: SLP-Werte nicht gefunden
 - 463. Stadtwerke Elbtal GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 469. Stadtwerke Emsdetten GmbH: 
@@ -399,7 +400,7 @@ Preisstand (nur ok): endgültig 475,  98
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (15)
+### blockiert (14)
 
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
@@ -409,7 +410,6 @@ Preisstand (nur ok): endgültig 475,  98
 - 252. Gemeindewerke Wildeck: robots.txt nicht erreichbar (https://www.wildeck.de); robots.txt nicht erreichbar (http://www.wildeck.de); robots.txt nicht erreichbar (https://www.wildeck.de/netzentgelte)
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
-- 453. Stadtwerke Döbeln GmbH: robots.txt nicht erreichbar (https://www.stadtwerke-doebeln.de); robots.txt nicht erreichbar (http://www.stadtwerke-doebeln.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 403 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: robots.txt nicht erreichbar (https://www.stwr.de); robots.txt nicht erreichbar (http://www.stwr.de)
