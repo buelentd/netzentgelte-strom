@@ -28,7 +28,7 @@ for d in db.alle():
     for k in ("slp", "ns", "msns", "ms", "hsms"):
         if d[k]:
             e[k] = d[k]                                         # fehlt ein Wert, fehlt der Schlüssel: Seite zeigt "Werte nicht vorhanden"
-    if d["vollstaendig"]:
+    if d["slp"] and d["ns"]:                                    # nutzbar für Gewerbe an der Niederspannung: SLP und NS reichen (MS, MS/NS nur zusätzlich)
         e["voll"] = 1
     if not d["geprueft"]:
         e["ug"] = 1                                             # Status nicht "ok": noch nicht am Dokument bestätigt
