@@ -624,8 +624,10 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const ap = nach.ap, bezug = strom + ap;
     const s1 = beste1.s1;
     // Säule 2: atypische Netznutzung, nur der Teil über die Kappung hinaus
-    const at = cap > 0 && gekappt > 0 ? atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, {ziel, nach}) : atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, null);
-    const s2 = at.zusatz;
+    // Was ohne Speicher schon möglich ist, gehört nicht zum Speichernutzen: gezählt wird nur der Mehrertrag durch die Kappung
+    const atOhne = atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, null);
+    const at = cap > 0 && gekappt > 0 ? atypisch(nb, kwh, kw, A, ctx.grundlast, ctx.laden, {ziel, nach}) : atOhne;
+    const s2 = Math.max(0, at.zusatz - atOhne.zusatz);
     // Säule 3: Solar
     let s3 = 0, delta = 0, pvEigen = 0;
     if (kwp > 0 && cap > 0) {
