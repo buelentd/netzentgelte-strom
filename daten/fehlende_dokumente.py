@@ -27,6 +27,11 @@ for r in R:
     if os.path.exists(txt) and os.path.getsize(txt) < 200: grund_p.append("Scan ohne Text")
     elif not os.path.exists(txt) and not [g for g in grund_p if "Dokument" in g]: grund_p.append("kein Dokumenttext bei uns (Werte nur aus Liste des Nutzers)")
     if nr in ohne: grund_p.append("Dokument belegt die Preise nicht (falsches Preisblatt?)")
+    sperre = {x["nr"] for x in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
+    if e.get("slp") == "fehlt" and nr not in sperre and not [g for g in grund_p if "Dokument" in g or g in ("blockiert", "robots")] and os.path.exists(txt):
+        grund_p.append("SLP-Preis (Grund- und Arbeitspreis) steht nicht vollständig im Dokument: separates SLP-Preisblatt liefern")
+    if e.get("ns") in ("nicht_ausgewiesen", "im_dokument_nicht_gelesen") and nr not in sperre and not [g for g in grund_p if "Dokument" in g or g in ("blockiert", "robots")] and os.path.exists(txt):
+        grund_p.append("Niederspannung (Leistungsmessung) nicht im Dokument: Preisblatt mit Leistungspreisen liefern")
     z = Z.get(m, {}); st = z.get("hlzf_status", "")
     grund_h = ""
     if st == "kein_dokument_oder_adresse": grund_h = "kein Dokument/keine Adresse"

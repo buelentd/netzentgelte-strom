@@ -440,7 +440,7 @@ SNB974547197724;438;Stadtwerke Buxtehude GmbH;ok;gelesen;gelesen;gelesen;nicht_a
 SNB990522725676;439;Stadtwerke Cham GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB952939058372;440;Stadtwerke Clausthal-Zellerfeld GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB943480673763;441;Stadtwerke Coesfeld GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB934532229953;442;Stadtwerke Crailsheim GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB934532229953;442;Stadtwerke Crailsheim GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB945149216045;443;Stadtwerke Dachau Eigenbetr. d. Stadt Dachau;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB924793953759;444;Stadtwerke Deggendorf GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB984269982003;445;Stadtwerke Deidesheim GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;fehlt
@@ -621,7 +621,7 @@ SNB948134408678;619;Stadtwerke Quickborn GmbH;ok;gelesen;gelesen;gelesen;nicht_a
 SNB964262506406;620;Stadtwerke Radevormwald GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB974041045040;621;Stadtwerke Radolfzell GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB987569421388;622;Stadtwerke Ramstein-Miesenbach GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB914273329792;623;Stadtwerke Rastatt GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;fehlt
+SNB914273329792;623;Stadtwerke Rastatt GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB953661539375;624;Stadtwerke Ratingen GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
 SNB959567240391;625;Stadtwerke Reichenbach/Vogtland GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB926119738552;626;Stadtwerke Rendsburg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -714,7 +714,7 @@ SNB969345305204;712;Stadtwerke Warendorf GmbH;ok;gelesen;gelesen;gelesen;nicht_a
 SNB929073868471;713;Stadtwerke Wasserburg a. Inn;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB975283859389;714;Stadtwerke Wedel GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB926480464456;715;Stadtwerke Weilburg GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
-SNB935723521351;716;Stadtwerke Weinheim GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;gelesen;fehlt
+SNB935723521351;716;Stadtwerke Weinheim GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;gelesen;gelesen
 SNB965819408044;717;STADTWERKE WEISSENBURG GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB933274941888;718;Stadtwerke Weißenfels Energienetze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB918084816830;719;Stadtwerke Weißwasser GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen

@@ -1,6 +1,6 @@
 """Eine gemeinsame Arbeitsliste für alle: je Netzbetreiber, was fehlt, warum, wer es tut (Kollege / Nutzer im Browser / Claude) und welche Datei wohin.
 Quellen: ergebnis/netzentgelte_2026.csv, ergebnis/ebenen_erwartung.csv. Ausgabe: ergebnis/arbeitsliste.csv. Aufruf: PYTHONPATH=. python daten/arbeitsliste.py"""
-import csv, re
+import csv, glob, re
 from urllib.parse import urlparse
 
 tab = list(csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";"))
@@ -17,6 +17,7 @@ def domain(w):
     return re.sub(r"^www\.", "", h).lower()
 
 try:
+    SPERRE = {r["nr"] for r in csv.DictReader(open("lauf/zuordnung_unbelegt.csv", encoding="utf-8-sig"), delimiter=";")}
     OHNE_BELEG = set(open("ergebnis/preise_ohne_beleg.txt").read().split())
 except FileNotFoundError:
     OHNE_BELEG = set()
@@ -49,8 +50,16 @@ for x in tab:
             preis_wer, preis_aktion = "Kollege", "Preisblatt Strom 2026 suchen und laden (Suche site:Domain Netzentgelte Strom 2026 Preisblatt)"
         elif e.get("ns") == "nicht_ausgewiesen":
             preis_wer, preis_aktion = "Kollege", "Dokument ist vermutlich das falsche (keine Niederspannung ausgewiesen): richtiges Preisblatt suchen"
-        else:
+        elif e.get("slp") == "fehlt" and "SLP" in pf and len(pf) == 1:
+            preis_wer, preis_aktion = "Kollege", "SLP-Preis (Grund- und Arbeitspreis Niederspannung) steht nicht vollständig im Dokument: separates SLP-Preisblatt liefern (Datei SNB…_NNNN_SLP.pdf)"
+        elif e.get("ns") == "im_dokument_nicht_gelesen" or e.get("slp") == "fehlt" or any(e.get(k) == "im_dokument_nicht_gelesen" for k in ("ms", "msns", "hsms")):
             preis_wer, preis_aktion = "Claude", "Dokument liegt vor, Leser muss es lesen"
+        else:
+            preis_wer, preis_aktion = "Kollege", "Dokument liegt vor, aber eine erwartete Ebene steht nicht darin: Preisblatt mit allen Ebenen (Leistungspreise) liefern"
+    if preis_wer == "Claude" and nr in SPERRE:
+        preis_wer, preis_aktion = "Kollege", "Das vorliegende Dokument gehört einem anderen Netzbetreiber (Werte gesperrt): eigenes Preisblatt Strom 2026 liefern"
+    if preis_wer == "Claude" and not glob.glob(f"ergebnis/texte_layout/{x['mastr_nr']}_{int(nr):04d}.txt"):
+        preis_wer, preis_aktion = "Kollege", "Kein Dokumenttext bei uns (Scan oder Datei fehlt): Preisblatt Strom 2026 liefern oder Werte als Text abschreiben"
     if nr in OHNE_BELEG and not preis_wer.startswith("Nutzer"):
         if "Niederspannung/Preise ohne Beleg" not in fehlt:
             fehlt.append("Preise ohne Beleg im Dokument")

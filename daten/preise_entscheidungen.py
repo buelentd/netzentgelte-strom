@@ -4,6 +4,9 @@ Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("442", "slp"): [7.70, 0.00],                         # Crailsheim: Entnahmestelle ohne Leistungsmessung (€/a 0,00; ct/kWh 7,70)
+    ("623", "slp"): [9.42, 60.00],                        # Rastatt: nicht unterbrechbare Entnahme ohne Lastgangmessung
+    ("716", "slp"): [6.68, 78.00],                        # Weinheim: Niederspannung nicht unterbrechbare Anlagen
     ("270", "ms"): [21.63, 7.36, 201.20, 0.17],           # Havelstrom Zehdenick: Mittelspannung, Umspannung MS/NS
     ("270", "msns"): [22.45, 8.08, 224.54, 0.00],
     ("361", "ms"): [24.92, 6.30, 155.81, 1.07],           # Remstalwerk: Mittelspannungsnetz
