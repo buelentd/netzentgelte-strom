@@ -74,6 +74,9 @@
 661;Stadtwerke Soltau GmbH ＆ Co. KG;Niederspannung;8,82;6,71;129,48;1,88;ok;nächste Zeile hat 0 von 4 Werten;Wandler (Niederspannung);SNB947030954821_0661.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;MS/NS;6,34;5,46;136,41;0,25;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;Mittelspannung;5,34;3,61;62,79;1,31;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
+702;Stadtwerke Waiblingen GmbH;Niederspannung;16,70;7,02;166,46;1,03;ok;nächste Zeile hat 1 von 4 Werten;Niederspannung Leistungspreis 166,46 €/kW;SNB969058795651_0702.txt
+702;Stadtwerke Waiblingen GmbH;MS/NS;16,85;6,32;155,03;0,80;ok;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS Leistungspreis 155,03 €/kW;SNB969058795651_0702.txt
+702;Stadtwerke Waiblingen GmbH;Mittelspannung;19,05;5,43;136,47;0,73;ok;nächste Zeile hat 1 von 4 Werten;Mittelspannung Leistungspreis 136,47 €/kW;SNB969058795651_0702.txt
 705;Stadtwerke Waldkraiburg GmbH;Niederspannung;30,12;7,32;168,93;1,77;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
 705;Stadtwerke Waldkraiburg GmbH;MS/NS;25,83;6,95;169,46;1,20;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
 706;Stadtwerke Waldmünchen;Niederspannung;15,76;5,99;88,45;3,08;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB971196250442_0706.txt

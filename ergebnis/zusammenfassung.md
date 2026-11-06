@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 16:19, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 16:30, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 568 | 68% |
+| ok | 569 | 68% |
 | pruefen | 235 | 28% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 17 | 2% |
+| blockiert | 16 | 2% |
 | robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 475,  93
+Preisstand (nur ok): endgültig 475,  94
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 767)
+- Median: 7,25 ct/kWh (n = 768)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 762)
+- Median: 6,41 ct/kWh (n = 763)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 150,60 €/kW/a (n = 762)
+- Median: 150,66 €/kW/a (n = 763)
 
 ## Datenherkunft
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 475,  93
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (93)
+## Status ok, aber Preisstand nicht endgültig (94)
 
 - 57. Alzchem Netz GmbH: 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
@@ -131,6 +131,7 @@ Preisstand (nur ok): endgültig 475,  93
 - 661. Stadtwerke Soltau GmbH ＆ Co. KG: 
 - 682. Stadtwerke Treuchtlingen KU: 
 - 687. Stadtwerke Uelzen GmbH: 
+- 702. Stadtwerke Waiblingen GmbH: 
 - 703. Stadtwerke Waldkirch GmbH: 
 - 704. Stadtwerke Waldkirchen: 
 - 710. Stadtwerke Warburg GmbH: 
@@ -148,7 +149,7 @@ Preisstand (nur ok): endgültig 475,  93
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (263)
+## Restfälle (262)
 
 ### pruefen (235)
 
@@ -392,7 +393,7 @@ Preisstand (nur ok): endgültig 475,  93
 
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (17)
+### blockiert (16)
 
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 144. Energie- und Wasserversorgung Altenburg GmbH: robots.txt nicht erreichbar (https://www.netze.ewa-altenburg.de); robots.txt nicht erreichbar (http://www.netze.ewa-altenburg.de)
@@ -407,7 +408,6 @@ Preisstand (nur ok): endgültig 475,  93
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 403 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: robots.txt nicht erreichbar (https://www.stwr.de); robots.txt nicht erreichbar (http://www.stwr.de)
-- 702. Stadtwerke Waiblingen GmbH: HTTP 404 https://www.stadtwerke-waiblingen.de/Stromnetz.html
 - 785. SWT Stadtwerke Trier Versorgungs-GmbH: robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de)
 - 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 403 http://www.markt-zellingen.de
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
