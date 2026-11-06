@@ -71,7 +71,7 @@ SNB910066952147;69;Brücken-Center Ansbach GmbH;pruefen;nicht_ausgewiesen;nicht_
 SNB928184287881;70;BTT Bauteam Tretzel GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB972511582064;71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB956411704207;72;C. Ensinger GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;blockiert;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;pruefen;gelesen;gelesen;gelesen;kein_dokument;kein_dokument
 SNB975268997129;74;Covestro Brunsbüttel Energie GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
 SNB956923775696;75;CPM Netz GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;fehlt
 SNB916672506194;76;Cramer - Mühle GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -344,7 +344,7 @@ SNB920393062051;342;NordNetz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;g
 SNB931610892481;343;Nordseeheilbad Borkum GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB945532057606;344;nvb Nordhorner Versorgungsbetriebe GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB992672107807;345;Oberhausener Netzgesellschaft mbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;gelesen
-SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;pruefen;gelesen;gelesen;gelesen;im_dokument_nicht_gelesen;gelesen
+SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB959255155907;347;Osterholzer Stadtwerke GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934071779865;348;OsthessenNetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB942224012479;349;OUTLETCITY AG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
@@ -521,7 +521,7 @@ SNB939653726848;519;Stadtwerke Herborn GmbH;ok;gelesen;gelesen;gelesen;nicht_aus
 SNB963671951227;520;Stadtwerke Herne AG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB944962954653;521;Stadtwerke Hettstedt GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969826201797;522;Stadtwerke Hilden GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB967127819703;523;Stadtwerke Hockenheim;pruefen;gelesen;gelesen;gelesen;im_dokument_nicht_gelesen;gelesen
+SNB967127819703;523;Stadtwerke Hockenheim;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB977206503256;524;Stadtwerke Hof Energie+Wasser GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB958680286002;525;Stadtwerke Hollfeld;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB954537392643;526;Stadtwerke Homburg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -689,7 +689,7 @@ SNB965557517831;687;Stadtwerke Uelzen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausg
 SNB947683785568;688;Stadtwerke Uffenheim;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934068635945;689;Stadtwerke Ulm/Neu-Ulm Netze GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;gelesen;gelesen
 SNB944150243392;690;Stadtwerke Unna GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB925861098273;691;Stadtwerke Uslar GmbH;pruefen;gelesen;gelesen;gelesen;im_dokument_nicht_gelesen;gelesen
+SNB925861098273;691;Stadtwerke Uslar GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB974492211483;692;Stadtwerke Velbert GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB957440824454;693;Stadtwerke Velten GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB962996832648;694;Stadtwerke Verden GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen

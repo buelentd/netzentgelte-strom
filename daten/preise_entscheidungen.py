@@ -2,10 +2,15 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
-NOTIZ = {("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
+NOTIZ = {("73", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; gültig ab 01.04.2026; Tarif ohne Trennung bei 2.500 h: Werte für beide Gruppen gleich",
+         ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
+         ("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
-TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
+TEXTAUSZUG = {"603", "151", "73"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("73", "ms"): [23.04, 4.47, 23.04, 4.47],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
+    ("73", "msns"): [24.53, 4.70, 24.53, 4.70],           # Mittelspannung mit Umspannung (MSU)
+    ("73", "ns"): [40.60, 6.17, 40.60, 6.17],
     ("361", "msns"): [30.55, 7.02, 166.31, 1.59],         # Remstalwerk: Umspannung Mittel- auf Niederspannungsnetz
     ("558", "ms"): [5.79, 3.87, 97.20, 0.21],             # Ludwigslust-Grabow: Jahresleistungspreissystem (Monatssystem ignoriert)
     ("558", "msns"): [6.15, 5.91, 153.79, 0.00],
@@ -167,7 +172,7 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} " + ("aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)" if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
+        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr == "73" else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
         if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")

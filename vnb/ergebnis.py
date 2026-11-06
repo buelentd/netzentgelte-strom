@@ -250,6 +250,8 @@ class Speicher:
         for eb, w in m["ebenen"].items():
             bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
                    if eb == "ns" or "außerhalb 40–500" not in g]
+            if str(m["hinweis"]).startswith("Korrigiert") and len(w) == 4 and w.get("lp_unter_2500") == w.get("lp_ueber_2500") and w.get("ap_unter_2500") == w.get("ap_ueber_2500"):
+                bad = [g for g in bad if "nicht kleiner" not in g and "nicht größer" not in g]      # einstufiger Tarif: gleiche Werte für beide Benutzungsdauern, so im Preisblatt
             if str(m["hinweis"]).startswith("Korrigiert") and w.get("ap_ueber_2500") == 0.0:
                 bad = [g for g in bad if "AP außerhalb 0–30" not in g]       # Arbeitspreis 0,00 ct steht so im Dokument (von Hand am Text geprüft)
             gel = d.get(eb) or {}
