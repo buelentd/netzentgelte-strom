@@ -1,4 +1,4 @@
-Preisblatt
+Vorläufiges*) Preisblatt
 Netzentgelte Strom nach § 21a EnWG
 für die Durchleitung von elektrischer Energie durch das Mittelspannungs- und Niederspannungsnetz der Versorgungsbetriebe Hoyerswerda GmbH
 
@@ -16,10 +16,10 @@ gültig ab:          01. Januar 2026
                                                                                            Netto                 Brutto             Netto                Brutto          Netto                 Brutto          Netto                Brutto
                                                                                                    [€/kW/Jahr]                              [Cent/kWh]                           [€/kW/Jahr]                           [Cent/kWh]
 
-   Mittelspannung                                                                               14,73                 17,53                 2,70                  3,21        75,92                 90,34              0,25                  0,30
-   Umspannung Mittel-/Niederspannung                                                            17,47                 20,79                 3,78                  4,50       106,96                127,28              0,20                  0,24
+   Mittelspannung                                                                               14,73                 17,53                 2,70                  3,21        75,89                 90,31              0,25                  0,30
+   Umspannung Mittel-/Niederspannung                                                            17,45                 20,77                 3,78                  4,50       106,88                127,19              0,20                  0,24
 
-   Niederspannung                                                                               22,96                 27,32                 7,87                  9,37       176,64                210,20              1,73                  2,06
+   Niederspannung                                                                               22,93                 27,29                 7,86                  9,35       176,42                209,94              1,73                  2,06
 
 
    Preise für Messstellenbetrieb inkl. Messung für Zählpunkte mit Leistungsmessung
@@ -45,7 +45,7 @@ gültig ab:          01. Januar 2026
                                                                                            Netto                 Brutto             Netto                Brutto
                                                                                                      [€/Jahr]                               [Cent/kWh]
 
-   Entgelte für Netznutzung                                                                     50,00                 59,50                 8,41              10,01
+   Entgelte für Netznutzung                                                                     50,00                 59,50                 8,40              10,00
 
 
    Preise für Messstellenbetrieb inkl. Messung für Zählpunkte ohne Leistungsmessung
@@ -71,7 +71,7 @@ gültig ab:          01. Januar 2026
    der Beschlusskammer 8 und der Entwurfsfassung (BK6-22/300) der Beschlusskammer 6 zur netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen ermittelt.
 
    Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht-öffentliche Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher
-   (Einspeicherung) mit einem Leistungsbezug über 4,2 kW.
+   (Einspeicherung) mit einem max. Leistungsbezug von 4,2 kW.
 
    Die Auswahlmöglichkeit besteht ausschließlich für Verbraucher mit Entnahme ohne Lastgangmessung in den Netzebenen 6 und 7. Das Modul 1 ist als "Standardmodul"
    vorgesehen, wenn der Betreiber steuerbarer Verbrachseinrichtungen keine Entscheidung trifft. Bei Bestandsanlagen, die bereits eine Netzentgeltreduzierung erhalten,
@@ -83,7 +83,7 @@ gültig ab:          01. Januar 2026
                                                                                            Netto                 Brutto             Netto                Brutto
                                                                                                      [€/Jahr]                               [Cent/kWh]
 
-   Bestandsanlagen (Anschluss bis 01.01.2024)                                                   50,00                 59,50                 3,05                  3,63
+   Bestandsanlagen (Anschluss bis 01.01.2024)                                                   50,00                 59,50                 3,83                  4,56
 
 
    Neuanlagen (Anschluss ab 01.01.2024)                                                         Grundpreis                              Arbeitspreis                           pauschale
@@ -93,7 +93,7 @@ gültig ab:          01. Januar 2026
 
    wählbar bei einem gemeinsamer Zählpunkt für Haushalt und steuVE
 
-   Modul 1          (pauschale Netzentgeltreduzierung)                                                                                                                       130,30                155,06
+   Modul 1          (pauschale Netzentgeltreduzierung)                                                                                                                       130,20                154,94
 
    Voraussetzung: separater Zählpunkt für den Verbrauch von steuVE
 
@@ -101,52 +101,77 @@ gültig ab:          01. Januar 2026
 
    nur in Ergänzung zu Modul 1: (gültig vom 01.01.-31.12.2026)                                       Faktor
    Modul 3         (zeitvariables Netzentgelt, Abrechnung ab 01.04.2025)
-                   Hochlasttarif Faktor                                                               1,32                              11,13                 13,24
-                   Niedriglasttarif Faktor                                                            0,40                               3,36                  4,00
+                   Hochlasttarif Faktor                                                               1,17                                  9,80              11,66
+                   Niedriglasttarif Faktor                                                            0,40                                  3,36               4,00
 
-                    Hochlastzeitfenster                                                                          von 11:30 bis 14:45 Uhr
-                    Niedriglastfenster                                                                           von 01:00 bis 06:30 Uhr
+                    Hochlastzeitfenster                                                                          von 11:00 bis 14:00 Uhr
+                    Niedriglastfenster                                                                           von 02:30 bis 05:30 Uhr
 
    Der Standardtarif im Modul 3 entspricht dem Arbeitspreis der Entgelte für Netznutzung ohne Leistungsmessung und wird außerhalb des angegebenen Hochlast- und Niedriglastfensters angewendet.
    Zuzüglich der vorgenannten Preise sind ein Entgelt für Messstellenbetrieb inkl. Messdienstleistung sowie Umlagen gemäß gesetzlicher Vorgaben sowie ggf. Konzessionsabgabe
    und weitere gesetzliche Regelungen zu berücksichtigen. Das Gesamtentgelt für die Entnahmestelle kann im Modul 1 jedoch nicht unter null sinken.
                                                                                                                                                                                                                                Seite 1 von 2
-4. Individuelle Netzentgelte nach § 19 Abs. 2 StromNEV
+4. Entgelte für Blindmehrarbeit
+
+                                                                                                                                    Blindmehrarbeit
 
 
-      Marktlokation                                                                        Geschäftszeichen RegB                Netzebene                         Gültigkeit ab
+                                                                                                                                Netto                  Brutto
+
+                                                                                                                                        [Cent/kvarh]
 
 
-      50165653202                                                                             LRB-4153/291/51                Niederspannung                           01.01.2024
+      Leistungsfaktor cos phi < 0,90 *) (positive Blindarbeit bei Bezug)                 HT-Zeit1)                                      1,02                    1,21
+      Leistungsfaktor cos phi < 0,90 *) (negative Blindarbeit bei Bezug)                 NT-Zeit2)                                      1,02                    1,21
 
 
-5. Konzessionsabgabe und Umlagen
+*) Die gemessene induktive Blindarbeit, welche in der Hochtarifzeit (HT-Zeit) 50 % der zeitgleich bezogenen Wirkarbeit überschreitet, wird als induktive Blindmehrarbeit
+   je Zählpunkt in Rechnung gestellt. Die gemessene kapazitive Blindarbeit, welche in der Niedertarifzeit (NT-Zeit) 50 % der zeitgleich bezogenen Wirkarbeit überschreitet,
+   wird als kapazitive Blindmehrarbeit je Zählpunkt in Rechnung gestellt. Die Blindarbeit, die bis zu einer Blindleistungsgrenze von 5 % der vereinbarten Anschlusskapazität
+    (Maximum aus Netzanschluss3)- und Einspeisekapazität) entsteht, wird freigestellt.
+ 1)
+    HT-Zeit ist die Zeit von Montag bis Freitag von 06:00 bis 22:00 Uhr sowie Sonnabend, Sonntag und an bundeseinheitlichen Feiertagen von 08:00 bis 13:00 Uhr.
+ 2)
+    NT-Zeit sind alle übrigen Zeiten des Jahres.
+ 3)
+    Die Umrechnung der Netzanschlusskapazität von kVA in kW erfolgt mit dem Leistungsfaktor (cos phi) von 0,9.
+
+      Die Blindmehrarbeit bei Einspeisung wird individualvertraglich in Anlehnung an die geltenden technischen Regeln vereinbart.
+
+5. Individuelle Netzentgelte nach § 19 Abs. 2 StromNEV
+
+
+      Marktlokation                                                                          Geschäftszeichen RegB                      Netzebene                       Gültigkeit ab
+
+
+      501656653202                                                                               LRB-4153/291/51                    Niederspannung                          01.01.2024
+
+
+6. Konzessionsabgabe und Umlagen
 
       Die Entgelte verstehen sich zuzüglich der Konzessionsabgabe, Mehrkosten gemäß Kraft-Wärme-Kopplungs-Gesetz (KWKG), der § 19 Abs. 2 StromNEV-Umlage und
       der Offshore-Netzumlage.
 
 
-      Konzessionsabgabe (gemäß KAV § 2) 3)                                                                                                                                              Netto                Brutto
-                                                                                                                                                                                                [Cent/kWh]
+      Konzessionsabgabe (gemäß KAV § 2) 3)                                                                                                                                                     Netto                Brutto
+                                                                                                                                                                                                       [Cent/kWh]
 
-      bei einer Jahresarbeit größer 30.000 kWh und einer Leistung größer 2 * 30 kW/Monat                                                                                                        0,11                  0,13
-
-      bei einer Jahresarbeit kleiner 30.000 kWh und einer Leistung kleiner 30 kW:                                    Strom der nicht als Schwachlast geliefert wird                             1,59                  1,89
-
-      bei einer Jahresarbeit kleiner 30.000 kWh und einer Leistung kleiner 30 kW:                                    Strom der als Schwachlast geliefert wird                                   0,61                  0,73
+      bei einer Jahresarbeit größer 30.000 kWh und einer Leistung größer 2 * 30 kW/Monat                                                                                                               0,11                  0,13
+      bei einer Jahresarbeit kleiner 30.000 kWh und einer Leistung kleiner 30 kW:                                          Strom der nicht als Schwachlast geliefert wird                              1,59                  1,89
+      bei einer Jahresarbeit kleiner 30.000 kWh und einer Leistung kleiner 30 kW:                                          Strom der als Schwachlast geliefert wird                                    0,61                  0,73
 
 
 
-      Aufschlag für besondere Netznutzung (bis 2024: Umlage nach § 19 Absatz 2 StromNEV)                                                                                                Netto                Brutto
+      Umlage nach § 19 Absatz 2 StromNEV                                                                                                                                                       Netto                Brutto
 
-                                                                                                                                                                                                [Cent/kWh]
+                                                                                                                                                                                                       [Cent/kWh]
 
 
-      für die jeweils ersten 1.000.000 kWh/a je Abnahmestelle                                                                                                                               1,559                 1,855
+      für die jeweils ersten 1.000.000 kWh/a je Abnahmestelle                                                                                                                                noch offen
 
-      für den über 1.000.000 kWh/a je Abnahmestelle übersteigenden Anteil                                                                                                                   0,050                 0,060
+      für den über 1.000.000 kWh/a je Abnahmestelle übersteigenden Anteil                                                                                                                    noch offen
 
-      für den über 1.000.000 kWh/a je Abnahmestelle übersteigenden Anteil (stromintensive Kunden4))                                                                                         0,025                 0,030
+      für den über 1.000.000 kWh/a je Abnahmestelle übersteigenden Anteil (stromintensive Kunden4))                                                                                          noch offen
 
 
  3)
@@ -160,23 +185,35 @@ gültig ab:          01. Januar 2026
       Kalenderjahr 4% des Umsatzes überstiegen haben. Der Nachweis ist mit einem Testat zu erbringen.
 
 
-      KWK-Umlage nach § 10 EnFG                                                                                                                                                         Netto                Brutto
-                                                                                                                                                                                                [Cent/kWh]
+      KWK-Umlage nach § 10 EnFG                                                                                                                                                                Netto                Brutto
+                                                                                                                                                                                                       [Cent/kWh]
 
-      verbrauchsunabhängig                                                                                                                                                                  0,446                 0,531
+      verbrauchsunabhängig                                                                                                                                                                   noch offen
 
 
-      Offshore-Netzumlage nach § 10 EnFG                                                                                                                                                Netto                Brutto
-                                                                                                                                                                                                [Cent/kWh]
+      Offshore-Netzumlage nach § 10 EnFG                                                                                                                                                       Netto                Brutto
+                                                                                                                                                                                                       [Cent/kWh]
 
-      verbrauchsunabhängig                                                                                                                                                                  0,941                 1,120
+      verbrauchsunabhängig                                                                                                                                                                   noch offen
 
 
       Bei der Abrechnung der KWKG- und Offshore-Netzumlage gelten nach §§ 21 bis 23 und 25 EnFG Sonderregelungen (bspw. für Netzstromspeicher, rückspeichernde Ladepunkte
       und Wärmepumpen) unter der Voraussetzung der Einhaltung aller Melde- und Nachweispflichten gemäß EnFG.
 
+ *)
+      HINWEIS zur Vorläufigkeit des Preisblattes:
+      Das Preisblatt wurde auf Basis der zum 15. Oktober 2025 vorliegenden Daten gemäß § 20 Abs. 1 S. 2 EnWG kalkuliert. Bis zur Gültigkeit der Netzentgelte ab dem 01. Januar 2026 können
+      Anpassungen, u. a. aufgrund folgender Sachverhalte notwendig sein:
+      - Preisanpassung des vorgelagerten Netzbetreibers
+      - Festlegungen der Landesregulierungsbehörde Sachsen sowie der Bundesnetzagentur
+      - Anpassung der gesetzlichen Grundlagen (EnWG, ARegV, StromNEV, etc.)
+      - Anpassung der KWK-Umlage gemäß § 10 EnFG
+      - Anpassung der Umlage nach § 19 Absatz 2 StromNEV
+      - Anpassung der Offshore-Netzumlage nach § 10 EnFG
+      Ein endgültiges Preisblatt wird nach Vorliegen sämtlicher Informationen bis zum 01. Januar 2026 veröffentlicht und entsprechend gekennzeichnet.
 
 
 
-                                                                                                                                                                                                        Seite 2 von 2
+
+                                                                                                                                                                                                               Seite 2 von 2
 

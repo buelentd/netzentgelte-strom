@@ -5,6 +5,7 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "38": ("k|k|k|18:45-21:45", "k|k|07:45-13:00|09:00-13:00", "Pfalzwerke Netz: Tabellen je Netzebene (Umspannebene 20 kV / 0,4 kV und Netzebene 0,4 kV), 00:00-00:00 = kein Fenster"),
     "111": ("k|k|k|08:00-10:00, 16:30-19:30", "k|k|k|07:00-10:00, 16:30-19:30", "Spalten Frühling-Winter, Zeit 1 und Zeit 2; Zeilen MS, Umspannung MS/NS, NS"),
     "155": ("k|k|k|09:15-12:45", "k|k|k|09:15-12:45", "Zeilen MS, MS/NS, NS mit Spalten Frühling-Winter (Zeit in der Winterspalte)"),
     "144": ("k|09:00-13:15|k|18:15-20:00", "k|11:30-12:15|k|11:15-12:30, 16:45-19:00", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung (Uhrzeit von/bis); zweite Winterzeile unter MS und MS/NS"),
@@ -134,7 +135,6 @@ LEER = {"61": "Dokument zeigt Zeiträume 2024/25 (kein Fenster für 2026), textg
         "640": "Raster (Viertelstunden), Markierung nicht im Text",
         "730": "Spaltenzuordnung nicht eindeutig",
         "177": "Zeilen der Ebenen nicht eindeutig zuzuordnen",
-        "377": "Dokument ist textgleich mit dem von Energieversorgung Rüsselsheim (166, liegt auf deren Website); kein Netzbetreibername im Dokument",
         "277": "Dokument (netzplusservice.de) gehört zu Städtische Werke Netz+Service (744), nicht zu inetz"}
 J = ["fruehling", "sommer", "herbst", "winter"]
 

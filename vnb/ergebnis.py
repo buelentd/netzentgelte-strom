@@ -250,6 +250,8 @@ class Speicher:
         for eb, w in m["ebenen"].items():
             bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
                    if eb == "ns" or "außerhalb 40–500" not in g]
+            if str(m["hinweis"]).startswith("Korrigiert") and len(w) == 4 and w.get("lp_unter_2500") == w.get("lp_ueber_2500") and w.get("ap_unter_2500") == w.get("ap_ueber_2500"):
+                bad = [g for g in bad if "nicht kleiner" not in g and "nicht größer" not in g]      # einstufiger Tarif: gleiche Werte für beide Benutzungsdauern, so im Preisblatt
             if str(m["hinweis"]).startswith("Korrigiert") and w.get("ap_ueber_2500") == 0.0:
                 bad = [g for g in bad if "AP außerhalb 0–30" not in g]       # Arbeitspreis 0,00 ct steht so im Dokument (von Hand am Text geprüft)
             gel = d.get(eb) or {}
@@ -263,10 +265,13 @@ class Speicher:
             else:
                 d[eb] = w
         slp = {k: v for k, v in m["slp"].items() if v is not None}
-        if len(slp) == 2 and not plausibel_slp(slp):
+        pl = plausibel_slp(slp) if len(slp) == 2 else ["unvollständig"]
+        if str(m["hinweis"]).startswith("Korrigiert") and len(slp) == 2:
+            pl = [g for g in pl if not ("Arbeitspreis" in g and 2 <= slp["ap"] < 3)]      # am Dokument von Hand geprüft: niedriger Arbeitspreis steht so im Preisblatt
+        if len(slp) == 2 and not pl:
             d["slp"] = slp
         elif slp:
-            grund.append("SLP: " + "; ".join(plausibel_slp(slp) or ["unvollständig"]))
+            grund.append("SLP: " + "; ".join(pl or ["unvollständig"]))
         red = plausibel_reihenfolge(d.get("ms") or {}, d.get("msns") or {}, d.get("ns") or {})
         grund += red
         d.update(v2=True, rlm_ok=len(d.get("ns") or {}) == 4, slp_ok=len(d.get("slp") or {}) == 2,

@@ -1,9 +1,29 @@
 ﻿nr;datei;ergebnis;bemerkung
-783;SNB915638224585_0783_hlzf_Barth.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
-738;SNB923190544898_0738_hlzf_MS.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-385;SNB937406641264_0385_hlzf_MS.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-625;SNB959567240391_0625_hlzf_MS.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-2;SNB969473762610_0002_hlzf_MS.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+668;SNB910474681448_0668_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+565;SNB918070278383_0565_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+750;SNB924577059684_0750_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+191;SNB924747450655_0191_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+126;SNB927892816017_0126_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+544;SNB928992067729_0544_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+135;SNB931431136771_0135_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+734;SNB935626894156_0734_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+123;SNB936480897581_0123_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+472;SNB940847187345_0472_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+99;SNB950882682972_0099_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+245;SNB959475630567_0245_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+286;SNB964573708865_0286_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+62;SNB965774651691_0062_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+702;SNB969058795651_0702_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+2;SNB969473762610_0002_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+351;SNB969534177940_0351_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+42;SNB973742186519_0042_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+666;SNB975659838086_0666_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+377;SNB982726407335_0377_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+672;SNB983384447602_0672_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+237;SNB984571613121_0237_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
+572;SNB984863778941_0572_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+240;SNB987153361809_0240_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+110;SNB988606051575_0110_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
 670;SNB900123507953_0670_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 128;SNB910882213224_0128_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 388;SNB911602541351_0388_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
@@ -15,6 +35,7 @@
 485;SNB914668240749_0485_hlzf.pdf;gelesen;Jahr 2026
 44;SNB915100694458_0044_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
 315;SNB915316807789_0315_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+783;SNB915638224585_0783_hlzf.pdf;gelesen;Jahr 2026
 553;SNB916255659316_0553_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 801;SNB917454122557_0801_hlzf.pdf;gelesen;Jahr 2026
 810;SNB917574266223_0810_hlzf.pdf;gelesen;Jahr 2026
@@ -42,7 +63,6 @@
 824;SNB930122681040_0824_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 101;SNB930558787330_0101_hlzf.pdf;nicht gelesen: kein Text (Scan?);alte Zeile bleibt
 372;SNB931823254809_0372_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
-377;SNB931930462517_0377_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 606;SNB932375556731_0606_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 678;SNB932509765411_0678_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 655;SNB932788203468_0655_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
