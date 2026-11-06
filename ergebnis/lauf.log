@@ -168607,3 +168607,68 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/zugangsbedingungen/netzzug -> Jahr 2026 nicht im Dokument
     Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/ersatzversorgung/Informationen-zur-Ersatzversorg -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
     Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/ersatzversorgung/Informationen-zur-Ersatzversorg -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Grundversorgung_2023/Grundversorgung_S -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/Netzn -> Jahr 2026 nicht im Dokument
+[412] -> kein_preisblatt 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS Artikel-ID: 1-01-5-001: kein Wert; NS Art
+[510] Stadtwerke Hammelburg GmbH (www.stadtwerke-hammelburg.de)
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Strom -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Strom -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+[510] -> blockiert HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 405 http://www.stadtwerke-hammelburg.de
+[585] Stadtwerke Neustadt a. d. Donau (https://www.swn-do.de)
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+[585] -> blockiert robots.txt nicht erreichbar (https://www.swn-do.de)
+[599] Stadtwerke Ochtrup (www.stadtwerke-ochtrup.de)
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.sw-greifswald.de/fileadmin/Media/PDFs/Lieferant/Strom/Strom_Ersatzversorgung_2023/Preisblatt_Ersat -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/08/Preisblatt-Netznutzungsentgelte-Strom-2026-1.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/10/2026_10_08_SW-Ochtrup-Verprobung_Preisblatt-2027_V2b_ -> verwendbar unklar
+    robots.txt von https://www.stadtwerke-fellbach.de sperrt https://www.stadtwerke-fellbach.de/fellbachGips/Gips?Anwendung=CMSWebpage&Methode=ShowHTMLAusgabe&RessourceID=261&Sessio (Disallow: /fellbachGips/Gips)
+    Dokument https://stadtwerke-ochtrup.de/privatkunden/strom/nachbarschaftsstrom/ -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/privatkunden/strom/pottbaeckerstrom/ -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/privatkunden/strom/grund-und-ersatzversorgung/ -> gültig ab [2021, 2025], nicht 2026
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/04/20251219-grund-und-ersatzversorgung-strom.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/privatkunden/strom/waermepumpe/ -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/04/20251120-informatorisches-preisblatt-pottbaeckerstrom -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/04/20251120-informatorisches-preisblatt-pottbaeckerstrom -> weder RLM- (NS) noch SLP-Werte gefunden
+[497] -> pruefen NS LP>2500 115.77 SLP-Werte nicht gefunden
+[624] Stadtwerke Ratingen GmbH (www.stadtwerke-ratingen.de)
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/vs_Strom_Preisblatt_1_Netznutzung_01012026.pdf -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://stadtwerke-ochtrup.de/privatkunden/strom/oekostrom/ -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-Wiederverkaeufer -> kein Text im Dokument (Scan?)
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-NNE-Strom-2025-S -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-NNE-Strom-2024-S -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_SLP_Ne -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-NNE-Strom-2022-S -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_Strass -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-NNE-Strom-2021-S -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_RLM_Ne -> verwendbar unklar
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-NNE-Strom-2020-S -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_Zusatz -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/SWF-Strom-LRV-2018.p -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_Messen -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-fellbach.de/de/Strom/Oekostrom/SW-Fellbach-I-2026-I-Oekostrom-Bescheinigung-I-2026-0397 -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/weitere_Komponenten_Pre -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Netze1/Stromnetz/SWF-NNE-Strom-2023-Stand-22.12.2022.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Zuschuss_zu_den_UEbertr -> fiktive Entgelte
+    Dokument https://www.stadtwerke-fellbach.de/de/Kopfnavigation/Marktpartner/SWF-Wiederverkaeufernachweis-Strom-bis-2026. -> kein Text im Dokument (Scan?)
+[476] -> ok NS LP>2500 128.69 
+[629] Stadtwerke Röthenbach a. d. Pegnitz GmbH (www.stwr.de)
+    Dokument https://www.stadtwerke-roethenbach.de/media/downloads/netzentgelte-strom-ab-01_01_2026.pdf -> verwendbar unklar
+    Dokument https://www.stadtwerke-ratingen.de/fileadmin/Vertrieb/Dokumente/Strom/2026_01_Preisblaetter/05_Preisblatt_Echt -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-ratingen.de/energie/strom/grundversorgung-strom -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-ratingen.de/fileadmin/Vertrieb/Dokumente/Preisblatt_Dienstleistung_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-ratingen.de/energie/strom/ersatzversorgung-strom -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-ratingen.de/energie/strom/ersatzversorgung-strom-niederspannungsnetz -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
