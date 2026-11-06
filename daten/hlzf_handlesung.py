@@ -5,6 +5,17 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "590": ("k|k|09:15-12:15|09:15-12:45, 17:00-19:15", "k|k|10:45-13:15, 17:00-18:30|08:00-13:15, 17:00-19:15", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; zwei Zeilen je Jahreszeit"),
+    "553": ("12:00-15:15|k|k|11:45-12:15, 13:00-13:15", "k|k|16:45-19:45|17:00-19:15", "Tabellen Mittelspannung, Umspannebene MS/NS, Niederspannung mit HLZF-1 bis -5; Spalten Herbst, Winter, Frühjahr, Sommer"),
+    "556": ("k|k|k|12:30-13:15, 17:30-19:45", "k|k|k|12:30-13:00, 17:30-19:45", "Aufzählung je Jahreszeit und Ebene; Herbst: nur Umspannung zur Mittelspannung genannt"),
+    "560": ("k|k|16:00-19:00|14:00-19:45", "k|k|16:45-18:45|16:45-19:45", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"),
+    "606": ("11:30-14:30|k|k|16:45-19:45", "k|k|k|16:30-19:30", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Jahreszeit in der ersten Spalte"),
+    "532": ("k|k|16:45-19:15|11:45-13:15, 16:30-19:15", "k|k|16:45-19:15|12:00-13:00, 16:30-19:00", "Tabellen Mittelspannung, Umspannung MS/NS, Niederspannung; im Dokument steht bei Herbst 19-15 (Tippfehler für 19:15)"),
+    "536": ("11:00-14:00|k|12:15-15:15|k", "k|k|10:15-13:15|09:00-12:00", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen Mittelspannungsebene, Umspannung MS/NS, Niederspannungsebene"),
+    "493": ("k|k|17:45-18:15|17:00-19:30", "k|k|17:00-19:00|17:00-19:30", "Tabellen Mittelspannung, Umspannung MS/NS, Niederspannung mit Datumszeilen 2026"),
+    "499": ("k|k|07:45-18:00|08:00-09:00, 11:30-12:15", "k|k|k|08:00-09:00, 17:15-18:00", "Spalten Frühling, Sommer, Herbst, Winter und zweite Winter-Spalte (Zeitfenster 2)"),
+    "432": ("k|k|k|16:45-19:15", "k|k|k|09:30-10:00, 16:00-19:30", "Tabellen Mittelspannung, Umspannung MS/NS, Niederspannung; Winter Januar/Februar und Dezember"),
+    "449": ("k|k|k|11:45-15:00, 16:30-19:15", "k|k|k|12:15-14:00, 16:45-19:15", "Spalten Frühling-Winter je von/bis; Zeilen Umspannung HS/MS, MS, Umspannung MS/NS, NS"),
     "382": ("k|k|k|17:00-19:30", "k|k|k|17:00-19:30", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen Mittelspannungsebene, Umspannung MS/NS, Niederspannungsebene"),
     "388": ("k|k|16:15-19:15|12:30-13:15, 17:00-19:15", "k|k|16:00-19:00|12:00-13:15, 17:15-19:00", "Spalten Frühling-Winter je von/bis; Zeilen Mittelspannung, Umspannung, Niederspannung"),
     "400": ("k|k|17:00-19:00|16:45-19:00", "k|k|16:45-19:15|16:45-19:00", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"),
