@@ -168817,3 +168817,11 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://ew-westenthanner.de/netzzugang/ -> verwendbar vorläufig
     Dokument https://www.wideflex.de/veroeffentlichungspflichten-strom-nach-enwg/ihp-sued/ -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
     Dokument https://www.wideflex.de/veroeffentlichungspflichten-strom-nach-enwg/ihp-nord/ -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+[819] -> kein_preisblatt 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel; Jahr 2026 nicht im Dokument
+[831] Zwickauer Energieversorgung GmbH (www.zev-energie.de)
+    Dokument https://ew-westenthanner.de/wp-content/uploads/2018/03/4_Allgemeine_Stromlieferbedingungen.pdf -> Download-Fehler: APIRequestContext.get: read ECONNRESET
+[827] -> pruefen NS LP>2500 45.38 NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fe
+    robots.txt von https://www.zev-energie.de sperrt https://www.zev-energie.de/download.php?download=FiktiveNetzentgelte_Strom_TypisierteAbnahmefaelle_2026.pdf (Disallow: /download.php)
+    Dokument https://www.zev-energie.de/download.php?download=FiktiveNetzentgelte_Strom_TypisierteAbnahmefaelle_2026.pdf -> robots
+[820] -> blockiert robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
+[828] -> pruefen keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
