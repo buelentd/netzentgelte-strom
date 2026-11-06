@@ -7,8 +7,9 @@ NOTIZ = {("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; T
          ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
          ("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
-TEXTAUSZUG = {"603", "151", "73", "117"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
+TEXTAUSZUG = {"73"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("117", "slp"): [13.25, 60.00],          # EKS Kleingewerbe DE 2026 (Einheitstarif Netznutzung 2026 netto, Grundpreis Netz 60 €/Jahr); enthält Swissgrid
     ("117", "ms"): [20.50, 10.95, 228.25, 2.65],          # EKS Schaffhausen (Text vom Nutzer, Strom Industrie DE, gültig ab 01.01.2026): SPRINT (< 2.500 h) und STANDARD (> 2.500 h), Arbeitspreis und Leistungspreis Netznutzung netto
     ("73", "ms"): [23.04, 4.47, 23.04, 4.47],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
     ("73", "msns"): [24.53, 4.70, 24.53, 4.70],           # Mittelspannung mit Umspannung (MSU)

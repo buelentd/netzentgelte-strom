@@ -265,10 +265,13 @@ class Speicher:
             else:
                 d[eb] = w
         slp = {k: v for k, v in m["slp"].items() if v is not None}
-        if len(slp) == 2 and not plausibel_slp(slp):
+        pl = plausibel_slp(slp) if len(slp) == 2 else ["unvollständig"]
+        if str(m["hinweis"]).startswith("Korrigiert") and len(slp) == 2:
+            pl = [g for g in pl if not ("Arbeitspreis" in g and 2 <= slp["ap"] < 3)]      # am Dokument von Hand geprüft: niedriger Arbeitspreis steht so im Preisblatt
+        if len(slp) == 2 and not pl:
             d["slp"] = slp
         elif slp:
-            grund.append("SLP: " + "; ".join(plausibel_slp(slp) or ["unvollständig"]))
+            grund.append("SLP: " + "; ".join(pl or ["unvollständig"]))
         red = plausibel_reihenfolge(d.get("ms") or {}, d.get("msns") or {}, d.get("ns") or {})
         grund += red
         d.update(v2=True, rlm_ok=len(d.get("ns") or {}) == 4, slp_ok=len(d.get("slp") or {}) == 2,

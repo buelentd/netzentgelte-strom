@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 14:57, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 15:05, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 538 | 65% |
-| pruefen | 264 | 32% |
+| ok | 541 | 65% |
+| pruefen | 261 | 31% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 18 | 2% |
 | robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 453,  85
+Preisstand (nur ok): endgültig 455,  86
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
-- Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
+- Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 740)
+- Median: 7,26 ct/kWh (n = 743)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 453,  85
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (85)
+## Status ok, aber Preisstand nicht endgültig (86)
 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
@@ -63,6 +63,7 @@ Preisstand (nur ok): endgültig 453,  85
 - 129. Elektrizitätswerk Tegernsee Carl Miller KG: 
 - 140. Energie Calw GmbH: 
 - 145. Energie- und Wasserversorgung Bruchsal GmbH: 
+- 151. Energienetze Bayern GmbH (Stromverteilnetz Germering): 
 - 157. Energieversorgung Dahlenburg-Bleckede AG: 
 - 162. Energieversorgung Limburg GmbH: 
 - 184. EVI Energieversorgung Hildesheim GmbH ＆ Co. KG: 
@@ -140,9 +141,9 @@ Preisstand (nur ok): endgültig 453,  85
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (293)
+## Restfälle (290)
 
-### pruefen (264)
+### pruefen (261)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -208,7 +209,6 @@ Preisstand (nur ok): endgültig 453,  85
 - 141. Energie Waldeck-Frankenberg GmbH: 
 - 146. Energie- und Wasserversorgung Hamm GmbH: 
 - 150. Energiegenossenschaft für Wittmund eG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (5.82, 2.4); RLM-Werte nicht gefunden; SLP-Werte auffällig
-- 151. Energienetze Bayern GmbH (Stromverteilnetz Germering): kein Preisblatt-Link gefunden (4 Seiten durchsucht)
 - 152. Energienetze Berlin GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 153. Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 154. EnergieSüdwest Netz GmbH: 
@@ -353,7 +353,6 @@ Preisstand (nur ok): endgültig 453,  85
 - 598. Stadtwerke Oberkirch GmbH: SLP-Werte nicht gefunden
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
 - 601. Stadtwerke Oerlinghausen GmbH: 
-- 603. Stadtwerke Olching Stromnetz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 611. Stadtwerke Peine GmbH: 
 - 613. Stadtwerke Pirmasens Versorgungs GmbH: 
 - 624. Stadtwerke Ratingen GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -390,7 +389,6 @@ Preisstand (nur ok): endgültig 453,  85
 - 743. Städtische Werke Borna Netz GmbH: 6 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden
 - 750. Stromnetz Erdinger und Freisinger Land GmbH ＆ Co. KG: HTTP 404 https://www.stadtwerke-erding.de/de/Home/Startseite/Stadtwerke-Erding.html
 - 752. Stromnetz Pullach GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://assets.stromnetz-pullach.de/media/downloads/2026/07/16/Stromnetz-Pullach-Netzentgelte-2019.pdf, https://assets.stromnetz-pullach.de/media/downl
-- 754. Stromnetz Weilheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 765. StWB Stadtwerke Brandenburg an der Havel GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 770. SVO Netz GmbH: SLP-Werte nicht gefunden
 - 776. SWL Übertragungsnetzgesellschaft mbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; Kopf nennt [2025], nicht 2026

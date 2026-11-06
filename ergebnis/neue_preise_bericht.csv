@@ -1,5 +1,7 @@
 ﻿nr;netzbetreiber;datei;pruefung;gruende
-565;Stadtwerke Meerane GmbH;SNB918070278383_0565.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
-734;Stadtwerke Zeil a. Main;SNB935626894156_0734.pdf;OK;Jahr 2026, Name und Inhalt passen
-666;Stadtwerke Stade GmbH;SNB975659838086_0666.pdf;PRUEFEN;Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)
-672;Stadtwerke Stockach GmbH;SNB983384447602_0672.pdf;OK;Jahr 2026, Name und Inhalt passen
+193;EWR Netze GmbH (Lichtenstein-Unterhausen);SNB923953358557_0193.pdf;PRUEFEN;Netzbetreibername steht nicht im Dokument (andere Firma, geteilte Website?)
+754;Stromnetz Weilheim GmbH ＆ Co. KG;SNB929262647085_0754.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;SNB940478286561_0603.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
+117;Elektrizitätswerk des Kantons Schaffhausen AG;SNB985099151188_0117.pdf;OK;Jahr 2026, Name und Inhalt passen
+117;Elektrizitätswerk des Kantons Schaffhausen AG;SNB985099151188_0117_2.pdf;FALSCH;"Preisblatt unvollständig? fehlt: Niederspannung/Umspannung, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht); Gas/Wärme/Was"
+151;Energienetze Bayern GmbH (Stromverteilnetz Germering);SNB994111700501_0151.pdf;PRUEFEN;"Preisblatt unvollständig? fehlt: ct/kWh, €/kW; Titel/Anfang klingt nach anderem Dokument (Messstellenbetrieb, Ergänzende Bedingungen, Anschluss, Datenschutz, Bericht)"
