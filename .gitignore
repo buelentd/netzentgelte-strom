@@ -6,3 +6,4 @@ ergebnis/*.tmp
 diagnose/
 lauf/suche_treffer.csv
 abschaetzung_testseite/netzentgelt_abschaetzung.html
+ergebnis/texte_layout/*.alt

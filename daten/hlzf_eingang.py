@@ -1,4 +1,4 @@
-"""Hochlastzeitfenster-Dateien aus eingang/pdfs_neu (SNB…_NNNN_hlzf.pdf/.xls/.xlsx) offline lesen und in ergebnis/hlzf_ergebnis.csv eintragen.
+"""Hochlastzeitfenster-Dateien aus eingang/ (beliebiger Unterordner, z. B. pdfs_neu oder neue listen; SNB…_NNNN_hlzf.pdf/.xls/.xlsx) offline lesen und in ergebnis/hlzf_ergebnis.csv eintragen.
 Text je Datei: ergebnis/hlzf_texte/<nr>.txt (Nachprüfung). Eine vorhandene gelesene Zeile wird nur ersetzt, wenn die neue Datei mehr Fenster liefert.
 Aufruf: PYTHONPATH=. python daten/hlzf_eingang.py"""
 import csv, glob, re, shutil, subprocess, sys, os
@@ -97,7 +97,7 @@ def main():
     bericht = []
     gruppen = {}
     dateien = {}
-    for f in sorted(glob.glob("eingang/pdfs_neu/**/*_hlzf*.*", recursive=True)):
+    for f in sorted(g for g in glob.glob("eingang/**/*_hlzf*.*", recursive=True) if "verarbeitet" not in g and "/NEUE PREISBLAETTER/" not in g and "/neue preise/" not in g):
         dateien[Path(f).name] = f                      # gleicher Dateiname in mehreren Ordnern: der spätere zählt
     for f in sorted(dateien.values()):
         m = re.match(r"SNB\d+_(\d+)_hlzf", Path(f).name)

@@ -15,9 +15,15 @@
 203;Freitaler Stadtwerke GmbH;Niederspannung;104,39;6,90;203,39;2,94;pruefen;nächste Zeile hat 0 von 4 Werten;Netzanschluss Niederspannung / ohne registrierende Lastgangmessung;SNB982241851170_0203.txt
 203;Freitaler Stadtwerke GmbH;MS/NS;72,86;5,71;180,86;1,39;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB982241851170_0203.txt
 206;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;HS/MS;9,27;1,85;40,83;0,59;ok;Ebenenzeile im Dokument nicht gefunden;;SNB926427521488_0206.txt
+240;Gemeindewerke Nümbrecht GmbH;Niederspannung;40,55;7,62;161,49;2,79;ok;nächste Zeile hat 2 von 4 Werten;Niederspannung > 2.500 h/a *) 161,49 192,17 2,79 3,32;SNB987153361809_0240.txt
+240;Gemeindewerke Nümbrecht GmbH;MS/NS;26,89;7,96;208,70;0,69;ok;nächste Zeile hat 2 von 4 Werten;Umspannung zur Niederspannung > 2.500 h/a *) 208,70 248,35 0,69 0,82;SNB987153361809_0240.txt
+240;Gemeindewerke Nümbrecht GmbH;Mittelspannung;24,21;6,78;174,33;0,77;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannung > 2.500 h/a *) 174,33 207,45 0,77 0,92;SNB987153361809_0240.txt
+275;HEWA GmbH;Mittelspannung;10,00;6,00;31,00;2,00;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung 21,94 8,39;SNB982085566391_0275.txt
+280;InfraServ Gendorf Netze GmbH;HS/MS;24,67;5,37;156,41;0,09;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB942732578894_0280.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;Niederspannung;17,21;10,79;172,31;4,58;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB922269370765_0299.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;MS/NS;14,54;10,47;270,45;0,23;ok;Ebenenzeile im Dokument nicht gefunden;;SNB922269370765_0299.txt
 299;Licht- und Kraftwerke Helmbrechts GmbH;Mittelspannung;22,13;7,03;166,26;1,26;ok;Ebenenzeile im Dokument nicht gefunden;;SNB922269370765_0299.txt
+306;Mainsite GmbH ＆ Co. KG;Niederspannung;17,97;8,19;181,05;1,66;ok;nächste Zeile hat 1 von 4 Werten;n Entnahme aus Niederspannung (NSP) 30,18 1,66;SNB974647435931_0306.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;Niederspannung;32,52;7,80;133,00;3,79;ok;nächste Zeile hat 0 von 4 Werten;Niederspannung: Haushalts-;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;MS/NS;18,37;8,32;211,81;0,58;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;Mittelspannung;15,83;7,55;195,81;0,35;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung: Industriekunde;SNB993755128542_0316.txt
@@ -45,7 +51,11 @@
 441;Stadtwerke Coesfeld GmbH;MS/NS;17,96;7,66;173,77;1,43;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB943480673763_0441.txt
 458;Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH;Niederspannung;27,14;10,50;169,25;4,82;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB914522191989_0458.txt
 463;Stadtwerke Elbtal GmbH;Niederspannung;20,47;6,58;156,72;1,13;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahme aus der Netzebene Niederspannung für Standardlastprofilkunden;SNB920699937404_0463.txt
+468;Stadtwerke Emmerich GmbH;Niederspannung;33,80;6,92;154,27;2,10;ok;nächste Zeile hat 1 von 4 Werten;1-01-7-001 (Leistungspreis (Niederspannung, Jahresbenutzungsstunden < 2500 h/a)) Niederspannung (E06) Leistungspreis 33,80 0,09260273973 0,09234972678;SNB986190606218_0468.txt
+468;Stadtwerke Emmerich GmbH;MS/NS;22,69;4,90;112,49;1,31;ok;nächste Zeile hat 1 von 4 Werten;1-01-6-001 (Leistungspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden < 2500 h/a)) MS/NS Umspannung (E09) Leistungspreis 22,69 0,06216438356 0,06199453552;SNB986190606218_0468.txt
+468;Stadtwerke Emmerich GmbH;Mittelspannung;16,50;3,66;85,12;0,91;ok;nächste Zeile hat 1 von 4 Werten;1-01-5-001 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a)) Mittelspannung (E05) Leistungspreis 16,50 0,04520547945 0,04508196721;SNB986190606218_0468.txt
 497;Stadtwerke Greifswald GmbH;Mittelspannung;15,07;7,01;115,77;2,98;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 0,020164 0,047200 0,289260 0,007900;SNB926442995943_0497.txt
+564;Stadtwerke Marburg GmbH;HS/MS;9,49;3,10;58,57;1,14;ok;Ebenenzeile im Dokument nicht gefunden;;SNB972740218178_0564.txt
 594;Stadtwerke Norderstedt;Niederspannung;20,31;5,90;146,61;0,85;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 594;Stadtwerke Norderstedt;MS/NS;19,08;5,51;136,62;0,81;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 599;Stadtwerke Ochtrup;Niederspannung;48,76;7,80;146,45;3,89;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt

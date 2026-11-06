@@ -6,7 +6,7 @@ from vnb.hlzf import _vollstaendig
 VERWORFEN = {"55": "Zeilen vermischt (Fenster doppelt)", "272": "Spalten 2026 und 2027 nebeneinander, vermischt", "302": "Ebenenname geteilt, Zuordnung falsch",
              "350": "Raster mit Tagesliste, Zuordnung unklar", "363": "mehrere Tabellen vermischt", "719": "Zuordnung der Zeilen unklar", "737": "mehrere Tabellen vermischt",
              "142": "Zeiten zwischen den Ebenennamen", "214": "Zeilen den Ebenen nicht eindeutig zuzuordnen"}
-VERIFIZIERT = {"15", "89", "90", "92", "103", "212", "229", "343", "462", "642", "445", "697", "320", "463", "714", "205", "558", "160", "184", "559", "8", "84", "19", "233", "474", "475", "527", "628", "693", "718", "747", "779", "792"}
+VERIFIZIERT = {"15", "89", "90", "92", "103", "212", "229", "343", "462", "642", "445", "697", "320", "463", "714", "205", "558", "160", "184", "559", "8", "84", "19", "233", "474", "475", "527", "628", "693", "718", "747", "779", "792", "418", "479", "515", "630", "715", "783", "805", "810"}
 SICHERE_FORMEN = ("Block je Ebene (Netzebene / Jahreszeit / Zeiten)", "Ebenen als Spalten (von/bis)", "Ebene mit Jahreszeiten-Spalten (von/bis)",
                   "Ebenen-Zeilen unter Jahreszeiten-Kopf (von/bis)", "Tabelle nach Positionen")
 ALTE_FORMEN = ("Jahreszeiten als Spalten", "Ebenen als Spalten", "ganzjährig")        # früh entwickelt, gelten mit bestandener Zeitenprüfung als sicher

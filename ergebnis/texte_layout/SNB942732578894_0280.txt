@@ -1,84 +1,109 @@
- Netzentgelte gem. §
-    17 StromNEV                                        Elektronisches Preisblatt; Artikel-ID und Preisbezeichnungen gemäß EDI-Codeliste
-       KJ 2026
-   Preis      Einheit       ID                                                                            Bezeichnung                                              Preis PRICAT     Einheit
-                                     Preisblattteil 1 Entgelte für Jahresleistungspreissystem
-                        1-01-3       Hochspannung
-17,48      €/kW/a       1-01-3-001   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis                         0,047890             €/kW*Tag
-3,73       ct/kWh       1-01-3-002   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis                           0,037300             €/kWh
-108,72     €/kW/a       1-01-3-003   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis                        0,297863             €/kW*Tag
-0,09       ct/kWh       1-01-3-004   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis                          0,000900             €/kWh
-                        1-01-4       Umspannung Hoch-/Mittelspannung
-24,67      €/kW/a       1-01-4-001   Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis      0,067589             €/kW*Tag
-5,37       ct/kWh       1-01-4-002   Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis        0,053700             €/kWh
-156,41     €/kW/a       1-01-4-003   Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis     0,428521             €/kW*Tag
-0,09       ct/kWh       1-01-4-004   Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis       0,000900             €/kWh
-                        1-01-5       Mittelspannung
-34,00      €/kW/a       1-01-5-001   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis                       0,093151             €/kW*Tag
-4,52       ct/kWh       1-01-5-002   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis                         0,045200             €/kWh
-114,84     €/kW/a       1-01-5-003   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis                      0,314630             €/kW*Tag
-1,28       ct/kWh       1-01-5-004   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis                        0,012800             €/kWh
-                        1-01-6       Umspannung Mittel-/Niederspannung
-49,52      €/kW/a       1-01-6-001   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Leistungspreis    0,135671             €/kW*Tag
-10,36      ct/kWh       1-01-6-002   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden < 2.500 h/a Arbeitspreis      0,103600             €/kWh
-299,79     €/kW/a       1-01-6-003   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Leistungspreis   0,821342             €/kW*Tag
-0,35       ct/kWh       1-01-6-004   Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >= 2.500 h/a Arbeitspreis     0,003500             €/kWh
-                                     Preisblattteil 3 Entgelte für Monatsleistungspreissystem
-                        1-03-3       Monatsleistungspreissystem Hochspannung
-18,12      €/kW/a       1-03-3-001   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 28 Tagen                                          0,647143             €/kW*Tag
-18,12      €/kW/a       1-03-3-002   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 29 Tagen                                          0,624828             €/kW*Tag
-18,12      €/kW/a       1-03-3-003   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 30 Tagen                                          0,604000             €/kW*Tag
-18,12      €/kW/a       1-03-3-004   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 31 Tagen                                          0,584516             €/kW*Tag
-0,09       ct/kWh       1-03-3-005   Arbeitspreis Hochspannung                                                                                               0,000900             €/kWh
-                        1-03-4       Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung
-26,07      €/kW/a       1-03-4-001   Monatsleistungspreissystem Hoch-/Mittelspannung Leistungspreis für Monate mit 28 Tagen                                  0,931000             €/kW*Tag
-26,07      ct/kWh       1-03-4-002   Monatsleistungspreissystem Hoch-/Mittelspannung Leistungspreis für Monate mit 29 Tagen                                  0,898897             €/kWh
-26,07      €/kW/a       1-03-4-003   Monatsleistungspreissystem Hoch-/Mittelspannung Leistungspreis für Monate mit 30 Tagen                                  0,868933             €/kW*Tag
-26,07      ct/kWh       1-03-4-004   Monatsleistungspreissystem Hoch-/Mittelspannung Leistungspreis für Monate mit 31 Tagen                                  0,840903             €/kWh
-0,09       €/kW/a       1-03-4-005   Arbeitspreis Hoch-/Mittelspannung                                                                                       0,000900             €/kW*Tag
-                        1-03-5       Monatsleistungspreissystem Mittelspannung
-19,14      €/kW/a       1-03-5-001   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen                                        0,683571             €/kW*Tag
-19,14      ct/kWh       1-03-5-002   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen                                        0,660000             €/kWh
-19,14      €/kW/a       1-03-5-003   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen                                        0,638000             €/kW*Tag
-19,14      ct/kWh       1-03-5-004   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen                                        0,617419             €/kWh
-1,28       €/kW/a       1-03-5-005   Arbeitspreis Mittelspannung                                                                                             0,012800             €/kW*Tag
-                        1-03-6       Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
-49,97      €/kW/a       1-03-6-001   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen                     1,784464             €/kW*Tag
-49,97      ct/kWh       1-03-6-002   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen                     1,722931             €/kWh
-49,97      €/kW/a       1-03-6-003   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen                     1,665500             €/kW*Tag
-49,97      ct/kWh       1-03-6-004   Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen                     1,611774             €/kWh
-0,35       €/kW/a       1-03-6-005   Arbeitspreis Umspannung Mittel-/Niederspannung                                                                          0,003500             €/kW*Tag
+                                       § 1 Netzentgelt Jahresleistungspreissystem
 
 
+1)    Jahresleistungspreissystem für Netznutzung und Lieferung ≥ 2500h Benutzungsstunden
+                                     Leistungspreis [€/kW]              Arbeitspreis [Cent/kWh]
 
-                                                                                                         Netzentgelte 2026
-                                  Preisblattteil 6 Entgelte für Messstellenbetrieb konventioneller Messeinrichtungen (kME)
-                     1-06         Entgelte des Messstellenbetriebs bei konventionellen Messeinrichtungen (kME)
-1.793,330   €/a      1-06-3-001   Messstellenbetrieb kME mit registrierender Last-/Einspeisemessung, Hochspannung                                                                         4,913233       €/Tag
-916,170     €/a      1-06-3-002   Wandlersatz für Messstellenbetrieb bei kME, Hochspannung                                                                                                2,510055       €/Tag
-328,278     €/a      1-06-5-001   Messstellenbetrieb kME mit registrierender Last-/Einspeisemessung, Mittelspannung                                                                       0,899392       €/Tag
-184,022     €/a      1-06-5-002   Wandlersatz für Messstellenbetrieb bei kME, Mittelspannung                                                                                              0,504170       €/Tag
-274,025     €/a      1-06-7-001   Messstellenbetrieb kME mit registrierender Last-/Einspeisemessung, Niederspannung                                                                       0,750753       €/Tag
-15,075      €/a      1-06-7-002   Wandlersatz für Messstellenbetrieb bei kME, Niederspannung                                                                                              0,041301       €/Tag
-26,500      €/a      1-06-0-036   Messstellenbetrieb kME, alle Spannungsebenen, Telekommunikationsanschluss durch Netzbetreiber (Fernauslesung)                                           0,072603       €/Tag
-                                  Preisblattteil 10 Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und unter www.netztransparenz.de
-                                  veröffentlicht werden
-                     1-10         Aufschläge aufgrund gesetzlicher Umlagen
-     -      ct/kWh   1-10-1-001   Aufschläge aufgrund KWKG: nichtprivilegierte Letztverbräuche                                                                                                       -   €/kWh
-     -      ct/kWh   1-10-2-001   Aufschläge aufgrund Offshore-Haftungsumlage: nichtprivilegierte Letztverbräuche                                                                                    -   €/kWh
-     -      ct/kWh   1-10-3-001   Aufschläge aufgrund der Umlage für abschaltbare Lasten: Letztverbrauch je Marktlokation                                                                            -   €/kWh
-                                  Aufschläge aufgrund individueller Netzentgelte nach § 19 Abs. 2 StromNEV: Letztverbrauchergruppe A (Strommengen von Letztverbrauchern für die jeweils
-     -                                                                                                                                                                                               -
-            ct/kWh   1-10-4-001   ersten 1.000.000 kWh je Marktlokation                                                                                                                                  €/kWh
-                                  Aufschläge aufgrund individueller Netzentgelte nach § 19 Abs. 2 StromNEV: Letztverbrauchergruppe B (Letztverbraucher, deren Jahresverbrauch an einer
-     -                            Marktlokation 1.000.000 kWh übersteigt, zahlen zusätzlich für über 1.000.000 kWh hinausgehende Strombezüge eine maximale § 19 StromNEV-Umlage von                  -
-            ct/kWh   1-10-4-002   0,050 ct/kWh.)                                                                                                                                                         €/kWh
-                                  Aufschläge aufgrund individueller Netzentgelte nach § 19 Abs. 2 StromNEV: Letztverbrauchergruppe C (Letztverbraucher, die dem produzierenden Gewerbe,
-     -                            dem schienengebundenen Verkehr oder der Eisenbahninfrastruktur zuzuordnen sind und deren Stromkosten im vorangegangenen Geschäftsjahr vier Prozent                 -
-            ct/kWh   1-10-4-003   des Umsatzes überstiegen haben, zahlen für über 1.000.000 kWh hinausgehende Strombezüge maximal 0,025 ct/kWh.)                                                         €/kWh
+
+ Hochspannung                               108,72                               0,09
+
+
+ Umspannung Hochspannung /
+                                            156,41                               0,09
+ Mittelspannung
+
+ Mittelspannung                             114,84                               1,28
+
+
+ Umspannung Mittelspannung /
+                                            299,79                               0,35
+ Niederspannung
+
+
+2)    Jahresleistungspreissystem für Netznutzung und Lieferung < 2500h Benutzungsstunden
+                                     Leistungspreis [€/kW]              Arbeitspreis [Cent/kWh]
+
+
+ Hochspannung                                17,48                               3,73
+
+
+ Umspannung Hochspannung /
+                                             24,67                               5,37
+ Mittelspannung
+
+ Mittelspannung                              34,00                               4,52
+
+
+ Umspannung Mittelspannung /
+                                             49,52                              10,36
+ Niederspannung
 
 
 
 
-                                                                                                       Netzentgelte 2026
+                                             § 2 Monatsleistungspreissystem
+                                   Monatsleistungspreissystem für Netznutzung
+                                     Leistungspreis [€/kW]              Arbeitspreis [Cent/kWh]
+
+
+ Hochspannung                                18,12                               0,09
+
+
+ Umspannung Hochspannung /
+                                             26,07                               0,09
+ Mittelspannung
+
+ Mittelspannung                              19,14                               1,28
+
+ Umspannung Mittelspannung /
+                                             49,97                               0,35
+ Niederspannung
+
+
+
+
+Preisblatt Netznutzung                         Kalenderjahr 2026                                  Seite 1 von 2
+der InfraServ Gendorf Netze GmbH
+                                               § 3 Entgelt für Messstellenbetrieb
+
+                                                                  Informatorisch Preise für die monatlichen Abschläge;
+                                       Entgelt pro techn.              Entgelt je techn. Zählpunkt €/(Zähler*Monat);
+                                    Zählpunkt €/(Zähler*Jahr)         Für die Jahresendabrechnung sind die Jahrespreise
+                                                                                           bindend
+
+  Umspannung Hochspannung /
+                                            2.736,00                                       228,00
+  Mittelspannung
+
+  Mittelspannung                             538,80                                         44,90
+
+
+  Umspannung Mittelspannung /
+                                             315,60                                         26,30
+  Niederspannung
+
+
+
+                                                 § 4 Sonstige Preisbestandteile
+Alle Preise zzgl. Umsatzsteuer in der jeweiligen gesetzlichen Höhe. Des Weiteren gelten die nachfolgenden
+gesetzlichen Umlagen:
+
+     •   KWKG-Umlage aus Gesetz für die Erhaltung, die Modernisierung und den Ausbau der Kraft-Wärme-
+         Kopplung (Kraft-Wärme-Kopplungsgesetz - KWKG)
+
+     •   Umlage nach §19 Abs. 2 StromNEV aus Verordnung über die Entgelte für den Zugang zu
+         Elektrizitätsversorgungsnetzen (Stromnetzentgeltverordnung - StromNEV)
+
+     •   Offshore-Haftungsumlage nach § 17 f EnWG aus Gesetz über die Elektrizitäts- und Gasversorgung
+         (Energiewirtschaftsgesetz - EnWG)
+
+Die Höhe der gesetzlichen Umlagen sowie weiterführende Informationen zu den Umlagen können der
+gemeinsamen Internetplattform der deutschen Übertragungsnetzbetreibern www.netztransparenz.de
+entnommen werden.
+
+
+
+
+ Preisblatt Netznutzung                           Kalenderjahr 2026                                         Seite 2 von 2
+ der InfraServ Gendorf Netze GmbH
 
