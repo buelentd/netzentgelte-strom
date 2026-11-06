@@ -5,6 +5,20 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "382": ("k|k|k|17:00-19:30", "k|k|k|17:00-19:30", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen Mittelspannungsebene, Umspannung MS/NS, Niederspannungsebene"),
+    "388": ("k|k|16:15-19:15|12:30-13:15, 17:00-19:15", "k|k|16:00-19:00|12:00-13:15, 17:15-19:00", "Spalten Frühling-Winter je von/bis; Zeilen Mittelspannung, Umspannung, Niederspannung"),
+    "400": ("k|k|17:00-19:00|16:45-19:00", "k|k|16:45-19:15|16:45-19:00", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"),
+    "369": ("k|k|k|11:30-13:45, 16:30-19:15", "k|k|k|11:30-13:45, 16:30-19:15", "Tabelle Mittelspannung, Umspg. MS/NS, Niederspannung; nur Winter"),
+    "372": ("12:45-13:45|k|k|k", "12:00-13:30|12:15-13:15, 13:30-13:45, 14:00-14:30|k|k", "Tabelle mit Spaltenposition: Frühling, Sommer"),
+    "315": ("k|k|k|16:30-19:30", "k|k|k|16:30-19:30", "Netzebene 6 und 7 mit Spalten Winter, Frühling, Sommer, Herbst; Ende :59 = nächste Viertelstunde"),
+    "300": ("k|k|k|11:15-11:45, 18:00-18:15", "k|k|k|11:15-11:45, 17:30-18:15", "Titel Hochlastzeitfenster 2026, Datumszeilen im Dokument 2025 (Vorlage); Tabellen MS, Umspannung MS/NS, NS"),
+    "246": ("k|k|k|10:15-12:15, 17:30-19:30", "k|k|k|17:30-19:00", "Tabelle Mittelspannung, Umspg. MS/NS, Niederspannung; Spalten Frühling-Winter"),
+    "274": ("k|k|16:45-19:00|11:00-12:15, 16:45-19:45", "k|k|k|17:15-19:30", "Netzebene 4-7 mit Spalten Herbst, Winter, Frühling, Sommer (Position der Zeiten)"),
+    "194": ("k|k|17:00-18:30|11:15-14:00, 16:15-19:00", "k|k|17:00-18:30|11:15-14:00, 16:15-19:00", "Spalten Frühling-Winter, Zeilen MS, MS/NS, NS; Ende :59 als nächste Viertelstunde (Ende 18:29:59 = 18:30)"),
+    "174": ("k|k|08:45-09:15, 09:45-10:00, 11:15-11:30|k", "", "Tabellen MS und NS; nur MS und NS ausgewiesen"),
+    "172": ("k|k|16:45-19:45|17:00-20:00", "k|k|k|17:00-20:00", "Spalten Frühling-Winter je von/bis; Zeilen Mittelspannung, Umspannung, Niederspannung"),
+    "128": ("k|k|17:15-19:15|16:45-19:15", "k|k|17:15-19:15|16:45-19:15", "Tabelle Mittelspannung, Umspg. MS/NS, Niederspannung mit Spalten Frühling-Winter"),
+    "163": ("k|k|15:30-18:30|15:30-18:30", "k|k|16:00-19:00|09:30-12:30, 16:00-19:00", "Tabelle Mittelspannung, Umspg. MS/NS, Niederspannung; Fenster je Zeile über/unter dem Ebenennamen"),
     "741": ("k|k|k|18:45-20:00", "k|k|17:30-18:15|17:00-19:15", "Blöcke Mittelspannung, Umspannung MS/NS, Niederspannung; Ebenenname mittig"),
     "785": ("11:30-13:15|k|17:15-19:00, 21:15-22:00|09:30-15:45, 16:45-19:30, 21:00-22:30", "k|10:15-13:00|11:15-12:45, 13:30-14:15, 14:45-15:45|k", "Blöcke mit Zeilen Winter, Frühling, Sommer, Herbst; Ebene HS, HS/MS, MS, MS/NS, NS; Ebenenname mittig"),
     "646": ("k|k|k|17:30-19:15", "k|k|18:00-18:15|08:30-08:45, 11:15-13:15, 17:15-19:00", "Blöcke Mittelspannung, Umspannung MS/NS, Niederspannung; Ebenenname mittig"),
@@ -68,7 +82,8 @@ HAND = {
     "473": ("13:00-13:30|k|k|k", "k|k|k|16:30-18:45", "drei Blöcke Mittelspannung, Umspannung MSP/NSP, Niederspannung"),
     "173": ("k|k|k|12:15-15:30, 17:15-19:45", "k|k|k|12:30-12:45, 13:30-15:30, 17:00-20:00", "Segmenttabelle, Ebenenname steht in der Sommer-Zeile des 4-Zeilen-Blocks"),
 }
-LEER = {"277": "Dokument (netzplusservice.de) gehört zu Städtische Werke Netz+Service (744), nicht zu inetz"}
+LEER = {"377": "Dokument ist textgleich mit dem von Energieversorgung Rüsselsheim (166, liegt auf deren Website); kein Netzbetreibername im Dokument",
+        "277": "Dokument (netzplusservice.de) gehört zu Städtische Werke Netz+Service (744), nicht zu inetz"}
 J = ["fruehling", "sommer", "herbst", "winter"]
 
 def main():
