@@ -1,15 +1,15 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 15:14, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 15:21, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 545 | 66% |
-| pruefen | 257 | 31% |
+| pruefen | 258 | 31% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 18 | 2% |
+| blockiert | 17 | 2% |
 | robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
@@ -144,7 +144,7 @@ Preisstand (nur ok): endgültig 458,  87
 
 ## Restfälle (286)
 
-### pruefen (257)
+### pruefen (258)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -254,6 +254,7 @@ Preisstand (nur ok): endgültig 458,  87
 - 262. GIG energy services GmbH: SLP-Werte nicht gefunden
 - 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 266. GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG: 
+- 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
 - 276. IGS Netze GmbH: SLP-Werte nicht gefunden
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
@@ -408,7 +409,7 @@ Preisstand (nur ok): endgültig 458,  87
 
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (18)
+### blockiert (17)
 
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 144. Energie- und Wasserversorgung Altenburg GmbH: robots.txt nicht erreichbar (https://www.netze.ewa-altenburg.de); robots.txt nicht erreichbar (http://www.netze.ewa-altenburg.de)
@@ -416,7 +417,6 @@ Preisstand (nur ok): endgültig 458,  87
 - 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 403 http://www.frammersbach.de
 - 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
 - 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 403 http://www.partenstein.de
-- 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 403 http://www.egloffstein.de
 - 312. Merck Site Management GmbH: Seite nicht lesbar: Error
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
