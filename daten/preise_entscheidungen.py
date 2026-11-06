@@ -2,8 +2,15 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
+NOTIZ = {("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
+         ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
 TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("179", "slp"): [6.16, 39.60],                        # Erlangen: Niederspannung ohne Leistungsmessung, Nettopreis
+    ("381", "slp"): [6.16, 55.00],                        # Amberg: Grundpreis 55 €/Jahr, Arbeitspreis 6,16 ct
+    ("393", "slp"): [9.05, 0.00],                         # Bad Dürkheim: Entnahmestellen ohne Leistungsmessung, nur Arbeitspreis
+    ("247", "slp"): [10.10, 0.00],                        # Steinhagen: Preisblatt 1, nur Arbeitspreis (Kleinkunden)
+    ("322", "slp"): [6.66, 0.00],                         # Ahlen: Kleinkunden, Grundpreis-Zelle leer
     ("442", "slp"): [7.70, 0.00],                         # Crailsheim: Entnahmestelle ohne Leistungsmessung (€/a 0,00; ct/kWh 7,70)
     ("623", "slp"): [9.42, 60.00],                        # Rastatt: nicht unterbrechbare Entnahme ohne Lastgangmessung
     ("716", "slp"): [6.68, 78.00],                        # Weinheim: Niederspannung nicht unterbrechbare Anlagen
@@ -131,6 +138,7 @@ def main():
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
         note = f"Korrigiert: {eb.upper()} " + ("aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)" if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
+        if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
         r[I["geprueft"]] = "" if nr in TEXTAUSZUG else "ja"     # am Dokumenttext von Hand geprüft; Textauszug des Kollegen: nicht am Dokument bestätigt

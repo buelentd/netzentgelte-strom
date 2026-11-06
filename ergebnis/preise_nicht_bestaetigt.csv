@@ -49,6 +49,7 @@
 378;Stadtwerke Achim AG;Niederspannung;21,91;5,15;101,42;1,97;ok;nächste Zeile hat 0 von 4 Werten;Netzbereich Niederspannung NSP Arbeitspreis Grundpreis;SNB942257679137_0378.txt
 378;Stadtwerke Achim AG;MS/NS;18,78;4,66;114,20;0,84;ok;Ebenenzeile im Dokument nicht gefunden;;SNB942257679137_0378.txt
 378;Stadtwerke Achim AG;Mittelspannung;17,59;4,22;102,06;0,84;ok;Ebenenzeile im Dokument nicht gefunden;;SNB942257679137_0378.txt
+381;Stadtwerke Amberg Versorgungs GmbH;Mittelspannung;37,93;3,87;200,00;2,00;pruefen;nächste Zeile hat 2 von 4 Werten;Mittelspannung 37,93 €/kW 3,87 ct/kWh 112,82 €/kW 0,88 ct/kWh;SNB978191145308_0381.txt
 420;Stadtwerke Bernburg GmbH;Niederspannung;48,09;11,54;279,01;2,30;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
 420;Stadtwerke Bernburg GmbH;MS/NS;25,74;5,05;119,40;1,31;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
 441;Stadtwerke Coesfeld GmbH;Niederspannung;19,40;8,28;187,68;1,55;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB943480673763_0441.txt
@@ -60,6 +61,7 @@
 468;Stadtwerke Emmerich GmbH;Mittelspannung;16,50;3,66;85,12;0,91;ok;nächste Zeile hat 1 von 4 Werten;1-01-5-001 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a)) Mittelspannung (E05) Leistungspreis 16,50 0,04520547945 0,04508196721;SNB986190606218_0468.txt
 497;Stadtwerke Greifswald GmbH;Mittelspannung;15,07;7,01;115,77;2,98;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 0,020164 0,047200 0,289260 0,007900;SNB926442995943_0497.txt
 564;Stadtwerke Marburg GmbH;HS/MS;9,49;3,10;58,57;1,14;ok;Ebenenzeile im Dokument nicht gefunden;;SNB972740218178_0564.txt
+591;Stadtwerke Neuwied GmbH;HS/MS;13,94;5,02;139,40;0,00;ok;Ebenenzeile im Dokument nicht gefunden;;SNB925999725461_0591.txt
 594;Stadtwerke Norderstedt;Niederspannung;20,31;5,90;146,61;0,85;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 594;Stadtwerke Norderstedt;MS/NS;19,08;5,51;136,62;0,81;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 599;Stadtwerke Ochtrup;Niederspannung;48,76;7,80;146,45;3,89;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt

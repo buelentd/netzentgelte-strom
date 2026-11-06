@@ -250,6 +250,8 @@ class Speicher:
         for eb, w in m["ebenen"].items():
             bad = [g for g in plausibel(w, "MS/NS" if eb == "msns" else {"ms": "Mittelspannung", "hsms": "HS/MS"}.get(eb, "NS"))
                    if eb == "ns" or "außerhalb 40–500" not in g]
+            if str(m["hinweis"]).startswith("Korrigiert") and w.get("ap_ueber_2500") == 0.0:
+                bad = [g for g in bad if "AP außerhalb 0–30" not in g]       # Arbeitspreis 0,00 ct steht so im Dokument (von Hand am Text geprüft)
             gel = d.get(eb) or {}
             abw = len(gel) == 4 and len(w) == 4 and any(abs(gel[k] - w[k]) > 0.006 for k in w) \
                 and not str(m["hinweis"]).startswith("Korrigiert")
