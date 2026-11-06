@@ -3,6 +3,25 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 KORRIGIEREN = {
+    ("320", "ms"): [11.58, 6.12, 146.21, 0.73],           # Bad Langensalza: BDEW-Artikel-IDs, Preis je Jahr (nicht je Tag)
+    ("320", "msns"): [12.06, 7.16, 179.96, 0.45],
+    ("320", "ns"): [13.13, 9.48, 159.15, 3.63],
+    ("468", "ms"): [16.50, 3.66, 85.12, 0.91],            # Emmerich: Artikel-IDs, Arbeitspreis in EUR/kWh x 100
+    ("468", "msns"): [22.69, 4.90, 112.49, 1.31],
+    ("468", "ns"): [33.80, 6.92, 154.27, 2.10],
+    ("675", "ms"): [28.29, 4.84, 96.05, 2.13],            # Südholstein: Jahresleistungspreissystem NE 5/6/7
+    ("675", "msns"): [32.61, 5.52, 108.56, 2.48],
+    ("675", "ns"): [40.86, 6.18, 110.29, 3.40],
+    ("801", "ms"): [7.79, 5.04, 124.94, 0.35],            # Wörth/Isar-Altheim: Tabellen je Ebene < / > 2.500 h
+    ("801", "msns"): [8.59, 5.32, 129.61, 0.48],
+    ("801", "ns"): [10.36, 5.52, 124.81, 0.94],
+    ("75", "hsms"): [8.43, 4.37, 97.24, 0.81],            # CPM Netz: Netzebenen 3-7 (Preisblatt auf cpm-netz.evonik.de)
+    ("75", "ms"): [40.35, 3.04, 82.08, 1.37],
+    ("75", "msns"): [48.74, 3.61, 97.16, 1.67],
+    ("75", "ns"): [59.96, 3.64, 91.67, 2.38],
+    ("306", "ms"): [9.19, 3.67, 84.93, 0.64],             # Mainsite (vorläufiges Preisblatt): Entnahme aus MSP, MSP/NSP, NSP
+    ("306", "msns"): [14.50, 6.10, 144.66, 0.90],
+    ("306", "ns"): [17.97, 8.19, 181.05, 1.66],
     ("564", "slp"): [6.15, 70.00],                        # Marburg: Entnahme ohne Leistungsmessung, Niederspannung
     ("564", "hsms"): [9.49, 3.10, 58.57, 1.14],           # Marburg: Tabellen "< 2.500" und "≥ 2.500" je Entnahmestelle
     ("564", "ms"): [21.35, 4.70, 87.60, 2.05],

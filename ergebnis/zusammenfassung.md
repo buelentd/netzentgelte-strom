@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 07:53, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 08:07, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 498 | 60% |
-| pruefen | 297 | 36% |
+| ok | 502 | 60% |
+| pruefen | 293 | 35% |
 | kein_preisblatt | 2 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 423,  75
+Preisstand (nur ok): endgültig 427,  75
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 423,  75
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,42 ct/kWh (n = 738)
+- Median: 6,41 ct/kWh (n = 744)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 151,34 €/kW/a (n = 738)
+- Median: 151,34 €/kW/a (n = 744)
 
 ## Datenherkunft
 
@@ -130,9 +130,9 @@ Preisstand (nur ok): endgültig 423,  75
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 
-## Restfälle (333)
+## Restfälle (329)
 
-### pruefen (297)
+### pruefen (293)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -266,13 +266,11 @@ Preisstand (nur ok): endgültig 423,  75
 - 297. LeineNetz GmbH: NS LP über 2.500 h = 316.51 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 298. Leitungspartner GmbH: 
 - 304. Mainfranken Netze GmbH: 
-- 306. Mainsite GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 310. MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP: mehrere Arbeitspreise (10.58, 0.029); RLM-W
 - 311. Meißener Stadtwerke GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 315. MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 317. NETCUR GmbH: 
 - 318. Netz ＆ Energie Betriebsgesellschaft mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (10.96, 13.04); RLM-Werte nicht gefunden; SLP-Werte auffällig
-- 320. NETZE Bad Langensalza GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 322. Netzgesellschaft Ahlen mbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 324. Netzgesellschaft Eisenberg mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 327. Netzgesellschaft Gütersloh mbH: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (60.0, 4.2); SLP-Werte auffällig
@@ -386,7 +384,6 @@ Preisstand (nur ok): endgültig 423,  75
 - 661. Stadtwerke Soltau GmbH ＆ Co. KG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden; MSNS: Benutzungsdauer-Grenze nicht im Kopf 
 - 665. Stadtwerke St. Ingbert GmbH: 
 - 668. Stadtwerke Staßfurt GmbH: SLP-Werte nicht gefunden
-- 675. Stadtwerke Südholstein GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (9.96, 11.85); RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 678. Stadtwerke Teterow GmbH: 8 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 683. Stadtwerke Troisdorf GmbH: 
 - 684. Stadtwerke Trostberg Stromversorgung GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -420,7 +417,6 @@ Preisstand (nur ok): endgültig 423,  75
 - 783. SWS Netze GmbH: NS LP über 2.500 h = 0.24 außerhalb 40–260 €/kW/a; NS: AP unter 2.500 h = 0.06 ct/kWh, Einheit €/kWh?; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 793. thyssenkrupp Steel Europe AG: 10 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2021], nicht 2026
 - 798. Überlandwerk Erding GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 801. Überlandzentrale Wörth/I.-Altheim Netz AG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 802. ÜZ Mainfranken eG: 
 - 803. Veolia Industriepark Deutschland GmbH: SLP-Werte nicht gefunden
 - 809. VersorgungsBetriebe Elbe GmbH: SLP-Werte nicht gefunden
