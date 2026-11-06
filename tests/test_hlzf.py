@@ -62,7 +62,7 @@ def test_export_conplot(tmp_path):
     for e in d["netzbetreiber"]:
         if e["rlm"] and e["rlm"]["ns"]:
             ns = e["rlm"]["ns"]
-            assert ns["lp_unter_eur_kw_jahr"] < ns["lp_ab_eur_kw_jahr"] and e["grenze"] in ("<2500", "<=2500")
+            assert ns["lp_unter_eur_kw_jahr"] <= ns["lp_ab_eur_kw_jahr"] and e["grenze"] in ("<2500", "<=2500")
         assert ("rlm_ns" in e["fehlt"]) == (not (e["rlm"] and e["rlm"]["ns"]))
     plz = json.loads((tmp_path / "conplot" / "plz_2026.json").read_text(encoding="utf-8"))
     assert all(isinstance(v, list) and v for v in plz.values())

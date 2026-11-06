@@ -2,12 +2,14 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
-NOTIZ = {("73", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; gültig ab 01.04.2026; Tarif ohne Trennung bei 2.500 h: Werte für beide Gruppen gleich",
+NOTIZ = {("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; Tarif Strom Industrie DE (Mittelspannung mit eigener Transformatorenstation, nur Bestandskunden); Netznutzung enthält Kosten Swissgrid",
+         ("73", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; gültig ab 01.04.2026; Tarif ohne Trennung bei 2.500 h: Werte für beide Gruppen gleich",
          ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
          ("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
-TEXTAUSZUG = {"603", "151", "73"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
+TEXTAUSZUG = {"603", "151", "73", "117"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("117", "ms"): [20.50, 10.95, 228.25, 2.65],          # EKS Schaffhausen (Text vom Nutzer, Strom Industrie DE, gültig ab 01.01.2026): SPRINT (< 2.500 h) und STANDARD (> 2.500 h), Arbeitspreis und Leistungspreis Netznutzung netto
     ("73", "ms"): [23.04, 4.47, 23.04, 4.47],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
     ("73", "msns"): [24.53, 4.70, 24.53, 4.70],           # Mittelspannung mit Umspannung (MSU)
     ("73", "ns"): [40.60, 6.17, 40.60, 6.17],
@@ -172,7 +174,7 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr == "73" else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
+        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
         if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
