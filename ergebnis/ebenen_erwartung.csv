@@ -225,7 +225,7 @@ SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;pruefen;gelesen;gelesen;
 SNB926559276683;224;Gemeindewerke Gundelfingen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB928557841498;225;Gemeindewerke Halstenbek;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB991400668603;226;Gemeindewerke Haßloch GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
-SNB971174411018;227;Gemeindewerke Heikendorf AöR;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB971174411018;227;Gemeindewerke Heikendorf AöR;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB961322866920;228;Gemeindewerke Herxheim;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB924819944297;229;Gemeindewerke Holzkirchen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB919708421706;230;Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -233,7 +233,7 @@ SNB962006136537;231;Gemeindewerke Kahl Versorgungsgesellschaft mbH;ok;gelesen;ge
 SNB981193584808;232;Gemeindewerke Kiefersfelden;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969688824103;233;Gemeindewerke Kirkel GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB955706777742;234;Gemeindewerke Lam;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB994196581439;235;Gemeindewerke Langenpreising GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB994196581439;235;Gemeindewerke Langenpreising GmbH ＆ Co. KG;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;gelesen;gelesen
 SNB972265030262;236;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;blockiert;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
 SNB984571613121;237;Gemeindewerke Neuendettelsau;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB940436967099;238;Gemeindewerke Niefern-Öschelbronn;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt

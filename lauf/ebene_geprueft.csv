@@ -7,3 +7,4 @@ nr;ebene;status;grund
 395;ms;dokument_luecke;nur Mittelspannung RLM ab 2.500 h im Dokument (Preise für unter 2.500 h fehlen)
 395;slp;dokument_luecke;SLP-Spalten im Dokument nicht eindeutig (Grundpreis 42,00 und Arbeitspreis 13,6 bzw. 15,33, zwei Preisreihen): Original-PDF prüfen
 624;hsms;nicht_ausgewiesen;Hochspannung und Umspannung HS/MS stehen im Preisblatt mit Strich (nicht ausgewiesen), am PDF geprüft 06.11.2026
+227;ms;nicht_ausgewiesen;Das Preisblatt nennt nur Umspannung MS/NS und Niederspannung, am Dokumenttext geprüft 07.11.2026

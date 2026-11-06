@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 20:04, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 20:13, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 583 | 70% |
-| pruefen | 229 | 28% |
+| ok | 581 | 70% |
+| pruefen | 231 | 28% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 484,  99
+Preisstand (nur ok): endgültig 482,  99
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -154,9 +154,9 @@ Preisstand (nur ok): endgültig 484,  99
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (248)
+## Restfälle (250)
 
-### pruefen (229)
+### pruefen (231)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -239,7 +239,9 @@ Preisstand (nur ok): endgültig 484,  99
 - 221. Gemeindewerke Georgensgmünd: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 223. Gemeindewerke Großkrotzenburg GmbH: 
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+- 227. Gemeindewerke Heikendorf AöR: 
 - 232. Gemeindewerke Kiefersfelden: 
+- 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: 
 - 237. Gemeindewerke Neuendettelsau: 
 - 238. Gemeindewerke Niefern-Öschelbronn: Preisblatt-Links per robots.txt gesperrt: https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaetter/Netzentgelte/Netzentgelte_Strom_ab_01.01.2026
 - 239. Gemeindewerke Nüdlingen: 
