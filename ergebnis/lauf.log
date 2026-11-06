@@ -168799,3 +168799,21 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisbaltt_indiv_NNE_01012026.pd -> weder RLM- (NS) noch SLP-Werte gefunden
     Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012024.pdf -> Jahr 2026 nicht im Dokument
     Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012023.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.versorgungsbetriebe-elbe.net/preisblatt-strom.html?_hash=52%2FtkD5mRFMnz1nn0XgJj9n17p9GUDvRJj%2BpV -> Jahr 2026 nicht im Dokument
+    Dokument https://www.versorgungsbetriebe-elbe.net/preisblatt-strom.html?_hash=52%2FtkD5mRFMnz1nn0XgJj9n17p9GUDvRJj%2BpV -> kein PDF/Excel
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/download/strom/veroeffentlichungspflichten/netzzugang/P -> Jahr 2026 nicht im Dokument
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/download/strom/veroeffentlichungspflichten/netzzugang/P -> Jahr 2026 nicht im Dokument
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/2024/Preise%20Strom%20NNE%20VBE%20ab%2001.01.2025.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.versorgungsbetriebe-elbe.net/files/uploads/2022/Preise%20Strom%20NNE%20VBE-%20ab%2001.01.2022_01.p -> Jahr 2026 nicht im Dokument
+[809] -> pruefen NS LP>2500 120.78 SLP-Werte nicht gefunden
+[820] VW KRAFTWERK Gesellschaft mit beschränkter Haftung (www.vw-kraftwerk.de)
+[495] -> kein_preisblatt kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+--- 60/69 erledigt, ca. 2 min verbleibend
+[827] Westenthanner Energieversorgung GmbH (www.ew-westenthanner.de)
+    Dokument https://www.bdew.de/media/original_images/2026/07/31/bdew_musterwortlaut_tab_niederspannung_2026_v1_0.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enwg-veroeffentlichungen.de/swo/Netze/Stromnetz/Messstellenbetrieb/PB-digitales-Messwesen-2024-202 -> weder RLM- (NS) noch SLP-Werte gefunden
+[780] -> pruefen NS LP>2500 196.14 Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
+[828] WiDe Flex Bau + Service GmbH (www.wideflex.de)
+    Dokument https://ew-westenthanner.de/netzzugang/ -> verwendbar vorläufig
+    Dokument https://www.wideflex.de/veroeffentlichungspflichten-strom-nach-enwg/ihp-sued/ -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.wideflex.de/veroeffentlichungspflichten-strom-nach-enwg/ihp-nord/ -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)

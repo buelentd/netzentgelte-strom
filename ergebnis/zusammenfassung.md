@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 19:52, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 19:55, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 475,  98
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,41 ct/kWh (n = 769)
+- Median: 6,41 ct/kWh (n = 770)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 150,50 €/kW/a (n = 769)
+- Median: 150,50 €/kW/a (n = 770)
 
 ## Datenherkunft
 
@@ -360,7 +360,7 @@ Preisstand (nur ok): endgültig 475,  98
 - 655. Stadtwerke Schwerte GmbH: 
 - 658. Stadtwerke Sigmaringen GmbH: SLP-Werte nicht gefunden
 - 665. Stadtwerke St. Ingbert GmbH: 
-- 678. Stadtwerke Teterow GmbH: 8 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
+- 678. Stadtwerke Teterow GmbH: 14 Dokument(e) geprüft: kein Text im Dokument (Scan?); Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 683. Stadtwerke Troisdorf GmbH: 
 - 686. Stadtwerke Tuttlingen GmbH: SLP-Werte nicht gefunden
 - 688. Stadtwerke Uffenheim: 
@@ -381,14 +381,14 @@ Preisstand (nur ok): endgültig 475,  98
 - 770. SVO Netz GmbH: SLP-Werte nicht gefunden
 - 776. SWL Übertragungsnetzgesellschaft mbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft); weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; Jahr 2026 nicht im Dokument
 - 780. SWO Netz GmbH: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
-- 782. SWR Energie GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
+- 782. SWR Energie GmbH ＆ Co. KG: SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 783. SWS Netze GmbH: NS LP über 2.500 h = 0.24 außerhalb 40–260 €/kW/a; NS: AP unter 2.500 h = 0.06 ct/kWh, Einheit €/kWh?; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
-- 793. thyssenkrupp Steel Europe AG: 10 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2021], nicht 2026
+- 793. thyssenkrupp Steel Europe AG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 798. Überlandwerk Erding GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 803. Veolia Industriepark Deutschland GmbH: SLP-Werte nicht gefunden
 - 809. VersorgungsBetriebe Elbe GmbH: SLP-Werte nicht gefunden
-- 818. Vorarlberger Energienetze GmbH: kein Preisblatt-Link gefunden (10 Seiten durchsucht)
+- 818. Vorarlberger Energienetze GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 819. VSE Verteilnetz GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel; Jahr 2026 nicht im Dokument
 - 821. Weiler Wärme eG: 1 Dokument(e) geprüft: fiktive Entgelte
 - 826. wesernetz Bremerhaven GmbH: 
@@ -413,8 +413,8 @@ Preisstand (nur ok): endgültig 475,  98
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 405 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
-- 785. SWT Stadtwerke Trier Versorgungs-GmbH: robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de)
-- 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 403 http://www.markt-zellingen.de
+- 785. SWT Stadtwerke Trier Versorgungs-GmbH: robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de); robots.txt nicht erreichbar (https://www.swt.de/seite/vermiedene-netznutzung-durch-dezentrale-einspei
+- 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 405 http://www.markt-zellingen.de
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
 ### robots (4)
