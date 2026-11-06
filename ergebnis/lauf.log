@@ -168672,3 +168672,80 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://www.stadtwerke-ratingen.de/fileadmin/Vertrieb/Dokumente/Preisblatt_Dienstleistung_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
     Dokument https://www.stadtwerke-ratingen.de/energie/strom/ersatzversorgung-strom -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
     Dokument https://www.stadtwerke-ratingen.de/energie/strom/ersatzversorgung-strom-niederspannungsnetz -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.stadtwerke-roethenbach.de/media/downloads/strom-entnahmestellen-ohne-leistungsmessung-07-2024.pdf -> Jahr 2026 nicht im Dokument
+[629] -> pruefen NS LP>2500 94.66 Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
+[678] Stadtwerke Teterow GmbH (https://www.sw-teterow.de)
+    robots.txt von https://netzanschlussportal.stadtwerke-ochtrup.de sperrt https://netzanschlussportal.stadtwerke-ochtrup.de/?tx_wironetzanschluss_portal%5Baction%5D=create&tx_wironetzanschluss_p (Disallow: /*?)
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2025/10/SW-Ochtrup-Preisblatt-Strom-final-2025.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/04/20251219-strom-sonderabkommen-haushalt.pdf -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/04/20251106-nachbarschaftsstrom-sonderabkommen.pdf -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://sw-teterow.de/uploads/dateien/Netzentgelte-Strom-2026.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/11/Hochlastzeitraeume-2027.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://stadtwerke-ochtrup.de/wp-content/uploads/2026/09/20260601_BDEW_Musterwortlaut_TAB-Mittelspannung_Versi -> weder RLM- (NS) noch SLP-Werte gefunden
+[599] -> pruefen NS LP>2500 146.45 SLP-Werte nicht gefunden
+[743] Städtische Werke Borna Netz GmbH (www.stadtwerke-borna-netz.de)
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2026/01/Pbl_Strom_2026_endgueltig.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://sw-teterow.de/strom/privatkunden-strom/privatkunden-strom-teterow/grundversorgung-strom-haushalt -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/NNE_S_SLP_2025.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/NNE_G_SLP_2025.pdf -> Jahr 2026 nicht im Dokument
+[624] -> ok NS LP>2500 133.74 
+[776] SWL Übertragungsnetzgesellschaft mbH (https://netzinfo.swl-unser-stadtwerk.de/swl-uebertragungsnetzgesellschaft-mbh/)
+    Dokument https://saerve-online.de/wp-content/uploads/2025/12/Endgueltiges-PB-2026-SaerVE-Netz.pdf -> Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft)
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-VNG-Strom.pdf -> Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft)
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-ENEG-Strom.pdf -> Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft)
+    Dokument https://sw-teterow.de/strom/privatkunden-strom/umland/enemax-strom -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Endgueltiges-PB-2026-UeNG.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/10/Vorlaeufiges-PB-2027-VNG-Strom.pdf -> Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft)
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Fiktives-PB-2026-ohne-Bundeszuschuss-VNG-St -> fiktive Entgelte
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/01/Preisblatt-VNG-Strom-und-Gas_ab-01.01.2026. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://sw-teterow.de/strom/geschaeftskunden-strom/teterow-1/grundversorgung-strom-gewerbe -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/10/Vorlaeufiges-PB-2027-UeNG.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Fiktives-PB-2026-ohne-Bundeszuschuss-UeNG-S -> fiktive Entgelte
+    Dokument https://sw-teterow.de/strom/geschaeftskunden-strom/teterow-1/teterow-strom-1 -> Jahr 2026 nicht im Dokument
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/10/Vorlaeufiges-PB-2027-ENEG-Strom.pdf -> Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft)
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Fiktives-PB-2026-ohne-Bundeszuschuss-ENEG-S -> fiktive Entgelte
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/01/Preisblatt-ENEG-Strom-und-Gas_ab-01.01.2026 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://sw-teterow.de/strom/geschaeftskunden-strom/umland-1/enemax-strom-1 -> Jahr 2026 nicht im Dokument
+    Dokument https://sw-teterow.de/strom/geschaeftskunden-strom/umland-1/enemax-strom-natur-1 -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2026/04/Anmeldung-EEA-an-NS_2026.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2025/11/SWBorna_HLZF_NS-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2025/11/SWBorna_HLZF_MSNS-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2025/11/SWBorna_HLZF_MS-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-borna-netz.de/wp-content/uploads/2022/08/nn-vertragswbnetz13.pdf -> kein Text im Dokument (Scan?)
+[743] -> kein_preisblatt 6 Dokument(e) geprüft: kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden
+[780] SWO Netz GmbH (www.swo-netz.de)
+    Dokument https://www.svo-netz.de/downloads/cun/_pdf/finale-pb-nne-strom-zum-01.01.2026-stand-12.12.2025.pdf -> verwendbar endgültig
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/01/Preisblatt-SWL-Strom-und-Gas_ab-01.01.2026_ -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2024/12/Endgueltiges-PB-2025-VNG-Strom.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2024/12/Endgueltiges-PB-2025-ENEG-Strom.pdf -> Jahr 2026 nicht im Dokument
+[776] -> kein_preisblatt 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft); weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; J
+--- 50/69 erledigt, ca. 5 min verbleibend
+[782] SWR Energie GmbH ＆ Co. KG (www.stadtwerke-roedental.de)
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_steuerbare-Verbrauchseinrichtungen-v -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_NNE_SLP_vorl.-2027.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_NNE_SLP_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Fiktives-Preisblatt_RLM_JLP_und-SLP-2026.pdf -> fiktive Entgelte
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_RLM_MLP_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_RLM_JLP_2026.pdf -> verwendbar unklar
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_steuerbare-Verbrauchseinrichtungen-n -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_steuerbare-Verbrauchseinrichtungen-v -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_steuerbare-Verbrauchseinrichtungen-n -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_RLM_MLP_vorl.-2027.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_RLM_JLP_vorl.-2027.pdf -> verwendbar vorläufig
+    Dokument https://sw-teterow.de/uploads/dateien/Kontaktdatenblatt-Stromvertrieb-SWT_ab-01.01.2026.xlsx -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://sw-teterow.de/uploads/dateien/strom/Preisblatt-Strom.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://sw-teterow.de/uploads/dateien/Antrag-reduzierte-Netzentgelte-SWT.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://sw-teterow.de/uploads/dateien/netz/strom/preise_der_netznutzung/p-preisbestandteile.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://sw-teterow.de/uploads/dateien/netz/strom/preise_der_netznutzung/p-leitfaden.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.stadtwerke-roedental.de/strom-stromversorger-oekostrom/ -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://sw-teterow.de/uploads/dateien/Hochlastzeitfenster-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://sw-teterow.de/uploads/dateien/Preisblatt-BKZ-ab-11_25.pdf -> Jahr 2026 nicht im Dokument
+[678] -> kein_preisblatt 14 Dokument(e) geprüft: kein Text im Dokument (Scan?); Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; 
+[785] SWT Stadtwerke Trier Versorgungs-GmbH (www.swt.de)
+    Dokument https://www.stadtwerke-roedental.de/strom-stromversorger-oekostrom/?s= -> weder RLM- (NS) noch SLP-Werte gefunden
+[785] -> blockiert robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de); robots.txt nicht erreichbar (https://www.swt.de/sei
+[787] SWW Wunsiedel GmbH (www.s-w-w.com)
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/10/Preisblatt_MSB_vorl.-2027_mit-Zusatz.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-roedental.de/wp-content/uploads/2026/07/Waerme-Eintarif-2026-220726.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+[782] -> pruefen NS LP>2500 150.50 SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; SLP-Werte auffällig
+[793] thyssenkrupp Steel Europe AG (www.thyssenkrupp-steel.com)
