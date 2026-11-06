@@ -29,8 +29,17 @@ def ausgewiesen(zeilen):
         if e in MAP: ebs.add(MAP[e])
     return ebs
 
+def geprueft():
+    """lauf/ebene_geprueft.csv: von Hand am Dokument geprüfte Lücken je Ebene (nicht_ausgewiesen | dokument_luecke)."""
+    try:
+        return {(r["nr"], r["ebene"]): r["status"] for r in csv.DictReader(open("lauf/ebene_geprueft.csv", encoding="utf-8-sig"), delimiter=";")}
+    except FileNotFoundError:
+        return {}
+
+
 def main():
     out, zaehl = [], {}
+    G = geprueft()
     for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";"):
         t = text_zu(r)
         z = ausgewiesen(t.split("\n")) if t else None
@@ -38,11 +47,12 @@ def main():
         for eb in EB:
             hat = all(r[f"{eb}_{s}"] for s in SP)
             if hat: st = "gelesen"
+            elif (r["nr"], eb) in G: st = G[(r["nr"], eb)]
             elif z is None: st = "kein_dokument"
             elif eb in z: st = "im_dokument_nicht_gelesen"
             else: st = "nicht_ausgewiesen"
             zeile.append(st); zaehl[(eb, st)] = zaehl.get((eb, st), 0) + 1
-        slp = "gelesen" if r["slp_ap_ct_kwh"] and r["slp_grundpreis_eur_jahr"] else ("kein_dokument" if z is None else "fehlt")
+        slp = "gelesen" if r["slp_ap_ct_kwh"] and r["slp_grundpreis_eur_jahr"] else (G.get((r["nr"], "slp")) or ("kein_dokument" if z is None else "fehlt"))
         zeile.append(slp); zaehl[("slp", slp)] = zaehl.get(("slp", slp), 0) + 1
         out.append(zeile)
     with open("ergebnis/ebenen_erwartung.csv", "w", encoding="utf-8-sig", newline="") as f:

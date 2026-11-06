@@ -1,0 +1,8 @@
+nr;ebene;status;grund
+262;ms;nicht_ausgewiesen;Das Jahresleistungspreissystem des Dokuments weist keine Mittelspannung aus (Mittelspannung nur im Monatssystem). Von Hand am Dokumenttext geprüft 06.11.2026
+476;msns;dokument_luecke;Im Dokument ist der Arbeitspreis ab 2.500 h bei Umspannung MS/NS leer (auch im Monatssystem): Original-PDF prüfen, ob ein Wert fehlt
+497;msns;dokument_luecke;Im Dokument stehen für Umspannung MS/NS nur Tageswerte mit wechselnden Monatsfaktoren (informatorisch), keine Jahrespreise: Original-PDF bzw. Preisblatt mit Jahrespreisen prüfen
+265;ns;dokument_luecke;Dokument enthält nur Netzentgelte ohne Leistungsmessung (SLP); Preisblatt mit Leistungspreisen fehlt
+395;ns;dokument_luecke;Dokument ist ein fiktives Netzentgelt mit und ohne ÜNB-Zuschuss, kein Preisblatt mit Jahresleistungspreisen für Niederspannung
+395;ms;dokument_luecke;nur Mittelspannung RLM ab 2.500 h im Dokument (Preise für unter 2.500 h fehlen)
+395;slp;dokument_luecke;SLP-Spalten im Dokument nicht eindeutig (Grundpreis 42,00 und Arbeitspreis 13,6 bzw. 15,33, zwei Preisreihen): Original-PDF prüfen

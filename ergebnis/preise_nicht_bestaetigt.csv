@@ -6,7 +6,11 @@
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;Niederspannung;17,81;6,79;135,56;2,08;ok;nächste Zeile hat 0 von 4 Werten;Technische Anschlussbedingungen für den Anschluss an das Niederspannungsnetz (TAB 2007);SNB930134015819_0111.txt
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;MS/NS;17,26;6,69;139,30;1,81;ok;Ebenenzeile im Dokument nicht gefunden;;SNB930134015819_0111.txt
 111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;Mittelspannung;16,85;6,06;143,59;1,00;ok;Ebenenzeile im Dokument nicht gefunden;;SNB930134015819_0111.txt
+113;Elektrizitätsnetze Allgäu GmbH;MS/NS;9,00;5,31;124,08;0,65;ok;nächste Zeile hat 3 von 4 Werten;Umspannung Mittel-/Niederspannung 9 5,31 124,08 0,65;SNB921631931771_0113.txt
 114;Elektrizitätsvereinigung Böbing eG;Niederspannung;19,66;7,59;96,65;4,51;pruefen;nächste Zeile hat 1 von 4 Werten;Niederspannung (NS) 19,66;SNB916027833432_0114.txt
+151;Energienetze Bayern GmbH (Stromverteilnetz Germering);Niederspannung;3,65;6,20;125,92;1,31;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB994111700501_0151.txt
+151;Energienetze Bayern GmbH (Stromverteilnetz Germering);MS/NS;3,30;5,52;117,21;0,96;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB994111700501_0151.txt
+151;Energienetze Bayern GmbH (Stromverteilnetz Germering);Mittelspannung;2,98;5,25;121,18;0,52;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB994111700501_0151.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Niederspannung;40,20;5,60;91,56;3,55;pruefen;nächste Zeile hat 1 von 4 Werten;Niederspannungsnetz 40,20;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;MS/NS;41,64;3,83;81,24;2,24;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 41,64;SNB932549440224_0153.txt
 154;EnergieSüdwest Netz GmbH;Niederspannung;18,64;8,87;187,49;2,12;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung Niederspannung;SNB911521002599_0154.txt
@@ -27,6 +31,7 @@
 316;Nahwerk-Energie GmbH ＆ Co. KG;Niederspannung;32,52;7,80;133,00;3,79;ok;nächste Zeile hat 0 von 4 Werten;Niederspannung: Haushalts-;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;MS/NS;18,37;8,32;211,81;0,58;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993755128542_0316.txt
 316;Nahwerk-Energie GmbH ＆ Co. KG;Mittelspannung;15,83;7,55;195,81;0,35;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung: Industriekunde;SNB993755128542_0316.txt
+331;Netzgesellschaft Schwerin mbH (NGS);HS/MS;2,74;3,94;86,86;0,57;ok;Ebenenzeile im Dokument nicht gefunden;;SNB913130054136_0331.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;Niederspannung;24,47;9,15;185,77;2,70;ok;nächste Zeile hat 0 von 4 Werten;Wandler Niederspannung 23.5 0;SNB978108787379_0339.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;MS/NS;22,17;9,23;248,97;0,15;ok;nächste Zeile hat 0 von 4 Werten;Umspannung MS/NS 294.74 0;SNB978108787379_0339.txt
 339;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;Mittelspannung;21,23;8,77;238,59;0,08;ok;nächste Zeile hat 0 von 4 Werten;Spannungsebene bitte auswählen Mittelspannung;SNB978108787379_0339.txt
@@ -45,6 +50,7 @@
 378;Stadtwerke Achim AG;Niederspannung;21,91;5,15;101,42;1,97;ok;nächste Zeile hat 0 von 4 Werten;Netzbereich Niederspannung NSP Arbeitspreis Grundpreis;SNB942257679137_0378.txt
 378;Stadtwerke Achim AG;MS/NS;18,78;4,66;114,20;0,84;ok;Ebenenzeile im Dokument nicht gefunden;;SNB942257679137_0378.txt
 378;Stadtwerke Achim AG;Mittelspannung;17,59;4,22;102,06;0,84;ok;Ebenenzeile im Dokument nicht gefunden;;SNB942257679137_0378.txt
+381;Stadtwerke Amberg Versorgungs GmbH;Mittelspannung;37,93;3,87;200,00;2,00;pruefen;nächste Zeile hat 2 von 4 Werten;Mittelspannung 37,93 €/kW 3,87 ct/kWh 112,82 €/kW 0,88 ct/kWh;SNB978191145308_0381.txt
 420;Stadtwerke Bernburg GmbH;Niederspannung;48,09;11,54;279,01;2,30;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
 420;Stadtwerke Bernburg GmbH;MS/NS;25,74;5,05;119,40;1,31;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB953669866350_0420.txt
 441;Stadtwerke Coesfeld GmbH;Niederspannung;19,40;8,28;187,68;1,55;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB943480673763_0441.txt
@@ -56,6 +62,7 @@
 468;Stadtwerke Emmerich GmbH;Mittelspannung;16,50;3,66;85,12;0,91;ok;nächste Zeile hat 1 von 4 Werten;1-01-5-001 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a)) Mittelspannung (E05) Leistungspreis 16,50 0,04520547945 0,04508196721;SNB986190606218_0468.txt
 497;Stadtwerke Greifswald GmbH;Mittelspannung;15,07;7,01;115,77;2,98;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 0,020164 0,047200 0,289260 0,007900;SNB926442995943_0497.txt
 564;Stadtwerke Marburg GmbH;HS/MS;9,49;3,10;58,57;1,14;ok;Ebenenzeile im Dokument nicht gefunden;;SNB972740218178_0564.txt
+591;Stadtwerke Neuwied GmbH;HS/MS;13,94;5,02;139,40;0,00;ok;Ebenenzeile im Dokument nicht gefunden;;SNB925999725461_0591.txt
 594;Stadtwerke Norderstedt;Niederspannung;20,31;5,90;146,61;0,85;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 594;Stadtwerke Norderstedt;MS/NS;19,08;5,51;136,62;0,81;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB985965721965_0594.txt
 599;Stadtwerke Ochtrup;Niederspannung;48,76;7,80;146,45;3,89;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt
@@ -69,8 +76,10 @@
 705;Stadtwerke Waldkraiburg GmbH;Niederspannung;30,12;7,32;168,93;1,77;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
 705;Stadtwerke Waldkraiburg GmbH;MS/NS;25,83;6,95;169,46;1,20;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
 740;stadtwerker GmbH;Niederspannung;19,11;9,16;213,52;1,39;pruefen;nächste Zeile hat 0 von 4 Werten;Niederspannung (NSP);SNB918576265276_0740.txt
+783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;pruefen;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
 798;Überlandwerk Erding GmbH ＆ Co. KG;Niederspannung;13,02;9,40;154,35;3,74;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB957632855181_0798.txt
 798;Überlandwerk Erding GmbH ＆ Co. KG;MS/NS;12,06;9,08;162,40;3,06;pruefen;nächste Zeile hat 0 von 4 Werten;Ist auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich, dass der Höchstlastbeitrag ei;SNB957632855181_0798.txt
+802;ÜZ Mainfranken eG;HS/MS;21,86;4,07;114,88;0,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB929185184919_0802.txt
 4;Avacon Netz GmbH;Niederspannung;24,16;6,27;124,45;2,26;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;MS/NS;19,38;5,71;123,78;1,54;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;Mittelspannung;14,87;4,94;118,41;0,80;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
@@ -160,7 +169,8 @@
 397;Stadtwerke Bad Kissingen GmbH;Mittelspannung;27,28;6,80;167,12;1,21;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;Niederspannung;12,18;4,05;61,51;2,08;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;MS/NS;10,50;2,97;58,86;1,04;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
-603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;Mittelspannung;5,16;1,82;45,09;0,22;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
+603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;Mittelspannung;6,27;2,59;63,53;0,30;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
+603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;HS/MS;5,16;1,82;45,09;0,22;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 752;Stromnetz Pullach GmbH;Niederspannung;14,07;3,94;82,58;1,20;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 752;Stromnetz Pullach GmbH;MS/NS;10,41;3,92;96,10;0,49;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 752;Stromnetz Pullach GmbH;Mittelspannung;6,82;3,77;96,15;0,20;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;

@@ -4,11 +4,8 @@ name: Börsenpreise und Solarertrag holen
 # (Energy-Charts) und Solarertrag je Bundesland (PVGIS) nach daten/ und committet sie.
 on:
   schedule:
-    # Day-Ahead-Preise für morgen stehen gegen 13 Uhr MEZ fest: vier Läufe am Tag (UTC), keine vollen Stunden
-    - cron: "17 5 * * *"
-    - cron: "47 11 * * *"
+    # Day-Ahead-Preise für morgen stehen gegen 13 Uhr MEZ fest: ein Lauf am Tag (Festlegung Nutzer 06.11.2026), 12:47 UTC = 13:47 MEZ
     - cron: "47 12 * * *"
-    - cron: "23 17 * * *"
   workflow_dispatch:
   push:
     branches: [main]
