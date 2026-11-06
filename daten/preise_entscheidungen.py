@@ -3,6 +3,8 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 KORRIGIEREN = {
+    ("82", "slp"): [6.88, 50.00],                         # Meckenheim: Grundpreis für SLP NS 50 €/Jahr, Arbeitspreis 6,88 ct
+    ("222", "slp"): [8.25, 108.00],                       # Grefrath: Grundpreis per anno 108 €, AP 8,25 ct (Niederspannung ohne Leistungsmessung)
     ("87", "slp"): [7.89, 90.00],                         # SLP: Kunde im Niederspannungsnetz ohne Lastgangzählung (Netto €/Jahr, ct/kWh)
     ("140", "slp"): [6.88, 80.00],
     ("289", "slp"): [5.48, 63.00],

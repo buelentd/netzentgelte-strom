@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 08:08, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 08:10, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 507 | 61% |
-| pruefen | 288 | 35% |
+| ok | 509 | 61% |
+| pruefen | 286 | 34% |
 | kein_preisblatt | 2 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 428,  79
+Preisstand (nur ok): endgültig 430,  79
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,97 ct/kWh (Gemeindewerke Schutterwald (GWS))
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 718)
+- Median: 7,25 ct/kWh (n = 720)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -134,9 +134,9 @@ Preisstand (nur ok): endgültig 428,  79
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 
-## Restfälle (324)
+## Restfälle (322)
 
-### pruefen (288)
+### pruefen (286)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -175,7 +175,6 @@ Preisstand (nur ok): endgültig 428,  79
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 77. Creos Deutschland GmbH: 
 - 78. DB Energie GmbH (Bahnstromnetz 16,7 Hz): 
-- 82. E-Werk Meckenheim/Pfalz: SLP-Werte nicht gefunden
 - 83. E-Werk Rohrdorf Josef Haimmerer: SLP-Arbeitspreis 17.12 ct/kWh außerhalb 3–15; SLP-Werte auffällig
 - 84. e-werk Sachsenwald GmbH: 
 - 85. E-Werk Wanfried von Scharfenberg GmbH ＆ Co. KG: 
@@ -234,7 +233,6 @@ Preisstand (nur ok): endgültig 428,  79
 - 219. Gemeindewerke Gangkofen: 
 - 220. Gemeindewerke Garmisch-Partenkirchen, KU: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 221. Gemeindewerke Georgensgmünd: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
-- 222. Gemeindewerke Grefrath GmbH: SLP-Werte nicht gefunden
 - 223. Gemeindewerke Großkrotzenburg GmbH: 
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 232. Gemeindewerke Kiefersfelden: 

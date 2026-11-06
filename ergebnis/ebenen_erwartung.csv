@@ -80,7 +80,7 @@ SNB942182027607;78;DB Energie GmbH (Bahnstromnetz 16,7 Hz);pruefen;gelesen;nicht
 SNB954281375657;79;Dessauer Stromversorgung GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB974556654430;80;Donau-Stadtwerke Dillingen-Lauingen;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB992632801288;81;e-regio Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB921550647487;82;E-Werk Meckenheim/Pfalz;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB921550647487;82;E-Werk Meckenheim/Pfalz;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB958060904298;83;E-Werk Rohrdorf Josef Haimmerer;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB978963778161;84;e-werk Sachsenwald GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;gelesen;gelesen
 SNB945186990991;85;E-Werk Wanfried von Scharfenberg GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -220,7 +220,7 @@ SNB947727983103;218;Gemeindewerke Frammersbach;blockiert;kein_dokument;kein_doku
 SNB954239007623;219;Gemeindewerke Gangkofen;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB926937565941;220;Gemeindewerke Garmisch-Partenkirchen, KU;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB966216072913;221;Gemeindewerke Georgensgmünd;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB993724515038;222;Gemeindewerke Grefrath GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB993724515038;222;Gemeindewerke Grefrath GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB926559276683;224;Gemeindewerke Gundelfingen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB928557841498;225;Gemeindewerke Halstenbek;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
