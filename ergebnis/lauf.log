@@ -168782,3 +168782,20 @@ Preisstand (nur ok): endgültig 475,  98
 [814] -> blockiert HTTP 403 https://www.markt-zellingen.de; HTTP 405 http://www.markt-zellingen.de
 [818] Vorarlberger Energienetze GmbH (www.vorarlbergnetz.de)
     Dokument https://www.vorarlbergnetz.at/media/Preisblatt_NNE_2026_NEU.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+[818] -> kein_preisblatt 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+[819] VSE Verteilnetz GmbH (http://www.vse-verteilnetz.de)
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblatt_2026_VSE-Verteilnetz. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/Preisblaetter_NNE_01012018.pdf -> kein PDF/Excel
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/Preisblaetter_NNE_01012017.pdf -> kein PDF/Excel
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/Preisblaetter_NNE_01012016.pdf -> kein PDF/Excel
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/Preisblaetter_NNE_01012015.pdf -> kein PDF/Excel
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/Preisblaetter_NNE_01012014.pdf -> kein PDF/Excel
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012019.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012018.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012017.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012016.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012015.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012014.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisbaltt_indiv_NNE_01012026.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012024.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblaetter_NNE_01012023.pdf -> Jahr 2026 nicht im Dokument
