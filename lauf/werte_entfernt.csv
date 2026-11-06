@@ -1,8 +1,6 @@
 ﻿nr;ebene;grund
 2;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-12;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 13;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
-50;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 52;hsms;Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument
 74;ns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 87;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"

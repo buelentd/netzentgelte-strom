@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 19:59, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 20:04, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 575 | 69% |
-| pruefen | 237 | 29% |
+| ok | 583 | 70% |
+| pruefen | 229 | 28% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 477,  98
+Preisstand (nur ok): endgültig 484,  99
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 477,  98
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (98)
+## Status ok, aber Preisstand nicht endgültig (99)
 
 - 57. Alzchem Netz GmbH: 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
@@ -81,6 +81,7 @@ Preisstand (nur ok): endgültig 477,  98
 - 282. Infrastrukturbetrieb der Stadt Arneburg: 
 - 289. Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG: 
 - 334. Netzwerke Saarlouis GmbH: 
+- 337. NGN Netzgesellschaft Niederrhein mbH: 
 - 346. Obermaier und Gerg Grundstücksverwaltung KG: 
 - 368. Schleswiger Stadtwerke GmbH: 
 - 369. SEW Stromversorgungs GmbH: 
@@ -153,16 +154,13 @@ Preisstand (nur ok): endgültig 477,  98
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (256)
+## Restfälle (248)
 
-### pruefen (237)
+### pruefen (229)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
-- 12. RheinNetz GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
-- 21. Bielefelder Netz GmbH: 
-- 28. WSW Netz GmbH: 
 - 29. Westnetz GmbH: 
 - 31. Schleswig-Holstein Netz GmbH: 
 - 32. E.DIS Netz GmbH: 
@@ -172,9 +170,7 @@ Preisstand (nur ok): endgültig 477,  98
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 40. Netze Magdeburg GmbH: 
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
-- 50. swa Netze GmbH: 
 - 52. Ahrtal-Werke GmbH: 
-- 60. AVU Netz GmbH: 
 - 63. BASF InfraService ＆ Solutions Lausitz GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 66. BIGGE ENERGIE GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 30.05 ct/kWh außerhalb 3–15; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 67. Blomberg Netz GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -231,7 +227,6 @@ Preisstand (nur ok): endgültig 477,  98
 - 189. EW Geiger GmbH: 
 - 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: 
 - 191. EWR GmbH (Remscheid): 
-- 192. EWR Netz GmbH: 
 - 194. ews - Netz GmbH: 
 - 195. EZV Energie- und Service GmbH ＆ Co. KG Untermain: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 196. FairNetz GmbH: 
@@ -277,8 +272,6 @@ Preisstand (nur ok): endgültig 477,  98
 - 327. Netzgesellschaft Gütersloh mbH: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (60.0, 4.2); SLP-Werte auffällig
 - 329. Netzgesellschaft Panketal GmbH: 
 - 330. Netzgesellschaft Potsdam GmbH: 
-- 336. NEW Netz GmbH: 
-- 337. NGN Netzgesellschaft Niederrhein mbH: 15 Dokument(e) geprüft: gültig ab [2024], nicht 2026; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument; HTTP 404; weder RLM- (NS) noch SLP-Werte gefunden (SLP: mehrere Arbeitspreis
 - 338. NHF Netzgesellschaft Heilbronn-Franken mbH: SLP-Werte nicht gefunden
 - 340. Niedersachsen Ports GmbH ＆ Co. KG: NS LP über 2.500 h = 287.75 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 343. Nordseeheilbad Borkum GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
