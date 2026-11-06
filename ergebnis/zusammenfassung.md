@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 19:55, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 19:59, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 573 | 69% |
-| pruefen | 238 | 29% |
-| kein_preisblatt | 2 | 0% |
+| ok | 575 | 69% |
+| pruefen | 237 | 29% |
+| kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 475,  98
+Preisstand (nur ok): endgültig 477,  98
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 774)
+- Median: 7,26 ct/kWh (n = 775)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -153,9 +153,9 @@ Preisstand (nur ok): endgültig 475,  98
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (258)
+## Restfälle (256)
 
-### pruefen (238)
+### pruefen (237)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -322,7 +322,6 @@ Preisstand (nur ok): endgültig 475,  98
 - 488. Stadtwerke Geldern Netz GmbH: NS LP über 2.500 h = 324.45 außerhalb 40–260 €/kW/a; RLM-Werte auffällig oder fehlend
 - 493. Stadtwerke Glückstadt GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 495. Stadtwerke Goch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 497. Stadtwerke Greifswald GmbH: SLP-Werte nicht gefunden
 - 501. Stadtwerke Groß-Gerau Versorgungs GmbH: SLP-Werte nicht gefunden
 - 504. Stadtwerke Gunzenhausen GmbH: SLP-Werte nicht gefunden
 - 508. Stadtwerke Haltern am See GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -381,7 +380,6 @@ Preisstand (nur ok): endgültig 475,  98
 - 770. SVO Netz GmbH: SLP-Werte nicht gefunden
 - 776. SWL Übertragungsnetzgesellschaft mbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: uebertragungsnetzgesellschaft); weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; Jahr 2026 nicht im Dokument
 - 780. SWO Netz GmbH: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
-- 782. SWR Energie GmbH ＆ Co. KG: SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 783. SWS Netze GmbH: NS LP über 2.500 h = 0.24 außerhalb 40–260 €/kW/a; NS: AP unter 2.500 h = 0.06 ct/kWh, Einheit €/kWh?; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 787. SWW Wunsiedel GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 793. thyssenkrupp Steel Europe AG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
@@ -392,14 +390,14 @@ Preisstand (nur ok): endgültig 475,  98
 - 819. VSE Verteilnetz GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel; Jahr 2026 nicht im Dokument
 - 821. Weiler Wärme eG: 1 Dokument(e) geprüft: fiktive Entgelte
 - 826. wesernetz Bremerhaven GmbH: 
-- 827. Westenthanner Energieversorgung GmbH: 1 Dokument(e) geprüft: Jahr 2026 nicht im Dokument
+- 827. Westenthanner Energieversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
+- 828. WiDe Flex Bau + Service GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 830. YNCORIS GmbH ＆ Co. KG: 
-- 831. Zwickauer Energieversorgung GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.zev-energie.de/download.php?download=vorlPreisblatt_SLP_Strom_27.pdf, https://www.zev-energie.de/download.php?download=Preisblatt_SLP_Strom_26.pdf
+- 831. Zwickauer Energieversorgung GmbH: 15 Dokument(e) geprüft: robots; Jahr 2026 nicht im Dokument
 
-### kein_preisblatt (2)
+### kein_preisblatt (1)
 
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
-- 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
 ### blockiert (13)
 
