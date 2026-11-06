@@ -1,0 +1,52 @@
+nr;status;URL;Bemerkung
+200;nicht gefunden;;FischerStrom: keine Website hinterlegt, kein Preisblatt auffindbar
+252;nicht gefunden;https://www.wildeck.de/gemeindewerke/stromversorgung/netz/netznutzung/;Preisblätter nur bis 2025 auf Website, 2026-URL (404); Stromnetz zum 01.01.2026 an EAM Netz GmbH uebertragen
+265;gesperrt;https://www.gipsprojekt.de/featureGips/gsw-kamen/;Netzentgelte nur im GIPS-Portal (JS-Anwendung), PDF-Download nur im Browser moeglich
+293;gesperrt;http://www.stadtwerke-klingenberg.de/seite/de/service/47/-/Netznutzung.html;Website kommune-aktiv mit Geo-Block, aus Sandbox nicht erreichbar
+484;nicht gefunden;;Stadtwerke FFB: keine Netzentgelt-PDF auf stadtwerke-ffb.de auffindbar (Seite verweist auf Netzentgelte ohne Direktlink)
+603;ja;https://assets.stromnetz-olching.de/media/downloads/2026/03/03/stadtwerke-olching-preisblatt-strom-2026.pdf;2026 endgueltig + 2027 vorlaeufig als PDF vom Nutzer im Browser geladen (Upload), Inhalt vollstaendig geprueft (JLP/SLP-Werte siehe Textauszug-Dateien); Original-PDF beim Nutzer, direkter Download per Skript weiter durch Cloudflare blockiert
+754;gesperrt;https://assets.stromnetz-weilheim.de/media/downloads/2026/01/28/Netzentgelte_2026.pdf;Cloudflare "Just a moment" beim PDF-Download; Inhalt per Jina verifiziert (Preisblatt Netzentgelte Strom 2026, 19 Seiten), Werte: JLP MS 128,11/1,00, MSNS 144,53/1,55, NS 153,13/2,66 (>=2500Bh); 2027 vorl.: NS 141,97/2,66
+787;gesperrt;https://www.s-w-w.com/strom/netz/veroeffentlichungen.html;SWW Wunsiedel: Netzentgelte nur im GIPS-Portal (JS), PDF-Download nur im Browser moeglich
+828;nicht gefunden;https://www.wideflex.de/veroeffentlichungspflichten-strom-nach-enwg/;Kein Netzentgelt-Preisblatt 2026 auf der Website (IHP-Sued-Doku geprueft, leer)
+151;ja;energienetze-bayern.com (revu-Portal);2026 endgueltig + 2027 vorlaeufig als PDF vom Nutzer im Browser geladen, Inhalt vollstaendig geprueft (NS-Werte enthalten, siehe Textauszug-Dateien); 2HJ-2026-Einspeiseblatt (18 StromNEV) lag zusaetzlich bei
+66;ja;https://bigge.enwg-veroeffentlichungen.de/bigge/Netze/Stromnetz/Netzzugang-Entgelte/Netznutzungsentgelte-Strom-2026-I.pdf;Netznutzungsentgelte 2026 (I) vom enwg-Veroeffentlichungsportal, geprueft_mit=jina
+75;ja;https://cpm-netz.evonik.de/de/stromnetz-veroeffentlichungspflichten/attachment/398943?rev=388ccd4a8d41f4781e707ccccd1eacaf;Preisblatt 2026 Stromnetz mit NS+MS, geprueft_mit=jina
+118;ja;https://www.ew-diessen.de/wp-content/uploads/2026/01/Preisblatt-SLP-2026.pdf;Preisblatt SLP 2026 (NS ohne Leistungsmessung), geprueft_mit=jina
+123;ja;https://max-peissker.de/wp-content/uploads/2026/06/NNE-ab-01.01.2026-mit-%C2%A714a-1.pdf;NNE-Preisblatt ab 01.01.2026, geprueft_mit=jina
+258;ja;https://www.getec-net.de/wp-content/uploads/sites/5/2026/03/GETq-NNE-e-SN-26-PB_typisierte_Abnahmefaelle.pdf;GETq NNE e-SN 26 typisierte Abnahmefaelle mit NS, geprueft_mit=jina
+278;ja;https://www.infra-fuerth.de/files/documents/pflichtveroeffentlichungen/strom/entgelte/Preisblatt_2026.pdf;Netznutzungsentgelte ohne Leistungsmessung 2026
+279;ja;https://www.infraleuna.de/preisbl%C3%A4tter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt_Netzentgelte%20Strom%20InfraLeuna%20GmbH%202026.pdf;Preisblatt Netzentgelte 2026 mit NS+MS, geprueft_mit=jina
+280;ja;https://infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2025_12_11_ISGN_Preisblatt_Netznutzung_2026.pdf;ISGN Preisblatt Netznutzung 2026 mit NS+MS, geprueft_mit=jina
+281;ja;https://www.infraserv-wi.de/fileadmin/user_upload/pdf/strom_2026/strom_netznutzungsentgelt_infraserv_wiesbaden_2026_vorlaeufig.pdf;vorlaeufig (einzig verfuegbares Blatt), NS ausgewiesen, geprueft_mit=jina
+306;ja;https://www.mainsite.de/files/mainsite-files/Netz%20der%20allgemeinen%20Versorgung/Mainsite%20vorl%C3%A4ufiges%20Preisblatt%202026.pdf;vorlaeufiges Preisblatt 2026 mit NS, geprueft_mit=jina
+320;ja;https://nbl-badlangensalza.de/wp-content/uploads/sites/8/2025/12/endgueltiges-Preisblatt_Strom_ab-01.01.2026_Version-3_13.01.2026.pdf;endgueltiges Preisblatt Version 3 mit NS, geprueft_mit=jina
+324;ja;https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzentgelte/strom/2026/pb05_1_01_26.pdf;pb05 NS-Preisblatt 2026, geprueft_mit=jina
+362;ja;https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Abrechnungspreisblatt_2026_-_RNI_10-10-2025.pdf;Abrechnungspreisblatt 2026: MS ausgewiesen, NS im Text nicht erkennbar, geprueft_mit=jina
+412;ja;https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/Netznutzungsentgelte_Strom_01_01_26.pdf;Netznutzungsentgelte Strom 01.01.2026 final mit NS+MS, geprueft_mit=jina
+413;ja;https://www.stadtwerke-baiersdorf.de/wp-content/uploads/2025/10/Preisblatt-2-und-3-Entahmestellen-ohne-Leistungsmessung.pdf;Preisblatt 2+3 NS ohne Leistungsmessung 2026, geprueft_mit=jina; zusaetzlich Preisblatt 1 mit Leistungsmessung beigelegt
+443;ja;https://www.stadtwerke-dachau.de/fileadmin/Media/Downloads/Downloads_Netzdienste/Netze/Stromnetz/Netzzugang/Netznutzung_f%C3%BCr_Lieferanten/Preisblatt_Netzentgelte_Strom_2026_2025-12-18_.pdf;Preisblatt Netzentgelte Strom 2026
+459;ja;https://www.eckernfoerdernetz-sh.de/fileadmin/redakteure/Netze_ECK/SWSH_2500_PP_176_Preisblatt_Netznutzung_Strom_2026_barrierefrei_ECK_RZ.pdf;Preisblatt Netznutzung Strom 2026 mit NS+MS+SLP+RLM, geprueft_mit=jina
+495;ja;https://www.stadtwerke-goch.de/download/20229/;Netzentgelte Strom 2026 Preisblatt 1 mit NS, geprueft_mit=jina
+508;ja;https://stadtwerke-haltern.de/wp-content/uploads/2026/04/2026_Preisblatt_Strom_Stand_23.12.2025.pdf;Preisblatt Strom 2026 mit NS, geprueft_mit=jina
+527;ja;https://www.stadtwerke-huenfeld.de/_files/ugd/14a6cc_3e19c2ff78eb4461a607c890b20cefc6.pdf;Preisblatt Netzentgelte Strom GJ 2026 (Wix-Download)
+538;ja;https://www.stadtwerke-kleve.de/fileadmin/user_upload/_Netze/Strom/Netzentgelte/2026/endg._Entgelte/20251215_Entgelte_RLM_Strom_01.01.2026.pdf;endgueltige Entgelte RLM + SLM 2026 (2 Dateien: RLM + SLP), geprueft_mit=jina
+544;ja;https://www.stadtwerke-landshut.de/wp-content/uploads/Netzentgelte-2026.pdf;Modul-6b-Netznutzungspreisblatt Strom 2026 endgueltig (Gesamtblatt), geprueft_mit=jina
+564;ja;https://www.stadtwerke-marburg.de/fileadmin/user_upload/Seiteninhalte/Strom/Netznutzungsentgelte/2026/NE_Strom_SLP_Kd._2026.pdf;Marburg hat getrennte Blaetter: SLP + RLM beigelegt (kein gemeinsames NS-Blatt), geprueft_mit=jina
+608;ja;https://www.swp-energieverteilnetze.de/netzzugangentgelte.html?_hash=GvdruHjbCUCgrYR782b5zGS4z1Q212cq5KRZaar82fk%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A3027%3B%7D&d=attachment&f=Preisbl%C3%A4tter+Netznutzung+Strom+2026.pdf;Preisblaetter Netznutzung Strom 2026 (endgueltig, nicht das fiktive Blatt), geprueft_mit=jina
+656;ja;https://cms.stadtwerke-senftenberg.de/assets/fc6e1bd8-d259-4238-8410-42efbded396b;Entgelte ohne + mit Leistungsmessung 2026 (2 Dateien), geprueft_mit=jina
+661;ja;https://www.sw-soltau.de/files/60/2026/572/Preisblatt-I-Netznutzung-Strom-2026-SLP-Kunden.pdf;Preisblatt I SLP + Preisblatt III RLM beigelegt
+675;ja;https://netze.sw-suedholstein.de/strom/netzzugang-entgelte;endgueltiges Preisblatt 2026 Netzentgelte Strom mit NS+MS, geprueft_mit=jina
+678;ja;https://sw-teterow.de/uploads/dateien/Netzentgelte-Strom-2026.pdf;Netzentgelte Strom 2026, geprueft_mit=jina
+684;ja;https://stadtwerke-trostberg.de/wp-content/uploads/2025/12/Preisblatt-NN-2026-SLP.-final-1.pdf;Preisblatt-NN-2026-SLP final mit NS, geprueft_mit=jina
+700;ja;https://swvk-netz.de/wp-content/uploads/2025/12/15.12._finales_Preisblatt_SWVK_2026.pdf;finales Preisblatt SWVK 2026 (im Text nur RLM-Positionen erkennbar), geprueft_mit=jina
+706;ja;https://stadtwerke-waldmuenchen.de/wp-content/uploads/2025/12/NNE_Preisblatt_2_2026_Kol.pdf;NNE Preisblatt 2 2026 mit NS, geprueft_mit=jina
+715;ja;https://stadtwerke-weilburg.de/frontend/actions/media-download/c14cdb185b24f5696cce206fdbfb8ac5/0/1/1;Preisblaetter_Strom 2026 (Stand 10.12.2025) mit Netzentgelt-Positionen, geprueft_mit=jina
+736;ja;https://www.stadtwerke-zirndorf.de/fileadmin/user_upload/dokumente/strom/netznutzung/2026_Netzentgelt_KoLM_Strom.pdf;Netzentgelt KoLM Strom 2026 mit NS, geprueft_mit=jina
+737;ja;https://stadtwerke-zittau.de/assets/files/stadtwerke/dokumente/NM/Strom_Netzentgelte-u-zugang/2026-strom-preisblatt-fuer-netznutzung-stadtwerke-zittau-gmbh.pdf;2026 Strom-Preisblatt Netznutzung
+743;ja;https://www.stadtwerke-borna-netz.de/wp-content/uploads/2026/01/Pbl_Strom_2026_endgueltig.pdf;Pbl_Strom_2026_endgueltig (Textextraktion schwach, Titel+Jahr plausibel), geprueft_mit=jina
+776;ja;https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Endgueltiges-PB-2026-UeNG.pdf;SWL Uebertragungsnetz: endgueltiges PB 2026 UeNG mit NS+MS, geprueft_mit=jina
+782;ja;https://www.stadtwerke-roedental.de/wp-content/uploads/2026/01/Preisblatt_NNE_SLP_2026.pdf;Preisblatt NNE SLP 2026 + Preisblatt RLM/JLP beigelegt (nicht das 14a-Steuerbar-Blatt)
+793;ja;https://www.thyssenkrupp-steel.com/media/content_1/publikationen/netzbetrieb/thyssenkrupp_preisblatt_netznutzungsentgelte_2026_steel.pdf;Preisblatt Netznutzungsentgelte 2026 mit NS+MS, geprueft_mit=jina
+818;ja;https://www.vorarlbergnetz.at/media/Preisblatt_NNE_2026_NEU.pdf;Preisblatt NNE 2026 NEU (kein NS-Block im Text erkennbar), geprueft_mit=jina
+819;ja;https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblatt_2026_VSE-Verteilnetz.pdf;Preisblatt 2026 VSE-Verteilnetz (im Text nur MS erkennbar), geprueft_mit=jina
+624;ja;https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/vs_Strom_Preisblatt_1_Netznutzung_01012026.pdf;vs Strom Preisblatt 1 Netznutzung 01.01.2026 mit NS, geprueft_mit=jina
