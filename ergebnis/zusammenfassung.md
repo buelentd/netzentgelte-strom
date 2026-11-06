@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 20:13, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 20:24, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -31,7 +31,7 @@ Preisstand (nur ok): endgültig 482,  99
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 150,50 €/kW/a (n = 770)
+- Median: 150,40 €/kW/a (n = 770)
 
 ## Datenherkunft
 
