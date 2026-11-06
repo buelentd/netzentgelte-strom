@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 19:36, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 19:45, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -8,8 +8,8 @@ Stand 06.11.2026 19:36, 831 Netzbetreiber bzw. Netzgebiete
 |---|---:|---:|
 | ok | 573 | 69% |
 | pruefen | 236 | 28% |
-| kein_preisblatt | 1 | 0% |
-| blockiert | 16 | 2% |
+| kein_preisblatt | 2 | 0% |
+| blockiert | 15 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
@@ -19,19 +19,19 @@ Preisstand (nur ok): endgültig 475,  98
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 773)
+- Median: 7,25 ct/kWh (n = 774)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 14,46 ct/kWh (E-Werk Rohrdorf Josef Haimmerer)
-- Median: 6,42 ct/kWh (n = 767)
+- Median: 6,41 ct/kWh (n = 768)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 352,72 €/kW/a (Stadtwerke Schlitz)
-- Median: 150,54 €/kW/a (n = 767)
+- Median: 150,52 €/kW/a (n = 768)
 
 ## Datenherkunft
 
@@ -200,7 +200,7 @@ Preisstand (nur ok): endgültig 475,  98
 - 110. Elektrizitätsgenossenschaft Unterneukirchen eG: SLP-Arbeitspreis 2.46 ct/kWh außerhalb 3–15; SLP-Werte auffällig
 - 112. Elektrizitätsgenossenschaft Wolkersdorf und Umgebung eG: 
 - 114. Elektrizitätsvereinigung Böbing eG: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (84.0, 122.93, 147.52, 172.1); SLP-Werte auffällig
-- 117. Elektrizitätswerk des Kantons Schaffhausen AG: HTTP 403 https://www.eks.ch; HTTP 403 http://www.eks.ch
+- 117. Elektrizitätswerk des Kantons Schaffhausen AG: HTTP 403 https://www.eks.ch; HTTP 405 http://www.eks.ch
 - 118. Elektrizitätswerk Dießen Stadler GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 123. Elektrizitätswerk Max Peissker: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (7.5, 123.51, 3.0); RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 126. Elektrizitätswerk S c h w e i g e r  o.H.G: SLP-Werte nicht gefunden
@@ -212,10 +212,11 @@ Preisstand (nur ok): endgültig 475,  98
 - 137. ENA Energienetze Apolda GmbH: SLP-Werte nicht gefunden
 - 138. enercity GridPartner GmbH: SLP-Werte nicht gefunden
 - 141. Energie Waldeck-Frankenberg GmbH: 
+- 144. Energie- und Wasserversorgung Altenburg GmbH: SLP-Werte nicht gefunden
 - 146. Energie- und Wasserversorgung Hamm GmbH: 
 - 150. Energiegenossenschaft für Wittmund eG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (5.82, 2.4); RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 152. Energienetze Berlin GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
-- 153. Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
+- 153. Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG: 
 - 154. EnergieSüdwest Netz GmbH: 
 - 156. Energieversorgung Beckum GmbH ＆ Co. KG: 6 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Kopf nennt [2025], nicht 2026
 - 159. Energieversorgung Guben GmbH: 
@@ -245,10 +246,9 @@ Preisstand (nur ok): endgültig 475,  98
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 232. Gemeindewerke Kiefersfelden: 
 - 237. Gemeindewerke Neuendettelsau: 
-- 238. Gemeindewerke Niefern-Öschelbronn: Preisblatt-Links per robots.txt gesperrt: https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaetter/Netzentgelte/vorl%C3%A4uifige_Netzentgelte_St
+- 238. Gemeindewerke Niefern-Öschelbronn: Preisblatt-Links per robots.txt gesperrt: https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaetter/Netzentgelte/Netzentgelte_Strom_ab_01.01.2026
 - 239. Gemeindewerke Nüdlingen: 
 - 245. Gemeindewerke Schutterwald (GWS): SLP-Arbeitspreis 2.97 ct/kWh außerhalb 3–15; SLP-Werte auffällig
-- 252. Gemeindewerke Wildeck: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 255. GeraNetz GmbH: 
 - 256. GETEC grid solutions GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Netzgebiet passt nicht (erwartet: grid, solutions); fiktive Entgelte; Jahr 2026 n
 - 257. GETEC net GmbH: 
@@ -259,8 +259,8 @@ Preisstand (nur ok): endgültig 475,  98
 - 266. GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG: 
 - 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im
-- 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
-- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+- 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
+- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: HTTP 403 https://www.infraserv-wi.de; HTTP 405 http://www.infraserv-wi.de
 - 283. Karl Stengle GmbH ＆ Co. KG: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Benutzungsdauer-Grenze nicht im Kopf gefunden); Jahr 2026 nicht im Dokument
 - 290. Kommunale Energieversorgung GmbH Eisenhüttenstadt: 
 - 293. Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR): kein Preisblatt-Link gefunden (2 Seiten durchsucht)
@@ -394,20 +394,20 @@ Preisstand (nur ok): endgültig 475,  98
 - 830. YNCORIS GmbH ＆ Co. KG: 
 - 831. Zwickauer Energieversorgung GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.zev-energie.de/download.php?download=vorlPreisblatt_SLP_Strom_27.pdf, https://www.zev-energie.de/download.php?download=Preisblatt_SLP_Strom_26.pdf
 
-### kein_preisblatt (1)
+### kein_preisblatt (2)
 
+- 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 828. WiDe Flex Bau + Service GmbH: kein Preisblatt-Link gefunden (12 Seiten durchsucht)
 
-### blockiert (16)
+### blockiert (15)
 
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
-- 144. Energie- und Wasserversorgung Altenburg GmbH: robots.txt nicht erreichbar (https://www.netze.ewa-altenburg.de); robots.txt nicht erreichbar (http://www.netze.ewa-altenburg.de)
-- 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 525 http://www.energieversorgung-putzbrunn.com
-- 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 403 http://www.frammersbach.de
+- 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
+- 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 405 http://www.frammersbach.de
 - 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
-- 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 403 http://www.partenstein.de
-- 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 403 http://www.egloffstein.de
-- 312. Merck Site Management GmbH: Seite nicht lesbar: Error
+- 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 405 http://www.partenstein.de
+- 252. Gemeindewerke Wildeck: robots.txt nicht erreichbar (https://www.wildeck.de); robots.txt nicht erreichbar (http://www.wildeck.de); robots.txt nicht erreichbar (https://www.wildeck.de/netzentgelte)
+- 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
 - 453. Stadtwerke Döbeln GmbH: robots.txt nicht erreichbar (https://www.stadtwerke-doebeln.de); robots.txt nicht erreichbar (http://www.stadtwerke-doebeln.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 403 http://www.stadtwerke-hammelburg.de

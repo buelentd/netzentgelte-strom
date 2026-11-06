@@ -168277,3 +168277,292 @@ Preisstand (nur ok): endgültig 475,  98
 [75] CPM Netz GmbH (https://cpm-netz.evonik.de/de)
     Dokument https://www.industriepark-lausitz.com/dam/jcr:667663b0-a9bd-453b-ba55-478e4b24cf63/industriepark-lausitz/www/g -> weder RLM- (NS) noch SLP-Werte gefunden
     Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Netzentgelte_Preisblatt_01.01.202 -> weder RLM- (NS) noch SLP-Werte gefunden
+[63] -> kein_preisblatt 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+[84] e-werk Sachsenwald GmbH (www.ewerk-sachsenwald.de)
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Individuelle-Netzentgelte_Preisblatt_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Zuschuss-zu-den-Uebertragungsnetz -> fiktive Entgelte
+    Dokument https://www.ewerk-sachsenwald.de/de/Privatkunden/Netze/Veroeffentlichungen-nach-EnWG1/Stromnetz/Netzzugang-Ent -> verwendbar endgültig
+[84] -> ok NS LP>2500 82.10 
+[103] Elektrizitätsgenossenschaft e.G. Hasbergen (www.eg-hasbergen.de)
+    Dokument https://www.covestro.com/-/media/covestro/corporate/company/covestro-worldwide/germany/covestro-in-deutschland -> Download-Fehler: APIRequestContext.get: read ECONNRESET
+[74] -> blockiert (bisheriges Ergebnis bleibt)
+[117] Elektrizitätswerk des Kantons Schaffhausen AG (www.eks.ch)
+[117] -> blockiert HTTP 403 https://www.eks.ch; HTTP 405 http://www.eks.ch
+[123] Elektrizitätswerk Max Peissker (www.max-peissker.de)
+    Dokument https://www.datocms-assets.com/62514/1760507380-preisblatt-strom-2026.pdf -> verwendbar unklar
+[103] -> pruefen NS LP>2500 139.58 Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
+[125] Elektrizitätswerk Rohmund GmbH (www.ew-rohmund.de)
+[75] -> kein_preisblatt kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+[130] Elektrizitätswerk Unterwössen Döllerer＆Greimel Netz GmbH＆Co.KG (www.ew-unterwoessen.de)
+    Dokument https://max-peissker.de/wp-content/uploads/2026/06/NNE-ab-01.01.2026-mit-§14a-1.pdf -> Download-Fehler: APIRequestContext.get: read ECONNRESET
+[123] -> blockiert (bisheriges Ergebnis bleibt)
+[138] enercity GridPartner GmbH (https://www.enercity-netz.de/enercity-gridpartner)
+    Dokument https://static.ew-unterwoessen.de/files/netz/2026/Preisblatt_Netzentgelte.pdf -> verwendbar endgültig
+[130] -> ok NS LP>2500 193.23 
+[144] Energie- und Wasserversorgung Altenburg GmbH (www.netze.ewa-altenburg.de)
+    Dokument https://netze.ewa-altenburg.de/files/19B6A2C23AA/endg%C3%BCltig_2026_PreisblattEwaKundenmit1-4-h-Leistungsmess -> verwendbar endgültig
+[144] -> pruefen NS LP>2500 125.06 SLP-Werte nicht gefunden
+[153] Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG (http://wp-feldheim-2006-kg.de/)
+[125] -> blockiert robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
+[164] Energieversorgung Putzbrunn GmbH ＆ Co. KG (www.energieversorgung-putzbrunn.com)
+    Dokument https://wp-feldheim-2006-kg.de/ -> verwendbar unklar
+    Dokument https://wp-feldheim-2006-kg.de/veroeffentlichung.html -> verwendbar unklar
+[153] -> ok NS LP>2500 91.56 
+[186] EVU Langenpreising (www.langenpreising.de)
+[164] -> blockiert HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
+--- 10/69 erledigt, ca. 6 min verbleibend
+[196] FairNetz GmbH (www.fairnetzgmbh.de)
+    Dokument https://www.enercity-netz.de/assets/cms/eng/partner/preisarchiv-strom/preisblatt-netznutzung-strom-2026-tag-vo -> Netzgebiet passt nicht (erwartet: gridpartner)
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/preisblatt-netznutzung-strom-2026-tag-egp.pdf -> verwendbar unklar
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/preisblatt-netznutzung-strom-2026-jahr-egp.pdf -> verwendbar unklar
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Preisblatt%20Strom%20NN_01.2026. -> verwendbar unklar
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/Fiktive-Netzentgelte-Strom-enercity-GridPartner-2026 -> fiktive Entgelte
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/preisblatt-netznutzung-strom-2025-tag-egp.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/Preisblatt%20sonstige%20Kosten/2026/P -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/preisblatt-netznutzung-strom-2025-jahr-egp.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/Preisblatt%20sonstige%20Kosten/2026/P -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/Preisblatt-Netznutzung-Strom-2024-enercity-GridPartn -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Preisblatt%20Baukostenzusch%C3%B -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enercity-netz.de/assets/cms/eng/egP/downloads/Preisblatt-Netznutzung-Strom-2024-enercity-GridPartn -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Fiktives%20Preisblatt%20Strom%20 -> fiktive Entgelte
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/Individuelle%20Netzentgelte/19%20%20S -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.gemeindewerke-langenpreising.de/wp-content/uploads/2025_12_18_NNE_Preisblatt_Gemeindewerke_Langenp -> verwendbar unklar
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Netzanschluss/Preisblatt%20Netzanschluss%20bis%2001.10.2026.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+[186] -> ok NS LP>2500 191.99 
+[197] FASTR GmbH (www.fastr.energy)
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/preisblatt-netznutzung-strom- -> Netzgebiet passt nicht (erwartet: gridpartner)
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Netzanschluss/Flyer_Preisliste_Netzanschl%C3%BCsse%20ab_011026 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/preisblatt-netznutzung-strom- -> Netzgebiet passt nicht (erwartet: gridpartner)
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/Preisblatt-Baukostenzuschuss- -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/Fiktive-Netzentgelte-enercity -> fiktive Entgelte
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/preisblatt-netznutzung-strom- -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/68f08a215ff09d46c09f6965_EGC%20Infrastruktur%20und -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/preisblatt-netznutzung-strom- -> Jahr 2026 nicht im Dokument
+    Dokument https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/preisblatt-netznutzung-strom- -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/694a9ea8c88c10c989ab8aeb_20251222%20EGC%20KG_PB_NN -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/699ee77ecbad6b67e2ebab99_20260218%20Preisblatt%20T -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/69b157405b09e7f5bee6917b_20260227%20EGC%20KG_PB_NN -> fiktive Entgelte
+    Dokument https://www.fastr.energy/hubfs/20261015%20FASTR_PB%20vorl%C3%A4ufig_NN.pdf -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/699ee793dd49970794bb1045_20260223%20EGC%20Preisbla -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f63dc3f86f87d11733251c_Preisblatt%202023.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f63d8a31fa1b8e61718f2a_Preisblatt%202024.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f63d5426df3dc778bc4364_Preisblatt%202025.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f63640fdb40c87645486a9_EGC%20KG%20Preisblatt%20N -> kein Text im Dokument (Scan?)
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f6360b3c32a3c8e4ff7e3a_EGC%20KG%20Preisblatt%20N -> kein Text im Dokument (Scan?)
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f635e65e3943385a078fde_EGC%20KG%20Preisblatt%20N -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/699f057621321989d832680b_20260218%20Preisblatt%20T -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/67f639155e3943385a0a5dc3_EGC_20SLP_20Allgemeine_20 -> Jahr 2026 nicht im Dokument
+    Dokument https://cdn.prod.website-files.com/64510583cf3b7156bc0668c1/67f7d3378261bec460cd924b_Kontaktdatenblatt-EGC-Geb -> Jahr 2026 nicht im Dokument
+[197] -> pruefen keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte
+[200] FischerStrom GmbH ＆ Co. KG (ohne Website)
+[200] -> keine_website keine Website im MaStR
+[218] Gemeindewerke Frammersbach (www.frammersbach.de)
+[218] -> blockiert HTTP 403 https://www.frammersbach.de; HTTP 405 http://www.frammersbach.de
+[226] Gemeindewerke Haßloch GmbH (www.gwhassloch.de)
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Messstellenbetreiber_Messstellenbetrieb_Entgelte_mM -> kein Text im Dokument (Scan?)
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_LRV_Anlage-1_Netzentgelte_Preisbl -> Jahr 2026 nicht im Dokument
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Individuelle-Netzentgelte_Strom_§-19-Abs.-2-S.-1-St -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Netzentgelte_Preisblatt_01.01.202 -> Jahr 2026 nicht im Dokument
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Netzentgelte_Preisblatt_01.01.202 -> Jahr 2026 nicht im Dokument
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_HLZF_Strom_Ruelzheim_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_HLZF_Strom_Hoerdt_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_HLZF_Strom_Hegau_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_HLZF_Strom_Energie-Dannstadter-Hoehe_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Stromanschluss_Ergaenzende-Bedingungen_NAV.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Konzessionsabgaben-und-Umlagen_01 -> weder RLM- (NS) noch SLP-Werte gefunden
+[46] -> pruefen NS LP>2500 185.30 SLP-Werte nicht gefunden
+[236] Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts (www.gemeindewerke-muenchweiler.de)
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2025/Preisblatt%20Strom%20NN_01.2025. -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2024/Preisblatt%20Strom%20NN_01.2024. -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2023/Preisblatt%20Strom%20NN_01.2023. -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2022/Preisblatt%20Strom%20NN_01.2022. -> Jahr 2026 nicht im Dokument
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Technische%20Bedingungen%20Niederspannung/TABs/Technische%20An -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Messstellenbetrieb/Preise%20und%20FAQ/Preisblatt_MsBG_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Vertr%C3%A4ge/Lieferantenrahmenvertrag%20ab%2001.10.2026/Auftrag -> weder RLM- (NS) noch SLP-Werte gefunden
+[196] -> ok NS LP>2500 177.28 
+[238] Gemeindewerke Niefern-Öschelbronn (www.gwnoe.de)
+[236] -> blockiert robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
+[242] Gemeindewerke Partenstein (www.partenstein.de)
+    robots.txt von https://www.gwnoe.de sperrt https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaetter/Netzent (Disallow: /*.pdf$, Disallow: /fileadmin/Dateien/)
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+[242] -> blockiert robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 405 http://www.partenstein.de
+[252] Gemeindewerke Wildeck (www.wildeck.de)
+[138] -> pruefen NS LP>2500 102.70 SLP-Werte nicht gefunden
+[258] GETEC Quartier GmbH (https://www.getec-net.de)
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/SLP___Preisblatt_GVV_ab-01.12.2026.pdf -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/1_Vertrieb/Preisblatt/Stromvertr%C3%A4ge_Vergleich_zu -> robots
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/RLM___Preisblatt_ab-01.12.2026_v2.pdf -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/03/GETq-NNE-e-SN-26-PB_typisierte_Abnahmefaelle.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2025/12/GETn-NNE-e-SN-26-PB.pdf -> Netzgebiet passt nicht (erwartet: quartier)
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2025/10/GETn-NNE-v-SN-26-PB.pdf -> Netzgebiet passt nicht (erwartet: quartier)
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/1_Vertrieb/Preisblatt/Grundversorgung_ab_01.01.2024_n -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaett -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Netzdaten_S -> robots
+    Dokument https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Gesetzliche -> robots
+[238] -> robots Preisblatt-Links per robots.txt gesperrt: https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblae
+--- 20/69 erledigt, ca. 10 min verbleibend
+[265] GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen (www.gsw-kamen.de)
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/GETq-NNE-v-SN-27-PB.pdf -> Preisblatt eines anderen Netzgebiets
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/GETn-NNE-v-SN-27-PB.pdf -> Netzgebiet passt nicht (erwartet: quartier)
+    Dokument https://www.wildeck.de/gemeindewerke/stromversorgung/messstellenbetrieb/preisblatt-gmsb-gemeindewerke-wildeck. -> Download-Fehler: APIRequestContext.get: read ECONNRESET
+[252] -> blockiert robots.txt nicht erreichbar (https://www.wildeck.de); robots.txt nicht erreichbar (http://www.wildeck.de); robots.txt nicht erreichbar (https://www.wi
+[271] Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG (www.gebr-heinzelmann.de)
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2025/12/GETq-NNE-e-SN-26-PB.pdf -> Preisblatt eines anderen Netzgebiets
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/01/SLP___Preisblatt_GVV_ab-01.01.2026.pdf -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+[271] -> blockiert robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
+[279] InfraLeuna GmbH (www.infraleuna.de)
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/GETn-HLZ-SN-27-VOe-individuelleNE.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/preisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt_fiktive Net -> fiktive Entgelte
+    Dokument https://gsw-kamen.de/privatkundinnen/produkte/strom -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/preisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt_Netzentgelt -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258046-219149-0-1c2f/Preisblatt GSW Strom Privat Basis - gültig ab dem 01.01.2026.p -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://www.infraleuna.de/preisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Baukostenzu -> weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar)
+    Dokument https://gsw-kamen.de/files/258042-219149-0-8e96/Preisblatt Strom - GSW Fashion - gültig ab dem 01.01.2026.pdf. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258040-219149-0-45a0/Preisblatt Strom - GSW Strom Natur Plus - gültig ab dem 01.01. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258038-219149-0-c92b/Preisblatt Strom - GSW Strom Kompakt - gültig ab dem 01.01.202 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258033-219149-0-372b/Preisblatt Strom - GSW Strom Aktiv - gültig ab dem 01.01.2026. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/GETn-NNE-v-GN-27-PB.pdf -> Netzgebiet passt nicht (erwartet: quartier)
+    Dokument https://gsw-kamen.de/privatkundinnen/produkte/strom/gsw-strom-nachtspeicher -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2025/12/GETn-NNE-e-GN-26-PB.pdf -> Netzgebiet passt nicht (erwartet: quartier)
+    Dokument https://gsw-kamen.de/files/258036-219149-0-0836/Preisblatt Strom - GSW Strom Nachtspeicher mit getrennter Mess -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2026/03/GETn-NNE-e-SN-26-PB_typisierte_Abnahmefaelle.pdf -> fiktive Entgelte
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://gsw-kamen.de/files/258035-219149-0-c2f9/Preisblatt Strom - GSW Strom Nachtspeicher mit gemeinsamer Mes -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2022/12/finales-Preisblatt-Gas-2023_GETEC-net-GmbH.pdf -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.getec-net.de/wp-content/uploads/sites/5/2021/12/Finales-Preisblatt-Gas-2022-GETEC-net.pdf -> Jahr 2026 nicht im Dokument
+[258] -> kein_preisblatt 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Netzgebiet passt nicht (erwarte
+[280] InfraServ Gendorf Netze GmbH (https://www.infraserv.gendorf-netze.de)
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://gsw-kamen.de/files/258025-219149-0-be30/Preisblatt Strom - GSW Strom Dimmbar - gültig ab dem 01.01.202 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt_Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2026_10_07_ISG -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2025_12_11_ISG -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2025_12_11_ISG -> weder RLM- (NS) noch SLP-Werte gefunden
+    robots.txt von https://netzportal.gsw-kamen.de sperrt https://netzportal.gsw-kamen.de/powercommerce/csit3/fo/portal/start (Disallow: /)
+    Dokument https://www.infraleuna.de/historiepreisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2025_12_11_ISG -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/20251211ISGNel -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraleuna.de/preisblätter?file=files/content/bilder/InfraLeuna/Netznutzung/Preisblatt_Netzentgelt -> weder RLM- (NS) noch SLP-Werte gefunden
+[279] -> kein_preisblatt 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge n
+[281] InfraServ GmbH ＆ Co. Wiesbaden KG (www.infraserv-wi.de)
+    Dokument https://www.infraserv-wi.de/fileadmin/user_upload/pdf/strom_2026/strom_netznutzungsentgelt_infraserv_wiesbaden -> weder RLM- (NS) noch SLP-Werte gefunden
+[281] -> blockiert HTTP 403 https://www.infraserv-wi.de; HTTP 405 http://www.infraserv-wi.de
+[293] Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR) (www.stadtwerke-klingenberg.de)
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Preisblatt_Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Preisblatt_Net -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Preisblatt%20N -> Jahr 2026 nicht im Dokument
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Preisblatt%20N -> Jahr 2026 nicht im Dokument
+[226] -> kein_preisblatt kein Preisblatt-Link gefunden (40 Seiten durchsucht)
+[308] Markt Egloffstein (www.egloffstein.de)
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/2018_03_07_gen -> Jahr 2026 nicht im Dokument
+[293] -> kein_preisblatt kein Preisblatt-Link gefunden (2 Seiten durchsucht)
+[311] Meißener Stadtwerke GmbH (www.stadtwerke-meissen.de)
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/TAB_Niederspan -> weder RLM- (NS) noch SLP-Werte gefunden
+[308] -> blockiert HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
+[312] Merck Site Management GmbH (www.fluxum-gernsheim.com)
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/TAB_Mittelspan -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1767077669-preisblatt-strom-2026.pdf -> verwendbar unklar
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/TAB_Anlage_2_M -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Regelungen_zum -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.infraserv.gendorf-netze.de/-/media/Internet/infraserv_gendorf_de/Files/Strom_Erdgas/Erluterung%20z -> weder RLM- (NS) noch SLP-Werte gefunden
+[280] -> kein_preisblatt 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
+[324] Netzgesellschaft Eisenberg mbH (www.netz-eisenberg.de)
+    Dokument https://www.datocms-assets.com/62514/1767077950-theoretische-netzentgelte-2026-ohne-unb-zuschuss.pdf -> fiktive Entgelte
+    Dokument https://www.datocms-assets.com/62514/1763020185-bkz_strom_2026_msw.pdf -> weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar)
+[312] -> kein_preisblatt kein Preisblatt-Link gefunden (1 Seiten durchsucht)
+--- 30/69 erledigt, ca. 7 min verbleibend
+[345] Oberhausener Netzgesellschaft mbH (www.ob-netz.de)
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzentgelte/strom/2026/pb05_1_01_26.pdf -> keine NS-Werte im Jahresleistungspreissystem (nur SLP)
+    Dokument https://www.ob-netz.de/fileadmin/user_upload/OB-Netzgesellschaft/Strom/Mustervertraege_und_Entgelte/Preisblaet -> HTTP 403
+[345] -> blockiert (bisheriges Ergebnis bleibt)
+[350] Outokumpu Stainless Nirosta GmbH (www.outokumpu.com)
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzentgelte/strom/2026/pb06_1_01_26.pdf -> weder RLM- (NS) noch SLP-Werte gefunden (NS: Feld lp_ueber_2500 mehrfach belegt; NS: Werte unvollständig; MSNS: Feld lp_ueber_2500 mehrfach belegt; MSNS: Werte unvollständig)
+    Dokument https://www.gipsprojekt.de/featureGips/gsw-kamen/EnWGTool/Stromnetz/Netzanschluss/Technische_Mindestanforderun -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258044-219149-0-0f58/Ergänzende Bedingungen zur StromGVV - gültig ab dem 01.01.2026 -> Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+    Dokument https://gsw-kamen.de/files/258039-219149-0-8485/Auftrag GSW Strom Natur Plus - gültig ab dem 01.01.2026.pdf.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258037-219149-0-0e04/Auftrag GSW Strom Kompakt - gültig ab dem 01.01.2026.pdf.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://gsw-kamen.de/files/258032-219149-0-e084/Auftrag GSW Strom Aktiv - gültig ab dem 01.01.2026.pdf.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+[265] -> kein_preisblatt 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+[362] Reußenköge Netz ＆ Infrastruktur GmbH (https://www.reussenkoege-netz.de/)
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Abrechnungspreisbla -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Veroeffentlichung_f -> fiktive Entgelte
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Abrechnungspreisbla -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1768569867-preisblatt_module-und-preise-fur-messprodukte-esa_ab-01-01-202 -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzentgelte/strom/f_erklaerung_kwkg_letzverb -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzanschluss/2026_installateursverzeichnis_s -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/netzanschluss/strom/anl1_erg_bed_nav.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1781265500-messtellenbetreiberrahmenvertrag_strom_msw_ab-01-07-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1792666697-nrl-10-tma-steuerbare-verbraucheinrichtungen_beiblatt-oktober- -> kein Text im Dokument (Scan?)
+    Dokument https://www.outokumpu.com/-/media/files/investors/presentations/2026/investor-presentation-june-2026--final.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/Netzzugang/pb_Sperrung_MS_26.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1792666229-datenblatt-steuerbare-verbrauchseinrichtungen_09_2026_msw.pdf -> gültig ab [2024], nicht 2026
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/zertifikate/2026_Zertifikat_nach_IT-Sicherhei -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/presentations/2026/investor-presentation-august-2026--final. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/zertifikate/2026_Zertifikat_nach_ISO_27001.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/presentations/2026/agm-2026--ceos-review--final.pdf?revision -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/mustervertraege/strom/standardisierter-netznu -> Jahr 2026 nicht im Dokument
+    Dokument https://www.outokumpu.com/-/media/files/investors/presentations/2026/agm-2026---toimitusjohtajan-katsaus---fin -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/leitungsauskunft/f_leitungsauskunft_01_2026_a -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/energiedaten/2026/HLFZ-eis26.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/webcast-presentation-q3_2026-fi -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.netz-eisenberg.de/fileadmin/netzgesellschaft/content/formulare/strom/Steuerbare_Verbrauchseinricht -> weder RLM- (NS) noch SLP-Werte gefunden
+[324] -> pruefen keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+[383] Stadtwerke Annaberg-Buchholz Energie AG (www.swa-b.de)
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/webcast-presentation-q2_2026-fi -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Hochlastzeitfenster/Hochlastzeitf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Preisblatt_RNI_2024 -> Jahr 2026 nicht im Dokument
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Preisblatt_BKZ_2024 -> Jahr 2026 nicht im Dokument
+    Dokument https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Abrechnungspreisbla -> Jahr 2026 nicht im Dokument
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/webcast-presentation-q1_2026-fi -> weder RLM- (NS) noch SLP-Werte gefunden
+[362] -> kein_preisblatt 7 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; Jahr 2026 nicht im Dokument
+[395] Stadtwerke Bad Herrenalb GmbH (www.stw-badherrenalb.de)
+    Dokument https://www.datocms-assets.com/62514/1792665845-nrl-10-tma-steuerbare-verbraucheinrichtungen_09_2026_msw.pdf -> kein Text im Dokument (Scan?)
+    Dokument https://www.datocms-assets.com/62514/1792416362-preise-fur-jahresmehr-und-mindermengen_2027.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1768568829-hochlastzeitfenster-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/puolivuosikatsaus-q2_2026-final -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1767077804-preise-fur-fernkommunikation-9-eeg-2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/osavuosikatsaus-q3_2026_final.p -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1767077737-preise-bei-zahlungsverzug-unterbrechung-oder-wiederherstellung -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1767077704-preise-fur-jahresmehr-und-mindermengen_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.enwg-veroeffentlichungen.de/badherrenalb/Netze/Stromnetz/Netzzugang-Entgelte/Fiktive-Netzentgelte- -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/osavuosikatsaus-q1_2026-final.p -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.datocms-assets.com/62514/1763020094-erganzende-bedingungen-zur-nav_ab-01-01-2026_msw.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+[383] -> blockiert robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
+[412] Stadtwerke Baden-Baden (www.stadtwerke-baden-baden.de)
+    Dokument https://www.datocms-assets.com/62514/1678712225-netznutzungsvertrag-strom-msw.pdf -> Jahr 2026 nicht im Dokument
+[311] -> pruefen NS LP>2500 139.58 Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
+[445] Stadtwerke Deidesheim GmbH (www.stadtwerke-deidesheim.de)
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/interim-report-q3_2026_final.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/interim-report-q1_2026-final.pd -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/half-year-report-q2_2026-final. -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf -> verwendbar unklar
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/outokumpu_q2-2026_webcast_trans -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.outokumpu.com/-/media/files/investors/interim-reports/2026-results/outokumpu_q1-2026_transcription -> weder RLM- (NS) noch SLP-Werte gefunden
+[350] -> kein_preisblatt 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
+[451] Stadtwerke Dinkelsbühl (www.sw-dinkelsbuehl.de)
+    Dokument https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026-vorl.pdf -> verwendbar vorläufig
+    Dokument https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-NNE-Strom-fiktive-Entgelte-nach-Typ.pdf -> fiktive Entgelte
+    Dokument https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/PE-Hochlastzeitfenster_2026.pdf -> weder RLM- (NS) noch SLP-Werte gefunden
+    robots.txt von https://www.sw-dinkelsbuehl.de sperrt https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflicht (Disallow: /*.pdf$, Disallow: /fileadmin/Dateien/)
+    Dokument https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichu -> robots
+    Dokument https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichu -> robots
+    Dokument https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichu -> robots
+    Dokument https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichu -> robots
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/hochl -> weder RLM- (NS) noch SLP-Werte gefunden
+    Dokument https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/netznutzungsentgelte/Netzn -> weder RLM- (NS) noch SLP-Werte gefunden (NS Artikel-ID: 1-01-5-001: kein Wert; NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-01-7-001: kein Wert; MSNS Artikel-ID: 1-01-5-001: kein Wert; MSNS Artikel-ID: 1-01-6-001: kein Wert; MSNS Artikel-ID: 1-01-7-001: kein Wert; SLP: Einheit nicht bestimmbar)
