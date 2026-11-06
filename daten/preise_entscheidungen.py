@@ -4,6 +4,21 @@ Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 TEXTAUSZUG = {"603", "151"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("270", "ms"): [21.63, 7.36, 201.20, 0.17],           # Havelstrom Zehdenick: Mittelspannung, Umspannung MS/NS
+    ("270", "msns"): [22.45, 8.08, 224.54, 0.00],
+    ("361", "ms"): [24.92, 6.30, 155.81, 1.07],           # Remstalwerk: Mittelspannungsnetz
+    ("512", "ms"): [14.97, 4.71, 111.17, 0.87],           # Havelberg: netto-Spalten, Tabellen < / ≥ 2.500 h
+    ("512", "msns"): [22.15, 8.86, 193.53, 2.01],
+    ("783", "ms"): [12.64, 5.27, 130.08, 0.58],           # SWS Netze: Tagespreis x 365, Arbeitspreis EUR/kWh x 100
+    ("783", "msns"): [16.82, 5.67, 125.94, 1.30],
+    ("802", "ms"): [21.86, 4.52, 130.62, 0.17],           # ÜZ Mainfranken: Mittelspannung
+    ("16", "ms"): [15.55, 4.52, 91.16, 1.50],             # Düsseldorf: Zeilen Mittelspannung (unter und ab 2.500 h)
+    ("16", "hsms"): [13.32, 4.28, 105.66, 0.58],          # Umspannung Hoch-/Mittelspannung
+    ("109", "ms"): [10.09, 4.54, 105.66, 0.71],           # Mittelspannungsnetz
+    ("113", "ms"): [7.68, 3.96, 91.08, 0.62],             # Allgäu: Mittelspannungsnetz
+    ("113", "msns"): [9.00, 5.31, 124.08, 0.65],
+    ("264", "ms"): [9.32, 7.88, 182.24, 0.96],            # Greiz
+    ("264", "msns"): [11.91, 13.13, 340.19, 0.00],
     ("603", "hsms"): [5.16, 1.82, 45.09, 0.22],           # Olching (Textauszug_2026): Jahresleistungspreis RLM
     ("603", "ms"): [6.27, 2.59, 63.53, 0.30],
     ("603", "msns"): [10.50, 2.97, 58.86, 1.04],

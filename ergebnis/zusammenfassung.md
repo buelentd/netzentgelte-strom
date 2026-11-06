@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 08:44, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 09:40, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 513 | 62% |
-| pruefen | 283 | 34% |
+| ok | 517 | 62% |
+| pruefen | 279 | 34% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 23 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 432,  81
+Preisstand (nur ok): endgültig 435,  82
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -52,11 +52,12 @@ Preisstand (nur ok): endgültig 432,  81
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (81)
+## Status ok, aber Preisstand nicht endgültig (82)
 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
 - 96. Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG: 
+- 109. Elektrizitätsgenossenschaft Schlachters e.G.: 
 - 115. Elektrizitätswerk Bruchmühlbach-Miesau: 
 - 121. Elektrizitätswerk Leitlein GmbH ＆ Co. KG: 
 - 129. Elektrizitätswerk Tegernsee Carl Miller KG: 
@@ -136,16 +137,15 @@ Preisstand (nur ok): endgültig 432,  81
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (318)
+## Restfälle (314)
 
-### pruefen (283)
+### pruefen (279)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
 - 12. RheinNetz GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
 - 14. N-ERGIE Netz GmbH: 
-- 16. Netzgesellschaft Düsseldorf mbH: 
 - 21. Bielefelder Netz GmbH: 
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 28. WSW Netz GmbH: 
@@ -187,10 +187,8 @@ Preisstand (nur ok): endgültig 432,  81
 - 106. Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 107. Elektrizitätsgenossenschaft Oesterweg eG: 
 - 108. Elektrizitätsgenossenschaft Ohlstadt eG: 
-- 109. Elektrizitätsgenossenschaft Schlachters e.G.: robots.txt nicht erreichbar (https://www.eg-schlachters.de); robots.txt nicht erreichbar (http://www.eg-schlachters.de)
 - 110. Elektrizitätsgenossenschaft Unterneukirchen eG: SLP-Arbeitspreis 2.46 ct/kWh außerhalb 3–15; SLP-Werte auffällig
 - 112. Elektrizitätsgenossenschaft Wolkersdorf und Umgebung eG: 
-- 113. Elektrizitätsnetze Allgäu GmbH: 
 - 114. Elektrizitätsvereinigung Böbing eG: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (84.0, 122.93, 147.52, 172.1); SLP-Werte auffällig
 - 118. Elektrizitätswerk Dießen Stadler GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 123. Elektrizitätswerk Max Peissker: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (7.5, 123.51, 3.0); RLM-Werte nicht gefunden; SLP-Werte auffällig
@@ -334,7 +332,6 @@ Preisstand (nur ok): endgültig 432,  81
 - 501. Stadtwerke Groß-Gerau Versorgungs GmbH: SLP-Werte nicht gefunden
 - 504. Stadtwerke Gunzenhausen GmbH: SLP-Werte nicht gefunden
 - 508. Stadtwerke Haltern am See GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 512. Stadtwerke Havelberg GmbH: NS LP über 2.500 h = 275.53 außerhalb 40–260 €/kW/a; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 513. Stadtwerke Heide GmbH: 15 Dokument(e) geprüft: gültig ab [2025], nicht 2026; Jahr 2026 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden
 - 515. Stadtwerke Heilbad Heiligenstadt GmbH: 
 - 517. Stadtwerke Heilsbronn: 

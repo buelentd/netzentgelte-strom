@@ -14,7 +14,7 @@ SNB924477581384;12;RheinNetz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewie
 SNB970821959712;13;TEN Thüringer Energienetze GmbH ＆ Co. KG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB973875583315;14;N-ERGIE Netz GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;gelesen;gelesen
 SNB971311555230;15;EAM Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;pruefen;im_dokument_nicht_gelesen;gelesen;gelesen;im_dokument_nicht_gelesen;gelesen
+SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB981060961299;17;Dortmunder Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB945502201350;18;naturenergie netze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB911641710114;19;Regionetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -107,11 +107,11 @@ SNB945322307522;105;Elektrizitätsgenossenschaft Karlstein eG;ok;gelesen;gelesen
 SNB985498109605;106;Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB931015724646;107;Elektrizitätsgenossenschaft Oesterweg eG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB975801091031;108;Elektrizitätsgenossenschaft Ohlstadt eG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB927462109518;109;Elektrizitätsgenossenschaft Schlachters e.G.;pruefen;im_dokument_nicht_gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB927462109518;109;Elektrizitätsgenossenschaft Schlachters e.G.;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB988606051575;110;Elektrizitätsgenossenschaft Unterneukirchen eG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB930134015819;111;Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB974959002937;112;Elektrizitätsgenossenschaft Wolkersdorf und Umgebung eG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB921631931771;113;Elektrizitätsnetze Allgäu GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB921631931771;113;Elektrizitätsnetze Allgäu GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB916027833432;114;Elektrizitätsvereinigung Böbing eG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB987451707521;115;Elektrizitätswerk Bruchmühlbach-Miesau;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB918689434309;116;Elektrizitätswerk Dahner Felsenland;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -359,7 +359,7 @@ SNB941929592729;357;Regensburg Netz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_a
 SNB942274543879;358;Regionalnetze Linzgau GmbH;ok;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB974239978785;359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB917014884420;360;Regionalwerke Wolfhager Land GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB979950878543;361;Remstalwerk Netzgesellschaft GmbH;pruefen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB979950878543;361;Remstalwerk Netzgesellschaft GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB953011641437;362;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
 SNB912239808732;363;Rheinhessische Energie- und Wasserversorgungs-GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB976863966633;364;Rothmoser GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -510,7 +510,7 @@ SNB921816651920;508;Stadtwerke Haltern am See GmbH;pruefen;nicht_ausgewiesen;nic
 SNB981984960101;509;Stadtwerke Hameln Weserbergland GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB916711029424;510;Stadtwerke Hammelburg GmbH;blockiert;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
 SNB989253327099;511;Stadtwerke Haslach i.K.;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB960729432592;512;Stadtwerke Havelberg GmbH;pruefen;nicht_ausgewiesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB960729432592;512;Stadtwerke Havelberg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB953938790515;513;Stadtwerke Heide GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB938476571321;514;Stadtwerke Heidelberg Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB952677840789;515;Stadtwerke Heilbad Heiligenstadt GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -781,7 +781,7 @@ SNB960060046328;779;SWN Stadtwerke Northeim GmbH;ok;gelesen;gelesen;gelesen;nich
 SNB943662886851;780;SWO Netz GmbH;pruefen;im_dokument_nicht_gelesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;fehlt
 SNB929168402344;781;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB981113965977;782;SWR Energie GmbH ＆ Co. KG;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
-SNB915638224585;783;SWS Netze GmbH;pruefen;gelesen;im_dokument_nicht_gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB915638224585;783;SWS Netze GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969362778135;784;SWS Netze Solingen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
 SNB950006175489;786;SWTE Netz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
