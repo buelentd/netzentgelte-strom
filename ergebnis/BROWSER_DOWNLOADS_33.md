@@ -1,6 +1,6 @@
 # 29 Dokumente im Browser holen
 
-Diese Seiten sperren unseren Server (Cloudflare, Geo-Block, JavaScript-Portal). Im Browser das **Preisblatt Netzentgelte Strom 2026** (Netznutzung, Strom; endgültig vor vorläufig; nicht Gas/Wärme) als PDF speichern, unter dem angegebenen Namen (`<nr>_preis_<Originalname>.pdf`) nach `eingang/überarbeitet` legen, committen und syncen.
+Diese Seiten sperren unseren Server (Cloudflare, Geo-Block, JavaScript-Portal). Im Browser das **Preisblatt Netzentgelte Strom 2026** (Netznutzung, Strom; endgültig vor vorläufig; nicht Gas/Wärme) als PDF speichern, unter dem angegebenen Namen (`<nr>_preis_<Originalname>.pdf`) nach `eingang/lieferung2` legen, committen und syncen.
 Suchlinks: `site:` immer ohne www.
 
 | Nr | Netzbetreiber | Speichern als | Seite | Suche 1 | Suche 2 | Suche 3 |

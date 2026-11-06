@@ -25,7 +25,7 @@ for r in a:
 H = ["nr", "netzbetreiber", "mastr_nr", "speichern_als", "domain_ohne_www", "seite", *[f"suche_{i+1}" for i in range(len(BEGRIFFE))]]
 w = csv.writer(open("ergebnis/browser_downloads_33.csv", "w", encoding="utf-8-sig", newline=""), delimiter=";"); w.writerow(H); w.writerows(rows)
 md = [f"# {len(rows)} Dokumente im Browser holen", "",
-      "Diese Seiten sperren unseren Server (Cloudflare, Geo-Block, JavaScript-Portal). Im Browser das **Preisblatt Netzentgelte Strom 2026** (Netznutzung, Strom; endgültig vor vorläufig; nicht Gas/Wärme) als PDF speichern, unter dem angegebenen Namen (`<nr>_preis_<Originalname>.pdf`) nach `eingang/überarbeitet` legen, committen und syncen.",
+      "Diese Seiten sperren unseren Server (Cloudflare, Geo-Block, JavaScript-Portal). Im Browser das **Preisblatt Netzentgelte Strom 2026** (Netznutzung, Strom; endgültig vor vorläufig; nicht Gas/Wärme) als PDF speichern, unter dem angegebenen Namen (`<nr>_preis_<Originalname>.pdf`) nach `eingang/lieferung2` legen, committen und syncen.",
       "Suchlinks: `site:` immer ohne www.", "", "| Nr | Netzbetreiber | Speichern als | Seite | Suche 1 | Suche 2 | Suche 3 |", "|---|---|---|---|---|---|---|"]
 for r in rows:
     md.append(f"| {r[0]} | {r[1]} | `{r[3]}` | {r[5]} | [1]({r[6]}) | [2]({r[7]}) | [3]({r[8]}) |")
