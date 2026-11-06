@@ -1,0 +1,25 @@
+# Lieferung Runde 2 — Kollege (Vibe), NACHBESSERTER STAND 06.11.2026 (nur 100% verifiziert)
+
+Alle 195 Zeilen der status_vorlage_runde2.csv abgearbeitet (81 Preisblatt + 113 HLZF + Nr. 38 Pfalzwerke = Handablesung des Nutzers).
+
+## Inhalt
+- eingang/lieferung2/ — 82 PDFs, flach, Namenskonvention <nr>_preis_<Originalname>.pdf bzw. <nr>_hlzf_<Originalname>.pdf
+- status_vorlage_runde2_ausgefuellt.csv — alle 195 Zeilen mit ergebnis/begruendung/geprueft_am
+
+## Statusverteilung (195 Zeilen, keine PRUEFEN-Vorbehalte mehr)
+- ja: 84 (jede ja-Zeile voll verifiziert: Jahr 2026 + Dokumentart + Netzbetreiber, soweit anwendbar SLP-Grund-/Arbeitspreis bzw. HLZF-Zeiten in der Begruendung dokumentiert)
+- nicht_veroeffentlicht: 79
+- nicht_gefunden: 21
+- gesperrt: 11 (URLs in der Statusdatei)
+- falsch: 0
+
+## Nachbesserung der 17 PRUEFEN-Faelle (dieser Stand)
+Voll verifiziert und geliefert (11): 46 Thuega (lokal), 63 BASF Lausitz (neue richtige Datei statt der InfraLeuna-Datei), 118 Diessen (jina), 126 Schweiger (lokal, SLP-Werte enthalten), 177 ENRW HLZF (lokal, Zeiten + NB), 181 EVB (jina), 276 IGS (jina, SLP NS 42,00 EUR/a + 9,92 ct/kWh), 391 Bad Bramstedt (lokal), 412 Baden-Baden (jina, SLP 60,00 EUR/a + 9,52 ct/kWh, intern 'final'), 594 Norderstedt (jina), 700 Voelklingen (neue endgueltige Fassung statt vorlaeufig).
+Nicht lieferbar, daher ehrlich umgesetzt (6): 138 enercity GridPartner (nur RLM-Blaetter, kein SLP-Blatt), 252 Wildeck (kein 2026-Blatt, Netz an EAM uebergeben), 599 Ochtrup preis+hlzf (2026-Blatt nur als nicht lesbarer Bildscan, sonst nur 2027-Verprobung), 650 Schwarzenbach HLZF (kein HLZF, Vorlage war Preisblatt), 803 Veolia (SLP-Spalten im Blatt leer).
+
+## Verifizierungs-Methodik
+- PDF-Magie data[:4]==b"%PDF" und %%EOF bei allen 82 Dateien geprueft.
+- Textextraktion eigener Extraktor (FlateDecode/ObjStm) oder r.jina.ai fuer fontverschluesselte/Scan-PDFs; 18 Faelle mit "verifiziert (jina)" gekennzeichnet.
+- Eine bewusste Dublette: 39/366 gemeinsames SachsenNetze-Preisblatt (beide Gesellschaften im Text, in beiden Begruendungen vermerkt).
+- 9 Raster-Faelle (Nr. 2,44,325,408,523,544,549,564,640): Zeiten als Text abgeschrieben, stehen in den Begruendungen.
+- 186 HLZF: kein separates Dokument, Zeitfenster-Tabelle (Modul 3, Quartalsraster) im gelieferten Preisblatt 186_preis — keine zweite Datei noetig.
