@@ -5,6 +5,21 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "111": ("k|k|k|08:00-10:00, 16:30-19:30", "k|k|k|07:00-10:00, 16:30-19:30", "Spalten Frühling-Winter, Zeit 1 und Zeit 2; Zeilen MS, Umspannung MS/NS, NS"),
+    "155": ("k|k|k|09:15-12:45", "k|k|k|09:15-12:45", "Zeilen MS, MS/NS, NS mit Spalten Frühling-Winter (Zeit in der Winterspalte)"),
+    "144": ("k|09:00-13:15|k|18:15-20:00", "k|11:30-12:15|k|11:15-12:30, 16:45-19:00", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung (Uhrzeit von/bis); zweite Winterzeile unter MS und MS/NS"),
+    "158": ("k|k|16:30-19:30|11:00-12:00, 17:00-19:00", "k|k|16:30-19:30|16:30-19:30", "Zeilen Mittelspannung, Umspannung zur Niederspannung, Niederspannung; Spalten Winter, Frühling, Sommer, Herbst"),
+    "193": ("k|k|11:00-13:00, 17:45-19:45|12:00-13:00, 17:15-19:15", "k|k|12:00-13:00, 17:30-19:30|12:00-13:00, 17:15-19:15", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen MS, Umspannung MS/NS, NS (Dokument auf eigener Website EWR Netze)"),
+    "216": ("k|k|k|17:00-20:00", "k|k|k|16:45-19:45", "Zeilen MS, MS/NS, NS; Ende :59 = nächste Viertelstunde"),
+    "243": ("|||", "12:30-13:15|13:45-14:00|k|k", "NS-Zeile im Dokument nicht eindeutig (13:15-13:15): nicht übernommen"),
+    "401": ("k|k|10:45-11:00, 16:45-18:15|15:00-15:30, 16:00-18:30", "k|k|10:30-12:00, 16:45-18:15|10:15-12:30, 15:00-18:30", "HLZF 1 und 2 je Ebene; Spalten nach Position (Herbst, Winter)"),
+    "520": ("k|k|k|10:30-14:30, 16:30-19:15", "k|k|15:45-18:30|11:00-14:15, 16:30-19:15", "Spalten Umspannung HS/MS, Mittelspannung, Umspannung MS/NS, Niederspannung"),
+    "530": ("k|k|k|10:45-12:15", "k|k|17:45-18:30|10:45-13:00, 16:15-19:15", "Spalten Winter, Frühling, Sommer, Herbst; Ende :59 = nächste Viertelstunde"),
+    "559": ("k|k|10:30-12:30|14:30-16:30", "|||", "Dokument nur für Niederspannung (Spannungs- bzw. Umspannebene NS)"),
+    "651": ("k|k|k|16:15-19:15", "k|k|k|16:15-19:15", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung (von/bis); Winter in zwei Zeilen"),
+    "695": ("k|k|12:00-15:00|10:30-14:00, 17:00-19:30", "k|k|k|16:30-19:30", "Spalten HöS, HS/MS, MS, MS/NS, NS; Zeitraum 2025 Netzgebiet SWV"),
+    "702": ("11:15-12:45|k|k|12:15-13:30", "k|k|k|17:15-19:15", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen Mittelspannungsebene, Umspannung MS/NS, Niederspannungsebene"),
+    "750": ("13:15-13:45|k|k|k", "k|k|k|17:00-19:15", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen MS, Umspannebene MS/NS, NS"),
     "784": ("k|k|17:00-20:00|16:30-19:30", "k|k|16:45-19:45|16:30-19:30", "Spalten Winter (Jan-Feb), Frühling, Sommer, Herbst, Winter (Dez); Zeilen Mittelspannung, Mittel-/Niederspannung, Niederspannung"),
     "786": ("k|k|k|17:00-19:30", "k|k|k|17:00-19:30", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Zeilen je Jahreszeit"),
     "768": ("k|k|17:00-19:00|16:45-19:45", "k|k|17:00-19:00|16:45-19:45", "Blöcke Mittelspannungsnetz, Umspannung MS auf NS, Niederspannungsnetz (zwei Fenster je Jahreszeit, leeres Fenster = -)"),
@@ -107,7 +122,19 @@ HAND = {
     "473": ("13:00-13:30|k|k|k", "k|k|k|16:30-18:45", "drei Blöcke Mittelspannung, Umspannung MSP/NSP, Niederspannung"),
     "173": ("k|k|k|12:15-15:30, 17:15-19:45", "k|k|k|12:30-12:45, 13:30-15:30, 17:00-20:00", "Segmenttabelle, Ebenenname steht in der Sommer-Zeile des 4-Zeilen-Blocks"),
 }
-LEER = {"377": "Dokument ist textgleich mit dem von Energieversorgung Rüsselsheim (166, liegt auf deren Website); kein Netzbetreibername im Dokument",
+LEER = {"61": "Dokument zeigt Zeiträume 2024/25 (kein Fenster für 2026), textgleich mit Bad Harzburg (394)",
+        "394": "Dokument zeigt Zeiträume 2024/25 (kein Fenster für 2026), textgleich mit Bad Honnef (61)",
+        "230": "Dokument textgleich mit Ramstein-Miesenbach (622) auf derselben Website, kein Netzbetreibername im Dokument",
+        "165": "Dokument textgleich mit EWR Netze (193) auf deren Website, kein Netzbetreibername im Dokument",
+        "463": "Dokument textgleich mit EWR Netze (193) auf deren Website, kein Netzbetreibername im Dokument",
+        "186": "Hochlastzeitfenster-Dokument gehört Gemeindewerke Langenpreising (235)",
+        "325": "Raster mit einzelnen Viertelstunden, Ebenen nicht eindeutig zuzuordnen",
+        "519": "Tabellenform nicht eindeutig lesbar",
+        "549": "Raster (Viertelstunden), Markierung nicht im Text",
+        "640": "Raster (Viertelstunden), Markierung nicht im Text",
+        "730": "Spaltenzuordnung nicht eindeutig",
+        "177": "Zeilen der Ebenen nicht eindeutig zuzuordnen",
+        "377": "Dokument ist textgleich mit dem von Energieversorgung Rüsselsheim (166, liegt auf deren Website); kein Netzbetreibername im Dokument",
         "277": "Dokument (netzplusservice.de) gehört zu Städtische Werke Netz+Service (744), nicht zu inetz"}
 J = ["fruehling", "sommer", "herbst", "winter"]
 
@@ -128,7 +155,7 @@ def main():
         for c in H:
             if c.startswith("hlzf_ns_") or c.startswith("hlzf_msns_") or c in ("hlzf_schwelle_prozent", "hlzf_mindestleistung_kw", "hlzf_jahr"):
                 r[ix[c]] = ""
-        r[ix["hlzf_status"]] = "fehlt: Dokument gehört einem anderen Netzbetreiber"; r[ix["hlzf_pruefung"]] = grund
+        r[ix["hlzf_status"]] = "fehlt: Dokument nicht verwendbar (" + grund[:60] + ")"; r[ix["hlzf_pruefung"]] = grund
         rows[nr] = r
     csv.writer(open("ergebnis/hlzf_ergebnis.csv", "w", encoding="utf-8-sig", newline=""), delimiter=";").writerows([H] + sorted(rows.values(), key=lambda r: int(r[0])))
     print(len(HAND), "von Hand abgelesen")
