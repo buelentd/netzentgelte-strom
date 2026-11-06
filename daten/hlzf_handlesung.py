@@ -5,6 +5,10 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "660": ("13:00-16:00|k|k|k", "k|k|16:30-19:30|16:30-19:30", "Spalten Mittelspannung, USP MS/NS, Niederspannung; Zeilen je Jahreszeit"),
+    "622": ("k|11:00-14:30|k|k", "k|07:00-08:00, 11:00-14:30|k|k", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen MS, Umspannung MS/NS, NS"),
+    "639": ("k|k|k|07:30-11:30", "06:00-07:15|10:45-12:45, 14:00-15:30|k|07:30-09:30, 18:30-19:45", "Spalten Winter, Frühling, Sommer, Herbst je 1. und 2. Zeit; Zeilen MS, MN (Umspannung MS/NS), NS"),
+    "652": ("k|k|17:00-18:45|10:45-13:00, 16:15-19:15", "k|k|17:00-18:45|11:00-12:00, 16:15-19:15", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; Jahreszeit in der ersten Spalte"),
     "590": ("k|k|09:15-12:15|09:15-12:45, 17:00-19:15", "k|k|10:45-13:15, 17:00-18:30|08:00-13:15, 17:00-19:15", "Spalten Mittelspannung, Umspannung MS/NS, Niederspannung; zwei Zeilen je Jahreszeit"),
     "553": ("12:00-15:15|k|k|11:45-12:15, 13:00-13:15", "k|k|16:45-19:45|17:00-19:15", "Tabellen Mittelspannung, Umspannebene MS/NS, Niederspannung mit HLZF-1 bis -5; Spalten Herbst, Winter, Frühjahr, Sommer"),
     "556": ("k|k|k|12:30-13:15, 17:30-19:45", "k|k|k|12:30-13:00, 17:30-19:45", "Aufzählung je Jahreszeit und Ebene; Herbst: nur Umspannung zur Mittelspannung genannt"),
