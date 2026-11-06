@@ -3,17 +3,18 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 NOTIZ = {("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; Tarif Strom Industrie DE (Mittelspannung mit eigener Transformatorenstation, nur Bestandskunden); Netznutzung enthält Kosten Swissgrid",
-         ("73", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; gültig ab 01.04.2026; Tarif ohne Trennung bei 2.500 h: Werte für beide Gruppen gleich",
+         ("73", "ms"): "Preisblatt CCF Netzkosten 2026 gültig ab 01.04.2026; Tagesleistungspreise x 365",
          ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
          ("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
-TEXTAUSZUG = {"73"}      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
+TEXTAUSZUG = set()      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
     ("117", "slp"): [13.25, 60.00],          # EKS Kleingewerbe DE 2026 (Einheitstarif Netznutzung 2026 netto, Grundpreis Netz 60 €/Jahr); enthält Swissgrid
     ("117", "ms"): [20.50, 10.95, 228.25, 2.65],          # EKS Schaffhausen (Text vom Nutzer, Strom Industrie DE, gültig ab 01.01.2026): SPRINT (< 2.500 h) und STANDARD (> 2.500 h), Arbeitspreis und Leistungspreis Netznutzung netto
-    ("73", "ms"): [23.04, 4.47, 23.04, 4.47],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
-    ("73", "msns"): [24.53, 4.70, 24.53, 4.70],           # Mittelspannung mit Umspannung (MSU)
-    ("73", "ns"): [40.60, 6.17, 40.60, 6.17],
+    ("73", "ms"): [23.04, 4.47, 103.68, 1.53],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
+    ("73", "msns"): [24.53, 4.70, 103.68, 1.53],           # Mittelspannung mit Umspannung (MSU)
+    ("73", "slp"): [10.54, 34.98],
+    ("73", "ns"): [40.60, 6.17, 113.71, 3.25],
     ("361", "msns"): [30.55, 7.02, 166.31, 1.59],         # Remstalwerk: Umspannung Mittel- auf Niederspannungsnetz
     ("558", "ms"): [5.79, 3.87, 97.20, 0.21],             # Ludwigslust-Grabow: Jahresleistungspreissystem (Monatssystem ignoriert)
     ("558", "msns"): [6.15, 5.91, 153.79, 0.00],

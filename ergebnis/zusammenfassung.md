@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 06.11.2026 15:05, 831 Netzbetreiber bzw. Netzgebiete
+Stand 06.11.2026 15:10, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 541 | 65% |
-| pruefen | 261 | 31% |
+| ok | 542 | 65% |
+| pruefen | 260 | 31% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 18 | 2% |
 | robots | 9 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 455,  86
+Preisstand (nur ok): endgültig 455,  87
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 743)
+- Median: 7,26 ct/kWh (n = 744)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -52,8 +52,9 @@ Preisstand (nur ok): endgültig 455,  86
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (86)
+## Status ok, aber Preisstand nicht endgültig (87)
 
+- 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
 - 96. Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG: 
@@ -141,9 +142,9 @@ Preisstand (nur ok): endgültig 455,  86
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (290)
+## Restfälle (289)
 
-### pruefen (261)
+### pruefen (260)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -176,7 +177,6 @@ Preisstand (nur ok): endgültig 455,  86
 - 70. BTT Bauteam Tretzel GmbH: 
 - 71. Butzbacher Netzbetrieb GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 72. C. Ensinger GmbH ＆ Co. KG: 
-- 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 74. Covestro Brunsbüttel Energie GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 77. Creos Deutschland GmbH: 
