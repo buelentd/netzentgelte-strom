@@ -168825,3 +168825,5 @@ Preisstand (nur ok): endgültig 475,  98
     Dokument https://www.zev-energie.de/download.php?download=FiktiveNetzentgelte_Strom_TypisierteAbnahmefaelle_2026.pdf -> robots
 [820] -> blockiert robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 [828] -> pruefen keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+    Dokument https://www.zev-energie.de/strom-produkte.php -> Jahr 2026 nicht im Dokument
+    Dokument https://www.zev-energie.de/produkte_strom_geschaeftskunden.php -> Jahr 2026 nicht im Dokument
