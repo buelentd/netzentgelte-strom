@@ -5,6 +5,12 @@ import csv, sys
 sys.path.insert(0, ".")
 K = "k"
 HAND = {
+    "741": ("k|k|k|18:45-20:00", "k|k|17:30-18:15|17:00-19:15", "Blöcke Mittelspannung, Umspannung MS/NS, Niederspannung; Ebenenname mittig"),
+    "785": ("11:30-13:15|k|17:15-19:00, 21:15-22:00|09:30-15:45, 16:45-19:30, 21:00-22:30", "k|10:15-13:00|11:15-12:45, 13:30-14:15, 14:45-15:45|k", "Blöcke mit Zeilen Winter, Frühling, Sommer, Herbst; Ebene HS, HS/MS, MS, MS/NS, NS; Ebenenname mittig"),
+    "646": ("k|k|k|17:30-19:15", "k|k|18:00-18:15|08:30-08:45, 11:15-13:15, 17:15-19:00", "Blöcke Mittelspannung, Umspannung MS/NS, Niederspannung; Ebenenname mittig"),
+    "492": ("09:30-09:45, 12:15-12:30|k|k|k", "09:15-09:45, 12:00-12:30|k|k|11:30-11:45, 17:00-19:15", "Blöcke Mittelspannung, Umspannungsebene MS/NS, Niederspannungsebene; leere Zeilen = keine Fenster"),
+    "275": ("k|k|k|18:15-20:00", "k|k|09:30-10:15, 10:45-11:00|k", "Blöcke Netzebene 5, 6 (Umspannung), 7 (Niederspannung)"),
+    "365": ("k|k|17:00-18:00|11:30-12:30, 17:15-20:30", "k|k|k|16:45-20:30", "Blöcke Mittelspannung, Umspannung M/N, Niederspannung"),
     "804": ("11:00-14:00|11:00-14:00|17:00-20:00|11:00-14:00, 17:00-19:15", "k|k|17:00-20:00|17:00-20:00", "Netzebene 6 = Umspannung MS/NS, Netzebene 7 = Niederspannung (gleiches Layout wie 217)"),
     "744": ("k|k|10:15-12:00, 16:45-17:00|11:00-11:15, 16:15-18:15", "k|k|16:00-17:45|15:30-18:30", "Blöcke je Netzebene mit Jahreszeit-Zeilen; Dokument liegt auf netzplusservice.de (eigene Website des Netzbetreibers)"),
     "795": ("17:00-20:00|k|k|16:45-19:45", "17:00-20:00|k|k|16:45-19:45", "Spalten Winter, Frühling, Sommer, Herbst; Zeilen MS, Umspannung MS/NS, NS"),
