@@ -85,6 +85,7 @@ a{color:var(--akzent)}
 <div class="seite">
   <header class="kopf">
     <span class="marke">Testseite, nicht conplot.de</span>
+    <div class="klein" style="background:#fff3cd;color:#664d03;border:1px solid #e0c36a;border-radius:7px;padding:8px 10px;margin:8px 0;line-height:1.35"><b>Werte in Prüfung (Stand 07.11.2026).</b> Die Netzentgelte stammen aus den Preisblättern der Netzbetreiber, sind aber noch nicht vollständig zeilenweise gegen die Dokumente geprüft. Bei einzelnen Netzbetreibern können Ebenen vertauscht oder falsch sein. Ergebnisse sind eine Modellrechnung mit sichtbaren Annahmen, kein Angebot und keine Beratung.</div>
     <div class="beispiele"><span class="klein">Beispiel laden:</span>
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
       <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
@@ -220,8 +221,8 @@ a{color:var(--akzent)}
         <div class="zeile">
           <div><label class="titel" for="a-niveau">Börsenniveau für den Strompreis</label>
             <select id="a-niveau">
-              <option value="termin">Terminmarkt 2027: 14,8 ct/kWh (EEX Baseload, nicht geprüft)</option>
               <option value="jahr">Jahresmittel der letzten 365 Tage (Day-Ahead)</option>
+              <option value="termin">Terminmarkt 2027: 14,8 ct/kWh (EEX Baseload, Stand 05.11.2026, nur für das erste Jahr)</option>
               <option value="d30">Mittel der letzten 30 Tage (Day-Ahead)</option>
             </select>
             <span class="klein">Der Festpreis eines Lieferanten orientiert sich am Terminmarkt, der dynamische Tarif am aktuellen Börsenpreis. Gilt nur, wenn unten kein eigener Strompreis eingetragen ist.</span></div>
@@ -584,7 +585,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const rVor = rlm(nb.ns, kwh, kw, nb.le);
   const mittel = a => a.reduce((x, c) => x + c, 0) / a.length;
   const TERMIN_2027 = 14.82;                                   // EEX Baseload 2027, 148,18 €/MWh (Angabe aus der Recherche, nicht geprüft)
-  const niveau = $("a-niveau") ? $("a-niveau").value : "termin";
+  const niveau = $("a-niveau") ? $("a-niveau").value : "jahr";
   const boersenMittel = niveau === "jahr" ? mittel(D.boerse) : niveau === "d30" ? mittel(D.boerse.slice(-720)) : TERMIN_2027;
   const niveauName = niveau === "jahr" ? "Jahresmittel" : niveau === "d30" ? "Mittel 30 Tage" : "Terminmarkt 2027";
   const strom = num("a-strom") || (boersenMittel + num("a-aufschlag") + num("a-steuern"));
