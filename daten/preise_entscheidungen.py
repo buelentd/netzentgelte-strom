@@ -3,6 +3,14 @@ KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeil
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
 KORRIGIEREN = {
+    ("87", "slp"): [7.89, 90.00],                         # SLP: Kunde im Niederspannungsnetz ohne Lastgangzählung (Netto €/Jahr, ct/kWh)
+    ("140", "slp"): [6.88, 80.00],
+    ("289", "slp"): [5.48, 63.00],
+    ("412", "slp"): [9.52, 60.00],                        # BDEW-Artikel 1-02-0-001 / -002
+    ("468", "slp"): [8.85, 23.72],                        # Artikel 1-02-0-002 in EUR/kWh x 100
+    ("512", "slp"): [7.19, 80.00],
+    ("635", "slp"): [5.38, 75.00],
+    ("737", "slp"): [9.54, 69.84],
     ("320", "ms"): [11.58, 6.12, 146.21, 0.73],           # Bad Langensalza: BDEW-Artikel-IDs, Preis je Jahr (nicht je Tag)
     ("320", "msns"): [12.06, 7.16, 179.96, 0.45],
     ("320", "ns"): [13.13, 9.48, 159.15, 3.63],
