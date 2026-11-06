@@ -154,9 +154,15 @@ ENTFERNEN = {
     ("52", "hsms"): "Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument",
     ("194", "hsms"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
     ("370", "msns"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
+    ("819", "msns"): "Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile",
+    ("362", "msns"): "Preisblatt nennt nur HS, HS/MS und MS; gelesene Werte waren die HS/MS-Zeile",
 }
 F = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
 fmt = lambda v: f"{v:.2f}".replace(".", ",")
+
+from daten.entscheidungen_runde2 import RUNDE2
+KORRIGIEREN.update(RUNDE2)
+
 
 def main():
     tab = {r["nr"]: r for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
