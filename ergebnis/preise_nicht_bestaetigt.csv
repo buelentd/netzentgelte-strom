@@ -5,7 +5,10 @@
 26;Energienetze Mittelrhein GmbH ＆ Co. KG;MS/NS;49,59;7,42;156,64;3,13;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
 26;Energienetze Mittelrhein GmbH ＆ Co. KG;Mittelspannung;40,61;7,21;173,90;1,88;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
 26;Energienetze Mittelrhein GmbH ＆ Co. KG;HS/MS;35,56;6,79;168,93;1,45;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
-36;LEW Verteilnetz GmbH;Niederspannung;8,02;5,51;97,34;1,94;pruefen;nächste Zeile hat 0 von 4 Werten;NS Niederspannung;SNB911705062982_0036.txt
+36;LEW Verteilnetz GmbH;Niederspannung;8,02;5,51;97,34;1,94;ok;nächste Zeile hat 0 von 4 Werten;NS Niederspannung;SNB911705062982_0036.txt
+36;LEW Verteilnetz GmbH;MS/NS;5,54;5,55;140,32;0,15;ok;Ebenenzeile im Dokument nicht gefunden;;SNB911705062982_0036.txt
+36;LEW Verteilnetz GmbH;Mittelspannung;6,54;4,00;89,83;0,67;ok;nächste Zeile hat 0 von 4 Werten;MS Mittelspannung;SNB911705062982_0036.txt
+36;LEW Verteilnetz GmbH;HS/MS;6,19;4,01;100,35;0,24;ok;Ebenenzeile im Dokument nicht gefunden;;SNB911705062982_0036.txt
 46;Thüga Energienetze GmbH;Niederspannung;44,85;8,62;185,30;3,00;pruefen;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 37,52 44,65 0,79 0,94 Niederspannungsnetz 30,88 36,75 3,00 3,57;SNB990887002092_0046.txt
 71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;Niederspannung;12,00;12,41;43,80;2,19;pruefen;nächste Zeile hat 0 von 4 Werten;6 – Umspannung MS/NS 8,43 6,79 137,23 1,64;SNB972511582064_0071.txt
 113;Elektrizitätsnetze Allgäu GmbH;MS/NS;9,00;5,31;124,08;0,65;ok;nächste Zeile hat 3 von 4 Werten;Umspannung Mittel-/Niederspannung 9 5,31 124,08 0,65;SNB921631931771_0113.txt
@@ -68,10 +71,19 @@
 599;Stadtwerke Ochtrup;MS/NS;29,48;7,78;195,77;1,13;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB934961797092_0599.txt
 648;Stadtwerke Schwäbisch Gmünd GmbH;Niederspannung;34,46;6,08;123,48;2,52;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
 648;Stadtwerke Schwäbisch Gmünd GmbH;MS/NS;28,85;5,47;116,41;1,96;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
+661;Stadtwerke Soltau GmbH ＆ Co. KG;Niederspannung;8,82;6,71;129,48;1,88;ok;nächste Zeile hat 0 von 4 Werten;Wandler (Niederspannung);SNB947030954821_0661.txt
+661;Stadtwerke Soltau GmbH ＆ Co. KG;MS/NS;6,34;5,46;136,41;0,25;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
+661;Stadtwerke Soltau GmbH ＆ Co. KG;Mittelspannung;5,34;3,61;62,79;1,31;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
 705;Stadtwerke Waldkraiburg GmbH;Niederspannung;30,12;7,32;168,93;1,77;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
 705;Stadtwerke Waldkraiburg GmbH;MS/NS;25,83;6,95;169,46;1,20;ok;Ebenenzeile im Dokument nicht gefunden;;SNB960416123321_0705.txt
+706;Stadtwerke Waldmünchen;Niederspannung;15,76;5,99;88,45;3,08;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB971196250442_0706.txt
+706;Stadtwerke Waldmünchen;MS/NS;13,63;5,91;142,22;0,77;ok;Ebenenzeile im Dokument nicht gefunden;;SNB971196250442_0706.txt
+706;Stadtwerke Waldmünchen;Mittelspannung;11,28;5,74;152,15;0,10;ok;Ebenenzeile im Dokument nicht gefunden;;SNB971196250442_0706.txt
 733;Stadtwerke Wolmirstedt GmbH;MS/NS;65,34;8,25;242,84;1,15;ok;nächste Zeile hat 2 von 4 Werten;Umspannung zur 65,34 77,75 0,0825 0,0982 242,84 288,98 0,0115 0,0137;SNB971345683381_0733.txt
 733;Stadtwerke Wolmirstedt GmbH;Mittelspannung;46,37;6,06;184,15;0,54;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannungsnetz 46,37 55,18 0,0606 0,0721 184,15 219,14 0,0054 0,0064;SNB971345683381_0733.txt
+736;Stadtwerke Zirndorf GmbH;Niederspannung;24,63;8,66;128,04;4,52;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB931316685899_0736.txt
+736;Stadtwerke Zirndorf GmbH;MS/NS;24,63;7,19;187,68;0,67;ok;Ebenenzeile im Dokument nicht gefunden;;SNB931316685899_0736.txt
+736;Stadtwerke Zirndorf GmbH;Mittelspannung;19,09;5,41;147,98;0,26;ok;Ebenenzeile im Dokument nicht gefunden;;SNB931316685899_0736.txt
 740;stadtwerker GmbH;Niederspannung;19,11;9,16;213,52;1,39;pruefen;nächste Zeile hat 0 von 4 Werten;Niederspannung (NSP);SNB918576265276_0740.txt
 783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;pruefen;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
 802;ÜZ Mainfranken eG;HS/MS;21,86;4,07;114,88;0,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB929185184919_0802.txt
