@@ -116,7 +116,7 @@ SNB916027833432;114;Elektrizitätsvereinigung Böbing eG;pruefen;nicht_ausgewies
 SNB987451707521;115;Elektrizitätswerk Bruchmühlbach-Miesau;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB918689434309;116;Elektrizitätswerk Dahner Felsenland;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;pruefen;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
-SNB916328839515;118;Elektrizitätswerk Dießen Stadler GmbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
+SNB916328839515;118;Elektrizitätswerk Dießen Stadler GmbH;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB965998184692;119;Elektrizitätswerk Goldbach-Hösbach GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB925558752303;120;Elektrizitätswerk Hindelang eG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB952385093224;121;Elektrizitätswerk Leitlein GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -411,7 +411,7 @@ SNB946710442153;409;Stadtwerke Bad Wildbad GmbH ＆ Co. KG;ok;gelesen;gelesen;ge
 SNB963795614626;410;Stadtwerke Bad Windsheim;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB948741734467;411;Stadtwerke Bad Wörishofen;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB931622346583;412;Stadtwerke Baden-Baden;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
-SNB956377097702;413;Stadtwerke Baiersdorf KU;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
+SNB956377097702;413;Stadtwerke Baiersdorf KU;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB963746327452;414;Stadtwerke Balingen;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB949646353012;415;Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB913346629968;416;Stadtwerke Barmstedt;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
@@ -542,7 +542,7 @@ SNB945021456095;540;Stadtwerke Kusel GmbH;ok;gelesen;gelesen;gelesen;nicht_ausge
 SNB959585826225;541;Stadtwerke Lambrecht (Pfalz) GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB963499807249;542;Stadtwerke Landau a.d.Isar;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB929663692172;543;Stadtwerke Landsberg KU;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
-SNB928992067729;544;Stadtwerke Landshut;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
+SNB928992067729;544;Stadtwerke Landshut;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB965379905076;545;Stadtwerke Langen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB935738221819;546;Stadtwerke Langenzenn;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB980345455409;547;Stadtwerke Lauterbach GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
