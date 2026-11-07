@@ -156,6 +156,8 @@ ENTFERNEN = {
     ("370", "msns"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
     ("235", "msns"): "Das Preisblatt führt eine Zeile 'Umspannung HS/MS' zwischen Mittel- und Niederspannung; ob HS/MS oder MS/NS gemeint ist, bleibt unklar (Beschriftung widerspricht der Reihenfolge)",
     ("227", "ms"): "Das Preisblatt weist keine Mittelspannung aus (nur Umspannung MS/NS und Niederspannung); frühere Werte waren die MS/NS-Zeile doppelt",
+    ("199", "slp"): "Die SLP-Werte waren der Niederspannungs-Arbeitspreis (7,48) und ein Leistungspreis aus der Reservetabelle (127,08); das Dokument weist keinen SLP-Preis aus (Industriehafen)",
+    ("206", "hsms"): "Die Werte 9,27/1,85/40,83/0,59 stehen im Dokument nicht; das Preisblatt weist keine Umspannung HS/MS aus",
     ("819", "msns"): "Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile",
     ("362", "msns"): "Preisblatt nennt nur HS, HS/MS und MS; gelesene Werte waren die HS/MS-Zeile",
 }
@@ -200,6 +202,10 @@ def main():
             for k in F:
                 if f"{eb}_{k}" in I:
                     r[I[f"{eb}_{k}"]] = ""
+            if eb == "slp":
+                for sp in ("slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"):
+                    if sp in I:
+                        r[I[sp]] = ""
     out = io.StringIO(); w = csv.writer(out, delimiter=";", lineterminator=nl); w.writerows(rows)
     open(p, "w", encoding="utf-8", newline="").write(("﻿" if bom else "") + out.getvalue())
     # Entfernen: lauf/werte_entfernt.csv ergänzen

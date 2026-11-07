@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 07.11.2026 09:09, 831 Netzbetreiber bzw. Netzgebiete
+Stand 07.11.2026 09:15, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 616 | 74% |
-| pruefen | 196 | 24% |
+| ok | 614 | 74% |
+| pruefen | 198 | 24% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 510,  106
+Preisstand (nur ok): endgültig 508,  106
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 775)
+- Median: 7,25 ct/kWh (n = 774)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -161,9 +161,9 @@ Preisstand (nur ok): endgültig 510,  106
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (215)
+## Restfälle (217)
 
-### pruefen (196)
+### pruefen (198)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -227,7 +227,9 @@ Preisstand (nur ok): endgültig 510,  106
 - 194. ews - Netz GmbH: 
 - 195. EZV Energie- und Service GmbH ＆ Co. KG Untermain: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 197. FASTR GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0971, 9.7100; RLM-Werte nicht gefunden; SLP-Wer
+- 199. Fischereihafen-Betriebsgesellschaft mbH: SLP-Werte nicht gefunden
 - 203. Freitaler Stadtwerke GmbH: 
+- 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: 
 - 208. Gemeinde Glattbach: 
 - 216. Gemeindewerke Ebersdorf: weitere Preisblätter mit abweichenden NS-Werten: https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentgelte-2017.pdf, https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentg
 - 219. Gemeindewerke Gangkofen: 

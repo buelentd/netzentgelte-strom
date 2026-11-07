@@ -1,0 +1,148 @@
+Entgelte für die Nutzung der Strom-Netzinfrastruktur
+
+Städtische Werke Spremberg (Lausitz) GmbH                                                                                                  gültig ab:    01. Jan 2026
+
+
+Die Entgelte sind Nettopreise und bestehen aus Netznutzung und Messstellenbetrieb (incl. Messung) zzgl. gesetzliche Abgaben und Umsatzsteuer.
+
+
+
+
+Netznutzungsentgelt für Entnahmestellen mit registrierender Lastgangmessung (RLM)
+
+
+Entnahme in                                                                           Jahrespreissystem                                     Monatspreissystem
+                                                                    b < 2.500 h/a                         b >= 2.500 h/a                   § 19 Abs. 1 StromNEV
+
+                                                             Leistung               Arbeit         Leistung                Arbeit        Leistung                Arbeit
+                                                           Euro/kW/a               Ct/kWh        Euro/kW/a              Ct/kWh      Euro/kW/Mon.               Ct/kWh
+Mittelspannung                      MS                          29,24                 6,00          134,21                  1,81           22,37                  1,81
+Umspannung MS/NS                    MS/NS                       37,81                 6,91          143,76                  2,68           23,96                  2,68
+Niederspannung                      NS                          44,45                 7,52          147,81                  3,39           24,64                  3,39
+
+
+Blindmehrarbeit
+
+
+                                                                                                                   Cent/kvarh
+Leistungsfaktor cos phi < 0,93 (positive Blindarbeit bei Bezug)                                                          1,10
+Leistungsfaktor cos phi < 0,99 (negative Blindarbeit bei Bezug)                                                          1,10
+Leistungsfaktor cos phi < 0,98 (positive Blindarbeit bei Einspeisung)                                                    1,10
+Leistungsfaktor cos phi < 0,98 (negative Blindarbeit bei Einspeisung)                                                    1,10
+
+
+Netznutzungsentgelt für die Reservenetzkapazität bei Ausfall der Eigenerzeugung
+
+
+Benutzungsdauer                                              bis 200 h       200 bis 400 h        bis 600 h
+Leistung in                                                Euro/kW/a         Euro/kW/a           Euro/kW/a
+Mittelspannung                      MS                          73,10                87,72          102,34
+Umspannung MS/NS                    MS/NS                       94,53               113,44          132,34
+Niederspannung                      NS                         111,13               133,36          155,58
+Zur Absicherung des Ausfalles einer Erzeugungsanlage kann für den Zeitpunkt und den Umfang des Reservestrombezuges
+eine Reserve-Netzkapazität bis zur Höhe der Engpassleistung der Erzeugungsanlage pro Jahr bestellt werden.
+
+
+Netznutzungsentgelt für Entnahmestellen ohne registrierende Lastgangmessung (SLP)
+
+
+Kleinkundengruppe (SLP NS)                                                                                                             Grundpreis            Arbeitspreis
+                                                                                                                                           Euro/a               Ct/kWh
+Haushalt/Kleingewerbe                                    ohne Bedarfsartendifferenzierung                                                  60,00                  9,13
+unterbrechb./steuerbare Verbraucher §14a                 Bestandsanlagen
+Elektro-Speicherheizungen                                unterbrechbar/steuerbar                                                            0,00                  1,99
+Wärmepumpen                                              unterbrechbar/steuerbar                                                            0,00                  1,99
+Ladestationen Elektromobile                              unterbrechbar/steuerbar                                                            0,00                  1,99
+
+
+unterbrechb./steuerbare Verbraucher §14a                    Grundpreis                         Arbeitspreis (AP)                           Pauschale Reduktion *
+Neuverträge ab 2024                                             Euro/a                            Ct/kWh                                            Euro/a
+     Modul 1            Pauschale Reduktion *                   60,00                                9,13                                           -135,70
+     Modul 2            AP rabattiert auf: 40 %                   0,00                               3,65
+     Modul 3            GP+Pauschalred. wie Modul 1                                  HT              NT                    ST
+                                                                            11:00-13:00        23:00-07:00             Restzeit
+                        + zeitvariabler AP je Zeitzone
+                                                                            17:00-19:00
+                        AP gilt nur in   Q1 + Q4                60,00              13,70             3,06                9,13                       -135,70
+* Pauschalreduktion ist begrenzt auf die Höhe des zu zahlenden Normalentgeltes, auch anwendbar für RLM-Kunden MS/NS und NS
+
+
+Kommunalrabatt
+
+
+Kommunale Entnahmestellen ohne Lastgangmessung in Niederspannung erhalten einen Rabatt auf den Nettobetrag Netznutzung
+(nur Arbeitspreis, Leistungspreis, Grundpreis) in Höhe von 10 %. Dieser unterliegt nicht der Umsatzsteuer und ist auf der Rechnung separat auszuweisen.
+
+
+Jahresentgelte für Messstellenbetrieb (MSB)
+
+
+Kunden mit Leistungsmessung
+MSB incl. monatlicher Messung                                                                         MSB
+                                                                                                     Euro/a
+MS-Lastprofil ohne Wandler                                                                          408,28
+Wandlersatz MS                                                                                      180,00
+NS-Lastprofil ohne Wandler                                                                          408,28
+Wandlersatz NS                                                                                        18,00
+
+
+Kunden ohne Leistungsmessung
+MSB incl. jährlicher Messung                                                                         MSB            Zusatzmessung
+                                                                                                     Euro/a         Euro/Messung
+Tarifzähler                                                                                           10,62                 2,45
+Bei nicht leistungsgemessenen Kunden ist im MSB standardmäßig ein Messentgelt pro Jahr enthalten. Auf Wunsch des Kunden kann eine Messung
+halbjährlich, vierteljährlich oder monatlich erfolgen. Dadurch erhöht sich das MSB-Entgelt um die Anzahl der Zusatzmessungen.
+
+
+Zusatzeinrichtungen
+MSB                                                                                                   MSB
+                                                                                                  Euro/St/a
+NS-Wandlersatz SLP                                                                                    18,00
+Schaltgerät oder Rundsteuerempfänger                                                                  12,00
+Telekommunikationsanschluss durch NB (automatische Ablesung)                                          72,00
+
+
+KA
+Die Höhe der Konzessionsabgabe richtet sich nach den in der Konzessionsabgabeverordnung festgelegten Höchstpreisen.
+Fassung vom 9.1.1992 (BGBl. I S. 12, 407), zuletzt geändert durch Artikel 3 Absatz 4 der Verordnung vom 1. November 2006 (BGBl. I S. 2477).
+
+
+Netzumlagen ( Aufschlag besondere Netznutzung, KWKG-, Offshore-Umlage )
+Die zu berechnenden Umlagen sind auf folgender Seite zu entnehmen:
+http://www.netztransparenz.de
+
+
+BKZ / HAK
+Die Erhebung von Baukostenzuschüssen (BKZ) und Netzanschlusskosten (NAK) richtet sich nach den auf der Internetseite
+des Netzbetreibers publizierten Bedingungen und Preisen.
+Vergleich Abnahmefälle Preisblatt zu Preisblatt fiktiv (ohne ÜNB-Netzkostenzuschuss 2026)
+
+
+Entgelte für die Nutzung der Strom-Netzinfrastruktur                                               gültig ab:   01. Jan 2026
+
+
+Städtische Werke Spremberg (Lausitz) GmbH
+
+
+
+
+1 Haushaltskunde in der Niederspannung mit einem Jahresverbrauch von:                                                3.500     kWh
+
+
+AP                   9,13     Ct/kWh        GP                60,00       €/a          Netzentgelt                   380 €     €/a
+AP fiktiv           10,34     Ct/kWh        GP fiktiv         60,00       €/a          Netzentgelt fiktiv            422 €     €/a
+
+
+2 Gewerbekunde in der Niederspannung mit einem Jahresverbrauch von :                                                50.000     kWh
+
+
+AP                   9,13     Ct/kWh        GP                60,00       €/a          Netzentgelt                  4.625 €    €/a
+AP fiktiv           10,34     Ct/kWh        GP fiktiv         60,00       €/a          Netzentgelt fiktiv           5.230 €    €/a
+
+
+3 Industriekunde in der Mittelspannung mit einem Jahresverbrauch von :                                          24.000.000     kWh
+                                                                         Leistung in kW 4.000                        6.000     bh
+
+AP                   1,81     Ct/kWh        LP               134,21       €/a          Netzentgelt                971.240 €    €/a
+AP fiktiv            2,46     Ct/kWh        LP fiktiv        134,75       €/a          Netzentgelt fiktiv       1.129.400 €    €/a
+

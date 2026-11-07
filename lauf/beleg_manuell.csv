@@ -1,0 +1,62 @@
+nr;ebene;fundstelle
+1;hsms;Z28-30 Berlin: Umspannung Hoch-/Mittelspannung, Tagespreise x 365
+1;ms;Z45-48: Mittelspannung, Tagespreise x 365
+1;msns;Z55-58: Umspannung Mittel-/Niederspannung, Tagespreise x 365
+1;ns;Z67-70: Niederspannung, Tagespreise x 365
+7;msns;Z93: Umspannung 20/0,4 kV
+9;hsms;Z88-92: Umspannung Hoch-/Mittelspannung, Tagespreise x 365
+11;hsms;Z40-43: Umspannung Hochspannung/Mittelspannung, Arbeitspreis- und Leistungspreiszeile getrennt
+11;ms;Z43-46: Mittelspannung, AP- und LP-Zeile getrennt
+11;msns;Z46-49: Umspannung Mittelspannung/Niederspannung
+11;ns;Z49-52: Niederspannung
+14;hsms;Z19-21: Umspannung Hoch-/Mittelspannung, Netto in Klammer Brutto
+14;msns;Z25-27: Umspannung Mittel-/Niederspannung
+14;slp;Z64-67: Netto 95,00 5,96
+22;msns;Z17: Anschluss Umspannung 10/0,4 kV
+24;msns;Z11: Umspannung (20/0,4 kV)
+24;slp;Z86: Entnahme im Niederspannungsnetz 59,80 5,75
+25;hsms;Z47-49: Umspannung Hoch-/Mittelspannung, Tagespreis
+25;ms;Z48-50: Mittelspannung
+25;msns;Z49-51: Umspannung Mittel-/Niederspannung
+25;ns;Z50-52: Niederspannung
+36;hsms;Bild-PDF Seite 3: Umspannebene HS/MS
+36;ms;Bild-PDF Seite 3: Spannungsebene MS
+36;msns;Bild-PDF Seite 3: Umspannebene MS/NS
+36;ns;Bild-PDF Seite 3: Spannungsebene NS
+36;slp;Bild-PDF Seite 8: Grundpreis 73,00 Arbeitspreis 4,09
+38;msns;Z13-15: Umspannung 20/0,4 kV
+44;slp;Z157-162: Niederspannung 69,00 netto
+49;slp;Z170-175: Niederspannung 90,00 netto
+16;slp;Z18 Arbeitspreis 7,91 ct/kWh und Z26 Grundpreis 12,00 Euro/a
+50;hsms;Z38-42: Umspannung zur Mittelspannung (Beschriftung über zwei Zeilen)
+50;msns;Z44-48: Umspannung zur Niederspannung
+53;msns;Z137: Umspannung zur NSp
+65;slp;Z23 Grundpreis 116,80 netto und Z29 Arbeitspreis 6,34 netto
+73;msns;Z16: Mittelspannung mit Umspannung (MSU), Tagespreis 0,06720548 x 365 / 0,28405479 x 365 (PDF Netzkosten 2026)
+79;msns;Z18: Umspannung MS/NSp (netto/brutto)
+80;msns;Z38: Umspannung, Tabelle ab 2.500 h
+88;ms;Z54: Mittelspannung (Netto, Brutto)
+88;msns;Z55-57: Umspannung Mittel-/Niederspannung
+88;ns;Z60: Niederspannung
+94;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+95;msns;Z38: Umspannung (Tabelle ab 2.500 h)
+113;msns;Z46: Umspannung Mittel-/Niederspannung
+116;msns;Z15: Umspannung
+122;msns;Z38: Umspannung (Tabelle ab 2.500 h)
+135;hsms;Z15: Umspannung HSp - MSp
+135;msns;Z17: Umspannung MSp - NSp
+137;ms;Z23: Mittelspannung 128,99 / 0,90 (Tabelle ab 2.500 h)
+143;msns;Z27: Umspannung (netto, brutto in Klammern)
+162;msns;Z18: Umspannung MS auf NS
+169;msns;Z24: Umspannung auf Nspg.
+170;ns;Z43: Niederspannung 14,84 9,00 138,01 4,07
+173;hsms;Artikel 1-01-4, Tagespreis x 365
+173;ms;Artikel 1-01-5, Tagespreis x 365
+173;msns;Artikel 1-01-6, Tagespreis x 365
+173;ns;Artikel 1-01-7, Tagespreis x 365
+178;msns;Z25: Umspannung in Niederspannung
+192;ms;Z16: Mittelspannung 20 kV
+192;msns;Z19: Umspannung 20 kV / 400 V
+198;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+214;msns;Z33: Umspannung (Tabelle ab 2.500 h)
+196;ms;Z46: Mittelspannungsnetz 16,96 6,55 166,99 0,55

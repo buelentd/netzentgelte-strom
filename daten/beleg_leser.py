@@ -156,6 +156,17 @@ def belege(pfad):
         if eb in ab:
             u, a = unter[eb][0], ab[eb][0]
             res.append(dict(ebene=eb, werte=[u["werte"][0], u["werte"][1], a["werte"][0], a["werte"][1]], zeile=u["zeile"], label=u["label"], hinweis=f"zwei Tabellen (Zeilen {u['zeile']} und {a['zeile']})", art="vier"))
+    # Fallback: zwei Zwei-Zahlen-Zeilen derselben Ebene ohne Kopfvermerk -> erste = unter 2.500 h, zweite = ab 2.500 h, wenn LP steigt und AP fällt
+    frei = {}
+    for r in zw:
+        if not r.get("ab") and not r.get("unter"):
+            frei.setdefault(r["ebene"], []).append(r)
+    for eb, rows in frei.items():
+        for a, b in zip(rows, rows[1:]):
+            lp_u, ap_u = a["werte"][0], a["werte"][1]
+            lp_a, ap_a = b["werte"][0], b["werte"][1]
+            if lp_a > lp_u * 1.2 and ap_u >= ap_a and 0 < b["zeile"] - a["zeile"] < 60:
+                res.append(dict(ebene=eb, werte=[lp_u, ap_u, lp_a, ap_a], zeile=a["zeile"], label=a["label"], hinweis=f"zwei Tabellen in Reihenfolge (Zeilen {a['zeile']} und {b['zeile']})", art="vier"))
     return [r for r in res if r["art"] == "vier"]
 
 
@@ -172,6 +183,30 @@ def passt(w, ours, tol=0.011):
         if all(abs(x - y) <= tol for x, y in zip(netto, ours)):
             return True
     return False
+
+
+def schwach_beleg(L, eb, ours, tol=0.011):
+    """Zweiter Modus: Der Leistungspreis ab 2.500 h und der Arbeitspreis ab 2.500 h stehen im Umkreis von 3 Zeilen,
+    und die Beschriftung in der Zeile bzw. den beiden Zeilen davor ergibt dieselbe Ebene. Berücksichtigt Tagespreise (x 365) und Netto/Brutto."""
+    L2 = [bereinige(x) if x else x for x in L]
+    zahlen = [[zahl(m.group()) for m in ZAHL.finditer(l)] if l else [] for l in L2]
+    def hat(lst, v, tag_ok=False):
+        return any(abs(n - v) <= tol or (tag_ok and abs(n * 365 - v) <= 0.02) or (abs(n * 100 - v) <= 0.011 and n < 1) for n in lst)
+    lp_u, ap_u, lp_a, ap_a = ours
+    for i, l in enumerate(L2):
+        if not l or not zahlen[i]:
+            continue
+        if not hat(zahlen[i], lp_a, True):
+            continue
+        fenster = [n for j in range(max(0, i - 3), min(len(L2), i + 4)) for n in zahlen[j]]
+        if not (hat(fenster, ap_a) and hat(fenster, lp_u, True) and hat(fenster, ap_u)):
+            continue
+        kopf = re.split(r"\d", l, 1)[0]
+        ctxs = [l, kopf, " ".join([x for x in L2[max(0, i - 2):i] if x and not ZAHL.search(x)] + [kopf]), " ".join([x for x in L2[max(0, i - 2):i] if x] + [l])]
+        for c in ctxs:
+            if ebene_von(c) == eb:
+                return f"Zeile {i + 1}: {l[:70]}"
+    return None
 
 
 def unsere(r, eb):
@@ -194,6 +229,14 @@ def textdatei(r):
     return fs[0] if fs else None
 
 
+def manuell():
+    """lauf/beleg_manuell.csv: Werte, die Claude am Dokument (Text oder Seitenbild) Zeile für Zeile gesehen hat, obwohl der Leser das Layout nicht erkennt."""
+    try:
+        return {(x["nr"], x["ebene"]): x["fundstelle"] for x in csv.DictReader(open("lauf/beleg_manuell.csv", encoding="utf-8-sig"), delimiter=";")}
+    except FileNotFoundError:
+        return {}
+
+
 def bewerte(r):
     """Je Ebene: belegt (gleicher Wert in Zeile mit passender Beschriftung) | konflikt (Zeile mit passender Beschriftung, anderer Wert) | nicht_im_text | keine_ebene_im_text."""
     fs = textdateien(r)
@@ -205,8 +248,11 @@ def bewerte(r):
         B += belege(f)
         SL.append(zeilen(f))
     out = {}
+    MAN = manuell()
     for eb in EBENEN:
         ours = unsere(r, eb)
+        if ours is not None and (r["nr"], eb) in MAN:
+            out[eb] = ("belegt", MAN[(r["nr"], eb)], "manuell durch Claude am Dokument gesehen"); continue
         mit = [b for b in B if b["ebene"] == eb]
         if ours is None:
             out[eb] = ("leer_im_dokument_ebene_gefunden" if mit else "leer", "", "")
@@ -214,14 +260,22 @@ def bewerte(r):
         gl = [b for b in mit if passt(b["werte"], ours)]
         if gl:
             b = gl[0]; out[eb] = ("belegt", f"Zeile {b['zeile']}: {b['label']}", b["hinweis"])
+        elif any(schwach_beleg(Lx, eb, ours) for Lx in SL):
+            fund = next(schwach_beleg(Lx, eb, ours) for Lx in SL if schwach_beleg(Lx, eb, ours))
+            out[eb] = ("belegt", fund, "Beschriftung im Kontext der Zeile")
         elif mit:
             b = mit[0]; out[eb] = ("konflikt", f"Zeile {b['zeile']}: {b['label']} = " + "/".join(str(x) for x in b["werte"]), b["hinweis"])
+        elif any(schwach_beleg(Lx, eb, ours) for Lx in SL):
+            fund = next(schwach_beleg(Lx, eb, ours) for Lx in SL if schwach_beleg(Lx, eb, ours))
+            out[eb] = ("belegt", fund, "Beschriftung im Kontext der Zeile")
         else:
             out[eb] = ("keine_zeile_mit_passender_beschriftung", "", "")
     ap = float(r["slp_ap_ct_kwh"].replace(",", ".")) if r["slp_ap_ct_kwh"] else None
     gp = float(r["slp_grundpreis_eur_jahr"].replace(",", ".")) if r["slp_grundpreis_eur_jahr"] else None
     if ap is None or gp is None:
         out["slp"] = ("leer", "", "")
+    elif (r["nr"], "slp") in MAN:
+        out["slp"] = ("belegt", MAN[(r["nr"], "slp")], "manuell durch Claude am Dokument gesehen")
     else:
         for L in SL:
             b = slp_beleg(L, ap, gp)

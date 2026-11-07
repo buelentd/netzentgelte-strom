@@ -1,0 +1,217 @@
+Netzentgelte Strom für die Nutzung des Stromverteilnetzes der LEW
+Verteilnetz GmbH
+
+- VORBEMERKUNGEN -
+
+
+Die LEW Verteilnetz GmbH behält sich eine Anpassung der Netzentgelte 2026 aufgrund
+behördlicher, regulatorischer oder gesetzlicher Änderungen vor, sofern die Voraussetzung für
+eine unterjährige Anpassung vorliegen. Dies kann gegebenenfalls zur Nachforderung von
+Netzentgelten führen.
+
+Die Kalkulation erfolgte unter Berücksichtigung der Festlegung zur Verteilung EE-bedingter
+Mehrkosten (BK8-24-001-A) der Bundesnetzagentur.
+
+
+
+
+      LEW Verteilnetz GmbH                          Seite 1 von 23
+Abkürzungsverzeichnis
+
+RLM             Registrierende Leistungsmessung
+
+JLP             Jahresleistungspreis
+
+HöS             Höchstspannung
+
+HS              Hochspannung
+
+MS              Mittelspannung
+
+NS              Niederspannung
+
+AP              Arbeitspreis
+
+EnWG            Energiewirtschaftsgesetz
+
+MLP             Monatsleistungspreis
+
+LP              Leistungspreis
+
+KWK             Kraft-Wärme-Kopplung
+
+MSB             Messstellenbetrieb
+
+SBL             Straßenbeleuchtungsanlagen
+
+SLP             Standardlastprofil
+
+StromNEV        Stromnetzentgeltverordnung
+
+sVE             Steuerbare Verbrauchseinrichtung
+
+
+
+
+       LEW Verteilnetz GmbH                        Seite 2 von 23
+Alle Preise sind Nettopreise und werden zuzüglich der gesetzlichen Umsatzsteuer von derzeit
+19 % in Rechnung gestellt.
+
+
+
+
+      LEW Verteilnetz GmbH                         Seite 7 von 23
+Hinweis zur Preisbildung für steuerbare Verbrauchseinrichtungen
+gemäß § 14a EnWG
+
+
+Anwendungsbereich und Anwendungsfälle der netzorientieren Steuerung von steuerbaren
+Verbrauchseinrichtungen mit Wirkung ab dem 01. Januar 2024 werden durch die Festlegung der
+Beschlusskammer     6   (BK6-22/300)   definiert.   Netzentgeltliche   Regelungen   steuerbarer
+Verbrauchseinrichtungen gemäß § 14a EnWG werden ab dem 01. Januar 2024 durch die
+Festlegung der Beschlusskammer 8 (BK8-22/010-A) definiert. Die nachfolgenden Preise für
+steuerbare Verbrauchseinrichtungen (Bestandsanlagen, Modul 1 und 2) wurden auf Grundlage
+dieses Festlegungsbeschlusses ermittelt.
+
+Für Anlagen, die ab dem 01.01.2024 an das Netz angeschlossen werden, sind für die Preisbildung
+drei Module vorgesehen.
+
+Modul 1:
+
+Dies entspricht einer pauschalen Netzentgeltreduzierung je Netzbetreiber, welche sich als
+Summe von 80€ für die Einrichtung der Steuerbarkeit und einer netzbetreiberindividuellen
+Stabilitätsprämie ergibt. Die Stabilitätsprämie ist als Produkt des Arbeitspreises in der
+Niederspannung für Entnahme ohne Lastgangmessung im jeweiligen Netzgebiet, der Annahme
+eines Verbrauchs von 3.750 kWh einer durchschnittlichen steuerbaren Verbrauchseinrichtung
+und eines Stabilitätsfaktors von 20% zur Berechnung vorgesehen.
+
+Modul 2:
+
+Der reduzierte Arbeitspreis entspricht bundeseinheitlich 40% vom Arbeitspreis des jeweiligen
+Netzbetreibers für die Entnahme ohne Leistungsmessung in der Niederspannung.
+
+Modul 3:
+
+Dies ist ein zeitvariables Netzentgelt mit insgesamt drei Tarifstufen (Arbeitspreisstufen).
+Ausgehend vom Arbeitspreis für die Entnahme ohne Leistungsmessung, der Standardtarifstufe
+(ST), hat der Netzbetreiber eine Hochlasttarifstufe (HT) und eine Niedriglasttarifstufe (NT) zu
+bilden und in mindestens zwei Quartalen eines Jahres abzurechnen. Im übrigen Zeitraum gilt die
+Standardtarifstufe. Die Hochlasttarifstufe muss in mindestens 2 Stunden eines Tages
+abgerechnet werden und darf die Standardtarifstufe um maximal 100% übersteigen. Die
+Niedriglasttarifstufe ist im Korridor zwischen 10 und 40% der Standardtarifstufe zu bilden.
+
+Für das Verhältnis HT zu NT gilt: Ein hypothetischer Verbraucher mit einem dem
+Standardlastprofil für Haushaltskunden (H0) identischen Verbrauchsprofil wäre bei einer
+existierenden Wahlmöglichkeit indifferent zwischen dem Arbeitspreis für Entnahme ohne
+Leistungsmessung und dem Modul 3.
+
+
+
+
+      LEW Verteilnetz GmbH                            Seite 9 von 23
+Zusätzliche Informationen:
+
+Die Module 1 und 2 können von Betreibern steuerbarer Verbrauchseinrichtungen ausgewählt
+werden. Eine Wahlmöglichkeit zwischen den beiden Modulen besteht ausschließlich für
+Verbraucher   mit   Entnahme    ohne     Leistungsmessung.   Betreibern   von   steuerbaren
+Verbrauchseinrichtungen in den Netzebenen 6 und 7 mit leistungsgemessener Entnahme steht
+ausschließlich Modul 1 zu Verfügung. Für Betreiber steuerbarer Verbrauchseinrichtungen (mit
+Inbetriebnahme Datum ab 01.01.2024), die keine Entscheidung für ein Modul getroffen haben
+(z.B. Kunden mit sVE in der Grundversorgung), ist das Modul 1 als "Grundmodul" anzuwenden.
+
+Bestandsanlagen:
+
+Für steuerbare Verbrauchseinrichtungen, für die bereits vor dem 01.01.2024 ein reduziertes
+Netzentgelt nach § 14a EnWG bzw. der korrespondierenden Vorgängerregelung abgerechnet
+wurde, ist auf die prozentual gewährte Reduzierung des Arbeitspreises, sowie der Reduzierung
+des Grundpreises aus dem Preisblatt des Jahres 2023 abzustellen. Auf Wunsch des
+Anlagenbetreibers ist für die Zukunft ein Wechsel in eine netzorientierte Steuerung auf
+Grundlage der Module 1 oder 2 möglich.
+
+
+
+
+      LEW Verteilnetz GmbH                         Seite 10 von 23
+Die Preise verstehen sich zzgl. eines Entgeltes für Messstellenbetrieb inkl. Messdienstleistung
+(Preisblatt RLM MSB), sowie ggf. Mehrkosten durch Berechnung von Umlagen (Preisblatt
+Umlagen) gemäß Vorgaben, ggf. Konzessionsabgabe in der jeweiligen gesetzlichen Höhe und
+weiteren gesetzlichen Regelungen.
+
+Alle Preise sind Nettopreise und werden zuzüglich der gesetzlichen Umsatzsteuer von derzeit
+19 % in Rechnung gestellt.
+
+
+
+
+      LEW Verteilnetz GmbH                           Seite 13 von 23
+Nettopreise werden zuzüglich der gesetzlichen Umsatzsteuer von derzeit 19 % in Rechnung
+gestellt.
+
+
+
+
+       LEW Verteilnetz GmbH                     Seite 15 von 23
+Netzentgelte für steuerbare Verbrauchseinrichtungen gemäß § 14a
+EnWG
+Preisblatt sVE – Modul 3 – gültig ab 01.01.2026
+
+
+Modul 3 – nur in Ergänzung zu Modul 1
+
+Netznutzung mittels Standardlastprofilen
+
+Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß §
+14a EnWG bei steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 3 einzuhalten:
+
+•   bestehender     Netznutzungsvertrag      zwischen    Netzbetreiber    und    Lieferant    oder
+    Letztverbraucher
+•   technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der
+    Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung
+•   ausschließlich in Ergänzung zu Abrechnungsmodul 1 von Betreibern mit intelligentem
+    Messsystem und ohne registrierende Leistungsmessung wählbar
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche
+Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich der
+Stromentnahme (Einspeicherung) mit einer Netzanschlussleistung von mehr als 4,2 kW gemäß
+Festlegung BK6-22/300 Ziffer 2.4.1.
+
+
+
+Modul     3   beinhaltet   ein   zeitvariables   Netzentgelt   mit   insgesamt   drei   Tarifstufen
+(Arbeitspreisstufen):
+
+•   ST (Standardtarifstufe = Arbeitspreis für die Entnahme ohne Leistungsmessung)
+•   HT (Hochlasttarifstufe)
+•   NT (Niedriglasttarifstufe)
+
+
+
+
+        LEW Verteilnetz GmbH                            Seite 17 von 23
+Gesetzliche Umlagen
+Preisblatt Umlagen – gültig ab 01.01.2026
+
+
+Zusätzlich gelten die nachfolgenden gesetzlichen Umlagen:
+
+• KWK-G Umlage,
+
+• Umlage nach § 19 Abs. 2 StromNEV,
+
+• Offshore-Netzumlage nach § 17f EnWG.
+
+
+
+Die Höhe der aktuell geltenden gesetzlichen Umlagen sowie weiterführende Informationen zu
+den Umlagen entnehmen Sie bitte der gemeinsamen Internetplattform der deutschen
+Übertragungsnetzbetreiber:
+
+
+
+http://www.netztransparenz.de
+
+
+
+
+      LEW Verteilnetz GmbH                        Seite 22 von 23
+

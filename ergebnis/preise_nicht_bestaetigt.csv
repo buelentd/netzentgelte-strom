@@ -35,7 +35,6 @@
 196;FairNetz GmbH;HS/MS;13,89;5,65;146,72;0,34;ok;nächste Zeile hat 0 von 4 Werten;(10kV und 20 kV) / (HS/MS);SNB991882909515_0196.txt
 203;Freitaler Stadtwerke GmbH;Niederspannung;104,39;6,90;203,39;2,94;pruefen;nächste Zeile hat 0 von 4 Werten;Netzanschluss Niederspannung / ohne registrierende Lastgangmessung;SNB982241851170_0203.txt
 203;Freitaler Stadtwerke GmbH;MS/NS;72,86;5,71;180,86;1,39;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB982241851170_0203.txt
-206;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;HS/MS;9,27;1,85;40,83;0,59;ok;Ebenenzeile im Dokument nicht gefunden;;SNB926427521488_0206.txt
 240;Gemeindewerke Nümbrecht GmbH;Niederspannung;40,55;7,62;161,49;2,79;ok;nächste Zeile hat 2 von 4 Werten;Niederspannung > 2.500 h/a *) 161,49 192,17 2,79 3,32;SNB987153361809_0240.txt
 240;Gemeindewerke Nümbrecht GmbH;MS/NS;26,89;7,96;208,70;0,69;ok;nächste Zeile hat 2 von 4 Werten;Umspannung zur Niederspannung > 2.500 h/a *) 208,70 248,35 0,69 0,82;SNB987153361809_0240.txt
 240;Gemeindewerke Nümbrecht GmbH;Mittelspannung;24,21;6,78;174,33;0,77;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannung > 2.500 h/a *) 174,33 207,45 0,77 0,92;SNB987153361809_0240.txt
