@@ -97,4 +97,7 @@ RUNDE2 = {
     ("531", "ms"): [11.21, 6.33, 146.96, 0.90],                     # Iserlohn: Mittelspannungsnetz (stand doppelt als HS/MS)
     ("534", "ms"): [21.55, 6.05, 155.55, 0.69],                     # Jülich: Mittelspannungsnetz
     ("660", "hsms"): [13.33, 5.18, 132.83, 0.40], ("660", "ms"): [17.66, 6.43, 160.66, 0.71],   # Soest: Z16 Umspannung zur Mittelspannung, Z17 Mittelspannungsnetz; Hochspannung ist im Preisblatt mit Strich ausgewiesen
+    # Gegenprobe 07.11.2026 am frischen Original-PDF
+    ("26", "hsms"): [14.17, 5.10, 127.56, 0.57], ("26", "ms"): [13.64, 5.73, 143.99, 0.52], ("26", "msns"): [16.82, 5.68, 129.01, 1.19], ("26", "ns"): [19.49, 6.19, 88.19, 3.44],   # Energienetze Mittelrhein: Preisblatt 1 endgültige Entgelte 2026 (die früher eingetragenen Werte stammten aus einer Datei des Kollegen, die zu badenovaNETZE gehört)
+    ("142", "ms"): [18.36, 7.09, 181.93, 0.54], ("142", "msns"): [34.94, 7.63, 222.91, 0.11], ("142", "ns"): [43.37, 7.36, 202.69, 0.99],   # Hauenstein: Dokument unter derselben Adresse hat sich gegenüber unserem gespeicherten Text geändert
 }

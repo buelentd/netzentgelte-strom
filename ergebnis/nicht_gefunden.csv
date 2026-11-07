@@ -1,4 +1,5 @@
 nr;netzbetreiber;website;status;fehlt;vorhanden;grund;quelle_url
+26;Energienetze Mittelrhein GmbH ＆ Co. KG;www.energienetze-mittelrhein.de;pruefen;SLP;RLM NS;SLP-Werte nicht gefunden;https://www.energienetze-mittelrhein.de/mediendateien/downloads/stromnetz/netzzugang-und-netzentgelte/2025-12-31-preisblatt-1-endgueltige-entgelte-2026.pdf?cid=2t9
 39;SachsenNetze GmbH;www.sachsen-netze.de;pruefen;SLP;RLM NS, SLP;SLP-Werte nicht gefunden;https://www.sachsen-netze.de/wps/wcm/connect/netze/eea2c39a-7bd4-4863-9342-fa97f6788883/Preise-Netznutzung-Strom-Niederspannung-2026.pdf?MOD=AJPERES
 46;Thüga Energienetze GmbH;www.thuega-energienetze.de;pruefen;SLP;RLM NS, SLP;SLP-Werte nicht gefunden;https://www.thuega-netze.de/wp-content/uploads/ThuegaNETZE_Lieferanten_Strom_Netzentgelte_Preisblatt_01.01.2026-bis-31.12.2026.pdf
 66;BIGGE ENERGIE GmbH ＆ Co. KG;www.bigge-energie.de;pruefen;RLM;RLM NS, SLP;"keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 30.05 ct/kWh außerhalb 3–15; RLM-Werte nicht gefunden; SLP-Werte auffällig";https://www.bigge-energie.de/fileadmin/user_upload/Preise_BIGGE_mini_Strom_ooA_01.02.2026.pdf

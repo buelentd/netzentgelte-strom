@@ -1,31 +1,31 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 07.11.2026 09:24, 831 Netzbetreiber bzw. Netzgebiete
+Stand 07.11.2026 09:38, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 597 | 72% |
-| pruefen | 215 | 26% |
+| ok | 596 | 72% |
+| pruefen | 216 | 26% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 493,  104
+Preisstand (nur ok): endgültig 492,  104
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 774)
+- Median: 7,25 ct/kWh (n = 773)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,42 ct/kWh (n = 771)
+- Median: 6,41 ct/kWh (n = 771)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
@@ -159,15 +159,16 @@ Preisstand (nur ok): endgültig 493,  104
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (234)
+## Restfälle (235)
 
-### pruefen (215)
+### pruefen (216)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
 - 5. EWE NETZ GmbH: 
 - 10. Netze ODR GmbH: 
 - 13. TEN Thüringer Energienetze GmbH ＆ Co. KG: 
+- 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 30. Bayernwerk Netz GmbH: 
 - 31. Schleswig-Holstein Netz GmbH: 
 - 32. E.DIS Netz GmbH: 

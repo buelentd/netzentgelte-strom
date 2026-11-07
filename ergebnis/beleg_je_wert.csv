@@ -124,11 +124,11 @@
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;msns;belegt;Z49-51: Umspannung Mittel-/Niederspannung;manuell durch Claude am Dokument gesehen
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;ns;belegt;Z50-52: Niederspannung;manuell durch Claude am Dokument gesehen
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;slp;belegt;Zeile 16: Steuerbare Verbrauchseinrichtungen (sVE) gem. § 14a EnWG;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;hsms;belegt;Zeile 20: Umspannung HS/MS  HS/MS;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;ms;belegt;Zeile 22: Mittelspannung*  MS;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;msns;belegt;Zeile 24: Umspannung MS/NS  MS/NS;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;ns;belegt;Zeile 26: Niederspannung  NS;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;slp;belegt;Zeile 44: Euro/a  Ct/kWh;
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;hsms;konflikt;Zeile 40: 4)  bei Entnahme aus der Umspannung Hoch-/Mittelspannung = 14.17/5.1/21.26/0.57;zwei Tabellen in Reihenfolge (Zeilen 40 und 60)
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ms;konflikt;Zeile 41: 5)  bei Entnahme in der Mittelspannungsebene = 13.64/5.73/24.0/0.52;zwei Tabellen in Reihenfolge (Zeilen 41 und 61)
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;msns;konflikt;Zeile 42: 6)  bei Entnahme aus der Umspannung Mittel-/Niederspannung = 16.82/5.68/21.5/1.19;zwei Tabellen in Reihenfolge (Zeilen 42 und 62)
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;slp;leer;;
 27;SNB928759560869;WEMAG Netz GmbH;ok;hsms;belegt;Zeile 17: Umspannung Hoch-/Mittelspannung;zwei Tabellen (Zeilen 17 und 26)
 27;SNB928759560869;WEMAG Netz GmbH;ok;ms;belegt;Zeile 18: Mittelspannung;zwei Tabellen (Zeilen 18 und 27)
 27;SNB928759560869;WEMAG Netz GmbH;ok;msns;belegt;Zeile 19: Umspannung Mittel-/Niederspannung;zwei Tabellen (Zeilen 19 und 28)
@@ -704,9 +704,9 @@
 141;SNB936172924014;Energie Waldeck-Frankenberg GmbH;pruefen;ns;belegt;Zeile 46: Niederspannung;netto aus Netto/Brutto
 141;SNB936172924014;Energie Waldeck-Frankenberg GmbH;pruefen;slp;belegt;Zeile 124: Grundpreis  Arbeitspreis;
 142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;hsms;leer;;
-142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;ms;belegt;Zeile 21: n Mittelspannung;
-142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;msns;belegt;Zeile 22: n Umspannung Mittel-/Niederspannung;
-142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;ns;belegt;Zeile 23: n Niederspannung;
+142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;ms;belegt;Zeile 15: n Mittelspannung;
+142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;msns;belegt;Zeile 16: n Umspannung Mittel-/Niederspannung;
+142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;ns;belegt;Zeile 17: n Niederspannung;
 142;SNB997465895442;Energie- und Bäderbetrieb Hauenstein;ok;slp;belegt;Zeile 63: Grundpreis  Arbeitspreis;
 143;SNB921626387354;energie- und wassergesellschaft mbh;ok;hsms;leer;;
 143;SNB921626387354;energie- und wassergesellschaft mbh;ok;ms;belegt;Zeile 24: Mittelspannung;netto aus Netto/Brutto

@@ -16,3 +16,6 @@ nr;ebene;grund
 720;hsms;gleiche Werte wie MS/NS; entfernt
 783;hsms;gleiche Werte wie MS/NS; entfernt
 191;hsms;gleiche Werte wie Mittelspannung; entfernt
+193;alle;Quelle ist die Seite der Stadtwerke Rheine (EWR GmbH Rheine), Name im Row "EWR Netze GmbH (Lichtenstein-Unterhausen)": Zuordnung der Preisblattdatei zum Netzbetreiber ungeklärt
+26;alle;Früher falsche Zuordnung: die Datei des Kollegen gehörte zu badenovaNETZE; Werte am 07.11.2026 aus dem Original-PDF von Energienetze Mittelrhein neu eingetragen
+142;alle;Dokument unter derselben Adresse hatte sich gegenüber unserem gespeicherten Text geändert; Werte am 07.11.2026 aus dem frischen PDF neu eingetragen

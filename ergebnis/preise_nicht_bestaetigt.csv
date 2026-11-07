@@ -5,10 +5,6 @@
 14;N-ERGIE Netz GmbH;HS/MS;14,69;3,87;97,45;0,56;ok;nächste Zeile hat 1 von 4 Werten;Umspannung Hoch-/ Mittelspannung 16,24 (19,33) 0,56 (0,67);SNB973875583315_0014.txt
 18;naturenergie netze GmbH;HS/MS;19,22;6,25;155,34;0,81;ok;nächste Zeile hat 0 von 4 Werten;HS/MS;SNB945502201350_0018.txt
 21;Bielefelder Netz GmbH;HS/MS;6,47;4,81;112,65;0,56;ok;nächste Zeile hat 1 von 4 Werten;Umspannung Hoch-/Mittelspannung 6,47;SNB918516395612_0021.txt
-26;Energienetze Mittelrhein GmbH ＆ Co. KG;Niederspannung;49,76;7,44;131,07;4,18;ok;nächste Zeile hat 0 von 4 Werten;6) bei Entnahme aus der Umspannung Mittel-/Niederspannung 129,01 1,19;SNB980055629275_0026.txt
-26;Energienetze Mittelrhein GmbH ＆ Co. KG;MS/NS;49,59;7,42;156,64;3,13;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
-26;Energienetze Mittelrhein GmbH ＆ Co. KG;Mittelspannung;40,61;7,21;173,90;1,88;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
-26;Energienetze Mittelrhein GmbH ＆ Co. KG;HS/MS;35,56;6,79;168,93;1,45;ok;nächste Zeile hat 0 von 4 Werten;4) bei Entnahme aus der Umspannung Hoch-/Mittelspannung 127,56 0,57;SNB980055629275_0026.txt
 28;WSW Netz GmbH;HS/MS;8,79;4,42;116,72;0,10;ok;nächste Zeile hat 0 von 4 Werten;10053167575 Umspannung 110 / 10 kV 38.622 €/a;SNB914306944756_0028.txt
 36;LEW Verteilnetz GmbH;Niederspannung;8,02;5,51;97,34;1,94;ok;nächste Zeile hat 0 von 4 Werten;NS Niederspannung;SNB911705062982_0036.txt
 36;LEW Verteilnetz GmbH;MS/NS;5,54;5,55;140,32;0,15;ok;Ebenenzeile im Dokument nicht gefunden;;SNB911705062982_0036.txt
@@ -23,6 +19,9 @@
 117;Elektrizitätswerk des Kantons Schaffhausen AG;Mittelspannung;20,50;10,95;228,25;2,65;pruefen;nächste Zeile hat 0 von 4 Werten;Messstellen- Lastgangmessung in Mittelspannung 744,00 885,36 744,00 885,36;SNB985099151188_0117.txt
 118;Elektrizitätswerk Dießen Stadler GmbH;Niederspannung;20,50;7,20;133,50;3,55;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahmestellen ohne Leistungsmessung, die im Niederspannungsnetz angeschlossen;SNB916328839515_0118.txt
 118;Elektrizitätswerk Dießen Stadler GmbH;MS/NS;18,95;6,20;149,95;0,25;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB916328839515_0118.txt
+142;Energie- und Bäderbetrieb Hauenstein;Niederspannung;43,37;7,36;202,69;0,99;ok;nächste Zeile hat 0 von 4 Werten;n Umspannung Mittel-/Niederspannung 34,92 7,34 212,64 0,23;SNB997465895442_0142.txt
+142;Energie- und Bäderbetrieb Hauenstein;MS/NS;34,94;7,63;222,91;0,11;ok;nächste Zeile hat 0 von 4 Werten;n Umspannung Mittel-/Niederspannung 34,92 7,34 212,64 0,23;SNB997465895442_0142.txt
+142;Energie- und Bäderbetrieb Hauenstein;Mittelspannung;18,36;7,09;181,93;0,54;ok;nächste Zeile hat 0 von 4 Werten;n Mittelspannung 18,30 7,23 187,21 0,47;SNB997465895442_0142.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Niederspannung;40,20;5,60;91,56;3,55;ok;nächste Zeile hat 1 von 4 Werten;Niederspannungsnetz 40,20;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;MS/NS;41,64;3,83;81,24;2,24;ok;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 41,64;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Mittelspannung;36,60;3,06;60,96;2,09;ok;nächste Zeile hat 1 von 4 Werten;Mittelspannungsnetz 36,60;SNB932549440224_0153.txt

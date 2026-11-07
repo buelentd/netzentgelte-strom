@@ -1,6 +1,7 @@
 ﻿nr;ebene;grund
 2;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 13;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
+26;slp;"Die SLP-Werte 7,29 ct / 75,00 € stammten aus der Datei, die zu badenovaNETZE gehört; im Preisblatt von Energienetze Mittelrhein steht kein SLP-Preis"
 52;hsms;Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument
 57;ns;"Das Preisblatt weist keine Niederspannung aus (tiefste Ebene ist Umspannung MS/NS); die Werte waren die MS/NS-Zeile"
 74;ns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
