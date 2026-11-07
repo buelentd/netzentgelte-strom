@@ -126,7 +126,7 @@ def belege(pfad):
     """Liefert Liste von Belegen: dict(ebene, werte(4), zeile, label, hinweis)."""
     L = zeilen(pfad)
     cand = kandidaten(L)
-    res = []
+    res = list(belege_artikel(L))
     # Vierer-Zeilen
     for c in cand:
         if not c["ebene"]:
@@ -168,6 +168,43 @@ def belege(pfad):
             if lp_a > lp_u * 1.2 and ap_u >= ap_a and 0 < b["zeile"] - a["zeile"] < 60:
                 res.append(dict(ebene=eb, werte=[lp_u, ap_u, lp_a, ap_a], zeile=a["zeile"], label=a["label"], hinweis=f"zwei Tabellen in Reihenfolge (Zeilen {a['zeile']} und {b['zeile']})", art="vier"))
     return [r for r in res if r["art"] == "vier"]
+
+
+ARTIKEL = re.compile(r"\b1-01-([3-7])-00([1-4])\b")
+ART_EBENE = {"4": "hsms", "5": "ms", "6": "msns", "7": "ns", "3": "hs"}
+
+
+def belege_artikel(L):
+    """Preisblätter mit BDEW-Artikel-IDs: 1-01-4 HS/MS, 1-01-5 MS, 1-01-6 MS/NS, 1-01-7 NS; -001 LP unter, -002 AP unter, -003 LP ab, -004 AP ab.
+    Leistungspreis €/kW*Tag wird mit 365, Arbeitspreis €/kWh mit 100 umgerechnet; steht der Jahreswert in derselben Zeile, wird er genommen."""
+    rec = {}
+    for i, l in enumerate(L):
+        m = ARTIKEL.search(l)
+        if not m:
+            continue
+        rest = l[m.end():]
+        nums = [zahl(x.group()) for x in ZAHL.finditer(rest)]
+        if not nums:
+            continue
+        niv, pos = m.group(1), int(m.group(2))
+        if pos in (1, 3):
+            if len(nums) >= 2 and abs(nums[0] * 365 - nums[1]) < 0.06:
+                v = nums[1]
+            elif nums[0] < 2:
+                v = round(nums[0] * 365, 2)
+            else:
+                v = nums[0]
+        else:
+            if re.search(r"€\s*/\s*kwh", rest, re.I) or nums[0] < 1:
+                v = round(nums[0] * 100, 4)
+            else:
+                v = nums[0]
+        rec.setdefault(niv, {})[pos] = (v, i + 1)
+    out = []
+    for niv, d in rec.items():
+        if all(k in d for k in (1, 2, 3, 4)) and niv in ART_EBENE:
+            out.append(dict(ebene=ART_EBENE[niv], werte=[d[1][0], d[2][0], d[3][0], d[4][0]], zeile=d[1][1], label=f"Artikel-ID 1-01-{niv}", hinweis="Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100", art="vier"))
+    return out
 
 
 def passt(w, ours, tol=0.011):
@@ -270,6 +307,11 @@ def bewerte(r):
             out[eb] = ("belegt", fund, "Beschriftung im Kontext der Zeile")
         else:
             out[eb] = ("keine_zeile_mit_passender_beschriftung", "", "")
+    # Zwei Ebenen mit identischen Werten sind ein Zuordnungsfehler, nie ein Beleg (Ausnahme: Industrienetz mit einer einzigen Tarifstufe je Ebene wird nicht erkannt und bleibt offen)
+    werte = {eb: unsere(r, eb) for eb in EBENEN}
+    for eb, w in werte.items():
+        if w is not None and sum(1 for w2 in werte.values() if w2 == w) > 1 and out.get(eb, ("",))[0] == "belegt":
+            out[eb] = ("konflikt", "identische Werte in zwei Ebenen", "Zuordnung prüfen")
     ap = float(r["slp_ap_ct_kwh"].replace(",", ".")) if r["slp_ap_ct_kwh"] else None
     gp = float(r["slp_grundpreis_eur_jahr"].replace(",", ".")) if r["slp_grundpreis_eur_jahr"] else None
     if ap is None or gp is None:

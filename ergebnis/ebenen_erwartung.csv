@@ -55,7 +55,7 @@ SNB969871992015;53;Albstadtwerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewies
 SNB926699071292;54;Albwerk GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB926394308747;55;AllgäuNetz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB931070025696;56;Alliander Netz Heinsberg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB922722422505;57;Alzchem Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB922722422505;57;Alzchem Netz GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
 SNB918620072652;58;ASCANETZ GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB911081401368;59;Aschaffenburger Versorgungs-GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB967794191157;60;AVU Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -135,7 +135,7 @@ SNB969483935394;133;Elektrizitätswerke Reutte GmbH ＆ Co. KG;pruefen;gelesen;g
 SNB974894111862;134;Elektrizitätswerke Schönau Netze GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB931431136771;135;Elektroenergieversorgung Cottbus GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB913866241817;136;EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB913563830420;137;ENA Energienetze Apolda GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB913563830420;137;ENA Energienetze Apolda GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB905238986457;138;enercity GridPartner GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
 SNB913289502922;139;eneREGIO GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB976371748981;140;Energie Calw GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -189,7 +189,7 @@ SNB924535591034;187;EVU Späth e.K.;pruefen;gelesen;gelesen;gelesen;nicht_ausgew
 SNB945750197795;188;EVU Weilerbach;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB977966674678;189;EW Geiger GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934984130722;190;ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB924747450655;191;EWR GmbH (Remscheid);pruefen;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB924747450655;191;EWR GmbH (Remscheid);pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969068596941;192;EWR Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB923953358557;193;EWR Netze GmbH (Lichtenstein-Unterhausen);ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB911838879365;194;ews - Netz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -274,7 +274,7 @@ SNB924453035597;272;Hellenstein-Energie-Logistik GmbH;ok;gelesen;gelesen;gelesen
 SNB964592501355;273;Hertener Stadtwerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB930312838582;274;Herzo Werke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB982085566391;275;HEWA GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB974319144116;276;IGS Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB974319144116;276;IGS Netze GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB916663914472;277;inetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB911960309587;278;infra fürth gmbh;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB982722829230;279;InfraLeuna GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
@@ -690,7 +690,7 @@ SNB947683785568;688;Stadtwerke Uffenheim;pruefen;gelesen;gelesen;gelesen;nicht_a
 SNB934068635945;689;Stadtwerke Ulm/Neu-Ulm Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB944150243392;690;Stadtwerke Unna GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB925861098273;691;Stadtwerke Uslar GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB974492211483;692;Stadtwerke Velbert GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB974492211483;692;Stadtwerke Velbert GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB957440824454;693;Stadtwerke Velten GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB962996832648;694;Stadtwerke Verden GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB961283575572;695;Stadtwerke Viernheim Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -718,7 +718,7 @@ SNB935723521351;716;Stadtwerke Weinheim GmbH;pruefen;gelesen;nicht_ausgewiesen;g
 SNB965819408044;717;STADTWERKE WEISSENBURG GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB933274941888;718;Stadtwerke Weißenfels Energienetze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB918084816830;719;Stadtwerke Weißwasser GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB962389410347;720;Stadtwerke Werdau GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB962389410347;720;Stadtwerke Werdau GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB979980141082;721;Stadtwerke Werl GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914879260819;722;Stadtwerke Wernigerode GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB922051401837;723;Stadtwerke Wertheim GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
@@ -781,7 +781,7 @@ SNB960060046328;779;SWN Stadtwerke Northeim GmbH;ok;gelesen;gelesen;gelesen;nich
 SNB943662886851;780;SWO Netz GmbH;pruefen;im_dokument_nicht_gelesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;fehlt
 SNB929168402344;781;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB981113965977;782;SWR Energie GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB915638224585;783;SWS Netze GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;gelesen
+SNB915638224585;783;SWS Netze GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB969362778135;784;SWS Netze Solingen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
 SNB950006175489;786;SWTE Netz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen

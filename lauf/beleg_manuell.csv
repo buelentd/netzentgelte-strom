@@ -60,3 +60,76 @@ nr;ebene;fundstelle
 198;msns;Z34: Umspannung (Tabelle ab 2.500 h)
 214;msns;Z33: Umspannung (Tabelle ab 2.500 h)
 196;ms;Z46: Mittelspannungsnetz 16,96 6,55 166,99 0,55
+217;msns;Z13: Umspannung
+234;msns;Z46: Umspannung (Tabelle ab 2.500 h)
+243;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+260;msns;Z27: Umspannung (netto, brutto in Klammern)
+261;msns;Z127: Umspannung zur Niederspannung
+268;msns;Z27: Umspannung
+274;msns;Z30: Umspannung (Tabelle ab 2.500 h)
+275;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+276;slp;Z107 Arbeitspreis 9,92 und Z116 Grundpreis 42,00 Niederspannungsnetz
+289;msns;Z25: Umspannung
+292;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+299;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+305;slp;Z157 Arbeitspreis 7,96 und Z165 Grundpreis 72,00 Niederspannung netto
+320;ms;Artikel 1-01-5 Mittelspannung, Tagespreis
+320;msns;Artikel 1-01-6 Umspannung Mittel-/Niederspannung
+320;ns;Artikel 1-01-7 Niederspannung
+320;slp;Artikel 1-02-0-001 Grundpreis 65,70 und 1-02-0-002 Arbeitspreis 8,05 netto
+336;hsms;Z20: Hochspannung einschl. Umspannung (HS/MS)
+336;msns;Z24: Mittelspannung einschl. Umspannung (MS/NS)
+339;msns;Z15: Umspannung NS
+341;ms;Z13: Spalte Mittelspannung (Kopf: Mittelspannung, Umspannung in Niederspannung, Niederspannung)
+341;msns;Z13: Spalte Umspannung in Niederspannung
+341;ns;Z13: Spalte Niederspannung
+354;slp;Z67 Grundpreis 60,00 und Z74 Arbeitspreis 5,06 ct/kWh
+361;msns;Z39: Umspannung Mittel- auf Niederspannung
+365;slp;Z53 Grundpreis 86,40 und Z61 Arbeitspreis 5,45 (Artikel 1-02-0)
+372;msns;Z23: Umspannung (Tag- und Jahreswert)
+372;ns;Z26: Niederspannung
+379;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+381;slp;Z51 Arbeitspreis 6,16 und Z59 Grundpreis 55,00
+384;msns;Z15: Umspannung
+385;msns;Z28: Umspannung (netto, brutto in Klammern)
+404;msns;Z24: Umspannung zur Niederspannung
+413;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+415;msns;Z25: Umspannung (MN)
+417;msns;Z19: Umspannung in NS
+420;hsms;Z14: Umspannung HSp - MSp
+420;msns;Z20: Umspannung MSp - NSp
+436;msns;Z21: Umspannung (Tag- und Jahreswert)
+436;ns;Z24: Niederspannung
+439;msns;Z35: Umspannung (Tabelle ab 2.500 h)
+354;ms;Artikel 1-01-5-001/002/003/004 (Spalte Mittelspannung)
+354;msns;Artikel 1-01-6 (Spalte Umspannung)
+354;ns;Artikel 1-01-7 (Spalte Niederspannung)
+425;slp;Entnahmestelle ohne registrierende Lastgangmessung Grundpreis 80,00 Arbeitspreis 5,64 netto
+450;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+465;msns;Z70: Umspannung
+479;msns;Z67: Umspannung (MS)
+480;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+485;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+497;slp;Artikel 1-02-0-001 Grundpreis 63,50 und 1-02-0-002 Arbeitspreis 5,48
+512;ms;Z33: Mittelspannungsnetz (netto, brutto)
+512;msns;Z34: Umspannung MSp-NSp
+512;ns;Z35: Niederspannungsnetz
+525;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+526;msns;Z22: Umspannung
+528;ms;Z208: Mittelspannungsnetz (netto, brutto)
+528;msns;Z209-211: Umspannung Mittel- auf Niederspannung
+528;ns;Z214: Niederspannungsnetz
+544;hsms;PDF Netznutzungsentgelte ab 01.01.2026: Netzebene 4 Umspannung in Mittelspannung, fünf Nachkommastellen im PDF
+544;ms;PDF: Netzebene 5 Mittelspannung
+544;msns;PDF: Netzebene 6 Umspannung in Niederspannung
+544;ns;PDF: Netzebene 7 Niederspannung
+544;slp;PDF: Standardlastprofilkunden Grundpreis 59,9987 Arbeitspreis 6,09
+551;ms;Artikel 1-01-5 Mittelspannung
+551;msns;Artikel 1-01-6 Umspannung Mittel- auf Niederspannung
+551;ns;Artikel 1-01-7 Niederspannung
+559;msns;Z12: Umspannung
+561;msns;Z24: Umspannung MSp - NSp
+562;msns;Z20: Umspannung MSp - NSp
+567;ms;Artikel 1-01-5 Mittelspannung
+567;msns;Artikel 1-01-6 Umspannung Mittel-/Niederspannung
+567;ns;Artikel 1-01-7 Niederspannung

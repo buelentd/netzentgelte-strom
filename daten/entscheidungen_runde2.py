@@ -93,4 +93,7 @@ RUNDE2 = {
     ("275", "ms"): [21.94, 8.39, 214.53, 0.68],                     # HEWA: bisher Platzhalterwerte 10/6/31/2
     ("251", "ns"): [37.19, 9.42, 134.10, 5.54],                     # Wendelstein: bisher MS/NS-Zeile als NS geführt
     ("196", "ms"): [16.96, 6.55, 166.99, 0.55],                     # FairNetz: HS/MS-Zeile stand doppelt (als HS/MS und als Mittelspannung); Z46 Mittelspannungsnetz
+    ("425", "slp"): [5.64, 80.00],                                  # Böblingen: bisher Speicherheizungstarif (3,03 / 2,55) als SLP geführt
+    ("531", "ms"): [11.21, 6.33, 146.96, 0.90],                     # Iserlohn: Mittelspannungsnetz (stand doppelt als HS/MS)
+    ("534", "ms"): [21.55, 6.05, 155.55, 0.69],                     # Jülich: Mittelspannungsnetz
 }

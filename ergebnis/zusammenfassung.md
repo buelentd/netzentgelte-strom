@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 07.11.2026 09:15, 831 Netzbetreiber bzw. Netzgebiete
+Stand 07.11.2026 09:19, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 614 | 74% |
-| pruefen | 198 | 24% |
+| ok | 609 | 73% |
+| pruefen | 203 | 24% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 13 | 2% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 508,  106
+Preisstand (nur ok): endgültig 504,  105
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -25,13 +25,13 @@ Preisstand (nur ok): endgültig 508,  106
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,41 ct/kWh (n = 772)
+- Median: 6,42 ct/kWh (n = 771)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 463,24 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 150,50 €/kW/a (n = 772)
+- Median: 150,50 €/kW/a (n = 771)
 
 ## Datenherkunft
 
@@ -52,9 +52,8 @@ Preisstand (nur ok): endgültig 508,  106
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (106)
+## Status ok, aber Preisstand nicht endgültig (105)
 
-- 57. Alzchem Netz GmbH: 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
 - 94. Elektra - Genossenschaft Pinzberg eG: 
@@ -161,9 +160,9 @@ Preisstand (nur ok): endgültig 508,  106
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (217)
+## Restfälle (222)
 
-### pruefen (198)
+### pruefen (203)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -175,6 +174,7 @@ Preisstand (nur ok): endgültig 508,  106
 - 40. Netze Magdeburg GmbH: 
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
 - 52. Ahrtal-Werke GmbH: 
+- 57. Alzchem Netz GmbH: 6 Dokument(e) geprüft: gültig ab [2024], nicht 2026; fiktive Entgelte; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 63. BASF InfraService ＆ Solutions Lausitz GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 66. BIGGE ENERGIE GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 30.05 ct/kWh außerhalb 3–15; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 67. Blomberg Netz GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -207,6 +207,7 @@ Preisstand (nur ok): endgültig 508,  106
 - 133. Elektrizitätswerke Reutte GmbH ＆ Co. KG: 
 - 134. Elektrizitätswerke Schönau Netze GmbH: SLP-Werte nicht gefunden
 - 136. EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG: 
+- 137. ENA Energienetze Apolda GmbH: SLP-Werte nicht gefunden
 - 138. enercity GridPartner GmbH: SLP-Werte nicht gefunden
 - 141. Energie Waldeck-Frankenberg GmbH: 
 - 144. Energie- und Wasserversorgung Altenburg GmbH: SLP-Werte nicht gefunden
@@ -253,6 +254,7 @@ Preisstand (nur ok): endgültig 508,  106
 - 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 266. GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG: 
 - 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
+- 276. IGS Netze GmbH: SLP-Werte nicht gefunden
 - 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: fiktive Entgelte; weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2026 nicht im
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 281. InfraServ GmbH ＆ Co. Wiesbaden KG: HTTP 403 https://www.infraserv-wi.de; HTTP 405 http://www.infraserv-wi.de
@@ -340,8 +342,10 @@ Preisstand (nur ok): endgültig 508,  106
 - 665. Stadtwerke St. Ingbert GmbH: 
 - 678. Stadtwerke Teterow GmbH: 14 Dokument(e) geprüft: kein Text im Dokument (Scan?); Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2026 nicht im Dokument
 - 688. Stadtwerke Uffenheim: 
+- 692. Stadtwerke Velbert GmbH: 
 - 713. Stadtwerke Wasserburg a. Inn: 
 - 716. Stadtwerke Weinheim GmbH: SLP-Werte nicht gefunden
+- 720. Stadtwerke Werdau GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 725. Stadtwerke Wilster: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 729. Stadtwerke Witten Mittelspannungsnetz GmbH: 
 - 734. Stadtwerke Zeil a. Main: 

@@ -5,3 +5,14 @@ nr;ebene;grund
 57;ns;Annahme: Industrienetz, tiefste Ebene im Dokument ist Umspannung MS/NS; NS wurde mit MS/NS gleichgesetzt
 5;ns;kein Dokumenttext
 30;msns;kein Dokumenttext
+306;ns;Zeile heißt "Entnahme aus Umspannung (NSP)": unklar, ob Niederspannung oder Umspannung MS/NS
+331;hsms;Wert steht in der Zeile "Hochspannung" (HS direkt), nicht in einer Zeile HS/MS: Zuordnung prüfen
+299;slp;SLP-Werte 12,48/27,61 stehen nicht im Text
+277;slp;SLP-Werte 4,21/3,54 stehen nicht im Text
+263;slp;SLP-Werte 6,77/80,00 stehen nicht im Text
+137;hsms;Beleg-Leser hatte hsms = msns gesetzt (Zeile Umspannung doppelt zugeordnet); entfernt
+276;hsms;Preisblatt weist HS/MS nur mit Strich aus; Beleg-Leser hatte die Mittelspannungszeile zugeordnet; entfernt
+692;hsms;gleiche Werte wie Mittelspannung; entfernt
+720;hsms;gleiche Werte wie MS/NS; entfernt
+783;hsms;gleiche Werte wie MS/NS; entfernt
+191;hsms;gleiche Werte wie Mittelspannung; entfernt

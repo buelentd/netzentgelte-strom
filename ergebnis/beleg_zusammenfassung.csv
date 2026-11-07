@@ -1,6 +1,6 @@
 ﻿nr;mastr_nr;netzbetreiber;status;beleg;offene_ebenen
 1;SNB979269087643;Stromnetz Berlin GmbH;ok;alle_belegt;
-2;SNB969473762610;SWM Infrastruktur GmbH ＆ Co. KG;pruefen;offen;"hsms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+2;SNB969473762610;SWM Infrastruktur GmbH ＆ Co. KG;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
 3;SNB948311994307;Netze BW GmbH;ok;alle_belegt;
 4;SNB990362338043;Avacon Netz GmbH;pruefen;alle_belegt;
 5;SNB951051725711;EWE NETZ GmbH;ok;offen;"ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
@@ -28,14 +28,14 @@
 27;SNB928759560869;WEMAG Netz GmbH;ok;alle_belegt;
 28;SNB914306944756;WSW Netz GmbH;ok;alle_belegt;
 29;SNB921897286493;Westnetz GmbH;ok;alle_belegt;
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;offen;"msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+30;SNB940352624434;Bayernwerk Netz GmbH;ok;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:leer_im_dokument_ebene_gefunden"
 31;SNB990857029876;Schleswig-Holstein Netz GmbH;pruefen;alle_belegt;
 32;SNB941690671609;E.DIS Netz GmbH;pruefen;alle_belegt;
 33;SNB918250928893;Syna GmbH;ok;alle_belegt;
 34;SNB947592865054;Stuttgart Netze GmbH;ok;alle_belegt;
 35;SNB942238573102;wesernetz Bremen GmbH;ok;alle_belegt;
 36;SNB911705062982;LEW Verteilnetz GmbH;ok;alle_belegt;
-37;SNB921899277833;NRM Netzdienste Rhein-Main GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+37;SNB921899277833;NRM Netzdienste Rhein-Main GmbH;ok;alle_belegt;
 38;SNB961471621746;Pfalzwerke Netz AG;ok;alle_belegt;
 39;SNB980808485264;SachsenNetze GmbH;pruefen;offen;ns:keine_zeile_mit_passender_beschriftung
 40;SNB933459598975;Netze Magdeburg GmbH;pruefen;alle_belegt;
@@ -55,12 +55,12 @@
 54;SNB926699071292;Albwerk GmbH ＆ Co. KG;ok;alle_belegt;
 55;SNB926394308747;AllgäuNetz GmbH ＆ Co. KG;ok;alle_belegt;
 56;SNB931070025696;Alliander Netz Heinsberg GmbH;ok;alle_belegt;
-57;SNB922722422505;Alzchem Netz GmbH;ok;offen;ns:keine_zeile_mit_passender_beschriftung
+57;SNB922722422505;Alzchem Netz GmbH;pruefen;alle_belegt;
 58;SNB918620072652;ASCANETZ GmbH;ok;alle_belegt;
 59;SNB911081401368;Aschaffenburger Versorgungs-GmbH;ok;alle_belegt;
 60;SNB967794191157;AVU Netz GmbH;ok;alle_belegt;
 61;SNB973356062049;Bad Honnef AG;ok;alle_belegt;
-62;SNB965774651691;badenovaNETZE GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
+62;SNB965774651691;badenovaNETZE GmbH;ok;alle_belegt;
 63;SNB914411628732;BASF InfraService ＆ Solutions Lausitz GmbH;pruefen;alle_belegt;
 64;SNB963282434775;Bauer Netz GmbH ＆ Co. KG;ok;alle_belegt;
 65;SNB944057190867;BEW Netze GmbH;ok;alle_belegt;
@@ -135,7 +135,7 @@
 134;SNB974894111862;Elektrizitätswerke Schönau Netze GmbH;pruefen;alle_belegt;
 135;SNB931431136771;Elektroenergieversorgung Cottbus GmbH;ok;alle_belegt;
 136;SNB913866241817;EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG;pruefen;alle_belegt;
-137;SNB913563830420;ENA Energienetze Apolda GmbH;ok;alle_belegt;
+137;SNB913563830420;ENA Energienetze Apolda GmbH;pruefen;offen;hsms:leer_im_dokument_ebene_gefunden
 138;SNB905238986457;enercity GridPartner GmbH;pruefen;alle_belegt;
 139;SNB913289502922;eneREGIO GmbH;ok;alle_belegt;
 140;SNB976371748981;Energie Calw GmbH;ok;alle_belegt;
@@ -189,7 +189,7 @@
 188;SNB945750197795;EVU Weilerbach;ok;alle_belegt;
 189;SNB977966674678;EW Geiger GmbH;pruefen;alle_belegt;
 190;SNB934984130722;ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz;pruefen;alle_belegt;
-191;SNB924747450655;EWR GmbH (Remscheid);pruefen;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
+191;SNB924747450655;EWR GmbH (Remscheid);pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
 192;SNB969068596941;EWR Netz GmbH;ok;alle_belegt;
 193;SNB923953358557;EWR Netze GmbH (Lichtenstein-Unterhausen);ok;alle_belegt;
 194;SNB911838879365;ews - Netz GmbH;pruefen;alle_belegt;
@@ -204,7 +204,7 @@
 203;SNB982241851170;Freitaler Stadtwerke GmbH;pruefen;offen;"msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
 204;SNB991381724831;Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG;ok;alle_belegt;
 205;SNB953422913031;Gebrüder Eirich GmbH ＆ Co. KG;ok;alle_belegt;
-206;SNB926427521488;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;pruefen;alle_belegt;
+206;SNB926427521488;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;pruefen;offen;hsms:leer_im_dokument_ebene_gefunden
 207;SNB961497906636;GELSENWASSER Energienetze GmbH;ok;alle_belegt;
 208;SNB968325295962;Gemeinde Glattbach;pruefen;alle_belegt;
 209;SNB984338214660;Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach;ok;alle_belegt;
@@ -215,7 +215,7 @@
 214;SNB951232597106;Gemeindewerke Cadolzburg;ok;alle_belegt;
 215;SNB950724684287;Gemeindewerke Dudenhofen;ok;alle_belegt;
 216;SNB991410365127;Gemeindewerke Ebersdorf;pruefen;alle_belegt;
-217;SNB986931195988;Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+217;SNB986931195988;Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk;ok;alle_belegt;
 218;SNB947727983103;Gemeindewerke Frammersbach;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 219;SNB954239007623;Gemeindewerke Gangkofen;pruefen;alle_belegt;
 220;SNB926937565941;Gemeindewerke Garmisch-Partenkirchen, KU;pruefen;alle_belegt;
@@ -232,7 +232,7 @@
 231;SNB962006136537;Gemeindewerke Kahl Versorgungsgesellschaft mbH;ok;alle_belegt;
 232;SNB981193584808;Gemeindewerke Kiefersfelden;pruefen;alle_belegt;
 233;SNB969688824103;Gemeindewerke Kirkel GmbH;ok;alle_belegt;
-234;SNB955706777742;Gemeindewerke Lam;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+234;SNB955706777742;Gemeindewerke Lam;ok;alle_belegt;
 235;SNB994196581439;Gemeindewerke Langenpreising GmbH ＆ Co. KG;pruefen;alle_belegt;
 236;SNB972265030262;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 237;SNB984571613121;Gemeindewerke Neuendettelsau;pruefen;alle_belegt;
@@ -241,7 +241,7 @@
 240;SNB987153361809;Gemeindewerke Nümbrecht GmbH;ok;alle_belegt;
 241;SNB950777700255;Gemeindewerke Oberaudorf;ok;alle_belegt;
 242;SNB955872978110;Gemeindewerke Partenstein;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
-243;SNB915728555230;Gemeindewerke Pleinfeld;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+243;SNB915728555230;Gemeindewerke Pleinfeld;ok;alle_belegt;
 244;SNB981972152532;Gemeindewerke Schönkirchen GmbH;ok;alle_belegt;
 245;SNB959475630567;Gemeindewerke Schutterwald (GWS);pruefen;alle_belegt;
 246;SNB944419421783;Gemeindewerke Schwarzenbruck GmbH (GWS);robots;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
@@ -258,23 +258,23 @@
 257;SNB901665585874;GETEC net GmbH;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
 258;SNB995332374861;GETEC Quartier GmbH;pruefen;offen;
 259;SNB933529129573;Getreidemühle Zwiefalten eG;pruefen;alle_belegt;
-260;SNB920157746937;GEW Wilhelmshaven GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-261;SNB968670865650;GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+260;SNB920157746937;GEW Wilhelmshaven GmbH;ok;alle_belegt;
+261;SNB968670865650;GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG;ok;alle_belegt;
 262;SNB918100919279;GIG energy services GmbH;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
 263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
 264;SNB930067626847;Greizer Energienetze GmbH;ok;alle_belegt;
 265;SNB935600499711;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;pruefen;offen;ns:leer_im_dokument_ebene_gefunden
 266;SNB915686229082;GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG;pruefen;alle_belegt;
 267;SNB944323025954;Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH;ok;alle_belegt;
-268;SNB977374861035;Halberstadtwerke GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-269;SNB985729975610;Hanau Netz GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; ms:keine_zeile_mit_passender_beschriftung; msns:konflikt; ns:keine_zeile_mit_passender_beschriftung"
+268;SNB977374861035;Halberstadtwerke GmbH;ok;alle_belegt;
+269;SNB985729975610;Hanau Netz GmbH;ok;alle_belegt;
 270;SNB934355412402;Havelstrom Zehdenick GmbH;ok;alle_belegt;
 271;SNB975462731697;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;pruefen;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 272;SNB924453035597;Hellenstein-Energie-Logistik GmbH;ok;alle_belegt;
 273;SNB964592501355;Hertener Stadtwerke GmbH;ok;alle_belegt;
-274;SNB930312838582;Herzo Werke GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-275;SNB982085566391;HEWA GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-276;SNB974319144116;IGS Netze GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+274;SNB930312838582;Herzo Werke GmbH;ok;alle_belegt;
+275;SNB982085566391;HEWA GmbH;ok;alle_belegt;
+276;SNB974319144116;IGS Netze GmbH;pruefen;alle_belegt;
 277;SNB916663914472;inetz GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
 278;SNB911960309587;infra fürth gmbh;ok;alle_belegt;
 279;SNB982722829230;InfraLeuna GmbH;pruefen;alle_belegt;
@@ -287,23 +287,23 @@
 286;SNB964573708865;KEW Karwendel Energie und Wasser GmbH;ok;alle_belegt;
 287;SNB943841101959;KEW Kommunale Energie- und Wasserversorgung AG;ok;alle_belegt;
 288;SNB986580518855;KommEnergie GmbH;ok;alle_belegt;
-289;SNB972153058149;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+289;SNB972153058149;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ok;alle_belegt;
 290;SNB912218404412;Kommunale Energieversorgung GmbH Eisenhüttenstadt;pruefen;alle_belegt;
 291;SNB985871274975;Kommunalunternehmen Gemeindewerke Peißenberg;ok;alle_belegt;
-292;SNB947553215997;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+292;SNB947553215997;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ok;alle_belegt;
 293;SNB990329664031;Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR);pruefen;offen;
 294;SNB987171059405;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;alle_belegt;
 295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;alle_belegt;
 296;SNB937858140285;Kreiswerke Main-Kinzig GmbH;ok;alle_belegt;
 297;SNB952845016893;LeineNetz GmbH;pruefen;alle_belegt;
 298;SNB920357766414;Leitungspartner GmbH;pruefen;alle_belegt;
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;offen;"msns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
 300;SNB919657321775;Licht- und Kraftwerke Sonneberg GmbH;ok;alle_belegt;
 301;SNB943319305469;Licht-, Kraft- und Wasserwerke Kitzingen GmbH;ok;alle_belegt;
 302;SNB977443469322;LokalWerke GmbH;ok;alle_belegt;
 303;SNB957862279702;LSW Netz GmbH ＆ Co. KG;ok;alle_belegt;
 304;SNB915316807789;Mainfranken Netze GmbH;pruefen;alle_belegt;
-305;SNB983526428810;Mainnetz GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+305;SNB983526428810;Mainnetz GmbH;ok;alle_belegt;
 306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;offen;ns:keine_zeile_mit_passender_beschriftung
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;alle_belegt;
 308;SNB997826747014;Markt Egloffstein;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
@@ -318,7 +318,7 @@
 317;SNB974711150357;NETCUR GmbH;pruefen;alle_belegt;
 318;SNB982034089728;Netz ＆ Energie Betriebsgesellschaft mbH;pruefen;offen;"ms:konflikt; ns:konflikt; slp:keine_zeile_mit_passender_beschriftung"
 319;SNB915030239484;Netzbetrieb Hirschberg GmbH ＆ Co. KG;ok;alle_belegt;
-320;SNB939517994215;NETZE Bad Langensalza GmbH;ok;offen;"ms:konflikt; msns:keine_zeile_mit_passender_beschriftung; ns:konflikt; slp:keine_zeile_mit_passender_beschriftung"
+320;SNB939517994215;NETZE Bad Langensalza GmbH;ok;alle_belegt;
 321;SNB934214092950;Netze Hechingen GmbH ＆ Co. KG;ok;alle_belegt;
 322;SNB933767388565;Netzgesellschaft Ahlen mbH;ok;alle_belegt;
 323;SNB978051166283;Netzgesellschaft Bitterfeld-Wolfen mbH;ok;alle_belegt;
@@ -334,12 +334,12 @@
 333;SNB929088252340;Netzwerke Merzig GmbH;ok;alle_belegt;
 334;SNB915471253889;Netzwerke Saarlouis GmbH;ok;alle_belegt;
 335;SNB939624707241;Neubrandenburger Stadtwerke GmbH;ok;alle_belegt;
-336;SNB940437318166;NEW Netz GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
+336;SNB940437318166;NEW Netz GmbH;ok;alle_belegt;
 337;SNB911144461377;NGN Netzgesellschaft Niederrhein mbH;ok;alle_belegt;
 338;SNB998819299022;NHF Netzgesellschaft Heilbronn-Franken mbH;pruefen;offen;msns:keine_zeile_mit_passender_beschriftung
-339;SNB978108787379;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+339;SNB978108787379;NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG;ok;alle_belegt;
 340;SNB917783023525;Niedersachsen Ports GmbH ＆ Co. KG;pruefen;alle_belegt;
-341;SNB959176447266;Nordhausen Netz GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+341;SNB959176447266;Nordhausen Netz GmbH;ok;alle_belegt;
 342;SNB920393062051;NordNetz GmbH;ok;alle_belegt;
 343;SNB931610892481;Nordseeheilbad Borkum GmbH;pruefen;alle_belegt;
 344;SNB945532057606;nvb Nordhorner Versorgungsbetriebe GmbH;ok;alle_belegt;
@@ -351,39 +351,39 @@
 350;SNB965394941448;Outokumpu Stainless Nirosta GmbH;pruefen;alle_belegt;
 351;SNB969534177940;ovag Netz GmbH;ok;alle_belegt;
 352;SNB988532040636;PVU Energienetze GmbH;robots;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
-353;SNB938413573104;QuartiersNetz Bayern GmbH;pruefen;offen;"msns:konflikt; ns:konflikt"
-354;SNB942804093577;Queichtal Energie Offenbach Netz GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
+353;SNB938413573104;QuartiersNetz Bayern GmbH;pruefen;alle_belegt;
+354;SNB942804093577;Queichtal Energie Offenbach Netz GmbH;ok;alle_belegt;
 355;SNB966494112844;Raiffeisenbank Altmühl-Jura eG;ok;alle_belegt;
 356;SNB963995572245;REDINET Burgenland GmbH;ok;alle_belegt;
 357;SNB941929592729;Regensburg Netz GmbH;pruefen;alle_belegt;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;alle_belegt;
 359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;offen;"ms:konflikt; msns:leer_im_dokument_ebene_gefunden; ns:konflikt"
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;alle_belegt;
-361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;alle_belegt;
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;alle_belegt;
 363;SNB912239808732;Rheinhessische Energie- und Wasserversorgungs-GmbH;pruefen;offen;ms:konflikt
 364;SNB976863966633;Rothmoser GmbH ＆ Co. KG;ok;alle_belegt;
-365;SNB958237843443;Saalfelder Energienetze GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
+365;SNB958237843443;Saalfelder Energienetze GmbH;ok;alle_belegt;
 366;SNB968914838013;SachsenNetze HS.HD GmbH;pruefen;offen;ns:keine_zeile_mit_passender_beschriftung
 367;SNB956986612075;Saerbecker Ver- und Entsorgungsnetzgesellschaft mbH;ok;alle_belegt;
 368;SNB953868012787;Schleswiger Stadtwerke GmbH;ok;alle_belegt;
 369;SNB950960779068;SEW Stromversorgungs GmbH;ok;alle_belegt;
 370;SNB932006596143;Sömmerdaer Energieversorgung GmbH;pruefen;alle_belegt;
 371;SNB989025785690;SSW Netz GmbH;ok;alle_belegt;
-372;SNB931823254809;Stadt Burgbernheim - Stadtwerke;ok;offen;"msns:konflikt; ns:konflikt"
+372;SNB931823254809;Stadt Burgbernheim - Stadtwerke;ok;alle_belegt;
 373;SNB922689183730;Stadt- und Überlandwerke GmbH Luckau-Lübbenau;ok;alle_belegt;
 374;SNB993059842564;Stadtwerk am See GmbH ＆ Co. KG;ok;alle_belegt;
 375;SNB964046129302;Stadtwerk Haßfurt GmbH;pruefen;alle_belegt;
 376;SNB936176430474;Stadtwerk Tauberfranken GmbH;ok;alle_belegt;
 377;SNB982726407335;Stadtwerke Aalen GmbH;ok;alle_belegt;
 378;SNB942257679137;Stadtwerke Achim AG;ok;alle_belegt;
-379;SNB947092763157;Stadtwerke Altdorf GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+379;SNB947092763157;Stadtwerke Altdorf GmbH;ok;alle_belegt;
 380;SNB947709605108;Stadtwerke Altensteig;ok;alle_belegt;
-381;SNB978191145308;Stadtwerke Amberg Versorgungs GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+381;SNB978191145308;Stadtwerke Amberg Versorgungs GmbH;ok;alle_belegt;
 382;SNB981335690930;Stadtwerke Andernach Energie GmbH;ok;alle_belegt;
 383;SNB936769439815;Stadtwerke Annaberg-Buchholz Energie AG;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
-384;SNB972040623122;Stadtwerke Annweiler am Trifels;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-385;SNB937406641264;Stadtwerke Ansbach GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+384;SNB972040623122;Stadtwerke Annweiler am Trifels;ok;alle_belegt;
+385;SNB937406641264;Stadtwerke Ansbach GmbH;ok;alle_belegt;
 386;SNB985993443181;Stadtwerke Arnstadt Netz GmbH ＆ Co. KG;ok;alle_belegt;
 387;SNB957591716776;Stadtwerke Aue - Bad Schlema GmbH;ok;alle_belegt;
 388;SNB911602541351;Stadtwerke Backnang GmbH;ok;alle_belegt;
@@ -402,7 +402,7 @@
 401;SNB958672501014;Stadtwerke Bad Reichenhall KU;ok;alle_belegt;
 402;SNB967186419241;Stadtwerke Bad Rodach;ok;alle_belegt;
 403;SNB934457029447;Stadtwerke Bad Säckingen GmbH;ok;alle_belegt;
-404;SNB948413721931;Stadtwerke Bad Salzuflen GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+404;SNB948413721931;Stadtwerke Bad Salzuflen GmbH;ok;alle_belegt;
 405;SNB943203125821;Stadtwerke Bad Saulgau;ok;alle_belegt;
 406;SNB949422762892;Stadtwerke Bad Sooden-Allendorf;ok;alle_belegt;
 407;SNB982671807549;Stadtwerke Bad Tölz GmbH;pruefen;alle_belegt;
@@ -411,19 +411,19 @@
 410;SNB963795614626;Stadtwerke Bad Windsheim;ok;alle_belegt;
 411;SNB948741734467;Stadtwerke Bad Wörishofen;ok;alle_belegt;
 412;SNB931622346583;Stadtwerke Baden-Baden;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden; ns:leer_im_dokument_ebene_gefunden; slp:keine_zeile_mit_passender_beschriftung"
-413;SNB956377097702;Stadtwerke Baiersdorf KU;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+413;SNB956377097702;Stadtwerke Baiersdorf KU;ok;alle_belegt;
 414;SNB963746327452;Stadtwerke Balingen;pruefen;alle_belegt;
-415;SNB949646353012;Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+415;SNB949646353012;Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH;ok;alle_belegt;
 416;SNB913346629968;Stadtwerke Barmstedt;pruefen;offen;ns:keine_zeile_mit_passender_beschriftung
-417;SNB967782555602;Stadtwerke Bayreuth Energie und Wasser GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+417;SNB967782555602;Stadtwerke Bayreuth Energie und Wasser GmbH;ok;alle_belegt;
 418;SNB959513498364;Stadtwerke Bebra GmbH;ok;alle_belegt;
 419;SNB962890977544;Stadtwerke Bernau GmbH;ok;alle_belegt;
-420;SNB953669866350;Stadtwerke Bernburg GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
+420;SNB953669866350;Stadtwerke Bernburg GmbH;ok;alle_belegt;
 421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;alle_belegt;
 422;SNB910950265032;Stadtwerke Bietigheim-Bissingen GmbH;ok;alle_belegt;
 423;SNB919654931526;Stadtwerke Blankenburg GmbH;ok;alle_belegt;
-424;SNB922514070884;Stadtwerke Bliestal GmbH;pruefen;offen;"msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
-425;SNB931805295141;Stadtwerke Böblingen GmbH ＆ Co. KG;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+424;SNB922514070884;Stadtwerke Bliestal GmbH;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
+425;SNB931805295141;Stadtwerke Böblingen GmbH ＆ Co. KG;ok;alle_belegt;
 426;SNB930423383254;Stadtwerke Böhmetal GmbH;ok;alle_belegt;
 427;SNB982380015723;Stadtwerke Bogen GmbH;ok;alle_belegt;
 428;SNB982432856366;Stadtwerke Borken/Westf. GmbH;ok;alle_belegt;
@@ -433,11 +433,11 @@
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;alle_belegt;
 433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;alle_belegt;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;alle_belegt;
-435;SNB914946450877;Stadtwerke Bühl GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden; ns:konflikt"
-436;SNB927160517950;Stadtwerke Burg Energienetze GmbH;ok;offen;"msns:konflikt; ns:konflikt"
+435;SNB914946450877;Stadtwerke Bühl GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden"
+436;SNB927160517950;Stadtwerke Burg Energienetze GmbH;ok;alle_belegt;
 437;SNB949369515353;Stadtwerke Burgdorf Netz GmbH;ok;alle_belegt;
 438;SNB974547197724;Stadtwerke Buxtehude GmbH;ok;alle_belegt;
-439;SNB990522725676;Stadtwerke Cham GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+439;SNB990522725676;Stadtwerke Cham GmbH;ok;alle_belegt;
 440;SNB952939058372;Stadtwerke Clausthal-Zellerfeld GmbH;ok;alle_belegt;
 441;SNB943480673763;Stadtwerke Coesfeld GmbH;ok;alle_belegt;
 442;SNB934532229953;Stadtwerke Crailsheim GmbH;ok;alle_belegt;
@@ -448,7 +448,7 @@
 447;SNB924774487556;Stadtwerke Detmold GmbH;ok;alle_belegt;
 448;SNB977581070640;Stadtwerke Dettelbach;ok;alle_belegt;
 449;SNB991561247815;Stadtwerke Dillingen/Saar Netzgesellschaft mbH;ok;alle_belegt;
-450;SNB944601935326;Stadtwerke Dingolfing GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+450;SNB944601935326;Stadtwerke Dingolfing GmbH;ok;alle_belegt;
 451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;alle_belegt;
 452;SNB990892864395;Stadtwerke Ditzingen GmbH ＆ Co. KG;ok;alle_belegt;
 453;SNB976679550309;Stadtwerke Döbeln GmbH;pruefen;offen;
@@ -463,10 +463,10 @@
 462;SNB965692805121;Stadtwerke Einbeck GmbH;ok;alle_belegt;
 463;SNB920699937404;Stadtwerke Elbtal GmbH;pruefen;offen;ns:keine_zeile_mit_passender_beschriftung
 464;SNB996768145988;Stadtwerke Elm-Lappwald GmbH;ok;alle_belegt;
-465;SNB916743652645;Stadtwerke Elmshorn;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+465;SNB916743652645;Stadtwerke Elmshorn;ok;alle_belegt;
 466;SNB941183960449;Stadtwerke Emden GmbH;ok;alle_belegt;
 467;SNB948068461008;Stadtwerke Emmendingen GmbH;ok;alle_belegt;
-468;SNB986190606218;Stadtwerke Emmerich GmbH;ok;offen;ms:keine_zeile_mit_passender_beschriftung
+468;SNB986190606218;Stadtwerke Emmerich GmbH;ok;alle_belegt;
 469;SNB958416423039;Stadtwerke Emsdetten GmbH;pruefen;alle_belegt;
 470;SNB959959730332;Stadtwerke Engen GmbH;ok;alle_belegt;
 471;SNB918156808725;Stadtwerke Erkrath GmbH;ok;alle_belegt;
@@ -477,13 +477,13 @@
 476;SNB964273276183;Stadtwerke Fellbach GmbH;pruefen;alle_belegt;
 477;SNB921471558077;Stadtwerke Feuchtwangen KU;ok;alle_belegt;
 478;SNB957549782006;Stadtwerke Finsterwalde GmbH;ok;alle_belegt;
-479;SNB922220582657;Stadtwerke Flensburg GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-480;SNB996457394093;Stadtwerke Forchheim GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+479;SNB922220582657;Stadtwerke Flensburg GmbH;ok;alle_belegt;
+480;SNB996457394093;Stadtwerke Forchheim GmbH;ok;alle_belegt;
 481;SNB961745390019;Stadtwerke Frankenthal GmbH;ok;alle_belegt;
 482;SNB973733148182;Stadtwerke Freudenstadt GmbH ＆ Co. KG;ok;alle_belegt;
 483;SNB912063565672;Stadtwerke Fröndenberg Wickede GmbH;ok;alle_belegt;
 484;SNB985701689504;Stadtwerke Fürstenfeldbruck GmbH;ok;alle_belegt;
-485;SNB914668240749;Stadtwerke Furth im Wald GmbH ＆ Co. KG;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+485;SNB914668240749;Stadtwerke Furth im Wald GmbH ＆ Co. KG;ok;alle_belegt;
 486;SNB925565312521;Stadtwerke Gaggenau;ok;alle_belegt;
 487;SNB960882503184;Stadtwerke Geesthacht GmbH;ok;alle_belegt;
 488;SNB965107360993;Stadtwerke Geldern Netz GmbH;pruefen;alle_belegt;
@@ -495,7 +495,7 @@
 494;SNB985431470335;Stadtwerke GmbH Bad Kreuznach;ok;alle_belegt;
 495;SNB941004899811;Stadtwerke Goch GmbH;pruefen;alle_belegt;
 496;SNB938672757734;Stadtwerke Görlitz AG;ok;alle_belegt;
-497;SNB926442995943;Stadtwerke Greifswald GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+497;SNB926442995943;Stadtwerke Greifswald GmbH;ok;alle_belegt;
 498;SNB998044089535;Stadtwerke Greven GmbH;ok;alle_belegt;
 499;SNB991689251534;Stadtwerke Grevesmühlen GmbH;ok;alle_belegt;
 500;SNB934949020686;Stadtwerke Gronau GmbH;ok;alle_belegt;
@@ -510,7 +510,7 @@
 509;SNB981984960101;Stadtwerke Hameln Weserbergland GmbH;ok;alle_belegt;
 510;SNB916711029424;Stadtwerke Hammelburg GmbH;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 511;SNB989253327099;Stadtwerke Haslach i.K.;ok;alle_belegt;
-512;SNB960729432592;Stadtwerke Havelberg GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+512;SNB960729432592;Stadtwerke Havelberg GmbH;ok;alle_belegt;
 513;SNB953938790515;Stadtwerke Heide GmbH;pruefen;alle_belegt;
 514;SNB938476571321;Stadtwerke Heidelberg Netze GmbH;ok;alle_belegt;
 515;SNB952677840789;Stadtwerke Heilbad Heiligenstadt GmbH;pruefen;alle_belegt;
@@ -523,16 +523,16 @@
 522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
 523;SNB967127819703;Stadtwerke Hockenheim;ok;alle_belegt;
 524;SNB977206503256;Stadtwerke Hof Energie+Wasser GmbH;ok;alle_belegt;
-525;SNB958680286002;Stadtwerke Hollfeld;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-526;SNB954537392643;Stadtwerke Homburg GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+525;SNB958680286002;Stadtwerke Hollfeld;ok;alle_belegt;
+526;SNB954537392643;Stadtwerke Homburg GmbH;ok;alle_belegt;
 527;SNB964375043041;Stadtwerke Hünfeld GmbH;ok;alle_belegt;
-528;SNB950336540445;Stadtwerke Husum Netz GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+528;SNB950336540445;Stadtwerke Husum Netz GmbH;ok;alle_belegt;
 529;SNB964659661008;Stadtwerke Ilmenau GmbH;pruefen;alle_belegt;
 530;SNB911347846643;Stadtwerke Ingolstadt Netze GmbH;pruefen;alle_belegt;
-531;SNB913730249284;Stadtwerke Iserlohn GmbH;ok;offen;ms:konflikt
+531;SNB913730249284;Stadtwerke Iserlohn GmbH;ok;alle_belegt;
 532;SNB946137378622;Stadtwerke Itzehoe GmbH;pruefen;alle_belegt;
 533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;offen;"msns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
-534;SNB973672371320;Stadtwerke Jülich GmbH;ok;offen;ms:konflikt
+534;SNB973672371320;Stadtwerke Jülich GmbH;ok;alle_belegt;
 535;SNB933013692798;Stadtwerke Kaltenkirchen GmbH;ok;alle_belegt;
 536;SNB965500640463;STADTWERKE KELHEIM GmbH ＆ Co KG;ok;alle_belegt;
 537;SNB943042904373;Stadtwerke Kempen GmbH;pruefen;offen;msns:keine_zeile_mit_passender_beschriftung
@@ -542,14 +542,14 @@
 541;SNB959585826225;Stadtwerke Lambrecht (Pfalz) GmbH;ok;alle_belegt;
 542;SNB963499807249;Stadtwerke Landau a.d.Isar;ok;alle_belegt;
 543;SNB929663692172;Stadtwerke Landsberg KU;pruefen;alle_belegt;
-544;SNB928992067729;Stadtwerke Landshut;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+544;SNB928992067729;Stadtwerke Landshut;ok;alle_belegt;
 545;SNB965379905076;Stadtwerke Langen GmbH;ok;alle_belegt;
 546;SNB935738221819;Stadtwerke Langenzenn;ok;alle_belegt;
 547;SNB980345455409;Stadtwerke Lauterbach GmbH;ok;alle_belegt;
 548;SNB950039201827;Stadtwerke Lehrte GmbH;ok;alle_belegt;
 549;SNB946090906887;Stadtwerke Leine-Solling GmbH;ok;alle_belegt;
 550;SNB967075358620;Stadtwerke Lemgo GmbH;ok;alle_belegt;
-551;SNB949152526504;Stadtwerke Lindau (B) GmbH ＆ Co. KG;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:konflikt"
+551;SNB949152526504;Stadtwerke Lindau (B) GmbH ＆ Co. KG;ok;alle_belegt;
 552;SNB982030394239;Stadtwerke Lingen GmbH;ok;alle_belegt;
 553;SNB916255659316;Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG;ok;alle_belegt;
 554;SNB985098042388;Stadtwerke Lippstadt GmbH;ok;alle_belegt;
@@ -557,15 +557,15 @@
 556;SNB978730380269;Stadtwerke Ludwigsburg - Kornwestheim GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:leer_im_dokument_ebene_gefunden; msns:konflikt; ns:keine_zeile_mit_passender_beschriftung"
 557;SNB983765888505;Stadtwerke Ludwigsfelde GmbH;ok;alle_belegt;
 558;SNB928200943784;Stadtwerke Ludwigslust-Grabow GmbH;ok;alle_belegt;
-559;SNB915358347793;Stadtwerke Lübz GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+559;SNB915358347793;Stadtwerke Lübz GmbH;ok;alle_belegt;
 560;SNB942111583372;Stadtwerke Lünen GmbH;ok;alle_belegt;
-561;SNB946425570127;Stadtwerke Lutherstadt Eisleben GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-562;SNB932107297727;Stadtwerke Lutherstadt Wittenberg GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+561;SNB946425570127;Stadtwerke Lutherstadt Eisleben GmbH;ok;alle_belegt;
+562;SNB932107297727;Stadtwerke Lutherstadt Wittenberg GmbH;ok;alle_belegt;
 563;SNB948470226516;Stadtwerke Malchow;ok;alle_belegt;
 564;SNB972740218178;Stadtwerke Marburg GmbH;ok;alle_belegt;
 565;SNB918070278383;Stadtwerke Meerane GmbH;ok;alle_belegt;
 566;SNB925883927308;Stadtwerke Meiningen GmbH;ok;alle_belegt;
-567;SNB922774216633;Stadtwerke Menden GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung"
+567;SNB922774216633;Stadtwerke Menden GmbH;ok;alle_belegt;
 568;SNB961816584323;Stadtwerke Mengen;ok;alle_belegt;
 569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung"
 570;SNB961448362368;Stadtwerke Metzingen;pruefen;alle_belegt;
@@ -633,7 +633,7 @@
 632;SNB976170444053;Stadtwerke Rotenburg (Wümme) GmbH;ok;alle_belegt;
 633;SNB927574397889;Stadtwerke Roth;ok;alle_belegt;
 634;SNB979202870318;Stadtwerke Rothenburg o.d.T. GmbH;ok;alle_belegt;
-635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;offen;"hsms:keine_zeile_mit_passender_beschriftung; ms:keine_zeile_mit_passender_beschriftung; msns:konflikt; ns:konflikt"
+635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;offen;"hsms:konflikt; ms:konflikt; msns:konflikt; ns:konflikt"
 636;SNB922861338965;Stadtwerke Sangerhausen GmbH;pruefen;offen;msns:keine_zeile_mit_passender_beschriftung
 637;SNB924120395771;Stadtwerke Scheinfeld;pruefen;alle_belegt;
 638;SNB924685554682;Stadtwerke Schifferstadt;ok;alle_belegt;
@@ -663,7 +663,7 @@
 662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
 663;SNB918097788087;Stadtwerke Speyer GmbH;ok;alle_belegt;
 664;SNB954187049256;Stadtwerke Springe GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;offen;"msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
+665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; slp:keine_zeile_mit_passender_beschriftung"
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
 667;SNB976240506834;Stadtwerke Stadtroda GmbH;ok;alle_belegt;
 668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;offen;"hsms:konflikt; ms:konflikt"
@@ -690,7 +690,7 @@
 689;SNB934068635945;Stadtwerke Ulm/Neu-Ulm Netze GmbH;ok;alle_belegt;
 690;SNB944150243392;Stadtwerke Unna GmbH;ok;alle_belegt;
 691;SNB925861098273;Stadtwerke Uslar GmbH;ok;alle_belegt;
-692;SNB974492211483;Stadtwerke Velbert GmbH;ok;offen;ms:konflikt
+692;SNB974492211483;Stadtwerke Velbert GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:konflikt"
 693;SNB957440824454;Stadtwerke Velten GmbH;ok;alle_belegt;
 694;SNB962996832648;Stadtwerke Verden GmbH;ok;alle_belegt;
 695;SNB961283575572;Stadtwerke Viernheim Netz GmbH;ok;alle_belegt;
@@ -718,7 +718,7 @@
 717;SNB965819408044;STADTWERKE WEISSENBURG GmbH;ok;alle_belegt;
 718;SNB933274941888;Stadtwerke Weißenfels Energienetze GmbH;ok;alle_belegt;
 719;SNB918084816830;Stadtwerke Weißwasser GmbH;ok;alle_belegt;
-720;SNB962389410347;Stadtwerke Werdau GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
+720;SNB962389410347;Stadtwerke Werdau GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; msns:keine_zeile_mit_passender_beschriftung"
 721;SNB979980141082;Stadtwerke Werl GmbH;ok;alle_belegt;
 722;SNB914879260819;Stadtwerke Wernigerode GmbH;ok;alle_belegt;
 723;SNB922051401837;Stadtwerke Wertheim GmbH;ok;alle_belegt;
@@ -735,7 +735,7 @@
 734;SNB935626894156;Stadtwerke Zeil a. Main;pruefen;alle_belegt;
 735;SNB980783618473;Stadtwerke Zeven GmbH;ok;alle_belegt;
 736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
-737;SNB959966681252;Stadtwerke Zittau GmbH;ok;offen;"ms:keine_zeile_mit_passender_beschriftung; msns:keine_zeile_mit_passender_beschriftung; ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
+737;SNB959966681252;Stadtwerke Zittau GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
 738;SNB923190544898;Stadtwerke Zweibrücken GmbH;ok;alle_belegt;
 739;SNB924332586844;Stadtwerke Zwiesel;ok;alle_belegt;
 740;SNB918576265276;stadtwerker GmbH;pruefen;offen;"ns:keine_zeile_mit_passender_beschriftung; slp:keine_zeile_mit_passender_beschriftung"
@@ -781,7 +781,7 @@
 780;SNB943662886851;SWO Netz GmbH;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; ns:leer_im_dokument_ebene_gefunden"
 781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;alle_belegt;
 782;SNB981113965977;SWR Energie GmbH ＆ Co. KG;ok;alle_belegt;
-783;SNB915638224585;SWS Netze GmbH;pruefen;offen;msns:keine_zeile_mit_passender_beschriftung
+783;SNB915638224585;SWS Netze GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; msns:keine_zeile_mit_passender_beschriftung"
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
 785;SNB966813503780;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;offen;
 786;SNB950006175489;SWTE Netz GmbH ＆ Co. KG;ok;alle_belegt;

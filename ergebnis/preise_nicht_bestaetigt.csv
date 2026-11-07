@@ -23,14 +23,12 @@
 117;Elektrizitätswerk des Kantons Schaffhausen AG;Mittelspannung;20,50;10,95;228,25;2,65;pruefen;nächste Zeile hat 0 von 4 Werten;Messstellen- Lastgangmessung in Mittelspannung 744,00 885,36 744,00 885,36;SNB985099151188_0117.txt
 118;Elektrizitätswerk Dießen Stadler GmbH;Niederspannung;20,50;7,20;133,50;3,55;pruefen;nächste Zeile hat 0 von 4 Werten;Entnahmestellen ohne Leistungsmessung, die im Niederspannungsnetz angeschlossen;SNB916328839515_0118.txt
 118;Elektrizitätswerk Dießen Stadler GmbH;MS/NS;18,95;6,20;149,95;0,25;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB916328839515_0118.txt
-137;ENA Energienetze Apolda GmbH;HS/MS;19,21;5,71;134,26;1,11;ok;Ebenenzeile im Dokument nicht gefunden;;SNB913563830420_0137.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Niederspannung;40,20;5,60;91,56;3,55;ok;nächste Zeile hat 1 von 4 Werten;Niederspannungsnetz 40,20;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;MS/NS;41,64;3,83;81,24;2,24;ok;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS 41,64;SNB932549440224_0153.txt
 153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;Mittelspannung;36,60;3,06;60,96;2,09;ok;nächste Zeile hat 1 von 4 Werten;Mittelspannungsnetz 36,60;SNB932549440224_0153.txt
 154;EnergieSüdwest Netz GmbH;Niederspannung;18,64;8,87;187,49;2,12;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung Niederspannung;SNB911521002599_0154.txt
 154;EnergieSüdwest Netz GmbH;MS/NS;14,23;7,78;166,22;1,70;pruefen;nächste Zeile hat 0 von 4 Werten;dauer Umspannung;SNB911521002599_0154.txt
 154;EnergieSüdwest Netz GmbH;Mittelspannung;13,65;5,98;121,58;1,67;pruefen;nächste Zeile hat 0 von 4 Werten;Artikel-IDs: 1: [] | 2: [] | 3: [] | 4: [];SNB911521002599_0154.txt
-191;EWR GmbH (Remscheid);HS/MS;43,61;5,05;150,75;0,77;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB924747450655_0191.txt
 192;EWR Netz GmbH;HS/MS;30,58;4,02;122,26;0,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB969068596941_0192.txt
 196;FairNetz GmbH;HS/MS;13,89;5,65;146,72;0,34;ok;nächste Zeile hat 0 von 4 Werten;(10kV und 20 kV) / (HS/MS);SNB991882909515_0196.txt
 203;Freitaler Stadtwerke GmbH;Niederspannung;104,39;6,90;203,39;2,94;pruefen;nächste Zeile hat 0 von 4 Werten;Netzanschluss Niederspannung / ohne registrierende Lastgangmessung;SNB982241851170_0203.txt
@@ -95,7 +93,6 @@
 661;Stadtwerke Soltau GmbH ＆ Co. KG;Niederspannung;8,82;6,71;129,48;1,88;ok;nächste Zeile hat 0 von 4 Werten;Wandler (Niederspannung);SNB947030954821_0661.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;MS/NS;6,34;5,46;136,41;0,25;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;Mittelspannung;5,34;3,61;62,79;1,31;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
-692;Stadtwerke Velbert GmbH;HS/MS;8,23;5,93;152,73;0,15;ok;Ebenenzeile im Dokument nicht gefunden;;SNB974492211483_0692.txt
 699;Stadtwerke Vlotho Stromnetz GmbH;HS/MS;9,02;5,01;107,85;1,06;ok;nächste Zeile hat 0 von 4 Werten;(einschl. Umspannung HS/MS) 247,62;SNB991263248615_0699.txt
 702;Stadtwerke Waiblingen GmbH;Niederspannung;16,70;7,02;166,46;1,03;ok;nächste Zeile hat 1 von 4 Werten;Niederspannung Leistungspreis 166,46 €/kW;SNB969058795651_0702.txt
 702;Stadtwerke Waiblingen GmbH;MS/NS;16,85;6,32;155,03;0,80;ok;nächste Zeile hat 1 von 4 Werten;Umspannung MS/NS Leistungspreis 155,03 €/kW;SNB969058795651_0702.txt
@@ -105,7 +102,6 @@
 706;Stadtwerke Waldmünchen;Niederspannung;15,76;5,99;88,45;3,08;ok;nächste Zeile hat 0 von 4 Werten;Netznutzungsentgelte für Entnahmestellen ohne Leistungsmessung bei Entnahme im Niederspannungsnetz;SNB971196250442_0706.txt
 706;Stadtwerke Waldmünchen;MS/NS;13,63;5,91;142,22;0,77;ok;Ebenenzeile im Dokument nicht gefunden;;SNB971196250442_0706.txt
 706;Stadtwerke Waldmünchen;Mittelspannung;11,28;5,74;152,15;0,10;ok;Ebenenzeile im Dokument nicht gefunden;;SNB971196250442_0706.txt
-720;Stadtwerke Werdau GmbH;HS/MS;31,54;8,03;192,62;1,59;ok;Ebenenzeile im Dokument nicht gefunden;;SNB962389410347_0720.txt
 723;Stadtwerke Wertheim GmbH;HS/MS;13,66;5,63;147,86;0,26;ok;nächste Zeile hat 0 von 4 Werten;BK4S2-0001064 50939873979 HS/MS 0,00%;SNB922051401837_0723.txt
 733;Stadtwerke Wolmirstedt GmbH;MS/NS;65,34;8,25;242,84;1,15;ok;nächste Zeile hat 2 von 4 Werten;Umspannung zur 65,34 77,75 0,0825 0,0982 242,84 288,98 0,0115 0,0137;SNB971345683381_0733.txt
 733;Stadtwerke Wolmirstedt GmbH;Mittelspannung;46,37;6,06;184,15;0,54;ok;nächste Zeile hat 2 von 4 Werten;Mittelspannungsnetz 46,37 55,18 0,0606 0,0721 184,15 219,14 0,0054 0,0064;SNB971345683381_0733.txt
@@ -117,7 +113,6 @@
 782;SWR Energie GmbH ＆ Co. KG;MS/NS;19,19;5,57;124,86;1,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB981113965977_0782.txt
 782;SWR Energie GmbH ＆ Co. KG;Mittelspannung;18,93;5,37;118,52;1,38;ok;Ebenenzeile im Dokument nicht gefunden;;SNB981113965977_0782.txt
 783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;pruefen;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
-783;SWS Netze GmbH;HS/MS;16,82;5,67;125,94;1,30;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB915638224585_0783.txt
 802;ÜZ Mainfranken eG;HS/MS;21,86;4,07;114,88;0,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB929185184919_0802.txt
 4;Avacon Netz GmbH;Niederspannung;24,16;6,27;124,45;2,26;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
 4;Avacon Netz GmbH;MS/NS;19,38;5,71;123,78;1,54;pruefen;kein Text zum Abgleich (Wert aus der Liste des Nutzers);;
