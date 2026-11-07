@@ -96,4 +96,5 @@ RUNDE2 = {
     ("425", "slp"): [5.64, 80.00],                                  # Böblingen: bisher Speicherheizungstarif (3,03 / 2,55) als SLP geführt
     ("531", "ms"): [11.21, 6.33, 146.96, 0.90],                     # Iserlohn: Mittelspannungsnetz (stand doppelt als HS/MS)
     ("534", "ms"): [21.55, 6.05, 155.55, 0.69],                     # Jülich: Mittelspannungsnetz
+    ("660", "hsms"): [13.33, 5.18, 132.83, 0.40], ("660", "ms"): [17.66, 6.43, 160.66, 0.71],   # Soest: Z16 Umspannung zur Mittelspannung, Z17 Mittelspannungsnetz; Hochspannung ist im Preisblatt mit Strich ausgewiesen
 }

@@ -19,11 +19,11 @@
 4;SNB990362338043;Avacon Netz GmbH;pruefen;msns;belegt;Zeile 71: Umspannung Mittel-/ Niederspannung;
 4;SNB990362338043;Avacon Netz GmbH;pruefen;ns;belegt;Zeile 72: Niederspannung;
 4;SNB990362338043;Avacon Netz GmbH;pruefen;slp;belegt;Zeile 249: Grundpreis  Arbeitspreis;
-5;SNB951051725711;EWE NETZ GmbH;ok;hsms;leer;;
-5;SNB951051725711;EWE NETZ GmbH;ok;ms;leer;;
-5;SNB951051725711;EWE NETZ GmbH;ok;msns;leer;;
-5;SNB951051725711;EWE NETZ GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
-5;SNB951051725711;EWE NETZ GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+5;SNB951051725711;EWE NETZ GmbH;pruefen;hsms;leer;;
+5;SNB951051725711;EWE NETZ GmbH;pruefen;ms;leer;;
+5;SNB951051725711;EWE NETZ GmbH;pruefen;msns;leer;;
+5;SNB951051725711;EWE NETZ GmbH;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
+5;SNB951051725711;EWE NETZ GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 6;SNB916269213931;Mitteldeutsche Netzgesellschaft Strom mbH;ok;hsms;belegt;Zeile 83: Umspannung Hoch-/ Mittelspannung;
 6;SNB916269213931;Mitteldeutsche Netzgesellschaft Strom mbH;ok;ms;belegt;Zeile 85: Mittelspannung;
 6;SNB916269213931;Mitteldeutsche Netzgesellschaft Strom mbH;ok;msns;belegt;Zeile 87: Umspannung Mittel-/ Niederspannung;
@@ -144,11 +144,11 @@
 29;SNB921897286493;Westnetz GmbH;ok;msns;belegt;Zeile 15: Mittelspannung mit Umspannung auf Niederspannung;
 29;SNB921897286493;Westnetz GmbH;ok;ns;belegt;Zeile 16: Niederspannung;
 29;SNB921897286493;Westnetz GmbH;ok;slp;belegt;Zeile 53: netto  brutto1);
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;hsms;leer_im_dokument_ebene_gefunden;;
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;ms;leer_im_dokument_ebene_gefunden;;
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;msns;belegt;Zeile 101: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;ns;belegt;Zeile 119: Artikel-ID 1-01-7;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-30;SNB940352624434;Bayernwerk Netz GmbH;ok;slp;belegt;Zeile 182: Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger ;
+30;SNB940352624434;Bayernwerk Netz GmbH;pruefen;hsms;leer_im_dokument_ebene_gefunden;;
+30;SNB940352624434;Bayernwerk Netz GmbH;pruefen;ms;leer_im_dokument_ebene_gefunden;;
+30;SNB940352624434;Bayernwerk Netz GmbH;pruefen;msns;belegt;Zeile 101: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
+30;SNB940352624434;Bayernwerk Netz GmbH;pruefen;ns;belegt;Zeile 119: Artikel-ID 1-01-7;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
+30;SNB940352624434;Bayernwerk Netz GmbH;pruefen;slp;belegt;Zeile 182: Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger ;
 31;SNB990857029876;Schleswig-Holstein Netz GmbH;pruefen;hsms;belegt;Zeile 74: Umspannung Hoch-/ Mittelspannung;
 31;SNB990857029876;Schleswig-Holstein Netz GmbH;pruefen;ms;belegt;Zeile 76: Mittelspannung;
 31;SNB990857029876;Schleswig-Holstein Netz GmbH;pruefen;msns;belegt;Zeile 78: Umspannung Mittel-/ Niederspannung;
@@ -1302,11 +1302,11 @@
 262;SNB918100919279;GIG energy services GmbH;pruefen;msns;belegt;Zeile 14: Niederspannung (USp. MS/NS);
 262;SNB918100919279;GIG energy services GmbH;pruefen;ns;belegt;Zeile 16: Niederspannung (NS);
 262;SNB918100919279;GIG energy services GmbH;pruefen;slp;belegt;Zeile 22: Grundpreis  Arbeitspreis;
-263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;hsms;leer;;
-263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;ms;belegt;Zeile 23: Mittelspannung MS;
-263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;msns;belegt;Zeile 25: Umspannung MS/NS;
-263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;ns;belegt;Zeile 27: Niederspannung NS;
-263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;pruefen;hsms;leer;;
+263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;pruefen;ms;belegt;Zeile 23: Mittelspannung MS;
+263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;pruefen;msns;belegt;Zeile 25: Umspannung MS/NS;
+263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;pruefen;ns;belegt;Zeile 27: Niederspannung NS;
+263;SNB961316124487;Gothaer Stadtwerke NETZ GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 264;SNB930067626847;Greizer Energienetze GmbH;ok;hsms;leer;;
 264;SNB930067626847;Greizer Energienetze GmbH;ok;ms;belegt;Zeile 23: Mittelspannung (MS);
 264;SNB930067626847;Greizer Energienetze GmbH;ok;msns;belegt;Zeile 24: Umspannung zur Niederspannung;
@@ -1371,11 +1371,11 @@
 276;SNB974319144116;IGS Netze GmbH;pruefen;msns;belegt;Zeile 60: Umspannung Mittel-/ Niederspannung;
 276;SNB974319144116;IGS Netze GmbH;pruefen;ns;belegt;Zeile 62: Niederspannungsnetz (NS);
 276;SNB974319144116;IGS Netze GmbH;pruefen;slp;belegt;Z107 Arbeitspreis 9,92 und Z116 Grundpreis 42,00 Niederspannungsnetz;manuell durch Claude am Dokument gesehen
-277;SNB916663914472;inetz GmbH;ok;hsms;belegt;Zeile 15: 2  Umspannung HS/MS;
-277;SNB916663914472;inetz GmbH;ok;ms;belegt;Zeile 16: 3  Mittelspannung (MS);
-277;SNB916663914472;inetz GmbH;ok;msns;belegt;Zeile 17: 4  Umspannung MS/NS;
-277;SNB916663914472;inetz GmbH;ok;ns;belegt;Zeile 18: 5  Niederspannung (NS);
-277;SNB916663914472;inetz GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+277;SNB916663914472;inetz GmbH;pruefen;hsms;belegt;Zeile 15: 2  Umspannung HS/MS;
+277;SNB916663914472;inetz GmbH;pruefen;ms;belegt;Zeile 16: 3  Mittelspannung (MS);
+277;SNB916663914472;inetz GmbH;pruefen;msns;belegt;Zeile 17: 4  Umspannung MS/NS;
+277;SNB916663914472;inetz GmbH;pruefen;ns;belegt;Zeile 18: 5  Niederspannung (NS);
+277;SNB916663914472;inetz GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 278;SNB911960309587;infra fürth gmbh;ok;hsms;belegt;Zeile 64: Umspannung Hoch-/Mittelspannung;
 278;SNB911960309587;infra fürth gmbh;ok;ms;belegt;Zeile 65: Mittelspannung;
 278;SNB911960309587;infra fürth gmbh;ok;msns;belegt;Zeile 66: Umspannung Mittel-/Niederspannung;
@@ -1481,11 +1481,11 @@
 298;SNB920357766414;Leitungspartner GmbH;pruefen;msns;belegt;Zeile 222: Mittelspannung mit Umspannung auf Niederspannung;
 298;SNB920357766414;Leitungspartner GmbH;pruefen;ns;belegt;Zeile 23: Niederspannungsnetz;
 298;SNB920357766414;Leitungspartner GmbH;pruefen;slp;belegt;Zeile 88: €/a  €/a  ct / kWh  ct / kWh;
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;hsms;leer;;
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;ms;belegt;Zeile 24: Mittelspannung;zwei Tabellen (Zeilen 24 und 33)
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;msns;belegt;Z34: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;ns;belegt;Zeile 26: Niederspannung;zwei Tabellen (Zeilen 26 und 35)
-299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;pruefen;hsms;leer;;
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;pruefen;ms;belegt;Zeile 24: Mittelspannung;zwei Tabellen (Zeilen 24 und 33)
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;pruefen;msns;belegt;Z34: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;pruefen;ns;belegt;Zeile 26: Niederspannung;zwei Tabellen (Zeilen 26 und 35)
+299;SNB922269370765;Licht- und Kraftwerke Helmbrechts GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 300;SNB919657321775;Licht- und Kraftwerke Sonneberg GmbH;ok;hsms;leer;;
 300;SNB919657321775;Licht- und Kraftwerke Sonneberg GmbH;ok;ms;belegt;Zeile 18: Mittelspannung;
 300;SNB919657321775;Licht- und Kraftwerke Sonneberg GmbH;ok;msns;belegt;Zeile 19: Umspannung MS/NS;
@@ -1516,11 +1516,11 @@
 305;SNB983526428810;Mainnetz GmbH;ok;msns;belegt;Zeile 99: Umspannung zur Niederspannung;
 305;SNB983526428810;Mainnetz GmbH;ok;ns;belegt;Zeile 101: Niederspannung;
 305;SNB983526428810;Mainnetz GmbH;ok;slp;belegt;Z157 Arbeitspreis 7,96 und Z165 Grundpreis 72,00 Niederspannung netto;manuell durch Claude am Dokument gesehen
-306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;hsms;leer;;
-306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;ms;belegt;Zeile 22: n Entnahme aus Mittelspannung (MSP);
-306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;msns;belegt;Zeile 23: n Entnahme aus Umspannung (MSP/NSP);
-306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;ns;keine_zeile_mit_passender_beschriftung;;
-306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;slp;belegt;Zeile 48: Netzentgelte für Kunden ohne Leistungsmessung;
+306;SNB974647435931;Mainsite GmbH ＆ Co. KG;pruefen;hsms;leer;;
+306;SNB974647435931;Mainsite GmbH ＆ Co. KG;pruefen;ms;belegt;Zeile 22: n Entnahme aus Mittelspannung (MSP);
+306;SNB974647435931;Mainsite GmbH ＆ Co. KG;pruefen;msns;belegt;Zeile 23: n Entnahme aus Umspannung (MSP/NSP);
+306;SNB974647435931;Mainsite GmbH ＆ Co. KG;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
+306;SNB974647435931;Mainsite GmbH ＆ Co. KG;pruefen;slp;belegt;Zeile 48: Netzentgelte für Kunden ohne Leistungsmessung;
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;hsms;leer;;
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;ms;belegt;Zeile 21: Mittelspannung  MS;
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;msns;belegt;Zeile 22: Umspannung MS/NS  MS/NS;
@@ -1639,11 +1639,11 @@
 330;SNB929027950139;Netzgesellschaft Potsdam GmbH;pruefen;msns;belegt;Zeile 34: Umspannung Mittel-/ Niederspannung;
 330;SNB929027950139;Netzgesellschaft Potsdam GmbH;pruefen;ns;belegt;Zeile 35: Niederspannung;
 330;SNB929027950139;Netzgesellschaft Potsdam GmbH;pruefen;slp;belegt;Zeile 135: netto  brutto  netto  brutto;
-331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);ok;hsms;keine_zeile_mit_passender_beschriftung;;
-331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);ok;ms;belegt;Zeile 19: Mittelspannung;zwei Tabellen (Zeilen 19 und 30)
-331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);ok;msns;keine_zeile_mit_passender_beschriftung;;
-331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);ok;ns;belegt;Zeile 21: Niederspannung;zwei Tabellen (Zeilen 21 und 32)
-331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);ok;slp;belegt;Zeile 54: Jahrespreissystem;
+331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);pruefen;hsms;keine_zeile_mit_passender_beschriftung;;
+331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);pruefen;ms;belegt;Zeile 19: Mittelspannung;zwei Tabellen (Zeilen 19 und 30)
+331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);pruefen;msns;keine_zeile_mit_passender_beschriftung;;
+331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);pruefen;ns;belegt;Zeile 21: Niederspannung;zwei Tabellen (Zeilen 21 und 32)
+331;SNB913130054136;Netzgesellschaft Schwerin mbH (NGS);pruefen;slp;belegt;Zeile 54: Jahrespreissystem;
 332;SNB954504134696;netzplus GmbH ＆ Co. KG;ok;hsms;belegt;Zeile 30: Umspannung HS/MS;
 332;SNB954504134696;netzplus GmbH ＆ Co. KG;ok;ms;belegt;Zeile 31: Mittelspannung;
 332;SNB954504134696;netzplus GmbH ＆ Co. KG;ok;msns;belegt;Zeile 32: Umspannung MS/NS;
@@ -2646,11 +2646,11 @@
 532;SNB946137378622;Stadtwerke Itzehoe GmbH;pruefen;msns;leer;;
 532;SNB946137378622;Stadtwerke Itzehoe GmbH;pruefen;ns;belegt;Zeile 31: Niederspannung;
 532;SNB946137378622;Stadtwerke Itzehoe GmbH;pruefen;slp;belegt;Zeile 83: Grundpreis  Arbeitspreis;
-533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;hsms;leer;;
-533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;ms;belegt;Zeile 30: Mittelspannung;
-533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;ns;belegt;Zeile 36: Niederspannung;
-533;SNB945861817537;Stadtwerke Jena Netze GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+533;SNB945861817537;Stadtwerke Jena Netze GmbH;pruefen;hsms;leer;;
+533;SNB945861817537;Stadtwerke Jena Netze GmbH;pruefen;ms;belegt;Zeile 30: Mittelspannung;
+533;SNB945861817537;Stadtwerke Jena Netze GmbH;pruefen;msns;keine_zeile_mit_passender_beschriftung;;
+533;SNB945861817537;Stadtwerke Jena Netze GmbH;pruefen;ns;belegt;Zeile 36: Niederspannung;
+533;SNB945861817537;Stadtwerke Jena Netze GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 534;SNB973672371320;Stadtwerke Jülich GmbH;ok;hsms;belegt;Zeile 16: Umspannung zur Mittelspannung;
 534;SNB973672371320;Stadtwerke Jülich GmbH;ok;ms;belegt;Zeile 17: Mittelspannungsnetz;
 534;SNB973672371320;Stadtwerke Jülich GmbH;ok;msns;belegt;Zeile 18: Umspannung zur Niederspannung;
@@ -2826,9 +2826,9 @@
 568;SNB961816584323;Stadtwerke Mengen;ok;msns;belegt;Zeile 13: Mittel- / Niederspannung;
 568;SNB961816584323;Stadtwerke Mengen;ok;ns;belegt;Zeile 15: Niederspannung;
 568;SNB961816584323;Stadtwerke Mengen;ok;slp;belegt;Zeile 77: Arbeitspreis  Grundpreis;
-569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;hsms;keine_zeile_mit_passender_beschriftung;;
+569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;hsms;belegt;Z16: Umspannung HSp - MSp (netto, brutto);manuell durch Claude am Dokument gesehen
 569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;ms;belegt;Zeile 19: Mittelspannungsnetz;netto aus Netto/Brutto
-569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;msns;belegt;Z22: Umspannung MSp - NSp;manuell durch Claude am Dokument gesehen
 569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;ns;belegt;Zeile 25: Niederspannungsnetz;netto aus Netto/Brutto
 569;SNB913006238462;Stadtwerke Merseburg GmbH;ok;slp;belegt;Zeile 33: netto  brutto;
 570;SNB961448362368;Stadtwerke Metzingen;pruefen;hsms;leer;;
@@ -2863,7 +2863,7 @@
 575;SNB986042567117;Stadtwerke Mühlheim am Main GmbH;pruefen;slp;belegt;Zeile 56: netto  brutto 1)  netto  brutto 1);
 576;SNB956741146944;Stadtwerke Münchberg;ok;hsms;leer;;
 576;SNB956741146944;Stadtwerke Münchberg;ok;ms;belegt;Zeile 26: Mittelspannung;zwei Tabellen (Zeilen 26 und 35)
-576;SNB956741146944;Stadtwerke Münchberg;ok;msns;keine_zeile_mit_passender_beschriftung;;
+576;SNB956741146944;Stadtwerke Münchberg;ok;msns;belegt;Z36: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 576;SNB956741146944;Stadtwerke Münchberg;ok;ns;belegt;Zeile 28: Niederspannung;zwei Tabellen (Zeilen 28 und 37)
 576;SNB956741146944;Stadtwerke Münchberg;ok;slp;belegt;Zeile 72: Preise;
 577;SNB973056451075;Stadtwerke Munster-Bispingen GmbH;ok;hsms;belegt;Zeile 19: Umspannung HS/MS  HS/MS;
@@ -2882,20 +2882,20 @@
 579;SNB960797798422;Stadtwerke Neu-Isenburg GmbH;ok;ns;belegt;Zeile 23: Niederspannung  NS;
 579;SNB960797798422;Stadtwerke Neu-Isenburg GmbH;ok;slp;belegt;Zeile 43: Kleinkundengruppe (SLP NS)  Grundpreis  Arbeitspreis;
 580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;hsms;leer;;
-580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;ms;konflikt;Zeile 10: Mittelspannung (MS) = 15.94/5.1/22.84/0.25;zwei Tabellen (Zeilen 10 und 24)
+580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;ms;belegt;Z17: Mittelspannung (MS) Tabelle ab 2.500 h;manuell durch Claude am Dokument gesehen
 580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;msns;belegt;Zeile 11: Umspannung Mittel-/ Niederspannung;zwei Tabellen (Zeilen 11 und 18)
 580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;ns;belegt;Zeile 12: Niederspannung (NS);zwei Tabellen (Zeilen 12 und 19)
 580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;slp;belegt;Zeile 51: Entgelte für Entnahmen ohne Leistungsmessung;
 581;SNB924181641435;Stadtwerke Neuffen AG;ok;hsms;leer;;
-581;SNB924181641435;Stadtwerke Neuffen AG;ok;ms;keine_zeile_mit_passender_beschriftung;;
+581;SNB924181641435;Stadtwerke Neuffen AG;ok;ms;belegt;Z23: Mittelspannung;manuell durch Claude am Dokument gesehen
 581;SNB924181641435;Stadtwerke Neuffen AG;ok;msns;belegt;Zeile 15: Umspannung MS/NS;zwei Tabellen (Zeilen 15 und 24)
 581;SNB924181641435;Stadtwerke Neuffen AG;ok;ns;belegt;Zeile 16: Niederspannung;zwei Tabellen (Zeilen 16 und 25)
 581;SNB924181641435;Stadtwerke Neuffen AG;ok;slp;belegt;Zeile 51: Arbeitspreis in  Grundpreis pro;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;hsms;leer;;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;ms;belegt;Zeile 33: Mittelspannungsnetz;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;msns;belegt;Zeile 35: Umspannung Mittel- / Niederspannung (MS/NS);
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;ns;belegt;Zeile 37: Niederspannungsnetz;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;pruefen;hsms;leer;;
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;pruefen;ms;belegt;Zeile 33: Mittelspannungsnetz;
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;pruefen;msns;belegt;Zeile 35: Umspannung Mittel- / Niederspannung (MS/NS);
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;pruefen;ns;belegt;Zeile 37: Niederspannungsnetz;
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;hsms;leer;;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;ms;belegt;Zeile 85: Mittelspannung;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;msns;belegt;Zeile 87: Umspannung Mittel-/ Niederspannung;
@@ -2912,12 +2912,12 @@
 585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;ns;kein_text;;
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;hsms;leer;;
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;ms;belegt;Zeile 20: Mittelspannungsnetz (M);zwei Tabellen (Zeilen 20 und 28)
-586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;msns;belegt;Z29: Umspannung (MN);manuell durch Claude am Dokument gesehen
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;ns;belegt;Zeile 22: Niederspannungsnetz (N);zwei Tabellen (Zeilen 22 und 30)
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;slp;belegt;Zeile 72: Grundpreise in €/Jahr  Arbeitspreise in ct/kWh;
 587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;hsms;leer;;
 587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;ms;belegt;Zeile 10: Mittelspannung NE5;
-587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;msns;belegt;Z11: Umspannung NE6;manuell durch Claude am Dokument gesehen
 587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;ns;belegt;Zeile 12: Niederspannung NE7;
 587;SNB931294328658;Stadtwerke Neustadt an der Orla GmbH;ok;slp;belegt;Zeile 34: Entnahme ohne Leistungsmessung;
 588;SNB942305388936;Stadtwerke Neustadt an der Weinstraße GmbH;ok;hsms;leer;;
@@ -2935,9 +2935,9 @@
 590;SNB914630088973;Stadtwerke Neustrelitz GmbH;ok;msns;belegt;Zeile 22: Umspannung MS/NS  MS/NS;
 590;SNB914630088973;Stadtwerke Neustrelitz GmbH;ok;ns;belegt;Zeile 23: Niederspannung  NS;
 590;SNB914630088973;Stadtwerke Neustrelitz GmbH;ok;slp;belegt;Zeile 43: Kleinkundengruppe (SLP NS)  Grundpreis  Arbeitspreis;
-591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;hsms;keine_zeile_mit_passender_beschriftung;;
+591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;hsms;belegt;Z16: zur Mittelspannung, ab 2.500 h (Zeile unter Umspannung HS);manuell durch Claude am Dokument gesehen
 591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;ms;belegt;Zeile 19: ≥ 2.500 h/a  178,76  0,52;Beschriftung im Kontext der Zeile
-591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;msns;belegt;Z21: zur Niederspannung, ab 2.500 h;manuell durch Claude am Dokument gesehen
 591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;ns;belegt;Zeile 24: ≥ 2.500 h/a  143,23  3,48;Beschriftung im Kontext der Zeile
 591;SNB925999725461;Stadtwerke Neuwied GmbH;ok;slp;belegt;Zeile 43: Grundpreis  Arbeitspreis;
 592;SNB961943991735;Stadtwerke Niesky GmbH;ok;hsms;leer;;
@@ -3057,13 +3057,13 @@
 614;SNB927925826730;Stadtwerke Pirna Energie GmbH;ok;slp;belegt;Zeile 91: Grundpreis  Arbeitspreis;
 615;SNB917615238004;Stadtwerke Plattling;ok;hsms;leer;;
 615;SNB917615238004;Stadtwerke Plattling;ok;ms;belegt;Zeile 31: Mittelspannung;zwei Tabellen (Zeilen 31 und 40)
-615;SNB917615238004;Stadtwerke Plattling;ok;msns;keine_zeile_mit_passender_beschriftung;;
+615;SNB917615238004;Stadtwerke Plattling;ok;msns;belegt;Z41: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 615;SNB917615238004;Stadtwerke Plattling;ok;ns;belegt;Zeile 33: Niederspannung;zwei Tabellen (Zeilen 33 und 42)
 615;SNB917615238004;Stadtwerke Plattling;ok;slp;belegt;Zeile 82: Preise;
 616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;hsms;leer;;
-616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;ms;keine_zeile_mit_passender_beschriftung;;
-616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
+616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;ms;belegt;Z52: Mittelspannung (Tabellen unter und ab 2.500 h);manuell durch Claude am Dokument gesehen
+616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;msns;belegt;Z54: Umspannung Mittel-/Niederspannung;manuell durch Claude am Dokument gesehen
+616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;ns;belegt;Z56: Niederspannung;manuell durch Claude am Dokument gesehen
 616;SNB941283828373;Stadtwerke Prenzlau GmbH;ok;slp;belegt;Zeile 237: 1.  Grundpreis/Arbeitspreis Netznutzung;
 617;SNB922354559020;Stadtwerke Pritzwalk GmbH;ok;hsms;leer;;
 617;SNB922354559020;Stadtwerke Pritzwalk GmbH;ok;ms;belegt;Zeile 15: > 2.500 h/a  58,19  69,25  0,68  0,81;Beschriftung im Kontext der Zeile
@@ -3072,7 +3072,7 @@
 617;SNB922354559020;Stadtwerke Pritzwalk GmbH;ok;slp;belegt;Zeile 41: Kundengruppe  Grundpreis  Arbeitspreis;
 618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;hsms;leer;;
 618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;ms;belegt;Zeile 26: Mittelspannungsnetz;netto aus Netto/Brutto
-618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;msns;belegt;Z27: Umspannung MSp - NSp;manuell durch Claude am Dokument gesehen
 618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;ns;belegt;Zeile 28: Niederspannungsnetz;netto aus Netto/Brutto
 618;SNB970223838288;Stadtwerke Quedlinburg GmbH;ok;slp;belegt;Zeile 37: netto  brutto;
 619;SNB948134408678;Stadtwerke Quickborn GmbH;ok;hsms;leer;;
@@ -3107,7 +3107,7 @@
 624;SNB953661539375;Stadtwerke Ratingen GmbH;pruefen;slp;belegt;Zeile 17: Netto-Preis  Brutto-Preis;
 625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;hsms;leer;;
 625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;ms;belegt;Zeile 15: Mittelspannung;
-625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;msns;konflikt;Zeile 141: Q1 + Q4 * Pauschalreduktion ist begrenzt auf die Höhe des zu = 84.9/10.95/2.44/7.3;
+625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;msns;belegt;Z16: Umspannung;manuell durch Claude am Dokument gesehen
 625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;ns;belegt;Zeile 17: Niederspannung;
 625;SNB959567240391;Stadtwerke Reichenbach/Vogtland GmbH;ok;slp;belegt;Zeile 33: Entgelt je;
 626;SNB926119738552;Stadtwerke Rendsburg GmbH;ok;hsms;leer;;
@@ -3155,10 +3155,10 @@
 634;SNB979202870318;Stadtwerke Rothenburg o.d.T. GmbH;ok;msns;belegt;Zeile 27: Umspannung Mittel-/ Niederspannung;
 634;SNB979202870318;Stadtwerke Rothenburg o.d.T. GmbH;ok;ns;belegt;Zeile 28: Niederspannungsnetz (NS);
 634;SNB979202870318;Stadtwerke Rothenburg o.d.T. GmbH;ok;slp;belegt;Zeile 63: €/a  ct / kWh;
-635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;hsms;konflikt;Zeile 96: Artikel-ID 1-01-4 = 20.71/593.0/161.27/30.0;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;ms;konflikt;Zeile 103: Artikel-ID 1-01-5 = 28.43/632.0/147.19/157.0;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;msns;konflikt;Zeile 110: Artikel-ID 1-01-6 = 37.71/683.0/166.28/169.0;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;ns;konflikt;Zeile 117: Artikel-ID 1-01-7 = 46.22/733.0/167.0/249.0;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
+635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;hsms;belegt;Artikel 1-01-4, Jahreswert und Tagespreis;manuell durch Claude am Dokument gesehen
+635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;ms;belegt;Artikel 1-01-5;manuell durch Claude am Dokument gesehen
+635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;msns;belegt;Artikel 1-01-6;manuell durch Claude am Dokument gesehen
+635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;ns;belegt;Artikel 1-01-7;manuell durch Claude am Dokument gesehen
 635;SNB985382489820;Stadtwerke Saarbrücken Netz AG;ok;slp;belegt;Zeile 152: sowie für Marktlokation nach Modul 1 und/oder Modul 3 der Festlegungen;
 636;SNB922861338965;Stadtwerke Sangerhausen GmbH;pruefen;hsms;leer;;
 636;SNB922861338965;Stadtwerke Sangerhausen GmbH;pruefen;ms;belegt;Zeile 16: Mittelspannungsnetz;netto aus Netto/Brutto
@@ -3231,7 +3231,7 @@
 649;SNB982660786343;Stadtwerke Schwäbisch Hall GmbH;ok;slp;belegt;Zeile 40: Grundpreis  Arbeitspreis;
 650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;hsms;leer;;
 650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;ms;belegt;Zeile 24: Mittelspannung;zwei Tabellen (Zeilen 24 und 33)
-650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;msns;keine_zeile_mit_passender_beschriftung;;
+650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;msns;belegt;Z34: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;ns;belegt;Zeile 26: Niederspannung;zwei Tabellen (Zeilen 26 und 35)
 650;SNB946717964085;Stadtwerke Schwarzenbach/Saale;ok;slp;belegt;Zeile 70: Preise;
 651;SNB985072256732;Stadtwerke Schwarzenberg GmbH;ok;hsms;leer;;
@@ -3279,8 +3279,8 @@
 659;SNB953453232156;Stadtwerke Sindelfingen GmbH;ok;msns;belegt;Zeile 28: Umspannung zur Niederspannung (MS/NS);
 659;SNB953453232156;Stadtwerke Sindelfingen GmbH;ok;ns;belegt;Zeile 30: Niederspannungsnetz (NS);
 659;SNB953453232156;Stadtwerke Sindelfingen GmbH;ok;slp;belegt;Zeile 45: Kundengruppe  Grundpreis €/a  Arbeitspreis ct/kWh;
-660;SNB965118678667;Stadtwerke Soest GmbH;ok;hsms;konflikt;Zeile 16: Umspannung zur Mittelspannung = 13.33/5.18/132.83/0.4;
-660;SNB965118678667;Stadtwerke Soest GmbH;ok;ms;konflikt;Zeile 17: Mittelspannungsnetz = 17.66/6.43/160.66/0.71;
+660;SNB965118678667;Stadtwerke Soest GmbH;ok;hsms;belegt;Zeile 16: Umspannung zur Mittelspannung;
+660;SNB965118678667;Stadtwerke Soest GmbH;ok;ms;belegt;Zeile 17: Mittelspannungsnetz;
 660;SNB965118678667;Stadtwerke Soest GmbH;ok;msns;belegt;Zeile 18: Umspannung zur Niederspannung;
 660;SNB965118678667;Stadtwerke Soest GmbH;ok;ns;belegt;Zeile 19: Niederspannungsnetz;
 660;SNB965118678667;Stadtwerke Soest GmbH;ok;slp;belegt;Zeile 59: Bedarfsart  €/a  ct/kWh;
@@ -3291,7 +3291,7 @@
 661;SNB947030954821;Stadtwerke Soltau GmbH ＆ Co. KG;ok;slp;belegt;Zeile 18: Grundpreis  55,00 € pro Jahr  65,45 € pro Jahr;
 662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;hsms;leer;;
 662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;ms;belegt;Zeile 16: Mittelspannung;netto aus Netto/Brutto
-662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;msns;belegt;Z18: Umspannung Mittelspannung in Niederspannung;manuell durch Claude am Dokument gesehen
 662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;ns;belegt;Zeile 19: Niederspannung;netto aus Netto/Brutto
 662;SNB987483520273;Stadtwerke Sondershausen Netz GmbH;ok;slp;belegt;Zeile 58: Grundpreis in €/a  Arbeitspreis in Ct/kWh;
 663;SNB918097788087;Stadtwerke Speyer GmbH;ok;hsms;leer;;
@@ -3301,7 +3301,7 @@
 663;SNB918097788087;Stadtwerke Speyer GmbH;ok;slp;belegt;Zeile 42: Art der Entnahmestelle  Arbeitspreis  Grundpreis;
 664;SNB954187049256;Stadtwerke Springe GmbH;ok;hsms;belegt;Zeile 14: Entnahme aus Umspannung (110/20 kV);
 664;SNB954187049256;Stadtwerke Springe GmbH;ok;ms;belegt;Zeile 16: Entnahme aus Mittelspannung (20 kV);
-664;SNB954187049256;Stadtwerke Springe GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+664;SNB954187049256;Stadtwerke Springe GmbH;ok;msns;belegt;Z18: Entnahme aus Umspannung (20/0,4 kV);manuell durch Claude am Dokument gesehen
 664;SNB954187049256;Stadtwerke Springe GmbH;ok;ns;belegt;Zeile 20: Entnahme aus Niederspannung (;
 664;SNB954187049256;Stadtwerke Springe GmbH;ok;slp;belegt;Zeile 89: Grundpreis  Arbeitspreis;
 665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;hsms;leer;;
@@ -3311,7 +3311,7 @@
 665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;hsms;leer;;
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;ms;belegt;Zeile 19: Mittelspannung  32,88  39,13  3,11  3,70  89,31  106,28  0,86  1,02;Beschriftung im Kontext der Zeile
-666;SNB975659838086;Stadtwerke Stade GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+666;SNB975659838086;Stadtwerke Stade GmbH;ok;msns;belegt;Z21: Umspannung;manuell durch Claude am Dokument gesehen
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;ns;belegt;Zeile 23: Niederspannung;netto aus Netto/Brutto
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;slp;belegt;Zeile 86: Entnahmestelle  Grundpreis  Arbeitspreis;
 667;SNB976240506834;Stadtwerke Stadtroda GmbH;ok;hsms;leer;;
@@ -3319,14 +3319,14 @@
 667;SNB976240506834;Stadtwerke Stadtroda GmbH;ok;msns;belegt;Zeile 14: MS/NS - NE 6 - Umspannung Mittel-/Niederspannung;
 667;SNB976240506834;Stadtwerke Stadtroda GmbH;ok;ns;belegt;Zeile 15: NS - NE 7 - Niederspannung;
 667;SNB976240506834;Stadtwerke Stadtroda GmbH;ok;slp;belegt;Zeile 20: Arbeitspreis  Arbeitspreis  Grundpreis  Grundpreis;
-668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;hsms;konflikt;Zeile 32: Umspannung (HSP/MSP) = 80.35/95.62/0.01/0.01;
-668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;ms;konflikt;Zeile 33: Mittelspannung (MSP)* = 135.53/161.28/0.01/0.01;
+668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;hsms;belegt;Z32: Umspannung (HSP/MSP) (netto, brutto), Staßfurt;manuell durch Claude am Dokument gesehen
+668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;ms;belegt;Z33: Mittelspannung (MSP);manuell durch Claude am Dokument gesehen
 668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;msns;belegt;Zeile 22: Umspannung (MSP/NSP);zwei Tabellen (Zeilen 22 und 34)
 668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;ns;belegt;Zeile 23: Niederspannung (NSP);zwei Tabellen in Reihenfolge (Zeilen 23 und 35)
 668;SNB910474681448;Stadtwerke Staßfurt GmbH;ok;slp;belegt;Zeile 90: Grundpreis  Arbeitspreise;
 669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;hsms;leer;;
 669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;ms;belegt;Zeile 26: Mittelspannung;zwei Tabellen (Zeilen 26 und 35)
-669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;msns;keine_zeile_mit_passender_beschriftung;;
+669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;msns;belegt;Z36: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;ns;belegt;Zeile 28: Niederspannung;zwei Tabellen (Zeilen 28 und 37)
 669;SNB943984165313;Stadtwerke Stein GmbH ＆ Co. KG;ok;slp;belegt;Zeile 71: Preise;
 670;SNB900123507953;Stadtwerke Steinfurt GmbH;ok;hsms;leer;;
@@ -3334,9 +3334,9 @@
 670;SNB900123507953;Stadtwerke Steinfurt GmbH;ok;msns;belegt;Zeile 19: Umspannung MS/NS;
 670;SNB900123507953;Stadtwerke Steinfurt GmbH;ok;ns;belegt;Zeile 20: Niederspannung (NS);
 670;SNB900123507953;Stadtwerke Steinfurt GmbH;ok;slp;belegt;Zeile 24: Grundpreis  Arbeitspreis;
-671;SNB957404386462;Stadtwerke Stendal GmbH;ok;hsms;keine_zeile_mit_passender_beschriftung;;
+671;SNB957404386462;Stadtwerke Stendal GmbH;ok;hsms;belegt;Z21: Umspannung HSp - MSp;manuell durch Claude am Dokument gesehen
 671;SNB957404386462;Stadtwerke Stendal GmbH;ok;ms;belegt;Zeile 24: Mittelspannungsnetz;netto aus Netto/Brutto
-671;SNB957404386462;Stadtwerke Stendal GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+671;SNB957404386462;Stadtwerke Stendal GmbH;ok;msns;belegt;Z27: Umspannung MSp - NSp;manuell durch Claude am Dokument gesehen
 671;SNB957404386462;Stadtwerke Stendal GmbH;ok;ns;belegt;Zeile 30: Niederspannungsnetz;netto aus Netto/Brutto
 671;SNB957404386462;Stadtwerke Stendal GmbH;ok;slp;belegt;Zeile 38: Grundpreis  EURO/a  100,00  119,00;
 672;SNB983384447602;Stadtwerke Stockach GmbH;ok;hsms;leer;;
@@ -3376,7 +3376,7 @@
 678;SNB932509765411;Stadtwerke Teterow GmbH;pruefen;slp;leer;;
 679;SNB938620426132;Stadtwerke Tirschenreuth;ok;hsms;leer;;
 679;SNB938620426132;Stadtwerke Tirschenreuth;ok;ms;belegt;Zeile 30: Mittelspannung;zwei Tabellen (Zeilen 30 und 39)
-679;SNB938620426132;Stadtwerke Tirschenreuth;ok;msns;keine_zeile_mit_passender_beschriftung;;
+679;SNB938620426132;Stadtwerke Tirschenreuth;ok;msns;belegt;Z40: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 679;SNB938620426132;Stadtwerke Tirschenreuth;ok;ns;belegt;Zeile 32: Niederspannung;zwei Tabellen (Zeilen 32 und 41)
 679;SNB938620426132;Stadtwerke Tirschenreuth;ok;slp;belegt;Zeile 80: Preise;
 680;SNB933235634552;Stadtwerke Torgau GmbH;ok;hsms;leer;;
@@ -3399,11 +3399,11 @@
 683;SNB924659713978;Stadtwerke Troisdorf GmbH;ok;msns;belegt;Zeile 62: MSP/NSP;
 683;SNB924659713978;Stadtwerke Troisdorf GmbH;ok;ns;belegt;Zeile 63: NSP  39,19  7,30  205,82  0,63;Beschriftung im Kontext der Zeile
 683;SNB924659713978;Stadtwerke Troisdorf GmbH;ok;slp;belegt;Zeile 77: Netto;
-684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;ok;hsms;leer;;
-684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;ok;ms;belegt;Zeile 21: Mittelspannung;zwei Tabellen (Zeilen 21 und 30)
-684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;ok;ns;belegt;Zeile 23: Niederspannung;zwei Tabellen (Zeilen 23 und 32)
-684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;hsms;leer;;
+684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;ms;belegt;Zeile 21: Mittelspannung;zwei Tabellen (Zeilen 21 und 30)
+684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;msns;belegt;Z31: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
+684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;ns;belegt;Zeile 23: Niederspannung;zwei Tabellen (Zeilen 23 und 32)
+684;SNB914963192408;Stadtwerke Trostberg Stromversorgung GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 685;SNB921695080347;Stadtwerke Tübingen GmbH;ok;hsms;belegt;Zeile 20: Artikel-ID 1-01-4;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
 685;SNB921695080347;Stadtwerke Tübingen GmbH;ok;ms;belegt;Zeile 25: Artikel-ID 1-01-5;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
 685;SNB921695080347;Stadtwerke Tübingen GmbH;ok;msns;belegt;Zeile 30: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
@@ -3466,12 +3466,12 @@
 696;SNB916927144072;Stadtwerke Villingen-Schwenningen GmbH;ok;slp;belegt;Zeile 86: Entnahmestelle  Grundpreis  Arbeitspreis;
 697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;hsms;leer;;
 697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;ms;belegt;Zeile 29: Mittelspannung;zwei Tabellen (Zeilen 29 und 38)
-697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;msns;keine_zeile_mit_passender_beschriftung;;
+697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;msns;belegt;Z39: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;ns;belegt;Zeile 31: Niederspannung;zwei Tabellen (Zeilen 31 und 40)
 697;SNB932685335767;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;slp;belegt;Zeile 68: Preise;
 698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;hsms;leer;;
 698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;ms;belegt;Zeile 27: Mittelspannung;zwei Tabellen (Zeilen 27 und 36)
-698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;msns;belegt;Z37: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;ns;belegt;Zeile 29: Niederspannung;zwei Tabellen (Zeilen 29 und 38)
 698;SNB967967636034;Stadtwerke Vilshofen GmbH;ok;slp;belegt;Zeile 73: Preise;
 699;SNB991263248615;Stadtwerke Vlotho Stromnetz GmbH;ok;hsms;belegt;Zeile 13: Hochspannung mit Umspannnung auf Mittelspannung;
@@ -3486,13 +3486,13 @@
 700;SNB945413736880;Stadtwerke Völklingen Netz GmbH;ok;slp;belegt;Zeile 21: Netto-Grundpreis  Brutto-Grundpreis  Netto-Arbeitspreis  Brutto-Arbeit;
 701;SNB968648650424;Stadtwerke Wachenheim;ok;hsms;leer;;
 701;SNB968648650424;Stadtwerke Wachenheim;ok;ms;belegt;Zeile 12: Mittelspannung;
-701;SNB968648650424;Stadtwerke Wachenheim;ok;msns;keine_zeile_mit_passender_beschriftung;;
+701;SNB968648650424;Stadtwerke Wachenheim;ok;msns;belegt;Z13: Umspannung;manuell durch Claude am Dokument gesehen
 701;SNB968648650424;Stadtwerke Wachenheim;ok;ns;belegt;Zeile 14: Niederspannung;
 701;SNB968648650424;Stadtwerke Wachenheim;ok;slp;belegt;Zeile 37: Grundpreis  Arbeitspreis;
 702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;hsms;leer;;
-702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;ms;keine_zeile_mit_passender_beschriftung;;
-702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
+702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;ms;belegt;Z95: Mittelspannung, ab 2.500 h;manuell durch Claude am Dokument gesehen
+702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;msns;belegt;Z102: Umspannung MS/NS;manuell durch Claude am Dokument gesehen
+702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;ns;belegt;Z109: Niederspannung;manuell durch Claude am Dokument gesehen
 702;SNB969058795651;Stadtwerke Waiblingen GmbH;ok;slp;belegt;Zeile 215: netto;
 703;SNB920730809172;Stadtwerke Waldkirch GmbH;ok;hsms;leer;;
 703;SNB920730809172;Stadtwerke Waldkirch GmbH;ok;ms;belegt;Zeile 19: Mittelspannung;
@@ -3504,14 +3504,14 @@
 704;SNB985206131959;Stadtwerke Waldkirchen;ok;msns;belegt;Zeile 20: Umsp. Mittel- auf Niederspannung;
 704;SNB985206131959;Stadtwerke Waldkirchen;ok;ns;belegt;Zeile 21: Niederspannung;
 704;SNB985206131959;Stadtwerke Waldkirchen;ok;slp;belegt;Zeile 43: Grund-  Arbeits-;
-705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;ok;hsms;leer;;
-705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;ok;ms;leer;;
-705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
-705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;pruefen;hsms;leer;;
+705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;pruefen;ms;leer;;
+705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;pruefen;msns;keine_zeile_mit_passender_beschriftung;;
+705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
+705;SNB960416123321;Stadtwerke Waldkraiburg GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 706;SNB971196250442;Stadtwerke Waldmünchen;ok;hsms;leer;;
 706;SNB971196250442;Stadtwerke Waldmünchen;ok;ms;belegt;Zeile 26: Mittelspannung;zwei Tabellen (Zeilen 26 und 35)
-706;SNB971196250442;Stadtwerke Waldmünchen;ok;msns;keine_zeile_mit_passender_beschriftung;;
+706;SNB971196250442;Stadtwerke Waldmünchen;ok;msns;belegt;Z36: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 706;SNB971196250442;Stadtwerke Waldmünchen;ok;ns;belegt;Zeile 28: Niederspannung;zwei Tabellen (Zeilen 28 und 37)
 706;SNB971196250442;Stadtwerke Waldmünchen;ok;slp;belegt;Zeile 17: Preise;
 707;SNB933494191209;Stadtwerke Waldshut-Tiengen GmbH;ok;hsms;leer;;
@@ -3550,9 +3550,9 @@
 713;SNB929073868471;Stadtwerke Wasserburg a. Inn;pruefen;ns;belegt;Zeile 59: Niederspannung (NS);
 713;SNB929073868471;Stadtwerke Wasserburg a. Inn;pruefen;slp;belegt;Zeile 64: Jahrespreissystem;
 714;SNB975283859389;Stadtwerke Wedel GmbH;ok;hsms;leer;;
-714;SNB975283859389;Stadtwerke Wedel GmbH;ok;ms;keine_zeile_mit_passender_beschriftung;;
-714;SNB975283859389;Stadtwerke Wedel GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-714;SNB975283859389;Stadtwerke Wedel GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
+714;SNB975283859389;Stadtwerke Wedel GmbH;ok;ms;belegt;Z23: Mittelspannung (MS), Tagespreis und Jahreswert;manuell durch Claude am Dokument gesehen
+714;SNB975283859389;Stadtwerke Wedel GmbH;ok;msns;belegt;Z24: Umspannung (MS/NS);manuell durch Claude am Dokument gesehen
+714;SNB975283859389;Stadtwerke Wedel GmbH;ok;ns;belegt;Z25: Niederspannung (NS);manuell durch Claude am Dokument gesehen
 714;SNB975283859389;Stadtwerke Wedel GmbH;ok;slp;belegt;Zeile 16: Entnahme aus:  < 2.500 h/a;
 715;SNB926480464456;Stadtwerke Weilburg GmbH;ok;hsms;leer;;
 715;SNB926480464456;Stadtwerke Weilburg GmbH;ok;ms;belegt;Zeile 17: Entnahme aus Mittelspannung;
@@ -3611,7 +3611,7 @@
 725;SNB919230329570;Stadtwerke Wilster;pruefen;slp;belegt;Zeile 84: Grundpreis  Arbeitspreis;
 726;SNB957988771050;Stadtwerke Windsbach;ok;hsms;leer;;
 726;SNB957988771050;Stadtwerke Windsbach;ok;ms;belegt;Zeile 22: Mittelspannung;zwei Tabellen (Zeilen 22 und 31)
-726;SNB957988771050;Stadtwerke Windsbach;ok;msns;keine_zeile_mit_passender_beschriftung;;
+726;SNB957988771050;Stadtwerke Windsbach;ok;msns;belegt;Z32: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 726;SNB957988771050;Stadtwerke Windsbach;ok;ns;belegt;Zeile 24: Niederspannung;zwei Tabellen (Zeilen 24 und 33)
 726;SNB957988771050;Stadtwerke Windsbach;ok;slp;belegt;Zeile 65: Preise;
 727;SNB972723368326;Stadtwerke Winsen (Luhe) GmbH;ok;hsms;leer;;
@@ -3646,9 +3646,9 @@
 732;SNB983546347757;Stadtwerke Wolfenbüttel GmbH;ok;slp;belegt;Zeile 97: netto in  brutto in  netto in  brutto in;
 733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;hsms;leer;;
 733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;ms;belegt;Zeile 20: Mittelspannungsnetz  46,37  55,18  0,0606  0,0721  184,15  219,14  0,0;Beschriftung im Kontext der Zeile
-733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;msns;belegt;Z21-22: Umspannung zur Niederspannung, Euro je kWh und Tagespreis;manuell durch Claude am Dokument gesehen
 733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;ns;belegt;Zeile 24: Niederspannungsnetz  79,93  95,12  0,1023  0,1217  256,97  305,79  0,0;Beschriftung im Kontext der Zeile
-733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+733;SNB971345683381;Stadtwerke Wolmirstedt GmbH;ok;slp;belegt;Z39 Grundpreis 60,00 und Arbeitspreis HT 0,0790 EUR/kWh = 7,90 ct;manuell durch Claude am Dokument gesehen
 734;SNB935626894156;Stadtwerke Zeil a. Main;pruefen;hsms;leer;;
 734;SNB935626894156;Stadtwerke Zeil a. Main;pruefen;ms;belegt;Zeile 56: Mittelspannung (MS);
 734;SNB935626894156;Stadtwerke Zeil a. Main;pruefen;msns;belegt;Zeile 57: Umspannung Mittel- / Niederspannung (USp. MS/NS);
@@ -3661,14 +3661,14 @@
 735;SNB980783618473;Stadtwerke Zeven GmbH;ok;slp;belegt;Zeile 52: Kleinkundengruppe (SLP NS)  Grundpreis  Arbeitspreis;
 736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;hsms;leer;;
 736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;ms;belegt;Zeile 33: Mittelspannung;zwei Tabellen (Zeilen 33 und 44)
-736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;msns;belegt;Z46: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;ns;belegt;Zeile 37: Niederspannung;zwei Tabellen (Zeilen 37 und 48)
 736;SNB931316685899;Stadtwerke Zirndorf GmbH;ok;slp;belegt;Zeile 26: Grundpreis  56,00 €/a;
 737;SNB959966681252;Stadtwerke Zittau GmbH;ok;hsms;leer;;
 737;SNB959966681252;Stadtwerke Zittau GmbH;ok;ms;belegt;Zeile 19: Artikel-ID 1-01-5;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
 737;SNB959966681252;Stadtwerke Zittau GmbH;ok;msns;belegt;Zeile 24: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
 737;SNB959966681252;Stadtwerke Zittau GmbH;ok;ns;belegt;Zeile 29: Artikel-ID 1-01-7;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
-737;SNB959966681252;Stadtwerke Zittau GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+737;SNB959966681252;Stadtwerke Zittau GmbH;ok;slp;belegt;Artikel 1-02-0-001 Grundpreis 69,84 und 1-02-0-002 Arbeitspreis 9,54;manuell durch Claude am Dokument gesehen
 738;SNB923190544898;Stadtwerke Zweibrücken GmbH;ok;hsms;leer;;
 738;SNB923190544898;Stadtwerke Zweibrücken GmbH;ok;ms;belegt;Zeile 19: Mittelspannungsnetz;
 738;SNB923190544898;Stadtwerke Zweibrücken GmbH;ok;msns;belegt;Zeile 20: Umspannung in Niederspannung;
@@ -3691,7 +3691,7 @@
 741;SNB979326623005;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];ok;slp;belegt;Zeile 74: Nettopreise  Bruttopreise  Nettopreise  Bruttopreise;
 742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;hsms;leer;;
 742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;ms;belegt;Zeile 11: Mittelspannungsnetz;netto aus Netto/Brutto
-742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;msns;belegt;Z14: Umspannung MSp - NSp;manuell durch Claude am Dokument gesehen
 742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;ns;belegt;Zeile 17: Niederspannungsnetz;netto aus Netto/Brutto
 742;SNB943531720705;Städtische Betriebswerke Luckenwalde GmbH;ok;slp;belegt;Zeile 25: netto  brutto;
 743;SNB946013720880;Städtische Werke Borna Netz GmbH;pruefen;hsms;leer;;
@@ -3699,9 +3699,9 @@
 743;SNB946013720880;Städtische Werke Borna Netz GmbH;pruefen;msns;leer;;
 743;SNB946013720880;Städtische Werke Borna Netz GmbH;pruefen;ns;leer;;
 743;SNB946013720880;Städtische Werke Borna Netz GmbH;pruefen;slp;leer;;
-744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;hsms;keine_zeile_mit_passender_beschriftung;;
+744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;hsms;belegt;Z194: Umspannung Hsp./Msp.;manuell durch Claude am Dokument gesehen
 744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;ms;belegt;Zeile 195: Mittelspannung** (Msp.);
-744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;msns;belegt;Z196: Umspannung Msp./Nsp.;manuell durch Claude am Dokument gesehen
 744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;ns;belegt;Zeile 197: Niederspannung (Nsp.);
 744;SNB935482852901;Städtische Werke Netz+Service GmbH;ok;slp;belegt;Zeile 66: kWh;
 745;SNB926394976090;Städtische Werke Spremberg (Lausitz) GmbH;ok;hsms;leer;;
@@ -3790,9 +3790,9 @@
 761;SNB941555074781;Stromversorgung Seebruck eG;ok;ns;belegt;Zeile 11: Niederspannung (NS);
 761;SNB941555074781;Stromversorgung Seebruck eG;ok;slp;belegt;Zeile 16: Grundpreis  Arbeitspreis;
 762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;hsms;leer;;
-762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;ms;konflikt;Zeile 148: Mittelspannung MSP = 174.43/207.57/0.08/0.1;
-762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
-762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;ns;keine_zeile_mit_passender_beschriftung;;
+762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;ms;belegt;Z148: Mittelspannung MSP (netto, brutto);manuell durch Claude am Dokument gesehen
+762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;msns;belegt;Z149: Umspannung MSP-NSP;manuell durch Claude am Dokument gesehen
+762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;ns;belegt;Z150: Niederspannung;manuell durch Claude am Dokument gesehen
 762;SNB954776773166;Stromversorgung Sulz am Neckar GmbH;ok;slp;belegt;Zeile 224: 19 % MwSt.;
 763;SNB918539636471;Stromversorgung Zerbst GmbH ＆ Co. KG;ok;hsms;leer;;
 763;SNB918539636471;Stromversorgung Zerbst GmbH ＆ Co. KG;ok;ms;belegt;Zeile 17: Mittelspannung;
@@ -3826,7 +3826,7 @@
 768;SNB983964953738;SVH Stromversorgung Haar GmbH;ok;slp;belegt;Zeile 40: Grund-  Arbeits-;
 769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;hsms;leer;;
 769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;ms;belegt;Zeile 33: Mittelspannungsnetz;zwei Tabellen (Zeilen 33 und 42)
-769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;msns;belegt;Z43: Umspannung Mittel- zu Niederspannung;manuell durch Claude am Dokument gesehen
 769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;ns;belegt;Zeile 35: Niederspannungsnetz;zwei Tabellen (Zeilen 35 und 44)
 769;SNB919067474511;SVI - Stromversorgung Ismaning GmbH;ok;slp;belegt;Zeile 71: Jahrespreissystem;
 770;SNB955238223991;SVO Netz GmbH;pruefen;hsms;leer;;
@@ -3839,10 +3839,10 @@
 771;SNB928340368768;SWB Stadtwerke Biedenkopf GmbH;ok;msns;belegt;Zeile 22: Umspannung Mittel-/ Niederspannung (MS/NS);
 771;SNB928340368768;SWB Stadtwerke Biedenkopf GmbH;ok;ns;belegt;Zeile 23: Niederspannungsnetz (NS);
 771;SNB928340368768;SWB Stadtwerke Biedenkopf GmbH;ok;slp;belegt;Zeile 53: Grundpreis  Arbeitspreis;
-772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;hsms;keine_zeile_mit_passender_beschriftung;;
-772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;ms;keine_zeile_mit_passender_beschriftung;;
-772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;msns;keine_zeile_mit_passender_beschriftung;;
-772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;ns;keine_zeile_mit_passender_beschriftung;;
+772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;hsms;belegt;Z43: Umspannung Hoch-/Mittelspannung (USp. HS/MS);manuell durch Claude am Dokument gesehen
+772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;ms;belegt;Z44: Mittelspannung (MS);manuell durch Claude am Dokument gesehen
+772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;msns;belegt;Z45: Umspannung Mittel-/Niederspannung (USp. MS/NS);manuell durch Claude am Dokument gesehen
+772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;ns;belegt;Z46: Niederspannung (NS);manuell durch Claude am Dokument gesehen
 772;SNB950262883869;SWE Netz GmbH (Erfurt);ok;slp;belegt;Zeile 114: Entnahme ohne Leistungsmessung  Grundpreis  Arbeitspreis;
 773;SNB968273674970;SWE Netz GmbH (Ettlingen);ok;hsms;belegt;Zeile 53: Umspannung Hoch- / Mittelspannung;
 773;SNB968273674970;SWE Netz GmbH (Ettlingen);ok;ms;belegt;Zeile 54: Mittelspannung;
@@ -3901,7 +3901,7 @@
 783;SNB915638224585;SWS Netze GmbH;pruefen;slp;belegt;Zeile 248 (Tagespreis): (72,50);
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;hsms;leer;;
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;ms;belegt;Zeile 25: Mittelspannung;
-784;SNB969362778135;SWS Netze Solingen GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+784;SNB969362778135;SWS Netze Solingen GmbH;ok;msns;belegt;Z27: Mittelspannung mit Umspannung;manuell durch Claude am Dokument gesehen
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;ns;belegt;Zeile 29: Niederspannung;
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;slp;belegt;Zeile 80: Arbeitspreis  Grundpreis;
 785;SNB966813503780;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;hsms;leer;;
@@ -3919,10 +3919,10 @@
 787;SNB967812386411;SWW Wunsiedel GmbH;pruefen;msns;leer;;
 787;SNB967812386411;SWW Wunsiedel GmbH;pruefen;ns;leer;;
 787;SNB967812386411;SWW Wunsiedel GmbH;pruefen;slp;belegt;Zeile 15: Preise;
-788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;ok;hsms;kein_text;;
-788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;ok;ms;kein_text;;
-788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;ok;msns;kein_text;;
-788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;ok;ns;kein_text;;
+788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;pruefen;hsms;kein_text;;
+788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;pruefen;ms;kein_text;;
+788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;pruefen;msns;kein_text;;
+788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;pruefen;ns;kein_text;;
 789;SNB974739102161;T.W.O. Technische Werke Osning GmbH;ok;hsms;belegt;Zeile 13: Umspannung HS/MS;
 789;SNB974739102161;T.W.O. Technische Werke Osning GmbH;ok;ms;belegt;Zeile 14: Mittelspannung (MS);
 789;SNB974739102161;T.W.O. Technische Werke Osning GmbH;ok;msns;belegt;Zeile 15: Umspannung MS/NS;
@@ -3988,9 +3988,9 @@
 801;SNB917454122557;Überlandzentrale Wörth/I.-Altheim Netz AG;ok;msns;belegt;Zeile 69: Leistungspreis  8,59 €/kW und Jahr  129,61 €/kW und Jahr;Beschriftung im Kontext der Zeile
 801;SNB917454122557;Überlandzentrale Wörth/I.-Altheim Netz AG;ok;ns;belegt;Zeile 73: Leistungspreis  10,36 €/kW und Jahr  124,81 €/kW und Jahr;Beschriftung im Kontext der Zeile
 801;SNB917454122557;Überlandzentrale Wörth/I.-Altheim Netz AG;ok;slp;belegt;Zeile 9: Standardlastprofil;
-802;SNB929185184919;ÜZ Mainfranken eG;ok;hsms;keine_zeile_mit_passender_beschriftung;;
+802;SNB929185184919;ÜZ Mainfranken eG;ok;hsms;belegt;Z34: Umspannung in Mittelspannung;manuell durch Claude am Dokument gesehen
 802;SNB929185184919;ÜZ Mainfranken eG;ok;ms;belegt;Zeile 36: Mittelspannung1);
-802;SNB929185184919;ÜZ Mainfranken eG;ok;msns;keine_zeile_mit_passender_beschriftung;;
+802;SNB929185184919;ÜZ Mainfranken eG;ok;msns;belegt;Z38: Umspannung in Niederspannung;manuell durch Claude am Dokument gesehen
 802;SNB929185184919;ÜZ Mainfranken eG;ok;ns;belegt;Zeile 40: Niederspannung2);
 802;SNB929185184919;ÜZ Mainfranken eG;ok;slp;belegt;Zeile 104: NETZNUTZUNGSEBENE  NETTOPREIS;
 803;SNB933760214908;Veolia Industriepark Deutschland GmbH;pruefen;hsms;leer;;
@@ -4000,22 +4000,22 @@
 803;SNB933760214908;Veolia Industriepark Deutschland GmbH;pruefen;slp;leer;;
 804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;hsms;leer;;
 804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;ms;belegt;Zeile 28: Mittelspannung;zwei Tabellen (Zeilen 28 und 37)
-804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;msns;keine_zeile_mit_passender_beschriftung;;
+804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;msns;belegt;Z38: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;ns;belegt;Zeile 30: Niederspannung;zwei Tabellen (Zeilen 30 und 39)
 804;SNB932161540975;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;slp;belegt;Zeile 90: Preise;
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;hsms;leer;;
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;ms;belegt;Zeile 11: Mittelspannungsnetz;
-805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;msns;belegt;Z12: Umspannungsnetz;manuell durch Claude am Dokument gesehen
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;ns;belegt;Zeile 13: Niederspannungsnetz;
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;slp;belegt;Zeile 75: Grundpreis  50,00  €/a;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;hsms;leer;;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;ms;belegt;Zeile 370: NE 5 Mittelspannung;
-806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;msns;belegt;Z223: NE 6 Umspannung;manuell durch Claude am Dokument gesehen
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;ns;belegt;Zeile 224: NE 7 Niederspannung*;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;slp;belegt;Zeile 100: Grundpreis  Arbeitspreis;
 807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;hsms;leer;;
 807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;ms;belegt;Zeile 22: Mittelspannung;zwei Tabellen (Zeilen 22 und 31)
-807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;msns;keine_zeile_mit_passender_beschriftung;;
+807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;msns;belegt;Z32: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;ns;belegt;Zeile 24: Niederspannung;zwei Tabellen (Zeilen 24 und 33)
 807;SNB982713229933;Versorgungsbetrieb Waldbüttelbrunn GmbH;ok;slp;belegt;Zeile 68: Preise;
 808;SNB973519584647;Versorgungsbetriebe Bordesholm GmbH;ok;hsms;leer;;
@@ -4064,7 +4064,7 @@
 816;SNB977641826996;Verteilnetz Plauen GmbH;ok;slp;belegt;Zeile 296: Grundpreis  Arbeitspreis;
 817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;hsms;leer;;
 817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;ms;belegt;Zeile 18: Mittelspannungsnetz;
-817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;msns;keine_zeile_mit_passender_beschriftung;;
+817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;msns;belegt;Z21: Umspannung zur Niederspannung;manuell durch Claude am Dokument gesehen
 817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;ns;belegt;Zeile 24: Niederspannungsnetz;
 817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;slp;belegt;Zeile 138: Wärmepumpe Bestand 1)  1,83  2,18;
 818;SNB964630351430;Vorarlberger Energienetze GmbH;pruefen;hsms;leer;;

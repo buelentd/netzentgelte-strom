@@ -133,3 +133,67 @@ nr;ebene;fundstelle
 567;ms;Artikel 1-01-5 Mittelspannung
 567;msns;Artikel 1-01-6 Umspannung Mittel-/Niederspannung
 567;ns;Artikel 1-01-7 Niederspannung
+569;hsms;Z16: Umspannung HSp - MSp (netto, brutto)
+569;msns;Z22: Umspannung MSp - NSp
+576;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+580;ms;Z17: Mittelspannung (MS) Tabelle ab 2.500 h
+581;ms;Z23: Mittelspannung
+586;msns;Z29: Umspannung (MN)
+587;msns;Z11: Umspannung NE6
+591;hsms;Z16: zur Mittelspannung, ab 2.500 h (Zeile unter Umspannung HS)
+591;msns;Z21: zur Niederspannung, ab 2.500 h
+615;msns;Z41: Umspannung (Tabelle ab 2.500 h)
+616;ms;Z52: Mittelspannung (Tabellen unter und ab 2.500 h)
+616;msns;Z54: Umspannung Mittel-/Niederspannung
+616;ns;Z56: Niederspannung
+618;msns;Z27: Umspannung MSp - NSp
+625;msns;Z16: Umspannung
+635;hsms;Artikel 1-01-4, Jahreswert und Tagespreis
+635;ms;Artikel 1-01-5
+635;msns;Artikel 1-01-6
+635;ns;Artikel 1-01-7
+650;msns;Z34: Umspannung (Tabelle ab 2.500 h)
+662;msns;Z18: Umspannung Mittelspannung in Niederspannung
+664;msns;Z18: Entnahme aus Umspannung (20/0,4 kV)
+666;msns;Z21: Umspannung
+668;hsms;Z32: Umspannung (HSP/MSP) (netto, brutto), Staßfurt
+668;ms;Z33: Mittelspannung (MSP)
+669;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+671;hsms;Z21: Umspannung HSp - MSp
+671;msns;Z27: Umspannung MSp - NSp
+679;msns;Z40: Umspannung (Tabelle ab 2.500 h)
+684;msns;Z31: Umspannung (Tabelle ab 2.500 h)
+697;msns;Z39: Umspannung (Tabelle ab 2.500 h)
+698;msns;Z37: Umspannung (Tabelle ab 2.500 h)
+701;msns;Z13: Umspannung
+702;ms;Z95: Mittelspannung, ab 2.500 h
+702;msns;Z102: Umspannung MS/NS
+702;ns;Z109: Niederspannung
+706;msns;Z36: Umspannung (Tabelle ab 2.500 h)
+714;ms;Z23: Mittelspannung (MS), Tagespreis und Jahreswert
+714;msns;Z24: Umspannung (MS/NS)
+714;ns;Z25: Niederspannung (NS)
+726;msns;Z32: Umspannung (Tabelle ab 2.500 h)
+733;msns;Z21-22: Umspannung zur Niederspannung, Euro je kWh und Tagespreis
+733;slp;Z39 Grundpreis 60,00 und Arbeitspreis HT 0,0790 EUR/kWh = 7,90 ct
+736;msns;Z46: Umspannung (Tabelle ab 2.500 h)
+737;slp;Artikel 1-02-0-001 Grundpreis 69,84 und 1-02-0-002 Arbeitspreis 9,54
+742;msns;Z14: Umspannung MSp - NSp
+744;hsms;Z194: Umspannung Hsp./Msp.
+744;msns;Z196: Umspannung Msp./Nsp.
+762;ms;Z148: Mittelspannung MSP (netto, brutto)
+762;msns;Z149: Umspannung MSP-NSP
+762;ns;Z150: Niederspannung
+769;msns;Z43: Umspannung Mittel- zu Niederspannung
+772;hsms;Z43: Umspannung Hoch-/Mittelspannung (USp. HS/MS)
+772;ms;Z44: Mittelspannung (MS)
+772;msns;Z45: Umspannung Mittel-/Niederspannung (USp. MS/NS)
+772;ns;Z46: Niederspannung (NS)
+784;msns;Z27: Mittelspannung mit Umspannung
+802;hsms;Z34: Umspannung in Mittelspannung
+802;msns;Z38: Umspannung in Niederspannung
+804;msns;Z38: Umspannung (Tabelle ab 2.500 h)
+805;msns;Z12: Umspannungsnetz
+806;msns;Z223: NE 6 Umspannung
+807;msns;Z32: Umspannung (Tabelle ab 2.500 h)
+817;msns;Z21: Umspannung zur Niederspannung

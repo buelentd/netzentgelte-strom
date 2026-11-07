@@ -394,6 +394,13 @@ def alle():
         w = csv.writer(fh, delimiter=";"); w.writerow(["nr", "mastr_nr", "netzbetreiber", "status", "ebene", "beleg_status", "fundstelle", "hinweis"]); w.writerows(zeilen_out)
     with open("ergebnis/beleg_zusammenfassung.csv", "w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh, delimiter=";"); w.writerow(["nr", "mastr_nr", "netzbetreiber", "status", "beleg", "offene_ebenen"]); w.writerows(summ)
+    # Liste für die Statuslogik: Netzbetreiber mit Werten, die nicht vollständig zeilenweise belegt sind
+    with open("lauf/beleg_offen.csv", "w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.writer(fh, delimiter=";"); w.writerow(["nr", "offene_ebenen"])
+        for r, sm in zip(N, summ):
+            hat_werte = any(r[f"{eb}_{K[0]}"] for eb in EBENEN) or r["slp_ap_ct_kwh"]
+            if hat_werte and sm[4] != "alle_belegt":
+                w.writerow([sm[0], sm[5]])
     from collections import Counter
     print(Counter(s[4] for s in summ))
 
