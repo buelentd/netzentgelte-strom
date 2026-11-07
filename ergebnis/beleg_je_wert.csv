@@ -2088,7 +2088,7 @@
 420;SNB953669866350;Stadtwerke Bernburg GmbH;ok;ns;belegt;Zeile 23: Niederspannungsnetz;netto aus Netto/Brutto
 420;SNB953669866350;Stadtwerke Bernburg GmbH;ok;slp;belegt;Zeile 31: netto  brutto;
 421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;hsms;leer;;
-421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;ms;belegt;Zeile 15: über  2.500 h*)  245,02  291,57  0,42  0,50;Beschriftung im Kontext der Zeile
+421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;ms;belegt;Zeile 14: a) Mittelspannung (MSP) bis einschl.  2.500 h*);zwei Tabellen in Reihenfolge (Zeilen 14 und 15)
 421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;msns;belegt;Zeile 18: über  2.500 h*)  254,06  302,33  1,20  1,43;Beschriftung im Kontext der Zeile
 421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;ns;belegt;Zeile 21: über  2.500 h*)  247,26  294,24  2,92  3,47;Beschriftung im Kontext der Zeile
 421;SNB955586052717;Stadtwerke Bexbach GmbH;ok;slp;belegt;Zeile 25: Grundpreis  Arbeitspreis;
@@ -2147,11 +2147,11 @@
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;msns;leer;;
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;ns;belegt;Zeile 29: Niederspannung;
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;slp;belegt;Zeile 84: Grundpreis  Arbeitspreis;
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;hsms;leer;;
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;ms;belegt;Zeile 20: Mittelspannung MS;zwei Tabellen in Reihenfolge (Zeilen 20 und 31)
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;msns;belegt;Zeile 21: Umspannung MS/NS;zwei Tabellen in Reihenfolge (Zeilen 21 und 32)
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;ns;belegt;Zeile 23: Niederspannung NS (Ermäßigung 10% gem. § 3 KAV);zwei Tabellen in Reihenfolge (Zeilen 23 und 33)
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;slp;belegt;Zeile 39: Kundengruppe;
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;hsms;leer;;
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;ms;belegt;Zeile 20: Mittelspannung MS;zwei Tabellen in Reihenfolge (Zeilen 20 und 31)
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;msns;belegt;Zeile 21: Umspannung MS/NS;zwei Tabellen in Reihenfolge (Zeilen 21 und 32)
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;ns;belegt;Zeile 22 und 33: Niederspannung NS (nicht die Zeile Ermäßigung 10 % gem. § 3 KAV): LP und AP unter 2.500 h 18,06/9,38;manuell durch Claude am Dokument gesehen
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;slp;belegt;Zeile 39: Kundengruppe;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;hsms;leer;;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;ms;belegt;Zeile 20: Mittelspannung;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;msns;belegt;Zeile 21: Umspannung MS/NS;
@@ -3888,7 +3888,7 @@
 781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;ms;belegt;Zeile 164: Mittelspannung (MS);
 781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;msns;belegt;Zeile 166: Umspannung MS/NS;
 781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;ns;belegt;Zeile 168: Niederspannung (NS);
-781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;slp;belegt;Zeile 41: Speicherheizungen  Arbeitspreis HT  Arbeitspreis NT  Grundpreis;
+781;SNB929168402344;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;ok;slp;belegt;Zeile 31: Arbeitspreis (HT &;
 782;SNB981113965977;SWR Energie GmbH ＆ Co. KG;ok;hsms;leer;;
 782;SNB981113965977;SWR Energie GmbH ＆ Co. KG;ok;ms;belegt;Zeile 23: (Mittelspannungsnetz)  118,52  1,38  T > 2.500 h/a;Beschriftung im Kontext der Zeile
 782;SNB981113965977;SWR Energie GmbH ＆ Co. KG;ok;msns;belegt;Zeile 25: (Umspannung MS/NS)  124,86  1,35  T > 2.500 h/a;Beschriftung im Kontext der Zeile
@@ -4007,7 +4007,7 @@
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;ms;belegt;Zeile 11: Mittelspannungsnetz;
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;msns;belegt;Z12: Umspannungsnetz;manuell durch Claude am Dokument gesehen
 805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;ns;belegt;Zeile 13: Niederspannungsnetz;
-805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;slp;belegt;Zeile 75: Grundpreis  50,00  €/a;
+805;SNB931064958931;Vereinigte Stadtwerke Netz GmbH;ok;slp;belegt;Zeile 36: (gilt für Netzkunden ohne Eigenerzeugung deren Jahresstrombedarf unter;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;hsms;leer;;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;ms;belegt;Zeile 370: NE 5 Mittelspannung;
 806;SNB966808200267;Vereinigte Wertach Elektrizitätswerke GmbH;ok;msns;belegt;Z223: NE 6 Umspannung;manuell durch Claude am Dokument gesehen

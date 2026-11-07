@@ -100,4 +100,10 @@ RUNDE2 = {
     # Gegenprobe 07.11.2026 am frischen Original-PDF
     ("26", "hsms"): [14.17, 5.10, 127.56, 0.57], ("26", "ms"): [13.64, 5.73, 143.99, 0.52], ("26", "msns"): [16.82, 5.68, 129.01, 1.19], ("26", "ns"): [19.49, 6.19, 88.19, 3.44],   # Energienetze Mittelrhein: Preisblatt 1 endgültige Entgelte 2026 (die früher eingetragenen Werte stammten aus einer Datei des Kollegen, die zu badenovaNETZE gehört)
     ("142", "ms"): [18.36, 7.09, 181.93, 0.54], ("142", "msns"): [34.94, 7.63, 222.91, 0.11], ("142", "ns"): [43.37, 7.36, 202.69, 0.99],   # Hauenstein: Dokument unter derselben Adresse hat sich gegenüber unserem gespeicherten Text geändert
+    # Gegenprobe 200 (Kollege, blind) 07.11.2026: Abweichungen am gespeicherten Dokumenttext geprüft; hier unsere Fehler
+    ("421", "ms"): [14.10, 9.66, 245.02, 0.42], ("421", "msns"): [17.95, 10.64, 254.06, 1.20], ("421", "ns"): [25.15, 11.80, 247.26, 2.92],   # Bexbach: in den Spalten unter 2.500 h standen Brutto-Werte (Spalten: LP netto/brutto, AP netto/brutto)
+    ("433", "ns"): [18.06, 9.38, 209.15, 1.74],                     # Buchen: Zeile "Niederspannung NS", nicht die Ermäßigung 10 % § 3 KAV
+    ("675", "slp"): [9.96, 0.00],                                    # Südholstein: Kleinkunden netto AP 9,96, Grundpreis 0,00 (11,85 ist der Brutto-AP)
+    ("781", "slp"): [5.03, 80.00],                                   # Pforzheim: Grundpreis 80,00 €/a (2,52 ct/kWh ist der AP für separate Messung)
+    ("805", "slp"): [8.15, 50.00],                                   # Vereinigte Stadtwerke: Standard-AP 8,15 (3,26 gilt für Modul 2)
 }

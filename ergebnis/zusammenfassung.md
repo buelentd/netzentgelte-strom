@@ -1,6 +1,6 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 07.11.2026 09:38, 831 Netzbetreiber bzw. Netzgebiete
+Stand 07.11.2026 20:17, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
@@ -19,7 +19,7 @@ Preisstand (nur ok): endgültig 492,  104
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,25 ct/kWh (n = 773)
+- Median: 7,26 ct/kWh (n = 773)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
