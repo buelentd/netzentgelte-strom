@@ -24,7 +24,7 @@ aus, abw, c = [], [], collections.Counter()
 for r in U:
     m = idx.get(n(r["netzbetreiber"]))
     if not m or len(m) > 1: c["nicht eindeutig zugeordnet"] += 1; continue
-    o = m[0]; row = dict.fromkeys(H, ""); row.update(nr=o["nr"], netzbetreiber=o["netzbetreiber"], stand_datum=r["stand_datum"], quelle_url=r["quelle_url"], hinweis="Quelle: Liste des Nutzers 04.11.2026")
+    o = m[0]; row = dict.fromkeys(H, ""); row.update(nr=o["nr"], netzbetreiber=o["netzbetreiber"], stand_datum=r["stand_datum"], quelle_url=r["quelle_url"], hinweis="Quelle: Liste vom 04.11.2026 (Herkunft ungeklärt)")
     neu = 0; hin = r.get("hinweis", "")
     sauber = r.get("status", "") == "ok" or ("alle Werte gegen Quelltext verifiziert" in hin and not re.search(r"nur \d/4|verworfen", hin))
     ctw = lambda v: (v[3] + v[2] * 100 / 4000) if v and None not in v else None

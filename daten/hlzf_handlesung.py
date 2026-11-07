@@ -148,7 +148,7 @@ def main():
             for j, t in zip(J, teile):
                 r[ix[f"hlzf_{eb}_{j}"]] = "keins" if t.strip() == K else t.strip()
         r[ix["hlzf_status"]] = "gelesen"; r[ix["hlzf_jahr"]] = "2026"
-        r[ix["hlzf_pruefung"]] = "von Hand am Dokumenttext abgelesen: " + bem
+        r[ix["hlzf_pruefung"]] = "durch Claude am Dokumenttext abgelesen: " + bem
         rows[nr] = r
     for nr, grund in LEER.items():
         r = rows.get(nr) or [""] * len(H); r[0] = nr

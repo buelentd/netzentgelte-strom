@@ -282,7 +282,7 @@ class Speicher:
         if not m["geprueft"]:                 # eingetragene Werte gelten erst als ok, wenn sie gegen das Dokument geprüft sind
             grund.append("noch nicht gegen das Dokument geprüft")
         d["status"] = "ok" if not grund else "pruefen"
-        d["hinweis"] = "Werte aus Liste des Nutzers" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
+        d["hinweis"] = "Werte aus Liste vom 04.11.2026 (Herkunft ungeklärt)" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
         return d
 
     def _zeilen_recherche(self) -> list[dict]:

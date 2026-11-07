@@ -4,7 +4,7 @@ Ziel: Ein Wert gilt nur als belegt, wenn er in einer Zeile steht, deren Beschrif
 Der Leser ist unabhängig von den bisherigen Parsern. Ergebnis je Netzbetreiber: Liste von Belegen
 (ebene, vier Werte, Zeilennummer, Beschriftung, Hinweise wie 'Tagespreis x 365', 'netto aus Netto/Brutto').
 
-Prüfung des Lesers: an den von Hand geprüften Netzbetreibern (hinweis 'von Hand am Dokument geprüft') muss er die Handwerte reproduzieren.
+Prüfung des Lesers: an den von Hand geprüften Netzbetreibern (hinweis "durch Claude am Dokumenttext geprüft") muss er die Handwerte reproduzieren.
 Aufruf: PYTHONPATH=. python daten/beleg_leser.py pruefen     (Test an den Handwerten)
         PYTHONPATH=. python daten/beleg_leser.py alle        (schreibt ergebnis/beleg_je_wert.csv und ergebnis/beleg_zusammenfassung.csv)
 """
@@ -14,6 +14,7 @@ from pathlib import Path
 K = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
 ZAHL = re.compile(r"(?<![\w.,])-?\d{1,3}(?:\.\d{3})*,\d+|(?<![\w.,])-?\d+\.\d{4,}|(?<![\w.,])-?\d+,\d+")
 EBENEN = ("hsms", "ms", "msns", "ns")
+ALLE = EBENEN + ("slp",)
 
 
 def zahl(s):
@@ -60,9 +61,22 @@ def paare_netto(nums):
     return nums, False
 
 
+NB_PAAR = re.compile(r"(\d+,\d+)\s*/\s*(\d+,\d+)")
+
+
+def bereinige(l):
+    """Brutto hinter Schrägstrich entfernen (58,22 / 69,28) und führende Spannungsangabe 0,4 kV."""
+    def f(m):
+        a, b = zahl(m.group(1)), zahl(m.group(2))
+        return m.group(1) if a > 0 and abs(b / a - 1.19) < 0.02 else m.group(0)
+    l = NB_PAAR.sub(f, l)
+    return l
+
+
 def kandidaten(L):
     """Zeilen mit mindestens zwei Preiszahlen und ihre Beschriftung (inkl. Fortsetzungszeilen)."""
     out = []
+    L = [bereinige(x) if x else x for x in L]
     for i, l in enumerate(L):
         if not l:
             continue
@@ -71,6 +85,8 @@ def kandidaten(L):
             continue
         label = l[:ms[0].start()].strip(" :.-•●")
         nums = [zahl(m.group()) for m in ms]
+        if len(nums) >= 5 and nums[0] in (0.4, 0.23, 20.0, 10.0) and re.search(r"0[,.]4\s*kv|kv", l[:ms[0].end() + 4], re.I):
+            nums = nums[1:]
         prev = [x for x in L[max(0, i - 2):i] if x and not ZAHL.search(x)]
         nxt = [x for x in L[i + 1:i + 3] if x and not ZAHL.search(x)]
         if len(re.sub(r"[^a-zäöüß]", "", label.lower())) >= 6:
@@ -144,7 +160,18 @@ def belege(pfad):
 
 
 def passt(w, ours, tol=0.011):
-    return ours is not None and len(w) == 4 and all(abs(a - b) <= tol for a, b in zip(w, ours))
+    """Gleicher Wert, auch bei anderer Spaltenfolge: (LP_u, AP_u, LP_ab, AP_ab) | (AP_u, LP_u, AP_ab, LP_ab) | (LP_u, LP_ab, AP_u, AP_ab)."""
+    if ours is None or len(w) < 4:
+        return False
+    a, b, c, d = ours
+    for cand in ((a, b, c, d), (b, a, d, c), (a, c, b, d)):
+        if all(abs(x - y) <= tol for x, y in zip(w[:4], cand)):
+            return True
+    if len(w) >= 8:   # Netto, Brutto im Wechsel
+        netto = w[0::2][:4]
+        if all(abs(x - y) <= tol for x, y in zip(netto, ours)):
+            return True
+    return False
 
 
 def unsere(r, eb):
@@ -173,8 +200,10 @@ def bewerte(r):
     if not fs:
         return {eb: ("kein_text", "", "") for eb in EBENEN}
     B = []
+    SL = []
     for f in fs:
         B += belege(f)
+        SL.append(zeilen(f))
     out = {}
     for eb in EBENEN:
         ours = unsere(r, eb)
@@ -189,7 +218,47 @@ def bewerte(r):
             b = mit[0]; out[eb] = ("konflikt", f"Zeile {b['zeile']}: {b['label']} = " + "/".join(str(x) for x in b["werte"]), b["hinweis"])
         else:
             out[eb] = ("keine_zeile_mit_passender_beschriftung", "", "")
+    ap = float(r["slp_ap_ct_kwh"].replace(",", ".")) if r["slp_ap_ct_kwh"] else None
+    gp = float(r["slp_grundpreis_eur_jahr"].replace(",", ".")) if r["slp_grundpreis_eur_jahr"] else None
+    if ap is None or gp is None:
+        out["slp"] = ("leer", "", "")
+    else:
+        for L in SL:
+            b = slp_beleg(L, ap, gp)
+            if b:
+                out["slp"] = ("belegt", b, ""); break
+        else:
+            out["slp"] = ("keine_zeile_mit_passender_beschriftung", "", "")
     return out
+
+
+SLP_WORT = re.compile(r"ohne\s+(?:registrierende\s+)?(?:1/4|¼|viertel)?[- ]*(?:h|stunden)?[- ]*leistungsmessung|standardlast|slp|kleinkunde|haushalt|gewerbe|kunden\s+ohne|entnahme\s+ohne|grundpreis", re.I)
+
+
+def slp_beleg(L, ap, gp):
+    """SLP belegt, wenn Arbeitspreis und Grundpreis zusammen in einer Zeile oder in benachbarten Zeilen eines SLP-Abschnitts stehen."""
+    if ap is None or gp is None:
+        return None
+    L = [bereinige(x) if x else x for x in L]
+    zl = []
+    for i, l in enumerate(L):
+        zl.append({zahl(m.group()) for m in ZAHL.finditer(l)} if l else set())
+    def hat(sets, v):
+        return any(abs(x - v) < 0.0051 for st in sets for x in st)
+    for i, l in enumerate(L):
+        if not l:
+            continue
+        fenster = zl[max(0, i - 3):i + 4]
+        ctx = " ".join(L[max(0, i - 6):i + 4])
+        if SLP_WORT.search(ctx) and hat(fenster, ap) and (gp == 0 or hat(fenster, gp)):
+            return f"Zeile {i + 1}: " + l[:70]
+        # Tagespreise: Grundpreis €/Tag x 365 oder Arbeitspreis €/kWh
+        if SLP_WORT.search(ctx):
+            gps = [v for st in fenster for v in st if 0.05 < v < 1.0 and abs(v * 365 - gp) < 0.06]
+            aps = [v for st in fenster for v in st if abs(v * 100 - ap) < 0.0051 and v < 1]
+            if (gps or gp == 0) and (hat(fenster, ap) or aps):
+                return f"Zeile {i + 1} (Tagespreis): " + l[:60]
+    return None
 
 
 def lese_n():
@@ -198,7 +267,7 @@ def lese_n():
 
 def pruefen():
     N = lese_n()
-    hand = [r for r in N if r["status"] == "ok" and "von Hand am Dokument geprüft" in r["hinweis"]]
+    hand = [r for r in N if r["status"] == "ok" and "durch Claude am Dokumenttext geprüft" in r["hinweis"]]
     from collections import Counter
     c = Counter(); schlecht = []
     for r in hand:

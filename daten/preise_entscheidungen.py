@@ -164,6 +164,11 @@ fmt = lambda v: f"{v:.2f}".replace(".", ",")
 
 from daten.entscheidungen_runde2 import RUNDE2
 KORRIGIEREN.update(RUNDE2)
+from daten.entscheidungen_beleg import BELEG
+for _k, _v in BELEG.items():
+    if _k not in KORRIGIEREN:
+        KORRIGIEREN[_k] = _v
+        NOTIZ[_k] = "vom Beleg-Leser gefunden, durch Nachbarebene derselben Tabelle bestätigt"
 
 
 def main():
@@ -184,7 +189,7 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
+        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "durch Claude am Dokumenttext geprüft und eingetragen (Parser hatte den Wert nicht richtig gelesen)")
         if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
