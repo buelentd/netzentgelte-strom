@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 15:06, 831 Netzbetreiber bzw. Netzgebiete
+Stand 09.11.2026 15:08, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 768 | 92% |
-| pruefen | 53 | 6% |
+| ok | 770 | 93% |
+| pruefen | 51 | 6% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 4 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 646,  122
+Preisstand (nur ok): endgültig 647,  123
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
-- Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,24 ct/kWh (n = 782)
+- Maximum: 15,00 ct/kWh (GIG energy services GmbH)
+- Median: 7,24 ct/kWh (n = 783)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 646,  122
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (122)
+## Status ok, aber Preisstand nicht endgültig (123)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
@@ -109,6 +109,7 @@ Preisstand (nur ok): endgültig 646,  122
 - 443. Stadtwerke Dachau Eigenbetr. d. Stadt Dachau: 
 - 446. Stadtwerke Delitzsch GmbH: 
 - 448. Stadtwerke Dettelbach: 
+- 451. Stadtwerke Dinkelsbühl: 
 - 459. Stadtwerke Eckernförde GmbH: 
 - 461. Stadtwerke Eilenburg GmbH: 
 - 466. Stadtwerke Emden GmbH: 
@@ -177,16 +178,15 @@ Preisstand (nur ok): endgültig 646,  122
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (63)
+## Restfälle (61)
 
-### pruefen (53)
+### pruefen (51)
 
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 40. Netze Magdeburg GmbH: 
 - 57. Alzchem Netz GmbH: 6 Dokument(e) geprüft: gültig ab [2024], nicht 2026; fiktive Entgelte; Jahr 2026 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 63. BASF InfraService ＆ Solutions Lausitz GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
-- 66. BIGGE ENERGIE GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 30.05 ct/kWh außerhalb 3–15; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 74. Covestro Brunsbüttel Energie GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 83. E-Werk Rohrdorf Josef Haimmerer: SLP-Arbeitspreis 17.12 ct/kWh außerhalb 3–15; SLP-Werte auffällig
@@ -217,7 +217,6 @@ Preisstand (nur ok): endgültig 646,  122
 - 395. Stadtwerke Bad Herrenalb GmbH: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
 - 412. Stadtwerke Baden-Baden: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; weder RLM- (NS) noch SLP-Werte gefunden (NS Artikel-ID: 1-01-5-001: kein Wert; NS Artikel-ID: 1-01-6-001: kein Wert; NS Artikel-ID: 1-0
 - 445. Stadtwerke Deidesheim GmbH: SLP-Werte nicht gefunden
-- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/fiktive_Netzentgelte_S
 - 453. Stadtwerke Döbeln GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 495. Stadtwerke Goch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden

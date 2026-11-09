@@ -128,4 +128,8 @@ RUNDE2 = {
     ("338", "slp"): [8.16, 77.00], ("366", "slp"): [8.47, 30.00], ("447", "slp"): [7.94, 60.00], ("463", "slp"): [6.55, 35.00],
     ("742", "slp"): [6.42, 75.00], ("221", "slp"): [6.20, 75.03], ("582", "slp"): [3.94, 125.38], ("361", "slp"): [5.85, 85.00],
     ("666", "ms"): [32.88, 3.11, 89.31, 0.86],                       # Stade: Brutto-Spalten statt Netto
+    # Offene "prüfen"-Fälle, SLP am Dokumenttext (09.11.2026)
+    ("66", "slp"): [7.48, 50.00],                                    # BIGGE: Kleinkunden netto 50,00 €/a und 7,48 ct (brutto 59,50 / 8,90)
+    ("451", "slp"): [5.38, 72.00],                                   # Dinkelsbühl: Entnahmestelle ohne Lastgangmessung
+    ("199", "slp"): [7.98, 80.00],                                   # Fischereihafen: Kleinkunden
 }

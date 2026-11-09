@@ -324,11 +324,11 @@
 65;SNB944057190867;BEW Netze GmbH;ok;msns;belegt;Zeile 53: Mittel- / Niederspannung (Umspannung);zwei Tabellen (Zeilen 53 und 65)
 65;SNB944057190867;BEW Netze GmbH;ok;ns;belegt;Zeile 55: Niederspannung;zwei Tabellen (Zeilen 55 und 67)
 65;SNB944057190867;BEW Netze GmbH;ok;slp;belegt;Z23 Grundpreis 116,80 netto und Z29 Arbeitspreis 6,34 netto;manuell durch Claude am Dokument gesehen
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;hsms;leer;;
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;ms;leer_im_dokument_ebene_gefunden;;
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;msns;belegt;Zeile 21: über 2.500 h1  149,52  177,93  1,19  1,42;Beschriftung im Kontext der Zeile
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;ns;belegt;Zeile 24: über 2.500 h1  152,74  181,76  1,43  1,70;Beschriftung im Kontext der Zeile
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;slp;belegt;Zeile 12: (Zählerpreis)1;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;hsms;leer;;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;ms;leer_im_dokument_ebene_gefunden;;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;msns;belegt;Zeile 21: über 2.500 h1  149,52  177,93  1,19  1,42;Beschriftung im Kontext der Zeile
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;ns;belegt;Zeile 24: über 2.500 h1  152,74  181,76  1,43  1,70;Beschriftung im Kontext der Zeile
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;slp;belegt;Zeile 33: Entnahmenetzebene  Euro pro Jahr  Arbeitspreise in Cent pro kWh;
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;hsms;leer;;
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;ms;belegt;Zeile 26: Mittelspannung (MSP)  2.500 h/a;zwei Tabellen in Reihenfolge (Zeilen 26 und 37)
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;msns;leer;;
@@ -2241,11 +2241,11 @@
 450;SNB944601935326;Stadtwerke Dingolfing GmbH;ok;msns;belegt;Z36: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 450;SNB944601935326;Stadtwerke Dingolfing GmbH;ok;ns;belegt;Zeile 28: Niederspannung;zwei Tabellen (Zeilen 28 und 37)
 450;SNB944601935326;Stadtwerke Dingolfing GmbH;ok;slp;belegt;Zeile 72: Preise;
-451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;hsms;leer;;
-451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;ms;belegt;Zeile 73: Mittelspannungsnetz (20 kV);
-451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;msns;belegt;Zeile 74: Umspannung Mittel-/Niederspannung (20 kV/;
-451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;ns;belegt;Zeile 75: Niederspannungsnetz (;
-451;SNB990562890006;Stadtwerke Dinkelsbühl;pruefen;slp;leer;;
+451;SNB990562890006;Stadtwerke Dinkelsbühl;ok;hsms;leer;;
+451;SNB990562890006;Stadtwerke Dinkelsbühl;ok;ms;belegt;Zeile 73: Mittelspannungsnetz (20 kV);
+451;SNB990562890006;Stadtwerke Dinkelsbühl;ok;msns;belegt;Zeile 74: Umspannung Mittel-/Niederspannung (20 kV/;
+451;SNB990562890006;Stadtwerke Dinkelsbühl;ok;ns;belegt;Zeile 75: Niederspannungsnetz (;
+451;SNB990562890006;Stadtwerke Dinkelsbühl;ok;slp;belegt;Zeile 6: a) für Entnahmestellen ohne registrierende Lastgangmessung;
 452;SNB990892864395;Stadtwerke Ditzingen GmbH ＆ Co. KG;ok;hsms;leer;;
 452;SNB990892864395;Stadtwerke Ditzingen GmbH ＆ Co. KG;ok;ms;belegt;Zeile 66: Mittelspannung;
 452;SNB990892864395;Stadtwerke Ditzingen GmbH ＆ Co. KG;ok;msns;belegt;Zeile 67: Umspannung Mittel- / Niederspannung;
