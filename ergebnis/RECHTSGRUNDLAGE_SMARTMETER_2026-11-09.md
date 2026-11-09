@@ -21,3 +21,14 @@ Die Bundesnetzagentur kann durch Festlegung netzorientierte Steuerung gegen Netz
 
 ## Offen (nicht gelesen)
 § 45 MessbG (Einbauzeitpunkte), Festlegung der Bundesnetzagentur zu § 14a (Modul 3), Regelung für RLM-Kunden.
+
+## Nachtrag: § 45 MessbG (Einbauzeitplan), gelesen am 09.11.2026
+- Letztverbraucher über 100.000 kWh (§ 30 Abs. 1 Nr. 1): Der Messstellenbetreiber muss **spätestens ab 2028 mit dem Einbau beginnen**; 90 % der im jeweiligen Zeitraum neu auszustattenden Messstellen bis 31.12.2028, bis 31.12.2030, 90 % aller bis 31.12.2032 (§ 45 Abs. 1 Nr. 3).
+- Letztverbraucher in den Fällen § 30 Abs. 1 Nr. 2 bis 5 (6.000 bis 100.000 kWh): Beginn **spätestens ab 1.1.2025**; 20 % aller bis 31.12.2025, dann je 90 % der neu auszustattenden bis 2026, 2028, 2030, 90 % aller bis 31.12.2032 (§ 45 Abs. 1 Nr. 4).
+- Folge: Bei Verbrauch über 100.000 kWh ist ein intelligentes Messsystem 2026 **nicht flächendeckend** zu erwarten; der Pflichtbeginn liegt 2028.
+
+## Nachtrag: Modul 3 (nur Sekundärquellen)
+Bundesnetzagentur Rundschreiben 3/2025 (Beschlusskammer 8) und BDEW-Anwendungshilfe Modul 3 V1.2 (17.07.2026): Modul 3 gilt seit 1.4.2025, setzt ein intelligentes Messsystem voraus; Modul 1 und 2 nicht. Die Festlegung BK8-22/010-A selbst ist **nicht gelesen**.
+
+## Nicht belegt
+Ob ein dynamischer Tarif für Kunden mit Leistungsmessung (RLM) ohne intelligentes Messsystem möglich ist: im Gesetz nicht geregelt (§ 41a Abs. 2 EnWG regelt nur die Angebotspflicht).
