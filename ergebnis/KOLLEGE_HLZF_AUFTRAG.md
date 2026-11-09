@@ -8,6 +8,12 @@ Je Netzbetreiber die **Hochlastzeitfenster 2026 und 2027** nach § 19 Abs. 2 Sat
 ## Spalten der Lieferung
 `mastr_nr; nr; netzbetreiber; jahr; ebene; jahreszeit; uhrzeit_von; uhrzeit_bis; quelle (Adresse des Originals); quelle_art (PDF, HTML oder Excel); fundstelle (Seite und Zeile bei PDF, bei HTML Name der Tabelle oder Überschrift); dokument_datei; bemerkung`. Eine Zeile je Zeitfenster.
 
+## Zusätzlich je Netzbetreiber (der Rechner braucht das)
+- **Schwelle in Prozent** (um wie viel Prozent die Spitze im Zeitfenster unter der Jahresspitze liegen muss) und **Mindestleistung in kW**, falls im Dokument genannt. Eine Zeile je Netzbetreiber mit `ebene` = „Bedingung", `bemerkung` = Wortlaut.
+- **Wann die Fenster gelten:** Werktage, Samstage, Feiertage, Jahr. Kurz in `bemerkung`.
+- **Alle Ebenen**, die das Dokument nennt (HS, HS/MS, MS, MS/NS, NS).
+- **Hinweis zum Suchen:** In der Liste steht, wenn bekannt, die Adresse unseres Preisblatts (`preisblatt_adresse_hinweis`). Die Hochlastzeitfenster stehen oft auf derselben Seite oder im selben Bereich („Netzentgelte", „Veröffentlichungen", „Netzzugang"), manchmal auch im Preisblatt selbst. Das ist nur ein Startpunkt und nicht geprüft.
+
 ## Regeln (aus den Fehlern der letzten Lieferungen)
 1. **2026 und 2027.** Beide Jahre suchen. In jeder Zeile steht in `jahr` 2026 oder 2027. 2027 ist vorläufig (in `bemerkung` „vorläufig"). Gibt es für ein Jahr kein Dokument, schreib „kein 2026-Dokument gefunden" bzw. „kein 2027-Dokument gefunden" in `bemerkung`. Andere Jahre nicht liefern.
 2. **Original des Netzbetreibers.** Die Adresse muss auf der Website **dieses** Netzbetreibers liegen. In der Liste stehen Adressen anderer Betreiber (zum Beispiel Elbtal, Herborn, Lingen, Neustadt a.d. Aisch). Die ignorieren und neu suchen. Netzbetreibername im Dokument oder eigene Website.
