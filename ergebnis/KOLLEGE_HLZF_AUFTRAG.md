@@ -2,6 +2,12 @@
 
 Liste: `hlzf_auftrag_kollege.csv` (MaStR-Nummer in der ersten Spalte, kein Wert von uns, du liest blind).
 
+## Ablauf
+1. **Reihenfolge** (Spalte `art` in der Liste): zuerst „gelesen, aber Niederspannung leer: prüfen" und „Prüfung offen", dann „Zeitfenster nicht lesbar" (Dokument ist meist bekannt), zuletzt „kein Dokument oder keine Adresse" (Dokument muss erst gefunden werden).
+2. **In Etappen liefern:** nach je etwa 50 Netzbetreibern eine Lieferung. So prüfen wir früh, und Fehler wiederholen sich nicht über alle 232.
+3. **Lieferweg:** Du hast keinen Zugriff auf unser Repo. Jede Lieferung geht als **CSV und ZIP mit den Originalen an den Nutzer**.
+4. **Gesperrte Seiten** nicht umgehen, sondern in `bemerkung` „gesperrt" eintragen und weitermachen.
+
 ## Was zu liefern ist
 Je Netzbetreiber die **Hochlastzeitfenster 2026 und 2027** nach § 19 Abs. 2 Satz 1 StromNEV: Ebene (NS, MS/NS, ggf. MS, HS/MS), Jahreszeit (Frühling, Sommer, Herbst, Winter), Uhrzeit von/bis. Steht für eine Jahreszeit kein Fenster im Dokument, schreib „keins". Steht im Dokument „keine Hochlastzeitfenster", schreib das in `bemerkung`.
 
@@ -12,7 +18,7 @@ Je Netzbetreiber die **Hochlastzeitfenster 2026 und 2027** nach § 19 Abs. 2 Sat
 - **Schwelle in Prozent** (um wie viel Prozent die Spitze im Zeitfenster unter der Jahresspitze liegen muss) und **Mindestleistung in kW**, falls im Dokument genannt. Eine Zeile je Netzbetreiber mit `ebene` = „Bedingung", `bemerkung` = Wortlaut.
 - **Wann die Fenster gelten:** Werktage, Samstage, Feiertage, Jahr. Kurz in `bemerkung`.
 - **Alle Ebenen**, die das Dokument nennt (HS, HS/MS, MS, MS/NS, NS).
-- **Hinweis zum Suchen:** In der Liste steht, wenn bekannt, die Adresse unseres Preisblatts (`preisblatt_adresse_hinweis`). Die Hochlastzeitfenster stehen oft auf derselben Seite oder im selben Bereich („Netzentgelte", „Veröffentlichungen", „Netzzugang"), manchmal auch im Preisblatt selbst. Das ist nur ein Startpunkt und nicht geprüft.
+- **Hinweis zum Suchen:** In der Liste stehen, wenn bekannt, die Adresse unseres Preisblatts (`preisblatt_adresse_hinweis`) und eine bekannte Adresse für die Zeitfenster (`bekannte_adresse_ungeprüft`, bei mehreren davon stimmt die Domain nicht, siehe Regel 2). Die Hochlastzeitfenster stehen oft auf derselben Seite oder im selben Bereich („Netzentgelte", „Veröffentlichungen", „Netzzugang"), manchmal auch im Preisblatt selbst. Das ist nur ein Startpunkt und nicht geprüft.
 
 ## Regeln (aus den Fehlern der letzten Lieferungen)
 1. **2026 und 2027.** Beide Jahre suchen. In jeder Zeile steht in `jahr` 2026 oder 2027. 2027 ist vorläufig (in `bemerkung` „vorläufig"). Gibt es für ein Jahr kein Dokument, schreib „kein 2026-Dokument gefunden" bzw. „kein 2027-Dokument gefunden" in `bemerkung`. Andere Jahre nicht liefern.
