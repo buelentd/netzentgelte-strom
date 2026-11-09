@@ -1100,7 +1100,7 @@
 221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;ms;belegt;Zeile 65: Mittelspannungsnetz MS;
 221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;msns;belegt;Zeile 68: Umspannung MS/NS;
 221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;ns;belegt;Zeile 71: Niederspannungsnetz NS;
-221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;slp;keine_zeile_mit_passender_beschriftung;;
+221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;slp;belegt;Zeile 112: Grundpreis:  75,03 Euro/a;
 222;SNB993724515038;Gemeindewerke Grefrath GmbH;ok;hsms;leer;;
 222;SNB993724515038;Gemeindewerke Grefrath GmbH;ok;ms;belegt;Zeile 26: Mittelspannung (MS);
 222;SNB993724515038;Gemeindewerke Grefrath GmbH;ok;msns;belegt;Zeile 27: Umspannung Mittel- / Niederspannung (Usp. MS/NS);
@@ -1795,7 +1795,7 @@
 361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;ms;belegt;Zeile 36: Mittelspannungsnetz;
 361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;msns;belegt;Z39: Umspannung Mittel- auf Niederspannung;manuell durch Claude am Dokument gesehen
 361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;ns;belegt;Zeile 42: Niederspannungsnetz;
-361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;slp;belegt;Zeile 334: mit ÜNB-Zuschuss  (fiktives Netzentgelt);
+361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;slp;belegt;Zeile 167: Art der Entnahmestelle;
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;hsms;belegt;Zeile 24: Umspannung  Hoch-  / Mittelspannung (USp. HS/MS);
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;ms;belegt;Zeile 27: Mittelspannung (MS);
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;msns;leer;;
@@ -2899,7 +2899,7 @@
 582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;ms;belegt;Zeile 33: Mittelspannungsnetz;
 582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;msns;belegt;Zeile 35: Umspannung Mittel- / Niederspannung (MS/NS);
 582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;ns;belegt;Zeile 37: Niederspannungsnetz;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;slp;keine_zeile_mit_passender_beschriftung;;
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;slp;belegt;Zeile 129: Entnahmestelle  Grundpreis  Arbeitspreis;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;hsms;leer;;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;ms;belegt;Zeile 85: Mittelspannung;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;msns;belegt;Zeile 87: Umspannung Mittel-/ Niederspannung;
@@ -3315,7 +3315,7 @@
 665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;ns;belegt;Zeile 29: Artikel-ID 1-01-7;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
 665;SNB926470603247;Stadtwerke St. Ingbert GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;hsms;leer;;
-666;SNB975659838086;Stadtwerke Stade GmbH;ok;ms;belegt;Zeile 19: Mittelspannung  32,88  39,13  3,11  3,70  89,31  106,28  0,86  1,02;Beschriftung im Kontext der Zeile
+666;SNB975659838086;Stadtwerke Stade GmbH;ok;ms;belegt;Zeile 19: Mittelspannung;netto aus Netto/Brutto
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;msns;belegt;Z21: Umspannung;manuell durch Claude am Dokument gesehen
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;ns;belegt;Zeile 23: Niederspannung;netto aus Netto/Brutto
 666;SNB975659838086;Stadtwerke Stade GmbH;ok;slp;belegt;Zeile 86: Entnahmestelle  Grundpreis  Arbeitspreis;

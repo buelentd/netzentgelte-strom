@@ -219,7 +219,7 @@
 218;SNB947727983103;Gemeindewerke Frammersbach;ok;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 219;SNB954239007623;Gemeindewerke Gangkofen;ok;alle_belegt;
 220;SNB926937565941;Gemeindewerke Garmisch-Partenkirchen, KU;ok;alle_belegt;
-221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+221;SNB966216072913;Gemeindewerke Georgensgmünd;ok;alle_belegt;
 222;SNB993724515038;Gemeindewerke Grefrath GmbH;ok;alle_belegt;
 223;SNB962736090291;Gemeindewerke Großkrotzenburg GmbH;ok;offen;msns:keine_zeile_mit_passender_beschriftung
 224;SNB926559276683;Gemeindewerke Gundelfingen GmbH;ok;alle_belegt;
@@ -580,7 +580,7 @@
 579;SNB960797798422;Stadtwerke Neu-Isenburg GmbH;ok;alle_belegt;
 580;SNB980054996408;Stadtwerke Neuburg a. d. Donau;ok;alle_belegt;
 581;SNB924181641435;Stadtwerke Neuffen AG;ok;alle_belegt;
-582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;offen;slp:keine_zeile_mit_passender_beschriftung
+582;SNB989365725226;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ok;alle_belegt;
 583;SNB955718588763;Stadtwerke Neunburg vorm Wald Strom GmbH;ok;alle_belegt;
 584;SNB920348005966;Stadtwerke Neuruppin GmbH;ok;alle_belegt;
 585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;alle_belegt;

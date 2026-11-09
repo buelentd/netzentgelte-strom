@@ -1,0 +1,676 @@
+﻿mastr_nr;nr;netzbetreiber;ebene;verdacht;zeile
+SNB979269087643;1;Stromnetz Berlin GmbH;ms;nicht_als_Zeile_im_Text;
+SNB979269087643;1;Stromnetz Berlin GmbH;msns;nicht_als_Zeile_im_Text;
+SNB979269087643;1;Stromnetz Berlin GmbH;ns;nicht_als_Zeile_im_Text;
+SNB948311994307;3;Netze BW GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  16,61  6,32  148,05  1,06
+SNB948311994307;3;Netze BW GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel -/Niederspannung  16,52  6,26  146,49  1,06
+SNB948311994307;3;Netze BW GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  18,64  7,49  171,87  1,36
+SNB990362338043;4;Avacon Netz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  24,16  6,27  124,45  2,26
+SNB951051725711;5;EWE NETZ GmbH;ns;nicht_als_Zeile_im_Text;
+SNB951051725711;5;EWE NETZ GmbH;slp;slp_nicht_im_Text;
+SNB916269213931;6;Mitteldeutsche Netzgesellschaft Strom mbH;ns;mehrdeutig(3 Tupel);Niederspannung  46,88  4,99  146,63  1,00
+SNB929881052512;8;Westfalen Weser Netz GmbH;ms;mehrdeutig(2 Tupel);MS  10,70  5,76  121,34  1,33
+SNB971746988153;9;enercity Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB971746988153;9;enercity Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB971746988153;9;enercity Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB971746988153;9;enercity Netz GmbH;slp;slp_nicht_im_Text;
+SNB935556509052;10;Netze ODR GmbH;ms;mehrdeutig(6 Tupel);Mittelspannungsnetz  15,26  7,20  151,45  1,76  25,24  1,76
+SNB935556509052;10;Netze ODR GmbH;msns;mehrdeutig(3 Tupel);Umspannung zur Niederspannung  17,74  7,43  139,96  2,54  23,33  2,54
+SNB935556509052;10;Netze ODR GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  10,75  6,26  138,57  1,14  23,10  1,14
+SNB935556509052;10;Netze ODR GmbH;slp;falsche_Zeile?(14a);Steuerbare Verbrauchseinrichtungen nach §14a EnWG „Modul 3“ 5) Standardtarif  5,87  6,99  65,70  78,18
+SNB948859455841;11;Netz Leipzig GmbH;ms;nicht_als_Zeile_im_Text;
+SNB948859455841;11;Netz Leipzig GmbH;msns;nicht_als_Zeile_im_Text;
+SNB948859455841;11;Netz Leipzig GmbH;ns;nicht_als_Zeile_im_Text;
+SNB924477581384;12;RheinNetz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  21,41  4,56  103,84  1,26
+SNB924477581384;12;RheinNetz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  33,36  7,40  172,43  1,84
+SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;ms;nicht_als_Zeile_im_Text;
+SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;msns;nicht_als_Zeile_im_Text;
+SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;ns;nicht_als_Zeile_im_Text;
+SNB933956506145;16;Netzgesellschaft Düsseldorf mbH;slp;slp_nicht_im_Text;
+SNB945502201350;18;naturenergie netze GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  21,77  6,44  135,84  1,88
+SNB911641710114;19;Regionetz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung (NS)  18,83  8,02  118,81  4,02
+SNB916123648602;20;Netze Duisburg GmbH;ns;mehrdeutig(4 Tupel);Niederspannung (NS)  16,95  7,73  136,60  2,94
+SNB918516395612;21;Bielefelder Netz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  11,26  5,58  121,00  1,19
+SNB968295079586;25;Hamburger Energienetze GmbH;ms;nicht_als_Zeile_im_Text;
+SNB968295079586;25;Hamburger Energienetze GmbH;msns;nicht_als_Zeile_im_Text;
+SNB968295079586;25;Hamburger Energienetze GmbH;ns;nicht_als_Zeile_im_Text;
+SNB928759560869;27;WEMAG Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB928759560869;27;WEMAG Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB928759560869;27;WEMAG Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB921897286493;29;Westnetz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  16,82  5,71  134,32  1,01
+SNB921897286493;29;Westnetz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  19,93  8,27  120,43  4,25
+SNB940352624434;30;Bayernwerk Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB940352624434;30;Bayernwerk Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB940352624434;30;Bayernwerk Netz GmbH;slp;slp_nicht_im_Text;
+SNB990857029876;31;Schleswig-Holstein Netz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  37,71  6,60  122,88  3,19
+SNB941690671609;32;E.DIS Netz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  33,17  4,76  57,13  3,80
+SNB911705062982;36;LEW Verteilnetz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB911705062982;36;LEW Verteilnetz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB911705062982;36;LEW Verteilnetz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB911705062982;36;LEW Verteilnetz GmbH;slp;slp_nicht_im_Text;
+SNB921899277833;37;NRM Netzdienste Rhein-Main GmbH;ms;nicht_als_Zeile_im_Text;
+SNB921899277833;37;NRM Netzdienste Rhein-Main GmbH;msns;nicht_als_Zeile_im_Text;
+SNB921899277833;37;NRM Netzdienste Rhein-Main GmbH;ns;nicht_als_Zeile_im_Text;
+SNB921899277833;37;NRM Netzdienste Rhein-Main GmbH;slp;slp_nicht_im_Text;
+SNB915100694458;44;Energienetze Offenbach GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  20,35  5,93  145,69  0,92
+SNB990887002092;46;Thüga Energienetze GmbH;ns;nicht_als_Zeile_im_Text;
+SNB913992545742;48;E-Werk Netze GmbH ＆ Co. KG;ms;mehrdeutig(2 Tupel);Mittelspannung MS  14,30  5,64  113,53  1,67
+SNB913992545742;48;E-Werk Netze GmbH ＆ Co. KG;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  16,17  6,40  129,10  1,88
+SNB913992545742;48;E-Werk Netze GmbH ＆ Co. KG;ns;mehrdeutig(2 Tupel);Niederspannung NS  19,28  7,86  161,92  2,15
+SNB985472799266;49;MVV Netze GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  14,20  4,20  103,94  0,61
+SNB973356062049;61;Bad Honnef AG;slp;slp_nicht_im_Text;
+SNB965774651691;62;badenovaNETZE GmbH;ms;nicht_als_Zeile_im_Text;
+SNB965774651691;62;badenovaNETZE GmbH;msns;nicht_als_Zeile_im_Text;
+SNB965774651691;62;badenovaNETZE GmbH;ns;nicht_als_Zeile_im_Text;
+SNB965774651691;62;badenovaNETZE GmbH;slp;slp_nicht_im_Text;
+SNB944057190867;65;BEW Netze GmbH;ms;nicht_als_Zeile_im_Text;
+SNB944057190867;65;BEW Netze GmbH;msns;nicht_als_Zeile_im_Text;
+SNB944057190867;65;BEW Netze GmbH;ns;nicht_als_Zeile_im_Text;
+SNB944057190867;65;BEW Netze GmbH;slp;slp_nicht_im_Text;
+SNB910395619643;67;Blomberg Netz GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB910395619643;67;Blomberg Netz GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB927498960503;68;Bonn-Netz GmbH;ms;mehrdeutig(4 Tupel);Mittelspannung (MS)  29,98  4,75  119,30  1,17
+SNB927498960503;68;Bonn-Netz GmbH;msns;mehrdeutig(3 Tupel);Umspannung MS/NS  30,66  5,01  120,38  1,43
+SNB927498960503;68;Bonn-Netz GmbH;ns;mehrdeutig(4 Tupel);Niederspannung (NS)  30,56  5,14  111,73  1,90
+SNB972511582064;71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;ms;nicht_als_Zeile_im_Text;
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;msns;nicht_als_Zeile_im_Text;
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;ns;nicht_als_Zeile_im_Text;
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;slp;slp_nicht_im_Text;
+SNB974556654430;80;Donau-Stadtwerke Dillingen-Lauingen;ms;nicht_als_Zeile_im_Text;
+SNB974556654430;80;Donau-Stadtwerke Dillingen-Lauingen;msns;nicht_als_Zeile_im_Text;
+SNB974556654430;80;Donau-Stadtwerke Dillingen-Lauingen;ns;nicht_als_Zeile_im_Text;
+SNB978299965228;86;E-Werke Haniel Haimhausen GmbH ＆ Co. KG;ms;brutto?(0.01);Mittelspannung (MS)  11,57  8,78  230,84  0,01
+SNB925685357501;87;e.wa riss Netze GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  15,91  7,14  166,24  1,13
+SNB925685357501;87;e.wa riss Netze GmbH;msns;mehrdeutig(2 Tupel);Umspannung zur Niederspannung  22,43  8,27  170,40  1,30
+SNB925685357501;87;e.wa riss Netze GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  31,80  8,30  176,04  2,53
+SNB930525911119;88;EGC Infrastruktur und Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB930525911119;88;EGC Infrastruktur und Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB930525911119;88;EGC Infrastruktur und Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB979557818782;90;EGT Energie GmbH;ms;mehrdeutig(3 Tupel);Mittelspannung  13,63  8,00  208,12  0,22
+SNB979557818782;90;EGT Energie GmbH;msns;mehrdeutig(3 Tupel);Umspannung Mittel-/Niederspannung  15,85  9,73  249,60  0,38
+SNB979557818782;90;EGT Energie GmbH;ns;mehrdeutig(4 Tupel);Niederspannung  28,08  9,63  215,87  2,11
+SNB945768616967;92;Eichsfelder Energie- und Wasserversorgungsgesellschaft mbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  30,20  8,52  219,65  0,94
+SNB973074326355;93;ELE Verteilnetz GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel-/Niederspannung  7,03  6,33  151,03  0,57
+SNB973074326355;93;ELE Verteilnetz GmbH;ns;mehrdeutig(4 Tupel);Niederspannung  11,18  7,22  111,43  3,21
+SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;ms;nicht_als_Zeile_im_Text;
+SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;msns;nicht_als_Zeile_im_Text;
+SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;ns;nicht_als_Zeile_im_Text;
+SNB983973032059;95;Elektra-Genossenschaft Effeltrich eG;ms;nicht_als_Zeile_im_Text;
+SNB983973032059;95;Elektra-Genossenschaft Effeltrich eG;msns;nicht_als_Zeile_im_Text;
+SNB983973032059;95;Elektra-Genossenschaft Effeltrich eG;ns;nicht_als_Zeile_im_Text;
+SNB985979481190;96;Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG;slp;brutto?(10.29);Arbeitspreis  8,65 ct / kWh  10,29 ct / kWh
+SNB930558787330;101;Elektrizitäts-Versorgungs-Genossenschaft Perlesreut eG;ms;mehrdeutig(3 Tupel);MS - NE 5 - Mittelspannung  12,13  2,84  67,91  0,61
+SNB985498109605;106;Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.;ms;nicht_als_Zeile_im_Text;
+SNB985498109605;106;Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.;msns;nicht_als_Zeile_im_Text;
+SNB985498109605;106;Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.;ns;nicht_als_Zeile_im_Text;
+SNB921631931771;113;Elektrizitätsnetze Allgäu GmbH;msns;nicht_als_Zeile_im_Text;
+SNB916027833432;114;Elektrizitätsvereinigung Böbing eG;ns;falsche_Zeile?(14a);Netzentgelte StromEV Böbing eG Entgelte gültig ab 01.01.2026 final Entgelte für die Netznutzung von Entnahmest
+SNB916328839515;118;Elektrizitätswerk Dießen Stadler GmbH;msns;nicht_als_Zeile_im_Text;
+SNB916328839515;118;Elektrizitätswerk Dießen Stadler GmbH;ns;nicht_als_Zeile_im_Text;
+SNB980126228475;122;Elektrizitätswerk Mainbernheim GmbH;ms;nicht_als_Zeile_im_Text;
+SNB980126228475;122;Elektrizitätswerk Mainbernheim GmbH;msns;nicht_als_Zeile_im_Text;
+SNB980126228475;122;Elektrizitätswerk Mainbernheim GmbH;ns;nicht_als_Zeile_im_Text;
+SNB969483935394;133;Elektrizitätswerke Reutte GmbH ＆ Co. KG;ms;mehrdeutig(4 Tupel);Mittelspannung  7,71  4,29  95,96  0,76
+SNB969483935394;133;Elektrizitätswerke Reutte GmbH ＆ Co. KG;msns;mehrdeutig(2 Tupel);Umsp. Mittel- auf Niederspannung  9,75  5,25  121,75  0,77
+SNB969483935394;133;Elektrizitätswerke Reutte GmbH ＆ Co. KG;ns;mehrdeutig(7 Tupel);Niederspannung  12,58  6,12  134,08  1,26
+SNB913866241817;136;EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB913866241817;136;EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB913866241817;136;EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB913289502922;139;eneREGIO GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  11,61  7,80  173,22  1,33
+SNB913289502922;139;eneREGIO GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel-/Niederspannung  11,63  7,89  175,45  1,34
+SNB913289502922;139;eneREGIO GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  17,38  9,66  214,49  1,77
+SNB997465895442;142;Energie- und Bäderbetrieb Hauenstein;ms;mehrdeutig(2 Tupel);n Mittelspannung  18,36  7,09  181,93  0,54
+SNB997465895442;142;Energie- und Bäderbetrieb Hauenstein;msns;mehrdeutig(2 Tupel);n Umspannung Mittel-/Niederspannung  34,94  7,63  222,91  0,11
+SNB941042755957;145;Energie- und Wasserversorgung Bruchsal GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  12,27  4,67  115,34  0,55
+SNB941042755957;145;Energie- und Wasserversorgung Bruchsal GmbH;ns;mehrdeutig(3 Tupel);Niederspannung (NS)  19,83  7,05  168,81  1,09
+SNB914735995145;150;Energiegenossenschaft für Wittmund eG;slp;brutto?(6.93);Kleinkunden  5,82  6,93  96,00  114,24
+SNB994111700501;151;Energienetze Bayern GmbH (Stromverteilnetz Germering);ns;mehrdeutig(3 Tupel);Niederspannung  3,65  6,20  125,92  1,31
+SNB911521002599;154;EnergieSüdwest Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB911521002599;154;EnergieSüdwest Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB911521002599;154;EnergieSüdwest Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB911521002599;154;EnergieSüdwest Netz GmbH;slp;slp_nicht_im_Text;
+SNB913576376151;155;Energieversorgung Alzenau GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  26,97  5,89  153,98  0,81
+SNB932388577952;157;Energieversorgung Dahlenburg-Bleckede AG;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  21,99  5,69  142,00  0,89
+SNB932388577952;157;Energieversorgung Dahlenburg-Bleckede AG;slp;brutto?(5.39);Kleinkunden  4,53  5,39  80,00  95,20
+SNB910995561328;158;Energieversorgung Filstal GmbH ＆ Co. KG;ms;mehrdeutig(3 Tupel);Mittelspannung (MSP)  19,11  5,50  124,54  1,31
+SNB910995561328;158;Energieversorgung Filstal GmbH ＆ Co. KG;msns;mehrdeutig(3 Tupel);Umspannung (MSP/NSP)  19,84  5,95  136,96  1,27
+SNB910995561328;158;Energieversorgung Filstal GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung (NSP)  22,49  6,07  131,65  1,71
+SNB915186313908;159;Energieversorgung Guben GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  2,94  2,87  47,19  1,10
+SNB915186313908;159;Energieversorgung Guben GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NS)  7,07  7,11  118,57  2,65
+SNB915186313908;159;Energieversorgung Guben GmbH;slp;slp_nicht_im_Text;
+SNB935932937127;165;Energieversorgung Rottenburg am Neckar GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  16,11  6,77  182,26  0,12
+SNB935932937127;165;Energieversorgung Rottenburg am Neckar GmbH;msns;brutto?(0.05);MS/NS - NE 6 - Umspannung Mittel-/Niederspannung  24,78  7,26  204,99  0,05
+SNB921611512679;168;Energieversorgung Südbaar GmbH ＆ Co. KG;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  21,01  8,40  201,70  1,17
+SNB976379598847;172;energis-Netzgesellschaft mbH;ms;mehrdeutig(2 Tupel);Mittelspannung  6,64  6,03  151,89  0,22
+SNB976379598847;172;energis-Netzgesellschaft mbH;ns;mehrdeutig(2 Tupel);Niederspannung  8,95  9,66  146,45  4,16
+SNB921319639913;173;ENERVIE Vernetzt GmbH;ms;nicht_als_Zeile_im_Text;
+SNB921319639913;173;ENERVIE Vernetzt GmbH;msns;nicht_als_Zeile_im_Text;
+SNB921319639913;173;ENERVIE Vernetzt GmbH;ns;nicht_als_Zeile_im_Text;
+SNB921629791202;174;ENGIE Deutschland GmbH;ms;nicht_als_Zeile_im_Text;
+SNB921629791202;174;ENGIE Deutschland GmbH;msns;nicht_als_Zeile_im_Text;
+SNB921629791202;174;ENGIE Deutschland GmbH;ns;nicht_als_Zeile_im_Text;
+SNB951180867351;177;ENRW Energieversorgung Rottweil GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung (NS)  21,53  11,49  217,33  3,66
+SNB967982606159;179;Erlanger Stadtwerke AG;ms;mehrdeutig(2 Tupel);Mittelspannung  17,94 €  3,85 ct  88,05 €  1,04 ct
+SNB967982606159;179;Erlanger Stadtwerke AG;msns;brutto?(0.01);Umspannung in die Niederspannung  28,61 €  6,46 ct  189,88 €  0,01 ct
+SNB989700422711;181;EVB Netze GmbH;ms;nicht_als_Zeile_im_Text;
+SNB989700422711;181;EVB Netze GmbH;msns;nicht_als_Zeile_im_Text;
+SNB989700422711;181;EVB Netze GmbH;ns;nicht_als_Zeile_im_Text;
+SNB943915605062;183;EVG Energieversorgung Gemünden GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  12,16  7,17  146,46  1,80
+SNB989583209836;185;EVU der Gemeinde Gochsheim;ns;nicht_als_Zeile_im_Text;
+SNB945750197795;188;EVU Weilerbach;msns;brutto?(7.91);n Umspannung Mittel-/Niederspannung  7,91  9,41  6,65  7,91  153,59  182,77  0,83  0,99
+SNB969068596941;192;EWR Netz GmbH;msns;brutto?(0.01);42,71  7,25  223,57  0,01
+SNB940297211072;195;EZV Energie- und Service GmbH ＆ Co. KG Untermain;ms;nicht_als_Zeile_im_Text;
+SNB940297211072;195;EZV Energie- und Service GmbH ＆ Co. KG Untermain;msns;nicht_als_Zeile_im_Text;
+SNB940297211072;195;EZV Energie- und Service GmbH ＆ Co. KG Untermain;ns;nicht_als_Zeile_im_Text;
+SNB944723161733;198;Feuchter Gemeindewerke GmbH (FGW);ms;nicht_als_Zeile_im_Text;
+SNB944723161733;198;Feuchter Gemeindewerke GmbH (FGW);msns;nicht_als_Zeile_im_Text;
+SNB944723161733;198;Feuchter Gemeindewerke GmbH (FGW);ns;nicht_als_Zeile_im_Text;
+SNB990971435621;201;Freiberger Stromversorgung GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  6,56  4,80  100,54  1,04
+SNB990971435621;201;Freiberger Stromversorgung GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  8,45  7,31  144,84  1,86
+SNB982241851170;203;Freitaler Stadtwerke GmbH;msns;nicht_als_Zeile_im_Text;
+SNB982241851170;203;Freitaler Stadtwerke GmbH;ns;nicht_als_Zeile_im_Text;
+SNB998167765620;210;Gemeindewerke Baiersbronn;ns;mehrdeutig(2 Tupel);Niederspannung  17,58  9,58  210,49  1,87
+SNB951232597106;214;Gemeindewerke Cadolzburg;ms;nicht_als_Zeile_im_Text;
+SNB951232597106;214;Gemeindewerke Cadolzburg;msns;nicht_als_Zeile_im_Text;
+SNB951232597106;214;Gemeindewerke Cadolzburg;ns;nicht_als_Zeile_im_Text;
+SNB991410365127;216;Gemeindewerke Ebersdorf;ms;nicht_als_Zeile_im_Text;
+SNB991410365127;216;Gemeindewerke Ebersdorf;msns;nicht_als_Zeile_im_Text;
+SNB991410365127;216;Gemeindewerke Ebersdorf;ns;nicht_als_Zeile_im_Text;
+SNB947727983103;218;Gemeindewerke Frammersbach;alle;kein_text;
+SNB954239007623;219;Gemeindewerke Gangkofen;ms;brutto?(0.05);Mittelspannung (MS)  11,67  4,37  119,60  0,05
+SNB926937565941;220;Gemeindewerke Garmisch-Partenkirchen, KU;ns;mehrdeutig(2 Tupel);Niederspannung (NSP)  15,67  9,94  244,61  0,79
+SNB966216072913;221;Gemeindewerke Georgensgmünd;slp;slp_nicht_im_Text;
+SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;ms;nicht_als_Zeile_im_Text;
+SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;msns;nicht_als_Zeile_im_Text;
+SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;ns;nicht_als_Zeile_im_Text;
+SNB961322866920;228;Gemeindewerke Herxheim;msns;mehrdeutig(2 Tupel);Umspannung (MS/NS)  8,86  4,96  115,20  0,71
+SNB961322866920;228;Gemeindewerke Herxheim;ns;mehrdeutig(3 Tupel);Niederspannung  12,98  6,23  106,50  2,49
+SNB969688824103;233;Gemeindewerke Kirkel GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  14,32  5,49  130,41  0,85
+SNB955706777742;234;Gemeindewerke Lam;ms;nicht_als_Zeile_im_Text;
+SNB955706777742;234;Gemeindewerke Lam;msns;nicht_als_Zeile_im_Text;
+SNB955706777742;234;Gemeindewerke Lam;ns;nicht_als_Zeile_im_Text;
+SNB987153361809;240;Gemeindewerke Nümbrecht GmbH;ms;nicht_als_Zeile_im_Text;
+SNB987153361809;240;Gemeindewerke Nümbrecht GmbH;msns;nicht_als_Zeile_im_Text;
+SNB987153361809;240;Gemeindewerke Nümbrecht GmbH;ns;nicht_als_Zeile_im_Text;
+SNB915728555230;243;Gemeindewerke Pleinfeld;ms;nicht_als_Zeile_im_Text;
+SNB915728555230;243;Gemeindewerke Pleinfeld;msns;nicht_als_Zeile_im_Text;
+SNB915728555230;243;Gemeindewerke Pleinfeld;ns;nicht_als_Zeile_im_Text;
+SNB916657570554;247;Gemeindewerke Steinhagen GmbH;msns;brutto?(0.0017);Umspannung MS/NS  34,83  12,12  333,71  0,0017
+SNB916657570554;247;Gemeindewerke Steinhagen GmbH;slp;slp_nicht_im_Text;
+SNB983792571722;248;Gemeindewerke Wadgassen GmbH;ns;mehrdeutig(3 Tupel);Niederspannung (NSP)  19,71  8,08  113,49  4,33
+SNB948816192529;255;GeraNetz GmbH;slp;slp_nicht_im_Text;
+SNB961316124487;263;Gothaer Stadtwerke NETZ GmbH;slp;slp_nicht_im_Text;
+SNB915686229082;266;GWS Gemeindewerke Sinzheim GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  31,87  7,26  183,37  1,20
+SNB985729975610;269;Hanau Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB985729975610;269;Hanau Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB985729975610;269;Hanau Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB985729975610;269;Hanau Netz GmbH;slp;slp_nicht_im_Text;
+SNB930312838582;274;Herzo Werke GmbH;ms;nicht_als_Zeile_im_Text;
+SNB930312838582;274;Herzo Werke GmbH;msns;nicht_als_Zeile_im_Text;
+SNB930312838582;274;Herzo Werke GmbH;ns;nicht_als_Zeile_im_Text;
+SNB982085566391;275;HEWA GmbH;ms;nicht_als_Zeile_im_Text;
+SNB982085566391;275;HEWA GmbH;msns;nicht_als_Zeile_im_Text;
+SNB982085566391;275;HEWA GmbH;ns;nicht_als_Zeile_im_Text;
+SNB916663914472;277;inetz GmbH;slp;slp_nicht_im_Text;
+SNB911960309587;278;infra fürth gmbh;ms;mehrdeutig(2 Tupel);Mittelspannung  17,31  5,40  144,02  0,33
+SNB911960309587;278;infra fürth gmbh;msns;mehrdeutig(2 Tupel);Umspannung Mittel-/Niederspannung  17,84  5,61  149,78  0,33
+SNB911960309587;278;infra fürth gmbh;ns;mehrdeutig(2 Tupel);Niederspannung  22,29  6,75  108,54  3,30
+SNB971962135690;282;Infrastrukturbetrieb der Stadt Arneburg;ms;nicht_als_Zeile_im_Text;
+SNB971962135690;282;Infrastrukturbetrieb der Stadt Arneburg;slp;brutto?(6.47);Arbeitspreis  5,44 ct/kWh  6,47 ct/kWh
+SNB942908692218;283;Karl Stengle GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB942908692218;283;Karl Stengle GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB951760950909;285;Keep - Kommunale Eisenberger Energiepartner GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  23,97  8,63  229,04  0,43
+SNB951760950909;285;Keep - Kommunale Eisenberger Energiepartner GmbH;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  30,87  10,63  278,06  0,74
+SNB951760950909;285;Keep - Kommunale Eisenberger Energiepartner GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  53,46  11,54  241,43  4,03
+SNB964573708865;286;KEW Karwendel Energie und Wasser GmbH;ms;mehrdeutig(4 Tupel);Mittelspannungsnetz  16,07  5,27  126,63  0,85
+SNB964573708865;286;KEW Karwendel Energie und Wasser GmbH;ns;mehrdeutig(4 Tupel);Niederspannungsnetz  11,94  7,98  159,70  2,07
+SNB943841101959;287;KEW Kommunale Energie- und Wasserversorgung AG;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  16,07  5,27  126,63  0,85
+SNB986580518855;288;KommEnergie GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  22,88  5,21  112,76  1,61
+SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB985871274975;291;Kommunalunternehmen Gemeindewerke Peißenberg;ms;mehrdeutig(3 Tupel);Mittelspannung MSP  5,89 €/kWa  5,12 Ct/kWh  131,44 €/kWa  0,10 Ct/kWh
+SNB985871274975;291;Kommunalunternehmen Gemeindewerke Peißenberg;msns;mehrdeutig(2 Tupel);Umspannung MSP/NSP  6,96 €/kWa  6,25 Ct/kWh  157,73 €/kWa  0,22 Ct/kWh
+SNB985871274975;291;Kommunalunternehmen Gemeindewerke Peißenberg;ns;mehrdeutig(3 Tupel);Niederspannung NSP  12,21 €/kWa  7,48 Ct/kWh  97,96 €/kWa  4,05 Ct/kWh
+SNB947553215997;292;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ms;nicht_als_Zeile_im_Text;
+SNB947553215997;292;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;msns;nicht_als_Zeile_im_Text;
+SNB947553215997;292;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ns;nicht_als_Zeile_im_Text;
+SNB937858140285;296;Kreiswerke Main-Kinzig GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  22,83  6,33  162,33  0,75
+SNB920357766414;298;Leitungspartner GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  15,86  7,32  120,00  3,16
+SNB922269370765;299;Licht- und Kraftwerke Helmbrechts GmbH;ms;nicht_als_Zeile_im_Text;
+SNB922269370765;299;Licht- und Kraftwerke Helmbrechts GmbH;msns;nicht_als_Zeile_im_Text;
+SNB922269370765;299;Licht- und Kraftwerke Helmbrechts GmbH;ns;nicht_als_Zeile_im_Text;
+SNB922269370765;299;Licht- und Kraftwerke Helmbrechts GmbH;slp;slp_nicht_im_Text;
+SNB915316807789;304;Mainfranken Netze GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  17,81  5,34  140,72  0,43
+SNB915316807789;304;Mainfranken Netze GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel- / Niederspannung (USp. MS/NS)  22,89  6,97  184,39  0,51
+SNB915316807789;304;Mainfranken Netze GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NS)  31,60  6,83  157,01  1,82
+SNB914731268120;310;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;ms;mehrdeutig(4 Tupel);Entnahme aus Mittelspannung (MSP)  19,45 €/kW  4,86 ct/kWh  119,66 €/kW  0,85 ct/kWh
+SNB914731268120;310;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;msns;mehrdeutig(4 Tupel);Entnahme aus Umspannung (MSP/NSP)  33,27 €/kW  5,05 ct/kWh  112,34 €/kW  1,88 ct/kWh
+SNB943170046990;315;MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH;ms;mehrdeutig(2 Tupel);Mittelspannung  15,55  5,67  136,83  0,82
+SNB982034089728;318;Netz ＆ Energie Betriebsgesellschaft mbH;ms;nicht_als_Zeile_im_Text;
+SNB982034089728;318;Netz ＆ Energie Betriebsgesellschaft mbH;ns;nicht_als_Zeile_im_Text;
+SNB982034089728;318;Netz ＆ Energie Betriebsgesellschaft mbH;slp;slp_nicht_im_Text;
+SNB939517994215;320;NETZE Bad Langensalza GmbH;ms;nicht_als_Zeile_im_Text;
+SNB939517994215;320;NETZE Bad Langensalza GmbH;msns;nicht_als_Zeile_im_Text;
+SNB939517994215;320;NETZE Bad Langensalza GmbH;ns;nicht_als_Zeile_im_Text;
+SNB934214092950;321;Netze Hechingen GmbH ＆ Co. KG;ms;"brutto?(0.04); mehrdeutig(2 Tupel)";MS - NE 5 - Mittelspannung4)  24,73  8,81  244,20  0,04
+SNB933767388565;322;Netzgesellschaft Ahlen mbH;ms;mehrdeutig(2 Tupel);Mittelspannung  6,24  6,18  141,75  0,76
+SNB933767388565;322;Netzgesellschaft Ahlen mbH;slp;slp_nicht_im_Text;
+SNB978051166283;323;Netzgesellschaft Bitterfeld-Wolfen mbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  30,86  3,81  53,14  2,92
+SNB922055731633;325;Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG;ns;brutto?(9.95);Niederspannung  9,95  8,37  152,83  2,66
+SNB987317008403;329;Netzgesellschaft Panketal GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  23,56  5,61  94,92  2,76
+SNB929027950139;330;Netzgesellschaft Potsdam GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  40,92  5,97  130,03  2,41
+SNB913130054136;331;Netzgesellschaft Schwerin mbH (NGS);ms;nicht_als_Zeile_im_Text;
+SNB913130054136;331;Netzgesellschaft Schwerin mbH (NGS);msns;nicht_als_Zeile_im_Text;
+SNB913130054136;331;Netzgesellschaft Schwerin mbH (NGS);ns;nicht_als_Zeile_im_Text;
+SNB929088252340;333;Netzwerke Merzig GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  7,22  5,93  142,97  0,50
+SNB915471253889;334;Netzwerke Saarlouis GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  5,62  5,40  119,62  0,84
+SNB939624707241;335;Neubrandenburger Stadtwerke GmbH;msns;brutto?(0.05);4,64  5,88  150,15  0,05
+SNB940437318166;336;NEW Netz GmbH;ns;mehrdeutig(4 Tupel);Niederspannung  30,46  5,70  140,53  1,29
+SNB998819299022;338;NHF Netzgesellschaft Heilbronn-Franken mbH;slp;brutto?(9.71);Arbeitspreis ct/kWh  8,16  9,71
+SNB959176447266;341;Nordhausen Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB959176447266;341;Nordhausen Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB959176447266;341;Nordhausen Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB920393062051;342;NordNetz GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  23,19  4,25  78,42  2,05
+SNB931610892481;343;Nordseeheilbad Borkum GmbH;ms;mehrdeutig(4 Tupel);MS - NE 5 - Mittelspannung4)  29,50  5,94  131,36  1,87
+SNB931610892481;343;Nordseeheilbad Borkum GmbH;msns;mehrdeutig(2 Tupel);MS/NS - NE 6 - Umspannung Mittel-/Niederspannung  32,92  6,68  148,43  2,06
+SNB931610892481;343;Nordseeheilbad Borkum GmbH;ns;mehrdeutig(2 Tupel);NS - NE 7 - Niederspannung  37,28  7,09  151,49  2,53
+SNB938413573104;353;QuartiersNetz Bayern GmbH;msns;nicht_als_Zeile_im_Text;
+SNB938413573104;353;QuartiersNetz Bayern GmbH;ns;nicht_als_Zeile_im_Text;
+SNB942804093577;354;Queichtal Energie Offenbach Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB942804093577;354;Queichtal Energie Offenbach Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB942804093577;354;Queichtal Energie Offenbach Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB942804093577;354;Queichtal Energie Offenbach Netz GmbH;slp;slp_nicht_im_Text;
+SNB942274543879;358;Regionalnetze Linzgau GmbH;ms;mehrdeutig(2 Tupel);5  Mittelspannungsnetz  16,99  6,26  158,09  0,62
+SNB979950878543;361;Remstalwerk Netzgesellschaft GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  24,92  6,30  155,81  1,07
+SNB912239808732;363;Rheinhessische Energie- und Wasserversorgungs-GmbH;ms;nicht_als_Zeile_im_Text;
+SNB958237843443;365;Saalfelder Energienetze GmbH;ms;nicht_als_Zeile_im_Text;
+SNB958237843443;365;Saalfelder Energienetze GmbH;msns;nicht_als_Zeile_im_Text;
+SNB958237843443;365;Saalfelder Energienetze GmbH;ns;nicht_als_Zeile_im_Text;
+SNB958237843443;365;Saalfelder Energienetze GmbH;slp;slp_nicht_im_Text;
+SNB968914838013;366;SachsenNetze HS.HD GmbH;ns;nicht_als_Zeile_im_Text;
+SNB968914838013;366;SachsenNetze HS.HD GmbH;slp;brutto?(10.08);Arbeitspreis  8,47 Ct/kWh  10,08 Ct/kWh
+SNB956986612075;367;Saerbecker Ver- und Entsorgungsnetzgesellschaft mbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  13,65  5,50  147,38  0,15
+SNB956986612075;367;Saerbecker Ver- und Entsorgungsnetzgesellschaft mbH;ns;mehrdeutig(5 Tupel);NS - NE 7 - Niederspannung  21,18  8,53  228,68  0,23
+SNB953868012787;368;Schleswiger Stadtwerke GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  43,92  8,49  183,12  2,92
+SNB950960779068;369;SEW Stromversorgungs GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  15,29  4,35  112,44  0,46
+SNB989025785690;371;SSW Netz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  8,29  7,87  195,04  0,40
+SNB993059842564;374;Stadtwerk am See GmbH ＆ Co. KG;ms;mehrdeutig(4 Tupel);Mittelspannung  22,51  6,37  154,61  1,09
+SNB993059842564;374;Stadtwerk am See GmbH ＆ Co. KG;msns;mehrdeutig(4 Tupel);Umspannung Mittel-/Niederspannung  22,70  6,52  166,07  1,09
+SNB993059842564;374;Stadtwerk am See GmbH ＆ Co. KG;ns;mehrdeutig(4 Tupel);Niederspannung  22,75  7,8  115,43  4,09
+SNB942257679137;378;Stadtwerke Achim AG;ns;mehrdeutig(2 Tupel);Niederspannung NSP  21,91 €/kWa  5,15 ct/kWh  101,42 €/kWa  1,97 ct/kWh
+SNB947092763157;379;Stadtwerke Altdorf GmbH;ms;nicht_als_Zeile_im_Text;
+SNB947092763157;379;Stadtwerke Altdorf GmbH;msns;nicht_als_Zeile_im_Text;
+SNB947092763157;379;Stadtwerke Altdorf GmbH;ns;nicht_als_Zeile_im_Text;
+SNB947709605108;380;Stadtwerke Altensteig;ms;nicht_als_Zeile_im_Text;
+SNB947709605108;380;Stadtwerke Altensteig;msns;nicht_als_Zeile_im_Text;
+SNB947709605108;380;Stadtwerke Altensteig;ns;nicht_als_Zeile_im_Text;
+SNB978191145308;381;Stadtwerke Amberg Versorgungs GmbH;slp;slp_nicht_im_Text;
+SNB918290153354;393;Stadtwerke Bad Dürkheim GmbH;ms;nicht_als_Zeile_im_Text;
+SNB918290153354;393;Stadtwerke Bad Dürkheim GmbH;msns;nicht_als_Zeile_im_Text;
+SNB918290153354;393;Stadtwerke Bad Dürkheim GmbH;ns;nicht_als_Zeile_im_Text;
+SNB918290153354;393;Stadtwerke Bad Dürkheim GmbH;slp;slp_nicht_im_Text;
+SNB968949417344;396;Stadtwerke Bad Hersfeld GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung6)  25,02  6,46  161,27  1,01
+SNB943203125821;405;Stadtwerke Bad Saulgau;ms;mehrdeutig(2 Tupel);Mittelspannung  4,70  8,69  216,66  0,21
+SNB943203125821;405;Stadtwerke Bad Saulgau;msns;mehrdeutig(2 Tupel);Mittel- / Niederspannung  4,89  9,76  245,64  0,13
+SNB943203125821;405;Stadtwerke Bad Saulgau;ns;mehrdeutig(2 Tupel);Niederspannung2)  2,28  10,46  217,43  1,86
+SNB956377097702;413;Stadtwerke Baiersdorf KU;ms;nicht_als_Zeile_im_Text;
+SNB956377097702;413;Stadtwerke Baiersdorf KU;msns;nicht_als_Zeile_im_Text;
+SNB956377097702;413;Stadtwerke Baiersdorf KU;ns;nicht_als_Zeile_im_Text;
+SNB963746327452;414;Stadtwerke Balingen;ms;"brutto?(0.04); mehrdeutig(2 Tupel)";◼ Mittelspannung (MSP)  16,76  6,69  183,02  0,04
+SNB963746327452;414;Stadtwerke Balingen;msns;"brutto?(0.02); mehrdeutig(2 Tupel)";◼ Umspannung MSP/NSP  17,78  7,13  195,57  0,02
+SNB913346629968;416;Stadtwerke Barmstedt;ns;nicht_als_Zeile_im_Text;
+SNB959513498364;418;Stadtwerke Bebra GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  30,55  7,72  190,79  1,31
+SNB955586052717;421;Stadtwerke Bexbach GmbH;ms;nicht_als_Zeile_im_Text;
+SNB955586052717;421;Stadtwerke Bexbach GmbH;msns;nicht_als_Zeile_im_Text;
+SNB955586052717;421;Stadtwerke Bexbach GmbH;ns;nicht_als_Zeile_im_Text;
+SNB910950265032;422;Stadtwerke Bietigheim-Bissingen GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MSP)  18,91  5,79  134,71  1,16
+SNB910950265032;422;Stadtwerke Bietigheim-Bissingen GmbH;msns;mehrdeutig(2 Tupel);Umspannung (MSP/NSP)  20,29  5,82  136,68  1,16
+SNB910950265032;422;Stadtwerke Bietigheim-Bissingen GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NSP)  26,09  6,38  143,97  1,67
+SNB930423383254;426;Stadtwerke Böhmetal GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  37,49  6,50  130,06  2,79
+SNB951835062254;432;Stadtwerke Brunsbüttel GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  17,11 EUR/kW a  4,57 ct/kWh  74,56 EUR/kW a  2,27 ct/kWh
+SNB922393870476;433;Stadtwerke Buchen GmbH ＆ Co KG;ms;nicht_als_Zeile_im_Text;
+SNB922393870476;433;Stadtwerke Buchen GmbH ＆ Co KG;msns;nicht_als_Zeile_im_Text;
+SNB922393870476;433;Stadtwerke Buchen GmbH ＆ Co KG;ns;nicht_als_Zeile_im_Text;
+SNB968489334224;434;Stadtwerke Buchholz in der Nordheide GmbH;slp;falsche_Zeile?(Modul);Modul 1 Pauschale Reduktion *  30,00  7,55  -123,85
+SNB949369515353;437;Stadtwerke Burgdorf Netz GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  21,85  4,53  101,73  1,33
+SNB990522725676;439;Stadtwerke Cham GmbH;ms;nicht_als_Zeile_im_Text;
+SNB990522725676;439;Stadtwerke Cham GmbH;msns;nicht_als_Zeile_im_Text;
+SNB990522725676;439;Stadtwerke Cham GmbH;ns;nicht_als_Zeile_im_Text;
+SNB934532229953;442;Stadtwerke Crailsheim GmbH;ms;nicht_als_Zeile_im_Text;
+SNB934532229953;442;Stadtwerke Crailsheim GmbH;msns;nicht_als_Zeile_im_Text;
+SNB934532229953;442;Stadtwerke Crailsheim GmbH;ns;nicht_als_Zeile_im_Text;
+SNB945149216045;443;Stadtwerke Dachau Eigenbetr. d. Stadt Dachau;ms;nicht_als_Zeile_im_Text;
+SNB945149216045;443;Stadtwerke Dachau Eigenbetr. d. Stadt Dachau;msns;nicht_als_Zeile_im_Text;
+SNB945149216045;443;Stadtwerke Dachau Eigenbetr. d. Stadt Dachau;ns;nicht_als_Zeile_im_Text;
+SNB924793953759;444;Stadtwerke Deggendorf GmbH;ms;nicht_als_Zeile_im_Text;
+SNB924793953759;444;Stadtwerke Deggendorf GmbH;msns;nicht_als_Zeile_im_Text;
+SNB924793953759;444;Stadtwerke Deggendorf GmbH;ns;nicht_als_Zeile_im_Text;
+SNB937001443546;446;Stadtwerke Delitzsch GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  10,90  4,62  97,83  1,15
+SNB924774487556;447;Stadtwerke Detmold GmbH;slp;brutto?(9.45);7,94 (9,45)  60,00 (71,40)
+SNB991561247815;449;Stadtwerke Dillingen/Saar Netzgesellschaft mbH;ms;"brutto?(8.39); mehrdeutig(2 Tupel)";Mittelspannung  8,39  7,06  176,39  0,34
+SNB991561247815;449;Stadtwerke Dillingen/Saar Netzgesellschaft mbH;ns;mehrdeutig(2 Tupel);Niederspannung  7,17  9,09  182,17  2,09
+SNB944601935326;450;Stadtwerke Dingolfing GmbH;ms;nicht_als_Zeile_im_Text;
+SNB944601935326;450;Stadtwerke Dingolfing GmbH;msns;nicht_als_Zeile_im_Text;
+SNB944601935326;450;Stadtwerke Dingolfing GmbH;ns;nicht_als_Zeile_im_Text;
+SNB914522191989;458;Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH;ms;nicht_als_Zeile_im_Text;
+SNB914522191989;458;Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH;ns;nicht_als_Zeile_im_Text;
+SNB968646876970;459;Stadtwerke Eckernförde GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  36,54  8,44  200,35  1,88
+SNB965692805121;462;Stadtwerke Einbeck GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  23,71  6,17  154,34  0,94
+SNB920699937404;463;Stadtwerke Elbtal GmbH;ns;nicht_als_Zeile_im_Text;
+SNB920699937404;463;Stadtwerke Elbtal GmbH;slp;brutto?(7.79);Arbeitspreis  6,55 Ct/kWh  7,79 Ct/kWh
+SNB986190606218;468;Stadtwerke Emmerich GmbH;ms;nicht_als_Zeile_im_Text;
+SNB986190606218;468;Stadtwerke Emmerich GmbH;msns;nicht_als_Zeile_im_Text;
+SNB986190606218;468;Stadtwerke Emmerich GmbH;ns;nicht_als_Zeile_im_Text;
+SNB986190606218;468;Stadtwerke Emmerich GmbH;slp;slp_nicht_im_Text;
+SNB958416423039;469;Stadtwerke Emsdetten GmbH;ms;nicht_als_Zeile_im_Text;
+SNB958416423039;469;Stadtwerke Emsdetten GmbH;msns;nicht_als_Zeile_im_Text;
+SNB958416423039;469;Stadtwerke Emsdetten GmbH;ns;nicht_als_Zeile_im_Text;
+SNB959959730332;470;Stadtwerke Engen GmbH;msns;brutto?(10.11);n Entnahme aus Umspannung MSP/NSP  10,11  8,50  210,39  0,48
+SNB922030852827;474;Stadtwerke EVB Huntetal GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung 4)  23,50  5,26  122,98  1,28
+SNB922060347560;475;Stadtwerke EVB Huntetal Netz GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung 4)  23,50  5,26  122,98  1,28
+SNB922220582657;479;Stadtwerke Flensburg GmbH;ms;mehrdeutig(2 Tupel);1-1  Mittelspannung  5,90  5,10  125,50  0,32
+SNB996457394093;480;Stadtwerke Forchheim GmbH;ms;nicht_als_Zeile_im_Text;
+SNB996457394093;480;Stadtwerke Forchheim GmbH;msns;nicht_als_Zeile_im_Text;
+SNB996457394093;480;Stadtwerke Forchheim GmbH;ns;nicht_als_Zeile_im_Text;
+SNB912063565672;483;Stadtwerke Fröndenberg Wickede GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  42,84  8,60  189,34  2,74
+SNB914668240749;485;Stadtwerke Furth im Wald GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB914668240749;485;Stadtwerke Furth im Wald GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB914668240749;485;Stadtwerke Furth im Wald GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB965107360993;488;Stadtwerke Geldern Netz GmbH;msns;mehrdeutig(2 Tupel);Mittelspannung mit Umspannung auf Niederspannung  23,90  6,69  172,12  0,76
+SNB965107360993;488;Stadtwerke Geldern Netz GmbH;ns;mehrdeutig(4 Tupel);Niederspannung  45,05  12,62  324,45  1,44
+SNB980181102130;493;Stadtwerke Glückstadt GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  22,23 EUR/kW a  8,08 ct/kWh  159,38 EUR/kW a  2,59 ct/kWh
+SNB926442995943;497;Stadtwerke Greifswald GmbH;slp;slp_nicht_im_Text;
+SNB966809778161;501;Stadtwerke Groß-Gerau Versorgungs GmbH;slp;falsche_Zeile?(Modul);Modul 1* - Pauschale Netzentgeltreduktion  75,03 €  -113,73 €  6,20 Cent
+SNB953794435957;504;Stadtwerke Gunzenhausen GmbH;ms;nicht_als_Zeile_im_Text;
+SNB953794435957;504;Stadtwerke Gunzenhausen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB953794435957;504;Stadtwerke Gunzenhausen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB928602915495;505;Stadtwerke Hagenow GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  12,55  4,05  109,06  0,19
+SNB959120377328;507;Stadtwerke Haldensleben GmbH;ms;brutto?(0.03);Mittelspannung (MS)  83,06  3,03  158,10  0,03
+SNB960729432592;512;Stadtwerke Havelberg GmbH;ms;nicht_als_Zeile_im_Text;
+SNB960729432592;512;Stadtwerke Havelberg GmbH;msns;nicht_als_Zeile_im_Text;
+SNB960729432592;512;Stadtwerke Havelberg GmbH;ns;nicht_als_Zeile_im_Text;
+SNB953938790515;513;Stadtwerke Heide GmbH;ms;nicht_als_Zeile_im_Text;
+SNB953938790515;513;Stadtwerke Heide GmbH;ns;nicht_als_Zeile_im_Text;
+SNB968694358282;516;Stadtwerke Heiligenhaus GmbH;ms;nicht_als_Zeile_im_Text;
+SNB968694358282;516;Stadtwerke Heiligenhaus GmbH;msns;nicht_als_Zeile_im_Text;
+SNB968694358282;516;Stadtwerke Heiligenhaus GmbH;ns;nicht_als_Zeile_im_Text;
+SNB969826201797;522;Stadtwerke Hilden GmbH;msns;nicht_als_Zeile_im_Text;
+SNB969826201797;522;Stadtwerke Hilden GmbH;ns;nicht_als_Zeile_im_Text;
+SNB967127819703;523;Stadtwerke Hockenheim;msns;mehrdeutig(2 Tupel);Umspannung Mittel- / Niederspannung  22,71  7,08  178,81  0,84
+SNB967127819703;523;Stadtwerke Hockenheim;ns;mehrdeutig(2 Tupel);Niederspannung  24,83  8,40  204,78  1,21
+SNB977206503256;524;Stadtwerke Hof Energie+Wasser GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  24,28  5,23  107,44  1,88
+SNB958680286002;525;Stadtwerke Hollfeld;ms;nicht_als_Zeile_im_Text;
+SNB958680286002;525;Stadtwerke Hollfeld;msns;nicht_als_Zeile_im_Text;
+SNB958680286002;525;Stadtwerke Hollfeld;ns;nicht_als_Zeile_im_Text;
+SNB964375043041;527;Stadtwerke Hünfeld GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  28,91  8,38  218,16  0,81
+SNB950336540445;528;Stadtwerke Husum Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB950336540445;528;Stadtwerke Husum Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB950336540445;528;Stadtwerke Husum Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB913730249284;531;Stadtwerke Iserlohn GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  11,21  6,33  146,96  0,90
+SNB946137378622;532;Stadtwerke Itzehoe GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  13,08 EUR/kW a  5,75 ct/kWh  115,16 EUR/kW a  1,67 ct/kWh
+SNB945861817537;533;Stadtwerke Jena Netze GmbH;slp;slp_nicht_im_Text;
+SNB973672371320;534;Stadtwerke Jülich GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  21,55  6,05  155,55  0,69
+SNB973672371320;534;Stadtwerke Jülich GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  28,50  6,41  150,50  1,53
+SNB933013692798;535;Stadtwerke Kaltenkirchen GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung8)  15,07  3,79  93,55  0,65
+SNB935814055062;538;Stadtwerke Kleve GmbH;msns;nicht_als_Zeile_im_Text;
+SNB935814055062;538;Stadtwerke Kleve GmbH;ns;nicht_als_Zeile_im_Text;
+SNB929663692172;543;Stadtwerke Landsberg KU;ms;nicht_als_Zeile_im_Text;
+SNB929663692172;543;Stadtwerke Landsberg KU;ns;nicht_als_Zeile_im_Text;
+SNB928992067729;544;Stadtwerke Landshut;ms;nicht_als_Zeile_im_Text;
+SNB928992067729;544;Stadtwerke Landshut;msns;nicht_als_Zeile_im_Text;
+SNB928992067729;544;Stadtwerke Landshut;ns;nicht_als_Zeile_im_Text;
+SNB935738221819;546;Stadtwerke Langenzenn;ms;brutto?(0.03);Mittelspannung (MS)  13,42  5,48  149,55  0,03
+SNB980345455409;547;Stadtwerke Lauterbach GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  23,76  7,06  185,53  0,59
+SNB946090906887;549;Stadtwerke Leine-Solling GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  17,35  4,92  127,03  0,53
+SNB949152526504;551;Stadtwerke Lindau (B) GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB949152526504;551;Stadtwerke Lindau (B) GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB949152526504;551;Stadtwerke Lindau (B) GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB916255659316;553;Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB916255659316;553;Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB916255659316;553;Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB928200943784;558;Stadtwerke Ludwigslust-Grabow GmbH;ms;nicht_als_Zeile_im_Text;
+SNB928200943784;558;Stadtwerke Ludwigslust-Grabow GmbH;msns;nicht_als_Zeile_im_Text;
+SNB928200943784;558;Stadtwerke Ludwigslust-Grabow GmbH;ns;nicht_als_Zeile_im_Text;
+SNB915358347793;559;Stadtwerke Lübz GmbH;msns;brutto?(0.06);3,66  7,02  177,73  0,06
+SNB942111583372;560;Stadtwerke Lünen GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung *  28,51  5,97  134,98  1,71  22,50  1,71
+SNB942111583372;560;Stadtwerke Lünen GmbH;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  31,91  6,38  140,47  2,04  23,41  2,04
+SNB942111583372;560;Stadtwerke Lünen GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  47,95  6,50  103,14  4,30  17,19  4,30
+SNB972740218178;564;Stadtwerke Marburg GmbH;ms;nicht_als_Zeile_im_Text;
+SNB972740218178;564;Stadtwerke Marburg GmbH;msns;nicht_als_Zeile_im_Text;
+SNB972740218178;564;Stadtwerke Marburg GmbH;ns;nicht_als_Zeile_im_Text;
+SNB922774216633;567;Stadtwerke Menden GmbH;ms;nicht_als_Zeile_im_Text;
+SNB922774216633;567;Stadtwerke Menden GmbH;msns;nicht_als_Zeile_im_Text;
+SNB922774216633;567;Stadtwerke Menden GmbH;ns;nicht_als_Zeile_im_Text;
+SNB961816584323;568;Stadtwerke Mengen;ms;mehrdeutig(3 Tupel);Mittelspannung  7,06  6,94  158,71  0,88
+SNB961816584323;568;Stadtwerke Mengen;msns;mehrdeutig(3 Tupel);Mittel- / Niederspannung  7,24  9,13  180,50  2,20
+SNB961816584323;568;Stadtwerke Mengen;ns;mehrdeutig(3 Tupel);Niederspannung  6,73  10,24  218,31  1,78
+SNB953132482766;573;Stadtwerke Mühlacker GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  6,96  11,79  252,04  1,99
+SNB931986174853;574;Stadtwerke Mühlhausen Netz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB931986174853;574;Stadtwerke Mühlhausen Netz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB931986174853;574;Stadtwerke Mühlhausen Netz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB986042567117;575;Stadtwerke Mühlheim am Main GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  33,79  6,60  142,54  2,25
+SNB956741146944;576;Stadtwerke Münchberg;ms;nicht_als_Zeile_im_Text;
+SNB956741146944;576;Stadtwerke Münchberg;msns;nicht_als_Zeile_im_Text;
+SNB956741146944;576;Stadtwerke Münchberg;ns;nicht_als_Zeile_im_Text;
+SNB980054996408;580;Stadtwerke Neuburg a. d. Donau;ms;nicht_als_Zeile_im_Text;
+SNB980054996408;580;Stadtwerke Neuburg a. d. Donau;msns;nicht_als_Zeile_im_Text;
+SNB980054996408;580;Stadtwerke Neuburg a. d. Donau;ns;nicht_als_Zeile_im_Text;
+SNB924181641435;581;Stadtwerke Neuffen AG;ms;nicht_als_Zeile_im_Text;
+SNB924181641435;581;Stadtwerke Neuffen AG;msns;nicht_als_Zeile_im_Text;
+SNB924181641435;581;Stadtwerke Neuffen AG;ns;nicht_als_Zeile_im_Text;
+SNB989365725226;582;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  25,48  5,52  126,30  1,48
+SNB989365725226;582;Stadtwerke Neumarkt i. d. OPf. Energie GmbH;slp;brutto?(4.22);Niederspannungsnetz (NS)  3,55 / 4,22
+SNB955718588763;583;Stadtwerke Neunburg vorm Wald Strom GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  22,00  4,32  94,08  1,44
+SNB920348005966;584;Stadtwerke Neuruppin GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung *  27,59  4,74  112,77  1,34  18,80  1,34
+SNB920348005966;584;Stadtwerke Neuruppin GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  45,96  6,41  135,52  2,82  22,59  2,82
+SNB965315499379;586;Stadtwerke Neustadt a.d. Aisch GmbH;ms;nicht_als_Zeile_im_Text;
+SNB965315499379;586;Stadtwerke Neustadt a.d. Aisch GmbH;msns;nicht_als_Zeile_im_Text;
+SNB965315499379;586;Stadtwerke Neustadt a.d. Aisch GmbH;ns;nicht_als_Zeile_im_Text;
+SNB925999725461;591;Stadtwerke Neuwied GmbH;ms;nicht_als_Zeile_im_Text;
+SNB925999725461;591;Stadtwerke Neuwied GmbH;msns;nicht_als_Zeile_im_Text;
+SNB925999725461;591;Stadtwerke Neuwied GmbH;ns;nicht_als_Zeile_im_Text;
+SNB932374739180;593;Stadtwerke Norderney GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung6)  31,89  6,10  130,52  2,15
+SNB985965721965;594;Stadtwerke Norderstedt;ms;nicht_als_Zeile_im_Text;
+SNB985965721965;594;Stadtwerke Norderstedt;msns;nicht_als_Zeile_im_Text;
+SNB985965721965;594;Stadtwerke Norderstedt;ns;nicht_als_Zeile_im_Text;
+SNB940478286561;603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung  12,18  4,05  61,51  2,08
+SNB951105240061;605;Stadtwerke Oranienburg GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung*  23,43  4,94  111,98  1,40
+SNB951105240061;605;Stadtwerke Oranienburg GmbH;slp;falsche_Zeile?(Modul);Modul 1 – Pauschale Reduktion *  50,00  8,46  -130,68
+SNB999125588145;608;Stadtwerke Parchim GmbH;ms;nicht_als_Zeile_im_Text;
+SNB999125588145;608;Stadtwerke Parchim GmbH;msns;nicht_als_Zeile_im_Text;
+SNB999125588145;608;Stadtwerke Parchim GmbH;ns;nicht_als_Zeile_im_Text;
+SNB917625393281;610;Stadtwerke Passau GmbH;ms;nicht_als_Zeile_im_Text;
+SNB917625393281;610;Stadtwerke Passau GmbH;msns;nicht_als_Zeile_im_Text;
+SNB917625393281;610;Stadtwerke Passau GmbH;ns;nicht_als_Zeile_im_Text;
+SNB954026274702;611;Stadtwerke Peine GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  25,47  5,60  129,80  1,43
+SNB955001358523;613;Stadtwerke Pirmasens Versorgungs GmbH;ms;nicht_als_Zeile_im_Text;
+SNB955001358523;613;Stadtwerke Pirmasens Versorgungs GmbH;msns;nicht_als_Zeile_im_Text;
+SNB955001358523;613;Stadtwerke Pirmasens Versorgungs GmbH;ns;nicht_als_Zeile_im_Text;
+SNB917615238004;615;Stadtwerke Plattling;ms;nicht_als_Zeile_im_Text;
+SNB917615238004;615;Stadtwerke Plattling;msns;nicht_als_Zeile_im_Text;
+SNB917615238004;615;Stadtwerke Plattling;ns;nicht_als_Zeile_im_Text;
+SNB941283828373;616;Stadtwerke Prenzlau GmbH;ms;nicht_als_Zeile_im_Text;
+SNB941283828373;616;Stadtwerke Prenzlau GmbH;msns;nicht_als_Zeile_im_Text;
+SNB941283828373;616;Stadtwerke Prenzlau GmbH;ns;nicht_als_Zeile_im_Text;
+SNB922354559020;617;Stadtwerke Pritzwalk GmbH;ms;nicht_als_Zeile_im_Text;
+SNB922354559020;617;Stadtwerke Pritzwalk GmbH;msns;nicht_als_Zeile_im_Text;
+SNB922354559020;617;Stadtwerke Pritzwalk GmbH;ns;nicht_als_Zeile_im_Text;
+SNB964262506406;620;Stadtwerke Radevormwald GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsnetz  26,07  7,08  168,32  1,39
+SNB914273329792;623;Stadtwerke Rastatt GmbH;ns;mehrdeutig(3 Tupel);Niederspannung (NS)  18,84  9,67  214,24  1,86
+SNB926119738552;626;Stadtwerke Rendsburg GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  41,14  8,70  197,46  2,44
+SNB964802985821;629;Stadtwerke Röthenbach a. d. Pegnitz GmbH;ms;nicht_als_Zeile_im_Text;
+SNB964802985821;629;Stadtwerke Röthenbach a. d. Pegnitz GmbH;msns;nicht_als_Zeile_im_Text;
+SNB964802985821;629;Stadtwerke Röthenbach a. d. Pegnitz GmbH;ns;nicht_als_Zeile_im_Text;
+SNB985382489820;635;Stadtwerke Saarbrücken Netz AG;ms;nicht_als_Zeile_im_Text;
+SNB985382489820;635;Stadtwerke Saarbrücken Netz AG;msns;nicht_als_Zeile_im_Text;
+SNB985382489820;635;Stadtwerke Saarbrücken Netz AG;ns;nicht_als_Zeile_im_Text;
+SNB985382489820;635;Stadtwerke Saarbrücken Netz AG;slp;slp_nicht_im_Text;
+SNB924685554682;638;Stadtwerke Schifferstadt;ms;nicht_als_Zeile_im_Text;
+SNB924685554682;638;Stadtwerke Schifferstadt;msns;nicht_als_Zeile_im_Text;
+SNB924685554682;638;Stadtwerke Schifferstadt;ns;nicht_als_Zeile_im_Text;
+SNB987617847795;640;Stadtwerke Schlitz;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  34,30  9,39  239,44  1,18
+SNB979429791342;641;Stadtwerke Schneeberg GmbH;ms;brutto?(0.04);Mittelspannungsnetz (MS)  18,67  9,81  262,81  0,04
+SNB950028563172;642;Stadtwerke Schneverdingen-Neuenkirchen GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung4)  19,99  5,10  126,71  0,84
+SNB982660786343;649;Stadtwerke Schwäbisch Hall GmbH;ms;nicht_als_Zeile_im_Text;
+SNB982660786343;649;Stadtwerke Schwäbisch Hall GmbH;msns;nicht_als_Zeile_im_Text;
+SNB982660786343;649;Stadtwerke Schwäbisch Hall GmbH;ns;nicht_als_Zeile_im_Text;
+SNB946717964085;650;Stadtwerke Schwarzenbach/Saale;ms;nicht_als_Zeile_im_Text;
+SNB946717964085;650;Stadtwerke Schwarzenbach/Saale;msns;nicht_als_Zeile_im_Text;
+SNB946717964085;650;Stadtwerke Schwarzenbach/Saale;ns;nicht_als_Zeile_im_Text;
+SNB913280322543;652;Stadtwerke Schwedt GmbH;ns;mehrdeutig(3 Tupel);Niederspannungsebene  21,94  9,11  173,95  3,02
+SNB971503120734;657;Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG;ms;mehrdeutig(2 Tupel);Mittelspannung  22,49  5,94  149,35  0,86
+SNB971503120734;657;Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung  32,24  7,42  175,77  1,67
+SNB924431834525;658;Stadtwerke Sigmaringen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB924431834525;658;Stadtwerke Sigmaringen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB965118678667;660;Stadtwerke Soest GmbH;ms;mehrdeutig(2 Tupel);Mittelspannungsnetz  17,66  6,43  160,66  0,71
+SNB947030954821;661;Stadtwerke Soltau GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB947030954821;661;Stadtwerke Soltau GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB947030954821;661;Stadtwerke Soltau GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB975659838086;666;Stadtwerke Stade GmbH;ms;"brutto?(39.13); brutto?(3.7); brutto?(106.28); brutto?(1.02)";Mittelspannung  32,88  39,13  3,11  3,70  89,31  106,28  0,86  1,02
+SNB976240506834;667;Stadtwerke Stadtroda GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung6)  24,73  6,70  170,09  0,88
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;ms;nicht_als_Zeile_im_Text;
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;msns;nicht_als_Zeile_im_Text;
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;ns;nicht_als_Zeile_im_Text;
+SNB943984165313;669;Stadtwerke Stein GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB943984165313;669;Stadtwerke Stein GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB943984165313;669;Stadtwerke Stein GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB927533168369;675;Stadtwerke Südholstein GmbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung  28,29  4,84  96,05  2,13
+SNB938620426132;679;Stadtwerke Tirschenreuth;ms;nicht_als_Zeile_im_Text;
+SNB938620426132;679;Stadtwerke Tirschenreuth;msns;nicht_als_Zeile_im_Text;
+SNB938620426132;679;Stadtwerke Tirschenreuth;ns;nicht_als_Zeile_im_Text;
+SNB924659713978;683;Stadtwerke Troisdorf GmbH;ms;"brutto?(0.04); mehrdeutig(2 Tupel)";MSP  32,17  7,19  210,92  0,04
+SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;ms;nicht_als_Zeile_im_Text;
+SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;msns;nicht_als_Zeile_im_Text;
+SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;ns;nicht_als_Zeile_im_Text;
+SNB914963192408;684;Stadtwerke Trostberg Stromversorgung GmbH;slp;slp_nicht_im_Text;
+SNB921695080347;685;Stadtwerke Tübingen GmbH;ms;nicht_als_Zeile_im_Text;
+SNB921695080347;685;Stadtwerke Tübingen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB921695080347;685;Stadtwerke Tübingen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB921695080347;685;Stadtwerke Tübingen GmbH;slp;slp_nicht_im_Text;
+SNB922074927642;686;Stadtwerke Tuttlingen GmbH;ms;nicht_als_Zeile_im_Text;
+SNB922074927642;686;Stadtwerke Tuttlingen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB922074927642;686;Stadtwerke Tuttlingen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB925861098273;691;Stadtwerke Uslar GmbH;msns;brutto?(0.06);Umspannung MS/NS  19,61  8,88  240,21  0,06
+SNB932685335767;697;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ms;nicht_als_Zeile_im_Text;
+SNB932685335767;697;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;msns;nicht_als_Zeile_im_Text;
+SNB932685335767;697;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ns;nicht_als_Zeile_im_Text;
+SNB967967636034;698;Stadtwerke Vilshofen GmbH;ms;nicht_als_Zeile_im_Text;
+SNB967967636034;698;Stadtwerke Vilshofen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB967967636034;698;Stadtwerke Vilshofen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB991263248615;699;Stadtwerke Vlotho Stromnetz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  6,42  5,88  127,37  1,05
+SNB991263248615;699;Stadtwerke Vlotho Stromnetz GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  10,22  9,70  219,95  1,31
+SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  4,73  5,60  126,80  0,71
+SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  7,49  8,06  172,83  1,45
+SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NS)  10,19  10,17  143,87  4,82
+SNB969058795651;702;Stadtwerke Waiblingen GmbH;ms;nicht_als_Zeile_im_Text;
+SNB969058795651;702;Stadtwerke Waiblingen GmbH;msns;nicht_als_Zeile_im_Text;
+SNB969058795651;702;Stadtwerke Waiblingen GmbH;ns;nicht_als_Zeile_im_Text;
+SNB960416123321;705;Stadtwerke Waldkraiburg GmbH;msns;nicht_als_Zeile_im_Text;
+SNB960416123321;705;Stadtwerke Waldkraiburg GmbH;ns;nicht_als_Zeile_im_Text;
+SNB960416123321;705;Stadtwerke Waldkraiburg GmbH;slp;slp_nicht_im_Text;
+SNB971196250442;706;Stadtwerke Waldmünchen;ms;nicht_als_Zeile_im_Text;
+SNB971196250442;706;Stadtwerke Waldmünchen;msns;nicht_als_Zeile_im_Text;
+SNB971196250442;706;Stadtwerke Waldmünchen;ns;nicht_als_Zeile_im_Text;
+SNB973505068113;711;Stadtwerke Waren GmbH;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  20,83  3,67  74,52  1,53
+SNB973505068113;711;Stadtwerke Waren GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  30,90  4,72  85,11  2,56
+SNB973505068113;711;Stadtwerke Waren GmbH;slp;falsche_Zeile?(Modul);Modul 1  Pauschale Reduktion *  50,00  5,76  -110,43
+SNB969345305204;712;Stadtwerke Warendorf GmbH;ms;nicht_als_Zeile_im_Text;
+SNB969345305204;712;Stadtwerke Warendorf GmbH;msns;nicht_als_Zeile_im_Text;
+SNB969345305204;712;Stadtwerke Warendorf GmbH;ns;nicht_als_Zeile_im_Text;
+SNB975283859389;714;Stadtwerke Wedel GmbH;ms;nicht_als_Zeile_im_Text;
+SNB975283859389;714;Stadtwerke Wedel GmbH;msns;nicht_als_Zeile_im_Text;
+SNB975283859389;714;Stadtwerke Wedel GmbH;ns;nicht_als_Zeile_im_Text;
+SNB914879260819;722;Stadtwerke Wernigerode GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung *  13,96  4,47  120,03  0,22
+SNB914879260819;722;Stadtwerke Wernigerode GmbH;msns;mehrdeutig(2 Tupel);Umspannung MS/NS  16,61  5,32  143,06  0,26
+SNB914879260819;722;Stadtwerke Wernigerode GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  25,52  5,38  121,90  1,52
+SNB922051401837;723;Stadtwerke Wertheim GmbH;ms;mehrdeutig(6 Tupel);Mittelspannung  15,34  6,89  180,97  0,27
+SNB922051401837;723;Stadtwerke Wertheim GmbH;msns;"brutto?(0.03); mehrdeutig(3 Tupel)";Umspannung zur Niederspannung  14,35  9,78  258,12  0,03
+SNB922051401837;723;Stadtwerke Wertheim GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  14,66  10,35  187,64  3,44
+SNB919230329570;725;Stadtwerke Wilster;ns;mehrdeutig(2 Tupel);Niederspannung  18,73 EUR/kW a  7,09 ct/kWh  159,10 EUR/kW a  1,47 ct/kWh
+SNB957988771050;726;Stadtwerke Windsbach;ms;nicht_als_Zeile_im_Text;
+SNB957988771050;726;Stadtwerke Windsbach;msns;nicht_als_Zeile_im_Text;
+SNB957988771050;726;Stadtwerke Windsbach;ns;nicht_als_Zeile_im_Text;
+SNB941081544895;730;Stadtwerke Wittenberge GmbH;ms;nicht_als_Zeile_im_Text;
+SNB941081544895;730;Stadtwerke Wittenberge GmbH;msns;nicht_als_Zeile_im_Text;
+SNB941081544895;730;Stadtwerke Wittenberge GmbH;ns;nicht_als_Zeile_im_Text;
+SNB983546347757;732;Stadtwerke Wolfenbüttel GmbH;ns;mehrdeutig(5 Tupel);Niederspannung (NS)  24,18  8,71  145,24  3,86
+SNB971345683381;733;Stadtwerke Wolmirstedt GmbH;ms;nicht_als_Zeile_im_Text;
+SNB971345683381;733;Stadtwerke Wolmirstedt GmbH;msns;nicht_als_Zeile_im_Text;
+SNB971345683381;733;Stadtwerke Wolmirstedt GmbH;ns;nicht_als_Zeile_im_Text;
+SNB971345683381;733;Stadtwerke Wolmirstedt GmbH;slp;slp_nicht_im_Text;
+SNB931316685899;736;Stadtwerke Zirndorf GmbH;ms;nicht_als_Zeile_im_Text;
+SNB931316685899;736;Stadtwerke Zirndorf GmbH;msns;nicht_als_Zeile_im_Text;
+SNB931316685899;736;Stadtwerke Zirndorf GmbH;ns;nicht_als_Zeile_im_Text;
+SNB959966681252;737;Stadtwerke Zittau GmbH;ms;nicht_als_Zeile_im_Text;
+SNB959966681252;737;Stadtwerke Zittau GmbH;msns;nicht_als_Zeile_im_Text;
+SNB959966681252;737;Stadtwerke Zittau GmbH;ns;nicht_als_Zeile_im_Text;
+SNB959966681252;737;Stadtwerke Zittau GmbH;slp;slp_nicht_im_Text;
+SNB918576265276;740;stadtwerker GmbH;ms;nicht_als_Zeile_im_Text;
+SNB918576265276;740;stadtwerker GmbH;msns;nicht_als_Zeile_im_Text;
+SNB918576265276;740;stadtwerker GmbH;ns;nicht_als_Zeile_im_Text;
+SNB918576265276;740;stadtwerker GmbH;slp;slp_nicht_im_Text;
+SNB979326623005;741;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];ms;nicht_als_Zeile_im_Text;
+SNB979326623005;741;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];msns;nicht_als_Zeile_im_Text;
+SNB979326623005;741;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];ns;nicht_als_Zeile_im_Text;
+SNB943531720705;742;Städtische Betriebswerke Luckenwalde GmbH;slp;brutto?(7.64);Arbeitspreis  ct/kWh  6,42  7,64
+SNB947514936855;751;Stromnetz Kulmbach GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung  16,97  6,17  126,66  1,78
+SNB903808877785;752;Stromnetz Pullach GmbH;ms;nicht_als_Zeile_im_Text;
+SNB903808877785;752;Stromnetz Pullach GmbH;msns;nicht_als_Zeile_im_Text;
+SNB903808877785;752;Stromnetz Pullach GmbH;ns;nicht_als_Zeile_im_Text;
+SNB986482940686;753;Stromnetz Weiden i.d.OPf. GmbH ＆ Co. KG;msns;brutto?(0.02);Umspannung zur Niederspannung  6,29  5,98  155,34  0,02
+SNB929262647085;754;Stromnetz Weilheim GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung  12,75  8,28  153,13  2,66
+SNB948673048298;755;Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB948673048298;755;Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB948673048298;755;Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB948673048298;755;Stromnetzgesellschaft Herrenberg mbH ＆ Co. KG;slp;slp_nicht_im_Text;
+SNB911969765803;758;Stromversorgung Neunkirchen GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  28,97  7,38  183,13  1,22
+SNB911969765803;758;Stromversorgung Neunkirchen GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel- / Niederspannung (USp. MS/NS)  31,35  8,12  202,76  1,26
+SNB911969765803;758;Stromversorgung Neunkirchen GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NS)  39,48  8,33  188,93  2,35
+SNB916151866986;759;Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG;ns;mehrdeutig(3 Tupel);Niederspannung  13,17  4,94  103,49  1,32
+SNB954776773166;762;Stromversorgung Sulz am Neckar GmbH;ms;nicht_als_Zeile_im_Text;
+SNB954776773166;762;Stromversorgung Sulz am Neckar GmbH;msns;nicht_als_Zeile_im_Text;
+SNB954776773166;762;Stromversorgung Sulz am Neckar GmbH;ns;nicht_als_Zeile_im_Text;
+SNB984334051054;764;strotög GmbH Strom für Töging;ns;mehrdeutig(3 Tupel);Niederspannung  19,12  5,44  121,51  1,34
+SNB957209230809;766;StWL Städtische Werke Lauf a.d. Pegnitz GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung (MS)  28,97  7,38  183,13  1,22
+SNB957209230809;766;StWL Städtische Werke Lauf a.d. Pegnitz GmbH;msns;mehrdeutig(2 Tupel);Umspannung Mittel- / Niederspannung (USp. MS/NS)  31,35  8,12  202,76  1,26
+SNB957209230809;766;StWL Städtische Werke Lauf a.d. Pegnitz GmbH;ns;mehrdeutig(2 Tupel);Niederspannung (NS)  39,48  8,33  188,93  2,35
+SNB968862623211;767;SÜC Energie und H²O GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung  15,86  5,19  133,21  0,49
+SNB968862623211;767;SÜC Energie und H²O GmbH;ns;mehrdeutig(5 Tupel);Niederspannung  27,37  7,64  184,28  1,37
+SNB919067474511;769;SVI - Stromversorgung Ismaning GmbH;ms;nicht_als_Zeile_im_Text;
+SNB919067474511;769;SVI - Stromversorgung Ismaning GmbH;msns;nicht_als_Zeile_im_Text;
+SNB919067474511;769;SVI - Stromversorgung Ismaning GmbH;ns;nicht_als_Zeile_im_Text;
+SNB950262883869;772;SWE Netz GmbH (Erfurt);ms;nicht_als_Zeile_im_Text;
+SNB950262883869;772;SWE Netz GmbH (Erfurt);msns;nicht_als_Zeile_im_Text;
+SNB950262883869;772;SWE Netz GmbH (Erfurt);ns;nicht_als_Zeile_im_Text;
+SNB914027640531;775;SWL Energienetz- und Entsorgungsgesellschaft mbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung 4)  21,81  6,69  177,30  0,48
+SNB914027640531;775;SWL Energienetz- und Entsorgungsgesellschaft mbH;ns;mehrdeutig(5 Tupel);NS - NE 7 - Niederspannung  37,48  7,50  165,33  2,39
+SNB967148688999;777;SWL Verteilungsnetzgesellschaft mbH;ms;mehrdeutig(2 Tupel);MS - NE 5 - Mittelspannung 4)  23,01  7,99  203,26  0,78
+SNB967148688999;777;SWL Verteilungsnetzgesellschaft mbH;ns;mehrdeutig(5 Tupel);NS - NE 7 - Niederspannung  33,23  9,65  227,48  1,88
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;ms;mehrdeutig(2 Tupel);Mittelspannung *  27,59  4,74  112,77  1,34  18,80  1,34
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;ns;mehrdeutig(2 Tupel);Niederspannung  45,96  6,41  135,52  2,82  22,59  2,82
+SNB981113965977;782;SWR Energie GmbH ＆ Co. KG;ms;nicht_als_Zeile_im_Text;
+SNB981113965977;782;SWR Energie GmbH ＆ Co. KG;msns;nicht_als_Zeile_im_Text;
+SNB981113965977;782;SWR Energie GmbH ＆ Co. KG;ns;nicht_als_Zeile_im_Text;
+SNB980986433484;788;Syna Hochspannungsnetz GmbH ＆ Co. KG;alle;kein_text;
+SNB977095880292;796;TWS Netz GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  34,80  9,48  206,71  2,61
+SNB972264483465;797;Überlandwerk Eppler GmbH;ns;mehrdeutig(2 Tupel);Niederspannungsnetz  21,63  8,35  142,54  3,51
+SNB917454122557;801;Überlandzentrale Wörth/I.-Altheim Netz AG;ms;nicht_als_Zeile_im_Text;
+SNB917454122557;801;Überlandzentrale Wörth/I.-Altheim Netz AG;msns;nicht_als_Zeile_im_Text;
+SNB917454122557;801;Überlandzentrale Wörth/I.-Altheim Netz AG;ns;nicht_als_Zeile_im_Text;
+SNB932161540975;804;Verbandsgemeindewerke Enkenbach-Alsenborn;ms;nicht_als_Zeile_im_Text;
+SNB932161540975;804;Verbandsgemeindewerke Enkenbach-Alsenborn;msns;nicht_als_Zeile_im_Text;
+SNB932161540975;804;Verbandsgemeindewerke Enkenbach-Alsenborn;ns;nicht_als_Zeile_im_Text;
+SNB966808200267;806;Vereinigte Wertach Elektrizitätswerke GmbH;ms;mehrdeutig(4 Tupel);NE 5 Mittelspannung  15,51  6,56  168,58  0,44
+SNB966808200267;806;Vereinigte Wertach Elektrizitätswerke GmbH;msns;mehrdeutig(4 Tupel);NE 6 Umspannung  17,30  7,38  183,58  0,73
+SNB966808200267;806;Vereinigte Wertach Elektrizitätswerke GmbH;ns;mehrdeutig(5 Tupel);NE 7 Niederspannung*  18,62  7,91  188,55  1,12
+SNB982713229933;807;Versorgungsbetrieb Waldbüttelbrunn GmbH;ms;nicht_als_Zeile_im_Text;
+SNB982713229933;807;Versorgungsbetrieb Waldbüttelbrunn GmbH;msns;nicht_als_Zeile_im_Text;
+SNB982713229933;807;Versorgungsbetrieb Waldbüttelbrunn GmbH;ns;nicht_als_Zeile_im_Text;
+SNB977641826996;816;Verteilnetz Plauen GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  45,13  4,39  126,63  1,13
+SNB910224319560;821;Weiler Wärme eG;ms;nicht_als_Zeile_im_Text;
+SNB910224319560;821;Weiler Wärme eG;msns;nicht_als_Zeile_im_Text;
+SNB910224319560;821;Weiler Wärme eG;ns;nicht_als_Zeile_im_Text;
+SNB930122681040;824;werkkraft GmbH;ns;mehrdeutig(3 Tupel);Niederspannung  22,46  6,00  151,50  0,83
+SNB973501936539;825;Werraenergie GmbH;msns;brutto?(0.01);Umspannung zur Niederspannung  19,51  10,33  277,53  0,01
