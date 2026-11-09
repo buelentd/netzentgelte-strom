@@ -106,3 +106,8 @@ Es zählen nicht nur die Dokumente, sondern auch die fehlenden Werte. Für jeden
 ## Regel: Suchlinks für den Browser (Festlegung Nutzer, 06.11.2026)
 
 Wenn dem Nutzer Dokumente zum Holen im Browser aufgelistet werden, gibt es zu jedem Netzbetreiber Google-Suchlinks mit mehreren Suchbegriffen und `site:` **ohne www.** (also `site:eks.ch`, nicht `site:www.eks.ch`). Erzeugt von `daten/browser_liste.py`, Ergebnis `ergebnis/BROWSER_DOWNLOADS_33.md`.
+
+
+## Regel: MaStR-Nummer ist der Schlüssel (Festlegung Nutzer, wiederholt, 09.11.2026)
+
+In jeder Liste, Tabelle und jedem Ergebnis (2026, 2027, Gegenprobe, Aufträge, Browser-Listen, Zuordnungen) steht als Erstes die MaStR-Nummer (`mastr_nr`, SNB…). Die laufende Nummer `nr` ist nur Hilfsnummer und ersetzt sie nie. Neue Dateien ohne `mastr_nr` werden nicht abgegeben.
