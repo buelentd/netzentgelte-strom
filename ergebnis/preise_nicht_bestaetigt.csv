@@ -90,8 +90,8 @@
 624;Stadtwerke Ratingen GmbH;Niederspannung;13,67;7,61;133,74;2,81;ok;nächste Zeile hat 0 von 4 Werten;Preisblatt 1 Entgelte für die Netznutzung für Kleinkunden im Niederspannungsnetz ohne Leistungsmessung;SNB953661539375_0624.txt
 624;Stadtwerke Ratingen GmbH;MS/NS;12,34;6,71;139,88;1,61;ok;Ebenenzeile im Dokument nicht gefunden;;SNB953661539375_0624.txt
 624;Stadtwerke Ratingen GmbH;Mittelspannung;10,71;5,74;129,82;0,98;ok;Ebenenzeile im Dokument nicht gefunden;;SNB953661539375_0624.txt
-648;Stadtwerke Schwäbisch Gmünd GmbH;Niederspannung;34,46;6,08;123,48;2,52;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
-648;Stadtwerke Schwäbisch Gmünd GmbH;MS/NS;28,85;5,47;116,41;1,96;pruefen;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
+648;Stadtwerke Schwäbisch Gmünd GmbH;Niederspannung;34,46;6,08;123,48;2,52;ok;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
+648;Stadtwerke Schwäbisch Gmünd GmbH;MS/NS;28,85;5,47;116,41;1,96;ok;Ebenenzeile im Dokument nicht gefunden;;SNB962618092306_0648.txt
 657;Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG;HS/MS;21,09;5,74;146,00;0,74;ok;Ebenenzeile im Dokument nicht gefunden;;SNB971503120734_0657.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;Niederspannung;8,82;6,71;129,48;1,88;ok;nächste Zeile hat 0 von 4 Werten;Wandler (Niederspannung);SNB947030954821_0661.txt
 661;Stadtwerke Soltau GmbH ＆ Co. KG;MS/NS;6,34;5,46;136,41;0,25;ok;Ebenenzeile im Dokument nicht gefunden;;SNB947030954821_0661.txt
@@ -115,7 +115,7 @@
 782;SWR Energie GmbH ＆ Co. KG;Niederspannung;20,02;8,17;150,50;2,95;ok;nächste Zeile hat 0 von 4 Werten;Entnahmestellen im Niederspannungsnetz ohne Leistungsmessung;SNB981113965977_0782.txt
 782;SWR Energie GmbH ＆ Co. KG;MS/NS;19,19;5,57;124,86;1,35;ok;Ebenenzeile im Dokument nicht gefunden;;SNB981113965977_0782.txt
 782;SWR Energie GmbH ＆ Co. KG;Mittelspannung;18,93;5,37;118,52;1,38;ok;Ebenenzeile im Dokument nicht gefunden;;SNB981113965977_0782.txt
-783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;pruefen;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
+783;SWS Netze GmbH;MS/NS;16,82;5,67;125,94;1,30;ok;nächste Zeile hat 0 von 4 Werten;Erhebung von Baukostenzuschüssen ab Umspannung Mittelspannung/Niederspannung ......................................... 28;SNB915638224585_0783.txt
 785;SWT Stadtwerke Trier Versorgungs-GmbH;Niederspannung;9,62;8,60;122,23;4,09;ok;Ebenenzeile im Dokument nicht gefunden;;SNB966813503780_0785.txt
 785;SWT Stadtwerke Trier Versorgungs-GmbH;MS/NS;6,59;8,10;204,90;0,17;ok;Ebenenzeile im Dokument nicht gefunden;;SNB966813503780_0785.txt
 785;SWT Stadtwerke Trier Versorgungs-GmbH;Mittelspannung;4,12;6,16;139,12;0,76;ok;Ebenenzeile im Dokument nicht gefunden;;SNB966813503780_0785.txt

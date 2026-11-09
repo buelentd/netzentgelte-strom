@@ -138,7 +138,7 @@ class Speicher:
         ent = self._entfernt()
         beleg_offen = self._beleg_offen_liste()
         freigabe = self._freigabe_liste()
-        zeilen = [self._entfernt_hinweis(self._hsms_grund(self._freigabe(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), freigabe), gruende), ent)
+        zeilen = [self._freigabe(self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent), freigabe)
                   for d in self._zeilen_recherche()]
         for d in zeilen:
             d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
