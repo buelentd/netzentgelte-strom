@@ -805,6 +805,25 @@ nbAnzeigen(); rechnen();
 /* Tooltips: Text in Klammern der Beschriftung wandert in ein ⓘ-Popup; dazu feste Erklärungen mit Beleg-Status */
 (function(){
   const FEST={
+    branche:["Die Branche liefert Lastprofil und typische Benutzungsstunden, wenn Sie keine Spitzenlast angeben.","Beleg: Benutzungsstunden je Branche sind Richtwerte (Annahme), keine Messung."],
+    schicht:["Wie viele Schichten der Betrieb fährt. Geht in die Schätzung der Benutzungsstunden ein.","Beleg: Annahme, ersetzt keine Messung."],
+    tage:["Mehr Betriebstage verteilen den Verbrauch auf mehr Stunden und senken die geschätzte Spitzenlast.","Beleg: Annahme, ersetzt keine Messung."],
+    anlagen:["Kurz und kräftig laufende Anlagen (Öfen, Kältemaschinen, Ladepunkte) erzeugen die Spitze. Freitext, hilft bei der Einschätzung der Spitzenzeit.","Beleg: Eingabe von Ihnen, wird nicht geprüft."],
+    ladekw:["Ladeleistung, die gleichzeitig am Netz hängt. Sie zählt nur, wenn „Ladeinfrastruktur vorhanden“ angehakt ist.","Beleg: Eingabe von Ihnen."],
+    ziel:["Spitzenlast, auf die ein Speicher kappen soll. Leer lassen, dann wählt der Rechner die für die Speichergröße beste Zielspitze.","Beleg: Ersparnis ergibt sich aus dem Leistungspreis Ihres Netzbetreibers (Preisblatt 2026)."],
+    'speicher-kwh':["Nutzbare Kapazität des Speichers in kWh. Bestimmt, wie weit sich die Spitze kappen lässt.","Beleg: Eingabe von Ihnen. Speicherpreis siehe Feld Speicherpreis (Annahme)."],
+    netzanschluss:["Anschlussleistung, die für den Handel (Laden und Entladen am Markt) genutzt werden darf.","Beleg: Eingabe von Ihnen."],
+    pvkwp:["Leistung der Solaranlage in kWp. Leer lassen, wenn noch keine Anlage steht; dann wird sie aus der Dachfläche geschätzt.","Beleg: Eingabe von Ihnen."],
+    dach:["Nutzbare Dachfläche, aus der eine mögliche Anlagengröße abgeleitet wird. Die Adresssuche nutzt Beispieldaten, keine echte Dachprüfung.","Beleg: Beispieldaten der Google Solar API, nicht gemessen."],
+    'a-zins':["Zinssatz, mit dem künftige Einsparungen auf heute abgezinst werden (Barwert).","Beleg: Annahme. Höherer Zinssatz macht Investitionen weniger attraktiv."],
+    profilwahl:["Nur für die Bäckerei: Standardprofil oder das geschätzte Testprofil mit früher Spitze am Morgen.","Beleg: Testprofil ist geschätzt, nicht gemessen."],
+    'a-vermarkter':["Anteil, den ein Vermarkter an den Erlösen aus Regelenergie behält.","Beleg: Annahme, kein Vertrag oder Preisblatt belegt."],
+    'a-verf':["Anteil der Zeit, in dem der Speicher für Regelenergie verfügbar ist (0 = nie, 1 = immer).","Beleg: Annahme."],
+    'kwh-sicher':["Haken setzen, wenn der Wert direkt aus Ihrer Stromrechnung stammt. Dann bewertet der Rechner die Eingabe als sicher.","Beleg: Ihre Angabe, wird nicht geprüft."],
+    'kw-sicher':["Haken setzen, wenn die Spitzenlast auf Ihrer Netzrechnung steht (Messung). Sonst ist sie eine Schätzung.","Beleg: Ihre Angabe, wird nicht geprüft."],
+    pv:["Es steht bereits eine PV-Anlage. Ihre Erzeugung wird in der Rechnung berücksichtigt.","Beleg: Eingabe von Ihnen."],
+    laden:["Es gibt Ladepunkte, die gleichzeitig Spitzenlast erzeugen. Aktiviert das Feld für die Ladeleistung.","Beleg: Eingabe von Ihnen."],
+    rueckspeisen:["Wenn angehakt, entfallen für ins Netz zurückgespeisten Strom Arbeitspreis und Abgaben im Modell. Für zwischengespeicherten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten.","Beleg: Rechtlich im Einzelfall prüfen, keine Rechtsberatung."],
     plz:["Aus der Postleitzahl bestimmen wir den zuständigen Netzbetreiber. Liegen mehrere Netzbetreiber in einer PLZ, wählen Sie unten den richtigen.","Beleg: Netzbetreiber und Preisblätter 2026, je Wert am Dokument geprüft (Stand siehe Hinweis oben)."],
     kwh:["Jahresverbrauch laut Stromrechnung. Ab 100.000 kWh gilt die Messung mit Leistung (RLM), darunter das Standardlastprofil.","Beleg: Grenze 100.000 kWh laut Stromnetzzugangsverordnung."],
     kw:["Höchste gemessene Viertelstunden-Leistung im Jahr. Sie steht auf der Netzrechnung. Ohne Angabe schätzen wir sie aus der Branche.","Beleg: Schätzung ist eine Annahme, keine Messung."],
@@ -812,8 +831,8 @@ nbAnzeigen(); rechnen();
     tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich.","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen. Kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026)."],
     'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel, letzte 30 Tage oder Terminmarkt.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
   };
-  document.querySelectorAll("label.titel[for]").forEach(l=>{
-    const id=l.getAttribute("for"); const roh=l.textContent.trim();
+  document.querySelectorAll("label.titel[for], label.haken").forEach(l=>{
+    const id=l.getAttribute("for")||(l.querySelector("input")||{}).id; if(!id) return; const roh=l.textContent.trim();
     const m=roh.match(/^(.*?)\s*\((.+)\)\s*$/s);
     const teile=[]; let kurz=null;
     if(m && m[2].length>25){ kurz=m[1]; teile.push(m[2]); }
