@@ -34,6 +34,11 @@ textarea{min-height:70px;resize:vertical}
 input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--akzent);outline-offset:1px}
 .haken{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--leise);margin-top:4px}
 .klein{font-size:.82rem;color:var(--leise)}
+.tipp{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:6px;border-radius:50%;border:1px solid var(--linie);background:var(--feld);color:var(--leise);font-size:.72rem;font-weight:700;cursor:help;padding:0;vertical-align:middle;line-height:1}
+.tipp:hover,.tipp:focus-visible{color:var(--text);border-color:var(--akzent)}
+.tipptext{display:none;margin:6px 0 8px;padding:8px 10px;border:1px solid var(--linie);border-radius:8px;background:var(--feld);color:var(--text);font-size:.84rem;font-weight:400;line-height:1.4}
+.tipptext.offen{display:block}
+.tipptext .beleg{display:block;margin-top:4px;color:var(--leise)}
 .guete{display:grid;gap:6px}
 .balken{height:8px;border-radius:4px;background:var(--feld);overflow:hidden}
 .balken>i{display:block;height:100%;background:var(--akzent);width:0;transition:width .3s}
@@ -796,4 +801,34 @@ $("form").addEventListener("input", e => {
 $("form").addEventListener("change", e => { if (e.target.name === "nb") { gewaehlt = +e.target.value; rechnen(); } });
 $("pv-feld").hidden = true;
 nbAnzeigen(); rechnen();
+
+/* Tooltips: Text in Klammern der Beschriftung wandert in ein ⓘ-Popup; dazu feste Erklärungen mit Beleg-Status */
+(function(){
+  const FEST={
+    plz:["Aus der Postleitzahl bestimmen wir den zuständigen Netzbetreiber. Liegen mehrere Netzbetreiber in einer PLZ, wählen Sie unten den richtigen.","Beleg: Netzbetreiber und Preisblätter 2026, je Wert am Dokument geprüft (Stand siehe Hinweis oben)."],
+    kwh:["Jahresverbrauch laut Stromrechnung. Ab 100.000 kWh gilt die Messung mit Leistung (RLM), darunter das Standardlastprofil.","Beleg: Grenze 100.000 kWh laut Stromnetzzugangsverordnung."],
+    kw:["Höchste gemessene Viertelstunden-Leistung im Jahr. Sie steht auf der Netzrechnung. Ohne Angabe schätzen wir sie aus der Branche.","Beleg: Schätzung ist eine Annahme, keine Messung."],
+    ebene:["Spannungsebene Ihres Anschlusses: Niederspannung (Normalfall), Umspannung MS/NS oder Mittelspannung.","Beleg: Preise je Ebene aus dem Preisblatt Ihres Netzbetreibers."],
+    tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich.","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen. Kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026)."],
+    'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel, letzte 30 Tage oder Terminmarkt.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
+  };
+  document.querySelectorAll("label.titel[for]").forEach(l=>{
+    const id=l.getAttribute("for"); const roh=l.textContent.trim();
+    const m=roh.match(/^(.*?)\s*\((.+)\)\s*$/s);
+    const teile=[]; let kurz=null;
+    if(m && m[2].length>25){ kurz=m[1]; teile.push(m[2]); }
+    const f=FEST[id]; if(f){ teile.unshift(f[0]); teile.push(f[1]); }
+    if(!teile.length) return;
+    if(kurz){ const pf=l.querySelector(".pflicht"); l.textContent=kurz+" "; if(pf) l.appendChild(pf); }
+    const b=document.createElement("button"); b.type="button"; b.className="tipp"; b.textContent="i";
+    b.setAttribute("aria-label","Erklärung und Quelle zu "+(kurz||roh.replace(/\s*\*$/,"")));
+    const t=document.createElement("div"); t.className="tipptext"; t.id="tt-"+id; t.setAttribute("role","note");
+    teile.forEach((x,i)=>{ const e=document.createElement(i?"span":"div"); if(i) e.className="beleg"; e.textContent=x; t.appendChild(e); });
+    b.setAttribute("aria-controls",t.id); b.setAttribute("aria-expanded","false");
+    const auf=()=>{t.classList.add("offen");b.setAttribute("aria-expanded","true");}, zu=()=>{t.classList.remove("offen");b.setAttribute("aria-expanded","false");};
+    b.addEventListener("click",()=>t.classList.contains("offen")?zu():auf());
+    b.addEventListener("mouseenter",auf); b.addEventListener("mouseleave",zu);
+    l.appendChild(b); l.insertAdjacentElement("afterend",t);
+  });
+})();
 </script>
