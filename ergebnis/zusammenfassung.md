@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 13:58, 831 Netzbetreiber bzw. Netzgebiete
+Stand 09.11.2026 13:59, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 604 | 73% |
-| pruefen | 217 | 26% |
+| ok | 605 | 73% |
+| pruefen | 216 | 26% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 4 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 493,  111
+Preisstand (nur ok): endgültig 493,  112
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 493,  111
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (111)
+## Status ok, aber Preisstand nicht endgültig (112)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
@@ -120,6 +120,7 @@ Preisstand (nur ok): endgültig 493,  111
 - 550. Stadtwerke Lemgo GmbH: 
 - 564. Stadtwerke Marburg GmbH: 
 - 578. Stadtwerke Nettetal GmbH: 
+- 585. Stadtwerke Neustadt a. d. Donau: 
 - 587. Stadtwerke Neustadt an der Orla GmbH: 
 - 588. Stadtwerke Neustadt an der Weinstraße GmbH: 
 - 589. Stadtwerke Neustadt in Holstein: 
@@ -166,9 +167,9 @@ Preisstand (nur ok): endgültig 493,  111
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (227)
+## Restfälle (226)
 
-### pruefen (217)
+### pruefen (216)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -344,7 +345,6 @@ Preisstand (nur ok): endgültig 493,  111
 - 574. Stadtwerke Mühlhausen Netz GmbH: 
 - 575. Stadtwerke Mühlheim am Main GmbH: 
 - 582. Stadtwerke Neumarkt i. d. OPf. Energie GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (3.94, 5.52, 0.39); SLP-Werte auffällig
-- 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
 - 601. Stadtwerke Oerlinghausen GmbH: 
 - 611. Stadtwerke Peine GmbH: 
