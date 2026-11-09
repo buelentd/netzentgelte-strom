@@ -494,7 +494,7 @@ SNB963070917732;gelesen_unser;09:30-09:45, 12:15-12:30;keins;keins;keins;09:15-0
 SNB980181102130;gelesen_unser;keins;keins;17:45-18:15;17:00-19:30;keins;keins;17:00-19:00;17:00-19:30;;;SNB980181102130_0493_hlzf.pdf
 SNB985431470335;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB985431470335_0494_hlzf.pdf
 SNB941004899811;gelesen_unser;keins;keins;keins;17:30-20:30;;;;;;;eingang: SNB941004899811_0495_hlzf.pdf
-SNB938672757734;pruefung_offen;;;;;;;;;;;https://content.stadtwerke-goerlitz.de/assets/netz/stromnetz/hochlastzeitfenster/swg_hochlastzeitfenster_2026.pdf
+SNB938672757734;gelesen_kollege_verifiziert;keins;keins;10:45-11:00;11:15-11:30, 11:45-12:00, 13:30-13:45, 14:00-14:45, 15:15-15:30;keins;keins;10:45-11:00;11:14-11:30, 11:45-12:00, 13:30-13:45, 14:15-14:45, 16:30-16:45;;;https://content.stadtwerke-goerlitz.de/assets/netz/stromnetz/hochlastzeitfenster/swg_hochlastzeitfenster_2026.pdf
 SNB926442995943;pruefung_offen;;;;;;;;;;;eingang: SNB926442995943_0497_hlzf.pdf
 SNB998044089535;gelesen_unser;12:00-12:45;keins;keins;keins;keins;keins;keins;17:30-19:15;30;;https://netz.stadtwerke-greven.de/de/Stromnetz/Hochlastzeitfenster2026.pdf
 SNB991689251534;gelesen_unser;keins;keins;07:45-18:00;08:00-09:00, 11:30-12:15;keins;keins;keins;08:00-09:00, 17:15-18:00;;;SNB991689251534_0499_hlzf.pdf
@@ -717,7 +717,7 @@ SNB926480464456;gelesen_unser;11:30-11:45, 12:45-13:15, 15:00-15:15;11:30-12:00,
 SNB935723521351;gelesen_unser;keins;keins;keins;17:00-20:00;keins;keins;keins;17:15-19:45;30;;https://netz.sww.de/downloads/netz/Hochlastzeitfenster_2026_Version1.pdf
 SNB965819408044;gelesen_unser;12:15-12:30, 12:45-13:00, 13:15-13:30, 13:45-14:00;11:45-12:00, 13:30-14:15, 14:45-15:00;keins;keins;keins;keins;keins;09:30-12:15;;;https://sw-wug.de/wp-content/uploads/2025/10/Hochlastzeitfenster_NEV_WEISSENBURG_2026_Veroeffentlichung.pdf
 SNB933274941888;gelesen_unser;keins;keins;keins;10:00-13:00, 16:30-19:30;keins;keins;keins;10:00-13:00, 16:30-19:30;;;eingang: SNB933274941888_0718_hlzf.pdf
-SNB918084816830;pruefung_offen;;;;;;;;;;;https://www.stadtwerke-weisswasser.de/fileadmin/PDF/Stromnetz/SWW_Hochlastzeitfenster_2026.pdf
+SNB918084816830;gelesen_kollege_verifiziert;keins;09:30-09:45;keins;09:00-11:30, 15:15-15:30, 15:45-17:15, 17:45-18:30;keins;09:30-09:45;keins;keins;;;https://www.stadtwerke-weisswasser.de/fileadmin/PDF/Stromnetz/SWW_Hochlastzeitfenster_2026.pdf
 SNB962389410347;gelesen_unser;keins;keins;keins;09:15-12:15;keins;keins;keins;09:00-12:00, 16:45-19:45;;;SNB962389410347_0720_hlzf.pdf
 SNB979980141082;gelesen_unser;11:30-13:30;keins;keins;keins;;;;;;;https://www.stadtwerke-werl.de/_Resources/Persistent/e/3/d/a/e3dae44c30d8d5872ded4f3dab84f12f87143c61/Hochlastzeitfenster%202026.pdf
 SNB914879260819;gelesen_unser;19:00-20:00;18:00-19:30;16:30-17:30;09:15-13:15, 16:30-19:00;19:00-20:00;11:15-12:15, 18:00-19:30;16:30-17:30;10:30-13:30, 16:45-19:00;;;https://www.stadtwerke-wernigerode.de/_Resources/Persistent/1/c/c/1/1cc116bebfdc5dce8884a563c22f2a10c98d8bc4/SWWR_Hochlastzeitfenster_2026.pdf
@@ -829,4 +829,4 @@ SNB979973883449;zeitfenster_nicht_lesbar;;;;;;;;;;;https://ew-westenthanner.de/h
 SNB914508596067;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB919649671758;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB919649671758_0829_hlzf.pdf
 SNB948485211972;gelesen_unser;keins;keins;05:30-15:30;keins;;;;;;;eingang: SNB948485211972_0830_hlzf.pdf
-SNB925823629552;gelesen_ungeprueft;;;;;09:45-10:15;11:00-14:00, 10:00-13:00;09:15-11:30, 10:00-13:00, 12:15-12:30;09:00-13:45, 09:15-12:00, 07:30-08:00, 12:30-13:45, 09:15-12:15;;;eingang: SNB925823629552_0831_hlzf.pdf
+SNB925823629552;gelesen_kollege_verifiziert;09:45-10:15;10:00-13:00;keins;07:30-08:00, 09:15-12:15;keins;keins;10:00-13:00;09:15-12:00, 12:30-13:45;;;https://www.zev-energie.de/download.php?download=Hochlastzeitfenster_2026.pdf

@@ -22,6 +22,8 @@ def main():
     T = {r["nr"]: r["mastr_nr"] for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
     unser = {r["nr"]: r for r in csv.DictReader(open("ergebnis/hlzf_ergebnis.csv", encoding="utf-8-sig"), delimiter=";")}
     nutzer = {r["nr"]: r for r in csv.DictReader(open("ergebnis/FORMAT_NEU_netzentgelte_final_alle_3_ergaenzt.csv", encoding="utf-8-sig"), delimiter=";")}
+    import os
+    kol = {r["mastr_nr"]: r for r in csv.DictReader(open("lauf/hlzf_kollege_verifiziert.csv", encoding="utf-8-sig"), delimiter=";")} if os.path.exists("lauf/hlzf_kollege_verifiziert.csv") else {}
     out, z = [], Counter()
     for nr, mastr in T.items():
         n, u = nutzer.get(nr), unser.get(nr)
@@ -37,6 +39,9 @@ def main():
                 werte["hlzf_quelle_url"] = u.get("hlzf_quelle_url", "")
         else:
             st = "kein_dokument_oder_adresse"
+        if mastr in kol and st not in ("gelesen_nutzer", "gelesen_unser"):
+            for c in COLS: werte[c] = kol[mastr].get(c, "")
+            st = "gelesen_kollege_verifiziert"   # Kollege am Original-PDF gelesen, von uns am Dokumenttext geprüft (09.11.2026)
         z[st] += 1
         out.append([mastr, st] + [werte[c] for c in COLS])
     with open("lauf/hlzf_zusammen.csv", "w", encoding="utf-8-sig", newline="") as o:
