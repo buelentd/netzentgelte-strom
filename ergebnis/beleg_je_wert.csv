@@ -2147,11 +2147,11 @@
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;msns;leer;;
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;ns;belegt;Zeile 29: Niederspannung;
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;slp;belegt;Zeile 84: Grundpreis  Arbeitspreis;
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;hsms;leer;;
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;ms;belegt;Zeile 20: Mittelspannung MS;zwei Tabellen in Reihenfolge (Zeilen 20 und 31)
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;msns;belegt;Zeile 21: Umspannung MS/NS;zwei Tabellen in Reihenfolge (Zeilen 21 und 32)
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;ns;belegt;Zeile 22 und 33: Niederspannung NS (nicht die Zeile Ermäßigung 10 % gem. § 3 KAV): LP und AP unter 2.500 h 18,06/9,38;manuell durch Claude am Dokument gesehen
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;slp;belegt;Zeile 39: Kundengruppe;
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;hsms;leer;;
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;ms;belegt;Zeile 20: Mittelspannung MS;zwei Tabellen in Reihenfolge (Zeilen 20 und 31)
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;msns;belegt;Zeile 21: Umspannung MS/NS;zwei Tabellen in Reihenfolge (Zeilen 21 und 32)
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;ns;belegt;Zeile 22 und 33: Niederspannung NS (nicht die Zeile Ermäßigung 10 % gem. § 3 KAV): LP und AP unter 2.500 h 18,06/9,38;manuell durch Claude am Dokument gesehen
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;slp;belegt;Zeile 39: Kundengruppe;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;hsms;leer;;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;ms;belegt;Zeile 20: Mittelspannung;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;msns;belegt;Zeile 21: Umspannung MS/NS;
@@ -2491,7 +2491,7 @@
 501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;ms;belegt;Zeile 62: Mittelspannungsnetz MS;
 501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;msns;belegt;Zeile 65: Umspannung MS/NS;
 501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;ns;belegt;Zeile 68: Niederspannungsnetz NS;
-501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;slp;keine_zeile_mit_passender_beschriftung;;
+501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;slp;belegt;Zeile 108: Grundpreis:  75,03 Euro/a;
 502;SNB958070514050;Stadtwerke Grünstadt GmbH;ok;hsms;leer;;
 502;SNB958070514050;Stadtwerke Grünstadt GmbH;ok;ms;belegt;Zeile 16: Mittelspannung;
 502;SNB958070514050;Stadtwerke Grünstadt GmbH;ok;msns;belegt;Zeile 17: Umspannung MS/NS;
@@ -2595,7 +2595,7 @@
 522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;ms;leer_im_dokument_ebene_gefunden;;
 522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;msns;belegt;Zeile 35: Umspannung zur Niederspannung (M/N);zwei Tabellen in Reihenfolge (Zeilen 35 und 46)
 522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;ns;belegt;Zeile 36: Niederspannung (N);zwei Tabellen in Reihenfolge (Zeilen 36 und 47)
-522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;slp;belegt;Zeile 14: 1a. Preise für Kunden im Niederspannungsnetz mit besonderen Verbrauchs;
+522;SNB969826201797;Stadtwerke Hilden GmbH;pruefen;slp;belegt;Zeile 10: Arbeitspreis  (exclusive Umlagen)  6,87  Cent/kWh;
 523;SNB967127819703;Stadtwerke Hockenheim;ok;hsms;belegt;Zeile 24: Umspannung Hoch- / Mittelspannung;Tagespreis x 365
 523;SNB967127819703;Stadtwerke Hockenheim;ok;ms;belegt;Zeile 25: Mittelspannung;
 523;SNB967127819703;Stadtwerke Hockenheim;ok;msns;belegt;Zeile 26: Umspannung Mittel- / Niederspannung;

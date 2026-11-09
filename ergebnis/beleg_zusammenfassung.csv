@@ -431,7 +431,7 @@
 430;SNB913244202027;Stadtwerke Bretten GmbH;ok;alle_belegt;
 431;SNB983444187332;Stadtwerke Brühl GmbH;ok;alle_belegt;
 432;SNB951835062254;Stadtwerke Brunsbüttel GmbH;pruefen;alle_belegt;
-433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;pruefen;alle_belegt;
+433;SNB922393870476;Stadtwerke Buchen GmbH ＆ Co KG;ok;alle_belegt;
 434;SNB968489334224;Stadtwerke Buchholz in der Nordheide GmbH;ok;alle_belegt;
 435;SNB914946450877;Stadtwerke Bühl GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden"
 436;SNB927160517950;Stadtwerke Burg Energienetze GmbH;ok;alle_belegt;
@@ -499,7 +499,7 @@
 498;SNB998044089535;Stadtwerke Greven GmbH;ok;alle_belegt;
 499;SNB991689251534;Stadtwerke Grevesmühlen GmbH;ok;alle_belegt;
 500;SNB934949020686;Stadtwerke Gronau GmbH;ok;alle_belegt;
-501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;offen;slp:keine_zeile_mit_passender_beschriftung
+501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;alle_belegt;
 502;SNB958070514050;Stadtwerke Grünstadt GmbH;ok;alle_belegt;
 503;SNB983029590205;Stadtwerke Güstrow GmbH;ok;alle_belegt;
 504;SNB953794435957;Stadtwerke Gunzenhausen GmbH;ok;alle_belegt;

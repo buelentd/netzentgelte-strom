@@ -106,4 +106,8 @@ RUNDE2 = {
     ("675", "slp"): [9.96, 0.00],                                    # Südholstein: Kleinkunden netto AP 9,96, Grundpreis 0,00 (11,85 ist der Brutto-AP)
     ("781", "slp"): [5.03, 80.00],                                   # Pforzheim: Grundpreis 80,00 €/a (2,52 ct/kWh ist der AP für separate Messung)
     ("805", "slp"): [8.15, 50.00],                                   # Vereinigte Stadtwerke: Standard-AP 8,15 (3,26 gilt für Modul 2)
+    # Stichprobe 20 aus den ungeprüften (09.11.2026), am Dokumenttext geprüft
+    ("137", "ms"): [16.63, 5.40, 128.99, 0.90],                      # Apolda: Zeile Mittelspannung; bisher standen die unter-2.500-h-Werte der Niederspannung in MS
+    ("501", "slp"): [6.20, 75.03],                                   # Groß-Gerau: Grundpreis 75,03 €/a (5,03 war eine abgeschnittene Zahl)
+    ("522", "slp"): [6.87, 82.00],                                   # Hilden: Standard-AP 6,87 (3,44 gilt für Speicherheizung/Wärmepumpe)
 }
