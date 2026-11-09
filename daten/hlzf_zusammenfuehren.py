@@ -41,7 +41,7 @@ def main():
             st = "kein_dokument_oder_adresse"
         if mastr in kol and st not in ("gelesen_nutzer", "gelesen_unser"):
             for c in COLS: werte[c] = kol[mastr].get(c, "")
-            st = "gelesen_kollege_verifiziert"   # Kollege am Original-PDF gelesen, von uns am Dokumenttext geprüft (09.11.2026)
+            st = kol[mastr].get("hlzf_status") or "gelesen_kollege_verifiziert"   # Kollege am Original-PDF gelesen, von uns am Dokumenttext geprüft (09.11.2026)
         z[st] += 1
         out.append([mastr, st] + [werte[c] for c in COLS])
     with open("lauf/hlzf_zusammen.csv", "w", encoding="utf-8-sig", newline="") as o:

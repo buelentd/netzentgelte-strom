@@ -115,3 +115,7 @@ In jeder Liste, Tabelle und jedem Ergebnis (2026, 2027, Gegenprobe, Aufträge, B
 
 ## Festlegung: Umlagen, Steuern, Konzessionsabgabe 2026 (Nutzer, 09.11.2026)
 Die Werte stehen in `ergebnis/umlagen_steuern_2026.csv` (Offshore 0,941; KWKG 0,446; besondere Netznutzung 1,559; AbLaV 0; EEG 0; Stromsteuer 2,05, produzierendes Gewerbe netto 0,05 nach Erstattung; Konzessionsabgabe Höchstsätze 1,32/1,59/1,99/2,39, Schwachlast 0,61, Sondervertragskunden 0,11; USt 19 %). Gesetzt vom Nutzer. Am Original geprüft am 09.11.2026: Offshore, KWKG, besondere Netznutzung (netztransparenz.de), Stromsteuer (§ 3 und § 9b StromStG, Entlastung nur Produzierendes Gewerbe und Land-/Forstwirtschaft, nur über 250 €/Jahr, auf Antrag), Konzessionsabgabe (§ 1, § 2 KAV). Nicht geprüft: AbLaV und EEG (0). Einbau in die API später.
+
+
+## Festlegung: Ordner eingang/fehlende (Nutzer, 09.11.2026)
+Dort liegen die PDFs der blockierten Netzbetreiber, zum Großteil 2026 und 2027 gemischt. Je Datei zuerst das Jahr im Dokument bestimmen: 2026 in die 2026-Tabelle, 2027 nach `eingang/2027_vorlaeufig/`, unklares Jahr in die Restliste. Details in `eingang/fehlende/LIES_MICH.md`.
