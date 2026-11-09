@@ -1,7 +1,7 @@
 ﻿mastr_nr;nr;nutzer_nr;netzbetreiber;domain;dateiname_preisblatt;dateiname_hochlastzeitfenster
 SNB979269087643;1;374;Stromnetz Berlin GmbH;stromnetz.berlin;SNB979269087643_0001.pdf;SNB979269087643_0001_hlzf.pdf
 SNB969473762610;2;390;SWM Infrastruktur GmbH ＆ Co. KG;swm-infrastruktur.de;SNB969473762610_0002.pdf;SNB969473762610_0002_hlzf.pdf
-SNB948311994307;3;155,842;Netze BW GmbH;netze-bw.de;SNB948311994307_0003.pdf;SNB948311994307_0003_hlzf.pdf
+SNB948311994307;3;155;Netze BW GmbH;netze-bw.de;SNB948311994307_0003.pdf;SNB948311994307_0003_hlzf.pdf
 SNB990362338043;4;8;Avacon Netz GmbH;avacon-netz.de;SNB990362338043_0004.pdf;SNB990362338043_0004_hlzf.pdf
 SNB951051725711;5;84;EWE NETZ GmbH;ewe-netz.de;SNB951051725711_0005.pdf;SNB951051725711_0005_hlzf.pdf
 SNB916269213931;6;;Mitteldeutsche Netzgesellschaft Strom mbH;mitnetz-strom.de;SNB916269213931_0006.pdf;SNB916269213931_0006_hlzf.pdf
@@ -287,7 +287,7 @@ SNB951760950909;285;132;Keep - Kommunale Eisenberger Energiepartner GmbH;keep-gm
 SNB964573708865;286;504;KEW Karwendel Energie und Wasser GmbH;kewgmbh.de;SNB964573708865_0286.pdf;SNB964573708865_0286_hlzf.pdf
 SNB943841101959;287;133;KEW Kommunale Energie- und Wasserversorgung AG;kew.de;SNB943841101959_0287.pdf;SNB943841101959_0287_hlzf.pdf
 SNB986580518855;288;505;KommEnergie GmbH;kommenergie.de;SNB986580518855_0288.pdf;SNB986580518855_0288_hlzf.pdf
-SNB972153058149;289;790;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ken-is.de;SNB972153058149_0289.pdf;SNB972153058149_0289_hlzf.pdf
+SNB972153058149;289;790,842;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ken-is.de;SNB972153058149_0289.pdf;SNB972153058149_0289_hlzf.pdf
 SNB912218404412;290;506;Kommunale Energieversorgung GmbH Eisenhüttenstadt;kev-ehst.de;SNB912218404412_0290.pdf;SNB912218404412_0290_hlzf.pdf
 SNB985871274975;291;134;Kommunalunternehmen Gemeindewerke Peißenberg;gemeindewerke-peissenberg.de;SNB985871274975_0291.pdf;SNB985871274975_0291_hlzf.pdf
 SNB947553215997;292;135;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;gemeindewerke-stammbach.de;SNB947553215997_0292.pdf;SNB947553215997_0292_hlzf.pdf
