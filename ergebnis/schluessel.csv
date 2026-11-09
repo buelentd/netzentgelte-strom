@@ -1,7 +1,7 @@
 ﻿mastr_nr;nr;nutzer_nr;netzbetreiber;domain;dateiname_preisblatt;dateiname_hochlastzeitfenster
 SNB979269087643;1;374;Stromnetz Berlin GmbH;stromnetz.berlin;SNB979269087643_0001.pdf;SNB979269087643_0001_hlzf.pdf
 SNB969473762610;2;390;SWM Infrastruktur GmbH ＆ Co. KG;swm-infrastruktur.de;SNB969473762610_0002.pdf;SNB969473762610_0002_hlzf.pdf
-SNB948311994307;3;155;Netze BW GmbH;netze-bw.de;SNB948311994307_0003.pdf;SNB948311994307_0003_hlzf.pdf
+SNB948311994307;3;155,842;Netze BW GmbH;netze-bw.de;SNB948311994307_0003.pdf;SNB948311994307_0003_hlzf.pdf
 SNB990362338043;4;8;Avacon Netz GmbH;avacon-netz.de;SNB990362338043_0004.pdf;SNB990362338043_0004_hlzf.pdf
 SNB951051725711;5;84;EWE NETZ GmbH;ewe-netz.de;SNB951051725711_0005.pdf;SNB951051725711_0005_hlzf.pdf
 SNB916269213931;6;;Mitteldeutsche Netzgesellschaft Strom mbH;mitnetz-strom.de;SNB916269213931_0006.pdf;SNB916269213931_0006_hlzf.pdf
@@ -310,7 +310,7 @@ SNB997826747014;308;;Markt Egloffstein;egloffstein.de;SNB997826747014_0308.pdf;S
 SNB932489723517;309;145;Markt Obernzell Elektrizitäts- versorgungsunternehmen;obernzell.de;SNB932489723517_0309.pdf;SNB932489723517_0309_hlzf.pdf
 SNB914731268120;310;513;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;mega-monheim.de;SNB914731268120_0310.pdf;SNB914731268120_0310_hlzf.pdf
 SNB914103081760;311;514;Meißener Stadtwerke GmbH;stadtwerke-meissen.de;SNB914103081760_0311.pdf;SNB914103081760_0311_hlzf.pdf
-SNB933391394338;312;;Merck Site Management GmbH;fluxum-gernsheim.com;SNB933391394338_0312.pdf;SNB933391394338_0312_hlzf.pdf
+SNB933391394338;312;837;Merck Site Management GmbH;fluxum-gernsheim.com;SNB933391394338_0312.pdf;SNB933391394338_0312_hlzf.pdf
 SNB906862380628;313;147;Mittelhessen Netz GmbH;mit-n.de;SNB906862380628_0313.pdf;SNB906862380628_0313_hlzf.pdf
 SNB970253419624;314;149;Müller - Mühle GmbH ＆ Co. KG;mueller-muehle.de;SNB970253419624_0314.pdf;SNB970253419624_0314_hlzf.pdf
 SNB943170046990;315;515;MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH;mve-eurokom.de;SNB943170046990_0315.pdf;SNB943170046990_0315_hlzf.pdf

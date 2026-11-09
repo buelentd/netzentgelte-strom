@@ -773,11 +773,11 @@
 833;EKS (Elektrizitätswerk Klingnau, Schweiz);SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 834;Elektra Pinzberg;SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 835;EVDB AG;SNB932388577952;157;Energieversorgung Dahlenburg-Bleckede AG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
-837;Fluxum Gernsheim;;;;keine
+837;Fluxum Gernsheim;SNB933391394338;312;Merck Site Management GmbH;sicher (Nutzer, MaStR geprüft 09.11.2026: Merck Site Management = Fluxum Gernsheim)
 838;Gebr. Heinzelmann (Netz Wolfach);SNB975462731697;271;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 840;Gemeindewerke Kahl;SNB962006136537;231;Gemeindewerke Kahl Versorgungsgesellschaft mbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 841;Gemeindewerke Muenchweiler a.d. Rodalb AoR;SNB972265030262;236;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;sicher (Nutzer, am MaStR geprüft 09.11.2026)
-842;KEN-IS (Kenzingen);;;;keine
+842;KEN-IS (Kenzingen);SNB948311994307;3;Netze BW GmbH;Angabe des Nutzers 09.11.2026: Kenzingen liegt im Netz der Netze BW (MaStR-Nr. von Nutzer genannt, nicht eigens abgefragt)
 843;PVU Netze;SNB988532040636;352;PVU Energienetze GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 846;Stadtwerke Neustadt/Orla;SNB931294328658;587;Stadtwerke Neustadt an der Orla GmbH;zweifel (Ähnlichkeit 0.90, Nr. 587: Stadtwerke Neustadt an der Orla GmbH)
 847;Stromnetz Cassella-Standort (CCF);SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
