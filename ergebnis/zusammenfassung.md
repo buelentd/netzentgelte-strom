@@ -1,15 +1,15 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 13:54, 831 Netzbetreiber bzw. Netzgebiete
+Stand 09.11.2026 13:58, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 604 | 73% |
-| pruefen | 216 | 26% |
+| pruefen | 217 | 26% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 5 | 1% |
+| blockiert | 4 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
@@ -19,23 +19,23 @@ Preisstand (nur ok): endgültig 493,  111
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 781)
+- Median: 7,25 ct/kWh (n = 782)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,42 ct/kWh (n = 779)
+- Median: 6,42 ct/kWh (n = 780)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 463,24 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 150,54 €/kW/a (n = 779)
+- Median: 150,60 €/kW/a (n = 780)
 
 ## Datenherkunft
 
-- Website aus E-Mail-Domain abgeleitet: 4
+- Website aus E-Mail-Domain abgeleitet: 3
 - Bundesland/Region nur aus dem Sitz laut MaStR: 15
 - Netztyp: Stadtnetz 616, Regionalnetz 116, Flächennetz 59, unbekannt 40
 
@@ -168,7 +168,7 @@ Preisstand (nur ok): endgültig 493,  111
 
 ## Restfälle (227)
 
-### pruefen (216)
+### pruefen (217)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -344,6 +344,7 @@ Preisstand (nur ok): endgültig 493,  111
 - 574. Stadtwerke Mühlhausen Netz GmbH: 
 - 575. Stadtwerke Mühlheim am Main GmbH: 
 - 582. Stadtwerke Neumarkt i. d. OPf. Energie GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (3.94, 5.52, 0.39); SLP-Werte auffällig
+- 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
 - 601. Stadtwerke Oerlinghausen GmbH: 
 - 611. Stadtwerke Peine GmbH: 
@@ -391,12 +392,11 @@ Preisstand (nur ok): endgültig 493,  111
 
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 
-### blockiert (5)
+### blockiert (4)
 
 - 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 405 http://www.stadtwerke-hammelburg.de
-- 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
 ### robots (4)

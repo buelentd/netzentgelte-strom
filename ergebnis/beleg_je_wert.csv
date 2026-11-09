@@ -2910,10 +2910,11 @@
 584;SNB920348005966;Stadtwerke Neuruppin GmbH;ok;msns;belegt;Zeile 17: Umspannung MS/NS;
 584;SNB920348005966;Stadtwerke Neuruppin GmbH;ok;ns;belegt;Zeile 19: Niederspannung;
 584;SNB920348005966;Stadtwerke Neuruppin GmbH;ok;slp;belegt;Zeile 25: Tel. 03391 511-111;
-585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;hsms;kein_text;;
-585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;ms;kein_text;;
-585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;msns;kein_text;;
-585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;ns;kein_text;;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;hsms;leer;;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;ms;belegt;Zeile 10: Mittelspannung NE5;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;msns;keine_zeile_mit_passender_beschriftung;;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;ns;belegt;Zeile 12: Niederspannung NE7;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;ok;slp;belegt;Zeile 34: Entnahme ohne Leistungsmessung;
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;hsms;leer;;
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;ms;belegt;Zeile 20: Mittelspannungsnetz (M);zwei Tabellen (Zeilen 20 und 28)
 586;SNB965315499379;Stadtwerke Neustadt a.d. Aisch GmbH;ok;msns;belegt;Z29: Umspannung (MN);manuell durch Claude am Dokument gesehen
