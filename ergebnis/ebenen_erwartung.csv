@@ -64,7 +64,7 @@ SNB965774651691;62;badenovaNETZE GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB914411628732;63;BASF InfraService ＆ Solutions Lausitz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
 SNB963282434775;64;Bauer Netz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB944057190867;65;BEW Netze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB990174285078;66;BIGGE ENERGIE GmbH ＆ Co. KG;ok;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB990174285078;66;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB910395619643;67;Blomberg Netz GmbH ＆ Co. KG;ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB927498960503;68;Bonn-Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB910066952147;69;Brücken-Center Ansbach GmbH;ok;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
@@ -81,7 +81,7 @@ SNB954281375657;79;Dessauer Stromversorgung GmbH;ok;gelesen;gelesen;gelesen;nich
 SNB974556654430;80;Donau-Stadtwerke Dillingen-Lauingen;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB992632801288;81;e-regio Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB921550647487;82;E-Werk Meckenheim/Pfalz;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB958060904298;83;E-Werk Rohrdorf Josef Haimmerer;ok;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
+SNB958060904298;83;E-Werk Rohrdorf Josef Haimmerer;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB978963778161;84;e-werk Sachsenwald GmbH;ok;gelesen;im_dokument_nicht_gelesen;gelesen;gelesen;gelesen
 SNB945186990991;85;E-Werk Wanfried von Scharfenberg GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB978299965228;86;E-Werke Haniel Haimhausen GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -293,7 +293,7 @@ SNB985871274975;291;Kommunalunternehmen Gemeindewerke Peißenberg;ok;gelesen;gel
 SNB947553215997;292;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB990329664031;293;Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR);pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
 SNB987171059405;294;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB957361726592;295;Kraftwerk Köhlgartenwiese GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
+SNB957361726592;295;Kraftwerk Köhlgartenwiese GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB937858140285;296;Kreiswerke Main-Kinzig GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB952845016893;297;LeineNetz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB920357766414;298;Leitungspartner GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -357,7 +357,7 @@ SNB966494112844;355;Raiffeisenbank Altmühl-Jura eG;ok;gelesen;gelesen;gelesen;n
 SNB963995572245;356;REDINET Burgenland GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB941929592729;357;Regensburg Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB942274543879;358;Regionalnetze Linzgau GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB974239978785;359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
+SNB974239978785;359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB917014884420;360;Regionalwerke Wolfhager Land GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB979950878543;361;Remstalwerk Netzgesellschaft GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB953011641437;362;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;fehlt

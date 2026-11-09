@@ -54,8 +54,8 @@
 354;Queichtal Energie Offenbach Netz GmbH;Niederspannung;9,46;6,24;137,22;1,13;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung Niederspannung;SNB942804093577_0354.txt
 354;Queichtal Energie Offenbach Netz GmbH;MS/NS;9,23;6,05;132,37;1,12;ok;nächste Zeile hat 0 von 4 Werten;dauer Umspannung;SNB942804093577_0354.txt
 354;Queichtal Energie Offenbach Netz GmbH;Mittelspannung;9,22;5,90;127,35;1,11;ok;nächste Zeile hat 0 von 4 Werten;Artikel-IDs: 1: [] | 2: [] | 3: [] | 4: [];SNB942804093577_0354.txt
-359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;Niederspannung;8,85;8,10;118,86;3,69;ok;nächste Zeile hat 0 von 4 Werten;Mittel- / Niederspannung 1-01-6-001 0,01600000 1-01-6-002 0,07550000;SNB974239978785_0359.txt
-359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;Mittelspannung;6,38;6,64;150,39;0,88;ok;nächste Zeile hat 0 von 4 Werten;Mittelspannung 1-01-5-001 0,01747945 1-01-5-002 0,06640000;SNB974239978785_0359.txt
+359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;Niederspannung;8,85;8,10;118,86;3,69;pruefen;nächste Zeile hat 0 von 4 Werten;Mittel- / Niederspannung 1-01-6-001 0,01600000 1-01-6-002 0,07550000;SNB974239978785_0359.txt
+359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;Mittelspannung;6,38;6,64;150,39;0,88;pruefen;nächste Zeile hat 0 von 4 Werten;Mittelspannung 1-01-5-001 0,01747945 1-01-5-002 0,06640000;SNB974239978785_0359.txt
 366;SachsenNetze HS.HD GmbH;Niederspannung;33,64;8,59;179,14;2,77;ok;nächste Zeile hat 0 von 4 Werten;Entnahme aus der Netzebene Niederspannung für Standardlastprofilkunden ohne Leistungsmessung;SNB968914838013_0366.txt
 374;Stadtwerk am See GmbH ＆ Co. KG;Niederspannung;22,75;7,80;115,43;4,09;ok;nächste Zeile hat 0 von 4 Werten;1. Niederspannung RLM;SNB993059842564_0374.txt
 374;Stadtwerk am See GmbH ＆ Co. KG;MS/NS;22,70;6,52;166,07;1,09;ok;Ebenenzeile im Dokument nicht gefunden;;SNB993059842564_0374.txt

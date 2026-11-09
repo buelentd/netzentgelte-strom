@@ -324,11 +324,11 @@
 65;SNB944057190867;BEW Netze GmbH;ok;msns;belegt;Zeile 53: Mittel- / Niederspannung (Umspannung);zwei Tabellen (Zeilen 53 und 65)
 65;SNB944057190867;BEW Netze GmbH;ok;ns;belegt;Zeile 55: Niederspannung;zwei Tabellen (Zeilen 55 und 67)
 65;SNB944057190867;BEW Netze GmbH;ok;slp;belegt;Z23 Grundpreis 116,80 netto und Z29 Arbeitspreis 6,34 netto;manuell durch Claude am Dokument gesehen
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;hsms;leer;;
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;ms;leer_im_dokument_ebene_gefunden;;
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;msns;belegt;Zeile 21: über 2.500 h1  149,52  177,93  1,19  1,42;Beschriftung im Kontext der Zeile
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;ns;belegt;Zeile 24: über 2.500 h1  152,74  181,76  1,43  1,70;Beschriftung im Kontext der Zeile
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;slp;belegt;Zeile 12: (Zählerpreis)1;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;hsms;leer;;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;ms;leer_im_dokument_ebene_gefunden;;
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;msns;belegt;Zeile 21: über 2.500 h1  149,52  177,93  1,19  1,42;Beschriftung im Kontext der Zeile
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;ns;belegt;Zeile 24: über 2.500 h1  152,74  181,76  1,43  1,70;Beschriftung im Kontext der Zeile
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;slp;belegt;Zeile 12: (Zählerpreis)1;
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;hsms;leer;;
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;ms;belegt;Zeile 26: Mittelspannung (MSP)  2.500 h/a;zwei Tabellen in Reihenfolge (Zeilen 26 und 37)
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;msns;leer;;
@@ -409,11 +409,11 @@
 82;SNB921550647487;E-Werk Meckenheim/Pfalz;ok;msns;belegt;Zeile 18: Umspannung MS/NS;
 82;SNB921550647487;E-Werk Meckenheim/Pfalz;ok;ns;belegt;Zeile 19: Niederspannung;
 82;SNB921550647487;E-Werk Meckenheim/Pfalz;ok;slp;belegt;Zeile 37: Arbeitspreise für Netznutzung in der Niederspannung;
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;hsms;leer;;
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;ms;leer;;
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;msns;leer;;
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;ns;belegt;Zeile 18: Niederspannung (NS);
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;slp;belegt;Zeile 22: Grundpreis  Arbeitspreis;
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;hsms;leer;;
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;ms;leer;;
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;msns;leer;;
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;ns;belegt;Zeile 18: Niederspannung (NS);
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;slp;belegt;Zeile 22: Grundpreis  Arbeitspreis;
 84;SNB978963778161;e-werk Sachsenwald GmbH;ok;hsms;belegt;Zeile 27: Umspannung HS/MS;
 84;SNB978963778161;e-werk Sachsenwald GmbH;ok;ms;belegt;Zeile 26: Mittelspannungsnetz;
 84;SNB978963778161;e-werk Sachsenwald GmbH;ok;msns;leer;;
@@ -1464,11 +1464,11 @@
 294;SNB987171059405;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;msns;belegt;Zeile 19: Umspannung MS/NS;
 294;SNB987171059405;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;ns;belegt;Zeile 20: Niederspannung (NS);
 294;SNB987171059405;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;slp;belegt;Zeile 25: Grundpreis  Arbeitspreis;
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;hsms;leer;;
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;ms;belegt;Zeile 31: Mittelspannung (MS);
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;msns;belegt;Zeile 32: Umspannung Mittel-/Niederspannung (MS/NS);
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;ns;belegt;Zeile 33: Niederspannung (NS);
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;slp;belegt;Zeile 42: Grundpreis  Arbeitspreis;
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;hsms;leer;;
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;ms;belegt;Zeile 31: Mittelspannung (MS);
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;msns;belegt;Zeile 32: Umspannung Mittel-/Niederspannung (MS/NS);
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;ns;belegt;Zeile 33: Niederspannung (NS);
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;slp;belegt;Zeile 42: Grundpreis  Arbeitspreis;
 296;SNB937858140285;Kreiswerke Main-Kinzig GmbH;ok;hsms;belegt;Zeile 18: HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung;
 296;SNB937858140285;Kreiswerke Main-Kinzig GmbH;ok;ms;belegt;Zeile 19: MS - NE 5 - Mittelspannung;
 296;SNB937858140285;Kreiswerke Main-Kinzig GmbH;ok;msns;belegt;Zeile 20: MS/NS - NE 6 - Umspannung Mittel-/Niederspannung;
@@ -1781,11 +1781,11 @@
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;msns;belegt;Zeile 13: 6  Umsp. Mittel- auf Niederspannung;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;ns;belegt;Zeile 14: 7  Niederspannungsnetz;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;slp;belegt;Zeile 17: Grund-  Arbeits-;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;hsms;leer;;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;ms;konflikt;Zeile 15: Mittelspannung  1-01-5-001 = 0.01747945/0.0664/0.4120274/0.0088;zwei Tabellen (Zeilen 15 und 26)
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;msns;leer_im_dokument_ebene_gefunden;;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;ns;konflikt;Zeile 18: Niederspannung  1-01-7-001 = 0.02424658/0.081/0.32564384/0.0369;zwei Tabellen (Zeilen 18 und 29)
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;slp;belegt;Zeile 76: Arbeitspreis  Grundpreis;
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;hsms;leer;;
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ms;konflikt;Zeile 15: Mittelspannung  1-01-5-001 = 0.01747945/0.0664/0.4120274/0.0088;zwei Tabellen (Zeilen 15 und 26)
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;msns;leer_im_dokument_ebene_gefunden;;
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ns;konflikt;Zeile 18: Niederspannung  1-01-7-001 = 0.02424658/0.081/0.32564384/0.0369;zwei Tabellen (Zeilen 18 und 29)
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;slp;belegt;Zeile 76: Arbeitspreis  Grundpreis;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;hsms;leer;;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;ms;belegt;Zeile 24: Mittelspannungsnetz (MS)*;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;msns;belegt;Zeile 25: Umspannung Mittel-/ Niederspannung (MS/NS);

@@ -64,7 +64,7 @@
 63;SNB914411628732;BASF InfraService ＆ Solutions Lausitz GmbH;pruefen;alle_belegt;
 64;SNB963282434775;Bauer Netz GmbH ＆ Co. KG;ok;alle_belegt;
 65;SNB944057190867;BEW Netze GmbH;ok;alle_belegt;
-66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;ok;offen;ms:leer_im_dokument_ebene_gefunden
+66;SNB990174285078;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;offen;ms:leer_im_dokument_ebene_gefunden
 67;SNB910395619643;Blomberg Netz GmbH ＆ Co. KG;ok;alle_belegt;
 68;SNB927498960503;Bonn-Netz GmbH;ok;alle_belegt;
 69;SNB910066952147;Brücken-Center Ansbach GmbH;ok;alle_belegt;
@@ -81,7 +81,7 @@
 80;SNB974556654430;Donau-Stadtwerke Dillingen-Lauingen;ok;alle_belegt;
 81;SNB992632801288;e-regio Netz GmbH;ok;alle_belegt;
 82;SNB921550647487;E-Werk Meckenheim/Pfalz;ok;alle_belegt;
-83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;ok;alle_belegt;
+83;SNB958060904298;E-Werk Rohrdorf Josef Haimmerer;pruefen;alle_belegt;
 84;SNB978963778161;e-werk Sachsenwald GmbH;ok;alle_belegt;
 85;SNB945186990991;E-Werk Wanfried von Scharfenberg GmbH ＆ Co. KG;ok;alle_belegt;
 86;SNB978299965228;E-Werke Haniel Haimhausen GmbH ＆ Co. KG;ok;alle_belegt;
@@ -293,7 +293,7 @@
 292;SNB947553215997;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;ok;alle_belegt;
 293;SNB990329664031;Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR);pruefen;offen;
 294;SNB987171059405;Kraftwerk Farchant A. Poettinger ＆ Co. KG;ok;alle_belegt;
-295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;ok;alle_belegt;
+295;SNB957361726592;Kraftwerk Köhlgartenwiese GmbH;pruefen;alle_belegt;
 296;SNB937858140285;Kreiswerke Main-Kinzig GmbH;ok;alle_belegt;
 297;SNB952845016893;LeineNetz GmbH;ok;alle_belegt;
 298;SNB920357766414;Leitungspartner GmbH;ok;alle_belegt;
@@ -357,7 +357,7 @@
 356;SNB963995572245;REDINET Burgenland GmbH;ok;alle_belegt;
 357;SNB941929592729;Regensburg Netz GmbH;ok;alle_belegt;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;alle_belegt;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;ok;offen;"ms:konflikt; msns:leer_im_dokument_ebene_gefunden; ns:konflikt"
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;offen;"ms:konflikt; msns:leer_im_dokument_ebene_gefunden; ns:konflikt"
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;alle_belegt;
 361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;alle_belegt;
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;alle_belegt;
