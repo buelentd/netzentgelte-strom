@@ -111,3 +111,7 @@ Wenn dem Nutzer Dokumente zum Holen im Browser aufgelistet werden, gibt es zu je
 ## Regel: MaStR-Nummer ist der Schlüssel (Festlegung Nutzer, wiederholt, 09.11.2026)
 
 In jeder Liste, Tabelle und jedem Ergebnis (2026, 2027, Gegenprobe, Aufträge, Browser-Listen, Zuordnungen) steht als Erstes die MaStR-Nummer (`mastr_nr`, SNB…). Die laufende Nummer `nr` ist nur Hilfsnummer und ersetzt sie nie. Neue Dateien ohne `mastr_nr` werden nicht abgegeben.
+
+
+## Festlegung: Umlagen, Steuern, Konzessionsabgabe 2026 (Nutzer, 09.11.2026)
+Die Werte stehen in `ergebnis/umlagen_steuern_2026.csv` (Offshore 0,941; KWKG 0,446; besondere Netznutzung 1,559; AbLaV 0; EEG 0; Stromsteuer 2,05, produzierendes Gewerbe netto 0,05 nach Erstattung; Konzessionsabgabe Höchstsätze 1,32/1,59/1,99/2,39, Schwachlast 0,61, Sondervertragskunden 0,11; USt 19 %). Gesetzt vom Nutzer, am Original nicht geprüft. Einbau in die API später.
