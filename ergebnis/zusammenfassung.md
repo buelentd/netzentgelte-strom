@@ -1,15 +1,15 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 11:30, 831 Netzbetreiber bzw. Netzgebiete
+Stand 09.11.2026 13:51, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 597 | 72% |
-| pruefen | 215 | 26% |
+| pruefen | 216 | 26% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 13 | 2% |
+| blockiert | 12 | 1% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
@@ -19,19 +19,19 @@ Preisstand (nur ok): endgültig 493,  104
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 773)
+- Median: 7,26 ct/kWh (n = 774)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,41 ct/kWh (n = 771)
+- Median: 6,41 ct/kWh (n = 772)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 463,24 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 150,50 €/kW/a (n = 771)
+- Median: 150,52 €/kW/a (n = 772)
 
 ## Datenherkunft
 
@@ -161,7 +161,7 @@ Preisstand (nur ok): endgültig 493,  104
 
 ## Restfälle (234)
 
-### pruefen (215)
+### pruefen (216)
 
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: 
 - 4. Avacon Netz GmbH: 
@@ -235,6 +235,7 @@ Preisstand (nur ok): endgültig 493,  104
 - 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: 
 - 208. Gemeinde Glattbach: 
 - 216. Gemeindewerke Ebersdorf: weitere Preisblätter mit abweichenden NS-Werten: https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentgelte-2017.pdf, https://cosmema.ebersdorf.de/wp-content/uploads/2026/02/gwe-netzentg
+- 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 405 http://www.frammersbach.de
 - 219. Gemeindewerke Gangkofen: 
 - 220. Gemeindewerke Garmisch-Partenkirchen, KU: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 221. Gemeindewerke Georgensgmünd: Netzbetreibername nicht im Dokument; SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
@@ -383,11 +384,10 @@ Preisstand (nur ok): endgültig 493,  104
 
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 
-### blockiert (13)
+### blockiert (12)
 
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
-- 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 405 http://www.frammersbach.de
 - 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
 - 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 405 http://www.partenstein.de
 - 252. Gemeindewerke Wildeck: robots.txt nicht erreichbar (https://www.wildeck.de); robots.txt nicht erreichbar (http://www.wildeck.de); robots.txt nicht erreichbar (https://www.wildeck.de/netzentgelte)

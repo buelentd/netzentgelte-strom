@@ -110,4 +110,7 @@ RUNDE2 = {
     ("137", "ms"): [16.63, 5.40, 128.99, 0.90],                      # Apolda: Zeile Mittelspannung; bisher standen die unter-2.500-h-Werte der Niederspannung in MS
     ("501", "slp"): [6.20, 75.03],                                   # Groß-Gerau: Grundpreis 75,03 €/a (5,03 war eine abgeschnittene Zahl)
     ("522", "slp"): [6.87, 82.00],                                   # Hilden: Standard-AP 6,87 (3,44 gilt für Speicherheizung/Wärmepumpe)
+    # Markt Frammersbach (218): PDF ohne Textschicht, am Bild gelesen (220 dpi), Zuordnung durch Nutzer 09.11.2026
+    ("218", "ms"): [30.49, 11.34, 297.78, 0.65], ("218", "msns"): [31.12, 11.90, 311.85, 0.67], ("218", "ns"): [35.68, 12.45, 266.18, 3.23],
+    ("218", "slp"): [12.01, 60.00],
 }

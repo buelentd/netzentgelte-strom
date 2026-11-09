@@ -216,7 +216,7 @@
 215;SNB950724684287;Gemeindewerke Dudenhofen;ok;alle_belegt;
 216;SNB991410365127;Gemeindewerke Ebersdorf;pruefen;alle_belegt;
 217;SNB986931195988;Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk;ok;alle_belegt;
-218;SNB947727983103;Gemeindewerke Frammersbach;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+218;SNB947727983103;Gemeindewerke Frammersbach;ok;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 219;SNB954239007623;Gemeindewerke Gangkofen;pruefen;alle_belegt;
 220;SNB926937565941;Gemeindewerke Garmisch-Partenkirchen, KU;pruefen;alle_belegt;
 221;SNB966216072913;Gemeindewerke Georgensgmünd;pruefen;offen;slp:keine_zeile_mit_passender_beschriftung
@@ -499,7 +499,7 @@
 498;SNB998044089535;Stadtwerke Greven GmbH;ok;alle_belegt;
 499;SNB991689251534;Stadtwerke Grevesmühlen GmbH;ok;alle_belegt;
 500;SNB934949020686;Stadtwerke Gronau GmbH;ok;alle_belegt;
-501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;pruefen;alle_belegt;
+501;SNB966809778161;Stadtwerke Groß-Gerau Versorgungs GmbH;ok;alle_belegt;
 502;SNB958070514050;Stadtwerke Grünstadt GmbH;ok;alle_belegt;
 503;SNB983029590205;Stadtwerke Güstrow GmbH;ok;alle_belegt;
 504;SNB953794435957;Stadtwerke Gunzenhausen GmbH;ok;alle_belegt;

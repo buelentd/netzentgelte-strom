@@ -198,3 +198,7 @@ nr;ebene;fundstelle
 807;msns;Z32: Umspannung (Tabelle ab 2.500 h)
 817;msns;Z21: Umspannung zur Niederspannung
 433;ns;Zeile 22 und 33: Niederspannung NS (nicht die Zeile Ermäßigung 10 % gem. § 3 KAV): LP und AP unter 2.500 h 18,06/9,38; ab 2.500 h 209,15/1,74 (Gegenprobe 07.11.2026)
+218;ms;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Leistungspreissystem Mittelspannung (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
+218;msns;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Leistungspreissystem Umspannung MS/NS (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
+218;ns;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Leistungspreissystem Niederspannung (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
+218;slp;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Entnahme ohne Leistungsmessung Niederspannung (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
