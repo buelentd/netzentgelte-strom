@@ -1,15 +1,15 @@
 ﻿position;wert;einheit;jahr;quelle_fundstelle;status
-umlage_offshore_netz;0,941;ct/kWh;2026;netztransparenz.de (§ 17f EnWG);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-umlage_kwkg;0,446;ct/kWh;2026;netztransparenz.de (§ 26 KWKG);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-aufschlag_besondere_netznutzung;1,559;ct/kWh;2026;netztransparenz.de (§ 19 StromNEV);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
+umlage_offshore_netz;0,941;ct/kWh;2026;"netztransparenz.de, Seite „Offshore Netzumlage 2026"": 0,941 ct/kWh";am Original geprüft 09.11.2026
+umlage_kwkg;0,446;ct/kWh;2026;"netztransparenz.de, Seite „KWKG-Umlage 2026"": 0,446 ct/kWh";am Original geprüft 09.11.2026
+aufschlag_besondere_netznutzung;1,559;ct/kWh;2026;"netztransparenz.de, Seite „Aufschlag für besondere Netznutzung 2026"": 1,559 ct/kWh (daneben 0,050 und 0,025 ct/kWh für Letztverbrauchergruppen, nicht zugeordnet)";am Original geprüft 09.11.2026
 umlage_abschaltbare_lasten;0,0;ct/kWh;2026;netztransparenz.de (§ 18 AbLaV);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
 umlage_eeg;0,0;ct/kWh;2026;seit 1.7.2022 0 ct;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-stromsteuer_regelsatz;2,05;ct/kWh;2026;§ 3 StromStG (20,50 €/MWh);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-stromsteuer_produzierendes_gewerbe_netto_nach_erstattung;0,05;ct/kWh;2026;§ 9b StromStG (Entlastung 2,00 ct/kWh, EU-Mindestsatz);"Vorgabe Nutzer 09.11.2026, am Original nicht geprüft; gilt nur für die Produktionsmenge"
-konzessionsabgabe_tarifkunden_bis_25000_einwohner;1,32;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-konzessionsabgabe_tarifkunden_bis_100000_einwohner;1,59;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-konzessionsabgabe_tarifkunden_bis_500000_einwohner;1,99;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-konzessionsabgabe_tarifkunden_ueber_500000_einwohner;2,39;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-konzessionsabgabe_schwachlast;0,61;ct/kWh;2026 (Höchstsatz);§ 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-konzessionsabgabe_sondervertragskunden;0,11;ct/kWh;2026 (Höchstsatz);§ 2 KAV;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
+stromsteuer_regelsatz;2,05;ct/kWh;2026;§ 3 StromStG: 20,50 Euro je Megawattstunde;am Original geprüft 09.11.2026
+stromsteuer_produzierendes_gewerbe_netto_nach_erstattung;0,05;ct/kWh;2026;§ 9b Abs. 2 StromStG: Entlastung 20 Euro je MWh, nur Produzierendes Gewerbe und Land-/Forstwirtschaft, betriebliche Zwecke, nur wenn Entlastungsbetrag über 250 Euro im Kalenderjahr, auf Antrag, nicht für Elektromobilität;am Original geprüft 09.11.2026
+konzessionsabgabe_tarifkunden_bis_25000_einwohner;1,32;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+konzessionsabgabe_tarifkunden_bis_100000_einwohner;1,59;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+konzessionsabgabe_tarifkunden_bis_500000_einwohner;1,99;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+konzessionsabgabe_tarifkunden_ueber_500000_einwohner;2,39;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+konzessionsabgabe_schwachlast;0,61;ct/kWh;2026 (Höchstsatz);§ 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+konzessionsabgabe_sondervertragskunden;0,11;ct/kWh;2026 (Höchstsatz);§ 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
 umsatzsteuer;19;Prozent;2026;§ 12 Abs. 1 UStG;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
