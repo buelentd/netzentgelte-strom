@@ -123,7 +123,7 @@
 122;SNB980126228475;Elektrizitätswerk Mainbernheim GmbH;ok;alle_belegt;
 123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;alle_belegt;
 124;SNB982597073882;Elektrizitätswerk Oberwössen e.G.;ok;alle_belegt;
-125;SNB921080203146;Elektrizitätswerk Rohmund GmbH;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+125;SNB921080203146;Elektrizitätswerk Rohmund GmbH;ok;alle_belegt;
 126;SNB927892816017;Elektrizitätswerk S c h w e i g e r  o.H.G;pruefen;alle_belegt;
 127;SNB929383206369;Elektrizitätswerk Simbach GmbH;ok;alle_belegt;
 128;SNB910882213224;Elektrizitätswerk Stern KG Bad Endorf;pruefen;alle_belegt;
@@ -216,7 +216,7 @@
 215;SNB950724684287;Gemeindewerke Dudenhofen;ok;alle_belegt;
 216;SNB991410365127;Gemeindewerke Ebersdorf;pruefen;alle_belegt;
 217;SNB986931195988;Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk;ok;alle_belegt;
-218;SNB947727983103;Gemeindewerke Frammersbach;ok;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+218;SNB947727983103;Gemeindewerke Frammersbach;pruefen;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 219;SNB954239007623;Gemeindewerke Gangkofen;pruefen;alle_belegt;
 220;SNB926937565941;Gemeindewerke Garmisch-Partenkirchen, KU;pruefen;alle_belegt;
 221;SNB966216072913;Gemeindewerke Georgensgmünd;pruefen;offen;slp:keine_zeile_mit_passender_beschriftung
@@ -234,13 +234,13 @@
 233;SNB969688824103;Gemeindewerke Kirkel GmbH;ok;alle_belegt;
 234;SNB955706777742;Gemeindewerke Lam;ok;alle_belegt;
 235;SNB994196581439;Gemeindewerke Langenpreising GmbH ＆ Co. KG;pruefen;alle_belegt;
-236;SNB972265030262;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+236;SNB972265030262;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;ok;alle_belegt;
 237;SNB984571613121;Gemeindewerke Neuendettelsau;pruefen;alle_belegt;
 238;SNB940436967099;Gemeindewerke Niefern-Öschelbronn;pruefen;alle_belegt;
 239;SNB981336194529;Gemeindewerke Nüdlingen;pruefen;alle_belegt;
 240;SNB987153361809;Gemeindewerke Nümbrecht GmbH;ok;alle_belegt;
 241;SNB950777700255;Gemeindewerke Oberaudorf;ok;alle_belegt;
-242;SNB955872978110;Gemeindewerke Partenstein;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+242;SNB955872978110;Gemeindewerke Partenstein;ok;alle_belegt;
 243;SNB915728555230;Gemeindewerke Pleinfeld;ok;alle_belegt;
 244;SNB981972152532;Gemeindewerke Schönkirchen GmbH;ok;alle_belegt;
 245;SNB959475630567;Gemeindewerke Schutterwald (GWS);pruefen;alle_belegt;
@@ -250,7 +250,7 @@
 249;SNB976297675927;Gemeindewerke Waging a. See;ok;alle_belegt;
 250;SNB966823215826;Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern;ok;alle_belegt;
 251;SNB964137069203;Gemeindewerke Wendelstein KU;ok;alle_belegt;
-252;SNB945187645647;Gemeindewerke Wildeck;blockiert;offen;
+252;SNB945187645647;Gemeindewerke Wildeck;ok;alle_belegt;
 253;SNB925878615876;Gemeindliche Werke Hengersberg;ok;alle_belegt;
 254;SNB967068117678;gemeinsames Kommunalunternehmen oberes Egertal;ok;alle_belegt;
 255;SNB948816192529;GeraNetz GmbH;pruefen;offen;slp:keine_zeile_mit_passender_beschriftung
@@ -381,7 +381,7 @@
 380;SNB947709605108;Stadtwerke Altensteig;ok;alle_belegt;
 381;SNB978191145308;Stadtwerke Amberg Versorgungs GmbH;ok;alle_belegt;
 382;SNB981335690930;Stadtwerke Andernach Energie GmbH;ok;alle_belegt;
-383;SNB936769439815;Stadtwerke Annaberg-Buchholz Energie AG;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+383;SNB936769439815;Stadtwerke Annaberg-Buchholz Energie AG;ok;alle_belegt;
 384;SNB972040623122;Stadtwerke Annweiler am Trifels;ok;alle_belegt;
 385;SNB937406641264;Stadtwerke Ansbach GmbH;ok;alle_belegt;
 386;SNB985993443181;Stadtwerke Arnstadt Netz GmbH ＆ Co. KG;ok;alle_belegt;
@@ -783,7 +783,7 @@
 782;SNB981113965977;SWR Energie GmbH ＆ Co. KG;ok;alle_belegt;
 783;SNB915638224585;SWS Netze GmbH;pruefen;offen;"hsms:leer_im_dokument_ebene_gefunden; msns:keine_zeile_mit_passender_beschriftung"
 784;SNB969362778135;SWS Netze Solingen GmbH;ok;alle_belegt;
-785;SNB966813503780;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;offen;
+785;SNB966813503780;SWT Stadtwerke Trier Versorgungs-GmbH;ok;alle_belegt;
 786;SNB950006175489;SWTE Netz GmbH ＆ Co. KG;ok;alle_belegt;
 787;SNB967812386411;SWW Wunsiedel GmbH;pruefen;alle_belegt;
 788;SNB980986433484;Syna Hochspannungsnetz GmbH ＆ Co. KG;pruefen;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
@@ -812,7 +812,7 @@
 811;SNB946612539746;Versorgungsbetriebe Hoyerswerda GmbH;ok;alle_belegt;
 812;SNB934967462406;Versorgungsbetriebe Kronshagen GmbH;ok;alle_belegt;
 813;SNB911104987275;Versorgungsbetriebe Röttingen;ok;alle_belegt;
-814;SNB946115797155;Versorgungsbetriebe Zellingen;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+814;SNB946115797155;Versorgungsbetriebe Zellingen;ok;alle_belegt;
 815;SNB929840763916;VersorgungsWerke Heddesheim GmbH ＆ Co. KG;ok;alle_belegt;
 816;SNB977641826996;Verteilnetz Plauen GmbH;ok;alle_belegt;
 817;SNB940122004213;Verteilnetze Energie Weißenhorn GmbH ＆ Co. KG;ok;alle_belegt;

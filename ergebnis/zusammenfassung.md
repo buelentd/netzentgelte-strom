@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 13:51, 831 Netzbetreiber bzw. Netzgebiete
+Stand 09.11.2026 13:54, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 597 | 72% |
+| ok | 604 | 73% |
 | pruefen | 216 | 26% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 12 | 1% |
+| blockiert | 5 | 1% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 493,  104
+Preisstand (nur ok): endgültig 493,  111
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 30,05 ct/kWh (BIGGE ENERGIE GmbH ＆ Co. KG)
-- Median: 7,26 ct/kWh (n = 774)
+- Median: 7,26 ct/kWh (n = 781)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,41 ct/kWh (n = 772)
+- Median: 6,42 ct/kWh (n = 779)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 463,24 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 150,52 €/kW/a (n = 772)
+- Median: 150,54 €/kW/a (n = 779)
 
 ## Datenherkunft
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 493,  104
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (104)
+## Status ok, aber Preisstand nicht endgültig (111)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
@@ -61,6 +61,7 @@ Preisstand (nur ok): endgültig 493,  104
 - 109. Elektrizitätsgenossenschaft Schlachters e.G.: 
 - 115. Elektrizitätswerk Bruchmühlbach-Miesau: 
 - 121. Elektrizitätswerk Leitlein GmbH ＆ Co. KG: 
+- 125. Elektrizitätswerk Rohmund GmbH: 
 - 129. Elektrizitätswerk Tegernsee Carl Miller KG: 
 - 140. Energie Calw GmbH: 
 - 145. Energie- und Wasserversorgung Bruchsal GmbH: 
@@ -73,8 +74,11 @@ Preisstand (nur ok): endgültig 493,  104
 - 209. Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach: 
 - 225. Gemeindewerke Halstenbek: 
 - 231. Gemeindewerke Kahl Versorgungsgesellschaft mbH: 
+- 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: 
 - 241. Gemeindewerke Oberaudorf: 
+- 242. Gemeindewerke Partenstein: 
 - 250. Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern: 
+- 252. Gemeindewerke Wildeck: 
 - 261. GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG: 
 - 278. infra fürth gmbh: 
 - 282. Infrastrukturbetrieb der Stadt Arneburg: 
@@ -85,6 +89,7 @@ Preisstand (nur ok): endgültig 493,  104
 - 368. Schleswiger Stadtwerke GmbH: 
 - 369. SEW Stromversorgungs GmbH: 
 - 380. Stadtwerke Altensteig: 
+- 383. Stadtwerke Annaberg-Buchholz Energie AG: 
 - 391. Stadtwerke Bad Bramstedt Netz GmbH: 
 - 394. Stadtwerke Bad Harzburg GmbH: 
 - 398. Stadtwerke Bad Nauheim GmbH: 
@@ -153,13 +158,15 @@ Preisstand (nur ok): endgültig 493,  104
 - 763. Stromversorgung Zerbst GmbH ＆ Co. KG: 
 - 767. SÜC Energie und H²O GmbH: 
 - 778. SWN Stadtwerke Neustadt GmbH: 
+- 785. SWT Stadtwerke Trier Versorgungs-GmbH: 
 - 797. Überlandwerk Eppler GmbH: 
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 813. Versorgungsbetriebe Röttingen: 
+- 814. Versorgungsbetriebe Zellingen: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (234)
+## Restfälle (227)
 
 ### pruefen (216)
 
@@ -384,19 +391,12 @@ Preisstand (nur ok): endgültig 493,  104
 
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 
-### blockiert (12)
+### blockiert (5)
 
-- 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
-- 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
-- 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 405 http://www.partenstein.de
-- 252. Gemeindewerke Wildeck: robots.txt nicht erreichbar (https://www.wildeck.de); robots.txt nicht erreichbar (http://www.wildeck.de); robots.txt nicht erreichbar (https://www.wildeck.de/netzentgelte)
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
-- 383. Stadtwerke Annaberg-Buchholz Energie AG: robots.txt nicht erreichbar (https://www.swa-b.de); robots.txt nicht erreichbar (http://www.swa-b.de)
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 405 http://www.stadtwerke-hammelburg.de
 - 585. Stadtwerke Neustadt a. d. Donau: robots.txt nicht erreichbar (https://www.swn-do.de)
-- 785. SWT Stadtwerke Trier Versorgungs-GmbH: robots.txt nicht erreichbar (https://www.swt.de); robots.txt nicht erreichbar (http://www.swt.de); robots.txt nicht erreichbar (https://www.swt.de/seite/vermiedene-netznutzung-durch-dezentrale-einspei
-- 814. Versorgungsbetriebe Zellingen: HTTP 403 https://www.markt-zellingen.de; HTTP 405 http://www.markt-zellingen.de
 - 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
 ### robots (4)
