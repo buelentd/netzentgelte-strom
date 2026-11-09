@@ -769,18 +769,18 @@
 825;Stadtwerke Windsbach;SNB957988771050;726;Stadtwerke Windsbach;sicher (Name gleich)
 826;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];SNB979326623005;741;stadtwerker Versorgungs GmbH [eh. Stadtwerke Rhede GmbH];sicher (Name gleich)
 827;Stromversorgung Sulz am Neckar GmbH;SNB954776773166;762;Stromversorgung Sulz am Neckar GmbH;sicher (Name gleich)
-832;E-Werk Ottersberg;;;;keine
-833;EKS (Elektrizitätswerk Klingnau, Schweiz);;;;keine
-834;Elektra Pinzberg;;;;keine
-835;EVDB AG;;;;keine
-837;Fluxum Gernsheim;;;;keine
-838;Gebr. Heinzelmann (Netz Wolfach);;;;keine
-840;Gemeindewerke Kahl;;;;keine (Fehltreffer: MaStR-Nummer schon vergeben)
-841;Gemeindewerke Muenchweiler a.d. Rodalb AoR;;;;keine
-842;KEN-IS (Kenzingen);;;;keine
-843;PVU Netze;;;;keine (Fehltreffer: MaStR-Nummer schon vergeben)
+832;E-Werk Ottersberg;SNB916008519201;102;Elektrizitäts-Werk Ottersberg;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+833;EKS (Elektrizitätswerk Klingnau, Schweiz);SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+834;Elektra Pinzberg;SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+835;EVDB AG;SNB932388577952;157;Energieversorgung Dahlenburg-Bleckede AG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+837;Fluxum Gernsheim;SNB933391394338;312;Merck Site Management GmbH;sicher (Nutzer, MaStR geprüft 09.11.2026: Merck Site Management = Fluxum Gernsheim)
+838;Gebr. Heinzelmann (Netz Wolfach);SNB975462731697;271;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+840;Gemeindewerke Kahl;SNB962006136537;231;Gemeindewerke Kahl Versorgungsgesellschaft mbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+841;Gemeindewerke Muenchweiler a.d. Rodalb AoR;SNB972265030262;236;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+842;KEN-IS;SNB972153058149;289;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;sicher (Nutzer 09.11.2026: KEN-IS = Kommunale Energienetze Inn-Salzach, Raum Mühldorf am Inn, nicht Kenzingen)
+843;PVU Netze;SNB988532040636;352;PVU Energienetze GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
 846;Stadtwerke Neustadt/Orla;SNB931294328658;587;Stadtwerke Neustadt an der Orla GmbH;zweifel (Ähnlichkeit 0.90, Nr. 587: Stadtwerke Neustadt an der Orla GmbH)
-847;Stromnetz Cassella-Standort (CCF);;;;keine
-849;SWK Gemeindenetz Weidenthal;;;;keine
-850;SWT;;;;keine
-851;ZEV / EZV Energie (Zwickau);;;;keine
+847;Stromnetz Cassella-Standort (CCF);SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+849;SWK Gemeindenetz Weidenthal;SNB966823215826;250;Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+850;SWT;SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)
+851;ZEV / EZV Energie (Zwickau);SNB925823629552;831;Zwickauer Energieversorgung GmbH;sicher (Nutzer, am MaStR geprüft 09.11.2026)

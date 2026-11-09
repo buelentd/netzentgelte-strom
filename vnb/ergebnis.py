@@ -136,7 +136,8 @@ class Speicher:
         gruende = self._hsms_gruende()
         hlzf = self._hlzf()
         ent = self._entfernt()
-        zeilen = [self._entfernt_hinweis(self._hsms_grund(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), gruende), ent)
+        beleg_offen = self._beleg_offen_liste()
+        zeilen = [self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent)
                   for d in self._zeilen_recherche()]
         for d in zeilen:
             d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
@@ -204,6 +205,24 @@ class Speicher:
             return {}
         with open(pfad, encoding="utf-8-sig", newline="") as f:
             return {r["nr"].strip(): r["grund"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    def _beleg_offen_liste(self) -> dict:
+        """lauf/beleg_offen.csv (nr;offene_ebenen): Werte, die der Beleg-Leser nicht zeilenweise belegen konnte (Regel 07.11.2026: 'ok' nur mit vollständigem Beleg)."""
+        pfad = self.ordner.parent / "lauf" / "beleg_offen.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["nr"].strip(): r["offene_ebenen"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    @staticmethod
+    def _beleg_offen(d: dict, offen: dict) -> dict:
+        grund = offen.get(str(d.get("nr")))
+        if not grund or d.get("status") != "ok":
+            return d
+        d = dict(d)
+        d["status"] = "pruefen"
+        d["hinweis"] = "Nicht zeilenweise belegt (" + grund[:120] + ")" + ("; " + d["hinweis"] if d.get("hinweis") else "")
+        return d
 
     @staticmethod
     def _gesperrt(d: dict, sperre: dict) -> dict:
@@ -282,7 +301,7 @@ class Speicher:
         if not m["geprueft"]:                 # eingetragene Werte gelten erst als ok, wenn sie gegen das Dokument geprüft sind
             grund.append("noch nicht gegen das Dokument geprüft")
         d["status"] = "ok" if not grund else "pruefen"
-        d["hinweis"] = "Werte aus Liste des Nutzers" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
+        d["hinweis"] = "Werte aus Liste vom 04.11.2026 (Herkunft ungeklärt)" + (f" ({m['hinweis']})" if m["hinweis"] else "") + (("; Prüfung: " + "; ".join(grund)) if grund else "")
         return d
 
     def _zeilen_recherche(self) -> list[dict]:

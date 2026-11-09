@@ -1,29 +1,34 @@
 ﻿nr;ebene;grund
 2;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-12;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 13;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
-50;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
+26;slp;"Die SLP-Werte 7,29 ct / 75,00 € stammten aus der Datei, die zu badenovaNETZE gehört; im Preisblatt von Energienetze Mittelrhein steht kein SLP-Preis"
 52;hsms;Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument
+57;ns;"Das Preisblatt weist keine Niederspannung aus (tiefste Ebene ist Umspannung MS/NS); die Werte waren die MS/NS-Zeile"
 74;ns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
-87;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 126;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 128;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
+137;hsms;Werte waren die Zeile Umspannung (MS/NS) doppelt zugeordnet
 189;msns;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
+191;hsms;Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt
 194;hsms;Werte im Dokument nicht belegt (von Hand am Text geprüft)
+199;slp;"Die SLP-Werte waren der Niederspannungs-Arbeitspreis (7,48) und ein Leistungspreis aus der Reservetabelle (127,08); das Dokument weist keinen SLP-Preis aus (Industriehafen)"
+206;hsms;"Die Werte 9,27/1,85/40,83/0,59 stehen im Dokument nicht; das Preisblatt weist keine Umspannung HS/MS aus"
+227;ms;"Das Preisblatt weist keine Mittelspannung aus (nur Umspannung MS/NS und Niederspannung); frühere Werte waren die MS/NS-Zeile doppelt"
+235;msns;"Das Preisblatt führt eine Zeile 'Umspannung HS/MS' zwischen Mittel- und Niederspannung; ob HS/MS oder MS/NS gemeint ist, bleibt unklar (Beschriftung widerspricht der Reihenfolge)"
 262;ms;Im Jahresleistungspreissystem des Dokuments gibt es keine Mittelspannung (nur Monatssystem): gelesene Werte waren Müll
-370;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
+276;hsms;"Das Preisblatt weist HS/MS nur mit Strich aus; die Werte waren die Mittelspannungszeile"
+362;msns;"Preisblatt nennt nur HS, HS/MS und MS; gelesene Werte waren die HS/MS-Zeile"
 370;msns;Werte im Dokument nicht belegt (von Hand am Text geprüft)
 424;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 435;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 435;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-480;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 508;ms;Werte waren NS-Preise (32,14 / 186,50), im Jahresleistungspreissystem keine MS-Preise im Dokument
 556;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-586;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-586;msns;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 601;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 648;hsms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
 648;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-650;ms;"Müllwerte: ganze Zahlen, 365/1095 oder 2,50 (aus 2.500 h/a) als Preis gelesen; keine passende Dokumentzeile"
 665;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
-733;ms;"Müllwerte: ganze Zahlen oder 365/1095 (Tage oder Zeilennummern als Preise gelesen); keine passende Dokumentzeile"
+692;hsms;Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt
+720;hsms;Werte waren identisch mit MS/NS, Zuordnung nicht belegt
+783;hsms;Werte waren identisch mit MS/NS, Zuordnung nicht belegt
+819;msns;"Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile"

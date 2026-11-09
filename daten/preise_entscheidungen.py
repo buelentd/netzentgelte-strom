@@ -154,9 +154,32 @@ ENTFERNEN = {
     ("52", "hsms"): "Werte sind SLP-Preise (98,00 / 5,69), keine HS/MS-Ebene im Dokument",
     ("194", "hsms"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
     ("370", "msns"): "Werte im Dokument nicht belegt (von Hand am Text geprüft)",
+    ("235", "msns"): "Das Preisblatt führt eine Zeile 'Umspannung HS/MS' zwischen Mittel- und Niederspannung; ob HS/MS oder MS/NS gemeint ist, bleibt unklar (Beschriftung widerspricht der Reihenfolge)",
+    ("227", "ms"): "Das Preisblatt weist keine Mittelspannung aus (nur Umspannung MS/NS und Niederspannung); frühere Werte waren die MS/NS-Zeile doppelt",
+    ("137", "hsms"): "Werte waren die Zeile Umspannung (MS/NS) doppelt zugeordnet",
+    ("276", "hsms"): "Das Preisblatt weist HS/MS nur mit Strich aus; die Werte waren die Mittelspannungszeile",
+    ("692", "hsms"): "Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt",
+    ("720", "hsms"): "Werte waren identisch mit MS/NS, Zuordnung nicht belegt",
+    ("783", "hsms"): "Werte waren identisch mit MS/NS, Zuordnung nicht belegt",
+    ("191", "hsms"): "Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt",
+    ("57", "ns"): "Das Preisblatt weist keine Niederspannung aus (tiefste Ebene ist Umspannung MS/NS); die Werte waren die MS/NS-Zeile",
+    ("26", "slp"): "Die SLP-Werte 7,29 ct / 75,00 € stammten aus der Datei, die zu badenovaNETZE gehört; im Preisblatt von Energienetze Mittelrhein steht kein SLP-Preis",
+    ("199", "slp"): "Die SLP-Werte waren der Niederspannungs-Arbeitspreis (7,48) und ein Leistungspreis aus der Reservetabelle (127,08); das Dokument weist keinen SLP-Preis aus (Industriehafen)",
+    ("206", "hsms"): "Die Werte 9,27/1,85/40,83/0,59 stehen im Dokument nicht; das Preisblatt weist keine Umspannung HS/MS aus",
+    ("819", "msns"): "Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile",
+    ("362", "msns"): "Preisblatt nennt nur HS, HS/MS und MS; gelesene Werte waren die HS/MS-Zeile",
 }
 F = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h_eur_kw_jahr", "ap_ab_2500h_ct_kwh")
 fmt = lambda v: f"{v:.2f}".replace(".", ",")
+
+from daten.entscheidungen_runde2 import RUNDE2
+KORRIGIEREN.update(RUNDE2)
+from daten.entscheidungen_beleg import BELEG
+for _k, _v in BELEG.items():
+    if _k not in KORRIGIEREN:
+        KORRIGIEREN[_k] = _v
+        NOTIZ[_k] = "vom Beleg-Leser gefunden, durch Nachbarebene derselben Tabelle bestätigt"
+
 
 def main():
     tab = {r["nr"]: r for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
@@ -176,7 +199,7 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "von Hand am Dokument geprüft und korrigiert")
+        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "durch Claude am Dokumenttext geprüft und eingetragen (Parser hatte den Wert nicht richtig gelesen)")
         if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")
@@ -187,6 +210,10 @@ def main():
             for k in F:
                 if f"{eb}_{k}" in I:
                     r[I[f"{eb}_{k}"]] = ""
+            if eb == "slp":
+                for sp in ("slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"):
+                    if sp in I:
+                        r[I[sp]] = ""
     out = io.StringIO(); w = csv.writer(out, delimiter=";", lineterminator=nl); w.writerows(rows)
     open(p, "w", encoding="utf-8", newline="").write(("﻿" if bom else "") + out.getvalue())
     # Entfernen: lauf/werte_entfernt.csv ergänzen

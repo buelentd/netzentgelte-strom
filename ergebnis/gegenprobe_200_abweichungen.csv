@@ -1,0 +1,76 @@
+﻿nr;netzbetreiber;status;feld;kollege;unser_wert;bemerkung_kollege
+65;BEW Netze GmbH;ok;slp_ap_ct_kwh;8,45;6,34;"ungeprüft (Lesetext Jina); Monats-AP=Jah"
+172;energis-Netzgesellschaft mbH;ok;ms_lp_unter;8,02;6,64;
+172;energis-Netzgesellschaft mbH;ok;ms_ap_unter;7,37;6,03;
+172;energis-Netzgesellschaft mbH;ok;ms_lp_ab;176,02;151,89;
+172;energis-Netzgesellschaft mbH;ok;msns_lp_unter;6,64;8,02;
+172;energis-Netzgesellschaft mbH;ok;msns_ap_unter;6,03;7,37;
+172;energis-Netzgesellschaft mbH;ok;msns_lp_ab;151,89;176,02;
+310;MEGA Monheimer Elektrizitäts;ok;slp_ap_ct_kwh;10,58;10,67;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ms_lp_unter;21,08;19,45;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ms_ap_unter;4,89;4,86;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ms_lp_ab;116,45;119,66;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ms_ap_ab;1,08;0,85;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;msns_lp_unter;35,74;33,27;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;msns_ap_unter;5,07;5,05;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;msns_lp_ab;108,32;112,34;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;msns_ap_ab;2,16;1,88;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ns_lp_unter;28,70;32,95;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ns_ap_unter;7,39;6,80;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ns_lp_ab;163,88;158,60;quelle_url fuehrt auf vorlaeufiges Preis
+310;MEGA Monheimer Elektrizitäts;ok;ns_ap_ab;1,98;1,77;quelle_url fuehrt auf vorlaeufiges Preis
+401;Stadtwerke Bad Reichenhall K;ok;slp_grundpreis_eur_jahr;87,67;87,60;"Zeichensatzfehler im PDF (M=7); Werte en"
+401;Stadtwerke Bad Reichenhall K;ok;ms_ap_ab;7,64;0,64;"Zeichensatzfehler im PDF (M=7); Werte en"
+417;Stadtwerke Bayreuth Energie ;ok;slp_grundpreis_eur_jahr;47,00;42,00;
+418;Stadtwerke Bebra GmbH;ok;ns_lp_unter;49,80;49,83;
+420;Stadtwerke Bernburg GmbH;ok;slp_ap_ct_kwh;4,03;5,48;
+421;Stadtwerke Bexbach GmbH;ok;ms_lp_unter;14,10;16,78;
+421;Stadtwerke Bexbach GmbH;ok;ms_ap_unter;9,66;11,50;
+421;Stadtwerke Bexbach GmbH;ok;msns_lp_unter;17,95;21,36;
+421;Stadtwerke Bexbach GmbH;ok;msns_ap_unter;10,64;12,66;
+421;Stadtwerke Bexbach GmbH;ok;ns_lp_unter;25,15;29,93;
+421;Stadtwerke Bexbach GmbH;ok;ns_ap_unter;11,80;14,04;
+433;Stadtwerke Buchen GmbH ＆ Co ;ok;ns_lp_unter;18,06;16,25;Werte über Jina-Lesetext (XLSX-Preisblat
+433;Stadtwerke Buchen GmbH ＆ Co ;ok;ns_ap_unter;9,38;8,44;Werte über Jina-Lesetext (XLSX-Preisblat
+459;Stadtwerke Eckernförde GmbH;ok;ms_lp_unter;31,91;27,61;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ms_ap_unter;7,89;7,13;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ms_ap_ab;1,44;1,12;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;msns_lp_unter;36,54;31,91;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;msns_ap_unter;8,44;7,89;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;msns_lp_ab;200,35;193,17;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;msns_ap_ab;1,88;1,44;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ns_lp_unter;27,61;36,54;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ns_ap_unter;7,13;8,44;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ns_lp_ab;193,17;200,35;Zuordnung abgeleitet (Spaltenreihenfolge
+459;Stadtwerke Eckernförde GmbH;ok;ns_ap_ab;1,12;1,88;Zuordnung abgeleitet (Spaltenreihenfolge
+506;Stadtwerke Haiger;ok;msns_lp_unter;10,75;6,47;Zuordnung abgeleitet (Spaltenreihenfolge
+506;Stadtwerke Haiger;ok;msns_ap_unter;6,47;6,49;Zuordnung abgeleitet (Spaltenreihenfolge
+506;Stadtwerke Haiger;ok;ns_lp_unter;6,49;10,75;Zuordnung abgeleitet (Spaltenreihenfolge
+621;Stadtwerke Radolfzell GmbH;ok;ms_lp_unter;33,32;17,17;Spaltenzuordnung über Straßenbeleuchtung
+621;Stadtwerke Radolfzell GmbH;ok;ms_ap_unter;0,93;8,24;Spaltenzuordnung über Straßenbeleuchtung
+621;Stadtwerke Radolfzell GmbH;ok;msns_lp_unter;35,75;27,32;Spaltenzuordnung über Straßenbeleuchtung
+621;Stadtwerke Radolfzell GmbH;ok;msns_ap_unter;1,31;8,80;Spaltenzuordnung über Straßenbeleuchtung
+621;Stadtwerke Radolfzell GmbH;ok;ns_lp_unter;37,65;33,18;Spaltenzuordnung über Straßenbeleuchtung
+621;Stadtwerke Radolfzell GmbH;ok;ns_ap_unter;1,88;9,59;Spaltenzuordnung über Straßenbeleuchtung
+626;Stadtwerke Rendsburg GmbH;ok;ms_lp_unter;36,42;33,92;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;ms_ap_unter;8,70;6,99;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;ms_lp_ab;191,65;156,50;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;msns_lp_unter;41,14;36,42;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;msns_lp_ab;197,46;191,65;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;ns_lp_unter;33,92;41,14;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;ns_ap_unter;6,99;8,70;vorläufig lt. Quellseite, kein Stand-Dat
+626;Stadtwerke Rendsburg GmbH;ok;ns_lp_ab;156,50;197,46;vorläufig lt. Quellseite, kein Stand-Dat
+631;Stadtwerke Rostock Netzgesel;ok;slp_ap_ct_kwh;4,81;4,87;"Zeichensatz dekodiert (0=M,1=T,k=N); Mod"
+631;Stadtwerke Rostock Netzgesel;ok;ms_ap_unter;4,14;4,74;"Zeichensatz dekodiert (0=M,1=T,k=N); Mod"
+675;Stadtwerke Südholstein GmbH;ok;slp_grundpreis_eur_jahr;0,00;11,85;SLP-Grundpreis im Preisblatt mit 0,00 €/
+730;Stadtwerke Wittenberge GmbH;ok;ms_lp_unter;13,32;8,62;"Monats-AP=Jahres-AP verifiziert; LP unte"
+730;Stadtwerke Wittenberge GmbH;ok;ms_ap_unter;8,62;4,83;"Monats-AP=Jahres-AP verifiziert; LP unte"
+730;Stadtwerke Wittenberge GmbH;ok;msns_lp_unter;4,83;13,32;"Monats-AP=Jahres-AP verifiziert; LP unte"
+781;SWP Stadtwerke Pforzheim Gmb;ok;slp_grundpreis_eur_jahr;80,00;2,52;"vorläufig; Grundpreis über ToUnicode-CMa"
+805;Vereinigte Stadtwerke Netz G;ok;slp_ap_ct_kwh;8,15;3,26;Modul-1-Pauschale 128,35 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;ms_lp_ab;75,92;75,89;Modul-1-Pauschale 130,30 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;msns_lp_unter;17,47;17,45;Modul-1-Pauschale 130,30 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;msns_lp_ab;106,96;106,88;Modul-1-Pauschale 130,30 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;ns_lp_unter;22,96;22,93;Modul-1-Pauschale 130,30 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;ns_ap_unter;7,87;7,86;Modul-1-Pauschale 130,30 EUR verifiziert
+811;Versorgungsbetriebe Hoyerswe;ok;ns_lp_ab;176,64;176,42;Modul-1-Pauschale 130,30 EUR verifiziert

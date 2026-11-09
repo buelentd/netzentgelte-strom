@@ -34,6 +34,11 @@ textarea{min-height:70px;resize:vertical}
 input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--akzent);outline-offset:1px}
 .haken{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--leise);margin-top:4px}
 .klein{font-size:.82rem;color:var(--leise)}
+.tipp{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:6px;border-radius:50%;border:1px solid var(--linie);background:var(--feld);color:var(--leise);font-size:.72rem;font-weight:700;cursor:help;padding:0;vertical-align:middle;line-height:1}
+.tipp:hover,.tipp:focus-visible{color:var(--text);border-color:var(--akzent)}
+.tipptext{display:none;margin:6px 0 8px;padding:8px 10px;border:1px solid var(--linie);border-radius:8px;background:var(--feld);color:var(--text);font-size:.84rem;font-weight:400;line-height:1.4}
+.tipptext.offen{display:block}
+.tipptext .beleg{display:block;margin-top:4px;color:var(--leise)}
 .guete{display:grid;gap:6px}
 .balken{height:8px;border-radius:4px;background:var(--feld);overflow:hidden}
 .balken>i{display:block;height:100%;background:var(--akzent);width:0;transition:width .3s}
@@ -85,6 +90,7 @@ a{color:var(--akzent)}
 <div class="seite">
   <header class="kopf">
     <span class="marke">Testseite, nicht conplot.de</span>
+    <div class="klein" style="background:#fff3cd;color:#664d03;border:1px solid #e0c36a;border-radius:7px;padding:8px 10px;margin:8px 0;line-height:1.35"><b>Werte in Prüfung (Stand 07.11.2026).</b> Die Netzentgelte stammen aus den Preisblättern der Netzbetreiber, sind aber noch nicht vollständig zeilenweise gegen die Dokumente geprüft. Bei einzelnen Netzbetreibern können Ebenen vertauscht oder falsch sein. Ergebnisse sind eine Modellrechnung mit sichtbaren Annahmen, kein Angebot und keine Beratung.</div>
     <div class="beispiele"><span class="klein">Beispiel laden:</span>
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
       <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
@@ -218,8 +224,16 @@ a{color:var(--akzent)}
       <details class="annahmen">
         <summary>Annahmen (änderbar)</summary>
         <div class="zeile">
-          <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh)</label>
-            <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern"></div>
+          <div><label class="titel" for="a-niveau">Börsenniveau für den Strompreis</label>
+            <select id="a-niveau">
+              <option value="jahr">Jahresmittel der letzten 365 Tage (Day-Ahead)</option>
+              <option value="termin">Terminmarkt 2027: 14,8 ct/kWh (EEX Baseload, Stand 05.11.2026, nur für das erste Jahr)</option>
+              <option value="d30">Mittel der letzten 30 Tage (Day-Ahead)</option>
+            </select>
+            <span class="klein">Der Festpreis eines Lieferanten orientiert sich am Terminmarkt, der dynamische Tarif am aktuellen Börsenpreis. Gilt nur, wenn unten kein eigener Strompreis eingetragen ist.</span></div>
+          <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh, überschreibt Börsenniveau und Aufschlag)</label>
+            <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern">
+            <span class="klein">Orientierung für Gewerbe-Festpreise: etwa 16 bis 20 ct ohne Netzentgelt (Quelle: Vergleichsportal Berlin 06.11.2026 und Terminmarkt, kein Angebot). Der Preis laut Ihrer Rechnung ist genauer.</span></div>
           <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung; über 100 kWp Direktvermarktung: Marktwert Solar 2025 4,51 ct/kWh plus Marktprämie bis 5,84 ct)</label>
             <input type="number" id="a-einsp" min="0" step="0.1" placeholder="automatisch"></div>
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh: Vertrieb, Marge, Absicherung. Haushalte: etwa 3,5 bis 4 (belegt). Gewerbe: etwa 1 bis 3,5, Richtwert ohne Quelle. Bitte aus der eigenen Rechnung eintragen)</label>
@@ -574,7 +588,11 @@ function verschiebung(last, tage, Emax, P, abgaben) {
 
 function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, ctx) {
   const rVor = rlm(nb.ns, kwh, kw, nb.le);
-  const boersenMittel = D.boerse.reduce((a, c) => a + c, 0) / D.boerse.length;
+  const mittel = a => a.reduce((x, c) => x + c, 0) / a.length;
+  const TERMIN_2027 = 14.82;                                   // EEX Baseload 2027, 148,18 €/MWh (Angabe aus der Recherche, nicht geprüft)
+  const niveau = $("a-niveau") ? $("a-niveau").value : "jahr";
+  const boersenMittel = niveau === "jahr" ? mittel(D.boerse) : niveau === "d30" ? mittel(D.boerse.slice(-720)) : TERMIN_2027;
+  const niveauName = niveau === "jahr" ? "Jahresmittel" : niveau === "d30" ? "Mittel 30 Tage" : "Terminmarkt 2027";
   const strom = num("a-strom") || (boersenMittel + num("a-aufschlag") + num("a-steuern"));
   const steuern = num("a-steuern"), arbeitstage = 52 * tage;
   const tarif = $("tarif").value, dynamisch = tarif === "dynamisch";
@@ -707,7 +725,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   let chart = `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
   if (!R.cap) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht.</p>`;
   else {
-    chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (Börsenmittel " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
+    chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
     <p class="herkunft">Barwert über 12 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
     if (!eingabe && !beste.cap) chart += `<p class="herkunft"><b>Bei diesen Angaben lohnt sich kein Speicher.</b> Der Barwert ist bei allen Größen negativ. Prüfen Sie atypische Netznutzung und Solar.</p>`;
@@ -783,4 +801,53 @@ $("form").addEventListener("input", e => {
 $("form").addEventListener("change", e => { if (e.target.name === "nb") { gewaehlt = +e.target.value; rechnen(); } });
 $("pv-feld").hidden = true;
 nbAnzeigen(); rechnen();
+
+/* Tooltips: Text in Klammern der Beschriftung wandert in ein ⓘ-Popup; dazu feste Erklärungen mit Beleg-Status */
+(function(){
+  const FEST={
+    branche:["Die Branche liefert Lastprofil und typische Benutzungsstunden, wenn Sie keine Spitzenlast angeben.","Beleg: Benutzungsstunden je Branche sind Richtwerte (Annahme), keine Messung."],
+    schicht:["Wie viele Schichten der Betrieb fährt. Geht in die Schätzung der Benutzungsstunden ein.","Beleg: Annahme, ersetzt keine Messung."],
+    tage:["Mehr Betriebstage verteilen den Verbrauch auf mehr Stunden und senken die geschätzte Spitzenlast.","Beleg: Annahme, ersetzt keine Messung."],
+    anlagen:["Kurz und kräftig laufende Anlagen (Öfen, Kältemaschinen, Ladepunkte) erzeugen die Spitze. Freitext, hilft bei der Einschätzung der Spitzenzeit.","Beleg: Eingabe von Ihnen, wird nicht geprüft."],
+    ladekw:["Ladeleistung, die gleichzeitig am Netz hängt. Sie zählt nur, wenn „Ladeinfrastruktur vorhanden“ angehakt ist.","Beleg: Eingabe von Ihnen."],
+    ziel:["Spitzenlast, auf die ein Speicher kappen soll. Leer lassen, dann wählt der Rechner die für die Speichergröße beste Zielspitze.","Beleg: Ersparnis ergibt sich aus dem Leistungspreis Ihres Netzbetreibers (Preisblatt 2026)."],
+    'speicher-kwh':["Nutzbare Kapazität des Speichers in kWh. Bestimmt, wie weit sich die Spitze kappen lässt.","Beleg: Eingabe von Ihnen. Speicherpreis siehe Feld Speicherpreis (Annahme)."],
+    netzanschluss:["Anschlussleistung, die für den Handel (Laden und Entladen am Markt) genutzt werden darf.","Beleg: Eingabe von Ihnen."],
+    pvkwp:["Leistung der Solaranlage in kWp. Leer lassen, wenn noch keine Anlage steht; dann wird sie aus der Dachfläche geschätzt.","Beleg: Eingabe von Ihnen."],
+    dach:["Nutzbare Dachfläche, aus der eine mögliche Anlagengröße abgeleitet wird. Die Adresssuche nutzt Beispieldaten, keine echte Dachprüfung.","Beleg: Beispieldaten der Google Solar API, nicht gemessen."],
+    'a-zins':["Zinssatz, mit dem künftige Einsparungen auf heute abgezinst werden (Barwert).","Beleg: Annahme. Höherer Zinssatz macht Investitionen weniger attraktiv."],
+    profilwahl:["Nur für die Bäckerei: Standardprofil oder das geschätzte Testprofil mit früher Spitze am Morgen.","Beleg: Testprofil ist geschätzt, nicht gemessen."],
+    'a-vermarkter':["Anteil, den ein Vermarkter an den Erlösen aus Regelenergie behält.","Beleg: Annahme, kein Vertrag oder Preisblatt belegt."],
+    'a-verf':["Anteil der Zeit, in dem der Speicher für Regelenergie verfügbar ist (0 = nie, 1 = immer).","Beleg: Annahme."],
+    'kwh-sicher':["Haken setzen, wenn der Wert direkt aus Ihrer Stromrechnung stammt. Dann bewertet der Rechner die Eingabe als sicher.","Beleg: Ihre Angabe, wird nicht geprüft."],
+    'kw-sicher':["Haken setzen, wenn die Spitzenlast auf Ihrer Netzrechnung steht (Messung). Sonst ist sie eine Schätzung.","Beleg: Ihre Angabe, wird nicht geprüft."],
+    pv:["Es steht bereits eine PV-Anlage. Ihre Erzeugung wird in der Rechnung berücksichtigt.","Beleg: Eingabe von Ihnen."],
+    laden:["Es gibt Ladepunkte, die gleichzeitig Spitzenlast erzeugen. Aktiviert das Feld für die Ladeleistung.","Beleg: Eingabe von Ihnen."],
+    rueckspeisen:["Wenn angehakt, entfallen für ins Netz zurückgespeisten Strom Arbeitspreis und Abgaben im Modell. Für zwischengespeicherten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten.","Beleg: Rechtlich im Einzelfall prüfen, keine Rechtsberatung."],
+    plz:["Aus der Postleitzahl bestimmen wir den zuständigen Netzbetreiber. Liegen mehrere Netzbetreiber in einer PLZ, wählen Sie unten den richtigen.","Beleg: Netzbetreiber und Preisblätter 2026, je Wert am Dokument geprüft (Stand siehe Hinweis oben)."],
+    kwh:["Jahresverbrauch laut Stromrechnung. Ab 100.000 kWh gilt die Messung mit Leistung (RLM), darunter das Standardlastprofil.","Beleg: Grenze 100.000 kWh laut Stromnetzzugangsverordnung."],
+    kw:["Höchste gemessene Viertelstunden-Leistung im Jahr. Sie steht auf der Netzrechnung. Ohne Angabe schätzen wir sie aus der Branche.","Beleg: Schätzung ist eine Annahme, keine Messung."],
+    ebene:["Spannungsebene Ihres Anschlusses: Niederspannung (Normalfall), Umspannung MS/NS oder Mittelspannung.","Beleg: Preise je Ebene aus dem Preisblatt Ihres Netzbetreibers."],
+    tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich.","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen. Kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026)."],
+    'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel, letzte 30 Tage oder Terminmarkt.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
+  };
+  document.querySelectorAll("label.titel[for], label.haken").forEach(l=>{
+    const id=l.getAttribute("for")||(l.querySelector("input")||{}).id; if(!id) return; const roh=l.textContent.trim();
+    const m=roh.match(/^(.*?)\s*\((.+)\)\s*$/s);
+    const teile=[]; let kurz=null;
+    if(m && m[2].length>25){ kurz=m[1]; teile.push(m[2]); }
+    const f=FEST[id]; if(f){ teile.unshift(f[0]); teile.push(f[1]); }
+    if(!teile.length) return;
+    if(kurz){ const pf=l.querySelector(".pflicht"); l.textContent=kurz+" "; if(pf) l.appendChild(pf); }
+    const b=document.createElement("button"); b.type="button"; b.className="tipp"; b.textContent="i";
+    b.setAttribute("aria-label","Erklärung und Quelle zu "+(kurz||roh.replace(/\s*\*$/,"")));
+    const t=document.createElement("div"); t.className="tipptext"; t.id="tt-"+id; t.setAttribute("role","note");
+    teile.forEach((x,i)=>{ const e=document.createElement(i?"span":"div"); if(i) e.className="beleg"; e.textContent=x; t.appendChild(e); });
+    b.setAttribute("aria-controls",t.id); b.setAttribute("aria-expanded","false");
+    const auf=()=>{t.classList.add("offen");b.setAttribute("aria-expanded","true");}, zu=()=>{t.classList.remove("offen");b.setAttribute("aria-expanded","false");};
+    b.addEventListener("click",()=>t.classList.contains("offen")?zu():auf());
+    b.addEventListener("mouseenter",auf); b.addEventListener("mouseleave",zu);
+    l.appendChild(b); l.insertAdjacentElement("afterend",t);
+  });
+})();
 </script>

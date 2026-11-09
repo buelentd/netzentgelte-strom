@@ -71,7 +71,7 @@ SNB910066952147;69;432;Brücken-Center Ansbach GmbH;bc-ansbach.de;SNB91006695214
 SNB928184287881;70;15;BTT Bauteam Tretzel GmbH;btt-netz.de;SNB928184287881_0070.pdf;SNB928184287881_0070_hlzf.pdf
 SNB972511582064;71;433;Butzbacher Netzbetrieb GmbH ＆ Co. KG;bng-butzbach.de;SNB972511582064_0071.pdf;SNB972511582064_0071_hlzf.pdf
 SNB956411704207;72;;C. Ensinger GmbH ＆ Co. KG;c-ensinger.de;SNB956411704207_0072.pdf;SNB956411704207_0072_hlzf.pdf
-SNB903166209006;73;;CCF Cassella Chemiepark Frankfurt GmbH;cassella-standort.de;SNB903166209006_0073.pdf;SNB903166209006_0073_hlzf.pdf
+SNB903166209006;73;847;CCF Cassella Chemiepark Frankfurt GmbH;cassella-standort.de;SNB903166209006_0073.pdf;SNB903166209006_0073_hlzf.pdf
 SNB975268997129;74;434;Covestro Brunsbüttel Energie GmbH;covestro.com;SNB975268997129_0074.pdf;SNB975268997129_0074_hlzf.pdf
 SNB956923775696;75;;CPM Netz GmbH;cpm-netz.evonik.de;SNB956923775696_0075.pdf;SNB956923775696_0075_hlzf.pdf
 SNB916672506194;76;17;Cramer - Mühle GmbH ＆ Co. KG;cramermuehle.de;SNB916672506194_0076.pdf;SNB916672506194_0076_hlzf.pdf
@@ -92,7 +92,7 @@ SNB979557818782;90;;EGT Energie GmbH;egt-energie.de;SNB979557818782_0090.pdf;SNB
 SNB928479274794;91;31;EHINGER ENERGIE GmbH ＆ Co. KG;ehinger-energie.de;SNB928479274794_0091.pdf;SNB928479274794_0091_hlzf.pdf
 SNB945768616967;92;440;Eichsfelder Energie- und Wasserversorgungsgesellschaft mbH;ewb-duderstadt.de;SNB945768616967_0092.pdf;SNB945768616967_0092_hlzf.pdf
 SNB973074326355;93;32;ELE Verteilnetz GmbH;evng.de;SNB973074326355_0093.pdf;SNB973074326355_0093_hlzf.pdf
-SNB913085272050;94;778;Elektra - Genossenschaft Pinzberg eG;elektra-pinzberg.de;SNB913085272050_0094.pdf;SNB913085272050_0094_hlzf.pdf
+SNB913085272050;94;778,834;Elektra - Genossenschaft Pinzberg eG;elektra-pinzberg.de;SNB913085272050_0094.pdf;SNB913085272050_0094_hlzf.pdf
 SNB983973032059;95;33;Elektra-Genossenschaft Effeltrich eG;elektra-effeltrich.de;SNB983973032059_0095.pdf;SNB983973032059_0095_hlzf.pdf
 SNB985979481190;96;441;Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG;ewg-vagen.de;SNB985979481190_0096.pdf;SNB985979481190_0096_hlzf.pdf
 SNB986403410816;97;;Elektrizitäts-Genossenschaft Rettenberg eG;eg-rettenberg.de;SNB986403410816_0097.pdf;SNB986403410816_0097_hlzf.pdf
@@ -100,7 +100,7 @@ SNB946086138155;98;35;Elektrizitäts-Genossenschaft Röthenbach eG;eg-roethenbac
 SNB950882682972;99;36;Elektrizitäts-Genossenschaft Schonstett eG;eg-schonstett.de;SNB950882682972_0099.pdf;SNB950882682972_0099_hlzf.pdf
 SNB935303204162;100;37;Elektrizitäts-Genossenschaft Tacherting-Feichten eG;egtf.de;SNB935303204162_0100.pdf;SNB935303204162_0100_hlzf.pdf
 SNB930558787330;101;442;Elektrizitäts-Versorgungs-Genossenschaft Perlesreut eG;evg-perlesreut.de;SNB930558787330_0101.pdf;SNB930558787330_0101_hlzf.pdf
-SNB916008519201;102;779;Elektrizitäts-Werk Ottersberg;ewerk-ottersberg.de;SNB916008519201_0102.pdf;SNB916008519201_0102_hlzf.pdf
+SNB916008519201;102;779,832;Elektrizitäts-Werk Ottersberg;ewerk-ottersberg.de;SNB916008519201_0102.pdf;SNB916008519201_0102_hlzf.pdf
 SNB984995121813;103;443;Elektrizitätsgenossenschaft e.G. Hasbergen;eg-hasbergen.de;SNB984995121813_0103.pdf;SNB984995121813_0103_hlzf.pdf
 SNB981887803796;104;718;Elektrizitätsgenossenschaft Engelsberg eG;eg-engelsberg.de;SNB981887803796_0104.pdf;SNB981887803796_0104_hlzf.pdf
 SNB945322307522;105;38;Elektrizitätsgenossenschaft Karlstein eG;eg-karlstein.de;SNB945322307522_0105.pdf;SNB945322307522_0105_hlzf.pdf
@@ -115,7 +115,7 @@ SNB921631931771;113;43;Elektrizitätsnetze Allgäu GmbH;e-netzeallgaeu.de;SNB921
 SNB916027833432;114;446;Elektrizitätsvereinigung Böbing eG;ev-boebing.de;SNB916027833432_0114.pdf;SNB916027833432_0114_hlzf.pdf
 SNB987451707521;115;719;Elektrizitätswerk Bruchmühlbach-Miesau;bruchmuehlbach-miesau.de;SNB987451707521_0115.pdf;SNB987451707521_0115_hlzf.pdf
 SNB918689434309;116;44;Elektrizitätswerk Dahner Felsenland;werke-dahner-felsenland.de;SNB918689434309_0116.pdf;SNB918689434309_0116_hlzf.pdf
-SNB985099151188;117;;Elektrizitätswerk des Kantons Schaffhausen AG;eks.ch;SNB985099151188_0117.pdf;SNB985099151188_0117_hlzf.pdf
+SNB985099151188;117;833;Elektrizitätswerk des Kantons Schaffhausen AG;eks.ch;SNB985099151188_0117.pdf;SNB985099151188_0117_hlzf.pdf
 SNB916328839515;118;447;Elektrizitätswerk Dießen Stadler GmbH;ew-diessen.de;SNB916328839515_0118.pdf;SNB916328839515_0118_hlzf.pdf
 SNB965998184692;119;807;Elektrizitätswerk Goldbach-Hösbach GmbH ＆ Co. KG;ew-goldbach-hoesbach.de;SNB965998184692_0119.pdf;SNB965998184692_0119_hlzf.pdf
 SNB925558752303;120;448;Elektrizitätswerk Hindelang eG;ewhindelang.de;SNB925558752303_0120.pdf;SNB925558752303_0120_hlzf.pdf
@@ -155,7 +155,7 @@ SNB932549440224;153;;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;wp-fel
 SNB911521002599;154;62;EnergieSüdwest Netz GmbH;esw-netz.de;SNB911521002599_0154.pdf;SNB911521002599_0154_hlzf.pdf
 SNB913576376151;155;460;Energieversorgung Alzenau GmbH;eva-alzenau.de;SNB913576376151_0155.pdf;SNB913576376151_0155_hlzf.pdf
 SNB942173666990;156;461;Energieversorgung Beckum GmbH ＆ Co. KG;evb-beckum.de;SNB942173666990_0156.pdf;SNB942173666990_0156_hlzf.pdf
-SNB932388577952;157;809;Energieversorgung Dahlenburg-Bleckede AG;evdbag.de;SNB932388577952_0157.pdf;SNB932388577952_0157_hlzf.pdf
+SNB932388577952;157;809,835;Energieversorgung Dahlenburg-Bleckede AG;evdbag.de;SNB932388577952_0157.pdf;SNB932388577952_0157_hlzf.pdf
 SNB910995561328;158;63;Energieversorgung Filstal GmbH ＆ Co. KG;evf.de;SNB910995561328_0158.pdf;SNB910995561328_0158_hlzf.pdf
 SNB915186313908;159;64;Energieversorgung Guben GmbH;ev-guben.de;SNB915186313908_0159.pdf;SNB915186313908_0159_hlzf.pdf
 SNB974763887737;160;66;Energieversorgung Inselsberg GmbH;evi-energy.de;SNB974763887737_0160.pdf;SNB974763887737_0160_hlzf.pdf
@@ -229,12 +229,12 @@ SNB971174411018;227;102;Gemeindewerke Heikendorf AöR;gwh.sh;SNB971174411018_022
 SNB961322866920;228;487;Gemeindewerke Herxheim;gemeindewerke-herxheim.de;SNB961322866920_0228.pdf;SNB961322866920_0228_hlzf.pdf
 SNB924819944297;229;103;Gemeindewerke Holzkirchen GmbH;gemeindewerke-holzkirchen.de;SNB924819944297_0229.pdf;SNB924819944297_0229_hlzf.pdf
 SNB919708421706;230;104;Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH;stadtwerke-ramstein.de;SNB919708421706_0230.pdf;SNB919708421706_0230_hlzf.pdf
-SNB962006136537;231;812;Gemeindewerke Kahl Versorgungsgesellschaft mbH;gemeindewerke-kahl.de;SNB962006136537_0231.pdf;SNB962006136537_0231_hlzf.pdf
+SNB962006136537;231;812,840;Gemeindewerke Kahl Versorgungsgesellschaft mbH;gemeindewerke-kahl.de;SNB962006136537_0231.pdf;SNB962006136537_0231_hlzf.pdf
 SNB981193584808;232;105;Gemeindewerke Kiefersfelden;gemeindewerke-kiefersfelden.de;SNB981193584808_0232.pdf;SNB981193584808_0232_hlzf.pdf
 SNB969688824103;233;106;Gemeindewerke Kirkel GmbH;gwk-netz.de;SNB969688824103_0233.pdf;SNB969688824103_0233_hlzf.pdf
 SNB955706777742;234;107;Gemeindewerke Lam;gemeindewerke-lam.de;SNB955706777742_0234.pdf;SNB955706777742_0234_hlzf.pdf
 SNB994196581439;235;108;Gemeindewerke Langenpreising GmbH ＆ Co. KG;gemeindewerke-langenpreising.de;SNB994196581439_0235.pdf;SNB994196581439_0235_hlzf.pdf
-SNB972265030262;236;;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;gemeindewerke-muenchweiler.de;SNB972265030262_0236.pdf;SNB972265030262_0236_hlzf.pdf
+SNB972265030262;236;841;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;gemeindewerke-muenchweiler.de;SNB972265030262_0236.pdf;SNB972265030262_0236_hlzf.pdf
 SNB984571613121;237;109;Gemeindewerke Neuendettelsau;gw-neuendettelsau.de;SNB984571613121_0237.pdf;SNB984571613121_0237_hlzf.pdf
 SNB940436967099;238;813;Gemeindewerke Niefern-Öschelbronn;gwnoe.de;SNB940436967099_0238.pdf;SNB940436967099_0238_hlzf.pdf
 SNB981336194529;239;110;Gemeindewerke Nüdlingen;nuedlingen.de;SNB981336194529_0239.pdf;SNB981336194529_0239_hlzf.pdf
@@ -248,7 +248,7 @@ SNB944419421783;246;;Gemeindewerke Schwarzenbruck GmbH (GWS);feucht-gw.de;SNB944
 SNB916657570554;247;490;Gemeindewerke Steinhagen GmbH;gs-werke.de;SNB916657570554_0247.pdf;SNB916657570554_0247_hlzf.pdf
 SNB983792571722;248;113;Gemeindewerke Wadgassen GmbH;gemeindewerke-wadgassen.de;SNB983792571722_0248.pdf;SNB983792571722_0248_hlzf.pdf
 SNB976297675927;249;114;Gemeindewerke Waging a. See;gemeindewerke-waging.de;SNB976297675927_0249.pdf;SNB976297675927_0249_hlzf.pdf
-SNB966823215826;250;788;Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern;swk-kl.de;SNB966823215826_0250.pdf;SNB966823215826_0250_hlzf.pdf
+SNB966823215826;250;788,849;Gemeindewerke Weidenthal c/o Stadtwerke Kaiserslautern;swk-kl.de;SNB966823215826_0250.pdf;SNB966823215826_0250_hlzf.pdf
 SNB964137069203;251;491;Gemeindewerke Wendelstein KU;gemeindewerke-wendelstein.de;SNB964137069203_0251.pdf;SNB964137069203_0251_hlzf.pdf
 SNB945187645647;252;728;Gemeindewerke Wildeck;wildeck.de;SNB945187645647_0252.pdf;SNB945187645647_0252_hlzf.pdf
 SNB925878615876;253;115;Gemeindliche Werke Hengersberg;gw-hengersberg.de;SNB925878615876_0253.pdf;SNB925878615876_0253_hlzf.pdf
@@ -269,7 +269,7 @@ SNB944323025954;267;123;Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH
 SNB977374861035;268;124;Halberstadtwerke GmbH;halberstadtwerke.de;SNB977374861035_0268.pdf;SNB977374861035_0268_hlzf.pdf
 SNB985729975610;269;125;Hanau Netz GmbH;hanau-netz.de;SNB985729975610_0269.pdf;SNB985729975610_0269_hlzf.pdf
 SNB934355412402;270;127;Havelstrom Zehdenick GmbH;stadtwerke-zehdenick.de;SNB934355412402_0270.pdf;SNB934355412402_0270_hlzf.pdf
-SNB975462731697;271;;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;gebr-heinzelmann.de;SNB975462731697_0271.pdf;SNB975462731697_0271_hlzf.pdf
+SNB975462731697;271;838;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;gebr-heinzelmann.de;SNB975462731697_0271.pdf;SNB975462731697_0271_hlzf.pdf
 SNB924453035597;272;128;Hellenstein-Energie-Logistik GmbH;hellenstein-energie-logistik.de;SNB924453035597_0272.pdf;SNB924453035597_0272_hlzf.pdf
 SNB964592501355;273;129;Hertener Stadtwerke GmbH;hertener-stadtwerke.de;SNB964592501355_0273.pdf;SNB964592501355_0273_hlzf.pdf
 SNB930312838582;274;130;Herzo Werke GmbH;herzowerke.de;SNB930312838582_0274.pdf;SNB930312838582_0274_hlzf.pdf
@@ -287,7 +287,7 @@ SNB951760950909;285;132;Keep - Kommunale Eisenberger Energiepartner GmbH;keep-gm
 SNB964573708865;286;504;KEW Karwendel Energie und Wasser GmbH;kewgmbh.de;SNB964573708865_0286.pdf;SNB964573708865_0286_hlzf.pdf
 SNB943841101959;287;133;KEW Kommunale Energie- und Wasserversorgung AG;kew.de;SNB943841101959_0287.pdf;SNB943841101959_0287_hlzf.pdf
 SNB986580518855;288;505;KommEnergie GmbH;kommenergie.de;SNB986580518855_0288.pdf;SNB986580518855_0288_hlzf.pdf
-SNB972153058149;289;790;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ken-is.de;SNB972153058149_0289.pdf;SNB972153058149_0289_hlzf.pdf
+SNB972153058149;289;790,842;Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG;ken-is.de;SNB972153058149_0289.pdf;SNB972153058149_0289_hlzf.pdf
 SNB912218404412;290;506;Kommunale Energieversorgung GmbH Eisenhüttenstadt;kev-ehst.de;SNB912218404412_0290.pdf;SNB912218404412_0290_hlzf.pdf
 SNB985871274975;291;134;Kommunalunternehmen Gemeindewerke Peißenberg;gemeindewerke-peissenberg.de;SNB985871274975_0291.pdf;SNB985871274975_0291_hlzf.pdf
 SNB947553215997;292;135;Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach;gemeindewerke-stammbach.de;SNB947553215997_0292.pdf;SNB947553215997_0292_hlzf.pdf
@@ -310,7 +310,7 @@ SNB997826747014;308;;Markt Egloffstein;egloffstein.de;SNB997826747014_0308.pdf;S
 SNB932489723517;309;145;Markt Obernzell Elektrizitäts- versorgungsunternehmen;obernzell.de;SNB932489723517_0309.pdf;SNB932489723517_0309_hlzf.pdf
 SNB914731268120;310;513;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;mega-monheim.de;SNB914731268120_0310.pdf;SNB914731268120_0310_hlzf.pdf
 SNB914103081760;311;514;Meißener Stadtwerke GmbH;stadtwerke-meissen.de;SNB914103081760_0311.pdf;SNB914103081760_0311_hlzf.pdf
-SNB933391394338;312;;Merck Site Management GmbH;fluxum-gernsheim.com;SNB933391394338_0312.pdf;SNB933391394338_0312_hlzf.pdf
+SNB933391394338;312;837;Merck Site Management GmbH;fluxum-gernsheim.com;SNB933391394338_0312.pdf;SNB933391394338_0312_hlzf.pdf
 SNB906862380628;313;147;Mittelhessen Netz GmbH;mit-n.de;SNB906862380628_0313.pdf;SNB906862380628_0313_hlzf.pdf
 SNB970253419624;314;149;Müller - Mühle GmbH ＆ Co. KG;mueller-muehle.de;SNB970253419624_0314.pdf;SNB970253419624_0314_hlzf.pdf
 SNB943170046990;315;515;MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH;mve-eurokom.de;SNB943170046990_0315.pdf;SNB943170046990_0315_hlzf.pdf
@@ -350,7 +350,7 @@ SNB934071779865;348;174;OsthessenNetz GmbH;osthessennetz.de;SNB934071779865_0348
 SNB942224012479;349;;OUTLETCITY AG;outletcity.com;SNB942224012479_0349.pdf;SNB942224012479_0349_hlzf.pdf
 SNB965394941448;350;531;Outokumpu Stainless Nirosta GmbH;outokumpu.com;SNB965394941448_0350.pdf;SNB965394941448_0350_hlzf.pdf
 SNB969534177940;351;532;ovag Netz GmbH;ovag-netz.de;SNB969534177940_0351.pdf;SNB969534177940_0351_hlzf.pdf
-SNB988532040636;352;;PVU Energienetze GmbH;pvu-netze.de;SNB988532040636_0352.pdf;SNB988532040636_0352_hlzf.pdf
+SNB988532040636;352;843;PVU Energienetze GmbH;pvu-netze.de;SNB988532040636_0352.pdf;SNB988532040636_0352_hlzf.pdf
 SNB938413573104;353;175;QuartiersNetz Bayern GmbH;quartiersnetz-bayern.de;SNB938413573104_0353.pdf;SNB938413573104_0353_hlzf.pdf
 SNB942804093577;354;176;Queichtal Energie Offenbach Netz GmbH;qeo-netz.de;SNB942804093577_0354.pdf;SNB942804093577_0354_hlzf.pdf
 SNB966494112844;355;177;Raiffeisenbank Altmühl-Jura eG;stromversorgung-greding.de;SNB966494112844_0355.pdf;SNB966494112844_0355_hlzf.pdf
@@ -783,7 +783,7 @@ SNB929168402344;781;696;SWP Stadtwerke Pforzheim GmbH ＆ Co. KG;stadtwerke-pfor
 SNB981113965977;782;697;SWR Energie GmbH ＆ Co. KG;stadtwerke-roedental.de;SNB981113965977_0782.pdf;SNB981113965977_0782_hlzf.pdf
 SNB915638224585;783;698;SWS Netze GmbH;netze-stralsund.de;SNB915638224585_0783.pdf;SNB915638224585_0783_hlzf.pdf
 SNB969362778135;784;392;SWS Netze Solingen GmbH;netze-solingen.de;SNB969362778135_0784.pdf;SNB969362778135_0784_hlzf.pdf
-SNB966813503780;785;804;SWT Stadtwerke Trier Versorgungs-GmbH;swt.de;SNB966813503780_0785.pdf;SNB966813503780_0785_hlzf.pdf
+SNB966813503780;785;804,850;SWT Stadtwerke Trier Versorgungs-GmbH;swt.de;SNB966813503780_0785.pdf;SNB966813503780_0785_hlzf.pdf
 SNB950006175489;786;393;SWTE Netz GmbH ＆ Co. KG;swte-netz.de;SNB950006175489_0786.pdf;SNB950006175489_0786_hlzf.pdf
 SNB967812386411;787;;SWW Wunsiedel GmbH;s-w-w.com;SNB967812386411_0787.pdf;SNB967812386411_0787_hlzf.pdf
 SNB980986433484;788;395;Syna Hochspannungsnetz GmbH ＆ Co. KG;syna-hochspannung.de;SNB980986433484_0788.pdf;SNB980986433484_0788_hlzf.pdf
@@ -829,4 +829,4 @@ SNB979973883449;827;774;Westenthanner Energieversorgung GmbH;ew-westenthanner.de
 SNB914508596067;828;;WiDe Flex Bau + Service GmbH;wideflex.de;SNB914508596067_0828.pdf;SNB914508596067_0828_hlzf.pdf
 SNB919649671758;829;713;Wirtschaftsbetriebe der Stadt Norden GmbH;stadtwerke-norden.de;SNB919649671758_0829.pdf;SNB919649671758_0829_hlzf.pdf
 SNB948485211972;830;420;YNCORIS GmbH ＆ Co. KG;yncoris.com;SNB948485211972_0830.pdf;SNB948485211972_0830_hlzf.pdf
-SNB925823629552;831;;Zwickauer Energieversorgung GmbH;zev-energie.de;SNB925823629552_0831.pdf;SNB925823629552_0831_hlzf.pdf
+SNB925823629552;831;851;Zwickauer Energieversorgung GmbH;zev-energie.de;SNB925823629552_0831.pdf;SNB925823629552_0831_hlzf.pdf

@@ -37,7 +37,7 @@ for d in db.alle():
     if d["quelle_url"]:
         e["q"] = d["quelle_url"]
     nb.append(e)
-plz = {p: [list(x) for x in v] for p, v in db.plz().items()}
+plz = {p: [list(x) for x in v] for p, v in db.plz().items() if len(p) == 5 and p.isdigit()}    # ungültige Einträge aus VNBdigital (z. B. 7651NK) auslassen
 hlzf = {}
 for d in db.alle():
     h = d["hlzf"]

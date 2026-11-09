@@ -1,29 +1,15 @@
 ﻿nr;datei;ergebnis;bemerkung
-668;SNB910474681448_0668_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-565;SNB918070278383_0565_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-750;SNB924577059684_0750_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
-191;SNB924747450655_0191_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-126;SNB927892816017_0126_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+230;SNB919708421706_0230_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+325;SNB922055731633_0325_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 544;SNB928992067729_0544_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-135;SNB931431136771_0135_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-734;SNB935626894156_0734_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-123;SNB936480897581_0123_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-472;SNB940847187345_0472_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
-99;SNB950882682972_0099_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
-245;SNB959475630567_0245_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-286;SNB964573708865_0286_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-62;SNB965774651691_0062_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-702;SNB969058795651_0702_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
-2;SNB969473762610_0002_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-351;SNB969534177940_0351_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-42;SNB973742186519_0042_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-666;SNB975659838086_0666_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-377;SNB982726407335_0377_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
-672;SNB983384447602_0672_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
-237;SNB984571613121_0237_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;
-572;SNB984863778941_0572_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-240;SNB987153361809_0240_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
-110;SNB988606051575_0110_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+165;SNB935932937127_0165_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026
+681;SNB940718804685_0681_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+730;SNB941081544895_0730_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+549;SNB946090906887_0549_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+177;SNB951180867351_0177_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
+2;SNB969473762610_0002_hlzf.pdf;nicht gelesen: keine Hochlastzeitfenster im Dokument;
+640;SNB987617847795_0640_hlzf.pdf;gelesen, Prüfung offen;Jahr None
+451;SNB990562890006_0451_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 670;SNB900123507953_0670_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 128;SNB910882213224_0128_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 388;SNB911602541351_0388_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
@@ -63,6 +49,7 @@
 824;SNB930122681040_0824_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 101;SNB930558787330_0101_hlzf.pdf;nicht gelesen: kein Text (Scan?);alte Zeile bleibt
 372;SNB931823254809_0372_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
+377;SNB931930462517_0377_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 606;SNB932375556731_0606_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;alte Zeile bleibt
 678;SNB932509765411_0678_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
 655;SNB932788203468_0655_hlzf.pdf;nicht gelesen: Zeitfenster nicht lesbar;
@@ -106,7 +93,7 @@
 408;SNB959373877170_0408_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
 418;SNB959513498364_0418_hlzf.pdf;gelesen;Jahr None
 570;SNB961448362368_0570_hlzf.pdf;gelesen;Jahr 2026
-38;SNB961471621746_0038_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);
+38;SNB961471621746_0038_hlzf.pdf;nicht gelesen: Raster mit markierten Viertelstunden (Markierung nicht im Text);alte Zeile bleibt
 207;SNB961497906636_0207_hlzf.pdf;nicht gelesen: mehrere Netzgebiete im Dokument: Stolzenau/Rehburg-Loccum, Unna Südwest/Westmünsterland;
 720;SNB962389410347_0720_hlzf.pdf;nicht gelesen: Zeiten im Dokument nicht vollständig gelesen;alte Zeile bleibt
 492;SNB963070917732_0492_hlzf.pdf;gelesen, Prüfung offen;Jahr 2026

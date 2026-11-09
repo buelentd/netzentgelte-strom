@@ -40,7 +40,7 @@ for x in tab:
                 continue                                 # Stadtwerke haben MS und MS/NS nicht immer: nicht ausgewiesen ist kein Fehler
             fehlt.append(n)
     hl = x["hlzf_status"]
-    hlzf_offen = hl not in ("gelesen_nutzer", "gelesen_unser")
+    hlzf_offen = hl not in ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert")
     if hlzf_offen:
         fehlt.append("Hochlastzeitfenster")
     if not fehlt:

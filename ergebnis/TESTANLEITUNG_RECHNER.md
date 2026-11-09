@@ -12,8 +12,8 @@ Reihenfolge der Felder: PLZ → Netzbetreiber anklicken → Jahresverbrauch → 
 | 2 | Handwerk knapp unter der Grenze | 10115 | 95.000 | leer | Weiter Standardlastprofil: rund 7.120 € / Jahr, 7,50 ct/kWh. |
 | 3 | Bäckerei Grenzfall | 10115 | 120.000 | leer | Über 100.000 kWh: Leistungsmessung (RLM). Ohne Spitzenlast rechnet die Seite mit einer Branchen-Annahme für die Benutzungsstunden. |
 | 4 | Bäckerei Meerane | 08393 (Stadtwerke Meerane) | 150.000 | 45 | RLM Niederspannung, Speicher-Abschnitt: Zielspitze 35 statt 45 kW, Spitze senken 1.335 €. „Hochlastzeitfenster: Werte nicht vorhanden" (Meerane hat keine). |
-| 5 | Supermarkt | 10115 | 450.000 | 150 | RLM, Zielspitze 136 statt 150 kW, atypische Netznutzung „voraussichtlich erfüllt", Speicher lohnt sich bei diesen Angaben nicht (Barwert negativ, der alte Fehler ist behoben). |
-| 6 | Netzbetreiber ohne geprüfte Werte | 14770 (Brandenburg an der Havel) | beliebig | beliebig | Meldung „Für diese Postleitzahl liegen noch keine geprüften Netzentgelte vor". Wird mit `status` ok besser. |
+| 5 | Supermarkt | 10115 | 450.000 | 150 | RLM (Leistungspreis 93,87 €/kW, 3,72 ct, rund 30.800 €/Jahr), Zielspitze 136 statt 150 kW, atypische Netznutzung „voraussichtlich erfüllt", Speicher lohnt sich bei diesen Angaben nicht (Barwert negativ, der alte Fehler ist behoben). |
+| 6 | Netzbetreiber ohne geprüfte Werte | 29614 (Stadtwerke Soltau) | beliebig | beliebig | Meldung „Für diese Postleitzahl liegen noch keine geprüften Netzentgelte vor“ (Soltau hat nur SLP, keine Niederspannung mit Leistungsmessung). 14770 (Brandenburg an der Havel) hat jetzt Werte und wird normal gerechnet. |
 
 Zusätzlich anschauen:
 - Den Button **Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)** oben auf der Seite. Dort wird die Prüfung der atypischen Netznutzung gezeigt.
@@ -53,3 +53,5 @@ Meldet mir pro Auffälligkeit: Netzbetreiber, PLZ, kWh, kW und was nicht stimmt.
 - Strompreise einzelner Anbieter und Tarife (nur Börse plus Annahmen).
 - Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer bei den Netzentgelten.
 - Netzbetreiber mit Status „prüfen" erscheinen nur, wenn die Werte für den gewählten Anschluss vollständig sind.
+
+- PLZ 39326 bietet zwei Netzbetreiber an (Avacon 67 %, Wolmirstedt 33 %): bei „Stadtwerke Wolmirstedt“ gilt SLP 7,90 ct und 60 € Grundpreis (3.220 € bei 40.000 kWh), bei Avacon 6,04 ct und 80,30 € (2.496 €).

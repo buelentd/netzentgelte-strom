@@ -1,0 +1,21 @@
+nr;ebene;grund
+37;alle;Werte teils identisch mit Cassella (73): MS 23,04/4,47 und MS/NS 24,53/4,70/103,68/1,53; kein Dokumenttext vorhanden, nicht belegbar, wahrscheinlich vermischt
+62;ms;identisch mit Energienetze Mittelrhein (26): 40,61/7,21/173,90/1,88; kein Beleg im Text
+62;msns;identisch mit Energienetze Mittelrhein (26): 49,59/7,42/156,64/3,13; kein Beleg im Text
+57;ns;Annahme: Industrienetz, tiefste Ebene im Dokument ist Umspannung MS/NS; NS wurde mit MS/NS gleichgesetzt
+5;ns;kein Dokumenttext
+30;msns;kein Dokumenttext
+306;ns;Zeile heißt "Entnahme aus Umspannung (NSP)": unklar, ob Niederspannung oder Umspannung MS/NS
+331;hsms;Wert steht in der Zeile "Hochspannung" (HS direkt), nicht in einer Zeile HS/MS: Zuordnung prüfen
+299;slp;SLP-Werte 12,48/27,61 stehen nicht im Text
+277;slp;SLP-Werte 4,21/3,54 stehen nicht im Text
+263;slp;SLP-Werte 6,77/80,00 stehen nicht im Text
+137;hsms;Beleg-Leser hatte hsms = msns gesetzt (Zeile Umspannung doppelt zugeordnet); entfernt
+276;hsms;Preisblatt weist HS/MS nur mit Strich aus; Beleg-Leser hatte die Mittelspannungszeile zugeordnet; entfernt
+692;hsms;gleiche Werte wie Mittelspannung; entfernt
+720;hsms;gleiche Werte wie MS/NS; entfernt
+783;hsms;gleiche Werte wie MS/NS; entfernt
+191;hsms;gleiche Werte wie Mittelspannung; entfernt
+193;alle;Quelle ist die Seite der Stadtwerke Rheine (EWR GmbH Rheine), Name im Row "EWR Netze GmbH (Lichtenstein-Unterhausen)": Zuordnung der Preisblattdatei zum Netzbetreiber ungeklärt
+26;alle;Früher falsche Zuordnung: die Datei des Kollegen gehörte zu badenovaNETZE; Werte am 07.11.2026 aus dem Original-PDF von Energienetze Mittelrhein neu eingetragen
+142;alle;Dokument unter derselben Adresse hatte sich gegenüber unserem gespeicherten Text geändert; Werte am 07.11.2026 aus dem frischen PDF neu eingetragen

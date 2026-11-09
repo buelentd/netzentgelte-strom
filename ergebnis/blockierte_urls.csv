@@ -1,0 +1,20 @@
+﻿nr;mastr_nr;netzbetreiber;status;website;quelle_url;hinweis
+125;SNB921080203146;Elektrizitätswerk Rohmund GmbH;blockiert;www.ew-rohmund.de;;
+164;SNB986363918520;Energieversorgung Putzbrunn GmbH ＆ Co. KG;blockiert;www.energieversorgung-putzbrunn.com;;
+218;SNB947727983103;Gemeindewerke Frammersbach;blockiert;www.frammersbach.de;;
+236;SNB972265030262;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;blockiert;www.gemeindewerke-muenchweiler.de;;
+242;SNB955872978110;Gemeindewerke Partenstein;blockiert;www.partenstein.de;;
+252;SNB945187645647;Gemeindewerke Wildeck;blockiert;www.wildeck.de;;
+308;SNB997826747014;Markt Egloffstein;blockiert;www.egloffstein.de;;
+383;SNB936769439815;Stadtwerke Annaberg-Buchholz Energie AG;blockiert;www.swa-b.de;;
+510;SNB916711029424;Stadtwerke Hammelburg GmbH;blockiert;www.stadtwerke-hammelburg.de;;
+585;SNB988769717073;Stadtwerke Neustadt a. d. Donau;blockiert;https://www.swn-do.de;;Website aus E-Mail-Domain abgeleitet
+785;SNB966813503780;SWT Stadtwerke Trier Versorgungs-GmbH;blockiert;www.swt.de;;
+814;SNB946115797155;Versorgungsbetriebe Zellingen;blockiert;www.markt-zellingen.de;;
+820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;www.vw-kraftwerk.de;;
+312;SNB933391394338;Merck Site Management GmbH;kein_preisblatt;www.fluxum-gernsheim.com;;Bundesland/Region laut Sitz (MaStR)
+200;SNB960098459084;FischerStrom GmbH ＆ Co. KG;keine_website;;;
+246;SNB944419421783;Gemeindewerke Schwarzenbruck GmbH (GWS);robots;www.feucht-gw.de;;
+352;SNB988532040636;PVU Energienetze GmbH;robots;www.pvu-netze.de;;
+489;SNB922793626642;Stadtwerke Gengenbach- Versorgungsbetriebe;robots;www.stadtwerke-gengenbach.de;;
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;www.stadtwerke-schorndorf.de;;

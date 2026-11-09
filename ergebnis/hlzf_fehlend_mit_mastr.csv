@@ -1,0 +1,255 @@
+﻿mastr_nr;nr;netzbetreiber;status_preise;hlzf_status;art;website;hlzf_quelle_url
+SNB922722422505;57;Alzchem Netz GmbH;pruefen;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.alzchem.com;https://www.enwag.de/de/Netze/Veroeffentlichungen-Auskuenfte/Stromnetzdaten1/Hochlastzeitfenster-2026-Datengrundlage-2024-2025.pdf
+SNB920699937404;463;Stadtwerke Elbtal GmbH;pruefen;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.stadtwerke-elbtal.de;https://www.ewr-netze.eu/wp-content/uploads/2025/09/Hochlastzeitfenster_2026.pdf
+SNB939653726848;519;Stadtwerke Herborn GmbH;ok;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.stadtwerke-herborn.de;https://www.netzgesellschaft-ahlen.de/_Resources/Persistent/1/a/d/0/1ad090fde040aa3069ccaa7424ca7a7e759cb55f/HLZF%20Strom%202026.pdf
+SNB982030394239;552;Stadtwerke Lingen GmbH;ok;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.stadtwerke-lingen.de;https://www.stadtwerke-bad-reichenhall.de/de/Kopfnavigation1/Netz/Stromnetz/Hochlastzeitfenster-2026.pdf
+SNB965315499379;586;Stadtwerke Neustadt a.d. Aisch GmbH;ok;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.neustadtwerke.de;https://www.stadtwerke-erkrath.de/wp-content/uploads/2025/10/Hochlastzeitfenster-fuer-die-atypische-Netznutzung-2026.pdf
+SNB936940951426;800;Überlandwerk Rhön GmbH;ok;gelesen_nutzer;gelesen, aber NS-Spalten leer (prüfen);www.uew-rhoen.de;https://www.sw-schifferstadt.de/de/Kopfnavigation/Netz/Stromnetz/Netzzugang-Entgelte/Datenblatt-Hochlastzeitfenster-2026.pdf
+SNB929840763916;815;VersorgungsWerke Heddesheim GmbH ＆ Co. KG;ok;gelesen_ungeprueft;gelesen, aber NS-Spalten leer (prüfen);www.vwerke-heddesheim.de;eingang: SNB929840763916_0815_hlzf.pdf
+SNB925823629552;831;Zwickauer Energieversorgung GmbH;pruefen;gelesen_ungeprueft;gelesen, aber NS-Spalten leer (prüfen);www.zev-energie.de;eingang: SNB925823629552_0831_hlzf.pdf
+SNB915728555230;243;Gemeindewerke Pleinfeld;ok;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.GW-Pleinfeld.de;https://gw-pleinfeld.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026.pdf
+SNB982722829230;279;InfraLeuna GmbH;pruefen;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.infraleuna.de;eingang: SNB982722829230_0279_hlzf.pdf
+SNB947514936855;751;Stromnetz Kulmbach GmbH ＆ Co. KG;ok;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.stromnetz-kulmbach.de;eingang: SNB947514936855_0751_hlzf.pdf
+SNB916151866986;759;Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG;ok;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.stromversorgung-pfaffenhofen.de;eingang: SNB916151866986_0759_hlzf.pdf
+SNB974739102161;789;T.W.O. Technische Werke Osning GmbH;ok;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.two.de;https://two.de/wp-content/uploads/TWO_Hochlastzeitfenster_2026.pdf
+SNB957632855181;798;Überlandwerk Erding GmbH ＆ Co. KG;ok;gelesen_unser;gelesen, aber NS-Spalten leer (prüfen);www.stadtwerke-erding.de;eingang: SNB957632855181_0798_hlzf.pdf
+SNB911705062982;36;LEW Verteilnetz GmbH;ok;jahr_nicht_2026;fehlt;https://www.lew-verteilnetz.de;https://www.lew-verteilnetz.de/media/gzyeuugm/hochlastzeitfenster_2027.pdf
+SNB921550647487;82;E-Werk Meckenheim/Pfalz;ok;jahr_nicht_2026;fehlt;www.ewerk-meckenheim-pfalz.de;https://www.ewerk-meckenheim-pfalz.de/html/versorgungsnetz_strom/last_und_leistungsdaten/Hochlastzeitfenster%20E%20Werk%202025%20.pdf
+SNB930558787330;101;Elektrizitäts-Versorgungs-Genossenschaft Perlesreut eG;ok;jahr_nicht_2026;fehlt;www.evg-perlesreut.de;https://www.evg-perlesreut.de/files/docs/pdf/2024-10-30_Ver%C3%B6ffentlichung%20Hochlastzeitfenster2025.pdf
+SNB982597073882;124;Elektrizitätswerk Oberwössen e.G.;ok;jahr_nicht_2026;fehlt;www.ew-oberwoessen.de;eingang: SNB982597073882_0124_hlzf.pdf
+SNB938624241519;170;Energieversorgung Trossingen GmbH;ok;jahr_nicht_2026;fehlt;www.swtro.de;eingang: SNB938624241519_0170_hlzf.pdf
+SNB985172238775;182;EVE Netz GmbH;ok;jahr_nicht_2026;fehlt;www.eve-netz.de;https://www1.eurogate.de/wp-content/uploads/2024/10/hochlastzeitfenster_2025.pdf
+SNB953868012787;368;Schleswiger Stadtwerke GmbH;ok;jahr_nicht_2026;fehlt;www.schleswiger-stadtwerke.de;eingang: SNB953868012787_0368_hlzf.pdf
+SNB956377097702;413;Stadtwerke Baiersdorf KU;ok;jahr_nicht_2026;fehlt;www.stadtwerke-baiersdorf.de;https://www.stadtwerke-baiersdorf.de/wp-content/uploads/2023/12/Hochlastzeitfenster_2024.pdf
+SNB943604361118;457;Stadtwerke Eberbach GmbH;ok;jahr_nicht_2026;fehlt;www.stadtwerke-eberbach.de;eingang: SNB943604361118_0457_hlzf.pdf
+SNB934961797092;599;Stadtwerke Ochtrup;pruefen;jahr_nicht_2026;fehlt;www.stadtwerke-ochtrup.de;https://stadtwerke-ochtrup.de/wp-content/uploads/2026/11/Hochlastzeitraeume-2027.pdf
+SNB946612539746;811;Versorgungsbetriebe Hoyerswerda GmbH;ok;jahr_nicht_2026;fehlt;www.vbh-hoy.de;eingang: SNB946612539746_0811_hlzf.pdf
+SNB916269213931;6;Mitteldeutsche Netzgesellschaft Strom mbH;ok;kein_dokument_oder_adresse;fehlt;www.mitnetz-strom.de;
+SNB921897286493;29;Westnetz GmbH;ok;kein_dokument_oder_adresse;fehlt;www.westnetz.de;
+SNB941690671609;32;E.DIS Netz GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.e-dis-netz.de;
+SNB918250928893;33;Syna GmbH;ok;kein_dokument_oder_adresse;fehlt;www.syna.de;
+SNB973356062049;61;Bad Honnef AG;ok;kein_dokument_oder_adresse;fehlt;www.bhag.de;eingang: SNB973356062049_0061_hlzf.pdf
+SNB910066952147;69;Brücken-Center Ansbach GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.bc-ansbach.de;
+SNB928184287881;70;BTT Bauteam Tretzel GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.btt-netz.de;
+SNB972511582064;71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.bng-butzbach.de;
+SNB956411704207;72;C. Ensinger GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.c-ensinger.de;
+SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;ok;kein_dokument_oder_adresse;fehlt;https://cassella-standort.de/stromnetz.html;
+SNB978299965228;86;E-Werke Haniel Haimhausen GmbH ＆ Co. KG;ok;kein_dokument_oder_adresse;fehlt;www.e-werke-haniel.de;
+SNB930525911119;88;EGC Infrastruktur und Netz GmbH;ok;kein_dokument_oder_adresse;fehlt;www.egc-fm.de;
+SNB913085272050;94;Elektra - Genossenschaft Pinzberg eG;ok;kein_dokument_oder_adresse;fehlt;www.elektra-pinzberg.de;
+SNB985979481190;96;Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG;ok;kein_dokument_oder_adresse;fehlt;www.ewg-vagen.de;
+SNB985498109605;106;Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.;pruefen;kein_dokument_oder_adresse;fehlt;www.eg-nordhalben.de;
+SNB931015724646;107;Elektrizitätsgenossenschaft Oesterweg eG;pruefen;kein_dokument_oder_adresse;fehlt;www.eg-oesterweg.de;
+SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;pruefen;kein_dokument_oder_adresse;fehlt;www.eks.ch;
+SNB952385093224;121;Elektrizitätswerk Leitlein GmbH ＆ Co. KG;ok;kein_dokument_oder_adresse;fehlt;www.ew-leitlein.de;
+SNB921080203146;125;Elektrizitätswerk Rohmund GmbH;blockiert;kein_dokument_oder_adresse;fehlt;www.ew-rohmund.de;
+SNB932549440224;153;Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG;ok;kein_dokument_oder_adresse;fehlt;http://wp-feldheim-2006-kg.de/;
+SNB965281540327;162;Energieversorgung Limburg GmbH;ok;kein_dokument_oder_adresse;fehlt;www.evl.de;
+SNB986363918520;164;Energieversorgung Putzbrunn GmbH ＆ Co. KG;blockiert;kein_dokument_oder_adresse;fehlt;www.energieversorgung-putzbrunn.com;
+SNB935932937127;165;Energieversorgung Rottenburg am Neckar GmbH;ok;kein_dokument_oder_adresse;fehlt;www.evr-gmbh.de;eingang: SNB935932937127_0165_hlzf.pdf
+SNB951180867351;177;ENRW Energieversorgung Rottweil GmbH ＆ Co. KG;ok;kein_dokument_oder_adresse;fehlt;www.enrw.de;SNB951180867351_0177_hlzf.pdf
+SNB930329896650;186;EVU Langenpreising;pruefen;kein_dokument_oder_adresse;fehlt;www.langenpreising.de;https://www.gemeindewerke-langenpreising.de/wp-content/uploads/2026_01_Hochlastzeitfenster_StromGWL.pdf
+SNB913413777899;197;FASTR GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.fastr.energy;
+SNB960098459084;200;FischerStrom GmbH ＆ Co. KG;keine_website;kein_dokument_oder_adresse;fehlt;;
+SNB926427521488;206;Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.gebrueder-miller.de;
+SNB961497906636;207;GELSENWASSER Energienetze GmbH;ok;kein_dokument_oder_adresse;fehlt;www.gw-energienetze.de;SNB961497906636_0207_hlzf.pdf
+SNB984338214660;209;Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach;ok;kein_dokument_oder_adresse;fehlt;www.gew-burtenbach.de;
+SNB947727983103;218;Gemeindewerke Frammersbach;blockiert;kein_dokument_oder_adresse;fehlt;www.frammersbach.de;
+SNB961322866920;228;Gemeindewerke Herxheim;ok;kein_dokument_oder_adresse;fehlt;www.gemeindewerke-herxheim.de;
+SNB919708421706;230;Gemeindewerke Hütschenhausen c/o SW Ramstein-Miesenbach GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-ramstein.de;SNB919708421706_0230_hlzf.pdf
+SNB955872978110;242;Gemeindewerke Partenstein;blockiert;kein_dokument_oder_adresse;fehlt;www.partenstein.de;
+SNB981972152532;244;Gemeindewerke Schönkirchen GmbH;ok;kein_dokument_oder_adresse;fehlt;www.gws-sh.de;
+SNB944323025954;267;Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH;ok;kein_dokument_oder_adresse;fehlt;www.stadthafen-sassnitz.de;
+SNB975462731697;271;Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.gebr-heinzelmann.de;
+SNB974319144116;276;IGS Netze GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.igs-netze.de;
+SNB916663914472;277;inetz GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.inetz.de;https://netzplusservice.de/fileadmin/netzplusservice/docs/fuer-partner_netzentgelte-netzzugang/Netzentgelte_Strom/Hochlastzeitfenster_2026.pdf
+SNB942908692218;283;Karl Stengle GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.e-werk-stengle.de;
+SNB913273314623;284;KBG Kraftstrom- Bezugsgenossenschaft Homberg eG;ok;kein_dokument_oder_adresse;fehlt;www.kbg-homberg.de;
+SNB933391394338;312;Merck Site Management GmbH;kein_preisblatt;kein_dokument_oder_adresse;fehlt;www.fluxum-gernsheim.com;
+SNB982034089728;318;Netz ＆ Energie Betriebsgesellschaft mbH;pruefen;kein_dokument_oder_adresse;fehlt;www.netz-energie.com;
+SNB987317008403;329;Netzgesellschaft Panketal GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.panketal-netz.de;
+SNB920393062051;342;NordNetz GmbH;ok;kein_dokument_oder_adresse;fehlt;www.nordnetz.com;
+SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;ok;kein_dokument_oder_adresse;fehlt;www.piusheim.de;
+SNB974239978785;359;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;kein_dokument_oder_adresse;fehlt;www.rw-bodensee.de;
+SNB924330086940;394;Stadtwerke Bad Harzburg GmbH;ok;kein_dokument_oder_adresse;fehlt;https://www.harzenergie-netz.de;eingang: SNB924330086940_0394_hlzf.pdf
+SNB946710442153;409;Stadtwerke Bad Wildbad GmbH ＆ Co. KG;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-bad-wildbad.de;
+SNB959513498364;418;Stadtwerke Bebra GmbH;ok;kein_dokument_oder_adresse;fehlt;https://www.stadtwerke-bebra-netz.de;eingang: SNB959513498364_0418_hlzf.pdf
+SNB922514070884;424;Stadtwerke Bliestal GmbH;pruefen;kein_dokument_oder_adresse;fehlt;https://www.stadtwerke-bliestal.de;
+SNB922393870476;433;Stadtwerke Buchen GmbH ＆ Co KG;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-buchen.de;
+SNB968489334224;434;Stadtwerke Buchholz in der Nordheide GmbH;ok;kein_dokument_oder_adresse;fehlt;https://www.buchholz-stadtwerke.de;
+SNB974547197724;438;Stadtwerke Buxtehude GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-buxtehude.de;
+SNB952939058372;440;Stadtwerke Clausthal-Zellerfeld GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke.clausthal.harz.de;
+SNB990892864395;452;Stadtwerke Ditzingen GmbH ＆ Co. KG;ok;kein_dokument_oder_adresse;fehlt;www.sw-ditzingen.de;
+SNB941183960449;466;Stadtwerke Emden GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-emden.de;
+SNB964273276183;476;Stadtwerke Fellbach GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.stadtwerke-fellbach.de;
+SNB985701689504;484;Stadtwerke Fürstenfeldbruck GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-ffb.de;
+SNB965107360993;488;Stadtwerke Geldern Netz GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.Stadtwerke-Geldern-netz.de;
+SNB916711029424;510;Stadtwerke Hammelburg GmbH;blockiert;kein_dokument_oder_adresse;fehlt;www.stadtwerke-hammelburg.de;
+SNB953938790515;513;Stadtwerke Heide GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.stadtwerke-heide.de;
+SNB913730249284;531;Stadtwerke Iserlohn GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-iserlohn.de;
+SNB945861817537;533;Stadtwerke Jena Netze GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.stadtwerke-jena-netze.de;
+SNB965379905076;545;Stadtwerke Langen GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-langen.de;
+SNB961816584323;568;Stadtwerke Mengen;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-mengen.de;
+SNB985347645049;578;Stadtwerke Nettetal GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-nettetal.de;
+SNB931294328658;587;Stadtwerke Neustadt an der Orla GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-neustadt-orla.de;
+SNB999125588145;608;Stadtwerke Parchim GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-parchim.de;
+SNB935144085258;644;Stadtwerke Schorndorf GmbH;robots;kein_dokument_oder_adresse;fehlt;www.stadtwerke-schorndorf.de;
+SNB946717964085;650;Stadtwerke Schwarzenbach/Saale;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-schwarzenbach.de;
+SNB933235634552;680;Stadtwerke Torgau GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-torgau.de;
+SNB924659713978;683;Stadtwerke Troisdorf GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-troisdorf.de;
+SNB932685335767;697;Stadtwerke Vilsbiburg Kommunalunternehmen AdöR d. Stadt Vilsbiburg;ok;kein_dokument_oder_adresse;fehlt;www.stw-vilsbiburg.de;eingang: SNB932685335767_0697_hlzf.html
+SNB971007500575;728;Stadtwerke Witten GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-witten.de;
+SNB975680234468;729;Stadtwerke Witten Mittelspannungsnetz GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.stww-mittelspannungsnetz.de;
+SNB941081544895;730;Stadtwerke Wittenberge GmbH;ok;kein_dokument_oder_adresse;fehlt;www.stadtwerke-wittenberge.de;SNB941081544895_0730_hlzf.pdf
+SNB943531720705;742;Städtische Betriebswerke Luckenwalde GmbH;ok;kein_dokument_oder_adresse;fehlt;www.sbl-gmbh.net;
+SNB903808877785;752;Stromnetz Pullach GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.stromnetz-pullach.de;
+SNB955248518643;760;Stromversorgung Schierling eG;ok;kein_dokument_oder_adresse;fehlt;www.schierling-strom.de;
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;ok;kein_dokument_oder_adresse;fehlt;www.swn-netze.de;
+SNB967812386411;787;SWW Wunsiedel GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.s-w-w.com;
+SNB972264483465;797;Überlandwerk Eppler GmbH;ok;kein_dokument_oder_adresse;fehlt;www.ueberlandwerk.de;
+SNB911104987275;813;Versorgungsbetriebe Röttingen;ok;kein_dokument_oder_adresse;fehlt;www.versorgungsbetriebe-roettingen.de;
+SNB946115797155;814;Versorgungsbetriebe Zellingen;blockiert;kein_dokument_oder_adresse;fehlt;www.markt-zellingen.de;
+SNB977641826996;816;Verteilnetz Plauen GmbH;ok;kein_dokument_oder_adresse;fehlt;www.plauen-netz.de;
+SNB964630351430;818;Vorarlberger Energienetze GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.vorarlbergnetz.de;
+SNB978865527096;820;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;kein_dokument_oder_adresse;fehlt;www.vw-kraftwerk.de;
+SNB910224319560;821;Weiler Wärme eG;pruefen;kein_dokument_oder_adresse;fehlt;https://www.weilerwaerme.de;
+SNB914508596067;828;WiDe Flex Bau + Service GmbH;pruefen;kein_dokument_oder_adresse;fehlt;www.wideflex.de;
+SNB969473762610;2;SWM Infrastruktur GmbH ＆ Co. KG;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.swm-infrastruktur.de;SNB969473762610_0002_hlzf.pdf
+SNB971746988153;9;enercity Netz GmbH;ok;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.enercity-netz.de;SNB971746988153_0009_hlzf.xls
+SNB990174285078;66;BIGGE ENERGIE GmbH ＆ Co. KG;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.bigge-energie.de;SNB990174285078_0066_hlzf.pdf
+SNB950882682972;99;Elektrizitäts-Genossenschaft Schonstett eG;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.eg-schonstett.de;SNB950882682972_0099_hlzf.pdf
+SNB988606051575;110;Elektrizitätsgenossenschaft Unterneukirchen eG;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;https://www.eg-unterneukirchen.de;SNB988606051575_0110_hlzf.pdf
+SNB905238986457;138;enercity GridPartner GmbH;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;https://www.enercity-netz.de/enercity-gridpartner;SNB905238986457_0138_hlzf.xls
+SNB999865563754;256;GETEC grid solutions GmbH;pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;https://www.getec-net.de;https://www.getec-net.de/wp-content/uploads/sites/5/2024/09/Veroeffentlichung-Hochlastzeitfenster_GETEC-net-GmbH.xlsx
+SNB990329664031;293;Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR);pruefen;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.stadtwerke-klingenberg.de;http://www.stadtwerke-klingenberg.de/seite/de/service/263/-/Hochlastzeitfenster_2020.html
+SNB940847187345;472;Stadtwerke Eschwege GmbH;ok;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.stadtwerke-eschwege.de;SNB940847187345_0472_hlzf.pdf
+SNB932107297727;562;Stadtwerke Lutherstadt Wittenberg GmbH;ok;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.stadtwerke-wittenberg.de;SNB932107297727_0562_hlzf.pdf
+SNB983384447602;672;Stadtwerke Stockach GmbH;ok;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.stadtwerke-stockach.de;SNB983384447602_0672_hlzf.pdf
+SNB940718804685;681;Stadtwerke Traunstein GmbH ＆ Co. KG;ok;keine_im_dokument;Dokument sagt: keine Hochlastzeitfenster;www.sw-traunstein.de;SNB940718804685_0681_hlzf.pdf
+SNB997465895442;142;Energie- und Bäderbetrieb Hauenstein;ok;pruefung_offen;fehlt;https://energiehauenstein.de/netz/;eingang: SNB997465895442_0142_hlzf.pdf
+SNB929575518928;180;EUROGATE Technical Services GmbH;ok;pruefung_offen;fehlt;https://www1.eurogate.de/leistungen/#energieversorgung;eingang: SNB929575518928_0180_hlzf.pdf
+SNB951232597106;214;Gemeindewerke Cadolzburg;ok;pruefung_offen;fehlt;www.werke-cadolzburg.de;eingang: SNB951232597106_0214_hlzf.pdf
+SNB924453035597;272;Hellenstein-Energie-Logistik GmbH;ok;pruefung_offen;fehlt;www.hellenstein-energie-logistik.de;eingang: SNB924453035597_0272_hlzf.html
+SNB957862279702;303;LSW Netz GmbH ＆ Co. KG;ok;pruefung_offen;fehlt;www.lsw-netz.de;eingang: SNB957862279702_0303_hlzf.pdf
+SNB954504134696;332;netzplus GmbH ＆ Co. KG;ok;pruefung_offen;fehlt;http://www.netz.plus;https://www.netz.plus/fileadmin/user_upload/netzplus/Strom/HLZF_netzplus_2026.pdf
+SNB948068461008;467;Stadtwerke Emmendingen GmbH;ok;pruefung_offen;fehlt;https://netz.swe-emmendingen.de/unser-netz/netzgebiet-strom-und-erdgas/;https://netz.swe-emmendingen.de/download/preise-und-regelungen-fuer-die-nutzung-von-stromnetzen-der-stadtwerke-emmendingen-gmbh-gueltig-ab-01-01-2025-2/?wpdmdl=1616&ind=1748&refresh=b89d195d&filename=20251216_Endgueltige-Netzentgelte-Strom-2026-SWE.pdf
+SNB938672757734;496;Stadtwerke Görlitz AG;ok;pruefung_offen;fehlt;www.stadtwerke-goerlitz.de;https://content.stadtwerke-goerlitz.de/assets/netz/stromnetz/hochlastzeitfenster/swg_hochlastzeitfenster_2026.pdf
+SNB926442995943;497;Stadtwerke Greifswald GmbH;ok;pruefung_offen;fehlt;www.sw-greifswald.de;eingang: SNB926442995943_0497_hlzf.pdf
+SNB950039201827;548;Stadtwerke Lehrte GmbH;ok;pruefung_offen;fehlt;www.stadtwerke-lehrte.de;https://www.stadtwerke-lehrte.de/de/Netze1/Strom/Hochlastzeitfenster-2026.pdf
+SNB918084816830;719;Stadtwerke Weißwasser GmbH;ok;pruefung_offen;fehlt;www.stadtwerke-weisswasser.de;https://www.stadtwerke-weisswasser.de/fileadmin/PDF/Stromnetz/SWW_Hochlastzeitfenster_2026.pdf
+SNB915100694458;44;Energienetze Offenbach GmbH;ok;raster_grafik;fehlt;www.energienetze-offenbach.de;SNB915100694458_0044_hlzf.pdf
+SNB922055731633;325;Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG;ok;raster_grafik;fehlt;www.netzgesellschaft-forst.de;SNB922055731633_0325_hlzf.pdf
+SNB959373877170;408;Stadtwerke Bad Vilbel GmbH;ok;raster_grafik;fehlt;www.sw-bv.de;SNB959373877170_0408_hlzf.pdf
+SNB967127819703;523;Stadtwerke Hockenheim;ok;raster_grafik;fehlt;www.stadtwerke-hockenheim.de;SNB967127819703_0523_hlzf.pdf
+SNB928992067729;544;Stadtwerke Landshut;ok;raster_grafik;fehlt;www.stadtwerke-landshut.de;SNB928992067729_0544_hlzf.pdf
+SNB946090906887;549;Stadtwerke Leine-Solling GmbH;ok;raster_grafik;fehlt;www.stadtwerke-leine-solling.de;SNB946090906887_0549_hlzf.pdf
+SNB972740218178;564;Stadtwerke Marburg GmbH;ok;raster_grafik;fehlt;www.stadtwerke-marburg.de;SNB972740218178_0564_hlzf.pdf
+SNB987617847795;640;Stadtwerke Schlitz;ok;raster_grafik;fehlt;www.stadtwerke-schlitz.de;eingang: SNB987617847795_0640_hlzf.pdf
+SNB948311994307;3;Netze BW GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.netze-bw.de;SNB948311994307_0003_hlzf.pdf
+SNB935556509052;10;Netze ODR GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.netze-odr.de;SNB935556509052_0010_hlzf.pdf
+SNB924477581384;12;RheinNetz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.rheinnetz.de;SNB924477581384_0012_hlzf.html
+SNB973742186519;42;SWKiel Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swkiel-netz.de;SNB973742186519_0042_hlzf.pdf
+SNB984607096621;45;Harz Energie Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.harzenergie-netz.de;SNB984607096621_0045_hlzf.txt
+SNB965774651691;62;badenovaNETZE GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.badenovanetze.de;SNB965774651691_0062_hlzf.pdf
+SNB956923775696;75;CPM Netz GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://cpm-netz.evonik.de/de;SNB956923775696_0075_hlzf.pdf
+SNB973074326355;93;ELE Verteilnetz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.evng.de;SNB973074326355_0093_hlzf.pdf
+SNB946086138155;98;Elektrizitäts-Genossenschaft Röthenbach eG;ok;zeitfenster_nicht_lesbar;fehlt;www.eg-roethenbach.de;SNB946086138155_0098_hlzf.pdf
+SNB974959002937;112;Elektrizitätsgenossenschaft Wolkersdorf und Umgebung eG;pruefen;zeitfenster_nicht_lesbar;fehlt;www.eg-wolkersdorf.de;SNB974959002937_0112_hlzf.pdf
+SNB916027833432;114;Elektrizitätsvereinigung Böbing eG;pruefen;zeitfenster_nicht_lesbar;fehlt;www.ev-boebing.de;https://ev-boebing.de/htmls/Hochlastzeitfenster2025.htm
+SNB916328839515;118;Elektrizitätswerk Dießen Stadler GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.ew-diessen.de;https://www.ew-diessen.de/netz/hochlastzeitfenster_2023/
+SNB936480897581;123;Elektrizitätswerk Max Peissker;pruefen;zeitfenster_nicht_lesbar;fehlt;www.max-peissker.de;SNB936480897581_0123_hlzf.pdf
+SNB927892816017;126;Elektrizitätswerk S c h w e i g e r  o.H.G;pruefen;zeitfenster_nicht_lesbar;fehlt;www.ew-schweiger.de;SNB927892816017_0126_hlzf.pdf
+SNB928258126528;129;Elektrizitätswerk Tegernsee Carl Miller KG;ok;zeitfenster_nicht_lesbar;fehlt;www.ewerk-tegernsee.de;SNB928258126528_0129_hlzf.pdf
+SNB917593691679;130;Elektrizitätswerk Unterwössen Döllerer＆Greimel Netz GmbH＆Co.KG;pruefen;zeitfenster_nicht_lesbar;fehlt;www.ew-unterwoessen.de;SNB917593691679_0130_hlzf.pdf
+SNB931431136771;135;Elektroenergieversorgung Cottbus GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.energienetze-cottbus.de;SNB931431136771_0135_hlzf.pdf
+SNB913289502922;139;eneREGIO GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.eneregio.com;SNB913289502922_0139_hlzf.pdf
+SNB911696239035;167;Energieversorgung Selb-Marktredwitz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.esm-selb.de;SNB911696239035_0167_hlzf.pdf
+SNB994749019716;169;Energieversorgung Sylt GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.energieversorgung-sylt.de;SNB994749019716_0169_hlzf.pdf
+SNB925831583235;171;Energieversorgung Wolfgang Schmid;ok;zeitfenster_nicht_lesbar;fehlt;www.evuschmid.de;SNB925831583235_0171_hlzf.pdf
+SNB999405828558;176;ENRO Ludwigsfelde Netz GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://www.enro-netz-ludwigsfelde.de;SNB999405828558_0176_hlzf.pdf
+SNB943915605062;183;EVG Energieversorgung Gemünden GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.evg-gemuenden.de;https://www.evg-gemuenden.de/wp-content/uploads/2023/10/Hochlast-Zeitfenster-nach-§-19-Abs.-2-Satz-1-StromNEV-im-Jahr-2024_EVG.pdf
+SNB924747450655;191;EWR GmbH (Remscheid);pruefen;zeitfenster_nicht_lesbar;fehlt;www.ewr-gmbh.de;SNB924747450655_0191_hlzf.pdf
+SNB954239007623;219;Gemeindewerke Gangkofen;pruefen;zeitfenster_nicht_lesbar;fehlt;www.gangkofen.de;SNB954239007623_0219_hlzf.pdf
+SNB962736090291;223;Gemeindewerke Großkrotzenburg GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.gemeindewerke-grosskrotzenburg.de;SNB962736090291_0223_hlzf.pdf
+SNB955706777742;234;Gemeindewerke Lam;ok;zeitfenster_nicht_lesbar;fehlt;https://www.gemeindewerke-lam.de;SNB955706777742_0234_hlzf.pdf
+SNB984571613121;237;Gemeindewerke Neuendettelsau;pruefen;zeitfenster_nicht_lesbar;fehlt;www.gw-neuendettelsau.de;SNB984571613121_0237_hlzf.pdf
+SNB981336194529;239;Gemeindewerke Nüdlingen;pruefen;zeitfenster_nicht_lesbar;fehlt;www.nuedlingen.de;SNB981336194529_0239_hlzf.pdf
+SNB987153361809;240;Gemeindewerke Nümbrecht GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.gwn24.de/;SNB987153361809_0240_hlzf.pdf
+SNB959475630567;245;Gemeindewerke Schutterwald (GWS);pruefen;zeitfenster_nicht_lesbar;fehlt;www.gemeindewerke-schutterwald.de;SNB959475630567_0245_hlzf.pdf
+SNB967068117678;254;gemeinsames Kommunalunternehmen oberes Egertal;ok;zeitfenster_nicht_lesbar;fehlt;https://www.g-ku.de;SNB967068117678_0254_hlzf.pdf
+SNB977374861035;268;Halberstadtwerke GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.halberstadtwerke.de;SNB977374861035_0268_hlzf.pdf
+SNB942732578894;280;InfraServ Gendorf Netze GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://www.infraserv.gendorf-netze.de;SNB942732578894_0280_hlzf.pdf
+SNB964573708865;286;KEW Karwendel Energie und Wasser GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.KEWGmbH.de;SNB964573708865_0286_hlzf.pdf
+SNB920357766414;298;Leitungspartner GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.leitungspartner.de;SNB920357766414_0298_hlzf.pdf
+SNB959176447266;341;Nordhausen Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.nordhausen-netz.de;SNB959176447266_0341_hlzf.pdf
+SNB934071779865;348;OsthessenNetz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.osthessennetz.de;SNB934071779865_0348_hlzf.pdf
+SNB969534177940;351;ovag Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.ovag-netz.de;SNB969534177940_0351_hlzf.pdf
+SNB976863966633;364;Rothmoser GmbH ＆ Co. KG;ok;zeitfenster_nicht_lesbar;fehlt;www.rothmoser.de;SNB972040623122_0364_hlzf.pdf
+SNB922689183730;373;Stadt- und Überlandwerke GmbH Luckau-Lübbenau;ok;zeitfenster_nicht_lesbar;fehlt;www.suell.de;SNB922689183730_0373_hlzf.pdf
+SNB982726407335;377;Stadtwerke Aalen GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.sw-aalen.de;SNB931930462517_0377_hlzf.pdf
+SNB937406641264;385;Stadtwerke Ansbach GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stwan.de;SNB937406641264_0385_hlzf_MS.pdf
+SNB941424038838;398;Stadtwerke Bad Nauheim GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-bad-nauheim.de;https://www.enwg-veroeffentlichungen.de/badnauheim/Netze/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-fuer-Homepage-2025.pdf
+SNB943203125821;405;Stadtwerke Bad Saulgau;ok;zeitfenster_nicht_lesbar;fehlt;https://bad-saulgau.de/stadtwerke/index.php;https://www.bad-saulgau.de/stadtwerke/netze-technik/strom/netzdaten/index.php
+SNB963795614626;410;Stadtwerke Bad Windsheim;ok;zeitfenster_nicht_lesbar;fehlt;www.sw-bw.de;SNB963795614626_0410_hlzf.pdf
+SNB953669866350;420;Stadtwerke Bernburg GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-bernburg.de;SNB953669866350_0420_hlzf.pdf
+SNB919654931526;423;Stadtwerke Blankenburg GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.sw-blankenburg.de;SNB919654931526_0423_hlzf.pdf
+SNB982432856366;428;Stadtwerke Borken/Westf. GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-borken.de;SNB982432856366_0428_hlzf.pdf
+SNB990562890006;451;Stadtwerke Dinkelsbühl;pruefen;zeitfenster_nicht_lesbar;fehlt;www.sw-dinkelsbuehl.de;SNB990562890006_0451_hlzf.pdf
+SNB986190606218;468;Stadtwerke Emmerich GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-emmerich.de;SNB986190606218_0468_hlzf.pdf
+SNB912063565672;483;Stadtwerke Fröndenberg Wickede GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.sfw-ruhr.de;SNB912063565672_0483_hlzf.pdf
+SNB925565312521;486;Stadtwerke Gaggenau;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-gaggenau.de;SNB925565312521_0486_hlzf.pdf
+SNB982049301273;491;Stadtwerke Germersheim GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stw-ger.de;SNB982049301273_0491_hlzf.pdf
+SNB985431470335;494;Stadtwerke GmbH Bad Kreuznach;ok;zeitfenster_nicht_lesbar;fehlt;https://www.kreuznacherstadtwerke.de/;SNB985431470335_0494_hlzf.pdf
+SNB983029590205;503;Stadtwerke Güstrow GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-guestrow.de;SNB983029590205_0503_hlzf.pdf
+SNB981984960101;509;Stadtwerke Hameln Weserbergland GmbH;ok;zeitfenster_nicht_lesbar;fehlt;https://www.stwhw-netze.de;SNB981984960101_0509_hlzf.html
+SNB968694358282;516;Stadtwerke Heiligenhaus GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-heiligenhaus.de;SNB968694358282_0516_hlzf.pdf
+SNB950336540445;528;Stadtwerke Husum Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.husumnetz.de;SNB950336540445_0528_hlzf.pdf
+SNB964659661008;529;Stadtwerke Ilmenau GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://www.stadtwerke-ilmenau.net;SNB964659661008_0529_hlzf.pdf
+SNB973672371320;534;Stadtwerke Jülich GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-juelich.de;SNB973672371320_0534_hlzf.pdf
+SNB971124937612;539;Stadtwerke Konstanz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;https://www.stadtwerke-konstanz.de;SNB971124937612_0539_hlzf.pdf
+SNB980345455409;547;Stadtwerke Lauterbach GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-lauterbach.de;SNB980345455409_0547_hlzf.pdf
+SNB918070278383;565;Stadtwerke Meerane GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.sw-meerane.de;SNB918070278383_0565_hlzf.pdf
+SNB984863778941;572;Stadtwerke Mosbach GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.swm-online.de;SNB984863778941_0572_hlzf.pdf
+SNB973056451075;577;Stadtwerke Munster-Bispingen GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.ihr-stadtwerk.de;SNB973056451075_0577_hlzf.pdf
+SNB932374739180;593;Stadtwerke Norderney GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-norderney.de;SNB932374739180_0593_hlzf.pdf
+SNB963821222269;598;Stadtwerke Oberkirch GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-oberkirch.de;SNB963821222269_0598_hlzf.pdf
+SNB940478286561;603;Stadtwerke Olching Stromnetz GmbH ＆ Co. KG;ok;zeitfenster_nicht_lesbar;fehlt;https://www.stromnetz-olching.de;SNB940478286561_0603_hlzf.pdf
+SNB954026274702;611;Stadtwerke Peine GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-peine.de;SNB954026274702_0611_hlzf.pdf
+SNB970223838288;618;Stadtwerke Quedlinburg GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-quedlinburg.de;SNB970223838288_0618_hlzf.pdf
+SNB959567240391;625;Stadtwerke Reichenbach/Vogtland GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swrc.de;SNB959567240391_0625_hlzf_MS.pdf
+SNB939724292715;631;Stadtwerke Rostock Netzgesellschaft mbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swrng.de;SNB939724292715_0631_hlzf.pdf
+SNB927574397889;633;Stadtwerke Roth;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-roth.de;SNB927574397889_0633_hlzf.pdf
+SNB932788203468;655;Stadtwerke Schwerte GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-schwerte.de;SNB932788203468_0655_hlzf.pdf
+SNB995034381532;656;Stadtwerke Senftenberg GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-senftenberg.de;SNB995034381532_0656_hlzf.xlsx
+SNB971503120734;657;Stadtwerke Service Meerbusch Willich GmbH ＆ Co. KG;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-service.de;SNB971503120734_0657_hlzf.pdf
+SNB954187049256;664;Stadtwerke Springe GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-springe.de;SNB954187049256_0664_hlzf.pdf
+SNB975659838086;666;Stadtwerke Stade GmbH;ok;zeitfenster_nicht_lesbar;fehlt;https://www.stadtwerke-stade.de;SNB975659838086_0666_hlzf.pdf
+SNB910474681448;668;Stadtwerke Staßfurt GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-stassfurt.de;SNB910474681448_0668_hlzf.pdf
+SNB900123507953;670;Stadtwerke Steinfurt GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swst.de;SNB900123507953_0670_hlzf.pdf
+SNB932509765411;678;Stadtwerke Teterow GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://www.sw-teterow.de;SNB932509765411_0678_hlzf.pdf
+SNB976987786759;682;Stadtwerke Treuchtlingen KU;ok;zeitfenster_nicht_lesbar;fehlt;www.sw-trl.de;SNB976987786759_0682_hlzf.pdf
+SNB925861098273;691;Stadtwerke Uslar GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-uslar.de;SNB925861098273_0691_hlzf.pdf
+SNB962996832648;694;Stadtwerke Verden GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-verden.de;
+SNB945413736880;700;Stadtwerke Völklingen Netz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swvk-netz.de;SNB945413736880_0700_hlzf.pdf
+SNB985206131959;704;Stadtwerke Waldkirchen;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-waldkirchen.de;SNB985206131959_0704_hlzf.pdf
+SNB960416123321;705;Stadtwerke Waldkraiburg GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-waldkraiburg.de;SNB960416123321_0705_hlzf.pdf
+SNB946790148600;708;Stadtwerke Walldorf GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-walldorf.de;https://www.stadtwerke-walldorf.de/wpfd_file/hochlastzeitfenster-2024/
+SNB957988771050;726;Stadtwerke Windsbach;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-windsbach.de;SNB957988771050_0726_hlzf.pdf
+SNB972723368326;727;Stadtwerke Winsen (Luhe) GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stw-winsen.de;SNB972723368326_0727_hlzf.pdf
+SNB935626894156;734;Stadtwerke Zeil a. Main;pruefen;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-zeil.de;SNB935626894156_0734_hlzf.pdf
+SNB980783618473;735;Stadtwerke Zeven GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-zeven.de;SNB980783618473_0735_hlzf.pdf
+SNB923190544898;738;Stadtwerke Zweibrücken GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-zw.de;SNB923190544898_0738_hlzf_MS.pdf
+SNB946013720880;743;Städtische Werke Borna Netz GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-borna-netz.de;https://www.stadtwerke-borna-netz.de/stromnetz/hochlastzeitfenster/
+SNB926394976090;745;Städtische Werke Spremberg (Lausitz) GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.swspremberg.de;SNB926394976090_0745_hlzf.pdf
+SNB929262647085;754;Stromnetz Weilheim GmbH ＆ Co. KG;ok;zeitfenster_nicht_lesbar;fehlt;https://www.stromnetz-weilheim.de;SNB929262647085_0754_hlzf.pdf
+SNB954776773166;762;Stromversorgung Sulz am Neckar GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stromversorgung-sulz.de;SNB954776773166_0762_hlzf.pdf
+SNB986916159257;793;thyssenkrupp Steel Europe AG;pruefen;zeitfenster_nicht_lesbar;fehlt;www.thyssenkrupp-steel.com;SNB986916159257_0793_hlzf.pdf
+SNB933760214908;803;Veolia Industriepark Deutschland GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.veolia.de;SNB933760214908_0803_hlzf.pdf
+SNB971770548286;809;VersorgungsBetriebe Elbe GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;https://www.versorgungsbetriebe-elbe.net;SNB971770548286_0809_hlzf.pdf
+SNB941650885558;819;VSE Verteilnetz GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;http://www.vse-verteilnetz.de;SNB941650885558_0819_hlzf.pdf
+SNB971169136186;822;Weißachtal-Kraftwerke eG;ok;zeitfenster_nicht_lesbar;fehlt;www.wkw-oberstaufen.de;https://www.wkw-oberstaufen.de/download/hochlastzeitfenster_2025.pdf
+SNB946373984786;823;Wendelsteinbahn Verteilnetz GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.wendelsteinbahn.de;https://www.wendelsteinbahn.de/hochlastzeitfenster
+SNB930122681040;824;werkkraft GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.werkkraft.de;SNB930122681040_0824_hlzf.pdf
+SNB973501936539;825;Werraenergie GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.werraenergie.de;SNB973501936539_0825_hlzf.pdf
+SNB979973883449;827;Westenthanner Energieversorgung GmbH;pruefen;zeitfenster_nicht_lesbar;fehlt;www.ew-westenthanner.de;https://ew-westenthanner.de/hochlastzeitfenster/
+SNB919649671758;829;Wirtschaftsbetriebe der Stadt Norden GmbH;ok;zeitfenster_nicht_lesbar;fehlt;www.stadtwerke-norden.de;SNB919649671758_0829_hlzf.pdf

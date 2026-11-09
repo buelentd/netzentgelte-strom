@@ -1,0 +1,97 @@
+Netznutzungsentgelte Strom
+CCF Cassella Chemiepark Frankfurt GmbH
+Stand 17.03.2026
+gültig ab 01.04.2026
+
+
+
+
+Netzentgelt Standard                                                                      < 2.500 h/a                                            ≥ 2.500 h/a
+
+   Zählpunkte mit Leistungsmessung -                                   Tages-leistungspreis         Arbeitspreis              Tages-leistungspreis   Arbeitspreis
+   Jahresleistungspreissystem -                                       abrechnungsrelevant       abrechnungsrelevant          abrechnungsrelevant abrechnungsrelevant
+
+   Spannungsebene                                                          € / (kW / d)                 € /kWh                      € /kW*a                      € /kWh
+   Mittelspannung (MS)                                                            0,06312329                0,04470000                   0,28405479                  0,01530000
+   Mittelspannung mit Umspannung (MSU)                                            0,06720548                0,04700000                   0,28405479                  0,01530000
+   Niederspannung (NS)                                                            0,11124438                0,06169200                   0,31154274                  0,03249500
+
+
+                                                     Monats-                   Tages-                Arbeitspreis
+                                                  leistungspreis          leistungspreis            abrechnungs-
+   Zeitlich hohe Leistungsaufnahme -
+   Monatsleistungspreissystem -                  informatorisch       abrechnungsrelevant             relevant
+
+   Spannungsebene                                    €/kW*a                € / (kW / d)                 € /kWh
+   Mittelspannung (MS)                                        24,06               0,80193548                0,02050000
+   Mittelspannung mit Umspannung (MSU)                        24,90               0,83000000                0,02180000
+   Niederspannung (NS)                                        24,91               0,83032258                0,04740000
+
+
+   Netzentgelte für Entnahmestellen ohne Leistungsmessung                                                        Grundpreis                                    Arbeitspreis
+                                                                                                    informatorisch           abrechnungsrelevant         abrechnungsrelevant
+                                                                                                         € /a                        € /d                        €/kWh
+   Niederspannung (NS) ohne Leistungsmessung                                                            34,98                     0,09583562                   0,1054000
+
+
+   Netzentgelte für für Stromspeicher nach § 19 Abs. 4 StromNEV
+                                                                                                 Monatsleistungspreis         Tages-leistungspreis
+                                                                                                   informatorisch            abrechnungsrelevant
+
+   Spannungsebene                                                                                       €/kW*a                    € / (kW / d)
+
+
+   Mittelspannung (MS)                                                                                               12,26               0,40860274
+   Mittelspannung mit Umspannung (MSU)                                                                               12,69               0,42290411
+   Niederspannung (NS)                                                                                               12,69               0,42312329
+
+
+Messstellenbetrieb (inkl. Messung)
+                                                                                                      Jahrespreis                 Tagespreis
+   Zählpunkte mit Leistungsmessung                                                                  informatorisch           abrechnungsrelevant
+                                                                                                         €/a                         €/d
+   Mittelspannung exkl. Wandlersatz                                                                              813,01                  2,22742466
+   Niederspannung exkl. Wandlersatz                                                                              672,87                  1,84347945
+
+                                                                                                      Jahrespreis                 Tagespreis
+   Zählpunkte ohne Leistungsmessung                                                                 informatorisch           abrechnungsrelevant
+
+
+   Eintarifzähler                                                                                                    66,09               0,18106849
+   Zweitarifzähler                                                                                                   66,09               0,18106849
+
+                                                                                                      Jahrespreis                 Tagespreis                  Vorgang
+   Zusatzgeräte und Sonstige Leistungen                                                             informatorisch           abrechnungsrelevant         abrechnungsrelevant
+                                                                                                         €/a                         €/d                      € / Vorgang
+   Wandlersatz Mittelspannung                                                                                    212,58                  0,58241096                               -
+   Wandlersatz Niederspannung                                                                                     20,49                  0,05613699                               -
+   Manuelle vor ort Ablesung bei kME mit
+   registrierender Last-/Einspeisemessung                                                                                -                           -                        94,83
+
+
+§14a EnWG — Netzentgeltreduzierung für steuerbare Verbrauchseinrichtungen (SteuVE)
+   Modul 1 — Pauschale Netzentgeltreduzierung
+   Parameter                                           Wert                  Einheit
+   Bereitstellungsprämie (bundeseinheitlich)                  80,00            €/a
+   Hinweis: Die pauschale Reduzierung darf das zu zahlende Netzentgelt nicht unter 0,00 € senken. Gilt pro Marktlokation.
+
+
+   Modul 2 — Prozentuale Reduzierung des Arbeitspreises
+   Parameter                                           Wert                  Einheit
+   Arbeitspreis NS oLM (Standard)                        0,04216             €/kWh
+
+
+   Modul 3 — Zeitvariable Netzentgelte / Anreizmodul
+   Tarifstufe                                      Arbeitspreis              Einheit
+   Arbeitspreis NS oLM (Basis)                            0,1054             ct/kWh
+   Standardtarifstufe (ST)                                0,1054             ct/kWh
+   Hochlasttarifstufe (HT)                               0,18972             ct/kWh
+   Niedriglasttarifstufe (NT)                            0,02635             ct/kWh
+
+Ergänzende Hinweise
+   Die Preise verstehen sich zzgl. Mehrkosten gemäß Kraft-Wärme-Kopplungsgesetz, Umlage gemäß § 19 Abs. 2 StromNEV, Offshore-Haftungsumlage nach § 17f Abs. 5 EnWG,
+   Umlage aufgrund der Verordnung über Vereinbarungen zu abschaltbaren Lasten gem. § 13 Abs. 4a und 4b EnWG und aus der Umsetzung weiterer gesetzlicher Vorgaben,
+   ggf. Blindleistungsinanspruchnahme, Konzessionsabgabe sowie Umsatzsteuer in der jeweiligen gesetzlichen Höhe. Bei Entnahme der elektrischen Energie aus der
+   Mittelspannungsebene und deren Erfassung durch eine niederspannungsseitige Messeinrichtung wird ein Zuschlag für Transformatorenverluste in Höhe von 1 % auf die
+   Arbeitsmengen und die Leistungswerte erhoben.
+

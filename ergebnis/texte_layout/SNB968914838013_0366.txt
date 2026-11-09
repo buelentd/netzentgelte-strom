@@ -1,47 +1,48 @@
-Preise für Netznutzung N ab                                                                                  01.01.2026
-Entnahme aus der Netzebene Niederspannung
+Preise für Netznutzung SLP ab                                                                                 01.01.2026
+Entnahme aus der Netzebene Niederspannung für Standardlastprofilkunden ohne Leistungsmessung
 
-1    Preise für Wirkleistung1) und transportierte Wirkarbeit
+                                                                                       netto                     brutto**)
+1    Preise für Netznutzung
 
-     Jahresbenutzungsdauer2)                                weniger als 2.500 h/a                    mindestens 2.500 h/a
-
-     Jahresleistungspreis                                     27,83 EUR/kW                                 153,33 EUR/kW
-     Arbeitspreis                                              8,58 Ct/kWh                                   3,56 Ct/kWh
+     Jährlicher Grundpreis                                                         30,00 EUR                  35,70 EUR
+     Arbeitspreis                                                                   8,47 Ct/kWh               10,08 Ct/kWh
 
 2    Netzentgeltreduzierung beim Betrieb steuerbarer Verbrauchseinrichtungen gem. § 14a EnWG
 
      Modul 1*) gilt für Anlagen, die ab dem 01.01.2024 angeschlossen werden sowie ggf. Bestandsanlagen.
+     Ohne Auswahl wird Modul 1 abgerechnet.
 
+     Pauschale Entgeltreduzierung je Marktlokation                               130,75 EUR/Jahr             155,59 EUR/Jahr
 
-     Pauschale Entgeltreduzierung je Marktlokation                                                         130,75 EUR/Jahr
-
-     Die Pauschale darf nicht höher sein, als die Summe aus Arbeits- und Leistungsentgelt gemäß Punkt 1.
+     Die Pauschale darf nicht höher sein als die Summe aus Arbeitsentgelt und Grundpreis gemäß Punkt 1.
 
 3    Konzessionsabgabe
-     Die Preise für Netznutzung erhöhen sich entsprechend der Konzessionsabgabenverordnung um
-     die Konzessionsabgabe.
+
+     Die Preise für Netznutzung erhöhen sich entsprechend der Konzessionsabgabenverordnung
+     um die Konzessionsabgabe. Diese beträgt derzeit gemäß gültiger Konzessionsverträge
+
+     in Gemeinden über 500.000 Einwohner:                                           2,39 Ct/kWh                 2,84 Ct/kWh
+
+     bei Schwachlaststrom1):                                                        0,61 Ct/kWh                 0,73 Ct/kWh
 
 4    Umlagen für letztverbrauchende Kunden
 
      Die nachstehend aufgeführten Umlagen beziehen sich jeweils auf die jährliche Abnahmemenge je
      Abnahmestelle eines Letztverbrauchers.
      Die tatsächliche Abrechnung des Aufschlages sowie der Umlagen ab 01.01.2026 erfolgt nach Maßgabe der
-     geltenden Gesetzeslage und den auf dieser Grundlage von den Übertragungsnetzbetreibern
-     veröffentlichten Umlagesätzen.
+     geltenden Gesetzeslage und den auf dieser Grundlage von den Übertragungsnetzbetreibern veröffentlichten
+     Umlagesätzen.
 
 
      Umlage nach § 26 KWKG i.V.m. §§ 10, 12 EnFG (KWKG-Umlage)
-     für den nichtprivilegierten Letztverbrauch je kWh/a:                                                   0,446 Ct/kWh
+     für den nichtprivilegierten Letztverbrauch je kWh/a:   0,446 Ct/kWh                                        0,53 Ct/kWh
 
      Aufschlag für besondere Netznutzung (ehemals § 19 StromNEV-Umlage)
-     A                 für den Letztverbrauch bis 1.000.000 kWh/a:                                          1,559 Ct/kWh
-     B                 für den Letztverbrauch über 1.000.000 kWh/a:                                         0,050 Ct/kWh
+     A       für den Letztverbrauch bis 1.000.000 kWh/a:      1,559 Ct/kWh                                      1,86 Ct/kWh
+     B       für den Letztverbrauch über 1.000.000 kWh/a:     0,050 Ct/kWh                                      0,06 Ct/kWh
 
      Offshore-Netzumlage nach § 17f EnWG i.V.m. §§ 10, 12 EnFG (Offshore-Netzumlage)
-     für den nichtprivilegierten Letztverbrauch je kWh/a:                         0,941 Ct/kWh
-
-
-
+     für den nichtprivilegierten Letztverbrauch je kWh/a:                          0,941 Ct/kWh                 1,12 Ct/kWh
 
 *)   Festlegung zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und
      steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegung BK6-22-300
@@ -59,12 +60,11 @@ SachsenNetze GmbH, www.Sachsen-Netze.de                                         
       Das Netznutzungsentgelt wird auf Basis von Nettopreisen ermittelt. Die Nettopreise verstehen
       sich zuzüglich der gesetzlichen Umsatzsteuer in Höhe von derzeit 19 % zum Rechnungsbetrag.
 
+**)
+      Werte aus Übersichtlichkeitsgründen gerundet.
 1)
-     Die abrechnungsrelevante Wirkleistung ist der Jahreshöchstwert (1/4-h-Mittelwert) aus dem an der
-     Entnahmestelle erfassten Lastprofil.
-2)
-     Die Jahresbenutzungsdauer ergibt sich aus der Division der transportierten Wirkarbeit innerhalb eines
-     Kalenderjahres durch den Jahreshöchstwert der Wirkleistung.
+      Niedertarifzeit für Schwachlaststrom gemäß Tarifzeitschlüssel „Tarifschaltzeiten“,
+      veröffentlicht unter www.Sachsen-Netze.de - Netzzugang - Strom.
 
 
 Hinweis/Vorbehalt:
@@ -87,5 +87,5 @@ Netzbetreiber.
 
 
 
-SachsenNetze GmbH, www.Sachsen-Netze.de                                                                      Stand: 11.12.2025
+SachsenNetze GmbH, www.Sachsen-Netze.de                                                         Stand: 11.12.2025
 
