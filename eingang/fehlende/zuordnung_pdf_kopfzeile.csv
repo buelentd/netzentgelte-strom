@@ -1,0 +1,22 @@
+﻿mastr_nr;nr;netzbetreiber_in_tabelle;datei;jahr_laut_kopfzeile;netzbetreiber_laut_dokument;geprüft
+SNB936769439815;383;Stadtwerke Annaberg-Buchholz Energie AG;2026-07-01_KalkNNE_Strom_4_RegP_2026_Final.pdf;2026;Stadtwerke Annaberg-Buchholz Energie AG;Kopfzeile des PDF gelesen
+SNB936769439815;383;Stadtwerke Annaberg-Buchholz Energie AG;2026-10-13_Strom_NNE_2027_Vorläufig.pdf;2027 vorläufig;Stadtwerke Annaberg-Buchholz Energie AG;Kopfzeile des PDF gelesen
+SNB916711029424;510;Stadtwerke Hammelburg GmbH;2026_10_07-pbvpeovnb-nne-strom-2027-hammelburg.pdf;2027 vorläufig;Stadtwerke Hammelburg GmbH;Kopfzeile des PDF gelesen
+SNB945187645647;252;Gemeindewerke Wildeck;251215_Preisblatt_EAM_Netz_Strom_2026_-_final (1).pdf;2026 endgültig;EAM Netz GmbH (Vermerk Nutzer: Wildeck);Kopfzeile des PDF gelesen
+SNB945187645647;252;Gemeindewerke Wildeck;261008_Preisblatt_EAM_Netz_Strom_2027_-_unter_Vorbehalt.pdf;2027 vorläufig;EAM Netz GmbH (Vermerk Nutzer: Wildeck);Kopfzeile des PDF gelesen
+SNB945187645647;252;Gemeindewerke Wildeck;260922_Veroeffentlichung_HLZ_fuer_2027_EAMN.pdf;2027 Hochlastzeitfenster;EAM Netz GmbH (Vermerk Nutzer: Wildeck);Kopfzeile des PDF gelesen
+SNB978865527096;820;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;NNE_VWK_ab_2026_18_12_2025_abef284e7c_5ba93e0240.pdf;2026;VW Kraftwerk GmbH;Kopfzeile des PDF gelesen
+SNB978865527096;820;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;NNE_VWK_ab_2027v_09_10_2026_25ef578f77.pdf;2027 vorläufig;VW Kraftwerk GmbH;Kopfzeile des PDF gelesen
+SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;SWT_NetzentgelteStrom2026.pdf;2026;SWT Stadtwerke Trier Versorgungs-GmbH;Kopfzeile des PDF gelesen
+SNB966813503780;785;SWT Stadtwerke Trier Versorgungs-GmbH;SWT_Netzentgelte_Gas_2027_vorläufig.pdf;2027 vorläufig, GAS (nicht Strom);SWT Stadtwerke Trier (Gas, nicht verwendbar);Kopfzeile des PDF gelesen
+SNB972265030262;236;Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts;Vorlaeufiges-Preisblatt-fuer-die-Netznutzung-Strom-ab-01.01.2026.pdf;2026 vorläufig (Stand 15.10.2025);Gemeindewerke Münchweiler a.d. Rodalb AöR;Kopfzeile des PDF gelesen
+SNB946115797155;814;Versorgungsbetriebe Zellingen;markt_zellingen_strom_preisblatt_2026_endgueltig_20251217.pdf;2026 endgültig;Markt Zellingen - Versorgungsbetriebe;Kopfzeile des PDF gelesen
+SNB946115797155;814;Versorgungsbetriebe Zellingen;markt_zellingen_strom_preisblatt_2027_vorlaeufig_20261014.pdf;2027 vorläufig;Markt Zellingen - Versorgungsbetriebe;Kopfzeile des PDF gelesen
+SNB955872978110;242;Gemeindewerke Partenstein;preisblatt_nne_01.01.2026_-_endgueltig.pdf;2026 endgültig;Gemeindewerke Partenstein;Kopfzeile des PDF gelesen
+SNB955872978110;242;Gemeindewerke Partenstein;preisblatt_nne_01.01.2027_-_vorlaeufig_.pdf;2027 vorläufig;Gemeindewerke Partenstein;Kopfzeile des PDF gelesen
+SNB947727983103;218;Gemeindewerke Frammersbach;s_vorlne_2027_pb_261015 (1).pdf;2027 vorläufig;Markt Frammersbach;Kopfzeile des PDF gelesen
+SNB947727983103;218;Gemeindewerke Frammersbach;s_ne_2026_pb_251220_veroeffentlichung (1).pdf;2026, Text unlesbar (Schriftkodierung);"Name nicht lesbar; nur nach Dateinamen zu 218 passend, nicht bestätigt";nein
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;Netzentgelte-Strom-2027-vorlaeufig.pdf;2027 vorläufig;SWN Stadtwerke Neustadt GmbH (nicht 585 Neustadt a.d. Donau);Kopfzeile des PDF gelesen
+SNB947270211210;778;SWN Stadtwerke Neustadt GmbH;Netzentgelte-Strom-ab-01.01.2026-14a-EnWG-Stand-16.12.2025.pdf;2026;SWN Stadtwerke Neustadt GmbH (nicht 585 Neustadt a.d. Donau);Kopfzeile des PDF gelesen
+;;;SWE_Netzentgelt_Strom_2026_final.pdf;2026 endgültig;Stadtwerke Eschwege (SWE), nicht den 13 zugeordnet, Netzbetreiber in Tabelle noch zu suchen;Kopfzeile des PDF gelesen
+;;;SWE_Netzentgelt_Strom_2027_vorlaeufig.pdf;2027 vorläufig;Stadtwerke Eschwege (SWE), nicht den 13 zugeordnet;Kopfzeile des PDF gelesen
