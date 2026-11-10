@@ -401,7 +401,8 @@ function nbAnzeigen() {
 }
 
 function rechnen() {
-  const b = BRANCHEN[$("branche").value];
+  const bGewaehlt = BRANCHEN[$("branche").value];
+  const b = bGewaehlt || BRANCHEN.sonstiges;                   // ohne Branche: allgemeines Gewerbeprofil G0 als sichtbare Annahme
   const kwh = parseFloat($("kwh").value) || 0;
   const kwEingabe = parseFloat($("kw").value) || 0;
   const schicht = +$("schicht").value, tage = +$("tage").value;
@@ -438,7 +439,7 @@ function rechnen() {
   if (!nb || !kwh) { out.innerHTML = '<h2>Ergebnis</h2><p class="leer">Postleitzahl, Netzbetreiber und Jahresverbrauch angeben.</p>'; return; }
 
   // Spitzenlast: Rechnung > Eingabe > Anlagen > Branche
-  const ohneProfil = !b;                                         // keine Branche: nur Eingaben (kWh, kW), kein Lastprofil, kein Speicher
+  const ohneProfil = !bGewaehlt;
   const hBranche = b ? brancheStunden(b, schicht, tage) : 0;
   const kwBranche = b ? kwh / hBranche : 0;
   const betriebsstunden = tage * 52 * ({1: 9, 2: 16, 3: 24}[schicht]);
@@ -448,9 +449,9 @@ function rechnen() {
   if (kwEingabe) { kw = kwEingabe + (laden && !$("kw-sicher").checked ? 0 : 0); herkunft = $("kw-sicher").checked ? "laut Netzrechnung" : "Ihre Angabe"; }
   else if (kwAnlagen) { kw = Math.max(kwAnlagen, kwBranche * 0.8); herkunft = `geschätzt aus Anlagen (${fmt(A.summe)} kW) plus halbe Grundlast (${fmt(grundlast)} kW)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
   else { kw = kwBranche + laden; herkunft = b ? `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : "") : ""; }
-  if (ohneProfil && !(kwh < 100000 && !$("kw-sicher").checked) && !kwEingabe) { out.innerHTML = '<h2>Ergebnis</h2><p class="leer">Ohne Branche bitte die Spitzenlast (kW) eingeben, sonst die Branche wählen. Passt keine Branche, „Sonstiges Gewerbe" wählen.</p>'; return; }
 
   const hinweise = [];
+  if (ohneProfil) hinweise.push({w: 1, t: "Keine Branche gewählt: Als Lastprofil wird das allgemeine Gewerbeprofil G0 angenommen (Annahme). Für genauere Ergebnisse die Branche wählen."});
   if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preise 2026 laut Preisblatt des Netzbetreibers. ${nb.ps === "vorläufig" ? "Das Preisblatt ist als vorläufig gekennzeichnet." : "Ob endgültig oder vorläufig, steht im Preisblatt nicht."}`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
   if (ebeneFehlt) html += `<p class="leer">Für die gewählte Ebene: Werte nicht vorhanden. Die Rechnung nutzt die Niederspannung.</p>`;
@@ -468,7 +469,6 @@ function rechnen() {
       <div class="zahl"><small>Arbeitspreis</small><span>${fmt(ap, 2)} ct/kWh</span></div></div>
       <p class="herkunft">Unter 100.000 kWh ohne Leistungsmessung rechnet der Netzbetreiber mit Grund- und Arbeitspreis. Eine Spitzenkappung spart hier kein Netzentgelt.</p>`;
     html += strompreisBlock(nb, true, kwh, null);
-    if (ohneProfil) { out.innerHTML = html + '<p class="herkunft">Ohne Branche rechnet die Seite nur mit Ihren Eingaben. Für Spitzenkappung, Speicher und Solar bitte eine Branche (Lastprofil) wählen.</p>'; return; }
   } else {
     if (!nb.ns) { out.innerHTML = html + '<p class="leer">Für diesen Netzbetreiber liegen noch keine geprüften Preise für Kunden mit Leistungsmessung vor.</p>'; return; }
     const r = rlm(nb.ns, kwh, kw, nb.le);
@@ -480,7 +480,6 @@ function rechnen() {
       <div class="zahl"><small>Arbeitsanteil</small><span>${fmt(r.arbeit)} €</span></div></div>
       <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
     html += strompreisBlock(nb, false, kwh, {...r, kw});
-    if (ohneProfil) { out.innerHTML = html + '<p class="herkunft">Ohne Branche rechnet die Seite nur mit Ihren Eingaben (Verbrauch, Spitzenlast). Für Spitzenkappung, Speicher und Solar bitte eine Branche (Lastprofil) wählen.</p>'; return; }
 
     // Empfindlichkeit
     const stufen = [0.7, 0.85, 1, 1.2, 1.5].map(f => Math.round(kw * f));
