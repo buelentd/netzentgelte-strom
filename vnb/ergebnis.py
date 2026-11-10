@@ -137,7 +137,9 @@ class Speicher:
         hlzf = self._hlzf()
         ent = self._entfernt()
         beleg_offen = self._beleg_offen_liste()
-        zeilen = [self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent)
+        freigabe = self._freigabe_liste()
+        sonder = self._sonderfall_liste()
+        zeilen = [self._sonderfall(self._freigabe(self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent), freigabe), sonder)
                   for d in self._zeilen_recherche()]
         for d in zeilen:
             d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
@@ -213,6 +215,41 @@ class Speicher:
             return {}
         with open(pfad, encoding="utf-8-sig", newline="") as f:
             return {r["nr"].strip(): r["offene_ebenen"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    def _freigabe_liste(self) -> set:
+        """lauf/ok_freigabe_nutzer.csv (mastr_nr;nr;...): vom Nutzer freigegebene Netzbetreiber (09.11.2026), obwohl nicht zeilenweise am Dokument belegt."""
+        pfad = self.ordner.parent / "lauf" / "ok_freigabe_nutzer.csv"
+        if not pfad.exists():
+            return set()
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["nr"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    def _sonderfall_liste(self) -> dict:
+        """lauf/sonderfall_nutzer.csv (nr;status;hinweis): vom Nutzer geprüfte Sonderfälle (z. B. Werksnetz nur 110 kV), Status und Hinweis werden gesetzt."""
+        pfad = self.ordner.parent / "lauf" / "sonderfall_nutzer.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["nr"].strip(): r for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    @staticmethod
+    def _sonderfall(d: dict, sonder: dict) -> dict:
+        r = sonder.get(str(d.get("nr")))
+        if not r:
+            return d
+        d = dict(d)
+        d["status"] = r["status"].strip()
+        d["hinweis"] = r["hinweis"].strip()
+        return d
+
+    @staticmethod
+    def _freigabe(d: dict, frei: set) -> dict:
+        if str(d.get("nr")) not in frei or d.get("status") != "pruefen" or not d.get("slp") or not d.get("ns"):
+            return d
+        d = dict(d)
+        d["status"] = "ok"
+        d["hinweis"] = "Freigegeben durch Nutzer 09.11.2026, nicht zeilenweise am Dokument belegt (Stichprobe 20 am Dokument: 3 Fehler, korrigiert)" + ("; " + d["hinweis"] if d.get("hinweis") else "")
+        return d
 
     @staticmethod
     def _beleg_offen(d: dict, offen: dict) -> dict:

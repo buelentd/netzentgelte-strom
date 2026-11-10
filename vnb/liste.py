@@ -61,6 +61,7 @@ def aus_mastr(ausgabe: Path, mastr_dir: Path, rolle_regex: str = "", gebiete: bo
     gebiet_ergaenzen(out, sammler, netzinfo)
     gebiete_mod.plz_schreiben(sammler, {e["mastr_nr"]: e["netzbetreiber"] for e in out},
                               ausgabe.parent / "plz_netzbetreiber.csv")
+    gebiete_mod.plz_gemeinde_schreiben(sammler, ausgabe.parent / "plz_gemeinde.csv")
     if not 300 <= len(out) <= 2000:
         raise SystemExit(f"Filter ergibt {len(out)} Netzbetreiber (erwartet ca. 850). Rollenwerte prüfen in "
                          f"{ausgabe.parent / 'mastr_rollen.txt'} und mit --rolle-regex angeben.")

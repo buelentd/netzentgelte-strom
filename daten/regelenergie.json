@@ -1,6 +1,6 @@
 {
  "quelle": "ENTSO-E Transparenzplattform, Prices of procured balancing capacity (A89), Regelzone DE-LU",
- "zeitraum": "2025-11-01..2026-10-31",
+ "zeitraum": "2025-11-09..2026-11-08",
  "versuche": {
   "A81 controlArea A01 (täglich)": "The provided parameters do not match the dataItem parameters or values.",
   "A81 controlArea A02 (wöchentlich)": "The provided parameters do not match the dataItem parameters or values.",

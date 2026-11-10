@@ -34,6 +34,15 @@ textarea{min-height:70px;resize:vertical}
 input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--akzent);outline-offset:1px}
 .haken{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--leise);margin-top:4px}
 .klein{font-size:.82rem;color:var(--leise)}
+.stufe{border:1px solid var(--linie);border-radius:10px;margin:14px 0;background:var(--feld)}
+.stufe>summary{cursor:pointer;padding:10px 12px;font-weight:700;list-style:none}
+.stufe>summary::-webkit-details-marker{display:none}
+.stufe>summary::before{content:"▸ ";color:var(--leise)}
+.stufe[open]>summary::before{content:"▾ "}
+.stufe>.inhalt{padding:0 12px 12px}
+.stufe .stufe-hinweis{font-weight:400;color:var(--leise);font-size:.84rem;margin-left:6px}
+.stufe1{margin:6px 0 0}
+.stufe1>h2{margin:0 0 8px}
 .tipp{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:6px;border-radius:50%;border:1px solid var(--linie);background:var(--feld);color:var(--leise);font-size:.72rem;font-weight:700;cursor:help;padding:0;vertical-align:middle;line-height:1}
 .tipp:hover,.tipp:focus-visible{color:var(--text);border-color:var(--akzent)}
 .tipptext{display:none;margin:6px 0 8px;padding:8px 10px;border:1px solid var(--linie);border-radius:8px;background:var(--feld);color:var(--text);font-size:.84rem;font-weight:400;line-height:1.4}
@@ -90,7 +99,7 @@ a{color:var(--akzent)}
 <div class="seite">
   <header class="kopf">
     <span class="marke">Testseite, nicht conplot.de</span>
-    <div class="klein" style="background:#fff3cd;color:#664d03;border:1px solid #e0c36a;border-radius:7px;padding:8px 10px;margin:8px 0;line-height:1.35"><b>Werte in Prüfung (Stand 07.11.2026).</b> Die Netzentgelte stammen aus den Preisblättern der Netzbetreiber, sind aber noch nicht vollständig zeilenweise gegen die Dokumente geprüft. Bei einzelnen Netzbetreibern können Ebenen vertauscht oder falsch sein. Ergebnisse sind eine Modellrechnung mit sichtbaren Annahmen, kein Angebot und keine Beratung.</div>
+    <div class="klein" style="background:#fff3cd;color:#664d03;border:1px solid #e0c36a;border-radius:7px;padding:8px 10px;margin:8px 0;line-height:1.35"><b>Werte in Prüfung (Stand 09.11.2026).</b> Die Netzentgelte stammen aus den Preisblättern der Netzbetreiber. Rund 580 von 831 sind Zeile für Zeile am Dokument belegt, etwa 190 sind freigegeben, aber nicht einzeln geprüft. In Stichproben hatten etwa 2 bis 3 von 100 Netzbetreibern einen Fehler (zum Beispiel vertauschte Spalten oder Brutto statt Netto). Ergebnisse sind eine Modellrechnung mit sichtbaren Annahmen, kein Angebot und keine Beratung.</div>
     <div class="beispiele"><span class="klein">Beispiel laden:</span>
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
       <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
@@ -107,6 +116,7 @@ a{color:var(--akzent)}
       </div>
       <hr class="trenner">
 
+      <div class="stufe1"><h2>Stufe 1 · Netzentgelt <span class="stufe-hinweis">Pflicht: Postleitzahl, Netzbetreiber und Jahresverbrauch</span></h2></div>
       <div class="zeile">
         <div>
           <label class="titel" for="plz">Postleitzahl des Standorts <span class="pflicht">*</span></label>
@@ -152,6 +162,7 @@ a{color:var(--akzent)}
         </div>
       </div>
 
+      <details class="stufe" id="stufe2"><summary>Stufe 2 · Spitze senken <span class="stufe-hinweis">optional: Anlagen, Speicher zur Spitzenkappung, atypische Netznutzung</span></summary><div class="inhalt">
       <div>
         <label class="titel" for="anlagen">Welche Anlagen ziehen kurz und kräftig Strom?</label>
         <textarea id="anlagen" placeholder="z. B. 2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW"></textarea>
@@ -179,6 +190,9 @@ a{color:var(--akzent)}
           <input type="number" id="speicherpreis" min="0" step="10" placeholder="leer = 450 (Richtwert, Angebot einholen)">
         </div>
       </div>
+      </div></details>
+
+      <details class="stufe" id="stufe3"><summary>Stufe 3 · PV, Speicher und Stromtarif <span class="stufe-hinweis">Modellrechnung mit Annahmen</span></summary><div class="inhalt">
       <div>
         <label class="titel" for="tarif">Stromtarif</label>
         <select id="tarif">
@@ -186,7 +200,7 @@ a{color:var(--akzent)}
           <option value="fest">Festpreis</option>
           <option value="dynamisch">dynamisch (Börsenpreis, stündlich)</option>
         </select>
-        <div class="klein">Mit dynamischem Tarif verschiebt der Speicher den eigenen Verbrauch in billige Stunden.</div>
+        <div class="klein">Mit dynamischem Tarif verschiebt der Speicher den eigenen Verbrauch in billige Stunden. Dynamische Tarife und zeitvariable Netzentgelte (§ 14a Modul 3) setzen in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway) voraus. Ob es an Ihrem Standort verfügbar ist, erfragen Sie beim Messstellenbetreiber.</div>
       </div>
       <div class="zeile">
         <div>
@@ -266,6 +280,8 @@ a{color:var(--akzent)}
         </div>
         <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, höchstens 1,5 Ladungen pro Tag. Strompreis, Einspeisevergütung und Steuern sind Platzhalter, bitte fachlich prüfen.</div>
       </details>
+      </div></details>
+
       <label class="haken"><input type="checkbox" id="rueckspeisen"> Speicher speist ins Netz zurück</label>
     </form>
 
@@ -489,9 +505,18 @@ function rechnen() {
   if ($("pv").checked) hinweise.push({w: 0, t: "PV-Anlage: senkt den Netzbezug tagsüber. Morgen- und Abendspitzen bleiben; der Speicher kann aus PV geladen werden."});
   if (!kwEingabe && !slpFall) hinweise.push({w: 1, t: "Spitzenlast ist geschätzt. Mit dem Wert aus der Netzrechnung wird das Ergebnis genau."});
   if (b && b.fenster) hinweise.push({w: 0, t: `Typische Spitzenzeit für ${b.name}: ${b.fenster} (${b.form && $("profilwahl").value === "test" ? "Testprofil, geschätzt, nicht gemessen" : "BDEW-Profil " + b.profil + ", Durchschnitt vieler Betriebe, nicht gemessen"}).`});
+  if ($("tarif").value === "dynamisch") hinweise.push({w: 1, t: "Dynamischer Tarif: Er setzt in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway) voraus (§ 41a Abs. 2 EnWG). Der Messstellenbetreiber muss bei Verbrauch über 100.000 kWh spätestens ab 2028 mit dem Einbau beginnen (§ 45 MessbG). Ob es an Ihrem Standort schon verfügbar ist, erfragen Sie beim Messstellenbetreiber."});
+  const vorHinweise = html;
   html += hinweise.length ? `<ul class="hinweise">${hinweise.map(h => `<li class="${h.w ? "warn" : ""}">${h.t}</li>`).join("")}</ul>` : "";
   if (nb.q) html += `<p class="herkunft">Quelle: <a href="${nb.q.split(" | ")[0].replace(/^RLM:\s*/, "")}" target="_blank" rel="noopener">Preisblatt des Netzbetreibers</a> · Datenstand ${D.stand}</p>`;
-  out.innerHTML = html;
+  const trenn = vorHinweise.indexOf('<hr class="trenner">');
+  if (trenn > 0) {
+    const war = out.querySelector("details.stufe");
+    const offen = war ? war.open : !!(A.anlagen.length || $("speicher-kwh").value || $("pv").checked || $("laden").checked || $("ziel").value);
+    out.innerHTML = vorHinweise.slice(0, trenn)
+      + `<details class="stufe" ${offen ? "open" : ""}><summary>Stufe 2 und 3 · Spitze senken, Speicher und Wirtschaftlichkeit <span class="stufe-hinweis">Modellrechnung mit Annahmen</span></summary><div class="inhalt">` + vorHinweise.slice(trenn) + `</div></details>`
+      + html.slice(vorHinweise.length);
+  } else out.innerHTML = html;
 }
 
 // Atypische Netznutzung (§ 19 Abs. 2 Satz 1 StromNEV): Leistungspreis nur auf die Spitze in den Hochlastzeitfenstern
@@ -784,7 +809,7 @@ function beispiel(k) {
   $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
   nbAnzeigen(); rechnen();
 }
-document.querySelectorAll("[data-bsp]").forEach(b => b.addEventListener("click", () => beispiel(b.dataset.bsp)));
+document.querySelectorAll("[data-bsp]").forEach(b => b.addEventListener("click", () => { document.querySelectorAll("details.stufe").forEach(x => x.open = true); beispiel(b.dataset.bsp); }));
 $("plz").value = "08393"; $("branche").value = "baeckerei"; $("kwh").value = 150000; $("kwh-sicher").checked = true;
 $("tage").value = "6"; $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
 
@@ -828,7 +853,7 @@ nbAnzeigen(); rechnen();
     kwh:["Jahresverbrauch laut Stromrechnung. Ab 100.000 kWh gilt die Messung mit Leistung (RLM), darunter das Standardlastprofil.","Beleg: Grenze 100.000 kWh laut Stromnetzzugangsverordnung."],
     kw:["Höchste gemessene Viertelstunden-Leistung im Jahr. Sie steht auf der Netzrechnung. Ohne Angabe schätzen wir sie aus der Branche.","Beleg: Schätzung ist eine Annahme, keine Messung."],
     ebene:["Spannungsebene Ihres Anschlusses: Niederspannung (Normalfall), Umspannung MS/NS oder Mittelspannung.","Beleg: Preise je Ebene aus dem Preisblatt Ihres Netzbetreibers."],
-    tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich.","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen. Kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026)."],
+    tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich. Voraussetzung ist in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway).","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen, kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026). Smart-Meter-Voraussetzung: § 41a Abs. 2 EnWG (Angebotspflicht für Kunden mit intelligentem Messsystem). Einbau durch den Messstellenbetreiber: über 100.000 kWh spätestens ab 2028 (§ 45 Abs. 1 Nr. 3 MessbG), 6.000 bis 100.000 kWh spätestens ab 2025 (Nr. 4)."],
     'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel, letzte 30 Tage oder Terminmarkt.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
   };
   document.querySelectorAll("label.titel[for], label.haken").forEach(l=>{

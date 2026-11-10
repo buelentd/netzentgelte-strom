@@ -535,7 +535,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     if out.name != "ergebnis":                                         # Netzbetreiber-Liste aus dem Hauptordner übernehmen
         import shutil
-        for n in ("netzbetreiber.csv", "plz_netzbetreiber.csv", "mastr_rollen.txt"):
+        for n in ("netzbetreiber.csv", "plz_netzbetreiber.csv", "plz_gemeinde.csv", "mastr_rollen.txt"):
             if not (out / n).exists() and (HIER / "ergebnis" / n).exists():
                 shutil.copy(HIER / "ergebnis" / n, out / n)
     log = Log(out / "lauf.log")
