@@ -289,6 +289,11 @@ a{color:var(--akzent)}
               <option value="test">Testprofil: Form aus einem conplot-Beispiel abgelesen, geschätzt, noch nicht bewertet</option></select></div>
           <div><label class="titel" for="a-dv">Gebühr Direktvermarkter für Anlagenteile über 100 kWp (ct/kWh; eigene Annahme, nicht belegt)</label>
             <input type="number" id="a-dv" min="0" step="0.1" value="0.4"></div>
+          <div><label class="titel" for="a-spitzenh">Dauer der Spitze (Stunden; Annahme, ohne Lastgang nicht bekannt)</label>
+            <input type="number" id="a-spitzenh" min="0.25" max="8" step="0.25" value="1">
+            <span class="klein">Wenn Ihre Spitzenlast über der Spitze des Lastprofils liegt, wird sie als kurze Spitze angesetzt.</span></div>
+          <div><label class="titel" for="a-spitzentage">Tage mit Spitze pro Jahr (Annahme, ohne Lastgang nicht bekannt)</label>
+            <input type="number" id="a-spitzentage" min="1" max="260" step="1" value="12"></div>
           <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
             <input type="number" id="a-abbau" min="0" max="20" step="0.5" value="2.5"></div>
           <div><label class="titel" for="a-zyklen">Ladezyklen pro Tag (Annahme, höchstens 2)</label>
@@ -756,10 +761,14 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const U = NUTZBAR * cap, Psp = cap / SPEICHERDAUER;
     // Säule 1: Spitze senken. Beste Zielspitze für diese Speichergröße suchen (nutzbare Energie und Leistung des Speichers
     // begrenzen, wie tief gekappt werden kann; der Tarif kann dabei wechseln). Eigene Eingabe "Zielspitze" hat Vorrang.
-    const skala = kw / lwMax;
-    const energieFuer = z => lw.reduce((a, c) => a + Math.max(0, c * skala - z), 0);
+    // Das Profil passt zur Jahresmenge (kWh). Liegt Ihre Spitze darüber, kommt sie als kurze Spitze dazu (Annahme: Dauer und Zahl der Tage einstellbar);
+    // das Profil wird nicht auf die Spitze hochskaliert, das würde die Jahresmenge verfälschen.
+    const spike = kw > lwMax, hSp = num("a-spitzenh") || 1, nSp = num("a-spitzentage") || 12;
+    const skala = spike ? 1 : kw / lwMax;
+    const eNat = z => lw.reduce((a, c) => a + Math.max(0, c * skala - z), 0), eSp = z => spike ? hSp * Math.max(0, kw - z) : 0;
+    const energieFuer = z => Math.max(eNat(z), eSp(z));            // größte Energie, die der Speicher in einem Ereignis liefern muss
     const ausKappung = z => {
-      const n = rlm(nb.ns, kwh, z, nb.le), kEff = Math.min(U, energieFuer(z));
+      const n = rlm(nb.ns, kwh, z, nb.le), kEff = (arbeitstage * Math.min(U, eNat(z)) + nSp * Math.min(U, eSp(z))) / arbeitstage;   // je Arbeitstag gemittelt
       const v = arbeitstage * kEff * (1 / ETA - 1) * (strom + n.ap) / 100, e = rVor.summe - n.summe;
       return {ziel: z, nach: n, kapEff: kEff, verlust: v, ersparnis: e, s1: e - v};
     };
@@ -889,6 +898,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
       <p class="herkunft">Die Anlage erzeugt etwa ${fmt(anlage.erz)} kWh im Jahr, davon ${fmt(anlage.eig)} kWh im Betrieb genutzt, der Rest wird für ${fmt(einsp, 2)} ct/kWh eingespeist. Nutzen ${fmt(anlage.nutzen)} € pro Jahr (nach ${fmt(anlage.betrieb)} € Betriebskosten), Investition ${fmt(anlage.invest)} €, Barwert über 20 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${anlage.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert))} €</b>.</p>
       <p class="herkunft">Zusammen mit dem Speicher (Barwert über ${jahre} Jahre ${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €): <b>${anlage.barwert + R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert + R.barwert))} €</b>. Die Zeiträume sind verschieden (Anlage 20, Speicher 12 Jahre), die Summe ist eine grobe Einordnung. Ohne Förderung, ohne Steuerwirkung, Eigenverbrauch ohne Speicher gerechnet.</p>`;
   }
+  if (R.cap && kw > lwMax) hinweise.push({w: 0, t: `Ihre Spitze von ${fmt(kw)} kW liegt über der Spitze des Lastprofils bei ${fmt(kwh)} kWh (${fmt(lwMax)} kW). Gerechnet wird mit dem Profil für Ihre Jahresmenge plus einer Spitze von ${fmt(kw)} kW für ${fmt(num("a-spitzenh") || 1, 2)} Stunden an ${fmt(num("a-spitzentage") || 12)} Tagen pro Jahr (Annahme). Ein echter Lastgang ersetzt diese Annahme.`});
   if (R.cap && R.genutzt > zyklen()) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die eingestellten ${fmt(zyklen(), 1)}. Speicher größer wählen.`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
   return html.replace("</h2>", "</h2>" + chart);
