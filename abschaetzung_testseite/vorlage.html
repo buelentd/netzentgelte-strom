@@ -248,18 +248,7 @@ a{color:var(--akzent)}
         <div id="dach-feld">
           <label class="titel" for="dach">Nutzbare Dachfläche (m²), falls noch keine Anlage</label>
           <input type="number" id="dach" min="0" step="10" placeholder="z. B. 400">
-          <label class="titel" for="dach-adresse" style="margin-top:8px">oder: Dach aus der Adresse (Beispieldaten der Google Solar API)</label>
-          <select id="dach-adresse">
-            <option value="">Adresse wählen …</option>
-            <option value="1907">Meerane, Markt 1: 1.907 m² nutzbar</option>
-            <option value="446">Biberach, Marktplatz 7: 446 m²</option>
-            <option value="369">München, Rathausplatz 1: 369 m²</option>
-            <option value="169">Berlin, Karl-Marx-Allee 1: 169 m²</option>
-            <option value="104">Velden, Hauptstraße 25: 104 m²</option>
-            <option value="189">Kruckow, Dorfstraße 3: 189 m²</option>
-            <option value="10">Fulda, Marktplatz 1: 10 m² (vermutlich falsches Gebäude)</option>
-          </select>
-          <div class="klein" id="dach-hinweis" hidden>Aus der Adresse ermittelt. Bitte prüfen, ob es Ihr Gebäude ist, und die Fläche bei Bedarf korrigieren.</div>
+</div>
         </div>
       </div>
       <details class="annahmen">
@@ -311,7 +300,7 @@ a{color:var(--akzent)}
           <div><label class="titel" for="a-verf">Verfügbarkeit Regelenergie (0–1)</label>
             <input type="number" id="a-verf" min="0" max="1" step="0.05" value="0.5"></div>
         </div>
-        <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, Ladungen pro Tag und Zyklen bis Lebensende einstellbar (Annahmen). Strompreis, Einspeisevergütung und Steuern sind Platzhalter, bitte fachlich prüfen.</div>
+        <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, Ladungen pro Tag und Zyklen bis Lebensende einstellbar (Annahmen). Einspeisevergütung, Zins, Abbau und weitere Annahmen sind änderbar und teils nicht belegt (siehe Beschriftung); Steuern und Umlagen sind belegt.</div>
       </details>
       </div></details>
 
@@ -545,6 +534,7 @@ function rechnen() {
   else if (kwAnlagen) { kw = Math.max(kwAnlagen, kwBranche * 0.8); herkunft = `geschätzt aus Anlagen (${fmt(A.summe)} kW) plus halbe Grundlast (${fmt(grundlast)} kW)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
   else { kw = kwBranche + laden; herkunft = (ohneProfil ? "als Obergrenze geschätzt (keine Branche gewählt)" : `geschätzt aus Branche (${b.name}, ${schicht}-Schicht, ${tage} Tage)`) + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
 
+  if (!$("kw").dataset.manuell && !kwEingabe) kw = Math.round(kw);                       // angezeigt und gerechnet wird derselbe Wert
   // Spitzenlast automatisch eintragen: ohne eigene Angabe die Obergrenze aus Jahresverbrauch und Benutzungsstunden (Branche, sonst 2.500 h); die Last geht nie darüber
   if (!$("kw").dataset.manuell) $("kw").value = (kwh && !(kwh < 100000 && !$("kw-sicher").checked)) ? String(Math.round(kw)) : "";
   const hinweise = [];
@@ -918,7 +908,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     anlage = {erz, eig, invest, betrieb, nutzen, barwert: nutzen * f20 - invest};
   }
   const eingabe = num("speicher-kwh");
-  const groessen = [25, 50, 75, 100, 150, 200, 300, 400, 500];
+  const groessen = [25, 50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1500, 2000];
   const kurve = groessen.map(fuer);
   const beste = kurve.reduce((a, c) => c.barwert > a.barwert ? c : a, {barwert: 0, cap: 0, summe: 0, kosten: 0});
   const gewaehlt = eingabe ? fuer(eingabe) : (beste.cap ? fuer(beste.cap) : fuer(groessen[2]));
@@ -945,7 +935,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   if (beste.cap > 0) {
     const lauf = beste.summe > 0 ? beste.kosten / beste.summe : null;
     empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b class="empf-t">Sie haben ${fmt(kwh)} kWh Jahresverbrauch. Dann ist ein Speicher mit ${fmt(beste.cap)} kWh und ${fmt(beste.Psp)} kW das Richtige.</b><br>
-      ${lauf ? `Sie amortisieren in <b>${fmt(lauf, 1)} Jahren</b>` : "Der Speicher bringt"} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis: ${fmt(beste.summe)} € Ersparnis und Erlöse pro Jahr, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.
+      ${lauf ? `Sie amortisieren in <b>${fmt(lauf, 1)} Jahren</b>` : "Der Speicher bringt"} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis: ${fmt(beste.summe)} € Ersparnis und Erlöse pro Jahr, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.${beste.cap === groessen[groessen.length - 1] ? " Das ist die größte geprüfte Größe, ein noch größerer Speicher ist möglich." : ""}
       ${kwp > 0 ? " Die PV-Anlage ist darin eingerechnet." : " Mit einer PV-Anlage amortisieren Sie noch schneller: Dachfläche oder Leistung in Stufe 3 angeben."}</div>`;
   } else {
     empfehlung = `<div style="${kartenStil};background:rgba(160,100,0,.12);border:1px solid #a06400"><b class="empf-w">Kein Speicher rechnet sich bei diesen Angaben.</b><br>Bei ${fmt(gewaehlt.preisJe)} €/kWh Speicherpreis ist der Barwert bei jeder Größe negativ. Die beste Größe (${fmt(gewaehlt.cap)} kWh) rechnet sich ab etwa ${gewaehlt.breakEven >= 5 ? fmt(gewaehlt.breakEven) + " €/kWh" : "keinem realistischen Preis"}.</div>`;
@@ -1036,8 +1026,6 @@ $("form").addEventListener("input", e => {
   if (e.target.id === "plz") { plzVorschlagen(); nbAnzeigen(); }
   if (e.target.name === "nb") gewaehlt = +e.target.value;
   if (e.target.id === "laden") $("laden-bereich").hidden = !e.target.checked;
-  if (e.target.id === "dach-adresse") { $("dach").value = e.target.value; $("dach-hinweis").hidden = !e.target.value; }
-  if (e.target.id === "dach") { $("dach-adresse").value = ""; $("dach-hinweis").hidden = true; }
   if (e.target.id === "pv") { $("pv-feld").hidden = !e.target.checked; $("dach-feld").hidden = e.target.checked; }
   rechnen();
 });
