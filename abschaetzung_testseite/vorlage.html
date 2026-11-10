@@ -108,7 +108,7 @@ a{color:var(--akzent)}
       <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
       <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
     <h1>Geführte Abschätzung: Netzentgelt und Speicher</h1>
-    <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto, ohne Strom, Messstellenbetrieb, Konzessionsabgabe, Umlagen und Umsatzsteuer. Beispiel vorausgefüllt: Bäckerei in Meerane. Börsenpreise (Day-Ahead) bis <b id="boerse-stand"></b>.</p>
+    <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto. Das Ergebnis weist Netzentgelt, Konzessionsabgabe, Umlagen, Stromsteuer und Umsatzsteuer einzeln aus; Energie, Aufschlag des Stromanbieters und das Messentgelt bei Leistungsmessung fehlen noch. Börsenpreise (Day-Ahead) bis <b id="boerse-stand"></b>.</p>
   </header>
 
   <div class="raster">
@@ -526,11 +526,12 @@ function rechnen() {
     const dauer = A.fenster ? A.fenster.dauer : 2;
     if (ziel < kw) {
       let gekappt = kw - ziel;
+      const gekapptWunsch = gekappt;                  // gewünschte Kappung vor der Begrenzung durch den gewählten Speicher
       if (kapEingabe) {                              // gewählter Speicher begrenzt die mögliche Kappung
         const moeglich = Math.min(NUTZBAR * kapEingabe / dauer, kapEingabe / SPEICHERDAUER);
         if (gekappt > moeglich) { gekappt = moeglich; ziel = Math.round((kw - gekappt) * 10) / 10; hinweise.push({w: 1, t: `Der Speicher mit ${fmt(kapEingabe)} kWh schafft nur ${fmt(gekappt)} kW Kappung (nutzbar ${fmt(NUTZBAR * 100)} %, ${fmt(dauer, 1)} h).`}); }
       }
-      const kapazitaet = kapEingabe || Math.ceil(gekappt * dauer / NUTZBAR);
+      const kapazitaet = Math.ceil(gekapptWunsch * dauer / NUTZBAR);        // nötige Kapazität für die gewünschte Kappung (nicht die eingegebene Größe)
       const nach = rlm(nb.ns, kwh, ziel, nb.le);
       const ersparnis = r.summe - nach.summe;
       kappungInfo = {gekappt, ziel, nach, dauer, kapazitaet, ersparnis};
@@ -540,12 +541,12 @@ function rechnen() {
         <div class="zahl"><small>Ersparnis Netzentgelt</small><span>${fmt(ersparnis)} € / Jahr</span></div>
         <div class="zahl"><small>Nötige Kapazität</small><span>ca. ${fmt(kapazitaet)} kWh</span></div>
         <div class="zahl"><small>je gekapptem kW</small><span>${fmt(ersparnis / gekappt)} €</span></div></div>
-        <p class="herkunft">Kapazität = ${fmt(gekappt)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 80 % nutzbar.${zielEingabe ? "" : " Beispielrechnung mit 20 % weniger Spitze; die Auswertung weiter unten sucht je Speichergröße die beste Zielspitze."}</p>`;
+        <p class="herkunft">Kapazität = ${fmt(gekapptWunsch)} kW × ${fmt(dauer, 1)} h ${A.fenster ? "(Ihr Zeitfenster)" : "(Annahme 2 h, Zeitfenster bei den Anlagen angeben)"} ÷ 80 % nutzbar.${zielEingabe ? "" : " Beispielrechnung mit 20 % weniger Spitze; die Auswertung weiter unten sucht je Speichergröße die beste Zielspitze."}</p>`;
       if (r.unter !== nach.unter) hinweise.push({w: 1, t: `Tarifwechsel: Mit ${fmt(ziel)} kW gilt der Tarif ${nach.unter ? "unter" : "ab"} 2.500 h. Die Ersparnis ist deshalb kleiner als ${fmt(gekappt)} kW × Leistungspreis.`});
       if (preis) {
-        const kosten = preis * kapazitaet;
+        const kosten = preis * (kapEingabe || kapazitaet);
         html += `<p class="herkunft">Speicherkosten ca. <b>${fmt(kosten)} €</b> (${fmt(preis)} €/kWh, Platzhalter) · einfache Amortisation nur über Netzentgelt: <b>${ersparnis > 0 ? fmt(kosten / ersparnis, 1) + " Jahre" : "keine"}</b></p>`;
-      } else html += `<p class="herkunft">Speicherpreis fehlt noch (Anbieter-Preisliste). Zum Testen einen Wert in €/kWh eintragen.</p>`;
+      } else html += `<p class="herkunft">Speicherpreis: Die Auswertung unten rechnet mit einem Richtwert nach Größe (bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh; nicht belegt, Anbieter-Preisliste fehlt noch). Eigenen Wert in €/kWh eintragen, um damit zu rechnen.</p>`;
       if ($("rueckspeisen").checked) hinweise.push({w: 0, t: "Rückspeisung: Für zwischengespeicherten und wieder eingespeisten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten (Stichtag und Bedingungen fachlich prüfen). Hier noch nicht eingerechnet."});
     }
   }
@@ -585,6 +586,8 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   const kwJ = kappung ? kappung.ziel : kw;                      // Jahresspitze nach einer möglichen Kappung
   const hzSpitze = Math.min(kwJ, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
   const abstand = (kwJ - hzSpitze) / kwJ * 100, verlagerung = kwJ - hzSpitze;
+  const anlagenSumme = A.anlagen.reduce((x, a) => x + a.anzahl * a.kw, 0);
+  if (anlagenSumme < 0.7 * kw) html += `<p class="herkunft"><b>Achtung:</b> Die angegebenen Anlagen (${fmt(anlagenSumme)} kW) erklären nur ${fmt(anlagenSumme / kw * 100)} % der Spitzenlast (${fmt(kw)} kW). Die Spitze im Zeitfenster kann deshalb höher sein als hier geschätzt.</p>`;
   const r = kappung ? kappung.nach : rlm(nb.ns, kwh, kw, nb.le);
   const indiv = Math.max(r.lp * hzSpitze + r.arbeit, 0.2 * r.summe);
   const ersparnis = r.summe - indiv;
