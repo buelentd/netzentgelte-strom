@@ -55,9 +55,16 @@ if _mp.exists():
     for r in _csv.DictReader(open(_mp, encoding="utf-8-sig"), delimiter=";"):
         if r["messung_eintarifzaehler_eur_jahr"] and not r["plausibilitaet"]:
             mess[int(r["nr"])] = float(r["messung_eintarifzaehler_eur_jahr"].replace(",", "."))
+m1 = {}
+if _mp.exists():
+    for r in _csv.DictReader(open(_mp, encoding="utf-8-sig"), delimiter=";"):
+        if r["modul1_pauschale_eur_jahr_netto"] and not r["plausibilitaet"]:
+            m1[int(r["nr"])] = float(r["modul1_pauschale_eur_jahr_netto"].replace(",", "."))
 for e in nb:
     if e["n"] in mess:
         e["mess"] = mess[e["n"]]
+    if e["n"] in m1:
+        e["m1"] = m1[e["n"]]                                      # § 14a Modul 1: Pauschale in €/Jahr netto (maschinell gelesen, nicht am Dokument bestätigt)
 plz = {p: [list(x) for x in v] for p, v in db.plz().items() if len(p) == 5 and p.isdigit()}    # ungültige Einträge aus VNBdigital (z. B. 7651NK) auslassen
 hlzf = {}
 for d in db.alle():

@@ -886,7 +886,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const proMW = pRegel / 1000 * num("a-regel") * (1 - num("a-vermarkter") / 100);
     const s5hoch = proMW * num("a-verf"), s5tief = proMW * Math.min(0.3, num("a-verf")), s5 = (s5hoch + s5tief) / 2;
     const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
-    const summe = s1 + s2 + s3 + s4 + s5 - opex, kosten = preisJe * cap * (1 - zuschuss);
+    const summe = s1 + s2 + s3 + Math.max(s4, s5) - opex, kosten = preisJe * cap * (1 - zuschuss);
     return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten - entsorgBarwert(cap),
             kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch,
             // Speicherpreis (€/kWh), bei dem der Barwert 0 ist: (Erträge ohne Betriebskosten × Faktor − Entsorgung) ÷ (Betriebskostenanteil × Faktor + 1 − Zuschuss) ÷ Kapazität
@@ -919,8 +919,8 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     ["Spitze senken", R.s[0], R.gekappt > 0 ? `Zielspitze ${fmt(R.ziel)} statt ${fmt(kw)} kW (beste für diese Speichergröße): ${fmt(R.ersparnis)} € Netzentgelt, minus ${fmt(R.verlust)} € Ladeverluste` : "keine Kappung nötig oder möglich"],
     ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Hochlastzeitfenster: Werte nicht vorhanden")],
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
-    [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW")],
-    ["Regelenergie", R.s[4], netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW"],
+    [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], (R.s[3] < R.s[4] && R.s[3] > 0 ? "NICHT IN DER SUMME (gleiche Leistung wie Regelenergie, es zählt der größere Wert). " : "") + (dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW"))],
+    ["Regelenergie", R.s[4], (R.s[4] < R.s[3] && R.s[4] > 0 ? "NICHT IN DER SUMME (gleiche Leistung wie Börsenhandel, es zählt der größere Wert). " : "") + (netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW")],
     ["Betriebskosten Speicher", -R.opex, "1,5 % der Investition pro Jahr (eigene Annahme, nicht belegt)"],
   ];
   const summe = R.summe;
@@ -973,6 +973,8 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   }
   if (R.cap && kw > lwMax) hinweise.push({w: 0, t: `Ihre Spitze von ${fmt(kw)} kW liegt über der Spitze des Lastprofils bei ${fmt(kwh)} kWh (${fmt(lwMax)} kW). Gerechnet wird mit dem Profil für Ihre Jahresmenge plus einer Spitze von ${fmt(kw)} kW für ${fmt(num("a-spitzenh") || 1, 2)} Stunden an ${fmt(num("a-spitzentage") || 12)} Tagen pro Jahr (Annahme). Ein echter Lastgang ersetzt diese Annahme.`});
   if (R.cap && R.genutzt > zyklen()) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die eingestellten ${fmt(zyklen(), 1)}. Speicher größer wählen.`});
+  if (R.cap) hinweise.push({w: 1, t: "Nicht eingerechnet: Intraday-Handel, abgerufene aFRR-Energie, gemeinsame Optimierung über mehrere Märkte, Lastmanagement und Erlöse der Ladeinfrastruktur, intensive und singuläre Netznutzung (§ 19 StromNEV), Netzentgelt-Module nach § 14a EnWG (außer dem Hinweis zu Modul 1), Messstellenbetrieb, Genehmigungen, Netzanschluss, Brandschutz und Versicherung. Börsenhandel (bzw. Verschieben) und Regelenergie nutzen dieselbe Batterieleistung: In der Summe zählt nur der größere der beiden Werte."});
+  if (R.cap && $("laden").checked) hinweise.push({w: 0, t: nb.m1 != null ? `Ladeinfrastruktur, § 14a EnWG Modul 1: Laut Preisblatt von ${nb.name} gibt es eine pauschale Reduzierung des Netzentgelts von ${fmt(nb.m1, 2)} € pro Jahr netto (maschinell gelesen, nicht am Dokument bestätigt, nicht in der Summe). Voraussetzung ist eine steuerbare Verbrauchseinrichtung (zum Beispiel ein Ladepunkt), bei der der Netzbetreiber die Leistung zeitweise reduzieren darf.` : `Ladeinfrastruktur, § 14a EnWG Modul 1: Für ${nb.name} liegt uns keine Pauschale vor (nicht erfasst).`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
   return html.replace("</h2>", "</h2>" + empfehlung).replace("<!--kurve-->", kurveHtml) + chart;       // Empfehlung ganz oben, Tageskurve nach den Hochlastzeitfenstern
 }
