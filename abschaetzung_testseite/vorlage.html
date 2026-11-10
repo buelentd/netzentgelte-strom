@@ -155,7 +155,7 @@ a{color:var(--akzent)}
         </div>
         <div>
           <label class="titel" for="kw">Spitzenlast (kW)</label>
-          <input type="number" id="kw" min="0" step="1" placeholder="leer lassen, wenn unbekannt">
+          <input type="number" id="kw" min="0" step="1" placeholder="wird automatisch eingetragen (Obergrenze)">
           <label class="haken"><input type="checkbox" id="kw-sicher"> aus Netzrechnung (sicher)</label>
         </div>
         <div>
@@ -166,7 +166,7 @@ a{color:var(--akzent)}
             <input type="number" id="a-strom" min="0" step="0.1" placeholder="wird automatisch vorbelegt">
             <span class="klein" id="a-strom-warn" style="color:#a15c00"></span>
             <span class="klein">Ihr gesamter Arbeitspreis in ct/kWh wie auf Ihrer Rechnung: Strombeschaffung, Arbeitspreis des Netzentgelts sowie Steuern, Abgaben und Umlagen (Stromsteuer, Konzessionsabgabe, KWKG-Umlage usw.). Den Leistungspreis brauchen Sie hier nicht, er kommt aus dem Preisblatt Ihres Netzbetreibers. Vorbelegt mit der Annahme (Börse, Aufschlag, Steuern, Netz-Arbeitspreis); überschreiben Sie den Wert mit Ihrem Preis. Feld leeren stellt die Annahme wieder her.</span>
-            <span class="klein">Orientierung für Gewerbe-Festpreise: etwa 16 bis 20 ct ohne Netzentgelt (Quelle: Vergleichsportal Berlin 06.11.2026 und Terminmarkt, kein Angebot). Der Preis laut Ihrer Rechnung ist genauer.</span></div>
+            </div>
 
         <div>
           <label class="titel" for="ebene">Anschluss</label>
@@ -224,9 +224,8 @@ a{color:var(--akzent)}
       <div>
         <label class="titel" for="tarif">Stromtarif</label>
         <select id="tarif">
-          <option value="unbekannt">weiß ich nicht</option>
-          <option value="fest">Festpreis</option>
-          <option value="dynamisch">dynamisch (Börsenpreis, stündlich)</option>
+          <option value="dynamisch">dynamisch (EPEX Day-Ahead, stündlich)</option>
+          <option value="fest">Festpreis (nur mit eigenem Strompreis)</option>
         </select>
         <div class="klein">Mit dynamischem Tarif verschiebt der Speicher den eigenen Verbrauch in billige Stunden. Dynamische Tarife und zeitvariable Netzentgelte (§ 14a Modul 3) setzen in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway) voraus. Ob es an Ihrem Standort verfügbar ist, erfragen Sie beim Messstellenbetreiber.</div>
       </div>
@@ -269,10 +268,9 @@ a{color:var(--akzent)}
           <div><label class="titel" for="a-niveau">Börsenniveau für den Strompreis</label>
             <select id="a-niveau">
               <option value="jahr">Jahresmittel der letzten 365 Tage (Day-Ahead)</option>
-              <option value="termin">Terminmarkt 2027: 14,8 ct/kWh (EEX Baseload, Stand 05.11.2026, nur für das erste Jahr)</option>
               <option value="d30">Mittel der letzten 30 Tage (Day-Ahead)</option>
             </select>
-            <span class="klein">Der Festpreis eines Lieferanten orientiert sich am Terminmarkt, der dynamische Tarif am aktuellen Börsenpreis. Gilt nur, wenn unten kein eigener Strompreis eingetragen ist.</span></div>
+            <span class="klein">Der Strom wird an der Börse (EPEX Day-Ahead) gehandelt. Gilt nur, wenn oben kein eigener Strompreis eingetragen ist.</span></div>
           <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung; über 100 kWp Direktvermarktung: Marktwert Solar 2025 4,51 ct/kWh plus Marktprämie bis 5,84 ct)</label>
             <input type="number" id="a-einsp" min="0" step="0.1" placeholder="automatisch"></div>
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh: Vertrieb, Marge, Absicherung. Haushalte: etwa 3,5 bis 4 (belegt). Gewerbe: etwa 1 bis 3,5, Richtwert ohne Quelle. Bitte aus der eigenen Rechnung eintragen)</label>
@@ -469,7 +467,7 @@ function rechnen() {
   const bGewaehlt = BRANCHEN[$("branche").value];
   const b = bGewaehlt || BRANCHEN.sonstiges;                   // ohne Branche: allgemeines Gewerbeprofil G0 als sichtbare Annahme
   const kwh = parseFloat($("kwh").value) || 0;
-  const kwEingabe = parseFloat($("kw").value) || 0;
+  const kwEingabe = $("kw").dataset.manuell ? (parseFloat($("kw").value) || 0) : 0;      // nur was der Nutzer selbst einträgt; die automatische Vorbelegung zählt nicht als Eingabe
   const schicht = +$("schicht").value, tage = +$("tage").value;
   const A = anlagenLesen($("anlagen").value);
   const laden = $("laden").checked ? (parseFloat($("ladekw").value) || 0) : 0;
@@ -485,7 +483,7 @@ function rechnen() {
   const ebeneFehlt = !!(nb0 && ebeneKey !== "ns" && !nb0[ebeneKey]);
   const EBENE_NAME = {ns: "Niederspannung", msns: "Umspannung MS/NS", ms: "Mittelspannung", hsms: "Umspannung HS/MS"};
   const autoZeilen = nb ? [["Netzbetreiber", nb.name], ["Anschlussebene", EBENE_NAME[ebeneFehlt ? "ns" : ebeneKey] + ($("ebene").dataset.manuell ? "" : " (nach Verbrauch)")],
-    ["Lastprofil", bGewaehlt ? `${b.profil} (${b.name})` : "G0 (Annahme, keine Branche)"], ["Stromtarif", $("tarif").selectedOptions[0] ? $("tarif").selectedOptions[0].text.split(" (")[0] : ""]] : [];
+    ["Lastprofil", bGewaehlt ? `${b.profil} (${b.name})` : "G0 (Annahme, keine Branche)"], ["Stromtarif", ($("tarif").value === "fest" && gesamtpreisEingabe()) ? "Festpreis (Ihr Preis)" : "dynamisch (EPEX)"]] : [];
   autoBox(autoZeilen);
 
   // Anlagen-Rückmeldung
@@ -524,6 +522,8 @@ function rechnen() {
   else if (kwAnlagen) { kw = Math.max(kwAnlagen, kwBranche * 0.8); herkunft = `geschätzt aus Anlagen (${fmt(A.summe)} kW) plus halbe Grundlast (${fmt(grundlast)} kW)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
   else { kw = kwBranche + laden; herkunft = b ? `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : "") : ""; }
 
+  // Spitzenlast automatisch eintragen: ohne eigene Angabe die Obergrenze aus Jahresverbrauch und Benutzungsstunden (Branche, sonst 2.500 h); die Last geht nie darüber
+  if (!$("kw").dataset.manuell) $("kw").value = (kwh && !(kwh < 100000 && !$("kw-sicher").checked)) ? String(Math.round(kw)) : "";
   const hinweise = [];
   // Plausibilität: Die Spitzenlast kann bei dem Lastprofil und dem Jahresverbrauch nicht unter der Spitze des (auf den Verbrauch skalierten) Profils liegen.
   // Untergrenze: Profil als mittlerer Tag je Wochentag in Stundenwerten; Jahreszeiten und Viertelstunden sind nicht abgebildet, die echte Mindestspitze liegt also eher höher.
@@ -703,8 +703,8 @@ function strompreisBlock(nb, slp, kwh, rl) {
     zeilen.push(["Energie und Aufschlag (aus Ihrem Strompreis)", kwh * en / 100, `${fmt(gesamtEingabe, 2)} ct/kWh Ihr Gesamtpreis − ${fmt(netzApCt, 2)} ct Netz-Arbeitspreis − ${fmt(abgabenCt, 2)} ct Steuern und Umlagen = ${fmt(en, 2)} ct/kWh`, false]);
   } else {
     const niv = $("a-niveau") ? $("a-niveau").value : "jahr", bm = D.boerse.length ? (niv === "d30" ? D.boerse.slice(-720) : D.boerse).reduce((x, c) => x + c, 0) / (niv === "d30" ? Math.min(720, D.boerse.length) : D.boerse.length) : 0;
-    const bw = niv === "termin" ? 14.82 : bm, auf = num("a-aufschlag");
-    zeilen.push(["Energie (Börse, Annahme)", kwh * bw / 100, `${fmt(kwh)} kWh × ${fmt(bw, 2)} ct/kWh ${niv === "termin" ? "(Terminmarkt 2027, EEX Baseload, Stand 05.11.2026)" : niv === "d30" ? "(Mittel der letzten 30 Tage, Day-Ahead)" : "(Jahresmittel der letzten 365 Tage, Day-Ahead, Energy-Charts)"}. Annahme: Ein Festpreis-Lieferant weicht davon ab. Eigenen Gesamtpreis oben eintragen.`, false]);
+    const bw = bm, auf = num("a-aufschlag");
+    zeilen.push(["Energie (Börse, Annahme)", kwh * bw / 100, `${fmt(kwh)} kWh × ${fmt(bw, 2)} ct/kWh ${niv === "d30" ? "(Mittel der letzten 30 Tage, Day-Ahead)" : "(Jahresmittel der letzten 365 Tage, Day-Ahead, Energy-Charts)"}. Annahme: Ein Festpreis-Lieferant weicht davon ab. Eigenen Gesamtpreis oben eintragen.`, false]);
     zeilen.push([auf ? "Aufschlag des Stromanbieters (Annahme)" : "Aufschlag des Stromanbieters", auf ? kwh * auf / 100 : null, auf == 0 ? "nicht enthalten: Vertrieb, Marge und Absicherung des Stromanbieters sind mit ihm zu verhandeln (Feld Aufschlag in den Annahmen)" : `${fmt(kwh)} kWh × ${fmt(auf, 2)} ct/kWh (Annahme für Vertrieb, Marge, Absicherung; mit dem Anbieter zu verhandeln)`, false]);
   }
   const apRows = zeilen.filter(z => z[1] != null && !/Leistungspreis|Grundpreis|Messentgelt/.test(z[0]));
@@ -778,10 +778,10 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const TERMIN_2027 = 14.82;                                   // EEX Baseload 2027, 148,18 €/MWh (Angabe aus der Recherche, nicht geprüft)
   const niveau = $("a-niveau") ? $("a-niveau").value : "jahr";
   const boersenMittel = niveau === "jahr" ? mittel(D.boerse) : niveau === "d30" ? mittel(D.boerse.slice(-720)) : TERMIN_2027;
-  const niveauName = niveau === "jahr" ? "Jahresmittel" : niveau === "d30" ? "Mittel 30 Tage" : "Terminmarkt 2027";
+  const niveauName = niveau === "jahr" ? "Jahresmittel" : "Mittel 30 Tage";
   const strom = gesamtpreisEingabe() ? Math.max(0, gesamtpreisEingabe() - rVor.ap) : (boersenMittel + num("a-aufschlag") + num("a-steuern"));   // eingegebener Gesamtpreis enthält den Netz-Arbeitspreis
   const steuern = num("a-steuern"), arbeitstage = 52 * tage;
-  const tarif = $("tarif").value, dynamisch = tarif === "dynamisch";
+  const tarif = $("tarif").value, dynamisch = tarif === "dynamisch" || !gesamtpreisEingabe();        // Handel nur an der Börse; Festpreis nur, wenn der Nutzer einen Preis einträgt
   const netz = num("netzanschluss");
   const last = lastProfil(b, kwh, tage);
   const lw = last.werktag, lwMax = Math.max(...lw);
@@ -918,7 +918,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   let chart = `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
   if (!R.cap) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht.</p>`;
   else {
-    chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
+    chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch (EPEX)" : "Festpreis (Ihr eingegebener Preis)"}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
     <p class="herkunft">Barwert über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
     chart += `<p class="herkunft"><b>Wann sich der Speicher amortisiert:</b> Der Barwert ist 0 bei einem Speicherpreis von etwa <b>${R.breakEven >= 5 ? fmt(R.breakEven) + " €/kWh" : "keinem realistischen Preis (unter 5 €/kWh, Erträge zu klein)"}</b>; angesetzt sind ${fmt(R.preisJe)} €/kWh. Nur Einsparungen und Erlöse zählen, der Strom selbst wird ohnehin bezahlt. Gerechnet über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins, ${fmt(num("a-abbau"), 1)} % Kapazitätsabbau je Jahr, mit Entsorgung und Betriebskosten.</p>`;
@@ -973,6 +973,7 @@ function steuernVorschlagen() {
 }
 $("a-steuern").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").addEventListener("change", steuernVorschlagen);
+$("kw").addEventListener("input", e => { if (e.isTrusted) { if ($("kw").value === "") delete $("kw").dataset.manuell; else $("kw").dataset.manuell = "1"; } });
 $("a-strom").addEventListener("input", e => { if (e.isTrusted) { if ($("a-strom").value === "") delete $("a-strom").dataset.manuell; else $("a-strom").dataset.manuell = "1"; }
   const v = num("a-strom"), w = $("a-strom-warn");
   w.textContent = !v ? "" : v < 3 ? "Unter 3 ct/kWh: meinen Sie €/kWh? Bitte in ct/kWh eingeben (üblich sind 10 bis 40 ct/kWh)." : v > 60 ? "Über 60 ct/kWh: meinen Sie Cent statt Euro? Üblich sind 10 bis 40 ct/kWh." : ""; });
@@ -1035,7 +1036,7 @@ nbAnzeigen(); rechnen();
     kw:["Höchste gemessene Viertelstunden-Leistung im Jahr. Sie steht auf der Netzrechnung. Ohne Angabe schätzen wir sie aus der Branche.","Beleg: Schätzung ist eine Annahme, keine Messung."],
     ebene:["Spannungsebene Ihres Anschlusses: Niederspannung (Normalfall), Umspannung MS/NS oder Mittelspannung.","Beleg: Preise je Ebene aus dem Preisblatt Ihres Netzbetreibers."],
     tarif:["Fest: ein gleichbleibender Arbeitspreis. Dynamisch: Börsenpreis plus Aufschlag, schwankt stündlich. Voraussetzung ist in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway).","Beleg: Aufschläge dynamischer Gewerbetarife sind Annahmen, kein Anbieter-Preisblatt belegt (Prüfung 09.11.2026). Smart-Meter-Voraussetzung: § 41a Abs. 2 EnWG (Angebotspflicht für Kunden mit intelligentem Messsystem). Einbau durch den Messstellenbetreiber: über 100.000 kWh spätestens ab 2028 (§ 45 Abs. 1 Nr. 3 MessbG), 6.000 bis 100.000 kWh spätestens ab 2025 (Nr. 4)."],
-    'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel, letzte 30 Tage oder Terminmarkt.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
+    'a-niveau':["Wie hoch der Börsenpreis als Basis angesetzt wird: Jahresmittel oder letzte 30 Tage.","Beleg: Börsenpreise aus Energy-Charts, täglich aktualisiert. Prognosen sind nicht belegt."]
   };
   document.querySelectorAll("label.titel[for], label.haken").forEach(l=>{
     const id=l.getAttribute("for")||(l.querySelector("input")||{}).id; if(!id) return; const roh=l.textContent.trim();
