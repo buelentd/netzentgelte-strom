@@ -126,6 +126,9 @@ a{color:var(--akzent)}
           <label class="titel" for="plz">Postleitzahl des Standorts <span class="pflicht">*</span></label>
           <input type="text" id="plz" inputmode="numeric" maxlength="5" placeholder="z. B. 08393" list="plz-liste" autocomplete="off">
           <datalist id="plz-liste"></datalist>
+          <label class="titel" for="ort" style="margin-top:6px">oder Ort (Name eintippen und aus der Liste wählen)</label>
+          <input type="text" id="ort" placeholder="z. B. Meerane" list="ort-liste" autocomplete="off">
+          <datalist id="ort-liste"></datalist>
         </div>
         <div>
           <label class="titel" for="branche">Branche / Betrieb <span class="pflicht">*</span></label>
@@ -392,6 +395,18 @@ function plzVorschlagen() {
     return `<option value="${p}">${namen.join(" / ")}</option>`;
   }).join("");
 }
+
+// Ort per Name suchen: Gemeinde je Postleitzahl aus MaStR und Destatis; Auswahl setzt die Postleitzahl
+function ortSuchen() {
+  const ein = $("ort").value.trim(), m = ein.match(/\((\d{5})\)\s*$/);
+  if (m) { $("plz").value = m[1]; $("plz").dispatchEvent(new Event("input", {bubbles: true})); return; }
+  const q = ein.toLowerCase(), alle = Object.entries(D.gem || {});
+  const treffer = q.length >= 2 ? alle.filter(([p, g]) => PLZ_MIT_PREISEN.includes(p) && g[0].toLowerCase().includes(q)).sort((a, b) => a[1][0].localeCompare(b[1][0]) || a[0].localeCompare(b[0])).slice(0, 40) : [];
+  $("ort-liste").innerHTML = treffer.map(([p, g]) => `<option value="${g[0].replace(/"/g, "&quot;")} (${p})"></option>`).join("");
+  const exakt = treffer.filter(([p, g]) => g[0].toLowerCase().replace(/, (stadt|markt|gemeinde).*$/, "") === q);
+  if (exakt.length === 1) { $("plz").value = exakt[0][0]; $("plz").dispatchEvent(new Event("input", {bubbles: true})); }
+}
+$("ort").addEventListener("input", ortSuchen);
 
 function nbFuerPlz(plz) { return (D.plz[plz] || []).map(([n, anteil]) => ({...NB.get(n), anteil})).filter(e => e.n && e.voll); }
 
