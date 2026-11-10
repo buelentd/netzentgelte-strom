@@ -45,6 +45,7 @@ class Db:
             w = [de(r.get(f"{eb}_{k}")) for k in RLM]
             d[eb] = w if None not in w else None
         d["hlzf"] = self._hlzf(r)
+        d["hlzf_msns"] = self._hlzf(r, "msns")      # Fenster der Ebene Umspannung MS/NS, falls gelesen
         d["fehlt"] = [n for n, v in (("SLP", d["slp"]), ("Niederspannung", d["ns"]), ("MS/NS", d["msns"]),
                                      ("Mittelspannung", d["ms"]), ("Hochlastzeitfenster", d["hlzf"])) if v is None]
         d["vollstaendig"] = all(d[k] for k in ("slp", "ns", "msns", "ms"))
@@ -52,12 +53,12 @@ class Db:
         return d
 
     @staticmethod
-    def _hlzf(r):
+    def _hlzf(r, ebene="ns"):
         if r.get("hlzf_status") not in ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert"):
             return None                          # ungeprüft gelesene Fenster (gelesen_ungeprueft) gehen nicht in den Rechner
         f = {}
         for j in JAHRESZEITEN:
-            t = (r.get(f"hlzf_ns_{j}") or "").strip()
+            t = (r.get(f"hlzf_{ebene}_{j}") or "").strip()
             if not t:
                 return None                      # nicht alle vier Jahreszeiten gelesen: Werte nicht vorhanden
             f[j] = [] if t == "keins" else [x.strip() for x in t.split(",")]

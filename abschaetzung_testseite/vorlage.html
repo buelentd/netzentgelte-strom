@@ -442,13 +442,18 @@ function nbAnzeigen() {
 }
 
 // Ausgabe der Hochlastzeitfenster, die wir für den gewählten Netzbetreiber haben (aus seiner Veröffentlichung)
+function hlzfWahl(H) {                                               // Fenster der gewählten Ebene (MS/NS und höher: Fenster MS/NS, sonst Niederspannung)
+  const ms = $("ebene").value !== "ns", f = ms ? (H.fm || H.f) : (H.f || H.fm);
+  return {f, ebene: f === H.fm && H.fm && (ms || !H.f) ? "Umspannung MS/NS" : "Niederspannung"};
+}
 function hlzfBlock(nb) {
   const H = D.hlzf[nb.n];
   const kopf = `<hr class="trenner"><h2>Hochlastzeitfenster von ${nb.name}</h2>`;
   if (!H) return kopf + `<p class="herkunft">Für diesen Netzbetreiber liegen uns keine Hochlastzeitfenster vor (nicht erfasst).</p>`;
-  const zeilen = Object.entries(H.f).map(([jz, l]) => `<tr><td>${jz}</td><td>${l.length ? l.join(", ") : "keins"}</td></tr>`).join("");
+  const W = hlzfWahl(H);
+  const zeilen = Object.entries(W.f).map(([jz, l]) => `<tr><td>${jz}</td><td>${l.length ? l.join(", ") : "keins"}</td></tr>`).join("");
   const quelle = H.q && /^https?:/.test(H.q) ? `<a href="${H.q}" target="_blank" rel="noopener">Veröffentlichung des Netzbetreibers</a>` : "Veröffentlichung des Netzbetreibers (Dokument im Bestand)";
-  return kopf + `<div class="tabelle"><table><thead><tr><th>Jahreszeit</th><th>Zeitfenster (Werktage)</th></tr></thead><tbody>${zeilen}</tbody></table></div>
+  return kopf + `<div class="tabelle"><table><thead><tr><th>Jahreszeit</th><th>Zeitfenster (Werktage, ${W.ebene})</th></tr></thead><tbody>${zeilen}</tbody></table></div>
     <p class="herkunft">In diesen Zeiten ist das Netz am stärksten belastet. Wer seine Spitze außerhalb hat, kann unter Bedingungen ein individuelles Netzentgelt vereinbaren (atypische Netznutzung). Bedingung Abstand der Spitze im Zeitfenster zur Jahresspitze: mindestens ${H.s} % (${H.sh}).${H.m ? ` Mindestleistung: ${fmt(H.m)} kW.` : ""} Quelle: ${quelle}.</p>`;
 }
 
@@ -621,8 +626,9 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   let html = `<hr class="trenner"><h2>Atypische Netznutzung</h2>`;
   const keins = t => ({html: html + t, zusatz: 0, erfuellt: false});
   if (!H) return keins(`<p class="herkunft">Hochlastzeitfenster von ${nb.name}: Werte nicht vorhanden. Ohne sie lässt sich nicht prüfen, ob ein individuelles Netzentgelt möglich ist.</p>`);
-  const fenster = Object.entries(H.f).flatMap(([jz, l]) => l.map(t => ({jz, ...hzSpanne(t), text: t})));
-  const liste = Object.entries(H.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
+  const W = hlzfWahl(H);
+  const fenster = Object.entries(W.f).flatMap(([jz, l]) => l.map(t => ({jz, ...hzSpanne(t), text: t})));
+  const liste = Object.entries(W.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
   html += `<p class="herkunft">Der Netzbetreiber legt Zeiten fest, in denen sein Netz am stärksten belastet ist (Werktage): ${liste}.
     Wer seine Spitze <b>außerhalb</b> dieser Zeiten hat, kann ein günstigeres, individuelles Netzentgelt vereinbaren.</p>`;
   if (!A.anlagen.length) return keins(`<p class="herkunft">Für die Prüfung bitte oben die Anlagen mit ihren Laufzeiten angeben.</p>`);

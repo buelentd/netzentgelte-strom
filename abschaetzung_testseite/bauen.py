@@ -61,11 +61,13 @@ for e in nb:
 plz = {p: [list(x) for x in v] for p, v in db.plz().items() if len(p) == 5 and p.isdigit()}    # ungültige Einträge aus VNBdigital (z. B. 7651NK) auslassen
 hlzf = {}
 for d in db.alle():
-    h = d["hlzf"]
-    if h:
-        hlzf[d["nr"]] = {"f": {j.capitalize().replace("Fruehling", "Frühling"): v for j, v in h["fenster"].items()},
-                         "s": h["schwelle"] or 30, "sh": "Dokument" if h["schwelle"] else "Standard (fachlich zu bestätigen)",
-                         "m": h["mindestleistung"], "q": h["quelle_url"]}
+    h, hm = d["hlzf"], d.get("hlzf_msns")
+    if h or hm:
+        g = h or hm
+        jz = lambda x: {j.capitalize().replace("Fruehling", "Frühling"): v for j, v in x["fenster"].items()} if x else None
+        hlzf[d["nr"]] = {"f": jz(h), "fm": jz(hm),                                   # Niederspannung, Umspannung MS/NS (je null, wenn nicht gelesen)
+                         "s": g["schwelle"] or 30, "sh": "Dokument" if g["schwelle"] else "Standard (fachlich zu bestätigen)",
+                         "m": g["mindestleistung"], "q": g["quelle_url"]}
 # Börsenpreise (Viertelstunden → Stundenmittel, ct/kWh), Solarertrag je Bundesland, Lastprofilformen (Stunden, Anteil am Tag)
 DATEN = HIER.parent / "daten"
 aktuell = DATEN / "boerse_aktuell.json"                                      # vom täglichen Lauf (Energy-Charts, bis morgen)
