@@ -457,6 +457,29 @@ function hlzfBlock(nb) {
     <p class="herkunft">In diesen Zeiten ist das Netz am stärksten belastet. Wer seine Spitze außerhalb hat, kann unter Bedingungen ein individuelles Netzentgelt vereinbaren (atypische Netznutzung). Bedingung Abstand der Spitze im Zeitfenster zur Jahresspitze: mindestens ${H.s} % (${H.sh}).${H.m ? ` Mindestleistung: ${fmt(H.m)} kW.` : ""} Quelle: ${quelle}.</p>`;
 }
 
+// Tageskurve (24 Stunden, Werktag): Lastprofil auf Ihre Jahresmenge skaliert, Spitzenlast als Obergrenze, Hochlastzeitfenster des Netzbetreibers je Jahreszeit als Bänder
+function tageskurve(nb, kwh, kw, b, tage, zielKw) {
+  const L = lastProfil(b, kwh, tage).werktag, H = D.hlzf[nb.n], W = H ? hlzfWahl(H) : null;
+  const ymax = Math.max(kw, ...L) * 1.15, X = h => 46 + h / 24 * 574, Y = v => 160 - v / ymax * 140, hoehe = W ? 280 : 215;
+  let g = `<svg viewBox="0 0 640 ${hoehe}" style="width:100%;max-width:680px;height:auto;display:block" role="img" aria-label="Tageskurve der Last mit Hochlastzeitfenstern" font-family="inherit" font-size="11" fill="currentColor">`;
+  for (let h = 0; h <= 24; h += 4) g += `<line x1="${X(h)}" y1="20" x2="${X(h)}" y2="160" stroke="currentColor" stroke-opacity=".15"/><text x="${X(h)}" y="175" text-anchor="middle">${h}</text>`;
+  for (const v of [0, ymax / 2, ymax * 0.87]) g += `<text x="40" y="${Y(v) + 4}" text-anchor="end">${fmt(v)}</text>`;
+  g += `<text x="14" y="95" transform="rotate(-90 14 95)" text-anchor="middle">kW</text><text x="333" y="192" text-anchor="middle">Uhrzeit (Werktag)</text>`;
+  if (W) Object.entries(W.f).forEach(([jz, l], i) => {                          // Hochlastzeitfenster je Jahreszeit als Bänder
+    const y = 204 + i * 17; g += `<text x="40" y="${y + 9}" text-anchor="end">${jz}</text><rect x="${X(0)}" y="${y}" width="574" height="12" fill="currentColor" fill-opacity=".07"/>`;
+    for (const t of l) { const w = hzSpanne(t); g += `<rect x="${X(w.von)}" y="${y}" width="${Math.max(2, X(w.bis) - X(w.von))}" height="12" fill="#ef4444" fill-opacity=".6"><title>${jz} ${t}</title></rect>`; }
+    if (!l.length) g += `<text x="${X(12)}" y="${y + 9}" text-anchor="middle" fill-opacity=".6">keins</text>`;
+    for (const t of l) { const w = hzSpanne(t); g += `<rect x="${X(w.von)}" y="20" width="${Math.max(2, X(w.bis) - X(w.von))}" height="140" fill="#ef4444" fill-opacity="${jz === "Winter" ? .12 : 0}"/>`; }
+  });
+  let d = `M${X(0)} ${Y(L[0])}`; L.forEach((v, h) => { d += ` H${X(h + 1)}` + (h < 23 ? ` V${Y(L[h + 1])}` : ""); });
+  g += `<path d="${d}" fill="none" stroke="#3b82f6" stroke-width="2.2"/>`;
+  g += `<line x1="${X(0)}" y1="${Y(kw)}" x2="${X(24)}" y2="${Y(kw)}" stroke="#ef4444" stroke-width="1.6" stroke-dasharray="6 4"/><text x="${X(24)}" y="${Y(kw) - 4}" text-anchor="end" fill="#ef4444">Spitzenlast (Obergrenze) ${fmt(kw)} kW</text>`;
+  if (zielKw && zielKw < kw) g += `<line x1="${X(0)}" y1="${Y(zielKw)}" x2="${X(24)}" y2="${Y(zielKw)}" stroke="#16a34a" stroke-width="1.6" stroke-dasharray="6 4"/><text x="${X(24)}" y="${Y(zielKw) + 13}" text-anchor="end" fill="#16a34a">nach Kappung ${fmt(zielKw)} kW</text>`;
+  g += "</svg>";
+  return `<hr class="trenner"><h2>Tageskurve und Hochlastzeitfenster</h2>${g}
+    <p class="herkunft">Blau: Verlauf eines Werktags nach Profil ${b.profil} (Annahme, ohne Lastgang), skaliert auf ${fmt(kwh)} kWh im Jahr. Rot gestrichelt: Ihre Spitzenlast als Obergrenze, die Spitze kommt kurz hinzu (Annahme). Grün: Spitze nach der Kappung. ${W ? `Rote Bänder: Hochlastzeitfenster von ${nb.name} (${W.ebene}) je Jahreszeit.` : "Hochlastzeitfenster dieses Netzbetreibers liegen uns nicht vor."}</p>`;
+}
+
 function autoBox(z) {                                                // Box "Automatisch befüllt": zeigt, was die Seite aus Ihren Eingaben abgeleitet hat
   const e = $("auto-box"); if (!e) return;
   e.style.display = z.length ? "block" : "none";
@@ -612,7 +635,7 @@ function rechnen() {
   const vorHinweise = html;
   html += hinweise.length ? `<ul class="hinweise">${hinweise.map(h => `<li class="${h.w ? "warn" : ""}">${h.t}</li>`).join("")}</ul>` : "";
   if (nb.q) html += `<p class="herkunft">Quelle: <a href="${nb.q.split(" | ")[0].replace(/^RLM:\s*/, "")}" target="_blank" rel="noopener">Preisblatt des Netzbetreibers</a> · Datenstand ${D.stand}</p>`;
-  const trenn = vorHinweise.indexOf('<hr class="trenner">');
+  const trenn = vorHinweise.indexOf('<!--stufe23-->');
   if (trenn > 0) {
     const war = out.querySelector("details.stufe");
     const offen = war ? war.open : !!(A.anlagen.length || $("speicher-kwh").value || $("pv").checked || $("laden").checked || $("ziel").value);
@@ -920,12 +943,13 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   let empfehlung;
   if (beste.cap > 0) {
     const lauf = beste.summe > 0 ? beste.kosten / beste.summe : null;
-    empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b style="color:#0a7a3b">Empfehlung Speicher: ${fmt(beste.cap)} kWh, ${fmt(beste.Psp)} kW</b><br>
-      Ersparnis und Erlöse <b>${fmt(beste.summe)} € pro Jahr</b>, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>${lauf ? `, Amortisation ${fmt(lauf, 1)} Jahre` : ""} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.</div>`;
+    empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b style="color:#0a7a3b">Sie haben ${fmt(kwh)} kWh Jahresverbrauch. Dann ist ein Speicher mit ${fmt(beste.cap)} kWh und ${fmt(beste.Psp)} kW das Richtige.</b><br>
+      ${lauf ? `Sie amortisieren in <b>${fmt(lauf, 1)} Jahren</b>` : "Der Speicher bringt"} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis: ${fmt(beste.summe)} € Ersparnis und Erlöse pro Jahr, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.
+      ${kwp > 0 ? " Die PV-Anlage ist darin eingerechnet." : " Mit einer PV-Anlage amortisieren Sie noch schneller: Dachfläche oder Leistung in Stufe 3 angeben."}</div>`;
   } else {
     empfehlung = `<div style="${kartenStil};background:rgba(160,100,0,.12);border:1px solid #a06400"><b>Kein Speicher rechnet sich bei diesen Angaben.</b><br>Bei ${fmt(gewaehlt.preisJe)} €/kWh Speicherpreis ist der Barwert bei jeder Größe negativ. Die beste Größe (${fmt(gewaehlt.cap)} kWh) rechnet sich ab etwa ${gewaehlt.breakEven >= 5 ? fmt(gewaehlt.breakEven) + " €/kWh" : "keinem realistischen Preis"}.</div>`;
   }
-  let chart = empfehlung + `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
+  let chart = empfehlung + tageskurve(nb, kwh, kw, b, tage, beste.cap > 0 ? beste.ziel : 0) + `<!--stufe23--><hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
   if (!R.cap) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht.</p>`;
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch (EPEX)" : "Festpreis (Ihr eingegebener Preis)"}.</p>
@@ -958,7 +982,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   if (R.cap && kw > lwMax) hinweise.push({w: 0, t: `Ihre Spitze von ${fmt(kw)} kW liegt über der Spitze des Lastprofils bei ${fmt(kwh)} kWh (${fmt(lwMax)} kW). Gerechnet wird mit dem Profil für Ihre Jahresmenge plus einer Spitze von ${fmt(kw)} kW für ${fmt(num("a-spitzenh") || 1, 2)} Stunden an ${fmt(num("a-spitzentage") || 12)} Tagen pro Jahr (Annahme). Ein echter Lastgang ersetzt diese Annahme.`});
   if (R.cap && R.genutzt > zyklen()) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die eingestellten ${fmt(zyklen(), 1)}. Speicher größer wählen.`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
-  return html.replace("</h2>", "</h2>" + chart);
+  return html + chart;
 }
 
 // Day-Ahead je MW und Jahr: ein Speicher mit 1 MW Leistung, nutzbar 0,8 * Dauer MWh, lädt in den billigsten, entlädt in den teuersten Stunden des Tages (obere Grenze: Reihenfolge nicht geprüft)

@@ -25,6 +25,15 @@ const zahl = s => parseFloat(String(s).replace(/\./g, '').replace(',', '.'));
   const kap = t.match(/NÖTIGE KAPAZITÄT\s*ca\. ([\d.,]+) kWh/i), form = t.match(/Kapazität = ([\d.,]+) kW × ([\d.,]+) h/);
   if (kap && form) ok(Math.abs(Math.ceil(zahl(form[1]) * zahl(form[2]) / 0.8) - zahl(kap[1])) <= 1, 'Nötige Kapazität passt nicht zur Formel');
   ok(/Hochlastzeitfenster von Stadtwerke Metzingen/i.test(t) && /13:15-14:15, 17:15-20:15/.test(t), 'Hochlastzeitfenster von Metzingen werden nicht ausgegeben');
+  // Ergebnis ist ohne Aufklappen sichtbar (Netzentgelt, Strompreis-Tabelle, Empfehlung, Tageskurve)
+  await p.reload(); await p.fill('#plz', '72555'); await p.dispatchEvent('#plz', 'input'); await p.fill('#kwh', '250000'); await p.waitForTimeout(1300);
+  const sichtbar = await p.evaluate(() => document.getElementById('ergebnis').innerText);
+  ok(/€ \/ Jahr/.test(sichtbar), 'Netzentgelt ist ohne Aufklappen nicht sichtbar');
+  ok(/Ihr Strompreis/i.test(sichtbar), 'Strompreis-Tabelle ist ohne Aufklappen nicht sichtbar');
+  ok(/Dann ist ein Speicher mit/.test(sichtbar), 'Empfehlung fehlt');
+  ok(/Tageskurve und Hochlastzeitfenster/i.test(sichtbar), 'Tageskurve fehlt');
+  await p.evaluate(() => document.querySelectorAll('details').forEach(d => d.open = true));
+  await p.fill('#kw', '100'); await p.waitForTimeout(1000); await p.evaluate(() => document.querySelectorAll('details').forEach(d => d.open = true));
   // 3. Strompreis-Tabelle: Summen stimmen, Umsatzsteuer 19 %
   const z = await p.evaluate(() => [...document.querySelectorAll('.sp-tab tbody tr')].map(r => [r.cells[0].innerText.split('\n')[0], r.cells[1].innerText.trim()]));
   const wert = n => { const r = z.find(x => x[0].startsWith(n)); return r && r[1] ? zahl(r[1]) : 0; };
