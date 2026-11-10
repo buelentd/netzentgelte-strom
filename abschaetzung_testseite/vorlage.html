@@ -482,6 +482,12 @@ function rechnen() {
   else { kw = kwBranche + laden; herkunft = b ? `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : "") : ""; }
 
   const hinweise = [];
+  // Plausibilität: Die Spitzenlast kann bei dem Lastprofil und dem Jahresverbrauch nicht unter der Spitze des (auf den Verbrauch skalierten) Profils liegen.
+  // Untergrenze: Profil als mittlerer Tag je Wochentag in Stundenwerten; Jahreszeiten und Viertelstunden sind nicht abgebildet, die echte Mindestspitze liegt also eher höher.
+  if (kwEingabe && kwh) {
+    const L = lastProfil(b, kwh, tage), pk = Math.max(...L.werktag, ...L.samstag, ...L.sonntag);
+    if (kwEingabe < pk * 0.98) hinweise.push({w: 1, t: `Die Lastspitze kann bei diesem Profil (${b.profil}) und ${fmt(kwh)} kWh Jahresverbrauch nicht unter etwa ${fmt(pk)} kW liegen. Ihre Angabe: ${fmt(kwEingabe)} kW. Bitte Verbrauch und Spitzenlast prüfen.`});
+  }
   if (ohneProfil) hinweise.push({w: 1, t: "Keine Branche gewählt: Als Lastprofil wird das allgemeine Gewerbeprofil G0 angenommen (Annahme). Für genauere Ergebnisse die Branche wählen."});
   if (nb.ps && nb.ps !== "endgültig") hinweise.push({w: 1, t: `Preise 2026 laut Preisblatt des Netzbetreibers. ${nb.ps === "vorläufig" ? "Das Preisblatt ist als vorläufig gekennzeichnet." : "Ob endgültig oder vorläufig, steht im Preisblatt nicht."}`});
   let html = `<h2>Ergebnis für ${nb.name}</h2>`;
