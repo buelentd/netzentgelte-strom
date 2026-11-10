@@ -128,7 +128,7 @@ a{color:var(--akzent)}
           <datalist id="plz-liste"></datalist>
         </div>
         <div>
-          <label class="titel" for="branche">Branche / Betrieb <span class="pflicht">*</span></label>
+          <label class="titel" for="branche">Branche / Betrieb</label>
           <select id="branche"></select>
           <details class="klein" style="margin-top:6px"><summary>Was bedeuten die Lastprofile G0 bis G6?</summary>
             <div>Standardlastprofile des BDEW (Bundesverband der Energie- und Wasserwirtschaft): Sie beschreiben, wie ein Gewerbe seinen Strom über Tag, Woche und Jahr verteilt. Die Branche bestimmt das Profil; ohne Branche gilt G0 als Annahme.
@@ -543,7 +543,7 @@ function rechnen() {
   let kw, herkunft;
   if (kwEingabe) { kw = kwEingabe + (laden && !$("kw-sicher").checked ? 0 : 0); herkunft = $("kw-sicher").checked ? "laut Netzrechnung" : "Ihre Angabe"; }
   else if (kwAnlagen) { kw = Math.max(kwAnlagen, kwBranche * 0.8); herkunft = `geschätzt aus Anlagen (${fmt(A.summe)} kW) plus halbe Grundlast (${fmt(grundlast)} kW)` + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
-  else { kw = kwBranche + laden; herkunft = b ? `geschätzt aus Branche: ${fmt(hBranche)} Benutzungsstunden (${b.name}, ${schicht}-Schicht, ${tage} Tage)` + (laden ? ` plus Laden ${fmt(laden)} kW` : "") : ""; }
+  else { kw = kwBranche + laden; herkunft = (ohneProfil ? "als Obergrenze geschätzt (keine Branche gewählt)" : `geschätzt aus Branche (${b.name}, ${schicht}-Schicht, ${tage} Tage)`) + (laden ? ` plus Laden ${fmt(laden)} kW` : ""); }
 
   // Spitzenlast automatisch eintragen: ohne eigene Angabe die Obergrenze aus Jahresverbrauch und Benutzungsstunden (Branche, sonst 2.500 h); die Last geht nie darüber
   if (!$("kw").dataset.manuell) $("kw").value = (kwh && !(kwh < 100000 && !$("kw-sicher").checked)) ? String(Math.round(kw)) : "";
