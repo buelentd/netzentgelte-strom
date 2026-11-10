@@ -43,6 +43,7 @@ class Sammler:
         self.landkreise = defaultdict(Counter)
         self.laender = defaultdict(Counter)
         self.plz = defaultdict(Counter)        # plz -> Counter(nb)
+        self.plz_gemeinde = defaultdict(Counter)  # plz -> Counter((gemeindeschluessel, gemeinde))
 
     def add(self, nb: str, bundesland: str, landkreis: str, gemeinde: str, gemeindeschluessel: str, plz: str,
             anzahl: int = 1):
@@ -57,6 +58,8 @@ class Sammler:
             self.laender[nb][bundesland] += anzahl
         if plz:
             self.plz[str(plz).zfill(5)][nb] += anzahl
+            if gemeinde or gemeindeschluessel:
+                self.plz_gemeinde[str(plz).zfill(5)][(str(gemeindeschluessel or ""), gemeinde or "")] += anzahl
 
     def gebiet(self, nb: str) -> dict:
         gem, lk, bl = self.gemeinden.get(nb, Counter()), self.landkreise.get(nb, Counter()), self.laender.get(nb, Counter())
@@ -95,3 +98,17 @@ def plz_schreiben(sammler: Sammler, namen: dict[str, str], pfad: Path):
         for z in sammler.plz_zeilen(namen):
             z["anteil_prozent"] = str(z["anteil_prozent"]).replace(".", ",")
             w.writerow(z)
+
+
+def plz_gemeinde_schreiben(sammler: Sammler, pfad: Path, min_anteil: float = 0.02):
+    """Postleitzahl -> Gemeinde (n:m) aus den Standorten der Solareinheiten im MaStR: plz;gemeindeschluessel;gemeinde;einheiten;anteil_prozent.
+    Gemeindeschluessel = AGS laut MaStR (8-stellig, wenn vorhanden). Gemeinden unter 2 % der Einheiten einer PLZ entfallen."""
+    with open(pfad, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, delimiter=";")
+        w.writerow(["plz", "gemeindeschluessel", "gemeinde", "einheiten", "anteil_prozent"])
+        for plz in sorted(sammler.plz_gemeinde):
+            c = sammler.plz_gemeinde[plz]
+            gesamt = sum(c.values())
+            for (ags, name), v in c.most_common():
+                if v / gesamt >= min_anteil:
+                    w.writerow([plz, ags, name, v, str(round(100 * v / gesamt, 1)).replace(".", ",")])

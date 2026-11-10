@@ -2,8 +2,8 @@
 umlage_offshore_netz;0,941;ct/kWh;2026;"netztransparenz.de, Seite „Offshore Netzumlage 2026"": 0,941 ct/kWh";am Original geprüft 09.11.2026
 umlage_kwkg;0,446;ct/kWh;2026;"netztransparenz.de, Seite „KWKG-Umlage 2026"": 0,446 ct/kWh";am Original geprüft 09.11.2026
 aufschlag_besondere_netznutzung;1,559;ct/kWh;2026;"netztransparenz.de, Seite „Aufschlag für besondere Netznutzung 2026"": 1,559 ct/kWh (daneben 0,050 und 0,025 ct/kWh für Letztverbrauchergruppen, nicht zugeordnet)";am Original geprüft 09.11.2026
-umlage_abschaltbare_lasten;0,0;ct/kWh;2026;netztransparenz.de (§ 18 AbLaV);Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
-umlage_eeg;0,0;ct/kWh;2026;seit 1.7.2022 0 ct;Vorgabe Nutzer 09.11.2026, am Original nicht geprüft
+umlage_abschaltbare_lasten;0,0;ct/kWh;2026;"netztransparenz.de, Seite „§ 18 AbLaV-Umlage"": Übersicht führt Umlagen nur für die Jahre 2014 bis 2022; für 2026 ist keine Umlage veröffentlicht";indirekt am Original geprüft 10.11.2026 (keine Veröffentlichung nach 2022 = 0 ct)
+umlage_eeg;0,0;ct/kWh;2026;"netztransparenz.de, Seite „EEG-Umlagen"": „Mit der EEG-Umlage wurde bis 2022 der Ausbau Erneuerbarer Energien finanziert""; im zweiten Halbjahr 2022 auf Null gesetzt (§ 60 Abs. 1a EEG); keine Umlage ab 2023 veröffentlicht";am Original geprüft 10.11.2026
 stromsteuer_regelsatz;2,05;ct/kWh;2026;§ 3 StromStG: 20,50 Euro je Megawattstunde;am Original geprüft 09.11.2026
 stromsteuer_produzierendes_gewerbe_netto_nach_erstattung;0,05;ct/kWh;2026;§ 9b Abs. 2 StromStG: Entlastung 20 Euro je MWh, nur Produzierendes Gewerbe und Land-/Forstwirtschaft, betriebliche Zwecke, nur wenn Entlastungsbetrag über 250 Euro im Kalenderjahr, auf Antrag, nicht für Elektromobilität;am Original geprüft 09.11.2026
 konzessionsabgabe_tarifkunden_bis_25000_einwohner;1,32;ct/kWh;2026 (Höchstsatz);§ 2 Abs. 2 KAV;"am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
