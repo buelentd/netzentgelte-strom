@@ -401,7 +401,13 @@ function ortSuchen() {
   const ein = $("ort").value.trim(), m = ein.match(/\((\d{5})\)\s*$/);
   if (m) { $("plz").value = m[1]; $("plz").dispatchEvent(new Event("input", {bubbles: true})); return; }
   const q = ein.toLowerCase(), alle = Object.entries(D.gem || {});
-  const treffer = q.length >= 2 ? alle.filter(([p, g]) => PLZ_MIT_PREISEN.includes(p) && g[0].toLowerCase().includes(q)).sort((a, b) => a[1][0].localeCompare(b[1][0]) || a[0].localeCompare(b[0])).slice(0, 40) : [];
+  let treffer = q.length >= 2 ? alle.filter(([p, g]) => PLZ_MIT_PREISEN.includes(p) && g[0].toLowerCase().includes(q)).sort((a, b) => a[1][0].localeCompare(b[1][0]) || a[0].localeCompare(b[0])).slice(0, 40) : [];
+  if (!treffer.length && q.length >= 4) {                       // Tippfehler: ähnlichster Name (Abstand höchstens 2, vertauschte Buchstaben zählen als 1)
+    const dist = (x, y) => { const d = Array.from({length: x.length + 1}, (_, i) => [i, ...Array(y.length).fill(0)]); for (let j = 1; j <= y.length; j++) d[0][j] = j;
+      for (let i = 1; i <= x.length; i++) for (let j = 1; j <= y.length; j++) { d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1));
+        if (i > 1 && j > 1 && x[i - 1] === y[j - 2] && x[i - 2] === y[j - 1]) d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1); } return d[x.length][y.length]; };
+    treffer = alle.filter(([p]) => PLZ_MIT_PREISEN.includes(p)).map(([p, g]) => [p, g, dist(q, g[0].toLowerCase().replace(/,.*$/, ""))]).filter(t => t[2] <= 2).sort((a, b) => a[2] - b[2] || a[1][0].localeCompare(b[1][0])).slice(0, 10).map(t => [t[0], t[1]]);
+  }
   $("ort-liste").innerHTML = treffer.map(([p, g]) => `<option value="${g[0].replace(/"/g, "&quot;")} (${p})"></option>`).join("");
   const exakt = treffer.filter(([p, g]) => g[0].toLowerCase().replace(/, (stadt|markt|gemeinde).*$/, "") === q);
   if (exakt.length === 1) { $("plz").value = exakt[0][0]; $("plz").dispatchEvent(new Event("input", {bubbles: true})); }
