@@ -34,3 +34,7 @@ Alle als Annahme gekennzeichnet in der Annahmenliste.
 ## Korrektur 10.11.2026 (Nutzer): Farben
 Es wird **nur grün** (belegt, auch die 162 Freigaben) angezeigt, **sonst leer**. Keine Annahmefarbe, kein grau „fehlt" in der Tabelle; fehlende Werte bleiben leer. Annahmen stehen nur in der Annahmenliste. Legende unten erklärt nur grün.
 Beschlossen zum Bau: Konzessionsabgabe nach Gemeindegröße (plz_gemeinde.csv + Einwohnerzahlen), Ladezyklen/Lebensdauer wählbar, BDEW-Profile, keine Vorbelegung Meerane.
+
+## Umgesetzt 10.11.2026 (Commit siehe Git)
+Block „Ihr Strompreis (netto, 2026)" im Rechner: Netzentgelt (SLP: Arbeits- und Grundpreis; RLM: Leistungs- und Arbeitspreis), Messentgelt Eintarifzähler (nur SLP, maschinell gelesen, nicht grün), Konzessionsabgabe nach Einwohnern der Gemeinde (SLP: Höchstsatz Tarifkunden; RLM: 0,11 Sondervertragskunden), KWKG, Offshore, besondere Netznutzung, Stromsteuer (Checkbox Entlastung), Energie und Aufschlag leer, Umsatzsteuer 19 %. Grün = belegt, sonst leer; Rechenweg aufklappbar und als Mouseover. Daten: `ergebnis/plz_gemeinde.csv` (je PLZ die Gemeinde mit größtem Anteil), `gemeinden_einwohner_2025.csv`, `modul_messentgelt_2026_geprueft.csv` (403 Netzbetreiber).
+Offen: Messentgelt bei Leistungsmessung, Einstufung Tarif-/Sondervertragskunde ist vereinfacht (SLP = Tarifkunde, RLM = Sondervertrag), BDEW-Profile, Speicherpreis-Staffel.

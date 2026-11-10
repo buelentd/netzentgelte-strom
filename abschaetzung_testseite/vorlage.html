@@ -34,6 +34,10 @@ textarea{min-height:70px;resize:vertical}
 input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--akzent);outline-offset:1px}
 .haken{display:flex;align-items:center;gap:6px;font-size:.85rem;color:var(--leise);margin-top:4px}
 .klein{font-size:.82rem;color:var(--leise)}
+.sp-tab td.g{color:#0a7a3b;font-weight:600}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sp-tab td.g{color:#4ade80}}
+:root[data-theme="dark"] .sp-tab td.g{color:#4ade80}
+.sp-tab summary{cursor:pointer}
 .stufe{border:1px solid var(--linie);border-radius:10px;margin:14px 0;background:var(--feld)}
 .stufe>summary{cursor:pointer;padding:10px 12px;font-weight:700;list-style:none}
 .stufe>summary::-webkit-details-marker{display:none}
@@ -140,6 +144,10 @@ a{color:var(--akzent)}
           <label class="titel" for="kw">Spitzenlast (kW)</label>
           <input type="number" id="kw" min="0" step="1" placeholder="leer lassen, wenn unbekannt">
           <label class="haken"><input type="checkbox" id="kw-sicher"> aus Netzrechnung (sicher)</label>
+        </div>
+        <div>
+          <label class="titel" for="steuer-entl">Stromsteuer</label>
+          <label class="haken"><input type="checkbox" id="steuer-entl"> Entlastung für produzierendes Gewerbe (Antrag beim Hauptzollamt)</label>
         </div>
         <div>
           <label class="titel" for="ebene">Anschluss</label>
@@ -456,6 +464,7 @@ function rechnen() {
       <div class="zahl"><small>Grundpreis</small><span>${fmt(gp, 2)} €</span></div>
       <div class="zahl"><small>Arbeitspreis</small><span>${fmt(ap, 2)} ct/kWh</span></div></div>
       <p class="herkunft">Unter 100.000 kWh ohne Leistungsmessung rechnet der Netzbetreiber mit Grund- und Arbeitspreis. Eine Spitzenkappung spart hier kein Netzentgelt.</p>`;
+    html += strompreisBlock(nb, true, kwh, null);
   } else {
     if (!nb.ns) { out.innerHTML = html + '<p class="leer">Für diesen Netzbetreiber liegen noch keine geprüften Preise für Kunden mit Leistungsmessung vor.</p>'; return; }
     const r = rlm(nb.ns, kwh, kw, nb.le);
@@ -466,6 +475,7 @@ function rechnen() {
       <div class="zahl"><small>Leistungsanteil</small><span>${fmt(r.leistung)} €</span></div>
       <div class="zahl"><small>Arbeitsanteil</small><span>${fmt(r.arbeit)} €</span></div></div>
       <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
+    html += strompreisBlock(nb, false, kwh, {...r, kw});
 
     // Empfindlichkeit
     const stufen = [0.7, 0.85, 1, 1.2, 1.5].map(f => Math.round(kw * f));
@@ -569,6 +579,42 @@ const lebensJahre = () => Math.max(1, Math.min(25, Math.floor((num("a-zyklen-ges
 function lebenAnzeige() { const e = $("leben-anzeige"); if (e) e.textContent = lebensJahre() + " Jahre"; }
 ["a-zyklen", "a-zyklen-ges"].forEach(i => { const e = $(i); if (e) e.addEventListener("input", lebenAnzeige); });
 lebenAnzeige();
+
+// Block "Ihr Strompreis": nur belegte Werte (grün, Preisblatt oder Gesetz), sonst leer; Rechenweg aufklappbar und als Mouseover
+function strompreisBlock(nb, slp, kwh, rl) {
+  const plz = $("plz").value.trim(), g = (D.gem || {})[plz];
+  const steuerEntl = $("steuer-entl").checked;
+  const zeilen = [];   // [Posten, €/Jahr oder null, Rechenweg, grün?]
+  if (slp) {
+    const [ap, gp] = nb.slp;
+    zeilen.push(["Netzentgelt Arbeitspreis", ap * kwh / 100, `${fmt(kwh)} kWh × ${fmt(ap, 2)} ct/kWh (Preisblatt ${nb.name})`, true]);
+    zeilen.push(["Netzentgelt Grundpreis", gp, `Grundpreis ${fmt(gp, 2)} €/Jahr (Preisblatt ${nb.name})`, true]);
+    zeilen.push(["Messentgelt (Eintarifzähler)", nb.mess != null ? nb.mess : null, nb.mess != null ? `${fmt(nb.mess, 2)} €/Jahr laut Preisblatt, maschinell gelesen und auf Plausibilität geprüft, am Dokument noch nicht bestätigt (Messung durch den Netzbetreiber als Messstellenbetreiber)` : "nicht erfasst", false]);
+  } else {
+    zeilen.push(["Netzentgelt Leistungspreis", rl.leistung, `${fmt(rl.kw || 0)} kW × ${fmt(rl.lp, 2)} €/kW (Preisblatt ${nb.name})`, true]);
+    zeilen.push(["Netzentgelt Arbeitspreis", rl.arbeit, `${fmt(kwh)} kWh × ${fmt(rl.ap, 2)} ct/kWh (Preisblatt ${nb.name})`, true]);
+    zeilen.push(["Messentgelt (Leistungsmessung)", null, "nicht erfasst", false]);
+  }
+  if (g) {
+    const satz = slp ? g[2] : 0.11;
+    zeilen.push(["Konzessionsabgabe", kwh * satz / 100, slp ? `${fmt(kwh)} kWh × ${fmt(satz, 2)} ct/kWh: Höchstsatz Tarifkunden (§ 2 Abs. 2 KAV), Gemeinde ${g[0]} mit ${fmt(g[1])} Einwohnern (Stand 31.12.2025), PLZ ${plz} zu ${g[3]} % dieser Gemeinde` : `${fmt(kwh)} kWh × 0,11 ct/kWh: Höchstsatz Sondervertragskunden (§ 2 KAV)`, true]);
+  } else zeilen.push(["Konzessionsabgabe", null, "Gemeinde zur PLZ nicht gefunden", false]);
+  zeilen.push(["KWKG-Umlage", kwh * 0.446 / 100, `${fmt(kwh)} kWh × 0,446 ct/kWh (netztransparenz.de, 2026)`, true]);
+  zeilen.push(["Offshore-Netzumlage", kwh * 0.941 / 100, `${fmt(kwh)} kWh × 0,941 ct/kWh (netztransparenz.de, 2026)`, true]);
+  zeilen.push(["Aufschlag besondere Netznutzung", kwh * 1.559 / 100, `${fmt(kwh)} kWh × 1,559 ct/kWh (netztransparenz.de, 2026)`, true]);
+  const st = steuerEntl ? 0.05 : 2.05;
+  zeilen.push(["Stromsteuer", kwh * st / 100, `${fmt(kwh)} kWh × ${fmt(st, 2)} ct/kWh (§ 3 StromStG 2,05 ct/kWh${steuerEntl ? ", nach Entlastung § 9b StromStG netto 0,05 ct/kWh, nur produzierendes Gewerbe, über 250 €/Jahr, auf Antrag" : ""})`, true]);
+  zeilen.push(["Energie (Börse oder Festpreis)", null, "mit dem Stromanbieter zu vereinbaren", false]);
+  zeilen.push(["Aufschlag des Stromanbieters", null, "mit dem Stromanbieter zu verhandeln", false]);
+  const netto = zeilen.reduce((a, z) => a + (z[1] || 0), 0), ust = netto * 0.19;
+  const th = `<tr><th>Posten</th><th>€ pro Jahr</th><th>ct/kWh</th></tr>`;
+  const tr = ([n, v, weg, gr]) => `<tr title="${weg.replace(/"/g, "&quot;")}"><td><details><summary>${n}</summary><small>${weg}</small></details></td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v) : ""}</td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v / kwh * 100, 2) : ""}</td></tr>`;
+  return `<hr class="trenner"><h2>Ihr Strompreis (netto, 2026)</h2><div class="tabelle"><table class="sp-tab"><thead>${th}</thead><tbody>${zeilen.map(tr).join("")}
+    <tr><td><b>Summe der ausgewiesenen Posten (netto)</b></td><td><b>${fmt(netto)}</b></td><td><b>${fmt(netto / kwh * 100, 2)}</b></td></tr>
+    <tr><td title="19 % nach § 12 Abs. 1 UStG"><details><summary>Umsatzsteuer 19 %</summary><small>§ 12 Abs. 1 UStG</small></details></td><td class="g">${fmt(ust)}</td><td class="g">${fmt(ust / kwh * 100, 2)}</td></tr>
+    <tr><td><b>Summe brutto (ohne leere Posten)</b></td><td><b>${fmt(netto + ust)}</b></td><td><b>${fmt((netto + ust) / kwh * 100, 2)}</b></td></tr></tbody></table></div>
+    <p class="herkunft">Grün: belegt (Preisblatt oder Gesetz). Ohne Farbe: nicht am Dokument bestätigt. Leer: nicht erfasst oder mit dem Stromanbieter zu vereinbaren; die Summe enthält nur die ausgewiesenen Posten. Rechenweg: Posten aufklappen oder Maus darüber halten.</p>`;
+}
 
 function lastProfil(b, kwh, tage) {
   const P = (b.form && $("profilwahl").value === "test" ? b.form : null) || D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;

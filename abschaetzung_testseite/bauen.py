@@ -37,6 +37,27 @@ for d in db.alle():
     if d["quelle_url"]:
         e["q"] = d["quelle_url"]
     nb.append(e)
+import csv as _csv
+_W = HIER.parent
+_gem = {r["ags"].zfill(8): r for r in _csv.DictReader(open(_W / "ergebnis" / "gemeinden_einwohner_2025.csv", encoding="utf-8-sig"), delimiter=";")}
+_best = {}
+_pg = _W / "ergebnis" / "plz_gemeinde.csv"
+if _pg.exists():
+    for r in _csv.DictReader(open(_pg, encoding="utf-8-sig"), delimiter=";"):
+        g = _gem.get(r["gemeindeschluessel"].zfill(8))
+        a = float(r["anteil_prozent"].replace(",", ".") or 0)
+        if g and (r["plz"] not in _best or a > _best[r["plz"]][0]):
+            _best[r["plz"]] = (a, [g["gemeinde"], int(g["einwohner"]), float(g["kav_hoechstsatz_tarifkunden_ct_kwh"].replace(",", ".")), round(a)])
+gem = {k: v[1] for k, v in _best.items()}                       # PLZ -> [Gemeinde, Einwohner, KAV-Höchstsatz Tarifkunden ct/kWh, Anteil % der PLZ]
+_mp = _W / "ergebnis" / "modul_messentgelt_2026_geprueft.csv"
+mess = {}
+if _mp.exists():
+    for r in _csv.DictReader(open(_mp, encoding="utf-8-sig"), delimiter=";"):
+        if r["messung_eintarifzaehler_eur_jahr"] and not r["plausibilitaet"]:
+            mess[int(r["nr"])] = float(r["messung_eintarifzaehler_eur_jahr"].replace(",", "."))
+for e in nb:
+    if e["n"] in mess:
+        e["mess"] = mess[e["n"]]
 plz = {p: [list(x) for x in v] for p, v in db.plz().items() if len(p) == 5 and p.isdigit()}    # ungültige Einträge aus VNBdigital (z. B. 7651NK) auslassen
 hlzf = {}
 for d in db.alle():
@@ -80,7 +101,7 @@ for col in ("g0", "g1", "g2", "g3", "g4", "g5", "g6", "h0"):
         summe[k] = [x / n for x in summe[k]]
     gesamt = 261 * sum(summe[1]) + 52 * sum(summe[6]) + 52 * sum(summe[7])        # Jahresenergie in diesen Einheiten
     profile[col] = {k: [round(x / gesamt, 7) for x in v] for k, v in zip(("werktag", "samstag", "sonntag"), (summe[1], summe[6], summe[7]))}
-daten = json.dumps({"stand": "31.10.2026", "boerse_stand": stand_boerse, "nb": nb, "plz": plz, "hlzf": hlzf, "boerse": boerse, "solar": solar, "profile": profile}, ensure_ascii=False, separators=(",", ":"))
+daten = json.dumps({"stand": "31.10.2026", "boerse_stand": stand_boerse, "nb": nb, "plz": plz, "hlzf": hlzf, "boerse": boerse, "solar": solar, "profile": profile, "gem": gem}, ensure_ascii=False, separators=(",", ":"))
 seite = (HIER / "vorlage.html").read_text(encoding="utf-8").replace("__DATEN__", daten.replace("</", "<\\/"))
 (HIER / "netzentgelt_abschaetzung.html").write_text(seite, encoding="utf-8")
 print(f"{len(nb)} Netzbetreiber, {len(plz)} Postleitzahlen, {len(hlzf)} mit Hochlastzeitfenstern")
