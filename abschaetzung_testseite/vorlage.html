@@ -267,6 +267,11 @@ a{color:var(--akzent)}
             <input type="number" id="a-dv" min="0" step="0.1" value="0.4"></div>
           <div><label class="titel" for="a-abbau">Kapazitätsabbau des Speichers (% pro Jahr; Wert von conplot, nicht belegt)</label>
             <input type="number" id="a-abbau" min="0" max="20" step="0.5" value="2.5"></div>
+          <div><label class="titel" for="a-zyklen">Ladezyklen pro Tag (Annahme, höchstens 2)</label>
+            <input type="number" id="a-zyklen" min="0.5" max="2" step="0.1" value="1.5"></div>
+          <div><label class="titel" for="a-zyklen-ges">Zyklen bis Lebensende (Annahme; Herstellerangabe im Datenblatt)</label>
+            <input type="number" id="a-zyklen-ges" min="1000" max="20000" step="500" value="6000">
+            <span class="klein">Lebensdauer (berechnet aus Zyklen gesamt ÷ Zyklen pro Tag ÷ 365): <b id="leben-anzeige"></b>. Garantie und Zyklengrenze des Herstellers prüfen.</span></div>
           <div><label class="titel" for="a-entsorg">Entsorgungskosten am Ende (€/kWh; Wert von conplot, nicht belegt)</label>
             <input type="number" id="a-entsorg" min="0" step="5" value="75"></div>
           <div><label class="titel" for="a-foerd">Zuschuss auf die Investition (%, nicht geprüft. Bundesweit nur zinsgünstiger Kredit der KfW (Programm 270), Zuschüsse nur regional und für Privatpersonen)</label>
@@ -278,7 +283,7 @@ a{color:var(--akzent)}
           <div><label class="titel" for="a-verf">Verfügbarkeit Regelenergie (0–1)</label>
             <input type="number" id="a-verf" min="0" max="1" step="0.05" value="0.5"></div>
         </div>
-        <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, höchstens 1,5 Ladungen pro Tag. Strompreis, Einspeisevergütung und Steuern sind Platzhalter, bitte fachlich prüfen.</div>
+        <div class="klein">Speicher wie bei conplot: 10 bis 90 % nutzbar, 2 Stunden Dauer, Wirkungsgrad 0,92, Ladungen pro Tag und Zyklen bis Lebensende einstellbar (Annahmen). Strompreis, Einspeisevergütung und Steuern sind Platzhalter, bitte fachlich prüfen.</div>
       </details>
       </div></details>
 
@@ -556,9 +561,14 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
 
 
 // ---------------------------------------------------------------- Wertschöpfung des Speichers: fünf Säulen
-const NUTZBAR = 0.8, SPEICHERDAUER = 2, ETA = 0.92, ZYKLEN = 1.5;      // wie bei conplot
+const NUTZBAR = 0.8, SPEICHERDAUER = 2, ETA = 0.92;      // wie bei conplot
 const MONATSTAGE = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const num = id => parseFloat($(id).value) || 0;
+const zyklen = () => Math.min(2, Math.max(0.1, num("a-zyklen") || 1.5));      // Ladungen pro Tag (wählbar, höchstens 2)
+const lebensJahre = () => Math.max(1, Math.min(25, Math.floor((num("a-zyklen-ges") || 6000) / (zyklen() * 365))));   // Lebensdauer folgt aus den Zyklen
+function lebenAnzeige() { const e = $("leben-anzeige"); if (e) e.textContent = lebensJahre() + " Jahre"; }
+["a-zyklen", "a-zyklen-ges"].forEach(i => { const e = $(i); if (e) e.addEventListener("input", lebenAnzeige); });
+lebenAnzeige();
 
 function lastProfil(b, kwh, tage) {
   const P = (b.form && $("profilwahl").value === "test" ? b.form : null) || D.profile[(b.profil.split("/")[0] || "G0").toLowerCase()] || D.profile.g0;
@@ -636,11 +646,12 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   // Speicherpreis: eigene Eingabe, sonst Staffel (geschätzt): bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh
   const preisFuer = c => num("speicherpreis") || (c <= 100 ? 450 : Math.max(350, 450 - (c - 100) / 400 * 100));
   const zuschuss = num("a-foerd") / 100, zins = num("a-zins") / 100;
-  // Barwert über 12 Jahre (6.000 Zyklen bei 1,5 Ladungen pro Tag halten etwa 11 Jahre): Erträge sinken mit dem Kapazitätsabbau, Entsorgung am Ende
+  // Barwert über die Lebensdauer (Zyklen gesamt ÷ Zyklen pro Tag ÷ 365): Erträge sinken mit dem Kapazitätsabbau, Entsorgung am Ende
   const abbau = num("a-abbau") / 100, entsorgJe = num("a-entsorg");
   let faktor = 0;
-  for (let t = 1; t <= 12; t++) faktor += Math.max(0, 1 - abbau * (t - 1)) / Math.pow(1 + zins, t);
-  const entsorgBarwert = c => entsorgJe * c / Math.pow(1 + zins, 12);
+  const jahre = lebensJahre();
+  for (let t = 1; t <= jahre; t++) faktor += Math.max(0, 1 - abbau * (t - 1)) / Math.pow(1 + zins, t);
+  const entsorgBarwert = c => entsorgJe * c / Math.pow(1 + zins, jahre);
 
   function fuer(cap) {
     const U = NUTZBAR * cap, Psp = cap / SPEICHERDAUER;
@@ -674,7 +685,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     // Säule 3: Solar
     let s3 = 0, delta = 0, pvEigen = 0;
     if (kwp > 0 && cap > 0) {
-      const Emax = U * Math.max(0, ZYKLEN - kapEff / U);       // Solarverschiebung bekommt die Ladungen, die die Kappung übrig lässt
+      const Emax = U * Math.max(0, zyklen() - kapEff / U);       // Solarverschiebung bekommt die Ladungen, die die Kappung übrig lässt
       const Us = U;
       for (let m = 1; m <= 12; m++) {
         const gen = land[m].map(x => x * kwp), d = MONATSTAGE[m - 1];
@@ -687,7 +698,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     }
     // freie Ladungen: Kappung und Solar teilen sich 1,5 Ladungen pro Tag
     const genutzt = U > 0 ? (kapEff * arbeitstage + delta) / 365 / U : 0;
-    const frei = Math.max(0, Math.min(1, ZYKLEN - genutzt));
+    const frei = Math.max(0, Math.min(1, zyklen() - genutzt));
     // Säule 4: dynamischer Tarif → Verschiebung im eigenen Verbrauch; sonst Handel über einen Vermarkter
     let s4 = 0;
     if (cap > 0 && frei > 0) {
@@ -752,15 +763,21 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
-    <p class="herkunft">Barwert über 12 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
+    <p class="herkunft">Barwert über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
     if (!eingabe && !beste.cap) chart += `<p class="herkunft"><b>Bei diesen Angaben lohnt sich kein Speicher.</b> Der Barwert ist bei allen Größen negativ. Prüfen Sie atypische Netznutzung und Solar.</p>`;
-    chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert 12 J. €</th></tr></thead><tbody>`
+    chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert ${jahre} J. €</th></tr></thead><tbody>`
       + kurve.map(k => `<tr class="${k.cap === beste.cap && beste.cap ? "aktiv" : ""}"><td>${fmt(k.cap)} kWh</td><td>${fmt(k.summe)}</td><td>${fmt(k.kosten)}</td><td>${k.barwert >= 0 ? "+" : "−"}${fmt(Math.abs(k.barwert))}</td></tr>`).join("")
       + `</tbody></table></div>`;
     const vm = 1 - num("a-vermarkter") / 100, wege = [["Regelenergie FCR (Frequenzhaltung)", num("a-regel"), "Bereithalten, sofortige Reaktion auf die Netzfrequenz; bezahlt wird die Bereitschaft"],
       ["aFRR (langsamere Regelenergie)", num("a-afrr"), "Abruf nach Minuten; bezahlt wird die Bereitschaft (je Richtung) und die abgerufene Energie"],
       ["Day-Ahead-Handel", dayAheadJeMW(), "billig laden, teuer entladen; bezahlt wird die Preisspanne am Strommarkt"]];
-    chart += `<hr class="trenner"><h2>Drei Handelswege für dieselbe Batterieleistung (nicht addieren)</h2>
+    const zKapp = R.kapEff * arbeitstage / 365 / R.U, zSol = R.delta / 365 / R.U, zHan = (R.frei > 0 && (dynamisch || netz > 0)) ? R.frei : 0, zSum = zKapp + zSol + zHan;
+    chart += `<hr class="trenner"><h2>Ladezyklen (Rechenwert, keine Messung)</h2>
+      <div class="tabelle"><table><thead><tr><th>Verwendung</th><th>Ladungen pro Tag</th><th>Ladungen pro Jahr</th><th>kWh pro Jahr</th></tr></thead><tbody>`
+      + [["Spitzenkappung", zKapp], ["Solarverschiebung", zSol], [dynamisch ? "Verbrauch verschieben" : "Handel", zHan]].map(([n, z]) => `<tr><td>${n}</td><td>${fmt(z, 2)}</td><td>${fmt(z * 365)}</td><td>${fmt(z * 365 * R.U)}</td></tr>`).join("")
+      + `<tr><td><b>Summe</b></td><td><b>${fmt(zSum, 2)}</b></td><td><b>${fmt(zSum * 365)}</b></td><td><b>${fmt(zSum * 365 * R.U)}</b></td></tr></tbody></table></div>
+      <p class="herkunft">Eingestellt sind höchstens ${fmt(zyklen(), 1)} Ladungen pro Tag; bei ${fmt(num("a-zyklen-ges") || 6000)} Zyklen bis Lebensende ergibt das ${jahre} Jahre Lebensdauer. Eine Einspeisung ins Netz gibt es nur beim Handel über einen Vermarkter. Garantie und Zyklengrenze des Herstellers prüfen.</p>
+    <hr class="trenner"><h2>Drei Handelswege für dieselbe Batterieleistung (nicht addieren)</h2>
       <p class="herkunft">Dieselbe Leistung kann zu einer Zeit nur einen Zweck erfüllen: Wer sie für die Regelenergie bereithält, kann sie nicht zugleich im Handel einsetzen oder für die Spitzenkappung verwenden. Die Werte sind Alternativen, keine Summe. Für Regelenergie braucht man in der Regel einen Vermarkter (Pool) und eine Zulassung, weil die Mindestmengen für einen einzelnen Betrieb zu groß sind.</p>
       <div class="tabelle"><table><thead><tr><th>Weg</th><th>€ je MW und Jahr</th><th>nach ${fmt(num("a-vermarkter"))} % Vermarkter</th><th>bei Ihrer freien Leistung (${fmt(R.pRegel)} kW), ${fmt(num("a-verf") * 100)} % Verfügbarkeit</th></tr></thead><tbody>`
       + wege.map(([n, v, h]) => `<tr><td>${n}<br><small>${h}</small></td><td>${fmt(v)}</td><td>${fmt(v * vm)}</td><td>${fmt(v * vm * R.pRegel / 1000 * num("a-verf"))} €</td></tr>`).join("")
@@ -768,9 +785,9 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
       <p class="herkunft">Herkunft: FCR und aFRR gemessen (regelleistung.net, 365 Tage, aFRR in beide Richtungen mit je 1 MW angeboten); Day-Ahead aus unseren Börsenpreisen mit einem 2-Stunden-Speicher und einer Ladung pro Tag (obere Grenze). Die Preise schwanken stark und sind zuletzt gesunken. Nicht eingerechnet: abgerufene Energie bei aFRR, Zulassungskosten, Ausfälle.</p>`;
     if (anlage) chart += `<hr class="trenner"><h2>Neue Solaranlage ${fmt(kwp)} kWp: Anlage und Speicher zusammen</h2>
       <p class="herkunft">Die Anlage erzeugt etwa ${fmt(anlage.erz)} kWh im Jahr, davon ${fmt(anlage.eig)} kWh im Betrieb genutzt, der Rest wird für ${fmt(einsp, 2)} ct/kWh eingespeist. Nutzen ${fmt(anlage.nutzen)} € pro Jahr (nach ${fmt(anlage.betrieb)} € Betriebskosten), Investition ${fmt(anlage.invest)} €, Barwert über 20 Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${anlage.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert))} €</b>.</p>
-      <p class="herkunft">Zusammen mit dem Speicher (Barwert über 12 Jahre ${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €): <b>${anlage.barwert + R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert + R.barwert))} €</b>. Die Zeiträume sind verschieden (Anlage 20, Speicher 12 Jahre), die Summe ist eine grobe Einordnung. Ohne Förderung, ohne Steuerwirkung, Eigenverbrauch ohne Speicher gerechnet.</p>`;
+      <p class="herkunft">Zusammen mit dem Speicher (Barwert über ${jahre} Jahre ${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €): <b>${anlage.barwert + R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(anlage.barwert + R.barwert))} €</b>. Die Zeiträume sind verschieden (Anlage 20, Speicher 12 Jahre), die Summe ist eine grobe Einordnung. Ohne Förderung, ohne Steuerwirkung, Eigenverbrauch ohne Speicher gerechnet.</p>`;
   }
-  if (R.cap && R.genutzt > ZYKLEN) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die erlaubten ${ZYKLEN}. Speicher größer wählen.`});
+  if (R.cap && R.genutzt > zyklen()) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die eingestellten ${fmt(zyklen(), 1)}. Speicher größer wählen.`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
   return html.replace("</h2>", "</h2>" + chart);
 }
@@ -810,7 +827,7 @@ function beispiel(k) {
   nbAnzeigen(); rechnen();
 }
 document.querySelectorAll("[data-bsp]").forEach(b => b.addEventListener("click", () => { document.querySelectorAll("details.stufe").forEach(x => x.open = true); beispiel(b.dataset.bsp); }));
-$("plz").value = "08393"; $("branche").value = "baeckerei"; $("kwh").value = 150000; $("kwh-sicher").checked = true;
+// keine Vorbelegung (Festlegung Nutzer 10.11.2026); Beispiele nur über die Knöpfe oben
 $("tage").value = "6"; $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
 
 $("form").addEventListener("submit", e => e.preventDefault());
