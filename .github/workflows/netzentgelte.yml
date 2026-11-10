@@ -201,7 +201,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_erledigt.csv ergebnis/zusammenfassung.md \
-                   ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/mastr_rollen.txt \
+                   ergebnis/netzbetreiber.csv ergebnis/plz_netzbetreiber.csv ergebnis/plz_gemeinde.csv ergebnis/mastr_rollen.txt \
                    ergebnis/fortschritt.jsonl ergebnis/slp_diagnose.csv ergebnis/slp_diagnose ergebnis/texte \
                    ergebnis_2027/netzentgelte_2027.csv ergebnis_2027/restliste.csv ergebnis_2027/fortschritt.jsonl ergebnis_2027/zusammenfassung.md ergebnis_2027/hochlastzeitfenster_2027.csv; do
             [ -e "$f" ] && git add "$f"
