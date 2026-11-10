@@ -161,9 +161,14 @@ a{color:var(--akzent)}
           <label class="titel" for="steuer-entl">Stromsteuer</label>
           <label class="haken"><input type="checkbox" id="steuer-entl"> Entlastung für produzierendes Gewerbe (Antrag beim Hauptzollamt)</label>
         </div>
+        <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh, aus Ihrer Rechnung oder einem Angebot; leer = Annahme aus Börse und Aufschlag)</label>
+            <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern">
+            <span class="klein">Orientierung für Gewerbe-Festpreise: etwa 16 bis 20 ct ohne Netzentgelt (Quelle: Vergleichsportal Berlin 06.11.2026 und Terminmarkt, kein Angebot). Der Preis laut Ihrer Rechnung ist genauer.</span></div>
+
         <div>
           <label class="titel" for="ebene">Anschluss</label>
           <select id="ebene"><option value="ns">Niederspannung</option><option value="msns">Umspannung MS/NS</option><option value="ms">Mittelspannung (eigener Trafo)</option><option value="hsms">Umspannung HS/MS</option></select>
+          <span class="klein" id="ebene-hinweis"></span>
         </div>
       </div>
 
@@ -265,9 +270,6 @@ a{color:var(--akzent)}
               <option value="d30">Mittel der letzten 30 Tage (Day-Ahead)</option>
             </select>
             <span class="klein">Der Festpreis eines Lieferanten orientiert sich am Terminmarkt, der dynamische Tarif am aktuellen Börsenpreis. Gilt nur, wenn unten kein eigener Strompreis eingetragen ist.</span></div>
-          <div><label class="titel" for="a-strom">Strompreis ohne Netzentgelt (ct/kWh, überschreibt Börsenniveau und Aufschlag)</label>
-            <input type="number" id="a-strom" min="0" step="0.5" placeholder="typisch: Börse + Aufschlag + Steuern">
-            <span class="klein">Orientierung für Gewerbe-Festpreise: etwa 16 bis 20 ct ohne Netzentgelt (Quelle: Vergleichsportal Berlin 06.11.2026 und Terminmarkt, kein Angebot). Der Preis laut Ihrer Rechnung ist genauer.</span></div>
           <div><label class="titel" for="a-einsp">Einspeisevergütung (ct/kWh, leer = automatisch nach Anlagengröße, Bundesnetzagentur, Inbetriebnahme ab 08/2026, Teileinspeisung; über 100 kWp Direktvermarktung: Marktwert Solar 2025 4,51 ct/kWh plus Marktprämie bis 5,84 ct)</label>
             <input type="number" id="a-einsp" min="0" step="0.1" placeholder="automatisch"></div>
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh: Vertrieb, Marge, Absicherung. Haushalte: etwa 3,5 bis 4 (belegt). Gewerbe: etwa 1 bis 3,5, Richtwert ohne Quelle. Bitte aus der eigenen Rechnung eintragen)</label>
@@ -440,6 +442,11 @@ function rechnen() {
   const A = anlagenLesen($("anlagen").value);
   const laden = $("laden").checked ? (parseFloat($("ladekw").value) || 0) : 0;
   const nb0 = gewaehlt ? NB.get(gewaehlt) : null;
+  if ($("ebene") && !$("ebene").dataset.manuell) {                // Vorauswahl nach Jahresverbrauch, vom Nutzer änderbar
+    const wunsch = kwh >= 2000000 ? "ms" : kwh >= 100000 ? "msns" : "ns", ok = wunsch === "ns" || (nb0 && nb0[wunsch]);
+    $("ebene").value = ok ? wunsch : "ns";
+    $("ebene-hinweis").textContent = kwh ? `Vorauswahl nach Ihrem Jahresverbrauch (${fmt(kwh)} kWh): Niederspannung unter 100.000 kWh, Umspannung MS/NS von 100.000 bis 2.000.000 kWh, Mittelspannung ab 2.000.000 kWh (Richtwerte, nicht belegt).${ok ? "" : " Für diesen Netzbetreiber ist die Ebene nicht ausgewiesen, es gilt Niederspannung."} Bitte ändern, wenn Ihre Netzrechnung eine andere Ebene nennt.` : "";
+  } else if ($("ebene-hinweis")) $("ebene-hinweis").textContent = "Ihre Auswahl.";
   const ebeneKey = $("ebene") ? $("ebene").value : "ns";
   // Gewählte Anschlussebene: deren Werte ersetzen die Niederspannung in allen folgenden Rechnungen; fehlt sie, bleibt die Niederspannung stehen
   const nb = nb0 && ebeneKey !== "ns" && nb0[ebeneKey] ? {...nb0, ns: nb0[ebeneKey]} : nb0;
@@ -907,6 +914,7 @@ function steuernVorschlagen() {
 }
 $("a-steuern").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").addEventListener("change", steuernVorschlagen);
+$("ebene").addEventListener("change", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").innerHTML = '<option value="">bitte wählen</option>' + Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
 $("branche").value = "";
 
@@ -922,7 +930,7 @@ function beispiel(k) {
 }
 document.querySelectorAll("[data-bsp]").forEach(b => b.addEventListener("click", () => { document.querySelectorAll("details.stufe").forEach(x => x.open = true); beispiel(b.dataset.bsp); }));
 // keine Vorbelegung (Festlegung Nutzer 10.11.2026); Beispiele nur über die Knöpfe oben
-$("tage").value = "6"; $("anlagen").value = "2 Etagenöfen je 36 kW, laufen morgens 4–7 Uhr; Kältemaschine 12 kW";
+$("tage").value = "6";                                   // keine Vorbelegung der Anlagen (nur über die Beispiel-Knöpfe)
 
 $("form").addEventListener("submit", e => e.preventDefault());
 $("form").addEventListener("input", e => {
