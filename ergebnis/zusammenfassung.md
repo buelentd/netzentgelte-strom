@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 09.11.2026 15:08, 831 Netzbetreiber bzw. Netzgebiete
+Stand 10.11.2026 07:55, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 770 | 93% |
-| pruefen | 51 | 6% |
+| ok | 771 | 93% |
+| pruefen | 50 | 6% |
 | kein_preisblatt | 1 | 0% |
 | blockiert | 4 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 647,  123
+Preisstand (nur ok): endgültig 648,  123
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 2,77 ct/kWh (Stadtwerke Olching Stromnetz GmbH ＆ Co. KG)
 - Maximum: 15,00 ct/kWh (GIG energy services GmbH)
-- Median: 7,24 ct/kWh (n = 783)
+- Median: 7,24 ct/kWh (n = 784)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -178,9 +178,9 @@ Preisstand (nur ok): endgültig 647,  123
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (61)
+## Restfälle (60)
 
-### pruefen (51)
+### pruefen (50)
 
 - 26. Energienetze Mittelrhein GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
@@ -197,7 +197,6 @@ Preisstand (nur ok): endgültig 647,  123
 - 144. Energie- und Wasserversorgung Altenburg GmbH: SLP-Werte nicht gefunden
 - 186. EVU Langenpreising: 
 - 197. FASTR GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0971, 9.7100; RLM-Werte nicht gefunden; SLP-Wer
-- 199. Fischereihafen-Betriebsgesellschaft mbH: SLP-Werte nicht gefunden
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 238. Gemeindewerke Niefern-Öschelbronn: Preisblatt-Links per robots.txt gesperrt: https://www.gwnoe.de/fileadmin/Dateien/Microsite/Dateien/Veroeffentlichungspflichten_Netzbetreiber/Preisblaetter/Netzentgelte/Netzentgelte_Strom_ab_01.01.2026
 - 258. GETEC Quartier GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Netzgebiet passt nicht (erwartet: quartier); Preisblatt eines anderen Netzgebiets

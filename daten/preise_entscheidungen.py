@@ -164,7 +164,7 @@ ENTFERNEN = {
     ("191", "hsms"): "Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt",
     ("57", "ns"): "Das Preisblatt weist keine Niederspannung aus (tiefste Ebene ist Umspannung MS/NS); die Werte waren die MS/NS-Zeile",
     ("26", "slp"): "Die SLP-Werte 7,29 ct / 75,00 € stammten aus der Datei, die zu badenovaNETZE gehört; im Preisblatt von Energienetze Mittelrhein steht kein SLP-Preis",
-    ("199", "slp"): "Die SLP-Werte waren der Niederspannungs-Arbeitspreis (7,48) und ein Leistungspreis aus der Reservetabelle (127,08); das Dokument weist keinen SLP-Preis aus (Industriehafen)",
+    # ("199", "slp") entfernt 10.11.2026: Dokument weist unter "Kleinkunden ohne Leistungsmessung" 7,98 ct/kWh und 80,00 €/Jahr aus (Zeile 53 des Textes)
     ("206", "hsms"): "Die Werte 9,27/1,85/40,83/0,59 stehen im Dokument nicht; das Preisblatt weist keine Umspannung HS/MS aus",
     ("819", "msns"): "Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile",
     ("362", "msns"): "Preisblatt nennt nur HS, HS/MS und MS; gelesene Werte waren die HS/MS-Zeile",

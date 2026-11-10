@@ -988,11 +988,11 @@
 198;SNB944723161733;Feuchter Gemeindewerke GmbH (FGW);ok;msns;belegt;Z34: Umspannung (Tabelle ab 2.500 h);manuell durch Claude am Dokument gesehen
 198;SNB944723161733;Feuchter Gemeindewerke GmbH (FGW);ok;ns;belegt;Zeile 26: Niederspannung;zwei Tabellen (Zeilen 26 und 35)
 198;SNB944723161733;Feuchter Gemeindewerke GmbH (FGW);ok;slp;belegt;Zeile 72: Preise;
-199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;pruefen;hsms;leer;;
-199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;pruefen;ms;belegt;Zeile 22: Mittelspannung MSP;
-199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;pruefen;msns;belegt;Zeile 23: Umspannung MSP/NSP;
-199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;pruefen;ns;belegt;Zeile 24: Niederspannung NSP;
-199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;pruefen;slp;leer;;
+199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;ok;hsms;leer;;
+199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;ok;ms;belegt;Zeile 22: Mittelspannung MSP;
+199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;ok;msns;belegt;Zeile 23: Umspannung MSP/NSP;
+199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;ok;ns;belegt;Zeile 24: Niederspannung NSP;
+199;SNB914149166902;Fischereihafen-Betriebsgesellschaft mbH;ok;slp;belegt;Zeile 76: Arbeitspreis  Grundpreis;
 200;SNB960098459084;FischerStrom GmbH ＆ Co. KG;keine_website;hsms;kein_text;;
 200;SNB960098459084;FischerStrom GmbH ＆ Co. KG;keine_website;ms;kein_text;;
 200;SNB960098459084;FischerStrom GmbH ＆ Co. KG;keine_website;msns;kein_text;;
