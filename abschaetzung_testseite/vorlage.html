@@ -803,7 +803,9 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
     const summe = s1 + s2 + s3 + s4 + s5 - opex, kosten = preisJe * cap * (1 - zuschuss);
     return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten - entsorgBarwert(cap),
-            kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch};
+            kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch,
+            // Speicherpreis (€/kWh), bei dem der Barwert 0 ist: (Erträge ohne Betriebskosten × Faktor − Entsorgung) ÷ (Betriebskostenanteil × Faktor + 1 − Zuschuss) ÷ Kapazität
+            breakEven: cap > 0 ? ((summe + opex) * faktor - entsorgBarwert(cap)) / (0.015 * faktor + 1 - zuschuss) / cap : 0};
   }
 
   // Neue Solaranlage selbst (ohne Speicher): Eigenverbrauch spart Strom plus Arbeitspreis, Rest wird eingespeist
@@ -848,9 +850,10 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch" : (tarif === "fest" ? "Festpreis" : "unbekannt, gerechnet wie Festpreis")}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
     <p class="herkunft">Barwert über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
+    chart += `<p class="herkunft"><b>Wann sich der Speicher amortisiert:</b> Der Barwert ist 0 bei einem Speicherpreis von etwa <b>${R.breakEven >= 5 ? fmt(R.breakEven) + " €/kWh" : "keinem realistischen Preis (unter 5 €/kWh, Erträge zu klein)"}</b>; angesetzt sind ${fmt(R.preisJe)} €/kWh. Nur Einsparungen und Erlöse zählen, der Strom selbst wird ohnehin bezahlt. Gerechnet über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins, ${fmt(num("a-abbau"), 1)} % Kapazitätsabbau je Jahr, mit Entsorgung und Betriebskosten.</p>`;
     if (!eingabe && !beste.cap) chart += `<p class="herkunft"><b>Bei diesen Angaben lohnt sich kein Speicher.</b> Der Barwert ist bei allen Größen negativ. Prüfen Sie atypische Netznutzung und Solar.</p>`;
-    chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert ${jahre} J. €</th></tr></thead><tbody>`
-      + kurve.map(k => `<tr class="${k.cap === beste.cap && beste.cap ? "aktiv" : ""}"><td>${fmt(k.cap)} kWh</td><td>${fmt(k.summe)}</td><td>${fmt(k.kosten)}</td><td>${k.barwert >= 0 ? "+" : "−"}${fmt(Math.abs(k.barwert))}</td></tr>`).join("")
+    chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert ${jahre} J. €</th><th>Preis €/kWh für Barwert 0</th></tr></thead><tbody>`
+      + kurve.map(k => `<tr class="${k.cap === beste.cap && beste.cap ? "aktiv" : ""}"><td>${fmt(k.cap)} kWh</td><td>${fmt(k.summe)}</td><td>${fmt(k.kosten)}</td><td>${k.barwert >= 0 ? "+" : "−"}${fmt(Math.abs(k.barwert))}</td><td>${k.breakEven >= 5 ? fmt(k.breakEven) : "keiner"}</td></tr>`).join("")
       + `</tbody></table></div>`;
     const vm = 1 - num("a-vermarkter") / 100, wege = [["Regelenergie FCR (Frequenzhaltung)", num("a-regel"), "Bereithalten, sofortige Reaktion auf die Netzfrequenz; bezahlt wird die Bereitschaft"],
       ["aFRR (langsamere Regelenergie)", num("a-afrr"), "Abruf nach Minuten; bezahlt wird die Bereitschaft (je Richtung) und die abgerufene Energie"],
