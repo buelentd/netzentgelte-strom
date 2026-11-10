@@ -38,6 +38,9 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-vis
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sp-tab td.g{color:#4ade80}}
 :root[data-theme="dark"] .sp-tab td.g{color:#4ade80}
 .sp-tab summary{cursor:pointer}
+.empf-t{color:#0a7a3b}.empf-w{color:#a06400}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .empf-t{color:#4ade80}:root:not([data-theme="light"]) .empf-w{color:#fbbf24}}
+:root[data-theme="dark"] .empf-t{color:#4ade80}:root[data-theme="dark"] .empf-w{color:#fbbf24}
 .stufe{border:1px solid var(--linie);border-radius:10px;margin:14px 0;background:var(--feld)}
 .stufe>summary{cursor:pointer;padding:10px 12px;font-weight:700;list-style:none}
 .stufe>summary::-webkit-details-marker{display:none}
@@ -104,9 +107,6 @@ a{color:var(--akzent)}
   <header class="kopf">
     <span class="marke">Testseite, nicht conplot.de</span>
     <div class="klein" style="background:#fff3cd;color:#664d03;border:1px solid #e0c36a;border-radius:7px;padding:8px 10px;margin:8px 0;line-height:1.35">Ergebnisse sind eine Modellrechnung mit sichtbaren Annahmen, kein Angebot und keine Beratung.</div>
-    <div class="beispiele"><span class="klein">Beispiel laden:</span>
-      <button type="button" class="knopf" data-bsp="meerane">Bäckerei Meerane</button>
-      <button type="button" class="knopf" data-bsp="biberach">Bäckerei Friedrichshafen (mit Hochlastzeitfenstern)</button></div>
     <h1>Geführte Abschätzung: Netzentgelt und Speicher</h1>
     <p>Nachbau des Formulars mit echten Netzentgelten 2026. Alle Preise netto. Das Ergebnis weist Netzentgelt, Konzessionsabgabe, Umlagen, Stromsteuer und Umsatzsteuer einzeln aus; Energie, Aufschlag des Stromanbieters und das Messentgelt bei Leistungsmessung fehlen noch. Börsenpreise (Day-Ahead) bis <b id="boerse-stand"></b>.</p>
   </header>
@@ -124,7 +124,7 @@ a{color:var(--akzent)}
       <div class="zeile">
         <div>
           <label class="titel" for="plz">Postleitzahl oder Ort des Standorts <span class="pflicht">*</span></label>
-          <input type="text" id="plz" maxlength="40" placeholder="PLZ oder Ort, z. B. 08393 oder Meerane" list="plz-liste" autocomplete="off">
+          <input type="text" id="plz" maxlength="40" placeholder="PLZ oder Ort eingeben" list="plz-liste" autocomplete="off">
           <datalist id="plz-liste"></datalist>
         </div>
         <div>
@@ -585,7 +585,7 @@ function rechnen() {
       <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
     autoBox([...autoZeilen, ["Leistungspreis", fmt(r.lp, 2) + " €/(kW·a)"], ["Arbeitspreis", fmt(r.ap, 2) + " ct/kWh"], ["Benutzungsstunden", fmt(r.h) + " h (" + gtext + ")"]]);
     html += strompreisBlock(nb, false, kwh, {...r, kw});
-    html += hlzfBlock(nb);
+    html += hlzfBlock(nb) + "<!--kurve-->";
 
     // Empfindlichkeit
     const stufen = [0.7, 0.85, 1, 1.2, 1.5].map(f => Math.round(kw * f));
@@ -594,6 +594,7 @@ function rechnen() {
           return `<tr class="${k === Math.round(kw) ? "aktiv" : ""}"><td>${fmt(k)} kW</td><td>${fmt(x.h)}</td><td>${x.unter ? "unter" : "ab"}</td><td>${fmt(x.summe)}</td><td>${fmt(x.summe / kwh * 100, 2)}</td></tr>`; }).join("")
       + `</tbody></table></div>`;
 
+    html += "<!--stufe23-->";                                      // ab hier eingeklappt (Stufe 2 und 3)
     // Speicher (wie conplot: 10–90 % nutzbar, 2 Stunden Dauer)
     const zielEingabe = parseFloat($("ziel").value) || 0;
     let ziel = zielEingabe || Math.round(kw * 0.8);
@@ -943,13 +944,14 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   let empfehlung;
   if (beste.cap > 0) {
     const lauf = beste.summe > 0 ? beste.kosten / beste.summe : null;
-    empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b style="color:#0a7a3b">Sie haben ${fmt(kwh)} kWh Jahresverbrauch. Dann ist ein Speicher mit ${fmt(beste.cap)} kWh und ${fmt(beste.Psp)} kW das Richtige.</b><br>
+    empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b class="empf-t">Sie haben ${fmt(kwh)} kWh Jahresverbrauch. Dann ist ein Speicher mit ${fmt(beste.cap)} kWh und ${fmt(beste.Psp)} kW das Richtige.</b><br>
       ${lauf ? `Sie amortisieren in <b>${fmt(lauf, 1)} Jahren</b>` : "Der Speicher bringt"} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis: ${fmt(beste.summe)} € Ersparnis und Erlöse pro Jahr, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.
       ${kwp > 0 ? " Die PV-Anlage ist darin eingerechnet." : " Mit einer PV-Anlage amortisieren Sie noch schneller: Dachfläche oder Leistung in Stufe 3 angeben."}</div>`;
   } else {
-    empfehlung = `<div style="${kartenStil};background:rgba(160,100,0,.12);border:1px solid #a06400"><b>Kein Speicher rechnet sich bei diesen Angaben.</b><br>Bei ${fmt(gewaehlt.preisJe)} €/kWh Speicherpreis ist der Barwert bei jeder Größe negativ. Die beste Größe (${fmt(gewaehlt.cap)} kWh) rechnet sich ab etwa ${gewaehlt.breakEven >= 5 ? fmt(gewaehlt.breakEven) + " €/kWh" : "keinem realistischen Preis"}.</div>`;
+    empfehlung = `<div style="${kartenStil};background:rgba(160,100,0,.12);border:1px solid #a06400"><b class="empf-w">Kein Speicher rechnet sich bei diesen Angaben.</b><br>Bei ${fmt(gewaehlt.preisJe)} €/kWh Speicherpreis ist der Barwert bei jeder Größe negativ. Die beste Größe (${fmt(gewaehlt.cap)} kWh) rechnet sich ab etwa ${gewaehlt.breakEven >= 5 ? fmt(gewaehlt.breakEven) + " €/kWh" : "keinem realistischen Preis"}.</div>`;
   }
-  let chart = empfehlung + tageskurve(nb, kwh, kw, b, tage, beste.cap > 0 ? beste.ziel : 0) + `<!--stufe23--><hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
+  const kurveHtml = tageskurve(nb, kwh, kw, b, tage, beste.cap > 0 ? beste.ziel : 0);
+  let chart = `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
   if (!R.cap) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht.</p>`;
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch (EPEX)" : "Festpreis (Ihr eingegebener Preis)"}.</p>
@@ -982,7 +984,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   if (R.cap && kw > lwMax) hinweise.push({w: 0, t: `Ihre Spitze von ${fmt(kw)} kW liegt über der Spitze des Lastprofils bei ${fmt(kwh)} kWh (${fmt(lwMax)} kW). Gerechnet wird mit dem Profil für Ihre Jahresmenge plus einer Spitze von ${fmt(kw)} kW für ${fmt(num("a-spitzenh") || 1, 2)} Stunden an ${fmt(num("a-spitzentage") || 12)} Tagen pro Jahr (Annahme). Ein echter Lastgang ersetzt diese Annahme.`});
   if (R.cap && R.genutzt > zyklen()) hinweise.push({w: 1, t: `Kappung und Solarverschiebung brauchen ${fmt(R.genutzt, 2)} Ladungen pro Tag, mehr als die eingestellten ${fmt(zyklen(), 1)}. Speicher größer wählen.`});
   if (R.cap) hinweise.push({w: 0, t: "Handel und Regelenergie brauchen einen Vermarkter und für Regelenergie eine Zulassung. Regelenergie ist als Spanne gerechnet, abzüglich Vermarkteranteil. Die Zuschüsse sind nicht geprüft (regional unterschiedlich)."});
-  return html + chart;
+  return html.replace("</h2>", "</h2>" + empfehlung).replace("<!--kurve-->", kurveHtml) + chart;       // Empfehlung ganz oben, Tageskurve nach den Hochlastzeitfenstern
 }
 
 // Day-Ahead je MW und Jahr: ein Speicher mit 1 MW Leistung, nutzbar 0,8 * Dauer MWh, lädt in den billigsten, entlädt in den teuersten Stunden des Tages (obere Grenze: Reihenfolge nicht geprüft)
