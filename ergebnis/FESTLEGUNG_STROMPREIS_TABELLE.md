@@ -30,3 +30,7 @@ Noch nicht gebaut. Beschlossen:
 | Garantie / Zyklengrenze Hersteller | – | Hinweis im Ergebnis, kein Rechenwert |
 
 Alle als Annahme gekennzeichnet in der Annahmenliste.
+
+## Korrektur 10.11.2026 (Nutzer): Farben
+Es wird **nur grün** (belegt, auch die 162 Freigaben) angezeigt, **sonst leer**. Keine Annahmefarbe, kein grau „fehlt" in der Tabelle; fehlende Werte bleiben leer. Annahmen stehen nur in der Annahmenliste. Legende unten erklärt nur grün.
+Beschlossen zum Bau: Konzessionsabgabe nach Gemeindegröße (plz_gemeinde.csv + Einwohnerzahlen), Ladezyklen/Lebensdauer wählbar, BDEW-Profile, keine Vorbelegung Meerane.
