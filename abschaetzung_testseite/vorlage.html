@@ -161,6 +161,7 @@ a{color:var(--akzent)}
         <div>
           <label class="titel" for="steuer-entl">Stromsteuer</label>
           <label class="haken"><input type="checkbox" id="steuer-entl"> Entlastung für produzierendes Gewerbe (Antrag beim Hauptzollamt)</label>
+          <span class="klein">Vorwahl nach Branche (Bäckerei, Handwerk, Produktion). Gilt nur für die Strommenge der Produktion und nur auf Antrag; bitte prüfen.</span>
         </div>
         <div><label class="titel" for="a-strom">Strompreis, gesamter Arbeitspreis (ct/kWh)</label>
             <input type="number" id="a-strom" min="0" step="0.1" placeholder="wird automatisch vorbelegt">
@@ -484,6 +485,7 @@ function rechnen() {
   const A = anlagenLesen($("anlagen").value);
   const laden = $("laden").checked ? (parseFloat($("ladekw").value) || 0) : 0;
   const nb0 = gewaehlt ? NB.get(gewaehlt) : null;
+  if (!$("steuer-entl").dataset.manuell) $("steuer-entl").checked = PRODUZIEREND.includes($("branche").value);      // Vorwahl nach Branche, vom Nutzer änderbar
   if ($("ebene") && !$("ebene").dataset.manuell) {                // Vorauswahl nach Jahresverbrauch, vom Nutzer änderbar
     const wunsch = kwh >= 2000000 ? "ms" : kwh >= 100000 ? "msns" : "ns", ok = wunsch === "ns" || (nb0 && nb0[wunsch]);
     $("ebene").value = ok ? wunsch : "ns";
@@ -647,14 +649,18 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   const liste = Object.entries(W.f).map(([jz, l]) => `${jz}: ${l.length ? l.join(", ") : "keins"}`).join(" · ");
   html += `<p class="herkunft">Der Netzbetreiber legt Zeiten fest, in denen sein Netz am stärksten belastet ist (Werktage): ${liste}.
     Wer seine Spitze <b>außerhalb</b> dieser Zeiten hat, kann ein günstigeres, individuelles Netzentgelt vereinbaren.</p>`;
-  if (!A.anlagen.length) return keins(`<p class="herkunft">Für die Prüfung bitte oben die Anlagen mit ihren Laufzeiten angeben.</p>`);
-  // Spitze in den Hochlastzeitfenstern: Anlagen, die darin laufen (ohne Zeitangabe: immer), plus halbe Grundlast und Laden
-  const inHz = A.anlagen.filter(a => !a.fenster || fenster.some(f => ueberlappt(a.fenster, f)));
+  const profilModus = !A.anlagen.length;                         // ohne Anlagenliste: Spitze im Zeitfenster aus dem Tagesprofil
+  const bb = BRANCHEN[$("branche").value] || BRANCHEN.sonstiges;
+  if (profilModus && !fenster.length) return keins(`<p class="herkunft">Der Netzbetreiber hat in keiner Jahreszeit Hochlastzeitfenster. Eine atypische Netznutzung ist damit nicht nötig.</p>`);
+  // Spitze in den Hochlastzeitfenstern: Anlagen, die darin laufen (ohne Zeitangabe: immer), plus halbe Grundlast und Laden; ohne Anlagen der höchste Profilwert in den Fenstern
+  const inHz = profilModus ? [] : A.anlagen.filter(a => !a.fenster || fenster.some(f => ueberlappt(a.fenster, f)));
   const kwJ = kappung ? kappung.ziel : kw;                      // Jahresspitze nach einer möglichen Kappung
-  const hzSpitze = Math.min(kwJ, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
+  let profilImFenster = 0;
+  if (profilModus) lastProfil(bb, kwh, +$("tage").value).werktag.forEach((v, h) => { if (fenster.some(f => f.von < h + 1 && f.bis > h)) profilImFenster = Math.max(profilImFenster, v); });
+  const hzSpitze = profilModus ? Math.min(kwJ, profilImFenster + laden) : Math.min(kwJ, inHz.reduce((s, a) => s + a.anzahl * a.kw, 0) + 0.5 * grundlast + laden);
   const abstand = (kwJ - hzSpitze) / kwJ * 100, verlagerung = kwJ - hzSpitze;
   const anlagenSumme = A.anlagen.reduce((x, a) => x + a.anzahl * a.kw, 0);
-  if (anlagenSumme < 0.7 * kw) html += `<p class="herkunft"><b>Achtung:</b> Die angegebenen Anlagen (${fmt(anlagenSumme)} kW) erklären nur ${fmt(anlagenSumme / kw * 100)} % der Spitzenlast (${fmt(kw)} kW). Die Spitze im Zeitfenster kann deshalb höher sein als hier geschätzt.</p>`;
+  if (!profilModus && anlagenSumme < 0.7 * kw) html += `<p class="herkunft"><b>Achtung:</b> Die angegebenen Anlagen (${fmt(anlagenSumme)} kW) erklären nur ${fmt(anlagenSumme / kw * 100)} % der Spitzenlast (${fmt(kw)} kW). Die Spitze im Zeitfenster kann deshalb höher sein als hier geschätzt.</p>`;
   const r = kappung ? kappung.nach : rlm(nb.ns, kwh, kw, nb.le);
   const indiv = Math.max(r.lp * hzSpitze + r.arbeit, 0.2 * r.summe);
   const ersparnis = r.summe - indiv;
@@ -670,7 +676,7 @@ function atypisch(nb, kwh, kw, A, grundlast, laden, kappung) {
   html += erfuellt
     ? `<p><b>Voraussichtlich möglich, ohne Speicher:</b> Netzentgelt ca. ${fmt(indiv)} € statt ${fmt(r.summe)} € pro Jahr${kappung ? " (nach der Kappung)" : ""}. Der Antrag läuft über den Netzbetreiber; ein Speicher darf dann nur außerhalb der Zeitfenster nachladen.</p>`
     : `<p class="herkunft">Mit diesen Angaben nicht erfüllt.${inHz.length ? " In den Zeitfenstern laufen: " + inHz.map(a => a.name).join(", ") + "." : ""}</p>`;
-  html += `<p class="herkunft">Grobe Prüfung: Die Spitze im Zeitfenster ist aus den Anlagen geschätzt (plus halbe Grundlast). Untergrenze 20 % des normalen Netzentgelts berücksichtigt. <a href="${H.q}" target="_blank" rel="noopener">Hochlastzeitfenster des Netzbetreibers</a></p>`;
+  html += `<p class="herkunft">Grobe Prüfung: ${profilModus ? `Ohne Anlagenliste stammt die Spitze im Zeitfenster aus dem Tagesprofil ${bb.profil} (Annahme). Angenommen wird, dass Ihre Spitzenlast selbst außerhalb der Zeitfenster liegt; ohne Lastgang lässt sich das nicht prüfen.` : "Die Spitze im Zeitfenster ist aus den Anlagen geschätzt (plus halbe Grundlast)."} Untergrenze 20 % des normalen Netzentgelts berücksichtigt. <a href="${H.q}" target="_blank" rel="noopener">Hochlastzeitfenster des Netzbetreibers</a></p>`;
   return {html, zusatz: erfuellt ? ersparnis : 0, erfuellt};
 }
 
@@ -1005,7 +1011,8 @@ $("kw").addEventListener("input", e => { if (e.isTrusted) { if ($("kw").value ==
 $("a-strom").addEventListener("input", e => { if (e.isTrusted) { if ($("a-strom").value === "") delete $("a-strom").dataset.manuell; else $("a-strom").dataset.manuell = "1"; }
   const v = num("a-strom"), w = $("a-strom-warn");
   w.textContent = !v ? "" : v < 3 ? "Unter 3 ct/kWh: meinen Sie €/kWh? Bitte in ct/kWh eingeben (üblich sind 10 bis 40 ct/kWh)." : v > 60 ? "Über 60 ct/kWh: meinen Sie Cent statt Euro? Üblich sind 10 bis 40 ct/kWh." : ""; });
-$("ebene").addEventListener("change", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
+$("steuer-entl").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
+$("ebene").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").innerHTML = '<option value="">bitte wählen</option>' + Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
 $("branche").value = "";
 
