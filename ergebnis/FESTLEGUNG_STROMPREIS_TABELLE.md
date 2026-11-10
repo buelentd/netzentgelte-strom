@@ -18,3 +18,15 @@ Noch nicht gebaut. Beschlossen:
 - Folgen, die mitgeändert werden müssen: Barwert-Laufzeit aus Zyklenzahl ableiten (6.000 Zyklen: 1,5/Tag ≈ 11 Jahre, 2/Tag ≈ 8 Jahre; heute fest 12 Jahre), Kapazitätsabbau mit den Zyklen koppeln (als Annahme kennzeichnen), Garantiehinweis (Herstellergrenzen), Wirkungsgrad 0,92 bleibt.
 - Lastprofile: alle BDEW-Standardprofile aus `daten/lastprofile/` (H0, G0–G6, L0–L2, G25, H25) den Branchen zuordnen (Vorschlag: Bäckerei G5; Supermarkt/Büro/Handel G0 oder G4; Gastronomie G2 oder G3; Handwerk G1; nicht geprüft). Vorher mit dem Original auf bdew.de abgleichen (laut `HERKUNFT.md` noch offen).
 - Börsenniveau und G5 sind keine Annahmen. Zinssatz, Anteil des Vermarkters, Verfügbarkeit Regelenergie, Direktvermarktergebühr gehören zur Speicher-/PV-Rechnung, nicht zum Block „Ihr Strompreis".
+
+## Ergänzung 10.11.2026: Speicher-Annahmen wählbar und in der Annahmenliste (Nutzer)
+
+| Feld | Vorbelegung | Art |
+|---|---|---|
+| Ladezyklen pro Tag (bis 2) | 1,5 | Annahme, wählbar |
+| Zyklen bis Lebensende (Herstellerangabe) | 6.000 | Annahme, wählbar |
+| Lebensdauer in Jahren | berechnet = Zyklen gesamt ÷ (Zyklen/Tag × 365); überschreibbar, dann wird die Zyklenzahl pro Tag angezeigt | Rechenwert |
+| Kapazitätsabbau (% pro Jahr) | bisheriger Wert (conplot) | Annahme, mit Zyklen gekoppelt |
+| Garantie / Zyklengrenze Hersteller | – | Hinweis im Ergebnis, kein Rechenwert |
+
+Alle als Annahme gekennzeichnet in der Annahmenliste.
