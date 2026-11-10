@@ -24,6 +24,7 @@ const zahl = s => parseFloat(String(s).replace(/\./g, '').replace(',', '.'));
   if (k) ok(Math.abs((zahl(k[2]) - zahl(k[1])) * 189.86 - zahl(k[3])) < 2, `Ersparnis ${k[3]} ≠ gekappte kW × Leistungspreis`);
   const kap = t.match(/NÖTIGE KAPAZITÄT\s*ca\. ([\d.,]+) kWh/i), form = t.match(/Kapazität = ([\d.,]+) kW × ([\d.,]+) h/);
   if (kap && form) ok(Math.abs(Math.ceil(zahl(form[1]) * zahl(form[2]) / 0.8) - zahl(kap[1])) <= 1, 'Nötige Kapazität passt nicht zur Formel');
+  ok(/Hochlastzeitfenster von Stadtwerke Metzingen/i.test(t) && /13:15-14:15, 17:00-20:15/.test(t), 'Hochlastzeitfenster von Metzingen werden nicht ausgegeben');
   // 3. Strompreis-Tabelle: Summen stimmen, Umsatzsteuer 19 %
   const z = await p.evaluate(() => [...document.querySelectorAll('.sp-tab tbody tr')].map(r => [r.cells[0].innerText.split('\n')[0], r.cells[1].innerText.trim()]));
   const wert = n => { const r = z.find(x => x[0].startsWith(n)); return r && r[1] ? zahl(r[1]) : 0; };

@@ -441,6 +441,17 @@ function nbAnzeigen() {
   }
 }
 
+// Ausgabe der Hochlastzeitfenster, die wir für den gewählten Netzbetreiber haben (aus seiner Veröffentlichung)
+function hlzfBlock(nb) {
+  const H = D.hlzf[nb.n];
+  const kopf = `<hr class="trenner"><h2>Hochlastzeitfenster von ${nb.name}</h2>`;
+  if (!H) return kopf + `<p class="herkunft">Für diesen Netzbetreiber liegen uns keine Hochlastzeitfenster vor (nicht erfasst).</p>`;
+  const zeilen = Object.entries(H.f).map(([jz, l]) => `<tr><td>${jz}</td><td>${l.length ? l.join(", ") : "keins"}</td></tr>`).join("");
+  const quelle = H.q && /^https?:/.test(H.q) ? `<a href="${H.q}" target="_blank" rel="noopener">Veröffentlichung des Netzbetreibers</a>` : "Veröffentlichung des Netzbetreibers (Dokument im Bestand)";
+  return kopf + `<div class="tabelle"><table><thead><tr><th>Jahreszeit</th><th>Zeitfenster (Werktage)</th></tr></thead><tbody>${zeilen}</tbody></table></div>
+    <p class="herkunft">In diesen Zeiten ist das Netz am stärksten belastet. Wer seine Spitze außerhalb hat, kann unter Bedingungen ein individuelles Netzentgelt vereinbaren (atypische Netznutzung). Bedingung Abstand der Spitze im Zeitfenster zur Jahresspitze: mindestens ${H.s} % (${H.sh}).${H.m ? ` Mindestleistung: ${fmt(H.m)} kW.` : ""} Quelle: ${quelle}.</p>`;
+}
+
 function autoBox(z) {                                                // Box "Automatisch befüllt": zeigt, was die Seite aus Ihren Eingaben abgeleitet hat
   const e = $("auto-box"); if (!e) return;
   e.style.display = z.length ? "block" : "none";
@@ -544,6 +555,7 @@ function rechnen() {
       <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
     autoBox([...autoZeilen, ["Leistungspreis", fmt(r.lp, 2) + " €/(kW·a)"], ["Arbeitspreis", fmt(r.ap, 2) + " ct/kWh"], ["Benutzungsstunden", fmt(r.h) + " h (" + gtext + ")"]]);
     html += strompreisBlock(nb, false, kwh, {...r, kw});
+    html += hlzfBlock(nb);
 
     // Empfindlichkeit
     const stufen = [0.7, 0.85, 1, 1.2, 1.5].map(f => Math.round(kw * f));
