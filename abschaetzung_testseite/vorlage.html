@@ -230,7 +230,7 @@ a{color:var(--akzent)}
         <div class="klein">Mit dynamischem Tarif verschiebt der Speicher den eigenen Verbrauch in billige Stunden. Dynamische Tarife und zeitvariable Netzentgelte (§ 14a Modul 3) setzen in der Regel ein intelligentes Messsystem (Smart Meter mit Gateway) voraus. Ob es an Ihrem Standort verfügbar ist, erfragen Sie beim Messstellenbetreiber.</div>
       </div>
       <div class="zeile">
-        <div>
+        <div style="display:none">
           <label class="titel" for="speicher-kwh">Speicherkapazität (kWh)</label>
           <input type="number" id="speicher-kwh" min="0" step="10" placeholder="leer = beste Größe wird ermittelt">
         </div>
@@ -915,7 +915,17 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     <div class="spur">${v >= 0 ? `<i class="balken-plus" style="width:${Math.abs(v) / max * 50}%"></i>` : `<i class="balken-minus" style="width:${Math.abs(v) / max * 50}%"></i>`}</div>
     <b>${v >= 0 ? "+" : "−"} ${fmt(Math.abs(v))} €</b></div>`;
   const amort = R.summe > 0 ? R.kosten / R.summe : null;
-  let chart = `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
+  // Empfehlung: die Speichergröße, bei der der Fall positiv ist (höchster Barwert); wird vorgegeben, nicht eingetragen
+  const kartenStil = "border-radius:8px;padding:10px 14px;margin:10px 0;line-height:1.4";
+  let empfehlung;
+  if (beste.cap > 0) {
+    const lauf = beste.summe > 0 ? beste.kosten / beste.summe : null;
+    empfehlung = `<div style="${kartenStil};background:rgba(10,122,59,.12);border:1px solid #0a7a3b"><b style="color:#0a7a3b">Empfehlung Speicher: ${fmt(beste.cap)} kWh, ${fmt(beste.Psp)} kW</b><br>
+      Ersparnis und Erlöse <b>${fmt(beste.summe)} € pro Jahr</b>, Barwert über ${jahre} Jahre <b>+${fmt(beste.barwert)} €</b>${lauf ? `, Amortisation ${fmt(lauf, 1)} Jahre` : ""} bei ${fmt(beste.preisJe)} €/kWh Speicherpreis. Er rechnet sich bis etwa ${fmt(beste.breakEven)} €/kWh.</div>`;
+  } else {
+    empfehlung = `<div style="${kartenStil};background:rgba(160,100,0,.12);border:1px solid #a06400"><b>Kein Speicher rechnet sich bei diesen Angaben.</b><br>Bei ${fmt(gewaehlt.preisJe)} €/kWh Speicherpreis ist der Barwert bei jeder Größe negativ. Die beste Größe (${fmt(gewaehlt.cap)} kWh) rechnet sich ab etwa ${gewaehlt.breakEven >= 5 ? fmt(gewaehlt.breakEven) + " €/kWh" : "keinem realistischen Preis"}.</div>`;
+  }
+  let chart = empfehlung + `<hr class="trenner"><h2>Was der Speicher dem Betrieb bringt (pro Jahr)</h2>`;
   if (!R.cap) chart += `<p class="herkunft">Für die Rechnung wird ein Speicher gebraucht.</p>`;
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch (EPEX)" : "Festpreis (Ihr eingegebener Preis)"}.</p>

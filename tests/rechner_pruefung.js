@@ -14,7 +14,7 @@ const zahl = s => parseFloat(String(s).replace(/\./g, '').replace(',', '.'));
   // 2. Furo-Vergleichsfall: Metzingen, 250.000 kWh, 100 kW (Leistungspreis MS/NS ab 2.500 h laut Preisblatt: 189,86)
   await p.evaluate(() => document.querySelectorAll('details').forEach(d => d.open = true));
   await p.fill('#plz', '72555'); await p.dispatchEvent('#plz', 'input'); await p.selectOption('#branche', 'sonstiges');
-  await p.fill('#kwh', '250000'); await p.fill('#kw', '100'); await p.fill('#speicher-kwh', '100'); await p.waitForTimeout(1200);
+  await p.fill('#kwh', '250000'); await p.fill('#kw', '100'); await p.waitForTimeout(1200);
   await p.evaluate(() => document.querySelectorAll('details').forEach(d => d.open = true));
   ok(await p.inputValue('#ebene') === 'msns', 'Ebene bei 250.000 kWh nicht MS/NS');
   const t = await p.evaluate(() => document.getElementById('ergebnis').innerText);
