@@ -138,7 +138,8 @@ class Speicher:
         ent = self._entfernt()
         beleg_offen = self._beleg_offen_liste()
         freigabe = self._freigabe_liste()
-        zeilen = [self._freigabe(self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent), freigabe)
+        sonder = self._sonderfall_liste()
+        zeilen = [self._sonderfall(self._freigabe(self._entfernt_hinweis(self._hsms_grund(self._beleg_offen(self._gesperrt(self._status_v2(self._entfernt_leeren(self._mit_manuell(d, man), ent)), sperre), beleg_offen), gruende), ent), freigabe), sonder)
                   for d in self._zeilen_recherche()]
         for d in zeilen:
             d["hlzf"] = hlzf.get(d.get("mastr_nr"), {})
@@ -222,6 +223,24 @@ class Speicher:
             return set()
         with open(pfad, encoding="utf-8-sig", newline="") as f:
             return {r["nr"].strip() for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    def _sonderfall_liste(self) -> dict:
+        """lauf/sonderfall_nutzer.csv (nr;status;hinweis): vom Nutzer geprüfte Sonderfälle (z. B. Werksnetz nur 110 kV), Status und Hinweis werden gesetzt."""
+        pfad = self.ordner.parent / "lauf" / "sonderfall_nutzer.csv"
+        if not pfad.exists():
+            return {}
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            return {r["nr"].strip(): r for r in csv.DictReader(f, delimiter=";") if r.get("nr")}
+
+    @staticmethod
+    def _sonderfall(d: dict, sonder: dict) -> dict:
+        r = sonder.get(str(d.get("nr")))
+        if not r:
+            return d
+        d = dict(d)
+        d["status"] = r["status"].strip()
+        d["hinweis"] = r["hinweis"].strip()
+        return d
 
     @staticmethod
     def _freigabe(d: dict, frei: set) -> dict:

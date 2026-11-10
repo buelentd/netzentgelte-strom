@@ -4083,10 +4083,10 @@
 819;SNB941650885558;VSE Verteilnetz GmbH;pruefen;msns;leer;;
 819;SNB941650885558;VSE Verteilnetz GmbH;pruefen;ns;leer;;
 819;SNB941650885558;VSE Verteilnetz GmbH;pruefen;slp;leer;;
-820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;hsms;kein_text;;
-820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;ms;kein_text;;
-820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;msns;kein_text;;
-820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;blockiert;ns;kein_text;;
+820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;ok;hsms;kein_text;;
+820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;ok;ms;kein_text;;
+820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;ok;msns;kein_text;;
+820;SNB978865527096;VW KRAFTWERK Gesellschaft mit beschränkter Haftung;ok;ns;kein_text;;
 821;SNB910224319560;Weiler Wärme eG;ok;hsms;leer;;
 821;SNB910224319560;Weiler Wärme eG;ok;ms;belegt;Zeile 63: >= 2.500 h  154,75  0,89;Beschriftung im Kontext der Zeile
 821;SNB910224319560;Weiler Wärme eG;ok;msns;belegt;Zeile 66: >= 2.500 h  153,42  0,68;Beschriftung im Kontext der Zeile

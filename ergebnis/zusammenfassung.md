@@ -1,19 +1,19 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 10.11.2026 07:55, 831 Netzbetreiber bzw. Netzgebiete
+Stand 10.11.2026 08:30, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 771 | 93% |
+| ok | 772 | 93% |
 | pruefen | 50 | 6% |
 | kein_preisblatt | 1 | 0% |
-| blockiert | 4 | 0% |
+| blockiert | 3 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): endgültig 648,  123
+Preisstand (nur ok): endgültig 648,  124
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
@@ -52,7 +52,7 @@ Preisstand (nur ok): endgültig 648,  123
 - 42. SWKiel Netz GmbH: nicht gelesen (robots)
 - 46. Thüga Energienetze GmbH: nicht gelesen (weder RLM- (NS) noch SLP-Werte gefunden)
 
-## Status ok, aber Preisstand nicht endgültig (123)
+## Status ok, aber Preisstand nicht endgültig (124)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: 
 - 86. E-Werke Haniel Haimhausen GmbH ＆ Co. KG: 
@@ -174,11 +174,12 @@ Preisstand (nur ok): endgültig 648,  123
 - 808. Versorgungsbetriebe Bordesholm GmbH: 
 - 813. Versorgungsbetriebe Röttingen: 
 - 814. Versorgungsbetriebe Zellingen: 
+- 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: 
 - 821. Weiler Wärme eG: 
 - 823. Wendelsteinbahn Verteilnetz GmbH: 
 - 829. Wirtschaftsbetriebe der Stadt Norden GmbH: 
 
-## Restfälle (60)
+## Restfälle (59)
 
 ### pruefen (50)
 
@@ -237,12 +238,11 @@ Preisstand (nur ok): endgültig 648,  123
 
 - 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 
-### blockiert (4)
+### blockiert (3)
 
 - 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.com; HTTP 405 http://www.energieversorgung-putzbrunn.com
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 405 http://www.egloffstein.de
 - 510. Stadtwerke Hammelburg GmbH: HTTP 403 https://www.stadtwerke-hammelburg.de; HTTP 405 http://www.stadtwerke-hammelburg.de
-- 820. VW KRAFTWERK Gesellschaft mit beschränkter Haftung: robots.txt nicht erreichbar (https://www.vw-kraftwerk.de); robots.txt nicht erreichbar (http://www.vw-kraftwerk.de)
 
 ### robots (4)
 

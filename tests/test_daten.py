@@ -21,7 +21,7 @@ def test_mastr_nummern_eindeutig():
 
 def test_ok_zeilen_haben_slp_und_niederspannung_vollstaendig():
     for r in zeilen():
-        if r["status"] != "ok":
+        if r["status"] != "ok" or r["hinweis"].startswith("Sonderfall"):   # Sonderfall: vom Nutzer geprüft, Ebenen gibt es dort nicht
             continue
         assert r["slp_ap_ct_kwh"] and r["slp_grundpreis_eur_jahr"], r["nr"]
         assert all(r[f"ns_{k}"] for k in K), r["nr"]
@@ -29,7 +29,7 @@ def test_ok_zeilen_haben_slp_und_niederspannung_vollstaendig():
 
 def test_werte_im_plausiblen_bereich():
     for r in zeilen():
-        if r["status"] != "ok":
+        if r["status"] != "ok" or r["hinweis"].startswith("Sonderfall"):
             continue
         ap, gp = F(r["slp_ap_ct_kwh"]), F(r["slp_grundpreis_eur_jahr"])
         assert 2 <= ap <= 15 and 0 <= gp <= 200, (r["nr"], ap, gp)       # unter 3 ct nur von Hand am Dokument bestätigt (z. B. Olching)
