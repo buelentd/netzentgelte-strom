@@ -145,6 +145,7 @@ a{color:var(--akzent)}
         </div>
       </div>
       <div id="nb-bereich" class="nb-liste"></div>
+      <div id="auto-box" class="klein" style="background:rgba(100,160,190,.16);border:1px solid rgba(100,160,190,.45);border-radius:8px;padding:8px 12px;margin:8px 0;display:none"></div>
 
       <div class="zeile">
         <div>
@@ -440,6 +441,12 @@ function nbAnzeigen() {
   }
 }
 
+function autoBox(z) {                                                // Box "Automatisch befüllt": zeigt, was die Seite aus Ihren Eingaben abgeleitet hat
+  const e = $("auto-box"); if (!e) return;
+  e.style.display = z.length ? "block" : "none";
+  e.innerHTML = z.length ? "<b>Automatisch befüllt</b>" + z.map(([k, v]) => `<div style="display:flex;justify-content:space-between;gap:12px;margin-top:3px"><span>${k}</span><b>${v}</b></div>`).join("") + '<div style="margin-top:4px">Ändern über Anschluss, Branche und Strompreis in diesem Formular.</div>' : "";
+}
+
 function rechnen() {
   const bGewaehlt = BRANCHEN[$("branche").value];
   const b = bGewaehlt || BRANCHEN.sonstiges;                   // ohne Branche: allgemeines Gewerbeprofil G0 als sichtbare Annahme
@@ -458,6 +465,10 @@ function rechnen() {
   // Gewählte Anschlussebene: deren Werte ersetzen die Niederspannung in allen folgenden Rechnungen; fehlt sie, bleibt die Niederspannung stehen
   const nb = nb0 && ebeneKey !== "ns" && nb0[ebeneKey] ? {...nb0, ns: nb0[ebeneKey]} : nb0;
   const ebeneFehlt = !!(nb0 && ebeneKey !== "ns" && !nb0[ebeneKey]);
+  const EBENE_NAME = {ns: "Niederspannung", msns: "Umspannung MS/NS", ms: "Mittelspannung", hsms: "Umspannung HS/MS"};
+  const autoZeilen = nb ? [["Netzbetreiber", nb.name], ["Anschlussebene", EBENE_NAME[ebeneFehlt ? "ns" : ebeneKey] + ($("ebene").dataset.manuell ? "" : " (nach Verbrauch)")],
+    ["Lastprofil", bGewaehlt ? `${b.profil} (${b.name})` : "G0 (Annahme, keine Branche)"], ["Stromtarif", $("tarif").selectedOptions[0] ? $("tarif").selectedOptions[0].text.split(" (")[0] : ""]] : [];
+  autoBox(autoZeilen);
 
   // Anlagen-Rückmeldung
   const ae = $("anlagen-ergebnis");
@@ -519,6 +530,7 @@ function rechnen() {
       <div class="zahl"><small>Grundpreis</small><span>${fmt(gp, 2)} €</span></div>
       <div class="zahl"><small>Arbeitspreis</small><span>${fmt(ap, 2)} ct/kWh</span></div></div>
       <p class="herkunft">Unter 100.000 kWh ohne Leistungsmessung rechnet der Netzbetreiber mit Grund- und Arbeitspreis. Eine Spitzenkappung spart hier kein Netzentgelt.</p>`;
+    autoBox([...autoZeilen, ["Arbeitspreis", fmt(ap, 2) + " ct/kWh"], ["Grundpreis", fmt(gp, 2) + " €/Jahr"]]);
     html += strompreisBlock(nb, true, kwh, null);
   } else {
     if (!nb.ns) { out.innerHTML = html + '<p class="leer">Für diesen Netzbetreiber liegen noch keine geprüften Preise für Kunden mit Leistungsmessung vor.</p>'; return; }
@@ -530,6 +542,7 @@ function rechnen() {
       <div class="zahl"><small>Leistungsanteil</small><span>${fmt(r.leistung)} €</span></div>
       <div class="zahl"><small>Arbeitsanteil</small><span>${fmt(r.arbeit)} €</span></div></div>
       <p class="herkunft">Spitzenlast <b>${fmt(kw)} kW</b> (${herkunft}) · ${fmt(r.h)} Benutzungsstunden · Leistungspreis ${fmt(r.lp, 2)} €/kW · Arbeitspreis ${fmt(r.ap, 2)} ct/kWh</p>`;
+    autoBox([...autoZeilen, ["Leistungspreis", fmt(r.lp, 2) + " €/(kW·a)"], ["Arbeitspreis", fmt(r.ap, 2) + " ct/kWh"], ["Benutzungsstunden", fmt(r.h) + " h (" + gtext + ")"]]);
     html += strompreisBlock(nb, false, kwh, {...r, kw});
 
     // Empfindlichkeit
