@@ -325,6 +325,7 @@ const BRANCHEN = {
   supermarkt:     {name: "Supermarkt", h: 6000, tage: 6, profil: "G3", fenster: "durchgehend (Kühlung)"},
   buero:          {name: "Büro / Verwaltung", h: 1500, tage: 5, profil: "G1", fenster: "8–17 Uhr"},
   handwerk:       {name: "Handwerk / Werkstatt", h: 1500, tage: 5, profil: "G1", fenster: "7–16 Uhr"},
+  sonstiges:      {name: "Sonstiges Gewerbe (allgemein, Profil G0)", h: 2500, tage: 6, profil: "G0", fenster: "8–18 Uhr"},
   hotel:          {name: "Hotel", h: 4000, tage: 7, profil: "G0", fenster: "morgens und abends"},
   produktion:     {name: "Produktion (Zerspanung, Galvanik …)", h: 2500, tage: 5, profil: "G1/G3", fenster: "Schichtbeginn"},
   kuehlhaus:      {name: "Kühlhaus", h: 6000, tage: 7, profil: "G3", fenster: "durchgehend"},
@@ -435,6 +436,7 @@ function rechnen() {
 
   const out = $("ergebnis");
   if (!nb || !kwh) { out.innerHTML = '<h2>Ergebnis</h2><p class="leer">Postleitzahl, Netzbetreiber und Jahresverbrauch angeben.</p>'; return; }
+  if (!b) { out.innerHTML = '<h2>Ergebnis</h2><p class="leer">Bitte die Branche wählen. Sie bestimmt Lastprofil, Spitzenlast-Schätzung und Benutzungsstunden. Passt keine Branche, „Sonstiges Gewerbe" wählen (allgemeines Gewerbeprofil G0).</p>'; return; }
 
   // Spitzenlast: Rechnung > Eingabe > Anlagen > Branche
   const hBranche = brancheStunden(b, schicht, tage);
@@ -860,7 +862,8 @@ function steuernVorschlagen() {
 }
 $("a-steuern").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").addEventListener("change", steuernVorschlagen);
-$("branche").innerHTML = Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
+$("branche").innerHTML = '<option value="">bitte wählen</option>' + Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
+$("branche").value = "";
 
 const BEISPIELE = {
   meerane: {plz: "08393"}, biberach: {plz: "88045"},
