@@ -163,9 +163,9 @@ a{color:var(--akzent)}
           <label class="haken"><input type="checkbox" id="steuer-entl"> Entlastung für produzierendes Gewerbe (Antrag beim Hauptzollamt)</label>
         </div>
         <div><label class="titel" for="a-strom">Strompreis, gesamter Arbeitspreis (ct/kWh)</label>
-            <input type="number" id="a-strom" min="0" step="0.1" placeholder="z. B. 25 (leer = Annahme)">
+            <input type="number" id="a-strom" min="0" step="0.1" placeholder="wird automatisch vorbelegt">
             <span class="klein" id="a-strom-warn" style="color:#a15c00"></span>
-            <span class="klein">Ihr gesamter Arbeitspreis in ct/kWh wie auf Ihrer Rechnung: Strombeschaffung, Arbeitspreis des Netzentgelts sowie Steuern, Abgaben und Umlagen (Stromsteuer, Konzessionsabgabe, KWKG-Umlage usw.). Den Leistungspreis brauchen Sie hier nicht, er kommt aus dem Preisblatt Ihres Netzbetreibers. Leer: Annahme aus Börse, Aufschlag, Steuern und Netz-Arbeitspreis.</span>
+            <span class="klein">Ihr gesamter Arbeitspreis in ct/kWh wie auf Ihrer Rechnung: Strombeschaffung, Arbeitspreis des Netzentgelts sowie Steuern, Abgaben und Umlagen (Stromsteuer, Konzessionsabgabe, KWKG-Umlage usw.). Den Leistungspreis brauchen Sie hier nicht, er kommt aus dem Preisblatt Ihres Netzbetreibers. Vorbelegt mit der Annahme (Börse, Aufschlag, Steuern, Netz-Arbeitspreis); überschreiben Sie den Wert mit Ihrem Preis. Feld leeren stellt die Annahme wieder her.</span>
             <span class="klein">Orientierung für Gewerbe-Festpreise: etwa 16 bis 20 ct ohne Netzentgelt (Quelle: Vergleichsportal Berlin 06.11.2026 und Terminmarkt, kein Angebot). Der Preis laut Ihrer Rechnung ist genauer.</span></div>
 
         <div>
@@ -442,6 +442,8 @@ function nbAnzeigen() {
 }
 
 // Ausgabe der Hochlastzeitfenster, die wir für den gewählten Netzbetreiber haben (aus seiner Veröffentlichung)
+// Strompreis-Feld: vorbelegt mit der Annahme (Börse, Aufschlag, Steuern, Netz-Arbeitspreis); erst was der Nutzer selbst einträgt, zählt als Eingabe
+function gesamtpreisEingabe() { const f = $("a-strom"); return f && f.dataset.manuell ? num("a-strom") : 0; }
 function hlzfWahl(H) {                                               // Fenster der gewählten Ebene (MS/NS und höher: Fenster MS/NS, sonst Niederspannung)
   const ms = $("ebene").value !== "ns", f = ms ? (H.fm || H.f) : (H.f || H.fm);
   return {f, ebene: f === H.fm && H.fm && (ms || !H.f) ? "Umspannung MS/NS" : "Niederspannung"};
@@ -695,7 +697,7 @@ function strompreisBlock(nb, slp, kwh, rl) {
   zeilen.push(["Stromsteuer", kwh * st / 100, `${fmt(kwh)} kWh × ${fmt(st, 2)} ct/kWh (§ 3 StromStG 2,05 ct/kWh${steuerEntl ? ", nach Entlastung § 9b StromStG netto 0,05 ct/kWh, nur produzierendes Gewerbe, über 250 €/Jahr, auf Antrag" : ""})`, true]);
   // Energie und Aufschlag: aus Ihrem eingegebenen Gesamtpreis, sonst Annahme (Börsenmittel plus Aufschlag); beides ist kein Preisblattwert und bleibt ohne Farbe
   const abgabenCt = zeilen.filter(z => ["Konzessionsabgabe", "KWKG-Umlage", "Offshore-Netzumlage", "Aufschlag besondere Netznutzung", "Stromsteuer"].includes(z[0])).reduce((a, z) => a + (z[1] || 0), 0) / kwh * 100;
-  const netzApCt = slp ? nb.slp[0] : rl.ap, gesamtEingabe = num("a-strom");
+  const netzApCt = slp ? nb.slp[0] : rl.ap, gesamtEingabe = gesamtpreisEingabe();
   if (gesamtEingabe) {
     const en = Math.max(0, gesamtEingabe - netzApCt - abgabenCt);
     zeilen.push(["Energie und Aufschlag (aus Ihrem Strompreis)", kwh * en / 100, `${fmt(gesamtEingabe, 2)} ct/kWh Ihr Gesamtpreis − ${fmt(netzApCt, 2)} ct Netz-Arbeitspreis − ${fmt(abgabenCt, 2)} ct Steuern und Umlagen = ${fmt(en, 2)} ct/kWh`, false]);
@@ -707,6 +709,7 @@ function strompreisBlock(nb, slp, kwh, rl) {
   }
   const apRows = zeilen.filter(z => z[1] != null && !/Leistungspreis|Grundpreis|Messentgelt/.test(z[0]));
   const apGesamt = apRows.reduce((a, z) => a + z[1], 0) / kwh * 100;
+  const af = $("a-strom"); if (af && !af.dataset.manuell) af.value = String(Math.round(apGesamt * 10) / 10);      // automatisch vorbelegt
   const netto = zeilen.reduce((a, z) => a + (z[1] || 0), 0), ust = netto * 0.19;
   const th = `<tr><th>Posten</th><th>€ pro Jahr</th><th>ct/kWh</th></tr>`;
   const tr = ([n, v, weg, gr]) => `<tr title="${weg.replace(/"/g, "&quot;")}"><td><details><summary>${n}</summary><small>${weg}</small></details></td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v) : ""}</td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v / kwh * 100, 2) : ""}</td></tr>`;
@@ -776,7 +779,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const niveau = $("a-niveau") ? $("a-niveau").value : "jahr";
   const boersenMittel = niveau === "jahr" ? mittel(D.boerse) : niveau === "d30" ? mittel(D.boerse.slice(-720)) : TERMIN_2027;
   const niveauName = niveau === "jahr" ? "Jahresmittel" : niveau === "d30" ? "Mittel 30 Tage" : "Terminmarkt 2027";
-  const strom = num("a-strom") ? Math.max(0, num("a-strom") - rVor.ap) : (boersenMittel + num("a-aufschlag") + num("a-steuern"));   // eingegebener Gesamtpreis enthält den Netz-Arbeitspreis
+  const strom = gesamtpreisEingabe() ? Math.max(0, gesamtpreisEingabe() - rVor.ap) : (boersenMittel + num("a-aufschlag") + num("a-steuern"));   // eingegebener Gesamtpreis enthält den Netz-Arbeitspreis
   const steuern = num("a-steuern"), arbeitstage = 52 * tage;
   const tarif = $("tarif").value, dynamisch = tarif === "dynamisch";
   const netz = num("netzanschluss");
@@ -970,7 +973,8 @@ function steuernVorschlagen() {
 }
 $("a-steuern").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").addEventListener("change", steuernVorschlagen);
-$("a-strom").addEventListener("input", () => { const v = num("a-strom"), w = $("a-strom-warn");
+$("a-strom").addEventListener("input", e => { if (e.isTrusted) { if ($("a-strom").value === "") delete $("a-strom").dataset.manuell; else $("a-strom").dataset.manuell = "1"; }
+  const v = num("a-strom"), w = $("a-strom-warn");
   w.textContent = !v ? "" : v < 3 ? "Unter 3 ct/kWh: meinen Sie €/kWh? Bitte in ct/kWh eingeben (üblich sind 10 bis 40 ct/kWh)." : v > 60 ? "Über 60 ct/kWh: meinen Sie Cent statt Euro? Üblich sind 10 bis 40 ct/kWh." : ""; });
 $("ebene").addEventListener("change", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").innerHTML = '<option value="">bitte wählen</option>' + Object.entries(BRANCHEN).map(([k, b]) => `<option value="${k}">${b.name}</option>`).join("");
