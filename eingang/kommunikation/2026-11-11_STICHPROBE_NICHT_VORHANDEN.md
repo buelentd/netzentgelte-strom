@@ -28,3 +28,7 @@ Grundlage: 145 Netzbetreiber ohne 2026-Werte in der Lieferung (Branch `vibe/hlzf
 ## Prüfung der gelieferten Werte am Dokumenttext (zum selben Termin)
 
 55 Zeilen mit 2026-Werten gegen die Originale der ZIP-Dateien: bei 40 stehen alle Uhrzeiten im Dokumenttext. 15 nicht (Scan, Bild oder kein Text): Elektrizitätsgenossenschaft, EW Schweiger, Cottbus (EVC), Peine, Stade, Zweibrücken (teils), Borna (teils), VSE, Werraenergie, enercity Netz und GridPartner, Tegernsee, Wittenberg, VersorgungsBetriebe Elbe, Verden. Das prüft nur, ob die Zeiten im Dokument stehen, nicht, ob Jahreszeit und Ebene stimmen. Stade zeigt, dass das allein nicht reicht.
+
+## Nachtrag: Suche über alle übrigen 143 Netzbetreiber ohne 2026-Werte
+
+Gleicher Crawler (nur lesend, robots.txt, 1 Anfrage/s, höchstens 40 Seiten). Ergebnis je Netzbetreiber: `2026-11-11_SUCHE_145_ERGEBNIS.csv` (MaStR-Nr. zuerst). Klassen: 2026-Kandidat 30, nur ältere Jahre 22, nur 2027 2, nichts gefunden 54, Seite nicht abrufbar 35 (davon viele HTTP 403: Westnetz, Syna, E.DIS, NordNetz, Olching, Weilheim, Putzbrunn und andere). Nichts davon ist in Tabelle oder Overlay eingetragen. „Kandidat“ heißt: Link oder Text nennt 2026 und das Dokument enthält 2026; Jahr, Ebene und Jahreszeit sind noch nicht gelesen.
