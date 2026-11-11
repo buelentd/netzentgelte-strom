@@ -28,7 +28,11 @@ from urllib.parse import unquote, urljoin, urlparse
 
 from .crawl import SPERRE, ist_dokument, start_urls, website_domain
 from .extract import norm
-from .netz import TIMEOUT_MS, USER_AGENT, Drossel, Robots, basis_domain
+from .netz import TIMEOUT_MS, Drossel, Robots, basis_domain
+
+# Neutrale, ehrliche Kennung: ein Crawler, ohne Firmennamen (Festlegung Nutzer 11.11.2026). Keine Tarnung als normaler Browser, keine Umgehung von Sperren.
+USER_AGENT = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36 "
+              "(compatible; netzentgelte-datenerhebung/1.0; Crawler)")
 
 MAX_SEITEN = 40
 MAX_TIEFE = 3
