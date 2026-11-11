@@ -46,3 +46,9 @@ Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
 
 - **Stadtwerke Oberkirch (SNB963821222269), 2026 jetzt mit Werten:** NS F `12:30-14:30`, H `17:30-20:00`, W `11:30-14:00, 16:30-19:45`, S keins (NSP-PDF direkt auf stadtwerke-oberkirch.de). MS/NS leer: nur MSP-Dokument (MS), USP 404.
 - GIPS-Mandantenkürzel sind nicht erratbar (nicht aus Domain ableitbar); Traunstein, Norderney, HarzEnergie, Eberbach 2026 darüber nicht gefunden.
+
+## LEW Verteilnetz (SNB911705062982) nachgereicht (2026-11-11)
+
+- **2026:** NS Herbst `17:15-18:15`, Winter `17:00-19:15`; MS/NS Herbst `17:15-18:15`, Winter `17:15-19:00`; F/S keins (Seite 1 bildbasiert, per Bild gelesen).
+- **2027 vorläufig:** NS und MS/NS je Herbst/Winter `17:00-19:00`, F/S keins.
+- Lesson learned: Betreiberseiten direkt crawlen (Media-Pfade), nicht nur Websuche.
