@@ -208,3 +208,17 @@ nr;ebene;fundstelle
 26;msns;Preisblatt 1 Zeile 6: Umspannung Mittel-/Niederspannung 129,01 1,19 (ab 2.500 h) und 16,82 5,68 (unter 2.500 h)
 26;ns;Preisblatt 1 Zeile 7: Niederspannungsebene 88,19 3,44 (ab 2.500 h) und 19,49 6,19 (unter 2.500 h)
 26;slp;Preisblatt 3 (ohne registrierende Lastgangmessung): Grundpreis 80,30 EUR/Jahr netto, Arbeitspreis 6,39 ct/kWh netto
+644;ms;Preisblatt 1 Zeile Mittelspannung 14,91 8,30 202,79 0,78 (T < 2.500 / T >= 2.500 h/a)
+644;msns;Preisblatt 1 Zeile Umspannung zur Niederspannung 11,40 10,95 285,10 0,00
+644;ns;Preisblatt 1 Zeile Niederspannung 16,10 8,87 149,14 3,55
+644;slp;Preisblatt 2: ohne registrierte Lastgangmessung 73,00 EUR/a und 7,93 ct/kWh
+352;ms;Zeile Mittelspannung 24,31 4,51 131,04 0,24 (< 2500 h / >= 2.500 h)
+352;msns;Zeile Umsp. Mittel- auf Niederspannung 26,57 5,42 135,17 1,07
+352;ns;Zeile Niederspannung 35,77 7,80 144,51 3,46
+352;slp;Kunden mit Standardlastprofil: Grundpreis 75,00 EUR/a, Arbeitspreis 6,65 Ct/kWh
+345;hsms;Preisblatt 1 Zeilen Hochspannungsnetz einschließlich Umspannung 23,48 2,67 (bis 2.500 h/a) und 79,23 0,44 (ab 2.500 h/a)
+345;ms;Preisblatt 1 Zeilen Mittelspannungsnetz 27,03 3,42 (bis) und 94,15 0,73 (ab)
+345;msns;Preisblatt 1 Zeilen Mittelspannungsnetz einschließlich Umspannung 28,35 3,50 (bis) und 96,95 0,76 (ab)
+345;ns;Preisblatt 1 Zeilen Niederspannungsnetz 46,12 3,66 (bis) und 100,33 1,49 (ab)
+345;slp;Grundpreis Niederspannung 72,00 EUR/Jahr, Arbeitspreis Niederspannung 6,29 ct/kWh
+308;slp;Vorläufiges Preisblatt 2026: Entnahmestellen ohne Leistungsmessung, Arbeitspreis 13,63 ct/kWh netto

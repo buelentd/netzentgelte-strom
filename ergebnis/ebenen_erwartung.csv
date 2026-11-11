@@ -306,7 +306,7 @@ SNB915316807789;304;Mainfranken Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;ge
 SNB983526428810;305;Mainnetz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB974647435931;306;Mainsite GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB943571241628;307;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB997826747014;308;Markt Egloffstein;blockiert;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
+SNB997826747014;308;Markt Egloffstein;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;gelesen
 SNB932489723517;309;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914731268120;310;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914103081760;311;Meißener Stadtwerke GmbH;pruefen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;fehlt
@@ -343,14 +343,14 @@ SNB959176447266;341;Nordhausen Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgew
 SNB920393062051;342;NordNetz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB931610892481;343;Nordseeheilbad Borkum GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB945532057606;344;nvb Nordhorner Versorgungsbetriebe GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB992672107807;345;Oberhausener Netzgesellschaft mbH;pruefen;nicht_ausgewiesen;nicht_ausgewiesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;gelesen
+SNB992672107807;345;Oberhausener Netzgesellschaft mbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB959255155907;347;Osterholzer Stadtwerke GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934071779865;348;OsthessenNetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB942224012479;349;OUTLETCITY AG;ok;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB965394941448;350;Outokumpu Stainless Nirosta GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
 SNB969534177940;351;ovag Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB988532040636;352;PVU Energienetze GmbH;robots;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
+SNB988532040636;352;PVU Energienetze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB938413573104;353;QuartiersNetz Bayern GmbH;ok;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB942804093577;354;Queichtal Energie Offenbach Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB966494112844;355;Raiffeisenbank Altmühl-Jura eG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -642,7 +642,7 @@ SNB987617847795;640;Stadtwerke Schlitz;ok;gelesen;gelesen;gelesen;nicht_ausgewie
 SNB979429791342;641;Stadtwerke Schneeberg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB950028563172;642;Stadtwerke Schneverdingen-Neuenkirchen GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB936461984224;643;Stadtwerke Schönebeck GmbH - SWS -;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB935144085258;644;Stadtwerke Schorndorf GmbH;robots;kein_dokument;kein_dokument;kein_dokument;kein_dokument;kein_dokument
+SNB935144085258;644;Stadtwerke Schorndorf GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB944999584793;645;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB944294076061;646;Stadtwerke Schüttorf - Emsbüren GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB962110557570;647;Stadtwerke Schwabach GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen

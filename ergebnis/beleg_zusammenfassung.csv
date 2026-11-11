@@ -306,7 +306,7 @@
 305;SNB983526428810;Mainnetz GmbH;ok;alle_belegt;
 306;SNB974647435931;Mainsite GmbH ＆ Co. KG;ok;offen;ns:keine_zeile_mit_passender_beschriftung
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;alle_belegt;
-308;SNB997826747014;Markt Egloffstein;blockiert;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+308;SNB997826747014;Markt Egloffstein;pruefen;alle_belegt;
 309;SNB932489723517;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;alle_belegt;
 310;SNB914731268120;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;ok;alle_belegt;
 311;SNB914103081760;Meißener Stadtwerke GmbH;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden; ns:leer_im_dokument_ebene_gefunden"
@@ -343,14 +343,14 @@
 342;SNB920393062051;NordNetz GmbH;ok;alle_belegt;
 343;SNB931610892481;Nordseeheilbad Borkum GmbH;ok;alle_belegt;
 344;SNB945532057606;nvb Nordhorner Versorgungsbetriebe GmbH;ok;alle_belegt;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; ns:leer_im_dokument_ebene_gefunden"
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;alle_belegt;
 346;SNB949124413085;Obermaier und Gerg Grundstücksverwaltung KG;ok;alle_belegt;
 347;SNB959255155907;Osterholzer Stadtwerke GmbH ＆ Co. KG;ok;alle_belegt;
 348;SNB934071779865;OsthessenNetz GmbH;ok;alle_belegt;
 349;SNB942224012479;OUTLETCITY AG;ok;alle_belegt;
 350;SNB965394941448;Outokumpu Stainless Nirosta GmbH;pruefen;alle_belegt;
 351;SNB969534177940;ovag Netz GmbH;ok;alle_belegt;
-352;SNB988532040636;PVU Energienetze GmbH;robots;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;alle_belegt;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;alle_belegt;
 354;SNB942804093577;Queichtal Energie Offenbach Netz GmbH;ok;alle_belegt;
 355;SNB966494112844;Raiffeisenbank Altmühl-Jura eG;ok;alle_belegt;
@@ -642,7 +642,7 @@
 641;SNB979429791342;Stadtwerke Schneeberg GmbH;ok;alle_belegt;
 642;SNB950028563172;Stadtwerke Schneverdingen-Neuenkirchen GmbH;ok;alle_belegt;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;alle_belegt;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;alle_belegt;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;alle_belegt;
 646;SNB944294076061;Stadtwerke Schüttorf - Emsbüren GmbH;ok;alle_belegt;
 647;SNB962110557570;Stadtwerke Schwabach GmbH;ok;alle_belegt;

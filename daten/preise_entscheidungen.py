@@ -2,7 +2,8 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
-NOTIZ = {("312", "ms"): "Merck Site Management, Netzgebiet FLUXUM Gernsheim: eingefügter Text des Nutzers, Blatt „voraussichtlich gültig ab 01.01.2026/2027“, Datum 13.10.2023; Entscheidung Nutzer 11.11.2026: gilt für 2026 und 2027; Ebenen nur MS und NS, kein SLP, keine MS/NS", ("312", "ns"): "wie MS",
+NOTIZ = {("345", "hsms"): "Beschriftung „Hochspannungsnetz einschließlich Umspannung“ als Umspannung HS/MS gelesen, Zuordnung nicht bestätigt; Blöcke „bis 2.500 h/a“ und „ab 2.500 h/a“, vorläufiges Preisblatt", ("345", "msns"): "Beschriftung „Mittelspannungsnetz einschließlich Umspannung“ als Umspannung MS/NS gelesen, Zuordnung nicht bestätigt", ("308", "slp"): "vorläufiges Preisblatt 2026, nur Arbeitspreis 13,63 ct/kWh, Grundpreis nicht ausgewiesen; keine RLM-Ebenen im Dokument", ("352", "ms"): "Preisblatt Netzzugang Strom 2026", ("644", "ms"): "Preisblatt 1 endgültig 2026",
+         ("312", "ms"): "Merck Site Management, Netzgebiet FLUXUM Gernsheim: eingefügter Text des Nutzers, Blatt „voraussichtlich gültig ab 01.01.2026/2027“, Datum 13.10.2023; Entscheidung Nutzer 11.11.2026: gilt für 2026 und 2027; Ebenen nur MS und NS, kein SLP, keine MS/NS", ("312", "ns"): "wie MS",
          ("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; Tarif Strom Industrie DE (Mittelspannung mit eigener Transformatorenstation, nur Bestandskunden); Netznutzung enthält Kosten Swissgrid",
          ("73", "ms"): "Preisblatt CCF Netzkosten 2026 gültig ab 01.04.2026; Tagesleistungspreise x 365",
          ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
@@ -10,6 +11,20 @@ NOTIZ = {("312", "ms"): "Merck Site Management, Netzgebiet FLUXUM Gernsheim: ein
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
 TEXTAUSZUG = {"312"}      # 312 Merck: eingefügter Text des Nutzers, kein Dokument bei uns; sonst: Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("644", "ms"): [14.91, 8.30, 202.79, 0.78],           # Schorndorf: Preisblatt 1 (endgültig, gültig ab 01.01.2026), T < 2.500 h/a und T >= 2.500 h/a
+    ("644", "msns"): [11.40, 10.95, 285.10, 0.00],        # Umspannung zur Niederspannung
+    ("644", "ns"): [16.10, 8.87, 149.14, 3.55],
+    ("644", "slp"): [7.93, 73.00],                        # Preisblatt 2: ohne registrierte Lastgangmessung, Grundpreis 73,00 €/a, Arbeitspreis 7,93 ct/kWh
+    ("352", "ms"): [24.31, 4.51, 131.04, 0.24],           # PVU Energienetze: Preisblatt Netzzugang Strom (gültig ab 01.01.2026), < 2500 h und >= 2.500 h, netto
+    ("352", "msns"): [26.57, 5.42, 135.17, 1.07],         # Umsp. Mittel- auf Niederspannung
+    ("352", "ns"): [35.77, 7.80, 144.51, 3.46],
+    ("352", "slp"): [6.65, 75.00],                        # Kunden mit Standardlastprofil: Grundpreis 75,00 EUR/a, Arbeitspreis 6,65 Ct/kWh
+    ("345", "hsms"): [23.48, 2.67, 79.23, 0.44],          # Oberhausener Netzgesellschaft: vorläufige Preisblätter 2026, Preisblatt 1, Blöcke "bis" und "ab" 2.500 h/a; "Hochspannungsnetz einschließlich Umspannung"
+    ("345", "ms"): [27.03, 3.42, 94.15, 0.73],            # Mittelspannungsnetz
+    ("345", "msns"): [28.35, 3.50, 96.95, 0.76],          # "Mittelspannungsnetz einschließlich Umspannung"
+    ("345", "ns"): [46.12, 3.66, 100.33, 1.49],           # Niederspannungsnetz
+    ("345", "slp"): [6.29, 72.00],                        # Grundpreis Niederspannung 72,00 €/Jahr, Arbeitspreis 6,29 ct/kWh
+    ("308", "slp"): [13.63, 0.00],                        # Markt Egloffstein: vorläufiges Preisblatt 2026, Entnahmestellen ohne Leistungsmessung, nur Arbeitspreis 13,63 ct/kWh netto, kein Grundpreis ausgewiesen
     ("312", "ms"): [24.48, 6.95, 179.47, 0.75],          # Merck Site Management (Text vom Nutzer): Mittelspannung, unter und ab 2.500 h
     ("312", "ns"): [35.90, 8.84, 216.19, 1.63],          # Niederspannung
     ("117", "slp"): [13.25, 60.00],          # EKS Kleingewerbe DE 2026 (Einheitstarif Netznutzung 2026 netto, Grundpreis Netz 60 €/Jahr); enthält Swissgrid

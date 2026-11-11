@@ -1529,10 +1529,11 @@
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;msns;belegt;Zeile 22: Umspannung MS/NS  MS/NS;
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;ns;belegt;Zeile 23: Niederspannung  NS;
 307;SNB943571241628;Maintal-Werke-GmbH-Stadtwerke der Stadt Maintal;ok;slp;belegt;Zeile 48: Kleinkundengruppe (SLP NS)  Grundpreis  Arbeitspreis;
-308;SNB997826747014;Markt Egloffstein;blockiert;hsms;kein_text;;
-308;SNB997826747014;Markt Egloffstein;blockiert;ms;kein_text;;
-308;SNB997826747014;Markt Egloffstein;blockiert;msns;kein_text;;
-308;SNB997826747014;Markt Egloffstein;blockiert;ns;kein_text;;
+308;SNB997826747014;Markt Egloffstein;pruefen;hsms;leer;;
+308;SNB997826747014;Markt Egloffstein;pruefen;ms;leer;;
+308;SNB997826747014;Markt Egloffstein;pruefen;msns;leer;;
+308;SNB997826747014;Markt Egloffstein;pruefen;ns;leer;;
+308;SNB997826747014;Markt Egloffstein;pruefen;slp;belegt;Vorläufiges Preisblatt 2026: Entnahmestellen ohne Leistungsmessung, Arbeitspreis 13,63 ct/kWh netto;manuell durch Claude am Dokument gesehen
 309;SNB932489723517;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;hsms;leer;;
 309;SNB932489723517;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;ms;belegt;Zeile 11: 5 Mittelspannungsnetz;
 309;SNB932489723517;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;msns;belegt;Zeile 12: 6 Umsp. Mittel- auf Niederspannung;
@@ -1712,11 +1713,11 @@
 344;SNB945532057606;nvb Nordhorner Versorgungsbetriebe GmbH;ok;msns;belegt;Zeile 32: Mittelspannung mit Umspannung auf Niederspannung;
 344;SNB945532057606;nvb Nordhorner Versorgungsbetriebe GmbH;ok;ns;belegt;Zeile 33: Niederspannung;
 344;SNB945532057606;nvb Nordhorner Versorgungsbetriebe GmbH;ok;slp;belegt;Zeile 49: Kundengruppe  pro Jahr;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;hsms;leer;;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;ms;leer_im_dokument_ebene_gefunden;;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;msns;leer;;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;ns;leer_im_dokument_ebene_gefunden;;
-345;SNB992672107807;Oberhausener Netzgesellschaft mbH;pruefen;slp;belegt;Zeile 136: Grundpreis Niederspannung  € / Jahr  72,00;
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;hsms;belegt;Preisblatt 1 Zeilen Hochspannungsnetz einschließlich Umspannung 23,48 2,67 (bis 2.500 h/a) und 79,23 0,44 (ab 2.500 h/a);manuell durch Claude am Dokument gesehen
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;ms;belegt;Preisblatt 1 Zeilen Mittelspannungsnetz 27,03 3,42 (bis) und 94,15 0,73 (ab);manuell durch Claude am Dokument gesehen
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;msns;belegt;Preisblatt 1 Zeilen Mittelspannungsnetz einschließlich Umspannung 28,35 3,50 (bis) und 96,95 0,76 (ab);manuell durch Claude am Dokument gesehen
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;ns;belegt;Preisblatt 1 Zeilen Niederspannungsnetz 46,12 3,66 (bis) und 100,33 1,49 (ab);manuell durch Claude am Dokument gesehen
+345;SNB992672107807;Oberhausener Netzgesellschaft mbH;ok;slp;belegt;Grundpreis Niederspannung 72,00 EUR/Jahr, Arbeitspreis Niederspannung 6,29 ct/kWh;manuell durch Claude am Dokument gesehen
 346;SNB949124413085;Obermaier und Gerg Grundstücksverwaltung KG;ok;hsms;belegt;Zeile 17: Umspannung HS/MS;Tagespreis x 365
 346;SNB949124413085;Obermaier und Gerg Grundstücksverwaltung KG;ok;ms;belegt;Zeile 19: Mittelspannung (MS);
 346;SNB949124413085;Obermaier und Gerg Grundstücksverwaltung KG;ok;msns;belegt;Zeile 21: Umspannung MS/NS;
@@ -1747,10 +1748,11 @@
 351;SNB969534177940;ovag Netz GmbH;ok;msns;belegt;Zeile 18: 6 - Umspannung MS/NS;
 351;SNB969534177940;ovag Netz GmbH;ok;ns;belegt;Zeile 19: 7 - NS-Niederspannung;
 351;SNB969534177940;ovag Netz GmbH;ok;slp;belegt;Zeile 59: Derzeit synthetisches Verfahren bei Kunden bis max. 100.000 kWh/a;
-352;SNB988532040636;PVU Energienetze GmbH;robots;hsms;kein_text;;
-352;SNB988532040636;PVU Energienetze GmbH;robots;ms;kein_text;;
-352;SNB988532040636;PVU Energienetze GmbH;robots;msns;kein_text;;
-352;SNB988532040636;PVU Energienetze GmbH;robots;ns;kein_text;;
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;hsms;leer;;
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;ms;belegt;Zeile Mittelspannung 24,31 4,51 131,04 0,24 (< 2500 h / >= 2.500 h);manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;msns;belegt;Zeile Umsp. Mittel- auf Niederspannung 26,57 5,42 135,17 1,07;manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;ns;belegt;Zeile Niederspannung 35,77 7,80 144,51 3,46;manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;pruefen;slp;belegt;Kunden mit Standardlastprofil: Grundpreis 75,00 EUR/a, Arbeitspreis 6,65 Ct/kWh;manuell durch Claude am Dokument gesehen
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;hsms;leer;;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;ms;leer;;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;msns;belegt;Zeile 18: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
@@ -3205,10 +3207,11 @@
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;msns;belegt;Zeile 29: Umspannung MS/NS;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;ns;belegt;Zeile 30: Niederspannungsnetz;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;slp;belegt;Zeile 44: Eintarifzähler  Mehrtarifzähler;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;hsms;kein_text;;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;ms;kein_text;;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;msns;kein_text;;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;robots;ns;kein_text;;
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;hsms;leer;;
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;ms;belegt;Preisblatt 1 Zeile Mittelspannung 14,91 8,30 202,79 0,78 (T < 2.500 / T >= 2.500 h/a);manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;msns;belegt;Preisblatt 1 Zeile Umspannung zur Niederspannung 11,40 10,95 285,10 0,00;manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;ns;belegt;Preisblatt 1 Zeile Niederspannung 16,10 8,87 149,14 3,55;manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;slp;belegt;Preisblatt 2: ohne registrierte Lastgangmessung 73,00 EUR/a und 7,93 ct/kWh;manuell durch Claude am Dokument gesehen
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;hsms;leer;;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;ms;belegt;Zeile 21: Mittelspannung *  MS;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;msns;belegt;Zeile 22: Umspannung MS/NS  MS/NS;
