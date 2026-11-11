@@ -87,3 +87,8 @@ Stand: 201/201 bearbeitet.
 - **SNB965107360993 Stadtwerke Geldern Netz, 2026 gefunden:** NS Winter `13:00-14:15, 17:45-18:45`; MS/NS Herbst `17:15-19:00`, Winter `17:15-19:30` (Rest keins).
 - EVR Rottenburg (SNB935932937127, nicht im 201er-Auftrag): HLZF-2026 gefunden — NS H `17:00-18:00`, W `11:30-12:30, 17:15-20:30`; MS/NS W `16:45-20:30` (nur im Chat/Status, keine CSV-Zeile da nicht im Auftrag).
 - Uebrige Crawls: viele Domains per 403/SSL/Timeout nicht erreichbar (westnetz, e-dis-netz, syna, panketal-netz, nordnetz, eks.ch u.a.); Bliestal-Link fuehrte zu Fremd-Domain (biosphaeren-stadtwerke.de) -> nicht verwendet; Fellbach nur 2025-PDF.
+
+## Preisblatt-Nachzug + Schorndorf HLZF (2026-11-11)
+
+- SNB935144085258 Stadtwerke Schorndorf: HLZF 2026 gefunden (nur Winter: NS `09:45-12:15`; MS/NS `09:45-10:00, 10:45-13:30, 17:30-18:45`) + endgueltiges Netzentgelte-Preisblatt 2026 unter eingang/NEUE PREISBLAETTER.
+- Von den 8 fehlenden Preisblaettern auffindbar: nur Schorndorf. Nicht auffindbar: Oberhausen (ob-netz.de 403), Putzbrunn (403), PVU (nur 2023/2024), Hammelburg (blockiert), Merck/FLUXUM (kein Preisblatt), Heinzelmann (Netzbetrieb zum 01.01.2026 an E-Werk Netze uebergangen), Egloffstein (Storyblok-PDF gehoert anderem Betreiber).
