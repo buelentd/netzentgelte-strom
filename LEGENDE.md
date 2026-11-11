@@ -8,9 +8,9 @@ Die Einheit steht im Spaltennamen.
 
 | Spalte | Inhalt |
 |---|---|
+| `mastr_nr` | **Schlüssel (primary key), erste Spalte.** MaStR-Nummer des Marktakteurs (SNB…), leer wenn kein MaStR-Treffer |
 | `nr` | laufende Nummer (1–50 = Pilot in der Reihenfolge von `pilot_50_vnb_2026.csv`, danach alphabetisch) |
 | `netzbetreiber` | Firmenname laut Marktstammdatenregister (MaStR), bei Pilotfällen ohne MaStR-Treffer der Pilotname |
-| `mastr_nr` | MaStR-Nummer des Marktakteurs (SNB…), leer wenn kein MaStR-Treffer |
 | `website` | Website laut MaStR (Webseite, sonst Webportal des Netzbetreibers, sonst aus der E-Mail-Domain abgeleitet, dann im `hinweis` vermerkt) |
 | `bundesland` | Bundesland bzw. Bundesländer des Netzgebiets, mehrere mit ` / ` getrennt (Anteil ≥ 5 %) |
 | `region` | Stadtnetz: Gemeinde(n); sonst die bis zu 3 größten Landkreise des Netzgebiets (`u. a.` = weitere) |

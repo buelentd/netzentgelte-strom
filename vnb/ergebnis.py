@@ -18,7 +18,7 @@ RLM_NAMEN = ("lp_unter_2500h_eur_kw_jahr", "ap_unter_2500h_ct_kwh", "lp_ab_2500h
 HLZF_JAHRESZEITEN = ("fruehling", "sommer", "herbst", "winter")
 HLZF_COLS = ([f"hlzf_ns_{x}" for x in HLZF_JAHRESZEITEN] + [f"hlzf_msns_{x}" for x in HLZF_JAHRESZEITEN]
              + ["hlzf_schwelle_prozent", "hlzf_mindestleistung_kw", "hlzf_quelle_url"])
-SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region", "netztyp", "status",
+SPALTEN = (["mastr_nr", "nr", "netzbetreiber", "website", "bundesland", "region", "netztyp", "status",
             "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr"]
            + [f"ms_{n}" for n in RLM_NAMEN] + [f"msns_{n}" for n in RLM_NAMEN]
            + [f"ns_{n}" for n in RLM_NAMEN] + [f"hsms_{n}" for n in RLM_NAMEN]
@@ -27,7 +27,7 @@ SPALTEN = (["nr", "netzbetreiber", "mastr_nr", "website", "bundesland", "region"
            + [f"ns_ct_kwh_bei_{h}h" for h in TYPISCHE_STUNDEN]
            + HLZF_COLS + ["hlzf_status"]
            + ["preisstand", "stand_datum", "hinweis", "quelle_url"])
-REST_SPALTEN = ["nr", "netzbetreiber", "mastr_nr", "website", "status", "grund", "kandidaten", "quelle_url"]
+REST_SPALTEN = ["mastr_nr", "nr", "netzbetreiber", "website", "status", "grund", "kandidaten", "quelle_url"]
 GEFUNDEN_SPALTEN = ["nr", "netzbetreiber", "website", "status", "rlm_ns", "rlm_msns", "slp",
                     "ns_ct_kwh_bei_4000h", "rlm_quelle_url", "slp_ap_ct_kwh", "slp_grundpreis_eur_jahr", "slp_quelle_url",
                     "preisstand"]
@@ -365,7 +365,7 @@ class Speicher:
         ct_ms = [ct_kwh_bei(ms, h, g) if len(ms) == 4 else None for h in TYPISCHE_STUNDEN]
         ct_mn = ct_kwh_bei(msns, 4000, g) if len(msns) == 4 else None
         hinweis = d.get("hinweis", "")
-        return [d.get("nr", ""), d.get("netzbetreiber", ""), d.get("mastr_nr", ""), d.get("website", ""),
+        return [d.get("mastr_nr", ""), d.get("nr", ""), d.get("netzbetreiber", ""), d.get("website", ""),
                 d.get("bundesland", ""), d.get("region", ""), d.get("netztyp", ""), d.get("status", ""),
                 zahl(slp.get("ap")), zahl(slp.get("gp")),
                 *[zahl(ms.get(k)) for k in RLM], *[zahl(msns.get(k)) for k in RLM],
@@ -408,7 +408,7 @@ class Speicher:
             w.writerow(REST_SPALTEN)
             for d in zeilen:
                 if d.get("status") != "ok":
-                    w.writerow([d.get("nr", ""), d.get("netzbetreiber", ""), d.get("mastr_nr", ""),
+                    w.writerow([d.get("mastr_nr", ""), d.get("nr", ""), d.get("netzbetreiber", ""),
                                 d.get("website", ""), d.get("status", ""), d.get("grund", ""),
                                 " | ".join(d.get("kandidaten") or []), d.get("quelle_url", "")])
         rest.with_suffix(".tmp").replace(rest)
