@@ -55,13 +55,13 @@ SNB969871992015;53;Albstadtwerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewies
 SNB926699071292;54;Albwerk GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB926394308747;55;AllgäuNetz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB931070025696;56;Alliander Netz Heinsberg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB922722422505;57;Alzchem Netz GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
+SNB922722422505;57;Alzchem Netz GmbH;ok;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
 SNB918620072652;58;ASCANETZ GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB911081401368;59;Aschaffenburger Versorgungs-GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB967794191157;60;AVU Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB973356062049;61;Bad Honnef AG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB965774651691;62;badenovaNETZE GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB914411628732;63;BASF InfraService ＆ Solutions Lausitz GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB914411628732;63;BASF InfraService ＆ Solutions Lausitz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
 SNB963282434775;64;Bauer Netz GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB944057190867;65;BEW Netze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB990174285078;66;BIGGE ENERGIE GmbH ＆ Co. KG;ok;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -72,8 +72,8 @@ SNB928184287881;70;BTT Bauteam Tretzel GmbH;ok;nicht_ausgewiesen;gelesen;gelesen
 SNB972511582064;71;Butzbacher Netzbetrieb GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB956411704207;72;C. Ensinger GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB903166209006;73;CCF Cassella Chemiepark Frankfurt GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB975268997129;74;Covestro Brunsbüttel Energie GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
-SNB956923775696;75;CPM Netz GmbH;pruefen;gelesen;gelesen;gelesen;gelesen;fehlt
+SNB975268997129;74;Covestro Brunsbüttel Energie GmbH;ok;gelesen;gelesen;nicht_ausgewiesen;gelesen;gelesen
+SNB956923775696;75;CPM Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;fehlt
 SNB916672506194;76;Cramer - Mühle GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB940133714842;77;Creos Deutschland GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB942182027607;78;DB Energie GmbH (Bahnstromnetz 16,7 Hz);ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
@@ -277,9 +277,9 @@ SNB982085566391;275;HEWA GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;geles
 SNB974319144116;276;IGS Netze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB916663914472;277;inetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB911960309587;278;infra fürth gmbh;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB982722829230;279;InfraLeuna GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
-SNB942732578894;280;InfraServ Gendorf Netze GmbH;pruefen;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
-SNB960884494671;281;InfraServ GmbH ＆ Co. Wiesbaden KG;pruefen;gelesen;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
+SNB982722829230;279;InfraLeuna GmbH;ok;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
+SNB942732578894;280;InfraServ Gendorf Netze GmbH;ok;gelesen;gelesen;nicht_ausgewiesen;gelesen;fehlt
+SNB960884494671;281;InfraServ GmbH ＆ Co. Wiesbaden KG;ok;gelesen;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
 SNB971962135690;282;Infrastrukturbetrieb der Stadt Arneburg;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB942908692218;283;Karl Stengle GmbH ＆ Co. KG;ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
 SNB913273314623;284;KBG Kraftstrom- Bezugsgenossenschaft Homberg eG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -310,7 +310,7 @@ SNB997826747014;308;Markt Egloffstein;pruefen;nicht_ausgewiesen;nicht_ausgewiese
 SNB932489723517;309;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914731268120;310;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB914103081760;311;Meißener Stadtwerke GmbH;pruefen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;im_dokument_nicht_gelesen;nicht_ausgewiesen;fehlt
-SNB933391394338;312;Merck Site Management GmbH;pruefen;gelesen;kein_dokument;gelesen;kein_dokument;kein_dokument
+SNB933391394338;312;Merck Site Management GmbH;ok;gelesen;kein_dokument;gelesen;kein_dokument;kein_dokument
 SNB906862380628;313;Mittelhessen Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB970253419624;314;Müller - Mühle GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB943170046990;315;MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH;ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
@@ -348,7 +348,7 @@ SNB949124413085;346;Obermaier und Gerg Grundstücksverwaltung KG;ok;gelesen;gele
 SNB959255155907;347;Osterholzer Stadtwerke GmbH ＆ Co. KG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB934071779865;348;OsthessenNetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB942224012479;349;OUTLETCITY AG;ok;nicht_ausgewiesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;gelesen
-SNB965394941448;350;Outokumpu Stainless Nirosta GmbH;pruefen;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
+SNB965394941448;350;Outokumpu Stainless Nirosta GmbH;ok;gelesen;nicht_ausgewiesen;gelesen;nicht_ausgewiesen;fehlt
 SNB969534177940;351;ovag Netz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB988532040636;352;PVU Energienetze GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB938413573104;353;QuartiersNetz Bayern GmbH;ok;nicht_ausgewiesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -791,7 +791,7 @@ SNB974739102161;789;T.W.O. Technische Werke Osning GmbH;ok;gelesen;gelesen;geles
 SNB942630156484;790;TauberEnergie Kuhn, Karl und Andreas Kuhn OHG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB978071940108;791;Technische Werke Naumburg GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB910696207785;792;Teutoburger Energie Netzwerk eG (TEN eG);ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
-SNB986916159257;793;thyssenkrupp Steel Europe AG;pruefen;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
+SNB986916159257;793;thyssenkrupp Steel Europe AG;ok;gelesen;nicht_ausgewiesen;nicht_ausgewiesen;nicht_ausgewiesen;fehlt
 SNB983425156814;794;TraveNetz GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB935578300972;795;TWL Netze GmbH;ok;gelesen;gelesen;gelesen;gelesen;gelesen
 SNB977095880292;796;TWS Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
@@ -801,7 +801,7 @@ SNB910956210043;799;Überlandwerk Leinetal GmbH;ok;gelesen;gelesen;gelesen;nicht
 SNB936940951426;800;Überlandwerk Rhön GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB917454122557;801;Überlandzentrale Wörth/I.-Altheim Netz AG;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB929185184919;802;ÜZ Mainfranken eG;ok;gelesen;gelesen;gelesen;gelesen;gelesen
-SNB933760214908;803;Veolia Industriepark Deutschland GmbH;pruefen;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
+SNB933760214908;803;Veolia Industriepark Deutschland GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;fehlt
 SNB932161540975;804;Verbandsgemeindewerke Enkenbach-Alsenborn;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB931064958931;805;Vereinigte Stadtwerke Netz GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
 SNB966808200267;806;Vereinigte Wertach Elektrizitätswerke GmbH;ok;gelesen;gelesen;gelesen;nicht_ausgewiesen;gelesen
