@@ -2,13 +2,16 @@
 KORRIGIEREN: (nr, ebene) -> [LP unter, AP unter, LP ab, AP ab] laut Dokumentzeile; ENTFERNEN: (nr, ebene) -> Grund.
 Aufruf: PYTHONPATH=. python daten/preise_entscheidungen.py"""
 import csv, io
-NOTIZ = {("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; Tarif Strom Industrie DE (Mittelspannung mit eigener Transformatorenstation, nur Bestandskunden); Netznutzung enthält Kosten Swissgrid",
+NOTIZ = {("312", "ms"): "Merck Site Management, Netzgebiet FLUXUM Gernsheim: eingefügter Text des Nutzers, Blatt „voraussichtlich gültig ab 01.01.2026/2027“, Datum 13.10.2023; Entscheidung Nutzer 11.11.2026: gilt für 2026 und 2027; Ebenen nur MS und NS, kein SLP, keine MS/NS", ("312", "ns"): "wie MS",
+         ("117", "ms"): "eingefügter Text des Nutzers, kein Dokument bei uns; Tarif Strom Industrie DE (Mittelspannung mit eigener Transformatorenstation, nur Bestandskunden); Netznutzung enthält Kosten Swissgrid",
          ("73", "ms"): "Preisblatt CCF Netzkosten 2026 gültig ab 01.04.2026; Tagesleistungspreise x 365",
          ("73", "msns"): "wie MS", ("73", "ns"): "wie MS",
          ("393", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis", ("247", "slp"): "Dokument nennt keinen Grundpreis, Tabelle nur mit Arbeitspreis",
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
-TEXTAUSZUG = set()      # Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
+TEXTAUSZUG = {"312"}      # 312 Merck: eingefügter Text des Nutzers, kein Dokument bei uns; sonst: Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("312", "ms"): [24.48, 6.95, 179.47, 0.75],          # Merck Site Management (Text vom Nutzer): Mittelspannung, unter und ab 2.500 h
+    ("312", "ns"): [35.90, 8.84, 216.19, 1.63],          # Niederspannung
     ("117", "slp"): [13.25, 60.00],          # EKS Kleingewerbe DE 2026 (Einheitstarif Netznutzung 2026 netto, Grundpreis Netz 60 €/Jahr); enthält Swissgrid
     ("117", "ms"): [20.50, 10.95, 228.25, 2.65],          # EKS Schaffhausen (Text vom Nutzer, Strom Industrie DE, gültig ab 01.01.2026): SPRINT (< 2.500 h) und STANDARD (> 2.500 h), Arbeitspreis und Leistungspreis Netznutzung netto
     ("73", "ms"): [23.04, 4.47, 103.68, 1.53],             # CCF Cassella (Text vom Nutzer, gültig ab 01.04.2026): Tagesleistungspreis x 365, Arbeitspreis EUR/kWh x 100; einstufig, keine Trennung bei 2.500 h
@@ -200,7 +203,7 @@ def main():
         else:
             for k, x in zip(F, v):
                 r[I[f"{eb}_{k}"]] = fmt(x)
-        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "durch Claude am Dokumenttext geprüft und eingetragen (Parser hatte den Wert nicht richtig gelesen)")
+        note = f"Korrigiert: {eb.upper()} " + (("aus eingefügtem Text des Nutzers (kein Dokument bei uns, nicht am Dokument bestätigt)" if nr in ("73", "117", "312") else "aus Textauszug des Kollegen (Original-PDF nicht bei uns, nicht am Dokument bestätigt)") if nr in TEXTAUSZUG else "durch Claude am Dokumenttext geprüft und eingetragen (Parser hatte den Wert nicht richtig gelesen)")
         if NOTIZ.get((nr, eb)): note += f" ({NOTIZ[(nr, eb)]})"
         if note not in r[I["hinweis"]]:
             r[I["hinweis"]] = note + ("; " + r[I["hinweis"]] if r[I["hinweis"]] else "")

@@ -24,7 +24,7 @@
 23;SNB922607376381;Stadtwerke Bochum Netz GmbH;ok;alle_belegt;
 24;SNB926644622999;Braunschweiger Netz GmbH;ok;alle_belegt;
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;alle_belegt;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;alle_belegt;
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;ok;alle_belegt;
 27;SNB928759560869;WEMAG Netz GmbH;ok;alle_belegt;
 28;SNB914306944756;WSW Netz GmbH;ok;alle_belegt;
 29;SNB921897286493;Westnetz GmbH;ok;alle_belegt;
@@ -310,7 +310,7 @@
 309;SNB932489723517;Markt Obernzell Elektrizitäts- versorgungsunternehmen;ok;alle_belegt;
 310;SNB914731268120;MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH;ok;alle_belegt;
 311;SNB914103081760;Meißener Stadtwerke GmbH;pruefen;offen;"ms:leer_im_dokument_ebene_gefunden; msns:leer_im_dokument_ebene_gefunden; ns:leer_im_dokument_ebene_gefunden"
-312;SNB933391394338;Merck Site Management GmbH;kein_preisblatt;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
+312;SNB933391394338;Merck Site Management GmbH;pruefen;kein_text;"hsms:kein_text; ms:kein_text; msns:kein_text; ns:kein_text"
 313;SNB906862380628;Mittelhessen Netz GmbH;ok;alle_belegt;
 314;SNB970253419624;Müller - Mühle GmbH ＆ Co. KG;ok;alle_belegt;
 315;SNB943170046990;MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH;ok;alle_belegt;

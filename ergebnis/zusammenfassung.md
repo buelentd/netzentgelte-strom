@@ -1,14 +1,13 @@
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
-Stand 11.11.2026 15:57, 831 Netzbetreiber bzw. Netzgebiete
+Stand 11.11.2026 16:51, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
 | ok | 773 | 93% |
-| pruefen | 49 | 6% |
-| kein_preisblatt | 1 | 0% |
+| pruefen | 50 | 6% |
 | blockiert | 3 | 0% |
 | robots | 4 | 0% |
 | keine_website | 1 | 0% |
@@ -25,13 +24,13 @@ Preisstand (nur ok): endgültig 649,  124
 
 - Minimum: 0,04 ct/kWh (SWS Netze GmbH)
 - Maximum: 15,41 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,42 ct/kWh (n = 780)
+- Median: 6,42 ct/kWh (n = 781)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 0,24 €/kW/a (SWS Netze GmbH)
 - Maximum: 463,24 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 150,60 €/kW/a (n = 780)
+- Median: 150,66 €/kW/a (n = 781)
 
 ## Datenherkunft
 
@@ -181,7 +180,7 @@ Preisstand (nur ok): endgültig 649,  124
 
 ## Restfälle (58)
 
-### pruefen (49)
+### pruefen (50)
 
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 40. Netze Magdeburg GmbH: 
@@ -208,6 +207,7 @@ Preisstand (nur ok): endgültig 649,  124
 - 293. Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR): kein Preisblatt-Link gefunden (2 Seiten durchsucht)
 - 295. Kraftwerk Köhlgartenwiese GmbH: NS LP über 2.500 h = 353.82 außerhalb 40–260 €/kW/a; SLP-Arbeitspreis 17.39 ct/kWh außerhalb 3–15; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 311. Meißener Stadtwerke GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
+- 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 324. Netzgesellschaft Eisenberg mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 345. Oberhausener Netzgesellschaft mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 350. Outokumpu Stainless Nirosta GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
@@ -232,10 +232,6 @@ Preisstand (nur ok): endgültig 649,  124
 - 827. Westenthanner Energieversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 828. WiDe Flex Bau + Service GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 831. Zwickauer Energieversorgung GmbH: 15 Dokument(e) geprüft: robots; Jahr 2026 nicht im Dokument
-
-### kein_preisblatt (1)
-
-- 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 
 ### blockiert (3)
 
