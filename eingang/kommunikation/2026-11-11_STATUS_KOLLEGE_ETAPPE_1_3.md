@@ -126,3 +126,17 @@ Hinweis: Für SNB933956506145, SNB961471621746, SNB931070025696 liegt nur das HL
 - SNB931431136771 Elektroenergieversorgung Cottbus GmbH — HLZF 2027 (per Bild geprüft, Jahr 2027 bestätigt; NS/MS/NS-Umspannung-Tabelle)
 
 Verworfen: EWA Altenburg (Wiederverkäufernachweis), EWF (Gas-Preisblatt), Cottbus-Preisblatt fehlt noch (nur HLZF gefunden).
+
+## 2027-vorläufig — Crawl-Batches 150–210 verifiziert (Commits 3ff7265 + dieser)
+
+Neu in `eingang/2027_vorlaeufig/`:
+- SNB963792700889 ENWG Energienetze Weimar GmbH — Preisblatt 2027 vorläufig
+- SNB989583209836 EVU der Gemeinde Gochsheim — Preisblatt Netznutzung 2027
+- SNB915186313908 Energieversorgung Guben GmbH — HLZF 2027
+- SNB921629791202 ENGIE Deutschland GmbH (Radeberg) — HLZF 2027
+- SNB953495670831 EnR Energienetze Rudolstadt GmbH — HLZF 2027
+- SNB961497906636 GELSENWASSER Energienetze GmbH — HLZF 2027 (Netzgebiet Stolzenau/Rehburg-Loccum)
+- SNB968325295962 Gemeinde Glattbach — HLZF 2027
+- SNB977966674678 EW Geiger GmbH — HLZF 2027
+
+Verworfen: EVF/Freiberger/EVR Rottenburg/EVI Inselsberg/FairNetz (Gas), EVU Späth (2026), Gemeindewerke Ebersdorf (2025), EVB Netze (WVN-Nachweis), ewag kamenz (Netzstrukturdaten-Übersicht, kein Preisblatt).
