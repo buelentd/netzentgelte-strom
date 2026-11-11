@@ -81,3 +81,9 @@ Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
 - **Etappe 5 geliefert:** SNB914508596067 WiDe Flex Bau + Service GmbH — kein HLZF-2026 auf wideflex.de gefunden.
 
 Stand: 201/201 bearbeitet.
+
+## Crawl der 77 "kein Dokument" (2026-11-11)
+
+- **SNB965107360993 Stadtwerke Geldern Netz, 2026 gefunden:** NS Winter `13:00-14:15, 17:45-18:45`; MS/NS Herbst `17:15-19:00`, Winter `17:15-19:30` (Rest keins).
+- EVR Rottenburg (SNB935932937127, nicht im 201er-Auftrag): HLZF-2026 gefunden — NS H `17:00-18:00`, W `11:30-12:30, 17:15-20:30`; MS/NS W `16:45-20:30` (nur im Chat/Status, keine CSV-Zeile da nicht im Auftrag).
+- Uebrige Crawls: viele Domains per 403/SSL/Timeout nicht erreichbar (westnetz, e-dis-netz, syna, panketal-netz, nordnetz, eks.ch u.a.); Bliestal-Link fuehrte zu Fremd-Domain (biosphaeren-stadtwerke.de) -> nicht verwendet; Fellbach nur 2025-PDF.
