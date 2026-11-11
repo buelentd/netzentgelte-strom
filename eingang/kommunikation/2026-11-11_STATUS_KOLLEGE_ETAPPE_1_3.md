@@ -41,3 +41,8 @@ Weiterhin HTTP 403 (kein Bypass, erneut geprueft): Olching, Weilheim, Westnetz, 
 - Übrige 47: kein HLZF-2026-Dokument gefunden, Felder leer + Bemerkung mit Website.
 
 Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
+
+## GIPSProjekt-Abgleich (2026-11-11, nach Kundenliste)
+
+- **Stadtwerke Oberkirch (SNB963821222269), 2026 jetzt mit Werten:** NS F `12:30-14:30`, H `17:30-20:00`, W `11:30-14:00, 16:30-19:45`, S keins (NSP-PDF direkt auf stadtwerke-oberkirch.de). MS/NS leer: nur MSP-Dokument (MS), USP 404.
+- GIPS-Mandantenkürzel sind nicht erratbar (nicht aus Domain ableitbar); Traunstein, Norderney, HarzEnergie, Eberbach 2026 darüber nicht gefunden.
