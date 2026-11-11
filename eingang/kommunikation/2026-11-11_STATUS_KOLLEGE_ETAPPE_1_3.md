@@ -140,3 +140,19 @@ Neu in `eingang/2027_vorlaeufig/`:
 - SNB977966674678 EW Geiger GmbH — HLZF 2027
 
 Verworfen: EVF/Freiberger/EVR Rottenburg/EVI Inselsberg/FairNetz (Gas), EVU Späth (2026), Gemeindewerke Ebersdorf (2025), EVB Netze (WVN-Nachweis), ewag kamenz (Netzstrukturdaten-Übersicht, kein Preisblatt).
+
+## 2027-vorläufig — Crawl-Batches 210–360 verifiziert (Commits 5dbf429, da5dcc0 + dieser)
+
+Neu in `eingang/2027_vorlaeufig/`:
+- SNB933529129573 Getreidemühle Zwiefalten eG — Preisblatt 2027 vorläufig
+- SNB961316124487 Gothaer Stadtwerke NETZ GmbH — Preisblatt Netzzugang Strom 2027 vorläufig
+- SNB986580518855 KommEnergie GmbH — Preisblatt 2027 vorläufig
+- SNB933391394338 Merck Site Management GmbH — Preisblatt Netznutzung 2027 (2026 war "kein Preisblatt")
+- SNB943170046990 MVE eurokom — Preisblatt 2025–2027 (enthält 2027)
+- SNB977443469322 LokalWerke GmbH — Preisblatt NNE Strom 2027 vorläufig
+- SNB983526428810 Mainnetz GmbH — Preisblatt Strom NNE 2027 vorläufig
+- SNB931610892481 Nordseeheilbad Borkum GmbH — Preisblatt Strom 2027 vorläufig
+- SNB985993443181 Stadtwerke Arnstadt Netz GmbH — Preisblatt 2027
+- SNB957591716776 Stadtwerke Aue-Bad Schlema GmbH — HLZF 2027
+
+Verworfen u.a.: Grefrath (Gas), Kirkel (2026er Blatt), KEEP/STW Has/Nordhausen (WVN), KEW/Mainfranken/SW am See/SW Achim/SachsenNetze HS.HD/Saalfelder (Gas), LiKra Sonneberg (Baukostenzuschuss), Netzges. Eisenberg (MSB/AN, kein Strom), Netzges. Ahlen (2026er Blatt), Ebersdorf (2025).
