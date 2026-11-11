@@ -31,3 +31,13 @@ Per Bild (150 dpi) jetzt erfolgreich gelesen und eingetragen:
 - **Tegernsee (SNB928258126528), 2026:** NS Winter `09:45-10:30, 17:00-19:45`; MS/NS Herbst `18:00-19:00`, Winter `09:45-10:30, 17:00-19:45`. **2027 (vorläufig):** NS Winter `17:00-19:45`; MS/NS Herbst/Winter `17:00-19:45`.
 
 Weiterhin HTTP 403 (kein Bypass, erneut geprueft): Olching, Weilheim, Westnetz, Syna.
+
+## Etappe 4 (2026-11-11)
+
+- `hlzf_etappe4.csv`: 52 Zeilen (50×2026, 2×2027), `hlzf_etappe4_originale.zip`: 3 Originale.
+- **Mit 2026-Werten: 1** — Stadtwerke Jena Netze (NS Herbst `17:45-19:15`, Winter `11:00-13:30, 17:30-20:00`; MS/NS Herbst `17:30-19:15`, Winter `11:30-12:45, 17:15-20:00`). 2027 vorläufig als eigene Zeile (NS H `17:45-19:15`, W `11:30-13:00, 17:30-20:00`; MS/NS W `11:30-12:30, 17:30-20:00`).
+- **2027 vorläufig:** KBG Homberg (NS W `11:30-13:00, 13:30-15:00, 16:00-18:30`; MS/NS H `17:00-19:30`, W `10:30-12:30, 17:15-19:15`); 2026 nicht veröffentlicht.
+- GWS Schönkirchen: 2026-Link vorhanden, liefert aber nur HTML (Hash nicht auflösbar).
+- Übrige 47: kein HLZF-2026-Dokument gefunden, Felder leer + Bemerkung mit Website.
+
+Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
