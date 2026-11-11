@@ -156,3 +156,23 @@ Neu in `eingang/2027_vorlaeufig/`:
 - SNB957591716776 Stadtwerke Aue-Bad Schlema GmbH — HLZF 2027
 
 Verworfen u.a.: Grefrath (Gas), Kirkel (2026er Blatt), KEEP/STW Has/Nordhausen (WVN), KEW/Mainfranken/SW am See/SW Achim/SachsenNetze HS.HD/Saalfelder (Gas), LiKra Sonneberg (Baukostenzuschuss), Netzges. Eisenberg (MSB/AN, kein Strom), Netzges. Ahlen (2026er Blatt), Ebersdorf (2025).
+
+## 2027-vorläufig — Crawl-Batches 360–540 verifiziert (Commits c6f0b20, 58599a4, 79ae623, 35f0368 + dieser)
+
+Neu in `eingang/2027_vorlaeufig/`:
+- SNB977253144464 Stadtwerke Bad Neustadt a.d. Saale — HLZF 2027
+- SNB949369515353 Stadtwerke Burgdorf Netz GmbH — Preisblätter Strom 2027 (1–6)
+- SNB922514070884 Stadtwerke Bliestal GmbH — HLZF 2027
+- SNB927160517950 Stadtwerke Burg Energienetze GmbH — HLZF 2027
+- SNB983029590205 Stadtwerke Güstrow GmbH — Preisblatt NNE Strom 2027
+- SNB989253327099 Stadtwerke Haslach i.K. — HLZF 2027
+- SNB925565312521 Stadtwerke Gaggenau — HLZF 2027
+- SNB958416423039 Stadtwerke Emsdetten GmbH — HLZF 2027
+- SNB945861817537 Stadtwerke Jena Netze GmbH — HLZF 2027
+- SNB958680286002 Stadtwerke Hollfeld — HLZF 2027
+- SNB918070278383 Stadtwerke Meerane GmbH — Preisblatt Strom 2027
+- SNB989365725226 Stadtwerke Neumarkt i.d. OPf. — Netzentgelte Strom 2027
+- SNB984863778941 Stadtwerke Mosbach GmbH — HLZF 2027
+- SNB955718588763 Stadtwerke Neunburg vorm Wald — HLZF 2027
+
+Verworfen: Bad Brückenau/Bad Pyrmont/Bad Salzuflen/Bad Wildbad/Bayreuth/Bamberg/Bernau/Eichstätt/Elmshorn/Emmerich/Hameln/Heidelberg/Heiligenhaus/Lippe-Weser/Mühlheim a.M./Meiningen (Gas oder Nicht-NNE), Crailsheim/Meiningen/Hollfeld-WVN/KEEP (WVN), Ilmenau (iMSB), Hockenheim (Delta-Gas), Döbeln (Jahr/Level unklar), Heiligenstadt (Konzessionsabgabe/Umlagen, kein NNE-Preisblatt), Husum (Gas-Preisblatt).
