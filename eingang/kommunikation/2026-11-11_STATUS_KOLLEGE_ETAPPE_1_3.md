@@ -176,3 +176,15 @@ Neu in `eingang/2027_vorlaeufig/`:
 - SNB955718588763 Stadtwerke Neunburg vorm Wald — HLZF 2027
 
 Verworfen: Bad Brückenau/Bad Pyrmont/Bad Salzuflen/Bad Wildbad/Bayreuth/Bamberg/Bernau/Eichstätt/Elmshorn/Emmerich/Hameln/Heidelberg/Heiligenhaus/Lippe-Weser/Mühlheim a.M./Meiningen (Gas oder Nicht-NNE), Crailsheim/Meiningen/Hollfeld-WVN/KEEP (WVN), Ilmenau (iMSB), Hockenheim (Delta-Gas), Döbeln (Jahr/Level unklar), Heiligenstadt (Konzessionsabgabe/Umlagen, kein NNE-Preisblatt), Husum (Gas-Preisblatt).
+
+## 2027-vorläufig — Domain-Crawl komplett (769 Domain-Zeilen, Batches 0–769) — Abschluss Commit 69fa7f8 + dieser
+
+Letzter Batch 750–769:
+- SNB941650885558 VSE Verteilnetz GmbH — HLZF 2027 (alle SpE, Hochspannung/…)
+- SNB946612539746 VBH Hoyerswerda — verworfen (Gas-Grundversorger 2025–2027)
+
+Gesamtbilanz Domain-Crawl (eingang/2027_vorlaeufig/, zusätzlich zu 56ccddd + Nutzer-Uploads):
+- 18 Preisblätter Strom 2027 vorläufig neu abgelegt (Magdeburg, Blomberg, BEW, C. Ensinger, Bauer Netz, DSDL, Dahner Felsenland, Hindelang, eG Karlstein, Unterwössen, Hauenstein, Weimar, Gochsheim, Zwiefalten, Gotha NETZ, KommEnergie, Merck, MVE eurokom, LokalWerke, Mainnetz, Borkum, Arnstadt, Burgdorf, Güstrow, Meerane, Neumarkt, SWO Holstein, Schwäbisch Gmünd, Vilshofen, Wismar, Weiden, ÜZ Mainfranken)
+- 17 HLZF-2027 neu abgelegt (Düsseldorf, Pfalzwerke, Alliander, ODR, Mainbernheim, Rettenberg, Cottbus, Guben, ENGIE Radeberg, Rudolstadt, Gelsenwasser, Glattbach, EW Geiger, Bad Neustadt, Bliestal, Burg, Haslach, Gaggenau, Emsdetten, Jena, Hollfeld, Mosbach, Neunburg, Rosenheim, St. Ingbert, Wasserburg, Waren, Vlotho, Wernigerode, ÜWL Leinetal, ÜWR Rhön, VSE)
+- Alle Dateien inhaltsgeprüft (2027 + Strom + Preisblatt/HLZF; verworfen: Gas, §14a-Modul 3, WVN, BKZ, Konzessionsabgabe, MSB, Grundversorger, 2025/2026er Blätter, fiktive Blätter, Scans ohne Text)
+- Verbleibend ohne Dokument: Rest der 769 Domain-Zeilen (kein 2027-PDF erreichbar) sowie 403/robots-Fälle bleiben als blockiert dokumentiert.
