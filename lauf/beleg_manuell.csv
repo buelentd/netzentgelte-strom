@@ -203,3 +203,8 @@ nr;ebene;fundstelle
 218;ns;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Leistungspreissystem Niederspannung (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
 218;slp;Seite 1 des PDF s_ne_2026_pb_251220_veroeffentlichung, Tabelle Entnahme ohne Leistungsmessung Niederspannung (aus Bild gelesen, Markt Frammersbach, gültig ab 01.01.2026)
 585;msns;Zeile 11: Umspannung NE6 (Netzebene 6 = Umspannung Mittel-/Niederspannung): 25,41 / 6,79 / 153,68 / 1,66 (Preisblatt Netznutzungsentgelte Strom 2026)
+26;hsms;Preisblatt 1 Abschnitt a1/a2, Zeile 4: Umspannung Hoch-/Mittelspannung 127,56 0,57 (ab 2.500 h) und 14,17 5,10 (unter 2.500 h)
+26;ms;Preisblatt 1 Zeile 5: Mittelspannungsebene 143,99 0,52 (ab 2.500 h) und 13,64 5,73 (unter 2.500 h)
+26;msns;Preisblatt 1 Zeile 6: Umspannung Mittel-/Niederspannung 129,01 1,19 (ab 2.500 h) und 16,82 5,68 (unter 2.500 h)
+26;ns;Preisblatt 1 Zeile 7: Niederspannungsebene 88,19 3,44 (ab 2.500 h) und 19,49 6,19 (unter 2.500 h)
+26;slp;Preisblatt 3 (ohne registrierende Lastgangmessung): Grundpreis 80,30 EUR/Jahr netto, Arbeitspreis 6,39 ct/kWh netto

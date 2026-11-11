@@ -12,3 +12,7 @@ Liste mit MaStR-Nr. zuerst: `2026-11-11_PREISE_31_PRUEFUNG.csv`. Nichts ist in T
 - Kein SLP im geladenen Dokument (separates Blatt nötig oder keins): enercity GridPartner, EWA Altenburg, InfraServ Wiesbaden, SWL.
 
 **Preisblatt nicht gefunden (16):** Die Websites dieser Netzbetreiber liefern dem Crawler keine Netzentgelt-Preisblätter (JavaScript, nur Startseite oder andere Dokumente): BASF, CPM, EW Kanton, Haßloch, Niefern-Öschelbronn, GSW Kamen, InfraLeuna, InfraServ Gendorf, Outokumpu, Baden-Baden, Goch, Wunsiedel, thyssenkrupp, Westenthanner, Zwickau (nur „fiktive Netzentgelte“), Covestro (HTTP 503). Browser nötig (Arbeitsliste Kollege).
+
+## Nachtrag: Energienetze Mittelrhein (SNB980055629275, nr 26) fertig (Claude, 11.11.2026)
+Preisblatt 3 (Stand 17.12.2025, eigene Website): SLP Grundpreis 80,30 €/Jahr, Arbeitspreis 6,39 ct/kWh netto, eingetragen (`daten/preise_entscheidungen.py`). Preisblatt 1 bestätigt die vier RLM-Ebenen (HS/MS, MS, MS/NS, NS) zeilenweise, Belege in `lauf/beleg_manuell.csv`. Status jetzt ok (773). Preisblatt 4 (individuelle Entgelte nach § 19 Abs. 5) enthält nur Marktlokationen mit Anzeigen, keine Preise, nicht abgelegt. Vorläufige 2027er Blätter (PB 1, PB 3, Hochlastzeitfenster) in `eingang/2027_vorlaeufig/`.
+**Abweichung Hochlastzeitfenster 2026:** Das Dokument (Winter, Frühling/Sommer/Herbst „keine“) nennt NS und MS/NS jeweils `17:00-19:30`, MS `07:45-13:00, 17:30-19:15`, HS/MS `07:45-09:45`. Die Tabelle (gelesen_nutzer) hat NS `16:45-19:45` und MS/NS `17:00-19:45`. Nicht geändert, Entscheidung beim Nutzer.

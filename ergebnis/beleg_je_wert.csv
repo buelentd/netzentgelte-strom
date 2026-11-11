@@ -124,11 +124,11 @@
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;msns;belegt;Z49-51: Umspannung Mittel-/Niederspannung;manuell durch Claude am Dokument gesehen
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;ns;belegt;Z50-52: Niederspannung;manuell durch Claude am Dokument gesehen
 25;SNB968295079586;Hamburger Energienetze GmbH;ok;slp;belegt;Zeile 16: Steuerbare Verbrauchseinrichtungen (sVE) gem. § 14a EnWG;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;hsms;konflikt;Zeile 40: 4)  bei Entnahme aus der Umspannung Hoch-/Mittelspannung = 14.17/5.1/21.26/0.57;zwei Tabellen in Reihenfolge (Zeilen 40 und 60)
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ms;konflikt;Zeile 41: 5)  bei Entnahme in der Mittelspannungsebene = 13.64/5.73/24.0/0.52;zwei Tabellen in Reihenfolge (Zeilen 41 und 61)
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;msns;konflikt;Zeile 42: 6)  bei Entnahme aus der Umspannung Mittel-/Niederspannung = 16.82/5.68/21.5/1.19;zwei Tabellen in Reihenfolge (Zeilen 42 und 62)
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
-26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;slp;leer;;
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;hsms;belegt;Preisblatt 1 Abschnitt a1/a2, Zeile 4: Umspannung Hoch-/Mittelspannung 127,56 0,57 (ab 2.500 h) und 14,17 5,10 (unter 2.500 h);manuell durch Claude am Dokument gesehen
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ms;belegt;Preisblatt 1 Zeile 5: Mittelspannungsebene 143,99 0,52 (ab 2.500 h) und 13,64 5,73 (unter 2.500 h);manuell durch Claude am Dokument gesehen
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;msns;belegt;Preisblatt 1 Zeile 6: Umspannung Mittel-/Niederspannung 129,01 1,19 (ab 2.500 h) und 16,82 5,68 (unter 2.500 h);manuell durch Claude am Dokument gesehen
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;ns;belegt;Preisblatt 1 Zeile 7: Niederspannungsebene 88,19 3,44 (ab 2.500 h) und 19,49 6,19 (unter 2.500 h);manuell durch Claude am Dokument gesehen
+26;SNB980055629275;Energienetze Mittelrhein GmbH ＆ Co. KG;pruefen;slp;belegt;Preisblatt 3 (ohne registrierende Lastgangmessung): Grundpreis 80,30 EUR/Jahr netto, Arbeitspreis 6,39 ct/kWh netto;manuell durch Claude am Dokument gesehen
 27;SNB928759560869;WEMAG Netz GmbH;ok;hsms;belegt;Zeile 17: Umspannung Hoch-/Mittelspannung;zwei Tabellen (Zeilen 17 und 26)
 27;SNB928759560869;WEMAG Netz GmbH;ok;ms;belegt;Zeile 18: Mittelspannung;zwei Tabellen (Zeilen 18 und 27)
 27;SNB928759560869;WEMAG Netz GmbH;ok;msns;belegt;Zeile 19: Umspannung Mittel-/Niederspannung;zwei Tabellen (Zeilen 19 und 28)

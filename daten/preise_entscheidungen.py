@@ -163,7 +163,7 @@ ENTFERNEN = {
     ("783", "hsms"): "Werte waren identisch mit MS/NS, Zuordnung nicht belegt",
     ("191", "hsms"): "Werte waren identisch mit der Mittelspannung, Zuordnung nicht belegt",
     ("57", "ns"): "Das Preisblatt weist keine Niederspannung aus (tiefste Ebene ist Umspannung MS/NS); die Werte waren die MS/NS-Zeile",
-    ("26", "slp"): "Die SLP-Werte 7,29 ct / 75,00 € stammten aus der Datei, die zu badenovaNETZE gehört; im Preisblatt von Energienetze Mittelrhein steht kein SLP-Preis",
+    # ("26", "slp") entfernt 11.11.2026: Preisblatt 3 (Entnahmestellen ohne registrierende Lastgangmessung) weist Grundpreis 80,30 €/Jahr und Arbeitspreis 6,39 ct/kWh netto aus
     # ("199", "slp") entfernt 10.11.2026: Dokument weist unter "Kleinkunden ohne Leistungsmessung" 7,98 ct/kWh und 80,00 €/Jahr aus (Zeile 53 des Textes)
     ("206", "hsms"): "Die Werte 9,27/1,85/40,83/0,59 stehen im Dokument nicht; das Preisblatt weist keine Umspannung HS/MS aus",
     ("819", "msns"): "Preisblatt nennt nur Hochspannung und HS/MS; gelesene Werte waren die HS/MS-Zeile",
@@ -174,6 +174,7 @@ fmt = lambda v: f"{v:.2f}".replace(".", ",")
 
 from daten.entscheidungen_runde2 import RUNDE2
 KORRIGIEREN.update(RUNDE2)
+KORRIGIEREN[("26", "slp")] = [6.39, 80.30]        # Energienetze Mittelrhein, Preisblatt 3 (gültig ab 01.01.2026, Stand 17.12.2025, Dokument von energienetze-mittelrhein.de): Arbeitspreis 6,39 ct/kWh, Grundpreis 80,30 €/Jahr netto; Vorgabe des Nutzers 11.11.2026
 from daten.entscheidungen_beleg import BELEG
 for _k, _v in BELEG.items():
     if _k not in KORRIGIEREN:
