@@ -1,0 +1,32 @@
+﻿mastr_nr;nr;netzbetreiber;fehlt_in_tabelle;quelle_url;dokument_geladen;am_dokument_bestaetigt;abweichung_zum_dokument;bemerkung
+SNB980055629275;26;Energienetze Mittelrhein GmbH ＆ Co. KG;SLP;https://www.energienetze-mittelrhein.de/mediendateien/downloads/stromnetz/netzzugang-und-netzentgelte/2025-12-31-preisblatt-1-endgueltige-entgelte-2026.pdf?cid=2t9;ja;;;nicht gelesen: NS, MS/NS, MS
+SNB980808485264;39;SachsenNetze GmbH;MS/NS,MS;https://www.sachsen-netze.de/wps/wcm/connect/netze/eea2c39a-7bd4-4863-9342-fa97f6788883/Preise-Netznutzung-Strom-Niederspannung-2026.pdf?MOD=AJPERES;ja;NS;;nicht gelesen: MS/NS, MS
+SNB933459598975;40;Netze Magdeburg GmbH;MS;https://www.netze-magdeburg.de/wp-content/uploads/pdf/2026_preisblatt_strom.pdf;ja;NS, MS/NS, SLP;;nicht gelesen: MS
+SNB922722422505;57;Alzchem Netz GmbH;NS;https://www.alzchem.com/fileadmin/Quicklinks/Strom_Netz/2026-ACNz-Preisblatt.pdf;ja;MS/NS, SLP;;nicht gelesen: NS, MS
+SNB914411628732;63;BASF InfraService ＆ Solutions Lausitz GmbH;SLP;https://www.industriepark-lausitz.com/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB975268997129;74;Covestro Brunsbüttel Energie GmbH;NS;https://www.covestro.com/-/media/covestro/corporate/company/covestro-worldwide/germany/covestro-in-deutschland/standorte/brunsbuettel/energie-gmbh/documents/strom/grid-charges/vorlaufige-netzentgelte-strom-2026.pdf?rev=239936ec7104482da3afccd2a26d3e60&hash=86A019E2B1F13ABEF6F3867304D5BA9B;nein;;;Dokument nicht abrufbar (HTTP 503)
+SNB956923775696;75;CPM Netz GmbH;SLP;;nein;;;keine Quelladresse
+SNB985099151188;117;Elektrizitätswerk des Kantons Schaffhausen AG;NS,MS/NS;;nein;;;keine Quelladresse
+SNB936480897581;123;Elektrizitätswerk Max Peissker;NS,MS/NS,MS;https://max-peissker.de/wp-content/uploads/2026/06/NNE-ab-01.01.2026-mit-§14a-1.pdf;ja;;SLP doc(None, 90.0) tab(7.5, 90.0);nicht gelesen: NS, MS/NS, MS
+SNB905238986457;138;enercity GridPartner GmbH;SLP,MS/NS;https://www.enercity-netz.de/assets/cms/eng/egP/downloads/preisblatt-netznutzung-strom-2026-tag-egp.pdf;ja;NS, MS;;nicht gelesen: MS/NS
+SNB934514392514;144;Energie- und Wasserversorgung Altenburg GmbH;SLP;https://netze.ewa-altenburg.de/files/19B6A2C23AA/endg%C3%BCltig_2026_PreisblattEwaKundenmit1-4-h-Leistungsmessung.pdf;ja;NS, MS/NS, MS;;nicht gelesen: 
+SNB991400668603;226;Gemeindewerke Haßloch GmbH;SLP;https://gwhassloch.de/download/anlage-2-info-netzentgelte-strom-der-gemeindewerke-hassloch-gmbh-gueltig-ab-01-01-2026/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB940436967099;238;Gemeindewerke Niefern-Öschelbronn;SLP,MS/NS;;nein;;;keine Quelladresse
+SNB935600499711;265;GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen;NS,MS/NS,MS;https://www.gipsprojekt.de/featureGips/gsw-kamen/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB982722829230;279;InfraLeuna GmbH;SLP,NS;https://www.infraleuna.de/preisbl%C3%A4tter;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB942732578894;280;InfraServ Gendorf Netze GmbH;SLP,NS;https://infraserv.gendorf-netze.de/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB960884494671;281;InfraServ GmbH ＆ Co. Wiesbaden KG;SLP,NS;https://www.infraserv-wi.de/fileadmin/user_upload/pdf/strom_2026/strom_netznutzungsentgelt_infraserv_wiesbaden_2026_vorlaeufig.pdf;ja;MS/NS, MS;;nicht gelesen: NS
+SNB965394941448;350;Outokumpu Stainless Nirosta GmbH;SLP,MS/NS;https://www.outokumpu.com/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB953011641437;362;Reußenköge Netz ＆ Infrastruktur GmbH;SLP,NS,MS/NS;https://www.reussenkoege-netz.de/fileadmin/daten_veroeffentlichungspflichten/Preisblaetter/Abrechnungspreisblatt_2026_-_RNI_10-10-2025.pdf;ja;;;nicht gelesen: NS, MS/NS, MS
+SNB953975499051;395;Stadtwerke Bad Herrenalb GmbH;NS,MS/NS,MS;https://www.enwg-veroeffentlichungen.de/badherrenalb/Netze/Stromnetz/Netzzugang-Entgelte/Fiktive-Netzentgelte-2026.pdf;ja;;;nicht gelesen: NS, MS/NS, MS
+SNB931622346583;412;Stadtwerke Baden-Baden;NS,MS/NS,MS;https://www.stadtwerke-baden-baden.de/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB984269982003;445;Stadtwerke Deidesheim GmbH;SLP;https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf;ja;NS, MS/NS, MS;;nicht gelesen: 
+SNB941004899811;495;Stadtwerke Goch GmbH;NS,MS/NS,MS;https://www.stadtwerke-goch.de/netznutzungsentgelte/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB930325069232;776;SWL Übertragungsnetzgesellschaft mbH;SLP,NS,MS/NS;https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2025/12/Endgueltiges-PB-2026-UeNG.pdf;ja;MS;;nicht gelesen: NS, MS/NS
+SNB967812386411;787;SWW Wunsiedel GmbH;NS,MS/NS,MS;;nein;;;keine Quelladresse
+SNB986916159257;793;thyssenkrupp Steel Europe AG;SLP,NS,MS/NS;https://www.thyssenkrupp-steel.com/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB933760214908;803;Veolia Industriepark Deutschland GmbH;SLP;https://www.veolia.de/sites/g/files/dvc2511/files/document/2025/12/Anlage%205_LRV_Preisblatt_I-Parks_2026_endg%C3%BCltig.pdf;ja;NS, MS/NS;;nicht gelesen: MS
+SNB971770548286;809;VersorgungsBetriebe Elbe GmbH;SLP,MS/NS;https://www.versorgungsbetriebe-elbe.net/files/uploads/2026/preise-strom-nne-vbe-ab-01-01-2026.pdf;ja;NS, MS;;nicht gelesen: MS/NS
+SNB941650885558;819;VSE Verteilnetz GmbH;SLP,NS,MS/NS,MS;https://www.vse-verteilnetz.de/fileadmin/dokumente/Stromnetz/Netzentgelte/pdf/Preisblatt_2026_VSE-Verteilnetz.pdf;ja;;;nicht gelesen: NS, MS/NS, MS
+SNB979973883449;827;Westenthanner Energieversorgung GmbH;SLP;https://ew-westenthanner.de/tag/preisblatt/;nein;;;Adresse ist Startseite/Seite, kein Dokument
+SNB925823629552;831;Zwickauer Energieversorgung GmbH;NS,MS/NS,MS;;nein;;;keine Quelladresse
