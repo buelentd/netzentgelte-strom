@@ -10,3 +10,4 @@ ergebnis/texte_layout/*.alt
 eingang/_tmp_preis/
 eingang/_tmp_hlzf/
 eingang/_tmp_preis2/
+tests/audit/dump.json

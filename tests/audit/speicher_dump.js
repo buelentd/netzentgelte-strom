@@ -1,0 +1,10 @@
+const {chromium}=require('playwright');const path=require('path');const fs=require('fs');
+(async()=>{const b=await chromium.launch();const p=await b.newPage();
+await p.goto('file://'+path.resolve(__dirname,'../../abschaetzung_testseite/netzentgelt_abschaetzung.html'));
+await p.fill('#plz','72555');await p.dispatchEvent('#plz','input');await p.fill('#kwh','250000');await p.fill('#kw','100');await p.waitForTimeout(1500);
+const d=await p.evaluate(()=>{const o={inputs:{}};document.querySelectorAll('input,select').forEach(e=>{if(e.id)o.inputs[e.id]=e.type==='checkbox'?e.checked:e.value});
+o.g0=D.profile.g0;o.profilKeys=Object.keys(D.profile);o.boerse=D.boerse;o.nbKeys=null;return o});
+fs.writeFileSync(require('path').join(__dirname,'dump.json'),JSON.stringify(d));
+console.log(Object.entries(d.inputs).filter(([k,v])=>k.startsWith('a-')||['tarif','netzanschluss','tage','ebene','branche','profilwahl','pv','zeitfenster','laden','rueckspeisen','steuer-entl'].includes(k)).map(([k,v])=>k+'='+v).join('\n'));
+console.log(d.profilKeys, d.boerse.length, Object.keys(d.g0));
+await b.close()})();

@@ -266,7 +266,7 @@ a{color:var(--akzent)}
           <div><label class="titel" for="a-aufschlag">Aufschlag Stromanbieter (ct/kWh: Vertrieb, Marge, Absicherung. Haushalte: etwa 3,5 bis 4 (belegt). Gewerbe: etwa 1 bis 3,5, Richtwert ohne Quelle. Bitte aus der eigenen Rechnung eintragen)</label>
             <input type="number" id="a-aufschlag" min="0" step="0.5" value="0"></div>
           <div><label class="titel" for="a-steuern">Steuern und Umlagen (ct/kWh: Stromsteuer 0,05 nach Entlastung (nur produzierendes Gewerbe und nur für die Strommenge der Produktion, z. B. Backstube, nicht für Verkauf, Café oder Verwaltung; Antrag beim Hauptzollamt nötig; bei Mischbetrieben den Wert entsprechend anheben), sonst 2,05; Kraft-Wärme-Kopplung 0,446; Offshore 0,941; besondere Netznutzung 1,559; Konzessionsabgabe 0,11; Stand 2026)</label>
-            <input type="number" id="a-steuern" min="0" step="0.01" value="3.11"></div>
+            <input type="number" id="a-steuern" min="0" step="0.01" value="5.11"></div>
           <div><label class="titel" for="a-zins">Zinssatz für den Barwert (%)</label>
             <input type="number" id="a-zins" min="0" step="0.5" value="6"></div>
           <div><label class="titel" for="a-pvpreis">Preis Solaranlage (€/kWp netto, schlüsselfertig; Gewerbe 30 bis 100 kWp etwa 800 bis 1.300, Richtwert 1.100; Betrieb 2 % der Investition pro Jahr)</label>
@@ -717,6 +717,7 @@ function strompreisBlock(nb, slp, kwh, rl) {
   zeilen.push(["Stromsteuer", kwh * st / 100, `${fmt(kwh)} kWh × ${fmt(st, 2)} ct/kWh (§ 3 StromStG 2,05 ct/kWh${steuerEntl ? ", nach Entlastung § 9b StromStG netto 0,05 ct/kWh, nur produzierendes Gewerbe, über 250 €/Jahr, auf Antrag" : ""})`, true]);
   // Energie und Aufschlag: aus Ihrem eingegebenen Gesamtpreis, sonst Annahme (Börsenmittel plus Aufschlag); beides ist kein Preisblattwert und bleibt ohne Farbe
   const abgabenCt = zeilen.filter(z => ["Konzessionsabgabe", "KWKG-Umlage", "Offshore-Netzumlage", "Aufschlag besondere Netznutzung", "Stromsteuer"].includes(z[0])).reduce((a, z) => a + (z[1] || 0), 0) / kwh * 100;
+  const asF = $("a-steuern"); if (asF && !asF.dataset.manuell) asF.value = String(Math.round(abgabenCt * 100) / 100);   // Speicherrechnung nimmt dieselben Posten wie diese Tabelle (eine Quelle)
   const netzApCt = slp ? nb.slp[0] : rl.ap, gesamtEingabe = gesamtpreisEingabe();
   if (gesamtEingabe) {
     const en = Math.max(0, gesamtEingabe - netzApCt - abgabenCt);
@@ -819,9 +820,9 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const zuschuss = num("a-foerd") / 100, zins = num("a-zins") / 100;
   // Barwert über die Lebensdauer (Zyklen gesamt ÷ Zyklen pro Tag ÷ 365): Erträge sinken mit dem Kapazitätsabbau, Entsorgung am Ende
   const abbau = num("a-abbau") / 100, entsorgJe = num("a-entsorg");
-  let faktor = 0;
+  let faktor = 0, ann = 0;                                    // faktor: Erträge mit Abbau; ann: gleichbleibende Zahlung (Betriebskosten) ohne Abbau
   const jahre = lebensJahre();
-  for (let t = 1; t <= jahre; t++) faktor += Math.max(0, 1 - abbau * (t - 1)) / Math.pow(1 + zins, t);
+  for (let t = 1; t <= jahre; t++) { faktor += Math.max(0, 1 - abbau * (t - 1)) / Math.pow(1 + zins, t); ann += 1 / Math.pow(1 + zins, t); }
   const entsorgBarwert = c => entsorgJe * c / Math.pow(1 + zins, jahre);
 
   function fuer(cap) {
@@ -893,10 +894,10 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const s5hoch = proMW * num("a-verf"), s5tief = proMW * Math.min(0.3, num("a-verf")), s5 = (s5hoch + s5tief) / 2;
     const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
     const summe = s1 + s2 + s3 + Math.max(s4, s5) - opex, kosten = preisJe * cap * (1 - zuschuss);
-    return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: summe * faktor - kosten - entsorgBarwert(cap),
+    return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: (summe + opex) * faktor - opex * ann - kosten - entsorgBarwert(cap),
             kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch,
             // Speicherpreis (€/kWh), bei dem der Barwert 0 ist: (Erträge ohne Betriebskosten × Faktor − Entsorgung) ÷ (Betriebskostenanteil × Faktor + 1 − Zuschuss) ÷ Kapazität
-            breakEven: cap > 0 ? ((summe + opex) * faktor - entsorgBarwert(cap)) / (0.015 * faktor + 1 - zuschuss) / cap : 0};
+            breakEven: cap > 0 ? ((summe + opex) * faktor - entsorgBarwert(cap)) / (0.015 * ann + 1 - zuschuss) / cap : 0};
   }
 
   // Neue Solaranlage selbst (ohne Speicher): Eigenverbrauch spart Strom plus Arbeitspreis, Rest wird eingespeist
@@ -925,7 +926,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     ["Spitze senken", R.s[0], R.gekappt > 0 ? `Zielspitze ${fmt(R.ziel)} statt ${fmt(kw)} kW (beste für diese Speichergröße): ${fmt(R.ersparnis)} € Netzentgelt, minus ${fmt(R.verlust)} € Ladeverluste` : "keine Kappung nötig oder möglich"],
     ["Atypische Netznutzung", R.s[1], R.at.erfuellt ? "voraussichtlich erfüllt" : (D.hlzf[nb.n] ? "Bedingungen nicht erfüllt" : "Hochlastzeitfenster: Werte nicht vorhanden")],
     ["Eigenverbrauch Solar", R.s[2], kwp > 0 ? `${fmt(R.delta)} kWh mehr selbst genutzt` : "keine Anlage angegeben"],
-    [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], (R.s[3] < R.s[4] && R.s[3] > 0 ? "NICHT IN DER SUMME (gleiche Leistung wie Regelenergie, es zählt der größere Wert). " : "") + (dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif)" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW"))],
+    [dynamisch ? "Verbrauch verschieben" : "Börsenhandel", R.s[3], (R.s[3] < R.s[4] && R.s[3] > 0 ? "NICHT IN DER SUMME (gleiche Leistung wie Regelenergie, es zählt der größere Wert). " : "") + (dynamisch ? "billig laden, teuer entladen, im eigenen Betrieb (dynamischer Tarif). Obere Grenze: Day-Ahead mit perfekter Voraussicht; startet der Speicher jeden Tag bei null, ist der Wert niedriger" : (netz > 0 ? `über Vermarkter, ${fmt(R.frei, 2)} freie Ladungen pro Tag` : "Netzanschluss 0 kW"))],
     ["Regelenergie", R.s[4], (R.s[4] < R.s[3] && R.s[4] > 0 ? "NICHT IN DER SUMME (gleiche Leistung wie Börsenhandel, es zählt der größere Wert). " : "") + (netz > 0 ? `${fmt(R.pRegel)} kW frei, Spanne ${fmt(R.s5tief)} bis ${fmt(R.s5hoch)} €, nach Vermarkter. Preis: Mittel der letzten 365 Tage (148.800 € je MW), im Winter nur etwa 60.000 bis 85.000, im Sommer über 200.000` : "Netzanschluss 0 kW")],
     ["Betriebskosten Speicher", -R.opex, "1,5 % der Investition pro Jahr (eigene Annahme, nicht belegt)"],
   ];
@@ -952,7 +953,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   else {
     chart += `<p class="herkunft"><b>${empfohlen ? "Beste Größe: " : "Gewählt: "}${fmt(R.cap)} kWh</b> (nutzbar ${fmt(R.U)} kWh, Leistung ${fmt(R.Psp)} kW). Strompreis angesetzt: ${fmt(strom, 1)} ct/kWh ohne Netzentgelt${num("a-strom") ? "" : " (" + niveauName + " " + fmt(boersenMittel, 1) + " ct + Aufschlag + Steuern)"}. Tarif: ${dynamisch ? "dynamisch (EPEX)" : "Festpreis (Ihr eingegebener Preis)"}.</p>
     <div class="saeulen">${saeulen.map(c => zeile(c)).join("")}${zeile(["Summe", summe, `Kosten ${fmt(R.kosten)} €${zuschuss ? " nach " + fmt(zuschuss * 100) + " % Zuschuss" : ""}, einfache Amortisation ${amort ? fmt(amort, 1) + " Jahre" : "nicht erreichbar"}`], "summe")}</div>
-    <p class="herkunft">Barwert über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ${fmt(summe * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
+    <p class="herkunft">Barwert über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins: <b>${R.barwert >= 0 ? "+" : "−"} ${fmt(Math.abs(R.barwert))} €</b> (Erträge ohne Betriebskosten ${fmt((summe + R.opex) * faktor)} € nach ${fmt(abbau * 100, 1)} % Kapazitätsabbau je Jahr, minus Betriebskosten ${fmt(R.opex * ann)} € (jedes Jahr gleich, abgezinst), minus Kosten ${fmt(R.kosten)} €, minus Entsorgung ${fmt(entsorgBarwert(R.cap))} € (abgezinst), Speicherpreis ${fmt(R.preisJe)} € je kWh${num("speicherpreis") ? "" : " (Richtwert, nach Größe gestaffelt)"}).</p>`;
     chart += `<p class="herkunft"><b>Wann sich der Speicher amortisiert:</b> Der Barwert ist 0 bei einem Speicherpreis von etwa <b>${R.breakEven >= 5 ? fmt(R.breakEven) + " €/kWh" : "keinem realistischen Preis (unter 5 €/kWh, Erträge zu klein)"}</b>; angesetzt sind ${fmt(R.preisJe)} €/kWh. Nur Einsparungen und Erlöse zählen, der Strom selbst wird ohnehin bezahlt. Gerechnet über ${jahre} Jahre bei ${fmt(zins * 100, 1)} % Zins, ${fmt(num("a-abbau"), 1)} % Kapazitätsabbau je Jahr, mit Entsorgung und Betriebskosten.</p>`;
     if (!eingabe && !beste.cap) chart += `<p class="herkunft"><b>Bei diesen Angaben lohnt sich kein Speicher.</b> Der Barwert ist bei allen Größen negativ. Prüfen Sie atypische Netznutzung und Solar.</p>`;
     chart += `<div class="tabelle"><table><thead><tr><th>Größe</th><th>Erträge €/Jahr</th><th>Kosten €</th><th>Barwert ${jahre} J. €</th><th>Preis €/kWh für Barwert 0</th></tr></thead><tbody>`
@@ -1003,7 +1004,7 @@ const PRODUZIEREND = ["baeckerei", "handwerk", "produktion"];
 function steuernVorschlagen() {
   const f = $("a-steuern");
   if (f.dataset.manuell) return;
-  f.value = PRODUZIEREND.includes($("branche").value) ? "3.11" : "5.11";
+  // Wert entsteht in strompreisBlock aus denselben Posten wie die Strompreis-Tabelle (Entlastung per Haken); hier nichts mehr setzen
 }
 $("a-steuern").addEventListener("input", e => { if (e.isTrusted) e.target.dataset.manuell = "1"; });
 $("branche").addEventListener("change", steuernVorschlagen);

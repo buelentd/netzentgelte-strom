@@ -48,6 +48,18 @@ const zahl = s => parseFloat(String(s).replace(/\./g, '').replace(',', '.'));
   const t2 = await p.evaluate(() => document.getElementById('ergebnis').innerText);
   const ap = t2.match(/Arbeitspreis ([\d,]+) ct\/kWh/), an = t2.match(/Strompreis angesetzt: ([\d,]+) ct/);
   if (ap && an) ok(Math.abs(25 - zahl(ap[1]) - zahl(an[1])) < 0.1, 'Strompreis ohne Netzentgelt ≠ Gesamtpreis − Netz-Arbeitspreis');
+  // 5. Speicher, unabhängig nachgerechnet (tests/audit/speicher_nachrechnung.py): Metzingen, 250.000 kWh, 100 kW, Speicher 100 kWh
+  await p.reload(); await p.fill('#plz', '72555'); await p.dispatchEvent('#plz', 'input'); await p.fill('#kwh', '250000'); await p.fill('#kw', '100'); await p.waitForTimeout(1200);
+  ok(await p.inputValue('#a-steuern') === '5.11', 'Steuern und Umlagen ohne Entlastung nicht 5,11 ct (Tabelle: 0,11 + 0,446 + 0,941 + 1,559 + 2,05)');
+  await p.evaluate(() => { const e = document.getElementById('speicher-kwh'); e.value = '100'; e.dispatchEvent(new Event('input', {bubbles: true})); });
+  await p.waitForTimeout(1200); await p.evaluate(() => document.querySelectorAll('details').forEach(d => d.open = true));
+  const t5 = await p.evaluate(() => document.getElementById('ergebnis').innerText);
+  const bw = t5.match(/Barwert über 10 Jahre bei 6,0 % Zins: \+ ([\d.]+) €/), be = t5.match(/Speicherpreis von etwa ([\d.]+) €\/kWh/), su = t5.match(/Summe\s*\n[^\n]*Amortisation[^\n]*\n\+ ([\d.]+) €/);
+  ok(!!bw && Math.abs(zahl(bw[1]) - 32362) <= 3, 'Speicher 100 kWh: Barwert nicht 32.362 € (Nachrechnung)');
+  ok(!!be && Math.abs(zahl(be[1]) - 741) <= 1, 'Speicher 100 kWh: Preisgrenze nicht 741 €/kWh (Nachrechnung)');
+  ok(!!su && Math.abs(zahl(su[1]) - 12394) <= 3, 'Speicher 100 kWh: Summe nicht 12.394 € (Nachrechnung)');
+  await p.evaluate(() => document.getElementById('steuer-entl').click()); await p.waitForTimeout(900);
+  ok(await p.inputValue('#a-steuern') === '3.11', 'Steuern und Umlagen mit Entlastung nicht 3,11 ct');
   await b.close();
   if (fehler.length) { console.log('FEHLER:\n- ' + fehler.join('\n- ')); process.exit(1); }
   console.log('Rechenproben ok');
