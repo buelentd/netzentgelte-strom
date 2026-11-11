@@ -21,3 +21,13 @@
 ## Regeln ab jetzt
 
 Text und Bild werden bei jeder Zeile gegeneinander geprüft (Bild gilt), Spaltenreihenfolge je Dokument aus der Kopfzeile, jede Ebene getrennt, alle Fenster einer Zelle, `keins` nur bei „entfällt“/„-“, Rückwärtsprüfung, unklar = leer + Bemerkung.
+
+## Nachcheck "nicht lesbar" (2026-11-11, spaeter)
+
+Per Bild (150 dpi) jetzt erfolgreich gelesen und eingetragen:
+- **Verden (SNB962996832648), 2026:** NS und MS/NS identisch: Herbst `17:00-17:30`, Winter `12:00-12:45, 17:00-18:45`.
+- **Wittenberg (SNB932107297727), 2026:** NS Herbst `17:00-19:00`, Winter `11:30-12:00, 16:15-19:30`; Dokument hat nur MS- und NS-Zeilen (MS/NS leer); Mindest-Lastverlagerung 100 kW.
+- **Stade (SNB975659838086), 2026:** NS Sommer `16:00-19:00`, Winter `11:00-13:45, 16:30-19:00`; MS/NS Sommer `16:00-19:00`, Winter `11:15-11:30, 12:00-14:30, 16:30-19:00`.
+- **Tegernsee (SNB928258126528), 2026:** NS Winter `09:45-10:30, 17:00-19:45`; MS/NS Herbst `18:00-19:00`, Winter `09:45-10:30, 17:00-19:45`. **2027 (vorläufig):** NS Winter `17:00-19:45`; MS/NS Herbst/Winter `17:00-19:45`.
+
+Weiterhin HTTP 403 (kein Bypass, erneut geprueft): Olching, Weilheim, Westnetz, Syna.
