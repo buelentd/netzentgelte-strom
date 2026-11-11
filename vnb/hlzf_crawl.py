@@ -36,6 +36,7 @@ MAX_DOKUMENTE = 14
 MAX_GROESSE = 30 * 1024 * 1024
 ZIEL_DOKUMENTE = Path(os.environ.get("HLZF_ZIEL", "eingang/pdfs_neu"))
 ZIEL_TEXTE = Path(os.environ.get("HLZF_TEXTE", "ergebnis/hlzf_crawl_texte"))
+DEBUG = bool(os.environ.get("HLZF_DEBUG"))
 IGNORIEREN = re.compile(r"\.(jpe?g|png|gif|svg|webp|ico|mp4|mp3|zip|docx?|pptx?|css|js|json|ics|vcf)(?:$|[?#])", re.I)
 
 # Hinweise in Linktext und Adresse (nach norm: ä→ae usw.)
@@ -46,6 +47,7 @@ PLUS = [("hochlast", 10), ("hlzf", 10), ("atypisch", 6), ("individuelle netzentg
         ("service", 1), ("kunden", 1), ("energie", 1), ("strom", 1), ("netz", 1)]
 MINUS = re.compile(r"\bgas\b|waerme|wasser|einspeis|datenschutz|impressum|karriere|kontakt|presse|newsletter|ladestation|"
                    r"wallbox|pv-anlage|solar|tarif", re.I)
+DOK_HINWEIS = re.compile(r"hochlast|hlzf|atypisch|19[ _.-]*abs|stromnev|individuell|zeitfenster|sonderform|hlz[ _-]", re.I)
 HOCHLAST = re.compile(r"hochlast", re.I)
 UHRZEIT = re.compile(r"(?<!\d)([01]?\d|2[0-3])[:.][0-5]\d(?!\d)")
 JAHRESZEIT = re.compile(r"fr[üu]hling|fr[üu]hjahr|sommer|herbst|winter", re.I)
@@ -222,7 +224,7 @@ class HlzfCrawler:
             seite_ein(s, 100, 0, "")
         basis = starts[0].rstrip("/")
         for u in await self.sitemap_urls(basis):
-            if ist_dokument(u):
+            if ist_dokument(u) and DOK_HINWEIS.search(norm(unquote(u))):
                 dok_gesehen.add(u)
                 geprueft_docs = await self._dokument(f, u, "Sitemap", geprueft_docs)
             else:
@@ -230,7 +232,7 @@ class HlzfCrawler:
 
         page = await ctx.new_page()
         while heap and f.seiten < MAX_SEITEN and geprueft_docs < MAX_DOKUMENTE:
-            _, _, url, tiefe, ref = heapq.heappop(heap)
+            _, _, url, tiefe, ref = (e := heapq.heappop(heap))
             if url in gesehen:
                 continue
             gesehen.add(url)
@@ -253,6 +255,8 @@ class HlzfCrawler:
                 continue
             f.seiten += 1
             erreicht += 1
+            if DEBUG:
+                print("  Seite", url[:110], "S=%d" % -e[0])
             try:
                 text = await page.evaluate(HTML_JS)
             except Exception:
@@ -276,7 +280,7 @@ class HlzfCrawler:
                     continue
                 s = score(txt + " " + href)
                 if ist_dokument(href):
-                    if href in dok_gesehen or s < 6 and not re.search(r"2026|2027", href + txt):
+                    if href in dok_gesehen or not DOK_HINWEIS.search(norm(unquote(href + " " + txt))):
                         continue
                     dok_gesehen.add(href)
                     geprueft_docs = await self._dokument(f, href, url, geprueft_docs, s)
@@ -317,6 +321,8 @@ class HlzfCrawler:
     async def _dokument(self, f: Fund, url: str, ref: str, n: int, s: int = 0) -> int:
         fehler, body = await self._laden(url, ref if ref.startswith("http") else "")
         n += 1
+        if DEBUG:
+            print("  Dok", url[:110], fehler or len(body))
         if fehler:
             return n
         if body.startswith(b"%PDF"):
@@ -375,11 +381,14 @@ async def main_async(args):
     ergebnis = []
     async with async_playwright() as pw:
         exe = os.environ.get("CHROMIUM_PATH", "/opt/pw-browsers/chromium")
+        proxy = None
+        if os.environ.get("HTTPS_PROXY") and not args.ohne_proxy:
+            proxy = {"server": os.environ["HTTPS_PROXY"], "bypass": "localhost,127.0.0.1"}
         try:
-            browser = await pw.chromium.launch()
+            browser = await pw.chromium.launch(proxy=proxy)
         except Exception:
-            browser = await pw.chromium.launch(executable_path=exe)
-        req = await pw.request.new_context(user_agent=USER_AGENT)
+            browser = await pw.chromium.launch(executable_path=exe, proxy=proxy)
+        req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy)
         robots = Robots(req, drossel, log=print)
         crawler = HlzfCrawler(browser, req, robots, drossel)
         sem = asyncio.Semaphore(args.parallel)
@@ -409,6 +418,7 @@ def main():
     ap.add_argument("--max", type=int, default=0)
     ap.add_argument("--parallel", type=int, default=6)
     ap.add_argument("--nur", nargs="*", default=[])
+    ap.add_argument("--ohne-proxy", action="store_true")
     asyncio.run(main_async(ap.parse_args()))
 
 
