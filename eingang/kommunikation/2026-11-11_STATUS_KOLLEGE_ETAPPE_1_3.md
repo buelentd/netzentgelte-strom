@@ -62,3 +62,22 @@ Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
 
 - **SNB975659838086 (Stadtwerke Stade), 2026:** `16:00-19:00` steht bildbasiert (300 dpi) in der Spalte **Herbst**, nicht Sommer — korrigiert fuer NS und MS/NS: Herbst `16:00-19:00`, Sommer `keins`. Winter `11:00-13:45, 16:30-19:00` (NS) bzw. `11:15-11:30, 12:00-14:30, 16:30-19:00` (MS/NS) bleibt.
 - Zusaetzlich: Zeilen mit nur einer besetzten Jahreszeit (ausser Winter) werden kuenftig an der Spaltenposition im Bild gegengeprueft; Statusmeldung nennt kuenftig MaStR-Nr. zuerst.
+
+## Korrektur nach Gesamtpruefung (2026-11-11, MaStR-Nr. zuerst, eine Zeile je Fall)
+
+- SNB975659838086 Stade: NS/MSNS Sommer `keins`, Herbst `16:00-19:00` (Spalte bildbasiert geprueft).
+- SNB999405828558 ENRO: MS/NS Fruehling `keins`, Sommer `08:15-08:30, 09:00-10:00, 13:45-14:00` (eine Zelle, drei Zeilen).
+- SNB946612539746 Hoyerswerda: NS H `keins`, W `11:15-12:00, 17:00-18:45`; MS/NS H `17:00-18:15`, W `10:30-12:30, 16:15-19:00`.
+- SNB971503120734 Meerbusch: MS/NS F `keins`, S `12:30-14:30`.
+- SNB922689183730 Suell: MS/NS F `keins`, W `11:00-12:00, 17:00-20:00`.
+- SNB957862279702 LSW: Text vor Raster; NS S `11:15-12:30`; MS/NS S `19:45-21:30`, W `17:45-18:45`.
+- SNB950336540445 Husum: NS S `13:15-13:45` ergaenzt.
+- SNB965281540327 Limburg: NS W `08:45-09:15, 12:30-14:15, 16:00-19:00`.
+- SNB948068461008 Emmendingen: NS W `11:30-13:30, 17:15-19:30`; MS/NS H `17:00-18:15`, W `17:15-19:30`.
+- SNB924747450655 EWR Remscheid: Werte entfernt (Modul-3-Tarifzeit Paragraph 14a, kein Paragraph-19-HLZF).
+- SNB961497906636 Gelsenwasser: zweite Zeile Netzgebiet Stolzenau/Rehburg-Loccum ergaenzt (NS F `12:00-15:00`, S `12:15-13:30`; MS/NS F `13:15-14:45`).
+- SNB939724292715 Rostock: NS W `12:15-12:15, 17:15-20:00`; Bemerkung Intervallende.
+- Bemerkungen nachgetragen: SNB927892816017 (Einzelzeiten nicht hh:mm-hh:mm -> leer), SNB973742186519 (Uhrzeit-Spalte = Intervallende), SNB963821222269 (Ref.-Zeitraum 2016/17), SNB963795614626 (leere Zellen -> keins).
+- **Etappe 5 geliefert:** SNB914508596067 WiDe Flex Bau + Service GmbH — kein HLZF-2026 auf wideflex.de gefunden.
+
+Stand: 201/201 bearbeitet.
