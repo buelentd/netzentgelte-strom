@@ -222,3 +222,10 @@ nr;ebene;fundstelle
 345;ns;Preisblatt 1 Zeilen Niederspannungsnetz 46,12 3,66 (bis) und 100,33 1,49 (ab)
 345;slp;Grundpreis Niederspannung 72,00 EUR/Jahr, Arbeitspreis Niederspannung 6,29 ct/kWh
 308;slp;Vorläufiges Preisblatt 2026: Entnahmestellen ohne Leistungsmessung, Arbeitspreis 13,63 ct/kWh netto
+74;slp;Entnahme ohne Leistungsmessung Niederspannung (NS): Grundpreis 25,00 EUR/a, Arbeitspreis 5,69 ct/kWh
+39;slp;Preise für Netznutzung SLP ab 01.01.2026: jährlicher Grundpreis 30,00 EUR netto, Arbeitspreis 8,47 Ct/kWh netto
+123;slp;Entnahmestellen ohne 1/4-h-Leistungsmessung, Nettopreis: Grundpreis 90,00 EUR/a, Arbeitspreis 7,50 Cent/kWh
+359;msns;Preisblatt 1: Mittel-/Niederspannung < 2.500 h/a 0,01600000 EUR/kW*Tag und 0,0755 EUR/kWh, > 2.500 h/a 0,44271233 EUR/kW*Tag und 0,0132 EUR/kWh (Tagespreis x 365, EUR/kWh x 100)
+359;slp;Preisblatt 2: Netzkunden Arbeitspreis 0,081 EUR/kWh, Grundpreis 0,07695890 EUR/Tag (x 365 = 28,09 EUR/Jahr)
+359;ms;Preisblatt 1: Mittelspannung < 2.500 h/a 0,01747945 EUR/kW*Tag (x 365 = 6,38) und 0,0664 EUR/kWh, > 2.500 h/a 0,41202740 EUR/kW*Tag (x 365 = 150,39) und 0,0088 EUR/kWh
+359;ns;Preisblatt 1: Niederspannung < 2.500 h/a 0,02424658 EUR/kW*Tag (x 365 = 8,85) und 0,081 EUR/kWh, > 2.500 h/a 0,32564384 EUR/kW*Tag (x 365 = 118,86) und 0,0369 EUR/kWh

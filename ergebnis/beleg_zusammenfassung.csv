@@ -350,14 +350,14 @@
 349;SNB942224012479;OUTLETCITY AG;ok;alle_belegt;
 350;SNB965394941448;Outokumpu Stainless Nirosta GmbH;pruefen;alle_belegt;
 351;SNB969534177940;ovag Netz GmbH;ok;alle_belegt;
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;alle_belegt;
+352;SNB988532040636;PVU Energienetze GmbH;ok;alle_belegt;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;alle_belegt;
 354;SNB942804093577;Queichtal Energie Offenbach Netz GmbH;ok;alle_belegt;
 355;SNB966494112844;Raiffeisenbank Altmühl-Jura eG;ok;alle_belegt;
 356;SNB963995572245;REDINET Burgenland GmbH;ok;alle_belegt;
 357;SNB941929592729;Regensburg Netz GmbH;ok;alle_belegt;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;alle_belegt;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;offen;"ms:konflikt; msns:leer_im_dokument_ebene_gefunden; ns:konflikt"
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;alle_belegt;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;alle_belegt;
 361;SNB979950878543;Remstalwerk Netzgesellschaft GmbH;ok;alle_belegt;
 362;SNB953011641437;Reußenköge Netz ＆ Infrastruktur GmbH;pruefen;alle_belegt;
@@ -642,7 +642,7 @@
 641;SNB979429791342;Stadtwerke Schneeberg GmbH;ok;alle_belegt;
 642;SNB950028563172;Stadtwerke Schneverdingen-Neuenkirchen GmbH;ok;alle_belegt;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;alle_belegt;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;alle_belegt;
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;alle_belegt;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;alle_belegt;
 646;SNB944294076061;Stadtwerke Schüttorf - Emsbüren GmbH;ok;alle_belegt;
 647;SNB962110557570;Stadtwerke Schwabach GmbH;ok;alle_belegt;

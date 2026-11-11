@@ -11,6 +11,9 @@ NOTIZ = {("345", "hsms"): "Beschriftung „Hochspannungsnetz einschließlich Ums
          ("322", "slp"): "Grundpreis-Zelle für Kleinkunden im Dokument leer"}
 TEXTAUSZUG = {"312"}      # 312 Merck: eingefügter Text des Nutzers, kein Dokument bei uns; sonst: Werte aus dem Textauszug des Kollegen (Original-PDF im Browser geladen, nicht bei uns gespeichert): geprueft bleibt leer
 KORRIGIEREN = {
+    ("359", "msns"): [5.84, 7.55, 161.59, 1.32],          # Regionalwerk Bodensee Netze: Preisblatt 2026, Mittel-/Niederspannung, Tagesleistungspreis x 365 (0,016 und 0,44271233 EUR/kW*Tag), Arbeitspreis EUR/kWh x 100
+    ("359", "slp"): [8.10, 28.09],                        # Netzkunden ohne Lastgangmessung: Arbeitspreis 0,081 EUR/kWh, Grundpreis 0,0769589 EUR/Tag x 365 (Liste hatte 0,077/0,077)
+    ("74", "slp"): [5.69, 25.00],                         # Covestro Brunsbüttel Energie: vorläufiges Preisblatt 2026 (15.10.2025), Entnahme ohne Leistungsmessung, Niederspannung: Grundpreis 25,00 €/a, Arbeitspreis 5,69 ct/kWh (Liste hatte 5,75)
     ("644", "ms"): [14.91, 8.30, 202.79, 0.78],           # Schorndorf: Preisblatt 1 (endgültig, gültig ab 01.01.2026), T < 2.500 h/a und T >= 2.500 h/a
     ("644", "msns"): [11.40, 10.95, 285.10, 0.00],        # Umspannung zur Niederspannung
     ("644", "ns"): [16.10, 8.87, 149.14, 3.55],

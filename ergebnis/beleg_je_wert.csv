@@ -193,7 +193,7 @@
 39;SNB980808485264;SachsenNetze GmbH;pruefen;ms;leer;;
 39;SNB980808485264;SachsenNetze GmbH;pruefen;msns;leer;;
 39;SNB980808485264;SachsenNetze GmbH;pruefen;ns;keine_zeile_mit_passender_beschriftung;;
-39;SNB980808485264;SachsenNetze GmbH;pruefen;slp;belegt;Zeile 5: 1  Preise für Netznutzung;
+39;SNB980808485264;SachsenNetze GmbH;pruefen;slp;belegt;Preise für Netznutzung SLP ab 01.01.2026: jährlicher Grundpreis 30,00 EUR netto, Arbeitspreis 8,47 Ct/kWh netto;manuell durch Claude am Dokument gesehen
 40;SNB933459598975;Netze Magdeburg GmbH;pruefen;hsms;leer;;
 40;SNB933459598975;Netze Magdeburg GmbH;pruefen;ms;leer;;
 40;SNB933459598975;Netze Magdeburg GmbH;pruefen;msns;belegt;Zeile 40: Mittel-/Niederspannung  >= 2.500 h/a  162,65 EUR/kW a  1,59 ct/kWh;Beschriftung im Kontext der Zeile
@@ -368,7 +368,7 @@
 74;SNB975268997129;Covestro Brunsbüttel Energie GmbH;pruefen;ms;belegt;Zeile 15: Mittelspannung (MS);
 74;SNB975268997129;Covestro Brunsbüttel Energie GmbH;pruefen;msns;belegt;Zeile 16: Umspannung MS/NS;
 74;SNB975268997129;Covestro Brunsbüttel Energie GmbH;pruefen;ns;leer;;
-74;SNB975268997129;Covestro Brunsbüttel Energie GmbH;pruefen;slp;belegt;Zeile 22: Grundpreis  Arbeitspreis;
+74;SNB975268997129;Covestro Brunsbüttel Energie GmbH;pruefen;slp;belegt;Entnahme ohne Leistungsmessung Niederspannung (NS): Grundpreis 25,00 EUR/a, Arbeitspreis 5,69 ct/kWh;manuell durch Claude am Dokument gesehen
 75;SNB956923775696;CPM Netz GmbH;pruefen;hsms;belegt;Zeile 26: 4 - Umspannung HS/MS (MS/S);
 75;SNB956923775696;CPM Netz GmbH;pruefen;ms;belegt;Zeile 27: 5 – in Mittelspannung (MS/N);
 75;SNB956923775696;CPM Netz GmbH;pruefen;msns;belegt;Zeile 28: 6 – Umspannung MS/NS (NS/S);
@@ -613,7 +613,7 @@
 123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;ms;leer;;
 123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;msns;leer;;
 123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;ns;leer;;
-123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;slp;belegt;Zeile 22: Grundpreis in €/a  Arbeitspreis in Cent/kWh;
+123;SNB936480897581;Elektrizitätswerk Max Peissker;pruefen;slp;belegt;Entnahmestellen ohne 1/4-h-Leistungsmessung, Nettopreis: Grundpreis 90,00 EUR/a, Arbeitspreis 7,50 Cent/kWh;manuell durch Claude am Dokument gesehen
 124;SNB982597073882;Elektrizitätswerk Oberwössen e.G.;ok;hsms;leer;;
 124;SNB982597073882;Elektrizitätswerk Oberwössen e.G.;ok;ms;belegt;Zeile 13: 5 Mittelspannungsnetz;
 124;SNB982597073882;Elektrizitätswerk Oberwössen e.G.;ok;msns;belegt;Zeile 14: 6 Umsp. Mittel- auf Niederspannung;
@@ -1748,11 +1748,11 @@
 351;SNB969534177940;ovag Netz GmbH;ok;msns;belegt;Zeile 18: 6 - Umspannung MS/NS;
 351;SNB969534177940;ovag Netz GmbH;ok;ns;belegt;Zeile 19: 7 - NS-Niederspannung;
 351;SNB969534177940;ovag Netz GmbH;ok;slp;belegt;Zeile 59: Derzeit synthetisches Verfahren bei Kunden bis max. 100.000 kWh/a;
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;hsms;leer;;
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;ms;belegt;Zeile Mittelspannung 24,31 4,51 131,04 0,24 (< 2500 h / >= 2.500 h);manuell durch Claude am Dokument gesehen
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;msns;belegt;Zeile Umsp. Mittel- auf Niederspannung 26,57 5,42 135,17 1,07;manuell durch Claude am Dokument gesehen
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;ns;belegt;Zeile Niederspannung 35,77 7,80 144,51 3,46;manuell durch Claude am Dokument gesehen
-352;SNB988532040636;PVU Energienetze GmbH;pruefen;slp;belegt;Kunden mit Standardlastprofil: Grundpreis 75,00 EUR/a, Arbeitspreis 6,65 Ct/kWh;manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;ok;hsms;leer;;
+352;SNB988532040636;PVU Energienetze GmbH;ok;ms;belegt;Zeile Mittelspannung 24,31 4,51 131,04 0,24 (< 2500 h / >= 2.500 h);manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;ok;msns;belegt;Zeile Umsp. Mittel- auf Niederspannung 26,57 5,42 135,17 1,07;manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;ok;ns;belegt;Zeile Niederspannung 35,77 7,80 144,51 3,46;manuell durch Claude am Dokument gesehen
+352;SNB988532040636;PVU Energienetze GmbH;ok;slp;belegt;Kunden mit Standardlastprofil: Grundpreis 75,00 EUR/a, Arbeitspreis 6,65 Ct/kWh;manuell durch Claude am Dokument gesehen
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;hsms;leer;;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;ms;leer;;
 353;SNB938413573104;QuartiersNetz Bayern GmbH;ok;msns;belegt;Zeile 18: Artikel-ID 1-01-6;Artikel-ID, Tagespreis x 365 / Arbeitspreis x 100
@@ -1784,10 +1784,10 @@
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;ns;belegt;Zeile 14: 7  Niederspannungsnetz;
 358;SNB942274543879;Regionalnetze Linzgau GmbH;ok;slp;belegt;Zeile 17: Grund-  Arbeits-;
 359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;hsms;leer;;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ms;konflikt;Zeile 15: Mittelspannung  1-01-5-001 = 0.01747945/0.0664/0.4120274/0.0088;zwei Tabellen (Zeilen 15 und 26)
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;msns;leer_im_dokument_ebene_gefunden;;
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ns;konflikt;Zeile 18: Niederspannung  1-01-7-001 = 0.02424658/0.081/0.32564384/0.0369;zwei Tabellen (Zeilen 18 und 29)
-359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;slp;belegt;Zeile 76: Arbeitspreis  Grundpreis;
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ms;belegt;Preisblatt 1: Mittelspannung < 2.500 h/a 0,01747945 EUR/kW*Tag (x 365 = 6,38) und 0,0664 EUR/kWh, > 2.500 h/a 0,41202740 EUR/kW*Tag (x 365 = 150,39) und 0,0088 EUR/kWh;manuell durch Claude am Dokument gesehen
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;msns;belegt;Preisblatt 1: Mittel-/Niederspannung < 2.500 h/a 0,01600000 EUR/kW*Tag und 0,0755 EUR/kWh, > 2.500 h/a 0,44271233 EUR/kW*Tag und 0,0132 EUR/kWh (Tagespreis x 365, EUR/kWh x 100);manuell durch Claude am Dokument gesehen
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;ns;belegt;Preisblatt 1: Niederspannung < 2.500 h/a 0,02424658 EUR/kW*Tag (x 365 = 8,85) und 0,081 EUR/kWh, > 2.500 h/a 0,32564384 EUR/kW*Tag (x 365 = 118,86) und 0,0369 EUR/kWh;manuell durch Claude am Dokument gesehen
+359;SNB974239978785;Regionalwerk Bodensee Netze GmbH ＆ Co. KG;pruefen;slp;belegt;Preisblatt 2: Netzkunden Arbeitspreis 0,081 EUR/kWh, Grundpreis 0,07695890 EUR/Tag (x 365 = 28,09 EUR/Jahr);manuell durch Claude am Dokument gesehen
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;hsms;leer;;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;ms;belegt;Zeile 24: Mittelspannungsnetz (MS)*;
 360;SNB917014884420;Regionalwerke Wolfhager Land GmbH;ok;msns;belegt;Zeile 25: Umspannung Mittel-/ Niederspannung (MS/NS);
@@ -3207,11 +3207,11 @@
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;msns;belegt;Zeile 29: Umspannung MS/NS;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;ns;belegt;Zeile 30: Niederspannungsnetz;
 643;SNB936461984224;Stadtwerke Schönebeck GmbH - SWS -;ok;slp;belegt;Zeile 44: Eintarifzähler  Mehrtarifzähler;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;hsms;leer;;
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;ms;belegt;Preisblatt 1 Zeile Mittelspannung 14,91 8,30 202,79 0,78 (T < 2.500 / T >= 2.500 h/a);manuell durch Claude am Dokument gesehen
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;msns;belegt;Preisblatt 1 Zeile Umspannung zur Niederspannung 11,40 10,95 285,10 0,00;manuell durch Claude am Dokument gesehen
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;ns;belegt;Preisblatt 1 Zeile Niederspannung 16,10 8,87 149,14 3,55;manuell durch Claude am Dokument gesehen
-644;SNB935144085258;Stadtwerke Schorndorf GmbH;pruefen;slp;belegt;Preisblatt 2: ohne registrierte Lastgangmessung 73,00 EUR/a und 7,93 ct/kWh;manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;hsms;leer;;
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;ms;belegt;Preisblatt 1 Zeile Mittelspannung 14,91 8,30 202,79 0,78 (T < 2.500 / T >= 2.500 h/a);manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;msns;belegt;Preisblatt 1 Zeile Umspannung zur Niederspannung 11,40 10,95 285,10 0,00;manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;ns;belegt;Preisblatt 1 Zeile Niederspannung 16,10 8,87 149,14 3,55;manuell durch Claude am Dokument gesehen
+644;SNB935144085258;Stadtwerke Schorndorf GmbH;ok;slp;belegt;Preisblatt 2: ohne registrierte Lastgangmessung 73,00 EUR/a und 7,93 ct/kWh;manuell durch Claude am Dokument gesehen
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;hsms;leer;;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;ms;belegt;Zeile 21: Mittelspannung *  MS;
 645;SNB944999584793;Stadtwerke Schramberg GmbH ＆ Co. KG;ok;msns;belegt;Zeile 22: Umspannung MS/NS  MS/NS;
