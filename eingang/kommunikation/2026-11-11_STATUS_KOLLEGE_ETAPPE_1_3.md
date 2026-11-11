@@ -111,3 +111,18 @@ Stand: 201/201 bearbeitet.
 Verworfen: RheinNetz (war §24c-/typisierte-Abnahmefälle-Doc, kein Preisblatt), SWM/e.wa riss/Albstadtwerke/STWAB/Netze Duisburg (Erdgas), e-netz Südhessen (Niederdrucknetz-Gemeinden), SachsenNetze (Gas-Grundversorger), naturenergie netze (nur Messstellenbetrieb), E-Werk Netze Mittelbaden (2026), Weiler Wärme (Grundversorger), EHINGER ENERGIE + LKW Kitzingen (Scans ohne Text).
 
 Hinweis: Für SNB933956506145, SNB961471621746, SNB931070025696 liegt nur das HLZF-2027 vor — das Preisblatt 2027 fehlt noch. Düsseldorf-HLZF liegt auf CDN a.storyblok.com (robots.txt dort 403, PDF selbst 200 mit ehrlichem UA).
+
+## 2027-vorläufig — Domain-Crawl Batches 90–150, verifiziert und abgelegt (Commit e578153)
+
+8 neue Dateien in `eingang/2027_vorlaeufig/`:
+
+- SNB918689434309 Elektrizitätswerk Dahner Felsenland — Preisblatt 2027 vorläufig
+- SNB925558752303 Elektrizitätswerk Hindelang eG — Preisblatt 2027 vorläufig
+- SNB945322307522 Elektrizitätsgenossenschaft Karlstein — Preisblatt 2027 vorläufig
+- SNB917593691679 Elektrizitätswerk Unterwössen Dölle — Preisblatt Netzentgelte 2027 vorläufig
+- SNB997465895442 Energie- und Bäderbetrieb Hauenstein — Preisblatt NNE 2027 vorläufig
+- SNB980126228475 Elektrizitätswerk Mainbernheim GmbH — HLZF 2027 (§19 Abs. 2 StromNEV)
+- SNB986403410816 Elektrizitäts-Genossenschaft Rettenberg eG — HLZF 2027
+- SNB931431136771 Elektroenergieversorgung Cottbus GmbH — HLZF 2027 (per Bild geprüft, Jahr 2027 bestätigt; NS/MS/NS-Umspannung-Tabelle)
+
+Verworfen: EWA Altenburg (Wiederverkäufernachweis), EWF (Gas-Preisblatt), Cottbus-Preisblatt fehlt noch (nur HLZF gefunden).
