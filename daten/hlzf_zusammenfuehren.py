@@ -21,14 +21,39 @@ def status_unser(s, jahr, pruefung=""):
 def main():
     T = {r["nr"]: r["mastr_nr"] for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
     unser = {r["nr"]: r for r in csv.DictReader(open("ergebnis/hlzf_ergebnis.csv", encoding="utf-8-sig"), delimiter=";")}
-    nutzer = {r["nr"]: r for r in csv.DictReader(open("ergebnis/FORMAT_NEU_netzentgelte_final_alle_3_ergaenzt.csv", encoding="utf-8-sig"), delimiter=";")}
+    # Liste des Nutzers: ihre laufende Nummer ist eine andere als unsere (alphabetisch, 473 Zeilen); Zuordnung über MaStR-Nr., sonst über den Namen (Fehler vom 11.11.2026: vorher über `nr`, dadurch standen die Fenster beim falschen Netzbetreiber)
+    import re, unicodedata
+    def norm(s):
+        s = unicodedata.normalize("NFKC", s).lower().replace("ß", "ss").replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("＆", "&")
+        s = re.sub(r"\b(gmbh|ag|kg|mbh|ohg|e\.?k\.?|e\.?v\.?|aör|ku|co|und|&|der|die|des)\b", " ", s)
+        return re.sub(r"[^a-z0-9]+", "", s)
+    tab = list(csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";"))
+    nach_name = {}
+    for t_ in tab: nach_name.setdefault(norm(t_["netzbetreiber"]), []).append(t_["mastr_nr"])
+    gueltig = {t_["mastr_nr"] for t_ in tab}
+    nutzer = {}
+    for r in csv.DictReader(open("ergebnis/FORMAT_NEU_netzentgelte_final_alle_3_ergaenzt.csv", encoding="utf-8-sig"), delimiter=";"):
+        m_ = (r.get("mastr_nr") or "").strip()
+        if m_ not in gueltig:
+            c_ = nach_name.get(norm(r["netzbetreiber"]), [])
+            m_ = c_[0] if len(c_) == 1 else ""
+        if m_ and (m_ not in nutzer or any(r.get(f"hlzf_{e}_{j}") for e in ("ns", "msns") for j in J) and not any(nutzer[m_].get(f"hlzf_{e}_{j}") for e in ("ns", "msns") for j in J)):
+            nutzer[m_] = r
     import os
     kol = {r["mastr_nr"]: r for r in csv.DictReader(open("lauf/hlzf_kollege_verifiziert.csv", encoding="utf-8-sig"), delimiter=";")} if os.path.exists("lauf/hlzf_kollege_verifiziert.csv") else {}
     out, z = [], Counter()
+    KONFLIKT = []
     for nr, mastr in T.items():
-        n, u = nutzer.get(nr), unser.get(nr)
+        n, u = nutzer.get(mastr), unser.get(nr)
         werte, st = {c: "" for c in COLS}, None
-        if n and any(n.get(f"hlzf_ns_{x}") or n.get(f"hlzf_msns_{x}") for x in J):
+        st_u = status_unser(u["hlzf_status"], u["hlzf_jahr"], u.get("hlzf_pruefung", "")) if u else None
+        n_hat = bool(n and any(n.get(f"hlzf_ns_{x}") or n.get(f"hlzf_msns_{x}") for x in J))
+        if n_hat and st_u == "gelesen_unser":
+            # Beide haben das 2026-Dokument gelesen: gleiche Werte -> Liste des Nutzers; verschieden -> unser Leser (am Dokumenttext geprüft, Stichprobe Abita/Regionetz 11.11.2026: Nutzerliste dort falsch) und Eintrag in die Konfliktliste
+            gleich = all((n.get(c, "") or "") == (u.get(c, "") or "") for c in COLS if c.startswith(("hlzf_ns_", "hlzf_msns_")))
+            if not gleich: KONFLIKT.append([mastr, nr, u.get("hlzf_quelle_url", ""), n.get("hlzf_quelle_url", "")] + [n.get(c, "") for c in COLS[:8]] + [u.get(c, "") for c in COLS[:8]])
+            n_hat = gleich
+        if n_hat:
             for c in COLS: werte[c] = n.get(c, "")
             st = "gelesen_nutzer"
         elif u:
@@ -46,5 +71,7 @@ def main():
         out.append([mastr, st] + [werte[c] for c in COLS])
     with open("lauf/hlzf_zusammen.csv", "w", encoding="utf-8-sig", newline="") as o:
         w = csv.writer(o, delimiter=";"); w.writerow(["mastr_nr", "hlzf_status"] + COLS); w.writerows(out)
-    print(dict(z))
+    with open("ergebnis/hlzf_konflikt_nutzerliste_leser.csv", "w", encoding="utf-8-sig", newline="") as o:
+        w = csv.writer(o, delimiter=";"); w.writerow(["mastr_nr", "nr", "quelle_unser", "quelle_nutzerliste"] + ["nutzer_" + c[5:] for c in COLS[:8]] + ["unser_" + c[5:] for c in COLS[:8]]); w.writerows(KONFLIKT)
+    print(dict(z), "Konflikte:", len(KONFLIKT))
 main()
