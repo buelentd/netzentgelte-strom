@@ -92,3 +92,22 @@ Stand: 201/201 bearbeitet.
 
 - SNB935144085258 Stadtwerke Schorndorf: HLZF 2026 gefunden (nur Winter: NS `09:45-12:15`; MS/NS `09:45-10:00, 10:45-13:30, 17:30-18:45`) + endgueltiges Netzentgelte-Preisblatt 2026 unter eingang/NEUE PREISBLAETTER.
 - Von den 8 fehlenden Preisblaettern auffindbar: nur Schorndorf. Nicht auffindbar: Oberhausen (ob-netz.de 403), Putzbrunn (403), PVU (nur 2023/2024), Hammelburg (blockiert), Merck/FLUXUM (kein Preisblatt), Heinzelmann (Netzbetrieb zum 01.01.2026 an E-Werk Netze uebergangen), Egloffstein (Storyblok-PDF gehoert anderem Betreiber).
+
+## 2027-vorläufig — Domain-Crawl Batches 0–90, verifiziert und abgelegt (Commit 569ded8)
+
+10 neue Dateien in `eingang/2027_vorlaeufig/`, alle inhaltsgeprüft (Text: 2027 + Strom + Preisblatt/HLZF; Negativ: Erdgas, §14a-Modul 3, §24c, falsches Jahr):
+
+- SNB933459598975 Netze Magdeburg GmbH — Preisblatt 2027 vorläufig
+- SNB910395619643 Blomberg Netz GmbH & Co. KG — Preisblatt 2027 vorläufig
+- SNB944057190867 BEW Netze GmbH — Preisblatt 2027 vorläufig
+- SNB956411704207 C. Ensinger GmbH & Co. KG — Preisblatt 2027 vorläufig
+- SNB963282434775 Bauer Netz GmbH & Co. KG — Preisblatt 2027 vorläufig
+- SNB974556654430 Donau-Stadtwerke Dillingen-Lauingen — Preisblatt 2027 vorläufig
+- SNB933956506145 Netzgesellschaft Düsseldorf mbH — HLZF 2027 (§19 Abs. 2 StromNEV)
+- SNB961471621746 Pfalzwerke Netz AG — HLZF 2027 (110 kV)
+- SNB931070025696 Alliander Netz Heinsberg GmbH — HLZF 2027
+- SNB935556509052 Netze ODR GmbH — HLZF/Individuelle Netznutzung 2027 (per Bild geprüft, Jahr 2027 bestätigt)
+
+Verworfen: RheinNetz (war §24c-/typisierte-Abnahmefälle-Doc, kein Preisblatt), SWM/e.wa riss/Albstadtwerke/STWAB/Netze Duisburg (Erdgas), e-netz Südhessen (Niederdrucknetz-Gemeinden), SachsenNetze (Gas-Grundversorger), naturenergie netze (nur Messstellenbetrieb), E-Werk Netze Mittelbaden (2026), Weiler Wärme (Grundversorger), EHINGER ENERGIE + LKW Kitzingen (Scans ohne Text).
+
+Hinweis: Für SNB933956506145, SNB961471621746, SNB931070025696 liegt nur das HLZF-2027 vor — das Preisblatt 2027 fehlt noch. Düsseldorf-HLZF liegt auf CDN a.storyblok.com (robots.txt dort 403, PDF selbst 200 mit ehrlichem UA).
