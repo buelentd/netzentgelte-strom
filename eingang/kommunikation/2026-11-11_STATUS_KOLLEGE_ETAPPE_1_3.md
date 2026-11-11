@@ -52,3 +52,8 @@ Stand gesamt: 200/201 bearbeitet, 51 mit 2026-Werten.
 - **2026:** NS Herbst `17:15-18:15`, Winter `17:00-19:15`; MS/NS Herbst `17:15-18:15`, Winter `17:15-19:00`; F/S keins (Seite 1 bildbasiert, per Bild gelesen).
 - **2027 vorläufig:** NS und MS/NS je Herbst/Winter `17:00-19:00`, F/S keins.
 - Lesson learned: Betreiberseiten direkt crawlen (Media-Pfade), nicht nur Websuche.
+
+## SWKiel Netz (SNB973742186519) via Nutzer-Upload (2026-11-11)
+
+- **2026:** NS Fruehling `18:45-19:30`, Winter `18:30-20:00`; MS/NS Herbst/Winter `08:00-08:15`; S keins. Zeiten = Ende des 1/4-h-Intervalls. Dokument als Datei bereitgestellt, da robots.txt /fileadmin/ sperrt (kein Bypass).
+- SHNG 2027 (Schleswig-Holstein Netz GmbH) ist nicht Teil der 201 Netzbetreiber; Werte nur im Chat reported (NS/MSNS F `17:45-18:15`, H `17:15-19:00`; Schwelle 30%, 100 kW).
