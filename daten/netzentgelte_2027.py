@@ -60,14 +60,24 @@ def main(nur_lokal=False):
         m = re.search(r"SNB\d{12}", b)
         key = m.group(0) if m else nr2m.get((re.match(r"(\d{1,3})_", b) or [None, ""])[1])
         if key: dateien.setdefault(key, []).append(f)
-    kopf = ["mastr_nr"] + [h for h in T[0] if h != "mastr_nr" and not h.startswith("hlzf_")]
+    # Hochlastzeitfenster 2027 (vorläufig): Lieferungen des Kollegen und von Hand gelesene Dokumente; Datei eingang/2027_vorlaeufig/_hlzf_2027_gelesen.csv (MaStR-Nr. zuerst)
+    hz = {}
+    pz = ordner / "_hlzf_2027_gelesen.csv"
+    if pz.exists():
+        for r_ in lesen_csv(pz): hz[r_["mastr_nr"]] = r_
+    kopf = ["mastr_nr"] + [h for h in T[0] if h != "mastr_nr"]
     out, stat = [], {}
     for r in T:
         m = r["mastr_nr"]
         z = {h: r.get(h, "") for h in kopf}
         for h in kopf:
-            if h.startswith(("slp_", "ms_", "msns_", "ns_", "hsms_")) or h in ("status", "preisstand", "stand_datum", "hinweis", "quelle_url", "grenze_2500h", "hsms_status"):
+            if h.startswith(("slp_", "ms_", "msns_", "ns_", "hsms_", "hlzf_")) or h in ("status", "preisstand", "stand_datum", "hinweis", "quelle_url", "grenze_2500h", "hsms_status"):
                 z[h] = ""
+        if m in hz:
+            for e_ in ("ns", "msns"):
+                for j_ in ("fruehling", "sommer", "herbst", "winter"): z[f"hlzf_{e_}_{j_}"] = hz[m].get(f"{e_}_{j_}", "")
+            z["hlzf_schwelle_prozent"] = hz[m].get("schwelle_prozent", ""); z["hlzf_mindestleistung_kw"] = hz[m].get("mindestleistung_kw", "")
+            z["hlzf_quelle_url"] = hz[m].get("quelle_url", ""); z["hlzf_status"] = "gelesen_vorlaeufig_2027"
         werte = {e: {} for e in EBENEN}; slp = {}; quelle = []; hinw = []; jahr_ok = False
         for f in dateien.get(m, []):
             try:
