@@ -119,3 +119,12 @@ Die Werte stehen in `ergebnis/umlagen_steuern_2026.csv` (Offshore 0,941; KWKG 0,
 
 ## Festlegung: Ordner eingang/fehlende (Nutzer, 09.11.2026)
 Dort liegen die PDFs der blockierten Netzbetreiber, zum Großteil 2026 und 2027 gemischt. Je Datei zuerst das Jahr im Dokument bestimmen: 2026 in die 2026-Tabelle, 2027 nach `eingang/2027_vorlaeufig/`, unklares Jahr in die Restliste. Details in `eingang/fehlende/LIES_MICH.md`.
+
+
+## Regel: Erst im Git nachsehen, was vereinbart ist (Festlegung Nutzer, 11.11.2026)
+
+Bevor eine Liste, Anleitung oder Zahl geliefert wird, wird im Git nachgesehen, wie es besprochen und schon gebaut ist: `CLAUDE.md`, `START_HIER.md`, `ergebnis/STAND_*.md`, `eingang/kommunikation/`, `git log`. Nichts aus dem Gedächtnis, keine zweite Liste neben einer vorhandenen.
+
+- **Listen fehlender Dokumente** (Preisblatt, Hochlastzeitfenster) sind die **Arbeitsliste**: `daten/arbeitsliste.py` erzeugt `ergebnis/arbeitsliste.csv` und je Bearbeiter `ergebnis/kollege_preise.csv`, `ergebnis/kollege_hochlastzeitfenster.csv` (MaStR-Nr. zuerst, Aktion, Suche `site:` ohne www, Dateiname); Anleitung `ergebnis/arbeitsliste_ANLEITUNG.md`. Diese Dateien liefern, nicht neu bauen. Sie entstehen neu mit der Kette (`daten/hlzf_kette.sh`).
+- Nennt der Nutzer eine Zahl (z. B. „101 nicht auffindbare“), wird sie im Git einer Datei zugeordnet (z. B. 101 Zeilen in `kollege_hochlastzeitfenster.csv`). Passt sie nirgends, wird das gesagt, nicht eine andere Liste untergeschoben.
+- Die Kommunikation mit dem Kollegen läuft über `eingang/kommunikation/` (Branch `vibe/…` für seine Lieferungen); Antworten und Prüfergebnisse dort ablegen, alle 15 Minuten nachsehen (Cron der Sitzung).
