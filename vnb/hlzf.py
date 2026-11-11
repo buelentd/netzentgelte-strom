@@ -314,6 +314,16 @@ def schwellen_text(text: str, erg: Hlzf):
     m = re.search(r"(\d{2,4})\s*kw\s+(?:überschreiten|übersteigen)", text, re.I)
     if m and "NS" in erg.schwelle:
         erg.mindest_kw.setdefault("NS", int(m.group(1)))
+    # Prozent vor der Ebene: "30% in der Niederspannung / 30% in der Umspannung auf Niederspannung / 20% in der Mittelspannung" (Ilmenau)
+    for m in re.finditer(r"(\d{1,2})\s*(?:%|prozent)\s+in\s+der\s+(niederspannung|umspannung\s+auf\s+niederspannung|mittelspannung)", text, re.I):
+        w = m.group(2).lower()
+        if not w.startswith("mittel"):
+            erg.schwelle.setdefault("MSNS" if w.startswith("umspannung") else "NS", int(m.group(1)))
+    m = re.search(r"mindestverlagerung\s*(?:von)?\s*(\d{2,4})\s*kw", text, re.I)
+    if m:
+        for eb in ("NS", "MSNS"):
+            if eb in erg.fenster:
+                erg.mindest_kw.setdefault(eb, int(m.group(1)))
 
 
 UHR = re.compile(r"(?<![\d:.])([0-2]?\d):([0-5]\d)(?::00)?(?:\s*uhr)?(?![\d:])(?!\s*h\b)", re.I)     # "02:30 h" ist die Dauer, kein Zeitpunkt
@@ -429,6 +439,53 @@ def _form_f(zeilen):
     return out if any(v for e in out.values() for v in e.values()) or out else {}
 
 
+def _form_viertel(zeilen):
+    """Eine Zeile je Viertelstunde ("06:30 - 06:45 Uhr") unter einem Kopf mit vier Jahreszeiten; die Ebene steht nur einmal mittig im Block
+    (Netzgesellschaft Forst). Blockwechsel: die Uhrzeit springt zurück. Blöcke und Ebenen müssen in gleicher Zahl vorkommen, sonst nichts."""
+    kopf = next((i for i, z in enumerate(zeilen) if not UHR.search(z) and len(JZ_WORT.findall(z)) == 4), None)
+    if kopf is None:
+        return {}
+    spalten = [(m.start() + len(m.group()) / 2, _jz(m.group())) for m in JZ_WORT.finditer(zeilen[kopf])]
+    bloecke, labels, letzte, n_zeilen, n_viertel = [], [], None, 0, 0
+    for z in zeilen[kopf + 1:]:
+        ms = list(ZEIT.finditer(z))
+        if not ms:
+            if bloecke and z.strip() and not EBENE_WORT.search(z):
+                break                                            # Text unter der Tabelle
+            continue
+        links = z[:ms[0].start()].strip()
+        if links and EBENE_WORT.search(links):
+            labels.append(links)
+        n_zeilen += 1
+        paare = []
+        for m in ms:
+            von, bis = int(m.group(1)) * 60 + int(m.group(2)), int(m.group(3)) * 60 + int(m.group(4))
+            if bis - von == 15:
+                n_viertel += 1
+            paare.append((_naechste(m.start() + len(m.group()) / 2, spalten)[1], von, bis, m))
+        first = paare[0][1]
+        if not bloecke or (letzte is not None and first < letzte):
+            bloecke.append([])
+        letzte = first
+        bloecke[-1].extend((jz, f"{v // 60:02d}:{v % 60:02d}", f"{b // 60:02d}:{b % 60:02d}") for jz, v, b, _ in paare)
+    if n_zeilen < 8 or n_viertel < 0.8 * n_zeilen or not bloecke or len(bloecke) != len(labels):
+        return {}
+    out = {}
+    for label, bl in zip(labels, bloecke):
+        eb = _ebene_text(label)
+        if eb not in ("NS", "MSNS"):
+            _IGN[0] += len(bl)
+            continue
+        out[eb] = {j: [] for j in JAHRESZEITEN}
+        for jz, v, b in bl:
+            fen = out[eb][jz]
+            if fen and fen[-1].endswith("-" + v):
+                fen[-1] = fen[-1].split("-")[0] + "-" + b          # aneinanderstoßende Viertelstunden zu einem Fenster
+            else:
+                fen.append(f"{v}-{b}")
+    return out
+
+
 def _form_g(zeilen):
     """Ein Kopf mit vier Jahreszeiten-Spalten (von / bis); links die Ebene, Folgezeilen ohne Ebene gehören zur selben Ebene."""
     out = {}
@@ -446,11 +503,16 @@ def _form_g(zeilen):
                 continue
             leer = 0
             label = re.split(r"\s{3,}", z.strip())[0]
+            if label and not UHR.search(z) and eb is not None and zeit_gesehen and not EBENE_WORT.search(label) \
+                    and not re.match(r"(?:zu|auf|in|nach)\b", label, re.I) and not KEIN.search(z[len(label):]):
+                break                                           # Erläuterung unter der Tabelle (zum Beispiel "Bei Spitzenlast außerhalb ..."): Tabelle zu Ende
             if label and not UHR.search(z) and not KEIN.search(z[len(label):]) and eb is not None and zeit_gesehen:
                 return {}                                       # Ebenenname allein in einer Zeile zwischen Datenzeilen (mittig gesetzt): Zuordnung unsicher
             zeit_gesehen = zeit_gesehen or bool(UHR.search(z))
             if re.match(r"(?:zu|auf|in|nach)\b", label, re.I):
                 label = ""                                      # Fortsetzung der Ebenenbezeichnung ("Umspannung MS" / "zu Niederspannung")
+            if label and not UHR.match(label) and EBENE_WORT.search(label) and len(label) >= 40 and (UHR.search(z) or KEIN.search(z[len(label):])):
+                return {}                                       # lange Ebenenbezeichnung in einer Datenzeile: nicht der vorigen Ebene zuschlagen, andere Formen versuchen
             if label and not UHR.match(label) and not KEIN.fullmatch(label) and EBENE_WORT.search(label) and len(label) < 40:
                 tl = _ebene_text(label)
                 if re.fullmatch(r"umspann\w*", label.strip(), re.I) and re.search(r"hoch(?:spannung|spannungs)|\bHS\b", "\n".join(zeilen[max(0, i - 6):ende]), re.I):
@@ -823,7 +885,8 @@ def hlzf_lesen(text: str, url: str = "") -> Hlzf:
     if len(gebiete) > 1:
         erg.grund = "mehrere Netzgebiete im Dokument: " + ", ".join(sorted(gebiete))[:150]
         return erg
-    for name, f in (("Block je Ebene (Netzebene / Jahreszeit / Zeiten)", lambda: _form_block(zeilen)),
+    for name, f in (("Viertelstundenzeilen je Ebene", lambda: _form_viertel(zeilen)),            # vor "Jahreszeiten als Spalten": sonst falsch zugeordnet
+                    ("Block je Ebene (Netzebene / Jahreszeit / Zeiten)", lambda: _form_block(zeilen)),
                     ("Jahreszeiten als Spalten", lambda: _form_a(zeilen)),
                     ("Ebenen als Spalten", lambda: _form_b(zeilen, erg)),
                     ("Zeile je Ebene und Jahreszeit", lambda: _form_d(zeilen)),

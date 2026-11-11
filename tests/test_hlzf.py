@@ -143,3 +143,37 @@ def test_mehrere_dokumente_je_netzbetreiber_zusammen_gelesen():
          "=== Datei SNB1_0001_hlzf_NS.pdf ===\n" + doc("Niederspannung", "-", "17:00 - 19:00"))
     e = hlzf_lesen(t, "x")
     assert e.gelesen and e.fenster["NS"]["winter"] == ["17:00-19:00"] and not e.fenster["NS"]["herbst"]   # nie Werte der MS-Datei bei NS
+
+
+def _roh(name):
+    return hlzf_lesen((ORDNER / f"{name}.txt").read_text(encoding="utf-8"))
+
+
+def test_ilmenau_jahreszeiten_spalten_mit_text_unter_der_tabelle():
+    """Mehrere Fenster untereinander in einer Zelle, Erläuterung unter der Tabelle; Schwelle und Mindestverlagerung im Fließtext (Stadtwerke Ilmenau)."""
+    e = _roh("ilmenau")
+    assert e.gelesen
+    assert {k: v for k, v in e.fenster["NS"].items() if v} == {"winter": ["10:45-12:00"]}
+    assert {k: v for k, v in e.fenster["MSNS"].items() if v} == {"herbst": ["17:00-18:45"], "winter": ["09:45-12:45", "14:00-14:15", "16:30-19:00"]}
+    assert e.schwelle == {"NS": 30, "MSNS": 30} and e.mindest_kw == {"NS": 100, "MSNS": 100}
+
+
+def test_forst_viertelstundenzeilen_je_ebene_zusammengefasst():
+    """Eine Zeile je Viertelstunde, Ebene mittig im Block, nur Winter gefüllt (Netzgesellschaft Forst). Früher falsch den Ebenen zugeordnet."""
+    e = _roh("forst")
+    assert e.form == "Viertelstundenzeilen je Ebene"
+    assert {k: v for k, v in e.fenster["NS"].items() if v} == {"winter": ["07:30-10:00", "17:30-17:45", "18:15-18:30"]}
+    assert {k: v for k, v in e.fenster["MSNS"].items() if v} == {"winter": ["06:45-08:00", "16:45-20:00"]}
+
+
+def test_lange_ebenenbezeichnung_wird_nicht_der_vorigen_ebene_zugeschlagen():
+    """"Umspannung Mittel- / Niederspannung (USp. MS/NS)" ist länger als 40 Zeichen: beide Ebenen müssen gelesen werden (Warburg)."""
+    e = _roh("warburg")
+    assert {k: v for k, v in e.fenster["NS"].items() if v} == {"winter": ["11:45-13:00"]}
+    assert {k: v for k, v in e.fenster["MSNS"].items() if v} == {"winter": ["17:30-19:45"]}
+
+
+def test_fischereihafen_mittel_und_niederspannung_mit_stehenden_zeilen():
+    e = _roh("fischereihafen")
+    assert e.fenster["NS"]["winter"] == ["07:15-07:30", "13:30-15:30"]
+    assert e.fenster["NS"]["herbst"] == ["07:30-08:45", "13:30-15:30"]
