@@ -45,13 +45,21 @@ def main():
     ov = lesen("lauf/hlzf_kollege_verifiziert.csv")
     H = list(ov[0].keys())
     have = {r["mastr_nr"] for r in ov}
-    add, zurueck, z = [], [], Counter()
+    add, zurueck, z, ersetzt = [], [], Counter(), []
     for fn in ("ergebnis/hlzf/hlzf_2027_gelesen.csv", "ergebnis/hlzf/hlzf_auftrag7_gelesen.csv"):
         for r in lesen(fn):
             mn = r["mastr_nr"]
             zeiten = [x for e in ("ns", "msns") for j in J for x in re.findall(r"\d\d:\d\d-\d\d:\d\d", r.get(f"{e}_{j}", ""))]
-            if Z.get(mn) in FERTIG or mn in have:
+            if Z.get(mn) in ("gelesen_nutzer", "gelesen_unser"):
                 z["schon fertig"] += 1; continue
+            if mn in have:
+                # bereits übernommen: neue Version des Kollegen (z. B. nachträglich auf anderes Dokument/Jahr umgestellt) nur bei Abweichung prüfen
+                alt = next(o for o in ov if o["mastr_nr"] == mn)
+                if all((r.get(f"{e}_{j}", "") or "").strip() == (alt.get(f"hlzf_{e}_{j}", "") or "").strip() for e in ("ns", "msns") for j in J):
+                    z["schon fertig"] += 1; continue
+                neu = True
+            else:
+                neu = False
             if not zeiten:
                 zurueck.append([mn, r["netzbetreiber"][:30], "keine Zeiten in der Zeile"]); continue
             f = datei(r.get("quelle_url", ""))
@@ -68,11 +76,14 @@ def main():
             add.append({"mastr_nr": mn, **{f"hlzf_{k}": r[k] for k in [f"{e}_{j}" for e in ("ns", "msns") for j in J]}, "hlzf_schwelle_prozent": r.get("schwelle_prozent", ""),
                         "hlzf_mindestleistung_kw": r.get("mindestleistung_kw", ""), "hlzf_quelle_url": q, "hlzf_status": status})
             have.add(mn)
+            if neu:
+                ersetzt.append(mn)
+    ov = [o for o in ov if o["mastr_nr"] not in set(ersetzt)]
     w = csv.DictWriter(open("lauf/hlzf_kollege_verifiziert.csv", "w", encoding="utf-8-sig", newline=""), fieldnames=H, delimiter=";")
     w.writeheader(); w.writerows(ov + [{k: a.get(k, "") for k in H} for a in add])
     w = csv.writer(open("lauf/hlzf_lieferung_zurueck.csv", "w", encoding="utf-8-sig", newline=""), delimiter=";")
     w.writerow(["mastr_nr", "netzbetreiber", "grund"]); w.writerows(zurueck)
-    print("übernommen", len(add), "| schon fertig", z["schon fertig"], "| zurückgestellt", len(zurueck))
+    print("übernommen", len(add), "(davon neue Version einer bereits übernommenen Zeile:", len(ersetzt), ")", "| schon fertig", z["schon fertig"], "| zurückgestellt", len(zurueck))
     print(Counter(g[2].split(":")[0].split(" ")[0] + " " + g[2].split(":")[0].split(" ")[1] if " " in g[2] else g[2] for g in zurueck).most_common(5))
 
 

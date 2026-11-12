@@ -234,15 +234,15 @@
     "gp_eur_jahr": 84.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "https://assets.cdn.netze-bw.de/xytfb1vrn7of/28fnFovNQ95tSRAQ0suR25/d67a77cc4fb291edc123ba7c2047035a/regelungen-fuer-die-nutzung-des-stromverteilnetzes-2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB948311994307_hlzf_regelungen-fuer-die-nutzung-des-stromverteilnetzes-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "16:45-20:00"
+       "17:00-20:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -255,7 +255,7 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "16:45-20:00"
+       "17:00-20:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -398,14 +398,45 @@
     "ap_ct_kwh": 3.2,
     "gp_eur_jahr": 102.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB951051725711_hlzf_nn_s_100_001_2025_10_21_atypische_nn_hochlastzeitfenster_2026_web.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-19:00"
+      ],
+      "winter": [
+       "17:00-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-19:00"
+      ],
+      "winter": [
+       "17:00-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "RLM: https://www.ewe-netz.de/-/media/ewe-netz/downloads/2026_02_24_ewe_netz_nne_strom_2026.pdf | SLP: https://www.ewe-netz.de/-/media/hip/ewe-netz/dokumente-cms/strom/strom-geschaeftskunden/preise-und-entgelte/nn_s_100_001_2026_02_24_ewe_netz_nne_strom_2026_web.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB916269213931",
@@ -442,15 +473,13 @@
     "gp_eur_jahr": 73.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB916269213931_0006_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB916269213931_hlzf_hochlastzeitfenster-2026.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
       "winter": [
-       "11:00-12:00"
+       "11:00-12:15",
+       "16:45-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -459,11 +488,9 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
       "winter": [
-       "16:45-20:00"
+       "11:30-12:00",
+       "16:30-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -903,14 +930,16 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB948859455841_0011_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB948859455841_hlzf_20251029_HLZF_Internet-Veroeffentlichung_2026.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
-      "winter": []
+      "herbst": [
+       "17:15-19:00"
+      ],
+      "winter": [
+       "17:00-19:15"
+      ]
      },
      "schwelle_prozent": 30,
      "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
@@ -918,10 +947,12 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
-      "winter": []
+      "herbst": [
+       "17:15-19:00"
+      ],
+      "winter": [
+       "17:00-19:15"
+      ]
      },
      "schwelle_prozent": 30,
      "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
@@ -2153,16 +2184,15 @@
     "gp_eur_jahr": 98.55
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB928759560869_0027_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB928759560869_hlzf_hochlastzeitfenster-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "10:45-12:00",
-       "17:30-18:45"
+       "16:45-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -2175,8 +2205,8 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "10:45-12:00",
-       "17:00-20:00"
+       "08:00-09:00",
+       "17:30-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -2687,14 +2717,45 @@
     "ap_ct_kwh": 4.09,
     "gp_eur_jahr": 73.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB911705062982_hlzf_hochlastzeitfenster_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-19:00"
+      ],
+      "winter": [
+       "17:00-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-19:00"
+      ],
+      "winter": [
+       "17:00-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.lew-verteilnetz.de/media/0c0hvoxn/20251006_lvn_netzentgelte-strom-ab-01012026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB921899277833",
@@ -3903,15 +3964,16 @@
     "gp_eur_jahr": 98.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB983315496327_0052_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB983315496327_hlzf_6c6f4a3c-hochlastzeitfenster-fuer-atypische-netznutzung-2026.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
+      "fruehling": [
+       "08:30-11:30"
+      ],
       "winter": [
-       "14:00-16:30",
+       "10:30-13:30",
+       "14:00-16:00",
        "17:00-20:00"
       ]
      },
@@ -3921,14 +3983,8 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [
-       "08:30-11:30"
-      ],
-      "sommer": [],
-      "herbst": [],
       "winter": [
-       "17:00-20:00",
-       "10:45-13:45"
+       "17:00-20:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -5492,7 +5548,38 @@
     "ap_ct_kwh": 10.21,
     "gp_eur_jahr": 103.5
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB956411704207_hlzf_2026-10-30-13-36-15-Hochlastzeitfenster-C.-Ensingr-GmbH-Co.KG_.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "12:00-14:00",
+       "16:30-18:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "12:00-14:00",
+       "16:30-22:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -5542,9 +5629,7 @@
    },
    "quelle_url": "https://c-ensinger.de/wp-content/uploads/2025/12/Preisblatt-Ensinger-2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB903166209006",
@@ -9191,15 +9276,13 @@
    },
    "hlzf": {
     "status": "gelesen_aus_2027",
-    "quelle": "https://www.ewerk-mainbernheim.de/files/Bilder/Hochlastzeitfenster%202027.pdf",
+    "quelle": "eingang/2027_vorlaeufig/SNB980126228475_0122_hlzf_2027.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
-      "winter": [
-       "16:30-19:00"
-      ]
+      "winter": []
      },
      "schwelle_prozent": 30,
      "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
@@ -9210,7 +9293,9 @@
       "fruehling": [],
       "sommer": [],
       "herbst": [],
-      "winter": []
+      "winter": [
+       "16:30-19:00"
+      ]
      },
      "schwelle_prozent": 30,
      "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
@@ -10845,14 +10930,14 @@
     "gp_eur_jahr": 70.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB941042755957_0145_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB941042755957_hlzf_SWB_Hochlastzeitfenster_2026-1.pdf",
     "ns": {
      "zeitfenster": {
       "winter": [
-       "12:30-13:15",
-       "17:15-18:15",
-       "21:30-23:45"
+       "17:00-18:45",
+       "19:15-19:30",
+       "21:30-22:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -10862,8 +10947,7 @@
     "msns": {
      "zeitfenster": {
       "winter": [
-       "17:00-19:00",
-       "21:30-23:45"
+       "17:00-18:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -11914,15 +11998,15 @@
     "gp_eur_jahr": 35.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB915186313908_0159_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB915186313908_hlzf_Hochlastzeitfenster_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "17:00-19:30"
+       "17:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -11935,7 +12019,7 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "17:00-19:30"
+       "17:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -14043,15 +14127,10 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB945750197795_0188_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB945750197795_hlzf_Hochlastzeitfenster_2026-Weilerbach.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [
-       "11:00-12:00"
-      ],
-      "herbst": [],
       "winter": []
      },
      "schwelle_prozent": 30,
@@ -14060,9 +14139,6 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
       "winter": [
        "17:15-20:30"
       ]
@@ -14268,15 +14344,13 @@
     "gp_eur_jahr": 102.5
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB924747450655_0191_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB924747450655_hlzf_Hochlastzeitfenster-der-Ebenen-MS-MS-NS-NS-2026.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
       "winter": [
-       "16:30-19:30"
+       "16:45-17:00",
+       "17:30-18:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -14285,11 +14359,8 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
       "winter": [
-       "16:15-19:30"
+       "16:15-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -15438,15 +15509,15 @@
     "gp_eur_jahr": 80.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB961497906636_0207_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB961497906636_hlzf_hochlastzeitfenster_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [
-       "12:15-14:45"
+       "12:45-14:15"
       ],
       "sommer": [
-       "13:15-13:45"
+       "13:30-14:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -15456,10 +15527,10 @@
     "msns": {
      "zeitfenster": {
       "fruehling": [
-       "12:30-14:15"
+       "12:30-14:30"
       ],
       "sommer": [
-       "12:45-15:00"
+       "12:45-14:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -16317,7 +16388,40 @@
     "ap_ct_kwh": 12.01,
     "gp_eur_jahr": 60.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB947727983103_0218_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [
+       "13:30-13:45"
+      ],
+      "sommer": [
+       "12:45-15:00"
+      ],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [
+       "12:45-14:45"
+      ],
+      "sommer": [
+       "15:15-15:30"
+      ],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": {
     "rlm": {
@@ -16347,9 +16451,7 @@
    },
    "quelle_url": null,
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB954239007623",
@@ -17115,12 +17217,12 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB919708421706_0230_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB919708421706_hlzf_HLZF_2026_Huetschenhausen.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [
-       "13:00-14:00"
+       "11:00-13:30"
       ],
       "sommer": [
        "13:00-14:00"
@@ -19381,22 +19483,20 @@
     "gp_eur_jahr": 73.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB930067626847_0264_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB930067626847_hlzf_veroeffentlichung_homepage_hochlastzeitfenster_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "17:00-18:00"
-      ],
+      "herbst": [],
       "winter": [
-       "10:30-12:00",
-       "16:30-18:15"
+       "11:15-12:15",
+       "17:00-19:00"
       ]
      },
      "schwelle_prozent": 30,
-     "herkunft_schwelle": "laut Netzbetreiber",
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
      "mindestverlagerung_kw": 100
     },
     "msns": {
@@ -19405,12 +19505,12 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "10:30-12:30",
-       "16:30-18:45"
+       "11:00-12:30",
+       "17:15-18:45"
       ]
      },
      "schwelle_prozent": 30,
-     "herkunft_schwelle": "laut Netzbetreiber",
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
      "mindestverlagerung_kw": 100
     }
    },
@@ -25052,15 +25152,17 @@
     "gp_eur_jahr": 30.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB959255155907_0347_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB959255155907_hlzf_HLFZ-Osterholzer-SW-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "18:00-18:15"
+      ],
       "winter": [
-       "17:30-19:15"
+       "17:15-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -25071,9 +25173,11 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:30-18:45"
+      ],
       "winter": [
-       "17:30-19:15"
+       "17:15-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -25532,20 +25636,17 @@
     "gp_eur_jahr": 95.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB966494112844_0355_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB966494112844_hlzf_2025_10_14-HLZF-2026-Greding.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [
-       "08:45-09:15",
-       "11:30-12:30"
-      ],
+      "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "17:00-18:00"
-      ],
+      "herbst": [],
       "winter": [
-       "17:00-19:15"
+       "08:15-09:15",
+       "12:30-14:00",
+       "16:30-19:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -25556,11 +25657,9 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "17:00-18:00"
-      ],
+      "herbst": [],
       "winter": [
-       "17:00-19:00"
+       "16:30-19:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -26424,30 +26523,23 @@
    "hlzf": {
     "status": "gelesen_aus_2027",
     "quelle": "eingang/2027_vorlaeufig/SNB953868012787_0368_hlzf_2027.pdf",
-    "ns": {
+    "ns": null,
+    "msns": {
      "zeitfenster": {
-      "fruehling": [
-       "18:00-18:30"
-      ],
+      "fruehling": [],
       "sommer": [],
       "herbst": [
-       "10:45-12:15",
        "11:45-12:00"
       ],
       "winter": [
-       "09:00-12:30",
        "10:45-12:30",
-       "17:45-18:00",
-       "17:45-18:45",
-       "11:15-12:15",
-       "17:30-19:00"
+       "17:45-18:45"
       ]
      },
      "schwelle_prozent": 30,
-     "herkunft_schwelle": "laut Netzbetreiber",
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
      "mindestverlagerung_kw": null
-    },
-    "msns": null
+    }
    },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
@@ -27124,15 +27216,17 @@
     "gp_eur_jahr": 105.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB942257679137_0378_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB942257679137_hlzf_Individuelle-Netzentgelte-Hochlastzeitfenster-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:30-19:00"
+      ],
       "winter": [
-       "17:15-19:30"
+       "17:15-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -27143,9 +27237,11 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:30-18:30"
+      ],
       "winter": [
-       "17:30-19:30"
+       "17:00-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -30256,13 +30352,13 @@
     "gp_eur_jahr": 69.35
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB922514070884_0424_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB922514070884_hlzf_SWB_HLZF_2026.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:00-19:30"
+      ],
       "winter": [
        "17:00-20:00"
       ]
@@ -30273,9 +30369,9 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:00-19:45"
+      ],
       "winter": [
        "17:15-20:15"
       ]
@@ -32998,16 +33094,15 @@
     "gp_eur_jahr": 35.0
    },
    "hlzf": {
-    "status": "gelesen_kollege_verifiziert",
-    "quelle": "https://www.stadtwerke-elbtal.de/fileadmin/user_upload/pdf/netz-strom/Hochlastzeitfenster-2026.pdf",
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB920699937404_0463_hlzf_2027.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "11:00-12:30",
-       "17:00-19:00"
+       "11:00-12:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -33020,8 +33115,7 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "11:15-13:00",
-       "16:15-19:30"
+       "16:30-19:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -33230,16 +33324,18 @@
     "gp_eur_jahr": 40.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB941183960449_0466_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB941183960449_hlzf_Hochlastzeitfenster-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "16:30-18:45"
+      ],
       "winter": [
-       "11:30-13:00",
-       "17:15-19:15"
+       "11:45-13:15",
+       "16:30-19:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -33250,10 +33346,13 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "12:45-13:00",
+       "16:15-18:45"
+      ],
       "winter": [
-       "12:00-12:15",
-       "17:15-19:15"
+       "12:00-14:00",
+       "16:30-18:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -34043,22 +34142,21 @@
     "gp_eur_jahr": 78.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB957549782006_0478_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB957549782006_hlzf_Sonderformen-der-NN-19-StromNEV-2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "07:30-08:30",
-       "11:15-12:45",
-       "17:30-18:45"
+       "08:15-09:15",
+       "11:15-13:15"
       ]
      },
      "schwelle_prozent": 30,
-     "herkunft_schwelle": "laut Netzbetreiber",
-     "mindestverlagerung_kw": 100
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
     },
     "msns": {
      "zeitfenster": {
@@ -34066,13 +34164,14 @@
       "sommer": [],
       "herbst": [],
       "winter": [
-       "07:45-12:45",
-       "17:45-18:30"
+       "07:30-08:30",
+       "11:00-12:15",
+       "17:15-19:00"
       ]
      },
      "schwelle_prozent": 30,
-     "herkunft_schwelle": "laut Netzbetreiber",
-     "mindestverlagerung_kw": 100
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
     }
    },
    "modul3": null,
@@ -36067,7 +36166,7 @@
    },
    "hlzf": {
     "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB945552907998_0506_hlzf_2027.pdf",
+    "quelle": "eingang/pdfs_neu/SNB945552907998_hlzf_Hochlastzeitfenster-2027.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [
@@ -36076,10 +36175,10 @@
       "sommer": [
        "11:45-13:45"
       ],
-      "herbst": [],
-      "winter": [
+      "herbst": [
        "15:45-16:00"
-      ]
+      ],
+      "winter": []
      },
      "schwelle_prozent": 30,
      "herkunft_schwelle": "laut Netzbetreiber",
@@ -36089,9 +36188,10 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:00-18:00"
+      ],
       "winter": [
-       "17:00-18:00",
        "09:15-14:15",
        "16:15-18:45"
       ]
@@ -38047,17 +38147,15 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": {
-    "status": "gelesen_kollege_verifiziert",
-    "quelle": "https://www.stadtwerke-jena-netze.de/dam/jcr:436aaecb-7277-4221-ac66-ed1e407fd71f/20251027_S_2026_Hochlastzeitfenster_Entnahmelastgang.pdf",
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB945861817537_0533_hlzf_2027.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
       "herbst": [
        "17:45-19:15"
       ],
       "winter": [
-       "11:00-13:30",
+       "11:30-13:00",
        "17:30-20:00"
       ]
      },
@@ -38067,14 +38165,9 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
-      "sommer": [],
-      "herbst": [
-       "17:30-19:15"
-      ],
       "winter": [
-       "11:30-12:45",
-       "17:15-20:00"
+       "11:30-12:30",
+       "17:30-20:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -39595,18 +39688,18 @@
     "gp_eur_jahr": 32.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB926470799582_0555_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB926470799582_hlzf_2025-10-28-hlzf-2026-sw-loebau.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [
-       "10:00-12:30"
+       "11:15-12:30"
       ],
       "winter": [
-       "08:00-13:00",
-       "17:15-18:30"
+       "08:00-12:30",
+       "17:00-18:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -39615,15 +39708,17 @@
     },
     "msns": {
      "zeitfenster": {
-      "fruehling": [],
+      "fruehling": [
+       "10:45-11:45"
+      ],
       "sommer": [],
       "herbst": [
-       "09:45-12:15",
-       "13:00-14:30"
+       "10:45-12:15"
       ],
       "winter": [
-       "07:45-12:15",
-       "17:15-18:30"
+       "07:30-12:30",
+       "13:45-15:00",
+       "17:00-18:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -42786,15 +42881,17 @@
     "gp_eur_jahr": 50.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB967490557615_0601_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB967490557615_hlzf_Individuelle_Netzentgelte_nach_19_StromNEV_-_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:30-19:45"
+      ],
       "winter": [
-       "17:45-18:00"
+       "17:15-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -42805,9 +42902,11 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "18:30-19:15"
+      ],
       "winter": [
-       "17:45-18:00"
+       "17:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -44544,13 +44643,18 @@
     "gp_eur_jahr": 40.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB953661539375_0624_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB953661539375_hlzf_HLZF_2026.pdf",
     "ns": null,
     "msns": {
      "zeitfenster": {
+      "herbst": [
+       "15:45-18:45"
+      ],
       "winter": [
-       "12:30-13:15"
+       "12:45-13:30",
+       "14:15-15:00",
+       "15:45-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -47696,17 +47800,16 @@
     "gp_eur_jahr": 67.21
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB926470603247_0665_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB926470603247_hlzf_SWI_HLZF_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
       "herbst": [
-       "17:15-18:30"
+       "17:15-18:45"
       ],
       "winter": [
-       "11:00-13:00",
        "17:15-19:45"
       ]
      },
@@ -47719,11 +47822,10 @@
       "fruehling": [],
       "sommer": [],
       "herbst": [
-       "16:30-19:30"
+       "17:00-18:45"
       ],
       "winter": [
-       "10:45-13:00",
-       "16:15-20:00"
+       "17:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -49041,16 +49143,19 @@
     "gp_eur_jahr": 96.0
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB921695080347_0685_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB921695080347_hlzf_Hochlastzeitfenster_2026.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:15-18:45"
+      ],
       "winter": [
-       "11:45-13:15",
-       "17:45-19:15"
+       "11:15-14:00",
+       "15:00-15:45",
+       "16:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -49061,10 +49166,13 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [],
+      "herbst": [
+       "17:15-18:45"
+      ],
       "winter": [
-       "11:45-13:15",
-       "17:45-19:15"
+       "11:15-14:00",
+       "15:00-15:45",
+       "16:15-19:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -58528,18 +58636,16 @@
     "gp_eur_jahr": 50.0
    },
    "hlzf": {
-    "status": "gelesen_kollege_verifiziert",
-    "quelle": "https://www.vbh-hoy.de/s/wp-content/uploads/sites/2/2026/10/Hochlastzeitfenster_VBH_Stromnetz_2026.pdf",
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB946612539746_hlzf_2027.pdf",
     "ns": {
      "zeitfenster": {
-      "fruehling": [
-       "11:15-12:45"
-      ],
+      "fruehling": [],
       "sommer": [],
       "herbst": [],
       "winter": [
-       "11:15-12:00",
-       "17:00-18:45"
+       "11:15-12:15",
+       "17:00-19:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -58550,12 +58656,10 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "17:00-18:15"
-      ],
+      "herbst": [],
       "winter": [
-       "10:30-12:30",
-       "16:15-19:00"
+       "08:15-12:45",
+       "16:45-19:15"
       ]
      },
      "schwelle_prozent": 30,
@@ -58870,18 +58974,15 @@
     "gp_eur_jahr": 65.7
    },
    "hlzf": {
-    "status": "gelesen_aus_2027",
-    "quelle": "eingang/2027_vorlaeufig/SNB977641826996_0816_hlzf_2027.pdf",
+    "status": "gelesen_kollege_verifiziert",
+    "quelle": "eingang/pdfs_neu/SNB977641826996_hlzf_hochlastzeitfenster_2026_plauen_netz.pdf",
     "ns": {
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "18:00-18:15",
-       "11:00-12:15"
-      ],
+      "herbst": [],
       "winter": [
-       "16:30-19:15"
+       "16:30-19:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -58892,14 +58993,9 @@
      "zeitfenster": {
       "fruehling": [],
       "sommer": [],
-      "herbst": [
-       "18:00-18:15",
-       "08:00-14:15",
-       "11:15-12:00"
-      ],
+      "herbst": [],
       "winter": [
-       "17:00-18:30",
-       "16:30-19:15"
+       "16:30-19:00"
       ]
      },
      "schwelle_prozent": 30,
