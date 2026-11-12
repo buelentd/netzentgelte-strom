@@ -238,3 +238,5 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB932516649124 EWR Rheine GmbH — Preisblatt Strom 2027 vorläufig (Nutzer-Upload)
 - SNB994111700501 Energienetze Bayern (Germering) — HLZF 2027 §19 (Nutzer-Upload)
 - Offen: hlzf_2027.pdf aus dem Wittmund/Rheine-Stapel nennt keinen Betreibernamen im Text — lokal dl_up/sonst/hlzf_2027_ungeordnet.pdf, Zuordnung bitte durch Nutzer bestaetigen.
+
+- SNB991797615686 Energieversorgung Lohr-Karlstadt und Umgebung GmbH & Co. KG (EVK) — HLZF 2027 §19 + Preisblatt Strom 2027 vorläufig, Stand 15.10.2026 (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
