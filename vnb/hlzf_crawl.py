@@ -114,10 +114,10 @@ def score(text: str, jahr: int = 2026) -> int:
     if MINUS.search(t):
         s -= 4
     jahre = set(re.findall(r"(?<!\d)(20[2-3]\d)(?!\d)", t))
-    if str(jahr) in jahre:
+    if str(jahr + 1) in jahre:
+        s += 7          # 2027 zuerst: 2027 gilt für 2026 und 2027 (Festlegung Nutzer 12.11.2026), 2026 nur wenn 2027 fehlt
+    elif str(jahr) in jahre:
         s += 5
-    elif str(jahr + 1) in jahre:
-        s += 3          # 2027 vorläufig ist auch gefragt
     elif jahre:
         s -= 4
     return s
@@ -238,7 +238,7 @@ class HlzfCrawler:
                     urls += re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", b2.decode("utf-8", "replace"))
         return [u for u in urls if score(u) >= 8][:25]
 
-    async def bearbeiten(self, mastr: str, name: str, website: str) -> Fund:
+    async def bearbeiten(self, mastr: str, name: str, website: str, extra: list | None = None) -> Fund:
         domain = website_domain(website)
         f = Fund(mastr, name, domain)
         starts = start_urls(website)
@@ -247,14 +247,14 @@ class HlzfCrawler:
             return f
         ctx = await self._kontext()
         try:
-            await self._crawl(ctx, f, starts)
+            await self._crawl(ctx, f, starts, extra or [])
         except Exception as e:
             f.hinweis = f"Fehler: {str(e).splitlines()[0][:100]}"
         finally:
             await ctx.close()
         return f
 
-    async def _crawl(self, ctx, f: Fund, starts: list[str]):
+    async def _crawl(self, ctx, f: Fund, starts: list[str], extra: list[str] = ()):
         zaehler = itertools.count()
         heap: list = []
         gesehen: set[str] = set()
@@ -271,6 +271,8 @@ class HlzfCrawler:
         for s in starts:
             seite_ein(s, 100, 0, "")
         basis = starts[0].rstrip("/")
+        for e in extra:      # Verzeichnis der schon bekannten Preisblatt-URL: dort liegt meist die Seite mit allen Veröffentlichungen (Lerneffekt Mittelrhein)
+            seite_ein(e, 150, 1, "Bekannte Quelle")
         for pfad in SEED_PFADE:
             seite_ein(basis + pfad, 30, 1, "Seed")
         for u in await self.sitemap_urls(basis):
@@ -482,7 +484,12 @@ async def main_async(args):
         if (args.nur and k not in args.nur) or k in args.ohne:
             continue
         w = (korr.get(k) or T.get(k, {}).get("website") or r.get("domain_ohne_www") or r.get("domain") or "").strip()
-        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w))
+        extra = []
+        for u in re.split(r"\s\|\s", T.get(k, {}).get("quelle_url", "")):
+            u = re.sub(r"^(RLM|SLP):\s*", "", u.strip())
+            if u.startswith("http") and "/" in u[8:]:
+                extra.append(u.rsplit("/", 1)[0] + "/")
+        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w, list(dict.fromkeys(extra))[:3]))
     if args.max:
         auftraege = auftraege[:args.max]
     drossel = Drossel(1.0)
