@@ -50,3 +50,7 @@ Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwal
 - Auftrag 7 (ablesen): 51 Zeilen in hlzf_auftrag7_gelesen.csv, 0 Fehler (Stand Commit 080a67e). Rest der ablesen-Liste teils Raster/defekte Dateien/only-old-years.
 - Aus den 170 Preisblaettern 2027: 37 mit HLZF-Abschnitt geprueft, 22 gelesen + 14 ohne Paragraph-19-Tabelle dokumentiert, 1 (SVS) bereits separat gelesen. hlzf_2027_gelesen.csv jetzt 105 Zeilen, 0 Fehler (Commit folgt).
 - Pruefen (5 Faelle): Stockach = Gegenbeleg (HLZF vorhanden, Zeile uebernommen); Unterneukirchen = bestaetigt (Preisblatt 2027 ohne HLZF, S.1-2); Eschwege, Straubing, Klingenberg = kein Dokument im Repo -> bleiben offen/suchen.
+
+- `ba0c591` (+5): KEW 2026, Oldenburg i.H. 2027, Luebbecke 2027, Hauenstein 2026, BEW 2027; Name SNB969708579983 = Stadtwerke Wallduern korrigiert. 76 Zeilen, 0 Fehler.
+- `90a640a` (+5): Radevormwald 2027 gelesen; Bielefelder Netz 2027 als 0/1-Raster dekodiert (NS W 13:00-14:00, 17:15-19:30; MS/NS W 17:15-19:45); Tauberfranken (Diagramm), QuartiersNetz (nur HS/MS 09:15-19:00), Hanau (nur Modul 3) dokumentiert. 81 Zeilen, 0 Fehler.
+- `1319f1f` (+19 dokumentiert): 10x Preisblatt 2027 ohne §19 (Unterwoessen, Uslar, Tirschenreuth, Roethenbach, Baiersdorf, enercity, Hameln, Fugger, GETEC x2), Perlesreut 2026 bild-only, Gundelfingen 2026 Raster, 8x Preisblatt 2026 ohne HLZF-Zeiten (Landshut, Alzchem, Weilheim, Olching, Fellbach, Elbe, Diessen). 100 Zeilen, 0 Fehler.
