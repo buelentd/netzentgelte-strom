@@ -231,3 +231,5 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 
 - SNB973074326355 ELE Verteilnetz GmbH (EVNG) — HLZF 2027 (§19, Jahr 2027 im Text; Betreiber aus Upload-Stapel, da das HLZF-PDF selbst keinen Namen nennt) + voraussichtliche Netzentgelte Strom ab 01.01.2027 (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
 - Vorige Uploads nicht im 2027-Scope abgelegt: Dessauer Stromversorgung HLZF-2026 (lokal dl_up/sonst) und Netznutzungsentgelte Gas 2027 (Gas — verworfen).
+
+- SNB985099151188 Elektrizitätswerk des Kantons Schaffhausen AG (EKS) — Netz Nutzung DE 2027 (Nutzer-Upload, inhaltsgeprueft: EKS Schaffhausen, Netznutzungsentgelte Strom, 2027). Automatisierter Abruf war 403-blockiert.
