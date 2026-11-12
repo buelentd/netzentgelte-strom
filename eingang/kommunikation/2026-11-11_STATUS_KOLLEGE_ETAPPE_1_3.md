@@ -207,3 +207,5 @@ Hinweis: Playwright/Chromium ist in meiner Sandbox nicht installiert — der Chr
 - Crawler laeuft ueber 508 offene MaStR-Nr. (bisher ~29 bearbeitet: 16 kein_treffer, 6 gefunden_2026, 3 nicht_erreichbar, 2 blockiert, 1 nur_aelter).
 - HTML-Tabellen-Funde: SNB953422913031 Gebrueder Eirich — Seite "Individuelle Netzentgelte" mit HLZF-Tabelle (28 Zeitfenster), Text nennt 2026 (2027 auf der Seite nicht gefunden) -> Kandidat fuer 2026-Fallback, 2027 offen.
 - Manuelle Nachpruefung (Browser durch dich): 2026-11-12_BLOCKIERT_MANUELL_PRUEFEN.csv — 92 Faelle: 49 nicht_erreichbar, 40 blockiert (403), 2 robots_dokument_bekannt, 1 anfrage. Nichts wird umgangen; Direktadressen in der Spalte hinweis/dokument_url.
+
+- SNB926699071292 Albwerk GmbH & Co. KG — Preisblatt Netzentgelte 2027 vorläufig (Nutzer-URL, robots ok, 200, inhaltsgeprueft: vorläufige Preise gültig ab 01.01.2027). Ebenfalls geliefert: Individuelle-Netentgelte-2026-N031.pdf (HLZF 2026, lokal in dl_up, 2027-HLZF fuer Albwerk nicht geliefert).
