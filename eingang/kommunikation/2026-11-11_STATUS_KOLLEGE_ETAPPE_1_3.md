@@ -246,3 +246,7 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB940297211072 EZV Energie- und Service GmbH & Co. KG Untermain — NNE-Preisblatt ab 01.01.2027 vorläufig + HLZF 2027 §19 (Nutzer-Uploads, inhaltsgeprueft). Zweites HLZF-PDF (andere md5) lokal dl_up/sonst.
 - SNB923953358557 EWR Netze GmbH (Lichtenstein-Unterhausen) — Netzentgelte ab 01.01.2027 vorläufig, Stand 13.10.2026 (Nutzer-Upload; Betreiber aus Text "EWR Netze GmbH").
 - Langenpreising-Uploads (2026) lokal dl_up/sonst, nicht im 2027-Scope.
+
+## HLZF 2027 gelesen (Kollege) — erste 7 Zeilen in ergebnis/hlzf/hlzf_2027_gelesen.csv
+
+Gelesen aus den 2027-Dokumenten in eingang/2027_vorlaeufig/ (Text+Bild, Bild entscheidet): SNB911696239035 ESM Selb-Marktredwitz (nur MS), SNB913130054136 NGS Schwerin, SNB911521002599 EnergieSuedwest Netz Landau, SNB913576376151 EV Alzenau, SNB915186313908 EV Guben, SNB914879260819 SW Wernigerode, SNB910474681448 SW Stassfurt (nur MS, 1/4-h-Raster). jahr=2027, vorlaeufig in bemerkung. Neustrelitz (SNB914630088973) entpuppte sich als 2026-Dokument -> nicht in 2027 uebernommen. Weitere 84 offene Dokumente folgen.
