@@ -218,3 +218,5 @@ Daraus inhaltsgeprueft und abgelegt: 13 HLZF-2027 (Commit 593a3a6) + 26 weitere 
 
 Gesamtbestand eingang/2027_vorlaeufig/: siehe Dateiliste auf dem Branch.
 Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIERT_40_TABELLE.md (40 Faelle) bzw. ..._MANUELL_PRUEFEN.csv (92 Faelle inkl. nicht_erreichbar/robots/anfrage).
+
+- SNB918620072652 ASCANETZ GmbH — HLZF 2027 (HLFZ-asc27.pdf) + Preisblatt NNE Strom 2027 vorläufig (Nutzer-URLs, robots ok, inhaltsgeprueft).
