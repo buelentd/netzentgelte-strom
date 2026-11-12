@@ -142,9 +142,11 @@ def inhalt_pruefen(text: str) -> dict:
     raster = bool(re.search(r"viertelstund|1/4|0/1", text, re.I))
     ok = hl and ((zeiten >= 3 and jz >= 2) or (raster and zeiten >= 8))
     # Modul-3-Tarifzeiten (§ 14a EnWG, HT/NT) sind keine Hochlastzeitfenster nach § 19 StromNEV (EWR Remscheid)
-    if ok and MODUL3.search(text) and not PARA19.search(text):
+    tarif = False
+    if MODUL3.search(text) and not PARA19.search(text) and zeiten >= 3 and re.search(r"hochlast|hochtarif|niedriglast|standardlast|hlzf", text, re.I):
+        tarif = True   # zweite Art: Tarifstufen-Zeiten (HT/NT/ST), getrennt vom § 19 führen
         ok = False
-    return {"ok": ok, "jahr": jahr, "anfrage": bool(hl and ANFRAGE.search(text)), "zeiten": zeiten, "jz": jz}
+    return {"ok": ok, "jahr": jahr, "anfrage": bool(hl and ANFRAGE.search(text)), "zeiten": zeiten, "jz": jz, "tarifzeiten": tarif}
 
 
 def datei_text(pfad: Path) -> str:
@@ -171,6 +173,7 @@ class Fund:
         self.mastr, self.name, self.domain = mastr, name, domain
         self.status, self.seiten, self.jahr, self.url, self.quelle, self.datei, self.hinweis = "kein_treffer", 0, "", "", "", "", ""
         self.alle: list[tuple[str, str, str]] = []   # (jahr, url, datei)
+        self.tarif: list[str] = []                   # Dokumente mit Tarifstufen-Zeiten (HT/NT), getrennt von § 19
 
     def zeile(self):
         return [self.mastr, self.name, self.domain, self.status, self.jahr, self.url, self.quelle, self.datei, self.seiten, self.hinweis,
@@ -366,6 +369,8 @@ class HlzfCrawler:
             f.status = "robots"
         elif erreicht == 0:
             f.status = "nicht_erreichbar"
+        if f.tarif:
+            f.hinweis = (f.hinweis + "; " if f.hinweis else "") + "Tarifzeiten (HT/NT, Modul 3): " + " | ".join(f.tarif[:3])
         best = sorted(f.alle, key=lambda x: (x[0] != "2026", x[0] != "2027", x[1]))
         if best:
             f.jahr, f.url, f.datei = best[0]
@@ -419,6 +424,8 @@ class HlzfCrawler:
             text = await asyncio.to_thread(datei_text, tmp)
             # Name der Datei hilft bei Bild-PDFs ohne Text nicht; nur Textdateien prüfen
             pr = inhalt_pruefen(text)
+            if pr.get("tarifzeiten") and not pr["ok"]:
+                f.tarif.append(url)        # Tarifstufen-Zeiten (HT/NT, Modul 3): eigene Art, nicht § 19
             if pr["ok"]:
                 ZIEL_DOKUMENTE.mkdir(parents=True, exist_ok=True)
                 name = re.sub(r"[^A-Za-z0-9._-]+", "_", unquote(Path(urlparse(url).path).name))[:80] or "dokument" + ext
