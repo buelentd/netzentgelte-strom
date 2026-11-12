@@ -1,7 +1,7 @@
 # Auftrag 5: Modul 3 (HT/ST/NT-Zeiten) für die offenen Netzbetreiber
 
 Liste: `ergebnis/modul3_offen.csv` (MaStR-Nr. zuerst, mit Ausschnitt aus dem Preisblatt-Text). Davon sind rund 430 mit Uhrzeiten im Text, bei denen der Maschinenleser die Zuordnung zu HT/ST/NT nicht eindeutig fand.
-Bearbeitet sind bereits die Zeilen in `ergebnis/modul3_manuell.csv`; diese nicht noch einmal anfassen.
+Genaue Anleitung: `ergebnis/modul3_ANLEITUNG_KOLLEGE.md`. Bearbeitet sind bereits die Zeilen in `ergebnis/modul3_manuell.csv`; diese nicht noch einmal anfassen.
 
 Regeln (wie bei den Hochlastzeitfenstern):
 1. Jede Zeit am Dokument prüfen (Text und Bild). Die Zeit steht oft über oder unter dem Tarifnamen, weil die Zelle mittig ausgerichtet ist.
