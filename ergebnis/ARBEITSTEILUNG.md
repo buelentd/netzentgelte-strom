@@ -15,7 +15,8 @@ Austausch nur über das Git: Aufträge und Antworten in `eingang/kommunikation/`
 | 6 | Modul 3: Preise HT/ST/NT zu den Zeiten | **Claude** | Preisblatt-Texte | `ergebnis/modul3_zeiten.csv` | Zweitleser, Widerspruch = leer | 132 von 200 maschinell |
 | 7 | HLZF 2026/2027 lesen (maschinell, Leser `vnb/hlzf.py`) und zusammenführen | **Claude** | Dokumente in `eingang/` | `lauf/hlzf_zusammen.csv` über `bash daten/hlzf_kette.sh` | Tests, Konfliktliste | 568 von 831 |
 | 8 | Lieferungen des Kollegen prüfen und übernehmen | **Claude** | sein Branch | `main`, Rückmeldung in `eingang/kommunikation/` | am Dokumenttext gegengeprüft | laufend |
-| 9 | Netzentgelte 2027 (Preise vorläufig) einlesen | **Claude** | `eingang/2027_vorlaeufig/*_preis_2027.pdf` (150) | `preise_2027_vorlaeufig` im Export | wie 2026 (Plausibilität) | 32 von 831 |
+| 9 | Netzentgelte 2027 (Preise vorläufig) einlesen | **Claude** | `eingang/2027_vorlaeufig/*_preis_2027.pdf` | `preise_2027_vorlaeufig` im Export | wie 2026 (Plausibilität, Vorjahresvergleich) | 144 von 831 gelesen |
+| 9b | **Preisblatt 2027 holen für 571 ohne Blatt** | **Nutzer** im Browser | Auftrag 8, `ergebnis/browser_preise_2027_571.csv` | PDFs `…_preis_2027.pdf` in `eingang/2027_vorlaeufig/` | Claude liest ein | neu |
 | 10 | Export für Conplot: `ergebnis/conplot/*.json`, `FORMAT.md` | **Claude** | Tabellen aus 6–9 | JSON je Netzbetreiber, PLZ, Umlagen | Tests | fertig, wächst mit |
 | 11 | Importformat von Conplot erfragen (`scripts/netzentgelte_import.py`, Beispiel aus `data_quellen/netzentgelte_2026/`) | **Nutzer** (Weitergabe an Conplot) | Anfragetext liegt vor | Dateien in `eingang/kommunikation/` | Claude passt den Export an | offen |
 | 12 | Entscheidungen: Sichtbarkeit des Repos (öffentlich vs. nur Partner), Marktdaten-Rechte | **Nutzer** | | Antwort im Chat | | offen |
