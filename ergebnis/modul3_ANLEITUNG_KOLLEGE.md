@@ -1,12 +1,12 @@
 # Anleitung: Modul 3 (HT/ST/NT) für die offenen Netzbetreiber lesen
 
-Ziel: zu jedem Netzbetreiber in `ergebnis/modul3_offen.csv` die Zeiten für Hochtarif (HT), Standardtarif (ST) und Niedertarif (NT) ablesen. Das sind die § 14a-Zeiten (Modul 3), nicht die Hochlastzeitfenster nach § 19.
+Ziel: zu jedem Netzbetreiber in `ergebnis/modul3_offen_kollege.csv` die Zeiten für Hochtarif (HT), Standardtarif (ST) und Niedertarif (NT) ablesen. Das sind die § 14a-Zeiten (Modul 3), nicht die Hochlastzeitfenster nach § 19.
 
 ## 1. Vorbereiten
 ```bash
 git pull origin main
 ```
-Arbeitsliste: `ergebnis/modul3_offen.csv` (MaStR-Nr. zuerst, Name, Quelle, Textausschnitt). Schon erledigte stehen in `ergebnis/modul3_manuell.csv`; diese überspringen.
+Arbeitsliste: `ergebnis/modul3_offen_kollege.csv` (MaStR-Nr. zuerst, Name, Quelle, Textausschnitt). Schon erledigte stehen in `ergebnis/modul3_manuell.csv`; diese überspringen.
 
 ## 2. Einen Fall ansehen
 Kompakte Ausschnitte der offenen Fälle, 12 auf einmal:

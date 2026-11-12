@@ -1,6 +1,6 @@
 # Auftrag 5: Modul 3 (HT/ST/NT-Zeiten) für die offenen Netzbetreiber
 
-Liste: `ergebnis/modul3_offen.csv` (MaStR-Nr. zuerst, mit Ausschnitt aus dem Preisblatt-Text). Davon sind rund 430 mit Uhrzeiten im Text, bei denen der Maschinenleser die Zuordnung zu HT/ST/NT nicht eindeutig fand.
+Liste: `ergebnis/modul3_offen_kollege.csv` (deine Hälfte, nach MaStR-Nr. sortiert; die andere Hälfte macht Claude) (MaStR-Nr. zuerst, mit Ausschnitt aus dem Preisblatt-Text). Davon sind rund 430 mit Uhrzeiten im Text, bei denen der Maschinenleser die Zuordnung zu HT/ST/NT nicht eindeutig fand.
 Genaue Anleitung: `ergebnis/modul3_ANLEITUNG_KOLLEGE.md`. Bearbeitet sind bereits die Zeilen in `ergebnis/modul3_manuell.csv`; diese nicht noch einmal anfassen.
 
 Regeln (wie bei den Hochlastzeitfenstern):
