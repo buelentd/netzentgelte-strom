@@ -173,6 +173,7 @@ class Fund:
         self.mastr, self.name, self.domain = mastr, name, domain
         self.status, self.seiten, self.jahr, self.url, self.quelle, self.datei, self.hinweis = "kein_treffer", 0, "", "", "", "", ""
         self.alle: list[tuple[str, str, str]] = []   # (jahr, url, datei)
+        self.robots_docs: list[str] = []             # Dokumentlinks mit HLZF-Hinweis, die robots.txt für Crawler sperrt (Adresse für den Browser)
         self.tarif: list[str] = []                   # Dokumente mit Tarifstufen-Zeiten (HT/NT), getrennt von § 19
 
     def zeile(self):
@@ -369,6 +370,10 @@ class HlzfCrawler:
             f.status = "robots"
         elif erreicht == 0:
             f.status = "nicht_erreichbar"
+        if f.robots_docs:
+            f.hinweis = (f.hinweis + "; " if f.hinweis else "") + "robots.txt sperrt Dokument, im Browser holen: " + " | ".join(f.robots_docs[:4])
+            if not f.alle:
+                f.status = "robots_dokument_bekannt"
         if f.tarif:
             f.hinweis = (f.hinweis + "; " if f.hinweis else "") + "Tarifzeiten (HT/NT, Modul 3): " + " | ".join(f.tarif[:3])
         best = sorted(f.alle, key=lambda x: (x[0] != "2026", x[0] != "2027", x[1]))
@@ -405,6 +410,8 @@ class HlzfCrawler:
     async def _dokument(self, f: Fund, url: str, ref: str, n: int, s: int = 0) -> int:
         fehler, body = await self._laden(url, ref if ref.startswith("http") else "")
         n += 1
+        if fehler == "robots" and url not in f.robots_docs:
+            f.robots_docs.append(url)
         if DEBUG:
             print("  Dok", url[:110], fehler or len(body))
         if fehler:
