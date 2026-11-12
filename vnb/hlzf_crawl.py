@@ -52,6 +52,24 @@ PLUS = [("hochlast", 10), ("hlzf", 10), ("atypisch", 6), ("individuelle netzentg
 MINUS = re.compile(r"\bgas\b|waerme|wasser|einspeis|datenschutz|impressum|karriere|kontakt|presse|newsletter|ladestation|"
                    r"wallbox|pv-anlage|solar|tarif", re.I)
 DOK_HINWEIS = re.compile(r"hochlast|hlzf|atypisch|19[ _.-]*abs|stromnev|individuell|zeitfenster|sonderform|hlz[ _-]", re.I)
+# Häufige Einstiegspfade deutscher Netzbetreiber (werden nur abgerufen, wenn robots.txt es erlaubt; 404 kostet nur eine Anfrage)
+SEED_PFADE = ["/netznutzung", "/netznutzung/strom", "/veroeffentlichungspflichten", "/veroeffentlichungen", "/pflichtangaben",
+              "/netzentgelte", "/netzdaten", "/downloads", "/stromnetz", "/strom/netz", "/netz/strom", "/netz/veroeffentlichungen"]
+# Bereiche, die nie HLZF enthalten: nicht crawlen (Zeit sparen)
+HART_IGNORIEREN = re.compile(r"/(karriere|jobs?|stellen|presse|news|aktuelles|neuigkeiten|veranstaltung\w*|baeder|bad|freibad|schwimmbad|"
+                             r"glasfaser|wasser|trinkwasser|gas|erdgas|waerme|fernwaerme|impressum|datenschutz|shop|kundenportal|"
+                             r"ladestation\w*|e-mobilitaet|photovoltaik|ausbildung|unternehmen/geschichte)(/|$|-|\\.)", re.I)
+
+
+def verwandte_domain(href: str, start_domain: str) -> bool:
+    """Zielhost ist dieselbe Basisdomain oder eine Netz-Schwesterdomain mit demselben Namensstamm (stadtwerke-x.de → netze-x.de, netz.stadtwerke-x.de)."""
+    h = urlparse(href).netloc.lower().split(":")[0].removeprefix("www.")
+    if basis_domain(h) == basis_domain(start_domain):
+        return True
+    stamm = [t for t in re.split(r"[.\-]", basis_domain(start_domain).rsplit(".", 1)[0]) if len(t) >= 5 and t not in ("stadtwerke", "gemeindewerke", "energie", "netze", "netz")]
+    return bool(re.search(r"netz|infrastruktur|energienetze", h)) and any(t in h for t in stamm)
+
+
 HOCHLAST = re.compile(r"hochlast", re.I)
 UHRZEIT = re.compile(r"(?<!\d)([01]?\d|2[0-3])[:.][0-5]\d(?!\d)")
 JAHRESZEIT = re.compile(r"fr[üu]hling|fr[üu]hjahr|sommer|herbst|winter", re.I)
@@ -225,13 +243,15 @@ class HlzfCrawler:
 
         def seite_ein(url, prio, tiefe, ref):
             u = url.split("#")[0]
-            if u in gesehen or IGNORIEREN.search(u) or ist_dokument(u):
+            if u in gesehen or IGNORIEREN.search(u) or ist_dokument(u) or HART_IGNORIEREN.search(urlparse(u).path):
                 return
             heapq.heappush(heap, (-prio, next(zaehler), u, tiefe, ref))
 
         for s in starts:
             seite_ein(s, 100, 0, "")
         basis = starts[0].rstrip("/")
+        for pfad in SEED_PFADE:
+            seite_ein(basis + pfad, 30, 1, "Seed")
         for u in await self.sitemap_urls(basis):
             if ist_dokument(u) and DOK_HINWEIS.search(norm(unquote(u))):
                 dok_gesehen.add(u)
@@ -296,7 +316,7 @@ class HlzfCrawler:
                     geprueft_docs = await self._dokument(f, href, url, geprueft_docs, s)
                     if geprueft_docs >= MAX_DOKUMENTE:
                         break
-                elif tiefe < MAX_TIEFE and s >= 1 and basis_domain(href) == basis_domain(url):
+                elif tiefe < MAX_TIEFE and s >= 1 and verwandte_domain(href, url):
                     seite_ein(href, s, tiefe + 1, url)
             if not suche_getan and tiefe == 0:
                 suche_getan = True
