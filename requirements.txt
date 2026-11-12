@@ -9,3 +9,6 @@ pandas>=2.0
 reportlab>=4.0   # nur für die Tests
 pytest>=8.0      # nur für die Tests
 holidays>=0.50   # Feiertage je Bundesland für die HLZF-Zeitreihe (daten/hlzf_zeitreihe.py)
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27   # nur für die API-Tests

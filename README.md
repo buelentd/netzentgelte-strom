@@ -246,3 +246,13 @@ Fallen und die Drosselung.
 ## Nebenkosten für Solaranlagen und Speicher
 
 Gerüst, Zählerschrank, Netzanschluss, Fundament, Brandschutz u. a.: `daten/nebenkosten_anlagen.md` (Stand 03.11.2026, mit Quellen und Güte; offene Posten sind als „offen“ gekennzeichnet, nicht geschätzt). Noch nicht in der Rechnung.
+
+## REST-API (v1)
+
+```bash
+pip install -r requirements.txt
+uvicorn api.main:app --port 8000      # Doku: http://localhost:8000/docs
+```
+Endpunkte unter `/api/v1`: `health`, `netzbetreiber` (Suche per Name oder PLZ), `netzbetreiber/{mastr_nr}`, `netzentgelte/{mastr_nr}`, `plz/{plz}` (Netzbetreiber + Konzessionsabgabe),
+`hlzf/{mastr_nr}`, `hlzf/{mastr_nr}/zeitreihe` (Viertelstunden-Vektor), `modul3/{mastr_nr}`, `umlagen`, `POST berechnung/netzentgelt`.
+Schlüssel ist die MaStR-Nr. Zugriffsschutz optional: `NETZENTGELTE_API_KEY` setzen, dann Header `X-API-Key`. Daten aus `ergebnis/conplot/` (neu erzeugen mit `python daten/conplot_export.py`).
