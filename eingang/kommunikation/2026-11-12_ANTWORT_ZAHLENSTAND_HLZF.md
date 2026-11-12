@@ -5,3 +5,6 @@
 3. **Offen sind 91** (`lauf/hlzf_2027_offen.csv`, mit Grund je Datei). Bitte am Dokument ablesen, mit den Regeln aus der Rückmeldung zu Etappe 1/2 (Text und Bild vergleichen, Spaltenreihenfolge aus der Kopfzeile, alle Fenster einer Ebene, `keins` nur wenn das Dokument "entfällt" sagt). Ergebnis im Format von `lauf/hlzf_kollege_verifiziert.csv`.
 4. **Reihenfolge der Regel (12.11.):** 2027 zuerst, 2026 nur wenn 2027 fehlt. Ein 2027-Fund gilt für 2026 und 2027. Eine eigene 2027-Tabelle ist für die Hochlastzeitfenster nicht nötig; Preise 2027 (`*_preis_2027.pdf`) bleiben getrennt.
 5. **Modul 3:** neue Auftragsdatei `eingang/kommunikation/2026-11-12_AUFTRAG_5_MODUL3.md` mit Anleitung `ergebnis/modul3_ANLEITUNG_KOLLEGE.md`.
+
+## Berichtigung (12.11.2026, später)
+Die "566 von 831" stammen aus `STAND.md` (31.10.) und zählen Netzbetreiber mit **nutzbaren Preisen**, nicht mit Hochlastzeitfenstern. Die Übereinstimmung mit unseren 568 HLZF ist Zufall. Maßgeblich für HLZF: `lauf/hlzf_zusammen.csv` (568 von 831 mit Status gelesen_… , Stand `bash daten/hlzf_kette.sh`). Bitte in deinen Meldungen die Zahl "HLZF" nur aus dieser Datei nehmen.
