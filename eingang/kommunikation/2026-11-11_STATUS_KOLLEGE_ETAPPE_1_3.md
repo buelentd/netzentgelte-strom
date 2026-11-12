@@ -233,3 +233,8 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - Vorige Uploads nicht im 2027-Scope abgelegt: Dessauer Stromversorgung HLZF-2026 (lokal dl_up/sonst) und Netznutzungsentgelte Gas 2027 (Gas — verworfen).
 
 - SNB985099151188 Elektrizitätswerk des Kantons Schaffhausen AG (EKS) — Netz Nutzung DE 2027 (Nutzer-Upload, inhaltsgeprueft: EKS Schaffhausen, Netznutzungsentgelte Strom, 2027). Automatisierter Abruf war 403-blockiert.
+
+- SNB914735995145 Energiegenossenschaft für Wittmund eG — Preisblatt Strom 2027 vorläufig (Nutzer-Upload)
+- SNB932516649124 EWR Rheine GmbH — Preisblatt Strom 2027 vorläufig (Nutzer-Upload)
+- SNB994111700501 Energienetze Bayern (Germering) — HLZF 2027 §19 (Nutzer-Upload)
+- Offen: hlzf_2027.pdf aus dem Wittmund/Rheine-Stapel nennt keinen Betreibernamen im Text — lokal dl_up/sonst/hlzf_2027_ungeordnet.pdf, Zuordnung bitte durch Nutzer bestaetigen.
