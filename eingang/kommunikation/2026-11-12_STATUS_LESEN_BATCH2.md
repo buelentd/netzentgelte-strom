@@ -42,3 +42,18 @@ Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwal
 
 ## Offen gesamt
 91 Dokumente in lauf/hlzf_2027_offen.csv; 48 jetzt gelesen -> Rest ca. 43 (davon etliche Raster/Diagramme).
+
+- SNB917593691679 (EW Unterwössen): Datei im Repo ist nginx-500-Fehlerseite, kein Dokument -> manuell holen.
+- Defekt/leer: Uslar (404), Weilheim (JS-Gate), Simbach (Raster 2026), Spremberg (Bild-only), EV Schmid (Preisblatt ohne Paragraph 19), Alzchem/Bad Harzburg/Hengersberg (nur aeltere Jahre im Repo).
+- Korrektur nach Regel: SWTE, Waging a. See, SW Luenen, Teterow (2026-Dokumente) gelesen und eingetragen (jahr=2026); UWR Roen (2025) bleibt unbrauchbar.
+- Stand: hlzf_2027_gelesen.csv 69 Zeilen, hlzf_auftrag7_gelesen.csv 30 Zeilen, beide 0 Fehler.
+- Auftrag 7 (ablesen): 51 Zeilen in hlzf_auftrag7_gelesen.csv, 0 Fehler (Stand Commit 080a67e). Rest der ablesen-Liste teils Raster/defekte Dateien/only-old-years.
+- Aus den 170 Preisblaettern 2027: 37 mit HLZF-Abschnitt geprueft, 22 gelesen + 14 ohne Paragraph-19-Tabelle dokumentiert, 1 (SVS) bereits separat gelesen. hlzf_2027_gelesen.csv jetzt 105 Zeilen, 0 Fehler (Commit folgt).
+- Pruefen (5 Faelle): Stockach = Gegenbeleg (HLZF vorhanden, Zeile uebernommen); Unterneukirchen = bestaetigt (Preisblatt 2027 ohne HLZF, S.1-2); Eschwege, Straubing, Klingenberg = kein Dokument im Repo -> bleiben offen/suchen.
+
+- `ba0c591` (+5): KEW 2026, Oldenburg i.H. 2027, Luebbecke 2027, Hauenstein 2026, BEW 2027; Name SNB969708579983 = Stadtwerke Wallduern korrigiert. 76 Zeilen, 0 Fehler.
+- `90a640a` (+5): Radevormwald 2027 gelesen; Bielefelder Netz 2027 als 0/1-Raster dekodiert (NS W 13:00-14:00, 17:15-19:30; MS/NS W 17:15-19:45); Tauberfranken (Diagramm), QuartiersNetz (nur HS/MS 09:15-19:00), Hanau (nur Modul 3) dokumentiert. 81 Zeilen, 0 Fehler.
+- `1319f1f` (+19 dokumentiert): 10x Preisblatt 2027 ohne §19 (Unterwoessen, Uslar, Tirschenreuth, Roethenbach, Baiersdorf, enercity, Hameln, Fugger, GETEC x2), Perlesreut 2026 bild-only, Gundelfingen 2026 Raster, 8x Preisblatt 2026 ohne HLZF-Zeiten (Landshut, Alzchem, Weilheim, Olching, Fellbach, Elbe, Diessen). 100 Zeilen, 0 Fehler.
+- `NEXT` (+5): Harz Energie 2026 (NS/MSNS je W 16:30-19:30 aus HTML), Senftenberg 2026 xlsx (NS/MSNS W 08:45-13:15, 18:00-20:00; MS/NS-Fruehling "19:00 Uhr" unklar), RheinNetz 2027, Dinkelsbuehl 2026 (nur Modul 3), Leine-Solling 2026 (kein HLZF). 105 Zeilen, 0 Fehler.
+- Nur <=2025-Dokumente im Repo (keine Zeile moeglich, unbrauchbar): Bad Harzburg, Torgau, Wildeck, Bad Wildbad, Muenchberg, Neu-Isenburg, Heilsbronn, Gebr. Miller (2020), Schierling (2024), Rohrdorf (Leitfaden 2011), Schoenkirchen (2025), Oberwoessen (2022), Neuendettelsau (2022), GETEC net (Werksnetz-xlsx je Kostenstelle, <=2025, Sonderfall). enercity GridPartner: xls nur HT-Zeiten ohne Jahr. Windsbach: hlzf.pdf ist eine 404-Fehlerseite.
+- Audit nach Regel "2026 hat Vorrang, 2027 nur wenn kein 2026": 61 Zeilen (beide CSVs) von 2027- auf 2026-Dokumente umgestellt, Werte neu gelesen (Text+Bild), Belege aktualisiert. Verbleibende jahr=2027 trotz 2026-Datei: Bielefelder Netz (Datei mit 2026-10-29 im Namen enthaelt Raster-Inhalt 2027) und Hauenstein (2027-Zeile = Preisblatt-Dokumentation; HLZF 2026 in auftrag7-Datei). Formatfix: werkkraft (18->17 Felder), Halberstadtwerke (16->17, quelle_art ergaenzt). Beides 105 Zeilen, 0 Fehler.
