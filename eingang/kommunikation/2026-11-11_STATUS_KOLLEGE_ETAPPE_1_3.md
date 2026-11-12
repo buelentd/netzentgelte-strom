@@ -209,3 +209,12 @@ Hinweis: Playwright/Chromium ist in meiner Sandbox nicht installiert — der Chr
 - Manuelle Nachpruefung (Browser durch dich): 2026-11-12_BLOCKIERT_MANUELL_PRUEFEN.csv — 92 Faelle: 49 nicht_erreichbar, 40 blockiert (403), 2 robots_dokument_bekannt, 1 anfrage. Nichts wird umgangen; Direktadressen in der Spalte hinweis/dokument_url.
 
 - SNB926699071292 Albwerk GmbH & Co. KG — Preisblatt Netzentgelte 2027 vorläufig (Nutzer-URL, robots ok, 200, inhaltsgeprueft: vorläufige Preise gültig ab 01.01.2027). Ebenfalls geliefert: Individuelle-Netentgelte-2026-N031.pdf (HLZF 2026, lokal in dl_up, 2027-HLZF fuer Albwerk nicht geliefert).
+
+## 2027-vorläufig — Crawler-Stand 12.11. (vnb/hlzf_crawl, main 94888e8, Chromium headless)
+
+Crawler-Lauf ueber 508 offene MaStR-Nr. nahezu abgeschlossen (503 bearbeitet): 218 kein_treffer, 111 nicht_erreichbar, 115 blockiert (403 — dokumentiert, nicht umgangen), 38 gefunden_2026, 5 nur_2027, 9 nur_aelter, 2 robots_dokument_bekannt, 2 zeitlimit, 1 anfrage, 1 keine_website, 1 robots. 285 PDFs geladen.
+
+Daraus inhaltsgeprueft und abgelegt: 13 HLZF-2027 (Commit 593a3a6) + 26 weitere Dokumente (Commit 0532875: 18 Preisblaetter 2027 + 8 HLZF-2027, u. a. SW Bad Duerkheim, SW Elbtal, Netz+Service, Queichtal Offenbach, Reussenkoege, SW Lambrecht, SW Bad Hersfeld, SV Angermuende, SVH Haar, SW Bad Pyrmont; Preisblaetter u. a. TWL, TWS, Warendorf, Pfaffenhofen, LeineNetz, Herrenberg …) + Albwerk Preisblatt 2027 (Nutzer-URL, 01dd277).
+
+Gesamtbestand eingang/2027_vorlaeufig/: siehe Dateiliste auf dem Branch.
+Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIERT_40_TABELLE.md (40 Faelle) bzw. ..._MANUELL_PRUEFEN.csv (92 Faelle inkl. nicht_erreichbar/robots/anfrage).
