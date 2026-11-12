@@ -220,3 +220,5 @@ Gesamtbestand eingang/2027_vorlaeufig/: siehe Dateiliste auf dem Branch.
 Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIERT_40_TABELLE.md (40 Faelle) bzw. ..._MANUELL_PRUEFEN.csv (92 Faelle inkl. nicht_erreichbar/robots/anfrage).
 
 - SNB918620072652 ASCANETZ GmbH — HLZF 2027 (HLFZ-asc27.pdf) + Preisblatt NNE Strom 2027 vorläufig (Nutzer-URLs, robots ok, inhaltsgeprueft).
+
+- SNB973356062049 Bad Honnef AG — Preisblatt Stromnetzentgelte 2027 vorläufig (Nutzer-Upload, inhaltsgeprueft: gültig ab 01.01.2027, Stand 15.10.2026). Ebenfalls geliefert: Hochlastzeiten-BHAG-2026.pdf (HLZF 2026, lokal in dl_up/bhag, 2027-HLZF nicht geliefert).
