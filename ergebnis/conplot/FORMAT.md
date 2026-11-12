@@ -116,8 +116,31 @@ Ersparnis ≥ 500 € pro Jahr (Bagatellgrenze)
 
 Ein Speicher darf dabei **nur außerhalb** der Zeitfenster nachladen, sonst steigt die Leistung im Zeitfenster.
 
-## Stand
+## Stand 12.11.2026 (neu erzeugt aus der aktuellen Tabelle mit `PYTHONPATH=. python daten/conplot_export.py`)
 
-Netzentgelte: 492 Netzbetreiber mit Werten für Kunden mit Leistungsmessung in der Niederspannung, 449 mit
-Werten ohne Leistungsmessung. Hochlastzeitfenster: 125 Netzbetreiber (112 mit Niederspannung). Die übrigen
-werden ergänzt.
+**Schlüssel ist die MaStR-Nummer** (`mastr_nr`, SNB…), nicht `nr`. Die PLZ-Datei verweist auf `mastr_nr`:
+`"08393": [{"mastr_nr": "SNB…", "anteil_prozent": 78.4}]`.
+
+| | Anzahl von 831 |
+|---|---|
+| RLM Niederspannung (Jahresleistungspreise) | 781 |
+| SLP (Arbeitspreis, Grundpreis) | 778 |
+| **Hochlastzeitfenster** (nur geprüft: `hlzf.status` gelesen_nutzer, gelesen_unser, gelesen_kollege_verifiziert, gelesen_aus_2027) | **555** |
+| **Modul 3** (zeitvariable Netzentgelte nach § 14a, `modul3`) | 25 (wird ergänzt) |
+| **Netzentgelte 2027 vorläufig** (`preise_2027_vorlaeufig`, gleiche Struktur wie `rlm`/`slp`) | 32 (wird ergänzt) |
+
+### Neue Felder
+- `hlzf.status`: Herkunft. `gelesen_aus_2027` heißt: Das Dokument gilt für 2027 und wird für 2026 und 2027 genutzt (Festlegung).
+  Die Zeitfenster gelten **nur an Werktagen**, die Uhrzeiten sind laut Dokument von–bis.
+- `hlzf.ns` und `hlzf.msns`: Fehlt eine Jahreszeit in `zeitfenster`, nennt das Dokument sie nicht. Leere Liste = "keins".
+  `herkunft_schwelle` ist `laut Netzbetreiber` oder `Standard (fachlich zu bestätigen)` (30 % für NS und MS/NS).
+- `modul3`: Liste je Jahr. `hochtarif`, `standardtarif`, `niedertarif` mit `zeiten` (Text, mehrere Fenster) und `ct_kwh` (netto), `quartale`
+  (in welchen Quartalen gilt Modul 3, zum Beispiel `Q1+Q4`), `preisstand`, `quelle`, `hinweis`. **Modul 3 gibt es nur zusammen mit Modul 1 und einem
+  intelligenten Messsystem, nicht für RLM-Kunden.** Preise stehen netto im Preisblatt, die Zeiten gelten täglich (Mo–So), nicht nur Werktage.
+- `preise_2027_vorlaeufig`: vorläufige Netzentgelte 2027, wo das Preisblatt gelesen ist.
+
+### Hinweis zu den Zeitfenstern (zwei Arten, nicht verwechseln)
+1. **Hochlastzeitfenster nach § 19 Abs. 2 StromNEV:** für die atypische Netznutzung (Peak Shaving mit individuellem Netzentgelt).
+2. **Modul 3 (§ 14a EnWG):** zeitvariabler Arbeitspreis. Das ist keine atypische Netznutzung.
+
+Die übrigen Netzbetreiber werden ergänzt.
