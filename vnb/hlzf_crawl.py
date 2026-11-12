@@ -375,7 +375,7 @@ async def main_async(args):
     auftraege = []
     for r in liste:
         k = r["mastr_nr"]
-        if args.nur and k not in args.nur:
+        if (args.nur and k not in args.nur) or k in args.ohne:
             continue
         w = (T.get(k, {}).get("website") or r.get("domain_ohne_www") or r.get("domain") or "").strip()
         auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w))
@@ -402,15 +402,15 @@ async def main_async(args):
                 f = await crawler.bearbeiten(*a)
                 print(f.mastr, f.domain, f.status, f.jahr, f.seiten, flush=True)
                 ergebnis.append(f)
+                neu = not Path(args.ausgabe).exists()      # laufend sichern, damit ein Abbruch nichts kostet
+                with open(args.ausgabe, "a", encoding="utf-8-sig", newline="") as o:
+                    w = csv.writer(o, delimiter=";")
+                    if neu:
+                        w.writerow(KOPF)
+                    w.writerow(f.zeile())
         await asyncio.gather(*(lauf(a) for a in auftraege))
         await browser.close()
         await req.dispose()
-    ergebnis.sort(key=lambda f: f.mastr)
-    Path("lauf").mkdir(exist_ok=True)
-    with open(args.ausgabe, "w", encoding="utf-8-sig", newline="") as o:
-        w = csv.writer(o, delimiter=";")
-        w.writerow(KOPF)
-        w.writerows(f.zeile() for f in ergebnis)
     from collections import Counter
     print(dict(Counter(f.status for f in ergebnis)))
 
@@ -423,6 +423,7 @@ def main():
     ap.add_argument("--parallel", type=int, default=6)
     ap.add_argument("--nur", nargs="*", default=[])
     ap.add_argument("--ohne-proxy", action="store_true")
+    ap.add_argument("--ohne", nargs="*", default=[], help="MaStR-Nummern, die schon erledigt sind")
     asyncio.run(main_async(ap.parse_args()))
 
 
