@@ -441,7 +441,9 @@ async def main_async(args):
             browser = await pw.chromium.launch(proxy=proxy)
         except Exception:
             browser = await pw.chromium.launch(executable_path=exe, proxy=proxy)
-        req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy)
+        req = await pw.request.new_context(user_agent=USER_AGENT, proxy=proxy,
+                                           extra_http_headers={"Accept": "text/html,application/pdf,application/xhtml+xml,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,*/*;q=0.8",
+                                                               "Accept-Language": "de-DE,de;q=0.9"})
         robots = Robots(req, drossel, log=print)
         crawler = HlzfCrawler(browser, req, robots, drossel)
         sem = asyncio.Semaphore(args.parallel)
