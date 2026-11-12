@@ -226,3 +226,5 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB990362338043 Avacon Netz GmbH — HLZF 2027 (regionale Methode, §19 Abs. 2 StromNEV) + Preisblätter Strom 01.01.2027 vorläufig (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
 
 - SNB940352624434 Bayernwerk Netz GmbH — HLZF 2027 + Preisblatt Netzentgelte 2027 vorläufig (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
+
+- SNB940133714842 Creos Deutschland GmbH — HLZF 2027 + Preisblätter NNE Strom „ab 01.01.2027 vorläufig“ (Nutzer-Uploads, inhaltsgeprueft; Dateiname nennt 2026, Inhalt bestaetigt 2027). Automatisierter Abruf war 403-blockiert.
