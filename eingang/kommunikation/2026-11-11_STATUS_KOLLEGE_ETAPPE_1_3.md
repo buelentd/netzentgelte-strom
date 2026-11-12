@@ -254,3 +254,6 @@ Gelesen aus den 2027-Dokumenten in eingang/2027_vorlaeufig/ (Text+Bild, Bild ent
 - SNB947727983103 Gemeindewerke Frammersbach — Netzentgelte Strom 2027 vorlaeufig + HLZF 2027 (Nutzer-Uploads)
 - SNB990971435621 Freiberger Stromversorgung GmbH — vorlaeufiges Preisblatt NNE Strom 2027 (Stand 15.10.2026) + HLZF 2027 (Nutzer-Uploads)
 - SNB991410365127 Gemeindewerke Ebersdorf — Preisblatt NNE Strom 2027 vorlaeufig (15.10.2026) + HLZF 2027 (Nutzer-Uploads)
+
+- SNB926937565941 Gemeindewerke Garmisch-Partenkirchen KU — Preisblatt Netzentgelte Strom 2027 vorlaeufig, Stand 15.10.2026 (Nutzer-Upload, inhaltsgeprueft).
+- Aus demselben Upload-Stapel ohne Betreibernamen im Text (nicht zugeordnet, lokal dl_up/sonst): 2x Preisblatt 2027 vorlaeufig (OjzUSMbT, aMmLmXxU), 1x HLZF 2027 (vy6yJTHy), 2x HLZF 2026 (9uGAiPSI, zwXq30kI = Pleinfeld 2026). Zuordnung bitte durch Nutzer.
