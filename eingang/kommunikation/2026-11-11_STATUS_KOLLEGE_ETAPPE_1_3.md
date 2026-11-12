@@ -222,3 +222,5 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB918620072652 ASCANETZ GmbH — HLZF 2027 (HLFZ-asc27.pdf) + Preisblatt NNE Strom 2027 vorläufig (Nutzer-URLs, robots ok, inhaltsgeprueft).
 
 - SNB973356062049 Bad Honnef AG — Preisblatt Stromnetzentgelte 2027 vorläufig (Nutzer-Upload, inhaltsgeprueft: gültig ab 01.01.2027, Stand 15.10.2026). Ebenfalls geliefert: Hochlastzeiten-BHAG-2026.pdf (HLZF 2026, lokal in dl_up/bhag, 2027-HLZF nicht geliefert).
+
+- SNB990362338043 Avacon Netz GmbH — HLZF 2027 (regionale Methode, §19 Abs. 2 StromNEV) + Preisblätter Strom 01.01.2027 vorläufig (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
