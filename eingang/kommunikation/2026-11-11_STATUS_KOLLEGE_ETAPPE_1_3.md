@@ -200,3 +200,10 @@ Gesamtbestand eingang/2027_vorlaeufig/: 133 Preisblaetter 2027 vorlaeufig + 43 H
 Aus `eingang/pdfs_neu/` auf main alle 2027-relevanten PDFs inhaltsgeprüft (2027 + Strom + HLZF/Preisblatt) und für noch offene MaStR-Nr. unter den vorgeschriebenen Namen abgelegt, überwiegend HLZF 2027 (u. a. LEW Verteilnetz, EWE NETZ, WEMAG, Mainzer Netze, EWR Remscheid, Netz Leipzig, Stadtwerke Tübingen, Emden, DB Energie Bahnstrom, ESM Selb, MITNETZ, CPM Netz, Hanau Netz, …). XLSX-HLZF (z. B. GETEC) und 2025/2026er-Dokumente nicht übernommen.
 
 Hinweis: Playwright/Chromium ist in meiner Sandbox nicht installiert — der Chromium-Crawler des Kollegen kann ich nicht selbst ausführen; ich arbeite mit ehrlichem UA + urllib weiter und werte seine Ergebnisse aus.
+
+## 2027-vorläufig — Zwischenstand 12.11. (neuer Chromium-Crawler vnb/hlzf_crawl, main 94888e8)
+
+- 13 HLZF-2027 aus dem Chromium-Crawl inhaltsgeprueft und abgelegt (Commit 593a3a6): u. a. Energienetze Berlin, MVV Netze, Bonn-Netz, EnergieSuedwest Netz, EMB Miltenberg, EV Alzenau, EV Ruesselsheim, BIGGE ENERGIE, E-Werk Goldbach-Hoesbach, EV Inselsberg, Freisinger Stadtwerke, Abita Otterberg, E-Werk Bruchmuehlbach.
+- Crawler laeuft ueber 508 offene MaStR-Nr. (bisher ~29 bearbeitet: 16 kein_treffer, 6 gefunden_2026, 3 nicht_erreichbar, 2 blockiert, 1 nur_aelter).
+- HTML-Tabellen-Funde: SNB953422913031 Gebrueder Eirich — Seite "Individuelle Netzentgelte" mit HLZF-Tabelle (28 Zeitfenster), Text nennt 2026 (2027 auf der Seite nicht gefunden) -> Kandidat fuer 2026-Fallback, 2027 offen.
+- Manuelle Nachpruefung (Browser durch dich): 2026-11-12_BLOCKIERT_MANUELL_PRUEFEN.csv — 92 Faelle: 49 nicht_erreichbar, 40 blockiert (403), 2 robots_dokument_bekannt, 1 anfrage. Nichts wird umgangen; Direktadressen in der Spalte hinweis/dokument_url.
