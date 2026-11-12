@@ -155,3 +155,8 @@ Bei der Suche nach Hochlastzeitfenstern (und Modul-3-Zeiten) wird zuerst das Dok
 ## Festlegung: Suchbegriff "<Netzbetreiber-Name> Hochlastzeitfenster 2027" (Nutzer, 12.11.2026)
 
 Gesucht wird nur noch nach `<Name des Netzbetreibers> Hochlastzeitfenster 2027` (Hintergrund: es sind nur noch gut 6 Wochen bis zum Jahreswechsel). Die Suchlinks in `vnb/suchlinks.py` und in der Arbeitsliste verwenden 2027; 2026 nur als Rückfall, wenn kein 2027-Dokument existiert.
+
+
+## Klarstellung: Fehlt 2026, wird 2027 genommen (Nutzer, 12.11.2026)
+
+Für Hochlastzeitfenster und Modul-3-Zeiten sind 2026 und 2027 gleichwertig. Fehlt das Dokument für 2026, nehmen wir das für 2027 (und umgekehrt); was zuerst gefunden wird, reicht. Das Jahr steht im `bemerkung`. Ergänzt die Festlegungen "HLZF-Fund aus 2027 zählt für 2026 und 2027" und "2027 zuerst".
