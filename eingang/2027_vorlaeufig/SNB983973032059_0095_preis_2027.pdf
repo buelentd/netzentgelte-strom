@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektra Effeltrich</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="cropped-IMG_20220803_101502_2000x1200.jpg" alt="Header Image" class="header-image">
+    <div class="logo-container">
+        <img src="cropped-logo.png" alt="Die Elektra Effeltrich" class="logo">
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#uberuns">Über uns</a></li>
+        <li><a href="#unserstrom">Unser Strom</a></li>
+        <li><a href="#unsernetz">Unser Netz</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="uberuns">
+    <h1>Über uns</h1>
+    
+    <p>
+        Die Elektra- Genossenschaft Effeltrich eG ist ein 
+        Energieversorgungsunternehmen auf Basis einer Genossenschaft 
+        mit 200 Mitgliedern. Die Genossenschaft wurde 1920 
+        gegründet und besteht seit nunmehr 93 Jahren. 
+        Wir versorgen momentan in der Gemeinde Effeltrich 
+        ausschließlich den Ortsteil Effeltrich (ca. 2280 Einwohner) 
+        mit elektrischen Strom. Unser Letztverbraucherabsatz 
+        beträgt ca. 5.100.000 kWh jährlich. 
+        Die Vorstandschaft arbeitet ehrenamtlich und wird von einem
+        hauptamtlichen - geschäftsführenden Vorstand - unterstützt.
+    </p>
+</section>
+
+<section id="unserstrom">
+    <!-- Your content for Unser Strom goes here -->
+    <h1>Unser Strom</h1>
+
+    <p><a href="Preisblatt-Grundversorgung-und-Ersatzversorgung-ab-01-01-2023.pdf">Aktuelles Preisblatt für Stromkunden der Elektra Effeltrich</a></p>
+</section>
+
+<section id="unsernetz">
+    <h1>Netzentgelte</h1>
+
+    <h2>2024</h2>
+
+    <p><a href="ePB_Effeltrich_20231214.xlsx">Elektronisches Preisblatt Netzentgelte Elektra Effeltrich 2024</a></p>
+    <p>
+        <a href="Preisblatt_Effeltrich_20231214.pdf">Netzentgelte Elektra Effeltrich 2024</a>
+    </p>
+
+    <h3>2025</h3>
+    <p><a href="ePB_Effeltrich_20240906_final.xlsx">Elektronisches Preisblatt Netzentgelte Elektra Effeltrich 2025 (xlsx)</a></p>
+    <p>
+        <a href="Preisblatt_Effeltrich_final_2025.pdf">Netzentgelte Elektra Effeltrich 2025 (pdf)</a>
+    </p>
+
+    <h3>2026</h3>
+    <p><a href="ePB_Effeltrich_20250902_final.xlsx">Elektronisches Preisblatt Netzentgelte Elektra Effeltrich 2026 (xlsx)</a></p>
+    <p>
+        <a href="Netzentgelte_2026_Effeltrich_Final.pdf">Netzentgelte Elektra Effeltrich 2026 (pdf)</a>
+    </p>
+
+ <h3>2027</h3>
+    <p><a href="ePB_2027_Effeltrich_20261005_extern.xlsx">Elektronisches Preisblatt Netzentgelte Elektra Effeltrich 2027 (xlsx)</a></p>
+    <p>
+        <a href="Preisblatt_2027_Effeltrich_20261005_extern.pdf">Netzentgelte Elektra Effeltrich 2027 (pdf)</a>
+    </p>
+
+    <h2>Netzanschlussmeldung</h2>
+
+    <p>Es gelten unsere <a href="2019-technischeAnschlussbedingung.pdf">Technischen Anschlussbedingungen (TABs)</a></p>
+    <p>Das Formular zur Netzanschlussmeldung erhalten Sie 
+        von den <a href="https://leapext.stadtwerke-forchheim.de:8444/volt-apps/landing/org/app/78a68665-f3af-4407-8bb3-a2118bc4d595/launch/index.html?form=F_AntragEffeltrich">Stadtwerken Forchheim (vorausgef&uuml;llt)</a></p>
+</section>
+
+<section id="kontakt">
+    <!-- Your content for Kontakt goes here -->
+    <h1>Kontakt</h1>
+
+    <p>
+        Elektra Genossenschaft Effeltrich eG   <br>
+        Lindenstr. 2a <br>
+        91090 Effeltrich <br>
+        DEUTSCHLAND<br>
+
+        <br>
+        T +49 (0) 9133 5260<br>
+        F +49 (0) 9133 603046<br>
+        <a href="mailto:INFO@ELEKTRA-EFFELTRICH.DE">INFO@ELEKTRA-EFFELTRICH.DE</a>
+    </p>
+
+    <p>
+        <em>&Ouml;ffnungszeiten</em>
+
+        <div class="opening-hours">
+            <table>
+                <tr>
+                    <td>Montag</td>
+                    <td>8-12 Uhr</td>
+                </tr>
+                <tr>
+                    <td>Dienstag</td>
+                    <td>8-12 Uhr</td>
+                </tr>
+                <tr>
+                    <td>Mittwoch</td>
+                    <td>geschlossen</td>
+                </tr>
+                <tr>
+                    <td>Donnerstag</td>
+                    <td>8-12 Uhr und 15-17 Uhr</td>
+                </tr>
+                <tr>
+                    <td>Freitag</td>
+                    <td>8-12 Uhr</td>
+                </tr>
+            </table>
+        </div>
+        
+    </p>
+
+    <p>
+        Vorstandsvorsitz: Gerhard Bauernschmidt <br>
+        Aufsichtsratvorsitz: Stephan Kotz <br>
+        Registergericht Amtsgericht Bamberg <br>
+        Registernummer 101.
+    </p>
+
+    <p>
+        USt-Id: DE229225638 <br>
+        St-Nr:  216/106/20016
+    </p>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>

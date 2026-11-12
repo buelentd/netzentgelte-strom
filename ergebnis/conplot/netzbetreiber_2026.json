@@ -738,7 +738,32 @@
     "ap_ct_kwh": 4.29,
     "gp_eur_jahr": 75.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB948859455841_0011_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -763,9 +788,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://files.l.de/lde-typo3/Netz/Downloads/Netznutzung/Strom/Netz_Leipzig_Preisblatt_NNE_Strom_2026_final.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB924477581384",
@@ -3497,14 +3520,45 @@
     "ap_ct_kwh": 5.69,
     "gp_eur_jahr": 98.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB983315496327_0052_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "14:00-16:30",
+       "17:00-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [
+       "08:30-11:30"
+      ],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:00-20:00",
+       "10:45-13:45"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://storage.googleapis.com/ahrtalwebseitendb/website/c4a32d62-preisblatt-netzentgelte-strom_ahrtal-werke_2026_final.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB969871992015",
@@ -9728,7 +9782,40 @@
     "ap_ct_kwh": 10.82,
     "gp_eur_jahr": 55.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB966380208811_0147_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:30-18:45"
+      ],
+      "winter": [
+       "11:30-12:00",
+       "17:45-18:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "08:15-12:15",
+       "17:00-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -9753,9 +9840,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ewk-gmbh.de/wp-content/uploads/2025/12/20251219-Preisblatt-NNE-Strom-2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB932516649124",
@@ -12541,7 +12626,36 @@
     "ap_ct_kwh": 6.05,
     "gp_eur_jahr": 75.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB945750197795_0188_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [
+       "11:00-12:00"
+      ],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:15-20:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -12566,9 +12680,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.evu-weilerbach.de/wp-content/uploads/Preisblatt-2026-Netzentgelte-Strom_Weilerbach.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB977966674678",
@@ -17468,14 +17580,45 @@
     "ap_ct_kwh": 6.07,
     "gp_eur_jahr": 73.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB930067626847_0264_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-18:00"
+      ],
+      "winter": [
+       "10:30-12:00",
+       "16:30-18:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "10:30-12:30",
+       "16:30-18:45"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.gen-greiz.de/site/assets/files/2564/preisblatt-strom-nne-endgueltig-01_01_2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB935600499711",
@@ -18576,14 +18719,46 @@
     "ap_ct_kwh": 4.2,
     "gp_eur_jahr": 115.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB913273314623_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "11:30-13:00",
+       "13:30-15:00",
+       "16:00-18:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-19:30"
+      ],
+      "winter": [
+       "10:30-12:30",
+       "17:15-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.kbg-homberg.de/fileadmin/user_upload/Downloads/Netznutzung/KBG_NNE_e_SN_26_PB.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB951760950909",
@@ -22642,7 +22817,36 @@
     "ap_ct_kwh": 6.93,
     "gp_eur_jahr": 30.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB959255155907_0347_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:30-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:30-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -22667,9 +22871,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://osterholzer-stadtwerke.de/wp-content/uploads/2025/12/Preisblatt-NNE-Strom-2026-Osterholzer-SW.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB934071779865",
@@ -23095,7 +23297,43 @@
     "ap_ct_kwh": 7.21,
     "gp_eur_jahr": 95.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB966494112844_0355_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [
+       "08:45-09:15",
+       "11:30-12:30"
+      ],
+      "sommer": [],
+      "herbst": [
+       "17:00-18:00"
+      ],
+      "winter": [
+       "17:00-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:00-18:00"
+      ],
+      "winter": [
+       "17:00-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -23120,9 +23358,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stromversorgung-greding.de/wp-content/uploads/2025/12/Netznutzungsentgelt-2026-endgueltig.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB963995572245",
@@ -23951,14 +24187,39 @@
     "ap_ct_kwh": 9.53,
     "gp_eur_jahr": 60.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB953868012787_0368_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [
+       "18:00-18:30"
+      ],
+      "sommer": [],
+      "herbst": [
+       "10:45-12:15",
+       "11:45-12:00"
+      ],
+      "winter": [
+       "09:00-12:30",
+       "10:45-12:30",
+       "17:45-18:00",
+       "17:45-18:45",
+       "11:15-12:15",
+       "17:30-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": null
+    },
+    "msns": null
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB950960779068",
@@ -30432,7 +30693,38 @@
     "ap_ct_kwh": 8.94,
     "gp_eur_jahr": 40.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB941183960449_0466_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "11:30-13:00",
+       "17:15-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "12:00-12:15",
+       "17:15-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -30457,9 +30749,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-emden.de/",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB948068461008",
@@ -33127,7 +33417,42 @@
     "ap_ct_kwh": 5.48,
     "gp_eur_jahr": 90.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB945552907998_0506_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [
+       "11:00-11:30"
+      ],
+      "sommer": [
+       "11:45-13:45"
+      ],
+      "herbst": [],
+      "winter": [
+       "15:45-16:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:00-18:00",
+       "09:15-14:15",
+       "16:15-18:45"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -33152,9 +33477,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerkehaiger.de/de/Netzbetriebe/Stromnetz/Netzzugang-Entgelte-Vertraege-/Netzentgelte-Strom-2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB959120377328",
@@ -36435,7 +36758,43 @@
     "ap_ct_kwh": 7.44,
     "gp_eur_jahr": 32.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB926470799582_0555_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "10:00-12:30"
+      ],
+      "winter": [
+       "08:00-13:00",
+       "17:15-18:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "09:45-12:15",
+       "13:00-14:30"
+      ],
+      "winter": [
+       "07:45-12:15",
+       "17:15-18:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -36460,9 +36819,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.sw-l.de/assets/files/downloads/2025-12-23-preisblatt-loebau-strom-2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB978730380269",
@@ -54621,14 +54978,49 @@
     "ap_ct_kwh": 5.02,
     "gp_eur_jahr": 65.7
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB977641826996_0816_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "18:00-18:15",
+       "11:00-12:15"
+      ],
+      "winter": [
+       "16:30-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "18:00-18:15",
+       "08:00-14:15",
+       "11:15-12:00"
+      ],
+      "winter": [
+       "17:00-18:30",
+       "16:30-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.plauen-netz.de/Media/docs/librariesprovider5/datei-ablage/2026_vnp_pb_endgültig_15-12-25_neues-cd.pdf?sfvrsn=2bf156f8_3",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB940122004213",
