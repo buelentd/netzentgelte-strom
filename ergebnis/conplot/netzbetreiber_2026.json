@@ -3586,15 +3586,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-22:30",
-      "ct_kwh": null
+      "ct_kwh": 7.02
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.56
      },
      "niedertarif": {
       "zeiten": "08:00-16:30",
-      "ct_kwh": null
+      "ct_kwh": 1.82
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -4396,15 +4396,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:00-15:15, 17:00-22:00",
-      "ct_kwh": null
+      "ct_kwh": 8.52
      },
      "standardtarif": {
       "zeiten": "05:00-10:00, 15:15-17:00, 22:00-00:00",
-      "ct_kwh": null
+      "ct_kwh": 7.48
      },
      "niedertarif": {
       "zeiten": "00:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 1.12
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -4731,15 +4731,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "07:00-20:00, 22:00-00:15",
-      "ct_kwh": null
+      "ct_kwh": 10.81
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 10.21
      },
      "niedertarif": {
       "zeiten": "01:30-04:15",
-      "ct_kwh": null
+      "ct_kwh": 4.08
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -6286,15 +6286,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-20:00",
-      "ct_kwh": null
+      "ct_kwh": 12.85
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.6
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 3.44
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -6440,15 +6440,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-21:00",
-      "ct_kwh": null
+      "ct_kwh": 4.98
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 3.52
      },
      "niedertarif": {
       "zeiten": "00:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 1.41
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -6785,15 +6785,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "15:30-19:00",
-      "ct_kwh": null
+      "ct_kwh": 9.58
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.34
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 2.54
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -7014,15 +7014,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:30-20:00",
-      "ct_kwh": null
+      "ct_kwh": 12.56
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.01
      },
      "niedertarif": {
       "zeiten": "01:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 3.2
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -7229,15 +7229,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 6.59
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.66
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 1.86
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -7320,15 +7320,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "07:30-12:00, 16:30-19:00",
-      "ct_kwh": null
+      "ct_kwh": 8.48
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.7
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 2.68
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -7775,15 +7775,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "07:00-09:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 8.38
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.24
      },
      "niedertarif": {
       "zeiten": "22:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.7
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -8261,15 +8261,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:00-19:30",
-      "ct_kwh": null
+      "ct_kwh": 9.86
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.59
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 2.64
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -8357,15 +8357,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 8.73
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.17
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 2.47
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -8492,15 +8492,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:30-22:00",
-      "ct_kwh": null
+      "ct_kwh": 8.72
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.67
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 2.67
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -8511,15 +8511,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:30-22:00",
-      "ct_kwh": null
+      "ct_kwh": 8.72
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.67
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 2.67
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -8607,15 +8607,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 13.29
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.86
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.97
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -9653,15 +9653,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 16.23
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 10.82
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 3.62
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -9739,7 +9739,7 @@
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.45
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
@@ -10387,7 +10387,7 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:00-14:00, 16:00-20:00",
-      "ct_kwh": null
+      "ct_kwh": 9.92
      },
      "standardtarif": {
       "zeiten": "07:00-10:00, 14:00-16:00, 20:00-22:00",
@@ -10395,7 +10395,7 @@
      },
      "niedertarif": {
       "zeiten": "22:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.13
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -10572,15 +10572,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.36
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.97
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.79
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -11480,15 +11480,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.68
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.12
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.38
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -12720,7 +12720,7 @@
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.45
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
@@ -12984,15 +12984,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "04:00-10:00, 17:00-22:00",
-      "ct_kwh": null
+      "ct_kwh": 11.87
      },
      "standardtarif": {
       "zeiten": "14:00-17:00, 22:00-00:00",
-      "ct_kwh": null
+      "ct_kwh": 8.16
      },
      "niedertarif": {
       "zeiten": "00:00-04:00, 10:00-14:00",
-      "ct_kwh": null
+      "ct_kwh": 2.04
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -13003,15 +13003,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "04:00-10:00, 17:00-22:00",
-      "ct_kwh": null
+      "ct_kwh": 11.87
      },
      "standardtarif": {
       "zeiten": "14:00-17:00, 22:00-00:00",
-      "ct_kwh": null
+      "ct_kwh": 8.16
      },
      "niedertarif": {
       "zeiten": "00:00-04:00, 10:00-14:00",
-      "ct_kwh": null
+      "ct_kwh": 2.04
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -13042,15 +13042,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-13:30",
-      "ct_kwh": null
+      "ct_kwh": 13.56
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.71
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 3.88
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -13061,15 +13061,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-13:30",
-      "ct_kwh": null
+      "ct_kwh": 13.56
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.71
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 3.88
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -13630,15 +13630,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.38
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.92
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.32
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -13649,15 +13649,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.38
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.92
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.32
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -14103,7 +14103,7 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 11.8
      },
      "standardtarif": {
       "zeiten": "06:00-17:00, 19:00-00:00",
@@ -14111,7 +14111,7 @@
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 2.68
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -16817,15 +16817,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-22:30",
-      "ct_kwh": null
+      "ct_kwh": 14.56
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.28
      },
      "niedertarif": {
       "zeiten": "08:00-16:30",
-      "ct_kwh": null
+      "ct_kwh": 2.09
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -17486,15 +17486,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 9.58
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.98
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.06
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -18539,15 +18539,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "09:00-19:30",
-      "ct_kwh": null
+      "ct_kwh": 6.31
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.48
      },
      "niedertarif": {
       "zeiten": "00:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 2.19
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -18868,15 +18868,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:00-19:30",
-      "ct_kwh": null
+      "ct_kwh": 9.96
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.83
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 3.53
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -21607,15 +21607,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:00-21:00",
-      "ct_kwh": null
+      "ct_kwh": 9.4
      },
      "standardtarif": {
       "zeiten": "05:00-16:00, 21:00-00:00",
-      "ct_kwh": null
+      "ct_kwh": 5.77
      },
      "niedertarif": {
       "zeiten": "00:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 0.58
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -22231,15 +22231,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.4
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.93
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.32
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -22684,15 +22684,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.66
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.21
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.86
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -24368,7 +24368,7 @@
      },
      "niedertarif": {
       "zeiten": "10:00-15:00",
-      "ct_kwh": null
+      "ct_kwh": 2.19
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -24512,15 +24512,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:30-20:15",
-      "ct_kwh": null
+      "ct_kwh": 7.8
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.97
      },
      "niedertarif": {
       "zeiten": "01:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 1.49
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -24907,15 +24907,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 9.69
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.46
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.16
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -25044,15 +25044,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.9
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.54
      },
      "niedertarif": {
       "zeiten": "00:45-05:15",
-      "ct_kwh": null
+      "ct_kwh": 3.02
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -25823,15 +25823,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 13.77
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.18
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 3.07
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -26060,15 +26060,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 10.82
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.02
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.32
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -26211,7 +26211,7 @@
      },
      "niedertarif": {
       "zeiten": "00:30-05:30",
-      "ct_kwh": null
+      "ct_kwh": 2.76
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -28121,15 +28121,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 8.37
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.58
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 1.87
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -29685,15 +29685,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.02
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.52
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 0.95
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -29878,15 +29878,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-20:00",
-      "ct_kwh": null
+      "ct_kwh": 9.2
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.03
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 3.21
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -30001,15 +30001,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 13.41
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.94
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.99
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -30271,15 +30271,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:00-20:00",
-      "ct_kwh": null
+      "ct_kwh": 10.37
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.88
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 3.95
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -31447,15 +31447,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 9.96
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.64
      },
      "niedertarif": {
       "zeiten": "23:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.22
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -32507,15 +32507,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "07:30-20:45",
-      "ct_kwh": null
+      "ct_kwh": 7.93
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.21
      },
      "niedertarif": {
       "zeiten": "23:30-05:30",
-      "ct_kwh": null
+      "ct_kwh": 2.66
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -32716,15 +32716,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-15:00, 17:00-22:00",
-      "ct_kwh": null
+      "ct_kwh": 10.52
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.48
      },
      "niedertarif": {
       "zeiten": "23:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.33
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -32908,15 +32908,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 9.84
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.56
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.2
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -34799,15 +34799,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 13.53
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.56
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 3.82
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -35718,15 +35718,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:30-14:30",
-      "ct_kwh": null
+      "ct_kwh": 10.23
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.82
      },
      "niedertarif": {
       "zeiten": "23:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 2.23
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -35924,15 +35924,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.93
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.44
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.92
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -36054,15 +36054,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 7.08
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.9
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.52
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -36453,15 +36453,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 9.36
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.24
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 2.09
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -37438,15 +37438,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 9.68
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.06
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.08
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -37831,15 +37831,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.09
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.74
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.74
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -38392,15 +38392,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 15.33
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 12.78
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 3.29
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -38959,15 +38959,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:45-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.33
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.21
      },
      "niedertarif": {
       "zeiten": "01:00-04:15",
-      "ct_kwh": null
+      "ct_kwh": 3.28
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -39130,15 +39130,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 7.72
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.43
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.66
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -39378,7 +39378,7 @@
      },
      "niedertarif": {
       "zeiten": "02:45-05:15",
-      "ct_kwh": null
+      "ct_kwh": 3.35
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -39431,15 +39431,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 9.93
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.07
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.18
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -40033,15 +40033,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "07:30-19:30",
-      "ct_kwh": null
+      "ct_kwh": 6.04
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.91
      },
      "niedertarif": {
       "zeiten": "22:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.1
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -40394,15 +40394,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 11.74
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.78
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.52
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -40616,7 +40616,7 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:45-12:45, 17:45-20:00",
-      "ct_kwh": null
+      "ct_kwh": 15.78
      },
      "standardtarif": {
       "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
@@ -40635,7 +40635,7 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:45-12:45, 17:45-20:00",
-      "ct_kwh": null
+      "ct_kwh": 15.78
      },
      "standardtarif": {
       "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
@@ -40654,7 +40654,7 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:45-12:45, 17:45-20:00",
-      "ct_kwh": null
+      "ct_kwh": 15.78
      },
      "standardtarif": {
       "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
@@ -41238,15 +41238,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 8.25
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.5
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 1.84
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -41737,15 +41737,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 6.84
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.03
      },
      "niedertarif": {
       "zeiten": "01:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 2.01
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -42087,15 +42087,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 6.34
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.28
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.36
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -42745,15 +42745,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 9.67
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.06
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.08
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -43616,15 +43616,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "09:30-14:00, 16:30-20:00",
-      "ct_kwh": null
+      "ct_kwh": 8.99
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.0
      },
      "niedertarif": {
       "zeiten": "00:00-03:00",
-      "ct_kwh": null
+      "ct_kwh": 0.8
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -43635,15 +43635,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "09:30-14:00, 16:30-20:00",
-      "ct_kwh": null
+      "ct_kwh": 8.99
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.0
      },
      "niedertarif": {
       "zeiten": "00:00-03:00",
-      "ct_kwh": null
+      "ct_kwh": 0.8
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -43760,15 +43760,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 7.57
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.35
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 2.14
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -44001,15 +44001,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 11.52
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.37
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.37
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -44291,15 +44291,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 7.96
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.44
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 0.82
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -45052,15 +45052,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 11.3
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.99
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 3.2
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -45203,15 +45203,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 6.89
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.7
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.26
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -46107,15 +46107,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 11.05
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.21
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.37
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -46434,15 +46434,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 7.09
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.76
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 0.84
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -46816,7 +46816,7 @@
      },
      "niedertarif": {
       "zeiten": "00:30-09:00, 00:00-00:30",
-      "ct_kwh": null
+      "ct_kwh": 1.88
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -46977,15 +46977,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-21:15",
-      "ct_kwh": null
+      "ct_kwh": 11.01
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.88
      },
      "niedertarif": {
       "zeiten": "01:00-04:15",
-      "ct_kwh": null
+      "ct_kwh": 3.55
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -47143,15 +47143,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 10.05
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.05
      },
      "niedertarif": {
       "zeiten": "01:00-03:00",
-      "ct_kwh": null
+      "ct_kwh": 3.22
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -47306,15 +47306,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 6.42
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.35
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.38
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -47796,15 +47796,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "10:00-15:00",
-      "ct_kwh": null
+      "ct_kwh": 5.52
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.58
      },
      "niedertarif": {
       "zeiten": "00:00-05:00",
-      "ct_kwh": null
+      "ct_kwh": 1.83
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -48942,15 +48942,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 13.7
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 9.13
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 3.06
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -49024,15 +49024,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-22:30",
-      "ct_kwh": null
+      "ct_kwh": 15.3
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.05
      },
      "niedertarif": {
       "zeiten": "08:00-16:30",
-      "ct_kwh": null
+      "ct_kwh": 2.49
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -49109,7 +49109,7 @@
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.09
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
@@ -49195,15 +49195,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 13.67
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 11.39
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.95
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -49284,15 +49284,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 9.77
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.14
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 2.11
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -50065,15 +50065,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-13:30, 17:30-21:00",
-      "ct_kwh": null
+      "ct_kwh": 5.99
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 4.9
      },
      "niedertarif": {
       "zeiten": "00:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.96
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -51325,15 +51325,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "08:30-15:15, 17:15-21:15",
-      "ct_kwh": null
+      "ct_kwh": 8.09
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 6.74
      },
      "niedertarif": {
       "zeiten": "23:00-06:45",
-      "ct_kwh": null
+      "ct_kwh": 1.74
      },
      "quartale": "Q1+Q4",
      "preisstand": "",
@@ -52065,15 +52065,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "12:00-14:00",
-      "ct_kwh": null
+      "ct_kwh": 12.08
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.54
      },
      "niedertarif": {
       "zeiten": "01:00-05:15",
-      "ct_kwh": null
+      "ct_kwh": 3.42
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -52155,15 +52155,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "11:00-13:00, 17:00-19:00",
-      "ct_kwh": null
+      "ct_kwh": 16.14
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 10.76
      },
      "niedertarif": {
       "zeiten": "23:00-07:00",
-      "ct_kwh": null
+      "ct_kwh": 3.6
      },
      "quartale": "Q1+Q4",
      "preisstand": "endgültig",
@@ -52477,11 +52477,11 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "16:00-20:00",
-      "ct_kwh": null
+      "ct_kwh": 9.76
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 7.89
      },
      "niedertarif": {
       "zeiten": "01:00-05:00",
@@ -52571,15 +52571,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "17:00-19:15",
-      "ct_kwh": null
+      "ct_kwh": 10.27
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 8.9
      },
      "niedertarif": {
       "zeiten": "03:15-04:45",
-      "ct_kwh": null
+      "ct_kwh": 3.56
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -52749,7 +52749,7 @@
      },
      "niedertarif": {
       "zeiten": "00:00-05:30",
-      "ct_kwh": null
+      "ct_kwh": 3.24
      },
      "quartale": "ganzjährig",
      "preisstand": "",
@@ -52950,15 +52950,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "13:00-16:00, 18:00-22:00",
-      "ct_kwh": null
+      "ct_kwh": 10.53
      },
      "standardtarif": {
       "zeiten": "Restzeit",
-      "ct_kwh": null
+      "ct_kwh": 5.54
      },
      "niedertarif": {
       "zeiten": "22:00-06:00",
-      "ct_kwh": null
+      "ct_kwh": 1.86
      },
      "quartale": "ganzjährig",
      "preisstand": "endgültig",
@@ -54265,15 +54265,15 @@
      "jahr": 2026,
      "hochtarif": {
       "zeiten": "09:45-13:45",
-      "ct_kwh": null
+      "ct_kwh": 15.94
      },
      "standardtarif": {
       "zeiten": "06:30-09:45, 13:45-22:00",
-      "ct_kwh": null
+      "ct_kwh": 8.39
      },
      "niedertarif": {
       "zeiten": "22:00-06:30",
-      "ct_kwh": null
+      "ct_kwh": 3.19
      },
      "quartale": "ganzjährig",
      "preisstand": "",

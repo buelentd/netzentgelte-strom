@@ -223,3 +223,58 @@ def lesen(text):
     elif qs - set(erg["quartale"]) - {(1, 2, 3, 4)}:
         return None, "widersprüchliche Quartalsangaben"
     return erg, grund
+
+
+ZAHL = re.compile(r"(?<![\d,.:])\d{1,3}(?:\.\d{3})*,\d+(?![\d:])")
+
+
+def _nums(l):
+    l = ZEIT.sub(" ", l)
+    l = re.sub(r"\d{1,2}\.\d{1,2}\.(?:\d{2,4})?|\d+ ?%|quartal\s*\d|\bq\s*\d|modul\s*\d|§\s*\d+\w*|bk\d[\d\-/a-z]*", " ", l, flags=re.I)
+    z = [float(x.replace(".", "").replace(",", ".")) for x in ZAHL.findall(l)]
+    out, i = [], 0
+    while i < len(z):  # Netto/Brutto-Paare: zweite Zahl = erste x 1,19
+        out.append(z[i])
+        i += 2 if i + 1 < len(z) and abs(z[i + 1] - z[i] * 1.19) < 0.02 * max(1, z[i]) + 0.011 else 1
+    return [x for x in out if 0.3 <= x <= 30]
+
+
+def preise(text):
+    """Arbeitspreise HT/ST/NT in ct/kWh aus dem Modul-3-Abschnitt; nur eindeutig, sonst None. -> ({'ht','st','nt'}, Art) oder (None, Grund)"""
+    L = text.split("\n")
+    B = blocks(L)
+    # (B) Kopfzeile mit drei Tarifnamen, darunter eine Zeile mit genau drei Zahlen
+    for i in B:
+        pos = {}
+        for a, rx in (("ht", HT), ("nt", NT), ("st", ST)):
+            m = rx.search(L[i])
+            if m:
+                pos[a] = m.start()
+        if len(pos) == 3:
+            ordnung = sorted(pos, key=pos.get)
+            for j in range(i + 1, min(len(L), i + 6)):
+                if ZEIT.search(L[j]):
+                    continue
+                z = _nums(L[j])
+                if len(z) == 3 and "ct" not in L[j].lower().replace("ct/kwh", ""):
+                    p = dict(zip(ordnung, z))
+                    if p["nt"] < p["st"] < p["ht"]:
+                        return p, "spaltenweise"
+                    break
+    # (A) Zeile mit genau einem Tarifnamen und genau einer Zahl
+    p = {}
+    for i in B:
+        l = L[i]
+        if JAHRESZEIT.search(l):
+            continue
+        arten = [a for a, rx in (("ht", HT), ("nt", NT), ("st", ST)) if rx.search(l)]
+        if len(arten) != 1:
+            continue
+        z = _nums(l)
+        if len(z) == 1:
+            if arten[0] in p and p[arten[0]] != z[0]:
+                return None, "widersprüchliche Preise"
+            p[arten[0]] = z[0]
+    if len(p) == 3 and p["nt"] < p["st"] < p["ht"]:
+        return p, "zeilenweise"
+    return None, "Preise nicht eindeutig"
