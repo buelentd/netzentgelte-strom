@@ -26,9 +26,9 @@ def rlm(z, p):
 
 def preise(z, ok_wert="ok"):
     ok = z.get("status") == ok_wert
-    ns, msns = (rlm(z, "ns") if ok else None), (rlm(z, "msns") if ok else None)
+    ns, msns, ms = (rlm(z, "ns") if ok else None), (rlm(z, "msns") if ok else None), (rlm(z, "ms") if ok else None)
     slp = {"ap_ct_kwh": zahl(z.get("slp_ap_ct_kwh")), "gp_eur_jahr": zahl(z.get("slp_grundpreis_eur_jahr"))} if ok and z.get("slp_ap_ct_kwh") else None
-    return {"rlm": {"ns": ns, "msns": msns} if (ns or msns) else None, "slp": slp}
+    return {"rlm": {"ns": ns, "msns": msns, "ms": ms} if (ns or msns or ms) else None, "slp": slp}
 
 
 def hlzf_ebene(z, eb, schwelle, mind):

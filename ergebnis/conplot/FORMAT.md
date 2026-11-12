@@ -49,6 +49,7 @@ Marktstammdatenregister und ist nur ein Anhaltspunkt. Bei mehreren Einträgen de
 | `grenze` | `<2500`: unter 2.500 Benutzungsstunden gilt die Gruppe „unter“, ab 2.500 die Gruppe „ab“. `<=2500`: genau 2.500 Stunden gehören noch zu „unter“ |
 | `rlm.ns` | Kunden mit Leistungsmessung, Entnahme in der **Niederspannung** |
 | `rlm.msns` | Entnahme aus der **Umspannung Mittelspannung/Niederspannung** (eigener Trafo) |
+| `rlm.ms` | Entnahme in der **Mittelspannung** (Großspeicher, Ladehubs mit eigener Mittelspannungsanbindung), soweit das Preisblatt sie ausweist |
 | `lp_…_eur_kw_jahr` | Leistungspreis in Euro je kW **und Jahr** (Jahresleistungspreissystem), nicht je Monat |
 | `ap_…_ct_kwh` | Arbeitspreis in Cent je kWh |
 | `slp` | Kunden ohne Leistungsmessung (bis 100.000 kWh): Arbeitspreis und Grundpreis |
