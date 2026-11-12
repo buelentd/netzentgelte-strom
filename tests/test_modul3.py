@@ -43,3 +43,24 @@ def test_quartale_aus_abschnitt():
 
 def test_nicht_eindeutig_bleibt_leer():
     assert lesen("Modul 3\n Hochtarif 17:00-19:00\n")[0] is None
+
+
+def test_quartal_mit_jahr():
+    txt = """Modul 3
+   Gültigkeit Zeitfenster   Q1/2026 und Q4/2026
+   Zeitfenster Niedriglasttarif   02:00 Uhr bis 05:30 Uhr
+   Zeitfenster Hochlasttarif   10:30 Uhr bis 13:15 Uhr und 17:15 Uhr bis 20:30 Uhr
+   Zeitfenster Standardtarif   Rest
+"""
+    e, g = lesen(txt)
+    assert formatieren(e)[3] == "Q1+Q4"
+
+
+def test_gleiche_quartalsgruppen_zusammen():
+    txt = """Modul 3
+   Zeitfenster Ebene Niederspannung   Niedriglasttarif   Standardtarif   Hochtarif
+   Quartal 1: 01.01. - 31.03.   01:00-05:00   alle restlichen Zeiten   18:00-20:00
+   Quartal 4: 01.10. - 31.12.   01:00-05:00   alle restlichen Zeiten   18:00-20:00
+"""
+    e, g = lesen(txt)
+    assert formatieren(e) == ("18:00-20:00", "Restzeit", "01:00-05:00", "Q1+Q4")

@@ -6,7 +6,7 @@ import re
 ZEIT = re.compile(r"(?<!\d)(\d{1,2})[:.](\d{2})\s*(?:uhr)?\s*(?:[-–−]|bis)\s*(\d{1,2})[:.](\d{2})\s*(?:uhr)?(?!\d)", re.I)
 HT = re.compile(r"hochlast(?:tarif)?|hochtarif|hoch-?tarif|\bHT\b", re.I)
 NT = re.compile(r"niedriglast(?:tarif)?|niedertarif|niedrigtarif|\bNT\b", re.I)
-ST = re.compile(r"standardlast(?:tarif)?|standardtarif|\bST\b", re.I)
+ST = re.compile(r"standardlast(?:tarif)?|standardtarif|standart\w*|\bST\b", re.I)
 REST = re.compile(r"restliche|restzeit|übrige|uebrige|alle anderen|sonstige zeit", re.I)
 JAHRESZEIT = re.compile(r"frühling|fruehling|sommer|herbst|winter", re.I)
 MODUL = re.compile(r"modul\s*(?:1\s*(?:\+|i\.?v\.?m\.?|und|u\.)\s*)?3|zeitvariabl", re.I)
@@ -22,18 +22,21 @@ def norm(m):
 def quartale(text):
     """Quartals-Angabe in einer Zeile -> sortierte Menge 1..4 oder None."""
     t = text.lower()
-    if re.search(r"quartale?\s*(?:i\s*,\s*ii\s*,\s*iii\s*(?:und|,)\s*iv|1\s*[-–bis]+\s*4|1\s*,\s*2\s*,\s*3\s*(?:und|,)\s*4)", t) or "ganzjähr" in t or "ganzjaehr" in t:
+    if re.search(r"quartale?\s*(?:i\s*,\s*ii\s*,\s*iii\s*(?:und|,)\s*iv|1\s*[-–bis]+\s*4|1\s*,\s*2\s*,\s*3\s*(?:und|,)\s*4)", t) or "ganzjähr" in t or "ganzjaehr" in t or re.search(r"alle\s+(?:4|vier)\s+quartale|gesamte[ns]?\s+kalenderjahr", t):
         return (1, 2, 3, 4)
-    m = re.search(r"quartale?\s*([1-4](?:\s*(?:,|und|\+|/)\s*[1-4])*)", t) or re.search(r"([1-4](?:\s*(?:,|und|\+|/)\s*[1-4])*)\s*\.?\s*quartale?", t)
+    m = re.search(r"quartale?\s*([1-4](?![\d])(?:\s*(?:,|und|\+|/|&)\s*[1-4](?![\d]))*)", t) or re.search(r"([1-4](?:\s*(?:,|und|\+|/|&)\s*[1-4])*)\s*\.?\s*quartale?", t)
     if m:
         return tuple(sorted({int(x) for x in re.findall(r"[1-4]", m.group(1))}))
-    m = re.search(r"\bq\s*([1-4])\s*(?:[-–]\s*q?\s*([1-4])|((?:\s*(?:\+|,|und|/)\s*q?\s*[1-4])+))", t)
+    jj = re.findall(r"\bq\s*([1-4])\s*/\s*20\d\d", t)
+    if jj:
+        return tuple(sorted({int(x) for x in jj}))
+    m = re.search(r"\bq\s*([1-4])(?!\d)\s*(?:[-–]\s*q?\s*([1-4])|((?:\s*(?:\+|,|und|/)\s*q?\s*[1-4])+))", t)
     if m:
         if m.group(2):
             return (1, 2, 3, 4) if (m.group(1), m.group(2)) == ("1", "4") else None
         return tuple(sorted({int(x) for x in re.findall(r"[1-4]", m.group(1) + m.group(3))}))
     r = {"i": 1, "ii": 2, "iii": 3, "iv": 4}
-    m = re.search(r"quartale?\s*((?:i{1,3}|iv)(?:\s*(?:,|und|\+)\s*(?:i{1,3}|iv))*)\b", t)
+    m = re.search(r"quartale?\s*((?:i{1,3}|iv)(?:\s*(?:,|und|\+|&)\s*(?:i{1,3}|iv))*)\b", t)
     if m:
         return tuple(sorted({r[x] for x in re.findall(r"iv|iii|ii|i", m.group(1))}))
     return None
@@ -48,12 +51,20 @@ def blocks(L):
     return sorted(keep)
 
 
+def _st_auffuellen(erg):
+    for g in erg.values():
+        if g["ht"] and g["nt"] and not g["st"]:
+            g["st"].append("Restzeit")
+
+
 def _lesen_roh(text):
     """Rückgabe (ergebnis, grund). ergebnis = {'quartale': {gruppe: {'ht': [...], 'st': [...], 'nt': [...]}}} oder None."""
     L = text.split("\n")
     B = blocks(L)
     if not B:
         return None, "kein Modul-3-Abschnitt"
+    if any(re.search(r"\bmo\.?\s*(?:-|bis)\s*(?:fr|so)\b|werktag|wochenende", L[i], re.I) for i in B):
+        return None, "Wochentage im Abschnitt, nicht eindeutig"
     erg, fehler = {}, 0
 
     def add(q, art, wert):
@@ -82,12 +93,13 @@ def _lesen_roh(text):
             add(q or ctx, "st", "Restzeit")
         elif len(arten) > 1 and zs:
             fehler += 1
+    _st_auffuellen(erg)
     if erg and not fehler and not pruefen({"quartale": erg}):
         return {"quartale": erg}, "zeilenweise"
     erg.clear()
 
     # (D) Zeilengruppe: Tarifname in einer Zeile, weitere Zeiten in den Folgezeilen darunter (nur Zeiten, nichts anderes)
-    ctx, cur, fehler = None, None, 0
+    ctx, cur, fehler, age = None, None, 0, 0
     for i in B:
         l = L[i]
         if JAHRESZEIT.search(l):
@@ -105,13 +117,17 @@ def _lesen_roh(text):
         elif len(arten) > 1:
             cur = None
             fehler += bool(zs)
-        elif cur and zs and not re.search(r"[a-zA-Z]{4,}", ZEIT.sub("", l)) :
+        elif cur and zs and age < 4 and not re.search(r"quartal|modul", l, re.I):
             for z in zs:
                 add(q or ctx, cur, z)
+        elif cur and not l.strip() and age < 4:
+            pass
         else:
             cur = None
+        age = 0 if len(arten) == 1 else age + 1
         if REST.search(l) and not zs and cur is None:
             pass
+    _st_auffuellen(erg)
     if erg and not fehler and not pruefen({"quartale": erg}):
         return {"quartale": erg}, "zeilengruppe"
     erg.clear()
@@ -146,6 +162,7 @@ def _lesen_roh(text):
                 m = REST.search(L[j])
                 a = min(pos, key=lambda k: abs(pos[k] - m.start()))
                 add(q, a, "Restzeit") if a == "st" else None
+        _st_auffuellen(erg)
         if erg and not fehler and not pruefen({"quartale": erg}):
             return {"quartale": erg}, "spaltenweise"
         erg.clear()
@@ -164,8 +181,8 @@ def pruefen(erg):
     HT und NT nicht leer; mit ausdrücklichen ST-Zeiten (ohne 'Restzeit') decken die drei genau 24 Stunden ab. -> Fehlertext oder None."""
     q = erg["quartale"]
     alle = [x for g in q for x in g]
-    if sorted(alle) != [1, 2, 3, 4]:
-        return "Quartale lückenhaft oder überlappend"
+    if len(alle) != len(set(alle)):
+        return "Quartale überlappen"
     for g, v in q.items():
         if not v["ht"] or not v["nt"]:
             return "HT oder NT ohne Zeit"
@@ -204,15 +221,50 @@ def lesen(text):
     if not erg:
         return erg, grund
     L = text.split("\n")
+    # Quartalsgruppen mit gleichem Inhalt zusammenfassen
+    gl = {}
+    for k, v in erg["quartale"].items():
+        gl.setdefault(repr(v), []).append(k)
+    erg["quartale"] = {tuple(sorted(x for k in ks for x in k)): erg["quartale"][ks[0]] for ks in gl.values()}
+    zugeordnet = {z for g in erg["quartale"].values() for a in g.values() for z in a}
+    for i in blocks(L):
+        if JAHRESZEIT.search(L[i]):
+            continue
+        for m in ZEIT.finditer(L[i]):
+            z = norm(m)
+            if z and z not in zugeordnet:
+                return None, "Zeit im Abschnitt nicht zugeordnet"
     qs = set()
     for i in blocks(L):
         l = L[i]
         mehrfach = len(re.findall(r"quartal", l, re.I)) >= 2 or len(re.findall(r"\bq[1-4]\s*:", l, re.I)) >= 2
-        if mehrfach and quartale(l) != (1, 2, 3, 4):
+        if mehrfach and quartale(l) != (1, 2, 3, 4) and re.search(r"\d", re.sub(r"quartal\s*\d|\bq\d", "", l, flags=re.I)):
             return None, "Quartalstabelle im Abschnitt, nicht eindeutig"
+        if mehrfach:
+            continue
         if not mehrfach:
             qs.add(quartale(l))
     qs -= {None}
+    ja, gesehen = set(), set()
+    for i in blocks(L):
+        l = L[i]
+        if re.search(r"\bq\s*(?:[ivx]+|\d)\b", l, re.I) and quartale(l) is None and not JAHRESZEIT.search(l):
+            return None, "Quartalsangabe nicht lesbar"
+        t4 = re.findall(r"\b(ja|nein)\b", l, re.I)
+        if len(t4) == 4 and re.search(r"\b(ja|nein)\b\s+\b(ja|nein)\b", l, re.I):
+            ja = {k + 1 for k, v in enumerate(t4) if v.lower() == "ja"}
+            gesehen = {1, 2, 3, 4}
+    for l in L:
+        m = re.search(r"(?:([1-4])\.?\s*quartal|quartal\s*([1-4])).*?\b(ja|nein)\b", l, re.I)
+        if m and re.search(r"\d{2}\.\d{2}", l):
+            qn = int(m.group(1) or m.group(2))
+            gesehen.add(qn)
+            if m.group(3).lower() == "ja":
+                ja.add(qn)
+    if gesehen and gesehen != {1, 2, 3, 4}:
+        return None, "Quartalstabelle Ja/Nein unvollständig"
+    if ja and ja != {1, 2, 3, 4} and len(erg["quartale"]) == 1:
+        qs = {tuple(sorted(ja))}
     if len(erg["quartale"]) == 1 and next(iter(erg["quartale"])) == (1, 2, 3, 4):
         qs -= {(1, 2, 3, 4)}
         if len(qs) == 1:
@@ -220,7 +272,7 @@ def lesen(text):
             erg["quartale"][next(iter(qs))] = g
         elif len(qs) > 1:
             return None, "widersprüchliche Quartalsangaben"
-    elif qs - set(erg["quartale"]) - {(1, 2, 3, 4)}:
+    elif {x for q in qs for x in q} - {x for q in erg["quartale"] for x in q}:
         return None, "widersprüchliche Quartalsangaben"
     return erg, grund
 
