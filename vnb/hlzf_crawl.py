@@ -291,6 +291,15 @@ class HlzfCrawler:
                 text = await page.evaluate(HTML_JS)
             except Exception:
                 text = ""
+            frame_links = []
+            for fr in page.frames[1:]:        # Portale (GIPS, EnWG-Tool) laden die Veröffentlichungen in einem iframe
+                try:
+                    if fr.url.startswith("http"):
+                        await page.wait_for_timeout(300)
+                        text += "\n\n" + await fr.evaluate(HTML_JS)
+                        frame_links += await fr.evaluate(LINKS_JS)
+                except Exception:
+                    pass
             if SPERRE.search(text[:600] or "") and len(text) < 1500:
                 blockiert += 1
                 continue
@@ -304,6 +313,7 @@ class HlzfCrawler:
                 links = await page.evaluate(LINKS_JS)
             except Exception:
                 links = []
+            links = list(links) + frame_links
             for href, txt in links:
                 href = href.split("#")[0]
                 if not href.startswith("http"):
