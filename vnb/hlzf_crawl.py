@@ -61,9 +61,14 @@ HART_IGNORIEREN = re.compile(r"/(karriere|jobs?|stellen|presse|news|aktuelles|ne
                              r"ladestation\w*|e-mobilitaet|photovoltaik|ausbildung|unternehmen/geschichte)(/|$|-|\\.)", re.I)
 
 
+PORTAL_HOSTEN = {"enwg-veroeffentlichungen.de", "gipsprojekt.de"}
+
+
 def verwandte_domain(href: str, start_domain: str) -> bool:
     """Zielhost ist dieselbe Basisdomain oder eine Netz-Schwesterdomain mit demselben Namensstamm (stadtwerke-x.de → netze-x.de, netz.stadtwerke-x.de)."""
     h = urlparse(href).netloc.lower().split(":")[0].removeprefix("www.")
+    if basis_domain(h) in PORTAL_HOSTEN:      # Veröffentlichungsportale, die viele Stadtwerke einbinden (GIPS / EnWG-Tool)
+        return True
     if basis_domain(h) == basis_domain(start_domain):
         return True
     stamm = [t for t in re.split(r"[.\-]", basis_domain(start_domain).rsplit(".", 1)[0]) if len(t) >= 5 and t not in ("stadtwerke", "gemeindewerke", "energie", "netze", "netz")]
