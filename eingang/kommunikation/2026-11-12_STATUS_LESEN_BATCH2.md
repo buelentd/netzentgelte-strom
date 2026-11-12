@@ -42,3 +42,5 @@ Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwal
 
 ## Offen gesamt
 91 Dokumente in lauf/hlzf_2027_offen.csv; 48 jetzt gelesen -> Rest ca. 43 (davon etliche Raster/Diagramme).
+
+- SNB917593691679 (EW Unterwössen): Datei im Repo ist nginx-500-Fehlerseite, kein Dokument -> manuell holen.
