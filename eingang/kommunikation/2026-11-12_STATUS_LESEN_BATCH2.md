@@ -1,7 +1,7 @@
 # Status Lesen HLZF 2027-vorlaeufig (12.11.2026, abendlicher Stand)
 
 ## Geliefert auf Branch vibe/hlzf-etappen-1-2-705031
-`ergebnis/hlzf/hlzf_2027_gelesen.csv`: jetzt **39 Zeilen** (vorher 20). Pruefskript: 39 Zeilen, 0 Fehler.
+`ergebnis/hlzf/hlzf_2027_gelesen.csv`: jetzt **68 Zeilen** (vorher 20). Pruefskript: 68 Zeilen, 0 Fehler.
 
 ### Diesen Stand neu dazu (Commits 624b02b, 965ecae, 2dffa78, 57e8d13)
 Jede Zeile mit Seiten-/Zellenbezug in bemerkung (Seite, Tabelle, Ebene, Saison):
@@ -36,5 +36,9 @@ Jede Zeile mit Seiten-/Zellenbezug in bemerkung (Seite, Tabelle, Ebene, Saison):
 - Raster/Diagramme: SNB936176430474 Tauberfranken, SNB938413573104 QuartiersNetz, SNB918516395612 Bielefelder, SNB961471621746 Pfalzwerke, SNB964262506406 Radevormwald, SNB945861817537
 - Weiter im Lesen: Ratingen, Hollfeld, Herten, CPM Netz, Neunburg v.W. (H/W-Spalten), swa Netze (15 S.), SW Bad Rodach (9 S. Preisblatt)
 
+## Update (spaeterer Stand)
+Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwalde, Goldbach, Rudolstadt, Springe, Mainz, Gelsenwasser 2 Gebiete, swa Netze, Ratingen, Herten, Neunburg, CPM, Hollfeld unleserlich, Oerlinghausen, Bad Hersfeld, Heikendorf, Waren, Doebeln, Bad Neustadt, Freising, Mittelrhein, Mainbernheim, Angermuende, Waldbuettelbrunn, SVH Haar, Dortmunder Netz, Lingen unleserlich, Rettenberg, Bruchmuehlbach, BIGGE, Vlotho, Ditzingen, Haslach, Elm-Lappwald/Hanau unleserlich).
+6 beanstandete Zeilen mit Seite-Zelle-Beleg nachgeliefert (Antwort: 2026-11-12_ANTWORT_AUF_RUECKMELDUNG_1630.md).
+
 ## Offen gesamt
-91 Dokumente in lauf/hlzf_2027_offen.csv; 29 jetzt gelesen -> Rest ca. 62.
+91 Dokumente in lauf/hlzf_2027_offen.csv; 48 jetzt gelesen -> Rest ca. 43 (davon etliche Raster/Diagramme).
