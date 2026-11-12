@@ -143,8 +143,11 @@ def inhalt_pruefen(text: str) -> dict:
     ok = hl and ((zeiten >= 3 and jz >= 2) or (raster and zeiten >= 8))
     # Modul-3-Tarifzeiten (§ 14a EnWG, HT/NT) sind keine Hochlastzeitfenster nach § 19 StromNEV (EWR Remscheid)
     tarif = False
-    if MODUL3.search(text) and not PARA19.search(text) and zeiten >= 3 and re.search(r"hochlast|hochtarif|niedriglast|standardlast|hlzf", text, re.I):
-        tarif = True   # zweite Art: Tarifstufen-Zeiten (HT/NT/ST), getrennt vom § 19 führen
+    # Modul-3-Tarifzeiten (§ 14a EnWG, HT/ST/NT, Quartale) stehen sehr oft im Preisblatt unter Netzentgelte (Festlegung Nutzer 12.11.2026):
+    # zweite Art von Zeitfenstern, getrennt von § 19 führen
+    if re.search(r"modul\s*3|zeitvariable\s+netzentgelt", text, re.I) and zeiten >= 3 and re.search(r"hochtarif|niedertarif|standardtarif|hochlast|niedriglast|quartal", text, re.I):
+        tarif = True
+    if ok and MODUL3.search(text) and not PARA19.search(text):
         ok = False
     return {"ok": ok, "jahr": jahr, "anfrage": bool(hl and ANFRAGE.search(text)), "zeiten": zeiten, "jz": jz, "tarifzeiten": tarif}
 
@@ -279,6 +282,7 @@ class HlzfCrawler:
 
         page = await ctx.new_page()
         suche_getan = False
+        start_hash = None
         while heap and f.seiten < MAX_SEITEN and geprueft_docs < MAX_DOKUMENTE:
             _, _, url, tiefe, ref = (e := heapq.heappop(heap))
             if url in gesehen:
@@ -321,6 +325,11 @@ class HlzfCrawler:
             if SPERRE.search(text[:600] or "") and len(text) < 1500:
                 blockiert += 1
                 continue
+            th = hashlib.sha1(text[:20000].encode("utf-8", "ignore")).hexdigest()
+            if start_hash is None:
+                start_hash = th
+            elif ref == "Seed" and th == start_hash:
+                continue        # Soft-404: erfundener Pfad liefert die Startseite mit 200; relative Links würden falsch aufgelöst
             # Die Seite selbst kann die Tabelle enthalten (HTML wie PDF)
             pr = inhalt_pruefen(text)
             if pr["ok"] and pr["zeiten"] >= 6 and pr["jz"] >= 3:      # Webseite strenger prüfen (Menütexte, Öffnungszeiten)

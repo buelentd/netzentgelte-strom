@@ -138,3 +138,10 @@ Die Suchlinks für den Browser (Regel vom 06.11.) verwenden den **Namen des Netz
 ## Festlegung: HLZF-Fund aus 2027 zählt für 2026 und 2027 (Nutzer, 12.11.2026, endgültig)
 
 Ein Hochlastzeitfenster-Dokument für 2027 ist ein positiver Fund und wird für 2026 und 2027 genutzt. Der Status `gelesen_aus_2027` hält nur die Herkunft fest und zählt wie `gelesen_unser` als fertig (Partnerpaket, Arbeitsliste, Datenbank). Das wird nicht mehr angesprochen oder neu diskutiert.
+
+
+## Regel: Zwei Arten von Zeitfenstern, Modul-3-Zeiten stehen oft im Preisblatt (Festlegung Nutzer, 12.11.2026)
+
+1. **§ 19 Abs. 2 StromNEV (atypische Netznutzung):** Hochlastzeitfenster je Jahreszeit und Ebene, eigene Dokumente oder Abschnitt im Preisblatt (swa Netze). Spalten `hlzf_…`.
+2. **Modul 3 (§ 14a EnWG, zeitvariable Netzentgelte):** Hochtarif/Standardtarif/Niedertarif (HT/ST/NT) mit Uhrzeiten, oft nach Quartalen. Diese Zeiten stehen **sehr oft im Preisblatt unter Netzentgelte** (z. B. Elektra Pinzberg: Hochtarif 9,64 ct/kWh, 17:00–21:00). Beim Lesen von Preisblättern immer auch den Abschnitt Modul 3 mitnehmen.
+Beide Arten werden getrennt geführt und nie in dieselben Spalten geschrieben. Der Crawler (`vnb/hlzf_crawl.py`) merkt Dokumente mit Modul-3-Zeiten als "Tarifzeiten" vor.
