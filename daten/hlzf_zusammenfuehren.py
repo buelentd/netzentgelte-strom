@@ -9,6 +9,7 @@ COLS = [f"hlzf_ns_{x}" for x in J] + [f"hlzf_msns_{x}" for x in J] + ["hlzf_schw
 
 def status_unser(s, jahr, pruefung=""):
     if s == "gelesen" and jahr == "2026": return "gelesen_unser"
+    if s == "gelesen, Jahr 2027" and not pruefung: return "gelesen_aus_2027"   # Festlegung 12.11.2026: 2027-Fund zählt für 2026 und 2027
     if s == "gelesen, Prüfung offen" and pruefung.startswith("ungeprüft neu gelesen"): return "gelesen_ungeprueft"
     if s.startswith("gelesen, Jahr") or (s == "gelesen" and jahr not in ("2026", "")): return "jahr_nicht_2026"
     if s == "gelesen, Prüfung offen": return "pruefung_offen"

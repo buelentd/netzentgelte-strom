@@ -1,2 +1,37 @@
-SNB973074326355_0093_hlzf.pdf
+SNB973074326355_0093_hlzf_2027.pdf | SNB973074326355_0093_hlzf.pdf
 
+=== Datei SNB973074326355_0093_hlzf_2027.pdf ===
+Hochlast-Zeitfenster für atypische Netznutzung (gemäß § 19 Abs. 2 S. 1 StromNEV)
+Jahr               2027
+
+Anmerkung:                Die Zeiten sind als Uhrzeit angegeben und keine Lastgangzeitstempel,
+                          die einen Zeitraum abbilden!
+                          Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig. Wochenenden,
+                          Feiertage und maximal ein Brückentag pro Woche sowie die Zeit zwischen
+                          Weihnachten und Neujahr (24. Dezember - 1. Januar) gelten als Nebenzeiten.
+
+                          Als Brückentage gelten der 07.05.2027 und der 28.05.2027
+
+
+
+                     Frühjahr           Sommer                Herbst              Winter
+Netz-/
+Umspannebene von            bis     von         bis     von            bis   von          bis
+                                                                              12:45   -    20:00
+      MS
+
+                                                                              14:00   -    20:15
+    MS/NS
+
+                                                                              14:00   -    20:00
+      NS
+
+
+
+Frühling                  01. März bis 31. Mai
+Sommer                    01. Juni bis 31. August
+Herbst                    01. September bis 30. November
+Winter                    01. Dezember bis 28. Februar
+
+
+=== Datei SNB973074326355_0093_hlzf.pdf ===

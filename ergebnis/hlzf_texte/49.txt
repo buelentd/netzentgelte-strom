@@ -1,28 +1,36 @@
-https://www.gw-sinzheim.de/wp-content/uploads/2025/11/Hochlastzeitfenster_2026.pdf
+SNB985472799266_0049_hlzf_2027.pdf
 
-                                        Hochlastzeitfenster 2026
-  für atypische Netznutzung nach § 19 Abs. 2 Satz 1 StromNEV für das Verteilnetz der Gemeindewerke
-                                              Sinzheim
+Hochlastzeitfenster Strom
 
-Entnahmeebene              Winter Dez. – Feb.   Frühling Mrz. – Mai   Sommer Jun. – Aug.      Herbst Sep. – Nov.
-
-Mittelspannungsnetz           12:00 – 12:45                                                         entfällt
-                              16:30 - 19:30           entfällt               entfällt
-
-Umspannung zur                12:00 – 12:45
-                              16:30 - 19:30           entfällt               entfällt               entfällt
-Niederspannung
-
-                              11:45 – 13:00
-                              17:15 - 18:15
-Niederspannungsnetz                                   entfällt               entfällt               entfällt
+für Genehmigungszeitraum              2027 (Basis: 01.09.2025 – 31.08.2026)
 
 
-Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig.
-Wochenenden, Feiertage (Baden-Württemberg), Heiligabend und Sylvester gelten als Nebenzeiten.
 
-Die Bestimmung der Hochlastzeitfenster erfolgte auf Basis des durch die Bundesnetzagentur
-veröffentlichten Leitfaden zur Genehmigung von individuellen Netz- entgelten nach § 19 Abs. 2 S. 1 StromNEV und
-von
-Befreiungen von den Netz- entgelten nach § 19 Abs. 2 S. 2 StromNEV (Stand September 2011)
+                                                         Winter (Dez.-Feb.)      Frühling (März-Mai)       Sommer (Juni-Aug.)        Herbst (Sept.-Nov.)
+Netz- / Umspannebene der Entnahme
+                                                       Startpunkt Endpunkt      Startpunkt Endpunkt       Startpunkt Endpunkt      Startpunkt Endpunkt
+                                                          8:15        14:30                                  19:30       19:45        16:45         18:15
+                    Netzebene
+                                                         15:30        19:00
+                  Hochspannung
+
+
+                     Netzebene                           10:15        18:45
+                Umspannung HS/MS
+
+                    Netzebene                             8:00        15:00                                                           16:15         17:30
+                  Mittelspannung                         16:30        18:45
+                                                         16:30        19:00
+          Netzebene Umspannung MS/NS
+
+                                                         16:30        19:00
+            Netzebene Niederspannung
+
+
+
+Die Zeitangaben sind folgendermaßen zu interpretieren:
+Wenn zum Beispiel das Hochlastzeitfenster im Zeitraum von 16:45 (Startpunkt) bis 19:15 Uhr (Endpunkt) angegeben ist, sind im Entnahmelastgang die
+Viertelstundenwerte zu überprüfen, die diesen Zeitraum abdecken. Die Zeitstempel der Viertelstundenwerte können entweder am Anfang der
+Messperiode eines Viertelstundenwertes gesetzt werden oder am Ende der Messperiode. Dementsprechend sind im ersten Fall die Werte mit den
+Zeitstempeln von 16:45 Uhr bis 19:00 Uhr zu überprüfen und im zweiten Fall von 17:00 Uhr bis 19:15 Uhr.
 

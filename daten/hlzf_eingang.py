@@ -118,6 +118,8 @@ def main():
         alt = rows.get(nr)
         alt_gew = 1 if alt and alt[1].startswith("gelesen") else 0
         d = dict.fromkeys(H, ""); d["nr"] = nr
+        if alt_gew:   # bereits gelesene Zeile nie überschreiben (12.11.2026: eine neue Lesung hatte geprüfte Zeilen ersetzt)
+            bericht.append([nr, Path(f).name, "bereits gelesen, nicht überschrieben", ""]); continue
         if gew == 0:
             grund = "kein Text (Scan?)" if len(t.strip()) < 100 else (e.grund or "Zeitfenster nicht lesbar")
             bericht.append([nr, Path(f).name, "nicht gelesen: " + grund, "alte Zeile bleibt" if alt_gew else ""])
@@ -135,7 +137,9 @@ def main():
         d["hlzf_mindestleistung_kw"] = e.mindest_kw.get("NS", "") or e.mindest_kw.get("MSNS", "")
         d["hlzf_quelle_url"] = "eingang: " + Path(f).name; d["hlzf_jahr"] = e.jahr or ""; d["hlzf_pruefung"] = "; ".join(pr)
         d["hlzf_status"] = "gelesen" if not pr and e.jahr in (2026, None) else ("gelesen, Jahr " + str(e.jahr) if e.jahr not in (2026, None) else "gelesen, Prüfung offen")
-        if d["hlzf_status"] == "gelesen" and stf == "ungeprueft":
+        if d["hlzf_status"].startswith("gelesen, Jahr 2027") and stf == "ungeprueft":
+            d["hlzf_status"] = "gelesen, Prüfung offen"
+        if d["hlzf_status"] in ("gelesen", "gelesen, Prüfung offen") and stf == "ungeprueft":
             d["hlzf_status"] = "gelesen, Prüfung offen"
             d["hlzf_pruefung"] = ("; ".join(x for x in (d["hlzf_pruefung"],) if x) + "; " if d["hlzf_pruefung"] else "") + "ungeprüft neu gelesen (Form: " + e.form + "), Zuordnung der Zeilen zu den Ebenen nicht am Dokument bestätigt"
         if any(Path(x).suffix.lower() in (".html", ".htm") for x in fs) and not e.jahr:

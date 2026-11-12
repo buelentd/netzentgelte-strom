@@ -1,11 +1,11 @@
-SNB964137069203_0251_hlzf.pdf
+SNB964137069203_0251_hlzf_2027.pdf
 
            Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV
 
 Netzkunden mit atypischen Verbrauchsverhalten können nach § 19 Abs. 2 Satz 1 der
 Stromnetzentgeltverordnung ein Sonderentgelt für die Netznutzung beantragen.
 
-                  Hochlast-Zeitfenster gemäß Leitfaden BNetzA für:        2026
+                  Hochlast-Zeitfenster gemäß Leitfaden BNetzA für:        2027
 
 Referenzzeitraum: September des Vor-Vorjahres bis August des Vorjahres.
 
@@ -19,17 +19,19 @@ Netzebene der             Uhrzeit           Uhrzeit        Uhrzeit          Uhrz
 Entnahmestelle            von - bis         von - bis      von - bis        von - bis
 
 
-Mittelspannung             keine             keine           keine        08:30 – 12:00
+                                                                          08:30 – 15:00
+Mittelspannung             keine             keine       12:45 – 13:00
+                                                                          17:30 – 18:00
 
 
 
 
-Umspg. MS/NS               keine             keine       13:00 – 14:00    07:00 – 14:00
+Umspg. MS/NS               keine             keine           keine           keine
 
 
 
 
-Niederspannung             keine             keine           keine           keine
+Niederspannung             keine             keine       17:45 – 18:00    17:15 – 19:30
 
 
 

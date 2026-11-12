@@ -1,5 +1,57 @@
-SNB961471621746_0038_hlzf.pdf
+SNB961471621746_0038_hlzf_2027.pdf | SNB961471621746_0038_hlzf.pdf
 
+=== Datei SNB961471621746_0038_hlzf_2027.pdf ===
+    Hochlastzeitfenster der Pfalzwerke Netz AG für das Jahr 2027
+             Hochlastzeitfenster Netzebene 110 kV
+             Frühling 01. Mrz. bis 31. Mai.            von 18:00 bis 22:30 und von 00:00 bis 00:00
+             Sommer 01. Jun.       bis 31. Aug.        von         bis         und von 00:00 bis 00:00
+             Herbst     01. Sept. bis 30. Nov.         von 10:00 bis 15:15 und von              bis
+             Winter     01. Dez. bis 28. Feb.          von 08:30 bis 09:30 und von 11:30 bis 19:45
+
+
+             Hochlastzeitfenster Umspannebene 110 / 20 kV
+             Frühling 01. Mrz. bis 31. Mai.            von         bis         und von          bis
+             Sommer 01. Jun.       bis 31. Aug.        von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Herbst     01. Sept. bis 30. Nov.         von 09:00 bis 14:45 und von 17:00 bis 20:00
+             Winter     01. Dez. bis 28. Feb.          von 11:00 bis 15:30 und von              bis
+
+
+             Hochlastzeitfenster Netzebene 20 kV
+             Frühling 01. Mrz. bis 31. Mai.            von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Sommer 01. Jun.       bis 31. Aug.        von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Herbst     01. Sept. bis 30. Nov.         von         bis         und von 00:00 bis 00:00
+             Winter     01. Dez. bis 28. Feb.          von 09:00 bis 15:00 und von 18:00 bis 20:45
+
+
+             Hochlastzeitfenster Umspannebene 20 kV / 0,4 kV
+             Frühling 01. Mrz. bis 31. Mai.            von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Sommer 01. Jun.       bis 31. Aug.        von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Herbst     01. Sept. bis 30. Nov.         von 10:00 bis 11:15 und von 00:00 bis 00:00
+             Winter     01. Dez. bis 28. Feb.          von         bis         und von 00:00 bis 00:00
+
+
+             Hochlastzeitfenster Netzebene 0,4 kV
+             Frühling 01. Mrz. bis 31. Mai.            von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Sommer 01. Jun.       bis 31. Aug.        von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Herbst     01. Sept. bis 30. Nov.         von 00:00 bis 00:00 und von 00:00 bis 00:00
+             Winter     01. Dez. bis 28. Feb.          von 18:30 bis 20:15 und von 00:00 bis 00:00
+
+Alle Berechnungen basieren auf dem Beschluss (BK4-13-739) der Bundesnetzagentur vom 11.12.2013 zur Festlegung der
+sachgerechten Ermittlung individueller Entgelte nach § 19 Abs. 2. S. 1 und 2 StromNEV.
+
+
+Dementsprechend sind Hochlastzeitfenster ausschließlich an Werktagen (Montag – Freitag) gültig. Wochenenden,
+Feiertage und maximal ein Brückentag pro Woche, sowie die Zeit zwischen Weihnachten und Neujahr
+(24. Dezember – 1. Januar) gelten als Nebenzeiten.
+
+
+Eine Messperiode erstreckt sich über 15 Minuten und startet jeweils zur vollen Viertelstunde. Ein Messwert wird am Ende
+der Messperiode für den Zeitraum der gerade abgelaufenen Messperiode abgespeichert. Der Wert um z. B. 11:30 Uhr
+bezieht sich somit auf einen Messzeitraum von 11:15 Uhr bis 11:30 Uhr. Wenn ein Hochlastzeitfenster um 11:30 Uhr
+beginnt, dann liegt der Messwert um 11:30 Uhr nicht im Hochlastzeitfenster.
+
+
+=== Datei SNB961471621746_0038_hlzf.pdf ===
    Hochlastzeitfenster der Pfalzwerke Netz AG für das Jahr 2026
              Hochlastzeitfenster Netzebene 110 kV
              Frühling 01. Mrz. bis 31. Mai.           von 10:30 bis 13:30 und von 00:00 bis 00:00

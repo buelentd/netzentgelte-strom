@@ -1,5 +1,47 @@
-SNB971746988153_0009_hlzf.xls
+SNB971746988153_0009_hlzf_8153hlzfhochlastzeitfenstereng.xls
 
+## 2027
+Übersicht HT-Zeiten 2027
+
+
+Spannungsebene HS   Basis 2025/2026
+Anfang   Ende
+Winter   0.4791666666666667   0.6041666666666666
+Frühjahr
+Sommer
+Herbst
+
+
+Spannungsebene HS/MS   Basis 2025/2026
+Anfang   Ende   Anfang   Ende
+Winter   0.4375   0.6145833333333334   0.7708333333333334   0.8125
+Frühjahr
+Sommer
+Herbst
+
+
+Spannungsebene MS   Basis 2025/2026
+Anfang   Ende   Anfang   Ende
+Winter   0.4270833333333333   0.6875   0.7291666666666666   0.8541666666666666
+Frühjahr
+Sommer
+Herbst
+
+
+Spannungsebene MS/NS   Basis 2025/2026
+Anfang   Ende
+Winter   0.75   0.875
+Frühjahr
+Sommer
+Herbst
+
+
+Spannungsebene NS   Basis 2025/2026
+Anfang   Ende
+Winter   0.75   0.875
+Frühjahr
+Sommer
+Herbst
 ## 2026
 Übersicht HT-Zeiten 2026
 

@@ -1,0 +1,835 @@
+SNB958060904298_0083_hlzf_4298hlzfLeitfadenStromNEVNetzA.pdf
+
+               Leitfaden
+
+
+  zur Genehmigung von individuellen
+  Netzentgelten nach § 19 Abs. 2 S. 1
+ StromNEV und von Befreiungen von
+den Netzentgelten nach § 19 Abs. 2 S. 2
+              StromNEV
+
+
+          (Stand September 2011)
+                                                                                 1
+
+
+Gliederung
+
+
+VORBEMERKUNG ............................................................................................................................................. 2
+LEITFADEN ......................................................................................................................................................... 3
+1       GENERELLE AUSLEGUNGSGRUNDSÄTZE ....................................................................................... 3
+    1.1         ZEITPUNKT DER ANTRAGSTELLUNG ....................................................................................................... 3
+    1.2         TATSÄCHLICHER EINTRITT DER VORAUSSETZUNGEN............................................................................. 4
+    1.3         GEGENSTAND DER GENEHMIGUNG ......................................................................................................... 5
+    1.4         LAUFZEIT DER GENEHMIGUNG BZW. DER BEFREIUNG VON DEN NETZENTGELTEN ................................. 5
+    1.5         AUSWIRKUNGEN AUF DIE NETZENTGELTE DER ÜBRIGEN NETZNUTZER ................................................. 6
+    1.6         ABNAHMESTELLE ................................................................................................................................... 6
+    1.7         GESCHLOSSENE VERTEILERNETZE ......................................................................................................... 6
+2       NETZNUTZUNG ZU BESONDEREN ZEITEN ...................................................................................... 7
+    2.1     ERMITTLUNG DER ZEITFENSTER ............................................................................................................. 7
+       2.1.1 Maximalwertkurve des Tages............................................................................................................ 7
+       2.1.2 Trennlinie .......................................................................................................................................... 8
+       2.1.3 Bestimmung der Hochlastzeitfenster ................................................................................................. 8
+    2.2     ERMITTLUNG DES ENTGELTS .................................................................................................................. 9
+    2.3     ERHEBLICHKEITSSCHWELLE ................................................................................................................. 10
+    2.4     BAGATELLGRENZE ............................................................................................................................... 11
+    2.5     ZURUF- ODER ABSCHALTREGELUNGEN ................................................................................................ 11
+    2.6     NICHT GENEHMIGUNGSFÄHIGE REGELUNGEN ...................................................................................... 12
+       2.6.1 Top-Down-Überdeckung der Hochlastzeiten .................................................................................. 12
+       2.6.2 Entnahmen durch Nachtspeicherheizungen .................................................................................... 12
+       2.6.3 Einbeziehung der Jahresarbeit bei der Ermittlung der Entgeltreduktion ....................................... 12
+       2.6.4 Zusammenfassung mehrer Abnahmestellen .................................................................................... 13
+       2.6.5 Abgrenzung zu § 19 Abs. 1 StromNEV im Hinblick auf saisonale Betriebe .................................... 13
+3       INTENSIVE NETZNUTZUNG ................................................................................................................ 13
+4       ANTRAGSUNTERLAGEN ...................................................................................................................... 14
+    4.1         CHECKLISTE FÜR EINEN ANTRAG NACH § 19 ABS. 2 S. 1 STROMNEV ................................................. 14
+    4.2         CHECKLISTE FÜR EINEN ANTRAG NACH § 19 ABS. 2 S. 2 STROMNEV ................................................. 15
+                                             2
+
+
+Vorbemerkung
+Mit dem Inkrafttreten des Gesetzes zur Neuregelung energiewirtschaftsrechtlicher Vorschrif-
+ten am 4. August 2011 wurde die bisherige Regelung des § 19 Abs. 2 StromNEV in ver-
+schiedenen Punkten einer grundlegenden Änderung unterzogen (vgl. Artikel 7 des Gesetzes
+zur Neuregelung energiewirtschaftsrechtlicher Vorschriften vom 26.07.2011, BGBl1 S. 1554).
+
+Gemäß § 16 StromNEV werden die von Lieferanten und Letztverbrauchern zu zahlenden
+allgemeinen Netzentgelte ausgehend vom Prinzip der Verursachungsgerechtigkeit auf der
+Basis der sog. Gleichzeitigkeitsfunktion ermittelt. Abweichend hiervon eröffnete § 19 Abs. 2
+StromNEV bislang die Möglichkeit, einem Letztverbraucher unter bestimmten Voraussetzun-
+gen ein individuelles Netzentgelt anzubieten. Neben dieser Möglichkeit wird es zukünftig für
+einige Letztverbraucher möglich sein, sich grundsätzlich von den Netzentgelten befreien zu
+lassen.
+
+Wie bislang besteht ein Anspruch auf Angebot eines individuellen Netzentgelts gemäß § 19
+Abs. 2 S. 1 StromNEV dann, wenn auf Grund vorliegender oder prognostizierter Verbrauchs-
+daten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich ist, dass
+der Höchstlastbeitrag eines Letztverbrauchers vorhersehbar erheblich von der zeitgleichen
+Jahreshöchstlast aller Entnahmen dieser Netz- oder Umspannebene abweicht, wobei das zu
+vereinbarende individuelle Netzentgelt 20% des veröffentlichen Netzentgelts nicht unter-
+schreiten darf.
+
+Darüber hinaus können sich Letztverbraucher zukünftig gemäß § 19 Abs. 2 S. 2 StromNEV
+grundsätzlich von den Netzentgelten befreien lassen, wenn ihre Stromabnahme aus dem
+Netz der allgemeinen Versorgung an einer Abnahmestelle die Benutzungsstundenzahl von
+mindestens 7.000 Stunden erreicht und ihr Stromverbrauch an dieser Abnahmestelle 10 Gi-
+gawattstunden überschritten hat.
+
+Gemäß § 19 Abs. 2 S. 3 bedürfen sowohl die Vereinbarung eines individuellen Netzentgelts
+nach Satz 1 wie auch die Befreiung nach Satz 2 Strom der vorherigen Genehmigung durch
+die Regulierungsbehörde. Darüber hinaus erfolgen sowohl die Vereinbarung eines individuel-
+len Netzentgelts als auch die Befreiung von den Netzentgelten nach § 19 Abs. 2 S. 9 Strom-
+NEV unter dem Vorbehalt, dass die jeweiligen Voraussetzungen nach den Sätzen 1 und 2
+tatsächlich eintreten.
+
+Um den betroffenen Letztverbrauchern und Netzbetreibern transparente und nachvollziehba-
+re Auslegungsgrundsätze an die Hand zu geben, die es ihnen ermöglichen, die konkreten
+Anforderungen für eine Genehmigungserteilung nach § 19 Abs. 2 S. 1 oder 2 StromNEV
+bereits im Vorfeld einer Antragstellung beurteilen zu können, hatte die Beschlusskammer 4
+der Bundesnetzagentur in der Vergangenheit bereits entsprechende Leitfäden zu Inhalt und
+Struktur von Anträgen auf Genehmigung von individuellen Netzentgelten nach § 19 Abs. 2 S.
+1 und 2 StromNEV veröffentlicht. Der letzte Leitfaden zur Genehmigung individueller Netz-
+entgeltvereinbarungen nach § 19 Abs. 2 S. 1 und 2 StromNEV ab 2011 wurde von der Be-
+schlusskammer am 29. Oktober 2010 im Internet veröffentlicht. Dieser nunmehr aktualisierte
+Leitfaden ersetzt die Version vom 29. Oktober 2010.
+
+Der überarbeitete aktuelle Leitfaden berücksichtigt insoweit den sich mit dem Inkrafttreten
+des Gesetzes zur Neuregelung energiewirtschaftsrechtlicher Vorschriften am 4. August 2011
+eingetretenen Änderungen des § 19 Abs. 2 StromNEV ergebenen Anpassungsbedarf für die
+Entscheidungspraxis der Beschlusskammer.
+                                             3
+
+
+Leitfaden
+Verschiedene Aspekte spielen sowohl für die Genehmigung individueller Netzentgelte bei
+atypischer Netznutzung als auch für die Genehmigung einer Befreiung von den Netzentgel-
+ten bei intensiver Netznutzung eine Rolle. Bevor daher die für die beiden Fälle anzuwenden-
+den Konzepte dargelegt werden, finden sich nachfolgend einige generell gültige Regelungen
+im Zusammenhang mit der Bearbeitung von Anträgen nach § 19 Abs. 2 StromNEV.
+
+
+
+1 Generelle Auslegungsgrundsätze
+Im Zusammenhang mit der Genehmigung individueller Netzentgelte bzw. Befreiungen von
+den veröffentlichten Netzentgelten nach § 19 Abs. 2 StromNEV ergeben sich verschiedene
+allgemeine Gesichtpunkte, die von den Beteiligten des Verfahrens sowohl in Fällen des Sat-
+zes 1 als auch des Satzes 2 zu beachten sind.
+
+
+
+1.1 Zeitpunkt der Antragstellung
+
+Bezüglich des Zeitpunkts der Antragstellung enthält § 19 Abs. 2 StromNEV keine expliziten
+Vorgaben. Nach Auffassung der Bundesnetzagentur ist der Antrag jedoch spätestens in dem
+Kalenderjahr zu stellen, für das die Genehmigung beantragt wird. Eine Beantragung für zu-
+rückliegende Kalenderjahre scheidet dagegen bereits aus Gründen des Vertrauensschutzes
+aus. Insoweit ist zu berücksichtigen, dass zwar bisherige Regelung des § 19 Abs. 2 S. 8
+StromNEV, nach der durch die Gewährung individueller Netzentgelte bei den Netzbetreibern
+entstehenden Mindererlöse über die allgemeinen Entgelte und somit durch die allgemeinen
+Netznutzer auszugleichen waren, entfallen ist. Jedoch begründet § 19 Abs. 2 Satz 6 der
+Neuregelung für Betreiber von Übertragungsnetzen die Verpflichtung, entgangene Erlöse,
+die aus individuellen Netzentgelten nach Satz 1 und Befreiungen von Netzentgelten nach
+Satz 2 resultieren, nachgelagerten Betreibern von Elektrizitätsverteilernetzen zu erstatten.
+Die Übertragungsnetzbetreiber haben diese Zahlungen sowie eigene entgangene Erlöse
+durch individuelle Netzentgelte nach Satz 1 und Befreiungen von den Netzentgelten nach
+Satz 2 über eine finanzielle Verrechnung untereinander in entsprechender Anwendung von
+§ 9 Kraft- Wärme-Kopplungsgesetzes auszugleichen, § 19 Abs. 2 S. 7 der Neuregelung.
+
+Für einen bereits in der Vergangenheit liegenden Zeitraum wäre eine rückwirkende Antrag-
+stellung für die Übertragungsnetzbetreiber und mittelbar die Gesamtheit der übrigen Netz-
+nutzer, die die etwaigen mit der Wälzung verbundenen Erhöhungen der allgemeinen Netz-
+entgelte letztlich tragen müssten, nicht zuzumuten. Für eine Antragstellung spätestens im
+ersten Kalenderjahr des Genehmigungszeitraums spricht außerdem, dass es sich nach dem
+Verordnungstext sowohl im Falle der Genehmigung nach Satz 1 als auch nach Satz 2 um
+Prognoseentscheidungen handelt, die für die Vergangenheit nicht mehr möglich sind.
+
+Bei der Genehmigung nach § 19 Abs. 2 S. 1 StromNEV wird zudem deutlich, dass die An-
+tragstellung frühestens im Kalenderjahr vor dem Genehmigungszeitraum und spätestens im
+ersten Kalenderjahr des Genehmigungszeitraums erfolgen muss. Die Voraussetzungen für
+eine Vereinbarung eines individuellen Netzentgelts nach § 19 Abs. 2 S. 1 StromNEV verwei-
+sen im besonderen Maße auf die Prognostizierbarkeit der Abweichungen von der Höchstlast.
+Eine weit vor dem Genehmigungszeitraum liegende Antragstellung beeinträchtigt die Beur-
+teilung der Vorhersehbarkeit erheblich. Bei der von der Bundesnetzagentur vorgesehenen
+Frist ist maximal ein Verzug von 2 Jahren zwischen dem Zeitraum für die Prognose des Ein-
+                                               4
+
+
+tritts der Mindestvoraussetzungen und dem Genehmigungszeitraum möglich. Eine Antrag-
+stellung nach dem Genehmigungszeitraum und damit eine ex-post-Betrachtung würde hin-
+gegen die Bedingung der Vorhersehbarkeit nach § 19 Abs. 2 S. 1 und S. 2 StromNEV ad
+absurdum führen. Außerdem sind beide Parteien antragsberechtigt im Sinne des § 19 Abs. 2
+StromNEV, so dass die Möglichkeit einer rückwirkenden Antragstellung auch nicht notwendig
+ist, um möglichen Verzögerungen durch die jeweils andere Partei zu begegnen.
+
+Die Antragstellung nach § 19 Abs. 2 S. 1 sollte daher erfolgen, sobald die für die Prognose
+erforderlichen Daten vorliegen, d.h. also zumindest die erforderlichen Verbrauchsdaten des
+dem beantragten Genehmigungszeitraum vorausgehenden Referenzzeitraums sowie die
+entsprechenden Hochlastzeitfenster bekannt sind und eine Vereinbarung zwischen Netz-
+betreiber und Letztverbraucher abgeschlossen worden ist. Die Antragstellung sollte mög-
+lichst in der ersten Jahreshälfte des betreffenden Jahres erfolgen, da im Falle einer späteren
+Beantragung der Prognosecharakter der nach § 19 Abs. 2 S. 1 StromNEV zu treffenden Ent-
+scheidung nicht mehr ausreichend gewährleistet wäre.
+
+Die Antragstellung nach § 19 Abs. 2 S. 2 StromNEV sollte erfolgen, sobald ausreichende
+Tatsachen die Annahme rechtfertigen, dass die für Befreiung von den Netzentgelten erfor-
+derlichen Voraussetzungen von 7.000 Benutzungsstunden und einer Abnahme von 10 GWh
+im beantragten Zeitraum mit hinreichender Sicherheit erfüllt sein werden.
+
+
+
+1.2 Tatsächlicher Eintritt der Voraussetzungen
+
+Bedingung für die Gewährung eines individuellen Netzentgelts wie auch der Befreiung von
+den Netzentgelten ist, dass die jeweiligen Voraussetzungen auch tatsächlich innerhalb des
+Genehmigungs- bzw. des Befreiungszeitraums eintreten. Dies wird besonders anhand der
+Genehmigung eines individuellen Netzentgelts nach § 19 Abs. 2 S. 1 StromNEV deutlich.
+Wie bereits erläutert, erfolgt eine Antragstellung des individuellen Netzentgelts im Kalender-
+jahr vor dem Genehmigungszeitraum, spätestens aber innerhalb des Genehmigungszeit-
+raums. Die Beurteilung des Nutzungsverhaltens und damit die endgültige Berechnung des
+individuellen Netzentgelts sind jedoch erst nach Abschluss des Genehmigungszeitraums
+möglich. Tritt die Voraussetzung nach § 19 Abs. 2 S. 1 StromNEV, die erhebliche Abwei-
+chung des Höchstlastbeitrags des Letztverbrauchers von der zeitgleichen Jahreshöchstlast
+aller Entnahmen aus dieser Netz- oder Umspannebene, nicht gem. § 19 Abs. 2 S. 9 Strom-
+NEV „tatsächlich“ ein, ergibt sich keine Netzentgeltreduktion bzw. Netzentgeltbefreiung.
+
+Gemäß § 19 Abs. 2 S. 9 StromNEV erfolgt somit die Vereinbarung eines individuellen Netz-
+entgelts nach Satz 1 bzw. die Befreiung von den Netzentgelten Satz 2 unter dem Vorbehalt,
+dass die jeweiligen Voraussetzungen nach den Sätzen 1 und 2 auch tatsächlich eintreten.
+Hierbei handelt es sich um eine sich unmittelbar aus der Rechtsverordnung ergebene Rege-
+lung, die im Falle des Abschlusses einer individuellen Netzentgeltvereinbarung nach § 19
+Abs. 2 S. 1 StromNEV von den Vertragsparteien auch dann zu beachten ist, wenn sie nicht
+ausdrücklich in die Vereinbarung des individuellen Netzentgelts aufgenommen worden ist.
+Hieraus folgt auch, dass der Netzbetreiber trotz erteilter Genehmigung gemäß § 19 Abs. 2 S.
+10 StromNEV verpflichtet ist, die Abrechnung der Netznutzung nach den allgemein gültigen
+Netzentgelten vorzunehmen, wenn die Voraussetzungen nach den Sätzen 1 und 2 entgegen
+der Prognose nicht eintreten.
+
+Dies bedeutet bezogen auf Satz 1, dass vom tatsächlichen Nichteintritt der Voraussetzungen
+etwa dann auszugehen wäre und damit die allgemeinen Netzentgelte zur Anwendung ge-
+bracht werden müssten, wenn feststeht, dass die nachfolgend noch näher beschriebene
+Schwelle einer erheblichen Abweichung zwischen maximaler Jahreshöchstlast und der für
+die Berechnung des individuellen Entgelts maßgelblichen Höchstlastbeitrags des Letzt-
+                                              5
+
+
+verbrauchers in den vereinbarten Hochlastzeitfenstern entgegen der prognostizierten An-
+nahme nicht erreicht wird.
+
+Im Falle des Satzes 2 läge ein tatsächlicher Nichteintritt der Voraussetzungen im Genehmi-
+gungszeitraum dann vor, wenn feststeht, dass der Letztverbraucher in dem für die Erteilung
+der Genehmigung relevanten Zeitraum die Voraussetzungen von 7.000 Benutzungsstunden
+und einer Abnahme von 10 GWh pro Jahr nicht erfüllt hat.
+
+
+
+1.3 Gegenstand der Genehmigung
+
+Gegenstand der Genehmigung durch die Bundesnetzagentur ist, wie sich aus § 19 Abs. 2 S.
+3 StromNEV ergibt, im Falle des Satzes 1 eine zwischen Letztverbraucher und Netzbetreiber
+geschlossene Vereinbarung eines individuellen Netzentgelts. Dies bedeutet, dass sich das
+individuelle Netzentgelt des Letztverbrauchers nicht unmittelbar aus der Genehmigung er-
+gibt, sondern sich mit Hilfe der der Vereinbarung zugrundeliegenden Berechnungsmethode
+sowie den tatsächlichen Daten für den Genehmigungszeitraum bestimmen lässt.
+
+Gegenstand der Genehmigung nach § 19 Abs. 2 S. 2 StromNEV ist dagegen gemäß unmit-
+telbar die Befreiung von den Netzentgelten. Einer diesbezüglichen Vereinbarung bedarf es
+im Unterschied zu Satz 1 nicht. Zur Vermeidung von Missverständnissen dürfte es für den
+Letztverbraucher in den Fällen des Satz 2 jedoch angezeigt sein, vor Antragstellung den
+Kontakt zum jeweiligen Netzbetreiber zu suchen.
+
+Die Bereifung betrifft das vom betroffenen Letztverbraucher zu zahlende Netzentgelt, wel-
+ches sich gemäß § 17 Abs. 2 StromNEV aus dem Jahresleistungsentgelt und dem Arbeits-
+entgelt zusammensetzt. Sie umfasst dagegen nicht die gemäß § 17 Abs. 7 StromNEV ferner
+zu zahlenden Entgelte für den Messstellenbetrieb, die Messung und die Abrechnung. Eben-
+falls nicht erfasst werden etwaige Entgelte für vom betroffenen Letztverbraucher in Anspruch
+genommene Netzreservekapazitätsleistungen.
+
+
+
+1.4 Laufzeit der Genehmigung bzw. der Befreiung von den Netz-
+    entgelten
+
+Nach ursprünglicher Praxis erfolgte die Genehmigung individueller Netzentgeltvereinbarun-
+gen im Regelfall jeweils nur befristet für ein Kalenderjahr. Bereits im letzten Leitfaden zur
+Genehmigung individueller Netzentgeltvereinbarungen nach § 19 Abs. 2 S. 1 und 2 Strom-
+NEV ab 2011 hatte die Beschlusskammer angekündigt, ihre Genehmigungspraxis dahinge-
+hend umzustellen, Genehmigungen nach § 19 Abs. 2 StromNEV grundsätzlich nur noch un-
+befristet zu erteilen. Dies soll insoweit auch Befreiungen von den Netzentgelten gemäß § 19
+Abs. 2 S. 2 StromNEV gelten.
+
+Um die dauerhafte Einhaltung der Genehmigungsvoraussetzungen sicherzustellen, ist es
+jedoch erforderlich, die Genehmigung individueller Netzentgeltvereinbarungen bzw. Befrei-
+ungen von den Netzentgelten für den Fall, dass sich die der Genehmigung zugrunde liegen-
+den Genehmigungsvoraussetzungen nachträglich wesentlich verändern sollten, mit einem
+entsprechenden Widerrufsvorbehalt zu verknüpfen.
+
+Weiterhin soll die Genehmigung im Falle einer Entscheidung nach § 19 Abs. 2 S. 1 Strom-
+NEV nur unter der Auflage an den Netzbetreiber erteilt werden, die jährliche Endabrechnung
+an die Beschlusskammer 4 zu übersenden, um der Beschlusskammer insoweit die Überprü-
+fung der tatsächlichen Einhaltung der Genehmigungsvoraussetzungen zu ermöglichen. Aus
+den gleichen Gründen soll die Genehmigung im Falle einer Befreiung nach § 19 Abs. 2 S. 2
+                                              6
+
+
+StromNEV mit der Auflage versehen werden, der Beschlusskammer nach Abschluss eines
+jeden Kalenderjahres einen Nachweis über die Einhaltung der in Satz 2 genannten Vorrau-
+setzungen von 7.000 Benutzungsstunden und 10 Gigawattstunden zur Verfügung zu stellen.
+Darüber hinaus sollen die Genehmigungen sowohl bei Satz 1 als auch bei Satz 2 zusätzlich
+mit der Auflage versehen werden, der Beschlusskammer 4 nach Abschluss eines jeden Ka-
+lenderjahres unverzüglich einen entsprechenden Nachweis über die tatsächlich gemäß § 19
+Abs. 2 S. 6 und 7 StromNEV geltend gemachten Mindererlöse vorzulegen.
+
+
+
+1.5 Auswirkungen auf die Netzentgelte der übrigen Netznutzer
+
+Die bisherige Regelung, dass sich die Entgelte aller übrigen Netznutzer der betroffenen und
+aller nachgelagerten Netz- und Umspannebenen im Falle der Genehmigung nicht wesentlich
+erhöhen dürfen, ist zugunsten der Übernahme der Erlösausfälle durch den jeweils vorgela-
+gerten Übertragungsnetzbetreiber entfallen. Die Übertragungsnetzbetreiber sind darüber
+hinaus verpflichtet, die Erlösausfälle gemäß dem Mechanismus aus § 9 KWKG untereinan-
+der zu verteilen.
+
+Der Definition einer Wesentlichkeitsschwelle, wie sie im bisherigen Leitfaden enthalten war,
+bedarf es daher nicht mehr.
+
+
+
+1.6 Abnahmestelle
+
+Abnahmestelle im Sinne von § 19 Abs. 2 StromNEV sind alle räumlich zusammenhängenden
+elektrischen Einrichtungen des Unternehmens auf einem Betriebsgelände, das über einen
+oder mehrere Entnahmepunkte mit dem Netz des Netzbetreibers verbunden ist. Das Beste-
+hen eines räumlichen Zusammenhangs zwischen den elektrischen Einrichtungen auf einem
+Betriebsgelände setzt voraus, dass die Möglichkeit besteht, die betreffenden Entnahmepunk-
+te untereinander galvanisch zu verbinden. Die Zusammenfassung mehrer Entnahmepunkte
+zu einer Abnahmestelle ist dagegen nicht möglich, wenn das Unternehmen an geografisch
+verschiedenen Stellen mit dem Netz der allgemeinen Versorgungen verbunden ist oder die
+Abnahme in unterschiedlichen Spannungsebenen oder in unterschiedlichen Netzgebieten
+erfolgt. Ist das Kriterium räumlich zusammenhängender elektrische Einrichtungen erfüllt, er-
+folgt die Bewertung der Genehmigungsvoraussetzungen anhand des Abnahmeverhaltens an
+der „gesamten“ Abnahmestelle des Letztverbrauchers. Ist das Kriterium der galvanischen
+Verbindung nicht erfüllt, wird das individuelle Netzentgelt bzw. die Befreiung von den Netz-
+entgelten separat für jeden Entnahmepunkt genehmigt.
+
+Im Ergebnis ist der Begriff der Abnahmestelle im Sinne von § 19 Abs. 2 StromNEV somit
+weiter zufassen, als der im § 17 StromNEV verwendete Begriff der Entnahmestelle.
+
+
+
+1.7 Geschlossene Verteilernetze
+
+Aufgrund der Neuregelung des § 110 EnWG, wonach geschlossenen Verteilernetze mit
+Ausnahmen grundsätzlich der Regulierung unterliegen, sind diese mit Blick auf § 19 Abs. 2
+Satz 1 und Satz 2 StromNEV nicht mehr als Letztverbraucher im Sinne des § 19 Abs. 2
+StromNEV einzustufen. Daher sind geschlossene Verteilernetze selbst nicht berechtigt, An-
+träge gemäß § 19 Abs. 2 Satz 1 und Satz 2 StromNEV zu stellen. Allerdings haben die in
+geschlossenen Verteilernetzen angeschlossenen Letztverbraucher bei Erfüllung der jeweili-
+gen Voraussetzungen ihrerseits einen Anspruch auf ein individuelles Netzentgelte nach § 19
+                                              7
+
+
+Abs. 2 Satz 1 StromNEV bzw. auf Befreiung von den Netzentgelten nach § 19 Abs. 2 Satz 2
+StromNEV
+
+
+
+2 Netznutzung zu besonderen Zeiten
+Hauptvoraussetzung einer Entgeltreduzierung gemäß § 19 Abs. 2 S. 1 StromNEV ist, dass
+der Höchstlastbeitrag des Letztverbrauchers vorhersehbar und erheblich von der Jahres-
+höchstlast in der jeweiligen Netzebene abweicht. Die tatsächliche zeitgleiche Jahreshöchst-
+last kann nur ex post ermittelt werden. Es bedarf folglich einer Bestimmung der Hochlastzeit-
+fenster, die die Unsicherheit zwischen Vorhersehbarkeit und tatsächlichem Eintritt der zeit-
+gleichen Jahreshöchstlast erfasst. Zur Beurteilung, ob eine erhebliche Abweichung von der
+Jahreshöchstlast i.S.v. § 19 Abs. 2 S. 1 StromNEV vorliegt, ist neben der Einhaltung der
+Hochlastzeitfenster zusätzlich eine erhebliche Lastverschiebung (Erheblichkeitsschwelle)
+durch den Letztverbraucher zu verlangen.
+
+
+
+2.1 Ermittlung der Zeitfenster
+
+Die Zeitfenster, innerhalb derer ein atypischer Netznutzer im Vergleich zu den übrigen Netz-
+nutzern eine Lastabsenkung aufweist (Hochlastzeitfenster des Netzes), sind rechnerisch
+durch den Netzbetreiber zu ermitteln. Sie sind für jeden Netzbetreiber gesondert und für jede
+Netz- und Umspannebene zu bestimmen. Relevant ist jeweils die Netz- oder Umspannebe-
+ne, aus welcher der Letztverbraucher elektrische Energie entnimmt.
+
+Als Datenbasis für die Ermittlung der Hochlastzeitfenster ist grundsätzlich auf den Zeitraum
+unmittelbar vor dem beantragten Genehmigungsjahr abzustellen. Da die Hochlastzeitfenster
+allerdings im Interesse der Planungssicherheit der Beteiligten spätestens zu Beginn des Ge-
+nehmigungszeitraum bekannt sein müssen, um insbesondere dem Letztverbraucher die
+Möglichkeit zu geben, sein individuelles Nutzungsverhalten an den Zeitfenstern auszurich-
+ten, soll die Berechnung der Hochlastzeitfenster grundsätzlich auf Grundlage der Daten der
+Monaten September bis Dezember des Vor-Vorjahres sowie den Monaten Januar bis August
+des dem Genehmigungszeitraums vorhergehenden Kalenderjahres (Referenzzeitraum) er-
+folgen. Die Hochlastzeitfenster können dann im Herbst des vorhergehenden Kalenderjahres
+berechnet werden. Für das Kalenderjahr 2011 sind die Hochlastzeitfenster bis zum 30. No-
+vember 2010 zu veröffentlichen. Danach (ab 2011) sind die Hochlastzeitfenster des kom-
+menden Jahres jährlich bis spätestens zum 31.Oktober zu veröffentlichen.
+
+Die Hochlastzeitfenster werden für jede Spannungs- und Umspannungsebene des Netz-
+betreibers separat ermittelt. Für die Bildung der Hochlastzeitfenster je Spannungs- und Um-
+spannungsebene sind zwei Kurvenverläufe zu bestimmen.
+
+
+2.1.1    Maximalwertkurve des Tages
+
+Zunächst ist eine Maximalwertkurve des Tages für unterschiedliche Jahreszeiten zu bilden.
+Dabei ist von folgenden Jahreszeiten, die nicht den kalendarischen (astronomischen) Jah-
+reszeiten entsprechen, auszugehen:
+
+            Winter                      01. Januar bis 28. bzw. 29. Februar
+            Frühling                    01. März bis 31. Mai
+            Sommer                      01. Juni bis 31. August
+                                               8
+
+
+             Herbst                      01. September bis 30. November
+             Winter                      01. Dezember bis 31. Dezember
+
+
+Die Maximalwertkurve des Tages wird zusammengesetzt aus den einzelnen höchsten Vier-
+telstundenmaximalwerten für die jeweilige Jahreszeit.
+
+Dies soll verdeutlicht werden an einem Beispiel: Für die Ermittlung der Maximalwertkurve
+des Tages in der Jahreszeit Frühjahr werden nur die Werte des Frühjahrs betrachtet, also
+nur die Werte der Monate März, April und Mai des Vorjahres herangezogen. Für den höchs-
+ten Maximalwert der Viertelstunden von 0:00 – 0:15 Uhr wird aus allen Viertelstundenwerten
+von 0:00 – 0:15 Uhr der höchste Wert ermittelt. Dieser Maximalwert geht in die „Maximal-
+wertkurve des Tages“ für die Jahreszeit Frühjahr ein. Dies erfolgt für alle 96 Viertelstunden
+eines Tages. Aus den einzelnen höchsten Viertelstundenwerten setzt sich dann die Maxi-
+malwertkurve des Tages zusammen.
+
+
+2.1.2    Trennlinie
+
+Als zweiter Wert ist die zeitgleiche Jahreshöchstlast des Referenzzeitraums mit einem 5%-
+Abschlag je Netzebene zu ermitteln. Dieser Wert ergibt die Trennlinie für die Hochlastzeit-
+fenster. Es ergibt sich ein Wert für das gesamte Jahr, welcher für die Ermittlung der Hoch-
+lastzeitfenster aller Jahreszeiten gilt. Eine Differenzierung nach Jahreszeiten ist für diesen
+Wert somit nicht erforderlich.
+
+
+2.1.3    Bestimmung der Hochlastzeitfenster
+
+Zur Bestimmung der Hochlast-Zeitfenster ist die Trennlinie grafisch als horizontale Linie in
+die vier jahreszeitlich durchschnittlichen Maximalwertkurven des Tages je Netz- und Um-
+spannungsebene einzutragen. Es ergeben sich Schnittpunkte zwischen der Trennlinie und
+der jahreszeitlich spezifischen Maximalwertkurve des Tages. Die Segmente zwischen den
+Schnittpunkten oberhalb der Trennlinie und der jahrszeitlich spezifischen Maximalwertkurven
+des Tages bestimmen die Hochlastzeiten. Die Segmente unterhalb der Trennlinie bestimmen
+die Nebenzeiten.
+
+Für den Fall, dass sich nur ein sehr kurzes Hochlastzeitfenster ergibt, kann der Netzbetreiber
+dieses auf maximal 3 Stunden pro Tag je Jahreszeit sachgerecht erweitern. Für den Fall,
+dass sich ein überlanges Hochlastzeitfenster ergibt, ist dieses vom Netzbetreiber auf eine
+Maximaldauer von 10 Stunden pro Tag und je Jahreszeit zu begrenzen.
+                                                               9
+
+
+
+       25.000
+
+
+
+       20.000
+                                                     Hochlastzeit                      Hochlastzeit
+
+ Leist-
+ ung 15.000         Nebenzeitzeit                                                                     Nebenzeit
+ [P]
+
+       10.000
+
+                                                              Nebenlastzeit,
+
+        5.000
+
+
+
+           0
+                01:00   03:00 05:00       07:00   09:00   11:00 13:00          15:00   17:00    19:00 21:00   23:00
+
+
+                                                          Uhrzeit
+
+
+                             Trennlinie               Maximalwertkurve des Tages
+
+
+
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig. Wochenenden, Feiertage
+und maximal ein Brückentag sowie die Zeit zwischen Weihnachten und Neujahr gelten als
+Nebenzeiten, da der Eintritt der zeitgleichen Jahreshöchstlast an diesen Tagen aller Wahr-
+scheinlichkeit nach nicht zu erwarten ist.
+
+
+
+2.2 Ermittlung des Entgelts
+
+Für die atypische Netznutzung ist ein individuelles Entgelt zu berechnen, welches grundsätz-
+lich auf dem veröffentlichten allgemeinen Netznutzungsentgelten beruht.
+
+Veröffentlichtes Entgelt i.S.d. § 19 Abs. 2 S. 1 StromNEV ist das für den Zeitraum genehmig-
+te allgemeine Entgelt aus dem Preisblatt des Netzbetreibers, welches dem Vereinbarungs-
+zeitraum entspricht. Sowohl bei der Berechnung des allgemeinen, als auch des individuellen
+Entgeltes ist der identische Leistungs- bzw. Arbeitspreis zugrunde zu legen. Hierbei ist für
+die Berechnung der Benutzungsdauer die tatsächliche Höchstlast heranzuziehen.
+
+Leistungsspitzen, die nachweislich durch kuratives Redispatch, aufgrund von Anforderungen
+des Netzbetreibers, oder durch die Erbringung negativer Regelenergie induziert wurden, sind
+bei der Ermittlung der in die Hochlastzeitfenster fallenden Jahreshöchstlast nicht zu berück-
+sichtigen.
+
+Bei der Ermittlung des individuellen Leistungsentgeltes wird der Leistungspreis nicht mit der
+absoluten Jahreshöchstleistung multipliziert. Stattdessen wird bei der Ermittlung des indivi-
+duellen Leistungsentgelts dieser Leistungspreis mit dem höchsten Leistungswert aus allen
+Hochlastzeitfenstern multipliziert. Unverändert bleibt die Ermittlung des Arbeitsentgeltes.
+Individuelles Leistungsentgelt und Arbeitsentgelt werden addiert. Das so berechnete redu-
+zierte Entgelt ist mit dem allgemeinen Entgelt zu vergleichen und kann zu einer maximalen
+Reduzierung von 80 % diesem gegenüber führen, vgl. § 19 Abs. 2 S. 1 StromNEV.
+                                                      10
+
+
+Berechnung allgemeines Entgelt:                         Berechnung individuelles Entgelt:
+
+                                                        Leistungspreis x höchste Leistung in den
+Leistungspreis x Jahreshöchstleistung
+                                                        Hochlastzeitfenstern
++ Arbeitspreis x Jahresarbeit
+                                                        + Arbeitspreis x Jahresarbeit
+= allgemeines Entgelt
+                                                        = individuelles Entgelt
+
+
+Bedingung: Individuelles Netzentgelt ≥ allg. Entgelt x 20%
+
+
+
+Dabei wird für Netznutzer unter 2.500 Benutzungsstunden eine Wahloption eingeräumt. Für
+die individuelle Netzentgeltermittlung kann bei Netznutzern unterhalb von 2.500 Benutzungs-
+stunden der allgemein gültige Leistungs- und Arbeitspreis (der jeweiligen Netzebene) ober-
+halb von 2.500 Benutzungsstunden für die Bestimmung des individuellen Netzentgelts he-
+rangezogen werden. Hierbei wird bei der Ermittlung des individuellen Leistungsentgelts der
+allgemeine Leistungspreis oberhalb von 2.500 Stunden mit dem höchsten Leistungswert des
+Netznutzers aus allen Hochlastzeitfenstern multipliziert. Für die Ermittlung des Arbeitspreises
+wird der allgemeine Arbeitspreis oberhalb von 2.500 Stunden mit der Jahresgesamtarbeit
+des Netznutzers multipliziert. Aus diesen beiden Komponenten ergibt sich das individuell zu
+zahlende Netzentgelt. Das individuelle Netzentgelt ist mit dem allgemein zu zahlenden Ent-
+gelt (über 2.500 Benutzungsstunden) zu vergleichen und kann zu einer maximalen Reduzie-
+rung von 80% gegenüber diesem führen, vgl. 19 Abs. 2 S.1 StromNEV.
+
+Der Netznutzer kann diese Wahloption nur in Anspruch nehmen, wenn er sich für diese
+Wahloption vor der Geltungsdauer der Vereinbarung entscheidet. Hat der Netznutzer sich im
+Rahmen von § 19 Abs. 2 Satz 1 StromNEV für die Geltungsdauer der Vereinbarung für die
+Wahloption entschieden, kann er nicht die Genehmigung eines individuellen Netzentgeltes
+aufgrund der allgemein zu zahlenden Entgelte unterhalb von 2.500 Benutzungsstunden gel-
+tend machen. Da das Verhalten des Netznutzers vorhersehbar und prognostizierbar sein
+soll, kann es keine nachträgliche Bestabrechnung geben. Dies würde der Vorhersehbarkeit
+entgegenstehen. Der Netznutzer muss dann im ungünstigsten Fall die allgemein zu zahlen-
+den Netzentgelte entrichten, wobei die bei Zugrundelegung der tatsächlichen Benutzungs-
+stundenzahl zu zahlenden allgemeinen Netzentgelte auch im Falle der Nutzung der Wahlop-
+tion die maximale Kostenobergrenze bilden.
+
+
+
+2.3 Erheblichkeitsschwelle
+
+Um sicherzustellen, dass der Höchstlastbeitrag des Letztverbrauchers vorhersehbar erheb-
+lich von der prognostizierten zeitgleichen Jahreshöchstlast der übrigen Entnahmen des Net-
+zes abweichen wird, ist ein individuelles Entgelt nur dann anzubieten, wenn die voraussicht-
+liche Höchstlast des betroffenen Letztverbrauchers innerhalb der Hochlastzeitfensters einen
+ausreichenden Abstand zur voraussichtlichen Jahreshöchstlast außerhalb der Hochlastzeit-
+fenster aufweisen wird. Insoweit sind für die betreffenden Netzebenen prozentuale Mindest-
+abstände (Erheblichkeitsschwellen) einzuhalten. Die jeweilige Erheblichkeitsschwelle ist pro-
+zentual anhand der Lastreduzierung zu bestimmen. Hierbei wird die Jahreshöchstlast des
+Netznutzers ins Verhältnis gesetzt zur höchsten Last im Hochlastzeitfenster des Netznutzers.
+
+Erheblichkeitsschwelle des Netznutzers:
+
+ Jahreshöchstlast des LV - Höchste Last des LV im HLZ - Fenster
+                                                                 100  Prozentwert der Netz - /Umspannungsebene
+                    Jahreshöchstlast des LV
+                                             11
+
+
+
+
+                     Netz- /Umspann-         Erheblichkeitsschwelle
+                          ebene
+                            HöS                         5%
+                          HöS/HS                       10%
+                             HS                        10%
+                           HS/MS                       20%
+                             MS                        20%
+                           MS/NS                       30%
+                             NS                        30%
+
+
+Ein individuelles Netzentgelt kann demnach nur dann genehmigt werden, wenn beispielwei-
+se ein Netznutzer in der Niederspannung seine Last soweit verlagern kann, dass seine indi-
+viduelle Höchstlast in den auf Basis der Methode der Bundesnetzagentur ermittelten Hoch-
+lastzeitfenstern voraussichtlich 30% unterhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+
+
+2.4 Bagatellgrenze
+
+Um zu verhindern, dass die mit der Bearbeitung des Antrags verbundenen Transaktionskos-
+ten der beteiligten Unternehmen die im Falle einer Genehmigung zu erzielenden Kostenre-
+duktion übersteigen, ist ein Antrag auf Genehmigung eines individuellen Netzentgelts nach
+§ 19 Abs. 2 S. 1 StromNEV nur dann genehmigungsfähig, wenn die anhand der Prognose zu
+erwartende Entgeltreduzierung mindestens 500,-- € beträgt.
+
+
+
+2.5 Zuruf- oder Abschaltregelungen
+
+Zusätzlich zu einer reinen Hochlastzeitfensterregelung kann der Netzbetreiber auch weiter-
+hin den Abschluss einer um „Zuruf“- oder „Abschaltregelungen“ ergänzten Hochlastzeitfens-
+terregelung anbieten. Danach kann sich der Letztverbraucher etwa dazu verpflichten, seine
+Leistung während eines bestimmten Zeitraums innerhalb der Hochlastzeitfenster zu reduzie-
+ren, und dem Netzbetreiber das Recht einräumen, den Leistungsbezug des Letztverbrau-
+chers im Falle von außerhalb dieses vereinbarten „Kernzeitraums“ auftretenden Höchstlas-
+ten per Fernabschaltung zu reduzieren oder auf Zuruf drosseln zu lassen. Im Ergebnis führt
+eine solche Regelung zur Flexibilisierung der Hochlastzeitfenster in den Randbereichen, oh-
+ne von dem Grundprinzip der Ermittlung von Hochlastzeitfenstern abzugehen. Maßgeblich
+für die Berechnung des individuellen Netzentgelts wäre dann die höchste Jahresleistung des
+Letztverbrauchers innerhalb des Kernzeitraums.
+
+Denkbar ist auch, dass sich der Letztverbraucher zu einer dauerhaften Leistungsreduzierung
+innerhalb der Hochlastzeitfenster verpflichtet, er aber mit Zustimmung des Netzbetreibers
+berechtigt ist, in bestimmten Ausnahmefällen seine Leistung auch innerhalb eines Hochlast-
+zeitfensters nicht zu drosseln. Die Zustimmung durch den Netzbetreiber darf nur dann erteilt
+werden, wenn nicht zu erwarten ist, dass es während dieser zusätzlichen Hochlastzeiten des
+Letztverbrauchers zu einer zeitgleichen Höchstlast des Netzes kommen wird („umgekehrte
+Zurufregelung“). In diesem Falle wäre für die Berechnung des individuellen Entgelts der Leis-
+                                             12
+
+
+tungsbezug im Hochlastzeitfenster irrelevant. Die für die Ermittlung der Lastverschiebung
+maßgeblichen Hochlastzeitfenster reduzieren sich entsprechend.
+
+Dagegen ist es nicht möglich, für die gemäß § 19 Abs. 2 S. 1 StromNEV zu treffende Prog-
+noseentscheidung ausschließlich auf bestehende vertragliche oder technische Gegebenhei-
+ten abzustellen, da in diesen Fällen die Entscheidung, unter welchen Vorrausetzungen eine
+atypische Netznutzung anzunehmen ist, nicht mehr anhand einheitlicher und für alle Letzt-
+verbraucher verbindlicher Kriterien durch die Bundesnetzagentur erfolgt, sondern letztlich
+anhand eigener Kriterien vom Netzbetreiber selbst getroffen würde.
+
+Insofern können reine Abschalt- bzw. Zurufregelungen, d.h. ein völliges Absehen von Hoch-
+lastzeitfenstern, nach Einschätzung der Bundesnetzagentur nicht in den Anwendungsbereich
+des § 19 Abs. 2 S. 1 StromNEV fallen, da in diesen Fällen kein atypisches Nutzungsverhal-
+ten im Sinne der Regelung mehr vorliegt. Dies bedeutet jedoch nicht, dass derartige Rege-
+lungen per se als unzulässig zu betrachten wären. Vielmehr könnte es sich nach Auffassung
+der Bundesnetzagentur möglicherweise um Maßnahmen nach § 13 Abs. 1 i.V.m. § 14 EnWG
+handeln. Entsprechende Vertragsgestaltungen unterliegen nach Auffassung der Bundes-
+netzagentur allerdings keiner Genehmigungspflicht, da in diesen Fällen die Abrechnung der
+Netzleistung nach allgemeinem Netzentgelt erfolgt, auf das insoweit eine individuell verein-
+barte Vergütung für die auf Veranlassung des Netzbetreibers erfolgte Leistungsreduzierung
+anzurechnen ist.
+
+Ein Anspruch des Letztverbrauchers auf Abgabe eines entsprechenden Angebots durch den
+Netzbetreiber besteht nach Auffassung der Bundesnetzagentur dagegen nicht. Entgegen
+den im Konsultationsverfahren vorgebrachten Forderungen sieht die Bundesnetzagentur
+derzeit kein Anlass, von der bisherigen Genehmigungspraxis, nach der derartige Vereinba-
+rungen zwar möglich, jedoch für den Netzbetreiber nicht verpflichtend sind, abzuweichen.
+Dies gilt umso mehr, als nach Einschätzung der Bundesnetzagentur bereits die vorgesehene
+Modifizierung der Methode zu Berechnung der Hochlastzeitfenster in vielen Fällen zu den
+insbesondere von Seiten der Letztverbraucher gewünschten deutlichen Verkürzungen der
+Hochlastzeitfenster führen wird.
+
+
+
+2.6 Nicht genehmigungsfähige Regelungen
+
+2.6.1    Top-Down-Überdeckung der Hochlastzeiten
+
+Nicht genehmigungsfähig ist eine individuelle Netzentgeltvereinbarung, nach der die die
+Hochlastzeitfenster nachgelagerter Netz- und Umspannebenen stets auch die Zeiträume der
+vorgelagerten Netz- und Umspannebenen einschließen.
+
+
+2.6.2    Entnahmen durch Nachtspeicherheizungen
+
+Nicht genehmigungsfähig ist weiterhin eine individuelle Netzentgeltvereinbarung, nach der
+die Entnahme durch Nachtspeicherheizungen bei der Ermittlung der Hochlastzeitfenster
+nicht berücksichtigt werden soll.
+
+
+2.6.3    Einbeziehung der Jahresarbeit bei der Ermittlung der Entgeltreduktion
+
+Nicht genehmigungsfähig ist ferner eine individuelle Netzentgeltvereinbarung, wenn abwei-
+chend vom bisherigen Modell nicht nur das im individuellen Netzentgelt enthaltene Leis-
+tungsentgelt, sondern auch das Arbeitsentgelt auf der Basis eines zu ermittelnden Redukti-
+onsfaktors anteilig reduziert werden soll.
+                                             13
+
+
+2.6.4    Zusammenfassung mehrer Abnahmestellen
+
+Nach Auffassung der Bundesnetzagentur scheidet eine Zusammenfassung mehrerer, räum-
+lich nicht verbundener Abnahmestellen eines Letztverbrauchers zu einer virtuellen Abnah-
+mestelle aus.
+
+
+2.6.5    Abgrenzung zu § 19 Abs. 1 StromNEV im Hinblick auf saisonale Betriebe
+
+Saisonalen Betriebe, Baustellen und Volksfeste sind nach Ansicht der Bundesnetzagentur
+typische Anwendungsfälle für § 19 Abs. 1 StromNEV, für die ein Monatsleistungspreis in An-
+spruch genommen werden kann. Eine gleichzeitige Genehmigung nach § 19 Abs. 2 S. 1
+StromNEV, der auf Jahreshöchstlastmengen abstellt, kommt nicht in Betracht.
+
+
+
+3 Intensive Netznutzung
+Für die Genehmigung einer Befreiung besonders stromintensiver Letztverbraucher von den
+Netzentgelten nach § 19 Absatz 2 Satz 2 StromNEV gelten ab 2011 die folgenden Regelun-
+gen.
+
+Die Voraussetzungen für einen Anspruch besonders stromintensiver Letztverbraucher sind
+nach § 19 Abs. 2 S. 2 StromNEV grundsätzlich erfüllt, wenn die Stromabnahme aus dem
+Netz der allgemeinen Versorgung für den eigenen Verbrauch an einer Abnahmestelle die
+Benutzungsstundenzahl von mindestens 7.000 Stunden erreicht als auch der Strom-
+verbrauch zehn Gigawattstunden übersteigt.
+
+Die Befreiung steht entsprechend § 19 Abs. 2 S. 9 StromNEV unter dem Vorbehalt, dass die
+genannten Voraussetzungen tatsächlich eintreten.
+
+Zu beachten ist, dass sich § 19 Abs. 2 S. 2 StromNEV nach der eindeutigen Intention des
+Verordnungsgebers hinsichtlich der Voraussetzungen von 7.000 Benutzungsstunden und
+10 GWh trotz des weggefallenen ausdrücklichen Bezugs ebenso wie im Falle des Satzes 1
+auch weiterhin jeweils auf ein vollständiges Kalenderjahr beziehen muss. Für das laufende
+Jahr 2011 folgt daraus, dass die Befreiung für das ganze Kalenderjahr beantragt werden
+kann. Auch in den Fällen, in denen die Genehmigung ausnahmsweise für einen kürzeren
+Zeitraum von einigen Monaten beantragt wird, ist hinsichtlich der Erfüllung der Eingangsvor-
+aussetzungen auf das vollständige betroffene Kalenderjahr abzustellen.
+
+Die Befreiung von den Netzentgelten nach § 19 Abs. 2 S. 2 StromNEV soll grundsätzlich
+unbefristet erteilt werden (s.o. Punkt 1.4). Die Nichterfüllung der Mindestvoraussetzungen
+innerhalb des Genehmigungszeitraums führt nicht automatisch zum Erlöschen der Geneh-
+migung. Soweit in einem Kalenderjahr die Mindestvoraussetzungen nicht tatsächlich erfüllt
+werden, sind nach § 19 Abs. 2 S. 9 StromNEV die allgemeinen Netzentgelte abzurechnen.
+
+Bei der Berechnung der Benutzungsstundendauer ist die Jahreshöchstlast des Letztverbrau-
+chers an der betreffenden Abnahmestelle zu berücksichtigen. Diese umfasst ebenfalls die
+Leistungsinanspruchnahme aufgrund des Ausfalls von Eigenerzeugungsanlagen, die über
+Netzreservekapazität entgolten werden, soweit dies den unter Punkt 1.6 getroffenen Rege-
+lungen nicht entgegensteht. Für die Berechnung der Benutzungsstunden ist die physikalisch
+gemessene Jahreshöchstlast des Letztverbrauchers an der Abnahmestelle zu berücksichti-
+gen.
+                                            14
+
+
+Da die Neuregelung des § 19 Abs. 2 S. 2 StromNEV gemäß Artikel 8 des Gesetzes zur Neu-
+regelung energiewirtschaftsrechtlicher Vorschriften einen Tag nach der Verkündigung am
+04.08. 2011 in Kraft getreten ist und insofern auch keine explizite Regelung in Bezug auf
+einen späteren Wirksamkeitszeitpunkt enthält, kann die Genehmigung bereits für das ge-
+samte Jahr 2011 beantragt werden.
+
+
+
+4 Antragsunterlagen
+Gemäß § 19 Abs. 2 S. 9 StromNEV hat der Netzbetreiber unverzüglich alle zur Beurteilung
+der Voraussetzungen nach den Sätzen 1 und 2 erforderlichen Unterlagen vorzulegen. Im
+Interesse einer raschen und erfolgreichen Durchführung des Genehmigungsverfahrens soll-
+ten die Anträge auf jeden Fall die in den nachfolgenden Checklisten angesprochenen Anga-
+ben und Unterlagen beinhalten.
+
+
+
+4.1 Checkliste für einen Antrag nach § 19 Abs. 2 S. 1 StromNEV
+
+   1. Enthält die Antragsbegründung die für die Prüfung erforderlichen Verbrauchsdaten?
+      Erforderlich sind insbesondere Angaben zur
+
+          maximalen Jahreshöchstleistung des Vorjahres (z.B. Pmax2010),
+
+          höchsten Jahresleistung des Vorjahres innerhalb der Hochlastzeitfenster (z.B.
+           PHT2010),
+
+          im Vorjahr in Anspruch genommenen Jahresarbeit (z.B. Wges2010),
+
+          für das erste Genehmigungsjahr prognostizierten maximalen Jahreshöchstleis-
+           tung (z.B. Prog. Pmax2011),
+
+          für das erste Genehmigungsjahr prognostizierten höchsten Jahresleistung inner-
+           halb der Hochlastzeitfenster (z.B. ProgPHT2011),
+
+          für das erste Genehmigungsjahr prognostizierten Jahresarbeit (z.B. Prog.
+           Wges2011),
+
+          Höhe der jeweils für die betreffende Entnahmeebene veröffentlichten allgemeinen
+           Leistungs- und Arbeitspreise (Preisblätter)
+
+   2. Berücksichtigt die getroffene individuelle Entgeltvereinbarung die Auslegungsgrund-
+      sätze der Bundesnetzagentur ausreichend?
+
+   3. Sind betroffener Netzbetreiber und Letztverbraucher im Antrag und in der individuel-
+      len Entgeltvereinbarung eindeutig benannt?
+
+   4. Ist die betroffene Abnahmestelle im Antrag und in der individuellen Entgeltvereinba-
+      rung eindeutig benannt?
+
+   5. Ist die Spannungsebene des Letztverbrauchers im Antrag und in der individuellen
+      Entgeltvereinbarung angegeben?
+                                            15
+
+
+  6. Ist die individuelle Entgeltvereinbarung von Netznutzer und Netzbetreiber unterzeich-
+     net?
+
+  7. Wird die Vorhersehbarkeit der Abweichungen ausreichend begründet?
+
+  8. Sind die Zeitfenster berechnet je nach Spannungsebene und Modell der Bundes-
+     netzagentur?
+
+  9. Sind die Zeitfenster im Antrag eindeutig definiert?
+
+  10. Wird das Entgelt nach dem Modell der Bundesnetzagentur ermittelt (Überprüfung der
+      Berechnung für Arbeits- und Leistungspreis)?
+
+  11. Ist die Entgeltsenkung prozentual im Verhältnis zum allgemeinen Entgelt angegeben?
+
+  12. Ist die Entgeltsenkung absolut im Verhältnis zum allgemeinen Entgelt angegeben?
+
+  13. Enthält die individuelle Entgeltvereinbarung Regelungen in Bezug auf die zukünftige
+      Ermittlung der Hochlastzeitfenster gemäß dem Modell der Bundesnetzagentur?
+
+  14. Ist bei einer individuellen Entgeltvereinbarung zwischen Netzbetreiber und Lieferant
+      als Netznutzer eine entsprechende Bevollmächtigung des Lieferanten durch den
+      Letztverbraucher vorhanden?
+
+  15. Enthält die individuelle Entgeltvereinbarung eine Beschränkung der Entgeltreduzie-
+      rung auf 20% des allgemeinen Netzentgelts?
+
+  16. Wurde die individuelle Entgeltvereinbarung unter dem Vorbehalt der Abrechnung
+      nach allgemeinem Netzentgelt geschlossen, falls sich der Netznutzer nicht an die
+      Hochlastzeitfenster hält?
+
+  17. Enthält die individuelle Entgeltvereinbarung ggf. ausreichende Regelungen in Bezug
+      auf den Nachweis, ob und in welchem Umfang Leistungsspitzen bei der Ermittlung
+      des höchsten Leistungswertes innerhalb der Hochlastzeitfenster durch kuratives Re-
+      dispatch, aufgrund von Anforderungen des Netzbetreibers oder durch die Erbringung
+      negativer Regelenergie verursacht worden sind?
+
+
+
+4.2 Checkliste für einen Antrag nach § 19 Abs. 2 S. 2 StromNEV
+
+  1. Enthält der Antrag eine nachvollziehbare und ausreichende Begründung dafür, dass
+     der betroffene Letztverbraucher in der Lage sein wird, die in Satz 2 genannten Vor-
+     aussetzungen im Genehmigungszeitraum zu erreichen. Denkbar wäre beispielsweise
+     die Angabe der entsprechenden Benutzungsstundenzahlen und Verbrauchswerte der
+     vergangenen Jahre.
+
+  2. Sind betroffener Netzbetreiber und Letztverbraucher im Antrag eindeutig benannt?
+
+  3. Ist die betroffene Abnahmestelle im Antrag eindeutig benannt?
+
+  4. Ist die Spannungsebene des Letztverbrauchers im Antrag angegeben?
+

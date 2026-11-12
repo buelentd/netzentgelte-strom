@@ -1,53 +1,124 @@
-https://www.stadtwerke-erding.de/de/Kopfnavigation/Netze/Netz-Stromnetz-Erdinger-Freisinger-Land/SEF-Hochlastzeitfenster-fuer-atypische-Netznutzung-2027.pdf
+SNB951051725711_0005_hlzf_2027.pdf | SNB951051725711_0005_hlzf_hennhochlastzeitfenster2026web.pdf | SNB951051725711_0005_hlzf_ypischehochlastzeitfenster2027.pdf
 
-Hochlastzeitfenster 2027 für atypische Netznutzung nach
-§19 Abs. 2 Satz 1 StromNEV
-
-Letztverbraucher mit atypischen Verbrauchsverhalten können nach §19 Abs. 2 Satz 1 der Stromnetzentgelt-
-verordnung ein Sonderentgelt für die Netznutzung beantragen.
-
-Ist aufgrund vorliegender oder prognostizierter Verbrauchsdaten oder aufgrund technischer oder vertraglicher
-Gegebenheiten offensichtlich, dass der Höchstlastbeitrag eines Letztverbrauchers vorhersehbar erheblich von der
-zeitgleichen Jahreshöchstlast aller Entnahmen der jeweiligen Netz- oder Umspannebene abweicht, so haben
-Betreiber von Elektrizitätsversorgungsnetzen diesem Letztverbraucher in Abweichung von § 16 StromNEV ein
-individuelles Netzentgelt anzubieten, das dem besonderen Nutzungsverhalten des Netzkunden angemessen
-Rechnung zu tragen hat.
-
-Auf Basis der Daten des Referenzzeitraumes 09/2025 – 08/2026 ergeben sich nach den Vorgaben des Leitfadens
-der Bundesnetzagentur zur Genehmigung individueller Netzentgeltvereinbarungen folgende Hochlastzeitfenster
-für 2027:
-
-
- Spannungsebene der             Winter                Frühling            Sommer                Herbst
- Entnahmestelle                Dez.- Feb.            Mrz. – Mai          Jun. – Aug.          Sep. – Nov.
-
-
- Bei Entnahme in der          10:30 – 13:00
-                                                          Keine             Keine            16:00 – 19:00
- Mittelspannungsebene         15:00 – 19:15
-
-
- Bei Entnahme in der
-                              16:45 – 19:15               Keine             Keine            16:45 – 19:15
- Umspannebene MS/NS
-
-
- Bei Entnahme in der
-                              16:45 – 19:15               Keine             Keine            16:45 – 19:15
- Niederspannungsebene
+=== Datei SNB951051725711_0005_hlzf_2027.pdf ===
+Stand 29.10.2026
 
 
 
-Die Hochlastzeitfenster sind ausschließlich an Werktagen gültig. Wochenenden, Feiertage und maximal ein
-Brückentag sowie die Zeit zwischen Weihnachten und Neujahr gelten grundsätzlich als Nebenzeiten.
 
-Die Jahreszeiten sind hierbei folgendermaßen definiert.
+Hochlastzeitfenster 2027 für atypische Netznutzung
+(Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV)
 
- Winter         01. Dezember – 28/29. Februar
- Frühling       01. März – 31. Mai
- Sommer         01. Juni – 31. August
- Herbst         01. September – 30. November
+                              Winter                 Frühling            Sommer              Herbst
+     Entnahmeebene
+                        Jan., Feb., Dez.*)          Mrz. – Mai          Jun. – Aug.        Sep. – Nov.
+                          08:15 - 15:30;
+  Umspannung 110/20 kV                                 keine               keine          16:30 - 18:30
+                          17:15 - 19:30
+  Mittelspannung 20 kV    17:15 - 19:30                keine               keine              keine
+  Umspannung 20/0,4 kV    17:00 - 19:15                keine               keine              keine
+  Niederspannung 0,4 kV   17:00 - 19:15                keine               keine              keine
 
-Zu Inanspruchnahme des Sonderentgeltes müssen weiterführende Bedingungen erfüllt sein. Diese orientieren
-sich ebenfalls am Leitfaden der Bundesnetzagentur.
+
+Bemerkungen:
+
+*) Wintermonate des Jahres 2027, d.h. Januar, Februar und Dezember 2027
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag - Freitag) gültig.
+Wochenenden, Feiertage und maximal ein Brückentag pro Woche sowie die Zeit zwischen Weihnachten und
+Neujahr (24. Dezember – 01. Januar) gelten als Nebenzeiten.
+
+Brückentage 2027: Freitag, 07.05.2027
+
+
+Bei den obigen Zeitangaben handelt es sich um Uhrzeiten und nicht um Zeitstempel aus den Lastgängen.
+
+Beispiele für Zeitangaben:
+16:45 - 18:45 bedeutet von 16:45:01 bis 18:45:00
+17:30 - 19:30 bedeutet von 17:30:01 bis 19:30:00
+
+Damit EWE NETZ ein individuelles Netzentgelt gewähren kann, müssen weitere Bedingungen gemäß den
+gesetzlichen Vorgaben und den Regelungen der Bundesnetzagentur erfüllt sein.
+
+
+=== Datei SNB951051725711_0005_hlzf_hennhochlastzeitfenster2026web.pdf ===
+Stand 20.10.2025
+
+
+
+
+Hochlastzeitfenster 2026 für atypische Netznutzung
+(Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV)
+
+                                     Winter           Frühling             Sommer              Herbst
+      Entnahmeebene
+                               Jan., Feb., Dez.*)    Mrz. – Mai           Jun. – Aug.        Sep. – Nov.
+                                 11:00 - 14:00
+                                                        keine               keine               keine
+  Umspannung 110/20 kV           16:30 - 19:30
+  Mittelspannung 20 kV           16:30 - 19:30          keine               keine           16:30 - 19:15
+  Umspannung 20/0,4 kV           17:00 - 19:30          keine               keine           17:00 - 19:00
+  Niederspannung 0,4 kV          17:00 - 19:30          keine               keine           17:00 - 19:00
+
+
+Bemerkungen:
+
+*) Wintermonate des Jahres 2026, d.h. Januar, Februar und Dezember 2026
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag - Freitag) gültig.
+Wochenenden, Feiertage und maximal ein Brückentag pro Woche sowie die Zeit zwischen Weihnachten und
+Neujahr (24. Dezember – 01. Januar) gelten als Nebenzeiten.
+
+Brückentage 2026: 02.01.2026, 15.05.2026
+
+
+Bei den obigen Zeitangaben handelt es sich um Uhrzeiten und nicht um Zeitstempel aus den Lastgängen.
+
+Beispiele für Zeitangaben:
+16:45 - 18:45 bedeutet von 16:45:01 bis 18:45:00
+17:30 - 19:30 bedeutet von 17:30:01 bis 19:30:00
+
+Damit EWE NETZ ein individuelles Netzentgelt gewähren kann, müssen weitere Bedingungen gemäß den
+gesetzlichen Vorgaben und den Regelungen der Bundesnetzagentur erfüllt sein.
+
+
+=== Datei SNB951051725711_0005_hlzf_ypischehochlastzeitfenster2027.pdf ===
+Stand 29.10.2026
+
+
+
+
+Hochlastzeitfenster 2027 für atypische Netznutzung
+(Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV)
+
+                              Winter                 Frühling            Sommer              Herbst
+     Entnahmeebene
+                        Jan., Feb., Dez.*)          Mrz. – Mai          Jun. – Aug.        Sep. – Nov.
+                          08:15 - 15:30;
+  Umspannung 110/20 kV                                 keine               keine          16:30 - 18:30
+                          17:15 - 19:30
+  Mittelspannung 20 kV    17:15 - 19:30                keine               keine              keine
+  Umspannung 20/0,4 kV    17:00 - 19:15                keine               keine              keine
+  Niederspannung 0,4 kV   17:00 - 19:15                keine               keine              keine
+
+
+Bemerkungen:
+
+*) Wintermonate des Jahres 2027, d.h. Januar, Februar und Dezember 2027
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag - Freitag) gültig.
+Wochenenden, Feiertage und maximal ein Brückentag pro Woche sowie die Zeit zwischen Weihnachten und
+Neujahr (24. Dezember – 01. Januar) gelten als Nebenzeiten.
+
+Brückentage 2027: Freitag, 07.05.2027
+
+
+Bei den obigen Zeitangaben handelt es sich um Uhrzeiten und nicht um Zeitstempel aus den Lastgängen.
+
+Beispiele für Zeitangaben:
+16:45 - 18:45 bedeutet von 16:45:01 bis 18:45:00
+17:30 - 19:30 bedeutet von 17:30:01 bis 19:30:00
+
+Damit EWE NETZ ein individuelles Netzentgelt gewähren kann, müssen weitere Bedingungen gemäß den
+gesetzlichen Vorgaben und den Regelungen der Bundesnetzagentur erfüllt sein.
 

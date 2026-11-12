@@ -1,5 +1,62 @@
-SNB988838479086_0630_hlzf.pdf
+SNB988838479086_0630_hlzf_2027.pdf | SNB988838479086_0630_hlzf.pdf
 
+=== Datei SNB988838479086_0630_hlzf_2027.pdf ===
+Hochlastzeitfenster für das Kalenderjahr 2027
+nach § 19 Abs. 2 Satz 1 StromNEV
+
+Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag – Freitag) gültig.
+Wochenenden, Feiertage und maximal ein Brückentag pro Woche sowie die Zeit zwischen
+Weihnachten und Neujahr gelten als Nebenzeiten.
+
+Hochlastzeitfenster in der Mittelspannungsebene (MS)
+Jahreszeit                 Zeitraum         HLZF                    Uhrzeit von:       Uhrzeit bis:
+Frühling                01.03. – 31.05.     keine                        -                 -
+Sommer                  01.06. – 31.08.     keine                        -                 -
+Herbst                  01.09. – 30.11.       1                        09:45             13:00
+Winter                  01.12. – 28.02.       1                       08:15*             14:00*
+                                                      2                14:15*             18:00*
+
+
+
+Hochlastzeitfenster in der Umspannebene (MS/NS)
+Jahreszeit                 Zeitraum       HLZF                      Uhrzeit von:       Uhrzeit bis:
+Frühling                01.03. – 31.05.   keine                          -                 -
+Sommer                  01.06. – 31.08.   keine                          -                 -
+Herbst                  01.09. – 30.11.   Keine                          -                 -
+Winter                  01.12. – 28.02.     1                         09:15*             13:45*
+                                            2                         16:00*             19:00*
+
+
+
+Hochlastzeitfenster in der Niederspannungsebene (NS)
+Jahreszeit                 Zeitraum        HLZF                     Uhrzeit von:       Uhrzeit bis:
+Frühling                01.03. – 31.05.    keine                         -                 -
+Sommer                  01.06. – 31.08.    keine                         -                 -
+Herbst                  01.09. – 30.11.      1                        10:15*             14:15*
+                                             2                        16:00*             19:15*
+Winter                  01.12. – 28.02.      1                        10:15*             14:00*
+                                             2                         16:00*            19:30*
+
+
+
+Voraussetzungen gem. BK4-13-739, Ziffer 2.g) und j)
+Netzebene             Erheblichkeitsschwelle                     Mindestverlagerung   Bagatellgrenze
+MS                             20 %                                   100 kW             500,00 €
+MS / NS                        30 %                                   100 kW             500,00 €
+NS                             30 %                                   100 kW             500,00 €
+
+
+
+
+*
+    Zeitfenster erweitert nach BK4-13-739, Ziffer 2.e), Abs. 2
+
+
+Hochlastzeitfenster 2027
+01.01.2027                                                                                         Seite 1 von 1
+
+
+=== Datei SNB988838479086_0630_hlzf.pdf ===
 Hochlastzeitfenster für das Kalenderjahr 2026
 nach § 19 Abs. 2 Satz 1 StromNEV
 

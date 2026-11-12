@@ -1,7 +1,8 @@
-https://www.dbenergie.de/resource/blob/13576260/8f7f91731a7668f2b20cac1a4b7b83b1/Hochlastzeitfenster-Bahnstrom-2026-data.pdf
+SNB942182027607_0078_hlzf_2027.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2017data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2018data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2019data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2020data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2021data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2022data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2023data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2024data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2025data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2026data.pdf | SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2027data.pdf | SNB942182027607_0078_hlzf_stzeitfensterBahnstrom2027data.pdf
 
+=== Datei SNB942182027607_0078_hlzf_2027.pdf ===
                           Hochlastzeitfenster im 16,7-Hz-Bahnstromnetz
-                             (Bahnstromnetz) gültig ab 01.01.2026
+                             (Bahnstromnetz) gültig ab 01.01.2027
 
 DB Energie als Bahnstromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
 StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
@@ -16,24 +17,26 @@ Bahnstromnetz ermittelt.
 
 Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Bahnstromnetzbetreiber Letztver-
 brauchern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
-Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche Abwei-
+Entnahmestelle im vorangegangenen Kalenderjahr der Antragstellung eine erhebliche Abwei-
 chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
 lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
 gemäß § 19 Absatz 2 Satz 1 StromNEV an.
 
 1. Hochlastzeitfenster
          Zeitfenster             Netzebene Hochspannung                 Netzebene Mittelspannung
-                                                                          07:00 Uhr – 08:15 Uhr
-            Winter                  07:00 Uhr – 08:00 Uhr
-                                                                          17:00 Uhr – 17:15 Uhr
+                                    06:45 Uhr – 09:30 Uhr
+                                                                          06:45 Uhr – 09:30 Uhr
+            Winter                  14:30 Uhr – 14:45 Uhr
+                                                                          16:30 Uhr – 19:45 Uhr
+                                    16:00 Uhr – 19:15 Uhr
 
    Die Zeiten geben jeweils die tatsächliche Uhrzeit an.
 
 2. Jahreszeiten und Feiertage
           Jahreszeit                      Zeitraum
-                                   01.01.2026 – 28.02.2026
+                                   01.01.2027 – 28.02.2027
             Winter
-                                   01.12.2026 – 31.12.2026
+                                   01.12.2027 – 31.12.2027
 
    In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
 
@@ -43,14 +46,13 @@ gemäß § 19 Absatz 2 Satz 1 StromNEV an.
      schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
 
    Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag - Freitag) gültig. Wochen-
-   enden, bundeseinheitliche Feiertage und maximal ein Brückentag pro Woche (02.01.2026)
-   sowie die Zeit zwischen Weihnachten und Neujahr (24. bis 31. Dezember 2026) gelten als
-   Nebenzeiten.
+   enden, bundeseinheitliche Feiertage und maximal ein Brückentag pro Woche sowie die Zeit
+   zwischen Weihnachten und Neujahr (24. bis 31. Dezember 2027) gelten als Nebenzeiten.
 
 
 
 
-Hochlastzeitfenster Bahnstromnetz 2026               1 von 2                                       Stand 10/2025
+Hochlastzeitfenster Bahnstromnetz 2027               1 von 2                                       Stand 09/2026
 3. Erheblichkeitsschwelle
          Netzebene                 Erheblichkeitsschwelle
        Hochspannung                        10 %
@@ -71,5 +73,975 @@ Hochlastzeitfenster Bahnstromnetz 2026               1 von 2                    
 
 
 
-Hochlastzeitfenster Bahnstromnetz 2026              2 von 2                       Stand 10/2025
+Hochlastzeitfenster Bahnstromnetz 2027              2 von 2                       Stand 09/2026
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2017data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2017
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
+vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertragli-
+cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vor-
+hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder
+Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA) be-
+rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche Abwei-
+chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
+lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
+gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+         Zeitfenster             Netzebene Mittelspannung             Netzebene Niederspannung
+                                                                          03:30 Uhr – 04:15 Uhr
+           Winter                     06:30 Uhr – 09:30 Uhr               06:15 Uhr – 09:30 Uhr
+                                                                          19:00 Uhr – 19:15 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                         Zeitraum
+                                     01.01.2017 – 28.02.2017
+           Winter
+                                     01.12.2017 – 31.12.2017
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche zwischen
+   Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2017                      1 von 2                                    Stand 12/2016
+3. Erheblichkeitsschwelle
+         Netzebene            Erheblichkeitsschwelle         Mindestverlagerung   Bagatellgrenze
+      Mittelspannung                  20 %                        100 kW              500 €
+     Niederspannung                   30 %                        100 kW              500 €
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des individuel-
+   len Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung des indivi-
+   duellen Netzentgelts durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2017                     2 von 2                                Stand 12/2016
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2018data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2018
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
+vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertragli-
+cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vor-
+hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder
+Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA) be-
+rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche Abwei-
+chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
+lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
+gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+         Zeitfenster             Netzebene Mittelspannung             Netzebene Niederspannung
+                                                                          06:15 Uhr – 10:45 Uhr
+                                      06:30 Uhr – 10:45 Uhr               11:00 Uhr – 11:30 Uhr
+           Winter
+                                      16:45 Uhr – 17:45 Uhr               14:15 Uhr – 15:00 Uhr
+                                                                          16:30 Uhr – 21:00 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere Hochlastzeitfens-
+   ter „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das um 06:30 Uhr be-
+   ginnt, und endet mit dem Viertelstundenintervall, das um 10:45 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                         Zeitraum
+                                     01.01.2018 – 28.02.2018
+           Winter
+                                     01.12.2018 – 31.12.2018
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche zwischen
+   Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2018                      1 von 2                                    Stand 10/2017
+3. Erheblichkeitsschwelle
+         Netzebene                   Erheblichkeitsschwelle
+      Hochspannung                           10 %
+      Mittelspannung                         20 %
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des individuel-
+   len Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung des indivi-
+   duellen Netzentgelts durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2018                     2 von 2                     Stand 10/2017
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2019data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2019
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn aufgrund
+vorliegender oder prognostizierter Verbrauchsdaten oder aufgrund technischer oder
+vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+berücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber
+Letztverbrauchern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der
+Kunden- Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine
+erhebliche Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche
+Abweichung (siehe Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein
+individuelles Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+                                                                         00:45 Uhr – 01:00 Uhr
+                                     06:00 Uhr – 09:45 Uhr               01:15 Uhr – 04:45 Uhr
+                                     10:15 Uhr – 10:30 Uhr               05:15 Uhr – 05:45 Uhr
+           Winter                    19:15 Uhr – 19:30 Uhr               06:00 Uhr – 07:30 Uhr
+                                                                         10:30 Uhr – 11:00 Uhr
+                                                                         19:15 Uhr – 19:30 Uhr
+                                                                         01:15 Uhr – 04:45 Uhr
+          Frühling                   06:00 Uhr – 08.30 Uhr               06:15 Uhr – 07:00 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfenster „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das um
+   06:00 Uhr beginnt, und endet mit dem Viertelstundenintervall, das um 09:45 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                        Zeitraum
+
+                                       01.01.2019 – 28.02.2019
+           Winter                      01.12.2019 – 31.12.2019
+
+          Frühling                     01.03.2019 – 31.05.2019
+
+   In den Jahreszeiten Sommer und Herbst bestehen keine Hochlastzeitfenster. Bei der
+   Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+                                          Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“
+   berücksichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+Hochlastzeitfenster Stromnetz 2019                     1 von 2                                     Stand 10/2018
+3. Erheblichkeitsschwelle
+        Netzebene                    Erheblichkeitsschwelle
+      Hochspannung                           10 %
+     Mittelspannung                          20 %
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz
+   unterhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des
+   individuellen Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung
+   des individuellen Netzentgelts durch den Letztverbraucher bei der zuständigen
+   Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz
+   größtmöglicher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche
+   Haftung aus und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2019                     2 von 2                     Stand 10/2018
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2020data.pdf ===
+                   Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2020
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn aufgrund
+vorliegender oder prognostizierter Verbrauchsdaten oder aufgrund technischer oder
+vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+berücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber
+Letztverbrauchern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der
+Kunden- Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine
+erhebliche Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche
+Abweichung (siehe Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein
+individuelles Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+                                                                         03:00 Uhr – 04:30 Uhr
+          Winter                     06:30 Uhr - 10:30 Uhr               06:30 Uhr – 08:30 Uhr
+                                                                         09:00 Uhr – 11:00 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das Hochlastzeitfenster
+   „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das um 06:30 Uhr beginnt,
+   und endet mit dem Viertelstundenintervall, das um 10:30 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+        Jahreszeit                         Zeitraum
+
+                                       01.01.2020 – 28.02.2020
+          Winter                       01.12.2020 – 31.12.2020
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine
+   Hochlastzeitfenster. Bei der Berechnung werden folgende bundeseinheitliche
+   Feiertage berücksichtigt:
+                                          Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“
+   berücksichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2020                      1 von 2                                    Stand 10/2019
+3. Erheblichkeitsschwelle
+        Netzebene                    Erheblichkeitsschwelle
+     Hochspannung                            10 %
+     Mittelspannung                          20 %
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz
+   unterhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des
+   individuellen Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung
+   des individuellen Netzentgelts durch den Letztverbraucher bei der zuständigen
+   Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz
+   größtmöglicher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche
+   Haftung aus und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2020                     2 von 2                     Stand 10/2019
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2021data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2021
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
+vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertragli-
+cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vor-
+hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder
+Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA) be-
+rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche Abwei-
+chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
+lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
+gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+                                                                          06:45 Uhr – 07:00 Uhr
+                                      06:30 Uhr – 09:15 Uhr               07:15 Uhr – 07:30 Uhr
+           Winter
+                                      10:30 Uhr – 10:45 Uhr               07:45 Uhr – 08:30 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere Hochlastzeitfens-
+   ter „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das um 06:30 Uhr be-
+   ginnt, und endet mit dem Viertelstundenintervall, das um 09:15 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                         Zeitraum
+                                     01.01.2021 – 28.02.2021
+           Winter
+                                     01.12.2021 – 31.12.2021
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche zwischen
+   Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2018                      1 von 2                                    Stand 10/2017
+3. Erheblichkeitsschwelle
+        Netzebene                    Erheblichkeitsschwelle
+      Hochspannung                           10 %
+     Mittelspannung                          20 %
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des individuel-
+   len Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung des indivi-
+   duellen Netzentgelts durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2018                     2 von 2                     Stand 10/2017
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2022data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2021
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
+vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertragli-
+cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vor-
+hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder
+Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA) be-
+rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche Abwei-
+chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
+lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
+gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+         Zeitfenster             Netzebene Mittelspannung             Netzebene Niederspannung
+                                      01:15 Uhr – 07:45 Uhr               00:30 Uhr – 07:00 Uhr
+                                      09:15 Uhr – 10:30 Uhr
+           Winter
+                                      19:15 Uhr – 20:00 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere Hochlastzeitfens-
+   ter „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das um 01:15 Uhr be-
+   ginnt, und endet mit dem Viertelstundenintervall, das um 07:45 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                         Zeitraum
+                                     01.01.2022 – 28.02.2022
+           Winter
+                                     01.12.2022 – 31.12.2022
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche zwischen
+   Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2022                      1 von 2                                    Stand 10/2021
+3. Erheblichkeitsschwelle
+          Netzebene                  Erheblichkeitsschwelle
+       Mittelspannung                        20 %
+      Niederspannung                         30 %
+
+   Ein individuelles Netzentgelt kann nur dann genehmigt werden, wenn ein Netznutzer seine
+   Last soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode
+   der Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA vom 11.12.2013. Voraussetzung für die Gewährung des individuel-
+   len Netzentgelts ist die fristgerechte und vollständige Anzeige der Vereinbarung des indivi-
+   duellen Netzentgelts durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2022                  2 von 2                        Stand 10/2021
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2023data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2023
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf
+Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder
+vertragli- cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vor- hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+be- rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche
+Abwei- chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung
+(siehe Erheb- lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein
+individuelles Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung          Netzebene Niederspannung
+                                      06:15 Uhr – 10:45 Uhr         01:00 Uhr – 01:30 Uhr
+                                      17:45 Uhr – 18:00 Uhr         01:45 Uhr – 02:15 Uhr
+           Winter
+                                      19:00 Uhr – 20:30 Uhr         02:45 Uhr – 04:00 Uhr
+                                                                    07:00 Uhr – 08:15 Uhr
+                                                                    10:30 Uhr – 10:45 Uhr
+                                                                    17:00 Uhr – 17:15 Uhr
+                                                                    19:15 Uhr – 19:45 Uhr
+
+                                      06:15 Uhr – 06:45 Uhr         01:15 Uhr – 04:30 Uhr
+          Frühling                                                  06:15 Uhr – 06:45 Uhr
+
+                                      07:15 Uhr – 10:00 Uhr         07:30 Uhr – 08:00 Uhr
+           Herbst                     10:15 Uhr – 10:30 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfens- ter „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das
+   um 06:15 Uhr be- ginnt, und endet mit dem Viertelstundenintervall, das um 10:45 Uhr
+   endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                         Zeitraum
+                                     01.01.2023 – 28.02.2023
+           Winter
+                                     01.12.2023 – 31.12.2023
+                                     01.03.2023 – 31.05.2023
+          Frühling
+                                     01.09.2023 – 30.11.2023
+           Herbst
+
+
+   In der Jahreszeit Sommer bestehen keine Hochlastzeitfenster.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2023                      1 von 2                             Stand 10/2020
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+3. Erheblichkeitsschwelle
+        Netzebene                    Erheblichkeitsschwelle
+      Hochspannung                           10 %
+     Mittelspannung                          20 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts ist die
+   fristgerechte und vollständige Anzeige der Vereinbarung des indivi- duellen Netzentgelts
+   durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster Stromnetz 2023                     2 von 2                                     Stand 10/2020
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2024data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2024
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf
+Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder
+vertragli- cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+be- rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche
+Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe
+Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles
+Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+
+           Winter                   06:30 Uhr – 08:45 Uhr                 06:30 Uhr – 08:45 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfenster „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das
+   um 06:30 Uhr beginnt, und endet mit dem Viertelstundenintervall, das um 08:45 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+        Jahreszeit                         Zeitraum
+                                  01.01.2024 – 29.02.2024
+           Winter
+                                  01.12.2024 – 31.12.2024
+
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2024               1 von 2                                     Stand 10/2023
+3. Erheblichkeitsschwelle
+        Netzebene                 Erheblichkeitsschwelle
+      Hochspannung                         10 %
+     Mittelspannung                        20 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts ist die
+   fristgerechte und vollständige Anzeige der Vereinbarung des individuellen Netzentgelts
+   durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2024            2 von 2                        Stand 10/2023
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2025data.pdf ===
+                    Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2025
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf
+Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder
+vertragli- cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+be- rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche
+Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe
+Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles
+Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+         Zeitfenster             Netzebene Mittelspannung                 Netzebene Niederspannung
+
+           Winter                   06:45 Uhr – 08:45 Uhr                    06:45 Uhr – 08:45 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfenster „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das
+   um 06:45 Uhr beginnt, und endet mit dem Viertelstundenintervall, das um 08:45 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+         Jahreszeit                        Zeitraum
+                                   01.01.2025 – 28.02.2025
+           Winter
+                                   01.12.2025 – 31.12.2025
+
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2025              1 von 2                                        Stand 10/2024
+3. Erheblichkeitsschwelle
+         Netzebene                 Erheblichkeitsschwelle
+      Hochspannung                         10 %
+      Mittelspannung                       20 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts ist die
+   fristgerechte und vollständige Anzeige der Vereinbarung des individuellen Netzentgelts
+   durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2025             2 von 2                       Stand 10/2024
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2026data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2026
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf
+Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder
+vertragli- cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+be- rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche
+Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe
+Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles
+Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+
+           Winter                   06:00 Uhr – 08:30 Uhr                 06:00 Uhr – 08:15 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfenster „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das
+   um 06:00 Uhr beginnt, und endet mit dem Viertelstundenintervall, das um 08:30 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+        Jahreszeit                         Zeitraum
+                                  01.01.2026 – 28.02.2026
+           Winter
+                                  01.12.2026 – 31.12.2026
+
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2026               1 von 2                                     Stand 10/2025
+3. Erheblichkeitsschwelle
+        Netzebene                 Erheblichkeitsschwelle
+      Hochspannung                         10 %
+     Mittelspannung                        20 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts ist die
+   fristgerechte und vollständige Anzeige der Vereinbarung des individuellen Netzentgelts
+   durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2026            2 von 2                        Stand 10/2025
+
+
+=== Datei SNB942182027607_0078_hlzf_ochlastzeitfenster50Hz2027data.pdf ===
+                  Hochlastzeitfenster im 50-Hz-Stromnetz gültig ab 1.1.2027
+
+DB Energie als Stromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf
+Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder
+vertragli- cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines
+Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller
+Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA)
+be- rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Stromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Stromnetzbetreiber Letztverbrau-
+chern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenem Kalenderjahr der Antragstellung eine erhebliche
+Abweichung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe
+Erheblichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles
+Netzentgelt gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+        Zeitfenster             Netzebene Mittelspannung              Netzebene Niederspannung
+
+           Winter                   06:30 Uhr – 09:15 Uhr                 06:30 Uhr – 09:15 Uhr
+
+                                                                          09:30 Uhr – 09:45 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an. Beispiel: Das frühere
+   Hochlastzeitfenster „Mittelspannung Winter“ beginnt mit dem Viertelstundenintervall, das
+   um 06:30 Uhr beginnt, und endet mit dem Viertelstundenintervall, das um 09:15 Uhr endet.
+
+2. Jahreszeiten und Feiertage
+        Jahreszeit                         Zeitraum
+                                  01.01.2027 – 28.02.2027
+           Winter
+                                  01.12.2027 – 31.12.2027
+
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+
+                                           Bundeseinheitliche Feiertage
+    Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+    schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Gemäß BNetzA-Modell sind nur Werktage (Montag - Freitag) als „Hochlastzeiten“ berück-
+   sichtigt. Wochenenden, bundeseinheitliche Feiertage und die Tage in der Woche
+   zwischen Weihnachten und Neujahr sind grundsätzlich als „Nebenzeit“ eingestuft.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2027               1 von 2                                     Stand 10/2026
+3. Erheblichkeitsschwelle
+        Netzebene                 Erheblichkeitsschwelle
+      Hochspannung                         10 %
+     Mittelspannung                        20 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz un-
+   terhalb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts ist die
+   fristgerechte und vollständige Anzeige der Vereinbarung des individuellen Netzentgelts
+   durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+   Die Vollständigkeit und Fehlerfreiheit unserer veröffentlichten Daten kann trotz größtmögli-
+   cher Sorgfalt nicht garantiert werden. Wir schließen daher eine diesbezügliche Haftung aus
+   und behalten uns das Recht vor, notwendige Änderungen vorzunehmen.
+
+
+
+
+Hochlastzeitfenster 50 Hz Stromnetz 2027            2 von 2                        Stand 10/2026
+
+
+=== Datei SNB942182027607_0078_hlzf_stzeitfensterBahnstrom2027data.pdf ===
+                          Hochlastzeitfenster im 16,7-Hz-Bahnstromnetz
+                             (Bahnstromnetz) gültig ab 01.01.2027
+
+DB Energie als Bahnstromnetzbetreiber bietet jedem Letztverbraucher gemäß § 19 Abs. 2 S. 1
+StromNEV in Abweichung von § 16 StromNEV ein individuelles Netzentgelt an, wenn auf Grund
+vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertragli-
+cher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vor-
+hersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder
+Umspannebene abweicht.
+
+DB Energie hat dabei auch den Beschluss BK4-13-739 der Bundesnetzagentur (BNetzA) be-
+rücksichtigt und die entsprechenden Hochlastzeitfenster für die vier Jahreszeiten für das
+Bahnstromnetz ermittelt.
+
+Auf Basis dieser Hochlastzeitfenster bietet DB Energie als Bahnstromnetzbetreiber Letztver-
+brauchern, deren Stromentnahme aus dem Netz für den eigenen Verbrauch an der Kunden-
+Entnahmestelle im vorangegangenen Kalenderjahr der Antragstellung eine erhebliche Abwei-
+chung aufwiesen oder die glaubhaft darlegen, dass eine erhebliche Abweichung (siehe Erheb-
+lichkeitsschwelle) der Jahreshöchstlast für das Folgejahr eintritt, ein individuelles Netzentgelt
+gemäß § 19 Absatz 2 Satz 1 StromNEV an.
+
+1. Hochlastzeitfenster
+         Zeitfenster             Netzebene Hochspannung                 Netzebene Mittelspannung
+                                    06:45 Uhr – 09:30 Uhr
+                                                                          06:45 Uhr – 09:30 Uhr
+            Winter                  14:30 Uhr – 14:45 Uhr
+                                                                          16:30 Uhr – 19:45 Uhr
+                                    16:00 Uhr – 19:15 Uhr
+
+   Die Zeiten geben jeweils die tatsächliche Uhrzeit an.
+
+2. Jahreszeiten und Feiertage
+          Jahreszeit                      Zeitraum
+                                   01.01.2027 – 28.02.2027
+            Winter
+                                   01.12.2027 – 31.12.2027
+
+   In den Jahreszeiten Frühling, Sommer und Herbst bestehen keine Hochlastzeitfenster.
+
+   Bei der Berechnung werden folgende bundeseinheitliche Feiertage berücksichtigt:
+                                         Bundeseinheitliche Feiertage
+     Neujahr, Karfreitag, Ostermontag, Tag der Arbeit, Christi Himmelfahrt, Pfingstmontag, Tag der Deut-
+     schen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag
+
+   Die Hochlastzeitfenster sind ausschließlich an Werktagen (Montag - Freitag) gültig. Wochen-
+   enden, bundeseinheitliche Feiertage und maximal ein Brückentag pro Woche sowie die Zeit
+   zwischen Weihnachten und Neujahr (24. bis 31. Dezember 2027) gelten als Nebenzeiten.
+
+
+
+
+Hochlastzeitfenster Bahnstromnetz 2027               1 von 2                                       Stand 09/2026
+3. Erheblichkeitsschwelle
+         Netzebene                 Erheblichkeitsschwelle
+       Hochspannung                        10 %
+       Mittelspannung                      20 %
+      Niederspannung                       30 %
+
+   Ein individuelles Netzentgelt kommt nur dann in Betracht, wenn ein Netznutzer seine Last
+   soweit verlagern kann, dass seine individuelle Höchstlast in den auf Basis der Methode der
+   Bundesnetzagentur ermittelten Hochlastzeitfenstern um den genannten Prozentsatz unter-
+   halb seiner absoluten Jahreshöchstlast liegen wird.
+
+4. Vorbehalt
+   Maßgeblich für die Netzentgeltberechnung der atypischen Netznutzung ist der Beschluss
+   BK4-13-739 der BNetzA. Voraussetzung für die Gewährung des individuellen Netzentgelts
+   ist die fristgerechte und vollständige Anzeige der Vereinbarung des individuellen Netzent-
+   gelts durch den Letztverbraucher bei der zuständigen Regulierungsbehörde.
+
+
+
+
+Hochlastzeitfenster Bahnstromnetz 2027              2 von 2                       Stand 09/2026
 

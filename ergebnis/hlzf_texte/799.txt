@@ -1,7 +1,7 @@
-SNB910956210043_0799_hlzf.pdf
+SNB910956210043_0799_hlzf_2027.pdf
 
            Hochlastzeitfenster nach §19 Abs.2 Satz 1 StromNEV im
-    Netzgebiet der Überlandwerk Leinetal GmbH für das Kalenderjahr 2026
+    Netzgebiet der Überlandwerk Leinetal GmbH für das Kalenderjahr 2027
 
 
                  Hochlastzeitfenster (HLZF) in der Mittelspannungsebene (MS)
@@ -9,22 +9,22 @@ Jahreszeit             Zeitraum                                  HLZF         Uh
 Frühling               1. März bis 31. Mai                       kein
 Sommer                 1. Juni bis 31. August                    kein
 
-Herbst                 1. September bis 30. November               1             06:15        10:15
-                       1. September bis 30. November               2             11:30        13:30
+Herbst                 1. September bis 30. November               1             07:30        10:45
+                       1. September bis 30. November               2             11:15        12:45
+                       1. September bis 30. November               3             16:30        19:00
 
-Winter                 1. Dezember bis 28. Februar                 1             07:00        08:00
-                       1. Dezember bis 28. Februar                 2             09:45        10:45
-                       1. Dezember bis 28. Februar                 3             11:45        13:45
-                       1. Dezember bis 28. Februar                 4             15:30        16:30
-                       1. Dezember bis 28. Februar                 5             17:45        18:45
+Winter                 1. Dezember bis 28. Februar                 1             07:30        10:00
+                       1. Dezember bis 28. Februar                 2             11:30        12:30
+                       1. Dezember bis 28. Februar                 3             16:30        19:30
+
                    Hochlastzeitfenster (HLZF) in der Umspannebene (MS/NS)
 Jahreszeit             Zeitraum                                  HLZF         Uhrzeit von: Uhrzeit bis:
 Frühling               1. März bis 31. Mai                       kein
 Sommer                 1. Juni bis 31. August                    kein
 Herbst                 1. September bis 30. November             kein
 
-Winter                 1. Dezember bis 28. Februar                 1             10:15        12:45
-                       1. Dezember bis 28. Februar                 2             18:00        18:30
+Winter                 1. Dezember bis 28. Februar                 1             11:30        13:00
+                       1. Dezember bis 28. Februar                 2             17:30        19:00
 
                  Hochlastzeitfenster (HLZF) in der Niederspannungsebene (NS)
 Jahreszeit             Zeitraum                                  HLZF         Uhrzeit von: Uhrzeit bis:
@@ -32,7 +32,7 @@ Frühling               1. März bis 31. Mai                       kein
 Sommer                 1. Juni bis 31. August                    kein
 Herbst                 1. September bis 30. November             kein
 
-Winter                 1. Dezember bis 28. Februar                 1             17:45        18:45
+Winter                 1. Dezember bis 28. Februar                 1             00:00        00:30
 
 
 

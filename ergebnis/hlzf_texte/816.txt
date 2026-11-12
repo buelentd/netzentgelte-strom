@@ -1,0 +1,39 @@
+SNB977641826996_0816_hlzf_2027.pdf
+
+Hochlastzeitfenster für atypische Netznutzung nach § 19 Abs. 2 S. 1 StromNEV
+- Kalenderjahr 2027 -
+
+
+                                    Umspannung
+               Mittelspannung                       Niederspannung
+                                      MS/NS
+                von        bis      von      bis      von       bis
+  Frühling        -         -        -        -         -        -
+
+  Sommer          -         -        -        -         -        -
+
+  Herbst          -         -      18:00    18:15    18:00     18:15
+
+               08:00     14:15     11:15    12:00    11:00     12:15
+  Winter
+               17:00     18:30     16:30    19:15    16:30     19:15
+
+
+
+  Winter       01. Januar bis 28. Februar
+  Frühling     01. März bis 31. Mai
+  Sommer       01. Juni bis 31. August
+  Herbst       01. September bis 30. November
+  Winter       01. Dezember bis 31. Dezember
+
+
+Die Zeiten sind als Uhrzeit zu verstehen, die einen Zeitraum angeben (keine Lastgangzeitstempel).
+
+Die Hochlastzeiten gelten nicht an Sonnabenden, an Sonntagen, an bundeseinheitlichen Feiertagen (Neu-
+jahr, Karfreitag, Ostersonntag, Ostermontag, Maifeiertag, Himmelfahrt, Pfingstsonntag, Pfingstmontag,
+Tag der Deutschen Einheit, 1. Weihnachtsfeiertag, 2. Weihnachtsfeiertag) sowie im Zeitraum vom 24. De-
+zember bis 31. Dezember.
+
+Weiterhin gelten nicht als Hochlastzeiten die regionalen Feiertage Reformationstag und Buß- und Bettag
+sowie als Brückentag der Tag nach Christi Himmelfahrt.
+

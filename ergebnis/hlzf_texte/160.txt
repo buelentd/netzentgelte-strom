@@ -1,6 +1,6 @@
-SNB974763887737_0160_hlzf.pdf
+SNB974763887737_0160_hlzf_2027.pdf
 
-Hochlastzeitfenster 2026 für atypische Netznutzung nach § 19 Abs. 2 Satz 1 StromNEV
+Hochlastzeitfenster 2027 für atypische Netznutzung nach § 19 Abs. 2 Satz 1 StromNEV
 
 Letztverbraucher mit atypischem Verbrauchsverhalten können nach § 19 Abs. 2 Satz 1 der
 Stromnetzentgeltverordnung ein Sonderentgelt für die Netznutzung beantragen.
@@ -25,9 +25,10 @@ grundsätzlich als Nebenzeiten.
 
   Sommer                                                   entfällt
 
-  Herbst                                                   18:00 Uhr – 18:30 Uhr
-
-  Winter                                                   17:00 Uhr – 19:30 Uhr
+  Herbst                                                   18:15 Uhr – 18:45 Uhr
+                                                           12:15 Uhr – 12:30 Uhr
+  Winter
+                                                           17:00 Uhr – 19:45 Uhr
 
 Hinweis: Die Zeitfenster sind als Uhrzeit, nicht als Lastgangzeitstempel angegeben
 (z.B. 11:45 bis 13:00 Uhr entspricht ¼-h-Werte 12:00 bis 13:00 Uhr)

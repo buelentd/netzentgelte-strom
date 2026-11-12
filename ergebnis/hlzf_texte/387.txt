@@ -1,5 +1,35 @@
-SNB957591716776_0387_hlzf.pdf
+SNB957591716776_0387_hlzf_2027.pdf | SNB957591716776_0387_hlzf.pdf
 
+=== Datei SNB957591716776_0387_hlzf_2027.pdf ===
+Hochlastzeiten Werktage 2027
+
+Nicht an Wochenenden, Feiertagen, einem Brückentag und
+zwischen Weihnachten und Silvester.
+
+
+Angaben in gesetzl. Zeit DE
+
+
+
+                                       Mittelspannung                 Umspannung MS/NS     Niederspannung
+
+
+Frühling                              08:15 - 08:30 Uhr                      entfällt           entfällt
+                                      11:00 - 11:30 Uhr
+
+Sommer                                10:30 - 10:45 Uhr                      entfällt           entfällt
+
+
+Herbst                                10:45 - 11:30 Uhr                      entfällt           entfällt
+
+
+Winter                                17:00 - 18:00 Uhr                16:15 - 18:30 Uhr   16:15 - 18:45 Uhr
+
+Hinweis: Die Zeitfenster sind als Uhrzeit, nicht als Lastgangzeitstempel angegeben
+(z.B. 11:45 bis 13:00 Uhr entspricht ¼-h-Werte 12:00 bis 13:00 Uhr)
+
+
+=== Datei SNB957591716776_0387_hlzf.pdf ===
 Hochlastzeiten Werktage 2026
 
 Nicht an Wochenenden, Feiertagen, einem Brückentag und
