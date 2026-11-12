@@ -48,12 +48,12 @@ PLUS = [("hochlast", 10), ("hlzf", 10), ("atypisch", 6), ("individuelle netzentg
         ("19 abs", 4), ("19-abs", 4), ("19_abs", 4), ("stromnev", 3), ("sonderform", 3), ("zeitfenster", 3),
         ("pflichtangaben", 3), ("veroeffentlichung", 3), ("marktpartner", 2), ("netzzugang", 2), ("netzentgelt", 2),
         ("netznutzung", 2), ("download", 2), ("elektrizitaet", 3), ("elektrizitat", 3), ("stromnetz", 3), ("netze", 2),
-        ("service", 1), ("kunden", 1), ("energie", 1), ("strom", 1), ("netz", 1)]
+        ("formular", 3), ("dokument", 2), ("service", 1), ("kunden", 1), ("energie", 1), ("strom", 1), ("netz", 1)]
 MINUS = re.compile(r"\bgas\b|waerme|wasser|einspeis|datenschutz|impressum|karriere|kontakt|presse|newsletter|ladestation|"
                    r"wallbox|pv-anlage|solar|tarif", re.I)
 DOK_HINWEIS = re.compile(r"hochlast|hlzf|atypisch|19[ _.-]*abs|stromnev|individuell|zeitfenster|sonderform|hlz[ _-]", re.I)
 # Häufige Einstiegspfade deutscher Netzbetreiber (werden nur abgerufen, wenn robots.txt es erlaubt; 404 kostet nur eine Anfrage)
-SEED_PFADE = ["/netznutzung", "/netznutzung/strom", "/veroeffentlichungspflichten", "/veroeffentlichungen", "/pflichtangaben",
+SEED_PFADE = ["/formularcenter", "/formulare", "/service/downloads", "/dokumente", "/netz", "/netznutzung", "/netznutzung/strom", "/veroeffentlichungspflichten", "/veroeffentlichungen", "/pflichtangaben",
               "/netzentgelte", "/netzdaten", "/downloads", "/stromnetz", "/strom/netz", "/netz/strom", "/netz/veroeffentlichungen"]
 # Bereiche, die nie HLZF enthalten: nicht crawlen (Zeit sparen)
 HART_IGNORIEREN = re.compile(r"/(karriere|jobs?|stellen|presse|news|aktuelles|neuigkeiten|veranstaltung\w*|baeder|bad|freibad|schwimmbad|"
@@ -75,7 +75,7 @@ def verwandte_domain(href: str, start_domain: str) -> bool:
     return bool(re.search(r"netz|infrastruktur|energienetze", h)) and any(t in h for t in stamm)
 
 
-HOCHLAST = re.compile(r"hochlast", re.I)
+HOCHLAST = re.compile(r"hochlast[- ]?(?:zeit|fenster)|hlzf", re.I)   # nicht "Hochlasttarifstufe" (HT/NT)
 UHRZEIT = re.compile(r"(?<!\d)([01]?\d|2[0-3])[:.][0-5]\d(?!\d)")
 JAHRESZEIT = re.compile(r"fr[üu]hling|fr[üu]hjahr|sommer|herbst|winter", re.I)
 MODUL3 = re.compile(r"§\s*14a|modul\s*3|steuerbare\s+verbrauchseinrichtung|hochtarif|niedertarif|\bHT\b.{0,20}\bNT\b", re.I)
@@ -334,7 +334,9 @@ class HlzfCrawler:
                     continue
                 s = score(txt + " " + href)
                 if dok_link(href, txt):
-                    if href in dok_gesehen or not DOK_HINWEIS.search(norm(unquote(href + " " + txt))):
+                    th = norm(unquote(href + " " + txt))
+                    # Preisblätter 2026/2027 enthalten die Fenster oft als Abschnitt (swa Netze, Emmendingen): auch laden, der Inhalt entscheidet
+                    if href in dok_gesehen or not (DOK_HINWEIS.search(th) or (re.search(r"preisbl|netzentgelt|entgelte|netznutzung", th) and re.search(r"2026|2027", th))):
                         continue
                     dok_gesehen.add(href)
                     geprueft_docs = await self._dokument(f, href, url, geprueft_docs, s)
@@ -445,12 +447,18 @@ async def main_async(args):
     from playwright.async_api import async_playwright
     liste = list(csv.DictReader(open(args.liste, encoding="utf-8-sig"), delimiter=";"))
     T = {r["mastr_nr"]: r for r in csv.DictReader(open("ergebnis/netzentgelte_2026.csv", encoding="utf-8-sig"), delimiter=";")}
+    korr = {}
+    try:                       # lauf/website_korrektur.csv (nr;website): Website laut Nutzer/vnbdigital.de statt MaStR
+        nr2m = {r["nr"]: k for k, r in T.items()}
+        korr = {nr2m[r["nr"]]: r["website"] for r in csv.DictReader(open("lauf/website_korrektur.csv", encoding="utf-8-sig"), delimiter=";") if r["nr"] in nr2m}
+    except Exception:
+        pass
     auftraege = []
     for r in liste:
         k = r["mastr_nr"]
         if (args.nur and k not in args.nur) or k in args.ohne:
             continue
-        w = (T.get(k, {}).get("website") or r.get("domain_ohne_www") or r.get("domain") or "").strip()
+        w = (korr.get(k) or T.get(k, {}).get("website") or r.get("domain_ohne_www") or r.get("domain") or "").strip()
         auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w))
     if args.max:
         auftraege = auftraege[:args.max]
