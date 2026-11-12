@@ -84,3 +84,16 @@ def main():
 
 
 main()
+
+
+def umlagen_export():
+    import csv
+    zeilen = list(csv.DictReader(open("ergebnis/umlagen_steuern_2026.csv", encoding="utf-8-sig"), delimiter=";"))
+    out = [{"position": z["position"], "wert": float(z["wert"].replace(",", ".")), "einheit": z["einheit"],
+            "jahr": z["jahr"], "quelle": z["quelle_fundstelle"], "status": z["status"]} for z in zeilen]
+    Path("ergebnis/conplot/umlagen_steuern_2026.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    return len(out)
+
+
+if __name__ == "__main__":
+    print("umlagen:", umlagen_export())

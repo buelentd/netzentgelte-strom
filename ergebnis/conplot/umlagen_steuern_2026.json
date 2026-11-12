@@ -1,0 +1,114 @@
+[
+ {
+  "position": "umlage_offshore_netz",
+  "wert": 0.941,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "netztransparenz.de, Seite „Offshore Netzumlage 2026\": 0,941 ct/kWh",
+  "status": "am Original geprüft 09.11.2026"
+ },
+ {
+  "position": "umlage_kwkg",
+  "wert": 0.446,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "netztransparenz.de, Seite „KWKG-Umlage 2026\": 0,446 ct/kWh",
+  "status": "am Original geprüft 09.11.2026"
+ },
+ {
+  "position": "aufschlag_besondere_netznutzung",
+  "wert": 1.559,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "netztransparenz.de, Seite „Aufschlag für besondere Netznutzung 2026\": 1,559 ct/kWh (daneben 0,050 und 0,025 ct/kWh für Letztverbrauchergruppen, nicht zugeordnet)",
+  "status": "am Original geprüft 09.11.2026"
+ },
+ {
+  "position": "umlage_abschaltbare_lasten",
+  "wert": 0.0,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "netztransparenz.de, Seite „§ 18 AbLaV-Umlage\": Übersicht führt Umlagen nur für die Jahre 2014 bis 2022; für 2026 ist keine Umlage veröffentlicht",
+  "status": "indirekt am Original geprüft 10.11.2026 (keine Veröffentlichung nach 2022 = 0 ct)"
+ },
+ {
+  "position": "umlage_eeg",
+  "wert": 0.0,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "netztransparenz.de, Seite „EEG-Umlagen\": „Mit der EEG-Umlage wurde bis 2022 der Ausbau Erneuerbarer Energien finanziert\"; im zweiten Halbjahr 2022 auf Null gesetzt (§ 60 Abs. 1a EEG); keine Umlage ab 2023 veröffentlicht",
+  "status": "am Original geprüft 10.11.2026"
+ },
+ {
+  "position": "stromsteuer_regelsatz",
+  "wert": 2.05,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "§ 3 StromStG: 20,50 Euro je Megawattstunde",
+  "status": "am Original geprüft 09.11.2026"
+ },
+ {
+  "position": "stromsteuer_produzierendes_gewerbe_netto_nach_erstattung",
+  "wert": 0.05,
+  "einheit": "ct/kWh",
+  "jahr": "2026",
+  "quelle": "§ 9b Abs. 2 StromStG: Entlastung 20 Euro je MWh, nur Produzierendes Gewerbe und Land-/Forstwirtschaft, betriebliche Zwecke, nur wenn Entlastungsbetrag über 250 Euro im Kalenderjahr, auf Antrag, nicht für Elektromobilität",
+  "status": "am Original geprüft 09.11.2026"
+ },
+ {
+  "position": "konzessionsabgabe_tarifkunden_bis_25000_einwohner",
+  "wert": 1.32,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 Abs. 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "konzessionsabgabe_tarifkunden_bis_100000_einwohner",
+  "wert": 1.59,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 Abs. 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "konzessionsabgabe_tarifkunden_bis_500000_einwohner",
+  "wert": 1.99,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 Abs. 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "konzessionsabgabe_tarifkunden_ueber_500000_einwohner",
+  "wert": 2.39,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 Abs. 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "konzessionsabgabe_schwachlast",
+  "wert": 0.61,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "konzessionsabgabe_sondervertragskunden",
+  "wert": 0.11,
+  "einheit": "ct/kWh",
+  "jahr": "2026 (Höchstsatz)",
+  "quelle": "§ 2 KAV",
+  "status": "am Gesetz geprüft 09.11.2026 (§ 2 KAV; Einstufung § 1 Abs. 3, 4 und § 2 Abs. 7, Grenzpreis § 2 Abs. 4); Höchstsätze"
+ },
+ {
+  "position": "umsatzsteuer",
+  "wert": 19.0,
+  "einheit": "Prozent",
+  "jahr": "2026",
+  "quelle": "§ 12 Abs. 1 UStG",
+  "status": "gesetzt (Nutzer 09.11.2026), am Gesetz geprüft 10.11.2026 (gesetze-im-internet.de, § 12 Abs. 1 UStG: 19 Prozent)"
+ }
+]
