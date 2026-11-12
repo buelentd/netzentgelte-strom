@@ -13,6 +13,11 @@ def main():
     P = {r["mastr_nr"]: r for r in lies("ergebnis/modul_messentgelt_2026_geprueft.csv")}
     alt = [r for r in lies("ergebnis/modul3_zeiten.csv") if not r["hinweis"].startswith("maschinell gelesen")]
     cols = list(alt[0].keys())
+    try:
+        manuell = lies("ergebnis/modul3_manuell.csv")
+    except FileNotFoundError:
+        manuell = []
+    alt = [r for r in alt if r["mastr_nr"] not in {m["mastr_nr"] for m in manuell}] + manuell
     fertig = {r["mastr_nr"] for r in alt}
     neu, offen = [], []
     for f in sorted(glob.glob("ergebnis/texte_layout/SNB*.txt")):
