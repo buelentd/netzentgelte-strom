@@ -78,6 +78,21 @@ def main():
     ziel = ROOT / "ergebnis" / "conplot"
     ziel.mkdir(exist_ok=True)
     (ziel / "netzbetreiber_2026.json").write_text(json.dumps({"schluessel": "mastr_nr", "jahr": 2026, "einheiten": {"lp": "EUR je kW und Jahr (Jahresleistungspreis, netto)", "ap": "Cent je kWh (netto)", "gp": "EUR je Jahr (netto)"}, "netzbetreiber": out}, ensure_ascii=False, indent=1), encoding="utf-8")
+    # Konzessionsabgabe je PLZ: Gemeinde mit dem größten Anteil an der PLZ, Höchstsatz Tarifkunden nach Einwohnerzahl (§ 2 KAV); weitere Gemeinden mit anderem Satz stehen in 'weitere'
+    gem = {r["ags"].zfill(8): r for r in lesen("ergebnis/gemeinden_einwohner_2025.csv")}
+    ka = {}
+    for r in lesen("ergebnis/plz_gemeinde.csv"):
+        g = gem.get(r["gemeindeschluessel"].zfill(8))
+        if not g:
+            continue
+        ka.setdefault(r["plz"], []).append({"gemeinde": g["gemeinde"], "ags": g["ags"].zfill(8), "einwohner": int(g["einwohner"]), "ka_tarifkunden_hoechstsatz_ct_kwh": zahl(g["kav_hoechstsatz_tarifkunden_ct_kwh"]), "anteil_prozent": zahl(r["anteil_prozent"])})
+    kaout = {}
+    for k, v in ka.items():
+        v.sort(key=lambda e: -(e["anteil_prozent"] or 0))
+        haupt = dict(v[0])
+        haupt["weitere"] = [e for e in v[1:] if e["ka_tarifkunden_hoechstsatz_ct_kwh"] != haupt["ka_tarifkunden_hoechstsatz_ct_kwh"]]
+        kaout[k] = haupt
+    (ziel / "plz_konzessionsabgabe_2026.json").write_text(json.dumps(kaout, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     (ziel / "plz_2026.json").write_text(json.dumps(plz, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print({"netzbetreiber": len(out), "rlm_ns": sum(1 for e in out if e["rlm"] and e["rlm"]["ns"]), "slp": sum(1 for e in out if e["slp"]),
            "hlzf": sum(1 for e in out if e["hlzf"]), "modul3": sum(1 for e in out if e["modul3"]), "preise_2027": sum(1 for e in out if e["preise_2027_vorlaeufig"]), "plz": len(plz)})

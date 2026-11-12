@@ -162,3 +162,11 @@ Regeln, laut Dokumenten der Netzbetreiber (Standard; Abweichungen im Einzelfall 
   (Aalen, Netze ODR, Düsseldorf); die Schreibweise steht im Dokument.
 - Bekannte Ausnahme: Covestro Brunsbüttel (Werksnetz) nennt Fenster ohne Beschränkung auf Werktage.
 - Eine einzelne Überschreitung im Fenster ändert die höchste Leistung im Fenster und damit das individuelle Netzentgelt (Rechenweg oben, Prüfung vereinfacht, fachlich zu bestätigen).
+
+
+## Konzessionsabgabe je PLZ (`plz_konzessionsabgabe_2026.json`)
+
+`{plz: {gemeinde, ags, einwohner, ka_tarifkunden_hoechstsatz_ct_kwh, anteil_prozent, weitere: [...]}}`. Je PLZ die Gemeinde mit dem größten Anteil an der PLZ; `einwohner` nach Destatis 31.12.2025.
+`ka_tarifkunden_hoechstsatz_ct_kwh` ist der **gesetzliche Höchstsatz** für Tarifkunden nach Einwohnerzahl der Gemeinde (§ 2 Abs. 2 KAV: 1,32 bis 25.000, 1,59 bis 100.000, 1,99 bis 500.000, 2,39 darüber).
+Tatsächlich gezahlt wird oft weniger; das steht beim Netzbetreiber. Sondervertragskunden 0,11 ct/kWh und Schwachlast 0,61 ct/kWh stehen in `umlagen_steuern_2026.json`.
+`weitere` enthält Gemeinden derselben PLZ mit **anderem** Höchstsatz (die PLZ reicht dann über eine Einwohnergrenze). In dem Fall ist der Satz der PLZ nicht eindeutig, die genaue Gemeinde muss der Nutzer wählen.
