@@ -1,7 +1,7 @@
 ﻿mastr_nr;hlzf_status;hlzf_ns_fruehling;hlzf_ns_sommer;hlzf_ns_herbst;hlzf_ns_winter;hlzf_msns_fruehling;hlzf_msns_sommer;hlzf_msns_herbst;hlzf_msns_winter;hlzf_schwelle_prozent;hlzf_mindestleistung_kw;hlzf_quelle_url
 SNB979269087643;gelesen_unser;keins;keins;keins;16:30-19:45;keins;keins;keins;16:30-19:45;;;https://www.stromnetz.berlin/files/globalassets/dokumente/entgelte/zugang/hochlastzeitfenster-2026-berlin.pdf
 SNB969473762610;gelesen_nutzer;10:00-14:15;10:00-14:15;10:00-14:15;10:00-14:15;10:00-14:15;10:00-14:15;10:00-14:15;10:00-14:15;;;https://www.swm-infrastruktur.de/dam/swm-infrastruktur/dokumente/strom/netzzugang-bedingungen/hochlastzeitfenster2026/hlzf-hs-2026.pdf
-SNB948311994307;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB948311994307_0003_hlzf.pdf
+SNB948311994307;gelesen_aus_2027;keins;keins;keins;16:45-20:00;keins;keins;keins;16:45-20:00;;;https://assets.cdn.netze-bw.de/xytfb1vrn7of/28fnFovNQ95tSRAQ0suR25/d67a77cc4fb291edc123ba7c2047035a/regelungen-fuer-die-nutzung-des-stromverteilnetzes-2027.pdf
 SNB990362338043;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB951051725711;jahr_nicht_2026;;;;;;;;;;;https://www.stadtwerke-erding.de/de/Kopfnavigation/Netze/Netz-Stromnetz-Erdinger-Freisinger-Land/SEF-Hochlastzeitfenster-fuer-atypische-Netznutzung-2027.pdf
 SNB916269213931;kein_dokument_oder_adresse;;;;;;;;;;;
