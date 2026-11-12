@@ -351,7 +351,7 @@ class HlzfCrawler:
                 if dok_link(href, txt):
                     th = norm(unquote(href + " " + txt))
                     # Preisblätter 2026/2027 enthalten die Fenster oft als Abschnitt (swa Netze, Emmendingen): auch laden, der Inhalt entscheidet
-                    if href in dok_gesehen or not (DOK_HINWEIS.search(th) or (re.search(r"preisbl|netzentgelt|entgelte|netznutzung", th) and re.search(r"2026|2027", th))):
+                    if href in dok_gesehen or not (DOK_HINWEIS.search(th) or (re.search(r"preisbl|netzentgelt|entgelte|netznutzung|regelungen|netzzugang|bedingungen|nutzung des strom|marktpartner", th) and re.search(r"2026|2027", th))):
                         continue
                     dok_gesehen.add(href)
                     geprueft_docs = await self._dokument(f, href, url, geprueft_docs, s)
