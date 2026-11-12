@@ -99,6 +99,15 @@ LINKS_JS = """() => { const out = [];
     return out; }"""
 
 
+DOK_PFAD = re.compile(r"/downloads?/\d+|/download/|[?&](?:download|file|dl)=|/media/\d+|/dokumente?/|/attachment|/getfile|/dateien?/", re.I)
+DOK_TEXT = re.compile(r"\((?:pdf|xlsx?|xls)\b|\b(?:pdf|xlsx?)[,)]|\.(?:pdf|xlsx?)\b", re.I)
+
+
+def dok_link(href: str, text: str) -> bool:
+    """Link auf ein Dokument: Endung .pdf/.xlsx, Dokumentpfad (/downloads/17085/) oder Linktext "(pdf, 119 KB)". Ob es eines ist, zeigt erst der Inhalt."""
+    return bool(ist_dokument(href) or DOK_PFAD.search(href) or DOK_TEXT.search(text or ""))
+
+
 def score(text: str, jahr: int = 2026) -> int:
     t = norm(unquote(text))
     s = sum(w for k, w in PLUS if k in t)
@@ -324,7 +333,7 @@ class HlzfCrawler:
                 if not href.startswith("http"):
                     continue
                 s = score(txt + " " + href)
-                if ist_dokument(href):
+                if dok_link(href, txt):
                     if href in dok_gesehen or not DOK_HINWEIS.search(norm(unquote(href + " " + txt))):
                         continue
                     dok_gesehen.add(href)
