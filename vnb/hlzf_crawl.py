@@ -512,7 +512,11 @@ async def main_async(args):
 
         async def lauf(a):
             async with sem:
-                f = await crawler.bearbeiten(*a)
+                try:      # Zeitlimit je Netzbetreiber, damit tote Domains (30-s-Timeouts) nicht den ganzen Lauf aufhalten
+                    f = await asyncio.wait_for(crawler.bearbeiten(*a), timeout=300)
+                except asyncio.TimeoutError:
+                    f = Fund(a[0], a[1], website_domain(a[2]))
+                    f.status = "zeitlimit"
                 print(f.mastr, f.domain, f.status, f.jahr, f.seiten, flush=True)
                 ergebnis.append(f)
                 neu = not Path(args.ausgabe).exists()      # laufend sichern, damit ein Abbruch nichts kostet
