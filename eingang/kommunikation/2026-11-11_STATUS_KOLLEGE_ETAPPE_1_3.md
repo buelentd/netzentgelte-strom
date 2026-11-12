@@ -242,3 +242,7 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB991797615686 Energieversorgung Lohr-Karlstadt und Umgebung GmbH & Co. KG (EVK) — HLZF 2027 §19 + Preisblatt Strom 2027 vorläufig, Stand 15.10.2026 (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
 
 - SNB967982606159 Erlanger Stadtwerke AG (ESTW) — Preisblatt Netznutzungsentgelte Strom, gültig ab 01.01.2027, Stand Oktober 2026, vorläufig (Nutzer-Upload, inhaltsgeprueft). HT/NT-Schwachlastzeiten (Modul 3) liegen auf der Website und im Preisblatt — gehören in ergebnis/modul3_zeiten.csv, nicht in die HLZF-Spalten. Automatisierter Abruf war 403-blockiert.
+
+- SNB940297211072 EZV Energie- und Service GmbH & Co. KG Untermain — NNE-Preisblatt ab 01.01.2027 vorläufig + HLZF 2027 §19 (Nutzer-Uploads, inhaltsgeprueft). Zweites HLZF-PDF (andere md5) lokal dl_up/sonst.
+- SNB923953358557 EWR Netze GmbH (Lichtenstein-Unterhausen) — Netzentgelte ab 01.01.2027 vorläufig, Stand 13.10.2026 (Nutzer-Upload; Betreiber aus Text "EWR Netze GmbH").
+- Langenpreising-Uploads (2026) lokal dl_up/sonst, nicht im 2027-Scope.
