@@ -44,3 +44,6 @@ Liste mit Gründen: `lauf/hlzf_lieferung_zurueck.csv`.
 Stapel von 10 bis 20 Netzbetreibern, vorher `daten/hlzf_lieferung_pruefen.py` grün, dann Push und eine kurze Meldung in `eingang/kommunikation/` (gelesen / nicht gefunden / blockiert / unklar mit Grund). Ich übernehme mit einem Befehl und melde dir die Zahl zurück.
 
 Gesamtplan mit Fristen: `ergebnis/PLAYBOOK_2027.md`. Alle Punkte des Tages: `ergebnis/OFFENE_PUNKTE_2026-11-12.md`.
+
+## Deine aktuelle Liste: `ergebnis/kollege_hlzf_offen_199.csv`
+Genau die **199** Netzbetreiber, die jetzt bei den Hochlastzeitfenstern fehlen (Stand nach der Übernahme), MaStR-Nr. zuerst, **nach Einwohnern im Netzgebiet sortiert** (große zuerst), mit Status, Aktion, letzter Rückmeldung von mir, vorhandenen Dateien und Suchlinks. Sie ersetzt die ältere Liste `kollege_hlzf_253.csv` (die enthielt noch Fälle, die inzwischen fertig sind). Arbeite diese Liste von oben nach unten ab.
