@@ -62,9 +62,14 @@ ANFRAGE = re.compile(r"auf\s+anfrage|anfragen|bitte\s+(?:kontaktieren|wenden)", 
 HTML_JS = """() => { const t = [];
     document.querySelectorAll('table').forEach(tb => { tb.querySelectorAll('tr').forEach(r =>
       t.push([...r.children].map(c => c.innerText.replace(/\\s+/g, ' ').trim()).join('   '))); t.push(''); });
-    return (document.body ? document.body.innerText : '').replace(/\\t/g, '   ') + '\\n\\n' + t.join('\\n'); }"""
+    const tc = document.body ? document.body.textContent.replace(/\\s+/g, ' ') : '';
+    const vers = (/hochlast/i.test(tc)) ? '\\n\\n' + tc.slice(0, 300000) : '';
+    return (document.body ? document.body.innerText : '').replace(/\\t/g, '   ') + '\\n\\n' + t.join('\\n') + vers; }"""
 LINKS_JS = """() => { const out = [];
-    document.querySelectorAll('a[href]').forEach(a => out.push([a.href, (a.innerText || a.title || a.getAttribute('aria-label') || '').trim().slice(0, 120)]));
+    document.querySelectorAll('a[href]').forEach(a => {
+      let t = (a.innerText || a.title || a.getAttribute('aria-label') || '').trim();
+      if (t.length < 14) { const c = a.closest('li, tr, p, td, dd, div'); if (c) t = (t + ' ' + c.innerText).replace(/\\s+/g, ' ').trim(); }
+      out.push([a.href, t.slice(0, 200)]); });
     document.querySelectorAll('[data-pdf-url],[data-href],[data-download],[data-file],[data-url]').forEach(e => {
       for (const k of ['data-pdf-url', 'data-href', 'data-download', 'data-file', 'data-url']) {
         const v = e.getAttribute(k); if (v) out.push([new URL(v, document.baseURI).href, (e.innerText || e.getAttribute('data-pdf-name') || '').trim().slice(0, 120)]); } });
@@ -271,7 +276,7 @@ class HlzfCrawler:
                 continue
             # Die Seite selbst kann die Tabelle enthalten (HTML wie PDF)
             pr = inhalt_pruefen(text)
-            if pr["ok"]:
+            if pr["ok"] and pr["zeiten"] >= 6 and pr["jz"] >= 3:      # Webseite strenger prüfen (Menütexte, Öffnungszeiten)
                 self._seite_merken(f, url, text, pr)
             elif pr["anfrage"] and not f.hinweis:
                 f.hinweis = f"Seite nennt Hochlast und Anfrage: {url}"
