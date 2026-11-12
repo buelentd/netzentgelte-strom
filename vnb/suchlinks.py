@@ -27,3 +27,9 @@ def suchbegriffe(name: str, thema: str = "Hochlastzeitfenster 2027") -> list[str
 
 def links(name: str, thema: str = "Hochlastzeitfenster 2027") -> list[str]:
     return ["https://www.google.com/search?q=" + urllib.parse.quote(b) for b in suchbegriffe(name, thema)]
+
+
+def links_beide(name: str) -> dict:
+    """Pro Netzbetreiber zwei Suchen (Festlegung Nutzer 12.11.2026): § 19 StromNEV (Hochlastzeitfenster) und Modul 3 (zeitvariable Netzentgelte)."""
+    return {"hlzf_19": links(name, "Hochlastzeitfenster 2027"),
+            "modul3": links(name, "Modul 3 zeitvariable Netzentgelte 2027 Preisblatt")}
