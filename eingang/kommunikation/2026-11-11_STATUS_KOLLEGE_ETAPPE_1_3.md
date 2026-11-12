@@ -188,3 +188,9 @@ Gesamtbilanz Domain-Crawl (eingang/2027_vorlaeufig/, zusätzlich zu 56ccddd + Nu
 - 17 HLZF-2027 neu abgelegt (Düsseldorf, Pfalzwerke, Alliander, ODR, Mainbernheim, Rettenberg, Cottbus, Guben, ENGIE Radeberg, Rudolstadt, Gelsenwasser, Glattbach, EW Geiger, Bad Neustadt, Bliestal, Burg, Haslach, Gaggenau, Emsdetten, Jena, Hollfeld, Mosbach, Neunburg, Rosenheim, St. Ingbert, Wasserburg, Waren, Vlotho, Wernigerode, ÜWL Leinetal, ÜWR Rhön, VSE)
 - Alle Dateien inhaltsgeprüft (2027 + Strom + Preisblatt/HLZF; verworfen: Gas, §14a-Modul 3, WVN, BKZ, Konzessionsabgabe, MSB, Grundversorger, 2025/2026er Blätter, fiktive Blätter, Scans ohne Text)
 - Verbleibend ohne Dokument: Rest der 769 Domain-Zeilen (kein 2027-PDF erreichbar) sowie 403/robots-Fälle bleiben als blockiert dokumentiert.
+
+## 2027-vorläufig — Crawler 27d (Seed-Pfade + Anchor-Scoring + Sitemap + HTML-Fallback), 99 valide Dokumente (Commit fac9bca)
+
+Neu in `eingang/2027_vorlaeufig/` (Auszug, MaStR-Nr. zuerst): u. a. SNB911347846643 Stadtwerke Ingolstadt Netze, SNB911641710114 Regionetz, SNB913130054136 NGS Schwerin (HLZF), SNB913244202027 SW Bretten, SNB914306944756 WSW Netz, SNB916123648602 Netze Duisburg (HLZF), SNB918516394612 Bielefelder Netz, SNB922607376381 SW Bochum Netz, SNB924477581384 RheinNetz, SNB926644622999 Braunschweiger Netz, SNB913992545742 E-Werk Netze, SNB954187049256 SW Springe (HLZF), SNB950336540445 SW Husum Netz, SNB951760950909 KEEP (HLZF) — insgesamt 90 Preisblätter + 9 HLZF aus 2.366 Kandidaten-PDFs (2.115 verworfen: falsches Jahr, Gas, WVN, iMSB, Stromkennzeichnung etc.).
+
+Gesamtbestand eingang/2027_vorlaeufig/: 133 Preisblaetter 2027 vorlaeufig + 43 HLZF-2027.
