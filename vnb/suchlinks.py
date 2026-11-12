@@ -18,12 +18,12 @@ def kernname(name: str) -> str:
     return re.sub(r"\s+", " ", n).strip(" ,.-&")
 
 
-def suchbegriffe(name: str, thema: str = "Hochlastzeitfenster 2026") -> list[str]:
+def suchbegriffe(name: str, thema: str = "Hochlastzeitfenster 2027") -> list[str]:
     voll, kern = voller_name(name), kernname(name)
     netz = kern if "netz" in kern.lower() else kern + " Netz"
     b = [f"{voll} {thema}", f"{kern} {thema} § 19 StromNEV atypische Netznutzung", f"{netz} {thema} pdf"]
     return list(dict.fromkeys(b))
 
 
-def links(name: str, thema: str = "Hochlastzeitfenster 2026") -> list[str]:
+def links(name: str, thema: str = "Hochlastzeitfenster 2027") -> list[str]:
     return ["https://www.google.com/search?q=" + urllib.parse.quote(b) for b in suchbegriffe(name, thema)]

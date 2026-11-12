@@ -77,7 +77,7 @@ for x in tab:
     hlzf_wer, hlzf_aktion = "", ""
     if hlzf_offen:
         if hl == "kein_dokument_oder_adresse":
-            hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2026 suchen und laden (Suche nach dem Namen des Netzbetreibers)"
+            hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2027 suchen und laden (Suche nach dem Namen des Netzbetreibers)"
         elif hl == "jahr_nicht_2026":
             hlzf_wer, hlzf_aktion = "Kollege", "Dokument ist nicht für 2026: Datei für 2026 suchen"
         elif hl == "nur_mittelspannung":
@@ -93,7 +93,7 @@ for x in tab:
     prio = (len(pf) * 2 + (1 if hlzf_offen else 0))
     zeilen.append([nr, x["netzbetreiber"], x["mastr_nr"], d, x["status"], ", ".join(fehlt), preis_wer, preis_aktion, hlzf_wer, hlzf_aktion,
                    hl if hlzf_offen else "", x["quelle_url"][:200],
-                   " | ".join(suchbegriffe(x["netzbetreiber"], "Netzentgelte Strom 2026 Preisblatt")), " | ".join(suchbegriffe(x["netzbetreiber"], "Hochlastzeitfenster 2026")),
+                   " | ".join(suchbegriffe(x["netzbetreiber"], "Netzentgelte Strom 2026 Preisblatt")), " | ".join(suchbegriffe(x["netzbetreiber"], "Hochlastzeitfenster 2027")),
                    f"{x['mastr_nr']}_{n4}.pdf", f"{x['mastr_nr']}_{n4}_hlzf.pdf", prio])
 zeilen.sort(key=lambda z: (-z[-1], int(z[0])))
 H = ["nr", "netzbetreiber", "mastr_nr", "domain", "status_preise", "es_fehlt", "preise_wer", "preise_aktion", "hlzf_wer", "hlzf_aktion", "hlzf_status",

@@ -150,3 +150,8 @@ Beide Arten werden getrennt geführt und nie in dieselben Spalten geschrieben. D
 ## Festlegung: 2027 zuerst, 2026 nur wenn 2027 fehlt (Nutzer, 12.11.2026)
 
 Bei der Suche nach Hochlastzeitfenstern (und Modul-3-Zeiten) wird zuerst das Dokument für **2027** gesucht und genommen. Das Dokument für 2026 gilt nur, wenn es keines für 2027 gibt. Der Crawler bewertet 2027-Dokumente höher.
+
+
+## Festlegung: Suchbegriff "<Netzbetreiber-Name> Hochlastzeitfenster 2027" (Nutzer, 12.11.2026)
+
+Gesucht wird nur noch nach `<Name des Netzbetreibers> Hochlastzeitfenster 2027` (Hintergrund: es sind nur noch gut 6 Wochen bis zum Jahreswechsel). Die Suchlinks in `vnb/suchlinks.py` und in der Arbeitsliste verwenden 2027; 2026 nur als Rückfall, wenn kein 2027-Dokument existiert.
