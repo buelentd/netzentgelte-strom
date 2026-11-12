@@ -235622,7 +235622,11 @@ Preisstand (nur ok): endgültig 648,  124
 
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
+<<<<<<< Updated upstream
 Stand 11.11.2026 17:56, 831 Netzbetreiber bzw. Netzgebiete
+=======
+Stand 11.11.2026 17:43, 831 Netzbetreiber bzw. Netzgebiete
+>>>>>>> Stashed changes
 
 ## Anzahl je Status
 
@@ -235870,6 +235874,7 @@ Preisstand (nur ok): endgültig 653,  135
 
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
+<<<<<<< Updated upstream
 Stand 11.11.2026 17:57, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
@@ -241823,6 +241828,9 @@ Preisstand (nur ok): endgültig 653,  135
 # Netzentgelte Strom 2026 (SLP und RLM): Zusammenfassung
 
 Stand 12.11.2026 09:57, 831 Netzbetreiber bzw. Netzgebiete
+=======
+Stand 11.11.2026 17:43, 831 Netzbetreiber bzw. Netzgebiete
+>>>>>>> Stashed changes
 
 ## Anzahl je Status
 
