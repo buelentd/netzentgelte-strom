@@ -54,7 +54,7 @@ class Db:
 
     @staticmethod
     def _hlzf(r, ebene="ns"):
-        if r.get("hlzf_status") not in ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert"):
+        if r.get("hlzf_status") not in ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert", "gelesen_aus_2027"):
             return None                          # ungeprüft gelesene Fenster (gelesen_ungeprueft) gehen nicht in den Rechner
         f = {}
         for j in JAHRESZEITEN:

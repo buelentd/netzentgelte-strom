@@ -18,7 +18,7 @@ import zipfile
 from pathlib import Path
 
 W = Path(__file__).resolve().parent.parent
-HLZF_FERTIG = ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert")
+HLZF_FERTIG = ("gelesen_nutzer", "gelesen_unser", "gelesen_kollege_verifiziert", "gelesen_aus_2027")
 HLZF_URL = re.compile(r"hoch.?last|hlzf|hlf", re.I)
 
 
