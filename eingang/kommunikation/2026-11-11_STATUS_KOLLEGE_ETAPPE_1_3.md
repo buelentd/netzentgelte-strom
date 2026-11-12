@@ -257,3 +257,7 @@ Gelesen aus den 2027-Dokumenten in eingang/2027_vorlaeufig/ (Text+Bild, Bild ent
 
 - SNB926937565941 Gemeindewerke Garmisch-Partenkirchen KU — Preisblatt Netzentgelte Strom 2027 vorlaeufig, Stand 15.10.2026 (Nutzer-Upload, inhaltsgeprueft).
 - Aus demselben Upload-Stapel ohne Betreibernamen im Text (nicht zugeordnet, lokal dl_up/sonst): 2x Preisblatt 2027 vorlaeufig (OjzUSMbT, aMmLmXxU), 1x HLZF 2027 (vy6yJTHy), 2x HLZF 2026 (9uGAiPSI, zwXq30kI = Pleinfeld 2026). Zuordnung bitte durch Nutzer.
+
+- SNB916657570554 Gemeindewerke Steinhagen — HLZF 2027 + GWS-Preisblatt NNE Strom 2027 vorlaeufig (Nutzer-Uploads)
+- SNB964137069203 Gemeindewerke Wendelstein KU — HLZF 2027 + vorlaeufige Netzentgelte Strom 2027 (Nutzer-Uploads)
+- SNB977374861035 Halberstadtwerke GmbH — HLZF 2027 aus Nutzer-Tabelle (nur Winter: MS 07:30-12:30, 16:15-19:15; MS/NS 09:30-12:30, 16:15-19:15; NS 10:15-13:15, 17:00-20:00) in hlzf_2027_gelesen.csv aufgenommen; kein PDF geliefert.
