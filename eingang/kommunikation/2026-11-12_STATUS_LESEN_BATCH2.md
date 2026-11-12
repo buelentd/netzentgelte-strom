@@ -49,3 +49,4 @@ Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwal
 - Stand: hlzf_2027_gelesen.csv 69 Zeilen, hlzf_auftrag7_gelesen.csv 30 Zeilen, beide 0 Fehler.
 - Auftrag 7 (ablesen): 51 Zeilen in hlzf_auftrag7_gelesen.csv, 0 Fehler (Stand Commit 080a67e). Rest der ablesen-Liste teils Raster/defekte Dateien/only-old-years.
 - Aus den 170 Preisblaettern 2027: 37 mit HLZF-Abschnitt geprueft, 22 gelesen + 14 ohne Paragraph-19-Tabelle dokumentiert, 1 (SVS) bereits separat gelesen. hlzf_2027_gelesen.csv jetzt 105 Zeilen, 0 Fehler (Commit folgt).
+- Pruefen (5 Faelle): Stockach = Gegenbeleg (HLZF vorhanden, Zeile uebernommen); Unterneukirchen = bestaetigt (Preisblatt 2027 ohne HLZF, S.1-2); Eschwege, Straubing, Klingenberg = kein Dokument im Repo -> bleiben offen/suchen.
