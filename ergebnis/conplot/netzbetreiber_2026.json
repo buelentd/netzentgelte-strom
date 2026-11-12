@@ -1903,14 +1903,43 @@
     "ap_ct_kwh": 5.13,
     "gp_eur_jahr": 98.55
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB928759560869_0027_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "10:45-12:00",
+       "17:30-18:45"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "10:45-12:00",
+       "17:00-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.wemag-netz.de/sites/default/files/2025-12/251208_wemag-netz-gmbh-preisblatt-netzentgelte-2026_0.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB914306944756",
@@ -15501,7 +15530,40 @@
     "ap_ct_kwh": 6.73,
     "gp_eur_jahr": 75.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB919708421706_0230_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [
+       "13:00-14:00"
+      ],
+      "sommer": [
+       "13:00-14:00"
+      ],
+      "herbst": [],
+      "winter": []
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "18:00-19:00"
+      ],
+      "winter": [
+       "17:00-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -15526,9 +15588,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_GwHh.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB962006136537",
@@ -27934,14 +27994,41 @@
     "ap_ct_kwh": 11.15,
     "gp_eur_jahr": 69.35
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB922514070884_0424_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:00-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:15-20:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.biosphaeren-stadtwerke.de/app/uploads/sites/4/2025/12/SWB_endgueltige-Netzentgelte-Strom-ab-01.01.2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB931805295141",
@@ -44504,14 +44591,47 @@
     "ap_ct_kwh": 9.03,
     "gp_eur_jahr": 67.21
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB926470603247_0665_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "17:15-18:30"
+      ],
+      "winter": [
+       "11:00-13:00",
+       "17:15-19:45"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "16:30-19:30"
+      ],
+      "winter": [
+       "10:45-13:00",
+       "16:15-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.biosphaeren-stadtwerke.de/app/uploads/sites/2/2025/12/20251215_SWI_endgueltige-Netzentgelte-Strom-ab-01.01.2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB975659838086",
@@ -45681,14 +45801,43 @@
     "ap_ct_kwh": 7.2,
     "gp_eur_jahr": 96.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB921695080347_0685_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "11:45-13:15",
+       "17:45-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "11:45-13:15",
+       "17:45-19:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swtue.de/fileadmin/user_upload/5Netze/Netznutzung/Netzentgelte_Strom/elektronisches_Preisblatt_Strom_2026.xlsx",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB922074927642",
