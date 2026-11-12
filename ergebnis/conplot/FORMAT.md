@@ -144,3 +144,20 @@ Ein Speicher darf dabei **nur außerhalb** der Zeitfenster nachladen, sonst stei
 2. **Modul 3 (§ 14a EnWG):** zeitvariabler Arbeitspreis. Das ist keine atypische Netznutzung.
 
 Die übrigen Netzbetreiber werden ergänzt.
+
+## Zeitreihe der Hochlastzeitfenster (Datenprodukt für Optimierungsmodelle)
+
+`PYTHONPATH=. python daten/hlzf_zeitreihe.py <MaStR-Nr.> <ns|msns> <Jahr> [datei.csv]` erzeugt je Netzbetreiber, Ebene und Jahr einen Vektor mit
+einem Eintrag je Viertelstunde (35.040 im Jahr 2026 und 2027, lokale Zeit ohne Sommerzeit-Verschiebung, Zeitzone legt der Nutzer fest):
+`is_hlzf = 1`, wenn die Viertelstunde in einem Hochlastzeitfenster liegt. Damit lässt sich jedes Lastprofil und jedes Erzeugungsprofil per einfachem
+Join gegen das Fenster des jeweiligen Netzbetreibers rechnen.
+
+Regeln, laut Dokumenten der Netzbetreiber (Standard; Abweichungen im Einzelfall möglich, deshalb im Datensatz `hlzf.quelle` prüfen):
+- Nur **Werktage Mo bis Fr**, ohne gesetzliche **Feiertage des Bundeslands** des Netzbetreibers und ohne 24.12. bis 01.01. (Weihnachten bis Neujahr).
+- **Brückentage:** Die Dokumente sagen "maximal ein Brückentag" oder "Brückentage" und sind nicht einheitlich (Arneburg: "alle Brückentage sind Werktage").
+  Die Zeitreihe zieht sie standardmäßig **nicht** ab (Parameter `brueckentage=True` zieht Tage zwischen Feiertag und Wochenende ab).
+- Jahreszeiten: Frühling März bis Mai, Sommer Juni bis August, Herbst September bis November, Winter Dezember bis Februar.
+- Ein Fenster `16:45-19:45` gilt von 16:45 (einschließlich) bis 19:45 (ausschließlich). Einzelne Netzbetreiber geben das Ende als Zeitstempel einer Messperiode an
+  (Aalen, Netze ODR, Düsseldorf); die Schreibweise steht im Dokument.
+- Bekannte Ausnahme: Covestro Brunsbüttel (Werksnetz) nennt Fenster ohne Beschränkung auf Werktage.
+- Eine einzelne Überschreitung im Fenster ändert die höchste Leistung im Fenster und damit das individuelle Netzentgelt (Rechenweg oben, Prüfung vereinfacht, fachlich zu bestätigen).

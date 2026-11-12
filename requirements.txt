@@ -8,3 +8,4 @@ protego>=0.3
 pandas>=2.0
 reportlab>=4.0   # nur für die Tests
 pytest>=8.0      # nur für die Tests
+holidays>=0.50   # Feiertage je Bundesland für die HLZF-Zeitreihe (daten/hlzf_zeitreihe.py)
