@@ -128,3 +128,8 @@ Bevor eine Liste, Anleitung oder Zahl geliefert wird, wird im Git nachgesehen, w
 - **Listen fehlender Dokumente** (Preisblatt, Hochlastzeitfenster) sind die **Arbeitsliste**: `daten/arbeitsliste.py` erzeugt `ergebnis/arbeitsliste.csv` und je Bearbeiter `ergebnis/kollege_preise.csv`, `ergebnis/kollege_hochlastzeitfenster.csv` (MaStR-Nr. zuerst, Aktion, Suche `site:` ohne www, Dateiname); Anleitung `ergebnis/arbeitsliste_ANLEITUNG.md`. Diese Dateien liefern, nicht neu bauen. Sie entstehen neu mit der Kette (`daten/hlzf_kette.sh`).
 - Nennt der Nutzer eine Zahl (z. B. „101 nicht auffindbare“), wird sie im Git einer Datei zugeordnet (z. B. 101 Zeilen in `kollege_hochlastzeitfenster.csv`). Passt sie nirgends, wird das gesagt, nicht eine andere Liste untergeschoben.
 - Die Kommunikation mit dem Kollegen läuft über `eingang/kommunikation/` (Branch `vibe/…` für seine Lieferungen); Antworten und Prüfergebnisse dort ablegen, alle 15 Minuten nachsehen (Cron der Sitzung).
+
+
+## Änderung: Suchlinks nach Netzbetreiber-Name, nicht nach Domain (Festlegung Nutzer, 12.11.2026)
+
+Die Suchlinks für den Browser (Regel vom 06.11.) verwenden den **Namen des Netzbetreibers** statt `site:Domain`, weil die Domain im MaStR oft falsch ist. Mehrere Schreibweisen: voller Name, Kernname ohne Rechtsform (GmbH, AG, KG, eG, e.K. …), Kernname mit "Netz". Erzeugt von `vnb/suchlinks.py`; `daten/arbeitsliste.py` und die Browser-Listen nutzen es.

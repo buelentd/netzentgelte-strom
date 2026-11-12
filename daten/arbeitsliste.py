@@ -1,5 +1,6 @@
 """Eine gemeinsame Arbeitsliste für alle: je Netzbetreiber, was fehlt, warum, wer es tut (Kollege / Nutzer im Browser / Claude) und welche Datei wohin.
 Quellen: ergebnis/netzentgelte_2026.csv, ergebnis/ebenen_erwartung.csv. Ausgabe: ergebnis/arbeitsliste.csv. Aufruf: PYTHONPATH=. python daten/arbeitsliste.py"""
+from vnb.suchlinks import suchbegriffe
 import csv, glob, re
 from urllib.parse import urlparse
 
@@ -53,7 +54,7 @@ for x in tab:
         if st in ("blockiert", "robots"):
             preis_wer, preis_aktion = "Nutzer (Browser)", "Seite im Browser öffnen, Preisblatt Strom 2026 speichern"
         elif st in ("kein_preisblatt", "keine_website") or e.get("ns") == "kein_dokument" or e.get("slp") == "kein_dokument":
-            preis_wer, preis_aktion = "Kollege", "Preisblatt Strom 2026 suchen und laden (Suche site:Domain Netzentgelte Strom 2026 Preisblatt)"
+            preis_wer, preis_aktion = "Kollege", "Preisblatt Strom 2026 suchen und laden (Suche nach dem Namen des Netzbetreibers)"
         elif e.get("ns") == "nicht_ausgewiesen":
             preis_wer, preis_aktion = "Kollege", "Dokument ist vermutlich das falsche (keine Niederspannung ausgewiesen): richtiges Preisblatt suchen"
         elif "dokument_luecke" in e.values():
@@ -76,7 +77,7 @@ for x in tab:
     hlzf_wer, hlzf_aktion = "", ""
     if hlzf_offen:
         if hl == "kein_dokument_oder_adresse":
-            hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2026 suchen und laden (Suche site:Domain Hochlastzeitfenster 2026)"
+            hlzf_wer, hlzf_aktion = "Kollege", "Hochlastzeitfenster 2026 suchen und laden (Suche nach dem Namen des Netzbetreibers)"
         elif hl == "jahr_nicht_2026":
             hlzf_wer, hlzf_aktion = "Kollege", "Dokument ist nicht für 2026: Datei für 2026 suchen"
         elif hl == "nur_mittelspannung":
@@ -92,7 +93,7 @@ for x in tab:
     prio = (len(pf) * 2 + (1 if hlzf_offen else 0))
     zeilen.append([nr, x["netzbetreiber"], x["mastr_nr"], d, x["status"], ", ".join(fehlt), preis_wer, preis_aktion, hlzf_wer, hlzf_aktion,
                    hl if hlzf_offen else "", x["quelle_url"][:200],
-                   f"site:{d} Netzentgelte Strom 2026 Preisblatt" if d else "", f"site:{d} Hochlastzeitfenster 2026" if d else "",
+                   " | ".join(suchbegriffe(x["netzbetreiber"], "Netzentgelte Strom 2026 Preisblatt")), " | ".join(suchbegriffe(x["netzbetreiber"], "Hochlastzeitfenster 2026")),
                    f"{x['mastr_nr']}_{n4}.pdf", f"{x['mastr_nr']}_{n4}_hlzf.pdf", prio])
 zeilen.sort(key=lambda z: (-z[-1], int(z[0])))
 H = ["nr", "netzbetreiber", "mastr_nr", "domain", "status_preise", "es_fehlt", "preise_wer", "preise_aktion", "hlzf_wer", "hlzf_aktion", "hlzf_status",

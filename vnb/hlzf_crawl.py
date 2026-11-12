@@ -235,6 +235,7 @@ class HlzfCrawler:
                 seite_ein(u, 50 + score(u), 1, "Sitemap")
 
         page = await ctx.new_page()
+        suche_getan = False
         while heap and f.seiten < MAX_SEITEN and geprueft_docs < MAX_DOKUMENTE:
             _, _, url, tiefe, ref = (e := heapq.heappop(heap))
             if url in gesehen:
@@ -292,6 +293,11 @@ class HlzfCrawler:
                         break
                 elif tiefe < MAX_TIEFE and s >= 1 and basis_domain(href) == basis_domain(url):
                     seite_ein(href, s, tiefe + 1, url)
+            if not suche_getan and tiefe == 0:
+                suche_getan = True
+                ziel = await self._seitensuche(page, url)
+                if ziel:
+                    seite_ein(ziel, 200, 1, "Seitensuche")
             if f.alle and any(j == "2026" for j, _, _ in f.alle) and (any(j == "2027" for j, _, _ in f.alle) or f.seiten >= 12):
                 break
         await page.close()
@@ -312,6 +318,24 @@ class HlzfCrawler:
         best = sorted(f.alle, key=lambda x: (x[0] != "2026", x[0] != "2027", x[1]))
         if best:
             f.jahr, f.url, f.datei = best[0]
+
+    SUCHFELD = ("input[type=search], input[name=q], input[name=s], input[name=search], input[name=suche], "
+                "input[name=searchword], input[name=query], input[name=keywords], input[name=\"tx_indexedsearch_pi2[search][sword]\"]")
+
+    async def _seitensuche(self, page, url: str) -> str:
+        """Die eigene Suche der Website benutzen (wie ein Mensch): "Hochlastzeitfenster" eintippen, Adresse der Trefferseite zurückgeben."""
+        try:
+            el = await page.query_selector(self.SUCHFELD)
+            if not el or not await el.is_visible():
+                return ""
+            await self.drossel.warten(url)
+            await el.fill("Hochlastzeitfenster")
+            await el.press("Enter")
+            await page.wait_for_load_state("domcontentloaded", timeout=15000)
+            ziel = page.url
+            return ziel if ziel != url else ""
+        except Exception:
+            return ""
 
     def _seite_merken(self, f: Fund, url: str, text: str, pr: dict):
         ZIEL_TEXTE.mkdir(parents=True, exist_ok=True)
