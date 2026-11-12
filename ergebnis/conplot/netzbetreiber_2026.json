@@ -2458,7 +2458,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:30, 18:00-21:00",
+      "ct_kwh": 7.07
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.3
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": 2.52
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.pfalzwerke-netz.de/pfalzwerke-netz/downloads/unser-netz/Netzentgelte/2026/20251211_Preisblatt_Pfalzwerke%20Netz%20AG_NN_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.pfalzwerke-netz.de/pfalzwerke-netz/downloads/unser-netz/Netzentgelte/2026/20251211_Preisblatt_Pfalzwerke%20Netz%20AG_NN_2026.pdf",
    "status": "ok",
@@ -3561,7 +3581,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "08:00-16:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.albwerk.de/de/Metanavigation/Stromnetz/Albwerk-Netze/Stromnetz/Preisblatt-Netzentgelte-ab-2026-V2-N045.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.albwerk.de/de/Metanavigation/Stromnetz/Albwerk-Netze/Stromnetz/Preisblatt-Netzentgelte-ab-2026-V2-N045.pdf",
    "status": "ok",
@@ -3815,7 +3855,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ascanetz.de/wp-content/uploads/NNE_Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ascanetz.de/wp-content/uploads/NNE_Strom-2026.pdf",
    "status": "ok",
@@ -4331,7 +4391,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-15:15, 17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "05:00-10:00, 15:15-17:00, 22:00-00:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.bigge-energie.de/fileadmin/user_upload/Preise_BIGGE_mini_Strom_ooA_01.02.2026.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.bigge-energie.de/fileadmin/user_upload/Preise_BIGGE_mini_Strom_ooA_01.02.2026.pdf",
    "status": "ok",
@@ -4646,7 +4726,27 @@
     "gp_eur_jahr": 103.5
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:00-20:00, 22:00-00:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:30-04:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://c-ensinger.de/wp-content/uploads/2025/12/Preisblatt-Ensinger-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://c-ensinger.de/wp-content/uploads/2025/12/Preisblatt-Ensinger-2026.pdf",
    "status": "ok",
@@ -4860,7 +4960,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.cramermuehle.de/images/pdf/Preisblatt_NNE_endg%C3%BCltig_ab_01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": {
     "rlm": {
      "ns": {
@@ -6161,7 +6281,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.eg-rettenberg.de/download/preisblatt_netz2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.eg-rettenberg.de/download/preisblatt_netz2026.pdf",
    "status": "ok",
@@ -6295,7 +6435,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-21:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://eg-schonstett.de/wp-content/uploads/NN-Preisblatt-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://eg-schonstett.de/wp-content/uploads/NN-Preisblatt-2026.pdf",
    "status": "ok",
@@ -6526,7 +6686,46 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-12:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-11:00, 12:00-17:00, 19:00-22:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.datocms-assets.com/62514/1760507380-preisblatt-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-12:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-11:00, 12:00-17:00, 19:00-22:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.datocms-assets.com/62514/1760507380-preisblatt-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.datocms-assets.com/62514/1760507380-preisblatt-strom-2026.pdf",
    "status": "pruefen",
@@ -6581,7 +6780,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "15:30-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.eg-engelsberg.de/download/preisblatt-netznutzung-2026-endgueltig/",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.eg-engelsberg.de/download/preisblatt-netznutzung-2026-endgueltig/",
    "status": "ok",
@@ -6698,7 +6917,27 @@
     "gp_eur_jahr": 25.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "http://eg-oesterweg.de/pdf/ego-netznutzung-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "http://eg-oesterweg.de/pdf/ego-netznutzung-2026.pdf",
    "status": "ok",
@@ -6770,7 +7009,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:30-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ego-ohlstadt.de/images/downloads/ego-ohlstadt-preisblatt-netznutzung2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ego-ohlstadt.de/images/downloads/ego-ohlstadt-preisblatt-netznutzung2026.pdf",
    "status": "ok",
@@ -6965,7 +7224,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.eva-siegsdorf.de/wordpress/wp-content/uploads/2025/12/Preisblatt-Netz-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.eva-siegsdorf.de/wordpress/wp-content/uploads/2025/12/Preisblatt-Netz-2026.pdf",
    "status": "ok",
@@ -7036,7 +7315,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:30-12:00, 16:30-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.eg-wolkersdorf.de/wp-content/uploads/2025/12/Wolkersdorf-Netzentgelte-2026-final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.eg-wolkersdorf.de/wp-content/uploads/2025/12/Wolkersdorf-Netzentgelte-2026-final.pdf",
    "status": "ok",
@@ -7242,7 +7541,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.57
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": 2.0
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.bruchmuehlbach-miesau.de/",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.bruchmuehlbach-miesau.de/",
    "status": "ok",
@@ -7300,7 +7619,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-14:45, 17:00-19:00",
+      "ct_kwh": 15.4
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 10.72
+     },
+     "niedertarif": {
+      "zeiten": "00:00-07:15",
+      "ct_kwh": 4.29
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.werke-dahner-felsenland.de/media/nne2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.werke-dahner-felsenland.de/media/nne2026.pdf",
    "status": "ok",
@@ -7431,7 +7770,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:00-09:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.enwg-veroeffentlichungen.de/goldbach/Netze/Stromnetz/Netzzugang-Entgelte/Netzentgelte-2026-Strom-final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enwg-veroeffentlichungen.de/goldbach/Netze/Stromnetz/Netzzugang-Entgelte/Netzentgelte-2026-Strom-final.pdf",
    "status": "ok",
@@ -7897,7 +8256,27 @@
     "gp_eur_jahr": 96.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-19:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2026%20Preisblatt.pdf&cid=2346",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.e-werk-simbach.de/veroeffentlichungen?file=files/e-werk-simbach/formulare/Ver%C3%B6ffentlichungen/Netznutzungsentgelte/2026%20Preisblatt.pdf&cid=2346",
    "status": "ok",
@@ -7973,7 +8352,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.sternstrom.de/global/pdf/ewerk/2026/Netzentgelte_2026_EW_Stern.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.sternstrom.de/global/pdf/ewerk/2026/Netzentgelte_2026_EW_Stern.pdf",
    "status": "ok",
@@ -8088,7 +8487,46 @@
     "gp_eur_jahr": 94.9
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://static.ew-unterwoessen.de/files/netz/2026/Preisblatt_Netzentgelte.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://static.ew-unterwoessen.de/files/netz/2026/Preisblatt_Netzentgelte.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://static.ew-unterwoessen.de/files/netz/2026/Preisblatt_Netzentgelte.pdf",
    "status": "ok",
@@ -8164,7 +8602,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.wennenmuehle.de/netzentgelte.html?file=files/download/netzentgelte/Netznutzungsentgelte_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.wennenmuehle.de/netzentgelte.html?file=files/download/netzentgelte/Netznutzungsentgelte_2026.pdf",
    "status": "ok",
@@ -8384,7 +8842,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:30-15:30",
+      "ct_kwh": 17.32
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": 5.18
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://netze.ews-schoenau.de/fileadmin/ews-netze/stromnetze/251222_EWS_Netze_StromNNE_2026_-_final.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netze.ews-schoenau.de/fileadmin/ews-netze/stromnetze/251222_EWS_Netze_StromNNE_2026_-_final.pdf",
    "status": "ok",
@@ -8735,7 +9213,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": 9.38
+     },
+     "standardtarif": {
+      "zeiten": "15:00-17:00, 20:00-00:00",
+      "ct_kwh": 6.88
+     },
+     "niedertarif": {
+      "zeiten": "13:00-15:00, 00:00-13:00",
+      "ct_kwh": 2.75
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.encw.de/sommer-sonne-und-urlaubsfeeling-ueber-den-daechern-von-calw-eroeffnung-des-encw-beach/",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.encw.de/sommer-sonne-und-urlaubsfeeling-ueber-den-daechern-von-calw-eroeffnung-des-encw-beach/",
    "status": "ok",
@@ -9150,7 +9648,27 @@
     "gp_eur_jahr": 55.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ewk-gmbh.de/wp-content/uploads/2025/12/20251219-Preisblatt-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ewk-gmbh.de/wp-content/uploads/2025/12/20251219-Preisblatt-NNE-Strom-2026.pdf",
    "status": "ok",
@@ -9212,7 +9730,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-21:00",
+      "ct_kwh": 12.68
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 1.69
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-rheine.de/de/Netze/Stromnetz/Netzzugang-Entgelte1/Preisblatt-NE-2026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-rheine.de/de/Netze/Stromnetz/Netzzugang-Entgelte1/Preisblatt-NE-2026-endgueltig.pdf",
    "status": "ok",
@@ -9463,7 +10001,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-14:30",
+      "ct_kwh": 12.43
+     },
+     "standardtarif": {
+      "zeiten": "05:00-11:00, 14:30-22:00",
+      "ct_kwh": 7.58
+     },
+     "niedertarif": {
+      "zeiten": "22:00-05:00",
+      "ct_kwh": 2.31
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.energienetze-berlin.de/files/energienetze-berlin.de/pdf/Energienetze%20Berlin%20GmbH/Netzzugang%20%2B%20Entgelte/Netznutzungsentgelte_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.energienetze-berlin.de/files/energienetze-berlin.de/pdf/Energienetze%20Berlin%20GmbH/Netzzugang%20%2B%20Entgelte/Netznutzungsentgelte_2026.pdf",
    "status": "ok",
@@ -9824,7 +10382,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-14:00, 16:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "07:00-10:00, 14:00-16:00, 20:00-22:00",
+      "ct_kwh": 6.61
+     },
+     "niedertarif": {
+      "zeiten": "22:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://evf.de/dateien/netze/preisblatt-nne-strom-01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://evf.de/dateien/netze/preisblatt-nne-strom-01.01.2026.pdf",
    "status": "ok",
@@ -9989,7 +10567,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.evkr-gmbh.de/netz/netznutzung?_hash=UYIEWPaQYILHd3SKOzCJuND9eY5WZbbxqqYZpoL%2Brms%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A771%3B%7D&d=attachment&f=Netznutzungsentgelte_EVKR_2026.pdf&p=content%2Fdocs%2Fnetz%2FNetznutzungsentgelte%2FNetznutzungsentgelte_EVKR_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.evkr-gmbh.de/netz/netznutzung?_hash=UYIEWPaQYILHd3SKOzCJuND9eY5WZbbxqqYZpoL%2Brms%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A771%3B%7D&d=attachment&f=Netznutzungsentgelte_EVKR_2026.pdf&p=content%2Fdocs%2Fnetz%2FNetznutzungsentgelte%2FNetznutzungsentgelte_EVKR_2026.pdf",
    "status": "ok",
@@ -10227,7 +10825,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:00",
+      "ct_kwh": 7.22
+     },
+     "standardtarif": {
+      "zeiten": "00:00-10:00, 14:00-17:00, 22:00-00:00",
+      "ct_kwh": 6.93
+     },
+     "niedertarif": {
+      "zeiten": "10:00-14:00",
+      "ct_kwh": 2.77
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.evr-gmbh.de/de/Stromnetz1/Netzzugang-Entgelte/Preisblatt-Strom-2026-Energieversorgung-Rottenburg-am-Neckar-GmbH.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.evr-gmbh.de/de/Stromnetz1/Netzzugang-Entgelte/Preisblatt-Strom-2026-Energieversorgung-Rottenburg-am-Neckar-GmbH.pdf",
    "status": "ok",
@@ -10857,7 +11475,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.energienetze-rudolstadt.de/fileadmin/user_upload/01_Strom/Netzentgelte/Preisblaetter/nne_strom_enr_ab_010126.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.energienetze-rudolstadt.de/fileadmin/user_upload/01_Strom/Netzentgelte/Preisblaetter/nne_strom_enr_ab_010126.pdf",
    "status": "ok",
@@ -10929,7 +11567,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "06:30-13:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.enro-netz-ludwigsfelde.de/de/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-2026-gueltig-ab-01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enro-netz-ludwigsfelde.de/de/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-2026-gueltig-ab-01.01.2026.pdf",
    "status": "ok",
@@ -11642,7 +12300,27 @@
     "gp_eur_jahr": 98.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://evu-spaeth.de/storage/2026/07/EVU-Spaeth-e.K.-vorlaeufiges-Preisblatt-Netznutzung-2026-Stand-14.10.2025.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://evu-spaeth.de/storage/2026/07/EVU-Spaeth-e.K.-vorlaeufiges-Preisblatt-Netznutzung-2026-Stand-14.10.2025.pdf",
    "status": "ok",
@@ -11685,7 +12363,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": 12.1
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.05
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": 1.41
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.evu-weilerbach.de/wp-content/uploads/Preisblatt-2026-Netzentgelte-Strom_Weilerbach.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.evu-weilerbach.de/wp-content/uploads/Preisblatt-2026-Netzentgelte-Strom_Weilerbach.pdf",
    "status": "ok",
@@ -12013,7 +12711,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-21:00",
+      "ct_kwh": 12.68
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 1.69
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-rheine.de/de/Netze/Stromnetz/20251023-Preisblatt-2026-vorlaeufig-EWR.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": {
     "rlm": {
      "ns": {
@@ -12261,7 +12979,46 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "04:00-10:00, 17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "14:00-17:00, 22:00-00:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-04:00, 10:00-14:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Preisblatt%20Strom%20NN_01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "04:00-10:00, 17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "14:00-17:00, 22:00-00:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-04:00, 10:00-14:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Preisblatt%20Strom%20NN_01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.fairnetzgmbh.de/Downloads/PDF/Strom/Preise-Preisbl%C3%A4tter/2026/Preisblatt%20Strom%20NN_01.2026.pdf",
    "status": "ok",
@@ -12280,7 +13037,46 @@
    "rlm": null,
    "slp": null,
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-13:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/694a9ea8c88c10c989ab8aeb_20251222%20EGC%20KG_PB_NN.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-13:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/694a9ea8c88c10c989ab8aeb_20251222%20EGC%20KG_PB_NN.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://cdn.prod.website-files.com/645366a33ff46555be96d7a8/694a9ea8c88c10c989ab8aeb_20251222%20EGC%20KG_PB_NN.pdf",
    "status": "pruefen",
@@ -12829,7 +13625,46 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.gebrueder-miller.de/fuer-marktpartner.html?_hash=205BBcbB9Ol37leNtZhVz6f5c0EgauudwIKvq8w5XfE%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A160%3B%7D&d=attachment&f=Netznutzungsentgelte2026vorl.pdf&p=GMS%2Ffiles%2Fstromnev%2FNetznutzungsentgelte2026vorl.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.gebrueder-miller.de/fuer-marktpartner.html?_hash=205BBcbB9Ol37leNtZhVz6f5c0EgauudwIKvq8w5XfE%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A160%3B%7D&d=attachment&f=Netznutzungsentgelte2026vorl.pdf&p=GMS%2Ffiles%2Fstromnev%2FNetznutzungsentgelte2026vorl.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.gebrueder-miller.de/fuer-marktpartner.html?_hash=205BBcbB9Ol37leNtZhVz6f5c0EgauudwIKvq8w5XfE%3D&ctx=a%3A1%3A%7Bs%3A2%3A%22id%22%3Bi%3A160%3B%7D&d=attachment&f=Netznutzungsentgelte2026vorl.pdf&p=GMS%2Ffiles%2Fstromnev%2FNetznutzungsentgelte2026vorl.pdf",
    "status": "ok",
@@ -13263,7 +14098,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-17:00, 19:00-00:00",
+      "ct_kwh": 7.37
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.gemeindewerke-budenheim.de/fileadmin/kunden/Ablage/Strom/Netznutzung/2025-12-31_Netzentgelte_GwB_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.gemeindewerke-budenheim.de/fileadmin/kunden/Ablage/Strom/Netznutzung/2025-12-31_Netzentgelte_GwB_2026.pdf",
    "status": "ok",
@@ -13379,7 +14234,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": 10.36
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 5.18
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": 1.21
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://werke.vgrd.de/download/172/strom/395048/stromgw-preisblatt-netzentgelte-2026",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://werke.vgrd.de/download/172/strom/395048/stromgw-preisblatt-netzentgelte-2026",
    "status": "ok",
@@ -13530,7 +14405,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-20:30",
+      "ct_kwh": 10.63
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 9.12
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:15",
+      "ct_kwh": 3.65
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.werke-enkenbach-alsenborn.de/netzbetrieb-strom/netznutzung-vertrag-und-entgelte/entgelte-nne/vgw-nne-2026-1.pdf?cid=1e6d",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.werke-enkenbach-alsenborn.de/netzbetrieb-strom/netznutzung-vertrag-und-entgelte/entgelte-nne/vgw-nne-2026-1.pdf?cid=1e6d",
    "status": "ok",
@@ -13729,7 +14624,27 @@
     "gp_eur_jahr": 75.03
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-23:00",
+      "ct_kwh": 8.55
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.2
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:00",
+      "ct_kwh": 1.1
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://ggv.c-1621.maxcluster.net/cms/netz/netznutzung/GGV_Netznutzungsentgelte_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://ggv.c-1621.maxcluster.net/cms/netz/netznutzung/GGV_Netznutzungsentgelte_2026.pdf",
    "status": "ok",
@@ -13917,7 +14832,27 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:45-20:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:15-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.gwg-gundelfingen.de/de/Kopfnavigation/Netze/Stromnetz/GWG-Preisblatt-Netzzugang-Strom-2026-final-2025-12-22.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.gwg-gundelfingen.de/de/Kopfnavigation/Netze/Stromnetz/GWG-Preisblatt-Netzzugang-Strom-2026-final-2025-12-22.pdf",
    "status": "ok",
@@ -14256,7 +15191,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": 13.46
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.73
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": 1.57
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_GwHh.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_GwHh.pdf",
    "status": "ok",
@@ -15857,7 +16812,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "08:00-16:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://getreidemuehle-zwiefalten.de/wp-content/uploads/2026/03/Netznutzungsentgelte_GMZ_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://getreidemuehle-zwiefalten.de/wp-content/uploads/2026/03/Netznutzungsentgelte_GMZ_2026.pdf",
    "status": "ok",
@@ -15979,7 +16954,46 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:15-22:30",
+      "ct_kwh": 7.77
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 5.89
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:45",
+      "ct_kwh": 2.35
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.ggew.de/",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:15-22:30",
+      "ct_kwh": 7.77
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 5.89
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:45",
+      "ct_kwh": 2.35
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.ggew.de/",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ggew.de/",
    "status": "ok",
@@ -16284,7 +17298,27 @@
     "gp_eur_jahr": 30.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.mukran-port.de/files/Mukran_Port_de/Unternehmen/Energieversorgung/Downloads/2026/Strom_fhs26.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.mukran-port.de/files/Mukran_Port_de/Unternehmen/Energieversorgung/Downloads/2026/Strom_fhs26.pdf",
    "status": "ok",
@@ -16447,7 +17481,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-zehdenick.de/wp-content/uploads/2025/12/2025-12-31_PB_NNE_Strom_2026_HZ_endgueltig.pdf?x44093",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-zehdenick.de/wp-content/uploads/2025/12/2025-12-31_PB_NNE_Strom_2026_HZ_endgueltig.pdf?x44093",
    "status": "ok",
@@ -17480,7 +18534,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:00-19:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
@@ -17789,7 +18863,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:00-19:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.kw-farchant.com/images/pdf/Preisblatt%20Netznutzungsentgelte%20ab%2001.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.kw-farchant.com/images/pdf/Preisblatt%20Netznutzungsentgelte%20ab%2001.01.2026.pdf",
    "status": "ok",
@@ -17837,7 +18931,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "12:30-16:30",
+      "ct_kwh": 23.39
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": 6.96
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.koehlgartenwiese.de/fileadmin/kgw/Preisblatt_Strom_2026_Koehlgartenwiese_final.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.koehlgartenwiese.de/fileadmin/kgw/Preisblatt_Strom_2026_Koehlgartenwiese_final.pdf",
    "status": "pruefen",
@@ -18023,7 +19137,27 @@
     "gp_eur_jahr": 76.65
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:30-16:00, 20:00-24:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:30",
+      "ct_kwh": 0.73
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.leitungspartner.de/download/preisblatt-netzentgelte/",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.leitungspartner.de/download/preisblatt-netzentgelte/",
    "status": "ok",
@@ -18600,7 +19734,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.maintal-werke.de/site/assets/files/11448/preises_mwg26_endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.maintal-werke.de/site/assets/files/11448/preises_mwg26_endgueltig.pdf",
    "status": "ok",
@@ -18791,7 +19945,46 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-12:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-11:00, 12:00-17:00, 19:00-22:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.datocms-assets.com/62514/1767077669-preisblatt-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-12:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-11:00, 12:00-17:00, 19:00-22:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.datocms-assets.com/62514/1767077669-preisblatt-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.datocms-assets.com/62514/1767077669-preisblatt-strom-2026.pdf",
    "status": "pruefen",
@@ -18888,7 +20081,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00, 22:00-23:00",
+      "ct_kwh": 8.31
+     },
+     "standardtarif": {
+      "zeiten": "06:00-11:00, 15:00-17:00, 20:00-22:00",
+      "ct_kwh": 4.23
+     },
+     "niedertarif": {
+      "zeiten": "11:00-15:00, 23:00-06:00",
+      "ct_kwh": 1.69
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.mit-n.de/fileadmin/user_upload/Dateien/Marktpartner/Strom/Netzentgelte/MIT.N_Preisblatt_Strom_2026_01_01.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.mit-n.de/fileadmin/user_upload/Dateien/Marktpartner/Strom/Netzentgelte/MIT.N_Preisblatt_Strom_2026_01_01.pdf",
    "status": "ok",
@@ -18929,7 +20142,27 @@
     "gp_eur_jahr": 72.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.mueller-muehle.de/files/ewt/PDF/preisblaetter/2026/Preisblatt%201-12_2026_final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.mueller-muehle.de/files/ewt/PDF/preisblaetter/2026/Preisblatt%201-12_2026_final.pdf",
    "status": "ok",
@@ -20369,7 +21602,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-21:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "05:00-16:00, 21:00-00:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.ngn-mbh.de/de/marktpartner/preisblaetter-netznutzung",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ngn-mbh.de/de/marktpartner/preisblaetter-netznutzung",
    "status": "ok",
@@ -20591,7 +21844,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.nports.de/media//hafenleistungen/energieversorgung/nports-energieversorgung-hafen-netznutzungsentgelte-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.nports.de/media//hafenleistungen/energieversorgung/nports-energieversorgung-hafen-netznutzungsentgelte-2026.pdf",
    "status": "ok",
@@ -20953,7 +22226,27 @@
     "gp_eur_jahr": 30.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://osterholzer-stadtwerke.de/wp-content/uploads/2025/12/Preisblatt-NNE-Strom-2026-Osterholzer-SW.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://osterholzer-stadtwerke.de/wp-content/uploads/2025/12/Preisblatt-NNE-Strom-2026-Osterholzer-SW.pdf",
    "status": "ok",
@@ -21386,7 +22679,27 @@
     "gp_eur_jahr": 95.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://stromversorgung-greding.de/wp-content/uploads/2025/12/Netznutzungsentgelt-2026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stromversorgung-greding.de/wp-content/uploads/2025/12/Netznutzungsentgelt-2026-endgueltig.pdf",
    "status": "ok",
@@ -23042,7 +24355,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:00-10:00, 17:00-20:00",
+      "ct_kwh": 18.12
+     },
+     "standardtarif": {
+      "zeiten": "20:00-07:00, 15:00-17:00",
+      "ct_kwh": 10.98
+     },
+     "niedertarif": {
+      "zeiten": "10:00-15:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.stadtwerke-altensteig.de/",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-altensteig.de/",
    "status": "ok",
@@ -23174,7 +24507,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:30-20:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-andernach.de/app/uploads/2026/06/2026-06-01_Preisblatt-NNE-Strom-ab-01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-andernach.de/app/uploads/2026/06/2026-06-01_Preisblatt-NNE-Strom-ab-01.01.2026.pdf",
    "status": "ok",
@@ -23318,7 +24671,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-14:00, 17:00-20:00",
+      "ct_kwh": 13.61
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 10.6
+     },
+     "niedertarif": {
+      "zeiten": "01:00-07:15",
+      "ct_kwh": 4.24
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.trifelsversorger.de/wp-content/uploads/2025/12/SWA_Netzentgelte_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.trifelsversorger.de/wp-content/uploads/2025/12/SWA_Netzentgelte_2026.pdf",
    "status": "ok",
@@ -23439,7 +24812,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:15-19:45",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:30-05:45",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.arnstadt-netz.de/fileadmin/user_upload/Stadtwerke_Arnstadt_Netz/Elektrizitaetsnetz/Netznutzung/Netzentgelte/2025-12-17_Preisblatt_SWANKG_NN_Strom_ab_01-01-2026_endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.arnstadt-netz.de/fileadmin/user_upload/Stadtwerke_Arnstadt_Netz/Elektrizitaetsnetz/Netznutzung/Netzentgelte/2025-12-17_Preisblatt_SWANKG_NN_Strom_ab_01-01-2026_endgueltig.pdf",
    "status": "ok",
@@ -23509,7 +24902,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swaue.de/storage/app/media/Netz/2026-01-01-netznutzungsentgelte-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swaue.de/storage/app/media/Netz/2026-01-01-netznutzungsentgelte-strom-2026.pdf",
    "status": "ok",
@@ -23626,7 +25039,27 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:45-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-bad-aibling.de/de/Strom-Wasser/Preisblatt-Netznutzung-ab01012026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-bad-aibling.de/de/Strom-Wasser/Preisblatt-Netznutzung-ab01012026-endgueltig.pdf",
    "status": "ok",
@@ -23703,7 +25136,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:45-21:00",
+      "ct_kwh": 9.12
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.17
+     },
+     "niedertarif": {
+      "zeiten": "01:30-06:00",
+      "ct_kwh": 3.27
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-bza.de/pdf/netze/Preisblatt_Netznungsentgelte_2026_entgueltig.pdf?v=1",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-bza.de/pdf/netze/Preisblatt_Netznungsentgelte_2026_entgueltig.pdf?v=1",
    "status": "ok",
@@ -23962,7 +25415,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:00-21:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:30-07:30",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "https://a.storyblok.com/f/307935/x/d69043aead/nne_strom_2026_preisblatt_final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://a.storyblok.com/f/307935/x/d69043aead/nne_strom_2026_preisblatt_final.pdf",
    "status": "ok",
@@ -24345,7 +25818,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-bad-pyrmont.de/_mediafiles/1328-nne_strom_-2026_entgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-bad-pyrmont.de/_mediafiles/1328-nne_strom_-2026_entgueltig.pdf",
    "status": "ok",
@@ -24562,7 +26055,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://sws-energie.de/wp-content/uploads/2025/12/20251223_SWS-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://sws-energie.de/wp-content/uploads/2025/12/20251223_SWS-NNE-Strom-2026.pdf",
    "status": "ok",
@@ -24685,7 +26198,27 @@
     "gp_eur_jahr": 90.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-14:00, 00:00-00:30",
+      "ct_kwh": 15.02
+     },
+     "standardtarif": {
+      "zeiten": "05:30-10:00, 14:00-24:00",
+      "ct_kwh": 7.88
+     },
+     "niedertarif": {
+      "zeiten": "00:30-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.bad-saulgau.de/",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.bad-saulgau.de/",
    "status": "ok",
@@ -25493,7 +27026,27 @@
     "gp_eur_jahr": 65.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "06:00-10:00, 17:00-00:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-bernau.de/_Resources/Persistent/a/a/a/5/aaa55904f752c1c8708154452590d95872c4ee5e/Preisblatt%20endg%C3%BCltige%20Netzentgelte%20Strom%202026%20Bernau%2020260706.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-bernau.de/_Resources/Persistent/a/a/a/5/aaa55904f752c1c8708154452590d95872c4ee5e/Preisblatt%20endg%C3%BCltige%20Netzentgelte%20Strom%202026%20Bernau%2020260706.pdf",
    "status": "ok",
@@ -26563,7 +28116,27 @@
     "gp_eur_jahr": 30.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.gipsprojekt.de/featureGips/SW-Buxtehude/EnwgTool/Stromnetz/Netzzugang__Entgelte/Preisblaetter_Netznutzungsvertrag/Preisblatt-Strom-2026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.gipsprojekt.de/featureGips/SW-Buxtehude/EnwgTool/Stromnetz/Netzzugang__Entgelte/Preisblaetter_Netznutzungsvertrag/Preisblatt-Strom-2026-endgueltig.pdf",
    "status": "ok",
@@ -27021,7 +28594,65 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:45-19:15",
+      "ct_kwh": 15.26
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.71
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:30, 23:00-00:00",
+      "ct_kwh": 3.48
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:45-19:15",
+      "ct_kwh": 15.26
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.71
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:30, 23:00-00:00",
+      "ct_kwh": 3.48
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:45-19:15",
+      "ct_kwh": 15.26
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.71
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:30, 23:00-00:00",
+      "ct_kwh": 3.48
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-deidesheim.de/netz/strom/Netzentgelte/20260101-Preisblatt-NNE-Strom-2026.pdf",
    "status": "pruefen",
@@ -28049,7 +29680,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "https://www.eilenburger-stadtwerke.de/netz/stromnetz/netzzugang.html",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.eilenburger-stadtwerke.de/netz/stromnetz/netzzugang.html",
    "status": "ok",
@@ -28222,7 +29873,27 @@
     "gp_eur_jahr": 85.15
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-elm-lappwald.de/wp-content/uploads/2025/12/2025-12-19_Preisblatt-SWEL-Strom_endgueltige-Netzentgelte_FINAL.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-elm-lappwald.de/wp-content/uploads/2025/12/2025-12-19_Preisblatt-SWEL-Strom_endgueltige-Netzentgelte_FINAL.pdf",
    "status": "ok",
@@ -28325,7 +29996,27 @@
     "gp_eur_jahr": 40.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "https://www.stadtwerke-emden.de/",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-emden.de/",
    "status": "ok",
@@ -28575,7 +30266,27 @@
     "gp_eur_jahr": 70.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.enwg-veroeffentlichungen.de/sw_engen/",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enwg-veroeffentlichungen.de/sw_engen/",
    "status": "ok",
@@ -29049,7 +30760,27 @@
     "gp_eur_jahr": 78.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-finsterwalde.de/de/Netze/Stromnetz/Netzzugang-Entgelte/2025-12-19-PB-endgueltig-2026-Strom-Finsterwalde.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-finsterwalde.de/de/Netze/Stromnetz/Netzzugang-Entgelte/2025-12-19-PB-endgueltig-2026-Strom-Finsterwalde.pdf",
    "status": "ok",
@@ -29480,7 +31211,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:00-21:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:30-07:30",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
@@ -29691,7 +31442,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "https://stadtwerke-geesthacht.netzveroeffentlichung.com/",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-geesthacht.netzveroeffentlichung.com/",
    "status": "ok",
@@ -30578,7 +32349,27 @@
     "gp_eur_jahr": 75.03
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-23:00",
+      "ct_kwh": 8.55
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.2
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:00",
+      "ct_kwh": 1.1
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ggv-energie.de/cms/netz/netznutzung/GGV_Netznutzungsentgelte_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ggv-energie.de/cms/netz/netznutzung/GGV_Netznutzungsentgelte_2026.pdf",
    "status": "ok",
@@ -30650,7 +32441,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:15-13:15, 16:30-19:30",
+      "ct_kwh": 8.31
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 7.06
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:45",
+      "ct_kwh": 2.82
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swen-gruenstadt.de/swen-wAssets/docs/netz/strom/netzentgelte/preisblaetter/preisblatt-nne-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swen-gruenstadt.de/swen-wAssets/docs/netz/strom/netzentgelte/preisblaetter/preisblatt-nne-strom-2026.pdf",
    "status": "ok",
@@ -30691,7 +32502,27 @@
     "gp_eur_jahr": 36.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:30-20:45",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:30-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-guestrow.de/wp-content/uploads/Netznutzungsentgelt_Strom_Preisstand_010126.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-guestrow.de/wp-content/uploads/Netznutzungsentgelt_Strom_Preisstand_010126.pdf",
    "status": "ok",
@@ -30880,7 +32711,27 @@
     "gp_eur_jahr": 90.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-15:00, 17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerkehaiger.de/de/Netzbetriebe/Stromnetz/Netzzugang-Entgelte-Vertraege-/Netzentgelte-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerkehaiger.de/de/Netzbetriebe/Stromnetz/Netzzugang-Entgelte-Vertraege-/Netzentgelte-Strom-2026.pdf",
    "status": "ok",
@@ -30991,7 +32842,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-21:00",
+      "ct_kwh": 7.93
+     },
+     "standardtarif": {
+      "zeiten": "06:00-16:00, 21:00-24:00",
+      "ct_kwh": 6.41
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 2.56
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-haltern.de/wp-content/uploads/2026/04/2026_Preisblatt_Strom_Stand_23.12.2025.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-haltern.de/wp-content/uploads/2026/04/2026_Preisblatt_Strom_Stand_23.12.2025.pdf",
    "status": "ok",
@@ -31032,7 +32903,27 @@
     "gp_eur_jahr": 36.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stwhw-netze.de/fileadmin/user_upload/Netzengelt/Strom_ham26_31.12.2025.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stwhw-netze.de/fileadmin/user_upload/Netzengelt/Strom_ham26_31.12.2025.pdf",
    "status": "ok",
@@ -32903,7 +34794,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-kempen.de/de/Strom/Stromnetz1/Netznutzungsentgelte/Netznutzungsentgelte-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-kempen.de/de/Strom/Stromnetz1/Netznutzungsentgelte/Netznutzungsentgelte-Strom-2026.pdf",
    "status": "ok",
@@ -33268,7 +35179,27 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:00-16:00, 20:00-00:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 1.31
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-landsberg.de/images/pdf/stromnetz/netzentgelte/Preisblatt_Netznutzung_StadtwerkeLandsbergKU_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-landsberg.de/images/pdf/stromnetz/netzentgelte/Preisblatt_Netznutzung_StadtwerkeLandsbergKU_2026.pdf",
    "status": "ok",
@@ -33782,7 +35713,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:30-14:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://netz.stadtwerke-lingen.de/fileadmin/user_upload/netz/pdf/nne_s_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netz.stadtwerke-lingen.de/fileadmin/user_upload/netz/pdf/nne_s_2026.pdf",
    "status": "ok",
@@ -33968,7 +35919,27 @@
     "gp_eur_jahr": 32.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.sw-l.de/assets/files/downloads/2025-12-23-preisblatt-loebau-strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.sw-l.de/assets/files/downloads/2025-12-23-preisblatt-loebau-strom-2026.pdf",
    "status": "ok",
@@ -34078,7 +36049,27 @@
     "gp_eur_jahr": 59.8
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.enwg-veroeffentlichungen.de/ludwigsfelde2/Netze/Stromnetz/Netzzugang-Entgelte/Preisblatt-voraussichtliche-NNE-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enwg-veroeffentlichungen.de/ludwigsfelde2/Netze/Stromnetz/Netzzugang-Entgelte/Preisblatt-voraussichtliche-NNE-Strom-2026.pdf",
    "status": "ok",
@@ -34457,7 +36448,27 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-malchow.de/download/netznutzungsentgelte-strom/?tmstv=1793358770&version=2026",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-malchow.de/download/netznutzungsentgelte-strom/?tmstv=1793358770&version=2026",
    "status": "ok",
@@ -35296,7 +37307,27 @@
     "gp_eur_jahr": 27.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ihr-stadtwerk.de/de/Menue/Services/Netznutzung/Stromnetz/Netzzugang-Entgelte/20251215-Preisblatt-Strom-swmb26.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ihr-stadtwerk.de/de/Menue/Services/Netznutzung/Stromnetz/Netzzugang-Entgelte/20251215-Preisblatt-Strom-swmb26.pdf",
    "status": "ok",
@@ -35339,7 +37370,27 @@
     "gp_eur_jahr": 89.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "05:15-17:00, 19:00-01:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.stadtwerke-nettetal.de/netze/stromnetz/netzzugang-und-entgelte.html",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-nettetal.de/netze/stromnetz/netzzugang-und-entgelte.html",
    "status": "ok",
@@ -35382,7 +37433,27 @@
     "gp_eur_jahr": 50.42
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swni.de/de/Fussnavigation/Netzinformationen/Stromnetz/Netzzugang-Entgelte/Endgueltige-NNE-Strom-2026-Neu-Isenburg.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swni.de/de/Fussnavigation/Netzinformationen/Stromnetz/Netzzugang-Entgelte/Endgueltige-NNE-Strom-2026-Neu-Isenburg.pdf",
    "status": "ok",
@@ -35755,7 +37826,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swn.de/fileadmin/Dateien/strom/netze_downloads/Netzentgelte/Preisblatt_Netznutzungsentgelte_Strom_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swn.de/fileadmin/Dateien/strom/netze_downloads/Netzentgelte/Preisblatt_Netznutzungsentgelte_Strom_2026.pdf",
    "status": "ok",
@@ -36129,7 +38220,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://strom.stadtwerke-neustrelitz.de/wp-content/uploads/2/2025/12/preisblatt-finale-netzentgelte-strom-2026-1.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://strom.stadtwerke-neustrelitz.de/wp-content/uploads/2/2025/12/preisblatt-finale-netzentgelte-strom-2026-1.pdf",
    "status": "ok",
@@ -36276,7 +38387,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-niesky.de/uploads/downloads/Netz/Netz_Preisblatt_NNE_2026_SW_Niesky_Strom_final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-niesky.de/uploads/downloads/Netz/Netz_Preisblatt_NNE_2026_SW_Niesky_Strom_final.pdf",
    "status": "ok",
@@ -36823,7 +38954,27 @@
     "gp_eur_jahr": 50.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:45-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-04:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-oerlinghausen.de/_Resources/Persistent/d/0/c/f/d0cfae0bf977b0831d1cc1f013ba4a86008df5ea/Netznutzungsentgelte-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-oerlinghausen.de/_Resources/Persistent/d/0/c/f/d0cfae0bf977b0831d1cc1f013ba4a86008df5ea/Netznutzungsentgelte-Strom-2026.pdf",
    "status": "ok",
@@ -36974,7 +39125,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swo-holstein.de/de/Stromnetz/Netzanschluss/ENWG/Stromnetz/Preisblatt-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swo-holstein.de/de/Stromnetz/Netzanschluss/ENWG/Stromnetz/Preisblatt-Strom-2026.pdf",
    "status": "ok",
@@ -37194,7 +39365,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-19:30",
+      "ct_kwh": 9.59
+     },
+     "standardtarif": {
+      "zeiten": "00:00-02:45, 05:15-16:30, 19:30-00:00",
+      "ct_kwh": 8.44
+     },
+     "niedertarif": {
+      "zeiten": "02:45-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
@@ -37235,7 +39426,27 @@
     "gp_eur_jahr": 35.35
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "https://www.swp-energieverteilnetze.de/netzzugangentgelte.html",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swp-energieverteilnetze.de/netzzugangentgelte.html",
    "status": "ok",
@@ -37817,7 +40028,27 @@
     "gp_eur_jahr": 65.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:30-19:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-prenzlau.de/files/netzanschluss/strom/netznutzungsvertrag/2026_endgultige_Preisblaetter_Netzentgelte_Strom.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-prenzlau.de/files/netzanschluss/strom/netznutzungsvertrag/2026_endgultige_Preisblaetter_Netzentgelte_Strom.pdf",
    "status": "ok",
@@ -38158,7 +40389,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-radolfzell.de/fileadmin/user_upload/PDF/Service/Netzservice/Stromnetz/Netzentgelte/Netzpreisblatt_Strom_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-radolfzell.de/fileadmin/user_upload/PDF/Service/Netzservice/Stromnetz/Netzentgelte/Netzpreisblatt_Strom_2026.pdf",
    "status": "ok",
@@ -38229,7 +40480,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 7.63
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": 1.78
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_SwRm.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-ramstein.de/wp-content/uploads/2025/12/Preisblatt-2026-Netzentgelte-Strom_SwRm.pdf",
    "status": "ok",
@@ -38340,7 +40611,65 @@
     "gp_eur_jahr": 40.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:45-12:45, 17:45-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
+      "ct_kwh": 9.0
+     },
+     "niedertarif": {
+      "zeiten": "01:00-04:00",
+      "ct_kwh": 2.25
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "RLM: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_RLM_Netznutzung_01012026.pdf | SLP: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_SLP_Netznutzung_01012026-neu_Februar.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:45-12:45, 17:45-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
+      "ct_kwh": 9.0
+     },
+     "niedertarif": {
+      "zeiten": "01:00-04:00",
+      "ct_kwh": 2.25
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "RLM: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_RLM_Netznutzung_01012026.pdf | SLP: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_SLP_Netznutzung_01012026-neu_Februar.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:45-12:45, 17:45-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "04:00-10:45, 12:45-17:45, 20:00-01:00",
+      "ct_kwh": 9.0
+     },
+     "niedertarif": {
+      "zeiten": "01:00-04:00",
+      "ct_kwh": 2.25
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "RLM: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_RLM_Netznutzung_01012026.pdf | SLP: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_SLP_Netznutzung_01012026-neu_Februar.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "RLM: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_RLM_Netznutzung_01012026.pdf | SLP: https://netze.stadtwerke-ratingen.de/fileadmin/Netze/Dokumente/Netzentgelte_2026/Strom/Strom_Preisblatt_SLP_Netznutzung_01012026-neu_Februar.pdf",
    "status": "ok",
@@ -38383,7 +40712,27 @@
     "gp_eur_jahr": 84.9
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swrc.de/de/Zusatznavigation/Netze/Stromnetz/Netzzugang-Entgelte/2025-12-22-Preisblatt-NN-Strom-ab-01.01.2026-final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swrc.de/de/Zusatznavigation/Netze/Stromnetz/Netzzugang-Entgelte/2025-12-22-Preisblatt-NN-Strom-ab-01.01.2026-final.pdf",
    "status": "ok",
@@ -38884,7 +41233,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-rotenburg.de/wp-content/uploads/2026_NNE-Strom-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-rotenburg.de/wp-content/uploads/2026_NNE-Strom-endgueltig.pdf",
    "status": "ok",
@@ -39363,7 +41732,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-schkeuditz.de/fileadmin/user_upload/Dokumente/Strom/Preisblaetter/Preisblatt_NNE_Strom_ab_01.01.2026_v2.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-schkeuditz.de/fileadmin/user_upload/Dokumente/Strom/Preisblaetter/Preisblatt_NNE_Strom_ab_01.01.2026_v2.pdf",
    "status": "ok",
@@ -39693,7 +42082,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-schramberg.de/ceasy/resource/?id=3752&download=1",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-schramberg.de/ceasy/resource/?id=3752&download=1",
    "status": "ok",
@@ -39767,7 +42176,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:00-10:00, 17:00-21:00",
+      "ct_kwh": 9.39
+     },
+     "standardtarif": {
+      "zeiten": "06:00-07:00, 10:00-17:00, 21:00-23:00",
+      "ct_kwh": 7.59
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00, 23:00-00:00",
+      "ct_kwh": 3.04
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swse.de/fileadmin/user_upload/images/netzinformationen/stromnetz/preisblatt_netznutzungsentgelte_strom_swse_2026_final.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swse.de/fileadmin/user_upload/images/netzinformationen/stromnetz/preisblatt_netznutzungsentgelte_strom_swse_2026_final.pdf",
    "status": "ok",
@@ -40311,7 +42740,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-schwentinental.de/fileadmin/user_upload/download/Strom/endgueltige_Stromnetzentgelte_ab_01.01.2026_SWS.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-schwentinental.de/fileadmin/user_upload/download/Strom/endgueltige_Stromnetzentgelte_ab_01.01.2026_SWS.pdf",
    "status": "ok",
@@ -40868,7 +43317,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:45-13:30, 16:45-19:00",
+      "ct_kwh": 6.28
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 5.55
+     },
+     "niedertarif": {
+      "zeiten": "01:45-06:00",
+      "ct_kwh": 2.22
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-speyer.de/de/Ueber-uns/Netze1/Stromnetz/Netzzugang-Entgelte/20251218-Preisblatt-StromNE-2026-final.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-speyer.de/de/Ueber-uns/Netze1/Stromnetz/Netzzugang-Entgelte/20251218-Preisblatt-StromNE-2026-final.pdf",
    "status": "ok",
@@ -41142,7 +43611,46 @@
     "gp_eur_jahr": 80.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:30-14:00, 16:30-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-03:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-stassfurt.de/fileadmin/user_upload/Netz/Netzbetrieb/Veroeffentlichungen/Netzentgelte/Daten/Preisblaetter/Preisblatt_Netzentgelte_StW_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:30-14:00, 16:30-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-03:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-stassfurt.de/fileadmin/user_upload/Netz/Netzbetrieb/Veroeffentlichungen/Netzentgelte/Daten/Preisblaetter/Preisblatt_Netzentgelte_StW_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-stassfurt.de/fileadmin/user_upload/Netz/Netzbetrieb/Veroeffentlichungen/Netzentgelte/Daten/Preisblaetter/Preisblatt_Netzentgelte_StW_2026.pdf",
    "status": "ok",
@@ -41247,7 +43755,27 @@
     "gp_eur_jahr": 80.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swst.de/medien/stromnetz/vorlaeufiges-preisblatt-strom-2026-stadtwerke-steinfurt.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swst.de/medien/stromnetz/vorlaeufiges-preisblatt-strom-2026-stadtwerke-steinfurt.pdf",
    "status": "ok",
@@ -41376,7 +43904,27 @@
     "gp_eur_jahr": 73.3
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-14:00, 16:30-19:00, 00:00-01:30, 14:00-16:30",
+      "ct_kwh": 4.31
+     },
+     "standardtarif": {
+      "zeiten": "05:30-11:00, 19:00-24:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:30-05:30",
+      "ct_kwh": 1.27
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-straubing-netz.de/fileserver/ar040010/filesdb/Netznutzungsentgelte%20(Stand%2001.01.2026).pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-straubing-netz.de/fileserver/ar040010/filesdb/Netznutzungsentgelte%20(Stand%2001.01.2026).pdf",
    "status": "ok",
@@ -41448,7 +43996,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-strausberg.de/media/netznutzungsentgelte_ab_dem_01-01-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-strausberg.de/media/netznutzungsentgelte_ab_dem_01-01-2026.pdf",
    "status": "ok",
@@ -41718,7 +44286,27 @@
     "gp_eur_jahr": 72.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-torgau.de/files/user/user_upload/PDFs_Dokumente/Preisblaetter_2026/26_Preisblatt_Strom_01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-torgau.de/files/user/user_upload/PDFs_Dokumente/Preisblaetter_2026/26_Preisblatt_Strom_01.01.2026.pdf",
    "status": "ok",
@@ -41878,7 +44466,27 @@
     "gp_eur_jahr": 75.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:30-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:30-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.enwg-veroeffentlichungen.de/troisdorf/Netze/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-Stadtwerke-Troisdorf-GmbH-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enwg-veroeffentlichungen.de/troisdorf/Netze/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-Stadtwerke-Troisdorf-GmbH-2026.pdf",
    "status": "ok",
@@ -42074,7 +44682,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "18:00-20:00",
+      "ct_kwh": 12.36
+     },
+     "standardtarif": {
+      "zeiten": "07:00-18:00, 20:00-01:30",
+      "ct_kwh": 7.72
+     },
+     "niedertarif": {
+      "zeiten": "01:30-07:00",
+      "ct_kwh": 2.24
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swtenergie.de/de/Netze/Veroeffentlichungspflichten/Stromnetz/Strom-Netznutzungsentgelte-Preisblatt-2026-Stadtwerke-Tuttlingen.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swtenergie.de/de/Netze/Veroeffentlichungspflichten/Stromnetz/Strom-Netznutzungsentgelte-Preisblatt-2026-Stadtwerke-Tuttlingen.pdf",
    "status": "ok",
@@ -42419,7 +45047,27 @@
     "gp_eur_jahr": 102.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-uslar.de/wp-content/uploads/2026/04/Netzentgelte-Strom-2026_Vers28.04.26.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-uslar.de/wp-content/uploads/2026/04/Netzentgelte-Strom-2026_Vers28.04.26.pdf",
    "status": "ok",
@@ -42550,7 +45198,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-velten.de/images/downloads/NETZ/Netzentgelte_Strom_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-velten.de/images/downloads/NETZ/Netzentgelte_Strom_2026.pdf",
    "status": "ok",
@@ -42626,7 +45294,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-verden.de/_Resources/Persistent/a/0/f/0/a0f0fef54a3a1d100ec8a2308cd7f1c2f90ec985/Netznutzungsentgelte%20Strom%2C%20Preisbaltt%202026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-verden.de/_Resources/Persistent/a/0/f/0/a0f0fef54a3a1d100ec8a2308cd7f1c2f90ec985/Netznutzungsentgelte%20Strom%2C%20Preisbaltt%202026.pdf",
    "status": "ok",
@@ -43049,7 +45737,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:15-21:00",
+      "ct_kwh": 11.25
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 9.74
+     },
+     "niedertarif": {
+      "zeiten": "01:00-06:15",
+      "ct_kwh": 3.9
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swwachenheim.de/netzentgelte.html?file=files/Medien/Leistungen/Strom/Netzentgelte/SWW%202026%20-%20Preisblatt%20FINAL%20mit_ohne%20ePB.pdf&cid=117299",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swwachenheim.de/netzentgelte.html?file=files/Medien/Leistungen/Strom/Netzentgelte/SWW%202026%20-%20Preisblatt%20FINAL%20mit_ohne%20ePB.pdf&cid=117299",
    "status": "ok",
@@ -43394,7 +46102,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-wt.de/de/Netznutzungspreisblatt-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-wt.de/de/Netznutzungspreisblatt-2026.pdf",
    "status": "ok",
@@ -43611,7 +46339,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "07:45-10:00, 19:30-21:45",
+      "ct_kwh": 10.85
+     },
+     "standardtarif": {
+      "zeiten": "01:00-07:45, 10:00-12:30, 17:00-19:30, 21:45-22:30",
+      "ct_kwh": 6.36
+     },
+     "niedertarif": {
+      "zeiten": "00:00-01:00, 12:30-17:00, 22:30-00:00",
+      "ct_kwh": 2.54
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://stadtwerke-warburg.de/download/vorlaeufige-netzentgelte-strom-2026/",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-warburg.de/download/vorlaeufige-netzentgelte-strom-2026/",
    "status": "ok",
@@ -43681,7 +46429,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-waren.de/files_PDF/strom_netznutzungsentgelte.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-waren.de/files_PDF/strom_netznutzungsentgelte.pdf",
    "status": "ok",
@@ -44035,7 +46803,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-20:30",
+      "ct_kwh": 11.36
+     },
+     "standardtarif": {
+      "zeiten": "09:00-17:00, 20:30-00:00",
+      "ct_kwh": 6.68
+     },
+     "niedertarif": {
+      "zeiten": "00:30-09:00, 00:00-00:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://netz.sww.de/downloads/netz/20251218_Preisblatt_NE_Strom_2026_SWW.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netz.sww.de/downloads/netz/20251218_Preisblatt_NE_Strom_2026_SWW.pdf",
    "status": "ok",
@@ -44184,7 +46972,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-04:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.energienetze-wsf.de/cdn/ewf/strom/netzanschluss/netzentgelte/swe-preisblatt-netznutzung-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.energienetze-wsf.de/cdn/ewf/strom/netzanschluss/netzentgelte/swe-preisblatt-netznutzung-2026.pdf",
    "status": "ok",
@@ -44330,7 +47138,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-03:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-werdau.de/wp-content/uploads/2025/12/Preisblatt-NN-Strom-ab-01.01.2026-Stand-2025-12-17-endgueltig-1.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-werdau.de/wp-content/uploads/2025/12/Preisblatt-NN-Strom-ab-01.01.2026-Stand-2025-12-17-endgueltig-1.pdf",
    "status": "ok",
@@ -44473,7 +47301,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-wernigerode.de/_Resources/Persistent/3/3/f/a/33fae09412dd202a6c41b2b7faf50ede8cdd8422/SWWR_Preisblatt_Netznutzung_Strom_2026_01_01.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-wernigerode.de/_Resources/Persistent/3/3/f/a/33fae09412dd202a6c41b2b7faf50ede8cdd8422/SWWR_Preisblatt_Netznutzung_Strom_2026_01_01.pdf",
    "status": "ok",
@@ -44769,7 +47617,27 @@
     "gp_eur_jahr": 25.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stw-winsen.de/de/Dokumente-Bilder/Preisblatt-Netzentgelte-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stw-winsen.de/de/Dokumente-Bilder/Preisblatt-Netzentgelte-Strom-2026.pdf",
    "status": "ok",
@@ -44923,7 +47791,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "10:00-15:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-wittenberge.de/wp-content/uploads/2026/08/Preisblatt-NNE-Strom-ab-01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-wittenberge.de/wp-content/uploads/2026/08/Preisblatt-NNE-Strom-ab-01.01.2026.pdf",
    "status": "ok",
@@ -45108,7 +47996,46 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-03:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-wolmirstedt.de/dateien/41/Netznutzung-Strom/157/Netzentgelte-2026pdf?preview=1",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    },
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-03:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://stadtwerke-wolmirstedt.de/dateien/41/Netznutzung-Strom/157/Netzentgelte-2026pdf?preview=1",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stadtwerke-wolmirstedt.de/dateien/41/Netznutzung-Strom/157/Netzentgelte-2026pdf?preview=1",
    "status": "ok",
@@ -45226,7 +48153,27 @@
     "gp_eur_jahr": 27.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-19:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-04:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stadtwerke-zeven.de/de/Kopfnavigation/Veroeffentlichungen/Netzbetrieb/Stromnetz/Netzzugang-Entgelte/Preisblatt-Netzentgelte-Strom-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-zeven.de/de/Kopfnavigation/Veroeffentlichungen/Netzbetrieb/Stromnetz/Netzzugang-Entgelte/Preisblatt-Netzentgelte-Strom-2026.pdf",
    "status": "ok",
@@ -45611,7 +48558,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:30-20:00",
+      "ct_kwh": 10.93
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.47
+     },
+     "niedertarif": {
+      "zeiten": "01:30-05:00",
+      "ct_kwh": 1.27
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.bew-bocholt.de/fileadmin/bew-bocholt/content/downloads/netze/stromnetz/netznutzungsentgelte-strom/netznutzungsentgelte_strom_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.bew-bocholt.de/fileadmin/bew-bocholt/content/downloads/netze/stromnetz/netznutzungsentgelte-strom/netznutzungsentgelte_strom_2026.pdf",
    "status": "ok",
@@ -45683,7 +48650,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:30-20:00",
+      "ct_kwh": 10.93
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 8.47
+     },
+     "niedertarif": {
+      "zeiten": "01:30-05:00",
+      "ct_kwh": 1.27
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://netze.stadtwerke-rhede.de/fileadmin/netze/user_upload/Downloads/NNE_S_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netze.stadtwerke-rhede.de/fileadmin/netze/user_upload/Downloads/NNE_S_2026.pdf",
    "status": "ok",
@@ -45950,7 +48937,27 @@
     "gp_eur_jahr": 60.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
@@ -46012,7 +49019,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-22:30",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "08:00-16:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stauferwerk.de/de/Metanavigation/Stromnetz1/Stauferwerk-Netze/Stromnetz/Stauferwerk-GmbH-Co.-KG-Netzentgelte-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stauferwerk.de/de/Metanavigation/Stromnetz1/Stauferwerk-Netze/Stromnetz/Stauferwerk-GmbH-Co.-KG-Netzentgelte-2026.pdf",
    "status": "ok",
@@ -46073,7 +49100,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": 5.01
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": 0.67
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.sg-wismar.de/fileadmin/user_upload/ID064_Netznutzung_Strom/ID354_Netznutzungsentgelte/251216_Preisblatt_Zusammenfassung_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.sg-wismar.de/fileadmin/user_upload/ID064_Netznutzung_Strom/ID354_Netznutzungsentgelte/251216_Preisblatt_Zusammenfassung_2026.pdf",
    "status": "ok",
@@ -46143,7 +49190,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://stromkontor.net/wp-content/uploads/2025/12/2025-10-15-PB-NNE-Strom-2026_endgueltige_SK-Netzgesellschaft.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stromkontor.net/wp-content/uploads/2025/12/2025-10-15-PB-NNE-Strom-2026_endgueltige_SK-Netzgesellschaft.pdf",
    "status": "ok",
@@ -46212,7 +49279,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://stromkontor.org/wp-content/uploads/2025/12/2025-10-15-PB-NNE-Strom-2026-endgueltige_SKR-Port.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://stromkontor.org/wp-content/uploads/2025/12/2025-10-15-PB-NNE-Strom-2026-endgueltige_SKR-Port.pdf",
    "status": "ok",
@@ -46796,7 +49883,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-20:30",
+      "ct_kwh": 8.51
+     },
+     "standardtarif": {
+      "zeiten": "06:00-16:30, 20:30-24:00",
+      "ct_kwh": 6.51
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 2.6
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Stromversorgung-Neunkirchen/Netzzugang-Entgelte/SVN-Preisblatt-01.01.2026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Stromversorgung-Neunkirchen/Netzzugang-Entgelte/SVN-Preisblatt-01.01.2026-endgueltig.pdf",
    "status": "ok",
@@ -46953,7 +50060,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-13:30, 17:30-21:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://chiemsee-strom.com/wp-content/uploads/NN_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://chiemsee-strom.com/wp-content/uploads/NN_2026.pdf",
    "status": "ok",
@@ -47269,7 +50396,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:30-20:30",
+      "ct_kwh": 8.51
+     },
+     "standardtarif": {
+      "zeiten": "06:00-16:30, 20:30-24:00",
+      "ct_kwh": 6.51
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:00",
+      "ct_kwh": 2.6
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Stromversorgung-Neunkirchen/Netzzugang-Entgelte/SVN-Preisblatt-01.01.2026-endgueltig.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Stromversorgung-Neunkirchen/Netzzugang-Entgelte/SVN-Preisblatt-01.01.2026-endgueltig.pdf",
    "status": "ok",
@@ -47935,7 +51082,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "12:00-14:00",
+      "ct_kwh": 9.23
+     },
+     "standardtarif": {
+      "zeiten": "00:00-03:00, 04:00-12:00, 14:00-24:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "03:00-04:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-ENEG-Strom.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-ENEG-Strom.pdf",
    "status": "ok",
@@ -48092,7 +51259,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "12:00-14:00",
+      "ct_kwh": 11.49
+     },
+     "standardtarif": {
+      "zeiten": "00:00-03:00, 04:00-12:00, 14:00-24:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "03:00-04:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-VNG-Strom.pdf",
+     "hinweis": "maschinell gelesen (zeilengruppe), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://netzinfo.swl-unser-stadtwerk.de/wp-content/uploads/2026/03/Endgueltiges-PB-2026-VNG-Strom.pdf",
    "status": "ok",
@@ -48133,7 +51320,27 @@
     "gp_eur_jahr": 65.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "",
+     "quelle": "",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": null,
    "status": "ok",
@@ -48712,7 +51919,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.swte.de/de/SWTE-Netz/Netze/Stromnetz1/Netzzugang-Entgelte/Preisblatt-Strom-2026-final.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.swte.de/de/SWTE-Netz/Netze/Stromnetz1/Netzzugang-Entgelte/Preisblatt-Strom-2026-final.pdf",
    "status": "ok",
@@ -48833,7 +52060,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "12:00-14:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://two.de/wp-content/uploads/TWO-Preisblatt-Netzentgelte-Strom_2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://two.de/wp-content/uploads/TWO-Preisblatt-Netzentgelte-Strom_2026.pdf",
    "status": "ok",
@@ -48903,7 +52150,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "11:00-13:00, 17:00-19:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-07:00",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.tauberenergie-kuhn.de/images/pdf/netzentgelte/endgueltig-netzentgelt-tauberenergie-kuhn-2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.tauberenergie-kuhn.de/images/pdf/netzentgelte/endgueltig-netzentgelt-tauberenergie-kuhn-2026.pdf",
    "status": "ok",
@@ -49051,7 +52318,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:00",
+      "ct_kwh": 9.79
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 6.92
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": 2.77
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.ten-eg.de/wp-content/uploads/2025/12/Netznutzungspreisblatt-Strom-ab-01-01-2026_BFSG.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ten-eg.de/wp-content/uploads/2025/12/Netznutzungspreisblatt-Strom-ab-01-01-2026_BFSG.pdf",
    "status": "ok",
@@ -49185,7 +52472,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-20:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "01:00-05:00",
+      "ct_kwh": 3.16
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://a.travenetz.de/f/286151075956264/x/dbae664601/netzentgelte-strom-2026.pdf?1793370146103",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://a.travenetz.de/f/286151075956264/x/dbae664601/netzentgelte-strom-2026.pdf?1793370146103",
    "status": "ok",
@@ -49259,7 +52566,27 @@
      "mindestverlagerung_kw": null
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-19:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "03:15-04:45",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.twl-netze.de/fileadmin/user_upload/twl_netze/02_Dokumente/03_Fuer-Marktpartner/3.2_Netzzugang_Strom/a_Preisblatt/3.2.a.Preisblatt_Netznutzung_Strom_2026_endg.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.twl-netze.de/fileadmin/user_upload/twl_netze/02_Dokumente/03_Fuer-Marktpartner/3.2_Netzzugang_Strom/a_Preisblatt/3.2.a.Preisblatt_Netznutzung_Strom_2026_endg.pdf",
    "status": "ok",
@@ -49409,7 +52736,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "16:00-20:00",
+      "ct_kwh": 8.54
+     },
+     "standardtarif": {
+      "zeiten": "05:30-16:00, 20:00-00:00",
+      "ct_kwh": 8.11
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.ueberlandwerk.de/files/ueberlandwerk/source/dokumente/strom/stromnetz/netzentgelte/KDatei_11019_Preisliste_Netznutzung_2026.pdf",
+     "hinweis": "maschinell gelesen (zeilenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.ueberlandwerk.de/files/ueberlandwerk/source/dokumente/strom/stromnetz/netzentgelte/KDatei_11019_Preisliste_Netznutzung_2026.pdf",
    "status": "ok",
@@ -49598,7 +52945,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "13:00-16:00, 18:00-22:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:00",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.uew-rhoen.de/de/Netz/Veroeffentlichungen/Stromnetz/Netzzugang-Entgelte/NNE-Preisblatt-2026-251229.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.uew-rhoen.de/de/Netz/Veroeffentlichungen/Stromnetz/Netzzugang-Entgelte/NNE-Preisblatt-2026-251229.pdf",
    "status": "ok",
@@ -49728,7 +53095,27 @@
     },
     "msns": null
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "17:00-21:00",
+      "ct_kwh": 8.59
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": 4.52
+     },
+     "niedertarif": {
+      "zeiten": "00:00-05:00, 12:00-14:00",
+      "ct_kwh": 0.54
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://www.uez.de/_Resources/Persistent/3/6/4/0/36408f3984fc4828c6bbc84bf93ea46699520d5b/2026_Pb_NNE.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.uez.de/_Resources/Persistent/3/6/4/0/36408f3984fc4828c6bbc84bf93ea46699520d5b/2026_Pb_NNE.pdf",
    "status": "ok",
@@ -50368,7 +53755,27 @@
      "mindestverlagerung_kw": 100
     }
    },
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:30-15:15, 17:15-21:15",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "23:00-06:45",
+      "ct_kwh": null
+     },
+     "quartale": "Q1+Q4",
+     "preisstand": "endgültig",
+     "quelle": "https://www.vbk-kronshagen.de/fileadmin/Dateien/Service/Netznutzungsentgelte/Strom/NN-Preisblatt_Strom_VBK_ab_01.01.2026.pdf",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.vbk-kronshagen.de/fileadmin/Dateien/Service/Netznutzungsentgelte/Strom/NN-Preisblatt_Strom_VBK_ab_01.01.2026.pdf",
    "status": "ok",
@@ -50853,7 +54260,27 @@
     "gp_eur_jahr": 98.0
    },
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "09:45-13:45",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "06:30-09:45, 13:45-22:00",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "22:00-06:30",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "",
+     "quelle": "https://www.wendelsteinbahn.de/nutzungsentgelte",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.wendelsteinbahn.de/nutzungsentgelte",
    "status": "ok",
@@ -51020,7 +54447,27 @@
    "rlm": null,
    "slp": null,
    "hlzf": null,
-   "modul3": null,
+   "modul3": [
+    {
+     "jahr": 2026,
+     "hochtarif": {
+      "zeiten": "08:00-13:00",
+      "ct_kwh": null
+     },
+     "standardtarif": {
+      "zeiten": "Restzeit",
+      "ct_kwh": null
+     },
+     "niedertarif": {
+      "zeiten": "00:00-06:30, 18:00-23:15",
+      "ct_kwh": null
+     },
+     "quartale": "ganzjährig",
+     "preisstand": "endgültig",
+     "quelle": "https://ew-westenthanner.de/tag/preisblatt/",
+     "hinweis": "maschinell gelesen (spaltenweise), Zeiten geprüft auf Überlappung und 24 h, nicht am Dokument bestätigt; Preise maschinell"
+    }
+   ],
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://ew-westenthanner.de/tag/preisblatt/",
    "status": "pruefen",
