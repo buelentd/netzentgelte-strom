@@ -228,3 +228,6 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - SNB940352624434 Bayernwerk Netz GmbH — HLZF 2027 + Preisblatt Netzentgelte 2027 vorläufig (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
 
 - SNB940133714842 Creos Deutschland GmbH — HLZF 2027 + Preisblätter NNE Strom „ab 01.01.2027 vorläufig“ (Nutzer-Uploads, inhaltsgeprueft; Dateiname nennt 2026, Inhalt bestaetigt 2027). Automatisierter Abruf war 403-blockiert.
+
+- SNB973074326355 ELE Verteilnetz GmbH (EVNG) — HLZF 2027 (§19, Jahr 2027 im Text; Betreiber aus Upload-Stapel, da das HLZF-PDF selbst keinen Namen nennt) + voraussichtliche Netzentgelte Strom ab 01.01.2027 (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
+- Vorige Uploads nicht im 2027-Scope abgelegt: Dessauer Stromversorgung HLZF-2026 (lokal dl_up/sonst) und Netznutzungsentgelte Gas 2027 (Gas — verworfen).
