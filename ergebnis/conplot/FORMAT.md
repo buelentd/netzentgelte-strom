@@ -170,3 +170,9 @@ Regeln, laut Dokumenten der Netzbetreiber (Standard; Abweichungen im Einzelfall 
 `ka_tarifkunden_hoechstsatz_ct_kwh` ist der **gesetzliche Höchstsatz** für Tarifkunden nach Einwohnerzahl der Gemeinde (§ 2 Abs. 2 KAV: 1,32 bis 25.000, 1,59 bis 100.000, 1,99 bis 500.000, 2,39 darüber).
 Tatsächlich gezahlt wird oft weniger; das steht beim Netzbetreiber. Sondervertragskunden 0,11 ct/kWh und Schwachlast 0,61 ct/kWh stehen in `umlagen_steuern_2026.json`.
 `weitere` enthält Gemeinden derselben PLZ mit **anderem** Höchstsatz (die PLZ reicht dann über eine Einwohnergrenze). In dem Fall ist der Satz der PLZ nicht eindeutig, die genaue Gemeinde muss der Nutzer wählen.
+
+## Layout der Web-App (`netzentgelte_2026_app.json`)
+
+`PYTHONPATH=. python daten/conplot_export_app.py` erzeugt `ergebnis/conplot/netzentgelte_2026_app.json` im gleichen Aufbau wie `app/data/netzentgelte_2026.json`
+(`{"jahr","quelle","erzeugt_mit","betreiber":{MaStR-Nr:{name,status,bundesland,netztyp,grenze_inklusiv,ebenen{hsms,ms,msns,ns:{lp_unter,ap_unter,lp_ab,ap_ab}},hlzf{ns,msns:{fruehling..winter}},hlzf_status,hlzf_schwelle_prozent,hlzf_mindestleistung_kw,hlzf_quelle,preisstand,stand,quelle}}}`).
+Preise stimmen mit der bisherigen App-Datei überein (Stichprobe Berlin). **Die Hochlastzeitfenster sind aktueller und an mehreren Stellen anders**; `hlzf` ist nur gefüllt, wenn `hlzf_status` fertig ist (gelesen_nutzer, gelesen_unser, gelesen_kollege_verifiziert, gelesen_aus_2027).
