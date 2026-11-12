@@ -90,14 +90,18 @@ for x in tab:
             hlzf_wer, hlzf_aktion = "Claude", "Dokument liegt vor, Leser muss es lesen (Scan: Kollege liefert Zeiten als Text)"
     d = domain(x["website"])
     n4 = f"{int(nr):04d}"
-    prio = (len(pf) * 2 + (1 if hlzf_offen else 0))
+    # Indikator (Festlegung Nutzer 12.11.2026): steht ein RLM-Leistungspreis im Preisblatt? Kein Urteil über eine Pflicht, nur Priorität.
+    rlm = any(x.get(c) for c in ("ns_lp_ab_2500h_eur_kw_jahr", "msns_lp_ab_2500h_eur_kw_jahr", "ms_lp_ab_2500h_eur_kw_jahr"))
+    einstufung = ("hlzf_nicht_gefunden_rlm_vorhanden" if rlm else "hlzf_nicht_gefunden_ohne_rlm_preise") if hlzf_offen else ""
+    prio = (len(pf) * 2 + (1 if hlzf_offen else 0) + (2 if hlzf_offen and rlm else 0))
     zeilen.append([nr, x["netzbetreiber"], x["mastr_nr"], d, x["status"], ", ".join(fehlt), preis_wer, preis_aktion, hlzf_wer, hlzf_aktion,
                    hl if hlzf_offen else "", x["quelle_url"][:200],
                    " | ".join(suchbegriffe(x["netzbetreiber"], "Netzentgelte Strom 2026 Preisblatt")), " | ".join(suchbegriffe(x["netzbetreiber"], "Hochlastzeitfenster 2027")),
-                   f"{x['mastr_nr']}_{n4}.pdf", f"{x['mastr_nr']}_{n4}_hlzf.pdf", prio])
+                   f"{x['mastr_nr']}_{n4}.pdf", f"{x['mastr_nr']}_{n4}_hlzf.pdf", einstufung,
+                   " | ".join(suchbegriffe(x["netzbetreiber"], "Modul 3 zeitvariable Netzentgelte 2027 Preisblatt")), prio])
 zeilen.sort(key=lambda z: (-z[-1], int(z[0])))
 H = ["nr", "netzbetreiber", "mastr_nr", "domain", "status_preise", "es_fehlt", "preise_wer", "preise_aktion", "hlzf_wer", "hlzf_aktion", "hlzf_status",
-     "bekannte_preisblatt_url", "suche_preisblatt", "suche_hochlastzeitfenster", "dateiname_preisblatt", "dateiname_hochlastzeitfenster", "prioritaet"]
+     "bekannte_preisblatt_url", "suche_preisblatt", "suche_hochlastzeitfenster", "dateiname_preisblatt", "dateiname_hochlastzeitfenster", "hlzf_einstufung", "suche_modul3", "prioritaet"]
 with open("ergebnis/arbeitsliste.csv", "w", encoding="utf-8-sig", newline="") as f:
     w = csv.writer(f, delimiter=";"); w.writerow(H); w.writerows(zeilen)
 import collections
@@ -115,5 +119,5 @@ def teil(wer_spalte, datei, felder):
             w.writerow([z[idx["mastr_nr"]], z[idx["nr"]], z[idx["netzbetreiber"]], z[idx["domain"]]] + [z[idx[c]] for c in felder])
     return len(rows)
 n1 = teil(6, "ergebnis/kollege_preise.csv", ["status_preise", "es_fehlt", "preise_aktion", "bekannte_preisblatt_url", "suche_preisblatt", "dateiname_preisblatt"])
-n2 = teil(8, "ergebnis/kollege_hochlastzeitfenster.csv", ["hlzf_status", "hlzf_aktion", "suche_hochlastzeitfenster", "dateiname_hochlastzeitfenster"])
+n2 = teil(8, "ergebnis/kollege_hochlastzeitfenster.csv", ["hlzf_status", "hlzf_einstufung", "hlzf_aktion", "suche_hochlastzeitfenster", "suche_modul3", "dateiname_hochlastzeitfenster"])
 print("Kollege Preise:", n1, "| Kollege Hochlastzeitfenster:", n2)
