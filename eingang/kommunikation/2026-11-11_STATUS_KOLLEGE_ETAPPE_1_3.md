@@ -240,3 +240,5 @@ Blockiert-Liste fuer manuelle Pruefung: eingang/kommunikation/2026-11-12_BLOCKIE
 - Offen: hlzf_2027.pdf aus dem Wittmund/Rheine-Stapel nennt keinen Betreibernamen im Text — lokal dl_up/sonst/hlzf_2027_ungeordnet.pdf, Zuordnung bitte durch Nutzer bestaetigen.
 
 - SNB991797615686 Energieversorgung Lohr-Karlstadt und Umgebung GmbH & Co. KG (EVK) — HLZF 2027 §19 + Preisblatt Strom 2027 vorläufig, Stand 15.10.2026 (Nutzer-Uploads, inhaltsgeprueft; automatisierter Abruf war 403-blockiert).
+
+- SNB967982606159 Erlanger Stadtwerke AG (ESTW) — Preisblatt Netznutzungsentgelte Strom, gültig ab 01.01.2027, Stand Oktober 2026, vorläufig (Nutzer-Upload, inhaltsgeprueft). HT/NT-Schwachlastzeiten (Modul 3) liegen auf der Website und im Preisblatt — gehören in ergebnis/modul3_zeiten.csv, nicht in die HLZF-Spalten. Automatisierter Abruf war 403-blockiert.
