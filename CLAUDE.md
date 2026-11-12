@@ -133,3 +133,8 @@ Bevor eine Liste, Anleitung oder Zahl geliefert wird, wird im Git nachgesehen, w
 ## Änderung: Suchlinks nach Netzbetreiber-Name, nicht nach Domain (Festlegung Nutzer, 12.11.2026)
 
 Die Suchlinks für den Browser (Regel vom 06.11.) verwenden den **Namen des Netzbetreibers** statt `site:Domain`, weil die Domain im MaStR oft falsch ist. Mehrere Schreibweisen: voller Name, Kernname ohne Rechtsform (GmbH, AG, KG, eG, e.K. …), Kernname mit "Netz". Erzeugt von `vnb/suchlinks.py`; `daten/arbeitsliste.py` und die Browser-Listen nutzen es.
+
+
+## Festlegung: HLZF-Fund aus 2027 zählt für 2026 und 2027 (Nutzer, 12.11.2026, endgültig)
+
+Ein Hochlastzeitfenster-Dokument für 2027 ist ein positiver Fund und wird für 2026 und 2027 genutzt. Der Status `gelesen_aus_2027` hält nur die Herkunft fest und zählt wie `gelesen_unser` als fertig (Partnerpaket, Arbeitsliste, Datenbank). Das wird nicht mehr angesprochen oder neu diskutiert.
