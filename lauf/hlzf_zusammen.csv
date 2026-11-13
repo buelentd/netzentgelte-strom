@@ -205,7 +205,7 @@ SNB982241851170;gelesen_unser;keins;keins;keins;17:15-19:15;keins;keins;17:45-18
 SNB991381724831;raster_grafik;;;;;;;;;;;SNB991381724831_0204_hlzf_831hlzfHochlastzeitfenster2025.pdf
 SNB953422913031;gelesen_unser;;;;;keins;keins;17:45-18:30;17:30-19:15;;;https://www.freisinger-stadtwerke.de/de/Netze/Stromnetz/Netzdaten-Strom/Netzzugang-Entgelte/20260508-Hochlastzeitfenster-2026-gem.-19-Abs.-2-S.-1-StromNEV.pdf
 SNB926427521488;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB926427521488_0206_hlzf_NB926427521488hlzfstromnevhtml.pdf
-SNB961497906636;gelesen_kollege_verifiziert;12:45-14:15;13:30-14:30;;;12:30-14:30;12:45-14:00;;;;;eingang/pdfs_neu/SNB961497906636_hlzf_hochlastzeitfenster_2026.pdf
+SNB961497906636;gelesen_kollege_verifiziert;12:00-15:00;12:15-13:30;;;13:15-14:45;;;;;;eingang/pdfs_neu/SNB961497906636_hlzf_hochlastzeitfenster_2026.pdf
 SNB968325295962;gelesen_nutzer;11:15-11:45;13:15-13:30;keins;keins;keins;keins;17:45-18:45;17:00-19:45;;;https://glattbach.de/_Resources/Persistent/3/9/a/a/39aae220a1c210c69f560eb443327d92245f9e1a/Hochlastzeitfenster_NEV_SN_GLA_2026_Ver%C3%B6ffentlichung.pdf
 SNB984338214660;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB998167765620;gelesen_unser;18:15-19:45;keins;keins;17:30-20:00;keins;keins;keins;16:45-18:45;;;https://www.gemeindewerke-baiersbronn.de/resources/02%20Datenobjekte/Strom/Hochlastzeitfenster-2026.pdf
@@ -576,7 +576,7 @@ SNB931986174853;gelesen_unser;10:00-13:00;keins;keins;09:45-13:30;keins;keins;08
 SNB986042567117;gelesen_nutzer;keins;keins;keins;17:15-19:15;keins;keins;keins;17:15-19:15;;;https://www.stadtwerke-muehlheim.de/de/Kopfnavigation/Netze/Hochlastzeitfenster-2026.pdf
 SNB956741146944;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB956741146944_0576_hlzf_4hlzf11Hochlastzeitfenster2023.pdf
 SNB973056451075;gelesen_kollege_verifiziert;keins;keins;17:15-17:30;17:15-19:15;keins;keins;17:15-17:30;17:00-19:30;;;eingang/pdfs_neu/SNB973056451075_0577_hlzf.pdf
-SNB985347645049;kein_dokument_oder_adresse;;;;;;;;;;;
+SNB985347645049;gelesen_aus_2027;keins;keins;keins;17:30-20:15;keins;keins;keins;17:30-20:15;;;eingang/pdfs_neu/SNB985347645049_hlzf_2027.pdf
 SNB960797798422;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB960797798422_0579_hlzf_41021AnlageHLZF2025NeuIsenburg.pdf
 SNB980054996408;gelesen_unser;keins;keins;keins;08:00-12:30;keins;keins;09:00-12:00;keins;;;eingang: SNB980054996408_0580_hlzf.pdf
 SNB924181641435;gelesen_unser;keins;keins;17:30-18:30;17:15-19:45;keins;keins;17:30-17:45, 18:00-18:30;17:15-19:45;;;SNB924181641435_0581_hlzf.pdf
@@ -681,7 +681,7 @@ SNB938620426132;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB938620426132_0679_hlzf_132
 SNB933235634552;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB933235634552_0680_hlzf_552hlzfHochlastzeitfenster2023.pdf
 SNB940718804685;gelesen_kollege_verifiziert;17:00-20:00;keins;keins;17:00-20:00;keins;keins;09:30-12:30;07:00-11:00;;;https://www.sw-traunstein.de/de/Privatkunden/__attic__20260804_154844__Netze/Veroeffentlichungen-Bereich-Netze/Hochlastzeitfenster-2026-Traunstein.pdf
 SNB976987786759;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB976987786759_0682_hlzf.pdf
-SNB924659713978;kein_dokument_oder_adresse;;;;;;;;;;;
+SNB924659713978;gelesen_aus_2027;keins;keins;keins;10:45-19:30;keins;keins;keins;11:30-19:30;;;eingang/pdfs_neu/SNB924659713978_hlzf_2027_zeiten.pdf
 SNB914963192408;gelesen_unser;keins;keins;keins;11:30-12:30, 18:00-20:00;keins;11:00-14:00;07:30-09:15, 12:15-13:30;06:30-08:30;;;https://stadtwerke-trostberg.de/wp-content/uploads/2026/01/Hochlastzeitfenster-2026V1.pdf
 SNB921695080347;gelesen_kollege_verifiziert;keins;keins;17:15-18:45;11:15-14:00, 15:00-15:45, 16:15-19:45;keins;keins;17:15-18:45;11:15-14:00, 15:00-15:45, 16:15-19:45;;;eingang/pdfs_neu/SNB921695080347_hlzf_Hochlastzeitfenster_2026.pdf
 SNB922074927642;gelesen_unser;13:15-14:00;keins;11:15-11:30;08:15-08:30, 09:45-12:00;keins;keins;keins;08:00-14:45;;;eingang: SNB922074927642_0686_hlzf.pdf

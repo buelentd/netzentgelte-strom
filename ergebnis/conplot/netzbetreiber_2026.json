@@ -15514,10 +15514,10 @@
     "ns": {
      "zeitfenster": {
       "fruehling": [
-       "12:45-14:15"
+       "12:00-15:00"
       ],
       "sommer": [
-       "13:30-14:30"
+       "12:15-13:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -15527,10 +15527,7 @@
     "msns": {
      "zeitfenster": {
       "fruehling": [
-       "12:30-14:30"
-      ],
-      "sommer": [
-       "12:45-14:00"
+       "13:15-14:45"
       ]
      },
      "schwelle_prozent": 30,
@@ -41225,7 +41222,36 @@
     "ap_ct_kwh": 8.63,
     "gp_eur_jahr": 89.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB985347645049_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:30-20:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "17:30-20:15"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -41250,9 +41276,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-nettetal.de/netze/stromnetz/netzzugang-und-entgelte.html",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB960797798422",
@@ -49003,7 +49027,36 @@
     "ap_ct_kwh": 6.79,
     "gp_eur_jahr": 75.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB924659713978_hlzf_2027_zeiten.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "10:45-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "11:30-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -49028,9 +49081,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.enwg-veroeffentlichungen.de/troisdorf/Netze/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-Stadtwerke-Troisdorf-GmbH-2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB914963192408",
