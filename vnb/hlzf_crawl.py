@@ -8,7 +8,7 @@ Ablauf je Netzbetreiber
 1. Startseite und Sitemap (XML und sichtbar) lesen, Links nach HLZF-Hinweisen bewerten (Text, Adresse, Jahr).
 2. Seiten nach Bewertung abarbeiten (höchstens 40 Seiten, Tiefe 3). Auch Links in data-Attributen (data-pdf-url) und Dateien auf Fremdhosts (CDN).
 3. Jeder Dokumentkandidat wird geladen und am INHALT geprüft: "Hochlast", Uhrzeiten, Jahreszeiten, Jahr. Eine Webseite zählt wie ein Dokument.
-4. Ergebnis: Status gefunden_2026 | nur_2027 | nur_aelter | anfrage | kein_treffer | blockiert | robots | nicht_erreichbar.
+4. Ergebnis: Status gefunden_2027 | gefunden_2026 (Rückfall) | nur_aelter | anfrage | kein_treffer | blockiert | robots | nicht_erreichbar.
 Funde werden nach eingang/pdfs_neu/<MaStR-Nr.>_hlzf_<Name> gelegt (Webseiten als Text nach ergebnis/hlzf_crawl_texte/).
 Aufruf: python -m vnb.hlzf_crawl [--liste CSV] [--max N] [--parallel N] [--nur SNB…]"""
 from __future__ import annotations
@@ -133,7 +133,9 @@ def inhalt_pruefen(text: str) -> dict:
     for j in jahre:
         haeufig[j] = haeufig.get(j, 0) + 1
     jahr = ""
-    if "2026" in haeufig:
+    if "2027" in haeufig and haeufig["2027"] >= haeufig.get("2026", 0):
+        jahr = "2027"        # wir suchen 2027; 2026 nur als Rückfall (Festlegung Nutzer 13.11.2026)
+    elif "2026" in haeufig:
         jahr = "2026"
     elif "2027" in haeufig:
         jahr = "2027"
@@ -364,13 +366,13 @@ class HlzfCrawler:
                 ziel = await self._seitensuche(page, url)
                 if ziel:
                     seite_ein(ziel, 200, 1, "Seitensuche")
-            if f.alle and any(j == "2026" for j, _, _ in f.alle) and (any(j == "2027" for j, _, _ in f.alle) or f.seiten >= 12):
-                break
+            if f.alle and (any(j == "2027" for j, _, _ in f.alle) or (any(j == "2026" for j, _, _ in f.alle) and f.seiten >= 12)):
+                break      # 2027 gefunden = fertig; 2026 reicht nur, wenn nach 12 Seiten kein 2027 da ist
         await page.close()
-        if any(j == "2026" for j, _, _ in f.alle):
-            f.status = "gefunden_2026"
-        elif any(j == "2027" for j, _, _ in f.alle):
-            f.status = "nur_2027"
+        if any(j == "2027" for j, _, _ in f.alle):
+            f.status = "gefunden_2027"
+        elif any(j == "2026" for j, _, _ in f.alle):
+            f.status = "gefunden_2026"      # Rückfall: kein 2027-Dokument
         elif f.alle:
             f.status = "nur_aelter"
         elif f.hinweis.startswith("Seite nennt Hochlast und Anfrage"):
@@ -387,7 +389,7 @@ class HlzfCrawler:
                 f.status = "robots_dokument_bekannt"
         if f.tarif:
             f.hinweis = (f.hinweis + "; " if f.hinweis else "") + "Tarifzeiten (HT/NT, Modul 3): " + " | ".join(f.tarif[:3])
-        best = sorted(f.alle, key=lambda x: (x[0] != "2026", x[0] != "2027", x[1]))
+        best = sorted(f.alle, key=lambda x: (x[0] != "2027", x[0] != "2026", x[1]))
         if best:
             f.jahr, f.url, f.datei = best[0]
 
