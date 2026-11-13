@@ -15514,10 +15514,10 @@
     "ns": {
      "zeitfenster": {
       "fruehling": [
-       "12:00-15:00"
+       "12:45-14:15"
       ],
       "sommer": [
-       "12:15-13:30"
+       "13:30-14:30"
       ]
      },
      "schwelle_prozent": 30,
@@ -15527,7 +15527,10 @@
     "msns": {
      "zeitfenster": {
       "fruehling": [
-       "13:15-14:45"
+       "12:30-14:30"
+      ],
+      "sommer": [
+       "12:45-14:00"
       ]
      },
      "schwelle_prozent": 30,
@@ -28539,14 +28542,41 @@
     "ap_ct_kwh": 5.58,
     "gp_eur_jahr": 78.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB968949417344_hlzf_HLZF-2027-Stw.-Bad-Hersfeld-GmbH.pdf",
+    "ns": {
+     "zeitfenster": {
+      "herbst": [
+       "17:45-18:15"
+      ],
+      "winter": [
+       "17:00-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "herbst": [
+       "17:45-18:15"
+      ],
+      "winter": [
+       "17:00-19:30"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.stadtwerke-hef.de/de/Kopfnavigation/Netze1/Stromnetz/Preisblatt-Strom-2026-SW-Bad-Hersfeld-GmbH-endgueltig.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB911031559460",
@@ -54787,7 +54817,38 @@
     "ap_ct_kwh": 8.35,
     "gp_eur_jahr": 50.9
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/pdfs_neu/SNB981460842488_hlzf_hochlastzeitfenster_sva_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "08:45-12:45",
+       "16:45-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [],
+      "winter": [
+       "08:45-12:45",
+       "16:45-19:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "laut Netzbetreiber",
+     "mindestverlagerung_kw": 100
+    }
+   },
    "modul3": [
     {
      "jahr": 2026,
@@ -54812,9 +54873,7 @@
    "preise_2027_vorlaeufig": null,
    "quelle_url": "https://www.sw-angermuende.de/media/files/2026_preisblatt_nne_sva.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB939431117011",

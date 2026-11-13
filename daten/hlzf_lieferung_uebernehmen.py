@@ -47,14 +47,16 @@ def main():
     have = {r["mastr_nr"] for r in ov}
     add, zurueck, z, ersetzt = [], [], Counter(), []
     for fn in ("ergebnis/hlzf/hlzf_2027_gelesen.csv", "ergebnis/hlzf/hlzf_auftrag7_gelesen.csv"):
-        for r in lesen(fn):
+        for r in sorted(lesen(fn), key=lambda x: x.get("jahr", ""), reverse=True):   # 2027 zuerst (Festlegung Nutzer 12.11.2026)
             mn = r["mastr_nr"]
             zeiten = [x for e in ("ns", "msns") for j in J for x in re.findall(r"\d\d:\d\d-\d\d:\d\d", r.get(f"{e}_{j}", ""))]
             if Z.get(mn) in ("gelesen_nutzer", "gelesen_unser"):
                 z["schon fertig"] += 1; continue
             if mn in have:
                 # bereits übernommen: neue Version des Kollegen (z. B. nachträglich auf anderes Dokument/Jahr umgestellt) nur bei Abweichung prüfen
-                alt = next(o for o in ov if o["mastr_nr"] == mn)
+                alt = next((o for o in ov if o["mastr_nr"] == mn), None)
+                if alt is None:      # in diesem Lauf schon übernommen (anderes Jahr derselben Zeile): 2027 steht zuerst, gilt für beide Jahre
+                    z["schon in diesem Lauf"] += 1; continue
                 if all((r.get(f"{e}_{j}", "") or "").strip() == (alt.get(f"hlzf_{e}_{j}", "") or "").strip() for e in ("ns", "msns") for j in J):
                     z["schon fertig"] += 1; continue
                 neu = True

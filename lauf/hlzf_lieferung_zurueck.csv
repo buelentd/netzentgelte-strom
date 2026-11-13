@@ -1,17 +1,11 @@
 ﻿mastr_nr;netzbetreiber;grund
-SNB911696239035;Energieversorgung Selb-Marktre;8 von 8 Zeiten nicht im Text: 15:30-18:30, 11:30-11:45, 12:00-12:30
 SNB910474681448;Stadtwerke Staßfurt GmbH;keine Zeiten in der Zeile
 SNB977374861035;Halberstadtwerke GmbH;Quelldatei nicht im Repo: Nutzer-Tabelle (Webseite)
 SNB925565312521;Stadtwerke Gaggenau;keine Zeiten in der Zeile
 SNB941650885558;VSE Verteilnetz GmbH;keine Zeiten in der Zeile
 SNB953011641437;Reußenköge Netz & Infrastruktu;keine Zeiten in der Zeile
 SNB954187049256;Stadtwerke Springe GmbH;Quelldatei nicht im Repo: SNB954187049256_hlzf_Veroeffentlichung-HLZF-2027_S
-SNB964592501355;Hertener Stadtwerke GmbH;Datei ohne Text (Bild): am Bild zu bestätigen
 SNB967186419241;Stadtwerke Bad Rodach;keine Zeiten in der Zeile
-SNB968949417344;Stadtwerke Bad Hersfeld GmbH;Quelldatei nicht im Repo: SNB968949417344_hlzf_HLZF-2027-Stw.-Bad-Hersfeld-G
-SNB971174411018;Gemeindewerke Heikendorf AoeR;4 von 4 Zeiten nicht im Text: 17:30-18:30, 17:15-19:45, 17:30-18:30
-SNB981460842488;Stromversorgung Angermuende Gm;Quelldatei nicht im Repo: SNB981460842488_hlzf_hochlastzeitfenster_sva_2027.
-SNB982713229933;Versorgungsbetrieb Waldbuettel;4 von 4 Zeiten nicht im Text: 16:30-19:30, 16:15-19:15, 16:15-19:15
 SNB990174285078;BIGGE ENERGIE GmbH & Co. KG;Quelldatei nicht im Repo: SNB990174285078_hlzf_Ergebnis-HLZF-Berechnung-BIGG
 SNB918516395612;Bielefelder Netz GmbH;keine Zeiten in der Zeile
 SNB924477581384;RheinNetz GmbH;keine Zeiten in der Zeile
@@ -21,36 +15,19 @@ SNB973074326355;ELE Verteilnetz GmbH;keine Zeiten in der Zeile
 SNB997465895442;Energie- und Baederbetrieb Hau;keine Zeiten in der Zeile
 SNB931431136771;Elektroenergieversorgung Cottb;4 von 8 Zeiten nicht im Text: 09:15-13:00, 17:00-19:00, 10:45-12:45
 SNB984863778941;Stadtwerke Mosbach GmbH;keine Zeiten in der Zeile
+SNB911696239035;Energieversorgung Selb-Marktre;8 von 8 Zeiten nicht im Text: 15:30-18:30, 11:30-11:45, 12:00-12:30
+SNB964592501355;Hertener Stadtwerke GmbH;Datei ohne Text (Bild): am Bild zu bestätigen
+SNB971174411018;Gemeindewerke Heikendorf AoeR;4 von 4 Zeiten nicht im Text: 17:30-18:30, 17:15-19:45, 17:30-18:30
+SNB982713229933;Versorgungsbetrieb Waldbuettel;4 von 4 Zeiten nicht im Text: 16:30-19:30, 16:15-19:15, 16:15-19:15
 SNB985701689504;Stadtwerke Fürstenfeldbruck Gm;Datei ohne Text (Bild): am Bild zu bestätigen
 SNB901665585874;GETEC net GmbH;keine Zeiten in der Zeile
 SNB905238986457;enercity GridPartner GmbH;keine Zeiten in der Zeile
 SNB910474681448;Stadtwerke Staßfurt GmbH;keine Zeiten in der Zeile
-SNB911696239035;Energieversorgung Selb-Marktre;8 von 8 Zeiten nicht im Text: 15:30-18:30, 11:30-11:45, 12:00-12:30
-SNB900123507953;Stadtwerke Steinfurt GmbH;keine Zeiten in der Zeile
-SNB919654931526;Stadtwerke Blankenburg GmbH;keine Zeiten in der Zeile
-SNB920357766414;Leitungspartner GmbH;keine Zeiten in der Zeile
-SNB930122681040;werkkraft GmbH;5 von 5 Zeiten nicht im Text: 15:45-16:00, 17:15-17:30, 09:30-12:30
-SNB926394976090;Staedtische Werke Spremberg (L;keine Zeiten in der Zeile
-SNB925831583235;Energieversorgung Wolfgang Sch;keine Zeiten in der Zeile
-SNB929383206369;Elektrizitaetswerk Simbach Gmb;keine Zeiten in der Zeile
 SNB953011641437;Reußenköge Netz & Infrastruktu;keine Zeiten in der Zeile
-SNB964592501355;Hertener Stadtwerke GmbH;Datei ohne Text (Bild): am Bild zu bestätigen
 SNB967186419241;Stadtwerke Bad Rodach;keine Zeiten in der Zeile
-SNB968949417344;Stadtwerke Bad Hersfeld GmbH;Quelldatei nicht im Repo: SNB968949417344_hlzf_HLZF-2027-Stw.-Bad-Hersfeld-G
-SNB971174411018;Gemeindewerke Heikendorf AoeR;4 von 4 Zeiten nicht im Text: 17:30-18:30, 17:15-19:45, 17:30-18:30
-SNB967127819703;Stadtwerke Hockenheim;keine Zeiten in der Zeile
-SNB972740218178;Stadtwerke Marburg GmbH;keine Zeiten in der Zeile
 SNB988606051575;Elektrizitaetsgenossenschaft U;keine Zeiten in der Zeile
-SNB976863966633;Rothmoser GmbH & Co. KG;keine Zeiten in der Zeile
-SNB981336194529;Gemeindewerke Nuemdlingen;keine Zeiten in der Zeile
-SNB983029590205;Stadtwerke Guestrow GmbH;keine Zeiten in der Zeile
-SNB985206131959;Stadtwerke Waldkirchen;keine Zeiten in der Zeile
 SNB990362338043;Avacon Netz GmbH;keine Zeiten in der Zeile
-SNB981460842488;Stromversorgung Angermuende Gm;Quelldatei nicht im Repo: SNB981460842488_hlzf_hochlastzeitfenster_sva_2027.
-SNB982713229933;Versorgungsbetrieb Waldbuettel;4 von 4 Zeiten nicht im Text: 16:30-19:30, 16:15-19:15, 16:15-19:15
 SNB918516395612;Bielefelder Netz GmbH;3 von 3 Zeiten nicht im Text: 13:00-14:00, 17:15-19:30, 17:15-19:45
-SNB936176430474;Stadtwerk Tauberfranken GmbH;keine Zeiten in der Zeile
-SNB938413573104;QuartiersNetz Bayern GmbH;keine Zeiten in der Zeile
 SNB917593691679;Elektrizitaetswerk Unterwoesse;keine Zeiten in der Zeile
 SNB925861098273;Stadtwerke Uslar GmbH;keine Zeiten in der Zeile
 SNB938620426132;Stadtwerke Tirschenreuth;keine Zeiten in der Zeile
@@ -61,6 +38,55 @@ SNB981984960101;Stadtwerke Hameln Weserberglan;keine Zeiten in der Zeile
 SNB991381724831;Fuerstlich Fugger von Gloettsc;keine Zeiten in der Zeile
 SNB995332374861;GETEC Quartier GmbH;keine Zeiten in der Zeile
 SNB999865563754;GETEC grid solutions GmbH;keine Zeiten in der Zeile
+SNB924477581384;RheinNetz GmbH;keine Zeiten in der Zeile
+SNB931294328658;Stadtwerke Neustadt an der Orl;Quelldatei nicht im Repo: SNB931294328658_hlzf2027.pdf
+SNB932685335767;Stadtwerke Vilsbiburg Kommunal;Quelldatei nicht im Repo: SNB932685335767_hlzf2027.pdf
+SNB972264483465;Überlandwerk Eppler GmbH;Quelldatei nicht im Repo: SNB972264483465_hlzf2027.pdf
+SNB922514070884;Stadtwerke Bliestal GmbH;Quelldatei nicht im Repo: SNB922514070884_hlzf2027.pdf
+SNB961816584323;Stadtwerke Mengen;Quelldatei nicht im Repo: SNB961816584323_hlzf2027.pdf
+SNB913730249284;Stadtwerke Iserlohn GmbH;Quelldatei nicht im Repo: SNB913730249284_hlzf2027.pdf
+SNB990892864395;Stadtwerke Ditzingen GmbH & Co;Quelldatei nicht im Repo: SNB990892864395_hlzf2027_MSNS.pdf
+SNB929383206369;Elektrizitätswerk Simbach GmbH;Quelldatei nicht im Repo: SNB929383206369_hlzf2027.pdf
+SNB939779591900;Stadtwerke Bad Aibling;Quelldatei nicht im Repo: SNB939779591900_hlzf2027.pdf
+SNB977581070640;Stadtwerke Dettelbach;Quelldatei nicht im Repo: SNB977581070640_hlzf2027.pdf
+SNB911696239035;Energieversorgung Selb-Marktre;keine Zeiten in der Zeile
+SNB942274543879;Regionalnetze Linzgau GmbH;Quelldatei nicht im Repo: SNB942274543879_hlzf2027.pdf
+SNB926427521488;Gebrüder Miller, Elektrizitäts;Quelldatei nicht im Repo: SNB926427521488_hlzf2027.pdf
+SNB984571613121;Gemeindewerke Neuendettelsau;Quelldatei nicht im Repo: SNB984571613121_hlzf2027.pdf
+SNB967794191157;AVU Netz GmbH;Quelldatei nicht im Repo: SNB967794191157_hlzf2027.html
+SNB949152526504;Stadtwerke Lindau (B) GmbH ＆ C;Quelldatei nicht im Repo: SNB949152526504_hlzf.html
+SNB948470226516;Stadtwerke Malchow;Quelldatei nicht im Repo: SNB948470226516_hlzf.html
+SNB924453035597;Hellenstein-Energie-Logistik G;Quelldatei nicht im Repo: SNB924453035597_hlzf.html
+SNB966809778161;Stadtwerke Groß-Gerau Versorgu;Quelldatei nicht im Repo: SNB966809778161_hlzf2027.html
+SNB966216072913;Gemeindewerke Georgensgmünd;Quelldatei nicht im Repo: SNB966216072913_hlzf2027.html
+SNB946373984786;Wendelsteinbahn Verteilnetz Gm;Quelldatei nicht im Repo: SNB946373984786_0823_hlzf_2027.pdf
+SNB937406641264;Stadtwerke Ansbach GmbH;keine Zeiten in der Zeile
+SNB983792571722;Gemeindewerke Wadgassen GmbH;keine Zeiten in der Zeile
+SNB967127819703;Stadtwerke Hockenheim;keine Zeiten in der Zeile
+SNB940437318166;NEW Netz GmbH;keine Zeiten in der Zeile
+SNB972740218178;Stadtwerke Marburg GmbH;keine Zeiten in der Zeile
+SNB936176430474;Stadtwerk Tauberfranken GmbH;keine Zeiten in der Zeile
+SNB938413573104;QuartiersNetz Bayern GmbH;keine Zeiten in der Zeile
+SNB965379905076;Stadtwerke Langen GmbH;keine Zeiten in der Zeile
+SNB911696239035;Energieversorgung Selb-Marktre;8 von 8 Zeiten nicht im Text: 15:30-18:30, 11:30-11:45, 12:00-12:30
+SNB900123507953;Stadtwerke Steinfurt GmbH;keine Zeiten in der Zeile
+SNB919654931526;Stadtwerke Blankenburg GmbH;keine Zeiten in der Zeile
+SNB920357766414;Leitungspartner GmbH;keine Zeiten in der Zeile
+SNB930122681040;werkkraft GmbH;5 von 5 Zeiten nicht im Text: 15:45-16:00, 17:15-17:30, 09:30-12:30
+SNB926394976090;Staedtische Werke Spremberg (L;keine Zeiten in der Zeile
+SNB925831583235;Energieversorgung Wolfgang Sch;keine Zeiten in der Zeile
+SNB929383206369;Elektrizitaetswerk Simbach Gmb;keine Zeiten in der Zeile
+SNB964592501355;Hertener Stadtwerke GmbH;Datei ohne Text (Bild): am Bild zu bestätigen
+SNB971174411018;Gemeindewerke Heikendorf AoeR;4 von 4 Zeiten nicht im Text: 17:30-18:30, 17:15-19:45, 17:30-18:30
+SNB967127819703;Stadtwerke Hockenheim;keine Zeiten in der Zeile
+SNB972740218178;Stadtwerke Marburg GmbH;keine Zeiten in der Zeile
+SNB976863966633;Rothmoser GmbH & Co. KG;keine Zeiten in der Zeile
+SNB981336194529;Gemeindewerke Nuemdlingen;keine Zeiten in der Zeile
+SNB983029590205;Stadtwerke Guestrow GmbH;keine Zeiten in der Zeile
+SNB985206131959;Stadtwerke Waldkirchen;keine Zeiten in der Zeile
+SNB982713229933;Versorgungsbetrieb Waldbuettel;4 von 4 Zeiten nicht im Text: 16:30-19:30, 16:15-19:15, 16:15-19:15
+SNB936176430474;Stadtwerk Tauberfranken GmbH;keine Zeiten in der Zeile
+SNB938413573104;QuartiersNetz Bayern GmbH;keine Zeiten in der Zeile
 SNB930558787330;Elektrizitaets-Versorgungs-Gen;keine Zeiten in der Zeile
 SNB926559276683;Gemeindewerke Gundelfingen Gmb;keine Zeiten in der Zeile
 SNB928992067729;Stadtwerke Landshut;keine Zeiten in der Zeile
@@ -68,9 +94,33 @@ SNB922722422505;Alzchem Netz GmbH;keine Zeiten in der Zeile
 SNB929262647085;Stromnetz Weilheim GmbH & Co. ;keine Zeiten in der Zeile
 SNB940478286561;Stadtwerke Olching Stromnetz G;keine Zeiten in der Zeile
 SNB964273276183;Stadtwerke Fellbach GmbH;keine Zeiten in der Zeile
-SNB971770548286;VersorgungsBetriebe Elbe GmbH;keine Zeiten in der Zeile
+SNB971770548286;VersorgungsBetriebe Elbe GmbH;Quelldatei nicht im Repo: SNB971770548286_hlzf2026.pdf
 SNB916328839515;Elektrizitaetswerk Diessen Sta;keine Zeiten in der Zeile
 SNB995034381532;Stadtwerke Senftenberg GmbH;Datei ohne Text (Bild): am Bild zu bestätigen
-SNB924477581384;RheinNetz GmbH;keine Zeiten in der Zeile
 SNB990562890006;Stadtwerke Dinkelsbuehl;keine Zeiten in der Zeile
 SNB946090906887;Stadtwerke Leine-Solling GmbH;keine Zeiten in der Zeile
+SNB931294328658;Stadtwerke Neustadt an der Orl;Quelldatei nicht im Repo: SNB931294328658_hlzf2026.pdf
+SNB932685335767;Stadtwerke Vilsbiburg Kommunal;Quelldatei nicht im Repo: SNB932685335767_hlzf2026.pdf
+SNB961816584323;Stadtwerke Mengen;Quelldatei nicht im Repo: SNB961816584323_hlzf2026.pdf
+SNB985347645049;Stadtwerke Nettetal GmbH;Quelldatei nicht im Repo: SNB985347645049_hlzf2026.pdf
+SNB999405828558;ENRO Ludwigsfelde Netz GmbH;Quelldatei nicht im Repo: SNB999405828558_hlzf2026.pdf
+SNB903808877785;Stromnetz Pullach GmbH;keine Zeiten in der Zeile
+SNB967812386411;SWW Wunsiedel GmbH;keine Zeiten in der Zeile
+SNB914731268120;MEGA Monheimer Elektrizitäts- ;Quelldatei nicht im Repo: SNB914731268120_hlzf2026.pdf
+SNB971345683381;Stadtwerke Wolmirstedt GmbH;Quelldatei nicht im Repo: SNB971345683381_hlzf2026.pdf
+SNB971641248901;Stadtwerke Straubing Strom und;Quelldatei nicht im Repo: SNB971641248901_hlzf2026.pdf
+SNB968694358282;Stadtwerke Heiligenhaus GmbH;Quelldatei nicht im Repo: SNB968694358282_hlzf2026.pdf
+SNB949152526504;Stadtwerke Lindau (B) GmbH ＆ C;Quelldatei nicht im Repo: SNB949152526504_hlzf.html
+SNB948470226516;Stadtwerke Malchow;Quelldatei nicht im Repo: SNB948470226516_hlzf.html
+SNB979202870318;Stadtwerke Rothenburg o.d.T. G;Quelldatei nicht im Repo: SNB979202870318_hlzf.html
+SNB924453035597;Hellenstein-Energie-Logistik G;Quelldatei nicht im Repo: SNB924453035597_hlzf.html
+SNB924330086940;Stadtwerke Bad Harzburg GmbH;Quelldatei nicht im Repo: SNB924330086940_hlzf.html
+SNB946373984786;Wendelsteinbahn Verteilnetz Gm;Quelldatei nicht im Repo: SNB946373984786_0823_hlzf_2026.pdf
+SNB901665585874;GETEC net GmbH;keine Zeiten in der Zeile
+SNB995332374861;GETEC Quartier GmbH;keine Zeiten in der Zeile
+SNB999865563754;GETEC grid solutions GmbH;keine Zeiten in der Zeile
+SNB918070278383;Stadtwerke Meerane GmbH;keine Zeiten in der Zeile
+SNB959567240391;Stadtwerke Reichenbach/Vogtlan;keine Zeiten in der Zeile
+SNB933235634552;Stadtwerke Torgau GmbH;keine Zeiten in der Zeile
+SNB956377097702;Stadtwerke Baiersdorf KU;keine Zeiten in der Zeile
+SNB914508596067;WiDe Flex Bau + Service GmbH;keine Zeiten in der Zeile

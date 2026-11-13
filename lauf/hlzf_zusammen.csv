@@ -205,7 +205,7 @@ SNB982241851170;gelesen_unser;keins;keins;keins;17:15-19:15;keins;keins;17:45-18
 SNB991381724831;raster_grafik;;;;;;;;;;;SNB991381724831_0204_hlzf_831hlzfHochlastzeitfenster2025.pdf
 SNB953422913031;gelesen_unser;;;;;keins;keins;17:45-18:30;17:30-19:15;;;https://www.freisinger-stadtwerke.de/de/Netze/Stromnetz/Netzdaten-Strom/Netzzugang-Entgelte/20260508-Hochlastzeitfenster-2026-gem.-19-Abs.-2-S.-1-StromNEV.pdf
 SNB926427521488;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB926427521488_0206_hlzf_NB926427521488hlzfstromnevhtml.pdf
-SNB961497906636;gelesen_kollege_verifiziert;12:00-15:00;12:15-13:30;;;13:15-14:45;;;;;;eingang/pdfs_neu/SNB961497906636_hlzf_hochlastzeitfenster_2026.pdf
+SNB961497906636;gelesen_kollege_verifiziert;12:45-14:15;13:30-14:30;;;12:30-14:30;12:45-14:00;;;;;eingang/pdfs_neu/SNB961497906636_hlzf_hochlastzeitfenster_2026.pdf
 SNB968325295962;gelesen_nutzer;11:15-11:45;13:15-13:30;keins;keins;keins;keins;17:45-18:45;17:00-19:45;;;https://glattbach.de/_Resources/Persistent/3/9/a/a/39aae220a1c210c69f560eb443327d92245f9e1a/Hochlastzeitfenster_NEV_SN_GLA_2026_Ver%C3%B6ffentlichung.pdf
 SNB984338214660;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB998167765620;gelesen_unser;18:15-19:45;keins;keins;17:30-20:00;keins;keins;keins;16:45-18:45;;;https://www.gemeindewerke-baiersbronn.de/resources/02%20Datenobjekte/Strom/Hochlastzeitfenster-2026.pdf
@@ -394,7 +394,7 @@ SNB983359308570;gelesen_unser;12:15-15:00;12:30-15:00;keins;keins;keins;keins;16
 SNB918290153354;gelesen_unser;11:30-14:30;keins;keins;keins;keins;keins;keins;17:00-19:30;;;https://sw-duerkheim.de/de/Portfolio/Netze1/Stromnetz/Netzzugang-Entgelte/PE-Hochlastzeitfenster-fuer-2026.pdf
 SNB924330086940;kein_dokument_oder_adresse;;;;;;;;;;;SNB924330086940_0394_hlzf_0112022ZusammenfassungHLZF2022.pdf
 SNB953975499051;gelesen_unser;keins;keins;keins;17:00-19:30, 20:00-22:30;keins;keins;keins;17:00-19:30, 21:00-22:15;;;SNB953975499051_0395_hlzf.pdf
-SNB968949417344;gelesen_ungeprueft;keins;keins;keins;18:00-19:30;keins;keins;keins;18:00-19:30;;;https://www.stadtwerke-hef.de/de/Kopfnavigation/Netze1/Stromnetz/HLZF-2026-Stadtwerke-Bad-Hersfeld-GmbH.pdf
+SNB968949417344;gelesen_aus_2027;;;17:45-18:15;17:00-19:30;;;17:45-18:15;17:00-19:30;;;eingang/pdfs_neu/SNB968949417344_hlzf_HLZF-2027-Stw.-Bad-Hersfeld-GmbH.pdf
 SNB911031559460;gelesen_unser;12:00-12:30;10:45-12:30, 12:45-13:15, 13:30-13:45;keins;keins;;;;;;;eingang: SNB911031559460_0397_hlzf.pdf
 SNB941424038838;gelesen_kollege_verifiziert;keins;keins;13:15-13:30, 17:00-17:15;17:45-18:00;keins;keins;13:15-13:30, 17:00-17:15;17:00-18:00;;;https://www.enwg-veroeffentlichungen.de/badnauheim/Netze/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-2026.pdf
 SNB977253144464;gelesen_nutzer;12:00-12:15;11:45-12:00;keins;keins;keins;keins;keins;11:30-12:45, 16:30-18:15;;;https://www.stw-badnes.de/de/Strom/Netz/Netzzugang-Entgelte/Hochlast-Zeitfenster-2026.pdf
@@ -754,7 +754,7 @@ SNB903808877785;kein_dokument_oder_adresse;;;;;;;;;;;
 SNB986482940686;gelesen_unser;keins;11:15-13:00;keins;keins;keins;keins;10:00-14:15;keins;30;;https://www.stromnetz-weiden.de/_Resources/Persistent/2/4/b/6/24b69ea58dda0438a56d89fa07c2d0a6d7cf4825/Hochlast_Zeitfenster_2026%20%281%29.pdf
 SNB929262647085;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB929262647085_0754_hlzf.pdf
 SNB948673048298;gelesen_unser;keins;keins;keins;12:00-13:00;keins;keins;keins;16:45-20:45;;;https://stromnetz-herrenberg.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026_Stromnetzgesellschaft-Herrenberg.pdf
-SNB981460842488;zeitfenster_nicht_lesbar;;;;;;;;;;;SNB981460842488_0756_hlzf_2027.pdf
+SNB981460842488;gelesen_aus_2027;keins;keins;keins;08:45-12:45, 16:45-19:00;keins;keins;keins;08:45-12:45, 16:45-19:00;30;100;eingang/pdfs_neu/SNB981460842488_hlzf_hochlastzeitfenster_sva_2027.pdf
 SNB939431117011;gelesen_nutzer;keins;keins;keins;17:00-20:30;keins;keins;keins;17:00-20:00;30;;https://www.stromversorgung-inzell.de/wp-content/uploads/2025/10/Hochlastzeitfenster-2026.pdf
 SNB911969765803;gelesen_unser;keins;keins;16:30-19:30;11:30-14:30, 16:30-19:30;keins;keins;16:30-19:30;16:30-19:30;;;https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Staedtischen-Werke-Lauf/Netzzugang-Entgelte/StWL-HLZ-2026.pdf
 SNB916151866986;gelesen_unser;;;;;12:00-14:30, 15:00-15:15;11:30-11:45, 12:30-13:30, 14:00-14:30, 15:00-15:15;keins;keins;30;;eingang: SNB916151866986_0759_hlzf.pdf
