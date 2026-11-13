@@ -1,0 +1,166 @@
+URL: https://ggv.c-1621.maxcluster.net/cms/netz/allgemeine-daten/hochlastzeitfenster2025.php
+
+Strom
+Gas
+Klimaschutzprojekt
+Messstellenbetrieb
+Netz
+Unternehmen
+Hochlastzeitfenster
+StartseiteNetzAllgemeine DatenNetzbilanzierung Hochlastzeitfenster Hochlastzeitfenster 2025
+Netznutzung
+Netzentgelte
+Netzanschluss
+Netzzugang
+Stromhausanschluss/BKZ
+Steckerfertige PV-Anlagen
+Technische Anschlussbedingungen (TAB), Richtlinien
+Downloads
+Allgemeine Daten
+Straßenbeleuchtung
+Zählerwesen, Zählerplätze
+Ladeeinrichtung für Elektrofahrzeuge
+Konzessionserteilung, Betreuung Elektroinstallateure
+Netzbilanzierung
+Standard-Lastprofile (SLP)
+Tagesparameterabhängige Lastprofile (TLP)
+Download aller Profile
+Hochlastzeitfenster
+Strukturdaten
+Gleichbehandlungsprogramm
+Vereinbarung zum Abrechnungsmodell nach Tenor 5 GPKG
+Hochlastzeitfenster 2025
+
+Gemäß § 16 StromNEV werden die von Lieferanten und Letztverbrauchern zu zahlenden allgemeinen Netzentgelte ausgehend vom Prinzip der Verursachungsgerechtigkeit auf der Basis der sog. Gleichzeitigkeitsfunktion ermittelt.
+
+Abweichend hiervon eröffnet § 19 Abs. 2 StromNEV die Möglichkeit, einem Letztverbraucher unter bestimmten Voraussetzungen ein individuelles Netzentgelt anzubieten. Ein Anspruch auf Angebot eines individuellen Netzentgelts besteht gemäß § 19 Abs. 2 S. 1 StromNEV zum einen dann, wenn auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder Umspannebene abweicht.
+
+Die Hochlastzeitfenster für das Jahr 2025 bei GGV wurden gem. der Festlegung der Bundesnetzagentur vom 11.12.2013 (BK4-13-739) ermittelt. Diese zeigen sich wie folgt:
+
+Netz-Ebene   Jahreszeit   von   bis   Dauer
+Mittelspannung 20 kV (NE_05)   Winter (1)   09:45 Uhr   12:45 Uhr   3,00 Std.
+   Winter (2)   14:30 Uhr   15:30 Uhr   1,00 Std.
+   Winter (3)   16:45 Uhr   18:30 Uhr   1,75 Std.
+   Frühling (1)   09:30 Uhr   11:00 Uhr   1,50 Std.
+   Frühling (2)   12:45 Uhr   14:15 Uhr   1,50 Std.
+   Sommer   11:00 Uhr   13:00 Uhr   2,00 Std.
+   Herbst   13:30 Uhr   14:30 Uhr   1,00 Std.
+Umspannung 20 kV m. Umsp. (NE_06)   Winter (1)   11:30 Uhr   12:45 Uhr   1,25 Std.
+   Winter (2)   14:00 Uhr   15:00 Uhr   1,00 Std.
+   Winter (3)   16:45 Uhr   19:45 Uhr   3,00 Std.
+   Frühling (1)   11:15 Uhr   12:15 Uhr   1,00 Std.
+   Frühling (2)   17:45 Uhr   19:30 Uhr   1,75 Std.
+   Sommer (1)   12:00 Uhr   13:00 Uhr   1,00 Std.
+   Sommer (2)   19:00 Uhr   21:00 Uhr   2,00 Std.
+   Herbst   17:00 Uhr   19:15 Uhr   2,25 Std.
+Niederspannung 1 kV (NE_07)   Winter (1)   11:45 Uhr   14:15 Uhr   2,50 Std.
+   Winter (2)   17:30 Uhr   19:15 Uhr   1,75 Std.
+   Frühling   11:15 Uhr   12:15 Uhr   1,00 Std.
+   Sommer   12:30 Uhr   13:30 Uhr   1,00 Std.
+   Herbst (1)   11:30 Uhr   12:30 Uhr   1,00 Std.
+   Herbst (2)   17:00 Uhr   19:30 Uhr   2,50 Std.
+
+Hinweis zu den Messwerten eines Lastgangzählers:
+Eine Messperiode erstreckt sich über 15 Minuten und startet jeweils zur vollen Viertelstunde. Ein Messwert wird am Ende der Messperiode für den Zeitraum der gerade abgelaufenen Messperiode abgespeichert. Der Wert um z. B. 10:15 Uhr bezieht sich somit auf einen Mess-Zeitraum von 10:00 Uhr bis 10:15 Uhr. Wenn ein Hochlastzeitfenster um 10:15 Uhr beginnt, dann liegt der Messwert um 10:15 Uhr nicht im Hochlastzeitfenster.
+
+Letzte Änderung am 31.10.2024
+
+Hinweis zur „Wahloption“: 
+
+Ein Kriterium für den Anspruch auf ein individuelles Netzentgelt gem. §19 StromNEV ist die Überschreitung der Bagatellgrenze in Höhe von 500 €. Sollte die Verlagerung der Leistung in die Nebenlastzeitfenster zu einer Netzentgeltminderung von weniger als 500 € führen, so entfällt der Anspruch auf die Netzentgeltminderung.
+
+Hierbei kommt es auch auf die Art der Ermittlung des Standard-Netzentgelts und dem verminderten Netzentgelt an. Das Standard-Netzentgelt wird mit dem Arbeitspreis (AP) und dem (LP) gem. Benutzungsdauer (B-Dauer) ermittelt. Hierbei kommt es darauf an, ob die B-Dauer über oder unter 2.500 h/a liegt. 
+
+Die B-Dauer wird ermittelt, indem die Jahresenergiemenge durch den höchsten Leistungswert dividiert wird. Es gibt die Möglichkeit, die sog. „Wahloption“ auszusprechen. In dem Fall wird das verminderte Netzentgelt grundsätzlich mit den Konditionen der Kategorie „> 2.500 h/a“ berechnet – auch wenn die Benutzungsdauer der physikalischen Abnahme eine B-Dauer von weniger als 2.500 h/a ergeben würde. Das Standard-Netzentgelt wird gemäß der physikalischen Abnahme ermittelt. Daher würde AP und LP ggf. gem. den Konditionen „< 2.500 h/a“ berechnet, das individuelle in diesem Fall jedoch mit den Konditionen „> 2.500 h/a“. 
+
+Die Wahloption muss vom Netzkunden spätestens zum 30.09. für das Folgejahr angemeldet werden. Der Netzbetreiber bestätigt diese Wahl. Nach dem 30.09. kann das Verfahren für das Folgejahr nicht mehr geändert werden. 
+
+Eine ausgesprochen Wahl-Option gilt auch für die Folgejahre bis zu einer Mitteilung an den Netzbetreiber spätestens zum 30.09. für das Folgejahr, indem die Wahloption widerrufen wird.
+
+Letzte Änderung am 31.10.2024
+
+Hochlastzeitfenster 2027
+
+ 
+Kontakt
+
+GGV Stadtwerke Groß-Gerau
+Versorgungs GmbH
+
+Vertrieb, Netz und Finanzen
+Darmstädter Straße 53
+64521 Groß-Gerau
+Telefon (0 61 52) 17 20-0
+E-Mail nrgvrtrbggv-nrgd
+
+Verbrauchsabrechnung
+Frankfurter Straße 24
+64521 Groß-Gerau
+Telefon (0 61 52) 93 15-93
+
+Bereitschaftsdienst
+Telefon (0 800) 00 93 150
+
+Ihre Nachricht
+
+Kontaktformular
+
+* Pflichtfeld
+
+Absenden
+ 
+Strom
+Tarife Stadt
+Tarife Region
+Service
+Kontakt
+Gas
+Tarif
+Service
+Kontakt
+Netz
+Netznutzung
+Allgemeine Daten
+Unternehmen
+Versorgungsgebiet
+Die GGV in Zahlen
+Partner
+Insider Informationen
+Stellenangebote
+Barrierefreiheitserklärung
+Sonstiges
+Impressum
+Datenschutz
+Datenschutzerklärung GGV-App
+Datenschutzerklärung Netzanschlussportal
+ 
+ 
+
+Netz-Ebene   Jahreszeit   von   bis   Dauer
+Mittelspannung 20 kV (NE_05)   Winter (1)   09:45 Uhr   12:45 Uhr   3,00 Std.
+   Winter (2)   14:30 Uhr   15:30 Uhr   1,00 Std.
+   Winter (3)   16:45 Uhr   18:30 Uhr   1,75 Std.
+   Frühling (1)   09:30 Uhr   11:00 Uhr   1,50 Std.
+   Frühling (2)   12:45 Uhr   14:15 Uhr   1,50 Std.
+   Sommer   11:00 Uhr   13:00 Uhr   2,00 Std.
+   Herbst   13:30 Uhr   14:30 Uhr   1,00 Std.
+Umspannung 20 kV m. Umsp. (NE_06)   Winter (1)   11:30 Uhr   12:45 Uhr   1,25 Std.
+   Winter (2)   14:00 Uhr   15:00 Uhr   1,00 Std.
+   Winter (3)   16:45 Uhr   19:45 Uhr   3,00 Std.
+   Frühling (1)   11:15 Uhr   12:15 Uhr   1,00 Std.
+   Frühling (2)   17:45 Uhr   19:30 Uhr   1,75 Std.
+   Sommer (1)   12:00 Uhr   13:00 Uhr   1,00 Std.
+   Sommer (2)   19:00 Uhr   21:00 Uhr   2,00 Std.
+   Herbst   17:00 Uhr   19:15 Uhr   2,25 Std.
+Niederspannung 1 kV (NE_07)   Winter (1)   11:45 Uhr   14:15 Uhr   2,50 Std.
+   Winter (2)   17:30 Uhr   19:15 Uhr   1,75 Std.
+   Frühling   11:15 Uhr   12:15 Uhr   1,00 Std.
+   Sommer   12:30 Uhr   13:30 Uhr   1,00 Std.
+   Herbst (1)   11:30 Uhr   12:30 Uhr   1,00 Std.
+   Herbst (2)   17:00 Uhr   19:30 Uhr   2,50 Std.
+
+
+StromTarife StadtTarife RegionServiceKontaktGasTarifDownloadsKontaktKlimaschutzprojektProjekt GärresteverwertungMessstellenbetriebEntgelteDownloadsSmartMeterNetzNetznutzungNetzanschlussDownloadsAllgemeine DatenUnternehmenVersorgungsgebietAnsprechpartnerDie GGV in ZahlenPartnerInsider InformationenStellenangeboteBarrierefreiheitserklärung #searchBox2 { right: 0; top: 0; bottom: 0; position: absolute; display: flex; justify-content: center; align-items: center; cursor: pointer; } @media (max-width: 768px) { #searchBox2 { bottom: unset; height: 112px; } } .search-icon { width: 35px; height: 35px; } .submit-icon { width: 50px; height: 50px; filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(303deg) brightness(102%) contrast(88%); cursor: pointer; } .close-icon { width: 50px; height: 50px; filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(303deg) brightness(102%) contrast(88%); cursor: pointer; position: absolute; top: 25px; right: 25px; } .searchContainer { position: fixed; background-color: rgba(0, 76, 139, .9999); display: flex; justify-content: center; align-items: center; z-index: 999; height: 100vh; left: 0; bottom: -100vh; width: 100%; cursor: default; } #searchTerm { width: 100%; min-width: 300px; height: 40px; border: none; border-radius: 5px; background-color: white; padding: 10px 15px!important; font-size: 16px; } .submitButton { background-color: #fff; color: #004c8b; border: none; border-radius: 5px; padding: 10px 15px; font-size: 16px; cursor: pointer; } Suchen jQuery(function($){ const duration = 150; $('.search-icon').click(function(){ $('.searchContainer').animate({ bottom: 0 }, duration, function(){ $('#searchTerm').focus(); }); }); $('.closeContainer').on('click', function(){ $('#searchTerm').val(''); $('.searchContainer').animate({ bottom: '-100vh' }, duration); }); $('.onSubmit').on('click', function(){ const searchTerm = $('#searchTerm').val(); if(!searchTerm || !searchTerm.trim()){ alert('Bitte geben Sie einen Suchbegriff ein.'); return; } $('.searchContainer form').submit(); }); }); Hochlastzeitfenster StartseiteNetzAllgemeine DatenNetzbilanzierung Hochlastzeitfenster Hochlastzeitfenster 2025 NetznutzungNetzentgelteNetzanschlussNetzzugangStromhausanschluss/BKZSteckerfertige PV-AnlagenTechnische Anschlussbedingungen (TAB), RichtlinienDownloadsAllgemeine DatenStraßenbeleuchtungZählerwesen, ZählerplätzeLadeeinrichtung für ElektrofahrzeugeKonzessionserteilung, Betreuung ElektroinstallateureNetzbilanzierung Standard-Lastprofile (SLP) Tagesparameterabhängige Lastprofile (TLP) Download aller Profile Hochlastzeitfenster Strukturdaten Gleichbehandlungsprogramm Vereinbarung zum Abrechnungsmodell nach Tenor 5 GPKG Hochlastzeitfenster 2025 Gemäß § 16 StromNEV werden die von Lieferanten und Letztverbrauchern zu zahlenden allgemeinen Netzentgelte ausgehend vom Prinzip der Verursachungsgerechtigkeit auf der Basis der sog. Gleichzeitigkeitsfunktion ermittelt.Abweichend hiervon eröffnet § 19 Abs. 2 StromNEV die Möglichkeit, einem Letztverbraucher unter bestimmten Voraussetzungen ein individuelles Netzentgelt anzubieten. Ein Anspruch auf Angebot eines individuellen Netzentgelts besteht gemäß § 19 Abs. 2 S. 1 StromNEV zum einen dann, wenn auf Grund vorliegender oder prognostizierter Verbrauchsdaten oder auf Grund technischer oder vertraglicher Gegebenheiten offensichtlich ist, dass der Höchstlastbeitrag eines Letztverbrauchers vorhersehbar erheblich von der zeitgleichen Jahreshöchstlast aller Entnahmen dieser Netz- oder Umspannebene abweicht.Die Hochlastzeitfenster für das Jahr 2025 bei GGV wurden gem. der Festlegung der Bundesnetzagentur vom 11.12.2013 (BK4-13-739) ermittelt. Diese zeigen sich wie folgt: Netz-Ebene Jahreszeit von bis Dauer Mittelspannung 20 kV (NE_05) Winter (1) 09:45 Uhr 12:45 Uhr 3,00 Std. Winter (2) 14:30 Uhr 15:30 Uhr 1,00 Std. Winter (3) 16:45 Uhr 18:30 Uhr 1,75 Std. Frühling (1) 09:30 Uhr 11:00 Uhr 1,50 Std. Frühling (2) 12:45 Uhr 14:15 Uhr 1,50 Std. Sommer 11:00 Uhr 13:00 Uhr 2,00 Std. Herbst 13:30 Uhr 14:30 Uhr 1,00 Std. Umspannung 20 kV m. Umsp. (NE_06) Winter (1) 11:30 Uhr 12:45 Uhr 1,25 Std. Winter (2) 14:00 Uhr 15:00 Uhr 1,00 Std. Winter (3) 16:45 Uhr 19:45 Uhr 3,00 Std. Frühling (1) 11:15 Uhr 12:15 Uhr 1,00 Std. Frühling (2) 17:45 Uhr 19:30 Uhr 1,75 Std. Sommer (1) 12:00 Uhr 13:00 Uhr 1,00 Std. Sommer (2) 19:00 Uhr 21:00 Uhr 2,00 Std. Herbst 17:00 Uhr 19:15 Uhr 2,25 Std. Niederspannung 1 kV (NE_07) Winter (1) 11:45 Uhr 14:15 Uhr 2,50 Std. Winter (2) 17:30 Uhr 19:15 Uhr 1,75 Std. Frühling 11:15 Uhr 12:15 Uhr 1,00 Std. Sommer 12:30 Uhr 13:30 Uhr 1,00 Std. Herbst (1) 11:30 Uhr 12:30 Uhr 1,00 Std. Herbst (2) 17:00 Uhr 19:30 Uhr 2,50 Std. Hinweis zu den Messwerten eines Lastgangzählers:Eine Messperiode erstreckt sich über 15 Minuten und startet jeweils zur vollen Viertelstunde. Ein Messwert wird am Ende der Messperiode für den Zeitraum der gerade abgelaufenen Messperiode abgespeichert. Der Wert um z. B. 10:15 Uhr bezieht sich somit auf einen Mess-Zeitraum von 10:00 Uhr bis 10:15 Uhr. Wenn ein Hochlastzeitfenster um 10:15 Uhr beginnt, dann liegt der Messwert um 10:15 Uhr nicht im Hochlastzeitfenster.Letzte Änderung am 31.10.2024 Hinweis zur „Wahloption“: Ein Kriterium für den Anspruch auf ein individuelles Netzentgelt gem. §19 StromNEV ist die Überschreitung der Bagatellgrenze in Höhe von 500 €. Sollte die Verlagerung der Leistung in die Nebenlastzeitfenster zu einer Netzentgeltminderung von weniger als 500 € führen, so entfällt der Anspruch auf die Netzentgeltminderung.Hierbei kommt es auch auf die Art der Ermittlung des Standard-Netzentgelts und dem verminderten Netzentgelt an. Das Standard-Netzentgelt wird mit dem Arbeitspreis (AP) und dem (LP) gem. Benutzungsdauer (B-Dauer) ermittelt. Hierbei kommt es darauf an, ob die B-Dauer über oder unter 2.500 h/a liegt. Die B-Dauer wird ermittelt, indem die Jahresenergiemenge durch den höchsten Leistungswert dividiert wird. Es gibt die Möglichkeit, die sog. „Wahloption“ auszusprechen. In dem Fall wird das verminderte Netzentgelt grundsätzlich mit den Konditionen der Kategorie „> 2.500 h/a“ berechnet – auch wenn die Benutzungsdauer der physikalischen Abnahme eine B-Dauer von weniger als 2.500 h/a ergeben würde. Das Standard-Netzentgelt wird gemäß der physikalischen Abnahme ermittelt. Daher würde AP und LP ggf. gem. den Konditionen „< 2.500 h/a“ berechnet, das individuelle in diesem Fall jedoch mit den Konditionen „> 2.500 h/a“. Die Wahloption muss vom Netzkunden spätestens zum 30.09. für das Folgejahr angemeldet werden. Der Netzbetreiber bestätigt diese Wahl. Nach dem 30.09. kann das Verfahren für das Folgejahr nicht mehr geändert werden. Eine ausgesprochen Wahl-Option gilt auch für die Folgejahre bis zu einer Mitteilung an den Netzbetreiber spätestens zum 30.09. für das Folgejahr, indem die Wahloption widerrufen wird.Letzte Änderung am 31.10.2024Hochlastzeitfenster 2027 Kontakt GGV Stadtwerke Groß-GerauVersorgungs GmbHVertrieb, Netz und FinanzenDarmstädter Straße 5364521 Groß-GerauTelefon (0 61 52) 17 20-0E-Mail nrgvrtrbggv-nrgdVerbrauchsabrechnungFrankfurter Straße 2464521 Groß-GerauTelefon (0 61 52) 93 15-93BereitschaftsdienstTelefon (0 800) 00 93 150 Ihre Nachricht KontaktformularVorname*Name*E-Mail*Telefon*Nachricht* * Pflichtfeld Absenden/*<![CDATA[*/ $('#ggv_contact_form').submit(function(event){ event.preventDefault(); var firstname = $('input[name="firstname"]').val(); var lastname = $('input[name="lastname"]').val(); var mail = $('input[name="element_444016354"]').val(); var phone = $('input[name="element_444016374"]').val(); var message = $('textarea[name="message"]').val(); var strasse = $('input[name="strasse"]').val(); var form = $(this); if (!form[0].checkValidity()) { alert('Bitte füllen Sie alle Felder aus.'); } else { $.post("/formsubmit.php", {firstname: firstname, lastname: lastname, phone: phone, mail: mail, message: message, strasse: strasse}, function(result) { if(result.success) { $(form).trigger('reset'); alert('Vielen Dank für Ihre Anfrage.'); } else { alert('Leider ist ein Fehler aufgetreten, bitte kontaktieren Sie den Support.'); } }); } }); /*]]>*/ StromTarife StadtTarife RegionServiceKontaktGasTarifServiceKontaktNetzNetznutzungAllgemeine DatenUnternehmenVersorgungsgebietDie GGV in ZahlenPartnerInsider InformationenStellenangeboteBarrierefreiheitserklärungSonstigesImpressumDatenschutzDatenschutzerklärung GGV-AppDatenschutzerklärung Netzanschlussportal 
+
+
+
