@@ -43,3 +43,6 @@ Gelernte Fälle:
 - **Butzbach (13.11.2026):** kein eigenes Hochlastzeitfenster-Dokument; Rechenwert nur als getrennter Fallback (`ergebnis/hlzf_fallback.csv`, Herkunft und Konfidenz), nie in den Primärdaten.
 - **Werks-/Industrienetze (GETEC, Alzchem, BASF, Cassella, DB Energie, werkkraft …):** Sonderfall, keine Einzelwerte in den Hochlastzeitfenster-Spalten, Beleg im `bemerkung`.
 - **Suchjahr:** 2027 zuerst, 2026 nur als Rückfall (Crawler seit 13.11.2026).
+- **Namensfalle SWN (13.11.2026, Kollege):** `swneustadt.de` = Stadtwerke Neustadt an der Weinstraße, `swn-netze.de` = Stadtwerke Neustadt bei Coburg. Vor jeder Übernahme Impressum/Ort des Dokuments mit dem Netzbetreiber der MaStR-Nr. abgleichen.
+- **Sperren (Nutzerregel):** Kein Referer-Trick und keine Umgehung von Cloudflare/403/robots.txt; gesperrte Dokumente gehen in die Browser-Liste für den Nutzer.
+- **Vilsbiburg:** Links der Seite enthalten ein Leerzeichen statt Schrägstrich im Pfad; mit Schrägstrich lädt das PDF.
