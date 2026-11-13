@@ -480,6 +480,12 @@ async def main_async(args):
         korr = {nr2m[r["nr"]]: r["website"] for r in csv.DictReader(open("lauf/website_korrektur.csv", encoding="utf-8-sig"), delimiter=";") if r["nr"] in nr2m}
     except Exception:
         pass
+    hinweise = {}
+    try:
+        for h in csv.DictReader(open("lauf/nutzer_hinweise.csv", encoding="utf-8-sig"), delimiter=";"):
+            hinweise.setdefault(h["mastr_nr"], []).append(h["url"])
+    except Exception:
+        pass
     auftraege = []
     for r in liste:
         k = r["mastr_nr"]
@@ -495,7 +501,9 @@ async def main_async(args):
                 if pu.scheme and pu.netloc:      # Startseite des Netz-Hosts der 2026-Quelle (z. B. netze.stadtwerke-witten.de): dort liegen die Veröffentlichungen (Lerneffekt Witten 13.11.2026)
                     extra.insert(0, f"{pu.scheme}://{pu.netloc}/")
                     extra.insert(1, f"{pu.scheme}://{pu.netloc}/netzentgelte")
-        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w, list(dict.fromkeys(extra))[:5]))
+        for h in hinweise.get(k, []):       # Adressen vom Nutzer (lauf/nutzer_hinweise.csv) zuerst, nichts geht verloren
+            extra.insert(0, h)
+        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w, list(dict.fromkeys(extra))[:6]))
     if args.max:
         auftraege = auftraege[:args.max]
     drossel = Drossel(1.0)
