@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2027 (SLP und RLM): Zusammenfassung
 
-Stand 13.11.2026 13:11, 522 Netzbetreiber bzw. Netzgebiete
+Stand 13.11.2026 13:25, 522 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 257 | 49% |
-| pruefen | 128 | 25% |
-| kein_preisblatt | 111 | 21% |
-| blockiert | 17 | 3% |
+| ok | 261 | 50% |
+| pruefen | 131 | 25% |
+| kein_preisblatt | 102 | 20% |
+| blockiert | 19 | 4% |
 | robots | 8 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
+Preisstand (nur ok): vorläufig 217, endgültig 27, unklar 17
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,15 ct/kWh (Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG)
 - Maximum: 13,94 ct/kWh (Netzbetrieb Hirschberg GmbH ＆ Co. KG)
-- Median: 7,33 ct/kWh (n = 286)
+- Median: 7,29 ct/kWh (n = 293)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,74 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 13,12 ct/kWh (GIG energy services GmbH)
-- Median: 6,61 ct/kWh (n = 345)
+- Median: 6,61 ct/kWh (n = 349)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 50,32 €/kW/a (Netzgesellschaft Frankfurt (Oder) mbH)
 - Maximum: 377,52 €/kW/a (Stadtwerke Barmstedt)
-- Median: 150,56 €/kW/a (n = 345)
+- Median: 150,49 €/kW/a (n = 349)
 
 ## Datenherkunft
 
@@ -95,7 +95,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 49. MVV Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 50. swa Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 
-## Status ok, aber Preisstand nicht endgültig (230)
+## Status ok, aber Preisstand nicht endgültig (234)
 
 - 8. Westfalen Weser Netz GmbH: vorläufig
 - 9. enercity Netz GmbH: vorläufig
@@ -173,6 +173,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 187. EVU Späth e.K.: vorläufig
 - 189. EW Geiger GmbH: vorläufig
 - 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: vorläufig
+- 191. EWR GmbH (Remscheid): vorläufig
 - 192. EWR Netz GmbH: vorläufig
 - 194. ews - Netz GmbH: vorläufig
 - 196. FairNetz GmbH: vorläufig
@@ -180,6 +181,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 205. Gebrüder Eirich GmbH ＆ Co. KG: vorläufig
 - 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: unklar
 - 208. Gemeinde Glattbach: vorläufig
+- 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: vorläufig
 - 214. Gemeindewerke Cadolzburg: vorläufig
 - 223. Gemeindewerke Großkrotzenburg GmbH: vorläufig
 - 224. Gemeindewerke Gundelfingen GmbH: vorläufig
@@ -234,6 +236,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 323. Netzgesellschaft Bitterfeld-Wolfen mbH: vorläufig
 - 326. Netzgesellschaft Frankfurt (Oder) mbH: vorläufig
 - 328. Netzgesellschaft Lübbecke mbH: vorläufig
+- 329. Netzgesellschaft Panketal GmbH: vorläufig
 - 330. Netzgesellschaft Potsdam GmbH: vorläufig
 - 331. Netzgesellschaft Schwerin mbH (NGS): unklar
 - 335. Neubrandenburger Stadtwerke GmbH: vorläufig
@@ -263,6 +266,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 389. Stadtwerke Bad Aibling: vorläufig
 - 390. Stadtwerke Bad Bergzabern GmbH: unklar
 - 392. Stadtwerke Bad Brückenau GmbH: vorläufig
+- 398. Stadtwerke Bad Nauheim GmbH: unklar
 - 399. Stadtwerke Bad Neustadt a. d. Saale: vorläufig
 - 400. Stadtwerke Bad Pyrmont GmbH: vorläufig
 - 402. Stadtwerke Bad Rodach: vorläufig
@@ -328,9 +332,9 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 518. Stadtwerke Hemau: vorläufig
 - 525. Stadtwerke Hollfeld: vorläufig
 
-## Restfälle (265)
+## Restfälle (261)
 
-### pruefen (128)
+### pruefen (131)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
@@ -401,6 +405,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 228. Gemeindewerke Herxheim: SLP-Werte nicht gefunden
 - 240. Gemeindewerke Nümbrecht GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 251. Gemeindewerke Wendelstein KU: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 252. Gemeindewerke Wildeck: weitere Preisblätter mit abweichenden NS-Werten: https://www.wildeck.de/gemeindewerke/stromversorgung/netz/netznutzung/preisblaetter/preisblatt-strom-netznutzungsentgelte-gw-wildeck-ab-01012017.pdf?ci
 - 257. GETEC net GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 262. GIG energy services GmbH: SLP-Werte nicht gefunden
 - 264. Greizer Energienetze GmbH: SLP-Werte nicht gefunden
@@ -419,6 +424,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 339. NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 344. nvb Nordhorner Versorgungsbetriebe GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 345. Oberhausener Netzgesellschaft mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 351. ovag Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 356. REDINET Burgenland GmbH: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (85.0, 43.32, 20.28, 14.52); SLP-Werte auffällig
 - 361. Remstalwerk Netzgesellschaft GmbH: SLP-Werte nicht gefunden
 - 364. Rothmoser GmbH ＆ Co. KG: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.42, 1.28); SLP-Werte auffällig
@@ -428,6 +434,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 386. Stadtwerke Arnstadt Netz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 393. Stadtwerke Bad Dürkheim GmbH: SLP-Werte nicht gefunden
+- 396. Stadtwerke Bad Hersfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-hef.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-2021-SW-Bad-Hersfeld-GmbH-endgueltig.pdf; RLM-Wer
 - 397. Stadtwerke Bad Kissingen GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 401. Stadtwerke Bad Reichenhall KU: SLP-Werte nicht gefunden
 - 412. Stadtwerke Baden-Baden: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 60.0000, 0.1644; RLM-Werte nicht gefunden
@@ -461,97 +468,88 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 522. Stadtwerke Hilden GmbH: SLP-Werte nicht gefunden
 - 523. Stadtwerke Hockenheim: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 
-### kein_preisblatt (111)
+### kein_preisblatt (102)
 
 - 57. Alzchem Netz GmbH: 3 Dokument(e) geprüft: gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument
 - 65. BEW Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
-- 66. BIGGE ENERGIE GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 66. BIGGE ENERGIE GmbH ＆ Co. KG: 15 Dokument(e) geprüft: HTTP 404; Kopf nennt [2025], nicht 2027; Kopf nennt [2026], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2026], nicht 2027; Jahr 2027 nicht im Dokument
 - 75. CPM Netz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 82. E-Werk Meckenheim/Pfalz: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
-- 83. E-Werk Rohrdorf Josef Haimmerer: 5 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 93. ELE Verteilnetz GmbH: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
-- 96. Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG: kein Preisblatt-Link gefunden (18 Seiten durchsucht)
-- 103. Elektrizitätsgenossenschaft e.G. Hasbergen: kein Preisblatt-Link gefunden (6 Seiten durchsucht)
-- 104. Elektrizitätsgenossenschaft Engelsberg eG: kein Preisblatt-Link gefunden (13 Seiten durchsucht)
-- 106. Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
-- 107. Elektrizitätsgenossenschaft Oesterweg eG: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
-- 111. Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
+- 82. E-Werk Meckenheim/Pfalz: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
+- 83. E-Werk Rohrdorf Josef Haimmerer: 6 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
+- 93. ELE Verteilnetz GmbH: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
+- 96. Elektrizitäts- und Wasserversorgungsgenossenschaft Vagen eG: kein Preisblatt-Link gefunden (22 Seiten durchsucht)
+- 103. Elektrizitätsgenossenschaft e.G. Hasbergen: 1 Dokument(e) geprüft: HTTP 404
+- 104. Elektrizitätsgenossenschaft Engelsberg eG: kein Preisblatt-Link gefunden (14 Seiten durchsucht)
+- 106. Elektrizitätsgenossenschaft Nordhalben und Umgebung e. G.: 2 Dokument(e) geprüft: gültig ab [2026], nicht 2027
+- 107. Elektrizitätsgenossenschaft Oesterweg eG: 2 Dokument(e) geprüft: gültig ab [2021], nicht 2027; HTTP 404
+- 111. Elektrizitätsgenossenschaft Vogling ＆ Angrenzer eG: 1 Dokument(e) geprüft: HTTP 404
 - 113. Elektrizitätsnetze Allgäu GmbH: 4 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 115. Elektrizitätswerk Bruchmühlbach-Miesau: 10 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
-- 119. Elektrizitätswerk Goldbach-Hösbach GmbH ＆ Co. KG: 1 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 123. Elektrizitätswerk Max Peissker: 3 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 129. Elektrizitätswerk Tegernsee Carl Miller KG: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 134. Elektrizitätswerke Schönau Netze GmbH: 8 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; Download-Fehler: APIRequestContext.get: Timeout 30000ms exceeded.
-- 140. Energie Calw GmbH: 2 Dokument(e) geprüft: Kopf nennt [2026], nicht 2027
-- 145. Energie- und Wasserversorgung Bruchsal GmbH: 4 Dokument(e) geprüft: Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV); Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
-- 149. Energie- und Wasserwerke Bautzen GmbH Energijowe a Wodowezawody Budysin: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 151. Energienetze Bayern GmbH (Stromverteilnetz Germering): kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 153. Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG: 2 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 115. Elektrizitätswerk Bruchmühlbach-Miesau: 12 Dokument(e) geprüft: gültig ab [2024], nicht 2027; Kopf nennt [2024], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
+- 119. Elektrizitätswerk Goldbach-Hösbach GmbH ＆ Co. KG: 2 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
+- 123. Elektrizitätswerk Max Peissker: 4 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
+- 129. Elektrizitätswerk Tegernsee Carl Miller KG: 1 Dokument(e) geprüft: gültig ab [2026], nicht 2027
+- 134. Elektrizitätswerke Schönau Netze GmbH: 8 Dokument(e) geprüft: gültig ab [2025], nicht 2027; Jahr 2027 nicht im Dokument; Download-Fehler: APIRequestContext.get: Timeout 30000ms exceeded.
+- 140. Energie Calw GmbH: 3 Dokument(e) geprüft: HTTP 404; Kopf nennt [2026], nicht 2027
+- 145. Energie- und Wasserversorgung Bruchsal GmbH: 5 Dokument(e) geprüft: Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV); Kopf nennt [2025], nicht 2027; Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
+- 149. Energie- und Wasserwerke Bautzen GmbH Energijowe a Wodowezawody Budysin: 2 Dokument(e) geprüft: HTTP 404
+- 151. Energienetze Bayern GmbH (Stromverteilnetz Germering): 2 Dokument(e) geprüft: gültig ab [2026], nicht 2027
+- 153. Energiequelle GmbH ＆ Co. Windpark Feldheim 2006 KG: 4 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
 - 156. Energieversorgung Beckum GmbH ＆ Co. KG: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 162. Energieversorgung Limburg GmbH: 1 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 186. EVU Langenpreising: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
-- 191. EWR GmbH (Remscheid): 1 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 162. Energieversorgung Limburg GmbH: 3 Dokument(e) geprüft: Kopf nennt [2024, 2025], nicht 2027; gültig ab [2025], nicht 2027; Jahr 2027 nicht im Dokument
+- 186. EVU Langenpreising: 2 Dokument(e) geprüft: HTTP 404; gültig ab [2025], nicht 2027
 - 193. EWR Netze GmbH (Lichtenstein-Unterhausen): 11 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Werte unvollständig; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar); Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SL
 - 198. Feuchter Gemeindewerke GmbH (FGW): 8 Dokument(e) geprüft: robots; Jahr 2027 nicht im Dokument
-- 203. Freitaler Stadtwerke GmbH: 5 Dokument(e) geprüft: kein PDF/Excel; Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
+- 203. Freitaler Stadtwerke GmbH: 7 Dokument(e) geprüft: kein PDF/Excel; gültig ab [2018], nicht 2027; gültig ab [2026], nicht 2027; Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
 - 209. Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
-- 210. Gemeindewerke Baiersbronn: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
-- 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
-- 219. Gemeindewerke Gangkofen: kein Preisblatt-Link gefunden (10 Seiten durchsucht)
+- 210. Gemeindewerke Baiersbronn: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
+- 219. Gemeindewerke Gangkofen: kein Preisblatt-Link gefunden (21 Seiten durchsucht)
 - 226. Gemeindewerke Haßloch GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 229. Gemeindewerke Holzkirchen GmbH: kein Preisblatt-Link gefunden (6 Seiten durchsucht)
+- 229. Gemeindewerke Holzkirchen GmbH: 4 Dokument(e) geprüft: HTTP 404; gültig ab [2026], nicht 2027; gültig ab [2025], nicht 2027
 - 231. Gemeindewerke Kahl Versorgungsgesellschaft mbH: 6 Dokument(e) geprüft: robots; Jahr 2027 nicht im Dokument
-- 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: 4 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
+- 235. Gemeindewerke Langenpreising GmbH ＆ Co. KG: 5 Dokument(e) geprüft: HTTP 404; gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
 - 237. Gemeindewerke Neuendettelsau: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; HTTP 403
 - 241. Gemeindewerke Oberaudorf: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 246. Gemeindewerke Schwarzenbruck GmbH (GWS): 8 Dokument(e) geprüft: robots; Jahr 2027 nicht im Dokument
 - 247. Gemeindewerke Steinhagen GmbH: 9 Dokument(e) geprüft: gültig ab [2024], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
-- 249. Gemeindewerke Waging a. See: 3 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 252. Gemeindewerke Wildeck: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 254. gemeinsames Kommunalunternehmen oberes Egertal: kein Preisblatt-Link gefunden (21 Seiten durchsucht)
-- 256. GETEC grid solutions GmbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: grid, solutions); HTTP 404; Jahr 2027 nicht im Dokument
-- 258. GETEC Quartier GmbH: 15 Dokument(e) geprüft: Preisblatt eines anderen Netzgebiets; Netzgebiet passt nicht (erwartet: quartier); HTTP 404; Jahr 2027 nicht im Dokument
+- 249. Gemeindewerke Waging a. See: 7 Dokument(e) geprüft: HTTP 404; Kopf nennt [2023], nicht 2027; Kopf nennt [2024], nicht 2027; Jahr 2027 nicht im Dokument
+- 254. gemeinsames Kommunalunternehmen oberes Egertal: 2 Dokument(e) geprüft: HTTP 404; Kopf nennt [2023], nicht 2027
+- 256. GETEC grid solutions GmbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: grid, solutions); Kopf nennt [2025], nicht 2027; gültig ab [2023], nicht 2027; gültig ab [2022], nicht 2027; HTTP 404; Jahr 2027 nicht im Doku
+- 258. GETEC Quartier GmbH: 15 Dokument(e) geprüft: Preisblatt eines anderen Netzgebiets; Netzgebiet passt nicht (erwartet: quartier); Kopf nennt [2025], nicht 2027; gültig ab [2023], nicht 2027; gültig ab [2022], nicht 2027; HT
 - 261. GGEW, Gruppen-Gas- und Elektrizitätswerk Bergstraße AG: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 2 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
-- 267. Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 278. infra fürth gmbh: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
-- 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
+- 265. GSW Gemeinschaftsstadtwerke GmbH Kamen, Bönen, Bergkamen: 6 Dokument(e) geprüft: gültig ab [2026], nicht 2027; Kopf nennt [2025], nicht 2027; gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument
+- 267. Hafenbetriebs- und Entwicklungsgesellschaft Sassnitz mbH: 2 Dokument(e) geprüft: HTTP 404
+- 278. infra fürth gmbh: 15 Dokument(e) geprüft: gültig ab [2026], nicht 2027; HTTP 404; Endkunden-Preisblatt (Lieferung), keine Netzentgelte; weder RLM- (NS) noch SLP-Werte gefunden
+- 279. InfraLeuna GmbH: 15 Dokument(e) geprüft: gültig ab [2026], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
 - 280. InfraServ Gendorf Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; kein PDF/Excel
-- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: 1 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden
-- 282. Infrastrukturbetrieb der Stadt Arneburg: kein Preisblatt-Link gefunden (4 Seiten durchsucht)
-- 293. Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR): kein Preisblatt-Link gefunden (1 Seiten durchsucht)
-- 294. Kraftwerk Farchant A. Poettinger ＆ Co. KG: kein Preisblatt-Link gefunden (14 Seiten durchsucht)
-- 295. Kraftwerk Köhlgartenwiese GmbH: 4 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; Download-Fehler: APIRequestContext.get: Timeout 30000ms exceeded.
-- 312. Merck Site Management GmbH: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
+- 281. InfraServ GmbH ＆ Co. Wiesbaden KG: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Kopf nennt [2025], nicht 2027
+- 282. Infrastrukturbetrieb der Stadt Arneburg: 1 Dokument(e) geprüft: Kopf nennt [2024, 2025], nicht 2027
+- 293. Kommunalunternehmen Stadtwerke Klingenberg a.M. (AöR): kein Preisblatt-Link gefunden (3 Seiten durchsucht)
+- 294. Kraftwerk Farchant A. Poettinger ＆ Co. KG: 1 Dokument(e) geprüft: HTTP 404
+- 295. Kraftwerk Köhlgartenwiese GmbH: 5 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument; Download-Fehler: APIRequestContext.get: Timeout 30000ms exceeded.
 - 314. Müller - Mühle GmbH ＆ Co. KG: 7 Dokument(e) geprüft: kein PDF/Excel; Jahr 2027 nicht im Dokument
 - 318. Netz ＆ Energie Betriebsgesellschaft mbH: 11 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
 - 321. Netze Hechingen GmbH ＆ Co. KG: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; nicht lesbar (KeyError)
-- 325. Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG: 8 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
-- 327. Netzgesellschaft Gütersloh mbH: 2 Dokument(e) geprüft: kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
-- 329. Netzgesellschaft Panketal GmbH: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
+- 325. Netzgesellschaft Forst (Lausitz) mbH ＆ Co. KG: 11 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Kopf nennt [2024, 2026], nicht 2027; kein PDF/Excel; Jahr 2027 nicht im Dokument
+- 327. Netzgesellschaft Gütersloh mbH: 3 Dokument(e) geprüft: HTTP 404; kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
 - 334. Netzwerke Saarlouis GmbH: 4 Dokument(e) geprüft: HTTP 404; HTTP 403
 - 337. NGN Netzgesellschaft Niederrhein mbH: 14 Dokument(e) geprüft: gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument; HTTP 404; kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden
 - 346. Obermaier und Gerg Grundstücksverwaltung KG: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 348. OsthessenNetz GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 349. OUTLETCITY AG: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 350. Outokumpu Stainless Nirosta GmbH: kein Preisblatt-Link gefunden (14 Seiten durchsucht)
-- 351. ovag Netz GmbH: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden; HTTP 404
+- 348. OsthessenNetz GmbH: 7 Dokument(e) geprüft: HTTP 404; gültig ab [2025], nicht 2027; Jahr 2027 nicht im Dokument
+- 349. OUTLETCITY AG: 1 Dokument(e) geprüft: gültig ab [2024, 2026], nicht 2027
+- 350. Outokumpu Stainless Nirosta GmbH: kein Preisblatt-Link gefunden (15 Seiten durchsucht)
 - 353. QuartiersNetz Bayern GmbH: 11 Dokument(e) geprüft: kein PDF/Excel; Jahr 2027 nicht im Dokument
-- 362. Reußenköge Netz ＆ Infrastruktur GmbH: 7 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument
+- 362. Reußenköge Netz ＆ Infrastruktur GmbH: 8 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; HTTP 404; Jahr 2027 nicht im Dokument
 - 363. Rheinhessische Energie- und Wasserversorgungs-GmbH: 1 Dokument(e) geprüft: HTTP 404
-- 366. SachsenNetze HS.HD GmbH: 1 Dokument(e) geprüft: gültig ab [2024, 2026], nicht 2027
-- 368. Schleswiger Stadtwerke GmbH: 7 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+- 366. SachsenNetze HS.HD GmbH: 9 Dokument(e) geprüft: gültig ab [2024, 2026], nicht 2027; Preisblatt für vermiedene Netzentgelte (§ 18 StromNEV); HTTP 404; Kopf nennt [2026], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; kei
+- 368. Schleswiger Stadtwerke GmbH: 9 Dokument(e) geprüft: HTTP 404; Kopf nennt [2026], nicht 2027; Jahr 2027 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
 - 372. Stadt Burgbernheim - Stadtwerke: 2 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; SLP: mehrere Grundpreise
-- 377. Stadtwerke Aalen GmbH: 15 Dokument(e) geprüft: Endkunden-Preisblatt (Lieferung), keine Netzentgelte; Jahr 2027 nicht im Dokument
-- 380. Stadtwerke Altensteig: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
-- 394. Stadtwerke Bad Harzburg GmbH: 15 Dokument(e) geprüft: Netzgebiet passt nicht (erwartet: bad, harzburg); kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
-- 395. Stadtwerke Bad Herrenalb GmbH: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 396. Stadtwerke Bad Hersfeld GmbH: 15 Dokument(e) geprüft: Download-Fehler: APIRequestContext.get: socket hang up (ECONNRESET); Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden
-- 398. Stadtwerke Bad Nauheim GmbH: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
-- 405. Stadtwerke Bad Saulgau: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
-- 411. Stadtwerke Bad Wörishofen: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
-- 419. Stadtwerke Bernau GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; gültig ab [2025], nicht 2027; kein Text im Dokument (Scan?); kein PDF/Excel
+- 377. Stadtwerke Aalen GmbH: 15 Dokument(e) geprüft: Kopf nennt [2026], nicht 2027; gültig ab [2026], nicht 2027; gültig ab [2024], nicht 2027; weder RLM- (NS) noch SLP-Werte gefunden; gültig ab [2022], nicht 2027; HTTP 404; Endk
+- 380. Stadtwerke Altensteig: kein Preisblatt-Link gefunden (3 Seiten durchsucht)
+- 394. Stadtwerke Bad Harzburg GmbH: 15 Dokument(e) geprüft: Kopf nennt [2023, 2024], nicht 2027; Netzgebiet passt nicht (erwartet: bad, harzburg); HTTP 403; kein Text im Dokument (Scan?); Jahr 2027 nicht im Dokument
+- 395. Stadtwerke Bad Herrenalb GmbH: 1 Dokument(e) geprüft: HTTP 404
+- 405. Stadtwerke Bad Saulgau: 3 Dokument(e) geprüft: HTTP 404; gültig ab [2026], nicht 2027
+- 411. Stadtwerke Bad Wörishofen: 2 Dokument(e) geprüft: HTTP 404
+- 419. Stadtwerke Bernau GmbH: 15 Dokument(e) geprüft: HTTP 404; kein Text im Dokument (Scan?); weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; gültig ab [2025], nicht 2027
 - 431. Stadtwerke Brühl GmbH: 3 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
 - 433. Stadtwerke Buchen GmbH ＆ Co KG: kein Preisblatt-Link gefunden (18 Seiten durchsucht)
 - 434. Stadtwerke Buchholz in der Nordheide GmbH: 1 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
@@ -575,7 +573,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 513. Stadtwerke Heide GmbH: 15 Dokument(e) geprüft: HTTP 404; weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; Jahr 2027 nicht im Dokument
 - 521. Stadtwerke Hettstedt GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS Artikel-ID: 1-01-5-002: widersprüchliche Werte 6.7300, 0.0801, 6.7300; NS Artikel-ID: 1-01-5-003: widersprüchliche Werte 157.7900, 0
 
-### blockiert (17)
+### blockiert (19)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 74. Covestro Brunsbüttel Energie GmbH: HTTP 503 https://www.covestro.com/de/company/covestro-worldwide/deutschland/covestro-in-d
@@ -583,6 +581,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 117. Elektrizitätswerk des Kantons Schaffhausen AG: HTTP 403 https://www.eks.ch; HTTP 403 http://www.eks.ch
 - 125. Elektrizitätswerk Rohmund GmbH: robots.txt nicht erreichbar (https://www.ew-rohmund.de); robots.txt nicht erreichbar (http://www.ew-rohmund.de)
 - 144. Energie- und Wasserversorgung Altenburg GmbH: robots.txt nicht erreichbar (https://www.netze.ewa-altenburg.de); robots.txt nicht erreichbar (http://www.netze.ewa-altenburg.de)
+- 164. Energieversorgung Putzbrunn GmbH ＆ Co. KG: HTTP 403 https://www.energieversorgung-putzbrunn.de/de/strom/netzzugang/netzentgelte.html
 - 218. Gemeindewerke Frammersbach: HTTP 403 https://www.frammersbach.de; HTTP 403 http://www.frammersbach.de
 - 236. Gemeindewerke Münchweiler a.d.Rodalb Anstalt des öffentlichen Rechts: robots.txt nicht erreichbar (https://www.gemeindewerke-muenchweiler.de); robots.txt nicht erreichbar (http://www.gemeindewerke-muenchweiler.de)
 - 242. Gemeindewerke Partenstein: robots.txt nicht erreichbar (https://www.partenstein.de); HTTP 403 http://www.partenstein.de
@@ -590,6 +589,7 @@ Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 - 271. Heinzelmann Stromhandels- und Vertriebs-GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.gebr-heinzelmann.de); robots.txt nicht erreichbar (http://www.gebr-heinzelmann.de)
 - 289. Kommunale Energienetze Inn-Salzach GmbH ＆ Co. KG: robots.txt nicht erreichbar (https://www.ken-is.de); robots.txt nicht erreichbar (http://www.ken-is.de)
 - 308. Markt Egloffstein: HTTP 403 https://www.egloffstein.de; HTTP 403 http://www.egloffstein.de
+- 312. Merck Site Management GmbH: Seite nicht lesbar: Error
 - 336. NEW Netz GmbH: robots.txt nicht erreichbar (https://www.new-netz-gmbh.de); robots.txt nicht erreichbar (http://www.new-netz-gmbh.de)
 - 359. Regionalwerk Bodensee Netze GmbH ＆ Co. KG: Gesamtzeit je Website überschritten (20 min)
 - 391. Stadtwerke Bad Bramstedt Netz GmbH: HTTP 404 https://www.badbramstedtnetz.de/marktpartner.html; HTTP 404 http://www.badbramstedtnetz.de/marktpartner.html
