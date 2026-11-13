@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 warnings.filterwarnings("ignore")
 sys.path.insert(0, ".")
-from vnb.extract import text_aus_datei, tabellen_lesen, slp_lesen, FELDER
+from vnb.extract import text_aus_datei, tabellen_lesen, slp_lesen, FELDER, vne_dokument
 
 W = Path(".")
 UA = {"User-Agent": "netzentgelte-strom/1.0 (Datenerfassung Netzentgelte)"}
@@ -84,6 +84,8 @@ def main(nur_lokal=False):
                 sei = text_aus_datei(Path(f))
                 text = "\n".join(sei)
                 if "2027" not in text and "2027" not in os.path.basename(f): continue
+                if vne_dokument(text, f) and not re.search(r"registrierende[rn]?\s+leistungsmessung|ohne\s+(registrierende|leistungsmessung)|standardlastprofil", text, re.I):      # Referenzpreisblatt § 18 StromNEV ist kein Netznutzungs-Preisblatt (Bochum, Magdeburg, KommEnergie)
+                    hinw.append(f"{os.path.basename(f)}: Referenzpreisblatt vermiedene Netzentgelte (§ 18), kein Netznutzungs-Preisblatt, übersprungen"); continue
                 e = tabellen_lesen(sei)
                 try: slp_lesen(text.splitlines(), e)
                 except Exception: pass
