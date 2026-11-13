@@ -1,37 +1,37 @@
 # Netzentgelte Strom 2027 (SLP und RLM): Zusammenfassung
 
-Stand 13.11.2026 15:09, 831 Netzbetreiber bzw. Netzgebiete
+Stand 13.11.2026 15:17, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 420 | 51% |
-| pruefen | 213 | 26% |
+| ok | 423 | 51% |
+| pruefen | 210 | 25% |
 | kein_preisblatt | 162 | 19% |
 | blockiert | 25 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
+Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,15 ct/kWh (Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG)
 - Maximum: 13,94 ct/kWh (Netzbetrieb Hirschberg GmbH ＆ Co. KG)
-- Median: 7,38 ct/kWh (n = 472)
+- Median: 7,38 ct/kWh (n = 474)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,74 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 16,03 ct/kWh (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 6,61 ct/kWh (n = 557)
+- Median: 6,61 ct/kWh (n = 558)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 50,32 €/kW/a (Netzgesellschaft Frankfurt (Oder) mbH)
 - Maximum: 481,82 €/kW/a (Stadtwerke Lutherstadt Eisleben GmbH)
-- Median: 152,11 €/kW/a (n = 557)
+- Median: 152,15 €/kW/a (n = 558)
 
 ## Datenherkunft
 
@@ -95,7 +95,7 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 49. MVV Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 50. swa Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 
-## Status ok, aber Preisstand nicht endgültig (391)
+## Status ok, aber Preisstand nicht endgültig (394)
 
 - 8. Westfalen Weser Netz GmbH: vorläufig
 - 9. enercity Netz GmbH: vorläufig
@@ -183,6 +183,7 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 208. Gemeinde Glattbach: vorläufig
 - 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: vorläufig
 - 214. Gemeindewerke Cadolzburg: vorläufig
+- 215. Gemeindewerke Dudenhofen: unklar
 - 223. Gemeindewerke Großkrotzenburg GmbH: vorläufig
 - 224. Gemeindewerke Gundelfingen GmbH: vorläufig
 - 225. Gemeindewerke Halstenbek: vorläufig
@@ -266,6 +267,7 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 389. Stadtwerke Bad Aibling: vorläufig
 - 390. Stadtwerke Bad Bergzabern GmbH: unklar
 - 392. Stadtwerke Bad Brückenau GmbH: vorläufig
+- 396. Stadtwerke Bad Hersfeld GmbH: vorläufig
 - 398. Stadtwerke Bad Nauheim GmbH: unklar
 - 399. Stadtwerke Bad Neustadt a. d. Saale: vorläufig
 - 400. Stadtwerke Bad Pyrmont GmbH: vorläufig
@@ -285,6 +287,7 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 422. Stadtwerke Bietigheim-Bissingen GmbH: vorläufig
 - 423. Stadtwerke Blankenburg GmbH: vorläufig
 - 424. Stadtwerke Bliestal GmbH: vorläufig
+- 425. Stadtwerke Böblingen GmbH ＆ Co. KG: vorläufig
 - 426. Stadtwerke Böhmetal GmbH: vorläufig
 - 427. Stadtwerke Bogen GmbH: vorläufig
 - 428. Stadtwerke Borken/Westf. GmbH: vorläufig
@@ -489,9 +492,9 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 825. Werraenergie GmbH: vorläufig
 - 830. YNCORIS GmbH ＆ Co. KG: vorläufig
 
-## Restfälle (411)
+## Restfälle (408)
 
-### pruefen (213)
+### pruefen (210)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
@@ -553,7 +556,6 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 207. GELSENWASSER Energienetze GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 211. Gemeindewerke Bayerisch Gmain: SLP-Werte nicht gefunden
 - 213. Gemeindewerke Budenheim: SLP-Werte nicht gefunden
-- 215. Gemeindewerke Dudenhofen: SLP-Werte nicht gefunden
 - 216. Gemeindewerke Ebersdorf: SLP-Werte nicht gefunden
 - 217. Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
 - 220. Gemeindewerke Garmisch-Partenkirchen, KU: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
@@ -592,14 +594,12 @@ Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 386. Stadtwerke Arnstadt Netz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 393. Stadtwerke Bad Dürkheim GmbH: SLP-Werte nicht gefunden
-- 396. Stadtwerke Bad Hersfeld GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-hef.de/de/Kopfnavigation/Netze1/Stromnetz/Netzzugang-Entgelte/Preisblatt-Strom-2021-SW-Bad-Hersfeld-GmbH-endgueltig.pdf; RLM-Wer
 - 397. Stadtwerke Bad Kissingen GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 401. Stadtwerke Bad Reichenhall KU: SLP-Werte nicht gefunden
 - 412. Stadtwerke Baden-Baden: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 60.0000, 0.1644; RLM-Werte nicht gefunden
 - 415. Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 417. Stadtwerke Bayreuth Energie und Wasser GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 421. Stadtwerke Bexbach GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 425. Stadtwerke Böblingen GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 430. Stadtwerke Bretten GmbH: SLP-Werte nicht gefunden
 - 432. Stadtwerke Brunsbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-4-001: kein Wert; NS Artikel-ID: 1-01-5-001: kein Wert; NS Artikel-ID: 1-01-6-001: kein Wert; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (9.0, 3.6); RLM-Werte auffällig ode
