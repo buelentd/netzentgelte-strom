@@ -64,7 +64,9 @@ LINKS_JS = r"""
     if (!u) continue;
     const t = (el.innerText || el.getAttribute('title') || el.getAttribute('aria-label') ||
                el.getAttribute('download') || '').trim().slice(0, 250);
-    out.push({u, t, k: kontext(el)});
+    let abs = u;                     // relative Links gegen <base href> auflösen (ovag: Seite setzt eine Basis-Adresse)
+    try { abs = new URL(u, document.baseURI).href; } catch (e) {}
+    out.push({u: abs, t, k: kontext(el)});
   }
   for (const el of document.querySelectorAll('[onclick]')) {
     const m = (el.getAttribute('onclick') || '').match(/(https?:\/\/[^'"\s)]+|\/[^'"\s)]+\.(pdf|xlsx?))/i);
