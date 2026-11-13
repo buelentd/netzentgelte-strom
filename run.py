@@ -583,3 +583,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)      # hängende Hintergrund-Threads (PDF-Auslesen) dürfen das Prozessende nicht blockieren (Lauf 52 wartete nach 100/100 über 10 Minuten)
