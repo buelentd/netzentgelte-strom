@@ -276,6 +276,29 @@ async def pilot_bearbeiten(crawler: Crawler, req, e: dict, p: dict, a: Auftrag, 
     return satz
 
 
+def vorschlaege_laden(hier: Path, jahr: int) -> dict[str, tuple]:
+    """Start-URLs aus dem Vorjahr je MaStR-Nr. (Lerneffekt Witten): Startseite des Hosts der bekannten 2026-Quelle (Netz-Subdomain),
+    deren Verzeichnis und die auf das Jahr umgeschriebenen Dokument-Adressen (lauf/url_kandidaten_<jahr>.csv). Nicht als vertraut gewertet."""
+    import csv as _csv
+    from urllib.parse import urlparse as _up
+    out: dict[str, list] = {}
+    tab = hier / "ergebnis" / "netzentgelte_2026.csv"
+    if tab.exists():
+        for z in _csv.DictReader(tab.read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+            for u in re.split(r"\s*\|\s*", z.get("quelle_url", "")):
+                u = re.sub(r"^(RLM|SLP):\s*", "", u.strip())
+                pu = _up(u)
+                if pu.scheme in ("http", "https") and pu.netloc and "/" in u[8:]:
+                    out.setdefault(z["mastr_nr"], []).extend([f"{pu.scheme}://{pu.netloc}/", u.rsplit("/", 1)[0] + "/"])
+    kand = hier / "lauf" / f"url_kandidaten_{jahr}.csv"
+    if kand.exists():
+        for z in _csv.DictReader(kand.read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
+            for sp in (f"kandidat_{jahr}_1", f"kandidat_{jahr}_2"):
+                if z.get(sp, "").startswith("http"):
+                    out.setdefault(z["mastr_nr"], []).append(z[sp])
+    return {k: tuple(dict.fromkeys(v))[:6] for k, v in out.items()}
+
+
 async def schritt_lauf(args, log):
     from playwright.async_api import async_playwright
 
@@ -337,6 +360,7 @@ async def schritt_lauf(args, log):
                 korrektur[str(z["nr"])] = z["website"].strip()
         crawler.lokal = lokale_preisblaetter_laden(HIER / "lauf" / "preisblaetter.csv")
         crawler.lokal_namen = lokale_namen_laden(HIER / "lauf" / "preisblaetter.csv")
+        vorschlaege = vorschlaege_laden(HIER, args.jahr) if args.jahr != 2026 else {}
         fertig = 0
         t0 = time.time()
 
@@ -350,7 +374,8 @@ async def schritt_lauf(args, log):
                             website=e.get("website", ""), aliase=tuple(pilot_mod.ALIASE.get(
                                 pilot[e["pilot_nr"]]["netzbetreiber"], [])) if e.get("pilot_nr") else (),
                             pflicht=pflicht, ausschluss=ausschluss,
-                            hinweise=hinweise.get(website_domain(e.get("website", "")), ()))
+                            hinweise=hinweise.get(website_domain(e.get("website", "")), ()),
+                            vorschlaege=vorschlaege.get(e.get("mastr_nr", ""), ()) if args.jahr != 2026 else ())
                 if args.offline and not crawler.zwischenspeicher_urls(a) and not e.get("pilot_nr"):
                     return                     # nichts im Zwischenspeicher: bisheriges Ergebnis bleibt
                 if args.nur_hinweise:

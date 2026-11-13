@@ -88,6 +88,7 @@ class Auftrag:
     nur_endgueltig: bool = False
     nur_slp: bool = False     # nur ein SLP-Preisblatt gesucht (RLM bereits bekannt, z. B. Pilot)
     hinweise: tuple = ()      # zusätzliche Start-URLs (Unterseiten oder Dokumente), lauf/hinweis_urls.csv
+    vorschlaege: tuple = ()   # abgeleitete Start-URLs (Host/Verzeichnis der Vorjahres-Quelle, umgeschriebene Jahres-URLs): werden geprüft, aber nicht als vertraut gewertet
 
 
 @dataclass
@@ -383,7 +384,7 @@ class Crawler:
             break
         heapq.heappush(queue, (-100, next(zaehler), start, 0))
         alternative = start_urls(a.website)[1:]
-        for h in a.hinweise:              # Hinweis-URLs: Dokumente sofort prüfen, Seiten direkt nach der Startseite
+        for h in (*a.hinweise, *a.vorschlaege):   # Hinweis-URLs und Vorschläge: Dokumente sofort prüfen, Seiten direkt nach der Startseite
             if ist_dokument(h):
                 dokumente[h] = {"score": 1000, "kontext": "Hinweis-URL", "ref": ""}
             else:
