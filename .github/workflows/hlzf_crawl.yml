@@ -1,0 +1,42 @@
+name: Hochlastzeitfenster 2027 suchen (Crawler)
+
+# Playwright-Crawler (vnb/hlzf_crawl.py) über die offenen Hochlastzeitfenster-Fälle, 2027 zuerst, 2026 nur als Rückfall.
+# robots.txt beachtet, 1 Anfrage/s je Domain, max. 40 Seiten je Website. Kostet keine KI-Token.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/hlzf_crawl.env]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hlzf-crawl
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Crawler
+        run: PYTHONPATH=. python vnb/hlzf_crawl.py --liste lauf/hlzf_crawl9_liste.csv --ausgabe lauf/hlzf_crawl9_ergebnis.csv --parallel 6
+      - name: Committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lauf/hlzf_crawl9_ergebnis.csv eingang/pdfs_neu ergebnis/hlzf_crawl_texte 2>/dev/null || true
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Hochlastzeitfenster-Crawler 2027 (Lauf ${{ github.run_id }})"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
