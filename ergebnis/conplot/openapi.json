@@ -1,0 +1,774 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "Netzentgelte Strom API",
+  "description": "Netzentgelte 2026 aller Stromverteilnetzbetreiber (Preisblätter), Hochlastzeitfenster, Modul 3, PLZ-Zuordnung und Umlagen. Schlüssel: MaStR-Nr. Stand der Daten siehe /api/v1/health.",
+  "version": "1.0.0"
+ },
+ "paths": {
+  "/api/v1/health": {
+   "get": {
+    "tags": [
+     "Meta"
+    ],
+    "summary": "Health",
+    "operationId": "health_api_v1_health_get",
+    "parameters": [
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/netzbetreiber": {
+   "get": {
+    "tags": [
+     "Netzbetreiber"
+    ],
+    "summary": "Netzbetreiber suchen (Name oder PLZ)",
+    "operationId": "netzbetreiber_suchen_api_v1_netzbetreiber_get",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "Teil des Namens",
+       "title": "Q"
+      },
+      "description": "Teil des Namens"
+     },
+     {
+      "name": "plz",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "minLength": 5,
+         "maxLength": 5
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Plz"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 500,
+       "minimum": 1,
+       "default": 50,
+       "title": "Limit"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/netzbetreiber/{mastr_nr}": {
+   "get": {
+    "tags": [
+     "Netzbetreiber"
+    ],
+    "summary": "Alle Daten eines Netzbetreibers",
+    "operationId": "netzbetreiber_api_v1_netzbetreiber__mastr_nr__get",
+    "parameters": [
+     {
+      "name": "mastr_nr",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mastr Nr"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/netzentgelte/{mastr_nr}": {
+   "get": {
+    "tags": [
+     "Netzentgelte"
+    ],
+    "summary": "Preise je Netzebene (beide Preissysteme) und SLP",
+    "operationId": "netzentgelte_api_v1_netzentgelte__mastr_nr__get",
+    "parameters": [
+     {
+      "name": "mastr_nr",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mastr Nr"
+      }
+     },
+     {
+      "name": "ebene",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "description": "ns, msns oder ms",
+       "title": "Ebene"
+      },
+      "description": "ns, msns oder ms"
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/plz/{plz}": {
+   "get": {
+    "tags": [
+     "PLZ"
+    ],
+    "summary": "Netzbetreiber und Konzessionsabgabe einer PLZ",
+    "operationId": "plz_info_api_v1_plz__plz__get",
+    "parameters": [
+     {
+      "name": "plz",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Plz"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/hlzf/{mastr_nr}": {
+   "get": {
+    "tags": [
+     "Hochlastzeitfenster"
+    ],
+    "summary": "Hochlastzeitfenster nach § 19 Abs. 2 StromNEV",
+    "operationId": "hlzf_api_v1_hlzf__mastr_nr__get",
+    "parameters": [
+     {
+      "name": "mastr_nr",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mastr Nr"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/hlzf/{mastr_nr}/zeitreihe": {
+   "get": {
+    "tags": [
+     "Hochlastzeitfenster"
+    ],
+    "summary": "Viertelstunden-Vektor (is_hlzf) für ein Jahr",
+    "operationId": "hlzf_zeitreihe_api_v1_hlzf__mastr_nr__zeitreihe_get",
+    "parameters": [
+     {
+      "name": "mastr_nr",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mastr Nr"
+      }
+     },
+     {
+      "name": "ebene",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "pattern": "^(ns|msns)$",
+       "default": "ns",
+       "title": "Ebene"
+      }
+     },
+     {
+      "name": "jahr",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 2030,
+       "minimum": 2024,
+       "default": 2026,
+       "title": "Jahr"
+      }
+     },
+     {
+      "name": "brueckentage",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "boolean",
+       "default": false,
+       "title": "Brueckentage"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/modul3/{mastr_nr}": {
+   "get": {
+    "tags": [
+     "Modul 3 (§ 14a)"
+    ],
+    "summary": "Zeitvariable Netzentgelte (HT/ST/NT)",
+    "operationId": "modul3_api_v1_modul3__mastr_nr__get",
+    "parameters": [
+     {
+      "name": "mastr_nr",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Mastr Nr"
+      }
+     },
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/umlagen": {
+   "get": {
+    "tags": [
+     "Umlagen und Steuern"
+    ],
+    "summary": "Umlagen, Stromsteuer, Konzessionsabgabe, Umsatzsteuer",
+    "operationId": "umlagen_api_v1_umlagen_get",
+    "parameters": [
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/berechnung/netzentgelt": {
+   "post": {
+    "tags": [
+     "Berechnung"
+    ],
+    "summary": "Netzentgelt für Verbrauch und Leistung",
+    "operationId": "berechnung_api_v1_berechnung_netzentgelt_post",
+    "parameters": [
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "X-Api-Key"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/Anfrage"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "Anfrage": {
+    "properties": {
+     "mastr_nr": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Mastr Nr",
+      "description": "MaStR-Nr. des Netzbetreibers"
+     },
+     "plz": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 5,
+        "minLength": 5
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Plz",
+      "description": "Alternativ: PLZ, größter Netzbetreiber"
+     },
+     "kwh": {
+      "type": "number",
+      "exclusiveMinimum": 0.0,
+      "title": "Kwh",
+      "description": "Jahresverbrauch in kWh"
+     },
+     "kw": {
+      "anyOf": [
+       {
+        "type": "number",
+        "exclusiveMinimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Kw",
+      "description": "Jahreshöchstleistung in kW (optional)"
+     },
+     "ebene": {
+      "type": "string",
+      "pattern": "^(NS|MS/NS)$",
+      "title": "Ebene",
+      "default": "NS"
+     },
+     "stunden": {
+      "anyOf": [
+       {
+        "type": "number",
+        "maximum": 8760.0,
+        "exclusiveMinimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Stunden",
+      "description": "Benutzungsstunden, falls kW unbekannt"
+     }
+    },
+    "type": "object",
+    "required": [
+     "kwh"
+    ],
+    "title": "Anfrage"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   }
+  }
+ }
+}
