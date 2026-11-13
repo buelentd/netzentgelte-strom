@@ -65,3 +65,9 @@ Commits bis f8b3432: +29 weitere Zeilen gelesen (u.a. Aue, Emsdetten, Finsterwal
 - Nur ≤2025 bzw. unbrauchbar (dokumentiert, keine Zeile): Neu-Isenburg (2024/2025), Torgau (2023-2025), Bad Wildbad (2024/2025), Münchberg (2023-2025, alle "kein HLZF"), Heilsbronn (2021/2022/2024), Schönkirchen (2025), Bad Harzburg (2021-2023), Oberwössen (2022), Neuendettelsau (2022), Gebr. Miller (2020), Wildeck (2018-2023).
 - Defekt: Windsbach-Datei ist eine gespeicherte 404-Seite. Rohrdorf-Datei ist nur der BNetzA-Leitfaden 2011, kein HLZF-Dokument.
 - Restliche 127 "suchen" = Browser/Suche (Nutzer/Kollege).
+
+## Uploads vom 13.11. (Liste oben->unten abgearbeitet, Batch 15)
+- +2 Zeilen (168 gesamt, 0 Fehler): Stadtwerke Troisdorf (2027: NS Winter 10:45-19:30, MS/NS Winter 11:30-19:30; MS-Werte nur bemerkung), Stadtwerke Nettetal (2027: NS + MS/NS nur Winter 17:30-20:15; MS Winter 13:15-15:15, 17:45-20:15 nur bemerkung). 7 PDFs nach eingang/pdfs_neu/ uebernommen.
+- Stadtwerke Langen (SNB965379905076): nur Preisblatt 2027 im Upload, kein HLZF im Dokument (S.1 verweist auf separat veroefentlichte Hochlastzeiten) -> HLZF weiter suchen.
+- Butzbach (SNB972511582064): Sonderregel greift - BNG-Preisblatt 2027 enthaelt keine eigenen HLZF; OVAG-Fallback bleibt in ergebnis/hlzf_fallback.csv (Reviewer), nicht in Mastertabelle.
+- Witten (SNB971007500575): bereits vom Reviewer uebernommen (gelesen_aus_2027).
