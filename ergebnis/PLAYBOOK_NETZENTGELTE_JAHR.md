@@ -28,3 +28,18 @@ Stand 12.11.2026. Aufgeschrieben aus dem Git (`STAND_*.md`, `START_HIER.md`, `CL
 - Gefundene Datei heißt noch nicht gelesen. Zahlen aus der Datei zählen, nicht aus dem Gedächtnis.
 - Bevor etwas überschrieben wird: Stand vorher und nachher vergleichen (verloren = 0).
 - Tests vor dem Push; Stop-Hook verlangt Commit und Push.
+
+## Hinweise des Nutzers und gelernte Fälle: immer sofort speichern (Festlegung Nutzer, 13.11.2026)
+
+Alles, was der Nutzer oder der Kollege im Gespräch nennt (Adresse, Dokument, Netz-Host, Schreibweise, Sonderfall), wird **sofort** festgehalten und geht nicht im Chat unter:
+
+1. **Adresse/Seite zu einem Netzbetreiber** → `lauf/nutzer_hinweise.csv` (mastr_nr; url; zweck; datum; von). Der Crawler (`vnb/hlzf_crawl.py`) nimmt sie als erste Startseiten. Ältere Sammlungen: `lauf/hinweis_urls.csv`, `lauf/hinweis_urls_2027.csv`.
+2. **Dokument (PDF/XLSX/HTML)** → in `eingang/…` unter `<mastr_nr>_…` ablegen, einlesen, im Status vermerken.
+3. **Gelernte Regel** (warum etwas nicht gefunden wurde) → hier ins Playbook und, wenn es das Verhalten ändert, in den Crawler/Leser einbauen.
+
+Gelernte Fälle:
+- **Witten (13.11.2026):** Preisblätter und Hochlastzeitfenster liegen auf einer anderen Subdomain (`netze.stadtwerke-witten.de`) als die MaStR-Website. Der Crawler verbrauchte seine 40 Seiten auf der Hauptseite. Folge: Startseite des Hosts der bekannten 2026-Quelle zuerst; Google findet über Titel und Namen schneller (Suchlinks nach Name).
+- **Ludwigsfelde (13.11.2026):** Nutzer nennt `stadtwerke-ludwigsfelde.de/netze_infos/` → `lauf/nutzer_hinweise.csv`.
+- **Butzbach (13.11.2026):** kein eigenes Hochlastzeitfenster-Dokument; Rechenwert nur als getrennter Fallback (`ergebnis/hlzf_fallback.csv`, Herkunft und Konfidenz), nie in den Primärdaten.
+- **Werks-/Industrienetze (GETEC, Alzchem, BASF, Cassella, DB Energie, werkkraft …):** Sonderfall, keine Einzelwerte in den Hochlastzeitfenster-Spalten, Beleg im `bemerkung`.
+- **Suchjahr:** 2027 zuerst, 2026 nur als Rückfall (Crawler seit 13.11.2026).

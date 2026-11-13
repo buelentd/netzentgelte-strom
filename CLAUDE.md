@@ -160,3 +160,8 @@ Gesucht wird nur noch nach `<Name des Netzbetreibers> Hochlastzeitfenster 2027` 
 ## Klarstellung: Fehlt 2026, wird 2027 genommen (Nutzer, 12.11.2026)
 
 Für Hochlastzeitfenster und Modul-3-Zeiten sind 2026 und 2027 gleichwertig. Fehlt das Dokument für 2026, nehmen wir das für 2027 (und umgekehrt); was zuerst gefunden wird, reicht. Das Jahr steht im `bemerkung`. Ergänzt die Festlegungen "HLZF-Fund aus 2027 zählt für 2026 und 2027" und "2027 zuerst".
+
+
+## Regel: Hinweise sofort speichern (Festlegung Nutzer, 13.11.2026)
+
+Jede Adresse, jedes Dokument und jede Erkenntnis, die der Nutzer oder der Kollege nennt, wird sofort gespeichert: Adressen in `lauf/nutzer_hinweise.csv` (Crawler nutzt sie), Dokumente unter `eingang/…` mit MaStR-Nr., gelernte Regeln im Playbook (`ergebnis/PLAYBOOK_NETZENTGELTE_JAHR.md`, Abschnitt „Hinweise des Nutzers und gelernte Fälle“). Nichts bleibt nur im Chat.
