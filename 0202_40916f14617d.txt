@@ -1,0 +1,192 @@
+URL: https://www.freisinger-stadtwerke.de/de/Netze/Stromnetz/Netzdaten-Strom/Netzzugang-Entgelte/20260508-Anlage-a-Vereinbarung-ueber-elektronischen-Datenaustausch-EDI.pdf
+Netzbetreiber: Freisinger Stadtwerke Versorgungs-GmbH
+
+Freisinger Stadtwerke Versorgungs-GmbH (Netzbetreiber), Wippenhauser Straße 19, 85354 Freising
+Registergericht: München HRB 128918
+Geschäftsführer: Andreas Voigt und Dominik Schwegler
+Vorsitzende des Aufsichtsrats: Oberbürgermeisterin Monika Schwind
+
+
+
+
+       Vereinbarung über den elektronischen Datenaustausch (EDI)
+
+
+
+                                                         zwischen
+
+
+
+
+                                  Freisinger Stadtwerke Versorgungs-GmbH
+
+                                               Wippenhauser Straße 19
+
+                                                      85354 Freising
+
+
+
+
+                                                             und
+
+
+
+
+                                          - nachfolgend „die Parteien“ genannt -
+
+
+
+
+Stand: 01.04.2022                                                                                Seite 1 von 4
+
+1        Zielsetzung und Geltungsbereich
+
+1.1      Die "EDI-Vereinbarung", nachfolgend "die Vereinbarung" genannt, legt die rechtlichen
+         Bedingungen und Vorschriften fest, denen die Parteien bei der Abwicklung von
+         Transaktionen mit Hilfe des elektronischen Datenaustausches (EDI-Electronic Data
+         Interchange) unterliegen. Der automatisierte Datenaustausch erfolgt auf der Grundlage der
+         einschlägigen Festlegungen der Bundesnetzagentur (BNetzA) in ihrer jeweils gültigen
+         Fassung in Verbindung mit den entsprechenden Mitteilungen der BNetzA und den gültigen
+         Nachrichten- und Prozessbeschreibungen zu den festgelegten Formaten. Für die
+         Datenübertragung sind die aktuell gültigen EDI@Energy-Dokumente zu verwenden.
+
+1.2      Die Vereinbarung besteht aus den nachfolgenden rechtlichen Bestimmungen und wird
+         durch die Anwendung der technischen und organisatorischen Maßnahmen zum
+         Datenaustausch, die in den EDI@energy-Dokumenten „Allgemeine Festlegungen“ und
+         „Regelungen zum Übertragungsweg“ in der jeweils gültigen Fassung geregelt sind, ergänzt.
+
+1.3      Sofern die Parteien nicht anderweitig übereinkommen, regeln die Bestimmungen der
+         Vereinbarung nicht die vertraglichen Verpflichtungen, die sich aus den über EDI ab-
+         gewickelten Transaktionen ergeben.
+
+
+2        Begriffsbestimmungen
+
+2.1      Für die Vereinbarung werden die nachstehenden Begriffe wie folgt definiert:
+
+2.2      EDI:
+         Als elektronischer Datenaustausch wird die elektronische Übertragung kommerzieller und
+         administrativer Daten zwischen Computern nach einer vereinbarten Norm zur
+         Strukturierung einer EDI-Nachricht bezeichnet.
+
+2.3      EDI-Nachricht:
+         Als EDI-Nachricht wird eine Gruppe von Segmenten bezeichnet, die nach einer ver-
+         einbarten Norm strukturiert, in ein rechnerlesbares Format gebracht wird und sich
+         automatisch und eindeutig verarbeiten lässt.
+
+2.4      UN/EDIFACT:
+         Gemäß der Definition durch die UN/ECE (United Nations Economic Commission for Europe
+         - Wirtschaftskommission der Vereinten Nationen für Europa) umfassen die Vorschriften der
+         Vereinten Nationen für den elektronischen Datenaustausch in Verwaltung, Handel,
+         Transport und Verkehr eine Reihe international vereinbarter Normen, Verzeichnisse und
+         Leitlinien für den elektronischen Austausch strukturierter Daten, insbesondere für den
+         Austausch zwischen unabhängigen rechnergestützten Informationssystemen in Verbindung
+         mit dem Waren- und Dienstleistungsverkehr.
+
+
+3        Sicherheit von EDI-Nachrichten
+
+3.1      Die Parteien verpflichten sich, Sicherheitsverfahren und -maßnahmen durchzuführen und
+         aufrechtzuerhalten, um EDI-Nachrichten vor unbefugtem Zugriff, Veränderungen,
+         Verzögerung, Zerstörung oder Verlust zu schützen. Es gelten die im Rahmen der
+         Expertengruppe Edi@Energy abgestimmten und von der Projektführung des BDEW in den
+         Dokumenten festgelegten Sicherheitsverfahren und –maßnahmen. Sie sind der EDI-
+         @Energy-„Regelungen zum Übertragungsweg“ und „Allgemeine Festlegungen“
+         verbändeübergreifend erarbeiteten Spezifikationen in der jeweils gültigen Fassung zu
+         entnehmen.
+
+Stand: 01.04.2022                                                                      Seite 2 von 4
+
+3.2      Zu den Sicherheitsverfahren und -maßnahmen gehören die Überprüfung des Ursprungs,
+         die Überprüfung der Integrität, die Nichtabstreitbarkeit von Ursprung und Empfang sowie die
+         Gewährleistung der Vertraulichkeit von EDI-Nachrichten.
+
+         Sicherheitsverfahren und -maßnahmen zur Überprüfung des Ursprungs und der In-
+         tegrität, um den Sender einer EDI-Nachricht zu identifizieren und sicherzustellen, dass jede
+         empfangene EDI-Nachricht vollständig ist und nicht verstümmelt wurde, sind für alle
+         Nachrichten obligatorisch.
+
+3.3      Führen die Sicherheitsverfahren und -maßnahmen zur Zurückweisung einer EDI-
+         Nachricht, informiert der Empfänger den Sender darüber unverzüglich.
+
+         Der Empfänger einer EDI-Nachricht, die zurückgewiesen wurde oder einen Fehler enthält,
+         reagiert erst dann auf die Nachricht, wenn er Anweisungen des Senders empfängt.
+
+
+4        Vertraulichkeit und Schutz personenbezogener Daten
+
+4.1      Die Parteien gewährleisten, dass EDI-Nachrichten mit Informationen, die vom Sender oder
+         im beiderseitigen Einvernehmen der Parteien als vertraulich eingestuft werden, vertraulich
+         gehandhabt und weder an unbefugte Personen weitergegeben oder gesendet, noch zu
+         anderen als von den Parteien vorgesehenen Zwecken verwendet werden. Die EU-
+         Datenschutzgrundverordnung (DSGVO), die einschlägigen Datenschutzgesetze sowie das
+         Messstellenbetriebsgesetz sind zu beachten.
+
+         Mit entsprechender Berechtigung unterliegt die weitere Übertragung derartiger ver-
+         traulicher Informationen demselben Vertraulichkeitsgrad.
+
+4.2      EDI-Nachrichten werden nicht als Träger vertraulicher Informationen betrachtet, so-
+         weit die Informationen allgemein zugänglich sind.
+
+
+5        Aufzeichnung und Archivierung von Nachrichten
+
+5.1      Jede Partei archiviert ein vollständiges, chronologisches Protokoll aller von den Par-
+         teien während einer geschäftlichen Transaktion i.S.d. Art. 1 ausgetauschten EDI-
+         Nachrichten unverändert und sicher gemäß den Fristen und Spezifikationen, die durch die
+         bestehenden rechtlichen Grundlagen (insbesondere nach den handels- und
+         steuerrechtlichen Vorschriften) und den festgelegten Prozessen der BNetzA vorgeschrieben
+         sind.
+
+5.2      Die EDI-Nachrichten werden vom Sender im übertragenen Format und vom Empfänger in
+         dem Format archiviert, in dem sie empfangen werden. Hierbei ist zusätzlich sicher
+         zu stellen, dass die Lesbarkeit über den gesetzlichen Aufbewahrungszeitraum gewähr
+         leistet wird.
+
+5.3      Die Parteien stellen sicher, dass elektronische Protokolle der EDI-Nachrichten problemlos
+         zugänglich sind und bei Bedarf in einer für Menschen lesbaren Form werden können.
+         Betriebseinrichtungen, die hierzu erforderlich sind, müssen beibehalten werden.
+
+
+
+
+Stand: 01.04.2022                                                                        Seite 3 von 4
+
+6        Inkrafttreten, Änderungen, Dauer und Teilnichtigkeit
+
+6.1      Inkrafttreten
+
+         Die Vereinbarung tritt mit dem Abschluss des Netznutzungs-/Lieferantenrahmenvertrag
+         Strom,     Lieferantenrahmenvertrag       Gas,    Messstellenbetreiberrahmen-         oder
+         Messstellenvertrag für moderne Messeinrichtungen und intelligente Messsysteme durch die
+         Parteien in Kraft, soweit dies in dem jeweiligen Vertrag vorgesehen ist. Sollte die
+         Vereinbarung für andere als die in Satz 1 genannten Verträge genutzt werden, tritt sie mit
+         dem Datum der Unterzeichnung durch die Parteien in Kraft.
+
+6.2      Änderungen
+
+         Bei Bedarf werden von den Parteien in Textform vereinbarte zusätzliche oder alternative
+         Bestimmungen zu der Vereinbarung ab dem Zeitpunkt ihrer Vereinbarung als Teil der
+         Vereinbarung betrachtet.
+
+6.3      Dauer
+
+         Die Vereinbarung wird beendet, wenn zwischen den Parteien alle in Artikel 6.1 genannten
+         Vertragsverhältnisse beendet sind. Ist die Vereinbarung nicht im Rahmen eines dieser
+         Rechtsverhältnisse zustande gekommen, kann jede Partei die Vereinbarung mit einer
+         Kündigungsfrist von einem Monat zum Ende eines Kalendermonats in Textform kündigen.
+
+         Ungeachtet einer Kündigung oder Beendigung stehen die in den Artikeln 4 und 5 genannten
+         Rechte und Pflichten bis zur endgültigen Abwicklung oder zulässigen Vernichtung der
+         Daten fort.
+
+6.4      Teilnichtigkeit
+
+         Sollte ein Artikel oder ein Teil eines Artikels der Vereinbarung als ungültig erachtet werden,
+         bleiben alle übrigen Artikel vollständig in Kraft.
+
+
+
+
+Stand: 01.04.2022                                                                           Seite 4 von 4
+

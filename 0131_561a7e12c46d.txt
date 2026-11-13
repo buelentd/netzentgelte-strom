@@ -1,0 +1,963 @@
+URL: https://www.wennenmuehle.de/download.html?file=files/download/gesetze%20und%20verordnungen/010804_Notstromaggregate_Revb.pdf
+Netzbetreiber: Elektrizitätswerk Wennenmühle Schörger GmbH ＆ Co. KG
+
+Notstromaggregate
+
+Richtlinie
+für Planung, Errichtung und Betrieb
+von Anlagen mit Notstromaggregaten
+
+
+5. Auflage 2004
+
+© Verband der Netzbetreiber - VDN – e.V. beim VDEW
+Robert-Koch-Platz 4, 10115 Berlin
+Tel. 030/726 148-0, Fax: 030/726 148-200
+info@vdn-berlin.de, www.vdn-berlin.de
+
+
+Ausgabe: August 2004
+
+Notstromaggregate
+
+
+
+Inhaltsverzeichnis
+
+
+Vorwort        ............................................................................................................... 5
+
+1        Geltungsbereich ............................................................................................ 7
+
+2        Notstromaggregat......................................................................................... 8
+
+2.1      Auswahl        ..................................................................................................... 8
+
+2.2      Aufstellung ..................................................................................................... 8
+
+2.3      Schutz         ..................................................................................................... 8
+
+2.4      Betriebsstundenzähler ...................................................................................... 9
+
+3        Installation der Kundenanlage .................................................................... 10
+
+3.1      Anschlussbedingungen ................................................................................... 10
+
+3.1.1         Allgemeines ............................................................................................ 10
+
+3.1.2         Ergänzende Bedingungen für mobile Notstromaggregate............................... 10
+
+3.2      Schaltung und Schaltgeräte ............................................................................ 11
+
+3.2.1         Schaltung ohne Kurzzeitparallelbetrieb ....................................................... 11
+
+3.2.2         Schaltung mit Kurzzeitparallelbetrieb ......................................................... 11
+
+3.3      Schutz gegen elektrischen Schlag .................................................................... 12
+
+3.4      Prüfung und Inbetriebnahme ........................................................................... 12
+
+3.5      Ausführungsbeispiele...................................................................................... 12
+
+4        USV-Anlagen ............................................................................................... 20
+
+4.1      Allgemeines .................................................................................................. 20
+
+4.2      Anschluss      ................................................................................................... 20
+
+4.2.1         Trennvorrichtungen .................................................................................. 20
+
+4.2.2         Rückspeisungsschutz ................................................................................ 21
+
+4.2.3         Kapitel entfallen ...................................................................................... 21
+
+5        Erläuterungen ............................................................................................. 22
+
+zu 3.1.2      Ergänzende Bedingungen für mobile Notstromaggregate............................... 22
+
+zu 3.2         Schaltung und Schaltgeräte...................................................................... 22
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                                  Seite 3/23
+
+Notstromaggregate
+
+
+zu 3.5      Ausführungsbeispiele............................................................................... 22
+
+zu 4       USV-Anlagen ........................................................................................... 23
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                        Seite 4/23
+
+Notstromaggregate
+
+
+
+Vorwort
+Die „Richtlinie für Planung, Errichtung und Betrieb von Anlagen mit Notstromaggregaten“
+des VDEW erschien erstmals 1982. Eine 2. überarbeitete Ausgabe folgte 1985. Im Nachgang
+zur 2. Ausgabe wurde aus dem Kreis der Netzbetreiber zunehmend der Wunsch geäußert,
+ergänzende technische Regelungen für den Kurzzeitparallelbetrieb mit aufzunehmen, eine
+Betriebsweise, die kurzzeitig Notstromaggregat und Niederspannungsnetz des VNB zusam-
+menschaltet.
+
+Dies wurde in der 3. Ausgabe 1996 realisiert. Es sei ausdrücklich darauf hingewiesen, dass
+für den Fall, dass das Notstromaggregat nicht nur kurzzeitig, sondern für eine längere Zeit
+(z. B. für Probetriebszwecke) parallel zum öffentlichen Versorgungsnetz betrieben werden
+soll, die Anlage gemäß Abschnitt 13 der „Technischen Anschlussbedingungen für den An-
+schluss an das Niederspannungsnetz“ (TAB 2000) nach den Anforderungen der Richtlinie
+„Eigenerzeugungsanlagen am Niederspannungsnetz - Richtlinie für Anschluss und Parallel-
+betrieb von Eigenerzeugungsanlagen am Niederspannungsnetz“ auszuführen ist.
+
+Die 4. Ausgabe erschien 2001 und hat neben redaktioneller Änderungen eine Aktualisierung
+der seinerzeit geltenden Normen und Vorschriften erfahren.
+
+In der jetzt vorliegenden 5. Ausgabe, die erstmals nicht vom VDEW, sondern vom VDN he-
+rausgegeben wird, sind Anschlussbedingungen für USV-Anlagen sowie Erläuterungen zu den
+Betriebsweisen der Notstromaggregate im Falle unterschiedlicher Netzformen eingearbeitet.
+Zudem erfolgte eine Überarbeitung der Übersichtsschaltbilder.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                 Seite 5/23
+
+Notstromaggregate
+
+
+
+In dem Redaktionskreis zur Überarbeitung der Richtlinie wirkten mit:
+
+
+
+Wolfgang Bartels, RWE Westfalen-Weser-Ems AG, Recklinghausen
+
+Thomas Flügel, Charité Universitätsklinikum, Berlin
+
+Thomas Haubner, Bewag Aktiengesellschaft & Co. KG, Berlin
+
+Matthias Pfütsch, TEAG Thüringer Energie AG, Erfurt
+
+Hartwig Roth, VDN e. V., Berlin
+
+Ralph Sommer, E.ON Bayern AG, Pfaffenhofen
+
+Wolfgang Weidemann, E.ON Hanse AG, Rendsburg
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                        Seite 6/23
+
+Notstromaggregate
+
+
+
+1 Geltungsbereich
+Diese Richtlinie gilt für den Anschluss und Betrieb von Anlagen mit Notstromaggregaten (Si-
+cherheitsstromversorgungsanlagen und Ersatzstromversorgungsanlagen gemäß DIN VDE
+0100 Teil 200), die ausschließlich der Sicherstellung des Elektrizitätsbedarfs bei Aussetzen
+der öffentlichen Versorgung dienen (§ 3 Abs. 1 der „Verordnung über Allgemeine Bedingun-
+gen für die Elektrizitätsversorgung von Tarifkunden“ (AVBEltV) und Abschnitt 13 TAB 2000).
+
+Alle geltenden Vorschriften oder behördlichen Verfügungen und sonstigen Bestimmungen
+sind zu beachten, auch wenn sie hier nicht vollständig aufgeführt sind, z. B. DIN-VDE-
+Normen, wie DIN VDE 0100 (insbesondere Teil 551, Teil 560, Teil 710), DIN VDE 0108, DIN-
+Normen, wie DIN 6280 (insbesondere Teil 13), Bauordnungen der Länder, Bundes-
+Immissionsschutzgesetz.
+
+Für USV-Anlagen gelten die Hinweise und Bestimmungen in Abschnitt 4 sowie die Normen
+der Reihe DIN VDE 0558.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                  Seite 7/23
+
+Notstromaggregate
+
+
+
+2 Notstromaggregat
+
+
+2.1 Auswahl
+
+Bei der Auswahl des Aggregats sind Art, Leistung und die Betriebsweise der Verbrauchsgerä-
+te zu berücksichtigen, z. B. mögliche Laststöße, Anlaufströme von Motoren, Oberschwin-
+gungsströme, Blindleistungsbedarf, Schieflast.
+
+
+
+2.2 Aufstellung
+
+Bei der Aufstellung von Notstromaggregaten sind die Angaben der Gerätehersteller zu be-
+achten.
+
+Soweit nicht in anderen Verordnungen und Bestimmungen festgelegt, wird empfohlen, Not-
+stromaggregate mit Verbrennungskraftmaschinen mit ihren Hilfseinrichtungen (z. B. Star-
+terbatterien, Schaltanlagen der Aggregatsteuerung) in besonderen Räumen aufzustellen.
+Die Räume müssen trocken, frostfrei und ggf. beheizbar sein.
+
+Auch bei Einsatz von mobilen Notstromaggregaten und Zapfwellengeneratoren, z. B. in der
+Landwirtschaft, empfiehlt sich die Aufstellung der Generatoren in besonderen Räumen bzw.
+an witterungsgeschützten Stellen. Bei der Auswahl des Aufstellungsortes ist auf gute Zu-
+gänglichkeit zu achten.
+
+Eine ausreichende Lüftung des Aufstellungsraumes für Notstromaggregate muss sicher-
+gestellt sein.
+
+Für Batterieräume ist DIN VDE 0510 zu beachten.
+
+
+
+2.3 Schutz
+
+Notstromaggregate sind gegen die Auswirkungen bei Überlast und Kurzschluss in der Anlage
+zu schützen. Kabel und Leitungen zwischen dem Generator und der zugeordneten Über-
+stromschutzeinrichtung sind kurz- und erdschlusssicher zu verlegen.
+
+Die Notwendigkeit des Einbaus einer Schutzeinrichtung, die bei Körperschluss des Genera-
+tors dessen weitere Beschädigung verhindert, ist insbesondere bei größeren Aggregaten ab-
+zuwägen und ggf. mit dem Hersteller zu klären.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                Seite 8/23
+
+Notstromaggregate
+
+
+2.4 Betriebsstundenzähler
+
+Zum Nachweis der monatlichen Probebetriebszeiten entsprechend § 3, Abs. 1
+
+AVBEltV ist ein Betriebsstundenzähler einzubauen.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                             Seite 9/23
+
+Notstromaggregate
+
+
+
+3 Installation der Kundenanlage
+
+
+3.1 Anschlussbedingungen
+
+
+3.1.1 Allgemeines
+
+Die Installation der Kundenanlage ist für den Betrieb mit Notstromaggregaten vorzuberei-
+ten. Muss nicht die gesamte Anlage notstromberechtigt sein, ist die Kundenanlage in einen
+notstromberechtigten Teil und in einen nicht notstromberechtigten Teil aufzutrennen.
+
+Ein fester Anschluss des Notstromaggregates ist zu bevorzugen.
+
+Die Notwendigkeit des Einsatzes einer Spannungsüberwachung mit automatischer Umschal-
+tung auf die Notstromversorgung entscheidet der Betreiber nach eigenem Ermessen.
+
+Die Betätigungselemente der Schaltanlagen für Notstromaggregate müssen durch Beschrif-
+tung oder Bildzeichen eindeutig gekennzeichnet sein.
+
+Kann das Notstromaggregat über eine Fernbetätigung oder automatisch in Betrieb gesetzt
+werden, so ist in der Nähe des Aggregates zum Schutz, z. B. bei Wartungsarbeiten, eine Si-
+cherungseinrichtung gegen fernbetätigtes oder automatisches in Gang setzen vorzusehen.
+
+Es ist eine einwandfreie Trennung zwischen der vom Notstromaggregat versorgten Installa-
+tionsanlage und dem VNB-Netz sicherzustellen.
+
+Ein Parallelbetrieb von VNB-Netz und Notstromaggregat ist nur für eine kurze Zeit nach ei-
+ner Synchronisierung (Überlappungssynchronisation) gestattet, wenn die entsprechenden
+Maßnahmen nach Abschnitt 3.2.2 eingehalten werden.
+
+Möglichkeiten der Rückspeisung in das VNB-Netz oder der Potentialanhebung des Neutrallei-
+ters (N) bzw. des PEN-Leiters des VNB-Netzes sind auszuschließen.
+
+Bei Wiederkehr der allgemeinen Stromversorgung soll die Rückschaltung erst nach einer an-
+gemessenen Verzögerungszeit, frühestens nach einer Minute, erfolgen.
+
+
+
+3.1.2 Ergänzende Bedingungen für mobile Notstromaggregate
+
+Mobile (ortsveränderliche) Notstromaggregate ohne geerdeten Sternpunkt sind ausschließ-
+lich für den Betrieb im IT-System oder für die Schutzmaßnahme „Schutztrennung“ geeignet.
+An diese Aggregate sollten elektrische Verbrauchsgeräte nur direkt angeschlossen werden.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                Seite 10/23
+
+Notstromaggregate
+
+
+Mobile Notstromaggregate mit geerdetem Sternpunkt dürfen unter Beachtung der angewen-
+deten Schutzmaßnahmen in eine Installationsanlage einspeisen. Auf richtiges Drehfeld ist zu
+achten. Wenn für mobile Notstromaggregate ein fester Anschlusspunkt (z. B. Steckvorrich-
+tung) vorgesehen ist, sollte auch die erforderliche Erdungsanlage fest installiert werden
+(siehe auch Abschnitt 5 „Erläuterungen“).
+
+Als bewegliche Leitungen für den Anschluss von mobilen Notstromaggregaten müssen bei
+Nennquerschnitten bis 6 mm2 Cu mindestens Leitungen NSSHÖU nach DIN VDE 0250, bei
+Nennquerschnitten über 6 mm2 Cu mindestens Leitungen HO7RN-F nach DIN VDE 0282 oder
+gleichwertige verwendet werden.
+
+
+
+3.2 Schaltung und Schaltgeräte
+
+
+3.2.1 Schaltung ohne Kurzzeitparallelbetrieb
+
+Bei der Umschaltung der Kundenanlage vom VNB-Netz auf das Notstromaggregat muss eine
+zwangsläufige allpolige Trennung, d.h. der Außenleiter (L1, L2, L3) und des Neutralleiters
+(N) vom VNB-Netz erfolgen (siehe auch Abschnitt 5 Erläuterungen).
+
+Die Umschalteinrichtung muss eine Stellung zwischen der Schaltung VNB-Netz/Notstrom-
+aggregat besitzen, in der die zu versorgende Installationsanlage sowohl vom VNB-Netz als
+auch vom Notstromaggregat getrennt ist.
+
+
+
+3.2.2 Schaltung mit Kurzzeitparallelbetrieb
+
+Damit nach Spannungswiederkehr im VNB-Netz bzw. bei gewollter Einleitung eines Not-
+strombetriebes für Probezwecke eine Unterbrechung der Versorgung der gesamten Kunden-
+anlage oder von Teilen der Kundenlage vermieden wird, ist ein kurzzeitiger Parallelbetrieb
+zur Synchronisierung von Notstromaggregat und VNB-Netz zulässig.
+
+Die Dauer für diesen Parallelbetrieb umfasst nur die Umschaltzeit nach erfolgreicher Syn-
+chronisierung von Notstromaggregat und VNB-Netz und soll 100 ms nicht überschreiten.
+
+Die kurzzeitige Parallelschaltung des Notstromaggregates mit dem VNB-Netz darf nur mög-
+lich sein, wenn folgende Synchronisierungsbedingungen erfüllt sind:
+
+-      Spannungsdifferenz          ∆U ≤ ± 10 % UN
+
+-      Frequenzdifferenz           ∆f ≤ ± 0,5 Hz
+
+-      Phasenwinkeldifferenz       ∆ϕ ≤ ± 10°
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                Seite 11/23
+
+Notstromaggregate
+
+
+Synchronisierung und Umschaltung dürfen nur automatisch erfolgen. Die Umschalteinrich-
+tung muss so beschaffen sein, dass nach Ablauf des Kurzzeitparallelbetriebes die Umschal-
+tung der Kundenanlage vom VNB-Netz auf das Notstromaggregat oder umgekehrt mit
+zwangsläufig allpoliger Trennung, d. h. der Außenleiter (L1, L2, L3) und des Neutralleiters
+(N) vom VNB-Netz erfolgt.
+
+Die automatische Synchronisierungseinrichtung sowie die Umschaltautomatik für den Kurz-
+zeitparallelbetrieb sind dauerhaft in einem ordnungsgemäßen Zustand zu erhalten. Die Ein-
+stellwerte der Einrichtungen müssen, soweit technisch möglich, plombierbar sein oder auf
+andere Weise gegen eine Veränderung gesichert werden können.
+
+
+
+3.3 Schutz gegen elektrischen Schlag
+
+Es ist DIN VDE 0100-551 zu beachten und sicherzustellen, dass auch nach dem Umschalten
+auf das Notstromaggregat eine vom VNB-Netz unabhängige Schutzmaßnahme bei indirek-
+tem Berühren und die Spannungsbegrenzung bei Erdschluss eines Außenleiters nach DIN
+VDE 0100-410 gewährleistet ist.
+
+
+
+3.4 Prüfung und Inbetriebnahme
+
+In dem Inbetriebsetzungsantrag ist vom „Eingetragenen Elektroinstallateur“ zu bestätigen,
+dass er die Notstromanlage nach den geltenden Vorschriften, Normen und Bestimmungen
+sowie nach dieser Richtlinie ausgeführt und geprüft hat.
+
+Die Ergebnisse der Prüfung sind in einem Prüfbericht zu dokumentieren.
+
+Die erste Inbetriebnahme der Anlage ist mit dem VNB abzustimmen.
+
+
+
+3.5 Ausführungsbeispiele
+
+In den Bildern 3.5-1 bis 3.5-6 sind Ausführungsbeispiele des Anschlusses von Notstromag-
+gregaten in Kundenanlagen dargestellt.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                Seite 12/23
+
+Notstromaggregate
+
+
+Bild 3.5-1       Übersichtsschaltplan für Notstromversorgung im TN-System;
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird als TN-S-System betrieben.
+
+
+Bild 3.5-2       Übersichtsschaltplan für Notstromversorgung im TT-System
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird während des Generatorbetriebes als TN-S-System mit Schutz
+                 durch automatische Abschaltung betrieben.
+
+
+Bild 3.5-3       Übersichtsschaltplan für Notstromversorgung im TN-System,
+                 Anschluss eines mobilen Notstromaggregates
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird als TN-S-System betrieben.
+
+
+Bild 3.5-4       Übersichtsschaltplan für Notstromversorgung im TT-System
+                 Anschluss eines mobilen Notstromaggregates
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird während des Generatorbetriebes als TN-S-System mit Schutz
+                 durch Abschaltung betrieben.
+
+
+Bild 3.5-5       Übersichtsschaltplan für Notstromversorgung im TN-System mit
+                 Kurzzeitparallelbetrieb;
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird als TN-S-System betrieben.
+
+
+Bild 3.5-6       Übersichtsschaltplan für Notstromversorgung im TT-System mit
+                 Kurzzeitparallelbetrieb
+
+                 Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagen-
+                 teil wird während des Generatorbetriebes als TN-S-System mit Schutz
+                 durch automatische Abschaltung betrieben.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                               Seite 13/23
+
+Notstromaggregate
+
+
+
+  Bild 3.5-1
+  Übersichtsschaltplan für Notstromversorgung im TN-System
+
+
+
+             nicht
+     notstromberechtigter                                  notstromberechtigter
+          Anlagenteil                                           Anlagenteil
+
+
+
+
+                                                      PE
+                                                                                  Fehlerstrom-
+                                                                                  Schutzeinrichtung
+                                                                                  (RCD)
+
+
+
+
+                                                                                  Umschalter
+                                                                                  4-polig: L1, L2, L3, N
+
+                                                               1    0       2     0 Aus
+                                                                                  1 Netz
+                                                                                  2 Generator
+
+
+
+
+                                                                                  Generator-
+            kWh                                                                   Schutzschalter
+
+
+
+
+                                                                                  Generatorsternpunkt
+                                                                                  und Gehäuseerdung
+                                                                        G         mit der Haupterdungs-
+                                                                                  schiene verbinden
+
+                  Hausanschluss     Haupterdungsschiene
+
+
+
+
+  Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird als
+  TN-S-System betrieben (siehe Abschnitt 5 Erläuterungen).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                 Seite 14/23
+
+Notstromaggregate
+
+
+
+  Bild 3.5-2
+  Übersichtsschaltplan für Notstromversorgung im TT-System
+
+
+             nicht
+     notstromberechtigter                                   notstromberechtigter
+          Anlagenteil                                            Anlagenteil
+
+
+
+
+                        PE                             PE
+
+
+                  Fehlerstrom-                                                   Fehlerstrom-
+                  Schutzeinrichtung                                              Schutzeinrichtung
+                  (RCD)                                                          (RCD)
+
+
+                                                                                   Umschalter
+                                                                                   4-polig: L1, L2, L3, N
+                                                                                   0 Aus
+                                                               1     0       2
+                                                                                   1 Netz
+                                                                                   2 Generator
+
+
+
+
+                                                                                   Generator-
+            kWh                                                                    Schutzschalter
+
+
+
+
+                                                                                   Generatorsternpunkt
+                                                                                   und Gehäuseerdung
+                                                                         G         mit der Haupterdungs-
+                                                                                   schiene verbinden
+
+                  Hausanschluss       Haupterdungsschiene
+
+
+
+
+  Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird
+  während des Generatorbetriebes als TN-S-System mit Schutz durch automatische
+  Abschaltung betrieben (keine Trennung von Anlagen- und Betriebserder möglich).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                 Seite 15/23
+
+Notstromaggregate
+
+
+
+ Bild 3.5-3
+ Übersichtsschaltplan für Notstromversorgung im TN-System
+ Anschluss eines mobilen Notstromaggregates
+
+
+
+             notstromberechtigter Anlagenteil
+
+
+
+ PE
+ N
+ L1
+ L2
+ L3
+
+
+                           RCD
+
+
+ Umschalter
+                                                             Verbindung über
+ 4-polig:
+                                                             bewegliche Leitung
+ 0 Aus
+ 1 Netz                              1 0 2                     CEE
+ 2 Generator                                               Gerätestecker   CEE Gerätesteckdose
+
+
+
+
+ nicht notstrombe-
+ rechtigter Anlagen-
+ teil
+
+
+
+
+               kWh
+
+
+
+
+                                                Haupterdungsschiene
+
+
+
+                          Hausanschluss                                    mobiles Notstromaggregat
+
+
+
+
+ Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird als
+ TN-S-System betrieben (siehe Abschnitt 5 Erläuterungen).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                  Seite 16/23
+
+Notstromaggregate
+
+
+
+ Bild 3.5-4
+ Übersichtsschaltplan für Notstromversorgung im TT-System
+ Anschluss eines mobilen Notstromaggregates
+
+
+
+             notstromberechtigter Anlagenteil
+
+
+
+ PE
+ N
+ L1
+ L2
+ L3
+
+
+                           RCD
+
+
+ Umschalter
+                                                             Verbindung über
+ 4-polig:
+                                                             bewegliche Leitung
+ 0 Aus
+ 1 Netz                              1 0 2                     CEE
+ 2 Generator                                               Gerätestecker   CEE Gerätesteckdose
+
+
+
+
+ nicht notstrombe-
+ rechtigter Anlagen-
+ teil mit RCD
+
+
+
+
+               kWh
+
+
+
+
+                                                Haupterdungsschiene
+
+
+
+                          Hausanschluss                                    mobiles Notstromaggregat
+
+
+
+
+ Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird
+ während des Generatorbetriebes als TN-S-System mit Schutz durch automatische
+ Abschaltung betrieben (keine Trennung von Anlagen- und Betriebserder möglich).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                  Seite 17/23
+
+Notstromaggregate
+
+
+
+  Bild 3.5-5
+  Übersichtsschaltplan für Notstromversorgung im TN-System
+  mit Kurzzeitparallelbetrieb
+
+
+
+             nicht
+                                                     notstromberechtigter
+     notstromberechtigter
+                                                          Anlagenteil
+          Anlagenteil
+
+
+
+
+                                                                            Fehlerstrom-
+                                               PE
+                                                                            Schutzeinrichtung
+                                                                            (RCD)
+
+                                                                            Automatische 4-polige
+                                                                            Umschalteinrichtung
+                                                                            • vergleicht
+                                                                              - Netz- und Generator-
+                                                                                spannung/ -frequenz
+                                                                              - Phasenwinkel der
+                                                                                Spannungen
+                                                                            • steuert bei Automatik-
+                                              Netz          Notstrom          betrieb die Schütze der
+                                                                              Umschalteinrichtung
+                                                                            • begrenzt den Kurzzeit-
+                                                                              parallelbetrieb auf
+                                                                              ca. 100 ms
+            kWh
+                                                                            Generator-
+                                                                            Schutzschalter
+
+                                                                            Generatorsternpunkt
+                                                                   G        und Gehäuseerdung
+                                                                            mit der Haupterdungs-
+                                  Haupterdungsschiene                       schiene verbinden
+                  Hausanschluss
+
+
+
+
+  Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird als
+  TN-S-System betrieben (siehe Abschnitt 5 Erläuterungen).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                              Seite 18/23
+
+Notstromaggregate
+
+
+
+  Bild 3.5-6
+  Übersichtsschaltplan für Notstromversorgung im TT-System
+  mit Kurzzeitparallelbetrieb
+
+
+
+             nicht
+                                                        notstromberechtigter
+     notstromberechtigter
+                                                             Anlagenteil
+          Anlagenteil
+
+
+
+
+                                                                               Fehlerstrom-
+                       PE                         PE
+                                                                               Schutzeinrichtung
+                                                                               (RCD)
+                 Fehlerstrom-
+                 Schutzeinrichtung                                             Automatische 4-polige
+                 (RCD)                                                         Umschalteinrichtung
+                                                                               • vergleicht
+                                                                                 - Netz- und Generator-
+                                                                                   spannung/ -frequenz
+                                                                                 - Phasenwinkel der
+                                                                                   Spannungen
+                                                                               • steuert bei Automatik-
+                                                 Netz          Notstrom          betrieb die Schütze der
+                                                                                 Umschalteinrichtung
+                                                                               • begrenzt den Kurzzeit-
+                                                                                 parallelbetrieb auf
+                                                                                 ca. 100 ms
+            kWh
+                                                                               Generator-
+                                                                               Schutzschalter
+
+                                                                               Generatorsternpunkt
+                                                                      G        und Gehäuseerdung
+                                                                               mit der Haupterdungs-
+                                     Haupterdungsschiene                       schiene verbinden
+                  Hausanschluss
+
+
+
+
+  Anlage nur teilweise notstromberechtigt. Der notstromberechtigte Anlagenteil wird
+  während des Generatorbetriebes als TN-S-System mit Schutz durch automatische
+  Abschaltung betrieben (keine Trennung von Anlagen- und Betriebserder möglich).
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                                 Seite 19/23
+
+Notstromaggregate
+
+
+
+4 USV-Anlagen
+
+
+4.1 Allgemeines
+
+Eine unterbrechungsfreie Stromversorgung (USV) ist ein statisches elektronisches Strom-
+versorgungssystem. Deren Hauptzweck ist es, bei einem teilweisen oder vollständigen Aus-
+fall oder einer Störung der öffentlichen Versorgung eine definierte Beständigkeit und Güte
+der Energieversorgung von Kundenanlagen bzw. bestimmter bevorrechtigter Verbraucher si-
+cherzustellen.
+
+Die USV kann darüber hinaus auch dazu dienen, die Qualität der Stromversorgung zu
+verbessern, indem sie für die Einhaltung der festgelegten Spannungsqualität sorgt. Die An-
+wendung ist in den „Technische Anschlussbedingungen für den Anschluss an das Nieder-
+spannungsnetz“ (TAB) geregelt.
+
+Die in dieser Richtlinie getroffenen Aussagen zum Einsatz und Betrieb von Notstromaggre-
+gaten gelten, soweit anwendbar, sinngemäß auch für den Einsatz von USV-Anlagen. Weiter-
+hin sind neben den Herstellerangaben alle geltenden Vorschriften oder behördlichen Verfü-
+gungen und sonstigen Bestimmungen sowie die DIN-VDE-Normen (insbesondere die Nor-
+men der Reihe DIN VDE 0558) zu beachten.
+
+Zusätzlich berücksichtigen Hersteller und Errichter von USV-Anlagen die nachfolgenden
+Hinweise.
+
+
+
+4.2 Anschluss
+
+
+4.2.1 Trennvorrichtungen
+
+Es muss eine Trennvorrichtung vorhanden sein, um die USV von der Netzversorgung für
+Wartungs- und Instandhaltungsarbeiten trennen zu können.
+
+Bei einer USV, die zum Anschluss an ein IT-System einen Neutralleiter benötigt, muss die
+Trennvorrichtung vierpolig sein und alle Außenleiter und den Neutralleiter gleichzeitig un-
+terbrechen.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                Seite 20/23
+
+Notstromaggregate
+
+
+4.2.2 Rückspeisungsschutz
+
+Nach Unterbrechung der Stromversorgung darf unter bestimmungsgemäßen Betriebsbedin-
+gungen und im Falle eines Einzelfehlers in einem Bauelement der USV-Anlage keine Gefähr-
+dung durch elektrischen Schlag am Netzanschluss der USV-Anlage bzw. bei separat ange-
+ordnetem Rückspeisungsschutz an dessen netzseitigem Eingang auftreten.
+
+Der Rückspeisungsschutz ist eine Schutzeinrichtung, die das Risiko des elektrischen Schla-
+ges auf Grund von Rückspeisung ausschließt. Er muss den Anforderungen aus den Normen
+der Reihe DIN VDE 0558 entsprechen.
+
+Bei fest angeschlossenen USV-Anlagen darf der Rückspeisungsschutz auch außerhalb der
+USV-Anlage installiert werden.
+
+Ist die Rückspeisungsschutz-Trenneinichtung außerhalb der USV installiert, so muss der
+Hersteller der USV den Typ der einzusetzenden geeigneten Trenneinrichtung festlegen.
+
+
+
+4.2.3 Kapitel entfallen
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                               Seite 21/23
+
+Notstromaggregate
+
+
+
+5 Erläuterungen
+Die nachstehenden Erläuterungen beziehen sich im wesentlichen auf die Änderungen und
+Ergänzungen gegenüber der 4. Auflage.
+
+
+
+zu 3.1.2         Ergänzende Bedingungen für mobile Notstromaggregate
+
+Sollen mobile Notstromaggregate in eine Installationsanlage einspeisen, ist darauf zu ach-
+ten, dass nur Notstromaggregate mit herausgeführtem Sternpunkt eingesetzt werden dür-
+fen. Dieser ist mit der Erdungsanlage zu verbinden. Die Erdungsanlage und die Steckvor-
+richtung zum Anschluss des Aggregates sollten fester Bestandteil der Installationsanlage
+sein.
+
+
+
+zu 3.2           Schaltung und Schaltgeräte
+
+Die Umschalteinrichtung ist auch im TN-Systemen grundsätzlich allpolig, d.h. 4polig auszu-
+führen, da es bei einer 3poligen Umschaltung zu einer nicht gewollten Stromflussverzwei-
+gung über die PEN-Leiter-Klemme im Hausanschlusskasten kommt. Dieses entspricht auch
+einer Anforderung nach DIN VDE 0100-551. Bisher konnte hierauf nach Zustimmung des
+VNB verzichtet werden, wenn im TN-System wegen der Vermaschung von Erdungen und Po-
+tentialausgleichsleitungen eine einwandfreie Trennung des PEN-Leiters bzw. des PE- und N-
+Leiters nicht praktikabel war.
+
+
+
+zu 3.5           Ausführungsbeispiele
+
+Es wird grundsätzlich davon ausgegangen, dass im Falle des Notstrombetriebes die          im
+Normalfall vorhandene Schutzmaßnahme nicht wirksam ist.
+
+Da nach DIN VDE 0100–551 eine vom Verteilungsnetz unabhängige Schutzmaßnahme wirk-
+sam werden muss, sind alle Beispiele so dargestellt, dass für den notstromberechtigten An-
+lagenteil grundsätzlich ein TN-S-System mit RCD vorgesehen wird. Dabei sind die Erdungs-
+bedingungen so zu gestalten, dass im Fehlerfall der RCD gemäß der Erdungsbedingung
+        UL
+RA            auslösen kann.
+        I∆N
+
+
+
+Die Anordnung der RCD ist so gewählt, dass nur die Mindestanforderungen zum Einsatz die-
+ser Schutzeinrichtungen in den jeweiligen Ausführungsbeispielen erfüllt werden.
+
+Nach DIN VDE 0100-551 müssen im TN-System die abgehenden Stromkreise zusätzlich
+durch RCD geschützt werden. Ob dies durch einen zentralen RCD erfolgen kann, ist indivi-
+
+© Verband der Netzbetreiber – VDN , August 2004                                   Seite 22/23
+
+Notstromaggregate
+
+
+duell festzulegen. Dabei ist zu beachten, dass ein zentral angeordnetes RCD in manchen Be-
+reichen (z.B. Krankenhäusern) für die Sicherheit der Versorgung problematisch sein kann.
+Deshalb wird empfohlen, in solchen Fällen mehrere RCD für die notstromberechtigten
+Stromkreise einzusetzen.
+
+
+
+zu 4   USV-Anlagen
+
+Erstmals werden USV-Anlagen in den Geltungsbereich der Richtlinie übernommen. Bislang
+liegen keine negativen Erfahrungen mit USV-Anlagen vor. Auch Anschlussprobleme oder si-
+cherheitsrelevante Ereignisse sind in der Praxis bisher nicht auffällig geworden. Die in dieser
+Richtlinie gestellten Anforderungen beziehen sich daher ausschließlich auf die Vorgaben der
+Normenreihe DIN VDE 0558.
+
+
+
+
+© Verband der Netzbetreiber – VDN , August 2004                                    Seite 23/23
+

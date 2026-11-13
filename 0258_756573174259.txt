@@ -1,0 +1,154 @@
+URL: https://www.getec-net.de/wp-content/uploads/sites/5/2026/10/GETn-NNE-v-GN-27-PB.pdf
+Netzbetreiber: GETEC Quartier GmbH
+
+GETEC net GmbH
+
+                 Vorläufige Netznutzungsentgelte Gas 2027
+
+
+
+
+                                                            20:13
+
+                                                          GETEC net GmbH
+                                               Vorläufige Netznutzungsentgelte Gas 2027
+                                                                  gültig ab: 01.01.2027
+
+
+I. Entgelte für die Netznutzung für Ausspeisepunkte mit Leistungsmessung
+I.a Arbeitsentgelt
+                               Arbeitsbereich                                                    durch Sockelbetrag
+                                                                             Sockelbetrag                                     Arbeitspreis
+   ID-Nr.            Untergrenze            Obergrenze                                           abgegoltene Arbeit
+                        kWh                        kWh                          €/a                    kWh / a                    ct / kWh
+                        W min                      W max                        SB W                    WS                           AP
+     1                    0                     1.500.000                          -                       -                       0,1700
+     2                1.500.001               1.000.000.000                    2.550,00                1.500.000                   0,0900
+         Abrechnungsformel Preistabelle Arbeitsentgelt:                                     NE W = (W - W S ) * AP / 100 + SB W
+
+            Erläuterung der Formel:
+            NE W                       Arbeitsentgelt                                       €/a
+            W                          abzurechnende Arbeitsmenge                           kWh
+            WS                         durch Sockelbetrag abgegoltene Arbeit                kWh
+            AP                         Arbeitspreis der nicht abgegoltenen Arbeit           ct / kWh
+            SB W                       Sockelbetrag für abgegoltene Arbeit                  €/a
+
+
+
+
+I.b Leistungsentgelt
+                              Leistungsbereich                                                 durch Sockelbetrag
+   ID-Nr.            Untergrenze            Obergrenze                       Sockelbetrag                                   Leistungspreis
+                                                                                              abgegoltene Leistung
+
+                        kW                          kW                           €/a                    kW / a                     € / kW
+                        P min                      P max                         SB P                    PS                          LP
+     1                    0                        500                             -                      -                       16,8000
+     2                   501                     100.000                       8.400,00                  500                       9,8000
+         Abrechnungsformel Preistabelle Leistungsentgelt:                                   NE P = (P - P S ) * LP + SB P
+
+             Erläuterung der Formel:
+             NE P                      Leistungsentgelt                                     €/a
+             P                         abzurechnende Leistung                               kW
+              PS                       durch Sockelbetrag abgegoltene Leistung              kW
+             LP                        Leistungspreis der nicht abgegoltenen Leistung       € / kW
+              SB P                     Sockelbetrag für abgegoltene Leistung                €/a
+
+
+
+
+                                                                                                                                             1"   "
+
+                                                                 GETEC net GmbH
+                                                       Vorläufige Netznutzungsentgelte Gas 2027
+                                                                           gültig ab: 01.01.2027
+
+
+II. Entgelte für die Netznutzung für Ausspeisepunkte ohne Leistungsmessung
+                                Arbeitsbereich                                                                  Arbeitspreis der nicht
+    ID-Nr.                                                                             Grundpreis
+                      Untergrenze            Obergrenze                                                          abgegoltenen Arbeit
+                           kWh                              kWh                             €/a                          ct / kWh
+                           W min                            W max                           GP                              AP
+       1                      0                          100.000                              -                            1,014
+           Abrechnungsformel Preistabelle SLP-Netzentgelt:                                                    NE SLP = W * AP / 100 + GP
+
+                Erläuterung der Formel:
+                NE SLP                        Netzentgelt                                                     €/a
+                W                             abzurechnende Arbeitsmenge                                      kWh
+                GP                            jährlicher Grundpreis                                           €/a
+                AP                            Arbeitspreis der nicht abgegoltenen Arbeit                      ct / kWh
+
+
+III. Entgelte für Messung & Messstellenbetrieb
+III.a für Ausspeisepunkte ohne Leistungsmessung
+                                                                                       Entgelt für                   Entgelt für
+                                                                                       Messung                    Messstellenbetrieb
+                                                                                          €/a                           €/a
+   Standardgaszähler G10-G25                                                              3,67                          47,28
+
+III.b für Ausspeisepunkte mit Leistungsmessung
+                                                                                 Entgelt für Messung             Entgelt für Messung                 Entgelt für
+                                                                                          stdl.                        2 x tägl.                  Messstellenbetrieb
+                                                                                  Datenübermittlung               Datenübermittlung
+                                                                                          €/a                             €/a                              €/a
+   Gaszähler ≥ G100 ≤ G250                                                              645,02                          265,10                            879,24
+   Gaszähler ≥ G1000 ≤ G1600                                                            645,02                          265,10                           1.917,36
+
+IV. Konzessionsabgaben
+                                                                                                  Einwohnerzahl
+                                                        < 25.000                        < 100.000              < 500.000                                > 500.000
+                                                       Cent / kWh                      Cent / kWh             Cent / kWh                               Cent / kWh
+   Gas ausschließlich für Kochen
+                                                            0,51                            0,61                            0,77                            0,93
+   und Warmwasser
+   bei sonstigen Tariflieferungen                           0,22                            0,27                            0,33                            0,40
+   Belieferung von
+                                                            0,03                            0,03                            0,03                            0,03
+   Sondervertragskunden
+   Die Konzessionsabgabe richtet sich nach der gültigen Konzessionsabgabenverordnung und den bestehenden Konzessionsverträgen.
+
+Für den gemeindlichen Eigenverbrauch wird im gesamten Konzessionsgebiet gemäß § 3 Abs. 1 S. 1 der Konzessionsabgabenverordnung ein Nachlass i.H.v. 10% auf den
+Rechnungsbetrag für den Netzzugang im Niederdrucknetz gewährt.
+Alle Preise sind freibleibende Nettopreise und verstehen sich zzgl. der jeweils geltenden Umsatzsteuer (z. Zt. 19%). Ausgeschlossen ist hiervon die Unterbrechung der
+Anschlussnutzung auf Anweisung des Lieferanten. Änderungen und Irrtümer vorbehalten.
+Der Netzbetreiber behält sich eine Anpassung des Preisblattes für das Jahr 2027 aufgrund von Änderungen des vorgelagerten Netzbetreibers und sich ergebender behördlicher
+oder gerichtlicher Entscheidungen vor.
+
+
+
+
+                                                                                                                                                                            2"   "
+
+                                                     GETEC net GmbH
+                                            Vorläufige Netznutzungsentgelte Gas 2027
+                                                             gültig ab: 01.01.2027
+
+
+V. Anwendungsbeispiele
+V.a für Ausspeisepunkte mit Leistungsmessung
+  Kundendaten:
+  individuelle Jahresarbeit (W) =                                              3.300.000 kWh/a
+  individuelle Jahresleistung (P) =                                                2.600 kW
+  Arbeitspreisermittlung gemäß Preisblatt:
+  Sockelbetrag [in €] + (Jahresmenge [in kWh] - Sockelbetrag [in kWh]) * Arbeitspreis [in ct/kWh] / 100 = Arbeitsentgelt [in €]
+
+  2.550,00 € + (3.300.000 kWh - 1.500.000 kWh) * 0,090 ct/kWh / 100 = 4.170,00 €
+
+  Leistungsentgeltermittlung gemäß Preisblatt:
+  Sockelbetrag [in €] + (Jahresleistung [in kW] - Sockelbetrag [in kW]) * Leistungspreis [in €/kW] = Leistungsentgelt [in €]
+  8.400,00 € + (2.600 kW - 500 kW) * 9,80 €/kW = 28.980,00 €
+
+V.b für Ausspeisepunkte ohne Leistungsmessung
+  Kundendaten:
+  individuelle Jahresarbeit (W) =                                                 26.000 kWh/a
+  Netzentgeltermittlung gemäß Preisblatt:
+  Grundpreis [in €/a] + Jahresmenge [in kWh] * Arbeitspreis [in ct/kWh] / 100 = Netzentgelt [in €]
+
+  0,00 €/a + 26.000 kWh * 1,014 ct/kWh / 100 = 263,64 €
+
+
+
+
+                                                                                                                                  3"   "
+

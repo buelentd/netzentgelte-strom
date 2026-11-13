@@ -1,0 +1,106 @@
+URL: https://www.n-hl.de/netznutzung/preisblaetter.html?file=files/downloads/pdf/netznutzung_strom/preisblaetter/Netzentgeltrechner.xlsx&cid=5481
+Netzbetreiber: NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG
+
+
+                  Netzentgeltrechner SLP 2026
+
+
+
+                  Bitte befüllen Sie die grünen Eingabefelder, um ihr prognostiziertes Netzentgelt zu ermitteln.
+
+                  Jahresarbeit                                                            4000                                                  1 Personenhaushalt entspricht ca. 1500 kWh
+                                                                                                                                                2 Personenhaushalt entspricht ca. 2500 kWh
+                  Grundpreis €/a netto                                                    77,0                                                  3 Personenhaushalt entspricht ca. 3500 kWh
+                  Arbeitspreis ct/kWh netto                                               10,724392                                             4 Personenhaushalt entspricht ca. 4250 kWh
+                                                                                                                                                5 Personenhaushalt entspricht ca. 5000 kWh
+                  Jahresentgelt exklusive Messung netto                                   505,97568
+
+
+                  Messstellenbetrieb  €/Jahr netto    "X" eintragen, wenn zutreffend
+
+                  Eintarifzähler    8,58              x                                   8,58
+
+                  Zweitarifzähler (inkl. Tarifschaltung)  9,62                            0,0
+
+                  EDL21 nach § 21b (3a) und (3b) EnWG a.F. (übergangsweise)  16,81        0,0
+
+                  Wandler Niederspannung  23,5                                            0,0
+
+                  Kundendienstrelais  55,0                                                0,0
+
+                  Monatliche MDE-Ablesung  696,0                                          0,0
+                                                                                          8,58
+
+                  Jahresentgelt inklusive Messung netto                                   514,55568
+
+
+                  Netzentgeltrechner RLM 2026
+
+
+
+                  Bitte befüllen Sie die grünen Eingabefelder, um ihr prognostiziertes Netzentgelt zu ermitteln.
+
+                  Spannungsebene                      bitte auswählen                     Mittelspannung
+
+                  Arbeit                                                                  500001
+
+                  Jahresmaximalleistung                                                   200,0
+
+                  Benutzungsstunden                                                       2500,005
+
+                  Arbeispreis ct/kWh netto                                                0,078422
+
+                  Leistungspreis €/kWa netto                                              238,591588
+
+                  Jahresentgelt ohne Messung netto                                        596872,274107
+
+
+                  Messstellenbetrieb  €/Jahr netto    "X" eintragen, wenn zutreffend
+                                                                                          0,0
+                  Mittelspannung    349,48            x                                   349,48
+                                                                                          0,0
+                  Umspannung MS/NS  294,74                                                0,0
+                                                                                          0,0
+                  Niederspannung    294,74                                                0,0
+                                                                                          0,0
+                  Wandler Mittelspannung  95,38                                           0,0
+                                                                                          0,0
+                  Wandler Niederspannung  23,5                                            0,0
+                                                                                          0,0
+                  TK-Einrichtung für Fernauslesung  73,89                                 0,0
+                                                                                          349,48
+
+                  Jahresentgelt inklusive Messung netto                                   597221,754107
+
+Preise für die Nutzung der Netzinfrastruktur für Kunden mit Leistungsmessung (RLM)
+
+                  Art der Entnahmestelle  Jahresbenutzungsdauer < 2.500 Vollbenutzungsstunden  Jahresbenutzungsdauer ≥ 2.500 Vollbenutzungsstunden  Messstellenbetrieb  €/Jahr netto  €/Jahr brutto²
+                                                                                                                              Mittelspannung    349,48            415,8812
+                                    Leistungspreis €/kWa  Arbeitspreis ct/kWh  Leistungspreis €/kWa  Arbeitspreis ct/kWh      Umspannung MS/NS  294,74            350,7406
+                                                                                                                              Niederspannung    294,74            350,7406
+                  Mittelspannung    21,232408         8,772789          238,591588        0,078422                            Wandler Mittelspannung  95,38       113,5022
+                  Umspannung NS     22,169488         9,226336          248,965549        0,154494                            Wandler Niederspannung  23,5        27,965
+                  Niederspannung    24,473437         9,148002          185,768407        2,696203                            TK-Einrichtung für Fernauslesung  73,89  87,9291
+
+Preise für die Nutzung der Netzinfrastruktur für Kunden mit Wirkarbeitszählung (SLP)
+
+                  Kunde im Niederspannungsnetz ohne Lastgangzählung  netto  brutto²                                           Messstellenbetrieb  €/Jahr netto    €/Jahr brutto²
+                                                                                                                              Eintarifzähler    8,58              10,2102
+                  Grundpreis €/a    77,0              91,63                                                                   Zweitarifzähler (inkl. Tarifschaltung)  9,62  11,4478
+                  Arbeitspreis ct/kWh  10,724392      12,762026                                                               EDL21 nach § 21b (3a) und (3b) EnWG a.F. (übergangsweise)  16,81  20,0039
+                                                                                                                              Wandler Niederspannung  23,5        27,965
+                  Entnahme durch Elektro-Speicherheizung / Wärmepumpe  netto  brutto²                                         Kundendienstrelais  55,0            65,45
+                                                                                                                              Monatliche MDE-Ablesung  696,0      828,24
+                  Grundpreis €/a    77,0              91,63
+                  Arbeitspreis ct/kWh  4,289757       5,104811
+
+                  Entnahme durch Elektromobilität  netto  brutto²
+
+                  Grundpreis €/a    77,0              91,63
+                  Arbeitspreis ct/kWh  8,257782       9,82676
+
+                  1,0                                 <2500
+                  2,0                                 >2500
+                  3,0
+                  4,0
+                  5,0

@@ -1,0 +1,136 @@
+URL: https://www.freisinger-stadtwerke.de/de/Netze/Stromnetz/Netzdaten-Strom/Netzzugang-Entgelte/20260508-Technische-Mindestanforderungen-Strom-TMA.pdf
+Netzbetreiber: Freisinger Stadtwerke Versorgungs-GmbH
+
+Freisinger Stadtwerke Versorgungs-GmbH (Netzbetreiber), Wippenhauser Straße 19, 85354 Freising
+Registergericht: München HRB 128918
+Geschäftsführer: Andreas Voigt und Dominik Schwegler
+Vorsitzende des Aufsichtsrats: Oberbürgermeisterin Monika Schwind
+
+
+Technische Mindestanforderungen (TMA) an Messeinrichtungen im
+Elektrizitätsnetz der Freisinger Stadtwerke Versorgungs-GmbH
+
+
+1.     Allgemeines
+       Diese    Anlage   zum   Messstellenbetreiberrahmenvertrag    Strom   regelt    die   technischen
+       Mindestanforderungen an Strommesseinrichtungen, die von Messstellenbetreibern nach § 21 b Abs. 2
+       EnWG sicherzustellen sind. Diese Anlage gilt auch bei der Durchführung von Umbauten und
+       Wartungsarbeiten an bestehenden Strommesseinrichtungen. Die dem zwischen der Freisinger
+       Stadtwerke Versorgungs-GmbH und Anschlussnehmer abgeschlossenen Netzanschlussvertrag zu
+       Grunde liegenden Technischen Anschlussbedingungen sowie die ggf. im Internet veröffentlichten und
+       bei Vertragsabschluss übergebenen weitergehenden Anforderungen der Freisinger Stadtwerke
+       Versorgungs-GmbH sind vom Messstellenbetreiber zu berücksichtigen.
+
+2.     Grundsätzliche Anforderungen
+       Bei der Planung, Errichtung und dem Betrieb der Messstelle sind neben den einschlägigen
+       gesetzlichen Vorschriften, den Normen und den allgemein anerkannten Regeln der Technik die
+       technischen Anforderungen dieser Anlage zu beachten. Die in Ziffer 1 genannten Anforderungen der
+       Freisinger Stadtwerke Versorgungs-GmbH sind hierbei vom Messstellenbetreiber zu berücksichtigen.
+       Der Messstellenbetreiber stellt sicher, dass an der Messstelle alle Voraussetzungen zur einwandfreien
+       Messung der abrechnungsrelevanten Größen dauerhaft und sicher eingehalten werden. Der
+       Messstellenbetreiber ermöglicht der Freisinger Stadtwerke Versorgungs-GmbH jederzeit
+       ungehinderten und uneingeschränkten Zugang zur Messeinrichtung.
+
+       Der Aufstellort der Messeinrichtung muss zugänglich, belüftet, beleuchtet, witterungsgeschützt und
+       trocken sein. Bei Aufstellung im Freien sind die Anforderungen durch gleichwertige Maßnahmen zu
+       erfüllen (z. B. Schutzarten durch Gehäuse). Die Einhaltung der zulässigen Umgebungs- und
+       Betriebstemperaturebereiche der Messeinrichtungen und sonstigen Anforderungen an den Aufstellort
+       ist sicherzustellen.
+
+       Die erforderlichen Wand- und                Montageabstände         (z.   B.    für   Instandhaltungsmaßnahmen,
+       Zählerwechsel) sind einzuhalten.
+
+       Die Messeinrichtung ist entsprechend den allgemein anerkannten Regeln der Technik und ggf. unter
+       Berücksichtigung der Vorgaben der Freisinger Stadtwerke Versorgungs-GmbH gegen unberechtigte
+       Energieentnahmen und Manipulationsversuche zu schützen (z. B. durch Plombierung, passiver
+       Manipulationsschutz).
+
+3.     Steuereinrichtungen und Tarifschaltzeiten
+       Ergibt sich eine Tarifierung des Zählpunktes im Rahmen der Netznutzung oder auf Anforderung des
+       Lieferanten, so ist dies vom Messstellenbetreiber zu berücksichtigen. Soweit keine andere Festlegung
+       getroffen wurde, sind die Tarifschaltzeiten der Freisinger Stadtwerke Versorgungs-GmbH zu
+       realisieren.
+
+       Bei Anlagen mit unterbrechbaren Verbrauchseinrichtungen sind seitens des Messstellenbetreibers
+       vorherige Abstimmungen mit der Freisinger Stadtwerke Versorgungs-GmbH erforderlich (z. B.
+       bezüglich der Lastschaltung).
+
+4.     Messtechnische Anforderungen
+       Eingesetzte Arbeitszähler müssen für die Kundenselbstablesung geeignet sein. Dies gilt als erfüllt,
+       wenn alle erforderlichen Register oder Zählwerke gleichzeitig ablesbar sind (keine Tastenbedienung
+       oder rollierende Anzeige). In allen anderen Fällen hat eine Einweisung durch den Messstellenbetreiber
+       zu erfolgen.
+
+       Die Kommunikationseinrichtung zur Fernablesung eines Lastgangzählers, inklusive der Verantwortung
+       für deren Funktionsweise, gehört zum Tätigkeitsumfang des Messstellenbetreibers. Der
+       Messstellenbetreiber hat Modems mit transparentem Übertragungsmodus und ohne aktiviertem
+       Passwortschutz einzusetzen.
+
+
+
+
+Stand: 10/2017
+
+                                                               -2-
+
+
+      Messeinrichtungen sind so zu dimensionieren, dass eine einwandfreie Messung gewährleistet ist.
+      Dabei ist die Größe des leistungsbegrenzenden Sicherungselements (z. B. SH-Schalter) zu
+      berücksichtigen.
+
+      Die Dimensionierung von Messeinrichtungen in Mittelspannung und in höheren Spannungsebenen ist
+      mit der Freisinger Stadtwerke Versorgungs-GmbH vorab rechtzeitig abzustimmen. Wandlermessungen
+      sind als Vierleiterschaltung aufzubauen.
+
+5.    Anforderungen an Betriebsmittel im Netz
+      Betriebsmittel im öffentlichen Netz dürfen keine unzulässigen Rückwirkungen auf andere
+      Anschlussnehmer verursachen. Es dürfen nur Betriebsmittel verwendet werden, die den technischen
+      Anforderungen der Freisinger Stadtwerke Versorgungs-GmbH entsprechen und von ihr freigegeben
+      sind.
+
+      Die geforderte Kurzschlussfestigkeit von Betriebsmitteln im Mittelspannungsnetz beträgt 16 kVA.
+
+6.    Identifikationsnummer von Zähler oder Zusatzeinrichtungen
+      Zähler oder Zusatzeinrichtungen sind grundsätzlich mit der bundesweit eindeutigen Identifikation,
+      bestehend aus der Sparte, der Herstellerkennung, dem Baujahr und der Fabriknummer des Zählers zu
+      kennzeichnen und zu führen, siehe Abbildung 1. Die Liste der Herstellerkennungen wird auf
+      Anforderung durch die Freisinger Stadtwerke Versorgungs-GmbH bereitgestellt.
+
+                 Sparte         Hersteller       B-Jahr                  Fabriknummer
+
+                     1            1   2      3    1   2    1    2    3   4   5   6   7   8   9   10
+                     1            2   3      4    5   6    7    8    9   10 11 12 13 14 15 16             Anzahl: 16
+                     1            0   1      8    0   2    0    0    8   7   6   5   4   3   2   1
+
+
+
+
+                                                           Fabriknummer wie bisher (rechtsbündig mit führenden Nullen)
+                                                 Baujahr
+
+
+                                 001 = ABB
+                                 002 = AEG
+                                   usw.
+             nach OBIS
+             1 = Elektrizität
+             7 = Gas
+             usw.
+
+      Abbildung 1: Aufbau der Identifikationsnummer
+
+
+7.    Zulässige Lastgangzähler
+      Zur Sicherstellung eines reibungslosen und kostengünstigen Datenaustausches mit der Freisinger
+      Stadtwerke Versorgungs-GmbH sind die Geräte und Parametrierungen rechtzeitig vor Inbetriebnahme
+      der Anlage mit der Freisinger Stadtwerke Versorgungs-GmbH abzustimmen.
+
+8.    Sicherheitstechnische Anforderungen
+      Der Messstellenbetreiber ist dafür verantwortlich, dass nach Einbau bzw. Ausbau der Messeinrichtung
+      offene elektrische Anlagenteile abgedeckt und gegen unbeabsichtigtes Berühren gesichert werden.
+
+
+
+
+Stand: 10/2017
+

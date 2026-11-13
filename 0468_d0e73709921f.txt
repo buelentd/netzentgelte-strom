@@ -1,0 +1,186 @@
+URL: https://www.stadtwerke-emmerich.de/de/Netzbetrieb-/Stromnetz/Netzzugang-Entgelte/Preisblatt-NNE-Stromnetz-2024-endgueltig-22012024.pdf
+Netzbetreiber: Stadtwerke Emmerich GmbH
+
+Stand: 21.12.2023
+                                                                                                                                                   Entgelte für Stromnetzzugang 2024
+
+
+
+ Netzentgelte bei Entnahme mit Lastgangzähler
+                                                                                                                                                                                                                                      Preis/kWh            Jahrespreis           Tagespreis Schaltjahr
+ Artikel-ID                                                                                                                                                                     Spannungsebene           Preisart                       €/kWh                €/kW/a                   366 Tage
+
+ 1-01-5-001 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                               Mittelspannung (E05)     Leistungspreis                                       11,04                        0,03016393443
+
+ 1-01-5-002 (Arbeitspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                                 Mittelspannung (E05)     Arbeitspreis                             0,0714
+
+ 1-01-5-003 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                              Mittelspannung (E05)     Leistungspreis                                      105,16                        0,28732240437
+
+ 1-01-5-004 (Arbeitspreis (Mittelspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                                Mittelspannung (E05)     Arbeitspreis                             0,0143
+
+ 1-01-6-001 (Leistungspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                       MS/NS Umspannung (E09)   Leistungspreis                                       13,31                        0,03636612022
+
+ 1-01-6-002 (Arbeitspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                         MS/NS Umspannung (E09)   Arbeitspreis                              0,075
+
+ 1-01-6-003 (Leistungspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                      MS/NS Umspannung (E09)   Leistungspreis                                      130,25                        0,35587431694
+
+ 1-01-6-004 (Arbeitspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                        MS/NS Umspannung (E09)   Arbeitspreis                             0,0165
+
+ 1-01-7-001 (Leistungspreis (Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                               Niederspannung (E06)     Leistungspreis                                       15,12                        0,04131147541
+
+ 1-01-7-002 (Arbeitspreis (Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                                                                 Niederspannung (E06)     Arbeitspreis                             0,0908
+
+ 1-01-7-003 (Leistungspreis (Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                              Niederspannung (E06)     Leistungspreis                                      140,04                        0,38262295082
+
+ 1-01-7-004 (Arbeitspreis (Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                                                                Niederspannung (E06)     Arbeitspreis                             0,0276
+
+
+ Netzentgelte bei Entnahme ohne Lastgangzähler
+ Haushalts, landwirtschaftlicher, gewerblicher und sonstiger Bedarf                                                                                                                                                                   Preis/kWh            Jahrespreis           Tagespreis Schaltjahr
+ Artikel-ID                                                                                                                                                                     Preisart                 Art der Marktlokation         €/kWh                 €/kW/a                    366 Tage
+
+ 1-02-0-001 (Grundpreis (sonstige Marktlokationen))                                                                                                                             Grundpreis               sonstige Marktlokationen                             23,72                        0,06480874317
+
+ 1-02-0-002 (Arbeitspreis (sonstige Marktlokationen))                                                                                                                           Arbeitspreis             sonstiger Verbrauch                       0,089
+
+
+ Netzentgelte bei Entnahme durch steuerbare Verbrauchseinrichtungen §14a EnWG, Speicherheizung, Wärmepumpe, E-Mobilität
+
+ 1-02-0-004 (Arbeitspreis (steuerbare Wärmepumpe))                                                                                                                              Arbeitspreis             steuerbare Wärmepumpe                    0,0285
+
+ 1-02-0-003 (Arbeitspreis (steuerbare Speicherheizung))                                                                                                                         Arbeitspreis             steuerbare Speicherheizung               0,0285
+
+ 1-02-0-006 (Arbeitspreis) Marktlokationen der Kategorie steuerbare Elektromobilität                                                                                            Arbeitspreis             steuerbare E-Mobilität                   0,0285
+ 1-02-0-007 (Arbeitspreis) Marktlokationen der Kategorie steuerbare Verbrauchseinrichtungen nach § 14a EnWG,
+ für die es keine genauer spezifizierte Artikel-ID gibt                                                                                                                         Arbeitspreis                                                      0,0285
+ 1-02-0-011 (Arbeitspreis) Marktlokation der Kategorie steuerbare Speicherheizung mit erweiterter Steuerbarkeit,
+ insbesondere nach § 14a EnWG                                                                                                                                                   Arbeitspreis             steuerbare Speicherheizung               0,0285
+
+ 1-02-0-012 (Arbeitspreis) Marktlokation der Kategorie steuerbare Wärmepumpe mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG                                        Arbeitspreis             steuerbare Wärmepumpe                    0,0285
+
+ 1-02-0-013 (Arbeitspreis) Marktlokationen der Kategorie steuerbare Elektromobilität mit erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG                                Arbeitspreis             steuerbare E-Mobilität                   0,0285
+ 1-02-0-015 (Grundpreis) Pauschale Reduzierung nach Modul 1 der Festlegung zu Netzentgelten bei Anwendung der netzorientierten
+ Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegung BK6-22-300                                                   Grundpreis                                                                   -126,47                      -0,34553352312
+ 1-02-0-016 (Arbeitspreis) Marktlokation nach Modul 2 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung
+ von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A                                          Arbeitspreis                                                   0,00356
+
+
+ Entgelte für Blindstrom
+
+ 3-01-0-001 (Blindarbeit)                                                                                                                                                       Blindarbeit                                                       0,0111
+
+
+
+
+Preisgültigkeit: 01.01.2024 (endgültig)                                                                                                                         Seite 1 von 3                                                                                         Stadtwerke Emmerich GmbH
+
+Stand: 21.12.2023
+                                                                                                                          Entgelte für Stromnetzzugang 2024
+
+
+ Entgelte für Messstellenbetrieb konventionelle kME und Moderne Messeinrichtungen mME                                                                                                                                                                  Jahrespreis           Tagespreis Schaltjahr
+                                                                                                                                                       Messtechnische Einordnung                                                                         €/kW/a                   366 Tage
+
+ 1-06-7-011 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung EDL21 Zähler))                                                             kME EDL21 Zähler                                                                                   13,00                        0,03551912568
+
+ 1-06-7-007 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Zweirichtungszähler Zweitarif))                                            kME Zweirichtungszähler Zweitarif                                                                  22,50                        0,06147540984
+
+ 1-06-7-001 (Messstellenbetrieb bei kME (Niederspannung, registrierende Last-/Einspeisemessung))                                                       kME mit registrierender Last-/Einspeisemessung                                                    376,00                        1,02732240437
+
+ 1-06-7-002 (Wandlersatz (Niederspannung))                                                                                                             Wandlersatz für Messstellenbetrieb bei kME                                                         10,00                        0,02732240437
+
+ 1-06-7-004 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Einrichtungszähler Eintarif))                                              kME Einrichtungszähler Eintarif                                                                    13,00                        0,03551912568
+
+ 1-06-7-005 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Einrichtungszähler Zweitarif))                                             kME Einrichtungszähler Zweitarif                                                                   22,50                        0,06147540984
+
+ 1-06-7-003 (Schaltgerät oder Rundsteuerempfänger (Niederspannung))                                                                                    Schaltgerät oder Rundsteuerempfänger                                                               18,12                        0,04950819672
+
+ 1-06-7-006 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Zweirichtungszähler Eintarif))                                             kME Zweirichtungszähler Eintarif                                                                   22,50                        0,06147540984
+
+ 1-06-7-008 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Mehrtarifzähler))                                                          kME Mehrtarifzähler                                                                                22,50                        0,06147540984
+
+ 1-06-7-009 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Prepaymentzähler))                                                         kME Prepaymentzähler                                                                               22,50                        0,06147540984
+
+ 1-06-7-010 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Maximumzähler))                                                            kME Maximumzähler                                                                                  22,50                        0,06147540984
+
+ 1-06-7-028 (Messstellenbetrieb bei kME (Niederspannung, monatliche Ablesung Einrichtungszähler Eintarif))                                             kME Einrichtungszähler Eintarif                                                                   376,00                        1,02732240437
+
+ 1-06-7-032 (Messstellenbetrieb bei kME (Niederspannung, monatliche Ablesung Mehrtarifzähler))                                                         kME Mehrtarifzähler                                                                               376,00                        1,02732240437
+
+ 1-06-0-036 (Telekommunikationsanschluss durch NB (alle Spannungsebenen/automatische Ablesung))                                                        Kommunikationseinrichtung                                                                          18,12                        0,04950819672
+
+ 1-06-5-001 (Messstellenbetrieb bei kME (Mittelspannung, registrierende Last-/Einspeisemessung))                                                       kME mit registrierender Last-/Einspeisemessung                                                    752,00                        2,05464480874
+
+ 1-06-5-002 (Wandlersatz (Mittelspannung))                                                                                                             Wandlersatz für Messstellenbetrieb bei kME                                                         98,00                        0,26775956284
+
+
+ Unterbrechnung der Anschlussnutzung (Sperrung)                                                                                                        Unterbrechung/Wiederherstellung Anschlussnutzung                             Preiseinheit          Preis
+
+ 2-01-7-001 (Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit)                                                                          Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit            Euro pro Vorgang        76,00
+
+ 2-01-7-003 (Erfolglose Unterbrechung)                                                                                                                 Erfolglose Unterbrechung                                                   Euro pro Vorgang        45,00
+
+ 2-01-7-002 (Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit)                                                                      Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit        Euro pro Vorgang        90,44
+
+ Konzessionsabgabe                                                                                                                                     Kundengruppe                                                                 Preiseinheit          Preis
+
+ 1-08-3-05154008Gemeindespezifische Konzessionsabgabe für Sondervertragskunden                                                                                                                                               Euro pro Kilowattstunde     0,0011
+
+ 1-08-4-05154008-01Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                    reine Landwirtschaft                                                  Euro pro Kilowattstunde     0,0159
+
+ 1-08-4-05154008-02Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                    Landwirtschaft in Kombination mit Haushalt                            Euro pro Kilowattstunde     0,0159
+
+ 1-08-1-05154008-03Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                Sonstige / keine gesonderte Kundengruppe                              Euro pro Kilowattstunde     0,0061
+
+ 1-08-1-05154008-01Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                reine Landwirtschaft                                                  Euro pro Kilowattstunde     0,0061
+
+ 1-08-1-05154008-02Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                Landwirtschaft in Kombination mit Haushalt                            Euro pro Kilowattstunde     0,0061
+
+ 1-08-4-05154008-03Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                    Sonstige / keine gesonderte Kundengruppe                              Euro pro Kilowattstunde     0,0159
+
+
+
+
+Preisgültigkeit: 01.01.2024 (endgültig)                                                                                                Seite 2 von 3                                                                                                              Stadtwerke Emmerich GmbH
+
+Stand: 21.12.2023
+                                                                                                                                                              Entgelte für Stromnetzzugang 2024
+
+
+ Kosten für Blindarbeit
+ In den Netzentgelten ist die Bereitstellung von induktiver bzw. kapazitiver Blindarbeit bis 50 % der Wirkarbeit enthalten.
+ Überschreitet der Netznutzer/Anschlussnutzer diese vertraglich vorgegebenen Grenzen, wird ihm die darüber hinausgehende Blindarbeit in Rechnung gestellt.
+
+ Pönale für die Überschreitung der vereinbarten Netzanschlusskapazität
+ Mittelspannung                                                                                                                                               15,00 €/kWh/a
+ Mittelspannung für Umspannung                                                                                                                                13,00 €/kWh/a
+
+ Arbeits-und Leistungswerte von Netzanschlusspunkten einer Spannungsebene, die in einer niedrigeren Spannungsebene gemessen werden,
+ werden zum Ausgleich von Transformatorverlusten mit einem individuellen Korrekturfaktor beaufschlagt.
+ Die korrigierten Leistungs-und Arbeitswerte sind Grundlage für die Abrechnung.
+ Beim Vorliegen solcher Zählpunkte wird der Korrekturfaktor dem Netznutzer schriftlich mitgeteilt.
+
+ Preise zzgl. gesetzlicher Abgaben (Mehrkosten nach dem KWK-Gesetz, § 19 Absatz 2 Satz 6 StromNEV, § 17 f EnWG , § 18 AbLaV -
+ sowie Konzessionsabgabe) und Umsatzsteuer.
+
+ Dieses Preisblatt wird gemäß § 20 Abs. 1 Satz 2 EnWG veröffentlicht. Es stellt die voraussichtlichen Entgelte dar,
+ die auf Basis der derzeit vorliegenden nicht vollständigen Erkenntnisse für 2024 ermittelt wurden. Es können sich beispielsweise
+ noch Änderungen durch Anpassungen der vorgelagerten Netzkosten, durch Anpassungen der Umlage nach KWK-G,
+ der § 19-StromNEV-Umlage, der Umlage nach § 18 AbLaV oder der Umlage nach § 17 f EnWG (Offshore-Umlage) ergeben.
+ Diese Aufzählung ist nicht abschließend.
+ Die Entgelte aus dieser Veröffentlichung sind nicht verbindlich.
+
+
+ Letztverbraucher, die die "besondere Ausgleichregelung" gemäß §§63 ff EEG in Anspruch nehmen, zahlen eine reduzierte KWK-Umlage, die durch den zuständigen
+ Übertragungsnetzbetreiber abgerechnet wird.
+
+ Haftungsausschluss
+ Da trotz aller Sorgfalt die Vollständigkeit und Fehlerfreiheit der veröffentlichten Daten nicht garantiert werden kann, ist, soweit gesetzlich
+ zulässig, eine diesbezügliche Haftung der Stadtwerke Emmerich GmbH ausgeschlossen. Stadtwerke Emmerich GmbH behält
+ sich das Recht vor, nachträgliche Änderungen der Daten vorzunehmen, wenn dies zu Korrekturzwecken erforderlich sein sollte.
+
+
+
+
+Preisgültigkeit: 01.01.2024 (endgültig)                                                                                                                                       Seite 3 von 3       Stadtwerke Emmerich GmbH
+

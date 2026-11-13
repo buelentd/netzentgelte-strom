@@ -1,0 +1,73 @@
+URL: https://www.stadtwerke-dachau.de/fileadmin/Media/Downloads/Downloads_Netzdienste/Netze/Stromnetz/Netzzugang/Netznutzung_f%C3%BCr_Lieferanten/Kontaktdaten_VNB-Strom_191001.xls
+Netzbetreiber: Stadtwerke Dachau Eigenbetr. d. Stadt Dachau
+
+
+Kontaktdatenblatt Verteilnetzbetreiber - Strom        Stand: 01.10.2019
+Anschrift
+Name              Stadtwerke Dachau
+Straße Hausnr.    Brunngartenstr. 3
+PLZ Ort           85221 Dachau
+Telefon           08131/7009-0
+Fax               08131/7009-60
+Internet          www.stadtwerke-dachau.de
+Umsatzsteuer-ID   DE 1282 55 122 (Stadt Dachau)
+
+Marktrolle        BDEW-Codenummern / Global Location Number (GLN) Strom
+Verteilnetzbetreiber (Strom)  9900132000004
+
+Bilanzierungsgebiet(e)
+Strom                               tennet-TSO        11YN10000755-015
+
+
+E-Mail-Adresse für den elektronischen Datenaustausch (1:1 Marktkommunikation)
+strom.netz@sw-dachau.x-aps.de
+
+Wir senden und akzeptieren EDIFACT-Nachrichten grundsätzlich nur im aktuellen, von der Bundesnetzagentur vorgegebenen, Format.
+Für Anfragen außerhalb der Standard-EDIFACT-Kommunikation benutzen Sie bitte folgende Kommunikationsadressen:
+Fachliche Ansprechpartner Allgemein
+Thema             E-Mail            Telefon           Fax
+Vertragsmanagement
+· Netznutzungsverträge  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500 08131/7009-501 08131/7009-947  08131/7009-60
+· EDI-Vereinbarung
+· Zuordnungsvereinbarung
+EDIFACT
+· allgemeine Themen  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500 08131/7009-501 08131/7009-947  08131/7009-60
+· INVOIC
+· Verschlüsselung/Signatur
+
+Fachlicher Ansprechpartner GPKE
+Thema             E-Mail            Telefon           Fax
+UTILMD
+· Lieferantenwechsel  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500/-501/-947  08131/7009-60
+INVOIC/REMADV
+- Rechnungen      netzwirtschaft@stadtwerke-dachau.de  08131/7009-500/-501/-947  08131/7009-60
+
+Fachlicher Ansprechpartner MSCONS
+Thema             E-Mail            Telefon           Fax
+MSCONS
+· Lastgangzeitreihen (RLM)  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500/-501/-947  08131/7009-60
+MSCONS
+· Zählerstände (SLP)  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500/-501/-947  08131/7009-60
+MSCONS
+: Zählerstandsgangreihen (mME/iMSys)  netzwirtschaft@stadtwerke-dachau.de  08131/7009-500/-501/-947  08131/7009-60
+
+Sonstige Ansprechpartner
+Thema             E-Mail            Telefon           Fax
+Forderungsmanagement
+· Zahlungsverkehr schiller@stadtwerke-dachau.de  08131/7009-910  08131/7009-929
+· Debitorenmanagement
+
+Bankverbindung
+Geldinstitut      Sparkasse Dachau
+IBAN              DE58700515400380902171
+BIC               BYLADEM1DAH
+Gläubiger-ID      DE 128255155
+
+Weitere Informationen
+Schwachlastzeit (SLP):              Mo. - Fr.         22:00 - 06:00 Uhr
+                                    Sa., So., Feiertage  00:00 - 24:00 Uhr
+Hochlastlastzeit (RLM):  vom 01.04 - 30.09.  Mo. - Fr.  06:00 - 18:00 Uhr
+                  vom 01.10 - 31.03.  Mo. - Fr.       06:00 - 22:00 Uhr
+                                    Sa.               06:00 - 13:00 Uhr
+Sperrzeiten (UVE)                   Mo. - Fr.         10:00 - 12:00 Uhr
+                                    Mo. - Fr.         17:00 - 18:30 Uhr

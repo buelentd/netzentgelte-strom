@@ -1,0 +1,122 @@
+URL: https://www.gemeindewerke-wendelstein.de/fileadmin/Dateien/Cross7/Startseite/Netze/Strom/Marktkommunikation/Netznutzung-nach-dem-Lastprofilverfahren-fuer-Speicherheizung_und_weitere_Anlagen_%281%29.pdf
+Netzbetreiber: Gemeindewerke Wendelstein KU
+
+Netznutzung     nach    dem       Lastprofilverfahren  für
+Speicherheizungs-,       Direktheizungsanlagen        und
+Wärmepumpen im Netzgebiet der Gemeindewerke
+Wendelstein , Wendelstein (Stand 01.01.2013)
+
+
+
+
+Seit Beginn der Heizungsperiode 2003/2004 zum 1. Oktober 2003 können Kundenanlagen mit elektrischen Speicherheizungen
+im Netzgebiet der Gemeindewerke Wendelstein (GWW) mittels Netznutzung beliefert werden. Mit Wirkung zum 01.01.2010
+wird dieses Verfahren auf Kundenanlagen mit elektrischen Direktheizungen und elektrischen Wärmepumpen erweitert. Allen
+Anlagen gemeinsam ist die Tatsache, dass der Netzbetreiber für den Betrieb der Anlagen Sperrzeiten vorgeben kann und bei
+Bedarf die Anlage ferngesteuert abschalten kann.
+Grundlage für die Belieferung ist das vom Verband der Netzbetreiber (VDN) und der Universität Cottbus erarbeitete Verfahren
+der temperaturabhängigen Lastprognose.
+Dieses Lastprognoseverfahren ist prinzipiell im VDN-Praxisleitfaden „Lastprofile für unterbrechbare Verbrauchseinrichtungen“
+beschrieben.
+Gemäß den Anforderungen des Praxisleitfadens und des Energiewirtschaftsgesetzes (EnWG) inkl. Der erlassenen
+Rechtsverordnungen sind nachfolgend die von jedem Netzbetreiber bereitzustellenden spezifischen Informationen und
+Festlegung für das Netzgebiet der Gemeindewerke Wendelstein aufgeführt:
+
+Temperaturdaten
+   • Die Gemeindewerke Wendelstein hat als maßgebliche Temperaturmessstelle für die Tagesmitteltemperatur Tm die
+       Messstelle des Deutschen Wetterdienstes (DWD) in Nürnberg (Flughafen Nürnberg, DWD Stationsnummer 10763)
+       festgelegt.
+
+Ermittlung der Temperaturzahl
+    • Die Temperaturmaßzahl TMZ errechnet sich nach der Gleichung
+                 TMZ=Tbezug - Tm
+        und wird auf eine Nachkommastelle gerundet
+    • Als Bezugstemperatur Tbezug wird ein Wert von +17°C angesetzt.
+    • Bei Tagesmitteltemperaturen größer 17°C wird die Temperaturmaßzahl auf Null gesetzt.
+    • Die Summe der Temperaturmaßzahlen TMZ über einen Zeitraum findet ohne Nachkommastelle Anwendung und wird
+        von den Gemeindewerken Wendelstein ermittelt.
+
+Normlastprofil für unterbrechbaren Verbraucher
+   • Die Gemeindewerke Wendelstein wenden ein gemeinsames temperaturabhängiges Heizungsprofil mit einer
+       Kurvenschar in 1°-Schritten für alle Speicherheizungsanlagen und ein gemeinsames temperaturabhängiges
+       Heizungsprofil für Direktheizungen und Wärmepumpen im Netzgebiet der Gemeindewerke Wendelstein an. Die
+       temperaturabhängigen Lastprofile stehen unter der Überschrift „Unterbrechbare Verbrauchseinrichtungen“ auf der
+       Internetseite
+             https://www.gemeindewerke-wendelstein.de/Gemeindewerke/Stromnetz/Netzzugang/K271.htm
+       in elektrischer Form zur Verfügung.
+   • Die Auswahl einer Kurve aus der angegebenen Kurvenschar für einen Beispieltag (d) erfolgt unter Berücksichtigung
+       der tatsächlichen Tagesmitteltemperatur Tm(d) sowie der Vortagestemperaturen Tm(d-1) bis Tm(d-3) durch Bildung
+       einer äquivalenten Tagesmitteltemperatur Tm, äquiv gemäß nachfolgender Formel
+                 Tm, äquiv .=0,5 x Tm(d) + 0,3 x Tm (d-1) + 0,15 x Tm(d-2) + 0,05 x Tm(d-3)
+   • Für das Lastprofilverfahren für Speicherheizungsanlagen mit Jahresarbeitsmessung am Niederspannungsnetz der
+       Gemeindewerke Wendelstein gilt die Standartlastprofil-Anwendungsgrenze von 100.000 kWh Jahresarbeit.
+   • Bei Einzähleranlagen mit Zweitarifumschaltung (gemeinsame Erfassung des Allgemein- und Heizungsverbrauches
+       über einen Zähler) erfolgt die Aufteilung der NT-Arbeit in Allgemein- und Heizungsverbrauch unter Zuhilfenahme der
+       VDEW-Standardlastprofile.
+       Basis für die Ermittlung des Allgemeinverbraucheranteiles während der NT-Zeit ist der Verbrauch während der HT-
+       Zeit. Dieser Wert entspricht im Durchschnitt 80% des Allgemeinverbrauches, so dass die verbleibenden 20% in der
+       NT-Verbrauchsmenge enthalten sind.
+
+        Damit ergibt sich nachfolgende Aufteilung:
+                Allgemeinverbrauch                     HT x 1,25
+                Speicherheizungsverbrauch              NT – (0,25 x HAT)
+        Die zugehörigen Lastprofile für Allgemeinstrom- und Heizstromverbrauch werden mit den entsprechenden
+        Teilmengen skaliert.
+
+Netznutzungsentgelt für unterbrechbare Verbraucher
+
+Das Netznutzungsentgelt für nach dem Lastprofilverfahren belieferte Speicher-, Direktheizungsanlagen und Wärmepumpen
+am Niederspannungsnetz der Gemeindewerke Wendelstein gilt gemäß den veröffentlichen Preisen.
+
+Datenaustausch und Datenformate
+
+Der Datenaustausch erfolgt entsprechend den Vorgaben der GPKE (Geschäftsprozesse zur Kundenbelieferung mit Elektrizität)
+unter Verwendung der jeweils gültigen UTILMD-Version.
+
+    •   Der spezifische Energiebedarf der Speicherheizungsanlage wird von den Gemeindewerken Wendelstein ermittelt.
+    •   Kundenanlagen mit getrennter Messung für Allgemein- und Heizungsverbrauch sind getrennt als zwei Lieferstellen
+        anzumelden.
+    •   Zusätzlich zur Kennung des „Zählverfahrens“ ist im Feld „Profischar“ die Kennung „S1“ für Speicherheizungsanlagen
+        und „S2“ für Direktheizungsanlagen und Wärmepumpen einzutragen.
+
+Anmeldung von unterbrechbaren Verbraucher
+
+Es gelten generell die von den Gemeindewerken Wendelstein im Lieferantenrahmenvertrag festgelegten Verfahren und Fristen
+für die Kundenan- und abmeldung.
+
+Für die Anmeldung von Kundenanlagen mit unterbrechbaren Verbraucher und für die Erstellung des Lastprofils für die
+Fahrplanmeldung sind darüber hinaus noch folgende Punkte zu beachten:
+
+    •   Einzähleranlagen mit Doppeltarifmessung werden durch den Lieferanten als eine neue Kundenanlage angemeldet und
+        können nur von einem Lieferanten beliefert werden (ein Zählpunkt)
+    •   Bei Anlagen mit getrennter Messung für Allgemein- und Heizungsverbrauch (zwei Zähpunkte) muss jeder Zählpunkt
+        durch den Lieferanten getrennt abgemeldet werden. Es sind somit verschiedene Lieferanten für Allgemeinverbrauch
+        und für den Heizungsverbrauch möglich.
+    •   Bei Einzähleranlagen mit Eintarifmessung und gemischtem Heizungs- und Allgemeinverbrauch ist keine Aufteilung auf
+        Allgemein- und Heizungsverbrauch möglich.
+
+        Die Netznutzung ist daher nur zu den Konditionen entsprechend Anlagen mit reinem Allgemeinverbrauch möglich.
+        Alternativ kann der Lieferant bei den Gemeindewerken Wendelstein einen kostenpflichtigen Umbau der
+        Messeinrichtung beauftragen.
+
+    •   Auf Wunsch des Lieferanten und /oder Kunden ist der Einbau eines Lastgangzählers möglich. Die Netznutzung erfolgt
+        in diesem Fall analog den Kunden mit Lastgangmessung. Das Netznutzungsentgelt errechnet sich aus dem Leistungs-
+        und Arbeitspreis.
+    •   Das für den allgemeinverbrauch zu verwendende Lastprofil legen die Gemeindewerke Wendelstein fest.
+
+        Für den Verbrauch der Speicherheizung gilt-falls nicht anders angegeben-automatisch die Profilschar „S1“. Diese
+        Angabe ist zusätzlich im Feld „Profilschar“ einzutragen.
+
+
+
+Ermittlung des Entnahme-Lastprofils
+
+Die Standartlastprofile für Kunden mit Speicherheizungen und/der Wärmepumpen werden nach dem Abrechnungsmonat bis
+zum 10. Werktag MaBiS-Konform an den jeweiligen Marktpartner/Lieferant übermittelt.
+
+Sonstiges
+
+Alle Regelungen bzgl. Des beschriebenen Abwicklungsverfahrens gelten vorbehaltlich einer Änderung durch die
+Bundesnetzagentur. Für Kundenanlagen mit Speicherheizungen, Direktheizungen und Wärmepumpen gelten die Regelungen
+des Lieferantenrahmenvertrages bzgl. Lastprofilverfahren analog.
+

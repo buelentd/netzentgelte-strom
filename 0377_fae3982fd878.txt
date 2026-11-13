@@ -1,0 +1,810 @@
+URL: https://www.sw-aalen.de/uploads/attachment/download/64/771.20_220627_VBEW-Messkonzepte_Handout.pdf
+Netzbetreiber: Stadtwerke Aalen GmbH
+
+ VBEW-Messkonzepte
+ Handout zur Auswahl
+ der Messkonzepte
+
+ Ausgabe: 07.2022
+
+
+
+
+Herausgegeben vom Verband der Bayerischen Energie- und Wasserwirtschaft e.V. – VBEW
+Arbeitsgruppe „Messkonzepte“
+
+Vorwort:
+
+
+Die VBEW-Messkonzepte untergliedern sich in zwei Kategorien
+
+         ➢ Messkonzepte für Erzeugungsanlagen
+           Hier stehen 6 Auswahlblätter zur Verfügung.
+
+         ➢ Messkonzepte für Bezugsanlagen
+           Hier steht 1 Auswahlblatt zur Verfügung.
+
+Für die beiden Kategorien gibt es jeweils ein Hinweisblatt. Die einzelnen Auswahlblätter können
+auch eigenständig verwendet wenden.
+
+
+
+
+Inhalte und Darstellungen aus diesem Dokument dürfen ausschließlich von Mitgliedern des
+Verbands der Bayerischen Energie- und Wasserwirtschaft e.V. sowie lizenzierten Nutzern des
+"EEG-Navigators" der VBEW Dienstleistungsgesellschaft mbH weiter verwendet bzw. verbreitet
+werden, wenn kein Weiterverkauf gegen Entgelt vorgenommen wird, die vorhandenen
+Quellenangaben beibehalten und unverfälscht wiedergegeben werden, auf den jeweiligen Urheber
+hingewiesen wird sowie die Inhalte und Darstellungen nicht verändert oder verfälscht werden.
+
+
+
+
+Änderungshistorie
+ Ausgabe      Datum         Wesentliche Änderungen zur vorherigen Version
+ 02/2013      12.02.2013    -------
+ 10/2013      25.10.2013    Darstellung in Skizzen von G auf EA geändert, Textanpassungen
+ 02/2014      27.02.2014    Erweiterung um MK C und D (MK C1 und C2, MK D1, D2 und D3)
+ 11/2014      17.11.2014    Textanpassung an EEG 2014 (insbesondere bzgl. „EEG-Umlage auf Eigenversorgung“)
+ 03/2017      29.03.2017    Textanpassung an EEG 2017 bzw. KWKG 2016-II
+ 09/2017      22.09.2017    Textanpassungen der MK D1, D2 und D3 an das sog. Mieterstromgesetz
+ 08/2018      24.08.2018    Aufnahme MK C3, redaktionelle Änderungen bei MK C1, C2 und MK D,
+                            Erweiterung um „Messkonzepte für Bezugsanlagen“
+ 11/2019      22.11.2019    Erweiterung MK E „Messkonzepte für Stromspeicher“, redaktionelle Anpassungen: Text-
+                            baustein „mit Rücklaufsperre“ gelöscht, „Selbstverbrauch“ durch „Eigenversorgung“ ersetzt
+ 02/2021      09.02.2021    Textanpassung an EEG 2021, insb. bzgl. Eigenversorgung „30“ kW und „30.000“ kWh,
+                            Aufnahme MK B2a, optische Anpassungen und Textanpassung MK E4
+ 05/2021      28.05.2021    Ergänzung Bsp. KWKG-Anlage, optische Anpassung MK B4 „optionale Zähler“ und
+                            Textanpassung MK C, jedes Auswahlblatt enthält eine Unterschriftszeile
+ 09/2021      02.09.2021    Textanpassung bzgl. Wegfall der Eigenversorgungsgrenze 30.000 kWh, Aufnahme MK F
+                            „Messk. für mehrere Erzeugungsanlagen mit Stromspeicher“, redaktionelle Änderungen
+ 07/2022      27.06.2022    Umfangreiche Textanpassungen bzgl. Wegfall EEG-Umlage, Wegfall MK E4, E5 und E6
+
+
+
+
+Hinweis: Nachdem das EEG, KWKG und EnWG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für
+deren rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                                  © VBEW
+
+Messkonzepte
+für Erzeugungsanlagen
+
+
+
+Hinweise zu den Auswahlblättern
+
+Die Förderung des eingespeisten bzw. erzeugten Stroms nach dem Erneuerbare-Energien-Gesetz
+(EEG) bzw. dem Kraft-Wärme-Kopplungs-Gesetz (KWKG) erfordert entsprechende Messkonzepte.
+Schon allein die komplexen Vergütungsregeln führen in der Praxis zu verschiedenen Konzepten.
+Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber. Der Netzbetreiber hat
+wiederum die Verpflichtung, das gewählte Messkonzept vor allem auf Konformität mit dem EEG,
+KWKG und den Technischen Anschlussbedingungen zu prüfen.
+
+
+Um die Abwicklung der Fördergesetze (EEG, KWKG) für den Anlagen- und den Netzbetreiber zu
+erleichtern, stehen die nachgenannten Auswahlblätter zur Verfügung.
+
+    ▪ Auswahlblatt A: Messkonzepte für eine einzelne Erzeugungsanlage
+    ▪ Auswahlblatt B: Messkonzepte für mehrere Erzeugungsanlagen (Erweiterungen)
+    ▪ Auswahlblatt C: Messkonzepte für Erzeugungsanlagen mit optional steuerbarem
+                      Verbraucher
+    ▪ Auswahlblatt D: Messkonzepte für Selbstversorgergemeinschaft
+    ▪ Auswahlblatt E: Messkonzepte für eine einzelne Erzeugungsanlage mit Stromspeicher
+    ▪ Auswahlblatt F: Messkonzepte für mehrere Erzeugungsanlagen mit Stromspeicher
+
+Diese Auswahlblätter sind grundsätzlich zur Anwendung bei Erzeugungsanlagen vorgesehen, die
+nach dem 1. Juli 2022 neu errichtet, umgebaut oder erweitert werden. Der Wechsel von einem
+Vergütungs- / Messkonzept in ein anderes ist evtl. mit Umbauten an den Messeinrichtungen
+verbunden und rechtzeitig mit dem Netzbetreiber abzustimmen.
+
+
+
+
+Ergänzende Hinweise:
+Diese Formulare erheben keinen Anspruch auf Vollständigkeit. Insbesondere nachgenannte
+spezifische Anforderungen an die Messung werden nicht berücksichtigt:
+- technische Ausführung der Zähler (Lastgangzähler, Wandler usw.)
+- Einsatz von Messsystemen
+- Vorgaben für Anlagen am Mittelspannungsnetz
+- Anforderungen an den Zählerplatz
+- Anforderungen aus dem Redispatch
+
+
+
+
+Weitere Umsetzungshilfen zum EEG bietet der EEG-Navigator, siehe www.eeg-navigator.de.
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt A: Messkonzepte
+für eine einzelne Erzeugungsanlage
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK A1: Volleinspeisung
+                                                          Anwendungsbeispiele:
+                                                               •   Windkraftanlagen
+                                                               •   PV-Freiflächenanlagen
+                                                               •   PV-Anlage auf Lärmschutzwand
+                                                               •   PV-Gebäudeanlage ohne Selbstverbrauch
+
+
+
+
+Z1: Zähler für Bezug und Lieferung
+
+□ MK A2: Überschusseinspeisung
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlage
+                                                               • KWKG-Anlage ohne gesetzlichen
+                                                                 Zuschlag auf den Selbstverbrauch
+                                                               • KWKG-Kleinstanlage mit pauschalierter
+                                                                 Einmalzahlung
+
+
+
+
+Z1: Zähler für Bezug und Lieferung
+
+□ MK A3: Überschusseinspeisung mit Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • KWKG-Anlage mit gesetzlichem Zuschlag
+                                                                 auf den Selbstverbrauch
+                                                               • Anlage in kaufmännisch-bilanzieller
+                                                                 Weitergabe
+                                                               • Umbau von PV-Anlagen mit
+                                                                 Selbstverbrauchsvergütung oder
+                                                                 Marktintegrationsmodell von Voll- auf
+                                                                 Überschusseinspeisung
+
+
+
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Lieferung
+
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt B: Messkonzept für mehrere
+Erzeugungsanlagen (Erweiterungen)
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK B1: Volleinspeisung mit gemeinsamer Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • Windpark
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) *)
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                               • Nur EEG-Anlagen ohne Zonung nach
+                                                                 Bemessungsleistung
+
+Z1: Zähler für Bezug und Lieferung
+
+□ MK B2: Überschusseinspeisung mit gemeinsamer Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • Anlagen in kaufmännisch-bilanzieller
+                                                                 Weitergabe
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) *)
+                                                               • Erweiterung einer bestehenden
+                                                                 PV-Anlage mit Selbstverbrauchsvergütung
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                               • Nur EEG-Anlagen ohne Zonung nach
+                                                                 Bemessungsleistung
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Lieferung
+
+□ MK B2a: Überschusseinspeisung ohne Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) *)
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                               • Keine Vergütung des Selbstverbrauchs
+                                                               • Nur EEG-Anlagen ohne Zonung nach
+                                                                 Bemessungsleistung
+
+
+
+Z1: Zähler für Bezug und Lieferung
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt B: Messkonzept für mehrere
+Erzeugungsanlagen (Erweiterungen)
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK B3: Überschusseinspeisung mit getrennter Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • EEG-Überschusseinspeisung von Anlagen
+                                                                 mit Zonung nach Bemessungsleistung
+                                                               • KWKG-Anlagen mit gesetzl. Zuschlag auf
+                                                                 den Selbstverbrauch (RLM oder iMSys)
+                                                               • Anlagen in kaufmännisch-bilanzieller
+                                                                 Weitergabe
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) *)
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                                  (Ausnahme: Anlagen in kaufmännisch-bilanzieller
+Z1: Zähler für Bezug und Lieferung                                Weitergabe oder Abrechnungskonstrukte mit
+Z2, Z3: Zähler für Lieferung                                      registrierender Lastgangmessung bzw. intelligentem
+                                                                  Messsystem)
+
+
+
+□ MK B4: Kaskadenschaltung (Doppelter Selbstverbrauch)
+                                                          Anwendungsbeispiele:
+                                                               • Kombination EEG- und KWKG-Anlage
+                                                               • Kombination EEG-Anlagen mit
+                                                                 unterschiedlichen Energieträgern
+                                                                 (z.B. Kleinwindanlage und PV-Anlage)
+                                                               • PV-Anlagen (Kombination MIM- und Nicht-
+                                                                 MIM-Anlagen) *)
+
+                                                          Voraussetzung:
+                                                               • Werden beide Anlagen in Selbstverbrauch
+                                                                 betrieben, so ist EA2 bei PV und Wasser-
+                                                                 kraft auf 30 kW *1) und bei einer
+                                                                 BHKW-Anlage auf 50 kW *2) begrenzt.
+                                                                  *1) lt. BMF-Schreiben IV D2-S7124/07/10002:003 v. 23. Mai 11
+                                                                  *2) lt. Clearingstellenverfahren 2011/2/2 vom 30. März 2012
+                                                               • Im schraffierten Bereich dürfen keine
+                                                                 Verbraucher angeschlossen sein.
+Z1: Zähler für Bezug und Lieferung                        Anmerkung:
+Z2, Z3, Z4: Zähler für Lieferung                          Die Notwendigkeit der Zähler Z2 und Z3 richtet sich nach den
+                                                          gültigen Abrechnungsvorschriften (z.B. KWKG-Zuschlag).
+
+
+
+___________________________________________________         ___________________________________________________
+Energieträger und Leistung der Erzeugungsanlage 1 (EA1)     Energieträger und Leistung der Erzeugungsanlage 2 (EA2)
+
+
+_________________________________________________________             ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                            Anlagenbetreiber: Datum, Unterschrift
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                                     © VBEW
+
+Auswahlblatt B: Messkonzept für mehrere
+Erzeugungsanlagen (Erweiterungen)
+
+
+
+Hinweise für Auswahl der Messkonzepte nach Auswahlblatt B
+
+*) Besondere Vorgaben für gemeinsame Messeinrichtungen
+Nach § 33 Abs. 4 EEG 2012-II dürfen Anlagen nur über eine gemeinsame Messeinrichtung gemessen werden, wenn für
+sie die gleiche Begrenzung der vergütungsfähigen Strommenge gilt. Diese Vorgabe wurde in Verbindung mit Marktinte-
+grationsmodell (MIM) für PV-Gebäudeanlagen mit einer Leistung über 10 kWp bis 1 MWp eingeführt und betrifft
+Inbetriebnahmen von i.d.R. 01.04.2012 bis 31.07.2014. Wesentlich ist, dass ab dem EEG 2014 (Inbetriebnahmen ab
+01.08.2014) diese Vorgabe weiterhin gilt. (Hinweis: Beim Marktintegrationsmodell ist die vergütungsfähige Strommenge
+auf maximal 90% begrenzt.)
+Unter Berücksichtigung der vergütungstechnischen Zusammenfassung der Anlagen nach § 24 EEG 2021 sind die
+entsprechenden Messkonzepte auszuwählen. Die nachstehende Matrix zeigt die möglichen Messkonzepte.
+Kombination von PV-Gebäudeanlagen mit Inbetriebnahmen zu unterschiedlichen EEG-Versionen
+                                                                              MK MK MK MK MK
+PV-Gebäudeanlage 1                     PV-Gebäudeanlage 2
+                                                                              B1 B2 B2a B3 B4
+EEG 2000, 2004, 2009 oder 2012-I       EEG 2000, 2004, 2009 oder 2012-I        X   X   X*1 X -
+EEG 2000, 2004, 2009 oder 2012-I       EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)   X   X   X*1 X -
+EEG 2000, 2004, 2009 oder 2012-I       EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)   -    -    - - X
+EEG 2000, 2004, 2009 oder 2012-I       EEG 2014, EEG 2017 oder EEG 2021        X   X   X*1 X -
+EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)  EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)   X   X    X  X -
+EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)  EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)   X   X    X  X -
+EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)  EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)   -    -    - - X
+EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)  EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)   -    -    - - X
+EEG 2012-II (PV ≤ 10 kWp und > 1 MWp)  EEG 2014, EEG 2017 oder EEG 2021        X   X    X  X -
+EEG 2012-II (PV > 10 kWp und ≤ 1 MWp)  EEG 2014, EEG 2017 oder EEG 2021        -    -    - - X
+EEG 2014, EEG 2017 oder EEG 2021       EEG 2014, EEG 2017 oder EEG 2021        X   X    X  X -
+Ausgeförderte Anlagen sind in dieser Tabelle dem EEG 2000 zuzuordnen (Die gesetzlichen Regelungen hierzu sind im
+EEG 2021 festgelegt).
+*1 Wenn für PV-Anlagen nach dem EEG 2009/2012-I eine Vergütung für den Selbstverbrauch beansprucht wird, kann
+
+  das Messkonzept B2a nicht angewendet werden.
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt C: Messkonzepte für Erzeugungs-
+anlagen mit optional steuerbarem Verbraucher
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK C1: Einzelne Erzeugungsanlage ohne Steuerung der
+                    Verbrauchseinrichtung
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlage mit Wärmepumpe oder
+                                                                 Ladeeinrichtung für Elektrofahrzeug
+                                                                 (durch Netzbetreiber nicht steuerbar im
+                                                                 Sinne des § 14a EnWG, somit kein
+                                                                 „WP- bzw. Ladestrom-Tarif“ möglich.)
+
+                                                          Anmerkung:
+                                                          Die Notwendigkeit des Zählers Z2 richtet sich nach den
+                                                          gültigen Abrechnungsvorschriften (z.B. KWKG-Zuschlag).
+
+
+
+
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Lieferung
+
+□ MK C2: Mehrere Erzeugungsinstallationen mit steuerbarer
+                    Verbrauchseinrichtung
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlagen mit Wärmepumpe oder
+                                                                 Ladeeinrichtung für Elektrofahrzeug
+                                                                 (durch Netzbetreiber steuerbar im Sinne
+                                                                 des § 14a EnWG, somit „WP- bzw.
+                                                                 Ladestrom-Tarif“ möglich.
+                                                                 Die PV-Anlage ist in zwei unabhängige
+                                                                 Installationen unterteilt.)
+
+                                                          Anmerkung:
+                                                          Die Notwendigkeit der Zähler Z2 und Z4 richtet sich nach den
+                                                          gültigen Abrechnungsvorschriften (z.B. KWKG-Zuschlag).
+
+
+Z1, Z3: Zähler für Bezug und Lieferung
+Z2, Z4: Zähler für Lieferung
+
+
+
+
+___________________________________________________         ___________________________________________________
+Bei MK C2: Leistung der Erzeugungsanlage a (EAa)            Bei MK C2: Leistung der Erzeugungsanlage b (EAb)
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt C: Messkonzepte für Erzeugungs-
+anlagen mit optional steuerbarem Verbraucher
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK C3: Erzeugungsanlage mit steuerbarer Verbrauchsein-
+                    richtung und weiteren Verbrauchern
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlage mit Wärmepumpe oder
+                                                                 Ladeeinrichtung für Elektrofahrzeug
+                                                                 (durch Netzbetreiber steuerbar im Sinne
+                                                                 des § 14a EnWG, somit „WP- bzw.
+                                                                 Ladestrom-Tarif“ möglich.)
+
+                                                          Voraussetzung:
+                                                              • Dieses Messkonzept ist mit dem
+                                                                Netzbetreiber abzustimmen, insbesondere
+                                                                Messgeräteeinsatz, Ablese- und
+                                                                Abrechnungsmodalitäten.
+                                                                  (Wird der Bezug des steuerbaren Verbrauchers mit
+                                                                  einem Doppeltarifprodukt abgerechnet, sind Z1 und
+                                                                  Z2 als Doppeltarifzähler auszuführen.)
+
+                                                          Anmerkung:
+                                                          Die Notwendigkeit des Zählers Z3 richtet sich nach den
+                                                          gültigen Abrechnungsvorschriften (z.B. KWKG-Zuschlag).
+
+
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Bezug
+Z3: Zähler für Lieferung
+
+
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt D: Messkonzepte
+für Selbstversorgergemeinschaft
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK D1: Selbstversorgergemeinschaft
+                    Alle Anschlussnutzer werden von Erzeugungsanlage versorgt
+Beispiel:
+                                                                             Anwendungsbeispiele:
+                                                                               • BHKW-Mieterstrom-
+                                                                                 gemeinschaft
+                                                                               • PV-Mieterstromgemeinschaft
+
+                                                                             Voraussetzung:
+                                                                               • Alle Nutzer werden von der
+                                                                                 Selbstversorgergemeinschaft
+                                                                                 versorgt
+                                                                                   (Selbstversorgergemeinschaft =
+                                                                                   Contractor, Vermieter,
+                                                                                   Genossenschaft usw.)
+                                                                               • Die Selbstversorgergemein-
+Für den Netzbetreiber relevante Zähler:
+                                                                                 schaft weist nach, dass alle
+Z1: Zähler für Bezug und Lieferung
+                                                                                 Nutzer von der Erzeugungs-
+Z2: Zähler für Lieferung
+                                                                                 anlage und von einem
+Anmerkungen:                                                                     gemeinsamen Reststrom-
+ • Für den Netzbetreiber sind die Zähler (ZN1 bis ZNn) nicht relevant.           lieferanten versorgt werden.
+ • Für die netzrelevanten Zähler sind TAB konforme Zählerplätze
+   einzuplanen.
+
+
+□ MK D2: Selbstversorgergemeinschaft
+                    Hardwarelösung (2 Sammelschienenmodell) für aus dem Netz versorgte
+                    Anschlussnutzer
+Beispiel:
+                                                                             Anwendungsbeispiele:
+                                                                               • BHKW-Mieterstrom-
+                                                                                 gemeinschaft
+                                                                               • PV-Mieterstromgemeinschaft
+
+                                                                             Voraussetzung:
+                                                                               • Die Selbstversorgergemein-
+                                                                                 schaft weist nach, welche
+                                                                                 Nutzer von der Erzeugungs-
+                                                                                 anlage und von einem
+                                                                                 gemeinsamen Reststrom-
+                                                                                 lieferanten versorgt werden.
+Für den Netzbetreiber relevante Zähler:                                            (Selbstversorgergemeinschaft =
+Z1: Zähler für Bezug und Lieferung                                                 Contractor, Vermieter,
+                                                                                   Genossenschaft usw.)
+Z2: Zähler für Lieferung
+Z3: Zähler für Bezug
+Anmerkungen:
+ • Für den Netzbetreiber sind die Zähler (ZN1 bis ZN3) nicht relevant.
+ • Für die netzrelevanten Zähler sind TAB konforme Zählerplätze
+   einzuplanen.
+
+
+
+
+_________________________________________________________                ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                               Anlagenbetreiber: Datum, Unterschrift
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                                 © VBEW
+
+Auswahlblatt D: Messkonzepte
+für Selbstversorgergemeinschaft
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK D3: Selbstversorgergemeinschaft
+                    Softwarelösung für aus dem Netz versorgte Anschlussnutzer
+Beispiel:
+                                                                           Anwendungsbeispiele:
+                                                                              • BHKW-Mieterstrom-
+                                                                                gemeinschaft
+                                                                              • PV-Mieterstromgemeinschaft
+
+                                                                           Voraussetzung:
+                                                                              • Die Selbstversorgergemein-
+                                                                                schaft weist nach, welche
+                                                                                Nutzer von der Erzeugungs-
+                                                                                anlage und von einem
+                                                                                gemeinsamen Reststrom-
+                                                                                lieferanten versorgt werden.
+                                                                                 (Selbstversorgergemeinschaft =
+Für den Netzbetreiber relevante Zähler:                                          Contractor, Vermieter,
+Z1: Zähler für Bezug und Lieferung                                               Genossenschaft usw.)
+Z2: Zähler für Lieferung                                                      • Dieses Messkonzept ist mit
+Z3: Zähler für Bezug                                                            dem Netzbetreiber abzu-
+Anmerkungen:                                                                    stimmen, insbesondere
+  • Für den Netzbetreiber sind die Zähler (ZN1, ZN2, ZN4) nicht relevant.       Messgeräteeinsatz, Ablese-
+  • Für die netzrelevanten Zähler sind TAB konforme Zählerplätze                und Abrechnungsmodalitäten.
+    einzuplanen.
+Hinweis:
+Bei diesem Messkonzept kann die Selbstversorgergemeinschaft ihren abrechnungsrelevanten Strombezug und ihre
+vergütungsrelevante Stromeinspeisung nur rechnerisch ermitteln. Es ist auch der Stromverbrauch der Kunden zu
+berücksichtigen, die über einen Drittversorger aus dem Netz versorgt werden.
+
+
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt E: Messkonzepte für eine
+einzelne Erzeugungsanlage mit Stromspeicher
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK E1: Volleinspeisung
+                                                              Anwendungsbeispiele:
+                    Eigentumsgrenze                               • Netzdienliche Speicheranwendung,
+                                                                    z.B. Regelenergie
+            Z1B    Z1        Z1L
+
+
+
+
+               Speicher
+Z1: Zähler für Bezug und Lieferung
+
+□ MK E2: Überschusseinspeisung
+                                        Eigentumsgrenze
+                                                              Anwendungsbeispiele:
+                                                                  • PV-Anlage und Speicher
+                                                                  • KWKG-Anlage ohne gesetzlichen
+                         Z1B       Z1     Z1L
+                                                                    Zuschlag auf den Selbstverbrauch und
+                                                                    Speicher
+                                                                  • Nachrüstung eines Speichers zu einer
+                                                                    bestehenden PV-Anlage ohne
+                                                                    Selbstverbrauchsvergütung
+                    EA
+                                                              Voraussetzung:
+    Speicher
+             Erzeugungs-
+                                                Verbraucher       • Speichersystem ohne Netzeinspeisung
+                anlage
+                                                              Anmerkung:
+                                                              Das Messkonzept ist für AC-Kopplung gezeichnet und kann
+Z1: Zähler für Bezug und Lieferung                            auch für DC-Kopplung ausgewählt werden.
+
+□ MK E3: Überschusseinspeisung mit Erzeugungsmessung
+                                        Eigentumsgrenze
+                                                              Anwendungsbeispiele:
+                                                                  • KWKG-Anlage mit gesetzlichem Zuschlag
+                         Z1B       Z1     Z1L
+                                                                    auf den Selbstverbrauch und Speicher
+                                                                  • Nachrüstung eines Speichers zu einer
+                                                                    PV-Anlage mit Selbstverbrauchs-
+                        Z2     Z2L                                  vergütung oder Marktintegrationsmodell
+
+                                                              Voraussetzung:
+                    EA                                            • Speichersystem ohne Netzeinspeisung
+                  Erzeugungs-
+     Speicher                               Verbraucher
+                     anlage
+
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Lieferung
+
+
+_________________________________________________________               ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                              Anlagenbetreiber: Datum, Unterschrift
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                                © VBEW
+
+Auswahlblatt F: Messkonzepte für mehrere
+Erzeugungsanlagen mit Stromspeicher
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK F1: Überschusseinspeisung
+                                                          Anwendungsbeispiele:
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) und Speicher
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                               • Nur EEG-Anlagen ohne Zonung nach
+                                                                 Bemessungsleistung
+                                                               • Speichersystem ohne Netzeinspeisung
+                                                          Anmerkung:
+                                                          Das Messkonzept ist für AC-Kopplung gezeichnet und kann
+                                                          auch für DC-Kopplung ausgewählt werden.
+
+Z1: Zähler für Bezug und Lieferung
+
+
+
+
+□ MK F2: Überschusseinspeisung mit gemeinsamer Erzeugungsmessung
+                                                          Anwendungsbeispiele:
+                                                               • Nachrüstung eines Speichers zu
+                                                                 PV-Anlagen mit Selbstverbrauchs-
+                                                                 vergütung oder Marktintegrationsmodell
+                                                                 (keine Kombination MIM- und Nicht-MIM-
+                                                                 Anlagen)
+
+                                                          Voraussetzung:
+                                                               • Gleicher Energieträger
+                                                               • Nur EEG-Anlagen ohne Zonung nach
+                                                                 Bemessungsleistung
+                                                               • Speichersystem ohne Netzeinspeisung
+Z1: Zähler für Bezug und Lieferung
+Z2: Zähler für Lieferung
+
+
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                             © VBEW
+
+Auswahlblatt F: Messkonzept für mehrere
+Erzeugungsanlagen mit Stromspeicher
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK F3: Überschusseinspeisung mit getrennter Erzeugungsmessung
+                                                           Anwendungsbeispiele:
+                                                               • EEG-Überschusseinspeisung von Anlagen
+                                                                 mit Zonung nach Bemessungsleistung und
+                                                                 Speicher
+                                                               • KWKG-Anlagen mit gesetzlichem Zuschlag
+                                                                 auf den Selbstverbrauch (RLM oder iMSys)
+                                                                 und Speicher
+                                                               • PV-Anlagen (keine Kombination MIM- und
+                                                                 Nicht-MIM-Anlagen) und Speicher
+
+                                                           Voraussetzung:
+                                                               • Gleicher Energieträger
+Z1: Zähler für Bezug und Lieferung                                (Ausnahme: Anlagen in kaufm.-bilanz. Weitergabe
+Z2, Z3: Zähler für Lieferung                                      oder Abrechnungskonstrukte mit registrierender
+                                                                  Lastgangmessung bzw. intelligentem Messsystem)
+                                                               • Speichersystem ohne Netzeinspeisung
+
+
+□ MK F4: Kaskadenschaltung (Doppelter Selbstverbrauch)
+                                                           Anwendungsbeispiele:
+                                                               • Kombination EEG- und KWKG-Anlage und
+                                                                 Speicher
+                                                               • Kombination EEG-Anlagen mit
+                                                                 unterschiedlichen Energieträgern
+                                                                 (z.B. Kleinwindanlage und PV-Anlage) und
+                                                                 Speicher
+                                                               • PV-Anlagen (Kombination MIM- und Nicht-
+                                                                 MIM-Anlagen) und Speicher
+
+                                                           Voraussetzung:
+                                                              • Werden beide Anlagen in Selbstverbrauch
+                                                                betrieben, so ist EA2 bei PV und Wasser-
+                                                                kraft auf 30 kW *1) und bei einer BHKW-
+Z1: Zähler für Bezug und Lieferung                              Anlage auf 50 kW *2) begrenzt.
+                                                                 *1) lt. BMF-Schreiben IV D2-S7124/07/10002:003 v. 23. Mai 11
+Z2, Z3, Z4: Zähler für Lieferung                                 *2) lt. Clearingstellenverfahren 2011/2/2 vom 30. März 2012
+                                                              • Im schraffierten Bereich dürfen keine
+Anmerkung:
+Die Notwendigkeit der Zähler Z2 und Z3 richtet sich nach
+                                                                Verbraucher angeschlossen sein.
+den gültigen Abrechnungsvorschriften.                         • Speichersystem ohne Netzeinspeisung
+
+
+___________________________________________________         ___________________________________________________
+Energieträger und Leistung der Erzeugungsanlage 1 (EA1)     Energieträger und Leistung der Erzeugungsanlage 2 (EA2)
+
+
+_________________________________________________________            ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                           Anlagenbetreiber: Datum, Unterschrift
+
+
+
+Hinweis: Nachdem das EEG / KWKG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren
+rechtliche Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                                    © VBEW
+
+Messkonzepte für
+Bezugsanlagen
+
+
+
+Hinweise zum Auswahlblatt
+
+Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anschlussnehmer. Der Netzbetreiber hat
+wiederum die Verpflichtung, das gewählte Messkonzept vor allem auf Konformität mit dem
+Energiewirtschaftsgesetz (EnWG) und den Technischen Anschlussbedingungen zu prüfen.
+
+
+Für die Dokumentation des Messkonzepts steht das nachfolgende Auswahlblatt zur Verfügung.
+
+    ▪    Auswahlblatt Z: Messkonzepte für Bezugsanlagen
+
+Dieses Auswahlblatt ist grundsätzlich zur Anwendung bei Bezugsanlagen vorgesehen. Der
+Wechsel von einem Messkonzept in ein anderes ist evtl. mit Umbauten an den Messeinrichtungen
+verbunden und rechtzeitig mit dem Netzbetreiber abzustimmen.
+
+
+
+
+Ergänzende Hinweise:
+Diese Formulare erheben keinen Anspruch auf Vollständigkeit. Insbesondere nachgenannte
+spezifische Anforderungen an die Messung werden nicht berücksichtigt:
+- technische Ausführung der Zähler (Lastgangzähler, Wandler usw.)
+- Einsatz von Messsystemen
+- Vorgaben für Anlagen am Mittelspannungsnetz
+- Anforderungen an den Zählerplatz
+
+
+
+
+Hinweis: Nachdem das EnWG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren rechtliche
+Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                         © VBEW
+
+Auswahlblatt Z: Messkonzepte
+für Bezugsanlagen
+□ Bitte zutreffendes Messkonzept (MK) ankreuzen
+□ MK Z1: Standardbezug (ein Anschlussnutzer)
+                                                        Anwendungsbeispiele:
+                                                            • Einfamilienhaus
+                                                            • Gewerbe
+
+
+
+
+Z1: Zähler für Bezug
+
+□ MK Z2: Standardbezug (mehrere Anschlussnutzer)
+                                                        Anwendungsbeispiele:
+                                                            • Mehrfamilienhaus
+                                                            • Einfamilienhaus mit Einliegerwohnung
+
+
+
+
+Z1, Z2, Zn: Zähler für Bezug
+
+□ MK Z3: Kombination Standardbezug / Steuerbare
+                    Verbrauchseinrichtung
+                                                        Anwendungsbeispiele:
+                                                            • Einfamilienhaus mit steuerbarer
+                                                              Verbrauchseinrichtung (sVE), z.B.
+                                                              Wärmepumpe, Elektromobile
+
+                                                        Voraussetzung:
+                                                            • Steuerbare Verbrauchseinrichtung
+                                                              nach § 14a EnWG
+
+
+
+
+Z1, Z2: Zähler für Bezug
+
+
+
+_________________________________________________________          ___________________________________________
+Anlagenstandort: Straße, Postleitzahl, Ort                         Anlagenbetreiber: Datum, Unterschrift
+
+Hinweis: Nachdem das EnWG keine expliziten Vorgaben für Messkonzepte macht, kann keine Gewähr für deren rechtliche
+Verbindlichkeit übernommen werden. Die Auswahl des Messkonzeptes liegt grundsätzlich beim Anlagenbetreiber.
+771.20 Auswahl Messkonzepte // Stand: 27.06.2022                                                           © VBEW
+

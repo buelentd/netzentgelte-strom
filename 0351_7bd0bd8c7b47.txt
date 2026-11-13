@@ -1,0 +1,77 @@
+URL: https://fi.ovag.de/files/on/downloads/preisblaetter/netznutzung/ovagNetz_Faktorenpreisblatt_vNNE_2023.pdf
+Netzbetreiber: ovag Netz GmbH
+
+                                                                                                                                             ovag Netz GmbH www.ovag-netz.de
+                                                                                                                                          Hanauer Straße 9-13 netznutzung@ovag-netz.de
+                                                                                          Stand: 30.04.2024                                   61169 Friedberg (06031) 82-1269 Fax. -1429
+
+
+
+                                                                       Finales Preisblatt vNNE 2023
+                                            Entgelt für dezentrale Einspeisungen gemäß §18 StromNEV
+                                            (gültig vom 01.01.2023 bis zum 31.12.2023 für dezentrale einspeiser im Netz der ovag Netz GmbH)
+
+Gemäß § 18 StromNEV erhalten Betreiber von dezentralen Erzeugungsanlagen vom Betreiber des Elektrizitätsverteilungsnetzes, in dessen Netz sie einspeisen,
+ein Entgelt. Dieses Entgelt muss den gegenüber den vorgelagerten Netz- oder Umspannebenen durch die jeweilige Einspeisung vermiedenen Netzentgelten
+entsprechen. Das Entgelt wird nicht gewährt, wenn die Stromeinspeisung nach dem Erneuerbare-Energien-Gesetz (EEG) oder nach § 4 Abs. 3 Satz 1 des
+Kraft-Wärme-Kopplungsgesetzes (KWKModG) vergütet wird und in der KWK-Vergütung vermiedene Netzentgelte bereits enthalten sind.
+
+Netzbetreiber sind bei Rückspeisungen in das vorgelagerte Netz Betreibern dezentraler Erzeugungsanlagen gleichzustellen.
+
+
+                    Finale Faktoren zur Ermittlung der vermiedenen Netzentgelte aus dezentraler Einspeisung im Jahr 2023*
+
+                                   Netzentgelte der jeweils
+                                  vorgelagerten Netz- oder
+                                                                      Skalierungsfaktor    Vermeidungsfaktor        Anteilsfaktor            Mischarbeitspreis
+                               Umspannebene zur Berechnung                                                                                                            Viertelstunde der höchsten Entnahmeleistung
+                               der vermiedenene Netzentgelte               svNE                   rvNE                  avNE                      APrück                         der Einspeisenetzebene
+                                                                        tatsächliche
+   Anwendung für
+                               Leistungspreis                          Vermeidungs-                            verstetigte Vermeidungs-
+ Abrechnungsmodell
+                                     LP         Arbeitspreis AP           leistung                 alle                 leistung          eingespeißte Jahresarbeit        tatsächliche Vermeidungsleistung
+ Einspeisenetzebene
+                                 [€/kW*a]         [ct/kWh]                  [1]                    [1]                   [1]                     [ct/kWh]                                [1]
+
+ Umspannung Hoch-/
+                                                                                                                                                                                28.11.2023 17:45
+  Mittelspannung
+                                   59,88             0,15             0,78046218             0,78439981            0,00000000                 0,00796250                                |
+                                                                                                                                                                                28.11.2023 18:00
+                                                                                                                                                                                04.12.2023 17:30
+   Mittelspannung                  59,06             0,30             0,21346506             0,95595292            1,07202885                 0,00080627                                |
+                                                                                                                                                                                04.12.2023 17:45
+ Umspannung Mittel-
+                                                                                                                                                                                04.12.2023 18:00
+  /Niederspannung
+                                   85,42             0,91              1,0000000             0,66042351            1,78371064                 0,05156510                                |
+                                                                                                                                                                                04.12.2023 18:15
+                                                                                                                                                                                21.01.2023 11:45
+   Niederspannung                 124,63            1,12               0,1775467             0,99950399                   0                   0,00002340                                |
+                                                                                                                                                                                21.01.2023 12:00
+* Gemäß "VDN-Kalkulationsleitfaden § 18 StromNEV" vom 03. März 2007
+
+Für Bestandsanlagen vor dem 01.01.2018 mit volatiler Erzeugung (Windkraft, PV) werden die ausgewiesenen Preise gemäß § 120 Abs. 3 EnWG
+i.V. mit § 18 Abs. 5 StromNEV wie folgt reduziert:
+- ab dem 01.01.2018 um ein Drittel
+- ab dem 01.01.2019 um zwei Drittel
+- ab dem 01.01.2020 erfolgt keine Vergütung mehr
+Neuanlagen mit volatiler Erzeugung mit Inbetriebnahme nach dem 01.01.2018 erhalten von Beginn an keine Vergütung vNNE mehr.
+Da Netzbetreiber bei Rückspeisungen in das vorgelagerte Netz Betreibern dezentraler Erzeugungsanlagen gleichzustellen sind, erfolgt eine
+Aufteilung der Rückspeisung in volatile/nicht-volatile Anteile. Volatile Anteile werden dabei der Vergütungsabschmelzung/Nicht-Vergütung unterworfen.
+Erläuterungen:
+- Leistungs- und Arbeitspreis entsprechen anteilsmäßig den Netzentgelten der jeweils vorgelagerten
+  Netz- bzw. Umspannebene für Entnahmestellen mit Leistungsmessung und einer Benutzungsdauer ≥ 2.500 h/a.
+- Der Skalierungsfaktor "svNE" beschreibt die Umrechnung von Einspeise- auf tatsächlich vermiedene Leistung.
+- Der Vermeidungsfaktor "rvNE" beschreibt die Umrechnung von eingespeister auf vermiedene Arbeit.
+- Der Anteilsfaktor "avNE" beschreibt die Umrechnung von verstetigter auf tatsächlich vermiedener Leistung.
+- Der Mischarbeitspreis "APRück" dient zur Berechnung der Vergütung aus vorgelagerten
+  Netzebenen mittels Einspeisemenge getrennt für Einspeiser mit und ohne Lastprofilmessung.
+
+Betreiber, die mit dezentralen Erzeugungsanlagen einspeisen und keinen überwiegenden Anteil an der Vermeidungsleistung haben, können zwischen
+einer Berechnung auf Basis ihrer tatsächlichen Vermeidungsleistung und einem alternativen Verfahren, welches ihre Vermeidungsleistung verstetigt,
+wählen. Die Wahl des Verfahrens muss vor Beginn des Kalenderjahres erfolgen und der ovag Netz GmbH schriftlich mitgeteilt werden.
+Bei dezentralen Einspeisungen ohne Lastgangmessung ist grundsätzlich nur die Vermeidungsarbeit zu vergüten.
+Alle Preise sind - soweit nicht anders ausgewiesen - Nettopreise und verstehen sich zuzüglich der jeweils geltenden Umsatzsteuer.
+

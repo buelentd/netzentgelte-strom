@@ -1,0 +1,278 @@
+URL: https://www.energienetze-mittelrhein.de/erdgasnetz/netzzugang-und-netzentgelte/preisblatt-gas-vorlaeufig-2027-enm-2026-10-06.pdf?cid=34a
+Netzbetreiber: Energienetze Mittelrhein GmbH ＆ Co. KG
+
+     Vorläufiges Preisblatt für den Netzzugang Gas der
+         Energienetze Mittelrhein GmbH & Co. KG
+                                   inkl. vorgelagerter Netze
+
+               Stand: 06.10.2026, voraussichtlich gültig ab 01.01.2027
+Bei diesem Preisblatt handelt es sich um eine Veröffentlichung der Höhe der Entgelte, die sich
+voraussichtlich auf Basis der für das Jahr 2027 geltenden Erlösobergrenze ergeben wird (§ 20 Abs. 1
+Satz 2 EnWG). Die Energienetze Mittelrhein GmbH & Co. KG weist darauf hin, dass eine Ermittlung
+und Veröffentlichung verbindlicher Netzentgelte für das Jahr 2027 gemäß § 20 Abs. 1 S. 1 EnWG
+wegen der zum 06.10.2026 noch nicht vollständigen Datengrundlage nicht möglich ist. Stattdessen
+erfolgt hiermit eine Veröffentlichung voraussichtlicher Netzentgelte im Sinne von § 20 Abs. 1 Satz 2
+EnWG. Daher behalten wir uns vor, abweichende verbindliche Netzentgelte zum 01.01.2027 nach den
+geltenden gesetzlichen und verordnungsrechtlichen Regelungen zu veröffentlichen. Ebenfalls
+behalten wir uns vor, die zum 06.10.2026 veröffentlichten Netzentgelte auch nach Vorliegen der
+vollständigen Datengrundlage unverändert beizubehalten und als die ab 01.01.2027 verbindlichen
+Entgelte zu veröffentlichen. Etwaige Differenzbeträge werden in diesem Falle über das
+Regulierungskonto verrechnet.
+
+
+1.     Bestandteile und Berechnung des Netzentgelts
+
+Das Netzentgelt setzt sich je Ausspeisepunkt aus den in Ziff. 2 geregelten Bestandteilen für die
+Nutzung des Netzes der Energienetze Mittelrhein GmbH & Co. KG (enm) und der vorgelagerten Netze
+innerhalb des Marktgebiets bis zum virtuellen Handelspunkt zusammen. Dabei wird zwischen
+Ausspeisepunkten mit und ohne Leistungsmessung unterschieden. Die Entgelte gelten für die
+Nutzung des Transport- bzw. Verteilnetzes der enm in den Ausspeisezonen Koblenz und Cochem.
+Die ausgewiesenen Preise verstehen sich zuzüglich der Konzessionsabgabe sowie der aktuell
+gültigen Umsatzsteuer.
+
+
+
+
+                                               -1-                               Stand 06.10.2026
+
+2.     Netzentgelt
+
+2.1    Entgelt bei Ausspeisung an nicht leistungsgemessenen Ausspeisepunkten
+
+Das Arbeitsentgelt AE wird gemäß folgender Formel berechnet:
+
+                               AE = GPi + APi /100 * M [Euro pro Jahr]
+
+      M:        jährliche Transportmenge [kWh]
+      i:        Preisstufe, abhängig von der Transportmenge M
+      GPi :     Grundpreis für Arbeit [Euro/Jahr]
+      APi :     spezifischer Arbeitspreis [Ct/kWh]
+
+
+Die Zuordnung zu einer Preisstufe erfolgt zunächst vorläufig auf Basis der letzten gemessenen oder –
+bei erstmaliger Ausspeisung zu einem Letztverbraucher – auf Basis der angemessen geschätzten
+voraussichtlichen Jahresmenge. Sollte der tatsächliche Verbrauch eine Zuordnung zu einer anderen
+Preisstufe erfordern, wird dies in der endgültigen Jahresabrechnung berücksichtigt
+(Bestpreisabrechnung).
+
+Die Preisstufen sowie deren Grund- und spezifische Arbeitspreise ergeben sich aus folgender Tabelle:
+
+Tabelle 1:        Grundpreise und      spezifische   Arbeitspreise    für     nicht   leistungsgemessene
+                  Letztverbraucher
+
+                             Untergrenze Obergrenze
+              Arbeitsbereich                             Grundpreis GP         Arbeitspreis AP
+                             Jahresarbeit Jahresarbeit
+                    (i)                                      (€/a)                (ct/kWh)
+                                (kWh)        (kWh)
+                    1                  0        3.429                  0,00              2,491
+                    2              3.430        5.503                 13,87              2,086
+                    3              5.504       34.999                 25,37              1,877
+                    4             35.000       54.999                 54,24              1,795
+                    5             55.000       89.999                 80,09              1,748
+                    6             90.000      149.999                 76,67              1,752
+                    7            150.000      499.999                166,97              1,691
+                    8            500.000    1.500.000                619,47              1,601
+
+Berechnungsbeispiel:
+
+Für einen nicht-leistungsgemessenen Ausspeisepunkt mit einer Jahresmenge von 25.000 kWh wird
+ein Netto-Entgelt berechnet in Höhe von € 494,67 zzgl. Mess- und Abrechnungsentgelt je nach Bedarf
+sowie Konzessionsabgaben. Dieses Entgelt setzt sich zusammen aus einem Grundpreis gem.
+Tabelle 1 in Höhe von € 25,37 im Jahr und dem Produkt aus der Jahresmenge von 25.000 kWh und
+dem AP (1,877 Ct/kWh) in Höhe von € 469,30.
+
+
+2.2    Arbeitsentgelt bei Ausspeisung an leistungsgemessenen Ausspeisepunkten
+
+Das Arbeitsentgelt AE wird gemäß folgender Formel berechnet:
+
+                                 AE = Ai + APi /100 * M [Euro pro Jahr]
+
+        M:          jährliche Transportmenge [kWh]
+        i:          Preisstufe, abhängig von der Transportmenge M
+        Ai :        Sockelbetrag für Arbeit [Euro/Jahr]
+        APi :       spezifischer Arbeitspreis [Ct/kWh]
+
+
+
+
+                                                 -2-                                   Stand 06.10.2026
+
+Die Zuordnung zu einer Preisstufe erfolgt zunächst vorläufig auf Basis der letzten gemessenen oder –
+bei erstmaliger Ausspeisung zu einem Letztverbraucher – auf Basis der angemessen geschätzten
+voraussichtlichen Jahresmenge. Sollte der tatsächliche Verbrauch eine Zuordnung zu einer anderen
+Preisstufe erfordern, wird dies in der endgültigen Jahresabrechnung berücksichtigt
+(Bestpreisabrechnung).
+
+Die Preisstufen sowie deren Sockelbeträge und spezifischen Arbeitspreise ergeben sich aus folgender
+Tabelle:
+
+Tabelle 2:      Sockelbetrag für Arbeit und spezifische Arbeitspreise für leistungsgemessene
+                Letztverbraucher
+
+                          Untergrenze       Obergrenze
+       Arbeitsbereich                                       Sockelbetrag A    Arbeitspreis AP
+                          Jahresarbeit      Jahresarbeit
+             (i)                                                (€/a)            (ct/kWh)
+                             (kWh)             (kWh)
+                1                     0         1.800.000              0,00             0,474
+                2             1.800.001         4.000.000          1.249,20             0,405
+                3             4.000.001         7.000.000          3.453,20             0,350
+                4             7.000.001        12.500.000          7.135,20             0,297
+                5            12.500.001        15.000.000         11.035,20             0,266
+                6            15.000.001        20.000.000         13.840,20             0,247
+                7            20.000.001        30.000.000         18.580,20             0,224
+                8            30.000.001        50.000.000         25.570,20             0,200
+                9            50.000.001        75.000.000         33.170,20             0,185
+               10            75.000.001       100.000.000         38.795,20             0,178
+               11           100.000.001       300.000.000         47.495,20             0,169
+               12           300.000.001                           61.295,20             0,164
+
+
+2.3    Leistungsentgelt bei Ausspeisung an leistungsgemessenen Ausspeisepunkten
+
+Das Leistungsentgelt LE wird gemäß folgender Formel berechnet:
+
+                                   LE = Li + LPi * P [Euro pro Jahr]
+
+       P:           maximale stündliche Transportleistung [kW] (Jahresmaximum)
+       i:           Preisstufe, abhängig von der Transportleistung P
+       Li :         Sockelbetrag für Leistung [Euro/Jahr]
+       LPi :        spezifischer Leistungspreis [Euro/kW]
+
+Die Zuordnung zu einer Preisstufe erfolgt zunächst vorläufig auf Basis der maximalen Leistung des
+letzten Abrechnungszeitraumes oder – bei erstmaliger Ausspeisung zu einem Letztverbraucher – auf
+Basis der angemessen geschätzten voraussichtlichen maximalen Leistung. Sollte die tatsächliche
+maximale Leistung eine Zuordnung zu einer anderen Preisstufe erfordern, wird dies in der endgültigen
+Jahresabrechnung berücksichtigt (Bestpreisabrechnung).
+
+Die Preisstufen sowie deren Sockelbeträge und spezifischen Leistungspreise ergeben sich aus
+folgender Tabelle:
+
+
+
+
+                                                 -3-                              Stand 06.10.2026
+
+Tabelle 3:         Sockelbetrag für Leistung und spezifische Leistungspreise für leistungsgemessene
+                   Letztverbraucher
+
+        Leistungs-       Untergrenze          Obergrenze                           Leistungspreis
+                                                               Sockelbetrag L
+         bereich        Jahreshöchst-        Jahreshöchst-                               LP
+                                                                   (€/a)
+            (i)         leistung (kW)        leistung (kW)                             (€/kW)
+               1                       0              1.000              0,00              21,630
+               2                   1.001              1.900          2.520,00              19,110
+               3                   1.901              3.000          6.054,00              17,250
+               4                   3.001              5.000         11.814,00              15,330
+               5                   5.001              5.800         17.814,00              14,130
+               6                   5.801              7.400         21.990,00              13,410
+               7                   7.401             10.500         29.168,00              12,440
+               8                  10.501             16.200         39.563,00              11,450
+               9                  16.201             22.900         50.579,00              10,770
+              10                  22.901             29.300         58.365,00              10,430
+              11                  29.301             75.200         69.792,00              10,040
+              12                  75.201                            84.080,00               9,850
+
+Berechnungsbeispiel:
+
+Für einen Letztverbraucher mit 10.000 kW max. Leistung und einer Jahresmenge von 25 Mio. kWh
+wird ein Netto-Entgelt berechnet in Höhe von € 228.023,20 zzgl. Mess- und Abrechnungsentgelt je
+nach Bedarf sowie Konzessionsabgaben. Dieses Entgelt setzt sich zusammen aus einem
+Arbeitsentgelt gem. Ziffer 2.2 in Höhe von € 74.455,20 berechnet mit Sockel A von € 18.580,20 und
+dem Produkt aus Jahresmengen und AP (0,224 Ct/kWh) in Höhe von € 55.875,00. Analog wird für die
+Berechnung des Leistungsentgeltes gem. Ziffer 2.3 in Höhe von € 153.568,00 vorgegangen. Der
+Sockel L ergibt sich zu € 29.168,00 und mit dem spezifischen Leistungspreis von 12,44 €/kW wird der
+zweite Summand berechnet zu € 124.400,00.
+
+
+2.4     Entgelte für Messstellenbetrieb und Messdienstleistung
+
+Messstellenbetrieb und Messdienstleistung werden in getrennten Beträgen ausgewiesen.
+
+Das jährliche Messentgelt für den Messstellenbetrieb und den Messvorgang richtet sich nach der Art
+des Ausspeisepunktes (leistungsgemessen (RLM) oder nicht-leistungsgemessen mit jährlicher
+Ablesung (SLP)), der Größe des Zählers sowie der zusätzlichen Ausstattung der Messstelle. Zudem
+unterscheidet sich das Entgelt für den Messvorgang nach der Häufigkeit der Auslesefrequenz und
+zudem bei stündlicher Auslesung nach der Art der von Ort vorhandenen Fernauslesetechnik. Die
+Datenweitergabe bzw. der Datenversand erfolgt jeweils zeitnah nach der Auslesung der Daten.
+
+Tabelle 4:         Entgelte für Messstellenbetrieb
+
+                           Zählergruppen                                        Zusatzausstattung
+
+                                                                                           Datenspeicher
+  G1,6 - G6           G10 - G25       G40 - G100           > G100     Mengenumwerter
+                                                                                            und Modem
+    (€/a)               (€/a)           (€/a)               (€/a)          (€/a)
+                                                                                               (€/a)
+
+      17,14             44,33              228,21          365,15          633,73               150,42
+
+Die Zusatzgeräte sind für SLP-Kunden optional auf Kundenwunsch erhältlich.
+
+
+
+
+                                                     -4-                               Stand 06.10.2026
+
+Tabelle 5:        Entgelte für Messdienstleistung
+
+                                            Standardauslesung
+      ohne Lastgangmessung                                        mit Lastgangmessung (RLM)
+                                    mit Lastgangmessung (RLM)
+              (SLP)                                             (stündliche Datenbereitstellung)
+                                               (€/a)
+               (€/a)                                                         (€/a)
+                3,63                         908,73                        1.272,22
+
+Der jährliche Betrag für den Messstellenbetrieb und Messdienstleistung wird mit der 12. Abrechnung
+abgerechnet.
+
+Eine Änderung der Auslesefrequenz von Zählpunkten auf Wunsch von Lieferanten wird nach Aufwand
+verrechnet. Der übliche Arbeitsaufwand für die Umstellung eines Gerätes beträgt mindestens
+1 Stunde. Der in Ansatz gebrachte Stundensatz beträgt zurzeit € 77,40.
+
+Preise für Sonderleistungen mit abweichender Auslesefrequenz erhalten Sie auf Anfrage.
+
+
+2.5 Sonderentgelte nach §20 Abs. 2 GasNEV
+
+Verallia Saint-Gobain Oberland AG
+Siemensstraße 1, 56422 Wirges
+DE700210564226500170600001G000589; DE700210564226500170600001G000596
+542.642,73EUR
+
+2.6      Konzessionsabgaben
+
+Gemäß den geschlossenen Konzessionsvereinbarungen der in den Netzbereichen ansässigen
+Kommunen bzw. Städten werden folgende Abgaben verrechnet (vgl. auch § 2 der
+Konzessionsabgabenverordnung (KAV)):
+
+                       Kundenart                           Kunde                   Ct/kWh
+                                             in Gemeinden ≤ 25.000 Einwohner        0,51
+         Kochgas- und                        in Gemeinden ≤ 100.000 Einwohner       0,61
+         Warmwasserkunden                    in Gemeinden ≤ 500.000 Einwohner       0,77
+                                             in Gemeinden > 500.000 Einwohner       0,93
+                                             in Gemeinden ≤ 25.000 Einwohner        0,22
+                                             in Gemeinden ≤ 100.000 Einwohner       0,27
+         Sonstige Tarifkunden
+                                             in Gemeinden ≤ 500.000 Einwohner       0,33
+                                             in Gemeinden > 500.000 Einwohner       0,40
+                                             bis zu 5 GWh/a                         0,03
+         Sondervertragskunden
+                                             > 5 GWh/a oder nach § 2 (5) KAV        0,00
+
+
+2.7      Umsatzsteuer
+
+Die Umsatzsteuer fällt auf die in Punkt 2.1 bis 2.6 genannten Nettobeträge in der jeweils gesetzlich
+festgelegten Höhe an.
+
+
+
+
+                                                    -5-                          Stand 06.10.2026
+

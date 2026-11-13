@@ -1,0 +1,80 @@
+URL: https://www.enercity-netz.de/assets/cms/eng/marktpartner/pdfs/netzentgelte-strom/Strom_Preisblatt_Berechnungsbeispiele-2027.pdf
+Netzbetreiber: enercity Netz GmbH
+
+Berechnungsbeispiele für Preise für Netznutzung im Stromnetzbereich der enercity Netzge-
+sellschaft mbH im Bereich der Stadt Hannover, Stadt Langenhagen, Stadt Laatzen, Stadt
+Garbsen und Stadt Seelze (OT Letter)
+
+Die nachfolgenden Entgelte und Regelungen gelten für alle Netznutzer, die das Netz der enercity Netzgesellschaft mbH
+im Bereich der Stadt Hannover, Stadt Langenhagen, Stadt Laatzen, Stadt Garbsen und der Stadt Seelze (OT Letter)
+nutzen.
+
+Hinweis:
+Die angegeben Preise sind nur Beispiele und dienen der Veranschaulichung. Die gültigen Preise entnehmen Sie bitte
+dem aktuellen Preisblatt.
+
+Preisblatt 1
+Berechnungsbeispiel für Netznutzer mit Lastgangmessung
+
+Zur Bestimmung der Entgelte für einen Netznutzer mit Lastgangzählung sind zunächst die Netznutzerdaten erforderlich:
+
+    Ort und Spannungsebene (in kV) der Entnahmestelle
+    Jahresarbeit E in kWh der transportierten Energie
+    Jahreshöchstleistung P in kW (höchster ¼-h-Mittelwert im Kalenderjahr)
+
+Beispiel:
+Netznutzer mit Lastgangmessung:
+Spannungsebene:         Mittelspannungsebene
+Jahresarbeit:           10.000.000 kWh
+Jahreshöchstleistung:   2.000 kW
+
+Aus den Netznutzerdaten wird zunächst die Jahresbenutzungsdauer T berechnet als Quotient aus Jahresarbeit E und
+Jahreshöchstleistung P. Die Jahresbenutzungsdauer ist zur Bestimmung des Netzentgeltes erforderlich.
+
+Jahresbenutzungsdauer T = 10.000.000 kWh / 2.000 kW = 5000 h
+
+Anhand der Jahresbenutzungsdauer werden die zugehörigen Preise aus dem Preisblatt 1 für die Jahresbenutzungsdau-
+er > 2500 h jeweils ein jährlicher Leistungspreis (Euro/(kW · a)) und ein Arbeitspreis (ct/kWh) in Abhängigkeit von Span-
+nungsebene der Entnahmestelle des Netznutzers ermittelt.
+
+Leistungspreis: 155,33 Euro/kW
+Arbeitspreis:   1,70 ct/kWh
+
+Damit ergibt sich folgendes Netzentgelt:
+Für die Arbeit
+Arbeitsentgelt [Euro]     = 10.000.000 kWh * 1,70 ct/kWh        = 170.000,00 Euro
+
+Für die Leistung
+Leistungsentgelt [Euro]   =   2.000 kW * 155,33 Euro/kW         = 310.660,00 Euro
+
+Für Netznutzer mit Lastgangmessung wird das Netzentgelt aus der Summe des Arbeits- und
+Leistungsentgeltes gebildet und kaufmännisch auf zwei Nachkommastellen gerundet. Nicht berücksichtigt in dem Bei-
+spiel sind Entgelte für Messstellenbetrieb.
+
+Preisblatt 2
+Berechnungsbeispiel für Netznutzer ohne Lastgangmessung
+
+Für Netznutzer im Niederspannungsnetz ohne Lastgangzähler wird ein Grundpreis und Arbeitspreis erhoben.
+
+Beispiel:
+Netznutzer ohne Lastgangmessung:
+Spannungsebene:        Niederspannungsebene
+Jahresarbeit:          4.000 kWh
+Grundpreis:            53,00 Euro/a
+Arbeitspreis:          8,76 ct/kWh
+
+Damit ergibt sich folgendes Netzentgelt:
+
+Grundpreisentgelt je Entnahmestelle = 53 Euro
+Arbeitsentgelt [Euro]    = 4.000 kWh * 8,76 ct/kWh = 350,40 Euro
+
+Für Netznutzer ohne Lastgangmessung wird das Netzentgelt aus der Summe des Arbeits- und
+Grundpreisentgeltes gebildet und kaufmännisch auf zwei Nachkommastellen gerundet. Nicht berücksichtigt in dem
+Beispiel sind Entgelte für Messstellenbetrieb.
+
+
+Anmerkungen:
+Zu den Entgelten kommen die Beiträge hinzu, die aufgrund von Abgaben, Umlagen, Steuern sowie gesetzlichen Aus-
+gleichsleistungen erhoben werden. Alle genannten Entgelte und Preise gelten zuzüglich dem jeweils gültigen gesetzli-
+chen Umsatzsteuersatz.
+

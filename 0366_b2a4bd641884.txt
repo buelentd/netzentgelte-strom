@@ -1,0 +1,695 @@
+URL: https://www.sachsen-netze.de/wps/wcm/connect/netze/8ef4e4eb-0c85-4444-8231-9d5c9e586ce8/10-Technische-Mindestanforderungen-Steuerbare-Verbraucheinrichtungen.pdf?MOD=AJPERES&CVID=o.yKpdk
+Netzbetreiber: SachsenNetze HS.HD GmbH
+
+Netzrichtlinie
+Nr. 10
+
+
+
+
+Technische Mindestanforderungen für
+Anschluss und Betrieb von steuerba-
+ren Verbrauchseinrichtungen sowie Be-
+trieb von Netzanschlüssen mit steuer-
+baren Verbrauchseinrichtungen (steu-
+erbare Netzanschlüsse) nach
+§ 14a EnWG
+gültig ab: 09.2026
+
+
+
+Geltungsbereich:
+
+SachsenNetze GmbH
+Friedrich-List-Platz 2
+01069 Dresden
+
+SachsenNetze HS.HD GmbH
+Friedrich-List-Platz 2
+01069 Dresden
+
+(beide folgend als „Netzbetreiber“ benannt)
+
+1     Geltungsbereich und allgemeine Anforderungen ............................................................ 4
+2     Anlagenaufbau und Betrieb ............................................................................................ 5
+    2.1       Allgemeines ........................................................................................................... 5
+    2.2       Zählerschrank ........................................................................................................ 6
+    2.3       Steuerungstechnologie .......................................................................................... 7
+      2.3.1       Kontaktbasierte Steuerung ................................................................................. 7
+      2.3.2       Digitale Steuerung mit EEBUS - Protokoll .......................................................... 7
+    2.4       Steuerungsart ........................................................................................................ 8
+      2.4.1       Direktansteuerung (einzeln bzw. Gruppe) .......................................................... 8
+      2.4.2       Steuerung über EMS.......................................................................................... 9
+    2.5       Umsetzung der Steuerung ..................................................................................... 9
+    2.6       Inbetriebsetzung, Wartung und Außerbetriebnahme von sVE ...............................10
+3     Ergänzende Regelungen - Bestandsanlagen ................................................................11
+4     Abschließende Hinweise ...............................................................................................12
+Anlagen ................................................................................................................................12
+
+
+
+
+                                                                    2
+
+Abkürzungen
+
+AAR:        Anlagenseitiger Anschlussraum
+AP:         Arbeitspreis Netznutzung
+APZ:        Abschlusspunkt Zählerplatz
+ARK:        Anlage zur Raumkühlung
+BNetzA:     Bundesnetzagentur
+CLS:        Controllable Local System
+Ct/kWh:     Cent pro Kilowattstunde
+EMS:        Energiemanagementsystem
+EnWG:       Energiewirtschaftsgesetz
+GZF:        Gleichzeitigkeitsfaktor
+IC-CPD:     In-Cable Control and Protection Device (In-Kabel-Kontrollbox)
+kWh:        Kilowattstunde
+kWh/a:      Kilowattstunde pro Jahr
+LE:         Ladeeinrichtung für Elektromobile
+LSV:        Ladesäulenverordnung
+NS:         Niederspannung
+P:          elektrische Wirkleistung
+Pmin,14a:   Mindestleistung für sVE bei der Reduzierung des netzwirksamen
+            Leistungsbezuges durch Steuerung
+RLM:        registrierende Leistungsmessung
+SB:         Steuerbox
+SG:         Steuergruppe
+SGF         Steuergeräte-Feld
+SKI:        Subjekt-Key-Identifier
+SLP:        Standard-Lastprofil
+SMGW:       Smart Meter Gateway
+Speicher:   Anlage zur Speicherung elektrischer Energie
+            (hinsichtlich Einspeicherung aus öffentlichem Netz)
+StVO:       Straßenverkehrsordnung
+sVE:        steuerbare Verbrauchseinrichtungen
+WP:         Wärmepumpe
+TSG:        Tarifsteuergeräte-Feld
+zRfZ:       zusätzlicher Raum für Zusatzanwendungen
+
+
+
+
+                                       3
+
+1   Geltungsbereich und allgemeine Anforderungen
+
+a) Mit der Festlegung zum § 14a Energiewirtschaftsgesetz (EnWG), siehe Beschlüsse BK6-
+   22-300 vom 27.11.2023 und BK8-22/010-A vom 23.11.2023 (im Weiteren „neue Rege-
+   lung(en)“ bezeichnet) trifft die Bundesnetzagentur (BNetzA) bundeseinheitliche Regelun-
+   gen bezüglich der Netzintegration von steuerbaren Verbrauchseinrichtungen (sVE) mit
+   Netzanschluss unmittelbar oder mittelbar in der Niederspannung und Inbetriebnahme ab
+   01.01.2024. Die o. g. Regelungen erlauben eine zeitweise Reduzierung des netzwirksa-
+   men Leistungsbezugs der sVE, um Gefährdungen der Sicherheit oder Zuverlässigkeit
+   des Netzes - insbesondere aufgrund von Überlastungen der Betriebsmittel - zu vermei-
+   den und somit einen Neuanschluss dieser Anlagen zeitnah zu ermöglichen.
+
+b) Die Anforderungen gelten für Neuanlagen, für Erweiterungen in Bestandsanlagen sowie
+   für den Wechsel von Bestandsanlagen nach alt-§14a EnWG-Regelung in die neue Rege-
+   lung (siehe Abschnitt 3). Bestehen für Erzeugungsanlagen ebenfalls Steuerungspflichten,
+   greifen diese auf die gleiche Steuerungsinfrastruktur zurück. D.h. grundsätzlich wird in
+   einem Haus nur über eine gemeinsame Steuerungseinrichtung gesteuert (sowohl steuer-
+   bare Verbrauchseinrichtungen als auch steuerbare Erzeugungsanlagen).
+
+c) Folgende Verbrauchseinrichtungen gelten verpflichtend als sVE:
+    eine Ladeeinrichtung für Elektromobile (LE), die keine öffentlich zugängliche LE im
+       Sinne des § 2 Nr. 5 Ladesäulenverordnung (LSV) ist; ausgenommen hiervon sind LE,
+       die von Institutionen betrieben werden, die gemäß § 35 Absätze 1 und 5a Straßen-
+       verkehrsordnung (StVO) Sonderrechte in Anspruch nehmen dürfen,
+    eine Wärmepumpenheizung (WP) unter Einbeziehung von Zusatz- oder Notheizvor-
+       richtungen (z. B. Heizstäbe),
+    eine Anlage zur Raumkühlung (ARK) oder
+    eine Anlage zur Speicherung elektrischer Energie (Speicher) hinsichtlich des Strom-
+       verbrauchs (Einspeicherung)
+   mit einer Netzanschlussleistung von mehr als 4,2 kW.
+   O. g. Ladeeinrichtungen, die als sVE gelten, sind i.d.R. festinstallierte Anlagen.
+   Diese technischen Mindestanforderungen gelten aber auch für IC-CPD-Ladelösungen,
+   welche die o. g. Bedingungen im übertragenen Sinne erfüllen. Für das Laden mit IC-
+   CPD-Lösungen ist eine festinstallierte Drehstrom-CEE-Steckdose erforderlich. Im diesem
+   Fall gilt der versorgende Stromkreis als Teil der Ladeeinrichtung.
+
+    Sind WP oder ARK für gewerbliche betriebsnotwendige Zwecke (d. h. direkt in Produkti-
+    onsprozessen, nicht jedoch für Klimatisierung von Büroräumen in Betrieben) oder in der
+    kritischen Infrastruktur eingesetzt, gelten sie in diesem Fall als nicht steuerbar und fallen
+    nicht unter diese Regelungen.
+
+    Bei mehreren WP oder ARK am Netzanschluss werden WP- und ARK-Netzanschluss-
+    leistungen am Netzanschluss je Anlagenart summiert. Nur wenn die Summenleistung je
+    Anlagenart den Wert von 4,2 kW überschreitet, wird die jeweilige Gruppe als jeweils eine
+    sVE angesehen und im Sinne der neuen Regelungen behandelt.
+
+d) Sowohl der Netzbetreiber als auch der Anschlussnehmer sind ab 01.01.2024 verpflichtet,
+   eine netzorientierte Steuerung für die sVE nach Pkt. c) dieses Abschnittes untereinander
+   zu vereinbaren. Im Falle einer Absteuerung bleibt den sVE hinter dem Netzanschluss
+   weiterhin eine klar definierte Mindestleistung zur Verfügung. Für die einhergehende Flexi-
+   bilität im Netz erhält anschließend der Anschlussnutzer als Betreiber einer sVE für diese
+   Anlage ein reduziertes Netznutzungsentgelt gemäß § 14a EnWG. Hierzu veröffentlicht
+   der Netzbetreiber jährlich entsprechend aktualisierte Preisblätter für die Netznutzung. Die
+   Abrechnung der Netznutzungsentgelte erfolgt über den Lieferanten des Anschlussnut-
+   zers im Rahmen der Gesamt-Stromrechnung. Details zur Mindestleistung im
+
+
+                                                4
+
+      Steuerungsfall und zu den reduzierten Netznutzungsentgelten können dem Anhang ent-
+      nommen werden.
+
+e) Grundlage der Vereinbarung für die netzorientierte Steuerung sind u. a. diese Techni-
+   schen Mindestanforderungen für Anschluss und Betrieb von steuerbaren Verbrauchsein-
+   richtungen sowie Betrieb von Netzanschlüssen mit steuerbaren Verbrauchseinrichtungen
+   (steuerbare Netzanschlüsse) nach § 14a EnWG (im Folgenden als „Technische Mindest-
+   anforderungen für sVE“ bezeichnet).
+
+f)    Jeder Anschluss einer sVE sowie jede Veränderung an der sVE (Leistungserhöhung, -
+      reduzierung sowie temporäre oder endgültige Außerbetriebnahme) bedarf der vorherigen
+      Anmeldung bzw. Anzeige beim Netzbetreiber entsprechend seiner Vorgaben. Je nach
+      Fall ist ggf. eine Vertragsanpassung zum Netzanschluss notwendig.
+
+g) Der Anschlussnehmer entscheidet (ggf. nach Abstimmung mit seinem/-n Anschlussnut-
+   zer/n), ob er die sVE
+    an Anschlussnutzeranlage(n) zusammen mit Verbrauchseinrichtungen, die nicht un-
+       ter §14a EnWG fallen (gemeinsamer Zähler - Lösung) oder
+    an einer separaten Anschlussnutzeranlage, ausschließlich für sVE (mit einem sepa-
+       raten Zähler ausschließlich für eine oder mehrere sVE in einem Stromkreis)
+   in seiner Kundenanlage anschließen möchte.
+
+
+
+
+                Bild 1: gemeinsamer Zähler                    Bild 2: separater Zähler
+
+
+
+2     Anlagenaufbau und Betrieb
+2.1     Allgemeines
+Der Anschlussnehmer
+    bereitet seine Kundenanlage auf den Einsatz eines intelligenten Messsystems an der
+      Übergabemessung bzw. Allgemeinbedarfsmessung gemäß den Bestimmungen nach
+      VDE-AR-N 4100 für Neuanlagen vor;
+    stellt in diesem Zählerschrank den Einbauraum für die Steuerungseinrichtung des
+      Messstellenbetreibers zur Verfügung;
+    richtet eine Übergabeschnittstelle nach 2.3 im anlagenseitigen Anschlussraum (AAR)
+      der o.g. Messeinrichtung ein und bereitet deren zählerschrankseitige Verdrahtung ge-
+      mäß nachstehenden Vorgaben vor;
+    stellt geeignete Leitungswege bzw. Leitungen sowie in Abstimmung mit den entspre-
+      chenden Anschlussnutzern bzw. Anlagenbetreibern notwenige Zwischeneinrichtun-
+      gen zur Signal- bzw. Befehlsanpassung und Vervielfältigung zur Verfügung, über wel-
+      che die sVE direkt oder über ein EMS netzdienlich gesteuert werden können;
+    hat die dauerhafte Steuerfähigkeit der Anlage sicherzustellen.
+
+Der grundzuständige Messtellenbetreiber bzw. der durch den Anschlussnehmer oder An-
+schlussnutzer als Betreiber der sVE beauftragte Messtellenbetreiber ist für Bereitstellung,
+Aufbau und Betrieb der Mess- und Steuerungsvorrichtungen verantwortlich. Der Aufbau
+
+                                              5
+
+erfolgt i.d.R. an der Übergabemessung am Hauptstromversorgungssystem nach den Vorga-
+ben des Netzbetreibers und umfasst grundsätzlich eine moderne Messeinrichtung, ein Smart
+Meter Gateway und eine Steuerungseinrichtung. Als Steuerungseinrichtung kommt im Re-
+gelfall eine Steuerbox des Messstellenbetreibers zum Einsatz.
+Pro Netzanschluss wird nur ein Übergabepunkt (anlagenseitiger Anschlussraum) für die Be-
+reitstellung der Steuerbefehle aufgebaut. Mit diesem Übergabepunkt endet die Verantwor-
+tung des MSB und beginnt die Verantwortung des Anlagenbetreibers für die Steuerfähigkeit
+der Anlagen. Netzdienliche Steuerungssignale bzw. Steuerungsbefehle für sVE (und ggf.
+vorhandene steuerbare Einspeiseeinrichtungen (sEZE)) werden grundsätzlich nur einmal je
+Netzanschluss bereitgestellt. Eine ggf. notwendige Vervielfältigung der Steuerungssignale
+innerhalb der Kundenanlage ist Aufgabe des Anlagenbetreibers.
+
+Messstellenbetreiber und Netzbetreiber behalten sich vor, hiervon weiterführende Anforde-
+rungen zu stellen, soweit dies technisch notwendig wird, um die Steuerbarkeit der sVE her-
+zustellen oder zu erhalten.
+
+
+2.2   Zählerschrank
+Der Aufbau der Steuerung hat im Zählerschrank der Übergabezählung bzw. in Mehrkunden-
+anlagen an der Allgemeinbedarfszählung zu erfolgen.
+
+
+
+
+ Bild 3: Gateway u. Steuerungseinrichtung an Einkun-       Bild 4: Gateway u. Steuerungseinrichtung an Mehr-
+ denanlage                                                 kundenanlage oder EFH mit 2 Zählern
+
+
+Für die Aufnahme der Steuerungseinrichtung ist bauseits Platz
+   - im Raum für APZ nach DIN VDE 0603-1,
+   - auf einem Steuergerätefeld nach DIN VDE 0603-1 (ehemals TSG-Feld) oder
+   - in einem zRfZ (separaten, vom übrigen Verteiler und nicht plombierten Anlagenteilen
+        abgeschotteten, plombierfähigen und separat abgedeckten Teil des Verteilers mit
+        mindestens einer Hutschiene 35x7,5 mm nach DIN EN 60715; Anmerkung: ein zRfZ
+        kann aus einem freien Verteilerfeld gewonnen werden)
+bereitzustellen.
+
+Ist eine Umrüstung eines Bestands-Zählerschrankes wie oben genannt nicht möglich, oder
+sind keine freien Felder vorhanden, um Einbauplatz für die Steuerungseinrichtung im Zähler-
+schrank bereitzustellen, darf anstelle ein separates geeignetes und plombierfähiges Ge-
+häuse an den Zählerschrank angeflanscht oder mit entsprechenden Leitungsverbindungen in
+der unmittelbaren Nähe installiert werden.
+
+Wird die Steuerbarkeit durch Umbau und Erweiterung in bestehenden DIN-Zählerschränken
+hergestellt, muss die Funktionsfläche „Raum für APZ“ nicht nachgerüstet werden, es sei
+denn, der Messstellenbetreiber fordert diese anlagenbezogen an.
+
+
+                                                       6
+
+Erst dann ist diese Funktionsfläche zusammen mit einem Installations-Leerrohr mit einem
+Durchmesser von 25 mm bzw. einem vergleichbaren Installationskanal zum Hausübergabe-
+punkt des versorgenden Kommunikationsnetzbetreibers nachzurüsten.
+
+Die Übergabe der Steuersignale vom Messstellenbetreiber zum Anlagenbetreiber erfolgt im
+anlagenseitigen Anschlussraum. Die dazu notwendige Schnittstelle unterscheidet sich hin-
+sichtlich der gewählten Steuerungstechnologie, siehe Pkt. 2.3.
+
+2.3   Steuerungstechnologie
+Bei der Anmeldung einer oder mehrerer sVE zum Netzanschluss ist die Steuerungstechnolo-
+gie – kontaktbasierte Steuerung oder digitale Steuerung mit EEBUS-Protokoll – am Netzan-
+schluss anzugeben.
+
+Anmerkung zur Steuerungstechnologie:
+Neue Ladeeinrichtungen und Speicher, die als sVE gelten, unterliegen nicht den in VDE-AR-
+N 4100:2026-04 Abschnitt 10.7 definierten Übergangsregelungen für den Einsatz kontaktba-
+sierter Steuerung und müssen somit direkt oder indirekt (zwischengeschaltet EMS oder EE-
+BUS-Relaisadapter) mittels EEBUS gesteuert werden.
+
+2.3.1 Kontaktbasierte Steuerung
+Bei der kontaktbasierten Steuerung erfolgt die Steuerung durch eine Steuerungseinrichtung
+mit einem potentialfreien Relaisausgang. Das Steuersignal der Steuerungseinrichtung wird
+über ein Klemmenpaar an der Steuerübergabeklemmenleiste -XDD6 im anlagenseitigen An-
+schlussraum ausgegeben. Es darf bauseits mit Hilfe von Hilfsrelais für eine beliebige Anzahl
+steuerbarer Verbrauchseinrichtungen vervielfältigt oder der zu steuernden Einrichtung ange-
+passt/invertiert werden.
+
+Es gelten die ausgewiesenen Steuergruppen, siehe Anlage 1. Ein geschlossener Relaiskon-
+takt steht für „Absteuern auf Mindestleistung“. Dieser Schaltzustand ist zu halten, solange
+das Steuersignal ansteht. Die Kontaktbelastbarkeit beträgt max. 1 A. Der Kontakt ist für
+Spannungen zwischen 5 V und 250 V AC oder DC zugelassen.
+
+Bei Neuinstallationen sollte die Anlage derart vorbereitet werden, dass eine Umstellung auf
+die digitale Steuerung ohne Probleme möglich ist, z.B. durch Mitverlegen einer Datenleitung
+(mind. CAT5e) und RJ45 Buchse im AAR.
+
+Für den Aufbau der Steuerung am Zählerplatz gilt Anlage 1.
+
+2.3.2 Digitale Steuerung mit EEBUS-Protokoll
+Bei der Steuerung über EEBUS werden aus der Steuerungseinrichtung normierte Steue-
+rungsbefehle im EEBUS-Protokoll, welches auf der TCP/IP-Technologie basiert, ausgege-
+ben. Die Übergabe dieser Befehle erfolgt über eine RJ45-Buchse im anlagenseitigen An-
+schlussraum.
+
+Als Steuerungseinrichtung kommt im Regelfall eine Steuerbox des Messstellenbetreibers
+zum Einsatz. Der Messstellenbetreiber darf alternativ zur Steuerbox auch ein Smart-Meter-
+Gateway mit EEBUS-Steuerungsausgang verwenden. Auf dessen Wunsch ist die grüne Da-
+tenleitung zwischen RJ45-Steuerungsübergabebuchse und dem RfZ umzuverlegen.
+
+Der Anlagenerrichter übermittelt dem jeweils zuständigen Messstellenbetreiber den Subjekt-
+Key-Identifier (SKI) der sVE bzw. des EMS. Wenn der zuständige Messstellenbetreiber der
+grundzuständige Messstellenbetreiber DIGImeto ist, erfolgt die Anzeige der SKI im Rahmen
+der Fertigstellungsanzeige beim Netzbetreiber (mit Übergabe des Protokolls für den EEBUS-
+Kommunikationstest gemäß EEBUS-Handwerkertool oder Gleichwertigem).
+
+
+                                             7
+
+Die SKI sind ebenso sichtbar in geeigneter maschinenlesbarer Form (z. B. QR-Code, alpha-
+nummerische Zeichenabfolge) am Zählerplatz, jeweils anlagenspezifisch zugeordnet, durch
+den Anlagenbetreiber zur Verfügung zu stellen und auch nach einem Gerätetausch mit Rele-
+vanz für die netzdienliche Steuerung stets aktuell zu halten.
+
+Der Betreiber der sVE bzw. des EMS richtet nach dem Anschluss der Steuerungseinrichtung
+durch den Messstellenbetreiber umgehend diese als steuernde Instanz seiner sVE bzw. sei-
+nes EMS ein und sorgt anschließend für deren regelmäßige Software-Updates, siehe auch
+Pkt. 2.6. Dies gilt auch bei Gerätetausch. Dies kann entfallen, wenn die sVE bzw. das EMS
+über einen automatisierten Prozess gepairt werden können.
+Entsprechend des jeweils ausgegebenen Steuerbefehles müssen die adressierten sVE bzw.
+das EMS mit seinen eingebundenen Verbrauchseinrichtungen die vorgegebene Leistungsre-
+duzierung vornehmen und sicherstellen.
+
+Für den Aufbau der Steuerung am Zählerplatz gilt Anlage 2.
+
+Anmerkung: Die Entwicklung des EEBUS ist aktuell noch nicht abgeschlossen. Es ist zuläs-
+sig, dass der Messstellenbetreiber in Abstimmung mit dem Netzbetreiber den Einbau bzw.
+die Aktivierung der Steuerungseirichtung noch innerhalb des Übergangszeitraumes ver-
+schiebt und die Steuerungseinrichtung später nachrüstet. Der vorläufige Betrieb ist an die
+Bedingung geknüpft, dass mit Einbau der Steuerungseinrichtung umgehend das Pairing zwi-
+schen Steuerungseinrichtung und sVE durchgeführt wird, siehe auch Pkt. 2.6.
+
+2.4   Steuerungsart
+
+2.4.1 Direktansteuerung (einzeln bzw. Gruppe)
+Die Anbindung einer sVE erfolgt für die kontaktbasierte Steuerung mittels mindestens 2poli-
+ger Leitung bzw. für die digitale Steuerung über eine Datenleitung mind. CAT5e. Die Steuer-
+bzw. Datenleitung ist geräteseitig anzuschließen und im Zählerschrank von oben auf die
+Steuerübergabeklemme bzw. auf RJ45-Dose aufzulegen.
+
+
+
+
+   Bild 5: Prinzip direkte Steuerung für einzelne sVE       Bild 6: Prinzip direkte Steuerung als Gruppe
+
+
+Bei der Anbindung mehrerer sVE obliegt die Vervielfältigung des Steuersignals dem Anla-
+genbetreiber.
+Bei der kontaktbasierten Steuerung können mehrere sVE über Hilfsrelais bzw. Schütze an-
+gesteuert werden.
+Bei der digitalen Steuerung können bis zu 4 sVE über einen Unmanaged Switch angesteu-
+ert werden. Bei Steuerungseinrichtungen mit kombinierten digitalen und kontaktbasierten
+Schnittstellen reduziert sich die maximale Anzahl der über EEBUS-adressierbaren Einrich-
+tungen auf 3 sVE.
+
+
+                                                        8
+
+Anmerkung: Bei Vorhandensein mehrerer steuerbarer Einrichtungen ist die Umset-
+zung der vom Messstellenbetreiber übermittelten Steuersignale kundenseitig sicher-
+zustellen. Der Messstellenbetreiber stellt hierfür ausschließlich die erforderlichen
+Steuersignale bereit. Zur Gewährleistung einer regelkonformen Umsetzung empfiehlt
+der Netzbetreiber den Einsatz eines Energiemanagementsystems (EMS), siehe Pkt.
+2.4.2. Die Platzverhältnisse im Zählerschrank und die Adressierung der Steuerungs-
+signale werden somit optimal gestaltet.
+
+2.4.2 Steuerung über EMS
+Der Anschlussnehmer (bzw. - soweit durch Anschlussnehmer direkt eingebunden - der An-
+schlussnutzer)
+     verbindet die bereitgestellte Steuerübergabeschnittstelle mit dem EMS
+     bindet alle dafür vorgesehenen sVE und Erzeugungsanlagen in sein Energiemanage-
+       ment ein
+     sorgt dafür, dass die an der Steuerübergabeschnittstelle ausgegebenen Signale bzw.
+       Befehle prioritär mit den im EMS eingebundenen sVE bzw. Erzeugungsanlagen be-
+       stimmungsgemäß umgesetzt werden
+     stellt sicher, dass die für netzdienliche Steuerung notwendigen Einstellungen vor un-
+       autorisierter Veränderung geschützt sind
+     stellt sicher, dass die Software des EMS auf dem aktuellen Stand bleibt und vor
+       schädlichen Einflüssen (z.B. über Internetzugänge) ausreichend geschützt ist
+
+Hat der Anschlussnehmer den Betrieb des EMS an einen Dritten übertragen bzw. einen Drit-
+ten mit dieser Aufgabe in seinem Objekt zugelassen, legt er dies gegenüber dem Netzbetrei-
+ber offen.
+
+
+
+
+Bild 7: Prinzip Steuerung über EMS
+
+
+
+2.5   Umsetzung der Steuerung
+Beim Empfang eines Steuersignals ist der Leistungsbezug auf die vereinbarte Mindestleis-
+tung (kontaktbasierte Steuerung) bzw. auf den empfangenen Leistungswert (digitale Steue-
+rung) innerhalb von 60 s zu reduzieren, sofern nicht anders vorgegeben. Ist dies technisch
+nicht möglich, erfolgt die Reduzierung des Leistungsbezugs auf den nächstgeringeren Wert,
+der technisch möglich ist. Die Reduzierung ist so lange durchzuführen, wie das entspre-
+chende Signal anliegt. Ebenso ist der durch den Netzbetreiber veranlassten Steuerung stets
+Vorrang einzuräumen, falls konkurrierende Anforderungen (wie z. B. Marktsignale) gleichzei-
+tig anstehen.
+
+
+                                             9
+
+Grundsätzlich ist eine Absteuerung einer IC-CPD-Einrichtung - wie oben beschrieben - nicht
+möglich, daher muss die für deren Anschluss vorgesehene Drehstrom-CEE-Steckdose abge-
+schaltet werden. Somit erfolgt die Reduzierung des Leistungsbezugs der IC-CPD-Einrichtung
+auf den nächstgeringeren Wert, der technisch möglich ist: in diesem Fall 0 kW.
+
+Nach Öffnung des Kontaktes am Steuergerät der kontakbasierenden Steuerung oder nach
+Ablauf der Wischerzeit bzw. nach Rücknahme des Steuerbefehles bei einer digitalen Steue-
+rung dürfen die sVE wieder zuschalten und ihre Energieaufnahme schrittweise auf Nennlast
+bzw. auf die für sie vereinbarte Leistung erhöhen.
+
+Der Anschlussnehmer bzw. sein/e Anschlussnutzer als Betreiber der sVE sind für die Wie-
+deraufnahme des Normalbetriebes nach einer durch den Netzbetreiber veranlassten Steue-
+rung des Verbrauchsverhaltens verantwortlich.
+
+Kommen der Anschlussnehmer bzw. sein/e Anschlussnutzer als Betreiber der sVE dieser
+Verantwortung nicht nach, haften der Netzbetreiber bzw. der Messstellenbetreiber nicht für
+eventuelle daraus resultierende Sach- und/oder Vermögensschäden. Eine Haftung des Netz-
+betreibers oder Messstellenbetreibers ist im gleichen Maße für eventuelle Schäden ausge-
+schlossen, die dem Anschlussnehmer oder Anschlussnutzer durch Steuerungsmaßnahmen
+bzw. Absteuerungen im Rahmen von Funktionstests entstehen könnten. Der Anschlussneh-
+mer bzw. sein/e Anschlussnutzer als Betreiber der sVE stellen den Netzbetreiber oder Mess-
+stellenbetreiber auch von etwaigen Ansprüchen frei, die Dritte wegen solcher Schäden ge-
+gen den Netzbetreiber oder Messstellenbetreiber geltend machen. Die oben dargestellte
+Haftungsfreistellung des Netzbetreibers oder Messstellenbetreibers gilt auch für deren ge-
+setzlichen Vertreter oder Erfüllungsgehilfen.
+
+Der Anschlussnehmer bzw. sein/e Anschlussnutzer als Betreiber der sVE müssen die Um-
+setzung der durch den Netzbetreiber veranlassten Steuerung auf geeignete Art und Weise
+dokumentieren. Diese Dokumentation ist mindestens zwei Jahre vorzuhalten und auf Verlan-
+gen der BNetzA oder des Netzbetreibers vorzulegen.
+
+2.6   Inbetriebsetzung, Wartung und Außerbetriebnahme von sVE
+Im Zuge des Agilen Rollouts für das intelligente Messsystem und für die Steuerungseinrich-
+tungen kann es dazu kommen, dass die Inbetriebsetzung der sVE von der Inbetriebsetzung
+der zugehörigen Steuerungseinrichtung zeitlich getrennt voneinander stattfinden.
+
+Vor Inbetriebsetzung sind Steuerungseinrichtungen durch den Anlagenerrichter bzw. Anla-
+genbetreiber einem Funktionstest zu unterziehen und zu protokollieren.
+
+Bei einer kontaktbasierten Steuerung ist vor der Inbetriebsetzung die ordnungsgemäße
+Funktion ab Steuerungsübergabeklemme zu testen, z.B. mittels temporärer Drahtbrücke.
+Dies ist in einem Prüfprotokoll nach DIN VDE 0100-600 entsprechend zu protokollieren.
+
+Für die Inbetriebsetzung der digitalen Steuerung mit EEBUS inkl. Protokollierung ist das EE-
+BUS-Handwerkertool (derzeit über ZVEH-Plattform verfügbar) oder Gleichwertiges anzuwen-
+den. Nach Einbau der Steuerungseinrichtung ist ein separater Pairingprozess notwendig.
+Der Betreiber der sVE bzw. des EMS richtet nach dem Anschluss der Steuerungseinrichtung
+durch den Messstellenbetreiber umgehend diese als steuernde Instanz seiner sVE bzw. sei-
+nes EMS ein.
+Werden über EEBUS gesteuerte sVE/EMS getauscht, sind diese stets mit neuer SKI dem
+jeweils zuständigen Messstellenbetreiber in geeigneter maschinenlesbarer Form (z. B. QR-
+Code, alphanummerische Zeichenabfolge) anzumelden. Wenn der zuständige Messstellen-
+betreiber der grundzuständige Messstellenbetreiber DIGImeto ist, erfolgt die Anmeldung
+über die E-Mail-Adresse Steuerung.Betrieb@digimeto.de.
+
+
+                                            10
+
+Der Betreiber hat dafür Sorge zu tragen, dass die steuerbaren Verbrauchseinrichtungen mit
+den notwendigen technischen Einrichtungen ausgestattet werden, stets steuerbar sind und
+ein ausgegebener Steuerbefehl unverzüglich umgesetzt wird. Steuerungseinrichtungen des
+Messstellenbetreibers müssen eingebaut werden können.
+Für den Betreiber gelten reduzierte Netzentgelte nach jeweils angemeldetem Modul nur bei
+Erfüllung dieser Bedingungen. Dies gilt auch bei Gerätetausch, von dem sVE direkt oder in-
+direkt betroffen werden.
+
+Die sVE und zugehörige IT-Infrastruktur (z.B. EMS) sind hinsichtlich Software und Firmware
+auf aktuellem Stand zu halten, sodass eine dauerhafte Steuerfähigkeit der Anlage gewähr-
+leistet ist.
+
+
+3   Ergänzende Regelungen - Bestandsanlagen
+a) Hier sind weitere Regelungen für Bestandsanlagen nach alter Regelung des § 14a
+   EnWG bzw. Vorgänger-Regelungen (Inbetriebnahme bis Ende 2023) (im Weiteren „alte
+   Regelung“ bezeichnet) sowie der Umgang mit diesen Anlagen bei Erweiterung durch
+   neue sVE aufgeführt.
+
+b) Anlagen nach Abschnitt 1, Pkt. c), die bis Ende 2023 nicht als sVE nach alter Regelung in
+   Betrieb genommen wurden, haben nach BNetzA-Beschluss BK6-22-300 Bestandsschutz
+   und müssen nicht nach den neuen Regelungen gesteuert werden. Jedoch besteht für
+   den Anschlussnehmer bzw. den Anschlussnutzer als Betreiber der Bestandsanlage das
+   Recht, freiwillig in die neuen Regelungen für sVE zu wechseln. Jeder Wechsel einer sol-
+   chen Bestandsanlage in die neuen Regelungen nach § 14a EnWG ist einmalig, ohne
+   Möglichkeit zur Rückkehr in das vorherige Verhältnis möglich und dem Netzbetreiber ge-
+   mäß seinen Vorgaben zum Netzanschluss-Anmeldeverfahren anzuzeigen. Bei dem
+   Wechsel dieser Anlagen vom Status „nicht steuerbar“ zu steuerbaren Anlagen gelten die
+   technischen Mindestanforderungen für sVE in der jeweils gültigen Version zum Zeitpunkt
+   des Wechsels.
+
+c) Befinden sich an einem Bestandsanschluss Ladeeinrichtungen oder Wärmepumpen, wel-
+   che die betreffenden Bedingungen nach Abschnitt 1, Pkt. c) erfüllen und nach alter Rege-
+   lung des § 14a EnWG betrieben werden, unterliegen diese einer Umrüstpflicht bis
+   31.12.2028, da für diese Anlagen Bestandsschutz bis längstens 31.12.2028 gemäß den
+   Übergangsregelungen nach BK6-22-300 gilt. Spätestens ab 01.01.2029 gelten für sie die
+   neuen Regelungen nach §14a EnWG, mit allen Pflichten und Rechten; ein freiwilliger vor-
+   zeitiger Wechsel in die neuen Regelungen ist einmalig, ohne Rückkehr in das vorherige
+   Verhältnis möglich und dem Netzbetreiber gemäß seinen Vorgaben zum Netzanschluss-
+   Anmeldeverfahren anzuzeigen. Neue sVE dürfen grundsätzlich im gleichen Stromkreis
+   mit o. g. alt-§ 14a EnWG-Anlagen (und damit hinter einem bestehenden Zählpunkt als se-
+   parater Zähler für sVE) angeschlossen werden. In diesem Fall verlieren jedoch die o. g.
+   alt-§ 14a EnWG-Anlagen bereits vor dem 31.12.2028 den Bestandsschutz. Für alle sVE
+   hinter dem separaten Zähler gelten dann die neuen Regelungen zum § 14a EnWG und
+   die technischen Mindestanforderungen für sVE des Netzbetreibers in der jeweils gültigen
+   Version zum Zeitpunkt des Bestandstatus-Wechsels.
+   Anmerkung: Der o. g. Anschluss neuer sVE setzt die Umstellung der Bestandsanlage
+   auf die jeweils geltenden neuen Regelungen voraus.
+
+d) Befindet sich am Bestandsanschluss eine Wärmespeicheranlage (auch Nachtspeicher-
+   heizung genannt) nach alter Regelung mit separatem Zähler angeschlossen, gilt für diese
+   Anlage Bestandsschutz gemäß den Übergangsregelungen nach BK6-22-300 bis zur Au-
+   ßerbetriebnahme oder wesentlichen Veränderung der Anlage. In diesem Fall darf keine
+   neue sVE (oder andere Verbrauchs- oder Energieerzeugungseinrichtung) im selben
+   Stromkreis mit der Wärmespeicheranlage angeschlossen bzw. keine
+
+                                            11
+
+     Umschaltmöglichkeiten auf andere Anlagen vorgenommen werden, wenn der Bestands-
+     schutz der Wärmespeicheranlage weiterhin bestehen soll.
+
+e) Befinden sich an einem Bestandsanschluss andere steuerbare Anlagen nach alten Rege-
+   lungen des § 14a EnWG als unter diesem Abschnitt, Pkt. 3 b) bis 3 d) angegeben, gilt für
+   diese Anlagen Bestandsschutz bis spätestens 31.12.2028 gemäß den Übergangsrege-
+   lungen nach BK6-22-300. Danach verlieren diese Anlagen den bestehenden Status und
+   die damit einhergehende Netzentgeltreduzierung. Neue sVE dürfen grundsätzlich im glei-
+   chen Stromkreis mit diesen alt-§ 14a EnWG-Anlagen auch vor dem 31.12.2028 ange-
+   schlossen werden. In diesem Fall verlieren jedoch diese alt-§ 14a EnWG-Anlagen früh-
+   zeitig den o. g. Bestandschutz. Für die neuen sVE hinter dem ursprünglichen Zähler gel-
+   ten dann die neuen Regelungen zum § 14a EnWG für den Anschluss von sVE an einem
+   gemeinsamen Zähler für steuerbare und nicht steuerbaren Anlagen sowie die jeweils ak-
+   tuellen technischen Mindestanforderungen für sVE des Netzbetreibers.
+
+f)   Ein Anschluss von neuen sVE in einem bestehenden Stromkreis mit Bestandsanlagen
+     wie oben dargestellt soll nur nach einer Eignungsprüfung und ggf. Verstärkung der Kun-
+     denanlage durch einen durch den Anschlussnehmer beauftragten und beim Netzbetrei-
+     ber zugelassenen Installateur erfolgen. In diesem Fall führt der Installateur die Anmel-
+     dung beim Netzbetreiber und den Umbau der Anlage nach den jeweils aktuellen techni-
+     schen Mindestanforderungen für sVE des Netzbetreibers in dem Umfang durch, so dass
+     der Messstellenbetreiber die erforderlichen Mess- und Steuergeräte vorschriftsmäßig ein-
+     bauen, anschließen und betreiben kann.
+
+g) Änderungen einer Bestandsanlage, die nicht leistungs- oder Anschluss spezifisch wirk-
+   sam sind (z. B. bei einem 1:1-Tausch eines Gerätes) haben keinen Einfluss auf den Be-
+   standschutz. Eine wesentliche Änderung einer Bestandsanlage führt wiederum zum Ver-
+   lust des Bestandschutzes bezüglich der alten Regelungen nach § 14a EnWG, mit allen
+   Konsequenzen.
+
+
+4    Abschließende Hinweise
+Bei Anlagen zur Speicherung von Energie betrifft die Absteuerung nach den neuen Regeln
+des § 14a EnWG ausschließlich die aus dem öffentlichen Netz bezogene Leistung. Eine Ein-
+speisung aus einer Ladeeinrichtung oder einem Speicher in das öffentliche Netz sind nicht
+Bestandteil dieser Regelungen.
+
+Abhängig vom technischen Fortschritt (insbesondere im Zuge der Weiterentwicklung der di-
+gitalen Steuerung) und der jeweils gültigen Gesetzgebung behält sich der Netzbetreiber vor,
+diese Technischen Mindestanforderungen für sVE entsprechend anzupassen.
+
+
+
+Anlagen
+Anlage 1: Anschlussplan sVE – kontaktbasierte Steuerung
+Anlage 2: Anschlussplan sVE – digitale Steuerung mit EEBUS-Protokoll
+Anhang: Mindestleistung im Steuerungsfall und reduzierte Netzentgelte nach § 14a EnWG
+
+Ergänzungsblatt zu den Technischen Mindestanforderungen für sVE:
+Tarifschaltzeiten und Unterbrechungs-/Steuerzeiten für alt-§ 14a EnWG-Anlagen
+
+
+
+
+                                             12
+
+Anlage 1: Anschlussplan sVE – kontaktbasierte Steuerung
+
+
+
+
+Abbildung 1: Anschlussplan (kontaktbasierte Steuerung)
+
+Hinweis: Dieser Anschlussplan ist sinngemäß auch auf halbindirekte Messungen übertrag-
+bar; als Platz für die Steuerungseinrichtung ist dabei der Raum f. APZ zu nutzen.
+
+
+
+
+                                           13
+
+Anlage 2: Anschlussplan sVE – digitale Steuerung mit EEBUS-Protokoll
+
+
+
+
+Abbildung 2: Anschlussplan (digitale Steuerung)
+
+Hinweis: Dieser Anschlussplan ist sinngemäß auch auf halbindirekte Messungen übertrag-
+bar; als Platz für das Steuerungsgerät ist dabei der Raum f. APZ zu nutzen.
+
+
+
+
+                                            14
+
+Anhang: Mindestleistung im Steuerungsfall und reduzierte Netzentgelte nach § 14a EnWG
+
+Mindestleistung im Steuerungsfall ab 01.01.2024
+
+Der Netzbetreiber steuert nur im Fall einer Gefährdung oder Störung der Sicherheit oder Zu-
+verlässigkeit seines Netzes bzw. einzelner Netzbereiche. Auch im Fall der Reduzierung des
+netzwirksamen Leistungsbezuges durch Steuerung ist eine Mindestleistung für die sVE zu
+gewähren. Bei mehreren hinter einem Netzanschluss befindlichen sVE ergibt sich die Min-
+destleistung der sVE am Netzanschluss als Summe zwischen der Mindestleistung ggf. direkt
+gesteuerter sVE und der Mindestleistung der ggf. über ein Energiemanagementsystem
+(EMS) gesteuerten sVE. Beim Einsatz eines EMS ist die Berücksichtigung eines Gleichzei-
+tigkeitsfaktors bei der Berechnung der Mindestleistung für die dadurch gesteuerten sVE an-
+zuwenden. Die BNetzA hat Regeln zur Berechnung der Mindestleistung vorgegeben, siehe
+unten derzeit geltende Formeln. Die so berechnete Mindestleistung ist im Rahmen der An-
+meldung der sVE zum Netzanschluss verbindlich anzugeben. Beim Anliegen eines Steuer-
+signals ist die sVE auf die angegebene Mindestleistung Pmin,14a am Netzanschluss abzure-
+geln.
+
+ Pmin,14a bei Direktsteuerung:                           Pmin,14a bei Steuerung über Energiemanagementsystem (EMS):
+ Für LE und Speicher -> Pmin,14a = 4,2 kW je sVE         Für LE, Speicher UND [(SummePWP und SummePARK ≤ 11 kW)]
+ Für SummePWP oder SummePARK ≤ 11 kW                     -> Pmin,14a = 4,2 kW + (Summe sVE - 1) x GZF x 4,2 kW
+ -> Pmin,14a = 4,2 kW je Anlagenart WP oder ARK          Für LE, Speicher UND [(SummePWP oder SummePARK > 11 kW)]
+ Für SummePWP oder SummePARK > 11 kW
+ -> Pmin,14a = SummePWP x 0,4 kW bzw.                    -> Pmin,14a = Max (0,4 x SummePWP ; 0,4 x SummePARK ) +
+ -> Pmin,14a = SummePARK x 0,4 kW                        (Summe sVE - 1) x GZF x 4,2 kW
+
+
+wobei:
+Summe sVE: Gesamtzahl der über EMS gesteuerten sVE am Netzanschluss
+SummePWP: Gesamtleistung aller WP am Netzanschluss
+SummePARK: Gesamtleistung aller ARK am Netzanschluss
+GZF: Gleichzeitigkeitsfaktor (ist von der BNetzA fest vorgegeben)
+
+ Summe sVE:                                        2        3        4        5        6         7        8        ≥9
+ GZF                                               0,8      0,75     0,7      0,65     0,6       0,55     0,5      0,45
+
+
+Reduzierte Netzentgelte für sVE ab 01.01.2024
+
+Das reduzierte Netznutzungsentgelt richtet sich nach der Entscheidung des Anschlussneh-
+mers (ggf. nach Abstimmung mit seinem/-n Anschlussnutzer/n) und erfolgt wahlweise
+ über eine pauschale Reduzierung von [80 €/a + (3.750 kWh/a x AP NSSLP ct/kWh/100 x
+    0,2)] (in €, brutto-Beträge) unabhängig von der Art des Anschlusses der sVE nach Ab-
+    schnitt 1, Pkt. g); dies gilt für Standardlastprofil (SLP)-Kunden und Kunden mit registrie-
+    render Leistungsmessung (RLM-Kunden) mit Anschluss unmittelbar oder mittelbar an der
+    Niederspannung (Modul 1, default-Wahl),
+ über eine prozentuale Reduzierung auf 40 % x AP NSSLP bei Anschluss mit separatem
+    Zähler für sVE; dies gilt nur für SLP-Kunden (Modul 2) oder
+ über eine Kombination der pauschalen Reduzierung nach Modul 1 mit zeitvariablen Netz-
+    nutzungsentgelten in den vom Netzbetreiber dafür festgelegten Hoch-, Niedrig- und Stan-
+    dardlastzeiten (Modul 3); dies gilt nur für SLP-Kunden; außerdem ist hierfür ein intelligen-
+    tes Messsystem erforderlich,
+wobei AP NSSLP = Arbeitspreis Netznutzung in der Niederspannung für SLP-Kunden ist.
+Die Preisblätter hierfür sind unter www.Sachsen-Netze.de veröffentlicht. Der Stromlieferant
+des jeweiligen Anschlussnutzers als Betreiber einer sVE ist verpflichtet, das reduzierte Netz-
+nutzungsentgelt für sVE gesondert auf der Stromrechnung auszuweisen.
+
+
+
+
+                                                           15
+
+Netzentgelt-Regelungen für alt-§14a EnWG-Anlagen
+
+Für Verbrauchseinrichtungen mit Inbetriebnahme bis zum 31.12.2023, denen bisher ein re-
+duziertes Netznutzungsentgelt nach § 14a EnWG oder der korrespondierenden Vorgänger-
+regelung gewährt wurde, und welche nicht in die netzorientierte Steuerung wechseln bzw.
+wechseln müssen, gelten die bisherigen Regelungen nach Maßgabe der Übergangsregelun-
+gen in den BNetzA-Beschlüssen weiter, siehe auch Abschnitt 3 der Technischen Mindestan-
+forderungen für sVE.
+
+In den Übergangszeiten stellt der Netzbetreiber bei der Kalkulation dieser reduzierten Netz-
+nutzungsentgelte auf den Prozentsatz der Reduzierung des Arbeitspreises (AP NSSLP) sowie
+ggf. des Grundpreises des Jahres 2023 gemäß den o. g. BNetzA-Beschlüssen ab.
+
+Maßgeblich für den Betrieb und die Steuerung dieser Anlagen sind die zum Zeitpunkt der Er-
+richtung und Inbetriebnahme der jeweiligen Anlage gültigen Technischen Anschlussbedin-
+gungen des Netzbetreibers. Zudem gelten für diese Anlagen die Unterbrechungs-/ Steuerzei-
+ten gemäß Ergänzungsblatt dieser Technischen Mindestanforderungen für sVE.
+
+
+
+
+                                             16
+

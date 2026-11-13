@@ -1,0 +1,1063 @@
+URL: https://www.netze-hechingen.de/stromanschluss/netznutzung/?tx_reintdownloadmanager_reintdlm%5Bdownloaduid%5D=6227&cHash=b48ddfe71d7042fdc9012f50989eea13
+Netzbetreiber: Netze Hechingen GmbH ＆ Co. KG
+
+
+                  Netze Hechingen GmbH & Co. KG                         2026-01-01 00:00:00
+
+                  Berechnung Netznutzungsentgelte Strom mit Leistungsmessung
+
+                  Eingabe
+
+                  Jahresentnahme                                        kWh
+
+                  Leistung                                              kW
+
+                  Anschlussnetzebene
+
+                  Preissystem                         jährlich
+
+                  Anzahl Messstellen
+
+                  Wandler kundenseitig gestellt?
+
+                  Ergebnis - Berechnung jährliches Netzentgelt
+
+                  Benutzungsstunden                   0,0               h
+                  Leistungspreis                      0,0               €
+                  Arbeitspreis                        0,0               €
+                  Entgelte für Messstellenbetrieb     0,0               €
+                  inkl. Messung
+
+                  Netznetzungsentgelt (netto)         0,0               €
+                  Umsatzsteuer (19%)                  0,0               €
+                  Netznetzungsentgelt (brutto)        0,0               €
+
+                  Spezifische Preise (netto)
+
+                  spezfischer Arbeitspreis            0,0               ct/kWh
+
+
+
+
+                  Netze Hechingen GmbH & Co. KG                         2026-01-01 00:00:00
+
+                  Berechnung Netznutzungsentgelte Strom ohne Leistungsmessung
+
+                  Eingabe
+
+                  Jahresentnahme                                        kWh
+
+                  Kundengruppe
+
+                  Inbetriebnahme
+
+                  Anlage nach §14a EnWG steuerbar?
+
+                  Messung
+
+                  seperate Messung für steuerbare Verbrauchseinrichtung nach §14a EnWG
+
+                  Netzentgelte für steuerbare Verbrauchseinrichtungen nach §14a EnWG
+
+                  Zusatzgerät
+
+                  Ergebnis - Berechnung jährliches Netzentgelt
+
+                  Arbeitspreis                        0,0               €
+                  Grundpreis                          0,0               €
+                  Entgelte für Messstellenbetrieb     0,0               €
+                  inkl. Messung
+                  Entgelte für 2. Messstellenbetrieb mit iMs  0,0       €
+                  inkl. Messung
+                  Zusatzgerät                         0,0               €
+
+                  Netznetzungsentgelt (netto)         0,0               €
+                  Umsatzsteuer (19%)                  0,0               €
+                  Netznetzungsentgelt (brutto)        0,0               €
+
+                  Spezifische Preise (netto)
+
+                  spezfischer Arbeitspreis            0,0               ct/kWh
+
+
+
+                                                                                                                                                                                                                                          Auswahl Messung                     ja                Inbetriebnahme
+                  vorläufiges Preisblatt 2020 der Netznutzungsentgelte der SNG Hechingen GmbH & Co. KG - Stand: 07.10.2019                                                                                                                jährlich                            nein              vor dem 01.01.2024
+                                                                                                                                                                                                                                          monatlich                                             ab dem 01.01.2024
+                  Preisblatt 1      Netzentgelte für Kunden mit registrierender Leistungsmessung1)
+
+                                    Jahresleistungspreissystem                            Jahresbenutzungsdauer < 2.500 bn    Jahresbenutzungsdauer > 2.500 bn
+                                    Entnahme aus:                                         Leistungspreis    Arbeitspreis      Leistungspreis    Arbeitspreis      Leistungspreis    Arbeitsplreis
+                                                                                          € / kW * a        ct / kWh          € / kW * a        ct / kWh                                                                Berechnung        RLM
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        17,19             5,49              147,36            0,28              17,19             5,49                                Zeile NE          0,0
+                                    MS - NE 5 - Mittelspannung                            24,73             8,81              244,2             0,04              24,73             8,81                                Benutzungsstunden 0,0               h
+                                    MS - NE 5 - Mittelspannung mit NS-Messung             24,73             8,81              244,2             0,04              24,73             8,81                                Arbeitspreis      0,0               €
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      39,24             10,04             249,37            1,64              39,24             10,04                               Leistungspreis    0,0               €
+                                    NS - NE 7 - Niederspannung                            53,75             11,26             254,54            3,23              53,75             11,26                               Messpreis         0,0               €
+
+                  Preisblatt 2      Netzentgelte für Kunden ohne Leistungsmessung                                             geltende MwSt.:   0,19
+                                                                                                                                                                                                                        Berechnung        SLP
+                                    Netzentgelte                                          netto             brutto            netto             brutto                                                                  Kundengruppe      0,0               0,0
+                                    Kundengruppe                                          Arbeitspreis      Arbeitspreis      Grundpreis        Grundpreis                                                              Messgruppe        #N/A
+                                                                                          ct / kWh          ct / kWh          € / a             € / a                                                                   Zusatzgerät       #N/A
+                                    Kleinkunden                                           8,34              9,92              84,0              99,96                                                                   Arbeitspreis      0,0               €
+                                    Elektrospeicherheizung (bis 31.12.2023)               1,98              2,36              0,0               0,0                                                                     Grundpreis        0,0               €
+                                    Wärmepumpen (bis 31.12.2023)                          3,5               4,17              0,0               0,0                                                                     Messpreis         #N/A              €
+                                                                                                                                                                                                                        Zusatzgerät       #N/A              €
+                  Preisblatt 2a & 2b Netzentgelte für steuerbare Verbrauchseinrichtungen nach §14a EnWG
+                                    bitte auswählen                                                                                                                                                                     Berechnung
+                                    pauschale Reduzierung  129,78       €/a                                                                                                                                             0,0
+                                    prozentuale Reduzierung  3,34       ct/kWh                                                                                                                                          0,0
+
+                  Preisblatt 3      Monatsleistungssystem für Kunden mit registrierender Leistungsmessung1)                   gültig ab:
+
+                                    Monatsleistungspreissystem                            Monatsleistungspreissystem
+                                    Entnahme aus:                                         Leistungspreis    Arbeitspreis
+                                                                                          € / kW * Monat    ct / kWh
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        24,56             0,28
+                                    MS - NE 5 - Mittelspannung                            40,7              0,04
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      41,56             1,64
+                                    NS - NE 7 - Niederspannung                            42,42             3,23
+
+                  Preisblatt 4      Reservenetzkapazität für Kunden mit registrierender Leistungsmessung1)
+
+                                    Reservenetzkapazität                                  bis 200 h         bis 400 h         bis 600 h
+                                    Entnahme aus:                                         € / kW * a        € / kW * a        € / kW * a
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        0,0               0,0               0,0
+                                    MS - NE 5 - Mittelspannung                            61,83             74,2              86,57
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      56,08             67,29             78,51
+                                    NS - NE 7 - Niederspannung                            134,38            161,26            188,13
+
+                  Preisblatt 5      Entgelte für Blindstrom/Blindarbeit
+
+                                    Blindstrom                                            induktiv          kapazitiv         Entgelt
+                                    Entnahme aus:                                         cos ϕ (phi)       cos ϕ (phi)       Ct / kVarh
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        0,0               0,0               0,0
+                                    MS - NE 5 - Mittelspannung                            0,0               0,0               0,0
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      0,0               0,0               0,0
+                                    NS - NE 7 - Niederspannung                            0,0               0,0               0,0
+
+                  Preisblatt 6a     Entgelte für Messstellenbetrieb2) inkl. Messung mit registrierender Leistungsmessung1)
+
+                                    Entgelte                                              Messstellenbetrieb inkl. Mess-DL
+                                    Entgelt für Messung in … bzw. i. V. m.:               € / a
+                                    Mittelspannung (einschl. HS/MS)                       471,62
+                                    Preisabschlag für kundenseitig gest. Wandler          235,2
+                                    Niederspannung (einschl. MS/NS)                       364,44
+                                    Preisabschlag für kundenseitig gest. Wandler          54,96
+                                    Preisabschlag für kundenseitig gest. Kom.-einrichtung 0,0
+
+                  Preisblatt 6b     Entgelte für Messstellenbetrieb3) inkl. Messung ohne registrierende Leistungsmessung1)
+
+                                    Entgelte                                              Messstellenbetrieb inkl. Mess-DL
+                                    Entgelt für Messung mit:                              € / a
+                                    Eintarifzählung                                       9,72
+                                    Zweitarifzählung                                      15,67
+                                    EDL21                                                 27,07
+                                    Pauschalanlage                                        4,79
+                                    Wandlersatz                                           54,96
+                                    Schaltgeräte                                          9,57
+                                    Wandlersatz und Schaltgerät                           64,53
+                                    moderne Messeinrichtung                               21,01
+                  1,0               intelligentes Messystem bis 6000 kWh                  25,21
+                  2,0               intelligentes Messystem bis 10000 kWh                 33,61
+                  3,0               intelligentes Messystem bis 20000 kWh                 42,016807
+                  4,0               intelligentes Messystem bis 50000 kWh                 92,44
+                  5,0               intelligentes Messystem bis 100000 kWh                117,65
+
+                                    Auswahl iMS       0,0
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Entgelte Strom
+                  Preisblätter 1 - 6 für die Netznutzung (Strom) im Netzgebiet der Netze Hechingen GmbH & Co. KG              erstellt am:      2025-10-15 00:00:00
+                                                                                                                              erstellt zum:     15.10.2025
+                                                                                                                              gültig ab:        2026-01-01 00:00:00
+
+                  Preisblatt 1      Netzentgelte für Kunden mit registrierender Leistungsmessung1)
+
+                                    Jahresleistungspreissystem2),3)                       Jahresbenutzungsdauer < 2.500 bn    Jahresbenutzungsdauer > 2.500 bn
+                                    Entnahme aus:                                         Leistungspreis    Arbeitspreis      Leistungspreis    Arbeitspreis
+                                                                                          € / kW * a        ct / kWh          € / kW * a        ct / kWh
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        17,19             5,49              147,36            0,28
+                                    MS - NE 5 - Mittelspannung4)                          24,73             8,81              244,2             0,04
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      39,24             10,04             249,37            1,64
+                                    NS - NE 7 - Niederspannung                            53,75             11,26             254,54            3,23
+
+                  Preisblatt 2      Netzentgelte für Kunden ohne Leistungsmessung                                             geltende MwSt.:   0,19
+
+                                    Netzentgelte3),5)                                     netto             brutto            netto             brutto
+                                    Kundengruppe                                          Arbeitspreis      Arbeitspreis      Grundpreis        Grundpreis
+                                                                                          ct / kWh          ct / kWh          € / a             € / a
+                                    Kleinkunden 8)                                        8,34              9,92              84,0              99,96
+                                    Elektrospeicherheizung6)                              1,98              2,36
+                                    Wärmepumpen6)                                         3,5               4,17
+
+                  1)                Zähleinrichtung (Drehstrom) mit Registrierung der 1/4-h-Leistungsmittelwerte
+                  2)                In diesen Entgelten sind die Kosten für die vorgelagerten Netze, die Systemdienstleistungen und die bei der Energieübertragung entstehenden Netzverluste enthalten.
+                  3)                Die Preise verstehen sich zuzüglich der Entgelte für:                   siehe auch:
+                                    gesetzlich geltende Umsatzsteuer                                        z.Zt. 19%
+                                    Messstellenbetrieb inkl. Messung                                        Preisblatt 5a & 5b
+                                    Konzessionsabgabe, KWK-Gesetz, §19- und § 17-Umlage aufgrund gesetzlicher Verordnungen  Preisblatt 6
+                  4)                Bei Entnahme elektrischer Energie aus Mittelspannung und Erfassung durch eine niederspannungsseitige Messeinrichtung wird ein pauschaler Zuschlag in Höhe von 3 %
+                                    aufgrund der Transformatorenverluste erhoben. Dieser Zuschlag gilt sowohl für die Arbeits- als auch für die Leistungswerte.
+                  5)                In den Entgelten (GP und AP) sind die Kosten für Netznutzung, die Systemdienstleistungen und die bei der Energieübertragung entstehenden Netzverluste enthalten.
+                  6)                Die unterbrechbaren Entnahmestellen ohne Leistungsmessung werden auf Basis von TLP (temperaturabhängige Lastprofile) beliefert, eine Begrenzung auf die
+                                    bekannten 100.000 kWh für SLP-Kunden kann bei diesen Kundengruppen überschritten werden. Die Abrechnung der Netznutzung erfolgt ausschließlich im NS-
+                                    Netz und durch das sogenannte Lastprofilverfahren für unterbrechbare Verbrauchseinrichtungen (uVE) der Netze Hechingen GmbH & Co. KG
+                  7)                Für den Eigenverbrauch der Gemeinde und die Straßenbeleuchtung wird der Kommunalrabatt gemäß § 3 Abs. 1 Nr. 1 KAV auf das Nettoentgelt i.H.v. 10% gewährt.
+                                    Die Höhe der fälligen Umsatzsteuer bemisst sich nach dem unrabattierten Nettoentgelt für Kleinkunden.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                                    Entgelte Strom
+                                    Preisblätter 1 - 6 für die Netznutzung (Strom) im Netzgebiet der Netze Hechingen GmbH & Co.KG                                                                     erstellt am:      2025-10-15 00:00:00
+                                                                                                                                                                                                      erstellt zum:     15.10.2025
+                                                                                                                                                                                                      gültig ab:        2026-01-01 00:00:00
+
+                                    Preisblatt 2a     Netzentgelte für steuerbare Verbrauchseinrichtungen gemäß § 14a EnWG nach Modul 1                                                               geltende MwSt.:   0,19
+
+                                    Folgende Voraussetzungen sind für eine Vereinbarung zur netzorietierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchs- einrichtungen nach Abrechnungsmodul 1 einzuhalten: • bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher • technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich des Stromverbrauchs (Einspeicherung) mit einem max. Leistungsbezug von mehr als 4,2 kW. Die Höhe der pauschalen Netzentgeltreduzierung nach Modul 1 darf das Netzentgelt, welches vom Betreiber ohne pauschale Reduzierung an dem Zählpunkt zu entrichten wäre, nicht übersteigen (negative Netzentgelte sind nicht möglich). Die Netzentgeltreduzierung wird jährlich gewährt. Pauschale Netzentgeltreduzierung für Betreiber einer steuerbaren Verbrauchseinrichtungen gem. Modul 1:
+                                    pauschale Reduzierung 1)                              Netto (€/a)                                                                               Brutto (€/a)
+                                    Pauschale Netzentgeltreduzierung =                                      42,02             (Kosten iMS vgl. MsbG)                                50,0
+                                                                                          +                 25,21             (Kosten für die Steuerbox vgl. MsbG)                  30,0
+                                    mit AP = 8,34 ct/kWh                                  +                 62,55             [3.750 kWh/a x AP x 0,2 (Stabilitätsprämie)]          74,43
+                                    (NS ohne Lastgangmessung)
+                                    Maximale Reduzierung =                                                  129,78            €/a                                                   154,43
+                                    Über den Installateur bzw. einen Energiedienstleister kann vor Ort die Verbrauchseinrichtung genau analysiert werden, welche Aufwendungen / Kosten auf den Kunden zukommen. Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+                                    1) Die Preise verstehen sich zuzüglich der Entgelte für:                                                                      siehe auch:
+                                    gesetzlich geltende Umsatzsteuer                                                                                              z.Zt. 19%
+                                    Messstellenbetrieb inkl. Messung                                                                                              Preisblatt 5a & 5b
+                                    Konzessionsabgabe, KWK-Gesetz, §19- und § 17-Umlage aufgrund gesetzlicher Verordnungen                                        Preisblatt 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                        Hinweis: Das Gesamtentgelt für die Entnahmestelle kann nicht unter 0 € sinken!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Entgelte Strom
+                  Preisblätter 1 - 6 für die Netznutzung (Strom) im Netzgebiet der Netze Hechingen GmbH & Co.KG                                                                     erstellt am:      2025-10-15 00:00:00
+                                                                                                                                                                                    erstellt zum:     15.10.2025
+                                                                                                                                                                                    gültig ab:        2026-01-01 00:00:00
+
+                  Preisblatt 2b     Netzentgelte für steuerbare Verbrauchseinrichtungen gemäß § 14a EnWG nach Modul 2                                                               geltende MwSt.:   0,19
+
+                  Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchs- einrichtungen nach Abrechnungsmodul 2 einzuhalten: • bestehender Netznutzungsvertrag zwischen Netzbetreiber und Lieferant oder Letztverbraucher • technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung • steuerbare Verbrauchseinrichtung besitzt einen separaten Zähler und technischen Zählpunkt Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich des Stromverbrauchs (Einspeicherung) mit einem max. Leistungsbezug von mehr als 4,2 kW. Bei Wahl des Moduls 2 erfolgt eine prozentuale Reduzierung des Arbeitspreises für den Verbrauch der steuerbaren Verbrauchseinrichtung. Netzentgelte für Entnahmestellen mit steuerbaren Verbrauchseinrichtungen gem. Modul 2:
+                  prozentuale Reduzierung 1)                                              netto             brutto            netto             brutto
+                                                                                          Arbeitspreis      Arbeitspreis      Grundpreis        Grundpreis
+                                                                                          ct / kWh          ct / kWh          € / a             € / a
+                  Steuerbare Verbrauchseinrichtungen nach § 14a EnWG                      3,34              3,97
+
+                  Über den Installateur bzw. einen Energiedienstleister kann vor Ort die Verbrauchseinrichtung genau analysiert werden, welche Aufwendungen / Kosten auf den Kunden zukommen. Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+                  1) Die Preise verstehen sich zuzüglich der Entgelte für:                                                                      siehe auch:
+                  gesetzlich geltende Umsatzsteuer                                                                                              z.Zt. 19%
+                  Messstellenbetrieb inkl. Messung  0,0  0,0            0,0                                                                     Preisblatt 5a & 5b
+                  Konzessionsabgabe, KWK-Gesetz, §19- und § 17-Umlage aufgrund gesetzlicher Verordnungen                                        Preisblatt 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Entgelte Strom
+                  Preisblätter 1 - 6 für die Netznutzung (Strom) im Netzgebiet der Netze Hechingen GmbH & Co. KG                                                                    erstellt am:      2025-10-15 00:00:00
+                                                                                                                                                                                    erstellt zum:     15.10.2025
+                                                                                                                                                                                    gültig ab:        2026-01-01 00:00:00
+
+                  Preisblatt 2c     Netzentgelte für steuerbare Verbrauchseinrichtungen gemäß § 14a EnWG nach Modul 3                                                               geltende MwSt.:   0,19
+
+                  Folgende Voraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchseinrichtungen nach Abrechnungsmodul 3 einzuhalten: Das Modul 3 steht Anschlussnutzern, die keine RLM-Kunden sind, einzig in Kombination mit Modul 1 zur Verfügung. Zudem muss ein intelligentes Messsystem vorhanden sein. Die Zeitfenster mit den drei Netzentgelttarifen werden kalenderjährlich festgelegt und gelten für das gesamte Netzgebiet. Der Gültigkeitszeitraum von Modul 3 darf auf einzelne Quartale beschränkt werden, muss aber in mindestens zwei Quartalen eines Jahres abgerechnet werden. Gemäß der Festlegung BK8-22-010-A erfolgt die Abrechnung von Modul 3 erstmalig ab dem 01.04.2025. Netzentgelte für Entnahmestellen mit steuerbaren Verbrauchseinrichtungen gem. Modul 3:
+                  Gültigkeit der 3 Tarifstufen
+                  Quartale          01.01.-31.03.     01.04.-30.06.     01.07.-30.09.     01.10.-31.12.
+                  2026              ja                nein              nein              ja
+
+                  zeitvariable Netzentgelte1)         netto             brutto            Uhrzeiten
+                                                      Arbeitspreis      Arbeitspreis
+                                                      ct / kWh          ct / kWh
+                  Standardtarif                       8,34              9,92              06:15 - 16:30 21:15 - 00:00
+                  Hochtarif                           14,18             16,87             16:45 - 21:00
+                  Niedrigtarif                        1,65              1,96              00:15 - 06:00
+
+                  Beispiel:
+                  06:15 - 16:30 Uhr bedeutet Messwerte von 06:00:01 Uhr bis 16:30:00 Uhr
+
+                  Über den Installateur bzw. einen Energiedienstleister kann vor Ort die Verbrauchseinrichtung genau analysiert werden, welche Aufwendungen / Kosten auf den Kunden zukommen. Die Kosten für vorgelagerte Netzebenen, Abrechnung, Netzinfrastruktur, Bereitstellung der Systemdienstleistungen und Deckung der Übertragungsverluste sind in den Netzentgelten enthalten.
+
+                  1) Die Preise verstehen sich zuzüglich der Entgelte für:                                                                      siehe auch:
+                  gesetzlich geltende Umsatzsteuer                                                                                              z.Zt. 19%
+                  Messstellenbetrieb inkl. Messung                                                                                              Preisblatt 5a & 5b
+                  Konzessionsabgabe, KWK-Gesetz, §19- und § 17-Umlage aufgrund gesetzlicher Verordnungen                                        Preisblatt 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Preisblatt 3      Monatsleistungssystem für Kunden mit registrierender Leistungsmessung1)                   gültig ab:        2026-01-01 00:00:00
+
+                                    Für Kunden mit einer zeitlich begrenzten hohen Leistungsaufnahme, der eine signifikant geringere oder gar keine Leistungsaufnahme in der verbleibenden
+                                    Zeit gegenübersteht, bietet die Netze Hechingen GmbH & Co. KG diese Alternative zum Jahresleistungspreissystem (Preisblatt 1) an.
+                                    Die Anmeldung nimmt vor Abrechnungsbeginn der Netzkunde vor.
+
+                                    Monatsleistungspreissystem2),3)                       Monatsleistungspreissystem
+                                    Entnahme aus:                                         Leistungspreis    Arbeitspreis
+                                                                                          € / kW * Monat    ct / kWh
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        24,56             0,28
+                                    MS - NE 5 - Mittelspannung                            40,7              0,04
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      41,56             1,64
+                                    NS - NE 7 - Niederspannung                            42,42             3,23
+
+                  Preisblatt 4      Reservenetzkapazität für Kunden mit registrierender Leistungsmessung1)
+
+                                    Die Zeiten eines Ausfalles einer Erzeugungsanlage kann ein Netzkunde beim Netzbetreiber durch die Bestellung einer Netzreservekapazität absichern. Die
+                                    Höhe der Netzreserve kann i.d.R. bis zur Netto-Engpassleistung der Erzeugungsanlage durch den Netznutzer in Anspruch genommen werden. Die Abrechnung
+                                    durch den Netzbetreiber erfolgt nach einem Jahr auf Basis der in Anspruch genommenen Zeit (in Stunden). Unterjährigkeiten sind nicht gestattet.
+
+                                    Reservenetzkapazität3)                                bis 200 h         bis 400 h         bis 600 h
+                                    Entnahme aus:                                         € / kW * a        € / kW * a        € / kW * a
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        0,0               0,0               0,0
+                                    MS - NE 5 - Mittelspannung                            61,83             74,2              86,57
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung      56,08             67,29             78,51
+                                    NS - NE 7 - Niederspannung                            134,38            161,26            188,13
+
+                  Preisblatt 5      Entgelte für Blindstrom/Blindarbeit
+
+                                    Bei Kunden mit registrierender Leistungsmessung1) wird die Blindarbeit separat erfasst.
+                                    Der Netzkunde hat dafür Sorge zu tragen, dass die festgelegten Grenzwerte gemäß den vertraglichen Regelungen eingehalten werden.
+
+                                    Blindstrom4)                                          induktiv          kapazitiv         Entgelt
+                                    Entnahme aus:                                         cos ϕ (phi)       cos ϕ (phi)       Ct / kVarh
+                                    HS/MS - NE 4 - Umspannung Hoch-/Mittelspannung        < 0,95            < 1,0             1,0
+                                    MS - NE 5 - Mittelspannung
+                                    MS/NS - NE 6 - Umspannung Mittel-/Niederspannung
+                                    NS - NE 7 - Niederspannung
+
+                  1)                Zähleinrichtung (Drehstrom) mit Registrierung der 1/4-h-Leistungsmittelwerte
+                  2)                In diesen Entgelten sind die Kosten für die vorgelagerten Netze, die Systemdienstleistungen und die bei der Energieübertragung entstehenden Netzverluste enthalten.
+                  3)                Die Preise verstehen sich zuzüglich der Entgelte für:                   siehe auch:
+                                    gesetzlich geltende Umsatzsteuer                                        z.Zt. 19%
+                                    Messstellenbetrieb inkl. Messung                                        Preisblatt 5a & 5b
+                                    Konzessionsabgabe, KWK-Gesetz, §19-, § 18- und § 17-Umlage aufgrund gesetzlicher Verordnungen  Preisblatt 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Die Entgelte für Messeinrichtung gelten für:
+                  Kunden mit Leistungsmessung         --> Preisblatt 5a                                                       erstellt am:      2025-10-15 00:00:00
+                  Kunden ohne Leistungsmessung        --> Preisblatt 5b                                                       erstellt zum:     15.10.2025
+                                                                                                                              gültig ab:        2026-01-01 00:00:00
+
+                  Preisblatt 5a     Entgelte für Messstellenbetrieb2) inkl. Messung mit registrierender Leistungsmessung1)
+
+                                    Entgelte4)                                            Messstellenbetrieb inkl. Mess-DL
+                                    Entgelt für Messung in … bzw. i. V. m.:               € / a
+                                    Mittelspannung (einschl. HS/MS) ohne Wandler          471,62
+                                    Mittelspannungswandler                                235,2
+                                    Niederspannung (einschl. MS/NS) ohne Wandler          364,44
+                                    Niederspannungswandler                                54,96
+                                    Preisabschlag für kundenseitig gest. Kom.-einrichtung                   0,0
+
+                  Preisblatt 5b     Entgelte für Messstellenbetrieb3) inkl. Messung ohne registrierende Leistungsmessung1)
+
+                                    Entgelte4)                                            Messstellenbetrieb inkl. Mess-DL
+                                    Entgelt für Messung mit:                              € / a
+                                    Eintarifzählung                                       9,72
+                                    Zweitarifzählung                                      15,67
+                                    Wandlersatz                                           54,96
+                                    Schaltgeräte                                          9,57
+                                    Pauschalanlage                                        4,79
+                                    EDL21                                                 27,07
+
+                  1)                Zähleinrichtung (Drehstrom) mit Registrierung der 1/4-h-Leistungsmittelwerte
+                  2)                Das Entgelt für den Messstellenbetrieb umfasst den Einbau, den Betrieb und die Wartung der Messeinrichtung sowie das Entgelt für die Messung (tägliche Ab- bzw. Auslesung)
+                                    der Messeinrichtung in Verbindung mit der Datenweitergabe an berechtigte Dritte.
+                  3)                Das Entgelt für den Messstellenbetrieb umfasst den Einbau, den Betrieb und die Wartung der Messeinrichtung sowie das Entgelt für die Messung (jährliche Ab- bzw. Auslesung)
+                                    der Messeinrichtung in Verbindung mit der Datenweitergabe an berechtigte Dritte.
+                                    Weitere Messungen werden erneut abgerechnet (z.B: auf Kundenwunsch), ausgenommen sind Messungen aufgrund von Lieferantenwechseln (z.B. durch Ein- bzw. Auszug, usw.)
+                  4)                Die Preise verstehen sich zuzüglich der Entgelte für die gesetzlich geltende Umsatzsteuer.  z.Zt. 19%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  vorläufiges Preisblatt 2026 der Netznutzungsentgelte der Netze Hechingen GmbH & Co.KG - Stand: 15.10.2025
+
+                  Preisblatt 6      Konzessionsabgabe und gesetzliche Umlagen1,2)  gültig ab:  2026-01-01 00:00:00
+
+                                    Konzessionsabgabe nach Konzessionsabgabeverordnung (KAV)  in Gemeinden bis … Einwohner  Abgabe in ct/kWh  in Gemeinden bis … Einwohner  Abgabe in ct/kWh2)  in Gemeinden bis … Einwohner  Abgabe in ct/kWh2)  in Gemeinden über … Einwohner  Abgabe in ct/kWh2)
+                                    Strom, bei sonstigen Tariflieferungen der nicht als Schwachlaststrom geliefert wird  25000  1,32  100000    1,59                                500000            1,99                                500000            2,39
+                                    Strom, bei sonstigen Tariflieferungen der als Schwachlaststrom geliefert wird  25000  0,61  100000          0,61                                500000            0,61                                500000            0,61
+                                    Sondervertragskunden (mit registrierender Leistungsmessung4))  ---  0,11                  ---               0,11                                ---               0,11                                ---               0,11
+
+                                                      Umlage in ct/kWh
+                                    Offshore-Netzumlage nach § 17f Energiewirtschaftsgesetz (EnWG)  in der jeweils veröffentlichten Höhe 3)
+
+                                                      Umlage in ct/kWh
+                                    Umlage nach § 19 Abs. 2 Stromnetzentgeltverordnung (StromNEV)  in der jeweils veröffentlichten Höhe 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      Umlage in ct/kWh
+                                    KWKG-Umlage nach §§ 26-29 Kraft-Wärme-Kopplungsgesetz (KWKG)  in der jeweils veröffentlichten Höhe 3)
+
+
+                  1)                Alle aufgeführten Preise sind Nettopreise und verstehen sich zuzüglich der gesetzlich geltenden Umsatzsteuer  z.Zt. 19%
+                  2)                Die Konzessionsabgaben und die Umlagen sind in den Netzentgelten der Preisblätter 1 bis 5 nicht enthalten und werden zusätzlich berechnet.
+                  3)                Die Höhe der aktuell geltenden gesetzlichen Umlagen sowie weiterführende Informationen zu den Umlagen können der gemeinsamen Internetplattform der deutschen Übertragungsnetzbetreiber www.netztransparenz.de entnommen werden.
+                  4)                Zähleinrichtung (Drehstrom) mit Registrierung der 1/4-h-Leistungsmittelwerte
+
+                                    Diese Auflistung dient nur zur Information und erhebt keinen Anspruch auf Vollständigkeit und Richtigkeit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

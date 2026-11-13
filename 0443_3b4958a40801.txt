@@ -1,0 +1,226 @@
+URL: https://www.stadtwerke-dachau.de/fileadmin/Media/Downloads/Downloads_Netzdienste/Netze/Stromnetz/Netzzugang/Netznutzung_f%C3%BCr_Lieferanten/Muster-EDI-Vereinbarung_180228.pdf
+Netzbetreiber: Stadtwerke Dachau Eigenbetr. d. Stadt Dachau
+
+      Vereinbarung über den elektronischen Datenaustausch
+                      (EDI-Vereinbarung)
+
+
+
+
+zwischen den
+
+Stadtwerken Dachau
+Brunngartenstr. 3
+85221 Dachau
+
+
+
+
+und
+
+
+
+……………………………….…………………………………………………..
+(Name, Adresse)
+
+
+
+                                                   – nachfolgend „die Vertragspartner“ genannt –
+
+
+
+
+EDI-Vereinbarung_(Stand:02/2018)   Seite 1 von 6                    Stadtwerke Dachau
+
+1 Zielsetzung und Geltungsbereich
+1.1 Die "EDI-Vereinbarung", nachfolgend "die Vereinbarung" genannt, legt die rechtlichen
+Bedingungen und Vorschriften fest, denen die Parteien bei der Abwicklung von Transaktionen
+im Rahmen des Geschäftsprozesses Netznutzungsabrechnung mit Hilfe des elektronischen
+Datenaustausches (EDI) unterliegen. Hinsichtlich des automatisierten Datenaustauschs hat die
+Bundesnetzagentur verbindliche Festlegungen zu einheitlichen Geschäftsprozessen und
+Datenformaten für Strom (GPKE) und Gas (GeLi Gas) getroffen. Der Datenaustausch erfolgt auf
+der Grundlage dieser Festlegungen in ihrer jeweils gültigen Fassung in Verbindung mit den
+entsprechenden Mitteilungen der BNetzA und den gültigen Nachrichten- und
+Prozessbeschreibungen zu den festgelegten Formaten. Der Lieferantenwechselprozess ist
+ausschließlich im Lieferantenrahmenvertrag geregelt.
+1.2 Die Vereinbarung besteht aus den nachfolgenden Rechtlichen Bestimmungen und wird
+durch einen Technischen Anhang ergänzt.
+1.3 Sofern die Parteien nicht anderweitig übereinkommen, regeln die Bestimmungen der
+Vereinbarung nicht die vertraglichen Verpflichtungen, die sich aus den über EDI abgewickelten
+Transaktionen ergeben.
+
+
+2 Begriffsbestimmungen
+2.1 Für die Vereinbarung werden die nachstehenden Begriffe wie folgt definiert:
+2.2 EDI:
+   Als elektronischer Datenaustausch wird die elektronische Übertragung kommerzieller und
+   administrativer Daten zwischen Computern nach einer vereinbarten Norm zur Strukturierung
+   einer EDI-Nachricht bezeichnet.
+2.3 EDI-Nachricht:
+   Als EDI-Nachricht wird eine Gruppe von Segmenten bezeichnet, die nach einer vereinbarten
+   Norm strukturiert, in ein rechnerlesbares Format gebracht wird und sich automatisch und
+   eindeutig verarbeiten lässt.
+
+2.4 UN/EDIFACT:
+   Gemäß der Definition durch die UN/ECE (United Nations Economic Commission for Europe -
+   Wirtschaftskommission der Vereinten Nationen für Europa) umfassen die Vorschriften der
+   Vereinten Nationen für den elektronischen Datenaustausch in Verwaltung, Handel, Transport
+   und Verkehr eine Reihe international vereinbarter Normen, Verzeichnisse und Leitlinien für
+   den elektronischen Austausch strukturierter Daten, insbesondere für den Austausch zwischen
+   unabhängigen rechnergestützten Informationssystemen in Verbindung mit dem Waren- und
+   Dienstleistungsverkehr.
+
+
+3 Verarbeitung und Empfangsbestätigung von EDI-Nachrichten
+3.1 Die Nachrichten werden so bald wie möglich nach dem Empfang verarbeitet, in jedem Fall
+jedoch innerhalb der in GPKE/ GeLi festgelegten Fristen.
+
+3.2 Eine Empfangsbestätigung ist nach den Festlegungen der Bundesnetzagentur (GPKE und
+GeLi Gas) bzw. nach dem Lieferantenrahmenvertrag erforderlich.
+
+
+
+
+EDI-Vereinbarung_(Stand:02/2018)     Seite 2 von 6                Stadtwerke Dachau
+
+4 Sicherheit von EDI-Nachrichten 1
+4.1 Die Parteien verpflichten sich, Sicherheitsverfahren und -maßnahmen durchzuführen und
+aufrechtzuerhalten, um EDI-Nachrichten vor unbefugtem Zugriff, Veränderungen,Verzögerung,
+Zerstörung oder Verlust zu schützen.
+4.2 Zu den Sicherheitsverfahren und -maßnahmen gehören die Überprüfung des Ursprungs, die
+Überprüfung der Integrität, die Nichtabstreitbarkeit von Ursprung und Empfang sowie die Ge-
+währleistung der Vertraulichkeit von EDI-Nachrichten. Sicherheitsverfahren und -maßnahmen
+zur Überprüfung des Ursprungs und der Integrität, um den Sender einer EDI-Nachricht zu
+identifizieren und sicherzustellen, dass jede empfangene EDI-Nachricht vollständig ist und nicht
+verstümmelt wurde, sind für alle Nachrichten obligatorisch. Bei Bedarf können im Technischen
+Anhang zusätzliche Sicherheitsverfahren und -maßnahmen festgelegt werden.
+4.3 Führen die Sicherheitsverfahren und -maßnahmen zur Zurückweisung einer EDI-Nachricht
+informiert der Empfänger den Sender darüber unverzüglich. Der Empfänger einer EDI-Nachricht,
+die zurückgewiesen wurde oder einen Fehler enthält, reagiert erst dann auf die Nachricht, wenn
+er Anweisungen des Senders empfängt.
+
+5 Vertraulichkeit und Schutz personenbezogener Daten
+5.1 Die Parteien gewährleisten, dass EDI-Nachrichten mit Informationen, die vom Sender oder im
+beiderseitigen Einvernehmen der Parteien als vertraulich eingestuft werden, vertraulich
+gehandhabt und weder an unbefugte Personen weitergegeben oder gesendet, noch zu anderen
+als von den Parteien vorgesehenen Zwecken verwendet werden. Das Bundesdatenschutzgesetz
+(BDSG) ist zu beachten.
+Mit entsprechender Berechtigung unterliegt die weitere Übertragung derartiger vertraulicher
+Informationen demselben Vertraulichkeitsgrad.
+5.2 EDI-Nachrichten werden nicht als Träger vertraulicher Informationen betrachtet, soweit die
+Informationen allgemein zugänglich sind.
+
+6 Aufzeichnung und Archivierung von Nachrichten
+6.1 Jede Partei archiviert ein vollständiges, chronologisches Protokoll aller von den Parteien
+während einer geschäftlichen Transaktion i.S.d. Art. 1 ausgetauschten EDI-Nachrichten
+unverändert und sicher gemäß den Fristen und Spezifikationen, die durch die bestehenden
+rechtlichen Grundlagen (insbesondere nach den handels- und steuerrechtlichen Vorschriften und
+nach GPKE/GeLi Gas) vorgeschrieben sind. Die Servicenachrichten CONTRL und APERAK fallen
+nicht unter diese Archivierungsvorschriften.
+6.2 Die Nachrichten werden vom Sender im übertragenen Format und vom Empfänger in dem
+Format archiviert, in dem sie empfangen werden. Hierbei ist zusätzlich sicherzustellen, dass die
+Lesbarkeit über den gesetzlichen Aufbewahrungszeitraum gewährleistet wird.
+6.3 Die Parteien stellen sicher, dass elektronische Protokolle der EDI-Nachrichten problemlos
+zugänglich sind und bei Bedarf in einer für Menschen lesbaren Form reproduziert und gedruckt
+werden können. Betriebseinrichtungen, die hierzu erforderlich sind, müssen beibehalten
+werden.
+
+
+
+
+1
+  1 Zur Gewährleistung einer sicheren Kommunikation zwischen den Parteien wird auf das Dokument „EDI@Energy - Regelungen
+zum Übertragungsweg“ in jeweils aktueller Version verwiesen (siehe dazu auch Technischer Anhang
+
+
+
+EDI-Vereinbarung_(Stand:02/2018)                Seite 3 von 6                         Stadtwerke Dachau
+
+7 Technische Spezifikationen und Anforderungen 2
+Der Technische Anhang enthält die technischen, organisatorischen und verfahrenstechnischen
+Spezifikationen und Anforderungen für den Betrieb von EDI gemäß den Bestimmungen dieser
+Vereinbarung, zu denen beispielsweise die folgende Bedingung gehört:
+- Kontaktdaten
+
+
+8 Inkrafttreten, Änderungen, Dauer und Teilnichtigkeit
+8.1 Laufzeit
+Die Vereinbarung tritt mit dem Datum der Unterzeichnung durch die Parteien in Kraft.
+Jede Partei kann die Vereinbarung mit einer Kündigungsfrist von einem Monat zum Ende
+eines Kalendermonats schriftlich kündigen.
+Ungeachtet einer Kündigung bestehen die in den Artikeln 5 und 6 genannten Rechte und
+Pflichten der Parteien auch nach der Kündigung fort.
+8.2 Änderungen
+Bei Bedarf werden von den Parteien schriftlich vereinbarte zusätzliche oder alternative
+Bestimmungen zu der Vereinbarung ab dem Zeitpunkt ihrer Unterzeichnung als Teil der
+Vereinbarung betrachtet.
+8.3 Teilnichtigkeit
+Sollte ein Artikel oder ein Teil eines Artikels der Vereinbarung als ungültig erachtet werden,
+bleiben alle übrigen Artikel vollständig in Kraft.
+
+
+
+
+2
+ Soweit alle Fragen, die im Technischen Anhang geregelt sind, bereits Teil des Lieferantenrahmenvertrages sind, reicht an dieser
+Stelle auch ein Hinweis auf den Lieferantenrahmenvertrag.
+
+EDI-Vereinbarung_(Stand:02/2018)                   Seite 4 von 6                             Stadtwerke Dachau
+
+Technischer Anhang:
+(Der technische Anhang ist wie der Vertrag selbst als Muster zu verstehen und muss individuell
+auf die Umstände der jeweiligen Vertragspartner angepasst werden. Sollten bestimmte Einzel-
+heiten bereits im Lieferantenrahmenvertrag geregelt sein (wie z.B. Ansprechpartner),
+können solche Punkte im technischen Anhang auch vollständig entfallen.)
+
+
+1. Ansprechpartner
+- Technische Fragen
+- Vertragliche Fragen
+- Briefadresse
+- Faxadresse
+- Email Adresse
+
+2. Die Vertragsparteien kommunizieren über folgenden Übertragungsweg:
+(s. unter anderem Kommunikationsrichtlinie)
+- Kommunikationsprotokoll (z.B. SMTP, FTP, http, HTTPS)
+- Kommunikationsadresse (z.B. edifact@server.de, ftp.domainname.de)
+- Kommunikationsidentifikation (z.B. Username, Signatur, Absenderadresse)
+- Maximale Sendungsgröße gemäß Kommunikationsrichtlinie
+- Kompressionsart mit Version (G ZIP)
+- ggf. Multivolume oder Containerarchive
+
+
+3. Der Übertragungsweg ist wie folgt gesichert (s. VEDIS)
+- Verschlüsselungsverfahren (S/MIME, AS2)
+- Verschlüsselungsparameter
+
+4. Die Datenübertragung erfolgt im folgenden Format:
+- INVOIC in der jeweils von der Bundesnetzagentur vorgegebenen Version, veröffentlicht unter
+  www.edi-energy.de
+- REMADV in der jeweils von der Bundesnetzagentur vorgegebenen Version veröffentlicht unter
+  www.edi-energy.de
+- Dateinamenskonvention (gemäß der jeweils von der Bundesnetzagentur vorgegebenen
+  Version der Dokumentes „EDI@Energy - Allgemeine Festlegungen“)
+- Codepflegende Stellen sind:
+- UN für EDIFACT-Syntax
+- GS1 für ILN-Nummer
+- DVGW-Codenummer
+- Netzbetreiber für Marktlokations-ID
+- BDEW für alle anderen (z.B.: Rechnungstypen, Artikelnummern)
+
+
+
+
+EDI-Vereinbarung_(Stand:02/2018)        Seite 5 von 6              Stadtwerke Dachau
+
+5. Vedis-Empfehlung zur Datensicherheit
+Zur Gewährleistung einer sicheren Kommunikation zwischen den Parteien wird auf das
+Dokument „EDI@Energy - Regelungen zum Übertragungsweg“ in jeweils aktueller Version
+verwiesen.
+
+
+
+
+EDI-Vereinbarung_(Stand:02/2018)   Seite 6 von 6              Stadtwerke Dachau
+

@@ -1,0 +1,144 @@
+URL: https://netze.ews-schoenau.de/fileadmin/ews-netze/stromnetze/BK6-24-125_Formblatt.pdf
+Netzbetreiber: Elektrizitätswerke Schönau Netze GmbH
+
+   Formblatt für die Datenkommunikation mit einem Smart-Meter-Gateway zwischen den Beteiligten gemäß § 54 Messstellenbetriebsgesetz (MsbG)
+
+
+
+                                                                           Präambel
+
+(1) 1Das folgende Formblatt dient der Verpflichtung aus § 54 MsbG. 2Hiernach muss Bestandteil vertraglicher Regelungen, die eine Datenkommunikation durch
+das oder mit Hilfe des Smart-Meter-Gateways auslösen, ein leicht verständliches Formblatt sein, in dem kurz, einfach, übersichtlich und verständlich die sich aus
+dem Vertrag ergebende Datenkommunikation aufgelistet wird. 3Das Formblatt ist Bestandteil der konsolidierten Messstellenverträge zwischen Messstellenbetreiber
+und Anschlussnutzer/-nehmer bzw. Lieferant, die durch die Bundesnetzagentur im Verfahren BK6-24-125 festgelegt wurden.
+
+(2) 1Bei dem vorliegenden Formblatt handelt es sich um den Standard für Übermittlungsvorgänge für alle erzeugenden Einspeisestellen und verbrauchenden
+Entnahmestellen, die vollständig mit intelligenten Messsystemen ausgestattet sind. 2Dieses Formblatt bezieht sich auf die vom Messstellenbetreiber zu
+erbringenden Standardleistungen. 3Der Zweck der Datenkommunikation liegt dabei in der Bilanzierung und Abrechnung.
+
+(3) 1Lieferanten und Kunden können darüber hinaus individuelle und abweichende Regelungen bzgl. Art und Umfang der vom Messstellenbetreiber zu
+übermittelnden Werte, Intervalle, Fristen und Empfänger vereinbaren. 2Auch im Hinblick auf die Dienste eines Energie-Service-Anbieters (ESA) sind solche
+Vereinbarungen möglich.
+
+
+
+                                                   § 1 Begriffsbestimmungen und Rollenbeschreibungen
+
+(1) Im Rahmen dieses Formblattes werden folgende Abkürzungen für die Beteiligten verwendet:
+
+ Abkürzung                                          Beteiligter
+ NB                                                 Netzbetreiber
+ LF                                                 Lieferant
+ ÜNB                                                Übertragungsnetzbetreiber
+ MSB                                                Messstellenbetreiber
+
+
+(2) Soweit nicht anders gekennzeichnet, sind für die Begriffsbestimmungen § 2 MsbG in der jeweils geltenden Fassung, sowie § 3 Energiewirtschaftsgesetzes
+(EnWG) in der jeweils geltenden Fassung heranzuziehen.
+
+(3) Es gelten für die Marktkommunikation die Vorgaben der Festlegung „Wechselprozesse im Messwesen (WiM) der Bundesnetzagentur (Az. BK6-09-034) in der
+jeweils geltenden Fassung.
+
+                                                                    § 2 Messwerterhebung
+
+(1) Soweit Stromwandler an den Zählern vorhanden sind, werden Wandlerfaktoren in der aus den im Zählerstand gebildeten Energiemenge im Zählerstand oder
+im Lastgang berücksichtigt.
+
+(2) 1Darüber kann der Messstellenbetreiber sog. Netzzustandsdaten erheben. 2Diese umfassen Daten und Informationen, die zur Ermittlung des Netzzustandes
+verarbeitet werden können. 3Der Messstellenbetreiber darf diese nach § 56 MsbG nur im Auftrag des Netzbetreibers und nur in begründeten Fällen erheben.
+4Solche Fälle liegen vor, wenn Netzzustandsdaten für die Gewährleistung eines sicheren, zuverlässigen und leistungsfähigen Betriebs des
+
+Energieversorgungsnetzes erforderlich sind und dazu vom Betreiber von Verteilernetzen erhoben werden
+
+    •   an Anlagen nach dem Erneuerbare-Energien-Gesetz und dem Kraft-Wärme-Kopplungsgesetz,
+    •   an steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG oder
+    •   an Zählpunkten mit intelligenten Messsystemen; im Übrigen an Zählpunkten mit einem Jahresstromverbrauch von über 20.000 Kilowattstunden.
+
+(3) In anderen als den vorgenannten Regelfällen dürfen Netzzustandsdaten nur erhoben werden, wenn sie keine personenbezogenen Daten darstellen.
+
+
+
+                                                              § 3 Weitere Datenkommunikation
+1Durch die Bestellung von Zusatzleistungen nach § 34 Abs. 2 MsbG kann im Einzelfall eine weitere Datenkommunikation ausgelöst werden, wie insbesondere
+
+durch die Erhebung und die minütliche Übermittlung von Netzzustandsdaten an den Netzbetreiber über das Smart-Meter-Gateway nach Maßgabe der §§ 56 und
+64 MsbG an bis zu 25 Prozent der vom Messstellenbetreiber in dem betroffenen Netzgebiet mit intelligenten Messsystemen ausgestatteten Netzanschlüssen.
+2Dies gilt auch dann, wenn der Nachfrager der Zusatzleistung und der Vertragspartner des Messstellenvertrages nicht identisch sind.
+
+
+
+
+                                                        § 4 Darstellung der zu übermittelnden Werte
+
+(1) Eine Darstellung der zu übermittelnden Werte erfolgt in der nachfolgenden Tabelle.
+
+(2) Im Rahmen der tabellarischen Darstellung der zu übermittelnden Werte sind die dort verwendeten Begriffe wie folgt zu verstehen:
+
+- Einspeise- und Entnahmestelle (Marktlokation)
+
+- Lokation, an der Energie gemessen wird samt der zur Ermittlung und ggfs. Übermittlung der Messwerte erforderlichen technischen Einrichtungen (Messlokation)
+
+- Netzanschluss (Netzlokation)
+
+(3) Netzzustandsdaten werden in der nachfolgenden Tabelle nicht aufgeführt, da sie technisch nicht über denselben Weg wie Messwerte übertragen werden.
+
+                                                                                                                      Empfänger
+                                                   Art und Umfang der           vom    MSB    zu
+Nr.   Auslöser                     Lokation                                                        Intervall
+                                                   übermittelnden Werte
+                                                                                                                 NB   LF    ÜNB    MSB
+
+                                                   Lastgang für den Vortag bzw. die Vortage        täglich
+                                                                                                                 x    x       x     -­
+                                   Marktlokation
+                                                   Monatsarbeitsmenge und Maximalleistung des
+                                                                                                   monatlich
+      Turnusmäßige/                                Vormonats                                                     x    x       -­    -­
+1
+      regelmäßige Ablesung         Netzlokation    Lastgang für den Vortag bzw. die Vortage        täglich       x    x       -­    -­
+                                                   Lastgang für den Vortag bzw. die Vortage        täglich       x    x       -­    x
+                                   Messlokation    Zählerstand des Monatsersten 00:00 Uhr
+                                                                                                   monatlich
+                                                   (Monatswechsel)                                               x    x       -­    x
+      Lieferbeginn/ Neuanlage/
+      Beginn der Ersatz-/ Grund-
+      versorgung/ Herstellung                      Zählerstand 00:00 Uhr des bestätigten           einmal für
+2                                  Messlokation
+      einer 100% LF-Zuordnung                      Zuordnungsbeginns                               Auslöser
+      zu einer erzeugenden
+      Marktlokation                                                                                              x    x       -­    x
+                                              Arbeitsmenge und Maximalleistung zwischen
+      Lieferende / Anfrage zur                                                                     einmal für
+                                Marktlokation dem letzten Ablesetermin und dem bestätigten
+      Beendigung der Zuordnung                                                                     Auslöser
+3                                             Zuordnungsende                                                     x    x       -­    -­
+      des LFA zur Marktlokation
+                                              Zählerstand 00:00 Uhr des bestätigten                einmal für
+      bzw. Tranche              Messlokation
+                                              Zuordnungsendes                                      Auslöser      x    x       -­    x
+                                              Arbeitsmenge zwischen dem
+                                                                                                   einmal je
+                                Marktlokation Zwischenablesetermin 00:00 Uhr und dem
+                                                                                                   Anforderung
+4     Zwischenablesung                        letzten Ablesetermin                                               x    x       -­    -­
+                                              Zählerstand des Zwischenablesetermins 00:00          einmal je
+                                Messlokation
+                                              Uhr                                                  Anforderung   x    x       -­    x
+                                              Arbeitsmenge und Maximalleistung zwischen
+                                              dem Geräteeinbaudatum 00:00 Uhr,
+                                              Geräteübernahmedatum 00:00 Uhr oder der
+                                              Änderung der Konfiguration 00:00 Uhr und dem         einmal je
+                                Marktlokation
+                                              letzten Ablesetermin bzw. bei Stilllegung            Auslöser
+      Gerätewechsel, Geräte-
+                                              zwischen dem Folgetag 00:00 Uhr des
+5     übernahme und Änderung
+                                              Geräteausbaudatums und dem letzten
+      der Konfiguration
+                                              Ablesetermin                                                       x    x       -­    -­
+                                              Zählerstand zum Geräteausbauzeitpunkt,
+                                              Geräteeinbauzeitpunkt,                               einmal je
+                                Messlokation
+                                              Geräteübernahmedatum 00:00 Uhr oder zur              Auslöser
+                                              Änderung der Konfiguration 00:00 Uhr                               x    x       -­    x
+

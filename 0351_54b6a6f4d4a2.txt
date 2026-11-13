@@ -1,0 +1,129 @@
+URL: https://fi.ovag.de/files/on/downloads/preisblaetter/netznutzung/ovagNetzGmbH_Preisblatt_Netznutzung_20221220.xlsx
+Netzbetreiber: ovag Netz GmbH
+
+Netznutzungspreisblatt für Marktlokationen (Preisblatt 1)
+                  Netzbetreiber [MP-ID] 9900202000009
+                  Gültig ab 01.01.2023                2023-01-01 00:00:00
+                                                      2023-01-01 00:00:00
+Artikelnummer                       Preis (€)
+                  Preisblattteil 1 Entgelte für Jahresleistungspreissystem
+1-01-4-001        Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,055397
+1-01-4-002        Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0418
+1-01-4-003        Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,256986
+1-01-4-004        Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0124
+1-01-5-001        Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,086849
+1-01-5-002        Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0631
+1-01-5-003        Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,379288
+1-01-5-004        Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0204
+1-01-6-001        Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,108027
+1-01-6-002        Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0696
+1-01-6-003        Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,386356
+1-01-6-004        Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0289
+1-01-7-001        Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,122438
+1-01-7-002        Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0743
+1-01-7-003        Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis (Einheit: €/kW*Tag)  0,394548
+1-01-7-004        Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis (Einheit: €/kWh)  0,0346
+                  Preisblattteil 2 Entgelte für Grundpreis-/ Arbeitspreissystem
+1-02-0-001        Marktlokation Grundpreis für Arbeitspreissystem Grundpreis (Einheit: €/Tag)  0,17
+1-02-0-002        Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere Kategorie fällt) Arbeitspreis (Einheit: €/kWh)  0,0837
+1-02-0-003        Marktlokation der Kategorie steuerbare Speicherheizung Arbeitspreis (Einheit: €/kWh)  0,0279
+1-02-0-004        Marktlokation der Kategorie steuerbare Wärmepumpe Arbeitspreis (Einheit: €/kWh)  0,0279
+1-02-0-005        Marktlokation der Kategorie öffentlicher Straßenbeleuchtung Arbeitspreis (Einheit: €/kWh)  0,0837
+1-02-0-006        Marktlokationen der Kategorie steuerbare Elektromobilität Arbeitspreis (Einheit: €/kWh)  0,0279
+1-02-0-008        Marktlokation der Kategorie steuerbare Speicherheizung Grundpreis (Einheit: €/Tag)  0,034
+1-02-0-009        Marktlokation der Kategorie steuerbare Wärmepumpe Grundpreis (Einheit: €/Tag)  0,034
+1-02-0-010        Marktlokationen der Kategorie steuerbare Elektromobilität Grundpreis (Einheit: €/Tag)  0,034
+                  Preisblattteil 3 Entgelte für Monatsleistungspreissystem
+1-03-4-001        Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)  0,558214
+1-03-4-002        Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)  0,538966
+1-03-4-003        Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)  0,521
+1-03-4-004        Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)  0,504194
+1-03-4-005        Umspannung Hoch-/Mittelspannung Arbeitspreis (Einheit: €/kWh)  0,0124
+1-03-5-001        Mittelspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)  0,823929
+1-03-5-002        Mittelspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)  0,795517
+1-03-5-003        Mittelspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)  0,769
+1-03-5-004        Mittelspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)  0,744194
+1-03-5-005        Mittelspannung Arbeitspreis (Einheit: €/kWh)  0,0204
+1-03-6-001        Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)  0,839286
+1-03-6-002        Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)  0,810345
+1-03-6-003        Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)  0,783333
+1-03-6-004        Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)  0,758065
+1-03-6-005        Umspannung Mittel-/Niederspannung Arbeitspreis (Einheit: €/kWh)  0,0289
+1-03-7-001        Niederspannung Leistungspreis für Monate mit 28 Tagen (Einheit: €/kW*Tag)  0,857143
+1-03-7-002        Niederspannung Leistungspreis für Monate mit 29 Tagen (Einheit: €/kW*Tag)  0,827586
+1-03-7-003        Niederspannung Leistungspreis für Monate mit 30 Tagen (Einheit: €/kW*Tag)  0,8
+1-03-7-004        Niederspannung Leistungspreis für Monate mit 31 Tagen (Einheit: €/kW*Tag)  0,774194
+1-03-7-005        Niederspannung Arbeitspreis (Einheit: €/kWh)  0,0346
+                  Preisblattteil 4 Entgelte für Stromspeicher gem. § 19 Abs. 4 StromNEV
+1-04-4-001        Umspannung Hoch-/Mittelspannung Leistungspreis (Einheit: €/kW*Tag)  0,256986
+1-04-5-001        Mittelspannung Leistungspreis (Einheit: €/kW*Tag)  0,379288
+1-04-6-001        Umspannung Mittel-/Niederspannung Leistungspreis (Einheit: €/kW*Tag)  0,386356
+1-04-7-001        Niederspannung Leistungspreis (Einheit: €/kW*Tag)  0,394548
+                  Preisblattteil 5 Netzreservekapazität
+1-05-4-001        Umspannung Hoch-/Mittelspannung bis 200 h/a (Einheit: €/kW*Tag)  0,138493
+1-05-4-002        Umspannung Hoch-/Mittelspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)  0,166192
+1-05-4-003        Umspannung Hoch-/Mittelspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)  0,19389
+1-05-5-001        Mittelspannung bis 200 h/a (Einheit: €/kW*Tag)  0,217123
+1-05-5-002        Mittelspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)  0,260548
+1-05-5-003        Mittelspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)  0,303973
+1-05-6-001        Umspannung Mittel-/Niederspannung bis 200 h/a (Einheit: €/kW*Tag)  0,270082
+1-05-6-002        Umspannung Mittel-/Niederspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)  0,32411
+1-05-6-003        Umspannung Mittel-/Niederspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)  0,37811
+1-05-7-001        Niederspannung bis 200 h/a (Einheit: €/kW*Tag)  0,306055
+1-05-7-002        Niederspannung über 200 h/a bis 400 h/a (Einheit: €/kW*Tag)  0,367288
+1-05-7-003        Niederspannung über 400 h/a bis 600 h/a (Einheit: €/kW*Tag)  0,428493
+                  Preisblattteil 6 Entgelte für Messstellenbetrieb bei kME (sobald mME bzw. iMS verbaut ist erfolgt die Abrechnung über den MSB)
+1-06-0-036        alle Spannungsebenen, Telekommunikationsanschluss durch NB (Fernauslesung) (Einheit: €/Tag)  0,3
+1-06-0-037        alle Spannungsebenen. Telekommunikationsanschluss durch AN (Fernauslesung) (Einheit: €/Tag)  0,0
+1-06-0-038        alle Spannungsebenen,manuelle vor Ort Ablesung kME mit registrierender Last-/Einspeisemessung (Einheit: €/Vorgang)  159,6
+1-06-0-039        Entgelt Impulsweitergabe (Einheit: €/Tag)  0,168
+1-06-5-001        Mittelspannung, kME mit registrierender Last- /Einspeisemessung (Einheit: €/Tag)  0,865945
+1-06-5-002        Mittelspannung,Wandlersatz für (Einheit: €/Tag)  1,190055
+1-06-7-001        Niederspannung, kME mit registrierender Last- /Einspeisemessung (Einheit: €/Tag)  0,865945
+1-06-7-002        Niederspannung,Wandlersatz für (Einheit: €/Tag)  0,078
+1-06-7-003        Niederspannung, Schaltgerät oder Rundsteuerempfänger (Einheit: €/Tag)  0,04
+1-06-7-004        Niederspannung, jährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)  0,028
+1-06-7-005        Niederspannung, jährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)  0,034
+1-06-7-006        Niederspannung, jährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)  0,0
+1-06-7-007        Niederspannung, jährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)  0,034
+1-06-7-008        Niederspannung, jährlicher Ablesung kME Mehrtarifzähler (Einheit: €/Tag)  0,0
+1-06-7-009        Niederspannung, jährlicher Ablesung kME Prepaymentzähler (Einheit: €/Tag)  0,0
+1-06-7-010        Niederspannung, jährlicher Ablesung kME Maximumzähler (Einheit: €/Tag)  0,12
+1-06-7-011        Niederspannung, jährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)  0,028
+1-06-7-012        Niederspannung, halbjährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)  0,033068
+1-06-7-013        Niederspannung, halbjährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)  0,039068
+1-06-7-014        Niederspannung, halbjährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)  0,0
+1-06-7-015        Niederspannung, halbjährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)  0,039068
+1-06-7-016        Niederspannung, halbjährlicher Ablesung kME Mehrtarifzähler (Einheit: €/Tag)  0,0
+1-06-7-017        Niederspannung, halbjährlicher Ablesung kME Prepaymentzähler (Einheit: €/Tag)  0,0
+1-06-7-018        Niederspannung, halbjährlicher Ablesung kME Maximumzähler (Einheit: €/Tag)  0,125068
+1-06-7-019        Niederspannung, halbjährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)  0,033068
+1-06-7-020        Niederspannung, vierteljährlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)  0,043205
+1-06-7-021        Niederspannung, vierteljährlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)  0,049205
+1-06-7-022        Niederspannung, vierteljährlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)  0,0
+1-06-7-023        Niederspannung, vierteljährlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)  0,049205
+1-06-7-024        Niederspannung, vierteljährlicher Ablesung kME Mehrtarifzähler (Einheit: €/Tag)  0,0
+1-06-7-025        Niederspannung, vierteljährlicher Ablesung kME Prepaymentzähler (Einheit: €/Tag)  0,0
+1-06-7-026        Niederspannung, vierteljährlicher Ablesung kME Maximumzähler (Einheit: €/Tag)  0,135205
+1-06-7-027        Niederspannung, vierteljährlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)  0,043205
+1-06-7-028        Niederspannung, monatlicher Ablesung kME Einrichtungszähler Eintarif (Einheit: €/Tag)  0,083753
+1-06-7-029        Niederspannung, monatlicher Ablesung kME Einrichtungszähler Zweitarif (Einheit: €/Tag)  0,089753
+1-06-7-030        Niederspannung, monatlicher Ablesung kME Zweirichtungszähler Eintarif (Einheit: €/Tag)  0,0
+1-06-7-031        Niederspannung, monatlicher Ablesung kME Zweirichtungszähler Zweitarif (Einheit: €/Tag)  0,089753
+1-06-7-032        Niederspannung, monatlicher Ablesung kME Mehrtarifzähler (Einheit: €/Tag)  0,0
+1-06-7-033        Niederspannung, monatlicher Ablesung kME Prepaymentzähler (Einheit: €/Tag)  0,0
+1-06-7-034        Niederspannung, monatlicher Ablesung kME Maximumzähler (Einheit: €/Tag)  0,175753
+1-06-7-035        Niederspannung, monatlicher Ablesung kME EDL21 Zähler (Einheit: €/Tag)  0,083753
+                  Preisblattteil 8 Konzessionsabgabe
+1-08-1-001        für Entnahme von Marktlokationen von Tarifkunden in Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV (Einheit: €/kWh)  0,0061
+1-08-3-001        für Entnahme von Marktlokationen von Sondervertragskunden gem. § 2 Abs. 3 Satz 1 KAV (Einheit: €/kWh)  0,0011
+1-08-4-001        für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV bis 25.000 Einwohner (Einheit: €/kWh)  0,0132
+1-08-4-002        für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV von 25.000 bis 100.000 Einwohner (Einheit: €/kWh)  0,0159
+1-08-4-003        für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV von 100.000 bis 500.000 Einwohner (Einheit: €/kWh)  0,0199
+1-08-4-004        für Entnahme von Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV über 500.000 Einwohner (Einheit: €/kWh)  0,0239
+                  Preisblattteil 10 Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und veröffentlicht werden
+1-10-1-001        Aufschläge aufgrund des KWKG für nicht privilegierte Letztverbraucher (Einheit: €/kWh)  0,00357
+1-10-2-001        Aufschläge aufgrund der Offshore-Netzumlage für nicht privilegierte Letztverbraucher (Einheit: €/kWh)  0,00591
+1-10-4-001        Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe A (Strommengen von Letztverbrauchern für die jeweils ersten 1.000.000 kWh je Marktlokation) (Einheit: €/kWh)  0,00417
+1-10-4-002        Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe B (Letztverbraucher, deren Jahresverbrauch an einer Marktlokation 1.000.000 kWh übersteigt, zahlen zusätzlich für über 1.000.000 kWh hinausgehende Strombezüge eine  0,0005
+1-10-4-003        Aufschläge aufgrund individueller Netzentgelte nach § 19 StromNEV Letztverbrauchergruppe C (Letztverbraucher, die dem produzierenden Gewerbe, dem schienengebundenen Verkehr oder der Eisenbahninfrastruktur zuzuordnen sind und deren Stromkosten im vorang  0,00025

@@ -1,0 +1,421 @@
+URL: https://www.stadtwerke-hettstedt-netz.de/download/stromnetz/netzzugang/netzentgelte/20270101_vorl.preisblatt_strom.pdf
+Netzbetreiber: Stadtwerke Hettstedt GmbH
+
+Preisblatt 1 - Netznutzung Strom der Stadtwerke Hettstedt GmbH gemäß § 20 Abs.1 EnWG mit vorgelagertem Netz -vorläufig-
+
+
+Gültig ab dem 01.01.2027
+
+
+Das folgende Preisblatt stellt gemäß § 20 Abs. 1 S. 2 EnWG die voraussichtlichen Netzentgelte ab dem 01.01.2027 dar. Aufgrund der noch nicht vollständig vorliegenden Datengrundlage ist eine Veröffentlichung
+verbindlicher Netzentgelte gemäß § 20 Abs. 1 S. 1 EnWG für das Jahr 2027 derzeit nicht möglich. Die Stadtwerke Hettstedt GmbH behält sich ausdrücklich vor, diese voraussichtlichen Netzentgelte unverzüglich nach
+vorliegen aktueller Erkenntnisse entsprechend anzupassen und rechtzeitig vor dem 01.01.2027 bekannt zu geben. Die verbindlichen Netzentgelte des Jahres 2027 können von den voraussichtlichen Netzentgelten
+abweichen. Die Veröffentlichung erfolgt außerdem auf elektronischem Wege im PRICAT-Format.
+
+Das Netznutzungsentgelt setzt sich zusammen aus:
+
+· Entgelt für die Netznutzung
+· Entgelt für den Messstellenbetrieb, soweit es nicht moderne oder intelligente Messstellen nach dem Messstellenbetriebsgesetz betrifft
+· Umlage Kraft-Wärme-Kopplungsgesetz (KWK-Umlage)
+· Aufschlag für besondere Netznutzung (§ 19 Strom NEV – Umlage)
+· Offshore-Haftungsumlage
+· Konzessionsabgabe
+· Umsatzsteuer von derzeit 19%
+
+
+
+
+Preisblattteil 01: Entgelte für Jahresleistungspreissystem
+
+
+
+
+Netzebene                                                               Aktikel ID         Bezeichnung              Einheit          netto          brutto           Einheit           netto            brutto
+Mittelspannung MS        Vollbenutzungsstunden < 2.500 h/a          1-01-5-001        Leistungspreis            €/kW*Tag        0,08219178082   0,09780821918 €/kW*Jahr                30,00            35,70
+                         Vollbenutzungsstunden < 2.500 h/a          1-01-5-002        Arbeitspreis              €/kWh           0,06730000000   0,08008700000 ct/kWh                   6,73              8,01
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-5-003        Leistungspreis            €/kW*Tag        0,43230136986   0,51443863013 €/kW*Jahr               157,79           187,77
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-5-004        Arbeitspreis              €/kWh           0,01620000000   0,01927800000 ct/kWh                   1,62              1,93
+Umspannung MS/NS         Vollbenutzungsstunden < 2.500 h/a          1-01-6-001        Leistungspreis            €/kW*Tag        0,09345205479   0,11120794520 €/kW*Jahr                34,11            40,59
+                         Vollbenutzungsstunden < 2.500 h/a          1-01-6-002        Arbeitspreis              €/kWh           0,07110000000   0,08460900000 ct/kWh                   7,11              8,46
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-6-003        Leistungspreis            €/kW*Tag        0,43939726027   0,52288273972 €/kW*Jahr               160,38           190,85
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-6-004        Arbeitspreis              €/kWh           0,02060000000   0,02451400000 ct/kWh                   2,06              2,45
+Niederspannung NS        Vollbenutzungsstunden < 2.500 h/a          1-01-7-001        Leistungspreis            €/kW*Tag        0,10471232877   0,12460767124 €/kW*Jahr                38,22            45,48
+                         Vollbenutzungsstunden < 2.500 h/a          1-01-7-002        Arbeitspreis              €/kWh           0,07490000000   0,08913100000 ct/kWh                   7,49              8,91
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-7-003        Leistungspreis            €/kW*Tag        0,44646575342   0,53129424657 €/kW*Jahr               162,96           193,92
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-7-004        Arbeitspreis              €/kWh           0,02500000000   0,02975000000 ct/kWh                   2,50              2,98
+§14a EnWG - Entgelt für RLM-Kunden
+Niederspannung NS        Vollbenutzungsstunden < 2.500 h/a          1-01-8-001        Leistungspreis            €/kW*Tag        0,10471232877   0,12460767124 €/kW*Jahr                38,22            45,48
+                         Vollbenutzungsstunden < 2.500 h/a          1-01-8-002        Arbeitspreis              €/kWh           0,07490000000   0,08913100000 ct/kWh                   7,49              8,91
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-8-003        Leistungspreis            €/kW*Tag        0,44646575342   0,53129424657 €/kW*Jahr               162,96           193,92
+                         Vollbenutzungsstunden >= 2.500 h/a         1-01-8-004        Arbeitspreis              €/kWh           0,02500000000   0,02975000000 ct/kWh                   2,50              2,98
+                         Pauschale Reduzierung nach Modul 1 der
+                                                                    1-01-9-001        Arbeitspreis              €/Tag           -0,34693150700 -0,41284849333 €/Jahr                  -126,63          -150,69
+                         Festlegungen nach § 14a EnWG
+                         Pauschale Reduzierung nach Modul 1 der
+                         Festlegungen nach § 14a EnWG               1-01-9-002        Arbeitspreis              €/Tag           -0,34693150700 -0,41284849333 €/Jahr                  -126,63          -150,69
+
+
+
+
+                                                                                                          1/5                                                                                            15.10.2026
+
+Preisblatteil 02: Entgelte für Grundpreis-/ Arbeitspreissystem
+
+
+Marktlokationen mit Grundpreis-/Arbeitspreissystem
+
+
+
+                                                                          Artikel-ID          Bezeichnung                Einheit              netto             brutto        Einheit   netto     brutto
+Marktlokation Grundpreis für Arbeitspreissystem                       1-02-0-001         Grundpreis                  €/Tag             0,19178082192     0,22821917808 €/Jahr           70,00     83,30
+Marktlokationen der Kategorie sonstiger Verbrauch
+(Marktlokation, die in keine andere Kategorie fällt) sowie
+Marktlokationen, die nach Modul 1 oder 3 der Festlegungen zu
+Netzentgelten bei Anwendung der netzorientierten Steuerung            1-02-0-002         Arbeitspreis                €/kWh             0,07920000000     0,09424800000 ct/kWh            7,92      9,42
+von steuerbaren Netzanschlüssen nach § 14a EnWG gem.
+Festlegungen BK6-22-300 und BK8-22/010-A abgerechnet
+werden.
+
+Marktlokationen der Kategorie steuerbare Speicherheizung,             1-02-0-008         Grundpreis                  €/Tag             0,19178082192     0,22821917808 €/Jahr           70,00     83,30
+insbesondere nach § 14a EnWG                                                                                                           0,03720000000     0,04426800000 ct/kWh
+                                                                      1-02-0-003         Arbeitspreis                €/kWh                                                               3,72      4,43
+Marktlokationen der Kategorie steuerbare Wärmepumpe,                  1-02-0-009         Grundpreis                  €/Tag             0,19178082192     0,22821917808 €/Jahr           70,00     83,30
+insbesondere nach § 14a EnWG                                          1-02-0-004         Arbeitspreis                €/kWh             0,03720000000     0,04426800000 ct/kWh            3,72     4,4268
+Marktlokationen der Kategorie beliebige steuerbare                    1-02-0-007         Arbeitspreis                €/kWh             0,03720000000     0,04426800000 ct/kWh            3,72     4,4268
+Verbrauchseinrichtungen nach § 14a EnWG
+Marktlokationen der Kategorie steuerbare Elektromobilität,            1-02-0-010         Grundpreis                  €/Tag             0,19178082192     0,22821917808 €/Jahr           70,00     83,30
+insbesondere nach § 14a EnWG                                          1-02-0-006         Arbeitspreis                €/kWh             0,03720000000     0,04426800000 ct/kWh            3,72      4,43
+Pauschale Reduzierung nach Modul 1 der Festlegungen nach §                               Pauschale
+                                                                      1-02-0-015                                     €/Tag             -0,34693150700 -0,41284849333 €/Jahr             -126,63   -150,69
+14 a EnWG                                                                                Reduzierung
+Marktlokationen nach Modul 2 der Festlegungen nach § 14 a
+                                                                      1-02-0-016         Arbeitspreis                €/kWh             0,03170000000     0,03772300000 ct/kWh            3,17      3,77
+EnWG
+
+Marktlokationen nach Modul 3 der Festlegung nach § 14a EnWG
+(zeitvariable Netzentgelte):
+
+
+Gültigkeit der Tarifstufen:                                                                        Q1                        Q2                Q3                Q4
+                                           Quartale                                          01.01. - 31.03.         01.04. - 30.06.   01.07. - 31.09.      01.10. - 31.12.
+                                         Anwendung                                                  Ja                       Nein             Nein                Ja
+
+
+       Tarifstufe                          Uhrzeit                        Artikel-ID          Bezeichnung                Einheit              netto             brutto        Einheit   netto     brutto
+Hochlasttarifstufe (HT)                17:45 - 20:30 Uhr              1-02-0-017         Arbeitspreis HT             €/kWh             0,15840000000     0,18849600000 ct/kWh           15,84     18,85
+Standardtarifstufe (ST)                06:15 - 17:45 Uhr              1-02-0-002         Arbeitspreis (ST)           €/kWh             0,07920000000     0,09424800000 ct/kWh            7,92      9,42
+                                       20:30 - 23:30 Uhr
+Niedrigtarifstufe (NT)                 00:00 - 06:15 Uhr              1-02-0-018         Arbeitspreis (NT)           €/kWh             0,02880000000     0,03427200000 ct/kWh            2,88      3,43
+                                       23:30 - 00:00 Uhr
+
+
+Modul 1:
+Folgende Vorraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchseinrichtung einzuhalten:
+- bestehender Netznutzungsvertarg zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+- technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung
+
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich des Stromverbrauchs
+(Einspeicherung) mit mit einem max. Leistungsbezug von mehr als 4,2 kW.
+
+
+Die Höhe der pauschalen Netzentgeltreduzierung nach Modul 1darf das Netzentgelt, welches vom Netzbetreiber ohne pauschale Reduzierung an dem Zählpunkt zu entrichten wäre, nicht übersteigen (negative
+Netzentgelte sind nicht möglich). Die Netzentgeltreduzierung wird jährlich gewährt.
+
+
+Pauschale Netzentgeltreduzierung für Betreiber einer steuerbaren Verbrauchseinrichtung gem. Modul 1:
+
+
+pauschale Reduzierung                                                                             Netto                                                                                 Brutto
+                                                                                                  (€/a)                                                                                  (€/a)
+Pauschale Reduzierung =                                                                           42,02              (Kosten iMS vgl. MsbG)                                             50,00
+                                                                               +                  25,21              (Kosten für die Steuerbox vgl. MsBG)                               30,00
+mit AP = 8,58 ct/kWh
+(NS ohne Lastgangmessung)                                                      +                  59,40              [3.750 kWh/a x AP x 0,2 (Stabilitätsprämie)]                       70,69
+Maximale Reduzierung                                                                             126,63                      €/a                                                        150,69
+
+
+Modul 2:
+Folgende Vorraussetzungen sind für eine Vereinbarung zur netzorientierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchseinrichtungen einzuhalten:
+- bestehender Netznutzungsvertarg zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+- technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung durch den Netzbetreiber zur Entlastung
+- steuerbare Verbrauchseinrichtung besitz einen separaten Zähler und technischen Zählpunkt
+
+
+Zu steuerbaren Verbrauchseinrichtungen gehören Elektro-Wärmepumpen, nicht öffentliche Ladepunkte für Elektromobile, Anlagen zur Raumkühlung und Stromspeicher hinsichtlich des Stromverbrauchs
+(Einspeicherung) mit einem max. Leistungsbezug von mehr als 4,2 kW.
+
+
+Bei Wahl des Moduls 2 erfolgt eine prozentuale Reduzierung des Arbeitspreises für den Verbrauch der steuerbaren Verbrauchseinrichtung.
+
+
+Modul 3:
+Modul 3 beinhaltet ein zeitvariables Netzentgelt mit insgesamt drei Tarifstufen (Arbeitspreisstufen):
+- ST (Standardtarifstufe = Arbeitspreis für Entnahme ohne Leistungsmessung)
+- HT (Hochlsattarifstufe)
+- NT (Niedriglasttarifstufe)
+
+
+
+
+                                                                                                               2/5                                                                                  15.10.2026
+
+Folgende Vorraussetzugen sind für eine Vereinbarung zur Netzorientierten Steuerung gemäß § 14a EnWG bei steuerbaren Verbrauchseinrichtungen einzuhalten:
+- bestehender Netznutzungsvertarg zwischen Netzbetreiber und Lieferant oder Letztverbraucher
+- technische Möglichkeit zur Reduzierung des netzwirksamen Leistungsbezugs der Verbrauchseinrichtung durch den Netzbetreiber zur Netzentlastung
+- ausschließlich in Kombination mit Abrechnungsmodul 1 von Betreibern mit intelligentem Messsystem und ohne registrierende Leistungsmessung wählbar
+
+
+
+
+Preisblattteil 03: Entgelte für Monatsleistungspreissystem
+
+
+Netzebene
+
+
+
+
+                                                                     Artikel-ID         Bezeichung             Einheit         netto              brutto     Einheit   netto   brutto
+Monate mit 28 Tagen
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-001                                 €/kW*Tag       0,93928571400    1,11774999966 €/kW*Monat   26,30   31,30
+Mittelspannung MS                                                                  Monate mit 28 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-005        Arbeitspreis             €/kWh          0,01620000000    0,01927800000 ct/kWh       1,62    1,93
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-001                                 €/kW*Tag       0,95464285700    1,13602499983 €/kW*Monat   26,73   31,81
+Umspannung MS/NS                                                                   Monate mit 28 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-005        Arbeitspreis             €/kWh          0,02060000000    0,02451400000 ct/kWh       2,06    2,45
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-001                                 €/kW*Tag       0,97000000000    1,15430000000 €/kW*Monat   27,16   32,32
+Niederspannung NS                                                                  Monate mit 28 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-005        Arbeitspreis             €/kWh          0,02500000000    0,02975000000 ct/kWh       2,50    2,98
+Monate mit 29 Tagen
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-002                                 €/kW*Tag       0,90689655200    1,07920689688 €/kW*Monat   26,30   31,30
+Mittelspannung MS                                                                  Monate mit 29 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-005        Arbeitspreis             €/kWh          0,01620000000    0,01927800000 ct/kWh       1,62    1,93
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-002                                 €/kW*Tag       0,92172413800    1,09685172422 €/kW*Monat   26,73   31,81
+Umspannung MS/NS                                                                   Monate mit 29 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-005        Arbeitspreis             €/kWh          0,02060000000    0,02451400000 ct/kWh       2,06    2,45
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-002                                 €/kW*Tag       0,93655172400    1,11449655156 €/kW*Monat   27,16   32,32
+Niederspannung NS                                                                  Monate mit 29 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-005        Arbeitspreis             €/kWh          0,02500000000    0,02975000000 ct/kWh       2,50    2,98
+Monate mit 30 Tagen
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-003                                 €/kW*Tag       0,87666666700    1,04323333373 €/kW*Monat   26,30   31,30
+Mittelspannung MS                                                                  Monate mit 30 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-005        Arbeitspreis             €/kWh          0,01620000000    0,01927800000 ct/kWh       1,62    1,93
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-003                                 €/kW*Tag       0,89100000000    1,06029000000 €/kW*Monat   26,73   31,81
+Umspannung MS/NS                                                                   Monate mit 30 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-005        Arbeitspreis             €/kWh          0,02060000000    0,02451400000 ct/kWh       2,06    2,45
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-003                                 €/kW*Tag       0,90533333300    1,07734666627 €/kW*Monat   27,16   32,32
+Niederspannung NS                                                                  Monate mit 30 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-005        Arbeitspreis             €/kWh          0,02500000000    0,02975000000 ct/kWh       2,50    2,98
+Monate mit 31 Tagen
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-004                                 €/kW*Tag       0,84838709700    1,00958064543 €/kW*Monat   26,30   31,30
+Mittelspannung MS                                                                  Monate mit 31 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-5-005        Arbeitspreis             €/kWh          0,01620000000    0,01927800000 ct/kWh       1,62    1,93
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-004                                 €/kW*Tag       0,86225806500    1,02608709735 €/kW*Monat   26,73   31,81
+Umspannung MS/NS                                                                   Monate mit 31 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-6-005        Arbeitspreis             €/kWh          0,02060000000    0,02451400000 ct/kWh       2,06    2,45
+                                                                                   Leistungspreis für
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-004                                 €/kW*Tag       0,87612903200    1,04259354808 €/kW*Monat   27,16   32,32
+Niederspannung NS                                                                  Monate mit 31 Tagen
+                       Vollbenutzungsstunden >= 2.500 h/a        1-03-7-005        Arbeitspreis             €/kWh          0,02500000000    0,02975000000 ct/kWh       2,50    2,98
+
+
+
+
+                                                                                                      3/5                                                                       15.10.2026
+
+Preisblattteil 06: Entgelte für Messstellenbetrieb bei kME (konventionelle Messeinrichtung)
+
+
+Sobald eine moderne Messeinrichtung (mME) bzw. ein intelligentes Messystem (iMS) verbaut ist, erfolgt die Abrechnung über den jeweils zuständigen Messstellenbetreiber (MSB).
+
+
+
+
+Netzebene                                                             Artikel-ID         Bezeichnung                Einheit       netto            brutto           Einheit     netto    brutto
+Mittelspannung                                                                       kME mit
+                                                                   1-06-5-001        registrierender Last-  €/Tag             0,67945205479    0,80854794520 €/Jahr             248,00   295,12
+                                                                                     /Einspeisemessung
+                                                                                     Wandlersatz für
+                                                                   1-06-5-002        Messstellenbetrieb bei €/Tag             0,69041095890    0,82158904109 €/Jahr             252,00   299,88
+                                                                                     kME
+                                                                                     kME mit
+Niederspannung                                                     1-06-7-001        registrierender Last- €/Tag              0,58356164384    0,69443835617 €/Jahr             213,00   253,47
+                                                                                     /Einspeisemessung
+                                                                                     Messstellenbetrieb bei
+                                                                   1-06-7-002                               €/Tag             0,08219178082    0,09780821918 €/Jahr             30,00    35,70
+                                                                                     kME
+
+                                                                   1-06-7-003        Schaltgerät oder    €/Tag                0,04109589041    0,04890410959 €/Jahr             15,00    17,85
+                                                                                     Rundsteuerempfänger
+                                                                                     Einrichtungszähler
+                                                                   1-06-7-004                                   €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                                       Eintarif
+                                                                                     kME
+                                                                   1-06-7-005        Einrichtungszähler         €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                                       Zweitarif
+                                                                                     kME
+                                                                   1-06-7-006        Zweirichtungszähler        €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                                       Eintarif
+                                                                                     kME
+                                                                   1-06-7-007        Zweirichtungszähler        €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                                       Zweitarif
+                        Bei jählicher Ablesung                     1-06-7-008        kME Mehrtarifzähler        €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                     1-06-7-010        kME Maximumzähler          €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                        Bei jählicher Ablesung                     1-06-7-011        kME EDL21 Zähler           €/Tag         0,02630136986    0,03129863013 €/Jahr              9,60    11,42
+                                                                                     kME
+                                                                   1-06-7-012        Einrichtungszähler         €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                                  Eintarif
+                                                                                     kME
+                                                                   1-06-7-013        Einrichtungszähler         €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                                  Zweitarif
+                                                                                     kME
+                                                                   1-06-7-014        Zweirichtungszähler        €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                                  Eintarif
+                                                                                     kME
+                                                                   1-06-7-015        Zweirichtungszähler        €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                                  Zweitarif
+                        Bei halbjährlicher Ablesung                1-06-7-016        kME Mehrtarifzähler        €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                1-06-7-018        kME Maximumzähler          €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+                        Bei halbjährlicher Ablesung                1-06-7-019        kME EDL21 Zähler           €/Tag         0,03117808219    0,03710191781 €/Jahr             11,38    13,54
+
+                                                                                     kME
+                                                                   1-06-7-020        Einrichtungszähler         €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung                               Eintarif
+                                                                                     kME
+                                                                   1-06-7-021        Einrichtungszähler         €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung                               Zweitarif
+                                                                                     kME
+                                                                   1-06-7-022        Zweirichtungszähler        €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung                               Eintarif
+                                                                                     kME
+                                                                   1-06-7-023        Zweirichtungszähler        €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung                               Zweitarif
+                        Bei vierteljährlicher Ablesung             1-06-7-024        kME Mehrtarifzähler        €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung             1-06-7-026        kME Maximumzähler          €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                        Bei vierteljährlicher Ablesung             1-06-7-027        kME EDL21 Zähler           €/Tag         0,04093150685    0,04870849315 €/Jahr             14,94    17,78
+                                                                                     kME
+                                                                   1-06-7-028        Einrichtungszähler         €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                                      Eintarif
+                                                                                     kME
+                                                                   1-06-7-029        Einrichtungszähler         €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                                      Zweitarif
+                                                                                     kME
+                                                                   1-06-7-030        Zweirichtungszähler        €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                                      Eintarif
+                                                                                     kME
+                                                                   1-06-7-031        Zweirichtungszähler        €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                                      Zweitarif
+                        Bei moatlicher Ablesung                    1-06-7-032        kME Mehrtarifzähler        €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                    1-06-7-034        kME Maximumzähler          €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+                        Bei moatlicher Ablesung                    1-06-7-035        kME EDL21 Zähler           €/Tag         0,07994520548    0,09513479452 €/Jahr             29,18    34,72
+
+
+
+
+                                                                                                          4/5                                                                             15.10.2026
+
+Preisblatteil 08: Konzessionsabgabe
+
+
+                                                                 Artikel-ID        Bezeichnung            Einheit         netto             brutto          Einheit   netto           brutto
+                                                                                   Höchstbetrag der
+                                                                                   Kozessionsabgabe für
+                                                                                   Entnahme von
+                                                                                   Marktlokationen von
+                                                                 1-08-1-001                               €/kWh            0,00610000000    0,00725900000 ct/kWh              0,61         0,73
+                                                                                   Tarifkunden in
+                                                                                   Schwachlastzeiten
+                                                                                   gem. § 2 Abs. 2 Satz 1
+                                                                                   a KAV
+                                                                                   Höchstbetrag der
+                                                                                   Kozessionsabgabe für
+                                                                                   Entnahme von
+                                                                 1-08-3-001        Marktlokationen von €/kWh               0,00110000000    0,00130900000 ct/kWh              0,11         0,13
+                                                                                   Sondervertragskunden
+                                                                                   gem. § 2 Abs. 3 Satz 1
+                                                                                   KAV
+                        Höchstbetrag der Kozessionsabgabe für
+                        Entnahme von Marktlokationen von         1-08-4-001        bis 25.000 Einwohner       €/kWh        0,01320000000    0,01570800000 ct/kWh              1,32         1,57
+                        Tarifkundengem. § 2 Abs. 2 Satz 1b KAV
+
+
+
+
+Preisblattteil 10: Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und veröffentlicht werden
+
+
+
+                                                                 Artikel-ID        Bezeichnung                Einheit     netto             brutto          Einheit   netto           brutto
+                                                                                   Nichtprivilegierte
+                                                                                                                           0,00000000000    0,00000000000                      0          0,00000
+                        Aufschläge aufgrund des § 26 KWKG        1-10-1-001        Letztverbräuche            €/kWh                                         ct/kWh
+                        Aufschläge aufgrund der Offshore-                          Nichtprivilegierte
+                                                                                                                           0,00000000000    0,00000000000                      0           0,000
+                        Haftungsumlage nach §17f EnWG            1-10-2-001        Letztverbräuche        €/kWh                                             ct/kWh
+                                                                                   Letztverbraucher-
+                                                                                   gruppe A
+                                                                                   (strommengen von
+                        Aufschläge für besondere Netznutzung     1-10-4-001        Letztverbrauchern für €/kWh             0,00000000000    0,00000000000 ct/kWh               0           0,000
+                                                                                   die jeweis ersten
+                                                                                   1.000.000 kWh je
+                                                                                   Marktlokation)
+                                                                                   Letztverbraucher-
+                                                                                   gruppe B
+                                                                                   (Letztverbraucher,
+                                                                                   deren Jahresverbrauch
+                                                                                   an einer Marktlokation
+                                                                                   1.000.000 kWh
+                                                                                   übersteigt, zahlen
+                        Aufschläge für besondere Netznutzung     1-10-4-002                               €/kWh            0,00000000000    0,00000000000 ct/kWh              0,000        0,000
+                                                                                   zusätzlich für über
+                                                                                   1.000.00 kWh
+                                                                                   hinausgehende
+                                                                                   Strombezüge eine
+                                                                                   maximale §19
+                                                                                   StromNEV-Umlage
+                                                                                   von 0,050 ct/kWh)
+
+
+
+                                                                                   Letztverbraucher-
+                                                                                   gruppe C
+                                                                                   (Letztverbraucher, die
+                                                                                   dem produzierenden
+                                                                                   Gewerbe, dem
+                                                                                   schienengebundenen
+                                                                                   Verkehr oder der
+                                                                                   Eisenbahninfrastruktu
+                        Aufschläge für besondere Netznutzung     1-10-4-003        r zuzuordnen sind und €/kWh             0,00000000000    0,00000000000 ct/kWh              0,000        0,000
+                                                                                   deren Stromkosten im
+                                                                                   vorangegangenen
+                                                                                   Geschäftsjahr vier
+                                                                                   Prozent des Umsatzes
+                                                                                   überstiegen haben,
+                                                                                   zahlen für über
+                                                                                   1.000.00 kWh
+                                                                                   hinausgehende
+                                                                                   Strombezüge maximal
+                                                                                   0,025 ct/kWh.)
+                                                                                   Aufschläge aufgrund
+                        Aufschläge aufgrund der §§ 26 und 27b                      des § 26 KWKG, die
+                                                                 1-10-9-001                                   €/kWh        0,00000000000    0,00000000000 ct/kWh              0,000        0,000
+                        KWKG für Stromspeicher                                     auch für Strom-
+                                                                                   speicher gelten
+
+
+
+
+                                                                                                        5/5                                                                                    15.10.2026
+

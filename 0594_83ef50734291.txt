@@ -1,0 +1,464 @@
+URL: https://www.stadtwerke-norderstedt.de/fileadmin/user_upload/Dokumente/Energiewirtschaftsgesetz/Kontaktdatenblatt_Stadtwerke_Norderstedt_Strom.xlsx
+Netzbetreiber: Stadtwerke Norderstedt
+
+Kontaktdatenblatt Netzbetreiber                       Stand: 01.07.2024
+
+Anschrift
+Name              Stadtwerke Norderstedt
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+Telefon           040 / 521 04 0
+Fax               040 / 521 04 117
+Internet                            www.stadtwerke-norderstedt.de
+Umsatzsteuer-ID   DE365410648
+
+Marktrolle        BDEW-Codenummern / Global Location Number (GLN) Strom
+Verteilnetzbetreiber  9900473000002
+Messstellenbetreiber  9905336000008
+
+
+Bilanzierungsgebiet(e) (EIC-Code)
+11YN10000930-01S
+
+AS4-URL für den elektronischen Datenaustausch (1:1 Marktkommunikation)
+https://9900473000002.mako.tremondi.eu:18234  VNB
+https://9905336000008.mako.tremondi.eu:18233  MSB
+
+Wir senden und akzeptieren EDIFACT-Nachrichten grundsätzlich nur im aktuellen, von der Bundesnetzagentur vorgegebenen, Format.
+Für Anfragen außerhalb der Standard-EDIFACT-Kommunikation benutzen Sie bitte folgende Kommunikationsadressen: lieferantenwechsel@stadtwerke-norderstedt.de
+Fachliche Ansprechpartner Allgemein
+Thema             E-Mail            Telefon           Fax
+Vertragsmanagement  kjung@stadtwerke-norderstedt.de  040 / 521 04 270  040 / 521 04 117
+· Lieferantenrahmenvertrag
+· EDI-Vereinbarung
+· Zuordnungsvereinbarung
+· MSB
+EDIFACT           marktkommunikation@stadtwerke-norderstedt.de  040 / 521 04 412  040 / 521 04 117
+· allgemeine Themen
+· Umstellung INVOIC
+· Verschlüsselung/Signatur
+
+Fachlicher Ansprechpartner GPKE/Einspeiserprozesse
+Thema             E-Mail            Telefon           Fax
+UTILMD            marktkommunikation@stadtwerke-norderstedt.de  040 / 521 04 412  040 / 521 04 117
+· Lieferantenwechsel
+INVOIC/Netzabrechnung  jkullick@stadtwerke-norderstedt.de  040 / 521 04 318  040 / 521 04 117
+REMADV            jkullick@stadtwerke-norderstedt.de  040 / 521 04 318  040 / 521 04 117
+· Zahlungsverkehr
+· Debitorenmanagement
+Bilanzierung      dlznn@eeg-energie.de
+· Strom
+· Zuordnungsermächtigung
+Mehr- Mindermengen  jkullick@stadtwerke-norderstedt.de  040 / 521 04 318  040 / 521 04 117
+· Clearing
+
+Fachlicher Ansprechpartner MSCONS
+Thema             E-Mail            Telefon           Fax
+MSCONS            marktkommunikation@stadtwerke-norderstedt.de  040 / 521 04 412  040 / 521 04 117
+· Zählerstände SLP
+MSCONS            kjung@stadtwerke-norderstedt.de  040 / 521 04 270  040 / 521 04 117
+· Lastgänge RLM
+
+Sonstige Ansprechpartner
+Thema             E-Mail            Telefon           Fax
+MSB/MSD
+Messstellenbetreiberwechsel  marktkommunikation@stadtwerke-norderstedt.de  040 / 521 04 412  040 / 521 04 117
+
+
+Bankverbindung
+Name des Kontoinhabers  Stadtwerke Norderstedt
+Geldinstitut      Volksbank Raiffeisenbank eG
+IBAN              DE29201901090075008070
+BIC               GENODEF1HH4
+Gläubiger-ID      DE10ZZZ00000113182
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

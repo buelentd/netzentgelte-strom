@@ -1,0 +1,378 @@
+URL: https://www.sw-greifswald.de/fileadmin/Media/PDFs/Netzbetreiber/Stromnetz/Preisblatt_NNE_Strom_2025_final.pdf
+Netzbetreiber: Stadtwerke Greifswald GmbH
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+
+
+
+   Preisblatt für die Nutzung von Elektrizitätsversorgungsnetzen der Stadtwerke Greifswald GmbH
+                                             (Netzbetreiber)
+
+
+
+Vorbemerkung
+Die Abrechnung gemäß diesem Preisblatt erfolgt unter dem Vorbehalt, dass weder von behördlicher Seite durch die
+Bundesnetzagentur bzw. die Landesregulierungskammer Mecklenburg-Vorpommern noch durch gesetzliche oder
+gerichtliche Vorgaben Festlegungen erlassen oder sonstige Entscheidungen getroffen werden bzw. sich insbesondere
+keine Änderung der vorgelagerten Netzentgelte ergibt, die eine Anpassung der Netzentgelte erfordern.
+
+Die dargestellten Entgelte enthalten die Abrechnung der Nutzung und die Nutzung der Netzinfrastruktur der Stadtwerke
+Greifswald GmbH einschließlich der vorgelagerten Netzinfrastruktur Dritter, die Systemdienstleistungen und die beim
+Energietransport entstehenden Übertragungsverluste.
+
+Die Tagesleistungspreise sind auf sechs Nachkommastellen gerundet. (365 Tage/Jahr)
+
+
+Preisblatt 1 - Netznutzungspreisblatt für Marktlokationen in Elektrizitätsversorgungsnetzen der
+Stadtwerke Greifswald GmbH (Netzbetreiber)
+
+                     Geltungsdauer
+von: 01.01.2025                bis: 31.12.2025
+
+
+
+Preisblattteil 01 - Entgelte für Jahresleistungspreissystem
+
+
+Marktlokationen mit registrierender Leistungsmessung
+                                                             Jahresbenutzungsdauerstunden
+                                                   < 2.500 h/a                            ≥ 2.500 h/a
+Entnahme-                              Leistungspreis        Arbeitspreis     Leistungspreis        Arbeitspreis
+spannungsebene                          [€/kW * Tag]           [€/kWh]         [€/kW * Tag]           [€/kWh]
+
+Mittelspannung                                0,020247           0,048300           0,298795           0,007600
+ID-Gruppe:        1-01-5                     ID: 1-01-5-001     ID: 1-01-5-002     ID: 1-01-5-003     ID: 1-01-5-004
+                  (informatorisch)          (7,39 €/kW*Jahr)    (4,83 Ct/kWh)    (109,06 €/kW*Jahr)   (0,76 Ct/kWh)
+
+Umspannung
+                                              0,024110           0,057300           0,342329           0,010800
+Mittel-/Niederspannung
+ID-Gruppe:        1-01-6                     ID: 1-01-6-001     ID: 1-01-6-002     ID: 1-01-6-003     ID: 1-01-6-004
+                  (informatorisch)          (8,80 €/kW*Jahr)    (5,73 Ct/kWh)    (124,95 €/kW*Jahr)   (1,08 Ct/kWh)
+
+Niederspannung                                0,038986           0,064700           0,285918           0,028700
+ID-Gruppe:        1-01-7                     ID: 1-01-7-001     ID: 1-01-7-002     ID: 1-01-7-003     ID: 1-01-7-004
+                  (informatorisch)      (14,23 €/kW*Jahr)       (6,47 Ct/kWh)    (104,36 €/kW*Jahr)   (2,87 Ct/kWh)
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                            1 von 6
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+Preisblattteil 02 - Entgelte für Grundpreis-/ Arbeitspreissystem
+
+Die Module 1 und 2 können von Betreibern steuerbarer Verbrauchseinrichtungen ausgewählt werden, die ab dem
+01.01.2024 eine steuerbare Verbrauchseinrichtung an das Netz des Verteilnetzbetreibers anschließen. Die
+Auswahlmöglichkeit besteht ausschließlich für Verbraucher mit Entnahme ohne Lastgangmessung. Betreibern von
+steuerbaren Verbrauchseinrichtungen in den Netzebenen Umspannung zur Niederspannung und im
+Niederspannungsnetz mit leistungsgemessener Entnahme steht ausschließlich Modul 1 zu Verfügung. Für Betreiber
+steuerbarer Verbrauchseinrichtungen, die keine Entscheidung für ein Modul getroffen haben, wird das Modul 1 als
+"Defaultmodul" angewendet.
+
+Das Modul 3 steht Anschlussnutzern, die keine RLM-Kunden sind, einzig in Kombination mit Modul 1 zur Verfügung.
+Zudem muss ein intelligentes Messsystem vorhanden sein. Die Zeitfenster mit den drei Netzentgelttarifen werden
+kalenderjährlich festgelegt und gelten für das gesamte Netzgebiet. Der Gültigkeitszeitraum von Modul 3 darf auf
+einzelne Quartale beschränkt werden. Gemäß der Festlegung BK8-22-010-A erfolgt die Abrechnung von Modul 3
+erstmalig ab dem 01.04.2025.
+
+Marktlokationen mit Grundpreis-/ Arbeitspreissystem
+                                                                          Grundpreis          Arbeitspreis
+                                                                            [€/Tag]             [€/kWh]
+
+Marktlokation Grundpreis für Arbeitspreissystem                            0,173973                  -
+ID-Gruppe:        1-02-0                                                  ID: 1-02-0-001
+                  (informatorisch)                                         (63,50 €\Jahr)
+
+
+
+Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation,
+die in keine andere Kategorie fällt) sowie für Marktlokationen,
+die nach Modul 1 und/oder 3 der Festlegungen zu Netzentgelten
+bei Anwendung der netzorientierten Steuerung von steuerbaren                     -              0,049800
+Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach
+§ 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+abgerechnet werden
+
+ID-Gruppe:        1-02-0                                                                       ID: 1-02-0-002
+                  (informatorisch)                                                             (4,98 Ct/kWh)
+
+Marktlokation der Kategorie steuerbare Speicherheizung,
+                                                                                                0,024600
+insbesondere nach § 14a EnWG
+                                                                                 -
+ID-Gruppe:        1-02-0                                                                       ID: 1-02-0-003
+                  (informatorisch)                                                             (2,46 Ct/kWh)
+
+Marktlokation der Kategorie steuerbare Wärmepumpe, insbesondere
+                                                                                                0,024600
+nach § 14a EnWG
+                                                                                 -
+ID-Gruppe:        1-02-0                                                                       ID: 1-02-0-004
+                  (informatorisch)                                                             (2,46 Ct/kWh)
+
+Pauschale Reduzierung nach Modul 1 der Festlegungen nach § 14a
+                                                                           -0,286740                 -
+EnWG
+ID-Gruppe:        1-02-0                                                  ID: 1-02-0-015
+                  (informatorisch)                                        (-104,66 €\Jahr)
+
+
+Marktlokationen nach Modul 2 der Festlegungen nach § 14a EnWG                    -              0,020000
+ID-Gruppe:        1-02-0                                                                       ID: 1-02-0-016
+                  (informatorisch)                                                             (2,00 Ct/kWh)
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                   2 von 6
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+Marktlokationen nach Modul 3 der Festlegungen nach § 14a EnWG
+(zeitvariable Netzentgelte):
+ID-Gruppe:        1-02-0
+
+Gültigkeit der Tarifstufen:                      Q1               Q2             Q3               Q4
+                   Quartale                 01.01.-31.03.   01.04.-30.06.   01.07.-31.09.    01.10.-31.12.
+                   Anwendung                     Ja              Nein           Nein              Ja
+
+                                                              Uhrzeiten     Arbeitspreis
+                   Tarifstufe                                                 [€/kWh]
+
+                                                                             0,084500
+                   Hochlasttarifstufe             (HT)      18:00 – 20:00
+                                                                            ID: 1-02-0-017
+
+                                                                             0,049800
+                                                            06:30 – 18:00
+                                                                            ID: 1-02-0-002
+                   Standardtarifstufe             (ST)
+                                                                             0,049800
+                                                            20:00 – 23:00
+                                                                            ID: 1-02-0-002
+
+                                                                             0,020000
+                   Niedriglasttarifstufe          (NT)      23:00 – 06:30
+                                                                            ID: 1-02-0-018
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                         3 von 6
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+
+Preisblattteil 03 - Entgelte für Monatsleistungspreissystem
+
+
+Marktlokationen mit Monatsleistungspreissystem
+                                                               Leistungspreis    Arbeitspreis
+Monate mit 28 Tagen                                              [€/kW*Tag]        [€/kWh]
+
+Mittelspannung                                                   0,649286         0,007600
+ID-Gruppe:        1-03-5                                        ID: 1-03-5-001   ID: 1-03-5-005
+
+Umspannung Mittel-/Niederspannung                                0,744286         0,010800
+ID-Gruppe:        1-03-6                                        ID: 1-03-6-001   ID: 1-03-6-005
+
+Niederspannung                                                   0,621786         0,028700
+ID-Gruppe:        1-03-7                                        ID: 1-03-7-001   ID: 1-03-7-005
+
+
+Monate mit 29 Tagen
+
+Mittelspannung                                                   0,626897         0,007600
+ID-Gruppe:        1-03-5                                        ID: 1-03-5-002   ID: 1-03-5-005
+
+Umspannung Mittel-/Niederspannung                                0,718621         0,010800
+ID-Gruppe:        1-03-6                                        ID: 1-03-6-002   ID: 1-03-6-005
+
+Niederspannung                                                   0,600345         0,028700
+ID-Gruppe:        1-03-7                                        ID: 1-03-7-002   ID: 1-03-7-005
+
+
+Monate mit 30 Tagen
+
+Mittelspannung                                                   0,606000         0,007600
+ID-Gruppe:        1-03-5                                        ID: 1-03-5-003   ID: 1-03-5-005
+
+Umspannung Mittel-/Niederspannung                                0,694667         0,010800
+ID-Gruppe:        1-03-6                                        ID: 1-03-6-003   ID: 1-03-6-005
+
+Niederspannung                                                   0,580333         0,028700
+ID-Gruppe:        1-03-7                                        ID: 1-03-7-003   ID: 1-03-7-005
+
+
+Monate mit 31 Tagen
+
+Mittelspannung                                                   0,586452         0,007600
+ID-Gruppe:        1-03-5                                        ID: 1-03-5-004   ID: 1-03-5-005
+
+Umspannung Mittel-/Niederspannung                                0,672258         0,010800
+ID-Gruppe:        1-03-6                                        ID: 1-03-6-004   ID: 1-03-6-005
+
+Niederspannung                                                   0,561613         0,028700
+ID-Gruppe:        1-03-7                                        ID: 1-03-7-004   ID: 1-03-7-005
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                  4 von 6
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+
+Preisblattteil 05 - Netzreservekapazität
+
+
+Netzreservekapazität
+Entnahme-                                                                                          (informatorisch)
+spannungs-                            Bezeichnung                        ID        Tagespreis        (Jahrespreis)
+ebene                                                                              [€/kW*Tag]         [€/kW/Jahr]
+
+                   Leistungspreis 0 - 200 h/a                         1-05-5-001   0,120603          (44,02 €/Jahr)
+MS
+                   Leistungspreis 200 - 400 h/a                       1-05-5-002   0,144712          (52,82 €/Jahr)
+
+ID-Gruppe:1-05-5   Leistungspreis 400 - 600 h/a                       1-05-5-003   0,168822          (61,62 €/Jahr)
+
+                   Leistungspreis 0 - 200 h/a                         1-05-6-001   0,150685          (55,00 €/Jahr)
+MS/NS
+                   Leistungspreis 200 - 400 h/a                       1-05-6-002   0,180822          (66,00 €/Jahr)
+
+ID-Gruppe:1-05-6   Leistungspreis 400 - 600 h/a                       1-05-6-003   0,210959          (77,00 €/Jahr)
+
+                   Leistungspreis 0 - 200 h/a                         1-05-7-001   0,243836          (89,00 €/Jahr)
+NS
+                   Leistungspreis 200 - 400 h/a                       1-05-7-002   0,292603          (106,80 €/Jahr)
+
+ID-Gruppe:1-05-7   Leistungspreis 400 - 600 h/a                       1-05-7-003   0,341370          (124,60 €/Jahr)
+
+
+
+
+Preisblattteil 06 - Entgelte für Messstellenbetrieb bei kME
+
+
+Sobald eine moderne Messeinrichtung (mME) bzw. ein intelligentes Messsystem verbaut ist, erfolgt die Abrechnung
+über den jeweils zuständigen Messstellenbetreiber (MSB)
+
+Entgelte für Messstellenbetrieb bei konventionellern Messeinrichtungen (kME)
+Entnahme-                                                                                          (informatorisch)
+spannungs-                            Bezeichnung                        ID        Tagespreis        (Jahrespreis)
+ebene                                                                                [€/Tag]            [€/Jahr]
+
+Alle               Telekommunikationsanschluss durch NB
+                                                                      1-06-0-036   0,215014          (78,48 €/Jahr)
+Spannungs-         (automatische Ablesung)
+ebenen             Telekommunikationsanschluss durch AN
+                                                                      1-06-0-037   0,215014          (78,48 €/Jahr)
+ID-Gruppe:         (automatische Ablesung)
+1-06-0             Manuelle vor Ort Ablesung bei kME mit
+                                                                      1-06-0-038         32,50 €/Vorgang
+                   registrierender Last-/Einspeisemessung
+                   Entgelt Impulsweitergabe                           1-06-0-039   0,062356          (22,76 €/Jahr)
+
+MS                 kME mit registrierender Last-
+                                                                      1-06-5-001   0,283808          (103,59 €/Jahr)
+                   /Einspeisemessung
+ID-Gruppe:
+                   Wandlersatz für Messstellenbetrieb bei kME         1-06-5-002   1,074137          (392,06 €/Jahr)
+1-06-5
+
+NS                 kME mit registrierender Last-
+                                                                      1-06-7-001   0,283808          (103,59 €/Jahr)
+                   /Einspeisemessung
+ID-Gruppe:
+                   Wandlersatz für Messstellenbetrieb bei kME         1-06-7-002   0,266658          (97,33 €/Jahr)
+1-06-7
+
+                   Schaltgerät oder Rundsteuerempfänger               1-06-7-003   0,027753          (10,13 €/Jahr)
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                         5 von 6
+
+Preisblatt Netzentgelte Strom,
+gültig ab 01.01.2025
+
+
+NS                 Bei jährlicher Ablesung:
+                     kME Einrichtungszähler Eintarif               1-06-7-004   0,022712       (8,29 €/Jahr)
+
+                     kME Einrichtungszähler Zweitarif              1-06-7-005   0,039918       (14,57 €/Jahr)
+
+                     kME Zweirichtungszähler Eintarif              1-06-7-006   0,022712       (8,29 €/Jahr)
+
+                     kME Zweirichtungszähler Zweitarif             1-06-7-007   0,039918       (14,57 €/Jahr)
+
+                     kME Mehrtarifzähler                           1-06-7-008   0,039918       (14,57 €/Jahr)
+
+                   Bei halbjährlicher Ablesung:
+                     kME Einrichtungszähler Eintarif               1-06-7-012   0,026548       (9,69 €/Jahr)
+
+                     kME Einrichtungszähler Zweitarif              1-06-7-013   0,043753       (15,97 €/Jahr)
+
+                     kME Zweirichtungszähler Eintarif              1-06-7-014   0,026548       (9,69 €/Jahr)
+
+                     kME Zweirichtungszähler Zweitarif             1-06-7-015   0,043753       (15,97 €/Jahr)
+
+                     kME Mehrtarifzähler                           1-06-7-016   0,043753       (15,97 €/Jahr)
+
+
+
+
+Entgelte für Messstellenbetrieb bei konventionellern Messeinrichtungen (kME)
+Entnahme-                                                                                    (informatorisch)
+spannungs-                            Bezeichnung                     ID        Tagespreis     (Jahrespreis)
+ebene                                                                             [€/Tag]         [€/Jahr]
+
+NS                 Bei vierteljährlicher Ablesung:
+                     kME Einrichtungszähler Eintarif               1-06-7-020   0,034219       (12,49 €/Jahr)
+
+ID-Gruppe:           kME Einrichtungszähler Zweitarif              1-06-7-021   0,051425       (18,77 €/Jahr)
+
+1-06-7               kME Zweirichtungszähler Eintarif              1-06-7-022   0,034219       (12,49 €/Jahr)
+
+                     kME Zweirichtungszähler Zweitarif             1-06-7-023   0,051425       (18,77 €/Jahr)
+
+                     kME Mehrtarifzähler                           1-06-7-024   0,051425       (18,77 €/Jahr)
+
+                   Bei monatlicher Ablesung:
+                     kME Einrichtungszähler Eintarif               1-06-7-028   0,064904       (23,69 €/Jahr)
+
+                     kME Einrichtungszähler Zweitarif              1-06-7-029   0,082110       (29,97 €/Jahr)
+
+                     kME Zweirichtungszähler Eintarif              1-06-7-030   0,064904       (23,69 €/Jahr)
+
+                     kME Zweirichtungszähler Zweitarif             1-06-7-031   0,082110       (29,97 €/Jahr)
+
+                     kME Mehrtarifzähler                           1-06-7-032   0,082110       (29,97 €/Jahr)
+
+
+
+
+MS – Mittelspannung
+MS/NS – Umspannung Mittel-/Niederspannung
+NS – Niederspannung                                      6 von 6
+

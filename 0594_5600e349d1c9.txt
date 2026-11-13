@@ -1,0 +1,929 @@
+URL: https://www.stadtwerke-norderstedt.de/fileadmin/user_upload/Dokumente/Energiewirtschaftsgesetz/Kontaktdatenblatt-STROM-LIEFERANT.xlsx
+Netzbetreiber: Stadtwerke Norderstedt
+
+Kontaktdatenblatt Netznutzer                          Stand: 01.07.2024
+Anschrift
+Name              Stadtwerke Norderstedt
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+Telefon           040 52104 0
+Fax               040 52104 117
+Internet          www.stadtwerke-norderstedt.de
+Umsatzsteuer-ID   DE365410648
+
+Marktrolle        BDEW-Codenummern / Global Location Number (GLN) Strom
+Lieferant         9904029000002
+Bilanzkreisverantwortlicher
+Letztverbraucher
+
+AS4-URL für den elektronischen Datenaustausch (1:1 Marktkommunikation)
+https://9904029000002.mako.tremondi.eu:18235
+
+Fachliche Ansprechpartner
+Vertragsmanagement
+Name, Vorname     Seefeldt, Jessika Lindhorst, Nicola
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+E-Mail                              Telefon           Fax
+jseefeldt@stadtwerke-norderstedt.de 040 521 04 417    040 521 04 4784
+nlindhorst@stadtwerke-norderstedt.de  040 521 04 356  040 521 04 4784
+Elektronischer Datenaustausch/Formate, Verschlüsselung/Signatur
+Name, Vorname     Wulf, Yvonne
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+E-Mail                              Telefon           Fax
+marktkommunikation@stadtwerke-norderstedt.de  040 52104 456  040 521 04 117
+
+Bilanzkreismanagement
+Bilanzkreis (EIC-Code)  11XSW-ALLI-NOR-C
+Name, Vorname     Energie-Einkaufs- u. Service GmbH
+Straße Hausnr.    Margarete-Steiff-Straße 1 - 3
+PLZ Ort           24558 Henstedt-Ulzburg
+E-Mail                              Telefon           Fax
+dlznn@eeg-energie.de                04193 75 35 22    04193 75 35 51
+
+An-, Abmeldung zur Netznutzung / Kündigung (UTILMD)
+Name, Vorname     Wulf, Yvonne
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+E-Mail                              Telefon           Fax
+marktkommunikation@stadtwerke-norderstedt.de  040 52104 456  040 521 04 117
+
+Messwerte (MSCONS)
+Name, Vorname     Wulf, Yvonne
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+E-Mail                              Telefon           Fax
+marktkommunikation@stadtwerke-norderstedt.de  040 52104 456  040 521 04 117
+
+Netznutzungsabrechnung (INVOIC, REMADV)
+Name, Vorname     Lehmann, Tobias
+Straße Hausnr.    Heidbergstraße 101 - 111
+PLZ Ort           22846 Norderstedt
+E-Mail                              Telefon           Fax
+tlehmann@stadtwerke-norderstedt.de  040 521 04 308    040 521 04 117
+
+Sonstige Ansprechpartner
+Name, Vorname
+Straße Hausnr.
+PLZ Ort
+E-Mail                              Telefon           Fax
+
+
+Bankverbindung
+Name des Kontoinhabers  Stadtwerke Norderstedt
+Geldinstitut      Volksbank Raiffeisenbank eG
+IBAN              DE29201901090075008070
+BIC               GENODEF1HH4
+Gläubiger-ID      DE10ZZZ00000113182
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Kontaktdatenblatt Netzbetreiber                       Stand: 20.12.2017
+Anschrift
+Name
+Straße Hausnr.
+PLZ Ort
+Telefon
+Fax
+Internet
+Umsatzsteuer-ID
+
+Marktrolle        BDEW-Codenummern / Global Location Number (GLN) Strom
+Verteilnetzbetreiber
+Messstellenbetreiber
+
+Bilanzierungsgebiet(e) (EIC-Code)
+
+
+E-Mail-Adresse für den elektronischen Datenaustausch (1:1 Marktkommunikation)
+
+
+Wir senden und akzeptieren EDIFACT-Nachrichten grundsätzlich nur im aktuellen, von der Bundesnetzagentur vorgegebenen, Format.
+Für Anfragen außerhalb der Standard-EDIFACT-Kommunikation benutzen Sie bitte folgende Kommunikationsadressen:
+Fachliche Ansprechpartner Allgemein
+Thema             E-Mail            Telefon           Fax
+Vertragsmanagement
+· Lieferantenrahmenvertrag
+· EDI-Vereinbarung
+· Zuordnungsvereinbarung
+· MSB
+EDIFACT
+· allgemeine Themen
+· Umstellung INVOIC
+· Verschlüsselung/Signatur
+
+Fachlicher Ansprechpartner GPKE/Einspeiserprozesse
+Thema             E-Mail            Telefon           Fax
+UTILMD
+· Lieferantenwechsel
+INVOIC
+REMADV
+· Zahlungsverkehr
+· Debitorenmanagement
+Bilanzierung
+· Strom
+· Zuordnungsermächtigung
+Mehr- Mindermengen
+· Clearing
+
+Fachlicher Ansprechpartner MSCONS
+Thema             E-Mail            Telefon           Fax
+MSCONS
+· Zählerstände SLP
+MSCONS
+· Lastgänge RLM
+
+Sonstige Ansprechpartner
+Thema             E-Mail            Telefon           Fax
+
+
+
+
+Bankverbindung
+Name des Kontoinhabers
+Geldinstitut
+IBAN
+BIC
+Gläubiger-ID
+
+Weitere Informationen
+Schwachlastzeit:  HT: 00:00 - 00:00 Uhr  OBIS-Code:
+                  NT: 00:00 - 00:00 Uhr  OBIS-Code:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

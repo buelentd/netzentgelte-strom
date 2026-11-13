@@ -1,0 +1,1053 @@
+URL: https://www.bayernwerk-netz.de/content/dam/revu-global/bayernwerk-netz/files/netz/netzzugang/netzentgeltestrom/bayernwerk-preisblatt-netzentgelte-2026.pdf
+Netzbetreiber: Bayernwerk Netz GmbH
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                   Stand 10.12.2025
+
+
+                                                                                                                                                  Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                              Bestandteile des elektronischen Preisblattes                                                        berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                               Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+    ID                                              Bezeichnung                                              Einheit               Preis                               Einheit                                     Einheit            Preis
+             Jahresleistungspreissystem
+             Höchstspannung
+             Jahresleistungspreissystem Höchstspannung Jahresbenutzungsdauerstunden <2500 h/a
+1-01-1-001                                                                                                   €/(kW*Tag)                 -                                   -                                    €/(kW und Jahr)        -
+             Leistungspreis
+1-01-1-002   Jahresleistungspreissystem Höchstspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis     €/kWh                    -                                   -                                        ct/kWh             -
+             Jahresleistungspreissystem Höchstspannung Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-1-003                                                                                                   €/(kW*Tag)                 -                                   -                                    €/(kW und Jahr)        -
+             Leistungspreis
+             Jahresleistungspreissystem Höchstspannung Jahresbenutzungsdauerstunden >=2500 h/a
+1-01-1-004                                                                                                     €/kWh                    -                                   -                                        ct/kWh             -
+             Arbeitspreis
+             Umspannung Höchst- / Hochspannung
+             Jahresleistungspreissystem Umspannung Höchst-/Hochspannung Jahresbenutzungsdauerstunden                                          Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-2-001                                                                                                   €/(kW*Tag)          0,04706849                                                                      €/(kW und Jahr)   17,18000000
+             <2500 h/a Leistungspreis                                                                                                                        Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Höchst-/Hochspannung Jahresbenutzungsdauerstunden                                                       Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-2-002                                                                                                     €/kWh             0,02810000                                                                          ct/kWh         2,81000000
+             <2500 h/a Arbeitspreis                                                                                                                          Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Höchst-/Hochspannung Jahresbenutzungsdauerstunden                                          Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-2-003                                                                                                   €/(kW*Tag)          0,21013699                                                                      €/(kW und Jahr)   76,70000000
+             >=2500 h/a Leistungspreis                                                                                                                       Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Höchst-/Hochspannung Jahresbenutzungsdauerstunden                                                       Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-2-004                                                                                                     €/kWh             0,00430000                                                                          ct/kWh         0,43000000
+             >=2500 h/a Arbeitspreis                                                                                                                         Rundung auf 8 Nachkommastellen
+             Hochspannung
+                                                                                                                                              Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-3-001   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis   €/(kW*Tag)          0,03019178                                                                      €/(kW und Jahr)   11,02000000
+                                                                                                                                                             Rundung auf 8 Nachkommastellen
+                                                                                                                                                           Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-3-002   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis       €/kWh             0,03650000                                                                          ct/kWh         3,65000000
+                                                                                                                                                             Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >=2500 h/a                                                  Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-3-003                                                                                                   €/(kW*Tag)          0,27139726                                                                      €/(kW und Jahr)   99,06000000
+             Leistungspreis                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                           Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-3-004   Jahresleistungspreissystem Hochspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis      €/kWh             0,00130000                                                                          ct/kWh         0,13000000
+                                                                                                                                                             Rundung auf 8 Nachkommastellen
+             Umspannung Hoch- / Mittelspannung
+             Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden                                          Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-4-001                                                                                                   €/(kW*Tag)          0,03410959                                                                      €/(kW und Jahr)   12,45000000
+             <2500 h/a Leistungspreis                                                                                                                        Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden                                                       Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-4-002                                                                                                     €/kWh             0,03990000                                                                          ct/kWh         3,99000000
+             <2500 h/a Arbeitspreis                                                                                                                          Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden                                          Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-4-003                                                                                                   €/(kW*Tag)          0,29402740                                                                      €/(kW und Jahr)   107,32000000
+             >=2500 h/a Leistungspreis                                                                                                                       Rundung auf 8 Nachkommastellen
+             Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden                                                       Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-4-004                                                                                                     €/kWh             0,00200000                                                                          ct/kWh         0,20000000
+             >=2500 h/a Arbeitspreis                                                                                                                         Rundung auf 8 Nachkommastellen
+             Mittelspannung
+             Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a                                                 Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-5-001                                                                                                   €/(kW*Tag)          0,04345205                                                                      €/(kW und Jahr)   15,86000000
+             Leistungspreis                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                           Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-5-002   Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis     €/kWh             0,04010000                                                                          ct/kWh         4,01000000
+                                                                                                                                                             Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                       Seite 1 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                      Stand 07.10.2025
+
+
+                                                                                                                                                     Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                               Bestandteile des elektronischen Preisblattes                                                          berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                  Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+    ID                                                  Bezeichnung                                            Einheit               Preis                                Einheit                                     Einheit            Preis
+              Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a                                                 Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-5-003                                                                                                     €/(kW*Tag)          0,27169863                                                                       €/(kW und Jahr)   99,17000000
+              Leistungspreis                                                                                                                                   Rundung auf 8 Nachkommastellen
+                                                                                                                                                             Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-5-004    Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis     €/kWh             0,00680000                                                                           ct/kWh         0,68000000
+                                                                                                                                                               Rundung auf 8 Nachkommastellen
+              Umspannung Mittel- / Niederspannung
+              Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden                                         Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-6-001                                                                                                     €/(kW*Tag)          0,04824658                                                                       €/(kW und Jahr)   17,61000000
+              <2500 h/a Leistungspreis                                                                                                                         Rundung auf 8 Nachkommastellen
+              Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden                                                      Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-6-002                                                                                                       €/kWh             0,05880000                                                                           ct/kWh         5,88000000
+              <2500 h/a Arbeitspreis                                                                                                                           Rundung auf 8 Nachkommastellen
+              Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden                                         Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-6-003                                                                                                     €/(kW*Tag)          0,43824658                                                                       €/(kW und Jahr)   159,96000000
+              >=2500 h/a Leistungspreis                                                                                                                        Rundung auf 8 Nachkommastellen
+              Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden                                                      Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-6-004                                                                                                       €/kWh             0,00180000                                                                           ct/kWh         0,18000000
+              >=2500 h/a Arbeitspreis                                                                                                                          Rundung auf 8 Nachkommastellen
+              Jahresleistungspreissystem Umspannung Mittel-/Niederspannung
+          8   Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der                                            Preis lt. Preisblatt 12 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-6-005                                                                                                       €/Tag            -0,28117808                                                                           €/Jahr        -102,63000000
+              netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                                                               Rundung auf 8 Nachkommastellen
+              Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+              Niederspannung
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a                                                  Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-7-001                                                                                                     €/(kW*Tag)          0,05509589                                                                       €/(kW und Jahr)   20,11000000
+              Leistungspreis                                                                                                                                   Rundung auf 8 Nachkommastellen
+                                                                                                                                                             Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-7-002    Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis      €/kWh             0,05010000                                                                           ct/kWh         5,01000000
+                                                                                                                                                               Rundung auf 8 Nachkommastellen
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a                                                 Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-7-003                                                                                                     €/(kW*Tag)          0,26756164                                                                       €/(kW und Jahr)   97,66000000
+              Leistungspreis                                                                                                                                   Rundung auf 8 Nachkommastellen
+                                                                                                                                                             Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-7-004    Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis     €/kWh             0,01910000                                                                           ct/kWh         1,91000000
+                                                                                                                                                               Rundung auf 8 Nachkommastellen
+                                                    9
+              § 14a EnWG - Entgelt für RLM-Kunden
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a für                                              Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-8-0019                                                                                                    €/(kW*Tag)                 -                                                                         €/(kW und Jahr)         -
+              Marktlokationen nach § 14a EnWG - Entgelt für RLM-Kunden Leistungspreis                                                                          Rundung auf 8 Nachkommastellen
+
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a für                                                         Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-8-0029                                                                                                      €/kWh                    -                                                                             ct/kWh              -
+              Marktlokationen nach § 14a EnWG - Entgelt für RLM-Kunden Arbeitspreis                                                                         Rundung auf 8 Nachkommastellen
+
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a für                                             Preis lt. Preisblatt 3 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-8-0039                                                                                                    €/(kW*Tag)                 -                                                                         €/(kW und Jahr)         -
+              Marktlokationen nach § 14a EnWG - Entgelt für RLM-Kunden Leistungspreis                                                                          Rundung auf 8 Nachkommastellen
+
+              Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a für                                                        Preis lt. Preisblatt 3 geteilt durch 100;
+1-01-8-0049                                                                                                      €/kWh                    -                                                                             ct/kWh              -
+              Marktlokationen nach § 14a EnWG - Entgelt für RLM-Kunden Arbeitspreis                                                                         Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                         Seite 2 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                       Stand 07.10.2025
+
+
+                                                                                                                                                      Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                                  Bestandteile des elektronischen Preisblattes                                                        berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                   Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+     ID                                                 Bezeichnung                                              Einheit              Preis                                Einheit                                     Einheit            Preis
+               Jahresleistungspreissystem Niederspannung Pauschale Reduzierung nach Modul 1 der Festlegungen
+               zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren                                                     Preis lt. Preisblatt 12 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-9-00110                                                                                                      €/Tag            -0,28117808                                                                          €/Jahr         -102,63000000
+               Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen                                                        Rundung auf 8 Nachkommastellen
+               BK6-22-300 und BK8-22/010-A
+
+               Jahresleistungspreissystem Umspannung Mittel-/Niederspannung
+          11   Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der                                            Preis lt. Preisblatt 12 geteilt durch Anzahl Tage Kalenderjahr;
+1-01-9-002                                                                                                        €/Tag            -0,28117808                                                                          €/Jahr         -102,63000000
+               netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                                                               Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+
+               Grundpreis-/ Arbeitspreissystem
+                                                                                                                                                 Preis lt. Preisblatt 8 geteilt durch Anzahl Tage Kalenderjahr;
+1-02-0-001     Grundpreis-/ Arbeitspreissystem Marktlokation Grundpreis für Arbeitspreissystem Grundpreis         €/Tag             0,27000000                                                                          €/Jahr         98,55000000
+                                                                                                                                                                Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation,
+               die in keine andere Kategorie fällt) sowie für Marktlokationen, die nach Modul 1 und/oder 3 der
+                                                                                                                                                            Preis lt. Preisblatt 8 geteilt durch 100;
+1-02-0-002     Festlegungen zu Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren         €/kWh             0,04720000                                                                          ct/kWh          4,72000000
+                                                                                                                                                             Rundung auf 8 Nachkommastellen
+               Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen
+               BK6-22-300 und BK8-22/010-A abgerechnet werden Arbeitspreis
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung,                                                      Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0039                                                                                                       €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               insbesondere nach § 14a EnWG Arbeitspreis                                                                                                      Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe,                                                           Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0049                                                                                                       €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               insbesondere nach § 14a EnWG Arbeitspreis                                                                                                      Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie öffentlicher Straßenbeleuchtung                                                  Preis lt. Preisblatt 16 geteilt durch 100;
+1-02-0-005                                                                                                        €/kWh             0,04320000                                                                          ct/kWh          4,32000000
+               Arbeitspreis                                                                                                                                   Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität,                                                   Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0069                                                                                                       €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               insbesondere nach § 14a EnWG Arbeitspreis                                                                                                      Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare
+                                                                                                                                                            Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0079    Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt    €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+                                                                                                                                                              Rundung auf 8 Nachkommastellen
+               Arbeitspreis
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung,
+1-02-0-0089                                                                                                       €/Tag                    -                                    -                                       €/Jahr               -
+               insbesondere nach § 14a EnWG Grundpreis
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe,
+1-02-0-0099                                                                                                       €/Tag                    -                                    -                                       €/Jahr               -
+               insbesondere nach § 14a EnWG Grundpreis
+               Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität,
+1-02-0-0109                                                                                                       €/Tag                    -                                    -                                       €/Jahr               -
+               insbesondere nach § 14a EnWG Grundpreis
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Speicherheizung mit                                                   Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0119                                                                                                       €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis                                                                           Rundung auf 8 Nachkommastellen
+
+               Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie steuerbare Wärmepumpe mit                                                        Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-0129                                                                                                       €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis                                                                           Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                          Seite 3 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                         Stand 07.10.2025
+
+
+                                                                                                                                                        Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                                 Bestandteile des elektronischen Preisblattes                                                           berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                     Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+     ID                                                Bezeichnung                                                Einheit               Preis                                Einheit                                     Einheit            Preis
+          9    Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare Elektromobilität mit                                                  Preis lt. Preisblatt 10 geteilt durch 100;
+1-02-0-013                                                                                                          €/kWh             0,02290000                                                                          ct/kWh          2,29000000
+               erweiterter Steuerbarkeit, insbesondere nach § 14a EnWG Arbeitspreis                                                                             Rundung auf 8 Nachkommastellen
+               Grundpreis-/ Arbeitspreissystem Marktlokationen der Kategorie steuerbare
+1-02-0-0149    Verbrauchseinrichtungen nach § 14a EnWG, für die es keine genauer spezifizierte Artikel-ID gibt      €/Tag                    -                                    -                                        €/Jahr              -
+               Grundpreis
+               Grundpreis-/ Arbeitspreissystem Pauschale Reduzierung nach Modul 1 der Festlegungen zu
+               Netzentgelten bei Anwendung der netzorientierten Steuerung von steuerbaren                                                          Preis lt. Preisblatt 11 geteilt durch Anzahl Tage Kalenderjahr;
+1-02-0-01510                                                                                                        €/Tag            -0,28117808                                                                           €/Jahr        -102,63000000
+               Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen                                                          Rundung auf 8 Nachkommastellen
+               BK6-22-300 und BK8-22/010-A
+               Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 2 der Festlegungen zu Netzentgelten bei
+               Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und                                                   Preis lt. Preisblatt 13 geteilt durch 100; Rundung auf 8
+1-02-0-01610                                                                                                        €/kWh             0,01890000                                                                          ct/kWh          1,89000000
+               steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A                                                                  Nachkommastellen
+               Arbeitspreis
+               Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei
+          10   Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und                                                   Preis lt. Preisblatt 14 geteilt durch 100; Rundung auf 8
+1-02-0-017                                                                                                          €/kWh             0,09030000                                                                          ct/kWh          9,03000000
+               steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A                                                                  Nachkommastellen
+               Arbeitspreis HT
+               Grundpreis-/ Arbeitspreissystem Marktlokation nach Modul 3 der Festlegungen zu Netzentgelten bei
+               Anwendung der netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und                                                   Preis lt. Preisblatt 14 geteilt durch 100; Rundung auf 8
+1-02-0-01810                                                                                                        €/kWh             0,00470000                                                                          ct/kWh          0,47000000
+               steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A                                                                  Nachkommastellen
+               Arbeitspreis NT
+               Monatsleistungspreissystem
+               Monatsleistungspreissystem Höchstspannung
+1-03-1-001     Monatsleistungspreissystem Höchstspannung Leistungspreis für Monate mit 28 Tagen                   €/(kW*Tag)                 -                                    -                                   €/(kW und Monat)         -
+
+1-03-1-002     Monatsleistungspreissystem Höchstspannung Leistungspreis für Monate mit 29 Tagen                   €/(kW*Tag)                 -                                    -                                   €/(kW und Monat)         -
+
+1-03-1-003     Monatsleistungspreissystem Höchstspannung Leistungspreis für Monate mit 30 Tagen                   €/(kW*Tag)                 -                                    -                                   €/(kW und Monat)         -
+
+1-03-1-004     Monatsleistungspreissystem Höchstspannung Leistungspreis für Monate mit 31 Tagen                   €/(kW*Tag)                 -                                    -                                   €/(kW und Monat)         -
+
+1-03-1-005     Monatsleistungspreissystem Höchstspannung Arbeitspreis                                               €/kWh                    -                                    -                                       ct/kWh               -
+               Monatsleistungspreissystem Umspannung Höchst-/Hochspannung
+               Monatsleistungspreissystem Umspannung Höchst-/Hochspannung Leistungspreis für Monate mit 28                                                  Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-2-001                                                                                                        €/(kW*Tag)          0,45642857                                                                      €/(kW und Monat)   12,78000000
+               Tagen                                                                                                                                            Rundung auf 8 Nachkommastellen
+               Monatsleistungspreissystem Umspannung Höchst-/Hochspannung Leistungspreis für Monate mit 29                                                  Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-2-002                                                                                                        €/(kW*Tag)          0,44068966                                                                      €/(kW und Monat)   12,78000000
+               Tagen                                                                                                                                            Rundung auf 8 Nachkommastellen
+               Monatsleistungspreissystem Umspannung Höchst-/Hochspannung Leistungspreis für Monate mit 30                                                  Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-2-003                                                                                                        €/(kW*Tag)          0,42600000                                                                      €/(kW und Monat)   12,78000000
+               Tagen                                                                                                                                            Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                            Seite 4 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                      Stand 07.10.2025
+
+
+                                                                                                                                                 Umrechnung der gemäß StromNEV                             Preisbestandteile
+                                              Bestandteile des elektronischen Preisblattes                                                       berechneten Netzentgelte gemäß                   Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                              Formatvorgabe elektronisches Preisblatt                   17 und § 19 StromNEV
+
+    ID                                              Bezeichnung                                              Einheit               Preis                           Einheit                            Einheit            Preis
+             Monatsleistungspreissystem Umspannung Höchst-/Hochspannung Leistungspreis für Monate mit 31                                          Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-2-004                                                                                                   €/(kW*Tag)          0,41225806                                                        €/(kW und Monat)   12,78000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-2-005   Monatsleistungspreissystem Umspannung Höchst-/Hochspannung Arbeitspreis                           €/kWh             0,00430000                                                            ct/kWh          0,43000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Hochspannung
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-3-001   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 28 Tagen                  €/(kW*Tag)          0,58964286                                                        €/(kW und Monat)   16,51000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-3-002   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 29 Tagen                  €/(kW*Tag)          0,56931034                                                        €/(kW und Monat)   16,51000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-3-003   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 30 Tagen                  €/(kW*Tag)          0,55033333                                                        €/(kW und Monat)   16,51000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-3-004   Monatsleistungspreissystem Hochspannung Leistungspreis für Monate mit 31 Tagen                  €/(kW*Tag)          0,53258065                                                        €/(kW und Monat)   16,51000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-3-005   Monatsleistungspreissystem Hochspannung Arbeitspreis                                              €/kWh             0,00130000                                                            ct/kWh          0,13000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung
+             Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 28                                          Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-4-001                                                                                                   €/(kW*Tag)          0,63892857                                                        €/(kW und Monat)   17,89000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 29                                          Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-4-002                                                                                                   €/(kW*Tag)          0,61689655                                                        €/(kW und Monat)   17,89000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 30                                          Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-4-003                                                                                                   €/(kW*Tag)          0,59633333                                                        €/(kW und Monat)   17,89000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis für Monate mit 31                                          Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-4-004                                                                                                   €/(kW*Tag)          0,57709677                                                        €/(kW und Monat)   17,89000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-4-005   Monatsleistungspreissystem Umspannung Hoch-/Mittelspannung Arbeitspreis                           €/kWh             0,00200000                                                            ct/kWh          0,20000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Mittelspannung
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-5-001   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen                €/(kW*Tag)          0,59035714                                                        €/(kW und Monat)   16,53000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-5-002   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen                €/(kW*Tag)          0,57000000                                                        €/(kW und Monat)   16,53000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-5-003   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen                €/(kW*Tag)          0,55100000                                                        €/(kW und Monat)   16,53000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                  Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-5-004   Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen                €/(kW*Tag)          0,53322581                                                        €/(kW und Monat)   16,53000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-5-005   Monatsleistungspreissystem Mittelspannung Arbeitspreis                                            €/kWh             0,00680000                                                            ct/kWh          0,68000000
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+             Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28                                        Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-6-001                                                                                                   €/(kW*Tag)          0,95214286                                                        €/(kW und Monat)   26,66000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+             Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29                                        Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-6-002                                                                                                   €/(kW*Tag)          0,91931034                                                        €/(kW und Monat)   26,66000000
+             Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                       Seite 5 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                        Stand 07.10.2025
+
+
+                                                                                                                                                   Umrechnung der gemäß StromNEV                             Preisbestandteile
+                                                Bestandteile des elektronischen Preisblattes                                                       berechneten Netzentgelte gemäß                   Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                Formatvorgabe elektronisches Preisblatt                   17 und § 19 StromNEV
+
+     ID                                               Bezeichnung                                              Einheit               Preis                           Einheit                            Einheit            Preis
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30                                        Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-6-003                                                                                                     €/(kW*Tag)          0,88866667                                                        €/(kW und Monat)   26,66000000
+               Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31                                        Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-6-004                                                                                                     €/(kW*Tag)          0,86000000                                                        €/(kW und Monat)   26,66000000
+               Tagen                                                                                                                                    Rundung auf 8 Nachkommastellen
+                                                                                                                                                      Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-6-005     Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Arbeitspreis                         €/kWh             0,00180000                                                            ct/kWh          0,18000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+               Monatsleistungspreissystem Niederspannung
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 28 Tage;
+1-03-7-001     Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 28 Tagen                €/(kW*Tag)          0,58142857                                                        €/(kW und Monat)   16,28000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 29 Tage;
+1-03-7-002     Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 29 Tagen                €/(kW*Tag)          0,56137931                                                        €/(kW und Monat)   16,28000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 30 Tage;
+1-03-7-003     Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 30 Tagen                €/(kW*Tag)          0,54266667                                                        €/(kW und Monat)   16,28000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 31 Tage;
+1-03-7-004     Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 31 Tagen                €/(kW*Tag)          0,52516129                                                        €/(kW und Monat)   16,28000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+                                                                                                                                                      Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-7-005     Monatsleistungspreissystem Niederspannung Arbeitspreis                                            €/kWh             0,01910000                                                            ct/kWh          1,91000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+               netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A 10
+
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+                                                                                                                                                      Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-8-00110   netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                €/Tag            -0,28117808                                                            €/Monat         -7,87298630
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 28 Tagen
+
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+          10                                                                                                                                          Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-8-002     netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                €/Tag            -0,28117808                                                            €/Monat         -8,15416438
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 29 Tagen
+
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+                                                                                                                                                      Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-8-00310   netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                €/Tag            -0,28117808                                                            €/Monat         -8,43534247
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 30 Tagen
+
+
+
+
+                                                                                                                         Seite 6 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                               Stand 07.10.2025
+
+
+                                                                                                                                              Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                               Bestandteile des elektronischen Preisblattes                                                   berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                           Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+     ID                                              Bezeichnung                                        Einheit               Preis                                Einheit                                     Einheit            Preis
+               Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-8-00410   netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren         €/Tag            -0,28117808                                                                          €/Monat         -8,71652055
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 31 Tagen
+
+               Monatsleistungspreissystem Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+               netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A 10
+
+               Monatsleistungspreissystem Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+          10                                                                                                                                        Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-9-001     netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren         €/Tag            -0,28117808                                                                          €/Monat         -7,87298630
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 28 Tagen
+
+               Monatsleistungspreissystem Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-9-00210   netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren         €/Tag            -0,28117808                                                                          €/Monat         -8,15416438
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 29 Tagen
+
+               Monatsleistungspreissystem Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+          10                                                                                                                                        Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-9-003     netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren         €/Tag            -0,28117808                                                                          €/Monat         -8,43534247
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 30 Tagen
+
+               Monatsleistungspreissystem Niederspannung
+               Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der
+                                                                                                                                                    Preis lt. Preisblatt 5 geteilt durch 100 ;
+1-03-9-00410   netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren         €/Tag            -0,28117808                                                                          €/Monat         -8,71652055
+                                                                                                                                                      Rundung auf 8 Nachkommastellen
+               Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+               für Monate mit 31 Tagen
+
+               Stromspeicherentgelt
+1-04-1-001     Stromspeicherentgelte Höchstspannung Leistungspreis                                      €/(kW*Tag)                 -                                      -                                  €/(kW und Jahr)         -
+                                                                                                                                         Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-2-001     Stromspeicherentgelte Umspannung Höchst-/Hochspannung Leistungspreis                     €/(kW*Tag)          0,21013699                                                                       €/(kW und Jahr)   76,70000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+                                                                                                                                         Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-3-001     Stromspeicherentgelte Hochspannung Leistungspreis                                        €/(kW*Tag)          0,27139726                                                                       €/(kW und Jahr)   99,06000000
+                                                                                                                                                        Rundung auf 8 Nachkommastellen
+
+
+
+
+                                                                                                                  Seite 7 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                    Stand 07.10.2025
+
+
+                                                                                                                                   Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                              Bestandteile des elektronischen Preisblattes                                         berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+    ID                                              Bezeichnung                                Einheit             Preis                                Einheit                                     Einheit            Preis
+                                                                                                                              Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-4-001   Stromspeicherentgelte Umspannung Hoch-/Mittelspannung Leistungspreis              €/(kW*Tag)        0,29402740                                                                       €/(kW und Jahr)   107,32000000
+                                                                                                                                             Rundung auf 8 Nachkommastellen
+                                                                                                                              Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-5-001   Stromspeicherentgelte Mittelspannung Leistungspreis                               €/(kW*Tag)        0,27169863                                                                       €/(kW und Jahr)   99,17000000
+                                                                                                                                             Rundung auf 8 Nachkommastellen
+                                                                                                                              Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-6-001   Stromspeicherentgelte Umspannung Mittel-/Niederspannung Leistungspreis            €/(kW*Tag)        0,43824658                                                                       €/(kW und Jahr)   159,96000000
+                                                                                                                                             Rundung auf 8 Nachkommastellen
+                                                                                                                              Preis lt. Preisblatt 20 geteilt durch Anzahl Tage Kalenderjahr;
+1-04-7-001   Stromspeicherentgelte Niederspannung Leistungspreis                               €/(kW*Tag)        0,26756164                                                                       €/(kW und Jahr)   97,66000000
+                                                                                                                                             Rundung auf 8 Nachkommastellen
+             Netzreservekapazität
+
+             Netzreservekapazität Höchstspannung
+1-05-1-001   Netzreservekapazität Höchstspannung bis 200 h/a                                   €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-1-002   Netzreservekapazität Höchstspannung über 200 h/a bis 400 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-1-003   Netzreservekapazität Höchstspannung über 400 h/a bis 600 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Umspannung Höchst- / Hochspannung
+1-05-2-001   Netzreservekapazität Umspannung Höchst-/Hochspannung bis 200 h/a                  €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-2-002   Netzreservekapazität Umspannung Höchst-/Hochspannung über 200 h/a bis 400 h/a     €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+
+1-05-2-003   Netzreservekapazität Umspannung Höchst-/Hochspannung über 400 h/a bis 600 h/a     €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Hochspannung
+1-05-3-001   Netzreservekapazität Hochspannung bis 200 h/a                                     €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-3-002   Netzreservekapazität Hochspannung über 200 h/a bis 400 h/a                        €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-3-003   Netzreservekapazität Hochspannung über 400 h/a bis 600 h/a                        €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Umspannung Hoch- / Mittelspannung
+1-05-4-001   Netzreservekapazität Umspannung Hoch-/Mittelspannung bis 200 h/a                  €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-4-002   Netzreservekapazität Umspannung Hoch-/Mittelspannung über 200 h/a bis 400 h/a     €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-4-003   Netzreservekapazität Umspannung Hoch-/Mittelspannung über 400 h/a bis 600 h/a     €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Mittelspannung
+1-05-5-001   Netzreservekapazität Mittelspannung bis 200 h/a                                   €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-5-002   Netzreservekapazität Mittelspannung über 200 h/a bis 400 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-5-003   Netzreservekapazität Mittelspannung über 400 h/a bis 600 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Umspannung Mittel- / Niederspannung
+1-05-6-001   Netzreservekapazität Umspannung Mittel-/Niederspannung bis 200 h/a                €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-6-002   Netzreservekapazität Umspannung Mittel-/Niederspannung über 200 h/a bis 400 h/a   €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+
+1-05-6-003   Netzreservekapazität Umspannung Mittel-/Niederspannung über 400 h/a bis 600 h/a   €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+             Niederspannung
+1-05-7-001   Netzreservekapazität Niederspannung bis 200 h/a                                   €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-7-002   Netzreservekapazität Niederspannung über 200 h/a bis 400 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+1-05-7-003   Netzreservekapazität Niederspannung über 400 h/a bis 600 h/a                      €/(kW*Tag)               -                                    -                                    €/(kW und Jahr)        -
+
+
+
+
+                                                                                                       Seite 8 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                         Stand 07.10.2025
+
+
+                                                                                                                                                        Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                               Bestandteile des elektronischen Preisblattes                                                             berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                     Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+    ID                                                Bezeichnung                                                  Einheit              Preis                                Einheit                                     Einheit            Preis
+             Messstellenbetrieb bei kME
+
+1-06-1-001   Messstellenbetrieb bei kME, Höchstspannung, kME mit registrierender Last-/Einspeisemessung             €/Tag                    -                                    -                                       €/(Jahr)             -
+
+1-06-1-002   Messstellenbetrieb bei kME, Höchstspannung, Wandlersatz für Messstellenbetrieb bei kME                 €/Tag                    -                                    -                                       €/(Jahr)             -
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-3-001   Messstellenbetrieb bei kME, Hochspannung, kME mit registrierender Last-/Einspeisemessung               €/Tag             4,92624658                                                                          €/(Jahr)       1798,08000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-3-002   Messstellenbetrieb bei kME, Hochspannung, Wandlersatz für Messstellenbetrieb bei kME                   €/Tag             2,51268493                                                                          €/(Jahr)       917,13000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-5-001   Messstellenbetrieb bei kME, Mittelspannung, kME mit registrierender Last-/Einspeisemessung             €/Tag             1,03969863                                                                          €/(Jahr)       379,49000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-5-002   Messstellenbetrieb bei kME, Mittelspannung, Wandlersatz für Messstellenbetrieb bei kME                 €/Tag             0,60654795                                                                          €/(Jahr)       221,39000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-001   Messstellenbetrieb bei kME, Niederspannung, kME mit registrierender Last-/Einspeisemessung             €/Tag             0,74019178                                                                          €/(Jahr)       270,17000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-002   Messstellenbetrieb bei kME, Niederspannung, Wandlersatz für Messstellenbetrieb bei kME                 €/Tag             0,04073973                                                                          €/(Jahr)        14,87000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-003   Messstellenbetrieb bei kME, Niederspannung, Schaltgerät oder Rundsteuerempfänger                       €/Tag             0,02994521                                                                          €/(Jahr)        10,93000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-004   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler Eintarif    €/Tag             0,02863014                                                                          €/(Jahr)        10,45000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+             Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Einrichtungszähler                                            Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-005                                                                                                          €/Tag             0,03243836                                                                          €/(Jahr)        11,84000000
+             Zweitarif                                                                                                                                            Rundung auf 8 Nachkommastellen
+             Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler                                           Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-006                                                                                                          €/Tag             0,02863014                                                                          €/(Jahr)        10,45000000
+             Eintarif                                                                                                                                             Rundung auf 8 Nachkommastellen
+             Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Zweirichtungszähler                                           Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-007                                                                                                          €/Tag             0,03243836                                                                          €/(Jahr)        11,84000000
+             Zweitarif                                                                                                                                            Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-008   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Mehrtarifzähler                €/Tag             0,03243836                                                                          €/(Jahr)        11,84000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+                                                                                                                                                   Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-009   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Prepaymentzähler               €/Tag             0,15657534                                                                          €/(Jahr)        57,15000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+1-06-7-010   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME Maximumzähler                  €/Tag                    -                                    -                                       €/(Jahr)             -
+                                                                                                                                                   Preis lt. Preisblatt 17 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-7-011   Messstellenbetrieb bei kME, Niederspannung, bei jährlicher Ablesung kME EDL21 Zähler                   €/Tag             0,02863014                                                                          €/(Jahr)        10,45000000
+                                                                                                                                                                  Rundung auf 8 Nachkommastellen
+             Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler
+1-06-7-012                                                                                                          €/Tag                    -                                    -                                       €/(Jahr)             -
+             Eintarif
+             Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Einrichtungszähler
+1-06-7-013                                                                                                          €/Tag                    -                                    -                                       €/(Jahr)             -
+             Zweitarif
+             Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler
+1-06-7-014                                                                                                          €/Tag                    -                                    -                                       €/(Jahr)             -
+             Eintarif
+
+
+
+
+                                                                                                                            Seite 9 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                            Stand 07.10.2025
+
+
+                                                                                                                                                 Umrechnung der gemäß StromNEV                   Preisbestandteile
+                                               Bestandteile des elektronischen Preisblattes                                                      berechneten Netzentgelte gemäß         Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                              Formatvorgabe elektronisches Preisblatt         17 und § 19 StromNEV
+
+    ID                                               Bezeichnung                                                 Einheit              Preis                   Einheit                       Einheit            Preis
+             Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Zweirichtungszähler
+1-06-7-015                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweitarif
+1-06-7-016   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Mehrtarifzähler          €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-017   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Prepaymentzähler         €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-018   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME Maximumzähler            €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-019   Messstellenbetrieb bei kME, Niederspannung, bei halbjährlicher Ablesung kME EDL21 Zähler             €/Tag                 -                        -                           €/(Jahr)            -
+             Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler
+1-06-7-020                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Eintarif
+             Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Einrichtungszähler
+1-06-7-021                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweitarif
+             Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME
+1-06-7-022                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweirichtungszähler Eintarif
+             Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME
+1-06-7-023                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweirichtungszähler Zweitarif
+1-06-7-024   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Mehrtarifzähler       €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-025   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Prepaymentzähler      €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-026   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME Maximumzähler         €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-027   Messstellenbetrieb bei kME, Niederspannung, bei vierteljährlicher Ablesung kME EDL21 Zähler          €/Tag                 -                        -                           €/(Jahr)            -
+             Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler
+1-06-7-028                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Eintarif
+             Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Einrichtungszähler
+1-06-7-029                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweitarif
+             Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler
+1-06-7-030                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Eintarif
+             Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Zweirichtungszähler
+1-06-7-031                                                                                                        €/Tag                 -                        -                           €/(Jahr)            -
+             Zweitarif
+1-06-7-032   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Mehrtarifzähler             €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-033   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Prepaymentzähler            €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-034   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME Maximumzähler               €/Tag                 -                        -                           €/(Jahr)            -
+
+1-06-7-035   Messstellenbetrieb bei kME, Niederspannung, bei monatlicher Ablesung kME EDL21 Zähler                €/Tag                 -                        -                           €/(Jahr)            -
+
+
+
+
+                                                                                                                          Seite 10 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                                                      Stand 07.10.2025
+
+
+                                                                                                                                                     Umrechnung der gemäß StromNEV                                         Preisbestandteile
+                                              Bestandteile des elektronischen Preisblattes                                                           berechneten Netzentgelte gemäß                               Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                  Formatvorgabe elektronisches Preisblatt                               17 und § 19 StromNEV
+
+    ID                                              Bezeichnung                                               Einheit               Preis                                 Einheit                                     Einheit            Preis
+             Messstellenbetrieb bei kME, alle Spannungsebenen, Telekommunikationsanschluss durch NB                                             Preis lt. Preisblatt 7 geteilt durch Anzahl Tage Kalenderjahr;
+1-06-0-036                                                                                                      €/Tag             0,05575342                                                                           €/(Jahr)       20,35000000
+             (Fernauslesung)                                                                                                                                   Rundung auf 8 Nachkommastellen
+             Messstellenbetrieb bei kME, alle Spannungsebenen. Telekommunikationsanschluss durch AN
+1-06-0-037                                                                                                      €/Tag                     -                                    -                                       €/(Jahr)            -
+             (Fernauslesung)
+             Messstellenbetrieb bei kME, alle Spannungsebenen, manuelle vor Ort Ablesung bei kME mit
+1-06-0-038                                                                                                    €/Vorgang                   -                                    -                                      €/Vorgang            -
+             registrierender Last-/Einspeisemessung
+1-06-0-039   Entgelt Impulsweitergabe                                                                           €/Tag                     -                                    -                                       €/(Jahr)            -
+             Individuelle Netzentgelte
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV Jahresbenutzungsdauerstunden <2500
+1-07-1-001                                                                                                    €/(kW*Tag)               -                                       -                                    €/(kW und Jahr)        -
+             h/a Leistungspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV Jahresbenutzungsdauerstunden <2500
+1-07-1-002                                                                                                      €/kWh                  -                                       -                                        ct/kWh             -
+             h/a Arbeitspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV Jahresbenutzungsdauerstunden >=2500
+1-07-1-003                                                                                                    €/(kW*Tag)               -                                       -                                    €/(kW und Jahr)        -
+             h/a Leistungspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 1 StromNEV Jahresbenutzungsdauerstunden >=2500
+1-07-1-004                                                                                                      €/kWh                  -                                       -                                        ct/kWh             -
+             h/a Arbeitspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 2 StromNEV
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 2 StromNEV Jahresbenutzungsdauerstunden <2500
+1-07-2-001                                                                                                    €/(kW*Tag)               -                                       -                                    €/(kW und Jahr)        -
+             h/a Leistungspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 2 StromNEV Jahresbenutzungsdauerstunden <2500
+1-07-2-002                                                                                                      €/kWh                  -                                       -                                        ct/kWh             -
+             h/a Arbeitspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 2 StromNEV Jahresbenutzungsdauerstunden >=2500
+1-07-2-003                                                                                                    €/(kW*Tag)               -                                       -                                    €/(kW und Jahr)        -
+             h/a Leistungspreis
+             Individuelle Netzentgelte nach § 19 Abs. 2 Satz 2 StromNEV Jahresbenutzungsdauerstunden >=2500
+1-07-2-004                                                                                                      €/kWh                  -                                       -                                        ct/kWh             -
+             h/a Arbeitspreis
+1-07-3-001   Singulär genutzte Betriebsmittel nach § 19 Abs. 3 StromNEV                                         €/Tag                  -                                       -                                        €/Jahr             -
+             Individuelle Netzentgelte nach § 19 StromNEV
+             Pauschale Reduzierung nach Modul 1 der Festlegungen zu Netzentgelten bei Anwendung der                                             Preis lt. Preisblatt 12 geteilt durch Anzahl Tage Kalenderjahr;
+1-07-4-001                                                                                                      €/Tag             -0,28117808                                                                           €/Jahr          -102,63
+             netzorientierten Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren                                                                Rundung auf 8 Nachkommastellen
+             Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-300 und BK8-22/010-A
+             Konzessionsabgaben
+             Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden in
+1-08-1-001                                                                                                     €/kWh                   -                                       -                                        ct/kWh             -
+             Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV
+            Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Entnahme von
+1-08-1-AGS- Marktlokationen von Tarifkunden in Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV
+                                                                                                                €/kWh                  -                                       -                                        ct/kWh             -
+KG          AGS: Amtlicher Gemeindeschlüssel
+            KG: Kundengruppe; siehe Tabelle oben
+
+
+
+
+                                                                                                                        Seite 11 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                        Stand 07.10.2025
+
+
+                                                                                                                                             Umrechnung der gemäß StromNEV                   Preisbestandteile
+                                             Bestandteile des elektronischen Preisblattes                                                    berechneten Netzentgelte gemäß         Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                          Formatvorgabe elektronisches Preisblatt         17 und § 19 StromNEV
+
+    ID                                             Bezeichnung                                             Einheit              Preis                     Einheit                       Einheit            Preis
+            Gemeindespezifische, kundengruppenindividuelle, gezonte Konzessionsabgabe für Entnahme von
+            Marktlokationen von Tarifkunden in Schwachlastzeiten gem. § 2 Abs. 2 Satz 1 a) KAV
+1-08-2-AGS-
+            AGS: Amtlicher Gemeindeschlüssel                                                                 €/kWh                -                          -                            ct/kWh             -
+KG-Z
+            KG: Kundengruppe; siehe Tabelle oben
+            Z : Nummer der Zone; mit 1 ≤ Z ≤ 9
+            Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Sondervertragskunden
+1-08-3-001                                                                                                  €/kWh                 -                          -                            ct/kWh             -
+            gem. § 2 Abs. 3 Satz 1 KAV
+            Gemeindespezifische Konzessionsabgabe für Entnahme von Marktlokationen von
+1-08-3-AGS                                                                                                  €/kWh                 -                          -                            ct/kWh             -
+            Sondervertragskunden gem. § 2 Abs. 3 Satz 1 KAV
+            Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2
+1-08-4-001 Abs. 2 Satz 1b) KAV                                                                              €/kWh                 -                          -                            ct/kWh             -
+            bis 25.000 Einwohner
+            Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2
+1-08-4-002 Abs. 2 Satz 1b) KAV                                                                              €/kWh                 -                          -                            ct/kWh             -
+            von 25.000 bis 100.000 Einwohner
+            Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2
+1-08-4-003 Abs. 2 Satz 1b) KAV                                                                              €/kWh                 -                          -                            ct/kWh             -
+            von 100.000 bis 500.000 Einwohner
+            Höchstbetrag der Konzessionsabgabe für Entnahme von Marktlokationen von Tarifkunden gem. § 2
+1-08-4-004 Abs. 2 Satz 1b) KAV                                                                              €/kWh                 -                          -                            ct/kWh             -
+            über 500.000 Einwohner
+            Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Entnahme von
+1-08-4-AGS- Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV
+                                                                                                            €/kWh                     -                      -                            ct/kWh             -
+KG          AGS: Amtlicher Gemeindeschlüssel
+            KG: Kundengruppe; siehe Tabelle oben
+            Gemeindespezifische, kundengruppenindividuelle, gezonte Konzessionsabgabe für Entnahme von
+            Marktlokationen von Tarifkunden gem. § 2 Abs. 2 Satz 1b) KAV
+1-08-5-AGS-
+            AGS: Amtlicher Gemeindeschlüssel                                                                €/kWh                     -                      -                            ct/kWh             -
+KG-Z
+            KG: Kundengruppe; siehe Tabelle oben
+            Z : Nummer der Zone; mit 1 ≤ Z ≤ 9
+1-08-6-001 Für Marktlokationen deren (Teil-)Menge von der Konzessionsabgabe befreit ist                     €/kWh                     -                      -                            ct/kWh             -
+            Tagesleistungspreissystem
+1-09-1-001 Tagesleistungspreissystem Höchstspannung Leistungspreis                                         €/(kW*Tag)                 -                      -                        €/(kW und Jahr)        -
+1-09-1-002 Tagesleistungspreissystem Höchstspannung Arbeitspreis                                             €/kWh                    -                      -                            ct/kWh             -
+1-09-2-001 Tagesleistungspreissystem Umspannung Höchst-/Hochspannung Leistungspreis                        €/(kW*Tag)                 -                      -                        €/(kW und Jahr)        -
+1-09-2-002 Tagesleistungspreissystem Umspannung Höchst-/Hochspannung Arbeitspreis                            €/kWh                    -                      -                            ct/kWh             -
+1-09-3-001 Tagesleistungspreissystem Hochspannung Leistungspreis                                           €/(kW*Tag)                 -                      -                        €/(kW und Jahr)        -
+1-09-3-002 Tagesleistungspreissystem Hochspannung Arbeitspreis                                               €/kWh                    -                      -                            ct/kWh             -
+1-09-4-001 Tagesleistungspreissystem Umspannung Hoch-/Mittelspannung Leistungspreis                        €/(kW*Tag)                 -                      -                        €/(kW und Jahr)        -
+1-09-4-002 Tagesleistungspreissystem Umspannung Hoch-/Mittelspannung Arbeitspreis                            €/kWh                    -                      -                            ct/kWh             -
+1-09-5-001 Tagesleistungspreissystem Mittelspannung Leistungspreis                                         €/(kW*Tag)                 -                      -                        €/(kW und Jahr)        -
+
+
+
+
+                                                                                                                    Seite 12 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                              Stand 07.10.2025
+
+
+                                                                                                                                                   Umrechnung der gemäß StromNEV                   Preisbestandteile
+                                                 Bestandteile des elektronischen Preisblattes                                                      berechneten Netzentgelte gemäß         Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                Formatvorgabe elektronisches Preisblatt         17 und § 19 StromNEV
+
+     ID                                                 Bezeichnung                                               Einheit             Preis                     Einheit                       Einheit            Preis
+1-09-5-002     Tagesleistungspreissystem Mittelspannung Arbeitspreis                                              €/kWh                     -                      -                           ct/kWh              -
+               Preisbestandteile, deren Höhe aufgrund gesetzlicher Vorgaben durch Dritte jährlich ermittelt und
+               veröffentlicht werden
+               Aufschläge aufgrund des § 26 KWKG
+1-10-1-001     Aufschläge aufgrund des KWKG für nicht privilegierte Letztverbraucher                               €/kWh                -                          -                           ct/kWh              -
+1-10-1-002     Für Marktlokationen deren (Teil-)Menge von dem Aufschlag des § 26 KWKG befreit ist                  €/kWh                -                          -                           ct/kWh              -
+
+1-10-1-00312 100 % Privilegierung nach EnFG des Aufschlags aufgrund des § 26 KWKG                                  €/kWh                -                          -                           ct/kWh              -
+1-10-1-00412 80 % Privilegierung nach EnFG des Aufschlags aufgrund des § 26 KWKG                                   €/kWh                -                          -                           ct/kWh              -
+             Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG
+1-10-2-001     Aufschläge aufgrund der Offshore-Haftungsumlage für nicht privilegierte Letztverbraucher            €/kWh                -                          -                           ct/kWh              -
+               Für Marktlokationen deren (Teil-)Menge von dem Aufschlag der Offshore-Netzumlage nach § 17f
+1-10-2-002                                                                                                         €/kWh                -                          -                           ct/kWh              -
+               EnWG befreit ist
+1-10-2-00312 100 % Privilegierung nach EnFG des Aufschlags aufgrund der Offshore-Netzumlage nach § 17f EnWG        €/kWh                -                          -                           ct/kWh              -
+
+          12
+1-10-2-004     80 % Privilegierung nach EnFG des Aufschlags aufgrund der Offshore-Netzumlage nach § 17f EnWG       €/kWh                -                          -                           ct/kWh              -
+
+          13   Aufschläge aufgrund der Umlage für abschaltbare Lasten Letztverbrauch
+1-10-3-001                                                                                                         €/kWh                -                          -                           ct/kWh              -
+               je Marktlokation
+          13   Für Marktlokationen deren (Teil-)Menge von dem Aufschlag der Umlage
+1-10-3-002                                                                                                         €/kWh                -                          -                           ct/kWh              -
+               für abschaltbare Lasten befreit ist
+               Aufschläge für besondere Netznutzung
+               Aufschläge für besondere Netznutzung Letztverbrauchergruppe A (Strommengen von
+1-10-4-001                                                                                                         €/kWh                -                          -                           ct/kWh              -
+               Letztverbrauchern für die jeweils ersten 1.000.000 kWh je Marktlokation)
+               Aufschläge für besondere Netznutzung Letztverbrauchergruppe B (Letztverbraucher, deren
+1-10-4-002     Jahresverbrauch an einer Marktlokation 1.000.000 kWh übersteigt, zahlen zusätzlich für über         €/kWh                -                          -                           ct/kWh              -
+               1.000.000 kWh hinausgehende Strombezüge eine § 19 StromNEVUmlage)
+
+               Aufschläge für besondere Netznutzung Letztverbrauchergruppe C (Letztverbraucher, die dem
+               produzierenden Gewerbe, dem schienengebundenen Verkehr oder der Eisenbahninfrastruktur
+1-10-4-003     zuzuordnen sind und deren Stromkosten im vorangegangenen Geschäftsjahr vier Prozent des             €/kWh                -                          -                           ct/kWh              -
+               Umsatzes überstiegen haben, zahlen für über 1.000.000 kWh hinausgehende Strombezüge eine § 19
+               StromNEV-Umlage)
+
+1-10-4-004     Für Marktlokationen deren (Teil- )Menge von dem Aufschlag für besondere Netznutzung befreit ist     €/kWh                -                          -                           ct/kWh              -
+               Aufschläge aufgrund der §§ 26 und 27c KWKG für Schienenbahnen
+               Aufschläge aufgrund des § 26 KWKG, die auch für Schienenbahnen für die jeweils ersten 1.000.000
+1-10-5-001                                                                                                         €/kWh                -                          -                           ct/kWh              -
+               kWh je Marktlokation gelten.
+
+
+
+
+                                                                                                                          Seite 13 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+ Netzentgelte Strom 2026
+                                                                                                                                                                                                      Stand 07.10.2025
+
+
+                                                                                                                                           Umrechnung der gemäß StromNEV                   Preisbestandteile
+                                              Bestandteile des elektronischen Preisblattes                                                 berechneten Netzentgelte gemäß         Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                        Formatvorgabe elektronisches Preisblatt         17 und § 19 StromNEV
+
+    ID                                               Bezeichnung                                              Einheit           Preis                   Einheit                       Einheit            Preis
+             Aufschläge aufgrund des § 27c KWKG für Schienenbahnen Letztverbrauchergruppe B
+             (Letztverbraucher, die dem schienengebundenen Verkehr zuzuordnen sind und deren
+1-10-5-002                                                                                                     €/kWh              -                        -                           ct/kWh              -
+             Jahresverbrauch an einer Marktlokation (Abnahmestelle) 1.000.000 kWh übersteigt, zahlen
+             zusätzlich für über 1.000.000 kWh hinausgehende Strombezüge eine begrenzte KWKG-Umlage)
+
+             Aufschläge aufgrund des § 27c KWKG für Schienenbahnen Letztverbrauchergruppe C
+             (Letztverbraucher, die dem schienengebundenen Verkehr zuzuordnen sind und deren Stromkosten
+1-10-5-003                                                                                                     €/kWh              -                        -                           ct/kWh              -
+             im vorangegangenen Geschäftsjahr vier Prozent des Umsatzes überstiegen haben, zahlen für über
+             1.000.000 kWh hinausgehende Strombezüge eine begrenzte KWKG-Umlage)
+             Aufschläge aufgrund der Offshore-Netzumlage für Schienenbahnen nach § 17f EnWG
+             Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG, die
+1-10-6-001   auch für Schienenbahnen für die jeweils ersten 1.000.000 kWh je                                   €/kWh              -                        -                           ct/kWh              -
+             Marktlokation gelten.
+             Aufschläge aufgrund der Offshore-Netzumlage für Schienenbahnen nach
+             § 17f Abs. 5 Satz 2 EnWG
+             Letztverbrauchergruppe B (Letztverbraucher, die dem
+1-10-6-002   schienengebundenen Verkehr zuzuordnen sind und deren                                              €/kWh              -                        -                           ct/kWh              -
+             Jahresverbrauch an einer Marktlokation (Abnahmestelle) 1.000.000 kWh
+             übersteigt, zahlen zusätzlich für über 1.000.000 kWh hinausgehende
+             Strombezüge eine begrenzte Offshore-Netzumlage)
+             Aufschläge aufgrund der Offshore-Netzumlage für Schienenbahnen nach
+             § 17f Abs. 5 Satz 2 EnWG
+             Letztverbrauchergruppe C (Letztverbraucher, die dem
+1-10-6-003   schienengebundenen Verkehr zuzuordnen sind und deren Stromkosten                                  €/kWh              -                        -                           ct/kWh              -
+             im vorangegangenen Geschäftsjahr vier Prozent des Umsatzes
+             überstiegen haben, zahlen für über 1.000.000 kWh hinausgehende
+             Strombezüge eine begrenzte Offshore-Netzumlage)
+             Aufschläge aufgrund der §§ 26 und 27a KWKG für Anlagen zur Verstromung von Kuppelgasen
+
+1-10-7-001   Aufschläge aufgrund des § 26 KWKG, die auch für Anlagen zur Verstromung von Kuppelgasen gelten    €/kWh              -                        -                           ct/kWh              -
+             Aufschläge aufgrund des § 27a KWKG für Anlagen zur Verstromung von Kuppelgasen, die eine
+1-10-7-002                                                                                                     €/kWh              -                        -                           ct/kWh              -
+             begrenzte Umlage zahlen
+             Aufschläge aufgrund der Offshore-Netzumlage für Schienenbahnen nach § 17f EnWG für Anlagen
+             zur Verstromung von Kuppelgasen
+             Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG, die auch für Anlagen zur
+1-10-8-001                                                                                                     €/kWh              -                        -                           ct/kWh              -
+             Verstromung von Kuppelgasen gelten
+             Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG für Anlagen zur Verstromung von
+1-10-8-002                                                                                                     €/kWh              -                        -                           ct/kWh              -
+             Kuppelgasen, die nach § 27a KWKG eine begrenzte Umlage zahlen
+             Aufschläge aufgrund der §§ 26 und 27b KWKG für Stromspeicher
+1-10-9-001   Aufschläge aufgrund des § 26 KWKG, die auch für Stromspeicher gelten                              €/kWh              -                        -                           ct/kWh              -
+
+
+
+
+                                                                                                                    Seite 14 von 15
+
+Tabelle: Informatorische Überleitung der Netzentgelte der Preisblätter mit Jahres- bzw. Monatspreisen gemäß § 17 und § 19 StromNEV in die Darstellung lt. GPKE der BNetzA Festlegung BK6-20-160
+
+
+
+     Netzentgelte Strom 2026
+                                                                                                                                                                                                                                   Stand 07.10.2025
+
+
+                                                                                                                                                             Umrechnung der gemäß StromNEV                              Preisbestandteile
+                                                         Bestandteile des elektronischen Preisblattes                                                        berechneten Netzentgelte gemäß                    Jahres- bzw. Monatspreise gemäß §
+                                                                                                                                                          Formatvorgabe elektronisches Preisblatt                    17 und § 19 StromNEV
+
+        ID                                                   Bezeichnung                                                   Einheit                Preis                         Einheit                            Einheit            Preis
+                  Aufschläge aufgrund des § 27b KWKG für Stromspeicher, deren Strom, der zum Zweck der
+1-10-9-002        Zwischenspeicherung in einem elektrischen, chemischen, mechanischen oderphysikalischen Speicher            €/kWh                  -                                -                              ct/kWh              -
+                  verbraucht wird, keine Umlage zahlen
+                  Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG für Stromspeicher
+1-11-1-001        Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG, die auch für Stromspeicher gelten             €/kWh                  -                                -                              ct/kWh              -
+
+                  Aufschläge aufgrund der Offshore-Netzumlage nach § 17f EnWG für Stromspeicher nach § 27b
+1-11-1-002        KWKG, deren Strom, der zum Zweck der Zwischenspeicherung in einem elektrischen, chemischen,                €/kWh                  -                                -                              ct/kWh              -
+                  mechanischen oder physikalischen Speicher verbraucht wird, keine Umlage zahlen
+
+                  Separat bestellbare Einzelleistungen für Marktlokationen und Verzugskosten
+2-01-7-001        Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit                                          €/Auftrag              73,79                   Preis lt. Preisblatt 19                  €/Auftrag          73,79
+2-01-7-002        Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit                                      €/Auftrag              81,58                   Preis lt. Preisblatt 19                  €/Auftrag          81,58
+2-01-7-003        Erfolglose Unterbrechung                                                                                 €/Auftrag                -                                 -                            €/Auftrag            -
+                  Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung bis zum
+2-01-7-004                                                                                                                 €/Auftrag                -                                -                             €/Auftrag            -
+                  Vortag der Sperrung
+                  Stornierung eines Auftrags zur Unterbrechung der Anschlussnutzung am Tag der
+2-01-7-005                                                                                                                 €/Auftrag                -                                -                             €/Auftrag            -
+                  Sperrung
+2-01-7-006        Wiederherstellung der Anschlussnutzung außerhalb der regulären Arbeitszeit                               €/Auftrag                -                                -                             €/Auftrag            -
+2-02-0-001        Verzugskosten pauschal                                                                                     €/Fall                 -                                -                               €/Fall             -
+2-02-0-002        Verzugskosten variabel                                                                                       €                    -                                -                                 €                -
+                  Freiwillige Abrechnung sonstiger Leistungen14 für die Sparte Strom
+3-01-0-001        Blindarbeit                                                                                               €/kvarh                 -       Wird aktuell nicht über Netznutzung abgerechnet.        €/kvarh             -
+3-02-0            Tarifierte Blindarbeit                                                                                                            -       Wird aktuell nicht über Netznutzung abgerechnet.                            -
+3-02-0-001        Blindarbeit 1                                                                                             €/kvarh                 -       Wird aktuell nicht über Netznutzung abgerechnet.        €/kvarh             -
+3-02-0-002        Blindarbeit 2                                                                                             €/kvarh                 -       Wird aktuell nicht über Netznutzung abgerechnet.        €/kvarh             -
+
+*) falls nötig, gerundet auf 8 Nachkommastellen
+
+8
+    Die Artikel-ID ist gültig bis 1.1.2025, 00:00 Uhr.
+9
+    Die Einschränkung der Gültigkeit erfolgt durch die Beschlüsse BK6-22-300 und BK8-22/010-A.
+10
+     Die Gültigkeit ergibt sich aus den BNetzA-Festlegungen BK6-22-300 und BK8-22/010-A.
+11
+     Die Artikel-ID ist gültig ab 1.1.2025, 00:00 Uhr
+12
+     Die Anwendbarkeit von § 22 EnFG ist abhängig von der beihilferechtlichen Genehmigung der EU-Kommission zum EnFG.
+13
+     Diese Artikel-ID darf nur für Gültigkeitszeiträume bis zum 1.1.2024, 00:00 Uhr in Preisblättern, Stammdaten und Rechnungen enthalten sein.
+14
+     nur noch auf freiwilliger Basis mit den Lieferanten abrechenbar ansonsten mit den Anschlussnutzern, s. GPKE-Festlegung BK6
+
+
+
+
+                                                                                                                                   Seite 15 von 15
+

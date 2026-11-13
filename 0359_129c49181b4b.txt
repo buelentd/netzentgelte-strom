@@ -1,0 +1,197 @@
+URL: https://www.rw-bodensee.de/fileadmin/user_upload/Documents/2-Netze/2-Stromnetz/Vertraege/Netznutzung-Anlage-1-Abwicklung-Datenaustausch-Strom.pdf
+Netzbetreiber: Regionalwerk Bodensee Netze GmbH ＆ Co. KG
+
+                            Abwicklung der Netznutzung und Datenaustausch Strom (Anlage1)
+
+                            Gültigkeit: Diese Anlage gilt für Netznutzungs- und Lieferantenrahmenverträge der Regionalwerk Bodensee Netze
+                            GmbH & Co.KG
+
+                            I. Abwicklung der Netznutzungsan- und Abmeldung und des               ges notwendig ist. Die Vertragspartner sind berechtigt, insbeson-
+                            Datenaustauschs                                                       dere für die Erfassung, Bilanzierung und Abrechnung der Strom-
+                                                                                                  lieferungen Verbrauchs-, Abrechnungs- und Vertragsdaten an
+                            1. Der Lieferant teilt dem Netzbetreiber jede An- und Abmeldung       Dritte in dem Umfang weiterzugeben, wie dies zur ordnungsge-
+                            eines Netznutzers – möglichst gesammelt einmal pro Monat –            mäßen technischen und kommerziellen Abwicklung erforderlich ist.
+                            unter Angabe der erforderlichen Daten ausschließlich in elektro-
+                            nischer Form (per E-Mail) mit. Das Format und die Einzelheiten         7. Für nach Lastprofilen belieferte Entnahmestellen teilt der Netz-
+                            der Kundenwechselprozesse orientieren sich an den Vorgaben der betreiber dem Netznutzer/Lieferanten die Daten spätestens 1 Monat
+                            Bundesnetzagentur zu den Geschäftsprozessen und Datenforma- nach Ablesung mit. Für Entnahmestellen mit registrierender ¼-h-
+                            ten (GPKE).                                                            Leistungsmessung teilt der Netzbetreiber die Daten am 5. Werktag
+                                                                                                   des auf die Lieferung folgenden Monats mit. Die technischen
+                            2. Die An- und Abmeldung der Entnahmestelle für die Versorgung Einzelheiten des Datenaustauschs sind unter Punkt II. Datenaus-
+                            durch einen Lieferanten kann grundsätzlich nur mit einer Frist von tausch festgelegt. Der Datenaustausch zur Anbahnung und Ab-
+                            einem Monat zum Ablauf des Folgemonats erfolgen. Die An- bzw. wicklung der Netznutzung zwischen Netzbetreiber und Netz-
+                            Abmeldung muss gemäß § 14 Abs. 4 StromNZV ordnungsgemäß nutzer/Lieferant erfolgt elektronisch gem. § 22 StromNZV.
+                            und vollständig sein. Der Netzbetreiber darf eine nicht ordnungs-
+                            gemäße oder nicht vollständige Meldung nur zurückweisen, wenn 8. Der Netzbetreiber übermittelt die für die Verbrauchsabrechnung
+                            die Entnahmestelle anhand der gemeldeten Daten nicht eindeutig und Bilanzierung relevanten Leistungswerte innerhalb der ver-
+                            identifizierbar ist. In diesem Fall ist die Meldung für diese Entnah- traglich vereinbarten Fristen an den Netznutzer/Lieferant. Der ist
+                            mestelle unwirksam.                                                    verpflichtet, die übermittelten Werte unverzüglich zu prüfen und
+                                                                                                   dafür Sorge zu tragen, dass der Bilanzkreisverantwortliche seiner-
+                            3. Der Netzbetreiber bestätigt dem Lieferanten spätestens am           seits die erforderliche Prüfung fristgerecht durchführt. Wenn Ein-
+                            15. Werktag des auf die An- bzw. Abmeldung folgenden Monats            wände bestehen, hat der Netznutzer/Lieferant dem Netzbetreiber
+                            (Fristenmonat) die neu zugeordneten Kunden. Die Bestätigung            dies unverzüglich anzuzeigen. Unterlässt der Netznutzer/ Lieferant
+                            zur Aufnahme der Netznutzung erfolgt durch die Rückmeldung            die Anzeige, gelten die Leistungswerte für die Bilanzkreisabrech-
+                            in UTILMD-CSV. Mit der Bestätigung ist die Zuordnung und damit nung als genehmigt. Der Netzbetreiber ist verpflichtet, die für die
+                            die Veränderung für den Netzbetreiber und den Netznutzer/Liefe- Bilanzierung bzw. für die Bilanzkreisabrechnung relevanten Daten
+                            rant verbindlich. Eine Ablehnung der Zuordnung einer Entnahme- rechtzeitig an den Übertragungsnetzbetreiber und ggf. an den
+                            stelle wird der Netzbetreiber unter Angabe der Kennziffern be-         Bilanzkreisverantwortlichen zu übermitteln.
+                            gründen.
+                                                                                                   9. Einzelheiten sind in Punkt II. Datenaustausch geregelt.
+                            4. Für Entnahmestellen ohne Lastgangmessung ordnet der Netz-
+                            betreiber das entsprechende Lastprofil zu und stellt für jede Ent- 10. Die Vertragspartner werden alles Erforderliche und Zumutbare
+                            nahmestelle eine Jahresverbrauchsprognose auf, die in der Regel tun, um den Übertragungsnetzbetreiber bei der Erfüllung seiner
+                            auf dem Vorjahresverbrauch basiert. Dem Netznutzer/Lieferant           Verpflichtung aus § 8 Abs. 2 StromNZV für die Bilanzkreisabrech-
+                            steht das Recht zu, unplausiblen Prognosen zu widersprechen und nung zu unterstützen.
+                            dem Netzbetreiber eine eigene Prognose zu unterbreiten. Kommt
+                            keine Einigung zustande, legt der Netzbetreiber die Prognose über II. Datenaustausch
+                            den Jahresverbrauch fest. Weitere Einzelheiten sind unter Punkt
+                            III. „Regelung und Handhabung von Lastprofilen“ geregelt. In be- 1. Begriffsbestimmungen zum Datenaustausch
+                            gründeten Ausnahmefällen können Netzbetreiber und Netznutzer/
+                            Lieferant gemeinsam die Jahresprognose auch unterjährig anpassen. 1.1 Best-Practice-Empfehlungen
+                                                                                                   Empfehlungen, welche durch die Task Force Netzzugang des
+                            5. Der Netzbetreiber ist berechtigt, das Verfahren oder die Lastpro- BMWA in Zusammenarbeit aller Marktteilnehmer erarbeitet und
+                            file zu ändern, wenn dies erforderlich oder zweckmäßig ist. Der        verabschiedet wurden.
+                            Netzbetreiber teilt dem Netznutzer/Lieferant die Änderung des
+                            Verfahrens mit einer Frist von 3 Monaten und die Änderung der          1.2 GPKE
+                            Lastprofile mit einer Frist von einem Monat zum Ende eines Monats Vorgabe der Bundesnetzagentur zu den Geschäftsprozessen und
+                            in Textform mit.                                                       Datenformaten.
+
+                            6. Die Vertragspartner werden die im Zusammenhang mit der             1.3 EDIFACT
+                            Durchführung dieses Vertrages erhobenen oder zugänglich ge-          UN-standardisiertes Format zum Datenaustausch zwischen Markt-
+                            machten Daten zum Zweck der Datenverarbeitung unter Beachtung         partnern (United Nations Economic Commission for Europe,
+                            von § 9 EnWG sowie der datenschutzrechtlichen Bestimmungen            www.unece.org)
+
+
+
+Seite 1 · Stand: 1.1.2015
+                            verarbeiten und nutzen, soweit dies zur Durchführung des Vertra-
+
+
+                            Regionalwerk Bodensee                         Waldesch 29             Telefon 07542 9379-0     info@rw-bodensee.de
+                            Netze GmbH & Co. KG                           88069 Tettnang          Telefax 07542 9379-101   www.rw-bodensee.de
+
+                            1.4 Lastgang                                                        Umzugsmeldungen findet das Mehr-/Mindermengenmodell An-
+                            Gesamtheit der Energiemengen bzw. Leistungsmittelwerte, die         wendung. Der Lieferantenwechsel findet damit immer in der
+                            über eine ganzzahlige Anzahl von Registrierperioden ermittelt      Zukunft statt. Die Energielieferungen in der Vergangenheit bei
+                            wurden.                                                             der verzögerten Umzugsmeldung werden mit dem Lieferanten
+                                                                                                als Mehr-/ Mindermengen verrechnet. Die Zuordnung der Liefer-
+                            1.5 Lastgangzähler                                                  stelle zu dem entsprechenden Lieferanten ändert sich jeweils für
+                            Messeinrichtung mit einer Einrichtung zur fortlaufenden Registrie- den nächsten Ersten eines Monats. Die in der Zeit zwischen dem
+                            rung von Energiemengen oder Zählerständen in einem wählbaren Auszugsdatum und dem Datum des Lieferantenwechsels zuviel
+                            Zeitintervall (Standard 15-Minuten-Intervall).                      bilanzierte Abgabemenge, berücksichtigt der VNB bei einem Mehr-
+                                                                                                / Mindermengenausgleich als Mehrmenge des alten Lieferanten.
+                            1.6 Lastprofil                                                      Die in der Zeit zwischen dem Einzugsdatum und dem Datum des
+                            Zeitreihe, die für jede Abrechnungsperiode einen Leistungswert     Bilanzkreiswechsels zuwenig bilanzierte Abgabemenge berück-
+                            festlegt; Lastprofile werden bei Kleinkunden der Bilanzierung zu    sichtigt der VNB bei einem Mehr-/ Mindermengenausgleich als
+                            Grunde gelegt und ersetzen die gemessenen Lastgänge.                Mindermenge des neuen Lieferanten. Die Abwicklung verzöger-
+                                                                                                ter Umzugsmeldungen kann, wie in der GPKE beschrieben, nur
+                            1.7 UTILMD                                                          bis 6 Wochen rückwirkend erfolgen.
+                            Beschreibung eines Datenaustauschformates zum Austausch von
+                            Stammdaten zur Lieferantenzuordnung. (UTILMD ist ein EDIFACT- 4. Datenformate
+                            Format, siehe 1.3)                                                  Zur Durchführung der Netznutzung werden zwischen VNB und
+                                                                                                dem Lieferanten folgende Daten ausgetauscht:
+                            1.8 Werktag                                                         • An- und Abmeldungen für den Lieferantenwechsel im Format
+                            Tage von Montag bis einschließlich Freitag, ausschließlich Samstage, UN-EDIFACT / UTILMD, übergangsweise UTILMD/CSV
+                            Sonntage und gesetzliche Feiertage (24.12 und 31.12 werden als      • der Lieferanten im Format UN-EDIFACT / UTILMD, übergangs-
+                            Feiertage behandelt).                                                 weise UTILMD/CSV
+                                                                                                • Zählerwerte (Verrechnungsdaten) im Format XML
+                            2. Kundenzuordnung                                                  • Zeitreihen im Format MSCONS
+
+                            2.1 Lieferant und Verteilnetzbetreiber werden für den Kundenaus-  5. Identifikatoren
+                            tausch nach UN-EDIFACT durch die VDEW Codenummer bzw.              Im Strommarkt sind zum Informationsaustausch eindeutige
+                                                                                               Identifikationen zur Verständigung zwischen den Marktpartnern
+                            International Location Number (ILN) identifiziert. Für den Fahrplan-
+                            austausch werden der Übertragungsnetzbetreiber, Bilanzkreisver-    notwendig.
+                            antwortliche und der Lieferant durch den ETSO Identification Code  Zu identifizieren sind beispielsweise:
+                            (EIC) identifiziert.                                               • Zählpunkte/Lieferstellen
+                                                                                               • Kunden
+                            2.2 Der neue Lieferant meldet den angestrebten Lieferantenwech- • Bilanzkreise/Energiekonten
+                            sel spätestens am letzten Tag desjenigen Monats beim Netzbetrei- • Bilanzkreisverantwortliche
+                            ber an, der dem Vormonat vorangeht, in dem der Wechsel abge- • Lieferanten
+                            wickelt wird. Mit dieser Maßnahme wird der Wechselprozess ein- • Netzbetreiber
+                            geleitet, der innerhalb des Fristenmonats mit Wirkung zum ersten Zur Abwicklung von Energietransfers wird eine exakte
+                            Tag 00:00 Uhr des nachfolgenden Monats vollzogen wird.             Beschreibung zur Zuordnung von Energiemengen verwendet,
+                            Spätestens am Ende des 5. Werktages des Fristenmonats muss dem die aus drei Teilen besteht:
+                            Netzbetreiber die Abmeldung des Kunden durch den bisherigen • Konto (Bilanzkreis, Lieferantenkonto)
+                            Lieferanten vorliegen. Andernfalls wird die Anmeldung des neuen • Kontoinhaber oder -bevollmächtigter (Lieferant)
+                            Lieferanten abgelehnt. Die folgenden 10 Werktage stehen dem        • Kontoführende Stelle (Bilanzkreiskoordinator)
+                            Netzbetreiber für die Bearbeitung der An-/Abmeldung zur Verfü- Zur Identifikation von Transaktionen zwischen den Konten werden
+                            gung. Spätestens am 15. Werktag des Fristenmonats gehen dem        Buchungsidentifikationen (Buchungs-IDs) verwendet. Für den
+                            bisherigen Lieferanten und dem neuen Lieferanten Bestätigungen Austausch von lieferstellenbezogenen Daten wird eine eindeutige
+                            über die Ummeldung zu.                                            Identifizierung zur zeitgerechten und automatischen Abwicklung
+                                                                                               der Prozesse verwendet.
+                            2.3 Im Falle einer Lieferantenkonkurrenz informiert der VNB die    Folgende drei Kombinationen, sind für eine gesicherte
+                            beteiligten Lieferanten bis zum 6. Werktag des Fristenmonats über Identifizierung möglich.
+                            die Lieferantenkonkurrenz. Spätestens am Ende des 15. Werktages • (Zählpunkt Aggregation) oder (Zählpunkt) + Name/Firma Kunde
+                            teilt der Netzbetreiber die endgültige Zuordnung der Entnahme-      + Straße Lieferstelle + PLZ Lieferstelle + Ort Lieferstelle
+                            stelle den beteiligten Lieferanten mit.                            • Zählernummer + Name/Firma Kunde + Straße Lieferstelle + PLZ
+                                                                                                 Lieferstelle + Ort Lieferstelle
+                            3. Aus- und Einzüge                                               • Kundennummer bisheriger Lieferant + Name/Firma Kunde +
+                            Die Abwicklung verzögerter Umzugsmeldungen wird nach der             Straße Lieferstelle + PLZ Lieferstelle + Ort Lieferstelle + bisheriger
+                            Festlegung GPKE durchgeführt. Zur Abwicklung verzögerter            Lieferant
+
+
+
+Seite 2 · Stand: 1.1.2015   Regionalwerk Bodensee                          Waldesch 29              Telefon 07542 9379-0     info@rw-bodensee.de
+                            Netze GmbH & Co. KG                            88069 Tettnang           Telefax 07542 9379-101   www.rw-bodensee.de
+
+                            Ist eine eindeutige Identifikation aufgrund von falschen oder un- III. Regelung und Handhabung von Lastprofilen
+                            vollständigen Angaben nicht möglich, wird die An- bzw. Abmeldung
+                            zurückgewiesen.                                                   1. Lastprofilverfahren
+                                                                                               Im Netzgebiet des Regionalwerk Bodensee wird das synthetische
+                            6. Bereitstellung der Ist-Entnahmewerte und Verbrauchsdaten Lastprofilverfahren eingesetzt. Bei Abweichungen von der prog-
+                                                                                               nostizierten Jahresverbrauchsmenge wird das Mehr-/Mindermen-
+                            6.1 Der VNB stellt dem Lieferanten die Lastgänge und Lastprofile genverfahren angewandt.
+                            per E-Mail monatlich oder nach Absprache täglich zur Verfügung.
+                            Die gültigen Preise sind in der Anlage 2: Preisblatt aufgeführt. 2. Lastprofile
+                                                                                               Es kommen die VDEW-Lastprofile zur Anwendung. Die im Netz-
+                            6.2 Die berechnete Ist-Entnahme der synthetischen Lastprofile      gebiet des Regionalwerk Bodensee verwendeten Profile, können
+                            wird vom VNB je Lieferant, als Summenlastprofil der Entnahme-      auf Anfrage in elektronischer Form zur Verfügung gestellt werden.
+                            stellen des Lieferanten im Netzgebiet, spätestens 5 Werktage nach Zusätzlich sind die Profile im Internet benannt. Für die Sonderan-
+                            dem jeweiligen Liefermonat dem ÜNB, dem Lieferanten und ggf. wendungen wie Speicherheizung, Wärmepumpen, Wohnraum-
+                            dem Bilanzkreisverantwortlichen übermittelt. Zur Bilanzierung     lüftung sowie Straßenbeleuchtung gelten besondere Lastprofile.
+                            beim Bilanzkoordinator (ÜNB) werden Bilanzkreis und ggf. Liefe-
+                            rantenkonten geführt. Die VNB-Meldungen entsprechen dann          3. Zeiten der Anwendung
+                            Buchungen auf die Konten. Die Einrichtung oder Löschung von
+                            Energiekonten durch den Bilanzkoordinator (ÜNB) kann dement- 3.1. Zeiträume
+                            sprechend Auswirkungen auf die Mengenzuordnungen des VNB Die VDEW-Lastprofile gelten für folgende Zeiträume:
+                            haben. Hierüber bedarf es vertraglicher Regelungen. Bilanzkreis-
+                            konten werden auf Basis von Bilanzkreisverträgen beim Bilanz-        Winter                01.11 bis 20.03.
+                            koordinator (ÜNB) für seine Regelzone geführt. Innerhalb seiner    Sommer                15.05. bis 14.09.
+                            Regelzone werden diese über Bilanzkreisbezeichnungen nach EIC       Übergangszeit         21.03. bis 14.05. und 15.09. bis 31.10.
+                            identifziert, die von VDN oder ETSO vergeben werden.
+                                                                                               3.2. Feiertage
+                            6.3 Bei Entnahmestellen des Lieferanten im Netzgebiet mit Leis-    Als Feiertage gelten die gesetzlichen Feiertage in Baden-Württem-
+                            tungsmessung teilt der VNB dem Lieferanten innerhalb von 5         berg: Alle im relevanten Netzbereich geltenden Feiertage erhalten
+                            Werktagen des auf die Lieferung folgenden Monats die seit der      das Sonntagsprofil. Die Tage 24.12. und 31.12. erhalten das Sams-
+                            vorigen Feststellung der Messdaten bzw. seit Beginn der Lieferung tagslastprofil, sofern sie nicht auf einen Sonntag fallen.
+                            ermittelte Entnahmeleistung und den seit dem ermittelten Wirk-
+                            energieverbrauch für Abrechnungszwecke mit.
+
+                            6.4 Bei Entnahmestellen des Lieferanten im Netzgebiet ohne Leis-
+                            tungsmessung findet die Zählwertermittlung durch den Verteil-
+                            netzbetreiber bei Lieferbeginn, Lieferantenwechsel, Zählerwechsel
+                            und bei der Turnusablesung statt. Der Verteilnetzbetreiber stellt
+                            dem Lieferanten die Zählerwerte (Verrechnungsdaten) elektronisch
+                            (XML) zur Verfügung. Im Falle einer nicht durchführbaren Ablesung
+                            stellt der VNB Ersatzwerte zur Verfügung. Für die Kundengruppe
+                            „Profilkunden“ sind die Vorgaben des § 18 Strom GVV zu beachten.
+
+                            6.5 Die Zeitreihe der gesamten Entnahme (Lastgänge und Progno-
+                            selastprofile) im Netzgebiet durch die Entnahmestellen (Kunden)
+                            des Lieferanten stellt der VNB dem für ihn zuständigen ÜNB
+                            (EnBW Transportnetze AG) und dem Lieferanten 5 Werktage nach
+                            Ablauf eines Kalendermonats für den entsprechenden Kalender-
+                            monat bereit.
+
+                            7. Datensicherheit
+                            Aufgrund der Rechtsunsicherheit beim Versand von Kundendaten
+                            bemühen sich die Vertragspartner um die Einführung einer digi-
+                            talen Signatur und Verschlüsselung.
+
+
+
+
+Seite 3 · Stand: 1.1.2015   Regionalwerk Bodensee                        Waldesch 29              Telefon 07542 9379-0     info@rw-bodensee.de
+                            Netze GmbH & Co. KG                          88069 Tettnang           Telefax 07542 9379-101   www.rw-bodensee.de
+

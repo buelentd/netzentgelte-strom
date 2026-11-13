@@ -1,0 +1,436 @@
+URL: https://www.ulm-netze.de/fileadmin/content/downloadcenter/Strom/Preisblaetter/Ulm-Netze-Strom-Netznutzungspreise-2026.pdf
+Netzbetreiber: Stadtwerke Ulm/Neu-Ulm Netze GmbH
+
+Netznutzung Strom
+Preisblatt 1
+Gültig ab: 01.01.2026
+
+
+Netznutzungspreise für Abnahmestellen mit registrierender Leistungsmessung
+
+Voraussetzung bei Verbrauchswerten größer als 100.000 kWh p.a.
+oder bei Belieferung ab Mittelspannung und höher
+
+
+                                           Jahresbenutzungs-       Jahresbenutzungs-        Monatsleistungs-
+                                          dauer <= 2.500 h p.a.    dauer > 2.500 h p.a.          preis
+
+    Netzebene                             Leistung1     Arbeit    Leistung1     Arbeit    Leistung2     Arbeit
+
+                                            €/kW       ct/kWh       €/kW        ct/kWh      €/kW       ct/kWh
+
+    Hochspannungsnetz 110 kV                2,51         3,42       72,92        0,60       6,08         0,60
+
+
+    Umspannung HS/MS                        2,18         5,14       95,84        1,39       7,99         1,39
+
+
+    Mittelspannungsnetz 10/20 kV            2,44         5,67      104,10        1,60       8,68         1,60
+
+
+    Umspannung MS/NS                        2,03         6,68      101,51        2,70       8,46         2,70
+
+
+    Niederspannungsnetz 0,4 kV              1,14         7,57      114,29        3,04       9,52         3,04
+
+1
+    maximale Leistung pro Kalenderjahr
+2
+    maximale Leistung pro Kalendermonat
+
+
+
+
+Verlustausgleich - Transformatorenverluste
+
+Erfolgt die Entnahme der elektrischen Energie aus der Mittelspannungsebene und deren Erfassung durch eine nieder-
+spannungsseitige Messeinrichtung erhöhen sich die bilanzierungs- und abrechnungsrelevanten Arbeitsmengen und Leis-
+tungswerte zum Ausgleich der Transformatorenverluste um einen angemessenen Korrekturfaktor.
+
+Netznutzung Strom
+Preisblatt 2
+Gültig ab: 01.01.2026
+
+
+
+Netznutzung im Niederspannungsnetz mittels Standardlastprofil
+
+In höheren Netzebenen ist keine Belieferung nach Standardlastprofil möglich.
+
+
+                                                                                   Grundpreis                Arbeitspreis
+             Entnahmestelle                                Profil
+                                                                                      €/a                      ct/kWh
+
+
+       Niederspannungsnetz 0,4 kV1               Synthetisch nach VDEW                   105,85                       7,49
+
+
+   Niederspannungsnetz 0,4 kV HT3                                                                                    7,49
+                                                      Nach TLP GM1
+                                                                                         105,85
+                                                mit gemeinsamer Messung
+          Speicherheizung NT3                                                                                        2,47
+
+
+                                                      Nach TLP HZ2
+            Speicherheizung3                                                              52,93                      2,47
+                                                  mit separater Messung
+
+
+             Wärmepumpe3                                   WP22                           52,93                      2,47
+
+
+            Elektromobilität3                                                             52,93                      2,47
+
+
+   1
+     Anwendung bei Verbrauchswerten bis 100.000 kWh p.a.
+   2
+     mit eigenständigem Zählpunkt
+   3
+     Die Preise gelten für steuerbare Verbrauchseinrichtungen, die vor dem 01.01.2024 in Betrieb genommen wurden und eine
+     individuelle Vereinbarung mit der Stadtwerke Ulm/Neu-Ulm Netze GmbH abgeschlossen haben.
+
+
+
+
+Netztarifzeiten
+
+ HT                                                                                       06:00 bis 22:00
+ NT                                                                                       22:00 bis 06:00
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung für Heizanlagen
+Elektrische Heizanlagen im Netz der Stadtwerke Ulm/Neu-Ulm Netze GmbH können per Netznutzung beliefert werden.
+Die thermische Lastprognose nach dem Verfahren von BDEW/VDN und Universität Cottbus ist gemäß dem Praxisleitfa-
+den -Lastprofile für unterbrechbare Verbrauchseinrichtungen- vom VDN vorzunehmen.
+
+Für die Tagesmitteltemperaturen werden die Daten der Wetterstation Ulm-Mähringen Nr. 10840 herangezogen.
+Tagesmitteltemperatur: Wert mit einer Nachkommastelle von MeteoGroup Deutschland
+
+Für Heizungsanlagen wird ein einheitlicher temperaturabhängiger Profilsatz mit einer Kurvenschar in 1°C Schritten mit
+folgenden Bezeichnungen verwendet.
+
+<<Profil für Speicherheizstrom, HZ2 mit separater Messung>>
+
+         Bezugstemperatur:                       +17°C
+         Begrenzungskonstante             0
+
+
+
+<<Profil für Speicherheizstrom, GM1 mit gemeinsamer Messung>>
+
+         Bezugstemperatur:                       +17°C
+         Begrenzungskonstante             1
+
+
+<<Profil für Wärmepumpen, WP2>>
+
+         Bezugstemperatur:                       +17°C
+         Begrenzungskonstante             1
+
+
+Bei Heizungsanlagen mit gemeinsamer Messung und Zweitarifzählern (mit Tarifumschaltung HT/NT) wird ein Standard-
+lastprofil in Kombination mit einem tagesparameterabhängigen Lastprofil sowohl für die Verbrauchsmengen HT als auch
+NT angewendet. Diese Anlagen haben nur einen Zählpunkt und können somit nur gemeinsam bilanziert und beliefert
+werden.
+Anlagen mit getrennter Messeinrichtung mit Ein- oder Zweitarifzählern und somit separatem Zählpunkt für den Heizver-
+brauch werden generell thermisch bilanziert und separat beliefert.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 2a
+Gültig ab: 01.01.2026
+
+
+Entgelte für Betreiber steuerbarer Verbrauchseinrichtungen nach § 14a EnWG
+(Inbetriebnahme ab dem 01.01.2024)
+
+
+Modul 1 (pauschale Netzentgeltreduzierung):
+
+
+                  Entnahmestelle                             Grundpreis                Arbeitspreis               Gutschrift
+
+ Steuerbare Verbrauchseinrichtung nach
+                                                              105,85 €/a               7,49 Ct/kWh                123,40 €/a
+ § 14a EnWG
+
+
+Die Reduzierung erfolgt maximal in Höhe des sich aus Grund- und Arbeitspreis ergebenden Netzentgelts, sodass das
+Gesamtnetzentgelt je Marktlokation mindestens 0,00 €/a beträgt.
+Wird für die Anlage keine andere Wahl getroffen, so erfolgt die Abrechnung nach Modul 1.
+Modul 1 kann sowohl für Anlagen nach Standardlastprofil als auch für Anlagen mit registrierender Leistungsmessung
+angewendet werden.
+
+
+
+Modul 2 (reduzierter Arbeitspreis):
+
+
+                  Entnahmestelle                                                       Arbeitspreis
+
+ Steuerbare Verbrauchseinrichtung nach
+                                                                                       3,00 ct/kWh
+ § 14a EnWG
+
+
+Diese Auswahlmöglichkeit besteht ausschließlich bei einer über einen separaten Zählpunkt erfassten steuerbaren Ver-
+brauchseinrichtung ohne Lastgangmessung.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Modul 3_V3 (zeitvariabler Arbeitspreis):
+
+
+                Tarifstufe                                    Uhrzeit                                   Arbeitspreis
+
+                                                           00:00 – 10:00
+ Standardtarif                                             14:00 – 17:00                                7,49 ct/kWh
+                                                           22:00 – 00:00
+
+ Hochtarif                                                 17:00 – 22:00                                10,61 ct/kWh
+
+
+ Niedertarif                                               10:00 – 14:00                                2,62 ct/kWh
+
+
+
+Modul 3 kann nur in Verbindung mit Modul 1 für Anlagen mit Standardlastprofil angewendet werden.
+Ein intelligentes Messsystem muss vorhanden sein.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 3
+Gültig ab: 01.01.2026
+
+
+Verrechnungspreise bei registrierender Leistungsmessung
+
+
+                                                               Messstellenbetrieb
+
+ Hochspannung                                                           423,84 €/a
+
+ Mittelspannung                                                         423,84 €/a
+
+ Niederspannung                                                         423,84 €/a
+
+ Aufschlag pro manueller Auslesung1                                       62,66 €
+
+ Hochspannungswandlersatz                                             2.100,16 €/a
+
+ Mittelspannungswandlersatz                                             307,32 €/a
+
+ Niederspannungswandlersatz                                              30,00 €/a
+
+1 Aufschlag je Berechnung aus Messlokation zur Marktlokation
+
+
+
+
+Die Preise gelten je Übergabestelle/Messstelle und bei täglichem Lastgangversand.
+Nicht enthalten ist die Bereitstellung eines datentauglichen analogen Telefonanschlusses (Haupt- oder Nebenstellenan-
+schluss), dies obliegt dem Belieferungskunden oder dem Netznutzungsnehmer.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 3
+Gültig ab: 01.01.2026
+
+
+Verrechnungspreise für Kunden ohne registrierende Leistungsmessung
+
+Nur für Belieferung im Niederspannungsnetz.
+
+
+
+                                                                                   Messstellenbetrieb
+
+                                                       Jährliche            Halbjährliche       Vierteljährli-       Monatliche
+                                                       Ablesung              Ablesung          che Ablesung          Ablesung
+ Eintarifzähler                                             11,50 €/a            14,00 €/a           19,00 €/a            39,00 €/a
+
+ Zweitarifzähler mit Schaltgerät                            19,50 €/a            22,00 €/a           27,00 €/a            47,00 €/a
+
+ Zweirichtungszähler Einzeltarif                            19,50 €/a            22,00 €/a           27,00 €/a            47,00 €/a
+ Zweirichtungszähler
+                                                            29,50 €/a            32,00 €/a           37,00 €/a            57,00 €/a
+ Zweitarif mit Schaltgerät
+ Prepaymentzähler                                         125,00 €/a            127,50 €/a          132,50 €/a           152,50 €/a
+ Zweitarifzähler mit Schaltgerät und
+                                                            95,00 €/a           115,00 €/a          155,00 €/a           315,00 €/a
+ Leistungsmessung
+ Niederspannungswandlersatz                                 30,00 €/a
+
+Die Preise gelten je Übergabestelle und je Messstelle (Anschlussnutzung).
+
+
+
+
+Sonderausführungen von Messeinrichtungen/Messkonzepten                                                      auf Anfrage
+
+Obige Preise beschreiben die Regelkonfigurationen.
+Davon abweichende Konfigurationen sind Sonderausführungen und werden individuell berechnet.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 4
+Gültig ab: 01.01.2026
+
+
+Preise für Reservenetzkapazität für Netznutzer mit Eigenerzeugung
+
+
+                                                                       Nutzung pro Abrechnungsjahr
+
+                                                  0 – 200 h/a                  200 – 400 h/a                  400 – 600 h/a
+
+ Hochspannungsnetz 110 kV                        31,42 €/kWa                    37,70 €/kWa                    43,99 €/kWa
+
+ Mittelspannungsnetz 10 kV                       61,06 €/kWa                    73,27 €/kWa                    85,48 €/kWa
+
+ Niederspannungsnetz 0,4 kV                      95,14 €/kWa                   114,17 €/kWa                   133,20 €/kWa
+
+Der Preis der Reservenetzkapazität enthält auch die bezogene Arbeit.
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 5
+Gültig ab: 01.01.2026
+
+
+Aufschläge aufgrund des Energiefinanzierungsgesetzes (EnFG)
+
+Die Rechtsgrundlage für die Erhebung der Umlagen bilden die §§ 10 -12 EnFG.
+
+
+
+                                    Kategorien                                                                ct/kWh
+        (alle am Netz des Netzbetreibers angeschlossenen Letztverbraucher)
+
+
+ KWK-Umlage                                                                                                    0,446
+
+
+ Offshore-Netzumlage                                                                                           0,941
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+
+Netznutzung Strom
+Preisblatt 6
+Gültig ab: 01.01.2026
+
+
+Aufschlag für besondere Netznutzung
+
+Die Rechtsgrundlage für die Anwendung der Aufschläge bildet § 19 Abs. 2 StromNEV sowie die Festlegung BK8-24-001-
+A der Bundesnetzagentur.
+
+
+
+ Letztverbrauchergruppen / Endverbraucherkategorien                                                           ct/kWh
+ (alle am Netz des Netzbetreibers angeschlossenen Letztverbraucher)
+
+
+ Letztverbrauchergruppe A`
+ Letztverbrauch ≤ 1.000.000 kWh/a je Abnahmestelle                                                             1,559
+ Kategorie A`
+
+
+ Letztverbrauchergruppe B`
+ Letztverbrauch ≤ 1.000.000 kWh/a je Abnahmestelle                                                             1,559
+ Kategorie A`
+ Letztverbrauch, der über 1.000.000 kWh/a und Abnahmestelle hinausgeht                                         0,050
+ Kategorie B`
+
+
+ Letztverbrauchergruppe C`
+ Letztverbrauch ≤ 1.000.000 kWh/a je Abnahmestelle                                                             1,559
+ nur stromintensive Unternehmen des produzierenden Gewerbes
+ Kategorie A`
+ Letztverbrauch, der über 1.000.000 kWh/a und Abnahmestelle hinausgeht                                         0,025
+ nur stromintensive Unternehmen des produzierenden Gewerbes
+ Kategorie C`
+
+
+
+
+Unsere vorgelagerten Übertragungsnetzbetreiber sind: Amprion für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im
+Gebiet von Neu-Ulm und Senden, TransnetBW für die Konzessionsgebiete der Stadtwerke Ulm/Neu-Ulm Netze im Gebiet von Ulm,
+Blaustein, Hermaringen, Herbrechtingen, Niederstotzingen und Elchingen.
+
+Alle Preise sind – soweit nicht anders ausgewiesen – freibleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Um-
+satzsteuer.
+

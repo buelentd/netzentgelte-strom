@@ -1,0 +1,196 @@
+URL: https://www.stadtwerke-wedel.de/de/Fussnavigation/Netze/Stromnetz/Netzentgelte/Netzentgelte/vorl.-NNE-Strom-2027.xlsx
+Netzbetreiber: Stadtwerke Wedel GmbH
+
+
+
+                  Preisblatt Netzentgelte Strom (vorläufig, unter Vorbehalt)
+
+                  gültig ab:        2027-01-01 00:00:00
+
+                  Preisblatt Netzentgelte Strom der Stadtwerke Wedel GmbH
+
+                  1. Kunden ohne registrierende 1/4h Leistungsmessung
+
+                  Grundpreis (GP)                                                         79,0                                0.21643836 €/d
+                  Arbeitspreis (AP)                                                       9,87
+
+                  2. Kunden mit registrierender 1/4h Leistungsmessung
+
+                  Entnahme aus:                                         Jahresbenutzungsdauer
+                                                                        < 2.500 h/a
+                                                                        Leistungspreis                      Arbeitspreis
+                  Mittelspannung (MS)                                   24,52             0,067178          5,93 ct/kWh
+                  Umspannung (MS/NS)                                    24,8              0,067945          8,08 ct/kWh
+                  Niederspannung (NS)                                   25,18             0,068986          10,44 ct/kWh
+                                                                        > 2.500 h/a
+                                                                        Leistungspreis                      Arbeitspreis
+                  Mittelspannung (MS)                                   132,97            0,364301          1,59 ct/kWh
+                  Umspannung (MS/NS)                                    179,69            0,492301          1,88 ct/kWh
+                  Niederspannung (NS)                                   172,01            0,47126           4,57 ct/kWh
+
+                  Hinweis: Bei Mittelspannungskunden mit niederspannungsseitiger Messung erhöhen sich zum Ausgleich der Umspannverluste die Leistungs- und Arbeitswerte für die Abrechnung um einen kundenindividuellen Korrekturfaktor.
+
+                  3. Steuerbare Verbrauchseinrichtingen gemäß §14a EnWG
+
+                  Bestandsanlagen (vor 01.Januar 2024)
+
+                  Kundengruppe:                                         Grund-/ Leistungspreis              Arbeitspreis
+
+                  SLP-Kunden                                            0.00 €/a          0.00000000 €/d    3,95 ct/kWh
+                  RLM-Kunden                                            10,08 €/a         0,027616          4,18 ct/kWh
+
+                  Neuanlagen (ab 01.Januar 2024)
+
+                  Modul 1: Pauschale Netzentgeltreduzierung
+                  Mehrkosten für iMS gem. MsbG                                                              42.02 €/a         0,11512329 €/d
+                  Steuerbox gem. MsbG                                                                       25.21 €/a         0,06906849 €/d
+                  Netzindividuelle Stabilitätsprämie                                                        74,03 €/a         0,20282192 €/d
+                  Maximale Entgeltreduzierung                                                               141,26 €/a        0,38701370 €/d
+                  Modul 2: Prozentuale Redizierung des Arbeitspreises
+                  Arbeitspreis (AP)                                                                         3,95 ct/kWh
+                  Modul 3: Zeitvariable Tarife (nur in Ergänzung zu Modul 1)*
+                  * wird nur im 1. (01.01. - 31.03.) und 4. (01.10. - 31.12.) Quartal 2025 angewendet
+                  ST - Standardtarif (06.00 - 16.30 Uhr)                                                    9,87 ct/kWh
+                  HT - Hochlasttarif (16:45 - 23.30 Uhr)                                                    13,71 ct/kWh
+                  NT - Niedriglasttarif (23.45 - 05.45 Uhr)                                                 3,948 ct/kWh
+
+                  Entgelte für Kunden ohne registrierende 1/4h Leistungsmessung
+
+                  Entgelte für Messstellenbetrieb                                         Gesamt
+                  Eintarifzähler, Zweitarifzähler                                         16,81 €/a         0,04605479 €/d
+                  Maximumzähler                                                           44,50 €/a         0,12191781 €/d
+                  Stromwandlersatz (NS)                                                   51,75 €/a         0,14178082 €/d
+                  Tarifschaltgerät                                                        11,21 €/a         0,03071233 €/d
+
+                  Entgelte für Kunden mit registrierender 1/4h Leistungsmessung
+
+                  Entgelte für Messstellenbetrieb                                         Gesamt
+                  Zähler mit reg. Leistungsmessung - Mittelspannung (MS)                  313,10 €/a        0,85780822 €/d
+                  Zähler mit reg. Leistungsmessung - Niederspannung (NS)                  160,80 €/a        0,44054795 €/d
+                  Strom- und Spannungswandlersatz (MS)                                    260,69 €/a        0,71421918 €/d
+                  Stromwandlersatz (NS)                                                   51,75 €/a         0,14178082 €/d
+                  Kommunikationsmodem                                                     25,33 €/a         0,06939726 €/d
+
+
+
+
+
+
+                  Preisblatt Netzentgelte Strom (vorläufig, unter Vorbehalt)
+
+                  gültig ab:        2027-01-01 00:00:00
+
+                  5. Blindleistungsbereitstellung
+
+                  Im Rahmen der Erbringung von Systemdienstleistungen wird ein Blindstrombedarf bei einem cos phi größer 0,9 induktiv gedeckt. Die Stadtwerke Wedel GmbH ist berechtigt, Messeinrichtungen zur Erfassung des Blindstrombedarfs zu verbauen. Bei einer Unterschreitung des cos phi von 0,9 induktiv stellt die Stadtwerke Wedel GmbH zusätzlich folgende Entgelte in Rechnung:
+
+                  Netzebene: Mittelspannung (MS)                                          1,8
+                  Netzebene: Niederspannung (NS)                                          1,8
+
+
+                  6. Reservenetzkapazität
+
+                  Kunden mit Eigenerzeugung können Reservenetzkapazität bestellen, soweit sie bei einem Ausfall ihrer Eigenerzeugungsanlage Reservestrom üder das Netz der Stadtwerke Wedel GmbH beziehen möchten.
+
+                  Jahresleistungspreis für die Inanspruchnahme von Reservenetzkapazität
+                  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  0 h/a bis 200 h/a  68,06 €/(kW*a)  0,18646575 €/(kW*d)
+                  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)            86,09 €/(kW*a)    0,23586301 €/(kW*d)
+                  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)        143,09 €/(kW*a)   0,3920274 €/(kW*d)
+                  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  200 h/a bis 400 h/a  81,68 €/(kW*a)  0,22378082 €/(kW*d)
+                  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)            103,31 €/(kW*a)   0,2830411 €/(kW*d)
+                  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)        171,7 €/(kW*a)    0,47041096 €/(kW*d)
+                  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  Mittelspannung (MS)  400 h/a bis 600 h/a  95,29 €/(kW*a)  0,26106849 €/(kW*d)
+                  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)  Umspannung (MS/NS)            120,53 €/(kW*a)   0,33021918 €/(kW*d)
+                  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)  Niederspannung (NS)        200,32 €/(kW*a)   0,54882192 €/(kW*d)
+
+                  7. Monatsleistungspreissystem
+
+                  Für Netzkunden mit einer zeitlich begrenzten hohen Leistungsaufnahme, der in der übrigen Zeit eine deutlich geringere bzw. keine Leistungsaufnahme gegenüber steht, bietet die Stadtwerke Wedel GmbH alternativ zum Jahresleistungspreissystem eine Abrechnung auf Basis von Monatsleistungspreisen an. Ein Netzkunde mit einer derartigen Lastcharakteristik, der sich für den Wechsel in das Monatsleistungspreissystem entscheidet, teilt dieses der Stadtwerke Wedel GmbH verbindlich spätestens einen Monat vor Beginn des Abrechnungszeitraumes mit.
+
+                  Monatsleistungspreise
+                                                                        In Monaten mit 29 Kalendertagen
+                                                                        Leistungspreis                      Arbeitspreis
+                  Mittelspannung (MS)                                   22,16             0,791429          1,59
+                  Umspannung (MS/NS)                                    29,95             1,069643          1,88
+                  Niederspannung (NS)                                   28,67             1,023929          4,57
+                                                                        In Monaten mit 30 Kalendertagen
+                                                                        Leistungspreis                      Arbeitspreis
+                  Mittelspannung (MS)                                   22,16             0,738667          1,59
+                  Umspannung (MS/NS)                                    29,95             0,998333          1,88
+                  Niederspannung (NS)                                   28,67             0,955667          4,57
+                                                                        In Monaten mit 31 Kalendertagen
+                                                                        Leistungspreis                      Arbeitspreis
+                  Mittelspannung (MS)                                   22,16             0,714839          1,59
+                  Umspannung (MS/NS)                                    29,95             0,966129          1,88
+                  Niederspannung (NS)                                   28,67             0,924839          4,57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Preisblatt Netzentgelte Strom (vorläufig, unter Vorbehalt)
+
+                  gültig ab:        2027-01-01 00:00:00
+
+                  8. Konzessionsabgaben
+
+                  Zusätzlich zu den Netzentgelten werden Konzessiosnsabgaben erhoben. Die Höhe der Konzessionsabgaben entspricht der Konzessionsabgabenverordnung (KAV) vom 9.Januar 1992 (BGBl. I S.12, 407), die zuletzt durch den Artikel 3 Absatz 4 der Verordnung vom 1.November 2006 (BGBl. I S.2477) geändert worden ist. Die Höhe der Konzessionsabgabe richtet sich nach dem zwischen der Gemeinde, in der sich die Entnahmestelle befindet, und der Stadtwerke Wedel Gmbh geschlossenen Konzessionsvertrag und beträgt:
+
+                  Kundengruppe                                          Konzessionsabgabe
+                                                                        Wedel ct/kWh                        Amt Haseldorfer Marsch ct/kWh
+                  Tarifkunden                                           1,59                                1,32
+                  Schwachlastregelung                                   0,61                                0,61
+                  Sondervertragskunden                                  0,11                                0,11
+
+                  9. Gesetzliche Umlagen
+                  Zusätzlich zu den Netznutzungsentgelten gelten die nachfolgenden gesetzlichen Umlagen, die durch die Übertragungsnetzbetreiber ermittelt und durch entsprechende Wirtschaftsprüferbescheinigungen testiert wurden. Weiterführende Informationen zu den einzelnen Umlagen entnehmen Sie bitte der gemeinsamen Internetplattform der deutschen Übertragungsnetzbetreiber: www.netztransparenz.de
+
+                  KWKG-Umlage
+                  Jahresverbrauch pro Abnahmestelle                                                                           Umlage [ct/kWh]
+                  sämtliche nichtpriviligierte Letztverbräuche                                                                0,446
+
+
+                  §19 Abs.2 StromNEV-Umlage
+                  Letztverbraucher                    Jahresverbrauch pro Abnahmestelle                                       Umlage [ct/kWh]
+                  Gruppe A'                           < 1.000.000 kWh                                                         1,559
+                  Gruppe B'                           > 1.000.000 kWh und nicht Gruppe C'                                     0,05
+                  Gruppe C'                           > 1.000.000 kWh und stromintensives Unternehmen                         0,025
+
+
+                  Offshore-Netzumlage
+                  Jahresverbrauch pro Abnahmestelle                                                                           Umlage [ct/kWh]
+                  sämtliche nichtpriviligierte Letztverbräuche                                                                0,941
+
+                  Abschaltbare Lasten-Umlage
+                  Jahresverbrauch pro Abnahmestelle                                                                           Umlage [ct/kWh]
+                  gesamter Letztverbraucherabsatz                                                                             0,0
+
+                  10. Umsatzsteuer
+
+                  Sämtliche o.a. Entgelte sind freibeleibende Nettopreise und verstehen sich zuzüglich der jeweils geltenden Umsatzsteuer (z.Zt. 19%).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

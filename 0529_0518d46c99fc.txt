@@ -1,0 +1,84 @@
+URL: https://www.stadtwerke-ilmenau.net/fileadmin/Netzsite/Downloads/PDF/Strom/Kontaktdatenblatt_SWI_Strom.xls
+Netzbetreiber: Stadtwerke Ilmenau GmbH
+
+Kontaktdatenblatt Netzbetreiber                       Stand: 01.04.2022
+Anschrift
+Name              Stadtwerke Ilmenau GmbH
+Straße Hausnr.    Auf dem Mittelfeld 5
+PLZ Ort           98693 Ilmenau
+Telefon           03677 / 788 - 333
+Fax               03677 / 788 - 301
+Internet          www.stadtwerke-ilmenau.net
+E-Mail            netznutzung@stadtwerke-ilmenau.de
+Umsatzsteuer-ID   DE150927360
+
+Marktrolle        BDEW-Codenummern / Global Location Number (GLN) Strom
+Verteilnetzbetreiber  9900926000004
+Messstellenbetreiber  9906932000004
+
+Bilanzierungsgebiet(e) (EIC-Code)
+11YV00000000926Z
+
+E-Mail-Adresse für den elektronischen Datenaustausch (1:1 Marktkommunikation)
+mks@meteringservice.de
+
+Wir senden und akzeptieren EDIFACT-Nachrichten grundsätzlich nur im aktuellen, von der Bundesnetzagentur vorgegebenen, Format.
+Für Anfragen außerhalb der Standard-EDIFACT-Kommunikation benutzen Sie bitte folgende Kommunikationsadressen:
+Fachliche Ansprechpartner Allgemein
+Thema             E-Mail            Telefon           Fax
+Vertragsmanagement
+· Lieferantenrahmenvertrag  netznutzung@stadtwerke-ilmenau.de  03677/788-121  03677/788-301
+· EDI-Vereinbarung  netznutzung@stadtwerke-ilmenau.de  03677/788-121  03677/788-301
+· Zuordnungsvereinbarung  netznutzung@stadtwerke-ilmenau.de  03677/788-121  03677/788-301
+· MSB - MDL       netznutzung@stadtwerke-ilmenau.de  03677/788-121  03677/788-301
+EDIFACT
+· allgemeine Themen  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+· Umstellung INVOIC  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+· Verschlüsselung/Signatur  netznutzung@stadtwerke-ilmenau.de  03677/788-211  03677/788-301
+
+Fachlicher Ansprechpartner GPKE/Einspeiserprozesse
+Thema             E-Mail            Telefon           Fax
+UTILMD
+· Lieferantenwechsel  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+INVOIC            netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+REMADV
+· Zahlungsverkehr netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+· Debitorenmanagement  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+Bilanzierung
+· Strom           netznutzung@stadtwerke-ilmenau.de  03677/788-214  03677/788-301
+· Zuordnungsermächtigung  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+Mehr- Mindermengen
+· Clearing        netznutzung@stadtwerke-ilmenau.de  03677/788-214  03677/788-301
+
+Fachlicher Ansprechpartner MSCONS
+Thema             E-Mail            Telefon           Fax
+MSCONS
+· Zählerstände SLP  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+MSCONS
+· Lastgänge RLM   netznutzung@stadtwerke-ilmenau.de  03677/788-214  03677/788-301
+
+Sonstige Ansprechpartner
+Thema             E-Mail            Telefon           Fax
+MSB Wechselprozesse  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+Sperrung/Entsperrung  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+Sonstiges (nicht EDIFACT)  netznutzung@stadtwerke-ilmenau.de  03677/788-333  03677/788-301
+
+Bankverbindung
+Geldinstitut      Commerzbank AG Filiale Ilmenau
+IBAN              DE 39 8204 0000 0500 0054 00
+BIC               COBADEFFXXX
+Gläubiger-ID      DE04SWI00000081765
+
+Weitere Informationen
+Schwachlastzeit:
+Mo-Sa             HT: die gesamte übrige Zeit, die nicht NT-Zeit ist  OBIS-Code: 1-1:1.8.1
+Mo-Fr             NT: 00:00 - 06:00 Uhr               OBIS-Code: 1-1:1.8.2
+Mo-Fr             NT: 22:00 - 24:00 Uhr               OBIS-Code: 1-1:1.8.2
+Sa                NT: 00:00 - 06:00 Uhr               OBIS-Code: 1-1:1.8.2
+Sa                NT: 13:00 - 24:00 Uhr               OBIS-Code: 1-1:1.8.2
+So                NT: 00:00 - 24:00 Uhr               OBIS-Code: 1-1:1.8.2
+Feiertage         NT: 00:00 - 24:00 Uhr               OBIS-Code: 1-1:1.8.2
+
+Sperrzeiten Mo-Fr:
+Mo-Fr             10:45 - 12:30 Uhr
+Mo-Fr             18:00 - 19:30 Uhr

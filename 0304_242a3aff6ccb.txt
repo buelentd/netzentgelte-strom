@@ -1,0 +1,138 @@
+URL: https://www.mainfrankennetze.de/downloadcenter/01-netzkunden/strom/veroeffentlichungspflichten/netzentgelte/2026/epb-nn-strom-2027.pdf
+Netzbetreiber: Mainfranken Netze GmbH
+
+Preise für elektronische Abrechnung PRICAT (BK6-20-160)
+Netznutzung Strom
+Vorläufig gültig ab 01.01.2027, Stand 12.10.2026
+
+                                                                                                                                       Netznutzungsentgelte
+                             Artikel-ID und Preisbezeichnungen gemäß aktueller edi@energy-Codeliste                                                                      PRICAT
+                                                                                                                                       gemäß § 17 StromNEV
+
+      ID                                                               Bezeichnung                                                    Preis          Einheit     Preis            Einheit
+
+Kapitel 3.1.1   Entgelte des Jahresleistungspreissystems
+
+1-01-4          Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung
+
+1-01-4-001      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis       14,56         €/kW/a    0,03989041         €/(kW*Tag)
+
+1-01-4-002      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis          4,10         ct/kWh    0,04100000         €/kWh
+
+1-01-4-003      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis     105,52         €/kW/a    0,28909589         €/(kW*Tag)
+
+1-01-4-004      Jahresleistungspreissystem Umspannung Hoch-/Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis         0,46         ct/kWh    0,00460000         €/kWh
+
+1-01-5          Jahresleistungspreissystem Mittelspannung
+
+1-01-5-001      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis                        18,28         €/kW/a    0,05008219         €/(kW*Tag)
+
+1-01-5-002      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis                           5,30         ct/kWh    0,05300000         €/kWh
+
+1-01-5-003      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis                      138,06         €/kW/a    0,37824658         €/(kW*Tag)
+
+1-01-5-004      Jahresleistungspreissystem Mittelspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis                          0,51         ct/kWh    0,00510000         €/kWh
+
+1-01-6          Jahresleistungspreissystem Umspannung Mittel-/Niederspannung
+
+1-01-6-001      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis     23,46         €/kW/a    0,06427397         €/(kW*Tag)
+
+1-01-6-002      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis        6,83         ct/kWh    0,06830000         €/kWh
+
+1-01-6-003      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis   178,22         €/kW/a    0,48827397         €/(kW*Tag)
+
+1-01-6-004      Jahresleistungspreissystem Umspannung Mittel-/Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis       0,64         ct/kWh    0,00640000         €/kWh
+
+1-01-7          Jahresleistungspreissystem Niederspannung
+
+1-01-7-001      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Leistungspreis                        30,36         €/kW/a    0,08317808         €/(kW*Tag)
+
+
+
+
+                                                                                              Mainfranken Netze GmbH                                                                 Seite 1 von3
+
+                                                                                                                                                        Netznutzungsentgelte
+                              Artikel-ID und Preisbezeichnungen gemäß aktueller edi@energy-Codeliste                                                                                         PRICAT
+                                                                                                                                                        gemäß § 17 StromNEV
+
+      ID                                                                  Bezeichnung                                                                  Preis          Einheit        Preis            Einheit
+
+1-01-7-002      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden <2500 h/a Arbeitspreis                                            6,56         ct/kWh       0,06560000         €/kWh
+
+1-01-7-003      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Leistungspreis                                       150,64         €/kW/a       0,41271233         €/(kW*Tag)
+
+1-01-7-004      Jahresleistungspreissystem Niederspannung Jahresbenutzungsdauerstunden >=2500 h/a Arbeitspreis                                           1,75         ct/kWh       0,01750000         €/kWh
+
+Kapitel 3.1.2   Entgelte des Grundpreis-/Arbeitspreissystems
+
+1-02-0-001      Grundpreis-/ Arbeitspreissystem Marktlokation Grundpreis für Arbeitspreissystem Grundpreis                                              98,00         €/a          0,26849315         €/Tag
+                Grundpreis-/ Arbeitspreissystem Marktlokation der Kategorie sonstiger Verbrauch (Marktlokation, die in keine andere Kategorie fällt)
+                sowie für Marktlokationen, die nach Modul 1 und/oder 3 der Festlegungen zu Netzentgelten bei Anwendung der netzorientierten
+1-02-0-002                                                                                                                                               4,88         ct/kWh       0,04880000         €/kWh
+                Steuerung von steuerbaren Verbrauchseinrichtungen und steuerbaren Netzanschlüssen nach § 14a EnWG gem. Festlegungen BK6-22-
+                300 und BK8-22/010-A abgerechnet werden Arbeitspreis
+Kapitel 3.1.3   Entgelte des Monatsleistungspreissystems
+
+1-03-5          Monatsleistungspreissystem Mittelspannung
+
+1-03-5-001      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 28 Tagen                                                        11,51         €/kW/Monat   0,41107143         €/(kW*Tag)
+
+1-03-5-002      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 29 Tagen                                                        11,51         €/kW/Monat   0,39689655         €/(kW*Tag)
+
+1-03-5-003      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 30 Tagen                                                        11,51         €/kW/Monat   0,38366667         €/(kW*Tag)
+
+1-03-5-004      Monatsleistungspreissystem Mittelspannung Leistungspreis für Monate mit 31 Tagen                                                        11,51         €/kW/Monat   0,37129032         €/(kW*Tag)
+
+1-03-5-005      Monatsleistungspreissystem Mittelspannung Arbeitspreis                                                                                   0,51         ct/kWh       0,00510000         €/kWh
+
+1-03-6          Monatsleistungspreissystem Umspannung Mittel-/Niederspannung
+
+1-03-6-001      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 28 Tagen                                     14,85         €/kW/Monat   0,53035714         €/(kW*Tag)
+
+1-03-6-002      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 29 Tagen                                     14,85         €/kW/Monat   0,51206897         €/(kW*Tag)
+
+1-03-6-003      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 30 Tagen                                     14,85         €/kW/Monat   0,49500000         €/(kW*Tag)
+
+1-03-6-004      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Leistungspreis für Monate mit 31 Tagen                                     14,85         €/kW/Monat   0,47903226         €/(kW*Tag)
+
+1-03-6-005      Monatsleistungspreissystem Umspannung Mittel-/Niederspannung Arbeitspreis                                                                0,64         ct/kWh       0,00640000         €/kWh
+
+1-03-7          Monatsleistungspreissystem Niederspannung
+
+1-03-7-001      Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 28 Tagen                                                        12,55         €/kW/Monat   0,44821429         €/(kW*Tag)
+
+
+
+
+                                                                                                   Mainfranken Netze GmbH                                                                                Seite 2 von3
+
+                                                                                                                     Netznutzungsentgelte
+                              Artikel-ID und Preisbezeichnungen gemäß aktueller edi@energy-Codeliste                                                      PRICAT
+                                                                                                                     gemäß § 17 StromNEV
+
+      ID                                                               Bezeichnung                                   Preis         Einheit        Preis            Einheit
+
+1-03-7-002    Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 29 Tagen                       12,55         €/kW/Monat   0,43275862         €/(kW*Tag)
+
+1-03-7-003    Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 30 Tagen                       12,55         €/kW/Monat   0,41833333         €/(kW*Tag)
+
+1-03-7-004    Monatsleistungspreissystem Niederspannung Leistungspreis für Monate mit 31 Tagen                       12,55         €/kW/Monat   0,40483871         €/(kW*Tag)
+
+1-03-7-005    Monatsleistungspreissystem Niederspannung Arbeitspreis                                                  1,75         ct/kWh       0,01750000         €/kWh
+
+Kapitel 3.3   Freiwillige Abrechnung sonstiger Leistungen
+
+3-01-0-001    Blindarbeit                                                                                             0,00         ct/kvarh     0,00000000         €/kvarh
+
+3-02-0        Tarifierte Blindarbeit
+
+3-02-0-001    Blindarbeit 1                                                                                           0,00         ct/kvarh     0,00000000         €/kvarh
+
+3-02-0-002    Blindarbeit 2                                                                                           0,00         ct/kvarh     0,00000000         €/kvarh
+
+
+
+
+                                                                                            Mainfranken Netze GmbH                                                    Seite 3 von3
+

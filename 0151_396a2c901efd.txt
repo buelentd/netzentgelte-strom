@@ -1,0 +1,192 @@
+URL: https://www.energienetze-bayern.de/_Resources/Persistent/c/3/d/b/c3db110192420110a58b8f752b952019ebfd5a79/251126_ENB_Preisblatt_2026_inkl.pdf
+Netzbetreiber: Energienetze Bayern GmbH (Stromverteilnetz Germering)
+
+Preisblatt der Energienetze Bayern GmbH & Co. KG
+für die Nutzung des Verteilnetzes inkl. Entgelte für die Nutzung vorgelagerter Netze
+
+gültig ab 01.01.2026
+
+
+Das Entgelt für die Nutzung des Netzes der Energienetze Bayern GmbH & Co. KG inklusive Entgelte der vorgelagerten Netze setzt sich aus dem Netzentgelt
+(Pos. A, B od. C) und den Entgelten für Messstellenbetrieb / Messung (Pos. C) und der Konzessionsabgabe (Pos. D) zusammen.
+
+
+A) Netzentgelte für Ausspeisepunkte ohne Leistungsmessung
+
+        nicht leistungsgemessene Ausspeisepunkte                    Grundpreis            Arbeitspreis
+       Bereich         Jahresmenge M            kWh                    GP                     AP
+          i                  von                 bis                  €/Jahr                ct/kWh
+         1                            0                1.000                      0,00               2,532
+         2                        1.001                4.000                      6,30               1,902
+         3                        4.001               50.000                     19,78               1,565
+         4                       50.001              300.000                     70,78               1,463
+         5                     300.001            1.000.000                     247,78               1,404
+         6                         ab 1.000.001                                 817,78               1,347
+
+Beispielrechnung
+Ausspeisestelle mit einer Abgabe von 20.000 kWh/A
+                       Netznutzungsentgelt (NNE) = Abgabemenge x Arbeitspreis + Grundpreis
+                       NNE = 20.000 x 1,565/100 + 19,78
+                       NNE = 313,00 + 19,78 = 332,78
+
+
+
+B) Netzentgelte für Ausspeisepunkte mit Leistungsmessung
+B.1 Arbeitspreise für Ausspeisepunkte mit Leistungsmessung
+
+           leistungsgemessene Ausspeisepunkte                      Sockelbetrag           Arbeitspreis
+       Bereich                   Jahresarbeit M                          A                    AP
+           i               von kWh               bis kWh               €/Jahr                ct/kWh
+          1                            0             1.000.000                 0,00                   0,361
+          2                    1.000.001             2.500.000               190,00                   0,342
+          3                    2.500.001             5.000.000               665,00                   0,323
+          4                    5.000.001             7.500.000             1.465,00                   0,307
+          5                    7.500.001            10.000.000             2.365,00                   0,295
+          6                   10.000.001            12.500.000             3.265,00                   0,286
+          7                   12.500.001            15.000.000             4.140,00                   0,279
+          8                   15.000.001            30.000.000             6.690,00                   0,262
+          9                   30.000.001            60.000.000            13.290,00                   0,240
+         10                   60.000.001        3.000.000.000             40.290,00                   0,195
+
+
+B.2 Leistungspreise für Ausspeisepunkte mit Leistungsmessung
+           leistungsgemessene Ausspeisepunkte                      Sockelbetrag          Leistungspreis
+
+       Bereich               Jahreshöchstleistung P                      L                    LP
+
+           i                von kW               bis kW                €/Jahr                €/kW
+          1                            0                  600                  0,00                   20,18
+          2                          601                1.300              1.080,00                   18,38
+          3                        1.301                2.300              3.576,00                   16,46
+          4                        2.301                3.200              7.095,00                   14,93
+          5                        3.201                4.100             10.199,00                   13,96
+          6                        4.101                5.000             12.987,00                   13,28
+          7                        5.001                5.800             15.237,00                   12,83
+          8                        5.801               10.500             19.529,00                   12,09
+          9                       10.501               19.000             25.199,00                   11,55
+         10                       19.001            2.000.000             25.959,00                   11,51
+
+Beispielrechnung
+Ausspeisestelle mit einer Abgabe von 2.500.000 kWh/A und einer Jahreshöchstleistung von 2.000 kW
+                       Netznutzungsentgelt (NNE) = Arbeitspreis + Leistungspreis
+                       AP = 2.500.000 x 0,342/100 + 190,00 = 8.740,00
+                       LP = 2.000 x 16,46 + 3.576,00 = 36.496,00
+                       NNE = 8.740,00 + 36.496,00 = 45.236,00
+
+Preisblatt der Energienetze Bayern GmbH & Co. KG
+für die Nutzung des Verteilnetzes inkl. Entgelte für die Nutzung vorgelagerter Netze
+
+gültig ab 01.01.2026
+
+
+
+C) Transportentgelt
+
+                                                                                               Transportentgelt
+Netzpunkt                                                                   Richtung
+                                                                                                 € / kWh / h / d
+
+Freilassing                                                                      Exit               0,01934247
+
+
+Freilassing                                                                      Entry              0,01934247
+
+
+Auf das unterjährige Transportentgelt wird gemäß den Festlegungen "Margit 2026" (BK9-24/612) bzw. "Beate 2.1" (BK9-24/608)
+ein Multiplikator angewendet.
+
+
+
+D) Messstellenbetrieb und Messung
+D.1 Preise für Installation und Wartung der Zähler und Messgeräte
+
+Messstellenbetrieb
+
+   Zählergruppen            G1,6 - G6                 G10 - G25            G40 - G100               G160 - G400    G650 - G1600   G2500 - G6500
+
+                                 €/Jahr                €/Jahr                  €/Jahr                 €/Jahr          €/Jahr         €/Jahr
+
+     Entgelt MSB                 19,71                  45,97                  205,86                 445,80         1.035,48       1.813,37
+
+
+
+              Zusatzausstattung
+                                 €/Jahr
+ Mengenumwerter
+                                834,40 €
+     (MEUW)
+ Datenspeicher und
+                                137,29 €
+      Modem
+      M-BUS
+                                27,00 €
+    Schnittstelle
+
+
+
+D.2 Preise für Ablesung und Fernauslesung
+
+Messdienstleistung - Standardauslesung
+
+                                                                            mit Leistungsmessung (RLM)
+        MDL                ohne Leistungsmessung (SLP)
+                                                                               3 x tägliche Auslesung
+
+   Zählergruppen                                                  G1,6 - G6500
+                                           € / Jahr                                      € / Jahr
+
+     Entgelt MDL                            2,83                                         354,17
+
+
+Messdienstleistung - Sonderentgelte
+                Zählergruppen                                   G1,6 - G6500                          € / Jahr
+Ausspeisepunkte ohne Leistungsmessung
+                                                          monatliche Auslesung                         34,00
+                (SLP)
+
+                                                            tägliche Auslesung                        170,02
+
+                                                           stündliche Auslesung
+                                                                                                      425,00
+ Ausspeisepunkte mit Leistungsmessung                        mit GPRS-Modem
+                (RLM)                                     stündliche Auslesung
+                                                                                                      862,58
+                                                          mit Festnetzanschluss
+                                                           stündliche Auslesung
+                                                                                                     3.875,02
+                                                             mit GSM-Modem
+
+
+E) Konzessionsabgabe und Mehrwertsteuer
+Den Preisen von A) und B) wird die Konzessionsabgabe hinzugerechnet.
+
+Die obengenannten Preise sind Nettopreise; die jeweils gültige gesetzliche Mehrwertsteuer
+wird dem Gesamtbetrag von A) - D) hinzugerechnet.
+
+Preisblatt der Energienetze Bayern GmbH & Co. KG
+Sonderentgelte nach § 20 Abs. 2 GasNEV ab 01.01.2026
+zur Vermeidung eines Direktleitungsbaus
+
+
+
+Die Abrechnung des Sonderentgelts - zuzüglich Messstellenbetrieb/Messung (Pos. C) - erfolgt zwischen
+Netzbetreiber und Petent
+
+             Petent                         Ausspeisepunkt (Zählpunkt)                          Entgelt in €/a
+Westnetz GmbH                     DE70014694113VVVVV44A013159480000                                      253.393,30 €
+Clariant Produkte GmbH            DE70014685368AAAAA42A012231560000                                      412.250,08 €
+Erdgasversorgung Erding           DE70014685435VVVVV42A013158900000                                    1.304.150,01 €
+Flughafen München                 DE70014685354VVVVV42A014218750000                                      871.451,35 €
+Gemeindewerke Kiefersfelden       DE70014683088VVVVV52A013166090000                                      107.593,97 €
+Stadtwerke Bad Tölz               DE70014683646VVVVV50A013165360000                                      682.235,26 €
+Stadtwerke Kelheim                DE70014693309VVVVV61A013166330000                                      529.227,78 €
+Stadtwerke Passau                 DE70014694036VVVVV44A013159890000                                    2.250.453,90 €
+Stadtwerke Rosenheim              DE70014683022VVVVV41A012951880000                                    2.173.815,85 €
+VW Kraftwerk GmbH                 DE70014685126VVVVV61A014745130000                                      204.392,60 €
+
+
+
+
+Alle Sonderentgelte nach § 20 Abs. 2 GasNEV sind vorläufig und unter Vorbehalt der Zustimmung durch
+die Bundesnetzagentur.
+

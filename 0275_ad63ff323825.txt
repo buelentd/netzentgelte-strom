@@ -1,0 +1,584 @@
+URL: https://www.hewagmbh.de/media/b6/40/f4/1697713807/Techn.-Mindestanforderungen_STROM.pdf?1734269090
+Netzbetreiber: HEWA GmbH
+
+               Technische Mindestanforderungen an
+        Messeinrichtungen Strom und deren Messdatenqualität
+                      und Umfang 0,4/20 kV im
+                    Netzgebiet der HEWA GmbH
+                                                                      Stand: 01.01.2009
+                                                              Inhaltsverzeichnis
+1          Allgemeines................................................................................................................................................ 2
+           1.1     Geltungsbereich ........................................................................................................................... 2
+           1.2     Anwendungsbereich .................................................................................................................... 2
+           1.3     Spannungsebenen ....................................................................................................................... 3
+2          Anforderungen an die Messstelle ............................................................................................................... 3
+           2.1     Grundsätzliche Anforderungen .................................................................................................... 3
+           2.2     Sicherung gegen unberechtigte Energieentnahmen .................................................................... 4
+3          Anforderungen an die Messeinrichtung...................................................................................................... 4
+           3.1     Allgemeine Anforderungen........................................................................................................... 4
+           3.2     Messeinrichtungen Niederspannungsmessung (0,4 kV) .............................................................. 4
+                   3.2.1         Direktmessung ............................................................................................................ 4
+                   3.2.2         Wandlermessung ........................................................................................................ 4
+                   3.2.3         Strommesswandler ..................................................................................................... 5
+           3.3     Messeinrichtungen Mittelspannungsmessung (20 kV) ................................................................. 8
+                   3.3.1         Messwandlerzähler 20 kV ........................................................................................... 8
+                   3.3.2         Messwandler 20 kV ..................................................................................................... 8
+
+4          Lastgangzähler......................................................................................................................................... 10
+
+5          Steuereinrichtungen ................................................................................................................................. 10
+
+6          Daten und Datenbereitstellung................................................................................................................. 10
+
+Anlage 1 - Daten und Datenbereitstellung ............................................................................................................. 11
+
+Allgemeines
+
+
+1.1 Geltungsbereich
+
+Diese Festlegung regelt im Netz der HEWA GmbH die technischen Mindestanforderungen an Strom-
+Messeinrichtungen von Messstellenbetreibern nach § 21 bdes Energie-Wirtschaftsgesetzes (EnWG).
+Diese Festlegung gilt auch bei Durchführung von Umbauten an bestehenden Strommesseinrichtungen
+durch Betreiber von Messeinrichtungen nach § 21 b des EnWG.
+Sollte von behördlicher und/oder amtlicher Seite eine einheitliche Verfügung z. B.in Form einer
+Rechtsverordnung, erlassen werden, die die technischen Mindestanforderungen an Messeinrichtungen
+einheitlich regelt, so verstehen sich die nachfolgenden Ausführungen als nachgeordnet und lediglich im
+Sinne einer Klarstellung bzw. Ergänzung.
+
+
+1.2 Anwendungsbereich
+
+Diese Technischen Mindestanforderungen gelten für Strom-Messeinrichtungen (auch bei kurzzeitigen
+Abnahmestellen) im Netzgebiet der HEWA GmbH insbesondere
+     Messeinrichtungen zur direkten Messung bis zu einem Betriebsstrom ≤ 63 A
+     Messeinrichtungen mit Wandlermessung in der Niederspannung mit einem
+       Betriebsstrom > 63 A
+     Messeinrichtungen mit Wandlermessung in der Mittelspannung
+
+
+Grundlage für diese Mindestanforderungen sind insbesondere die:
+    Technischen Anschlussbedingungen für den Anschluss an das
+       Niederspannungsnetz (TAB 2007) (derzeit in Überarbeitung)
+    zusätzliche Bestimmungen HEWA GmbH zu den Technischen
+       Anschlussbedingungen an das Niederspannungsnetz (TAB 2007) (derzeit
+       in Überarbeitung)
+    Technische Richtlinie - Transformatorstationen am Mittelspannungsnetz
+       (derzeit in Überarbeitung)
+    Metering Code 2006 des VDEW, Ausgabe 2008
+    EWG-Richtlinie MID (Measuring Instrumentals Directive)
+    PTB (Physikalisch-Technischen-Bundesanstalt) Anforderungen
+    PTB-A 20.1 Elektrizitätszähler und deren Zusatzeinrichtungen
+    PTB-A 20.2 Messwandler für Elektrizitätszähler
+    PTB-A 50.1 Schnittstellen an Messgeräten und Zusatzeinrichtungen
+    PTB-A 50.7 Anforderungen an elektronische und Software gesteuerte
+       Messgeräte und Zusatzeinrichtungen für Elektrizität, Gas, Wasser und Wärme.
+    Messeigenschaften gern. IEC 60521 bzw. DIN 5741 Abmessungen der Messeinrichtungen
+       nach DIN 43857
+
+Die aufgeführten Dokumente sind in der jeweils gültigen Fassung zu berücksichtigen.
+
+
+
+
+                                           Seite 2 von 13
+
+1.3 Spannungsebenen
+
+Im Bereich des Stromverteilungsnetzes der HEWA GmbH wird Strom in zwei Spannungsebenen verteilt.
+
+        Niederspannung:                 230/400V        50 Hz
+        Mittelspannung:                 20.000V         50 Hz
+
+Die Spannung wird am Übergabepunkt in den Grenzen der DIN EN 50160 bereitgestellt. Als
+Übergabepunkt zur Kundenanlage gelten im Niederspannungsnetz, gemäß der gültigen TAB, die
+Abgangsklemmen der Anschlusssicherungen des Hausanschlusses (Hausanschlusskasten oder
+Sicherungsleisten im Standverteiler).Im Mittelspannungsnetz wird der Übergabepunkt vertraglich
+vereinbart.
+
+
+2 Anforderungen an die Messstelle
+
+2.1 Grundsätzliche Anforderungen
+
+Bei der Planung, Errichtung und dem Betrieb der Messstelle sind neben den einschlägigen gesetzlichen
+Vorschriften, den Normen und den allgemein anerkannten Regeln der Technik die technischen Hinweise
+dieser Netzbetreiberfestlegung zu beachten. Von der HEWA GmbH veröffentlichte weitergehende
+Anforderungen sind zu berücksichtigen. Der Messstellenbetreiber stellt sicher, dass der HEWA GmbH an
+der Messstelle alle Voraussetzungen zur Messung der abrechnungsrelevanten Größen dauerhaft und
+sicher zur Verfügung stehen.
+
+Betriebsmittel im öffentlichen Netz dürfen keine unzulässigen Rückwirkungen auf andere
+Anschlussnehmer verursachen. In nicht selektiv abgesicherten Netzteilen dürfen nur Betriebsmittel
+verwendet werden, die den technischen Anforderungen der HEWA GmbH entsprechen und von ihm
+freigegeben sind.
+
+Der Aufstellungsort der Messeinrichtung muss zugänglich, belüftet, beleuchtet, witterungsgeschützt und
+trocken sein. Bei Aufstellung im Freien sind die Anforderungen durch gleichwertige Maßnahmen zu
+erfüllen (z. B. Schutzarten durch Gehäuse). Die Einhaltung der zulässigen Umgebungs- und
+Betriebstemperaturbereiche der Messeinrichtungen und sonstige Anforderungen an den Aufstellungsort
+sind sicherzustellen.
+
+
+
+
+                                           Seite 3 von 13
+
+2.2 Sicherung gegen unberechtigte Energieentnahmen
+
+Die gesamte Messstelle ist gegen unberechtigte Energieentnahme zu sichern. Dazu ist ein passiver /
+aktiver Manipulationsschutz anzubringen bzw. eine der ausführenden Person eindeutig zuordenbare
+Plombierung vorzunehmen.
+
+
+3 Anforderungen an die Messeinrichtung
+
+3.1 Allgemeine Anforderungen
+
+Eingesetzte Arbeitszähler müssen für die Kunden-Selbstablesung geeignet sein. Dies gilt als erfüllt, wenn
+alle erforderlichen Register oder Zählwerke gleichzeitig ablesbar sind (keine Tastenbedienung oder
+rollierende Anzeige). In anderen Fällen hat eine Einweisung durch den Messstellenbetreiber zu erfolgen.
+
+Die Messeinrichtungen sind so zu dimensionieren, dass eine einwandfreie Messung gewährleistet ist.
+Dabei ist die Größe des leistungsbegrenzenden Sicherungselements (z. B. SH-Schalter) zu
+berücksichtigen.
+
+Die Dimensionierung von Messeinrichtungen in Mittelspannung ist mit dem Netzbetreiber vorab
+rechtzeitig abzustimmen.
+
+
+3.2 Messeinrichtungen Niederspannungsmessung (0,4 kV)
+
+3.2.1 Direktmessung
+
+Im Netzgebiet der HEWA GmbH erfolgt die Messung in
+Anlagen, in denen ein regelmäßig wiederkehrender Betriebsstrom von ≤ 80 A zu erwarten ist, bei
+Wechselstrom-, Drehstrom- und Drehstrommehrtarifzählern direkt.
+
+Für diese Messeinrichtungen gelten mindestens folgende Genauigkeitsklassen:
+
+        Wechselstromzähler:              Genauigkeitsklasse 2
+        Drehstromzähler:                 Genauigkeitsklasse 2
+        Drehstrommehrtarifzähler:        Genauigkeitsklasse 2
+
+Das Zählwerk muss sechs Vorkomma- und eine Nachkommastelle anzeigen.
+
+3.2.2 Wandlermessung
+
+Im Netzgebiet der HEWA GmbH erfolgt die Messung in Anlagen, in denen ein regelmäßig
+wiederkehrender Betriebsstrom von > 80 A zu erwarten ist, über Messwandlerzähler.
+Die Bemessungsstromstärke des Messwandlerzählers muss 5 A, vorzugsweise 5||1 A betragen.
+
+Für diese Messwandlerzähler gelten mindestens folgende Genauigkeitsklassen:
+
+       Messwandlerzähler (Wirkverbrauch)          Genauigkeitsklasse 1
+       Messwandlerzähler (Blindverbrauch)         Genauigkeitsklasse 2
+
+
+
+                                             Seite 4 von 13
+
+3.2.3 Strommesswandler
+
+Im Netzgebiet des Netzbetreibers dürfen folgende Standardwandler zur niederspannungsseitigen
+Wandlermessung eingesetzt werden:
+
+
+Allgemeines
+Die bei der HEWA GmbH zulässigen 0,4-kV-Stromwandler sind im Dauerbetrieb mit 120 % |Nenn
+belastbar und müssen dabei die gesetzliche Messgenauigkeit einhalten.
+
+Die Auslöseströme von NH-Sicherungen müssen bei einer Auslösezeit von 1 Stunde bei dem 1,3 bis 1,4-
+fachen Nennstrom liegen. Bei gleichem Nennstrom der Sicherung sowie des Wandlers muss der
+Auslösestrom der Sicherung über dem Maximaleichwert (120 %) des Wandlers liegen.
+
+
+Spezifikation der Stromwandler
+Die 0,4-kV-Stromwandler zur Abrechnungszwecken haben der VDE 0414-1 zu entsprechen. In der Regel
+sind deshalb Niederspannungsstromwandler folgender Spezifikation anzuwenden:
+
+    Klasse:                                           0.5S 120 % FS 5
+    Sekundärstrom:                                    5A
+    Nennleistung:                                     0…10 VA
+    Nennfrequenz:                                     50 Hz
+    Therm. Bemessungs-/Kurzzeitstrom:                 I th= 60 x IN
+    Bemessungs-Stoßstrom:                             Idyn= 2,5 x I th
+    Isolierklasse:                                    E
+    PTB-Zulassung
+    Typenbezeichnung des Wandlers
+    Seriennummer des Herstellers
+    Eigentumsnummer (Identifikationsnummer)
+
+    Hinweis:
+    Alle Angaben sind auf dem plombierbaren Leistungsschild des Stromwandlers sichtbar, dauerhaft
+    und manipulationssicher vom Wandlerhersteller aufzubringen. Die Sekundärklemmabdeckung ist
+    plombierbar auszuführen.
+
+    Das Wandlerfenster ist entsprechend dem verwendeten                  Schienenquerschnitt   bzw.
+    Kabeldurchmesser und Anzahl der Schienen zu dimensionieren.
+
+    Maße und Größe der Kupferschiene:                         siehe Zeichnungen nächste Seite
+
+
+
+
+                                          Seite 5 von 13
+
+Stromwandler bis 500 / 5 A:
+
+
+
+
+  Stromwandler 750 / 5 A:
+
+
+
+
+                              Seite 6 von 13
+
+Wandlergröße bzw. -belastung
+
+     Als Richtwerte für die sinnvolle Anwendung der Wandlergrößen dienen der obere (Pmax) und
+     untere Grenzwert (Pmin der jeweiligen Wandlergröße).
+
+
+
+
+        Wandler-        P N [kW]
+                                         I max      P max
+                                                                           max.    I min [A]
+                                                                                                P mln
+
+        Größe 1N                      [Ag[A](A) [kW]               Vorsicherung                [kW]
+        [A]                                                                  [A]
+        100 / 5            62           120         74                 1x 3 x80        20      _ 13
+        150 / 5            93           180         112             1 x 3 x 125        30        19
+        200 / 5           124           240         149             1 x 3 x 160        40        25
+        250 / 5           155           300         173             1 x 3 x 200        50        35
+        300 / 6           187           360         224              1 x 3x 250        60        38
+        400 / 5           250           480         299              2x 3 x 160        80        50
+        500 / 5           311           600         374              2 x 3 x200       100        63
+        750 /5            467           900         561              3 x 3 x250       150        94
+                           Abbildung 1 Stromwandlergröße und -belastung
+
+
+
+
+Für die Berechnung ist cos φ = 0,9 zugrunde gelegt.
+
+Alle Wandlertypen sind durch Steckschienen zu Blöcken zusammengefasst.
+
+Die Verbindungsleitungen von den Strommesswandlern zum Messwandlerzähler müssen folgende
+Mindestquerschnitte aufweisen:
+
+
+
+                     Einfache Länge                               Strom-Messwandlerleitungen
+                         Bis 25 m                                           4 mm²
+                         Bis 40 m                                           6 mm²
+                         Bis 65 m                                          10 mm²
+
+
+                                   Tabelle 1 Strom-Messwandlerleitungen
+
+
+
+
+                                                 Seite 7 von 13
+
+3.3 Messeinrichtungen Mittelspannungsmessung (20 kV)
+
+
+3.3.1 Messwandlerzähler 20 kV
+
+Im Netzgebiet der HEWA GmbH erfolgt die Messung im 20 kV Netz über Messwandlerzähler. Die
+Bemessungsstromstärke des Messwandlerzählers muss 5 A, vorzugsweise 5||1 A betragen.
+
+Es dürfen nur Lastgangszähler mit viertelstunden-genauer Leistungswerterfassung einschließlich Modem
+mit Anschluss ans Festnetz eingesetzt werden. Ist ein Kommunikationsanschluss ans Festnetz nicht
+möglich, bzw. nicht wirtschaftlich vertretbar, so ist eine alternative Lösung, z. B. ein GSM-Modem
+zulässig.
+
+Für die störungsfreie Datenübertragung ist hierbei der Messstellenbetreiber verantwortlich.
+
+Für die Mittelspannungs-Messwandlerzähler gelten folgende Genauigkeitsklassen:
+
+        Messwandlerzähler (Wirkverbrauch)        Genauigkeitsklasse 1
+        Messwandlerzähler (Blindverbrauch)       Genauigkeitsklasse 2
+
+
+3.3.2 Messwandler 20 kV
+
+Im Netzgebiet der HEWA GmbH müssen Stromwandler zur mittelspannungsseitigen Wandlermessung
+für Verrechnungszwecke mit folgender Spezifikation eingesetzt werden:
+
+       Klasse:                                           0.5S 120% FS 5
+       Sekundärstrom:                                    5A
+       Nennleistung:                                     0...15 VA
+       Spannung Effektivwert:                            24 kV
+       Nennfrequenz:                                     50 Hz
+       Therm. Bemessungs-/ Kurzzeitstrom:                Ith 25 kA
+       Bemessungs-Stoßstrom:                             Idyn = 2,5 x Ith
+       Grenzwerte für Übertemperatur:                    -25/40
+       Isolierklasse:                                    E
+       PTB-Bauartzulassung
+       Typenbezeichnung des Wandlers
+       Seriennummer des Herstellers
+       Eigentumsnummer (Identifikationsnummer)
+       DIN Wandlerausführung:                            bevorzugt kleine Bauform
+       Isolationsmaterial:                               Gießharz
+
+
+Hinweis:
+Alle Angaben sind auf dem plombierbaren Leistungsschild des Stromwandlers sichtbar, dauerhaft und
+manipulationssicher vom Wandlerhersteller aufzubringen.
+
+
+
+
+                                             Seite 8 von 13
+
+                 Spannung                     3x20.000/√3V/100/√3V
+             Spannungskonstante                        200
+                Stromwandler                2x10      2x25      2x50            Primärstrom in A
+                                             20        50        100
+                Sekundärstrom                5          5         5           Sekundärstrom in A
+               Gesamtkonstante              800      2000       4000
+                 Pmax 120%                  830      2076       4330                  KVA
+                     PN                     692      1730       5196                  KVA
+
+                                  Tabelle 2 Mittelspannungswandler
+
+
+Weiterhin müssen Spannungswandler für Verrechnungszwecke mit folgender Spezifikation
+eingesetzt werden:
+
+       Klasse:                                         0.5
+       Nennleistung:                                   50 VA
+       Spannung Effektivwert:                          24 kV
+       Nennfrequenz:                                   50 Hz
+       Bemessungs-Spannungsfaktor:                     1,9
+       Bemessungszeit:                                 8h
+       Grenzwerte für Übertemperatur:                  -25/40
+       Isolierklasse:                                  E
+       PTB-Bauartzulassung
+       Typenbezeichnung des Wandlers
+       Seriennummer des Herstellers
+       Eigentumsnummer (Identifikationsnummer)
+       DIN Wandlerausführung:                          bevorzugt kleine Bauform
+       Isolationsmaterial:                             Gießharz
+
+
+Hinweis:
+Alle Angaben sind auf dem plombierbaren Leistungsschild des Spannungswandlers sichtbar, dauerhaft
+und manipulationssicher vom Wandlerhersteller aufzubringen.
+
+Sollen Wandler eingesetzt werden, die nicht diesen Anforderungen genügen oder vom Netzbetreiber nicht
+freigegeben sind, rüstet die HEWA GmbH auf Kosten des Messstellenbetreibers Übergabeschalter nach,
+die im Störungsfall eine selektive Trennung der Anlagenteile des Anschlussnehmers sicherstellen.
+
+
+
+
+                                           Seite 9 von 13
+
+Die Verbindungsleitungen von dem Strommesswandler zum Messwandlerzähler müssen folgende
+Mindestquerschnitte aufweisen:
+
+
+                        Einfache Länge                         Strom- und Spannungs-
+                                                               Messwandlerleitungen
+                            bis 25 m                                    4 mm²
+                            bis 40 m                                    6 mm²
+                            bis 65 m                                   10 mm²
+
+                                    Tabelle 3 Messwandlerleitungen
+
+
+Der Spannungsfall auf der Verbindungsleitung zwischen Spannungswandler und dem
+Messwandlerzähler darf nicht größer als 0,1 % der Sekundären Bemessungsspannung betragen.
+
+
+
+4 Lastgangzähler
+Bei Anschlussnehmern, bei denen ein jährlicher Strombezug von über 100.000 kWh zu erwarten ist, muss
+ein Lastgangszähler mit viertelstündiger, registrierender Leistungserfassung, einschließlich Modem und
+Anschluss ans Festnetz, installiert werden.
+
+Ist ein Kommunikationsanschluss an das Festnetz nicht möglich bzw. nicht wirtschaftlich vertretbar, so ist
+eine Alternativlösung, z. B. ein GSM-Modem in Abstimmung mit dem Netzbetreiber zulässig.
+
+In allen Fällen ist der Messstellenbetreiber für die störungsfreie Datenübertragung verantwortlich.
+
+
+
+5 Steuereinrichtungen
+Sind mit dem Kunden im Energieliefervertrag Schaltzeiten für Hoch- bzw. Niedertarif oder unterbrechbare
+Verbrauchseinrichtungen vereinbart, so muss vom Messstellenbetreiber eine entsprechende
+Steuereinrichtung vorgesehen werden.
+
+
+
+6 Daten und Datenbereitstellung
+Die Bereitstellung bzw. Übermittlung der Stammdaten der Messstelle, der Leistungswerte sowie der
+Verrechnungsdaten erfolgt gemäß Anlage 1 zu diesen technischen Mindestanforderungen. Bei der
+Festlegung und Änderung der Formatvorgaben wird der Netzbetreiber die berechtigten Interessen des
+Messstellenbetreibers angemessen berücksichtigen.
+
+
+
+
+                                             Seite 10 von 13
+
+Anlage 1 - Daten und Datenbereitstellung
+   1. Datenerfassungsblatt mit mindestens folgendem Informationsumfang:
+
+         Zählpunktbezeichnung (Vorgabe durch Netzbetreiber)
+         Voraussichtlicher Jahresverbrauch (Periodenverbrauch)
+         Vorgangsgrund (Einbau, Ausbau, Wechsel des Messgerätes)
+         Anlagen-Nummer (Vorgabe durch Netzbetreiber)
+         Ableseeinheit (Vorgabe durch Netzbetreiber)
+         Name des aktuellen Messstellenbetreibers
+         Name, Vorname (Letztverbraucher)
+         Straße, Hausnummer
+         PLZ, Ort, Ortsteil
+         Name, Vorname (Entnahmestelle)
+         Straße, Hausnummer
+         PLZ, Ort, Ortsteil
+         Messgeräteplatzstandort
+         Sparte (Strom, Gas)
+         Abrechnungsfaktor (Wandlerfaktoren)
+         Zähleridentifikationsnummer
+         Zählerart (WS, DS, ..)
+         Gleiche Zählwerke
+         Zählwerksanzeige
+         Zählwerksmaßeinheit
+         Zählwerksart
+         Stellen vor, Stellen nach dem Komma
+         Saldierende oder kumulierende Zählwerke (Leistung)
+         Impulswertigkeit
+         Einbau-/Ausbauzählerstand HT
+         Einbau-/Ausbauzählerstand NT
+         Einbau-/Ausbau-/Wechseldatum
+         Modemart
+         Telefonnummer
+         Zugangsdaten (z. B. Passwort, Baudrate....)
+
+
+
+
+                                       Seite 11 von 13
+
+ 2. Zähl- und Kommunikationseinrichtungen
+
+     Zur Sicherstellung eines reibungslosen und kostengünstigen Datenaustauschs mit dem
+     Netzbetreiber sind die verwendeten Geräte und die Parametrisierungen vor Inbetriebnahme der
+     Anlage abzustimmen, um die Kompatibilität mit dem Zählerfernauslesesystem des
+     Netzbetreibers zu gewährleisten.
+
+     Beim Netzbetreiber kommen hauptsächlich die folgenden Zählertypen und Kommuni-
+     kationseinrichtungen zum Einsatz:
+
+
+                                                Spannung/    Schnittstelle Genauigkeits-
+Hersteller         Gerät             Typ
+                                                   Strom    Datenprotokoll    klasse
+                 Wechsel-                          230 V
+ Siemens                       7AA5041                            -              2
+               strom 1 Tarif                      10(40)A
+                 Wechsel-                          230 V
+  Actaris                        A49U                             -              2
+               strom 1 Tarif                      10(60)A
+                 Wechsel-                          230 V
+Landis+Gyr                      CM160J                            -              2
+               strom 1 Tarif                      10(60)A
+                Drehstrom                       3x230/400 V
+Landis+Gyr                     7CA44 61                           -              2
+                   1 Tarif                        10(60)A
+                Drehstrom                       3x230/400 V
+Landis+Gyr                     MM2600J                            -              2
+                   1 Tarif                        10(60)A
+                Drehstrom                       3x230/400 V
+  Actaris                       C114U                             -              2
+                   1 Tarif                        10(60)A
+                Drehstrom                       3x230/400 V
+ Siemens                       7CA54 62                           -              2
+                   2 Tarif                        10(60)A
+                Drehstrom                       3x230/400 V
+Landis+Gyr                    MM2600JD                            -              2
+                   2 Tarif                        10(60)A
+                Drehstrom                       3x230/400 V
+Landis+Gyr                     MM2500J                            -              2
+                   1 Tarif                       20(100)A
+                Drehstrom                       3x230/400 V
+Landis+Gyr                    MM2500JD                            -              2
+                   2 Tarif                       20(100)A
+             Drehstromwandler                   3x230/400 V
+Landis+Gyr                    MM2500JH                            -              2
+                   1 Tarif                         5//1 A
+             Drehstromwandler                   3x230/400 V
+Landis+Gyr                    MM2500JHD                           -              2
+                   1 Tarif                         5//1 A
+
+
+
+
+                                       Seite 12 von 13
+
+                                                                      Schnittstelle
+                                                       Spannung/                    Genauigkeits-
+ Hersteller            Gerät                Typ                      Datenprotokol
+                                                         Strom                         klasse
+                                                                           l
+                Elektr. Messwandler-
+                                        DC351H-                      CS, gem. EN
+                Kombizähler für Wirk-                  3x230/400 V                     1 Wirk
+   Actaris                              MPB84Z-                      61107(CL)/
+                u. Blindverbrauch mit                  10(100) A                       2 Blind
+                                        ALR26S                       VDEW 2.0
+                Lastprofilspeicher
+                Elektr. Messwandler-
+                                        DC351H-                      CS, gem. EN
+                Kombizähler für Wirk-                  3x230/400 V                     1 Wirk
+   Actaris                              MPB84Z-                      61107(CL)/
+                u. Blindverbrauch mit                  5//1 A                          2 Blind
+                                        ALR46S                       VDEW 2.0
+                Lastprofilspeicher
+                Elektr. Messwandler-
+                                        DC351H-                      CS, gem. EN
+                Kombizähler für Wirk-                  3x58/100 V                      1 Wirk
+   Actaris                              MPB84Z-                      61107(CL)/
+                u. Blindverbrauch mit                  5//1 A                          2 Blind
+                                        ALR46S                       VDEW 2.0
+                Lastprofilspeicher
+                Transparent-
+                                        Sparkline II                 CL-
+   Actaris      Modem                                  100/230 V
+                                        ISDN                         Schnittstelle
+                Analog
+                Transparent-
+                                        Sparkline II                 CL-
+   Actaris      Modem                                  100/230 V
+                                        14.4                         Schnittstelle
+                Analog
+                Transparent-
+                                        Sparkline II                 CL-
+   Actaris      Modem                                  100/230 V
+                                        GSM                          Schnittstelle
+                Analog
+
+
+                   Tabelle 4 Übersicht Zähl- und Kommunikationseinrichtungen
+
+
+Alle Geräte werden über eine Drei-Punkt-Aufhängung befestigt.
+
+Sollte der Messstellenbetreiber andere Zähl- und Kommunikationseinrichtungen verwenden, so sind
+ggf. anfallende Mehrkosten für den einwandfreien Betrieb des Zählerfernauslesesystems und die
+regelmäßige Bereitstellung der Daten durch den Messstellenbetreiber zu tragen.
+
+
+
+
+                                         Seite 13 von 13
+

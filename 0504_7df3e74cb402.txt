@@ -1,0 +1,28 @@
+URL: https://www.swg-gun.de/content/download/750/4458/file/Standardlastprofile Strom der Stadtwerke Gunzenhausen_2018.pdf
+Netzbetreiber: Stadtwerke Gunzenhausen GmbH
+
+Lastprofilbezeichnungen nach MaBiS der Stadtwerke Gunzenhausen GmbH
+
+
+              Standardlastprofil          Bezeichnung   Gültig ab
+Haushalt                                     H0F        01.06.2011
+Gewerbe allgemein                            G0F        01.06.2011
+Gewerbe werktags 8 bis 18 Uhr                G1F        01.06.2011
+Gewerbe überwiegend in den Abendstunden      G2F        01.06.2011
+Gewerbe durchlaufend                         G3F        01.06.2011
+Gewerbe Laden / Friseur                      G4F        01.06.2011
+Gewerbe Bäckerei mit Backstube               G5F        01.06.2011
+Gewerbe Wochenendbetrieb                     G6F        01.06.2011
+Landwirtschaftsbetriebe                      L0F        01.06.2011
+Milchwirtschaft                              L1F        01.06.2011
+Übrige Landwirtschaft                        L2F        01.06.2011
+Straßenbeleuchtung                           SBL        01.06.2011
+Speicherheizung getrennte Messung            SPE        01.06.2011
+Speicherheizung gemeinsame Messung           SPG        01.06.2011
+
+
+
+                  TLP-Profil              Bezeichnung   Gültig ab
+Speicherheizung_getrennt                     HZ0        01.01.2016
+Wärmepumpe_Direktheizung                     HZ2        01.01.2016
+

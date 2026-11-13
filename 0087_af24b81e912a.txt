@@ -1,0 +1,643 @@
+URL: https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Stromnetz/Netzanschluss-Vertraege-und-Anlagen/152-netznutzungsvertrag.pdf
+Netzbetreiber: e.wa riss Netze GmbH
+
+                        Netznutzungsvertrag Kunde (Strom)
+                 Vertrag über die Nutzung des Netzes des Netzbetreibers
+                                  durch Anschlussnutzer
+
+
+                                                zwischen
+
+
+
+
+                                        e.wa riss Netze GmbH
+
+                                           Freiburger Str. 6
+
+                                           88400 Biberach
+
+
+                                         ILN 9907276000007
+
+                                           (Netzbetreiber)
+
+
+
+
+                                                  und
+
+
+
+
+                                                 Name
+
+                                                Straße
+
+                                               PLZ+Ort
+
+
+                                                  ILN
+
+                                             (Netznutzer)
+
+
+
+                             (gemeinsam auch Parteien oder Vertragsparteien)
+
+
+                                 wird nachfolgender Vertrag geschlossen
+
+
+
+
+e.wa riss Netze GmbH                                                           Stand 06/2013
+
+Inhaltsverzeichnis
+
+
+Präambel .................................................................................................................................................................. 3
+§1           Vertragsgegenstand ................................................................................................................................... 3
+§2           Vertragsabwicklung durch einen Dritten ................................................................................................... 3
+§3           Netzzugang ................................................................................................................................................ 4
+§4           Pflichten des Netzbetreibers ..................................................................................................................... 4
+§5           Pflichten des Netznutzers .......................................................................................................................... 5
+§6           Bilanzausgleich........................................................................................................................................... 5
+§7           Festlegung der Bundesnetzagentur zu Geschäftsprozessen und Datenformaten .................................... 5
+§8           Standardlastprofilverfahren ...................................................................................................................... 6
+§9           Ansprechpartner, Datenaustausch ............................................................................................................ 6
+§ 10         Entgelte; Blindarbeit; Änderung der Entgelte ........................................................................................... 7
+§ 11         KWK-Aufschlag; § 19 Abs. 2 StromNEV-Umlage; Offshore-Haftungsumlage;
+             Umlage für abschaltbare Lasten; Konzessionsabgabe ............................................................................... 8
+§ 12         Ermittlung von Arbeit und Leistung; Abrechnung der Netznutzung;
+             Abschlagszahlungen; Rechnungsstellung .................................................................................................. 8
+§ 13         Allgemeine Zahlungsbestimmungen; Zahlungsverzug; zusätzliche Steuern,
+             Abgaben und sonstige hoheitlich auferlegte Belastungen ...................................................................... 10
+§ 14         Zahlungsverweigerung; Aufrechnung ...................................................................................................... 10
+§ 15         Vorauszahlung; Sicherheitsleistung ......................................................................................................... 10
+§ 16         Vertragsdauer, Kündigung ....................................................................................................................... 11
+§ 17         Schlussbestimmungen; Allgemeine Bedingungen; Anlagen .................................................................... 12
+
+
+
+
+Netznutzungsvertrag Strom                                                                                                                                               Seite 2 von 13
+
+                                                          Präambel
+Gegenstand dieses Vertrages ist die vertragliche Ausgestaltung des Netzzugangs zwischen Netzbetreiber und Netznut-
+zer, gegebenenfalls unter Einbeziehung eines vom Netznutzer benannten Dritten (z. B. seinem Lieferanten oder Bi-
+lanzkreisverantwortlichen). Diesem Vertrag liegen das Energiewirtschaftsgesetz vom 13.07.2005 (EnWG), das Kraft-
+Wärme-Kopplungsgesetz vom 19.03.2002 (KWKG), die Stromnetzzugangs- und die Stromnetzentgeltverordnung je-
+weils vom 28.07.2005 (StromNZV, StromNEV), die Anreizregulierungsverordnung vom 29.10.2007 (ARegV), die Mess-
+zugangsverordnung vom 17.10.2008 (MessZV), die Verordnung über Vereinbarungen zu abschaltbaren Lasten vom
+28.12.2012 (AbLaV) sowie die Niederspannungsanschlussverordnung (NAV) und – soweit relevant – die Grundversor-
+gungsverordnung Strom (StromGVV) jeweils vom 08.11.2006 zu Grunde. Er wird automatisch modifiziert durch ein-
+schlägige Festlegungen der Regulierungsbehörden, soweit und solange diese vollziehbar sind.
+Der Transmission-Code, die VDE-AR-N 4400 Anwendungsregel 2011-09 und der Distribution-Code in ihrer bei Ver-
+tragsabschluss geltenden Fassung sind ebenfalls Grundlage dieses Vertrages, soweit in diesem Vertrag weder abwei-
+chende Regelungen getroffen werden noch zwingende gesetzliche oder aufgrund Gesetzes erlassene Regelungen
+entgegenstehen.
+
+                                                   § 1 Vertragsgegenstand
+(1)      Der vorliegende Vertrag regelt die Zusammenarbeit und die gegenseitigen Rechte und Pflichten im Zusammen-
+         hang mit dem Zugang des Netznutzers zum Elektrizitätsversorgungsnetz für Entnahmestellen im Netz des Netz-
+         betreibers, insbesondere
+         a)       Netzzugang bzw. Netznutzung des Netznutzers nach Maßgabe von § 3 dieses Vertrages,
+         b)       Informationspflichten und Regelungen der Datenübermittlung,
+         c)       Bilanzkreiszuordnung unter Berücksichtigung der sich aus der Festlegung von Marktregeln für die Durch-
+                  führung der Bilanzkreisabrechnung Strom (BK6-07-002, MaBiS) ergebenden Pflichten der Vertragspar-
+                  teien,
+         d)       Leistungsmessung und Standardlastprofilverfahren sowie
+         e)       Ausgleich der Jahresmehr- und Jahresmindermengen bei der Anwendung des Standardlastprofilverfah-
+                  rens.
+
+(2)      Für die nachfolgend aufgeführten Bereiche bedarf es – im Rahmen gesetzlicher Vorgaben – gesonderter Ver-
+         einbarungen:
+         a)       Netznutzung von Erzeugungsanlagen,
+         b)       Reservenetzkapazität,
+         c)       Sonderformen der Netznutzung (z. B. singulär genutzte Betriebsmittel),
+         d)       Netzanschluss und – außerhalb des Anwendungsbereichs der NAV – Anschlussnutzung sowie
+         e)       – falls der Netznutzer nicht selbst Bilanzkreisverantwortlicher ist – die Zuordnungsvereinbarung zwi-
+                  schen Netzbetreiber und Bilanzkreisverantwortlichem im Sinne der MaBiS.
+
+                                          § 2 Vertragsabwicklung durch einen Dritten
+(1)      Der Netznutzer kann sich für die im Rahmen der Durchführung dieses Vertrages notwendigen Handlungen und
+         abzugebenden bzw. zu empfangenden Mitteilungen/Willenserklärungen eines Dritten, z. B. seines Lieferanten
+         oder seines Bilanzkreisverantwortlichen, bedienen. Die Abwicklung über einen Dritten kann sich auch auf ein-
+         zelne Prozesse beziehen. Der Netznutzer ist verpflichtet, den Netzbetreiber rechtzeitig vor Beginn der Ver-
+         tragsabwicklung schriftlich darüber zu informieren, ob und inwieweit ein Dritter im Rahmen der Abwicklung
+         dieses Vertrages an seine Stelle tritt. Für diesen Fall sichert der Netznutzer hiermit zu, dass er den Dritten tat-
+         sächlich bevollmächtigt hat.
+(2)      Gläubiger der Netznutzung und Schuldner der Entgelte nach diesem Vertrag ist in jedem Falle der Netznutzer,
+         auf den auch die Rechnung ausgestellt wird. Der Versand der Rechnung kann auf Wunsch des Netznutzers an
+
+
+
+
+Netznutzungsvertrag Strom                                                                                        Seite 3 von 13
+
+         einen Dritten erfolgen. § 7 dieses Vertrages, insbesondere die Vorgaben zur Adressierung der Nachrichten,
+         bleibt unberührt.
+
+                                                     § 3 Netzzugang
+(1)      Der Netzbetreiber stellt dem Netznutzer im Rahmen des Netzzugangs das Versorgungsnetz und die Netzinfra-
+         struktur – einschließlich aller vorgelagerten Netze bis zur Höchstspannungsebene – zum Zwecke der Durchlei-
+         tung elektrischer Energie zu seinen Entnahmestellen, die an das Netz des Netzbetreibers angeschlossen sind,
+         entgeltlich zur Verfügung und erbringt die Systemdienste.
+(2)      Die Parteien sind sich einig, dass auch das Vertragsverhältnis über die Anschlussnutzung und dasjenige zwi-
+         schen Netzbetreiber und Anschlussnehmer Auswirkungen auf den Netzzugang nach diesem Vertrag haben
+         kann.
+(3)      Das Bestehen dieses Vertrages ist Voraussetzung für den Netzzugang. Der Abschluss ist eine Obliegenheit des
+         Netznutzers. Der Netzzugang entfällt bei Beendigung des Vertrages. Der Netzbetreiber hat bei bestehendem
+         Vertrag das Recht, dem Netznutzer den Netzzugang – gegebenenfalls für einzelne Entnahmestellen – unter den
+         Voraussetzungen der Ziffer 2 der AGB Netzzugang Kunde (Anlage 3) zu entziehen.
+
+                                             § 4 Pflichten des Netzbetreibers
+(1)      Der Netzbetreiber stellt dem Netznutzer die Netzinfrastruktur entgeltlich nach Maßgabe von § 3 zur Verfügung.
+(2)      Der Netzbetreiber ermittelt für alle Entnahmestellen des Netznutzers (sofern ein dritter Messstellenbetreiber
+         bzw. Messdienstleister zuständig ist, auf Grundlage der von diesem gemessenen und dem Netzbetreiber zur
+         Verfügung gestellten Messwerte) die ¼-h-Leistungsmittelwerte der Entnahmen. Diese ¼-h-
+         Leistungsmittelwerte werden
+         a)       bei leistungsgemessenen Entnahmestellen gemäß § 10 Abs. 2 MessZV durch eine viertelstündlich regist-
+                  rierende Leistungsmessung und
+         b)       bei Entnahmestellen, deren Belieferung gemäß § 12 Abs. 1 StromNZV i.V.m. § 10 Abs. 1 MessZV unter
+                  Anwendung von standardisierten Lastprofilen abgewickelt wird, mit Messeinrichtungen zur Erfassung
+                  der elektrischen Arbeit auf Grundlage des für die jeweilige Entnahmestelle festgelegten Standardlast-
+                  profils und der nach § 13 Abs. 1 StromNZV festgelegten Jahresverbrauchsprognose in Verbindung mit
+                  dem vom Netzbetreiber bestimmten Verfahren zur Handhabung von Lastprofilen (syntheti-
+                  sches/erweitert analytisches Verfahren, vgl. § 8)
+         bestimmt. Etwaige Rechte des Netznutzers gemäß § 21b Abs. 2 EnWG und der MessZV bleiben unberührt.
+(3)      Für Entnahmestellen ohne Messeinrichtung (z. B. Telefonzellen, Ampelanlagen) wird der Jahresverbrauch vom
+         Netzbetreiber auf der Grundlage allgemein anerkannter Erfahrungswerte festgelegt, die zugleich der Abrech-
+         nung zu Grunde gelegt werden. Jahresmehr- oder Jahresmindermengen gemäß § 13 StromNZV treten für diese
+         Entnahmestellen nicht auf.
+(4)      Die Zuordnung von Energiemengen zum Zweck der Bilanzkreisabrechnung und der hierfür erforderliche Daten-
+         austausch zwischen Netzbetreiber und Netznutzer und gegebenenfalls von diesem verschiedenen Bilanzkreis-
+         verantwortlichen richtet sich nach der MaBiS, soweit und solange die Vertragsparteien (gegebenenfalls in Ab-
+         stimmung mit dem Bilanzkreisverantwortlichen) nicht bilateral hiervon abweichende Vereinbarungen über die
+         Zuordnung von Energiemengen einer Entnahmestelle zum Netznutzer etwa im Rahmen von Verträgen nach
+         Tenor 5 der Festlegung einheitlicher Geschäftsprozesse und Datenformate zur Abwicklung der Belieferung von
+         Kunden mit Elektrizität (BK6-06-009, GPKE) getroffen haben.
+(5)      Der Netzbetreiber wird dem Netznutzer elektrische Arbeit als ungewollte Mindermenge bereitstellen bzw. als
+         ungewollte Mehrmenge abnehmen (§ 13 Abs. 2 und 3 StromNZV) und diese im Rahmen der Jahresmehr- und
+         Jahresmindermengenabrechnung abrechnen. Die Abrechnung erfolgt im elektronischen Verfahren gemeinsam
+         mit der Netznutzungsabrechnung über den Geschäftsprozess Netznutzungsabrechnung der GPKE. Bei der An-
+         wendung des erweiterten analytischen Verfahrens koordiniert der Netzbetreiber den Ausgleich der von den
+         Lieferanten jeweils zu viel oder zu wenig gelieferten elektrischen Arbeit; die Mehr- bzw. Mindermengen gelten
+         als vom Netzbetreiber geliefert bzw. abgenommen. Der Netzbetreiber berechnet für Jahresmehr- und Jahres-
+         mindermengen auf der Grundlage der monatlichen Marktpreise einen einheitlichen Preis, der unter www.ewa-
+
+
+
+Netznutzungsvertrag Strom                                                                                    Seite 4 von 13
+
+         netze.de veröffentlicht wird. Entsteht bei der Bereitstellung von ungewollten Mindermengen Stromsteuer, so
+         trägt diese der Netznutzer. Entsteht bei der Abnahme von ungewollten Mehrmengen Stromsteuer, so trägt die-
+         se der Netzbetreiber. Netzbetreiber und Netznutzer sind sofern sie an Dritte Strom leisten , Versorger im Sinne
+         von § 2 Nr. 1 StromStG. Sind sowohl Netzbetreiber als auch Netznutzer Versorger im Sinne des
+         § 2 Nr. 1 StromStG, kann jeder Vertragspartner vom jeweils anderen in begründeten Fällen, insbesondere zur
+         Wahrung seiner Rechte im Steuerschuldverhältnis, die Vorlage des Erlaubnisscheins (§ 4 StromStG) verlangen.
+         Der andere hat den Erlaubnisschein im Original auf erstmaliges Anfordern unverzüglich vorzulegen.
+
+                                               § 5 Pflichten des Netznutzers
+Der Netznutzer verpflichtet sich zur Begleichung der Entgelte für die Leistungen des Netzbetreibers, insbesondere für
+         a)       die Netznutzung gemäß § 3(1),
+         b)       die Bereitstellung elektrischer Arbeit durch den Netzbetreiber als ungewollte Mindermenge (§ 4(5)),
+         c)       die weiteren im Vertrag und seinen Anlagen genannten Leistungen gemäß dem auf den Internetseiten
+                  des Netzbetreibers veröffentlichten Preisblatt. Für nicht benannte Leistungen, die im Auftrag des Netz-
+                  nutzers erbracht werden und die nach den Umständen zu urteilen nur gegen eine Vergütung zu erwar-
+                  ten sind, kann der Netzbetreiber die Höhe der Entgelte nach billigem Ermessen gemäß § 315 BGB be-
+                  stimmen und eine Erstattung der Kosten verlangen.
+
+                                                    § 6 Bilanzausgleich
+(1)      Der Netzzugang des Netznutzers setzt voraus, dass der Netznutzer dem Netzbetreiber einen Bilanzkreis be-
+         nannt hat und der Bilanzausgleich für die jeweilige Entnahmestelle sichergestellt ist.
+(2)      Ist der Netznutzer nicht selbst Bilanzkreisverantwortlicher, hat er insbesondere sicherzustellen, dass dem Netz-
+         betreiber eine Zuordnungsermächtigung im Sinne der MaBiS ausgehändigt wird, nach der dem Netzbetreiber
+         die Zuordnung der Zählpunkte des Netznutzers zu einem Bilanzkreis des Bilanzkreisverantwortlichen gestattet
+         ist.
+(3)      Netznutzer und Netzbetreiber werden im Rahmen ihrer Möglichkeiten darauf hinwirken, dass die der Bilanz-
+         kreis- und Korrekturbilanzkreisabrechnung zugrunde gelegten Daten inhaltlich richtig sind. Im Rahmen der Da-
+         tenklärungsprozesse der MaBiS haben sie an der Aufklärung von Unstimmigkeiten mitzuwirken. Der Netznutzer
+         wird dabei insbesondere den Bilanzkreisverantwortlichen mit den zur Datenklärung erforderlichen Informatio-
+         nen versorgen und zum Versand rechtzeitiger und korrekter Prüfungsmitteilungen anhalten bzw. diese im Falle
+         eigener Bilanzkreisverantwortung selbst vornehmen. Ist eine Korrektur im Rahmen der Bilanzierung nicht mehr
+         möglich, richtet sich ein erforderlicher wirtschaftlicher Ausgleich einer fehlerhaften Bilanzierung nach den all-
+         gemeinen zivilrechtlichen Regelungen.
+
+                     § 7 Festlegung der Bundesnetzagentur zu Geschäftsprozessen und Datenformaten
+(1)      Die Abwicklung des Netzzugangs durch den Netznutzer zur Entnahme von Elektrizität erfolgt nach der von der
+         Bundesnetzagentur getroffenen Festlegung einheitlicher Geschäftsprozesse und Datenformate vom 11.07.2006
+         (Az.: BK6-06-009) oder einer diese Festlegung ersetzenden oder ergänzenden Festlegung der Bundesnetzagen-
+         tur. Soweit die Bundesnetzagentur in ihrer Festlegung Ausnahmen hinsichtlich des zu verwendenden Daten-
+         formats zulässt, kann bei Vorliegen der entsprechenden Voraussetzungen hierüber eine schriftliche Zusatzver-
+         einbarung getroffen werden. Der Netzbetreiber ist verpflichtet, diese Zusatzvereinbarung der Bundesnetzagen-
+         tur anzuzeigen.
+(2)      Bestimmungen dieses Vertrages, die der Abwicklung des Netzzugangs durch den Netznutzer nach Abs. 1 Satz 1
+         oder einer Zusatzvereinbarung nach Abs. 1 Satz 2 entgegenstehen oder diese anderes regeln, sind unwirksam.
+(3)      Der Netzbetreiber kann dem Netznutzer den für die Beantwortung einer Geschäftsdatenanfrage entstehenden
+         Aufwand in Rechnung stellen. § 21h Abs. 1 Nr. 2 EnWG bleibt unberührt.
+(4)      Um die im Rahmen der Anwendung der GPKE bestehenden Regelungslücken und Interpretationsspielräume zu
+         schließen, beziehen die Vertragsparteien ergänzend die Unterlage „Geschäftsprozesse zur Kundenbelieferung
+         mit Elektrizität (GPKE) und Geschäftsprozesse Lieferantenwechsel Gas (GeLi Gas) – Umsetzungsfragenkatalog
+         (FAQ)“ der Verbände AFM+E, BDEW, bne, EDNA, VIK und VKU in den Vertrag mit ein, soweit und solange über
+
+
+
+Netznutzungsvertrag Strom                                                                                       Seite 5 von 13
+
+         die in der Unterlage aufgeführten Themen Konsens besteht und der vorgesehenen Lösung die Regelungen der
+         GPKE nicht entgegenstehen oder die Vertragsparteien eine abweichende Vereinbarung getroffen haben.
+(5)      Sollten Unklarheiten bei der Umsetzung der GPKE oder der sonstigen Abwicklung der Netznutzung bestehen,
+         werden sich die Vertragsparteien um eine bilaterale Klärung bemühen.
+
+                                           § 8 Standardlastprofilverfahren
+(1)      Die Anwendung von Standardlastprofilen erfolgt nach Maßgabe von § 10 MessZV i.V.m. § 12 StromNZV.
+(2)      Sofern die Regulierungsbehörde gemäß § 27 Abs. 3 StromNZV abweichend von § 12 Abs. 1 Satz 1 StromNZV im
+         Einzelfall abweichende Grenzwerte für standardisierte Lastprofile festlegt, gelten diese. Die Anwendung der
+         neuen Grenzwerte teilt der Netzbetreiber dem Netznutzer unverzüglich mit.
+(3)      Für jede Lastprofilentnahmestelle legt der Netzbetreiber eine Prognose über den Jahresverbrauch, i. d. R. auf
+         Basis des Vorjahresverbrauches, gemäß § 13 Abs. 1 StromNZV fest und teilt diese dem Netznutzer mit der Be-
+         stätigung der Netzanmeldung mit. Der Netznutzer kann unplausiblen Prognosen widersprechen und dem Netz-
+         betreiber eine eigene Prognose unterbreiten. Kommt keine Einigung zustande, legt der Netzbetreiber die Prog-
+         nose über den Jahresverbrauch fest. Die jeweils aktuelle Prognose über den Jahresverbrauch einer Entnahme-
+         stelle wird der Netzbetreiber dem Netznutzer unverzüglich nach erfolgter Ablesung als Stammdatenänderung
+         mitteilen und im Rahmen des Geschäftsprozesses Stammdatenänderung gemäß GPKE umsetzen. § 13 Abs. 1
+         Satz 5 StromNZV bleibt unberührt.
+(4)      Für die Ermittlung der ¼-h-Leistungsmittelwerte bei Entnahmestellen ohne registrierende ¼–h-
+         Leistungsmessung verwendet der Netzbetreiber standardisierte Lastprofile mit ¼-h-Leistungsmittelwerten und
+         stellt sie dem Netznutzer vor Aufnahme der Netznutzung profilscharf und normiert als ¼-h-Energiezeitreihe zur
+         Verfügung.
+         Die Ermittlung der ¼-h-Leistungsmittelwerte bei Entnahmestellen ohne registrierende ¼-h-Leistungsmessung
+         erfolgt nach dem synthetischen Verfahren.
+(5)      Der Netzbetreiber wird bei der Anwendung/Umsetzung des Lastprofilverfahrens neben den gesetzlichen und
+         sonstigen einschlägigen Festlegungen der Regulierungsbehörden, soweit und solange diese vollziehbar sind,
+         insbesondere auch die Regelungen der GPKE sowie der MaBiS einhalten. Unter Beachtung dieser Vorgaben ist
+         der Netzbetreiber berechtigt, das angewendete Standardlastprofilverfahren zu wechseln bzw. zu modifizieren,
+         einzelne Standardlastprofile anzupassen sowie die Zuordnung von Entnahmestellen zu einer bestimmten Stan-
+         dardlastprofilgruppe zu verändern.
+(6)      Sofern der Netzbetreiber zukünftig gesetzlich verpflichtet ist, Netznutzern eine Bilanzierung, Messung und
+         Abrechnung auf Basis von Zählerstandsgängen zu ermöglichen, werden diese Vorgaben vom Netzbetreiber be-
+         achtet.
+
+                                        § 9 Ansprechpartner, Datenaustausch
+(1)      Netzbetreiber und Netzkunde benennen sich mit Vertragsschluss jeweils eine E-Mail-Adresse für den Datenaus-
+         tausch nach diesem Vertrag sowie Ansprechpartner mit Kontaktdaten (Telefonnummer, E-Mail-Adresse etc.)
+         Die Ansprechpartner- und Kontaktdatenliste des Netzbetreibers ist dem Vertrag als Anlage 2 beigefügt. Erfolgt
+         die Datenabwicklung über einen vom Netznutzer benannten Dritten (z. B. den Lieferanten des Netznutzers) be-
+         nennt der Netznutzer auch für diesen die notwendigen Ansprechpartner. Über Änderungen bei den Ansprech-
+         partnern und/oder Kontaktdaten werden sich die Parteien gegenseitig unverzüglich in Textform informieren.
+(2)      Der Datenaustausch zwischen den Vertragsparteien im Rahmen der Anbahnung und Abwicklung der Netznut-
+         zung durch den Netznutzer erfolgt entsprechend den Vorgaben der GPKE, sofern keine abweichende Vereinba-
+         rung insbesondere nach Tenor 5 der GPKE zwischen den Parteien getroffen wurde. Der Datenaustausch im Üb-
+         rigen erfolgt via E-Mail an die nach Abs. (1) benannten Kontaktadressen, sofern nicht zwingende gesetzliche
+         oder auf Grund Gesetzes erlassene Vorgaben eine andere Kommunikation oder eine andere Form vorschrei-
+         ben.
+
+
+
+
+Netznutzungsvertrag Strom                                                                                   Seite 6 von 13
+
+                                   § 10 Entgelte; Blindarbeit; Änderung der Entgelte
+(1)      Der Netzbetreiber berechnet für die Netznutzung Netznutzungsentgelte und Entgelte für die Abrechnung sowie
+         – soweit und solange er Messstellenbetrieb und Messung durchführt – Entgelte für Messstellenbetrieb und
+         Messung in der jeweils auf seinen Internetseiten veröffentlichten Höhe. Der Netzbetreiber bildet die Netznut-
+         zungsentgelte nach den gesetzlichen und aufgrund Gesetzes erlassenen Vorgaben, insbesondere dem EnWG
+         und der ARegV in Verbindung mit der StromNEV.
+(2)      Der Netzbetreiber wird die Netznutzungsentgelte für die Netznutzung unmittelbar nach ihrer Ermittlung, spä-
+         testens zum 15.10. eines Jahres für das Folgejahr im Internet veröffentlichen. Sind Netznutzungsentgelte nach
+         § 1(1) zum 15.10. eines Jahres im Sinne des § 20 Abs. 1 Satz 1 EnWG nicht ermittelt (etwa weil die Netznut-
+         zungsentgelte des vorgelagerten Netzbetreibers noch nicht vorliegen), veröffentlicht der Netzbetreiber die Hö-
+         he der Entgelte, die sich voraussichtlich auf Basis der für das Folgejahr geltenden Erlösobergrenze ergeben
+         wird. Sollten zum 01.01. des folgenden Jahres die Netznutzungsentgelte weiterhin nicht ermittelt sein, wird der
+         Netzbetreiber die Netznutzung auf Grundlage der auf seinen Internetseiten veröffentlichten voraussichtlichen
+         Netznutzungsentgelte abrechnen. Über diese Vorgehensweise wird der Netzbetreiber den Netznutzer unver-
+         züglich in Textform informieren. Sobald dem Netzbetreiber die Ermittlung der Netznutzungsentgelte nach §
+         1(1) möglich ist, gelten für den Zeitraum seit dem 01.01. des laufenden Jahres die daraufhin veröffentlichten
+         Netznutzungsentgelte. Etwaige Differenzen zu den zunächst als voraussichtliches Netznutzungsentgelt erhobe-
+         nen Netznutzungsentgelten wird er, soweit eine Berücksichtigung bei der Bemessung künftig zu zahlender Ent-
+         gelte (z. B. im Rahmen des Regulierungskontos) nicht möglich sein sollte, im Rahmen einer korrigierten Netz-
+         nutzungsabrechnung an den Netznutzer auskehren bzw. von diesem nachfordern. Die Korrektur erfolgt durch
+         Stornierung der ursprünglichen Rechnungen und Übermittlung korrigierter Rechnungen entsprechend des Ge-
+         schäftsprozesses zur Korrektur der Netznutzungsabrechnung der GPKE (Ziffer 6.2, Nr. 9b).
+(3)      Für den Fall, dass gegen die für die Entgelte nach § 1(1) maßgebliche, von der Regulierungsbehörde festgelegte
+         Erlösobergrenze im Rahmen von gerichtlichen Verfahren Rechtsbehelfe eingelegt werden oder anhängig sind
+         (z. B. durch den Netzbetreiber oder Dritte) und die sich aufgrund einer späteren Änderung der Erlösobergrenze
+         ergebenden Differenzen zu den veröffentlichten Entgelten nicht (etwa im Rahmen des Regulierungskontos) bei
+         der Bemessung künftig zu zahlender Entgelte Berücksichtigung finden können, ist zwischen den Parteien das
+         vom Netzbetreiber auf Grundlage der rechts- bzw. bestandskräftig festgelegten Erlösobergrenze gebildete und
+         auf seinen Internetseiten veröffentlichte Netznutzungsentgelt rückwirkend maßgeblich. Dies kann dazu führen,
+         dass Entgelte für vorangegangene Zeiträume - gegebenenfalls nach Beendigung des Vertrages oder der Netz-
+         nutzung (gegebenenfalls für einzelne Entnahmestellen) durch den Netznutzer - nachgefordert oder zurückge-
+         zahlt werden müssen. Um Netznutzer und Netzbetreiber eine Risikoabschätzung und gegebenenfalls die Bil-
+         dung von Rückstellungen zu ermöglichen, werden sich die Parteien wechselseitig mitteilen, inwieweit die Er-
+         lösobergrenze im Rahmen von Rechtsmitteln streitig ist. Der Netzbetreiber wird dem Netznutzer bei von ihm
+         geführten Verfahren weiter mitteilen, welche Auswirkungen dieses auf das vom Netzbetreiber zu bildende
+         Netznutzungsentgelt hat.
+(4)      Abs. (3) gilt entsprechend bei Rechtsbehelfen gegen die Festlegung der Erlösobergrenze von dem Netz des
+         Netzbetreibers vorgelagerten Netzbetreiber, sofern diese eine rückwirkende Änderung der Entgelte des (vorge-
+         lagerten) Netzbetreibers zur Folge hat. Hinsichtlich der Mitteilungspflicht nach Abs. (3) Satz 3 und 4 gilt dies
+         nur, wenn und soweit die Vertragsparteien Kenntnis davon haben, inwieweit die Festlegung der Erlösobergren-
+         ze streitig ist.
+(5)      Rück- oder Nachzahlungen nach den vorstehenden Absätzen sind mit dem für den jeweiligen Zeitraum maß-
+         geblichen Basiszinssatz gemäß § 247 BGB zu verzinsen.
+(6)      Durch vorstehende Absätze soll eine etwaige Anwendbarkeit des § 315 BGB nicht ausgeschlossen werden.
+(7)      Überschreitet die gesamte in einem Abrechnungsmonat bezogene Blindarbeit 50 % der in diesem Monat bezo-
+         genen Wirkarbeit, so wird diese Blindmehrarbeit gemäß dem auf den Internetseiten des Netzbetreibers veröf-
+         fentlichtem Preisblatt berechnet.
+(8)      Für andere Leistungen nach diesem Vertrag, die nicht der Genehmigung oder Festlegung durch die Regulie-
+         rungsbehörde gemäß § 23a, § 21a EnWG bzw. der Anreizregulierungsverordnung unterliegen, zahlt der Netz-
+         nutzer dem Netzbetreiber die vom Netzbetreiber nach billigem Ermessen gemäß § 315 BGB bestimmten und
+         jeweils auf seinen Internetseiten veröffentlichten Preise. Der Netzbetreiber ist verpflichtet, diese Preise nach
+         billigem Ermessen der Entwicklung der Kosten anzupassen, die für die Entgeltberechnung maßgeblich sind. Än-
+
+
+
+Netznutzungsvertrag Strom                                                                                      Seite 7 von 13
+
+         derungen werden nur wirksam, wenn der Netzbetreiber die Änderungen auf seiner Internetseite veröffentlicht
+         und dem Netznutzer mindestens 1 Monat vor Inkrafttreten der Änderungen in Textform mitteilt.
+
+  § 11 KWK-Aufschlag; § 19 Abs. 2 StromNEV-Umlage; Offshore-Haftungsumlage; Umlage für abschaltbare Lasten;
+                                                  Konzessionsabgabe
+(1)      Soweit dem Netzbetreiber vom Übertragungsnetzbetreiber ein Aufschlag nach § 9 Abs. 4 KWKG (sog. KWK-
+         Aufschlag) in Rechnung gestellt wird, berechnet der Netzbetreiber dem Netznutzer diesen Aufschlag für seine
+         Entnahmen – gegebenenfalls in Form eines monatlichen Abschlags – weiter. Die Höhe des Aufschlags wird von
+         den Übertragungsnetzbetreibern veröffentlicht (derzeit veröffentlicht auf www.eeg-kwk.net).
+(2)      Soweit dem Netzbetreiber vom Übertragungsnetzbetreiber eine Umlage nach § 19 Abs. 2 StromNEV i.V.m.
+         § 9 KWKG (sog. § 19 Abs. 2 StromNEV-Umlage) in Rechnung gestellt wird, berechnet der Netzbetreiber dem
+         Netznutzer diese Umlage für seine Entnahmen – gegebenenfalls in Form eines monatlichen Abschlags – weiter.
+         Die Höhe der Umlage wird von den Übertragungsnetzbetreibern veröffentlicht (derzeit veröffentlicht auf
+         www.eeg-kwk.net).
+(3)      Soweit dem Netzbetreiber vom Übertragungsnetzbetreiber eine Umlage nach § 17f EnWG i.V.m. § 9 KWKG
+         (sog. Offshore-Haftungsumlage) in Rechnung gestellt wird, berechnet der Netzbetreiber dem Netznutzer diese
+         Umlage für seine Entnahmen – gegebenenfalls in Form eines monatlichen Abschlags – weiter. Die Höhe der
+         Umlage wird von den Übertragungsnetzbetreibern veröffentlicht (derzeit veröffentlicht auf www.eeg-kwk.net).
+(4)      Soweit dem Netzbetreiber vom Übertragungsnetzbetreiber eine Umlage nach § 18 Abs. 1 AbLaV i.V.m.
+         § 9 KWKG (sog. AbLaV-Umlage) in Rechnung gestellt wird, berechnet der Netzbetreiber dem Netznutzer diese
+         Umlage für seine Entnahmen – gegebenenfalls in Form eines monatlichen Abschlags – weiter. Die Höhe der
+         Umlage wird von den Übertragungsnetzbetreibern veröffentlicht (derzeit veröffentlicht auf www.eeg-kwk.net).
+(5)      Differenzen gegenüber dem endgültig vom Übertragungsnetzbetreiber in Rechnung gestellten KWK-Aufschlag
+         nach Abs. (1) und den Umlagen nach Abs. (2) bis (4) wird der Netzbetreiber – soweit diese nicht in dem zukünf-
+         tig vom Übertragungsnetzbetreiber zu zahlenden KWK-Aufschlag bzw. den Umlagen berücksichtigt sind – ab-
+         rechnen. Ein sich gegebenenfalls ergebender Differenzbetrag wird dem Netznutzer erstattet oder nachberech-
+         net.
+(6)      Der Netzbetreiber wird dem Netznutzer die auf seine Entnahmen anfallende, der jeweiligen Kommune ge-
+         schuldete Konzessionsabgabe neben dem Entgelt für die Netznutzung in Rechnung stellen. Die Höhe der Kon-
+         zessionsabgabe richtet sich nach dem jeweils zwischen dem Netzbetreiber und der betreffenden Gemeinde
+         vereinbarten Konzessionsabgabensatz gemäß Konzessionsabgabenverordnung in der jeweils gültigen Fassung.
+(7)      Falls die Lieferung zu einem vor der Entnahme vereinbarten Preis unter dem jeweils gültigen Grenzpreis nach
+         der Konzessionsabgabenverordnung erfolgt ist, kann der Netznutzer die zu viel gezahlte Konzessionsabgabe un-
+         ter Beifügung eines geeigneten Nachweises (z. B. eines Wirtschaftsprüfertestats) beim Netzbetreiber innerhalb
+         der nächsten drei auf den letzten Liefermonat folgenden Jahre zurück fordern. Entspricht ein gegebenenfalls
+         vorgelegtes Wirtschaftsprüfertestat nicht den gesetzlichen Anforderungen, hat der Netzkunde innerhalb von
+         drei weiteren Monaten ab der Geltendmachung diesbezüglicher Bedenken durch den Netzbetreiber einen er-
+         gänzenden Nachweis zu erbringen, in dem auf die Bedenken des Netzbetreibers eingegangen wird, um sein
+         Rückforderungsbegehren aufrecht zu erhalten.
+
+  § 12 Ermittlung von Arbeit und Leistung; Abrechnung der Netznutzung; Abschlagszahlungen; Rechnungsstellung
+(1)      Die abrechnungs- und bilanzierungsrelevante Arbeit und Leistung wird auf Grundlage der dem Netzbetreiber
+         für die jeweiligen Entnahmestellen des Netznutzers vorliegenden Messwerte ermittelt. Diese Ermittlung be-
+         rücksichtigt gegebenenfalls einen Kompensationsaufschlag nach Maßgabe von Abs. (2) und/oder eine Korrek-
+         tur aufgrund einer bilanziellen Durchleitung, insbesondere nach § 8 Abs. 2 EEG oder § 4 Abs. 3 a KWKG.
+(2)      Im Falle von Netzanschlüssen, die in einer nachgelagerten Netz- oder Umspannebene gemessen werden (z. B.
+         oberspannungsseitige Netzanschlüsse, die nach einer anschlussnutzerseitig vorgenommenen Umspannung un-
+         terspannungsseitig gemessen werden), wird auf die abrechnungsrelevante Arbeit ein Kompensationsaufschlag
+         nach dem jeweils gültigen Preisblatt aufgeschlagen. Der Netzbetreiber teilt dem Netznutzer im Rahmen der
+         Messwertübermittlung die so ermittelte abrechnungsrelevante Arbeit mit. Diese Werte liegen der Netznut-
+         zungsabrechnung und der Bilanzierung zugrunde.
+
+
+
+Netznutzungsvertrag Strom                                                                                    Seite 8 von 13
+
+(3)      Abrechnungsperiode ist das Kalenderjahr. Sofern der Netzbetreiber das rollierende Abrechnungsverfahren
+         anwendet, wird der Netzbetreiber die Netznutzung für nicht leistungsgemessene Entnahmestellen in Zeitab-
+         schnitten, die 12 Monate nicht wesentlich überschreiten dürfen, abrechnen.
+(4)      Die abrechnungsrelevante Leistung und Arbeit ergibt sich für Entnahmestellen mit Leistungsmessung auf Basis
+         der Jahreshöchstleistung in Kilowatt der jeweiligen Entnahmestelle im Abrechnungsjahr sowie der Strombe-
+         zugsmenge. § 19 Abs. 1 StromNEV bleibt unberührt.
+(5)      Soweit es sich bei den Entnahmestellen des Netznutzers um leistungsgemessene Entnahmestellen handelt,
+         stellt der Netzbetreiber dem Netznutzer die Netznutzung des vergangenen Monats zählpunktgenau bis zum Ab-
+         lauf des 10. Werktages nach Übermittlung der Zählwerte unter Ausweis der abrechnungsrelevanten Entgeltbe-
+         standteile auf Grundlage der ermittelten Arbeit und der jeweils bis zu diesem Monat ermittelten Leistungsspit-
+         ze im Abrechnungszeitraum in Rechnung. Sofern im aktuellen Abrechnungsmonat eine höhere als die bisher im
+         Abrechnungszeitraum zugrunde liegende Leistungsspitze ermittelt wird, erfolgt im aktuellen Abrechnungsmo-
+         nat eine Nachberechnung der Differenz zwischen dem bisher berechneten und dem auf Grundlage der neuen
+         Leistungsspitze ermittelten Leistungspreis für die bereits abgerechneten Monate im Abrechnungszeitraum. Ei-
+         ne spätere Nachberechnung nach § 10(3) bleibt hiervon unberührt.
+(6)      Sofern eine leistungsgemessene Entnahmestelle zu einem anderen Zeitpunkt als dem Ende der Abrechnungs-
+         periode des Netzbetreibers von der Netznutzung ausgenommen wird, wird abweichend von Abs. (4) zur Ermitt-
+         lung der Jahreshöchstleistung die maximale Monatshöchstleistung der letzten zwölf Monate zugrunde gelegt.
+         Die Leistungspreisentgelte sowie die Abrechnungs-, gegebenenfalls Zähler- und gegebenenfalls Messentgelte
+         werden entsprechend dem tatsächlichen Zeitraum der Netznutzung zeitanteilig berechnet.
+(7)      Für die Ermittlung der Jahresbenutzungsstunden bei einer unterjährigen Ausnahme einer Entnahmestelle von
+         der Netznutzung (vgl. Abs. (6)) wird der Netzbetreiber die letzten zwölf Monate der Netznutzung zugrunde le-
+         gen. Dies gilt nicht für die Ermittlung der für eine Netzentgeltbefreiung nach § 19 Abs. 2 Satz 2 StromNEV er-
+         forderlichen Benutzungsstundenzahl.
+(8)      Soweit es sich bei den Entnahmestellen des Netznutzers um nicht leistungsgemessene Entnahmestellen han-
+         delt, berechnet der Netzbetreiber dem Netznutzer für die Netznutzung zählpunktgenau Abschlagszahlungen
+         auf der Basis der Jahresverbrauchsprognosen gemäß § 13 StromNZV für die jeweiligen Entnahmestellen. Die
+         Abschlagszahlungen werden unabhängig vom tatsächlichen Umfang der Netznutzung fällig. Ändern sich die für
+         die Berechnung der Abschlagszahlung relevanten Parameter (z. B. das Abnahmeverhalten), erfolgt eine ent-
+         sprechende Anpassung. Ändern sich die vertraglichen Entgelte, so können die nach der Entgeltänderung anfal-
+         lenden Abschlagszahlungen mit dem Vomhundertsatz der Entgeltänderung entsprechend angepasst werden.
+(9)      Spätestens zum Ablauf des 10. Werktages nach Übermittlung der Zählwerte wird vom Netzbetreiber für jede
+         nicht leistungsgemessene Entnahmestelle des Netznutzers eine Jahresendrechnung bzw. Schlussrechnung er-
+         stellt, in der der tatsächliche Umfang der Netznutzung unter Ausweis der abrechnungsrelevanten Entgeltbe-
+         standteile unter Anrechnung der Abschlagszahlungen bzw. der bereits geleisteten Zahlungen abgerechnet wird.
+         Eine spätere Nachberechnung nach § 10(3) bleibt hiervon unberührt.
+(10)     Sofern ein Lieferantenwechsel für eine nicht leistungsgemessene Entnahmestelle zu einem anderen Zeitpunkt
+         als dem Ende der Abrechnungsperiode des Netzbetreibers erfolgt, werden der Grundpreis sowie die Abrech-
+         nungs-, gegebenenfalls Zähler- und gegebenenfalls Messentgelte entsprechend dem tatsächlichen Zeitraum
+         der Netznutzung zeitanteilig berechnet.
+(11)     Ändern sich innerhalb einer Abrechnungsperiode die vertraglichen Entgelte, der Umsatzsteuersatz oder andere
+         erlösabhängige Abgabensätze, so wird der für die neuen Entgelte maßgebliche Verbrauch zeitanteilig berech-
+         net; der neue Arbeitspreis wird ab dem Zeitpunkt der Entgeltänderung angewendet. Bei Entnahmestellen ohne
+         Leistungsmessung erfolgt die Abrechnung in diesen Fällen des Absatzes ohne Zwischenablesung im Wege der
+         rechnerischen Abgrenzung. Falls beim Netznutzer entsprechende Daten aus einer Ablesung vorliegen, soll der
+         Netzbetreiber diese bei der Abrechnung angemessen berücksichtigen, sofern diese Information zum Zeitpunkt
+         der Abrechnung vorliegt. Der Netzbetreiber wird den Netznutzer über das Nichtvorliegen von Zählerständen in
+         geeigneter Weise informieren.
+
+
+
+
+Netznutzungsvertrag Strom                                                                                    Seite 9 von 13
+
+  § 13 Allgemeine Zahlungsbestimmungen; Zahlungsverzug; zusätzliche Steuern, Abgaben und sonstige hoheitlich
+                                                 auferlegte Belastungen
+(1)      Rechnungen und Abschläge werden zu dem in der Zahlungsaufforderung angegebenen Zeitpunkt, frühestens
+         jedoch 10 Werktage nach Zugang der Zahlungsaufforderung fällig. Maßgeblich für die Rechtzeitigkeit der Zah-
+         lung ist die Wertstellung auf dem Konto des Netzbetreibers.
+(2)      Etwaige Einwendungen gegen die Richtigkeit einer Rechnung sind nur binnen drei Jahren nach Rechnungszu-
+         gang zulässig.
+(3)      Die Zahlung erfolgt per Banküberweisung. Der Netznutzer hat im Verwendungszweck jeweils anzugeben, auf
+         welche REMADV-Nachricht(en) sich die Zahlung bezieht.
+(4)      Verzug und Verzugsschaden richten sich nach den gesetzlichen Bestimmungen.
+(5)      Bei Zahlungsverzug kann der Netzbetreiber, wenn er erneut zur Zahlung auffordert oder den Betrag durch
+         einen Beauftragten einziehen lässt, die dadurch entstandenen Kosten pauschal berechnen. Die Pauschale ent-
+         spricht dem nach dem gewöhnlichen Lauf der Dinge zu erwartenden Kosten. Dem Netznutzer ist der Nachweis
+         gestattet, solche Kosten seien dem Netzbetreiber nicht oder in geringerer Höhe als die Pauschale entstanden.
+(6)      Die nach diesem Vertrag zu zahlenden Entgelte verstehen sich zuzüglich der zum Leistungszeitpunkt geltenden
+         gesetzlichen Umsatzsteuer.
+(7)      Für eine - gegebenenfalls rückwirkende - Änderung der Netznutzungsentgelte einschließlich der Kosten der
+         vorgelagerten Netz- und Umspannebenen gelten vorrangig bis § 10(4) dieses Vertrages.
+(8)      Werden die Leistungen dieses Vertrages oder – soweit zur Erbringung dieser Leistungen erforderlich – die Er-
+         zeugung, die Übertragung, die Verteilung von oder der Handel mit elektrischer Energie mit zusätzlichen Steuern
+         oder Abgaben belegt, kann der Netzbetreiber hieraus entstehende Mehrkosten an den Netznutzer weiterbe-
+         rechnen. Dies gilt nicht, soweit die Mehrkosten nach Höhe und Zeitpunkt ihres Entstehens bereits bei Vertrags-
+         schluss konkret vorhersehbar waren oder die jeweilige gesetzliche Regelung der Weiterberechnung entgegen-
+         steht. Die Weitergabe ist auf die Mehrkosten beschränkt, die nach dem Sinn und Zweck der gesetzlichen Rege-
+         lung (z. B. nach Entnahmestelle oder nach Verbrauch) diesem Vertragsverhältnis zugeordnet werden können.
+         Mit der neuen Steuer oder Abgabe korrespondierende Kostenentlastungen – z. B. der Wegfall einer anderen
+         Steuer – werden vom Netzbetreiber angerechnet. Eine Weitergabe kann mit Wirksamwerden der betreffenden
+         Regelung erfolgen. Der Netznutzer wird über die Anpassung spätestens mit der Rechnungsstellung informiert.
+(9)      Abs. (8) gilt entsprechend, falls sich die Höhe einer nach vorstehendem Absatz weitergegebenen Steuer oder
+         Abgabe ändert; bei einem Wegfall oder einer Absenkung ist der Netzbetreiber zu einer Weitergabe an den
+         Netznutzer verpflichtet.
+(10)     Abs. (8) und (9) gelten entsprechend, falls auf die Belieferung oder die Verteilung von elektrischer Energie nach
+         Vertragsschluss eine hoheitlich auferlegte, allgemein verbindliche Belastung (d. h. keine Bußgelder o. ä.) ent-
+         fällt, soweit diese unmittelbaren Einfluss auf die Kosten für die nach diesem Vertrag geschuldeten Leistungen
+         hat (wie derzeit z. B. nach dem KWKG).
+
+                                       § 14 Zahlungsverweigerung; Aufrechnung
+(1)      Einwände gegen Rechnungen berechtigen zum Zahlungsaufschub oder zur Zahlungsverweigerung nur, soweit
+         sich aus den Umständen ergibt, dass die ernsthafte Möglichkeit eines offensichtlichen Fehlers besteht.
+(2)      Gegen Ansprüche der jeweils anderen Vertragspartei kann nur mit unbestrittenen oder rechtskräftig festge-
+         stellten Gegenansprüchen aufgerechnet werden.
+
+                                        § 15 Vorauszahlung; Sicherheitsleistung
+(1)      In begründeten Fällen ist der Netzbetreiber nach seiner Wahl berechtigt, vom Netznutzer Sicherheitsleistung
+         oder fortlaufend Vorauszahlung bis zur Höhe der nach diesem Vertrag voraussichtlich für den Zeitraum der je-
+         weils folgenden zwei Monate zu leistenden Entgelte zu verlangen. Er wird ein solches Verlangen nach Möglich-
+         keit dem Netznutzer telefonisch ankündigen und diesem Gelegenheit zur Aufklärung geben. Bei der Bemessung
+         der Höhe der Vorauszahlung wird der Netzbetreiber die in den zurückliegenden Monaten geleisteten Entgelte
+         oder die durchschnittlichen von vergleichbaren Netznutzern geleisteten Zahlungen angemessen berücksichti-
+
+
+Netznutzungsvertrag Strom                                                                                      Seite 10 von 13
+
+         gen. Die Vorauszahlung oder Sicherheitsleistung ist innerhalb einer Frist von 5 Werktagen nach Aufforderung
+         durch den Netzbetreiber zu leisten. Bei Zahlungen ist die Wertstellung auf dem Konto des Netzbetreibers bzw.
+         die Übergabe maßgeblich. Im Falle einer nicht fristgemäßen Leistung ist der Netzbetreiber nach Maßgabe von §
+         16(3)b) dieses Vertrages zur fristlosen Kündigung des Vertrages oder nach Maßgabe von Ziffer 2 der AGB zum
+         Netzzugangsvertrag Kunde (Anlage 3) zum Entzug des Netzzugangs berechtigt.
+(2)      Ein begründeter Fall wird insbesondere angenommen, wenn
+             der Netznutzer mit fälligen Zahlungen in Verzug ist und auch auf eine nach Verzugseintritt erklärte
+              Mahnung des Netzbetreibers nicht oder nicht vollständig geleistet hat oder
+             über das Vermögen des Netznutzers ein nicht offensichtlich unbegründeter Antrag auf Eröffnung
+              eines Insolvenzverfahrens vorliegt oder der Netznutzer selbst einen solchen Antrag hinsichtlich sei-
+              nes Vermögens gestellt hat oder
+             gegen den Netznutzer Zwangsvollstreckungsmaßnahmen, die Auswirkungen auf die Leistungsfähig-
+              keit des Netznutzers haben können, seinen Verpflichtungen aus diesem Vertrag nachzukommen,
+              eingeleitet sind oder
+             die vom Netzbetreiber über den Netznutzer eingeholte Auskunft einer allgemeinen im Geschäftsle-
+              ben anerkannten Auskunftei (z. B. Creditreform) über seine wirtschaftlichen Verhältnisse die Be-
+              sorgnis begründet, dass der Netznutzer den Verpflichtungen aus diesem Vertrag nicht nachkommen
+              wird. Dem Netznutzer bleibt es unbenommen, diese Besorgnis durch einen geeigneten Nachweis
+              seiner Bonität zu entkräften.
+(3)      Soweit der Netznutzer nur bezüglich einzelner Entnahmestellen mit Zahlungen in Verzug ist, darf der Netzbe-
+         treiber – abweichend von § 15(1) – vom Netznutzer Vorauszahlung bzw. Sicherheitsleistung nur bis zur Höhe
+         der nach diesem Vertrag voraussichtlich für den Zeitraum der jeweils folgenden zwei Monate zu leistenden
+         Entgelte für diese Entnahmestelle(n) verlangen.
+(4)      Verlangt der Netzbetreiber vom Netznutzer Vorauszahlung, ist diese jeweils im Rahmen der nächsten Rech-
+         nungsstellung vom Netzbetreiber zu verrechnen.
+(5)      Verlangt der Netzbetreiber vom Netznutzer eine Sicherheitsleistung, kann diese in Form einer unbedingten,
+         unwiderruflichen, selbstschuldnerischen Bankbürgschaft unter Verzicht auf Hinterlegung und auf die Einrede
+         der Vorausklage oder durch eine gleichwertige Sicherheit erbracht werden. Die sich verbürgende Bank muss
+         ein Rating im „A“-Bereich von Standard & Poors oder ein gleichwertiges Rating einer anderen international an-
+         erkannten Rating-Agentur aufweisen.
+         Barsicherheiten werden zum jeweiligen Basiszinssatz gemäß § 247 BGB verzinst.
+(6)      Der Netzbetreiber ist berechtigt, sich zum Ausgleich offener Forderungen aus diesem Vertrag aus der Sicherheit
+         zu befriedigen. Der Netzbetreiber wird den Netznutzer über die Befriedigung aus der Sicherheit in Textform in-
+         formieren. Der Netzbetreiber kann, soweit er sich gemäß Satz 1 aus der geleisteten Sicherheit befriedigt hat,
+         vom Netznutzer verlangen, in Höhe des aus der Sicherheit in Anspruch genommenen Betrages innerhalb von 5
+         Werktagen eine weitere Sicherheit zu leisten.
+(7)      Vorauszahlungen sind nicht mehr zu leisten bzw. die Sicherheit ist unverzüglich zurückzugeben, wenn der
+         Netznutzer nachweist, dass die begründeten Sicherheitsinteressen des Netzbetreibers künftig gewahrt sind und
+         keine fällige Forderung aus diesem Vertrag besteht.
+
+                                             § 16 Vertragsdauer, Kündigung
+(1)      Der Vertrag beginnt mit der Unterzeichnung und läuft auf unbestimmte Zeit.
+(2)      Beide Vertragspartner können den Vertrag mit einer Frist von drei Monaten zum Ende eines Kalendermonats
+         ordentlich kündigen. Die Kündigung bedarf der Schriftform (keine E-Mail). Erfolgt die Kündigung durch den
+         Netzbetreiber, bietet dieser dem Netznutzer – grundsätzlich mit der Kündigungserklärung, spätestens jedoch
+         zwei Monate vor dem Datum, auf das die Kündigung erfolgt ist – den Abschluss eines neuen Vertrages über den
+         Netzzugang zu angemessenen Konditionen an, so dass ein neuer Vertrag noch vor Beendigung des laufenden
+         Vertrages abgeschlossen werden kann. Sollte die Bundesnetzagentur abweichende Fristen und/oder Stichtage
+         für die Kündigung des Vertrages verbindlich vorgeben, gelten diese.
+
+
+
+Netznutzungsvertrag Strom                                                                                     Seite 11 von 13
+
+(3)      Der Netzbetreiber ist berechtigt, diesen Vertrag aus wichtigem Grund zu kündigen. Ein wichtiger Grund liegt
+         insbesondere vor, wenn
+         a)       der Bilanzausgleich im Sinne des § 6 ist nicht mehr sichergestellt ist; gelingt dem Netznutzer eine Neure-
+                  gelung noch vor dem Wegfall des bestehenden Bilanzausgleichs, so wird sich der Netzbetreiber bemü-
+                  hen, in der verbleibenden Zeit die neue Bilanzkreiszuordnung umzusetzen, auch wenn die erforderlichen
+                  Fristen abgelaufen sind, und gegebenenfalls die Wirkungen einer Kündigung durch Neubegründung des
+                  bisherigen Vertragsverhältnisses zurücknehmen, oder
+         b)       der Netzbetreiber hat zuvor nach § 15(1) und § 15(2) vom Netznutzer Sicherheitszahlung oder Voraus-
+                  zahlung verlangt und diese ist vom Netznutzer nicht innerhalb einer Frist von 5 Werktagen vollständig
+                  geleistet wurden. Bei Zahlungen ist die Wertstellung auf dem Konto des Netzbetreibers bzw. die Über-
+                  gabe maßgeblich. Eine Kündigung ist auch zulässig, wenn der Netznutzer die geforderte Sicherheitsleis-
+                  tung oder Vorauszahlung zwar vollständig und fristgemäß geleistet hat, gleichzeitig jedoch die offene
+                  Forderung nicht oder nicht vollständig ausgeglichen ist, oder
+         c)       im Fall des § 15(2), wenn der Netzbetreiber eine Sicherheitsleistung oder Vorauszahlung verlangen
+                  kann, aber Umstände vorliegen, die die konkrete Besorgnis begründen, dass die Sicherheitsleistung oder
+                  Vorauszahlung nicht geleistet wird, oder
+         d)       der Netznutzer sonstige wesentliche vertragliche Verpflichtungen verletzt, d. h. solche Pflichten, deren
+                  Erfüllung die ordnungsgemäße Durchführung des Vertrages überhaupt erst ermöglicht und auf deren
+                  Einhaltung der Vertragspartner regelmäßig vertrauen darf (sog. Kardinalpflichten).
+(4)      Der Netzbetreiber wird dem Netznutzer, eine Kündigung nach Abs. (3) vorab ankündigen. Eine Kündigung des
+         Netznutzungsvertrages nach Abs. (3) ist ausgeschlossen, wenn der Netznutzer nachweist, dass die Folgen –
+         unter Berücksichtigung gegebenenfalls geleisteter Vorauszahlungen oder Sicherheiten – außer Verhältnis zur
+         Schwere der Zuwiderhandlung stehen und hinreichende Aussicht besteht, dass der Netznutzer seinen Ver-
+         pflichtungen nachkommen wird.
+
+                              § 17 Schlussbestimmungen; Allgemeine Bedingungen; Anlagen
+(1)      Mit Vertragsbeginn werden bis zu diesem Zeitpunkt zwischen den Vertragsparteien bestehende Vereinbarun-
+         gen über die Netznutzung unwirksam.
+(2)      Die Vertragsparteien verpflichten sich, alle im Zusammenhang mit diesem Vertrag stehenden Daten und Unter-
+         lagen vertraulich zu behandeln.
+(3)      Gibt der Netzbetreiber sein Netz oder ein Teil seines Netzes an einen anderen Netzbetreiber ab, verliert dieser
+         Vertrag im Hinblick auf die Entnahmestellen im abgebenden Gebiet zum Zeitpunkt der Abgabe seine Gültigkeit.
+         Informationspflichten der MaBiS über die Netzabgabe bleiben unberührt.
+(4)      Übernimmt der Netzbetreiber ein Netzgebiet, werden die Entnahmestellen des Netzkunden in diesem Netzge-
+         biet ab Übernahme des Netzes durch den Netzbetreiber im Rahmen dieses Vertrages abgewickelt. Informati-
+         onspflichten der MaBiS über die Netzübernahme bleiben unberührt.
+(5)      Soweit in diesem Vertrag keine abweichenden Vereinbarungen getroffen sind, gelten die beigefügten „Allge-
+         meinen Geschäftsbedingungen für den Netzzugang des Netznutzers (AGB Netzzugang eines Netznutzers)“ (An-
+         lage 3).
+(6)      Die beigefügten Anlagen 1 bis 3 sind wesentliche Vertragsbestandteile.
+
+
+
+
+________________, _______________                                         Biberach, _______________
+
+
+
+
+______________________________                                            ______________________________
+Netznutzer                                                                i.A. Stefanie Pfeiffer
+
+
+Netznutzungsvertrag Strom                                                                                        Seite 12 von 13
+
+Anlagen
+
+
+Anlage 1:             Preisblatt
+Anlage 2:             Ansprechpartner und Kontaktdatenblatt
+Anlage 3:             Allgemeine Geschäftsbedingungen für den Netzzugang eines Netznutzers
+                      (AGB Netzzugang Kunde)
+
+
+
+
+Netznutzungsvertrag Strom                                                                    Seite 13 von 13
+

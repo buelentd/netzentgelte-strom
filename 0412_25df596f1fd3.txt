@@ -1,0 +1,98 @@
+URL: https://www.stadtwerke-baden-baden.de/media/docs/privatkunden/strom/downloadbereich/zugangsbedingungen/netzzugang/Netznutzung_nach_dem_Lastprofilverfahren_fr_Sphzg_und_WP_ab_01012012.pdf
+Netzbetreiber: Stadtwerke Baden-Baden
+
+Grundlage für die Belieferung von Speicherheizungs- oder Wärmepumpenanla-
+gen im Netzgebiet der Stadtwerke Baden-Baden
+
+
+Für die Bilanzierung von Kundenanlagen mit elektrischen Speicherheizungen oder Wär-
+mepumpenanlagen im Netzgebiet der Stadtwerke Baden-Baden wird das vom Verband
+der Netzbetreiber (VDN) und der Universität Cottbus erarbeitete Verfahren der tempera-
+turabhängigen Lastprognose angewendet.
+
+Dieses Lastprognoseverfahren ist prinzipiell im VDN-Praxisleitfaden "Lastprofile für unter-
+brechbare Verbrauchseinrichtungen" beschrieben und kann beim Verband angefordert
+werden.
+
+Gemäß den Anforderungen des Praxisleitfadens sind nachfolgend die von jedem Netz-
+betreiber bereitzustellenden Informationen und Festlegungen für das Netzgebiet der
+Stadtwerke Baden-Baden aufgeführt:
+
+
+Normlastprofile für Speicherheizungs- und Wärmepumpenanlagen
+
+Entnahmestellen mit einem Jahresverbrauch bis zu 100.000 kWh werden mit Standard-
+Lastprofilen beliefert. Die Stadtwerke Baden-Baden wenden jeweils separate temperatur-
+abhängige Lastprofile mit einer Kurvenschar in 1°-Schritten an. Die temperaturabhängi-
+gen Lastprofile EZ2 (Speicherheizungen) und EP1 (Wärmepumpenanlagen) stehen in
+elektronischer Form im Downloadbereich zur Verfügung.
+
+
+Temperaturdaten
+
+Der Netzbetreiber hat als maßgebliche Temperaturmessstelle für die Tagesmitteltempera-
+tur Tm die Messstelle des Wetterdiensleisters meteomedia GmbH, Bessemer Str. 80,
+44793 Bochum in Baden-Baden (Stationsnummer 10806) festgelegt.
+
+Der Netzbetreiber wendet ein temperaturabhängiges Standard-Lastprofil mit einer Kur-
+venschar in 1°-Schritten für alle Speicherheizungs- bzw. Wärmepumpenanlagen im Netz-
+gebiet an.
+Die Auswahl einer Kurve aus der angegebenen Kurvenschar für einen Beispieltag (d) er-
+folgt unter Berücksichtigung der tatsächlichen Tagesmitteltemperatur Tm (d) sowie der
+Vortagestemperaturen Tm (d-1) bis Tm (d-3) durch Bildung einer äquivalenten Tagesmit-
+teltemperatur Tm,äquiv gemäß nachfolgender Formel:
+
+Tm,äquiv = 0,5 x Tm (d) + 0,3 x Tm (d-1) + 0,15 x Tm (d-2) + 0,05 x Tm (d-3)
+
+
+Ermittlung der Temperaturmaßzahl
+
+Die Temperaturmaßzahl TMZ errechnet sich nach der Gleichung TMZ = Tbezug - Tm
+und ist auf eine Nachkommastelle zu runden. Als Bezugstemperatur Tbezug ist der Wert
++17 °C anzusetzen. Bei Tagesmitteltemperaturen größer als +17 °C wird die Tempera-
+turmaßzahl auf Null gesetzt. Die Summe der Temperaturmaßzahlen TMZ über einen Zeit-
+raum ist ohne Nachkommastelle anzugeben
+
+
+Ermittlung des Entnahme-Lastprofils
+
+Bei Anlagen mit Speicherheizung, die über einen Zähler mit Zweitarifumschaltung ge-
+messen werden (gemeinsame Erfassung des Allgemein- und Heizungsverbrauchs über
+einen Zähler), wird die NT-Arbeit als Speicherheizungsverbrauch und die HT-Arbeit als
+
+Allgemeinverbrauch angesetzt. Den HT- und NT-Verbräuchen werden getrennte Lastprofi-
+le und Prognoseverbräuche zugeordnet.
+Einzähleranlagen mit zwei Zählwerken werden durch den Lieferanten als eine Entnahme-
+stelle angemeldet und können nur von einem Lieferanten beliefert werden (ein Zähler).
+
+Für Speicherheizungsanlagen und Wärmepumpenanlagen, die mittels Lastprofilverfahren
+beliefert werden sollen, ist bei der Anmeldung das Feld "Zählverfahren" mit E14/E24 ge-
+kennzeichnet.
+
+Ohne diese Angabe gilt die Kundenanlage als Anlage ohne Speicherheizung bzw. Wärme-
+pumpe angemeldet.
+
+Bei Anlagen mit getrennter Messung für Allgemein- und Heizungsverbrauch (zwei Zähl-
+punkte) muss jeder Zählpunkt durch den Lieferanten getrennt angemeldet werden. Es
+sind somit verschiedene Lieferanten für Allgemeinverbrauch und für Heizungsverbrauch
+möglich.
+
+Bei Einzähleranlagen mit Eintarifzählung und gemischtem Heizungs- oder Wärmepum-
+pen- und Allgemeinverbrauch ist keine Aufteilung auf Allgemein- und Heizungsverbrauch
+möglich. Die Netznutzung ist daher nur zu den Konditionen entsprechend Anlagen mit
+reinem Allgemeinverbrauch möglich. Alternativ kann der Lieferant beim Netzbetreiber
+einen kostenpflichtigen Umbau der Messeinrichtung beantragen.
+
+Die Stadtwerke Baden-Baden erstellen monatlich auf Basis der Ist-
+Tagesmitteltemperaturen und der angemeldeten Jahresverbrauchsprognose für jeden
+Lieferanten die ¼ h-Zeitreihe der Entnahme für die Lastprofile EZ2 und EP1, addieren
+diese zur TLS-Zeitreihe des entsprechenden Bilanzkreises und teilen diese dem Übertra-
+gungsnetzbetreiber mit.
+
+
+Netznutzungsentgelte für Speicherheizungen und Wärmepumpenanlagen
+
+Das gültige Netznutzungsentgelt für die Versorgung von Speicherheizungsanlagen und
+Wärmepumpenanlagen nach den Lastprofilen EZ2 und EP1 kann dem jeweils aktuellen
+Preisblatt entnommen werden.
+

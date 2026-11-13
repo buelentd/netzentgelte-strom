@@ -1,0 +1,382 @@
+URL: https://www.bng-butzbach.de/de/Stromnetz-der-Kernstadt-und-Waldsiedlung/Netznutzung/EDI-Vereinbarung-BNG.pdf
+Netzbetreiber: Butzbacher Netzbetrieb GmbH ＆ Co. KG
+
+                     Vereinbarung über den elektronischen
+                             Datenaustausch (EDI)
+
+
+RECHTLICHE BESTIMMUNGEN
+Die Vereinbarung über den elektronischen Datenaustausch (EDI) wird getroffen von und
+zwischen:
+                             Butzbacher Netzbetrieb GmbH & Co. KG
+                                       Himmrichsweg 2
+                                        35510 Butzbach
+
+                                                        und
+
+
+                       enervatis energieversorgungsgesellschaft mbH
+                                  Leipziger Chaussee 191g
+                                         06112 Halle
+
+nachfolgend "die Parteien" genannt.
+
+
+Artikel 1 Zielsetzung und Geltungsbereich
+
+1.1
+Die "EDI-Vereinbarung", nachfolgend "die Vereinbarung" genannt, legt die rechtlichen Be-
+dingungen und Vorschriften fest, denen die Parteien bei der Abwicklung von Transaktionen
+im Rahmen des Geschäftsprozesses Netznutzungsabrechnung mit Hilfe des elektronischen
+Datenaustausches (EDI) unterliegen. Hinsichtlich des automatisierten Datenaustauschs hat
+die Bundesnetzagentur verbindliche Festlegungen zu einheitlichen Geschäftsprozessen und
+Datenformaten für Strom (GPKE) und Gas (GeLi Gas) getroffen. Der Datenaustausch erfolgt
+auf der Grundlage dieser Festlegungen in ihrer jeweils gültigen Fassung in Verbindung mit
+den entsprechenden Mitteilungen der BNetzA und den gültigen Nachrichten- und Prozess-
+beschreibungen zu den festgelegten Formaten. Der Lieferantenwechselprozess ist aus-
+schließlich im Lieferantenrahmenvertrag geregelt.
+
+1.2
+Die Vereinbarung besteht aus den nachfolgenden Rechtlichen Bestimmungen und wird
+durch einen Technischen Anhang ergänzt.
+
+1.3
+Sofern die Parteien nicht anderweitig übereinkommen, regeln die Bestimmungen der Verein-
+barung nicht die vertraglichen Verpflichtungen, die sich aus den über EDI abgewickelten
+Transaktionen ergeben.
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“   Seite 1 von 5
+
+Artikel 2 Begriffsbestimmungen
+
+2.1
+Für die Vereinbarung werden die nachstehenden Begriffe wie folgt definiert:
+
+2.2
+EDI:
+Als elektronischer Datenaustausch wird die elektronische Übertragung kommerzieller und
+administrativer Daten zwischen Computern nach einer vereinbarten Norm zur Strukturierung
+einer EDI-Nachricht bezeichnet.
+
+2.3
+EDI-Nachricht:
+Als EDI-Nachricht wird eine Gruppe von Segmenten bezeichnet, die nach einer vereinbarten
+Norm strukturiert, in ein rechnerlesbares Format gebracht wird und sich automatisch und
+eindeutig verarbeiten lässt.
+
+2.4
+UN/EDIFACT:
+Gemäß der Definition durch die UN/ECE (United Nations Economic Commission for Europe -
+Wirtschaftskommission der Vereinten Nationen für Europa) umfassen die Vorschriften der
+Vereinten Nationen für den elektronischen Datenaustausch in Verwaltung, Handel, Transport
+und Verkehr eine Reihe international vereinbarter Normen, Verzeichnisse und Leitlinien für
+den elektronischen Austausch strukturierter Daten, insbesondere für den Austausch zwi-
+schen unabhängigen rechnergestützten Informationssystemen in Verbindung mit dem Wa-
+ren- und Dienstleistungsverkehr.
+
+
+
+Artikel 3 Verarbeitung und Empfangsbestätigung von EDI-Nachrichten
+
+3.1
+Die Nachrichten werden so bald wie möglich nach dem Empfang verarbeitet, in jedem Fall
+jedoch innerhalb der in GPKE/ GeLi festgelegten Fristen.
+
+3.2
+Eine Empfangsbestätigung ist nach den Festlegungen der Bundesnetzagentur (GPKE und
+GeLi Gas) bzw. nach dem Lieferantenrahmenvertrag erforderlich.
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“   Seite 2 von 5
+
+Artikel 4 Sicherheit von EDI-Nachrichten1
+
+4.1
+Die Parteien verpflichten sich, Sicherheitsverfahren und -maßnahmen durchzuführen und
+aufrechtzuerhalten, um EDI-Nachrichten vor unbefugtem Zugriff, Veränderungen, Verzöge-
+rung, Zerstörung oder Verlust zu schützen.
+
+4.2
+Zu den Sicherheitsverfahren und -maßnahmen gehören die Überprüfung des Ursprungs, die
+Überprüfung der Integrität, die Nichtabstreitbarkeit von Ursprung und Empfang sowie die
+Gewährleistung der Vertraulichkeit von EDI-Nachrichten.
+Sicherheitsverfahren und -maßnahmen zur Überprüfung des Ursprungs und der Integrität,
+um den Sender einer EDI-Nachricht zu identifizieren und sicherzustellen, dass jede empfan-
+gene EDI-Nachricht vollständig ist und nicht verstümmelt wurde, sind für alle Nachrichten
+obligatorisch. Bei Bedarf können im Technischen Anhang zusätzliche Sicherheitsverfahren
+und -maßnahmen festgelegt werden.
+
+4.3
+Führen die Sicherheitsverfahren und -maßnahmen zur Zurückweisung einer EDI-Nachricht
+informiert der Empfänger den Sender darüber unverzüglich.
+Der Empfänger einer EDI-Nachricht, die zurückgewiesen wurde oder einen Fehler enthält,
+reagiert erst dann auf die Nachricht, wenn er Anweisungen des Senders empfängt.
+
+
+Artikel 5 Vertraulichkeit und Schutz personenbezogener Daten
+
+5.1
+Die Parteien gewährleisten, dass EDI-Nachrichten mit Informationen, die vom Sender oder
+im beiderseitigen Einvernehmen der Parteien als vertraulich eingestuft werden, vertraulich
+gehandhabt und weder an unbefugte Personen weitergegeben oder gesendet, noch zu an-
+deren als von den Parteien vorgesehenen Zwecken verwendet werden. Das Bundesdaten-
+schutzgesetz (BDSG) ist zu beachten.
+Mit entsprechender Berechtigung unterliegt die weitere Übertragung derartiger vertraulicher
+Informationen demselben Vertraulichkeitsgrad.
+
+5.2
+EDI-Nachrichten werden nicht als Träger vertraulicher Informationen betrachtet, soweit die
+Informationen allgemein zugänglich sind.
+
+
+
+
+1
+  Zur Gewährleistung einer sicheren Kommunikation zwischen den Parteien wird auf die Sicherheits-
+rahmenbedingungen für den elektronischen Geschäftsverkehr im deutschen Strommarkt (Vedis-
+Empfehlung) verwiesen (siehe dazu auch Technischer Anhang). Weitere Informationen zu VEDIS
+finden Sie unter: http://www.bdew.de/bdew.nsf/id/DE_Datensicherheit
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“   Seite 3 von 5
+
+Artikel 6 Aufzeichnung und Archivierung von Nachrichten
+
+6.1
+Jede Partei archiviert ein vollständiges, chronologisches Protokoll aller von den Parteien
+während einer geschäftlichen Transaktion i. S. d. Art. 1 ausgetauschten EDI-Nachrichten
+unverändert und sicher gemäß den Fristen und Spezifikationen, die durch die bestehenden
+rechtlichen Grundlagen (insbesondere nach den handels- und steuerrechtlichen Vorschriften
+und nach GPKE /GeLi Gas) vorgeschrieben sind. Die Servicenachrichten CONTRL und
+APERAK fallen nicht unter diese Archivierungsvorschriften.
+
+6.2
+Die Nachrichten werden vom Sender im übertragenen Format und vom Empfänger in dem
+Format archiviert, in dem sie empfangen werden. Hierbei ist zusätzlich sicher zu stellen,
+dass die Lesbarkeit über den gesetzlichen Aufbewahrungszeitraum gewährleistet wird.
+
+6.3
+Die Parteien stellen sicher, dass elektronische Protokolle der EDI-Nachrichten problemlos
+zugänglich sind und bei Bedarf in einer für Menschen lesbaren Form reproduziert und ge-
+druckt werden können. Betriebseinrichtungen, die hierzu erforderlich sind, müssen beibehal-
+ten werden.
+
+
+Artikel 7 Technische Spezifikationen und Anforderungen
+
+Der Technische Anhang enthält die technischen, organisatorischen und verfahrenstechni-
+schen Spezifikationen und Anforderungen für den Betrieb von EDI gemäß den Bestimmun-
+gen dieser Vereinbarung, zu denen beispielsweise die folgende Bedingung gehört:
+-     Kontaktdaten
+-     Anforderungen an den Umsatzsteuernachweis
+-     Kommunikationseinrichtungen
+-     Signatur und Verschlüsselung
+
+
+
+Artikel 8 Inkrafttreten, Änderungen, Dauer und Teilnichtigkeit
+
+8.1
+Laufzeit
+Die Vereinbarung tritt mit dem Datum der Unterzeichnung durch die Parteien in Kraft.
+Jede Partei kann die Vereinbarung mit einer Kündigungsfrist von drei Monaten schriftlich
+kündigen. Ungeachtet einer Kündigung bestehen die in den Artikeln 5 und 6 genannten
+Rechte und Pflichten der Parteien auch nach der Kündigung fort.
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“   Seite 4 von 5
+
+8.2
+Änderungen
+Bei Bedarf werden von den Parteien schriftlich vereinbarte zusätzliche oder alternative Best-
+immungen zu der Vereinbarung ab dem Zeitpunkt ihrer Unterzeichnung als Teil der Verein-
+barung betrachtet.
+
+
+8.3
+Teilnichtigkeit
+Sollte ein Artikel oder ein Teil eines Artikels der Vereinbarung als ungültig erachtet werden,
+bleiben alle übrigen Artikel vollständig in Kraft.
+
+
+
+
+Unterschriften
+
+Butzbach, den                                             xxxxxxx, den
+
+
+
+
+ Butzbacher Netzbetrieb GmbH & Co. KG                     xxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“   Seite 5 von 5
+
+Technischer Anhang
+
+(A) Signatur und Verschlüsselung
+
+1) Elektronische Unterschriftsverfahren
+   Folgendes Unterschriftsverfahren wird dem Nachrichtenaustausch zu Grunde gelegt:
+
+  Fortgeschrittene elektronische Signatur:                      S/MIME
+
+2) Chiffrierung
+   Folgendes Chiffrierverfahren wird dem Nachrichtenaustausch zu Grunde gelegt:
+
+   Elektronische Verschlüsselung:                               S/MIME
+
+
+
+(B) Kommunikationseinrichtungen
+
+   Für den Nachrichtenaustausch verwenden die Parteien folgende Form der
+   Datenübertragung:
+
+   Kommunikationseinrichtung:                                   Internet - SMTP (E-Mail)
+
+
+(C) Kommunikationsverfahren
+
+1) Der elektronische Nachrichtenaustausch findet mittels der in (B) beschriebenen
+   Kommunikationseinrichtungen statt.
+
+2) Als Übertragungsnetz wird verwendet:                         INTERNET
+
+3) Die Anbindungsbandbreite des VNB an
+   das Übertragungsnetz zum Zeitpunkt des
+   Vertragsabschlusses beträgt:                                 ca. 34 MBit/s (Standleitung)
+
+4) Absender-/Empfängerkennung (1:1-Adressierung)
+
+   Verteilnetzbetreiber (VNB), E-Mail:                          edi.evb-stromnetz@ovag-netz.de
+
+   ILN-Nummer                                                   9900122000006
+
+   Lieferant, E-Mail:                                           xxxxxx@xxxxxx.de
+
+   ILN-Nummer                                                   xxxxxxxxxxxxxx
+
+5) maximale E-Mail-Größe                   VNB:                    10 MByte
+
+                                    Lieferant:                  ____ MByte
+
+6) Komprimierungsverfahren:                                     keine Komprimierung
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“ Technischer Anhang Seite
+                                                                                                          Seite61von
+                                                                                                                  von52
+
+                                        Technischer Anhang
+(D) Die Datenübertragung erfolgt im folgenden Format:
+
+-     INVOIC in der jeweils von der Bundesnetzagentur vorgegebenen Version, veröffentlicht
+      unter www.edi-energy.de
+-     REMADV in der jeweils von der Bundesnetzagentur vorgegebenen Version veröffentlicht
+      unter www.edi-energy.de
+-     Dateinamenskonvention (gemäß Kommunikationsrichtlinie der Bundesnetzagentur „Ver-
+      fahrensbeschreibung zur Abwicklung des Austauschs von EDIFACT Dateien“)
+-     Codepflegende Stellen sind:
+-     UN für EDIFACT-Syntax
+-     GS1 für ILN-Nummer
+-     DVGW für DVGW-Codenummer und Artikelnummern (vor Veröffentlichung kontrollieren)
+-     Netzbetreiber für Zählpunkte
+-     BDEW für alle anderen (z.B.: Rechnungstypen, Artikelnummern)
+
+
+(E) Vedis-Empfehlung zur Datensicherheit
+Zur Gewährleistung einer sicheren Kommunikation zwischen den Parteien wird auf die Si-
+cherheitsrahmenbedingungen für den elektronischen Geschäftsverkehr im deutschen
+Strommarkt (Vedis-Empfehlung2) bei Verwendung von E-Mail als Übertragungsweg und auf
+die Studie über sichere webbasierte Übertragungswege, Version 2.0, verwiesen.
+
+
+(F) Umsatzsteuernachweis
+§ 14 Abs. 3 Ziff. 2 UStG regelt, dass bei elektronischen Rechnungen (neben der in Ziff. 1
+geregelten elektronischen Signatur) eine Übermittlung durch elektronischen Datenaustausch
+(EDI) nach Artikel 2 der Empfehlung 94/820/EG der Kommission vom 19.10.1994 über die
+rechtlichen Aspekte des elektronischen Datenaustauschs (ABI. EG Nr. L 338 S.98) zulässig
+ist, wenn in der Vereinbarung über diesen Datenaustausch der Einsatz von Verfahren vorge-
+sehen ist, die die Echtheit der Herkunft und die Unversehrtheit der Daten gewährleisten.
+Ein Großteil der Marktteilnehmer geht daher bei Verwendung einer fortgeschrittenen Signa-
+tur in Verbindung mit dem Abschluss dieser EDI-Vereinbarung davon aus, dass die zusätzli-
+che Übermittlung eines Umsatzsteuernachweises in Papierform per Post oder Telefax entfal-
+len kann.
+Aufgrund der derzeit herrschenden Unsicherheit über die offensichtlich unterschiedliche An-
+erkennungspraxis durch die Finanzbehörden kann der Rechnungsempfänger bis zur Ent-
+scheidung über eine bundeseinheitliche Praxis festlegen, ob er die Übermittlung eines Um-
+satzsteuernachweises in Papierform benötigt oder darauf verzichtet.
+Die Entscheidung wird in Anlage 2 zu dieser Vereinbarung dokumentiert, die wesentlicher
+Vertragsbestandteil wird.
+Als Anlage 1, die wesentlicher Vertragsbestandteil wird, wird ein Muster zum Umsatzsteuer-
+nachweis beigefügt.
+
+2
+    Weitere Informationen zu VEDIS: http://www.bdew.de/bdew.nsf/id/DE_Datensicherheit
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“ Technischer Anhang Seite
+                                                                                                         Seite72von
+                                                                                                                 von52
+
+Anlage 1 – Beispiel (Muster) zum Umsatzsteuernachweis
+
+
+
+
+(Hier dargestellt: Einzelnachweis ovag Netz AG – Ausführung analog auch für Butzbacher
+ Netzbetrieb GmbH & Co. KG)
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“               Seite
+                                                                                        Anlage 1 Seite    8 von
+                                                                                                       1 von 1 5
+
+Anlage 2 – Entscheidung des Rechnungsempfängers zum
+          Umsatzsteuernachweis
+
+
+xxxxxx
+xxxxxx
+xxxxx xxxxxxxxxxxxxxxxxxxx
+
+als Rechnungsempfänger
+
+
+         benötigen wir einen Umsatzsteuernachweis in Papierform
+
+         Fax-Nr. für Umsatzsteuernachweise __________________________
+
+
+
+         verzichten wir auf einen Umsatzsteuernachweis in Papierform
+
+
+
+
+xxxxxxxx, den ___.___.2014
+
+
+
+
+_______________________________
+      (Stempel/Unterschrift)
+
+
+
+
+Butzbacher Netzbetrieb GmbH & Co. KG | EDI-Vereinbarung (Stand 27-04-2010) „BDEW III“             Seite11Seite
+                                                                                        Anlage 2 Seite    von19
+                                                                                                         von   1 von 5
+

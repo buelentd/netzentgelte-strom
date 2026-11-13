@@ -1,0 +1,225 @@
+URL: https://www.stadtwerke-emmerich.de/de/Netzbetrieb-/Stromnetz/Netzzugang-Entgelte/Preisblatt-fuer-NN-Stromnetz-2026-endgueltig.pdf
+Netzbetreiber: Stadtwerke Emmerich GmbH
+
+Stand: 01.01.2026                                                                                                                      Netzentgelte Stromnetz 2026
+
+
+
+ Netzentgelte bei Entnahme mit Lastgangzähler
+                                                                                                                                                                                                                              Preis/kWh            Jahrespreis   Tagespreis      Tagespreis Schaltjahr
+ Artikel-ID                                                                                                                                Spannungsebene           Preisart                                                    €/kWh                €/kW/a       365 Tage            366 Tage
+
+ 1-01-5-001 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a))                                                          Mittelspannung (E05)     Leistungspreis                                                                    16,50      0,04520547945             0,04508196721
+
+ 1-01-5-002 (Arbeitspreis (Mittelspannung, Jahresbenutzungsstunden < 2500 h/a))                                                            Mittelspannung (E05)     Arbeitspreis                                                          0,0366
+
+ 1-01-5-003 (Leistungspreis (Mittelspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                         Mittelspannung (E05)     Leistungspreis                                                                    85,12      0,23320547945             0,23256830601
+
+ 1-01-5-004 (Arbeitspreis (Mittelspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                           Mittelspannung (E05)     Arbeitspreis                                                          0,0091
+
+ 1-01-6-001 (Leistungspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                  MS/NS Umspannung (E09)   Leistungspreis                                                                    22,69      0,06216438356             0,06199453552
+
+ 1-01-6-002 (Arbeitspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                    MS/NS Umspannung (E09)   Arbeitspreis                                                          0,0490
+
+ 1-01-6-003 (Leistungspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                 MS/NS Umspannung (E09)   Leistungspreis                                                                   112,49      0,30819178082             0,30734972678
+
+ 1-01-6-004 (Arbeitspreis (Mittel-/Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                   MS/NS Umspannung (E09)   Arbeitspreis                                                          0,0131
+
+ 1-01-7-001 (Leistungspreis (Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                          Niederspannung (E06)     Leistungspreis                                                                    33,80      0,09260273973             0,09234972678
+
+ 1-01-7-002 (Arbeitspreis (Niederspannung, Jahresbenutzungsstunden < 2500 h/a))                                                            Niederspannung (E06)     Arbeitspreis                                                          0,0692
+
+ 1-01-7-003 (Leistungspreis (Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                         Niederspannung (E06)     Leistungspreis                                                                   154,27      0,42265753425             0,42150273224
+
+ 1-01-7-004 (Arbeitspreis (Niederspannung, Jahresbenutzungsstunden >= 2500 h/a))                                                           Niederspannung (E06)     Arbeitspreis                                                          0,0210
+
+
+ Netzentgelte bei Entnahme ohne Lastgangzähler
+
+ Haushalts, landwirtschaftlicher, gewerblicher und sonstiger Bedarf                                                                                                                                                           Preis/kWh            Jahrespreis   Tagespreis      Tagespreis Schaltjahr
+ Artikel-ID                                                                                                                                                         Preisart                     Art der Marktlokation          €/kWh                  €/a        365 Tage            366 Tage
+
+ 1-02-0-001 (Grundpreis (sonstige Marktlokationen))                                                                                                                 Grundpreis                   sonstige Marktlokationen                             23,72      0,06498630137             0,06480874317
+
+ 1-02-0-002 (Arbeitspreis (sonstige Marktlokationen))                                                                                                               Arbeitspreis                 sonstiger Verbrauch                      0,0885
+
+ Entnahme durch Elektro-Speicherheizungen
+
+ 1-02-0-003 Grundpreis Speicherheizung                                                                                                                              Grundpreis                   sonstige Marktlokationen                             23,72      0,06498630137             0,06480874317
+
+ 1-02-0-004 Arbeitspreis Speicherheizung                                                                                                                            Arbeitspreis                 sonstiger Verbrauch                      0,0366
+
+ Entnahme durch Elektro-Wärmepumpen
+
+ 1-02-0-003 Grundpreis Wärmepumpen                                                                                                                                  Grundpreis                   sonstige Marktlokationen                             23,72      0,06498630137             0,06480874317
+
+ 1-02-0-004 Arbeitspreis Wärmepumen                                                                                                                                 Arbeitspreis                 sonstiger Verbrauch                      0,0366
+
+
+ Netzentgelte bei Entnahme durch steuerbare Verbauchseinrichtungen § 14a EnWG, Speicherheizung, Wärmepumpe, E-Mobilität
+
+ 1-02-0-003 Grundpreis Wärmepumpen                                                                                                                                  Grundpreis                   steuerbare Wärmepumpe                                23,72      0,06498630137             0,06480874317
+
+ 1-02-0-004 Arbeitspreis Wärmepumen                                                                                                                                 Arbeitspreis                                                          0,0366
+
+ 1-02-0-003 Grundpreis Speicherheizung                                                                                                                              Grundpreis                   steuerbare Speicherheizung                           23,72      0,06498630137             0,06480874317
+
+ 1-02-0-004 Arbeitspreis Speicherheizung                                                                                                                            Arbeitspreis                                                          0,0366
+
+ Anschlüsse steuerbare Verbrauchseinrichtungen mit Inbetriebnahme ab 01.01.2024
+ (im Sinne der Festlegung BK6-22-300/BK8-22/010-A (separat gemessene Entnahmen von steuerbaren Verbrauchseinrichtungen nach § 14a EnWG))
+
+
+ Modul 1 - pauschale Netzentgeltreduzierung für Kunden ohne Leistungsmessung                                                               Niederspannung (E06)     Grundpreis                                                                        23,72      0,06498630137
+                                                                                                                                           Niederspannung (E06)     Arbeitspreis                                                          0,0885
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+ Modul 1 - pauschale Netzentgeltreduzierung für Kunden mit Leistungsmessung < 2.500 h/a                                                    MS/NS Umspannung (E09)   Leistungspreis                                                                   22,69       0,06216438356
+                                                                                                                                           MS/NS Umspannung (E09)   Arbeitspreis                                                           0,049
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+ Modul 1 - pauschale Netzentgeltreduzierung für Kunden mit Leistungsmessung > 2.500 h/a                                                    MS/NS Umspannung (E09)   Leistungspreis                                                                   112,49      0,30819178082
+                                                                                                                                           MS/NS Umspannung (E09)   Arbeitspreis                                                          0,0131
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+ Modul 1 - pauschale Netzentgeltreduzierung für Kunden mit Leistungsmessung < 2.500 h/a                                                    Niederspannung (E06)     Leistungspreis                                                                   33,80       0,09260273973
+                                                                                                                                           Niederspannung (E06)     Arbeitspreis                                                          0,0692
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+ Modul 1 - pauschale Netzentgeltreduzierung für Kunden mit Leistungsmessung > 2.500 h/a                                                    Niederspannung (E06)     Leistungspreis                                                                   154,27      0,42265753425
+                                                                                                                                           Niederspannung (E06)     Arbeitspreis                                                          0,0210
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+
+
+ Modul 2 - prozentuale Arbeitspreisreduzierung für Kunden ohne Leistungsmessung                                                            Niederspannung (E06)     Arbeitspreis                                                          0,0354
+
+
+ Modul 3
+ Niederspannung ohne Leistungsmessung - Niedriglasttarifstufe                                                                              Niederspannung (E06)     Grundpreis                                                                        23,72      0,06498630137
+                                                                                                                                                                    Arbeitspreis                                                          0,0133
+                                                                                                                                                                    Netzentgeltreduzierung (€)                                                       133,60
+ Niederspannung ohne Leistungsmessung - Standardlasttarifstufe                                                                             Niederspannung (E06)     Grundpreis                                                                       23,72       0,06498630137
+
+Stand: 01.01.2026                                                                                                                        Netzentgelte Stromnetz 2026
+
+
+                                                                                                                                                                                   Arbeitspreis                                                 0,0885
+                                                                                                                                                                                   Netzentgeltreduzierung (€)                                            133,60
+ Niederspannung ohne Leistungsmessung - Hochlasttarifstufe                                                                                      Niederspannung (E06)               Grundpreis                                                            23,72    0,06498630137
+                                                                                                                                                                                   Arbeitspreis                                                 0,1101
+                                                                                                                                                                                   Netzentgeltreduzierung (€)                                            133,60
+
+
+ Modul 3 (zeitvariable Netzentgelte)
+ Gültigkeit der 3 Tarifstufen
+ Quartale                                                                                                                                                            Q1                                   Q2              Q3              Q4
+                                                                                                                                                                01.01.-31.03.                        01.04.-30.06.   01.07.-30.09.   01.10.-31.12.
+ Anwendung in 2026                                                                                                                                                   ja                                   ja              ja              ja
+
+ Tarifstufe                                                                                                                                                                     Uhrzeiten
+                                                                                                                                                                       von                                bis
+ Standardtarif                                                                                                                                                        05:45                              11:15
+                                                                                                                                                                      13:45                              18:00
+                                                                                                                                                                      21:45                              00:00
+ Hochtarif                                                                                                                                                            11:15                              13:45
+                                                                                                                                                                      18:00                              21:45
+ Niedrigtarif                                                                                                                                                         00:00                              05:45
+ Preise zzgl. gesetzlicher Abgaben (Mehrkosten nach dem KWK-Gesetz, § 19 Abs. 2 Satz 6 StromNEV, § 17 f EnWG, § 18 AbLaV und Konzessionsabgabe) sowie Umsatzsteuer.
+
+
+
+ Entgelte für Blindstrom
+                                                                                                                                                                                                                                                0,0111
+ 3-01-0-001 (Blindarbeit)                                                                                                                                                          Blindarbeit
+
+Stand: 01.01.2026                                                                                             Netzentgelte Stromnetz 2026
+
+
+
+ Entgelte für Messstellenbetrieb konventionelle Messeinrichtungen (kME)                                                                                                                Jahrespreis   Tagespreis      Tagespreis Schaltjahr
+ Artikel-ID                                                                                                                                                                                €/a        365 Tage            366 Tage
+
+ 1-06-7-011 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung EDL21 Zähler))                                            kME EDL21 Zähler                                    13,50      0,03698630137             0,03688524590
+
+ 1-06-7-007 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Zweirichtungszähler Zweitarif))                           kME Zweirichtungszähler Zweitarif                   22,50      0,06164383562             0,06147540984
+
+ 1-06-7-001 (Messstellenbetrieb bei kME (Niederspannung, registrierende Last-/Einspeisemessung))                                      kME mit registrierender Last-/Einspeisemessung     376,00      1,03013698630             1,02732240437
+
+ 1-06-7-002 (Wandlersatz (Niederspannung))                                                                                            Wandlersatz für Messstellenbetrieb bei kME          10,00      0,02739726027             0,02732240437
+
+ 1-06-7-004 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Einrichtungszähler Eintarif))                             kME Einrichtungszähler Eintarif                     13,00      0,03561643836             0,03551912568
+
+ 1-06-7-005 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Einrichtungszähler Zweitarif))                            kME Einrichtungszähler Zweitarif                    22,50      0,06164383562             0,06147540984
+
+ 1-06-7-003 (Schaltgerät oder Rundsteuerempfänger (Niederspannung))                                                                   Schaltgerät oder Rundsteuerempfänger                18,12      0,04964383562             0,04950819672
+
+ 1-06-7-006 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Zweirichtungszähler Eintarif))                            kME Zweirichtungszähler Eintarif                    22,50      0,06164383562             0,06147540984
+
+ 1-06-7-008 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Mehrtarifzähler))                                         kME Mehrtarifzähler                                 22,50      0,06164383562             0,06147540984
+
+ 1-06-7-009 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Prepaymentzähler))                                        kME Prepaymentzähler                                22,50      0,06164383562             0,06147540984
+
+ 1-06-7-010 (Messstellenbetrieb bei kME (Niederspannung, jährliche Ablesung Maximumzähler))                                           kME Maximumzähler                                   22,50      0,06164383562             0,06147540984
+
+ 1-06-7-028 (Messstellenbetrieb bei kME (Niederspannung, monatliche Ablesung Einrichtungszähler Eintarif))                            kME Einrichtungszähler Eintarif                    376,00      1,03013698630             1,02732240437
+
+ 1-06-7-032 (Messstellenbetrieb bei kME (Niederspannung, monatliche Ablesung Mehrtarifzähler))                                        kME Mehrtarifzähler                                376,00      1,03013698630             1,02732240437
+
+ 1-06-0-036 (Telekommunikationsanschluss durch NB (alle Spannungsebenen/automatische Ablesung))                                       Kommunikationseinrichtung                           18,12      0,04964383562             0,04950819672
+
+ 1-06-5-001 (Messstellenbetrieb bei kME (Mittelspannung, registrierende Last-/Einspeisemessung))                                      kME mit registrierender Last-/Einspeisemessung     752,00      2,06027397260             2,05464480874
+
+ 1-06-5-002 (Wandlersatz (Mittelspannung))                                                                                            Wandlersatz für Messstellenbetrieb bei kME          98,00      0,26849315068             0,26775956284
+
+ 4-02-0-011 (Nicht mehr als 20 Euro brutto jährlich für mit mME ausgestattete MaLo)                                                                                                       16,76      0,04591780822             0,04579234973
+
+Stand: 01.01.2026                                                                                                                       Netzentgelte Stromnetz 2026
+
+
+
+ Unterbrechnung der Anschlussnutzung (Sperrung)                                                                                                                                        Unterbrechung/Wiederherstellung Anschlussnutzung                              Preiseinheit         Preis
+
+ 2-01-7-001 (Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit)                                                                                                          Unterbrechung der Anschlussnutzung in der regulären Arbeitszeit             Euro pro Vorgang       76,00
+
+ 2-01-7-003 (Erfolglose Unterbrechung)                                                                                                                                                 Erfolglose Unterbrechung                                                    Euro pro Vorgang       45,00
+
+ 2-01-7-002 (Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit)                                                                                                      Wiederherstellung der Anschlussnutzung in der regulären Arbeitszeit         Euro pro Vorgang       90,44
+
+
+ Konzessionsabgabe                                                                                                                                                                     Kundengruppe                                                                  Preiseinheit         Preis
+
+ 1-08-3-05154008Gemeindespezifische Konzessionsabgabe für Sondervertragskunden                                                                                                                                                                                  Euro pro Kilowattstunde   0,0011
+
+ 1-08-4-05154008-01Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                                                    reine Landwirtschaft                                                     Euro pro Kilowattstunde   0,0159
+
+ 1-08-4-05154008-02Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                                                    Landwirtschaft in Kombination mit Haushalt                               Euro pro Kilowattstunde   0,0159
+
+ 1-08-1-05154008-03Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                                                Sonstige / keine gesonderte Kundengruppe                                 Euro pro Kilowattstunde   0,0061
+
+ 1-08-1-05154008-01Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                                                reine Landwirtschaft                                                     Euro pro Kilowattstunde   0,0061
+
+ 1-08-1-05154008-02Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden (Schwachlastzeiten)                                                                Landwirtschaft in Kombination mit Haushalt                               Euro pro Kilowattstunde   0,0061
+
+ 1-08-4-05154008-03Gemeindespezifische, kundengruppenindividuelle Konzessionsabgabe für Tarifkunden                                                                                    Sonstige / keine gesonderte Kundengruppe                                 Euro pro Kilowattstunde   0,0159
+
+
+ Sonstiges
+
+ Kosten für Blindarbeit
+ In den Netzentgelten ist die Bereitstellung von induktiver bzw. kapazitiver Blindarbeit bis 50 % der Wirkarbeit enthalten.
+ Überschreitet der Netznutzer/Anschlussnutzer diese vertraglich vorgegebenen Grenzen, wird ihm die darüber hinausgehende Blindarbeit in Rechnung gestellt.
+
+
+ Pönale für die Überschreitung der vereinbarten Netzanschlusskapazität
+ Mittelspannung                                                                                                                                                                                                                                                 15,00 €/kWh/a
+ Mittelspannung für Umspannung                                                                                                                                                                                                                                  13,00 €/kWh/a
+
+ Arbeits-und Leistungswerte von Netzanschlusspunkten einer Spannungsebene, die in einer niedrigeren Spannungsebene gemessen werden, werden zum Ausgleich von Transformatorverlusten mit einem individuellen Korrekturfaktor beaufschlagt. Die korrigierten Leistungs-und Arbeitswerte sind
+ Grundlage für die Abrechnung. Beim Vorliegen solcher Zählpunkte wird der Korrekturfaktor dem Netznutzer schriftlich mitgeteilt.
+
+ Preise zzgl. gesetzlicher Abgaben (Mehrkosten nach dem KWK-Gesetz, § 19 Absatz 2 Satz 6 StromNEV, § 17 f EnWG , § 18 AbLaV - sowie Konzessionsabgabe) und Umsatzsteuer.
+
+ Dieses Preisblatt wird gemäß § 20 Abs. 1 Satz 2 EnWG veröffentlicht. Es stellt die Entgelte dar, die auf Basis der derzeit vorliegenden Erkenntnisse für 2026 ermittelt wurden.
+
+ Letztverbraucher, die die "besondere Ausgleichregelung" gemäß §§63 ff EEG in Anspruch nehmen, zahlen eine reduzierte KWK-Umlage, die durch den zuständigen Übertragungsnetzbetreiber abgerechnet wird.
+
+ Haftungsausschluss
+ Da trotz aller Sorgfalt die Vollständigkeit und Fehlerfreiheit der veröffentlichten Daten nicht garantiert werden kann, ist, soweit gesetzlich zulässig, eine diesbezügliche Haftung der Stadtwerke Emmerich GmbH ausgeschlossen. Stadtwerke Emmerich GmbH behält sich das Recht vor,
+ nachträgliche Änderungen der Daten vorzunehmen, wenn dies zu Korrekturzwecken erforderlich sein sollte.
+

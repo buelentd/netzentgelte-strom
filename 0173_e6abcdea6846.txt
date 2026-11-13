@@ -1,0 +1,134 @@
+URL: https://www.enervie-vernetzt.de/Portaldata/1/Resources/_02_downloads/strom/netzentgelte_/Preisblatt_Strom_vorlaeufig_2027.pdf
+Netzbetreiber: ENERVIE Vernetzt GmbH
+
+                                                                                                                                                          12.10.2026
+
+
+                      Netzentgelte Strom Enervie Vernetzt GmbH
+                                                  Entgelte gültig ab        01.01.2027        Vorläufig
+
+Entgelte für die Netznutzung von Entnahmestellen mit Leistungsmessung - Jahresleistungspreissystem -
+                                                                                                          Jahresbenutzungsdauer
+                                                                                       < 2.500 h/a                                   ≥ 2.500 h/a
+   Netz- oder Umspannebene
+                                                                          Leistungspreis           Arbeitspreis          Leistungspreis            Arbeitspreis
+                                                                              €/kWa                  ct/kWh                  €/kWa                   ct/kWh
+   Umspannung HöS/HS                                                           22,34                   3,38                   89,96                   0,67
+   Hochspannung (HS)                                                           21,74                   4,35                  124,64                   0,23
+   Umspannung HS/MS                                                            23,62                   5,01                  145,26                   0,14
+   Mittelspannung (MS)                                                         26,41                   6,13                  163,49                   0,65
+   Umspannung MS/NS                                                            40,70                   6,19                  165,03                   1,21
+   Niederspannung (NS)                                                         39,52                   7,76                  168,88                   2,58
+
+
+Entgelte für die Netznutzung von Entnahmestellen ohne Leistungsmessung
+
+                                                                                                   Grundpreis             Arbeitspreis
+                                                                              Ebene
+                                                                                                      €/a                   ct/kWh
+Entnahme ohne Leistungsmessung                                          Niederspannung (NS)           96,00                   8,21
+                                                                        Mittelspannung (MS)            0,00                   3,30
+Unterbrechbare Versorgungseinrichtungen § 14a EnWG:
+                                                                        Umspannung MS/NS               0,00                   3,30
+Bestandsanlagen Speicherheizung
+                                                                        Niederspannung (NS)            0,00                   3,30
+                                                                        Mittelspannung (MS)            0,00                   3,30
+Unterbrechbare Versorgungseinrichtungen § 14a EnWG:
+                                                                        Umspannung MS/NS               0,00                   3,30
+Bestandsanlagen Elektro-Wärmepumpen
+                                                                        Niederspannung (NS)            0,00                   3,30
+Unterbrechbare Versorgungseinrichtungen § 14a EnWG:
+                                                                        Niederspannung (NS)            0,00                   3,30
+Bestandsanlagen Elektromobilität
+
+Steuerbare Verbrauchseinrichtungen nach § 14.a EnWG
+
+                                                                                                                          Grundpreis               Arbeitspreis
+Modul 1 & 2                                                                   Ebene           Pauschaler Rabatt €/a
+                                                                                                                             €/a                     ct/kWh
+   Modul 1                                                              Niederspannung (NS)          -140,65                   96,00                  8,21
+   Modul 2 (nur wählbar mit separatem Zähler)                           Niederspannung (NS)             --               -- (sep. Zähler)             3,28
+
+Voraussetzung für Modul 3 ist der Betrieb eines intelligenten Messsystems (iMSys)
+
+                                                                          NT Arbeitspreis        ST Arbeitspreis        HT Arbeitspreis
+Modul 3 (nur in Verbindung mit Modul 1 wählbar)
+                                                                              ct/kWh                 ct/kWh                 ct/kWh
+   Arbeitspreis Ebene Niederspannung                                           3,28                    8,21                   11,62
+
+
+Modul 3                                                                     Fenster NT             Fenster ST              Fenster HT
+
+   Zeitfenster Ebene Niederspannung                                       Niedriglasttarif         Standardtarif           Hochtarif
+   Quartal 1 - 4: 01.01. - 31.12.                                           00:00-04:00        alle restlichen Zeiten     18:00-21:00
+
+
+Netzentgelt für öffentliche Straßenbeleuchtungsanlagen
+
+
+
+öffentliche Beleuchtung                                                                                                   Arbeitspreis
+APStraBel [ct/kWh] = APNS>2500h/a + (LPNS>2500h/a / 3.600 * 100 ct/€)                                                         7,27
+
+
+
+Sonderformen der Netznutzung gemäß § 19 Abs. 1 StromNEV (Monatsleistungspreise)
+                                                                          Leistungspreis           Arbeitspreis
+   Netz- oder Umspannebene
+                                                                           €/kW/Monat                ct/kWh
+   Umspannung HöS/HS                                                           14,99                  0,67
+   Hochspannung (HS)                                                           20,77                   0,23
+   Umspannung HS/MS                                                            24,21                   0,14
+   Mittelspannung (MS)                                                         27,25                   0,65
+   Umspannung MS/NS                                                            27,51                   1,21
+   Niederspannung (NS)                                                         28,15                   2,58
+
+Sonderformen der Netznutzung gemäß § 19 Abs. 4 StromNEV
+Für Entnahmen zur ausschließlichen Speicherung in einem Stromspeicher berechnen sich die Entgelte gemäß den Vorgaben in § 19 Abs. 4
+StromNEV
+
+
+Sonderformen der Netznutzung gemäß § 118 Abs. 6 EnWG
+Entnahmen zur Speicherung elektrischer Energie gemäß § 118 Abs. 2 EnWG sind von den Entgelten für den Netzzugang freigestellt.
+
+Entgelte für Messstellenbetrieb
+Das Entgelt für Messstellenbetrieb umfasst auch die Messdienstleistung.
+Die Entgelte für den Messstellenbetrieb moderner Messeinrichtungen (mME) und intelligenter Messsysteme (iMSys) gemäß
+Messstellenbetriebsgesetz sind in einem eigenen Preisblatt des grundzuständigen Messstellenbetreibers ausgewiesen.
+
+
+
+
+   Entgelte für Messstellenbetrieb je Zählpunkt mit                     Messstellenbetrieb
+   Leistungsmessung                                                             €/a
+
+                                                                               12.10.2026
+
+
+Hochspannungsmessung je Zählpunkt                              1575,59
+Mittelspannungsmessung je Zählpunkt                            135,48
+      MS Wandler                                               287,43
+Niederspannungsmessung je Zählpunkt                            168,32
+      NS Wandler                                                40,07
+Alle Spannungsebenen (HS / MS / NS) - Abschlag für:
+   - kundenseitige Telekommunikationseinrichtung                -50,00
+   - statt täglicher nur monatliche Datenbereitstellung        -150,00
+
+
+
+
+Entgelte für Messstellenbetrieb je Zählpunkt ohne         Messstellenbetrieb
+Leistungsmessung (Preise je Turnusablesung)                      €/a
+
+Eintarifzähler                                                  14,18
+Zweitarifzähler einschl. Tarifschaltung                         25,00
+Mehrtarifzähler einschl. Tarifschaltung                         24,78
+Maximumzähler (Ein- oder Zweitarifzähler)                       24,78
+Eintarif-2-Richtungszähler                                      24,78
+Zweitarif-2-Richtungszähler                                     24,78
+Intelligenter Zähler (z.B. EDL21)                               24,78
+Messsystem nach § 21 EnWG                                        9,49
+Pauschalanlage                                                   0,00
+NS-Wandlersatz                                                  40,07
+Schaltgerät                                                     26,65
+
