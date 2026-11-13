@@ -43,6 +43,8 @@ DOK_MINUS = [("14a", 4), ("sonderform", 4), ("atypisch", 4), ("singul", 4), ("fi
              ("netzverlust", 4), ("kapazitaet", 1), ("einspeis", 20), ("redispatch", 5), ("bilanz", 3),
              ("vermiedene", 20), ("referenzpreis", 20)]
 
+SITEMAP_STANDARD = ("/sitemap.xml", "/sitemap_index.xml", "/wp-sitemap.xml")
+
 LINKS_JS = r"""
 () => {
   const out = [];
@@ -496,7 +498,11 @@ class Crawler:
             if tiefe == 0:
                 domains.add(basis_domain(aktuell))
                 domains.add(basis_domain(url))
-                for sm in await self.robots.sitemaps(aktuell):
+                sitemaps = await self.robots.sitemaps(aktuell)
+                if not sitemaps:             # keine Sitemap in der robots.txt genannt: übliche Orte probieren
+                    o = urlparse(aktuell)
+                    sitemaps = [f"{o.scheme}://{o.netloc}{pfad}" for pfad in SITEMAP_STANDARD]
+                for sm in sitemaps:
                     if seiten < self.max_seiten:
                         seiten += 1
                         for u in await self._sitemap(ctx.request, sm):
@@ -531,7 +537,9 @@ class Crawler:
             await pruefe_offene(4)
         return self._entscheiden(a, geprueft, robots_gesperrt, fehler, seiten, seiten_ok, start)
 
-    async def _sitemap(self, req, url) -> list[str]:
+    async def _sitemap(self, req, url, tiefe: int = 0) -> list[str]:
+        """Adressen einer XML-Sitemap. Ist es ein Sitemap-Index (Yoast, WordPress wp-sitemap.xml, TYPO3), werden die Teil-Sitemaps
+        gelesen (höchstens 25, bis Tiefe 2, 1 Anfrage/s je Domain, robots.txt beachtet). Wunsch Nutzer 13.11.2026: gezielt in der Sitemap suchen."""
         if await self.robots.erlaubt(url) is False:
             return []
         await self.drossel.warten(url)
@@ -542,7 +550,16 @@ class Crawler:
             txt = (await r.body())[:5_000_000].decode("utf-8", "replace")
         except Exception:
             return []
-        return re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", txt)[:20000]
+        locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", txt)
+        if "<sitemapindex" in txt[:3000].lower() and tiefe < 2:
+            # Seiten-Sitemaps zuerst (page/pages/seite), Beiträge, Rest; Bilder/Anhänge/Taxonomien zuletzt
+            locs.sort(key=lambda u: (0 if re.search(r"page|seite|pages", u, re.I) else 1 if re.search(r"post|beitr|news", u, re.I) else 3 if re.search(r"image|attach|media|tax|categor|tag", u, re.I) else 2))
+            out: list[str] = []
+            for sub in locs[:25]:
+                if sub.lower().endswith((".xml",)) or "sitemap" in sub.lower():
+                    out += await self._sitemap(req, sub, tiefe + 1)
+            return out[:50000]
+        return locs[:20000]
 
     def _entscheiden(self, a, geprueft, robots_gesperrt, fehler, seiten, seiten_ok, start) -> Fund:
         kandidaten = sorted(geprueft.values(), key=lambda k: k.rang(), reverse=True)

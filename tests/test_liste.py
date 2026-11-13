@@ -120,3 +120,32 @@ def test_veraltete_adressen_werden_nicht_geladen():
     assert not veraltet_in_url("https://x.de/uploads/2025/10/NNE_vorlaeufig_2027.pdf", 2027)
     assert not veraltet_in_url("https://x.de/uploads/2025/12/Preisblatt-2026.pdf", 2027)
     assert not veraltet_in_url("https://x.de/downloads/preisblatt.pdf", 2027)
+
+
+def test_sitemap_index_wird_aufgeloest():
+    import asyncio
+    from vnb.crawl import Crawler
+
+    class Antwort:
+        def __init__(self, status, text): self.status, self._t = status, text
+        async def body(self): return self._t.encode()
+
+    seiten = {
+        "https://x.de/sitemap_index.xml": "<sitemapindex><sitemap><loc>https://x.de/page-sitemap.xml</loc></sitemap><sitemap><loc>https://x.de/image-sitemap.xml</loc></sitemap></sitemapindex>",
+        "https://x.de/page-sitemap.xml": "<urlset><url><loc>https://x.de/netzentgelte-strom/</loc></url><url><loc>https://x.de/kontakt/</loc></url></urlset>",
+        "https://x.de/image-sitemap.xml": "<urlset><url><loc>https://x.de/bild.jpg</loc></url></urlset>",
+    }
+
+    class Req:
+        async def get(self, url, timeout=0): return Antwort(200 if url in seiten else 404, seiten.get(url, ""))
+
+    class Robots:
+        async def erlaubt(self, u): return True
+
+    class Drossel:
+        async def warten(self, u): return None
+
+    c = object.__new__(Crawler)
+    c.robots, c.drossel = Robots(), Drossel()
+    urls = asyncio.run(c._sitemap(Req(), "https://x.de/sitemap_index.xml"))
+    assert "https://x.de/netzentgelte-strom/" in urls and "https://x.de/kontakt/" in urls and "https://x.de/bild.jpg" in urls

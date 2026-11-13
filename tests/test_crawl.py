@@ -109,7 +109,13 @@ def test_crawler_findet_endgueltiges_preisblatt(server, tmp_path):
     assert not any("gas" in p for p in pfade)                     # Gas ausgeschlossen
     assert not any("karriere" in p for p in pfade)
     # höchstens 1 Anfrage pro Sekunde (Seiten, Dokumente, robots.txt)
-    zeiten = [t for t, p in ANFRAGEN if not p.startswith("/favicon")]
+    # ein 404 schreibt der Testserver doppelt ins Protokoll (log_error und log_request): gleiche Adresse direkt hintereinander zählt einmal
+    zeiten, vorher = [], None
+    for t, p in ANFRAGEN:
+        if p.startswith("/favicon") or (vorher == p and zeiten and t - zeiten[-1] < 0.05):
+            continue
+        zeiten.append(t)
+        vorher = p
     abstaende = [b - a for a, b in zip(zeiten, zeiten[1:])]
     # gemessen wird die Ankunft am Testserver; einzelne Anfragen kommen auf CI-Rechnern bis ~0,15 s
     # verspätet an (1,12 s, dann 0,88 s). Je zwei Abstände zusammen müssen daher ≥ 1,95 s sein.
