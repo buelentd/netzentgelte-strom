@@ -1,0 +1,13 @@
+# Server mit Docker: docker compose up -d --build   (Port 80/443 über Caddy, automatisches HTTPS)
+services:
+  api:
+    build: ..
+    restart: unless-stopped
+    environment:
+      NETZENTGELTE_API_KEY: ${NETZENTGELTE_API_KEY}   # in deploy/.env setzen, nicht ins Git
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports: ["80:80", "443:443"]
+    volumes: ["./Caddyfile:/etc/caddy/Caddyfile"]
+    depends_on: [api]
