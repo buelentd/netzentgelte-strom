@@ -111,3 +111,12 @@ def test_parallele_teile_decken_alles_genau_einmal_ab():
         t = next(k for k in range(8) if im_teil(e, f"{k}/8"))
         assert teile.setdefault(e["website"], t) == t
     assert all(im_teil(e, "") for e in eintraege)
+
+
+def test_veraltete_adressen_werden_nicht_geladen():
+    from vnb.crawl import veraltet_in_url
+    assert veraltet_in_url("https://max-peissker.de/wp-content/uploads/2023/12/NNE-ab-01.01.2024.pdf", 2027)
+    assert veraltet_in_url("https://x.de/uploads/2025/12/Preisblatt.pdf", 2027)
+    assert not veraltet_in_url("https://x.de/uploads/2025/10/NNE_vorlaeufig_2027.pdf", 2027)
+    assert not veraltet_in_url("https://x.de/uploads/2025/12/Preisblatt-2026.pdf", 2027)
+    assert not veraltet_in_url("https://x.de/downloads/preisblatt.pdf", 2027)

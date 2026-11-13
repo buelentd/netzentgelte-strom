@@ -138,6 +138,13 @@ def dok_score(text: str, jahr: int) -> int:
     return s
 
 
+def veraltet_in_url(url: str, jahr: int) -> bool:
+    """Die Adresse nennt nur Jahre vor dem Vorjahr des gesuchten Jahres (z. B. .../2023/12/NNE-ab-01.01.2024.pdf bei Suchjahr 2027):
+    gar nicht erst laden. Ein Blatt für 2027 wird frühestens im Herbst 2026 veröffentlicht (Upload-Ordner 2026)."""
+    jahre = {int(j) for j in re.findall(r"(?<!\d)(20[0-3]\d)(?!\d)", unquote(url))}
+    return bool(jahre) and max(jahre) < jahr - 1
+
+
 def ist_dokument(url: str) -> bool:
     return bool(DOK_ENDUNG.search(url) or DOK_MUSTER.search(url))
 
@@ -310,6 +317,8 @@ class Crawler:
         return pfad, ""
 
     async def dokument_pruefen(self, ctx_request, url, a: Auftrag, kontext="", referer=""):
+        if url not in a.hinweise and veraltet_in_url(url, self.jahr):
+            return Kandidat(url=url, grund="Adresse nennt nur ältere Jahre (nicht geladen)")
         pfad, fehler = await self.herunterladen(ctx_request, url, a, referer)
         if not pfad:
             k = Kandidat(url=url, grund=fehler)

@@ -305,7 +305,7 @@ def vorschlaege_laden(hier: Path, jahr: int) -> dict[str, tuple]:
     if kand.exists():
         for z in _csv.DictReader(kand.read_text(encoding="utf-8-sig").splitlines(), delimiter=";"):
             for sp in (f"kandidat_{jahr}_1", f"kandidat_{jahr}_2"):
-                if z.get(sp, "").startswith("http"):
+                if z.get(sp, "").startswith("http") and not re.search(rf"/{jahr}/(0[1-9]|1[0-2])/", z[sp]):   # Upload-Ordner des Zieljahres gibt es noch nicht
                     out.setdefault(z["mastr_nr"], []).append(z[sp])
     return {k: tuple(dict.fromkeys(v))[:6] for k, v in out.items()}
 
