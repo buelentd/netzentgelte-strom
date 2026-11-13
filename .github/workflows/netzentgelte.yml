@@ -161,7 +161,7 @@ jobs:
       - name: Diagnose (Textauszüge auf Branch diagnose)
         if: ${{ !cancelled() && steps.p.outputs.diagnose == 'true' }}
         run: |
-          python run.py diagnose
+          python run.py diagnose --jahr "${{ steps.p.outputs.jahr }}"
           rm -rf "$RUNNER_TEMP/diag" && mkdir "$RUNNER_TEMP/diag" && cp -r diagnose/. "$RUNNER_TEMP/diag/"
           cd "$RUNNER_TEMP/diag"
           git init -q -b diagnose
