@@ -1,43 +1,43 @@
 # Netzentgelte Strom 2027 (SLP und RLM): Zusammenfassung
 
-Stand 13.11.2026 12:56, 425 Netzbetreiber bzw. Netzgebiete
+Stand 13.11.2026 13:11, 522 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 210 | 49% |
-| pruefen | 103 | 24% |
-| kein_preisblatt | 89 | 21% |
-| blockiert | 16 | 4% |
-| robots | 6 | 1% |
+| ok | 257 | 49% |
+| pruefen | 128 | 25% |
+| kein_preisblatt | 111 | 21% |
+| blockiert | 17 | 3% |
+| robots | 8 | 2% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
+Preisstand (nur ok): vorläufig 214, endgültig 27, unklar 16
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,15 ct/kWh (Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG)
 - Maximum: 13,94 ct/kWh (Netzbetrieb Hirschberg GmbH ＆ Co. KG)
-- Median: 7,30 ct/kWh (n = 234)
+- Median: 7,33 ct/kWh (n = 286)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
 - Minimum: 2,74 ct/kWh (Elektrizitätsgenossenschaft Unterneukirchen eG)
 - Maximum: 13,12 ct/kWh (GIG energy services GmbH)
-- Median: 6,64 ct/kWh (n = 282)
+- Median: 6,61 ct/kWh (n = 345)
 
 ## Spanne NS Leistungspreis ab 2.500 h (RLM-Werte ok)
 
 - Minimum: 50,32 €/kW/a (Netzgesellschaft Frankfurt (Oder) mbH)
 - Maximum: 377,52 €/kW/a (Stadtwerke Barmstedt)
-- Median: 149,67 €/kW/a (n = 282)
+- Median: 150,56 €/kW/a (n = 345)
 
 ## Datenherkunft
 
 - Website aus E-Mail-Domain abgeleitet: 7
 - Bundesland/Region nur aus dem Sitz laut MaStR: 12
-- Netztyp: Stadtnetz 280, Regionalnetz 67, Flächennetz 48, unbekannt 30
+- Netztyp: Stadtnetz 367, Regionalnetz 74, Flächennetz 50, unbekannt 31
 
 ## Abgleich mit den geprüften Pilotwerten (Neuauslesung der Pilot-Quelle)
 
@@ -95,7 +95,7 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 49. MVV Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 50. swa Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 
-## Status ok, aber Preisstand nicht endgültig (184)
+## Status ok, aber Preisstand nicht endgültig (230)
 
 - 8. Westfalen Weser Netz GmbH: vorläufig
 - 9. enercity Netz GmbH: vorläufig
@@ -281,10 +281,56 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 422. Stadtwerke Bietigheim-Bissingen GmbH: vorläufig
 - 423. Stadtwerke Blankenburg GmbH: vorläufig
 - 424. Stadtwerke Bliestal GmbH: vorläufig
+- 426. Stadtwerke Böhmetal GmbH: vorläufig
+- 427. Stadtwerke Bogen GmbH: vorläufig
+- 428. Stadtwerke Borken/Westf. GmbH: vorläufig
+- 429. Stadtwerke Bramsche GmbH: vorläufig
+- 437. Stadtwerke Burgdorf Netz GmbH: vorläufig
+- 439. Stadtwerke Cham GmbH: vorläufig
+- 441. Stadtwerke Coesfeld GmbH: vorläufig
+- 450. Stadtwerke Dingolfing GmbH: vorläufig
+- 452. Stadtwerke Ditzingen GmbH ＆ Co. KG: unklar
+- 454. Stadtwerke Dorfen GmbH: vorläufig
+- 455. Stadtwerke Dreieich GmbH: vorläufig
+- 456. Stadtwerke Dülmen GmbH: unklar
+- 460. Stadtwerke Eichstätt Versorgungs-GmbH: vorläufig
+- 462. Stadtwerke Einbeck GmbH: vorläufig
+- 464. Stadtwerke Elm-Lappwald GmbH: vorläufig
+- 467. Stadtwerke Emmendingen GmbH: vorläufig
+- 469. Stadtwerke Emsdetten GmbH: vorläufig
+- 472. Stadtwerke Eschwege GmbH: vorläufig
+- 473. Stadtwerke Eutin GmbH: vorläufig
+- 476. Stadtwerke Fellbach GmbH: vorläufig
+- 478. Stadtwerke Finsterwalde GmbH: vorläufig
+- 479. Stadtwerke Flensburg GmbH: vorläufig
+- 480. Stadtwerke Forchheim GmbH: vorläufig
+- 481. Stadtwerke Frankenthal GmbH: unklar
+- 482. Stadtwerke Freudenstadt GmbH ＆ Co. KG: vorläufig
+- 483. Stadtwerke Fröndenberg Wickede GmbH: vorläufig
+- 485. Stadtwerke Furth im Wald GmbH ＆ Co. KG: vorläufig
+- 488. Stadtwerke Geldern Netz GmbH: vorläufig
+- 490. Stadtwerke Georgsmarienhütte Netz GmbH: vorläufig
+- 496. Stadtwerke Görlitz AG: vorläufig
+- 498. Stadtwerke Greven GmbH: vorläufig
+- 499. Stadtwerke Grevesmühlen GmbH: unklar
+- 500. Stadtwerke Gronau GmbH: vorläufig
+- 502. Stadtwerke Grünstadt GmbH: unklar
+- 503. Stadtwerke Güstrow GmbH: vorläufig
+- 505. Stadtwerke Hagenow GmbH: vorläufig
+- 506. Stadtwerke Haiger: vorläufig
+- 507. Stadtwerke Haldensleben GmbH: vorläufig
+- 510. Stadtwerke Hammelburg GmbH: vorläufig
+- 511. Stadtwerke Haslach i.K.: unklar
+- 514. Stadtwerke Heidelberg Netze GmbH: vorläufig
+- 515. Stadtwerke Heilbad Heiligenstadt GmbH: vorläufig
+- 516. Stadtwerke Heiligenhaus GmbH: vorläufig
+- 517. Stadtwerke Heilsbronn: vorläufig
+- 518. Stadtwerke Hemau: vorläufig
+- 525. Stadtwerke Hollfeld: vorläufig
 
-## Restfälle (215)
+## Restfälle (265)
 
-### pruefen (103)
+### pruefen (128)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
@@ -389,8 +435,33 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 417. Stadtwerke Bayreuth Energie und Wasser GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 421. Stadtwerke Bexbach GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 425. Stadtwerke Böblingen GmbH ＆ Co. KG: SLP-Werte nicht gefunden
+- 430. Stadtwerke Bretten GmbH: SLP-Werte nicht gefunden
+- 432. Stadtwerke Brunsbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
+- 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-4-001: kein Wert; NS Artikel-ID: 1-01-5-001: kein Wert; NS Artikel-ID: 1-01-6-001: kein Wert; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (9.0, 3.6); RLM-Werte auffällig ode
+- 442. Stadtwerke Crailsheim GmbH: SLP-Werte nicht gefunden
+- 444. Stadtwerke Deggendorf GmbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
+- 447. Stadtwerke Detmold GmbH: SLP-Werte nicht gefunden
+- 449. Stadtwerke Dillingen/Saar Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.99, 1.78); SLP-Werte auffällig
+- 457. Stadtwerke Eberbach GmbH: SLP-Werte nicht gefunden
+- 458. Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH: SLP-Werte nicht gefunden
+- 463. Stadtwerke Elbtal GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
+- 465. Stadtwerke Elmshorn: SLP-Werte nicht gefunden
+- 468. Stadtwerke Emmerich GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (23.72, 0.065, 0.0648); SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 23.7200, 0.0650, 0.0648
+- 471. Stadtwerke Erkrath GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 474. Stadtwerke EVB Huntetal GmbH: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
+- 475. Stadtwerke EVB Huntetal Netz GmbH: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
+- 477. Stadtwerke Feuchtwangen KU: SLP-Werte nicht gefunden
+- 486. Stadtwerke Gaggenau: SLP-Werte nicht gefunden
+- 493. Stadtwerke Glückstadt GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
+- 497. Stadtwerke Greifswald GmbH: SLP-Werte nicht gefunden
+- 501. Stadtwerke Groß-Gerau Versorgungs GmbH: SLP-Werte nicht gefunden
+- 504. Stadtwerke Gunzenhausen GmbH: SLP-Werte nicht gefunden
+- 508. Stadtwerke Haltern am See GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
+- 520. Stadtwerke Herne AG: SLP-Werte nicht gefunden
+- 522. Stadtwerke Hilden GmbH: SLP-Werte nicht gefunden
+- 523. Stadtwerke Hockenheim: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 
-### kein_preisblatt (89)
+### kein_preisblatt (111)
 
 - 57. Alzchem Netz GmbH: 3 Dokument(e) geprüft: gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument
 - 65. BEW Netze GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
@@ -481,8 +552,30 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 405. Stadtwerke Bad Saulgau: kein Preisblatt-Link gefunden (1 Seiten durchsucht)
 - 411. Stadtwerke Bad Wörishofen: kein Preisblatt-Link gefunden (40 Seiten durchsucht)
 - 419. Stadtwerke Bernau GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Jahr 2027 nicht im Dokument; gültig ab [2025], nicht 2027; kein Text im Dokument (Scan?); kein PDF/Excel
+- 431. Stadtwerke Brühl GmbH: 3 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
+- 433. Stadtwerke Buchen GmbH ＆ Co KG: kein Preisblatt-Link gefunden (18 Seiten durchsucht)
+- 434. Stadtwerke Buchholz in der Nordheide GmbH: 1 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 436. Stadtwerke Burg Energienetze GmbH: 4 Dokument(e) geprüft: HTTP 404; weder RLM- (NS) noch SLP-Werte gefunden (NS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; MSNS: Spaltenreihenfolge nicht aus Kopfzeile bestimmbar; SLP: mehrere G
+- 438. Stadtwerke Buxtehude GmbH: 3 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument
+- 440. Stadtwerke Clausthal-Zellerfeld GmbH: 1 Dokument(e) geprüft: HTTP 404
+- 443. Stadtwerke Dachau Eigenbetr. d. Stadt Dachau: 13 Dokument(e) geprüft: gültig ab [2024], nicht 2027; Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
+- 445. Stadtwerke Deidesheim GmbH: 14 Dokument(e) geprüft: HTTP 404; Jahr 2027 nicht im Dokument; kein Text im Dokument (Scan?)
+- 446. Stadtwerke Delitzsch GmbH: 11 Dokument(e) geprüft: HTTP 404; gültig ab [2022], nicht 2027
+- 448. Stadtwerke Dettelbach: kein Preisblatt-Link gefunden (8 Seiten durchsucht)
+- 453. Stadtwerke Döbeln GmbH: kein Preisblatt-Link gefunden (2 Seiten durchsucht)
+- 459. Stadtwerke Eckernförde GmbH: 7 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+- 461. Stadtwerke Eilenburg GmbH: 15 Dokument(e) geprüft: HTTP 404
+- 466. Stadtwerke Emden GmbH: 3 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 470. Stadtwerke Engen GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden; Endkunden-Preisblatt (Lieferung), keine Netzentgelte
+- 484. Stadtwerke Fürstenfeldbruck GmbH: 1 Dokument(e) geprüft: kein Text im Dokument (Scan?)
+- 487. Stadtwerke Geesthacht GmbH: 4 Dokument(e) geprüft: Jahr 2027 nicht im Dokument
+- 492. Stadtwerke Glauchau Dienstleistungsgesellschaft mbH: 2 Dokument(e) geprüft: gültig ab [2026], nicht 2027; Jahr 2027 nicht im Dokument
+- 494. Stadtwerke GmbH Bad Kreuznach: 15 Dokument(e) geprüft: Jahr 2027 nicht im Dokument; weder RLM- (NS) noch SLP-Werte gefunden (NS: Feld lp_unter_2500 mehrfach belegt; MSNS: Feld lp_unter_2500 mehrfach belegt); Kopf nennt [2024], nich
+- 512. Stadtwerke Havelberg GmbH: 2 Dokument(e) geprüft: HTTP 404
+- 513. Stadtwerke Heide GmbH: 15 Dokument(e) geprüft: HTTP 404; weder RLM- (NS) noch SLP-Werte gefunden; fiktive Entgelte; Jahr 2027 nicht im Dokument
+- 521. Stadtwerke Hettstedt GmbH: 15 Dokument(e) geprüft: weder RLM- (NS) noch SLP-Werte gefunden (NS Artikel-ID: 1-01-5-002: widersprüchliche Werte 6.7300, 0.0801, 6.7300; NS Artikel-ID: 1-01-5-003: widersprüchliche Werte 157.7900, 0
 
-### blockiert (16)
+### blockiert (17)
 
 - 73. CCF Cassella Chemiepark Frankfurt GmbH: HTTP 404 https://cassella-standort.de/stromnetz.html
 - 74. Covestro Brunsbüttel Energie GmbH: HTTP 503 https://www.covestro.com/de/company/covestro-worldwide/deutschland/covestro-in-d
@@ -500,8 +593,9 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 336. NEW Netz GmbH: robots.txt nicht erreichbar (https://www.new-netz-gmbh.de); robots.txt nicht erreichbar (http://www.new-netz-gmbh.de)
 - 359. Regionalwerk Bodensee Netze GmbH ＆ Co. KG: Gesamtzeit je Website überschritten (20 min)
 - 391. Stadtwerke Bad Bramstedt Netz GmbH: HTTP 404 https://www.badbramstedtnetz.de/marktpartner.html; HTTP 404 http://www.badbramstedtnetz.de/marktpartner.html
+- 495. Stadtwerke Goch GmbH: HTTP 503 https://www.stadtwerke-goch.de; HTTP 503 http://www.stadtwerke-goch.de; HTTP 503 https://www.stadtwerke-goch.de/netznutzungsentgelte/; HTTP 503 https://www.stadtwerke-goch.de/
 
-### robots (6)
+### robots (8)
 
 - 121. Elektrizitätswerk Leitlein GmbH ＆ Co. KG: Preisblatt-Links per robots.txt gesperrt: http://www.ew-leitlein.de/Preisblatt-Waaermepumpe-2017.pdf, http://www.ew-leitlein.de/Preisblatt-Waaermepumpe-2016.pdf, http://www.ew-leitlein.de/Preisblatt-S
 - 221. Gemeindewerke Georgensgmünd: Preisblatt-Links per robots.txt gesperrt: https://www.gemeindewerke-georgensgmuend.de/fileadmin/Dateien/Dateien/Gemeindewerke/PREISBLATT_NNE-2017-endg%C3%BCltig_-_neu.pdf, https://www.gemeindewerke-ge
@@ -509,6 +603,8 @@ Preisstand (nur ok): vorläufig 174, endgültig 26, unklar 10
 - 277. inetz GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.inetz.de/fileadmin/dokumente/02_Netzzugang/01_Netzentgelte/Strom/20261015_S_Preisblatt_v_2027.pdf, https://www.inetz.de/fileadmin/dokumente/02_Net
 - 352. PVU Energienetze GmbH: Startseite per robots.txt gesperrt
 - 369. SEW Stromversorgungs GmbH: Preisblatt-Links per robots.txt gesperrt: https://www.sewerding.de/dl/NNE_2027_15-10-2026_20261015.pdf, https://www.sewerding.de/dl/nne_2018.pdf, https://www.sewerding.de/dl/nne_2016_20160801.pdf
+- 451. Stadtwerke Dinkelsbühl: Preisblatt-Links per robots.txt gesperrt: https://www.sw-dinkelsbuehl.de/fileadmin/Dateien/Website_Stadtwerke_Dinkelsbuehl/Dateien/Strom/Veroeffentlichungspflichten/Netzentgelte/vorl%C3%A4ufige_Netzen
+- 489. Stadtwerke Gengenbach- Versorgungsbetriebe: Preisblatt-Links per robots.txt gesperrt: https://www.stadtwerke-gengenbach.de/fileadmin/Dateien/Webseite/Dateien/Deine_Stadtwerke/Netze_Strom/Netznutzung/Netznutzungsentgelte_aktuell/Preisblatt_vorl_
 
 ### keine_website (1)
 
