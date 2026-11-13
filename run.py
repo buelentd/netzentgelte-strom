@@ -352,6 +352,8 @@ async def schritt_lauf(args, log):
                 hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
         else:                                                          # andere Jahre: eigene Startadressen (lauf/hinweis_urls_<jahr>.csv)
             hinweise = hinweise_laden(HIER / "lauf" / f"hinweis_urls_{args.jahr}.csv")
+            for k, v in hinweise_laden(HIER / "lauf" / "suche_treffer.csv").items():      # Treffer der Suche (Brave) gelten für jedes Jahr
+                hinweise[k] = tuple(dict.fromkeys(hinweise.get(k, ()) + v))
         korrektur = {}
         kp = HIER / "lauf" / "website_korrektur.csv"
         if kp.exists():
