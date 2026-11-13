@@ -1,2 +1,6 @@
 mastr_nr;url;zweck;datum;von
 SNB983765888505;https://stadtwerke-ludwigsfelde.de/netze_infos/;Netzinfos-Seite (Hochlastzeitfenster, Preisblätter) als Startseite für den Crawler;2026-11-13;Nutzer
+SNB980808485264;https://www.sachsen-netze.de/netzzugang/strom/preisblaetter-sn;Preisblätter SachsenNetze GmbH (Seite mit den Dokumenten);2026-11-13;Nutzer
+SNB968914838013;https://www.sachsen-netze.de/netzzugang/strom/preisblaetter-snh;Preisblätter SachsenNetze HS.HD GmbH (Seite mit den Dokumenten);2026-11-13;Nutzer
+SNB980808485264;https://www.sachsen-netze.de/netzzugang/strom/lastprofile-hochlastzeitfenster;Lastprofile und Hochlastzeitfenster SachsenNetze (gilt für beide SachsenNetze-Gesellschaften);2026-11-13;Nutzer
+SNB968914838013;https://www.sachsen-netze.de/netzzugang/strom/lastprofile-hochlastzeitfenster;Lastprofile und Hochlastzeitfenster SachsenNetze;2026-11-13;Nutzer
