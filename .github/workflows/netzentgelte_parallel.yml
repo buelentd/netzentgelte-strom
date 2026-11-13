@@ -1,0 +1,173 @@
+name: Netzentgelte parallel (8 Teilläufe)
+
+# Wie "Netzentgelte Strom", aber in 8 Teilläufen gleichzeitig (Wunsch Nutzer 13.11.2026).
+# Aufteilung nach Website-Domain (run.py --shard K/8), damit die Drossel von 1 Anfrage/s je Domain gilt.
+# Ablauf: 1 Suche (Brave, einmal, wegen 1 Abfrage/s) -> 8 Teilläufe -> Zusammenführen und Committen.
+# Start: Änderung an lauf/parallel.env auf main pushen (ANSTOSS hochzählen) oder von Hand.
+on:
+  workflow_dispatch:
+    inputs:
+      jahr:
+        description: "Jahr der Preisblätter"
+        required: true
+        default: "2027"
+      limit:
+        description: "Höchstzahl Netzbetreiber je Teillauf (leer = alle offenen)"
+        required: false
+        default: ""
+      wiederholen:
+        description: "Status erneut bearbeiten, z. B. kein_preisblatt"
+        required: false
+        default: ""
+      suche_max:
+        description: "Höchstzahl Suchabfragen (einmalig)"
+        required: false
+        default: "110"
+  push:
+    branches: [main]
+    paths: [lauf/parallel.env]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: netzentgelte-parallel
+  cancel-in-progress: false
+
+jobs:
+  suche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      jahr: ${{ steps.p.outputs.jahr }}
+      limit: ${{ steps.p.outputs.limit }}
+      wiederholen: ${{ steps.p.outputs.wiederholen }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Einstellungen
+        id: p
+        env:
+          EREIGNIS: ${{ github.event_name }}
+          IN_JAHR: ${{ inputs.jahr }}
+          IN_LIMIT: ${{ inputs.limit }}
+          IN_WIEDERHOLEN: ${{ inputs.wiederholen }}
+          IN_SUCHE_MAX: ${{ inputs.suche_max }}
+        run: |
+          if [ "$EREIGNIS" = "push" ]; then
+            while IFS='=' read -r k v; do
+              case "$k" in JAHR|LIMIT|WIEDERHOLEN|SUCHE_MAX) printf -v "IN_$k" '%s' "${v//[^A-Za-z0-9_,]/}";; esac
+            done < lauf/parallel.env
+          fi
+          {
+            echo "jahr=${IN_JAHR:-2027}"
+            echo "limit=$IN_LIMIT"
+            echo "wiederholen=$IN_WIEDERHOLEN"
+            echo "suche_max=${IN_SUCHE_MAX:-110}"
+          } | tee -a "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Suche (einmalig, 1 Abfrage pro Sekunde)
+        continue-on-error: true
+        env:
+          SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
+        run: python run.py suche --jahr "${{ steps.p.outputs.jahr }}" --max-abfragen "${{ steps.p.outputs.suche_max }}"
+      - name: Suchtreffer für die Teilläufe bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: suche-treffer
+          path: lauf/suche_treffer.csv
+          if-no-files-found: ignore
+          retention-days: 2
+
+  teil:
+    needs: suche
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        teil: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+      - name: Suchtreffer holen
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: suche-treffer
+          path: lauf
+      - name: Teillauf ${{ matrix.teil }} von 8
+        run: |
+          J="${{ needs.suche.outputs.jahr }}"
+          mkdir -p "ergebnis_$J"
+          VOR=$(wc -l < "ergebnis_$J/fortschritt.jsonl" 2>/dev/null || echo 0)
+          echo "$VOR" > vor.txt
+          python run.py lauf --jahr "$J" --worker 6 --shard "${{ matrix.teil }}/8" \
+            ${{ needs.suche.outputs.limit != '' && format('--limit "{0}"', needs.suche.outputs.limit) || '' }} \
+            ${{ needs.suche.outputs.wiederholen != '' && format('--wiederholen "{0}"', needs.suche.outputs.wiederholen) || '' }}
+      - name: Neue Fortschrittszeilen sichern
+        if: always()
+        run: |
+          J="${{ needs.suche.outputs.jahr }}"
+          VOR=$(cat vor.txt 2>/dev/null || echo 0)
+          tail -n +$((VOR + 1)) "ergebnis_$J/fortschritt.jsonl" > "teil_${{ matrix.teil }}.jsonl" 2>/dev/null || : > "teil_${{ matrix.teil }}.jsonl"
+          wc -l "teil_${{ matrix.teil }}.jsonl"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: teil-${{ matrix.teil }}
+          path: teil_${{ matrix.teil }}.jsonl
+          retention-days: 2
+
+  zusammenfuehren:
+    needs: [suche, teil]
+    if: always() && needs.suche.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: teil-*
+          path: teile
+          merge-multiple: true
+      - name: Zusammenführen und Bericht
+        run: |
+          J="${{ needs.suche.outputs.jahr }}"
+          mkdir -p "ergebnis_$J"
+          cat teile/teil_*.jsonl >> "ergebnis_$J/fortschritt.jsonl" 2>/dev/null || true
+          wc -l "ergebnis_$J/fortschritt.jsonl"
+          python run.py bericht --jahr "$J"
+          [ -f "ergebnis_$J/zusammenfassung.md" ] && cat "ergebnis_$J/zusammenfassung.md" >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Ergebnisse committen
+        run: |
+          J="${{ needs.suche.outputs.jahr }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in "ergebnis_$J/netzentgelte_$J.csv" "ergebnis_$J/restliste.csv" "ergebnis_$J/fortschritt.jsonl" "ergebnis_$J/zusammenfassung.md"; do
+            [ -e "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
+          git commit -m "Netzentgelte $J (parallel): Ergebnisse aktualisiert (Lauf ${{ github.run_id }})"
+          git checkout -- .
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1

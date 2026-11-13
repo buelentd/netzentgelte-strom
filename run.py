@@ -18,6 +18,7 @@ import re
 import shutil
 import sys
 import time
+import zlib
 from collections import defaultdict
 from pathlib import Path
 
@@ -114,6 +115,16 @@ def geschwister(eintraege: list[dict]) -> dict[str, tuple[tuple, tuple, bool]]:
                         ausschluss |= set(varianten)
             out[str(e["nr"])] = (tuple(sorted(pflicht)), tuple(sorted(ausschluss)), not pflicht)
     return out
+
+
+def im_teil(e: dict, teil: str) -> bool:
+    """Aufteilung für parallele Läufe: --shard K/N. Netzbetreiber mit derselben Website landen im selben Teil,
+    damit die Drossel von 1 Anfrage pro Sekunde je Domain gilt."""
+    if not teil:
+        return True
+    k, n = (int(x) for x in teil.split("/"))
+    domain = website_domain(e.get("website", "")) or str(e["nr"])
+    return zlib.crc32(domain.encode("utf-8")) % n == k
 
 
 def key_von(e: dict) -> str:
@@ -316,6 +327,7 @@ async def schritt_lauf(args, log):
 
     neu = {n.strip() for n in (args.neu or "").split(",") if n.strip()}
     offen = [e for e in eintraege if str(e["nr"]) in neu or not speicher.erledigt(key_von(e), wiederholen)]
+    offen = [e for e in offen if im_teil(e, getattr(args, "shard", ""))]
     if args.nur:
         offen = [e for e in offen if norm(args.nur) in norm(e["netzbetreiber"])]
     alle_offen = len(offen)
@@ -480,7 +492,7 @@ def schritt_suche(args, log):
     tabelle = Path(args.out) / f"netzentgelte_{args.jahr}.csv"
     with open(tabelle, encoding="utf-8") as f:
         # nur Netzbetreiber, für die kein Preisblatt gefunden wurde (nicht geblockte, nicht "pruefen")
-        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] == "kein_preisblatt"]
+        zeilen = [z for z in csv.DictReader(f, delimiter=";") if z["status"] == "kein_preisblatt" and im_teil(z, getattr(args, "shard", ""))]
     n = suchen(zeilen, schluessel, HIER / "lauf" / "suche_treffer.csv", HIER / "lauf" / "suche_erledigt.csv",
                args.jahr, args.max_abfragen, log=log)
     log(f"Suche: {n} Abfragen für {len(zeilen)} offene Netzbetreiber")
@@ -552,6 +564,7 @@ def main():
     ap.add_argument("--nur-hinweise", action="store_true",
                     help="Schritt lauf: nur Hinweis-Dokumente und Suchtreffer prüfen, Websites nicht durchsuchen")
     ap.add_argument("--texte", nargs="*", default=[], help="Schritt hlzf: Ordner mit Textauszügen (Diagnose-Format)")
+    ap.add_argument("--shard", default="", help="parallele Teilläufe: K/N (z. B. 0/8); nur Netzbetreiber, deren Website in Teil K fällt")
     ap.add_argument("--max-abfragen", type=int, default=1000, help="Höchstzahl Suchabfragen je Aufruf (Schritt suche)")
     args = ap.parse_args()
     args.abstand = max(1.0, args.abstand)

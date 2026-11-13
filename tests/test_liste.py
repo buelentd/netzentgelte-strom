@@ -98,3 +98,16 @@ def test_pilot_semikolon_im_hinweis(tmp_path):
     assert z["quelle"] == "https://filehub.example/v5/deliverFile/abc?download=true"
     assert z["hinweis"] == "Stand 12.12.2025; frühere Zuordnung falsch"
     assert z["ns_lp_ueber_2500"] == 53.56
+
+
+def test_parallele_teile_decken_alles_genau_einmal_ab():
+    from run import im_teil
+    eintraege = [{"nr": i, "website": f"www.beispiel{i % 40}.de"} for i in range(500)]
+    for e in eintraege:
+        assert sum(im_teil(e, f"{k}/8") for k in range(8)) == 1
+    # gleiche Website, gleicher Teil
+    teile = {}
+    for e in eintraege:
+        t = next(k for k in range(8) if im_teil(e, f"{k}/8"))
+        assert teile.setdefault(e["website"], t) == t
+    assert all(im_teil(e, "") for e in eintraege)
