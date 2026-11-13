@@ -26,7 +26,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
       - name: Crawler
-        run: PYTHONPATH=. python vnb/hlzf_crawl.py --liste lauf/hlzf_crawl9_liste.csv --ausgabe lauf/hlzf_crawl9_ergebnis.csv --parallel 6
+        run: python -m vnb.hlzf_crawl --liste lauf/hlzf_crawl9_liste.csv --ausgabe lauf/hlzf_crawl9_ergebnis.csv --parallel 6
       - name: Committen
         if: always()
         run: |
