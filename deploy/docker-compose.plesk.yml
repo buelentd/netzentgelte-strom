@@ -1,0 +1,9 @@
+# Variante für Server mit Plesk (Ports 80/443 gehören Plesk): die API lauscht nur intern auf 127.0.0.1:8000,
+# Plesk leitet api.intersignum.de per Reverse Proxy dorthin. Start: docker compose -f docker-compose.plesk.yml up -d --build
+services:
+  api:
+    build: ..
+    restart: unless-stopped
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      NETZENTGELTE_API_KEY: ${NETZENTGELTE_API_KEY}
