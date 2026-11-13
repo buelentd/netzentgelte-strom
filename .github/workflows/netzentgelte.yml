@@ -137,6 +137,11 @@ jobs:
           SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
         run: python run.py suche --jahr "${{ steps.p.outputs.jahr }}" --max-abfragen "${{ steps.p.outputs.suche_max }}"
 
+      - name: Zwischenstände alle 8 Minuten sichern (Hintergrund)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: nohup bash .github/zwischenstand.sh "${{ steps.p.outputs.jahr }}" > "$RUNNER_TEMP/zwischenstand.log" 2>&1 &
+
       - name: Preisblätter suchen und auslesen
         timeout-minutes: 320
         run: >
@@ -198,6 +203,7 @@ jobs:
       - name: Ergebnisse committen
         if: always()
         run: |
+          pkill -f zwischenstand.sh || true      # Hintergrund-Sicherung beenden, bevor der Abschluss-Commit läuft
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for f in "ergebnis/netzentgelte_${{ steps.p.outputs.jahr }}.csv" ergebnis/restliste.csv ergebnis/gefunden.csv ergebnis/nicht_gefunden.csv lauf/suche_erledigt.csv ergebnis/zusammenfassung.md \
