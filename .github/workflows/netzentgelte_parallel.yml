@@ -81,7 +81,7 @@ jobs:
           name: suche-treffer
           path: lauf/suche_treffer.csv
           if-no-files-found: ignore
-          retention-days: 2
+          retention-days: 1
 
   teil:
     needs: suche
