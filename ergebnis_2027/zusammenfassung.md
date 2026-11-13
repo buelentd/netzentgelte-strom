@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2027 (SLP und RLM): Zusammenfassung
 
-Stand 13.11.2026 14:31, 831 Netzbetreiber bzw. Netzgebiete
+Stand 13.11.2026 15:09, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 419 | 50% |
-| pruefen | 214 | 26% |
+| ok | 420 | 51% |
+| pruefen | 213 | 26% |
 | kein_preisblatt | 162 | 19% |
 | blockiert | 25 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): vorläufig 368, endgültig 28, unklar 23
+Preisstand (nur ok): vorläufig 368, endgültig 29, unklar 23
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,15 ct/kWh (Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG)
 - Maximum: 13,94 ct/kWh (Netzbetrieb Hirschberg GmbH ＆ Co. KG)
-- Median: 7,39 ct/kWh (n = 471)
+- Median: 7,38 ct/kWh (n = 472)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -489,9 +489,9 @@ Preisstand (nur ok): vorläufig 368, endgültig 28, unklar 23
 - 825. Werraenergie GmbH: vorläufig
 - 830. YNCORIS GmbH ＆ Co. KG: vorläufig
 
-## Restfälle (412)
+## Restfälle (411)
 
-### pruefen (214)
+### pruefen (213)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
@@ -503,7 +503,6 @@ Preisstand (nur ok): vorläufig 368, endgültig 28, unklar 23
 - 29. Westnetz GmbH: SLP-Werte nicht gefunden
 - 30. Bayernwerk Netz GmbH: SLP-Werte nicht gefunden
 - 31. Schleswig-Holstein Netz GmbH: SLP-Werte nicht gefunden
-- 32. E.DIS Netz GmbH: SLP-Werte nicht gefunden
 - 33. Syna GmbH: SLP-Werte nicht gefunden
 - 34. Stuttgart Netze GmbH: SLP-Werte nicht gefunden
 - 35. wesernetz Bremen GmbH: SLP-Werte auffällig
