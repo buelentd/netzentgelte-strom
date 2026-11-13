@@ -52556,14 +52556,65 @@
     "ap_ct_kwh": 10.96,
     "gp_eur_jahr": 0.0
    },
-   "hlzf": null,
+   "hlzf": {
+    "status": "gelesen_aus_2027",
+    "quelle": "eingang/2027_vorlaeufig/SNB971007500575_hlzf_2027.pdf",
+    "ns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "16:45-19:45"
+      ],
+      "winter": [
+       "14:30-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    },
+    "msns": {
+     "zeitfenster": {
+      "fruehling": [],
+      "sommer": [],
+      "herbst": [
+       "16:45-19:45"
+      ],
+      "winter": [
+       "15:00-20:00"
+      ]
+     },
+     "schwelle_prozent": 30,
+     "herkunft_schwelle": "Standard (fachlich zu bestätigen)",
+     "mindestverlagerung_kw": null
+    }
+   },
    "modul3": null,
-   "preise_2027_vorlaeufig": null,
+   "preise_2027_vorlaeufig": {
+    "rlm": {
+     "ns": {
+      "lp_unter_eur_kw_jahr": 20.25,
+      "ap_unter_ct_kwh": 9.12,
+      "lp_ab_eur_kw_jahr": 186.0,
+      "ap_ab_ct_kwh": 2.49
+     },
+     "msns": {
+      "lp_unter_eur_kw_jahr": 16.96,
+      "ap_unter_ct_kwh": 8.41,
+      "lp_ab_eur_kw_jahr": 182.46,
+      "ap_ab_ct_kwh": 1.79
+     },
+     "ms": null
+    },
+    "slp": {
+     "ap_ct_kwh": 11.5,
+     "gp_eur_jahr": 0.0
+    }
+   },
    "quelle_url": "https://netze.stadtwerke-witten.de/media/documents/STWW_NS_Netzentgelte_Strom_2026.pdf",
    "status": "ok",
-   "fehlt": [
-    "hlzf"
-   ]
+   "fehlt": []
   },
   {
    "mastr_nr": "SNB975680234468",

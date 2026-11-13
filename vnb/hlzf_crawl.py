@@ -489,7 +489,11 @@ async def main_async(args):
             u = re.sub(r"^(RLM|SLP):\s*", "", u.strip())
             if u.startswith("http") and "/" in u[8:]:
                 extra.append(u.rsplit("/", 1)[0] + "/")
-        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w, list(dict.fromkeys(extra))[:3]))
+                pu = urlparse(u)
+                if pu.scheme and pu.netloc:      # Startseite des Netz-Hosts der 2026-Quelle (z. B. netze.stadtwerke-witten.de): dort liegen die Veröffentlichungen (Lerneffekt Witten 13.11.2026)
+                    extra.insert(0, f"{pu.scheme}://{pu.netloc}/")
+                    extra.insert(1, f"{pu.scheme}://{pu.netloc}/netzentgelte")
+        auftraege.append((k, r.get("netzbetreiber") or T.get(k, {}).get("netzbetreiber", ""), w, list(dict.fromkeys(extra))[:5]))
     if args.max:
         auftraege = auftraege[:args.max]
     drossel = Drossel(1.0)
