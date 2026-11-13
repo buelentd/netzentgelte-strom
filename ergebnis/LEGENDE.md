@@ -1,0 +1,3 @@
+
+## hlzf_fallback.csv (Rechenwerte, keine Veröffentlichung des Netzbetreibers)
+Getrennt von den Primärdaten. `primary_hlzf_found=False` und `audit_status` halten den Befund fest; `hlzf_source_type=UPSTREAM_OPERATOR_FALLBACK` (Gegenteil: DIRECT_DSO_PUBLICATION), `hlzf_fallback_dso_*` nennt den Netzbetreiber, dessen Fenster übernommen sind, `confidence=MEDIUM / VERIFY_WITH_DSO`: vor Investitionsentscheidungen schriftlich beim Netzbetreiber bestätigen. Erzeugt von `daten/hlzf_fallback.py`, nur für ausdrücklich freigegebene Paare (aktuell Butzbach <- ovag Netz). Nicht in `hlzf_zusammen.csv` und nicht im Status FERTIG.
