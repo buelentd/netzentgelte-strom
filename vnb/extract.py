@@ -714,7 +714,7 @@ SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungs?mes+ung|lastgang
                        r"entnahme\s+von\s+bis\s+(?:zu\s+)?100\.000\s*kwh", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|\bmsb\b|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
-                      r"reservekapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
+                      r"reservekapazit|reservenetzkapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
                       r"berechnung\s+des|fiktiv|informationszweck", re.I)
 SLP_AUSSCHLUSS = re.compile(r"w[äa]rmepumpe|waermepumpe|speicher|14\s*a|modul\s*[123]|unterbrech|steuerbar|"
                             r"nacht|schwachlast|\bnt\b|\bht\b|hochtarif|niedertarif|zweitarif|doppeltarif|"
@@ -793,7 +793,12 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
     werte = {"AP": [], "GP": []}
     zeilen_label = {"AP": [], "GP": []}
     im, start, ausgeschlossen = False, 0, False
-    zeilen = [unicodedata.normalize("NFKC", z) for z in zeilen]    # kursive Mathe-Zeichen ("𝒄𝒕", "𝒌𝑾𝒉") -> ct, kWh
+    zeilen = [re.sub(r"\bnicht\s+(?:steuerbare?\w*|unterbrechbare?\w*)", "regulär", unicodedata.normalize("NFKC", z), flags=re.I)
+              for z in zeilen]    # kursive Mathe-Zeichen ("𝒄𝒕", "𝒌𝑾𝒉") -> ct, kWh; "nicht steuerbare Entnahmen" ist der Standardfall
+    for k in range(len(zeilen) - 1):       # getrennter Kopf "Grund-   Arbeits-" / "preis   preis"
+        if re.search(r"grund-\s+arbeits-\s*$", zeilen[k], re.I) and re.match(r"\s*preis\s+preis\s*$", zeilen[k + 1], re.I):
+            zeilen[k] = re.sub(r"grund-(\s+)arbeits-", lambda m: "Grundpreis" + m.group(1)[:-4] + "   Arbeitspreis" if len(m.group(1)) > 4 else "Grundpreis Arbeitspreis", zeilen[k], flags=re.I)
+            zeilen[k + 1] = ""
     msb_sperre = False                     # nach einer Messstellenbetrieb-Tabelle bis zur nächsten Netzentgelt-Überschrift
     msb_kapitel = None                     # Kapitelnummer der Messstellenbetrieb-Überschrift ("1.2" -> "1")
     kopf_ausschluss = False                # Ausschluss kam von einem eingerückten Spaltenkopf
@@ -822,7 +827,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             if m_nr and m_nr.group(1) != msb_kapitel:
                 msb_sperre = False             # neues Kapitel "2. Preise für Kunden ohne Leistungsmessung"
         zahlen = list(ZAHL.finditer(ohne_spannung(z)))   # "0,4 kV" ist kein Preis
-        fliesstext = zl[:1].islower()      # umgebrochener Satz, keine Überschrift
+        fliesstext = zl[:1].islower() and not (re.match(r"ohne\b", zl, re.I) and i > 0
+                                               and re.search(r"grund-?\s*preis", zeilen[i - 1], re.I))   # Kopf "Entgelte für Entnahmestellen | ohne Leistungsmessung"
+        # umgebrochener Satz, keine Überschrift
         if FIKTIV.search(zl) and not zahlen:
             im = False                     # fiktive Entgelte (nur zur Information)
             continue
@@ -850,7 +857,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                         and re.search(r"arbeits-?\s*preis", zeilen[k], re.I):
                     start = k
                     break
-            spalten = " ".join(re.split(r"\s{3,}", zl)[1:])
+            spalten = re.sub(r"jahresleistungspreissystem", " ", " ".join(re.split(r"\s{3,}", zl)[1:]), flags=re.I)
             # Überschrift (kein Satz) schließt aus: "Entgelte für unterbrechbare und steuerbare Entnahmestellen ohne …"
             lange_ueberschrift = 70 <= len(kurz) < 130 and not kurz.rstrip().endswith((".", ","))
             ausgeschlossen = (bool(SLP_AUSSCHLUSS.search(kurz)) and len(kurz) < 70
