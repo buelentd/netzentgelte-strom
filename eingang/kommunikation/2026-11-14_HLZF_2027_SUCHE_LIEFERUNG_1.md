@@ -247,3 +247,11 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - Versorgungsbetriebe Kronshagen: 2027-PDF vollstaendig lesbar; nur Winter (MS 16:45-19:15, MS/NS und NS 17:15-19:30), F/S/H kein HLF.
 - SWR Energie Rödental und HEWA (Stendal, enwg-veroeffentlichungen.de): 2027-PDFs vom NB-Server, Ebenen-/Spaltenzuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - Kein 2027er Fund per Websuche: Bramsche, Weilburg, Bad Bramstedt, Brunsbüttel, Böhmetal, Ebermannstadt, Glückstadt -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 26 (14.11.2026)
+
+- Stadtwerke Ramstein-Miesenbach: 2027-PDF vollstaendig lesbar; NS/MS-NS nur Winter, MS in bemerkung.
+- EVA Vogling & Angrenzer: 2027-PDF lesbar; NS/MS-NS nur Winter 16:30-19:30.
+- Elektrizitäts-Werk Ottersberg und Stadtwerke Gunzenhausen: 2027-PDFs vom NB-Server, Ebenen-/Spalten-Zuordnung im Extrakt nicht eindeutig (Gunzenhausen zusaetzlich Druckfehler 2026 im Fliesstext) -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Kein 2027er Fund: Annweiler, SWL Energienetz (Lengerich), Röthenbach a.d. Pegnitz (HLZF-Seite nur bis 2026), Barmstedt -> Browser-Liste.
