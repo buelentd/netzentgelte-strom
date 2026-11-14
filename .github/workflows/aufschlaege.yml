@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: "43 */6 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [lauf/dauerlauf_aufschlaege.txt]      # Änderung an dieser Datei startet die Kette (auch ohne Dispatch-Recht)
 
 permissions:
   contents: write
