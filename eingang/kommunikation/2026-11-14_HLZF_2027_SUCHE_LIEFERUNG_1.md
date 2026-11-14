@@ -159,3 +159,14 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 
 - Stadtwerke Schoenebeck: 2027-PDF vom NB-Server vollstaendig lesbar; NS nur W 11:45-15:15; MS in bemerkung; MS/NS nicht ausgewiesen.
 - Kein 2027-Fund per Websuche (teilweise Cookie-Consent): Stadtwerke Wertheim, Stadtwerke Andernach Energie, Stadtwerke Werl -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 16 (9 Zeilen, 2026-11-14)
+
+- Stadtwerke Buehl: 2027-PDF vollstaendig lesbar; NS nur W 07:45-14:45, MS/NS W 07:15-14:45, MS H+W 07:15-14:45 in bemerkung.
+- Stadtwerke Strausberg: 2027-PDF lesbar; NS/MS-NS je W 16:30-19:00, MS W 08:15-13:45 + 15:45-19:00 in bemerkung.
+- Stadtwerke Schifferstadt: 2027-Datenblatt lesbar; NS nur S 13:30-15:00, MS/NS W 17:00-19:15.
+- Stadtwerke Northeim: 2027-PDF lesbar (mit Viertelstundenraster); NS/MS-NS-Werte geliefert, MS in bemerkung; MS/NS-Zuordnung mit Vorbehalt.
+- Stromnetz Kulmbach: 2027-PDF vorhanden, nur drei Zeitfenster 10:45-12:00 im Extrakt, Saison-Zuordnung unklar -> Browser-Liste.
+- Netzzugangs-/Download-Seite listet HLZF 2027, PDF-URL nicht ermittelbar: Stadtwerke Einbeck, Stadtwerke Neuburg -> Browser-Liste.
+- Kein 2027-Fund per Websuche: Bautzen, Meissen -> Browser-Liste.
+- Schwedt: Primaerverdacht swaue.de-HLZF gehoert zu Stadtwerken Aue (nicht Schwedt), keine Zuordnung vorgenommen -> Pruefung laeuft.
