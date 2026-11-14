@@ -177,9 +177,9 @@ def funde_aus_text(text: str, url: str, titel: str = "", veroeffentlicht: str = 
             if kap:
                 v = _zahl(kap.group(1)) * (1000 if kap.group(3).lower() == "mwh" else 1)
                 kapkwh = f"{v:g}"
-            umfang = ("nur Hardware" if re.search(r"nur\s+hardware|ohne\s+(?:montage|installation|wechselrichter)|hardwarepreis|komponenten", nah)
-                      else "schlüsselfertig" if re.search(r"schl[üu]sselfertig|inkl\.?\s*(?:montage|installation|inbetriebnahme)|komplettsystem|turnkey|installiert", nah)
-                      else "unklar")
+            hw = re.search(r"nur\s+hardware|ohne\s+(?:bauseitige\s+)?(?:montage|installation|wechselrichter)|hardwarepreis|hardware\s*(?:ab|kosten|preis)|reine\s+speicher|listenpreis", nah)
+            tk = re.search(r"schl[üu]sselfertig|inkl\.?\s*(?:montage|installation|inbetriebnahme)|inklusive\s+montage|fertig\s+installiert|installiert|turnkey", nah)
+            umfang = "nur Hardware" if hw and not tk else "schlüsselfertig" if tk and not hw else "unklar"   # beides im Umfeld: nicht entscheiden
             segment = "Heim" if HEIM.search(nah) and not GEWERBE.search(nah) else "Gewerbe/Industrie" if GEWERBE.search(nah) else "unklar"
             fid = hashlib.sha1(f"{url}|{a}|{b}|{ctx[:60]}".encode()).hexdigest()[:12]
             out.append({"id": fid, "abruf_datum": abruf, "url": url, "domain": domain, "titel": titel, "art_quelle": art,

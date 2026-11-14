@@ -110,3 +110,13 @@ def test_auszuege(tmp_path):
     assert any("410" in z["auszug"] and "netto" in z["auszug"] for z in zeilen.values())
     r2 = sp.auszuege(funde, ziel, sp.Holer(pause=0, abrufen=fake, log=lambda *_: None), fenster=200, log=lambda *_: None)
     assert r2["neu"] == 0
+
+
+def test_umfang_hardware_vor_komplettsystem():
+    t = "Komplettsysteme mit Wechselrichter 173 bis 434 €/kWh netto. Nur Hardware, ohne Montage."
+    f = sp.funde_aus_text(t, "https://x.de/a", "", "", "2026-11-14")
+    assert f[0]["umfang"] == "nur Hardware"
+    g = sp.funde_aus_text("Preise netto inklusive Montage und Inbetriebnahme: 525 bis 750 € je kWh.", "https://x.de/b", "", "", "2026-11-14")
+    assert g[0]["umfang"] == "schlüsselfertig"
+    h = sp.funde_aus_text("Hardware ab 450 €/kWh, schlüsselfertig mit Installation mehr.", "https://x.de/c", "", "", "2026-11-14")
+    assert h[0]["umfang"] == "unklar"
