@@ -4,7 +4,7 @@ name: Speicherpreise sammeln
 # robots.txt beachtet, 1 Anfrage/s je Domain, Timeout 30 s. Funde sind "ungeprüft", bis sie am Original geprüft sind.
 on:
   schedule:
-    - cron: "17 * * * *"      # Dauerlauf: stündlich, Modus wechselt reihum (siehe unten); Läufe warten aufeinander (concurrency)
+    - cron: "17 */6 * * *"     # Sicherheitsnetz: startet den Dauerlauf neu, falls die Kette abreißt
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: speicherpreise
@@ -33,10 +34,11 @@ jobs:
           ABFRAGEN=$(sed -n 's/^ABFRAGEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           SEITEN=$(sed -n 's/^SEITEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           MODUS=$(sed -n 's/^MODUS=\([a-z0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            # Dauerlauf: Modus reihum nach Stunde (Index = Stunde mod 5)
+          if [ "${{ github.event_name }}" != "push" ]; then
+            # Dauerlauf: Modus reihum nach Zahl der bisherigen Runden (lauf/speicherpreise_runden.log)
             MODI=(runde7 runde8 aufschlaege runde2 runde5)
-            MODUS=${MODI[$(( $(date -u +%-H) % 5 ))]}
+            N=$( [ -f lauf/speicherpreise_runden.log ] && wc -l < lauf/speicherpreise_runden.log || echo 0 )
+            MODUS=${MODI[$(( N % 5 ))]}
             ABFRAGEN=""; SEITEN=""
           fi
           echo "Modus: $MODUS"
@@ -72,3 +74,14 @@ jobs:
             sleep $((2 ** i))
           done
           exit 1
+      - name: Nächste Runde sofort starten (Dauerlauf)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          if grep -qi '^an' lauf/dauerlauf.txt 2>/dev/null; then
+            gh workflow run speicherpreise.yml --ref "${GITHUB_REF_NAME}" && echo "nächste Runde angestoßen"
+          else
+            echo "Dauerlauf aus (lauf/dauerlauf.txt)"
+          fi
