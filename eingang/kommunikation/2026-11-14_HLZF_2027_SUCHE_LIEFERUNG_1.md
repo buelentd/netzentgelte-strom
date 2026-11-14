@@ -214,3 +214,10 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - ENA Energienetze Apolda (SNB913563830420): kein 2027er Fund.
 - KEV Eisenhüttenstadt (SNB912218404412): nur HLZF-2025-PDF auf Netzzugang-Seite; URL-Varianten 2026/2027 liefern denselben 2025er Inhalt.
 - Stadtwerke Hünfeld (SNB964375043041): HLZF-2027-Download auf Netzzugang-Seite gelistet, Datei-URL nicht ermittelbar.
+
+
+## Nachtrag: Lieferung 22 (14.11.2026)
+
+- Stadtwerke Sigmaringen: 2027-PDF vollstaendig lesbar; NS nur W 10:15-11:00, MS/NS S+H, MS H+W in bemerkung (W-Zelle MS/NS laut Extrakt leer, Vorbehalt).
+- Stadtwerke Nordfriesland-Netz und Stadtwerke Uelzen: 2027-PDFs vom NB-Server (netzveroeffentlichung.com) lesbar, Ebenen-/Jahreszeiten-Zuordnung im Extrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
+- Kein 2027er HLZF-Dokument auffindbar: Stadtwerk Haßfurt, Stadtwerke Sulzbach/Saar, Netzgesellschaft Forst (Lausitz), Stadtwerke Neustadt in Holstein (Hinweis: swneustadt.de-2027er PDF gehoert zu Neustadt a.d. Weinstr., bereits geliefert), Stadtwerke Nortorf -> Browser-Liste.
