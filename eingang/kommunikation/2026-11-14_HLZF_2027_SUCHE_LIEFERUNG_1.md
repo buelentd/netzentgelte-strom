@@ -132,3 +132,12 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Netzwerke Saarlouis: erratene 2027er URL 403 -> Browser-Liste.
 - Stadtwerke Tuttlingen: Cookie-Consent, kein 2027-Fund -> Browser-Liste.
 - Stadtwerke Balingen: 2027er PDF nicht auffindbar (404 auf erratene Varianten) -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 12 (6 Zeilen, 2026-11-14)
+
+- UEZW Woerth/I.-Altheim Netz AG: 2027-HLZF-PDF vollstaendig lesbar; NS nur W 18:00-20:15; Umspg MS/NS H 08:00-08:45, W 08:30-12:00; MS in bemerkung.
+- Stauferwerk GmbH: Individuelle-Netzentgelte-2027-PDF lesbar; NS H 17:15-18:45, W 11:45-12:15 + 16:45-20:00; Umsp NS H 17:00-18:15, W 17:00-20:00; MS nur W in bemerkung.
+- Stadtwerke Merseburg: 2027-HLZF lesbar; NS/MS-NS je H 16:45-19:00, W 11:15-12:15 + 16:00-19:15 (Bloecke identisch, Zuordnung mit Vorbehalt); MS in bemerkung.
+- Stadtwerke Deggendorf: 2027-PDF vorhanden, Spaltenzuordnung nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- TEN eG: kein 2027er HLZF-Dokument; Preisblatt 2027 nur Modul-3-HT/NT -> Browser-Liste.
+- SEW Stromversorgungs GmbH (Erding): HLZF-Liste auf sewerding.de nur bis 2026 -> Browser-Liste.
