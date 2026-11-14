@@ -361,3 +361,7 @@ Gefuellt (ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung)
 Verbleibend: SNB933013692798 Kaltenkirchen (Viertelstunden-Rasterliste, Browser-Liste).
 
 Stand nach Gruppe 1: 149 von 400 Netzbetreibern der Arbeitsliste haben Zeitwerte in den 2027-Zeilen (vorher 140). 63 weitere PDF-Faelle der 72er-Nacharbeitsliste folgen in den naechsten Gruppen.
+
+## Nacharbeit Gruppe 2 (2026-11-14): 10 weitere Netzbetreiber gefuellt
+
+Mainzer Netze (Gegenprobe gegen HTML-Tabelle des NB, alte Saison-Zuordnung teilweise korrigiert), stadtwerker/BEW-Netze, SWS Solingen, Ostmuensterland, Dreieich, HEWA, Ottersberg, SWR Energie, Energie Calw (netz.plus-Uebersichtsblatt), Deggendorf (CMap-Positionsextraktion, zifferngenau). Bad Reichenhall entziffelt, aber Ebenen-/Saison-Zuordnung der Tabellenzeilen wegen Glyphen-Verschiebung im Font (4/2, 9/7) nicht eindeutig -> Zeiten in Bemerkung dokumentiert, Felder leer, Browser-Liste. Neue Zaehlung: 159/400 der Arbeitsliste mit Zeitwerten.
