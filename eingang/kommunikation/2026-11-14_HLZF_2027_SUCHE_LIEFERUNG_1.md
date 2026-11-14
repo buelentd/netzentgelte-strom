@@ -301,3 +301,26 @@ Arbeit geht mit Lieferung 28 bei den 132 offenen Netzbetreibern weiter.
 ## Korrektur Backnang Schwelle (Nachtrag, 14.11.2026)
 
 Hinweis des Kollegen bestaetigt: In der Zeile SNB911602541351 (Stadtwerke Backnang GmbH, 2027) stand in der Spalte schwelle_prozent der Wert 20. Das ist laut PDF-Lesung der Schwelle fuer die Ebene HS/MS+MS; die Konvention der Datei ist der NS-Wert, und die Bemerkung derselben Zeile dokumentiert "MS/NS+NS 30%". Spaltenwert korrigiert: 20 -> 30 (Quelle: eigene, bereits dokumentierte Lesung des Backnang-2027-PDF, keine Neu-Schaetzung). Mindestleistung (100 kW) und alle Zeitfenster unveraendert. Datei weiterhin 376 Datenzeilen, alle 17 Spalten.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 28 (20 Zeilen)
+
+Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (20 Zeilen, jahr=2027):
+
+Volle Werte (NS/MSNS in den Feldern, MS in der Bemerkung):
+- SNB922354559020 Stadtwerke Pritzwalk GmbH (nur Winter; NS/Umsp 09:00-13:15 + 17:30-18:15; Schwelle 30 %, Mindestverlagerung 100 kW)
+- SNB982380015723 Stadtwerke Bogen GmbH (H 17:15-18:15, W 11:00-12:45 bzw. Umsp zusaetzlich 16:45-19:00; NS-Winter-2.-Fenster-Vorbehalt dokumentiert)
+- SNB921471558077 Stadtwerke Feuchtwangen KU (NS F 12:15-12:30; Umsp H 17:30-18:15, W 08:45-09:30 + 16:45-19:00)
+- SNB913832420338 Elektrizitaetswerk Wennenmuehle Schoerger (NS H 16:15-16:30, W 14:15-16:45; Umsp W 16:45-19:15; F/S entfaellt)
+
+PDF vorhanden, Zuordnung/Auswertung nicht eindeutig -> Felder leer, gesicherte Zeiten in Bemerkung, Browser-Liste:
+- SNB928602915495 Stadtwerke Hagenow (PDF per URL-Muster version=2026->2027; nur Ebenen MS/MS/NS erkennbar)
+- SNB914963192408 Stadtwerke Trostberg (PDF vom NB-Server; Zeiten 09:30-12:30, 07:00-10:00, 11:00-13:00, 17:30-20:30)
+- SNB919230329570 Stadtwerke Wilster (PDF vom NB-Server, fontkodiert nicht auslesbar)
+
+Kein 2027-Dokument gefunden -> Browser-Liste:
+- SNB986931195988 Gemeindewerke Enkenbach-Alsenborn und SNB932161540975 Verbandsgemeindewerke Enkenbach-Alsenborn (gemeinsame HLZF-Seite listet nur bis 2026)
+- SNB935738221819 Langenzenn, SNB953975499051 Bad Herrenalb, SNB928340368768 Biedenkopf, SNB934355412402 Zehdenick, SNB983359308570 Bad Brueckenau, SNB984269982003 Deidesheim, SNB988769717073 Neustadt a. d. Donau, SNB914668240749 Furth im Wald, SNB945021456095 Kusel, SNB911969765803 Neunkirchen, SNB922793626642 Gengenbach
+
+Hinweis: Das bei der Websuche gefundene swneustadt.de-2027-PDF (Hochlastzeitfenster-2027-SWN.pdf) gehoert zu den Stadtwerken Neustadt a. d. Weinstrasse, NICHT zu SNB988769717073 (Neustadt a. d. Donau, swn-do.de). Verwechslung ausgeschlossen.
+
+lauf/nutzer_hinweise.csv um 20 Zeilen ergaenzt (je gepruefter NB eine Zeile, alle URLs https://). Bestand: gelesen.csv 396 Datenzeilen (346 mit jahr=2027), davon 288 der 400er-Arbeitsliste erledigt (72 %), 112 offen.
