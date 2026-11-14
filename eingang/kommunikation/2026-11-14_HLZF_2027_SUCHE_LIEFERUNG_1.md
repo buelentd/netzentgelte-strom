@@ -101,3 +101,10 @@ Lieferung 7 (alle jahr=2027, nr leer):
 - Kein 2027-Fund: Vereinigte Stadtwerke Netz, Stadtwerke Rastatt, Soest, SWL Verteilungsnetzgesellschaft (Ludwigshafen), Stadtwerke Bruel -> Browser-Liste.
 
 Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 400 Eintraegen fehlten vor Lieferung 7 noch 281 mit 2027-Zeile; Lieferung 7 liefert 15 neue (Bestand danach 240 Zeilen).
+## Nachtrag: HLZF-2027-Suche - Lieferung 8 (5 Zeilen, 2026-11-14)
+
+- Stadtwerke Lemgo: volle Werte (MS W 08:15-09:00 + 09:45-13:15; NS nur Fruehling 16:15-16:30); Umsp MS/NS W 17:00-19:0x im Textextrakt abgeschnitten -> msns-Feld leer, Browser-Liste.
+- Stadtwerke Dreieich: 2027-PDF gefunden (Druckfehler "Genehmigungszeitraum 2026"), Ebenen-/Saison-Zuordnung nicht eindeutig -> Felder leer, Browser-Liste.
+- Kein 2027-Fund: Stadtwerke Homburg (Netzentgelte-Seite ohne HLZF, Cookie-Consent), Stadtwerke Amberg (2026er-Muster-URL 404), Stadtwerke Nuertingen (Downloadliste ohne HLZF) -> Browser-Liste.
+- Hinweis: PDF auf stadtwerke-service.de (sites/6, Zeitfenster 2027, mit aus HS/in MS/aus MS/in NS) nennt keinen Netzbetreiber, daher keiner SNB zugeordnet.
+- Bestand hlzf_2027_gelesen.csv danach: 241 + 5 = 246 Zeilen.
