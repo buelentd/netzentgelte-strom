@@ -311,6 +311,63 @@ def auswertung(funde: dict[str, dict]) -> list[dict]:
             for k, v in sorted(gruppen.items())]
 
 
+AUSZUG_SPALTEN = ["id", "url", "abruf_datum", "titel", "veroeffentlicht", "preis_von_eur_kwh", "preis_bis_eur_kwh", "auszug"]
+
+
+def auszuege(funde_pfad: Path, ziel: Path, holer: Holer | None = None, fenster: int = 700, log=print) -> dict:
+    """Zu jedem Fund den Originaltext rund um die Preisangabe (je ca. 2 x fenster Zeichen) neu abrufen und ablegen.
+
+    Zweck: Prüfung am Original, wenn die Seite von der Arbeitsumgebung nicht erreichbar ist. Es werden nur
+    Auszüge gespeichert, nicht ganze Seiten."""
+    holer = holer or Holer(max_seiten=40, log=log)
+    funde = bestehende_laden(funde_pfad)
+    je_url: dict[str, list[dict]] = {}
+    for f in funde.values():
+        je_url.setdefault(f["url"], []).append(f)
+    erledigt = set(bestehende_laden(ziel))
+    ausgabe = {k: v for k, v in bestehende_laden(ziel).items()}
+    n = 0
+    for url, liste in je_url.items():
+        if all(f["id"] in erledigt for f in liste):
+            continue
+        roh = holer.holen(url)
+        if roh is None:
+            continue
+        text, titel, datum = seitentext(roh)
+        for f in liste:
+            a = f["preis_von_eur_kwh"].replace(",", ".")
+            b = f["preis_bis_eur_kwh"].replace(",", ".")
+            treffer = None
+            for rx in (PREIS, PREIS_VORAN):
+                for m in rx.finditer(text):
+                    try:
+                        x, y = _zahl(m.group("a")), _zahl(m.group("b")) if m.group("b") else _zahl(m.group("a"))
+                    except ValueError:
+                        continue
+                    if x > y:
+                        x, y = y, x
+                    if f"{x:g}" == f"{float(a):g}" and f"{y:g}" == f"{float(b):g}":
+                        treffer = m
+                        break
+                if treffer:
+                    break
+            if not treffer:
+                continue
+            auszug = re.sub(r"\s+", " ", text[max(0, treffer.start() - fenster):treffer.end() + fenster]).strip()
+            ausgabe[f["id"]] = {"id": f["id"], "url": url, "abruf_datum": dt.date.today().isoformat(), "titel": titel,
+                                "veroeffentlicht": datum, "preis_von_eur_kwh": f["preis_von_eur_kwh"],
+                                "preis_bis_eur_kwh": f["preis_bis_eur_kwh"], "auszug": auszug}
+            n += 1
+    ziel.parent.mkdir(parents=True, exist_ok=True)
+    with open(ziel, "w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=AUSZUG_SPALTEN, delimiter=";", extrasaction="ignore")
+        w.writeheader()
+        for r in sorted(ausgabe.values(), key=lambda r: (r["url"], r["preis_von_eur_kwh"])):
+            w.writerow(r)
+    log(f"Auszüge: {n} neu, {len(ausgabe)} insgesamt")
+    return {"neu": n, "gesamt": len(ausgabe)}
+
+
 if __name__ == "__main__":
     import argparse
     import os
@@ -318,5 +375,9 @@ if __name__ == "__main__":
     ap.add_argument("--ziel", default="ergebnis/speicherpreise_funde.csv")
     ap.add_argument("--abfragen", type=int, default=10)
     ap.add_argument("--seiten", type=int, default=150)
+    ap.add_argument("--auszuege", action="store_true", help="zu den vorhandenen Funden Originalauszüge ablegen")
     a = ap.parse_args()
-    lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)
+    if a.auszuege:
+        auszuege(Path(a.ziel), Path("ergebnis/speicherpreise_auszuege.csv"))
+    else:
+        lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)

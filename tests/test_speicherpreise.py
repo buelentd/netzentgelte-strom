@@ -86,3 +86,27 @@ def test_auswertung_nur_geprueft():
              "2": {"status": "geprüft", "preis_von_eur_kwh": "400", "preis_bis_eur_kwh": "450", "umfang": "u", "netto_brutto": "n", "segment": "G"}}
     a = sp.auswertung(funde)
     assert len(a) == 1 and a[0]["anzahl"] == 1 and a[0]["median"] == 425
+
+
+def test_auszuege(tmp_path):
+    seiten = {"https://a.de/1": HTML}
+
+    def fake(url):
+        if url.endswith("/robots.txt"):
+            return 404, "", ""
+        return (200, "text/html", seiten[url]) if url in seiten else (404, "", "")
+    h = sp.Holer(pause=0, abrufen=fake, log=lambda *_: None)
+    funde = tmp_path / "funde.csv"
+    old = sp.STARTSEITEN
+    sp.STARTSEITEN = ["https://a.de/1"]
+    try:
+        sp.lauf(funde, "", 0, 10, h, lambda q: [], log=lambda *_: None)
+    finally:
+        sp.STARTSEITEN = old
+    ziel = tmp_path / "auszuege.csv"
+    r = sp.auszuege(funde, ziel, sp.Holer(pause=0, abrufen=fake, log=lambda *_: None), fenster=200, log=lambda *_: None)
+    assert r["neu"] >= 2
+    zeilen = sp.bestehende_laden(ziel)
+    assert any("410" in z["auszug"] and "netto" in z["auszug"] for z in zeilen.values())
+    r2 = sp.auszuege(funde, ziel, sp.Holer(pause=0, abrufen=fake, log=lambda *_: None), fenster=200, log=lambda *_: None)
+    assert r2["neu"] == 0
