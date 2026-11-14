@@ -37,6 +37,7 @@ jobs:
             runde3)      python -m vnb.speicherpreise --runde 3 --abfragen "${ABFRAGEN:-12}" --seiten "${SEITEN:-120}" ;;
             runde4)      python -m vnb.speicherpreise --runde 4 --seiten "${SEITEN:-120}" ;;
             runde7)      python -m vnb.produktseiten ;;
+            runde8)      python -m vnb.produktseiten --chemie ;;
             runde6)      python -m vnb.speicherpreise --runde 6 ;;
             runde5)      python -m vnb.speicherpreise --runde 5 --abfragen "${ABFRAGEN:-33}" --seiten "${SEITEN:-200}" ;;
             aufschlaege) python -m vnb.aufschlaege --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-120}" ;;

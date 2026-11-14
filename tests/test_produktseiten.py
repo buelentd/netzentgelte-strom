@@ -1,3 +1,4 @@
+from vnb import produktseiten as pt
 from vnb.produktseiten import produkt_aus_html, produktlinks
 
 PIXII = '''<html><head><title>PIXII POWERSHAPER2 50 KW / 50 KWH, GEWERBESPEICHER</title>
@@ -24,3 +25,10 @@ def test_text_preis_ohne_json():
 def test_produktlinks():
     h = '<a href="/p/oasis-l215-215kwh">Oasis</a><a href="/impressum">I</a><a href="https://f.de/x-100kwh">x</a>'
     assert produktlinks(h, "https://s.de/k") == ["https://s.de/p/oasis-l215-215kwh"]
+
+
+def test_chemie_nur_wenn_genannt():
+    assert pt.chemie_aus_text("Pixii PowerShaper NMC 206 kWh", "") == "NMC"
+    assert pt.chemie_aus_text("Gewerbespeicher 100 kWh", "Zellen: LTO Lithium-Titanat") == "LTO"
+    assert pt.chemie_aus_text("Gewerbespeicher 100 kWh", "") == ""
+    assert pt.chemie_aus_text("Speicher", "LFP oder NMC wählbar") == ""

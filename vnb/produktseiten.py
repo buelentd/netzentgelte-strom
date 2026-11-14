@@ -17,7 +17,7 @@ from pathlib import Path
 
 from .speicherpreise import Holer, PREIS_MIN, PREIS_MAX, seitentext, websuche
 
-SPALTEN = ["id", "abruf_datum", "url", "domain", "titel", "preis_eur", "kapazitaet_kwh", "eur_pro_kwh", "netto_brutto_hinweis",
+SPALTEN = ["id", "abruf_datum", "url", "domain", "titel", "zellchemie", "preis_eur", "kapazitaet_kwh", "eur_pro_kwh", "netto_brutto_hinweis",
            "umfang_hinweis", "quelle_preis", "status", "pruefnotiz"]
 KAP_MIN, KAP_MAX = 30.0, 6000.0          # Gewerbe: ab 30 kWh; darüber Großspeicher/Container
 # Händler-Kategorieseiten für Gewerbespeicher (robots.txt wird im Holer geprüft)
@@ -38,6 +38,28 @@ HERSTELLER_WEITER = ["PYTES", "SofarSolar", "Felicity Solar", "SolarEdge", "Pram
                      "Alpha ESS", "Solarwatt", "Wattkraft", "Kyocera", "Panasonic", "Mitsubishi Electric"]
 ABFRAGEN = ([f"{h} Gewerbespeicher {k} kWh kaufen Preis" for h in HERSTELLER for k in (100, 215)]
             + [f"{h} Gewerbespeicher Industriespeicher kWh Preis kaufen" for h in HERSTELLER_WEITER])
+# Chemien der Batterietyp-Workbench des Nutzers; erkannt wird nur, was Titel/Kopf der Seite ausdrücklich nennt
+CHEMIEN = [("LFP", r"\blfp\b|lifepo4|lithium[- ]eisenphosphat"), ("NMC", r"\bnmc\b|nickel[- ]mangan[- ]cobalt|nickel[- ]mangan[- ]kobalt"),
+           ("NCA", r"\bnca\b|nickel[- ]cobalt[- ]aluminium|nickel[- ]kobalt[- ]aluminium"), ("LTO", r"\blto\b|lithium[- ]titanat"),
+           ("Nalon", r"\bnalon\b")]
+ABFRAGEN_CHEMIE = ([f"NMC Gewerbespeicher {k} kWh Preis kaufen" for k in (100, 200, 250)]
+                   + [f"NMC Batteriespeicher Schrank {k} kWh Preis Händler" for k in (100, 200)]
+                   + ["Pixii NMC Gewerbespeicher Preis", "Gewerbespeicher NCA Zellen kWh Preis", "NCA Batteriespeicher Gewerbe kWh Preis kaufen",
+                      "LTO Batteriespeicher Gewerbe kWh Preis", "Lithium-Titanat Speicher Gewerbe Preis pro kWh", "LTO Speicher Schrank kWh kaufen",
+                      "Nalon Batterie Speicher Preis kWh", "Nalon Batteriespeicher Hersteller Gewerbe", "Nalon Speicher kaufen"])
+
+
+def chemie_aus_text(titel: str, kopf: str) -> str:
+    """Zellchemie nur, wenn sie im Titel (zuerst) oder im Kopf der Seite genannt ist; mehrere verschiedene im Kopf -> leer (nicht raten)."""
+    for quelle in (titel, kopf):
+        treffer = [n for n, rx in CHEMIEN if re.search(rx, quelle, re.I)]
+        if len(treffer) == 1:
+            return treffer[0]
+        if len(treffer) > 1:
+            return ""
+    return ""
+
+
 LINK_KAP = re.compile(r"\d{2,4}[-_ ,.]?\d*\s*[-_ ]?kwh", re.I)
 EURO = re.compile(r"(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d{4,6}(?:,\d{1,2})?)\s*(?:€|eur\b)", re.I)
 KAPAZ = re.compile(r"(\d{2,4}(?:[.,]\d{1,2})?)\s*kwh", re.I)
@@ -127,7 +149,7 @@ def produkt_aus_html(roh: str, url: str, abruf: str | None = None) -> dict | Non
             umfang.append(wort)
     d = urllib.parse.urlparse(url).netloc.lower().removeprefix("www.")
     return {"id": hashlib.sha1(url.encode()).hexdigest()[:12], "abruf_datum": abruf or dt.date.today().isoformat(), "url": url, "domain": d,
-            "titel": titel[:160], "preis_eur": f"{p:.2f}".replace(".", ","), "kapazitaet_kwh": f"{k:g}".replace(".", ","),
+            "titel": titel[:160], "zellchemie": chemie_aus_text(titel, kopf), "preis_eur": f"{p:.2f}".replace(".", ","), "kapazitaet_kwh": f"{k:g}".replace(".", ","),
             "eur_pro_kwh": f"{ekwh:.2f}".replace(".", ","), "netto_brutto_hinweis": "; ".join(hinweis) or "unklar",
             "umfang_hinweis": "; ".join(umfang) or "unklar", "quelle_preis": quelle, "status": "ungeprüft",
             "pruefnotiz": "Kapazität aus Titel/Kopf der Seite; nutzbar vs. nominal nicht unterschieden, wenn nicht ausdrücklich genannt"}
@@ -197,4 +219,10 @@ def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 90, max_seiten: i
 
 if __name__ == "__main__":
     import os
-    lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), os.environ.get("SUCHE_SCHLUESSEL", ""))
+    import sys
+    schluessel = os.environ.get("SUCHE_SCHLUESSEL", "")
+    if "--chemie" in sys.argv:       # Runde 8: Suche gezielt nach NMC, NCA, LTO, Nalon (keine Kategorieseiten)
+        lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), schluessel, max_abfragen=len(ABFRAGEN_CHEMIE), max_seiten=200,
+             kategorien=[], abfragen=ABFRAGEN_CHEMIE)
+    else:
+        lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), schluessel)
