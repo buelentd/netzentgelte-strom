@@ -7,3 +7,11 @@
 Quelldateien: 7 PDFs als hlzf_quellen_etappe_8.zip (Download-Karte), Dateinamen = quelle_url. Bitte unter eingang/ ablegen.
 Werte- und Regelwerk: werte_verifiziert.json (89 Eintraege), merge_werte.py je SNB+Jahr, regeln.py = OK.
 Hinweis: Pullach-2026-Eintrag in werte_verifiziert.json (fruehere Lesung) wurde NICHT geliefert, da Dokument nicht erneut verifizierbar (Referer-Sperre). Klärung mit Kunde laufen.
+
+## Nachtrag Etappe 8b (gleicher Tag): Raster-PDFs per Content-Stream-Analyse dekodiert
+
+5 weitere Zeilen (Original-Downloads vom NB-Server, kein OCR mehr noetig):
+- Meerane 2026, Gemeindewerke Gundelfingen 2026 (MS/NS/Umspannung), Stadtwerke Reichenbach/Vogtland 2026 (Umspannung 66 kV), Elektrizitaetswerk Simbach GmbH 2026 (fuellt leere 2026-Zeile), Stadtwerke Marburg 2026 (nur MS)
+- Die im Nutzerupload unlesbaren Zellschattierungen wurden direkt aus den Original-PDF-Content-Streams gelesen (blaue Viertelstunden = Hochlastzeit); URLs von Reichenbach und Marburg per HEAD verifiziert.
+- werte_verifiziert.json jetzt 93 Eintraege; regeln.py alles = OK; alle Zeilen ueber merge_werte.py gemergt.
+- Offen bleibt: Marburg 2027 (GrundNetz MS-NS ohne lesbare Zeitliste).
