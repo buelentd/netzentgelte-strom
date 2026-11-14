@@ -342,3 +342,22 @@ Commit: HLZF-2027-Suche, Lieferung 29. Die 400er-Arbeitsliste ist damit vollstae
 **Zaehlung (korrigierte Methode, Join gegen die 400er-Liste):** 400 von 400 Netzbetreibern der Arbeitsliste haben mindestens eine Zeile mit jahr=2027. Die 58 zusaetzlichen 2027-Zeilen gehoeren zu Netzbetreibern ausserhalb der 400er-Liste (Gesamt 458).
 
 Alle 112 Netzbetreiber wurden einzeln per Websuche, URL-Muster-Vergleich (2026->2027) und Seiten-Crawl geprueft; gesperrte Seiten wurden nicht umgangen. Browser-Liste = manuelle Pruefung im Browser noetig.
+
+## Nacharbeit Gruppe 1 (2026-11-14): 9 Netzbetreiber mit PDF-Koordinatenentzifferung
+
+Die 72 Faelle mit lesbarem PDF, aber leeren Zeitfeldern werden nachgearbeitet. Gruppe 1: 10 NBs geprueft, 9 mit Werten gefuellt, 1 Rasterfall verbleibt in der Browser-Liste. Methode: positionsgenaue Textextraktion (Tm/Td/T*-Tracking inkl. ToUnicode-CMap), Zellzuordnung ueber Koordinaten, Zellzaehlung und Gegenprobe gegen die bisher in der Bemerkung gesicherten Zeiten. Stichproben gegen die PDFs: Abweichungen zu den alten Saison-Zuordnungen gefunden und korrigiert (z.B. Greven 08:00-16:00 liegt in der Winterzeile, nicht Herbst; Pforzheim Ebenen-Zuordnung praezisiert).
+
+Gefuellt (ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung):
+- SNB978108787379 NHL: NS+Umsp H/W 17:15-20:00 bzw. 17:45-20:30, MS Winter 08:30-14:00
+- SNB929168402344 Pforzheim: NS W 10:45-11:45, 12:00-13:00, 16:30-19:45; H 11:15-11:30, 12:00-12:15, 17:00-18:45; Umsp M/N W 16:45-19:30, H 17:00-18:45
+- SNB934949020686 Gronau: NS+Umsp W 16:45-19:15; MS H 17:15-18:45, W 8:30-9:45, 10:15-13:30, 15:45-19:45; Schwelle 30, 100 kW
+- SNB944294076061 SWSE: NS W 17:00-19:00, Umsp W 17:15-19:15; MS H 07:30-07:45, W 07:30-12:45, 13:15-14:00, 15:00-16:00; Schwelle 30, 100 kW
+- SNB982241851170 Freital: NS H 11:45-12:00, W 17:15-19:00; Umsp H 10:00-10:15, W 11:45-12:00, 17:15-19:00
+- SNB951791941969 Nordfriesland: NS H 09:00-12:30, 17:00-18:30; W 08:30-13:00, 11:00-12:00, 17:30-18:30; Umsp H/W 16:30-19:00
+- SNB965557517831 Uelzen: NS H 16:45-18:30, W 16:15-18:30; Umsp H 16:45-18:15, W 16:30-18:15
+- SNB998044089535 Greven: NS einziges Fenster F 12:30-12:45; Umsp W 17:00-19:15; MS W 08:00-16:00, 16:45-19:30; Schwelle 30, 100 kW
+- SNB985965721965 Norderstedt: NS F 17:45-19:30, H 16:30-19:30, W 16:45-20:00; Umsp und Sommer k.A. laut Dokument
+
+Verbleibend: SNB933013692798 Kaltenkirchen (Viertelstunden-Rasterliste, Browser-Liste).
+
+Stand nach Gruppe 1: 149 von 400 Netzbetreibern der Arbeitsliste haben Zeitwerte in den 2027-Zeilen (vorher 140). 63 weitere PDF-Faelle der 72er-Nacharbeitsliste folgen in den naechsten Gruppen.
