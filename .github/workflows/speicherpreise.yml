@@ -4,7 +4,7 @@ name: Speicherpreise sammeln
 # robots.txt beachtet, 1 Anfrage/s je Domain, Timeout 30 s. Funde sind "ungeprüft", bis sie am Original geprüft sind.
 on:
   schedule:
-    - cron: "17 */3 * * *"      # Dauerlauf: alle 3 Stunden, Modus wechselt reihum (siehe unten)
+    - cron: "17 * * * *"      # Dauerlauf: stündlich, Modus wechselt reihum (siehe unten); Läufe warten aufeinander (concurrency)
   workflow_dispatch:
   push:
     branches: [main]
@@ -34,12 +34,13 @@ jobs:
           SEITEN=$(sed -n 's/^SEITEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           MODUS=$(sed -n 's/^MODUS=\([a-z0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            # Dauerlauf: Modus reihum nach Stunde (alle 3 h: 0,3,6,... -> Index = Stunde/3 mod 5)
+            # Dauerlauf: Modus reihum nach Stunde (Index = Stunde mod 5)
             MODI=(runde7 runde8 aufschlaege runde2 runde5)
-            MODUS=${MODI[$(( ($(date -u +%-H) / 3) % 5 ))]}
+            MODUS=${MODI[$(( $(date -u +%-H) % 5 ))]}
             ABFRAGEN=""; SEITEN=""
           fi
           echo "Modus: $MODUS"
+          echo "$MODUS" > /tmp/modus.txt
           case "$MODUS" in
             auszuege)    python -m vnb.speicherpreise --auszuege ;;
             runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
@@ -58,6 +59,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           [ -d ergebnis/speicherpreise_pdftabellen ] && git add ergebnis/speicherpreise_pdftabellen
+          mkdir -p lauf
+          echo "$(date -u +%Y-%m-%dT%H:%MZ);${{ github.run_id }};${{ github.event_name }};$(cat /tmp/modus.txt 2>/dev/null);funde=$(wc -l < ergebnis/speicherpreise_funde.csv);produktfunde=$(wc -l < ergebnis/speicherpreise_produktfunde.csv);aufschlaege=$(wc -l < ergebnis/strompreis_aufschlaege_funde.csv)" >> lauf/speicherpreise_runden.log
+          git add lauf/speicherpreise_runden.log
           for f in ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv ergebnis/strompreis_aufschlaege_funde.csv ergebnis/speicherpreise_gesperrt.csv ergebnis/speicherpreise_verweise.csv ergebnis/speicherpreise_produktfunde.csv; do
             [ -f "$f" ] && git add "$f"
           done
