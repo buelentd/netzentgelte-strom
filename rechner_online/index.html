@@ -254,6 +254,11 @@ a{color:var(--akzent)}
           <input type="number" id="speicher-montage" min="0" step="10" placeholder="leer = 0 (nicht belegt, Angebot einholen)">
           <div class="klein">Dafür gibt es noch keinen Beleg. Ohne diesen Posten ist die Amortisation zu optimistisch.</div>
         </div>
+        <div>
+          <label class="titel" for="speicher-anschluss">Netzanschluss: VNB-Anmeldung, Netzverträglichkeitsprüfung, Messung und Zählerumbau (€ einmalig, netto)</label>
+          <input type="number" id="speicher-anschluss" min="0" step="500" placeholder="leer = 0 (nicht belegt, projektabhängig)">
+          <div class="klein">Eigene Angabe nach Angebot des Netzbetreibers und des Elektrikers. Die Kosten hängen stark vom vorhandenen Zählerschrank, einer nötigen Wandlermessung und den Vorgaben des Netzbetreibers (VDE-AR-N 4105 Niederspannung, 4110 Mittelspannung) ab. Wir nennen dafür keine Pauschale.</div>
+        </div>
       </div>
       </div></details>
 
@@ -980,11 +985,11 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
     const proMW = pRegel / 1000 * num("a-regel") * (1 - num("a-vermarkter") / 100);
     const s5hoch = proMW * num("a-verf"), s5tief = proMW * Math.min(0.3, num("a-verf")), s5 = (s5hoch + s5tief) / 2;
     const preisJe = preisFuer(cap), opex = 0.015 * preisJe * cap;    // Betriebskosten Speicher: 1,5 % der Investition pro Jahr (Annahme wie conplot)
-    const summe = s1 + s2 + s3 + Math.max(s4, s5) - opex, kosten = preisJe * cap * (1 - zuschuss);
+    const summe = s1 + s2 + s3 + Math.max(s4, s5) - opex, kosten = preisJe * cap * (1 - zuschuss) + num("speicher-anschluss");
     return {cap, opex, preisJe, U, Psp, gekappt, ziel, nach, ersparnis, verlust, s: [s1, s2, s3, s4, s5], summe, kosten, barwert: (summe + opex) * faktor - opex * ann - kosten - entsorgBarwert(cap),
             kapEff, delta, pvEigen, frei, genutzt, at, pRegel, s5tief, s5hoch,
             // Speicherpreis (€/kWh), bei dem der Barwert 0 ist: (Erträge ohne Betriebskosten × Faktor − Entsorgung) ÷ (Betriebskostenanteil × Faktor + 1 − Zuschuss) ÷ Kapazität
-            breakEven: cap > 0 ? ((summe + opex) * faktor - entsorgBarwert(cap)) / (0.015 * ann + 1 - zuschuss) / cap : 0};
+            breakEven: cap > 0 ? ((summe + opex) * faktor - entsorgBarwert(cap) - num("speicher-anschluss")) / (0.015 * ann + 1 - zuschuss) / cap : 0};
   }
 
   // Neue Solaranlage selbst (ohne Speicher): Eigenverbrauch spart Strom plus Arbeitspreis, Rest wird eingespeist
@@ -1046,6 +1051,7 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
       let nbLink = "";
       try { if (nbH && nbH.q) nbLink = new URL(nbH.q).origin; } catch (e) { nbLink = ""; }
       chart += `<div class="herkunft" style="margin-top:.8em">
+        <p><b>Investition (netto), getrennt nach Quellenebene:</b> ${num("speicherpreis") ? `Speicherpreis gesamt nach Ihrer Eingabe: ${fmt(num("speicherpreis"))} €/kWh × ${fmt(R.cap)} kWh = ${fmt(num("speicherpreis") * R.cap)} € (Ihre Angabe).` : `Speicher-System: ${fmt(systemPreisFuer(R.cap))} €/kWh × ${fmt(R.cap)} kWh = ${fmt(systemPreisFuer(R.cap) * R.cap)} € (${R.cap >= 200 ? "Händlerpreise, netto, belegt" : "unter 200 kWh nicht belegt, Anbieterangabe"}). Montage und Elektroinstallation: ${num("speicher-montage") ? fmt(num("speicher-montage") * R.cap) + " € (Ihre Angabe)" : "nicht eingegeben, nicht enthalten"}.`} Netzanschluss, Anmeldung und Messung: ${num("speicher-anschluss") ? fmt(num("speicher-anschluss")) + " € (Ihre Angabe)" : "nicht eingegeben, nicht enthalten"}. Montage und Anschluss sind projektabhängig, dafür gibt es keine belegten Richtwerte; ohne diese Posten ist die Amortisation zu optimistisch.</p>
         <p><b>Hinweis zur Fahrweise:</b> Die Ertragsberechnung ist eine Jahres-Mengenbilanz mit fester Reihenfolge (Spitzenkappung vor Solar-Eigenverbrauch vor Verschiebung oder Handel; Handel und Regelenergie zählen nicht doppelt, es gilt der größere Wert). Es ist keine auf 15 Minuten optimierte Lastfluss-Simulation: Dass zwei Nutzungen in derselben Viertelstunde um denselben Speicher konkurrieren, wird nur über die freie Zyklenzahl und Leistung genähert.</p>
         <p><b>Netzanschluss:</b> Vor Inbetriebnahme ist der Speicher beim zuständigen Verteilnetzbetreiber anzumelden. Je nach Größe ist eine Netzverträglichkeitsprüfung nach VDE-AR-N 4105 (Niederspannung) bzw. VDE-AR-N 4110 (Mittelspannung) nötig. Dauer und Zusage hängen von der örtlichen Netzkapazität ab; dazu liegen uns keine Daten vor.${nbLink ? ` Netzbetreiber: ${nbH.name}, <a href="${nbLink}" target="_blank" rel="noopener">Website</a> (aus der Quelle des Preisblatts abgeleitet).` : ""}</p>
         <p><b>Steuerlicher Hinweis:</b> Ein Investitionsabzugsbetrag nach § 7g EStG und Sonderabschreibungen können die Steuerlast beeinflussen (Voraussetzung unter anderem ein Gewinn, den man mindern kann). Das ist eine Steuerstundung und keine Liquiditätszufuhr; der Abzug wird im Jahr der Anschaffung wieder hinzugerechnet. Rechtsstand nicht geprüft, bitte vorab mit dem Steuerberater klären. Der Rechner berücksichtigt keine Steuerwirkung.</p></div>`;
