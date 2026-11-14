@@ -1,5 +1,11 @@
 # TODO (angelegt 14.11.2026, Besprechung 15.11.2026)
 
+## Grundsatz (vom Nutzer, 14.11.2026)
+
+Der Rechner soll so weit wie möglich alles automatisieren und berechnen. Jede Eingabe, die er selbst aus Daten bestimmen kann, wird vorbelegt und ist überschreibbar, mit Angabe der Quellenebene (Preisblatt, Gesetz, Händlerpreis, Annahme). Nur was wir nicht belegen können, bleibt Eingabefeld oder „nicht enthalten". Zu prüfen für jedes Feld: Gibt es eine Datenquelle, aus der der Rechner den Wert selbst holen kann?
+
+Kandidaten zur weiteren Automatisierung: Messentgelt bei Leistungsmessung (steht in den Netzbetreiber-Preisblättern, noch nicht erfasst), Baukostenzuschuss und Netzanschlusskosten (stehen in vielen Preisblättern und ergänzenden Bedingungen der Netzbetreiber, noch nicht erfasst), Jahr 2027 und Umlagen 2027, Modul-3-Zeiten und -Preise je Netzbetreiber, Spitzenleistung aus Branche und Verbrauch, Stadtwerke-Preisformeln für mehr Netzgebiete.
+
 ## Vor der Freigabe zu besprechen
 
 **Aufteilung der Speicher-Investition im Rechner** (Commit `7da483e9`, noch nicht abgenommen)
