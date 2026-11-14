@@ -408,3 +408,19 @@ Zusaetzlich Bemerkungs-Präzisierung: SNB914411628732 BASF InfraService (2027-Ze
 Verbleiben in der Browser-Liste (bewusst nicht gefuellt, nichts geraten): Kulmbach (ADBE-FillSign-Formularfelder ohne Koordinaten), Outokumpu/Nirosta (3 von 4 Ebenenbloecken lesbar, Zuordnung unsicher), GGEW, Baden-Baden, Albstadtwerke, Wilster, Halle Netz (CID ohne CMap), Kaltenkirchen, Passau, Flensburg, Bochum, NHF, Lingen, ENERVIE, TauberEnergie, Duelmen, Herzo (blockiert). 7 Preisblaetter ohne HLZF-Tabelle benoetigen keine Werte; SachsenNetze HS.HD wurde bereits in Gruppe 3 gefuellt.
 
 Stand nach Gruppe 4: 181/400 der Arbeitsliste mit Zeitwerten (vorher 171).
+
+## Nacharbeit Gruppe 5 (2026-11-14): 4 weitere Netzbetreiber gefuellt (185/400)
+
+Methode wie Gruppe 3/4 (positionsgenaue Extraktion, Kerning-Verfolgung mit Vorzeichen-Fix beim TJ-Split, Zustandsmaschine mit Tm/Td-Matrizen); Stichproben gegen die PDF-Renderer-Ausgabe bestanden. Damit sind alle maschinell lesbaren PDFs der 72er-Nacharbeitsliste abgearbeitet.
+
+Gefuellt (ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung):
+- SNB914735995145 Wittmund: NS W 08:45:00-08:59:59, 10:45:00-13:29:59, 17:30:00-17:44:59, 18:00:00-18:14:59 (Endzeitstempel-Notation); F/S/H und Umsp keins (nur NS-Tabelle im Dokument)
+- SNB926697076725 Duelmen: NS H 17:30-18:45, W 17:00-19:30; Umsp W 17:15-19:15; MS W 08:00-13:45, 14:15-15:00, 17:00-19:15; Schwelle 30, 100 kW
+- SNB998819299022 NHF: NS W 10:15-13:15 + 16:30-19:30; Umsp W 16:00-19:00 (2. Winterzelle im Renderer unaufgeloest, in bemerkung dokumentiert); Umsp MS/MS nur bemerkung
+- SNB922607376381 Bochum (neu entziffert per vollstaendiger TJ-Koordinatenanalyse): NS W 12:30-14:30 + 16:45-19:15; Umsp W 16:45-19:45; MS an Umsp W 13:15-19:45, F 10:45-16:00 + 17:15-19:45, H 10:15-14:45 + 18:15-20:00; MS W 12:45-19:15 in bemerkung
+
+Zusaetzlich Bemerkungs-Praezisierung: SNB922220582657 Flensburg (MS W 10:15:01-12:00:00, NS n.N., Felder bleiben leer).
+
+Bewusst nicht gefuellt (Browser-Liste, final): Passau (Zeiten lesbar, Block-x-Saison-Zuordnung nicht belastbar, Koordinaten 0.0), Kaltenkirchen (Viertelstunden-Rasterliste), Dahlenburg (CID ohne CMap; gesicherte Zeiten ohne Ebenen-Zuordnung), sowie die bereits dokumentierten Faelle Kulmbach, Outokumpu/Nirosta, GGEW, Baden-Baden, Albstadtwerke, Wilster, Halle Netz, Lingen, ENERVIE, TauberEnergie, Herzo, Bad Reichenhall, EWR, Schwarzenbruck. 7 Preisblaetter ohne HLZF-Tabelle benoetigen keine Werte.
+
+Stand nach Gruppe 5: 185/400 der Arbeitsliste mit Zeitwerten (vorher 181). Die 72er-Nacharbeit der PDF-Faelle ist damit abgeschlossen; verbleibend ist die manuelle Browser-Liste (ca. 15 Faelle). Als naechstes: Pruefung der Zeilen mit "Zuordnung mit Vorbehalt" gegen die PDFs, dann die Faelle ohne 2027-Dokument per erneuter Suche.
