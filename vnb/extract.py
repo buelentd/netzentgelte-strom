@@ -715,7 +715,7 @@ SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungs?mes+ung|lastgang
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|\bmsb\b|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
                       r"reservekapazit|reservenetzkapazit|singul[äa]r|§\s*19|kwkg|offshore|umlage|stromsteuer|beispiel|"
-                      r"berechnung\s+des|fiktiv|informationszweck", re.I)
+                      r"berechnung\s+des|fiktiv|informationszweck|preisg[üu]ltigkeit", re.I)
 SLP_AUSSCHLUSS = re.compile(r"w[äa]rmepumpe|waermepumpe|speicher|14\s*a|modul\s*[123]|unterbrech|steuerbar|"
                             r"nacht|schwachlast|\bnt\b|\bht\b|hochtarif|niedertarif|zweitarif|doppeltarif|"
                             r"zweizeit|schwach|ladeeinricht|ladepunkt|e-?mobil|heizung|mittelspannung|"
@@ -760,7 +760,7 @@ def _slp_kopf(zeilen, von, bis):
             wl += [(m.start() + len(m.group()) / 2, "AP", None) for m in re.finditer(r"arbeits-?\s*preis", z, re.I)]
             if len(wl) >= 2:
                 unten = " ".join(zeilen[i + 1:i + 4])
-                if not ZAHL.search(unten) and re.search(r"€|eur", unten, re.I) and re.search(r"\bct\b|cent", unten, re.I):
+                if not ZAHL.search(unten) and re.search(r"€|eur", unten, re.I) and re.search(r"\bct\b|cent|\bc{2,}\b", unten, re.I):
                     wl = [(p_, a_, 1.0) for p_, a_, _ in wl]   # Einheiten untereinander ("€" / "a" und "ct" / "kWh")
                 einh = wl
         if len(einh) >= 2:
@@ -795,6 +795,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
     im, start, ausgeschlossen = False, 0, False
     zeilen = [re.sub(r"\bnicht\s+(?:steuerbare?\w*|unterbrechbare?\w*)", "regulär", unicodedata.normalize("NFKC", z), flags=re.I)
               for z in zeilen]    # kursive Mathe-Zeichen ("𝒄𝒕", "𝒌𝑾𝒉") -> ct, kWh; "nicht steuerbare Entnahmen" ist der Standardfall
+    zeilen = [re.sub(r"^(\s*)n\s+(?=[A-ZÄÖÜ])", r"\1  ", re.sub(r"(?i)\b(jahr|kwh|a)(\d)\b", r"\1 \2", z)) for z in zeilen]
     for k in range(len(zeilen) - 1):       # getrennter Kopf "Grund-   Arbeits-" / "preis   preis"
         if re.search(r"grund-\s+arbeits-\s*$", zeilen[k], re.I) and re.match(r"\s*preis\s+preis\s*$", zeilen[k + 1], re.I):
             zeilen[k] = re.sub(r"grund-(\s+)arbeits-", lambda m: "Grundpreis" + m.group(1)[:-4] + "   Arbeitspreis" if len(m.group(1)) > 4 else "Grundpreis Arbeitspreis", zeilen[k], flags=re.I)
@@ -818,12 +819,13 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                 and re.search(r"messstellen|messeinrichtung|z[äa]hlerart|messentgelt|messung\s+und\s+abrechnung", zl, re.I)
                 and not re.search(r"netznutzung\s+und\s+messstellen", zl, re.I)):   # Seitenkopf beider Preisblätter
             msb_sperre, im = True, False   # Überschrift einer Messstellenbetrieb-Tabelle
-            m_nr = re.match(r"\s*(\d+)\.", zl)
-            msb_kapitel = m_nr.group(1) if m_nr else None
+            m_nr = re.match(r"\s*(\d+)(?:\.|\s)", zl)
+            if m_nr:
+                msb_kapitel = m_nr.group(1)
             continue
         if msb_sperre and msb_kapitel and SLP_START.search(zl) and not ZAHL.search(z) and not re.search(
                 r"messstellen|messeinrichtung|z[äa]hler|messentgelt|msb\b", zl, re.I):
-            m_nr = re.match(r"\s*(\d+)\.", zl)
+            m_nr = re.match(r"\s*(\d+)(?:\.|\s)", zl)
             if m_nr and m_nr.group(1) != msb_kapitel:
                 msb_sperre = False             # neues Kapitel "2. Preise für Kunden ohne Leistungsmessung"
         zahlen = list(ZAHL.finditer(ohne_spannung(z)))   # "0,4 kV" ist kein Preis
@@ -833,7 +835,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
         if FIKTIV.search(zl) and not zahlen:
             im = False                     # fiktive Entgelte (nur zur Information)
             continue
-        kurz = re.sub(r"\s+", " ", zl)      # Spaltenabstände zählen nicht zur Länge der Überschrift
+        kurz = re.sub(r"\s+", " ", re.sub(r"jahresleistungspreissystem", " ", zl, flags=re.I))      # Spaltenabstände zählen nicht zur Länge der Überschrift
         if kurz.lower().endswith(" ohne") and i + 1 < len(zeilen):
             kurz += " " + re.split(r"\s{3,}", zeilen[i + 1].strip())[0]    # "1.2 Kunden ohne" / "Leistungsmessung"
         elif (not zahlen and i + 1 < len(zeilen) and re.split(r"\s{3,}", zl)[0].lower().endswith(" ohne")
@@ -857,6 +859,10 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                         and re.search(r"arbeits-?\s*preis", zeilen[k], re.I):
                     start = k
                     break
+            davor_text = " ".join(re.sub(r"grund-?\s*preis|arbeits-?\s*preis", " ", zeilen[k], flags=re.I)
+                                  for k in (i - 2, i - 1) if k >= 0 and not ZAHL.search(zeilen[k])
+                                  and re.search(r"grund-?\s*preis|arbeits-?\s*preis", zeilen[k], re.I))
+            kopf_davor_ausgeschl = bool(SLP_AUSSCHLUSS.search(davor_text)) and start != i
             spalten = re.sub(r"jahresleistungspreissystem", " ", " ".join(re.split(r"\s{3,}", zl)[1:]), flags=re.I)
             # Überschrift (kein Satz) schließt aus: "Entgelte für unterbrechbare und steuerbare Entnahmestellen ohne …"
             lange_ueberschrift = 70 <= len(kurz) < 130 and not kurz.rstrip().endswith((".", ","))
@@ -864,7 +870,7 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                               or lange_ueberschrift and bool(re.search(   # nur vor "ohne …", nicht "… und Kunden mit steuerbaren"
                                   r"steuerbar|unterbrech|w[äa]rmepumpe|speicher|14\s*a|modul\s*[123]|heizung",
                                   kurz[:SLP_START.search(kurz).start()], re.I))
-                              or bool(SLP_AUSSCHLUSS.search(spalten)))
+                              or bool(SLP_AUSSCHLUSS.search(spalten)) or kopf_davor_ausgeschl)
             continue
         if not im:
             continue
@@ -895,8 +901,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             if SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = True
                 # weit eingerückter Spaltenkopf ("HT   NT"): betrifft nur Zeilen, die keine Standardzeile sind
-                kopf_ausschluss = len(z) - len(z.lstrip()) >= 20 and bool(
+                kopf_ausschluss = len(z) - len(z.lstrip()) >= 20 and (bool(
                     re.fullmatch(r"(?:(?:ht|nt|hochtarif|niedertarif)\s*\d?\)?\s*)+", zl, re.I))
+                    or len(zl.split()) <= 2)       # "Nachtspeicher- / heizungsstrom" als zusätzliche Spalte
             elif SLP_NEUTRAL.search(zl) and not SLP_AUSSCHLUSS.search(zl):
                 ausgeschlossen = False
             elif len(z) - len(z.lstrip()) < 5 and re.search(
@@ -907,11 +914,12 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
         if re.match(r"\s*brutto|\s*(?:preis\s+)?inkl(?:\.|usive)\s*(?:\d+\s*%\s*)?(?:ust|mwst|umsatzsteuer)", label, re.I):
             continue                        # Bruttozeile ("Bruttopreis   88,06   6,84")
         sammel = bool(SLP_SAMMEL.search(label)) and not SLP_SAMMEL_NEIN.search(label)
-        standardzeile = bool(re.match(r"\s*(standardkunde|haushalt|allgemein|kleinkunde)", label, re.I)) and not (
+        standardzeile = bool(re.match(r"\s*(standardkunde|haushalt|allgemein|kleinkunde|niederspannung\b)", label, re.I)) and not (
             SLP_AUSSCHLUSS.search(label) or re.search(r"tarif", label, re.I))
         if (ausgeschlossen and not (kopf_ausschluss and standardzeile)) or (SLP_AUSSCHLUSS.search(zl) and not sammel):
             continue
         kopf = None
+        zahlen_alle = zahlen
         if len(zahlen) >= 2 and len(zahlen) % 2 == 0 and all(
                 ist_brutto(de_zahl(zahlen[k].group()), de_zahl(zahlen[k + 1].group())) for k in range(0, len(zahlen), 2)):
             zahlen = zahlen[0::2]          # Netto/Brutto-Paare: nur netto
@@ -950,6 +958,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                     kopf = _slp_kopf(zeilen, start, i)
                 if len(kopf) == len(zahlen):
                     _, a, f = sorted(kopf)[j]
+                    art = (a, f)
+                elif len(kopf) == 2 * len(zahlen) and len(zahlen) >= 2 and len(zahlen_alle) == len(kopf):
+                    _, a, f = sorted(kopf)[0::2][j]       # Spalten netto | brutto je Preis, nur netto gelesen
                     art = (a, f)
                 elif kopf:
                     pos = m.start() + len(m.group()) / 2

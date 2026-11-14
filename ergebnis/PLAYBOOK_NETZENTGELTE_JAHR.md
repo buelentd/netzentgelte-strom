@@ -46,3 +46,9 @@ Gelernte Fälle:
 - **Namensfalle SWN (13.11.2026, Kollege):** `swneustadt.de` = Stadtwerke Neustadt an der Weinstraße, `swn-netze.de` = Stadtwerke Neustadt bei Coburg. Vor jeder Übernahme Impressum/Ort des Dokuments mit dem Netzbetreiber der MaStR-Nr. abgleichen.
 - **Sperren (Nutzerregel):** Kein Referer-Trick und keine Umgehung von Cloudflare/403/robots.txt; gesperrte Dokumente gehen in die Browser-Liste für den Nutzer.
 - **Vilsbiburg:** Links der Seite enthalten ein Leerzeichen statt Schrägstrich im Pfad; mit Schrägstrich lädt das PDF.
+
+### Gelernt am 14.11.2026: SLP-Leser (Auswertung der 54 pruefen ohne SLP)
+- Von 54 `pruefen` mit RLM, aber ohne SLP, stand bei den meisten die SLP-Tabelle im Dokument; die Ursache war der Leser, nicht der Crawler.
+- Muster, die jetzt gelesen werden: SLP-Kapitel direkt nach „Messstellenbetrieb“ (Kapitelwechsel hebt die Sperre auf, auch „3 Preise …“ ohne Punkt); Kopf „Grundpreis Arbeitspreis“ steht über der Zeile „ohne Leistungsmessung“; Kopf „Grund- Arbeits- / preis preis“ auf zwei Zeilen; Einheiten „Ct.“ und „€“ ohne „/kWh“ bzw. „/a“; kursive und vervielfachte Einheitenzeichen („𝒄𝒄𝒄𝒄“); „Leistungsmesung“ (Tippfehler); Fußnotenziffer an der Einheit („EUR/Jahr2“); „nicht steuerbare Entnahmen“ ist der Standardfall; Zeilen mit „Jahresleistungspreissystem“ in der SLP-Überschrift; Tabellen für Wärmepumpe/Speicherheizung/Beleuchtung hinter dem Standardblock zählen nicht.
+- Bleiben bewusst offen (nicht raten): „€ / Zählpunkt“ ohne Zeitbezug (Herxheim), Grundpreis in „€/kW/a“ bei SLP (Karwendel), mehrere gleichrangige SLP-Tabellen (Werl, Schönebeck Ein-/Mehrtarif), Dokumente von 2018/2023.
+- Jedes diagnostizierte Dokument ist auf dem Branch `diagnose` abgelegt (`NNNN_<hash>.txt`), der Leser-Test läuft offline ohne Internet.
