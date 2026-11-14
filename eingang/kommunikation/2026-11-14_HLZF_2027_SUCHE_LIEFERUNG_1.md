@@ -187,3 +187,10 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Stadtwerke Forchheim: 2027-PDF lesbar; NS W 16:45-19:45, Umsp MS/NS W 08:15-10:00; MS nur Sommer 09:00-17:00 (Spaltenfolge mit Vorbehalt) in bemerkung.
 - Seite listet HLZF 2027, URL nicht ermittelbar: Eckernfoerder Netzgesellschaft, Eilenburger Stadtwerke -> Browser-Liste.
 - Kein 2027-Fund: Stadtwerke Goch -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 19 (5 Zeilen, 2026-11-14)
+
+- Stadtwerke Gruenstadt: 2027-PDF vollstaendig lesbar; MS H+W, NS/MS-NS nur W geliefert.
+- Saalfelder Energienetze: 2027-PDF lesbar, Ebenen-Zuordnung der Mehrfach-Fenster nicht eindeutig -> Felder leer, alle Zeiten in bemerkung, Browser-Liste.
+- Website listet HLZF 2027, URL nicht ermittelbar: Stadtwerke Quickborn, Stadtwerke Metzingen (ceasy) -> Browser-Liste.
+- Kein 2027-Fund: T.W.O. Osning -> Browser-Liste.
