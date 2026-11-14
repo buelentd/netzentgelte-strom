@@ -141,3 +141,10 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Stadtwerke Deggendorf: 2027-PDF vorhanden, Spaltenzuordnung nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - TEN eG: kein 2027er HLZF-Dokument; Preisblatt 2027 nur Modul-3-HT/NT -> Browser-Liste.
 - SEW Stromversorgungs GmbH (Erding): HLZF-Liste auf sewerding.de nur bis 2026 -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 13 (6 Zeilen, 2026-11-14)
+
+- Stadtwerke EVB Huntetal Netz: 2027-PDF vom NB-Server vollstaendig lesbar; NS/MS-NS je H 17:45-18:45, W 17:15-19:30 bzw. 17:15-19:15; MS in bemerkung.
+- Stadtwerke Geesthacht: 2027-PDF nach 2026er URL-Muster erraten und vollstaendig lesbar; NS/MS-NS nur W; MS in bemerkung.
+- Stadtwerke Radolfzell: 2027-PDF lesbar; NS nur F 12:00-13:15; Winter-Zeiten (4 Fenster) nicht eindeutig MS/MS-NS zuordenbar -> msns-Felder leer, Browser-Liste; MS-Herbst in bemerkung.
+- Kein 2027-Fund (erratene URLs 404, Websuche negativ): Stadtwerke Kempen, Netzgesellschaft Bitterfeld-Wolfen, Stadtwerke Freudenstadt -> Browser-Liste.
