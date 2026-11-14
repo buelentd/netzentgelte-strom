@@ -13,9 +13,13 @@ import hashlib
 import re
 from pathlib import Path
 
+# Felder der Batterietyp-Maske des Nutzers (Stand 14.11.2026); leer, wenn die Quelle sie nicht nennt
+ERWEITERUNG = ["formfaktor", "c_rate", "kuehlung", "ip_schutz", "schallleistung_dba", "masse_text", "breite_mm", "tiefe_mm",
+               "hoehe_mm", "gewicht_kg", "lebensdauer_kalendarisch_jahre", "degradation_prozent_jahr", "pcs_eur_kw",
+               "opex_eur_kwh_jahr", "garantie_jahre", "garantie_zyklen", "garantie_durchsatz_mwh", "preisstand"]
 SPALTEN = ["id", "hersteller", "produkt", "zellchemie", "kapazitaet_kwh", "leistung_kw", "wirkungsgrad_prozent", "zyklen",
            "preis_eur_kwh", "preis_netto_brutto", "preis_umfang", "flaeche_m2", "volumen_m3", "datenblatt_url",
-           "quelle", "quelle_url", "abruf_datum", "status", "pruefnotiz"]
+           *ERWEITERUNG, "quelle", "quelle_url", "abruf_datum", "status", "pruefnotiz"]
 LEER = {"", "—", "-", "–", "n/a", "k.a.", "k. a."}
 RUMPF = re.compile(r"\s*(?:PDF)?\s*(?:Bearbeiten)?\s*[✕xX×]?\s*$")
 

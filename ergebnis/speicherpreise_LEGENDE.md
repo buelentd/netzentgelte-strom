@@ -41,3 +41,7 @@ Eine Zeile je Speichersystem, nach dem Muster der pv-magazine-Marktübersicht. E
 | pruefnotiz | Anmerkung der Prüfung |
 
 Die Funde-Tabelle (`speicherpreise_funde.csv`) hält Preis-Aussagen von Webseiten fest. Die Produkttabelle hält Systeme mit technischen Daten fest. Beide ergänzen sich: Der Rechner soll später aus der Produkttabelle wählen können (Kapazität, Leistung, Zyklen, Wirkungsgrad), mit Preis und Quelle daneben.
+
+## Erweiterung der Produkttabelle (14.11.2026)
+
+Zusätzliche Spalten nach den Feldern der Batterietyp-Maske: formfaktor (Schrank, Container, Rack), c_rate, kuehlung, ip_schutz, schallleistung_dba, masse_text, breite_mm, tiefe_mm, hoehe_mm, gewicht_kg, lebensdauer_kalendarisch_jahre, degradation_prozent_jahr, pcs_eur_kw, opex_eur_kwh_jahr, garantie_jahre, garantie_zyklen, garantie_durchsatz_mwh, preisstand (Datum, zu dem der Preis gilt; abruf_datum ist der Tag der Übernahme). Leer, wenn die Quelle den Wert nicht nennt; nichts wird geschätzt. Plattformwerte (nicht modellspezifisch) stehen im pruefnotiz.
