@@ -3,6 +3,8 @@ name: Speicherpreise sammeln
 # Sammelt Preise in €/kWh für Gewerbespeicher aus Websuche (Brave), Fachmagazinen, Händlerseiten und Ratgebern.
 # robots.txt beachtet, 1 Anfrage/s je Domain, Timeout 30 s. Funde sind "ungeprüft", bis sie am Original geprüft sind.
 on:
+  schedule:
+    - cron: "17 */3 * * *"      # Dauerlauf: alle 3 Stunden, Modus wechselt reihum (siehe unten)
   workflow_dispatch:
   push:
     branches: [main]
@@ -31,6 +33,13 @@ jobs:
           ABFRAGEN=$(sed -n 's/^ABFRAGEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           SEITEN=$(sed -n 's/^SEITEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           MODUS=$(sed -n 's/^MODUS=\([a-z0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # Dauerlauf: Modus reihum nach Stunde (alle 3 h: 0,3,6,... -> Index = Stunde/3 mod 5)
+            MODI=(runde7 runde8 aufschlaege runde2 runde5)
+            MODUS=${MODI[$(( ($(date -u +%-H) / 3) % 5 ))]}
+            ABFRAGEN=""; SEITEN=""
+          fi
+          echo "Modus: $MODUS"
           case "$MODUS" in
             auszuege)    python -m vnb.speicherpreise --auszuege ;;
             runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
