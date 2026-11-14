@@ -1,4 +1,4 @@
-﻿## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
+## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
 
 Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (22 Zeilen, jahr=2027, nr-Spalte fuer 400er-Liste leer, Stromnetz Berlin mit nr=1):
 - SNB979269087643 Stromnetz Berlin GmbH
@@ -281,3 +281,19 @@ Der Kollege hat 20 unbrauchbare Zeilen in `lauf/nutzer_hinweise.csv` gemeldet, d
 - Die genannten 4 Zeilen ohne jede URL bleiben begruendet leer (kein Fund bzw. kein auswertbares Dokument), ebenso Zerbst und Bad Endorf (blockiert, siehe Browser-Liste oben).
 
 Alle Zahlen aus den Dateien, keine Schaetzungen.
+## Korrektur Zaehlung gegen 400er-Arbeitsliste (Nachtrag, 14.11.2026)
+
+Der Hinweis des Kollegen ist bestaetigt und verifiziert: Die bisherige Angabe "326 von 400 mit 2027-Zeile" war falsch, 326 + 132 = 458 ging nicht auf.
+
+Korrekt gegen `ergebnis/kollege_hlzf_2027_suchen_400.csv` geprueft (Join ueber MaStR-Nr):
+- 268 der 400 Netzbetreiber der Arbeitsliste haben eine 2027-Zeile (67 %).
+- 132 sind offen (unveraendert, stimmt mit der Zahl des Kollegen ueberein).
+- Die uebrigen 58 Zeilen mit jahr=2027 gehoeren zu Netzbetreibern, die nicht auf der 400er-Liste stehen (frueherer Teilbestand der HLZF-Suche). Sie wurden faelschlich mitgezaehlt und gehen nicht in die Quote ein.
+
+Zu den weiteren Hinweisen:
+- Kahl, Duderstadt (EWB), Velten, Schwarzenbruck (Feucht): "gelesen" bedeutet hier bewusst NICHT "Zeiten in die Felder uebernommen". Weil die Ebenen-Zuordnung im jeweiligen Dokument nicht eindeutig war, bleiben die Zeitfenster-Spalten leer und die gesicherten Zeiten stehen in der Bemerkung (inkl. Browser-Liste-Vermerk). Keine Zuordnung geraten.
+- Velten: Das 2027-PDF existiert real auf dem Server des Netzbetreibers; die URL wurde ueber das bekannte 2025/2026-URL-Muster des NB ermittelt (Muster-Rueckschluss, kein Erraten von Inhalten). Vermerk im Bemerkungsfeld bleibt.
+- Die 20 gemeldeten kaputten Zeilen in `lauf/nutzer_hinweise.csv` sind bereits repariert und gepusht (siehe Abschnitt "Korrektur Strukturfehler" oben, Commit 48520ef): Datei jetzt 187 Datenzeilen, alle 5 Spalten, jede URL mit https:// bzw. begruendet leer, vom Kollegen noch nicht gesehen.
+
+Arbeit geht mit Lieferung 28 bei den 132 offenen Netzbetreibern weiter.
+
