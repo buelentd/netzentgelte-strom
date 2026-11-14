@@ -56,6 +56,10 @@ ABFRAGEN = [
 # Dauerlauf: je Branche andere Formulierungen, damit jede Runde neue Seiten findet (Aufschlag/Marge in Gewerbeangeboten)
 BRANCHEN = ["Bäckerei", "Supermarkt", "Imbiss", "Systemgastronomie", "Handwerk", "Büro", "Hotel", "Metzgerei", "Tankstelle", "Autohaus",
             "Fitnessstudio", "Arztpraxis", "Kühlhaus", "Logistik", "Landwirtschaft", "Gärtnerei"]
+ABFRAGEN += ["Preisblatt Übergangsversorgung Strom RLM Dienstleistungsentgelt Aufschlag ct/kWh 2026",
+             "Ersatzversorgung Strom Preisblatt Gewerbe RLM Aufschlag auf Beschaffungskosten ct/kWh",
+             "Grundversorgung Gewerbe Sondervertrag Preisblatt Aufschlag Spotpreis EEX ct/kWh Stadtwerke 2026",
+             "Stadtwerke Strom Gewerbe dynamischer Tarif Preisblatt Börsenpreis zuzüglich Aufschlag ct/kWh netto RLM"]
 ABFRAGEN += [f"Strom {b} Gewerbe Energiepreis Aufschlag Marge ct/kWh Angebot netto" for b in BRANCHEN]
 ABFRAGEN += [f"Stromtarif {b} Gewerbekunden Vertriebsaufschlag Arbeitspreis ct/kWh" for b in BRANCHEN]
 STICHWORT = re.compile(r"(lieferantenaufschlag|handelsaufschlag|aufpreis|strukturierung\w*|provision\w*|vertriebs\w*|marge\w*|risikoaufschlag|risiko\w*|aufschlag|zuschlag|beschaffung\w*|handling\w*|servicegeb\w*|bilanzkreis\w*|"
