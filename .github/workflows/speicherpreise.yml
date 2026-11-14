@@ -36,6 +36,7 @@ jobs:
             runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
             runde3)      python -m vnb.speicherpreise --runde 3 --abfragen "${ABFRAGEN:-12}" --seiten "${SEITEN:-120}" ;;
             runde4)      python -m vnb.speicherpreise --runde 4 --seiten "${SEITEN:-120}" ;;
+            runde5)      python -m vnb.speicherpreise --runde 5 --abfragen "${ABFRAGEN:-33}" --seiten "${SEITEN:-200}" ;;
             aufschlaege) python -m vnb.aufschlaege --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-120}" ;;
             *)           python -m vnb.speicherpreise --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-150}" ;;
           esac

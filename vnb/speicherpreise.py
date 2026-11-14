@@ -52,6 +52,11 @@ ABFRAGEN2 = ([f"{h} Gewerbespeicher Preis pro kWh netto" for h in HERSTELLER]
                  "Stadtwerke Batteriespeicher Kosten Projekt Euro pro kWh Gewerbe", "Fraunhofer ISE Studie Batteriespeicher Gewerbe Systemkosten Euro pro kWh pdf",
                  "BSW Solar Marktdaten Batteriespeicher Preise Gewerbe", "vbw Leitfaden Stromspeicher für Unternehmen pdf", "intilion Industriespeicher Preis pro kWh",
                  "Industriespeicher 1 MWh Preis Euro pro kWh netto Container", "Gewerbespeicher 200 kWh Preis netto schlüsselfertig Angebot"])
+# Runde 5: Hersteller aus der idealo-Herstellerliste (nur Batterien; Juratherm, Flamco, Alpha Thermotec sind Wärmespeicher)
+HERSTELLER5 = ["Growatt", "GoodWe", "Fox ESS", "Dyness", "PYTES", "SofarSolar", "Felicity Solar", "SolarEdge", "VARTA", "Pramac", "G2 Energy Systems"]
+ABFRAGEN5 = [f for h in HERSTELLER5 for f in (f"{h} Batteriespeicher Gewerbe Preis kWh netto",
+                                              f"{h} Speicher Datenblatt Kapazität kWh Zyklen Wirkungsgrad Preis",
+                                              f"{h} Gewerbespeicher Preisliste pdf")]
 # Runde 3: Originale, die die Fundseiten selbst nennen (Fraunhofer ISE, vbw, pv magazine, Rödl & Partner, BSW, RWTH, intilion ...)
 ABFRAGEN3 = [
     "Fraunhofer ISE Studie Juli 2024 Batteriespeicher Investition Speicher PV-Dach 30 kWp bis 1 MWp Euro je kWh Tabelle",
@@ -519,6 +524,8 @@ if __name__ == "__main__":
             v = verweise_laden(vp)
             lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN3, startseiten=[], verweise=v)
             verweise_speichern(vp, v)
+        elif a.runde == 5:
+            lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN5, startseiten=[])
         elif a.runde == 4:                     # Verweise der Fundseiten abarbeiten (Tiefe 1)
             v = verweise_laden(vp)
             offen = [u for u, r in v.items() if not r.get("gelesen")]

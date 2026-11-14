@@ -167,3 +167,8 @@ def test_verweise_auf_studien():
     assert "https://www.ise.fraunhofer.de/studie.pdf" in urls and "https://vbw-bayern.de/leitfaden" in urls
     assert not any("intern" in u or "shop.de" in u for u in urls)
     assert len(sp.ABFRAGEN3) >= 10
+
+
+def test_runde5_nur_batteriehersteller():
+    assert len(sp.ABFRAGEN5) == 33 and any("Growatt" in q for q in sp.ABFRAGEN5)
+    assert not any(k in " ".join(sp.ABFRAGEN5) for k in ("Juratherm", "Flamco", "Alpha Thermotec"))
