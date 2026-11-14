@@ -436,6 +436,73 @@ def verweise_speichern(pfad: Path, v: dict[str, dict]):
             w.writerow(r)
 
 
+def pdf_tabellen(holer: "Holer", url: str, max_seiten: int = 60) -> tuple[list[list[str]], str]:
+    """PDF laden und die Tabellen seitenweise auslesen (pdfplumber). Rückgabe: Zeilen [Seite, Zelle1, Zelle2 ...] und der Volltext
+    für die Preissuche. Dieselben Regeln wie sonst: robots.txt, Drosselung, Seitenlimit je Domain; Sperren landen in der Liste."""
+    pu = urllib.parse.urlparse(url)
+    if not re.search(r"\.pdf$", pu.path, re.I) or not holer._erlaubt(url):
+        if not holer._erlaubt(url):
+            holer.gesperrt[url] = "robots.txt"
+        return [], ""
+    warte = holer.pause - (time.time() - holer._letzte.get(pu.netloc, 0))
+    if warte > 0:
+        time.sleep(warte)
+    holer._letzte[pu.netloc] = time.time()
+    try:
+        daten = holer._bytes(url, 40_000_000)
+        if not daten.startswith(b"%PDF"):
+            return [], ""
+        import io
+        import pdfplumber
+        zeilen, text = [], []
+        with pdfplumber.open(io.BytesIO(daten)) as pdf:
+            for nr, seite in enumerate(pdf.pages[:max_seiten], 1):
+                text.append(seite.extract_text() or "")
+                for tab in seite.extract_tables() or []:
+                    for z in tab:
+                        zellen = [re.sub(r"\s+", " ", (c or "")).strip() for c in z]
+                        if any(zellen):
+                            zeilen.append([str(nr)] + zellen)
+        return zeilen, "\n".join(text)
+    except Exception as e:
+        holer.log(f"PDF-Tabellen fehlgeschlagen {url}: {type(e).__name__}: {str(e)[:80]}")
+        m = re.search(r"HTTP Error (403|429|401)", str(e))
+        if m:
+            holer.gesperrt[url] = f"HTTP {m.group(1)}"
+        return [], ""
+
+
+def pdf_liste_lauf(urls: list[str], zielordner: Path, funde_pfad: Path, holer: "Holer | None" = None, log=print) -> dict:
+    """Je Adresse: Tabellen als TSV ablegen (Datei nach Adresse benannt) und Preisangaben aus dem Text als Funde festhalten."""
+    holer = holer or Holer(max_seiten=60, log=log)
+    vorhanden = bestehende_laden(funde_pfad)
+    zielordner.mkdir(parents=True, exist_ok=True)
+    tabellen = neu = 0
+    for u in urls:
+        u = u.strip()
+        if not u or u.startswith("#"):
+            continue
+        zeilen, text = pdf_tabellen(holer, u)
+        if not zeilen and not text:
+            log(f"nichts gelesen: {u}")
+            continue
+        name = re.sub(r"[^A-Za-z0-9._-]+", "_", urllib.parse.urlparse(u).netloc + urllib.parse.urlparse(u).path)[:120]
+        with open(zielordner / (name + ".tsv"), "w", encoding="utf-8", newline="") as f:
+            f.write(f"# Quelle: {u}\n# Abruf: {dt.date.today().isoformat()}\n# Spalte 1 = Seite des PDF, danach die Zellen der Tabellenzeile\n")
+            for z in zeilen:
+                f.write("\t".join(z) + "\n")
+        tabellen += 1
+        titel = (text.strip().splitlines() or [""])[0][:160]
+        for fnd in funde_aus_text(text, u, titel, ""):
+            if fnd["id"] not in vorhanden:
+                vorhanden[fnd["id"]] = fnd
+                neu += 1
+        log(f"{u}: {len(zeilen)} Tabellenzeilen")
+    speichern(funde_pfad, vorhanden)
+    gesperrte_speichern(funde_pfad.parent / "speicherpreise_gesperrt.csv", holer)
+    return {"tabellen": tabellen, "neue_funde": neu}
+
+
 def auswertung(funde: dict[str, dict]) -> list[dict]:
     """Spannen nur aus geprüften Funden (netto, bekannter Umfang). Ungeprüfte erscheinen separat als Kandidaten."""
     import statistics
@@ -524,6 +591,9 @@ if __name__ == "__main__":
             v = verweise_laden(vp)
             lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN3, startseiten=[], verweise=v)
             verweise_speichern(vp, v)
+        elif a.runde == 6:                     # Adressen aus lauf/speicherpreise_pdfs.txt: Tabellen auslesen
+            urls = Path("lauf/speicherpreise_pdfs.txt").read_text(encoding="utf-8").splitlines()
+            print(pdf_liste_lauf(urls, Path(a.ziel).parent / "speicherpreise_pdftabellen", Path(a.ziel)))
         elif a.runde == 5:
             lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN5, startseiten=[])
         elif a.runde == 4:                     # Verweise der Fundseiten abarbeiten (Tiefe 1)

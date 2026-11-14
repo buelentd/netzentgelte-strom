@@ -36,6 +36,7 @@ jobs:
             runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
             runde3)      python -m vnb.speicherpreise --runde 3 --abfragen "${ABFRAGEN:-12}" --seiten "${SEITEN:-120}" ;;
             runde4)      python -m vnb.speicherpreise --runde 4 --seiten "${SEITEN:-120}" ;;
+            runde6)      python -m vnb.speicherpreise --runde 6 ;;
             runde5)      python -m vnb.speicherpreise --runde 5 --abfragen "${ABFRAGEN:-33}" --seiten "${SEITEN:-200}" ;;
             aufschlaege) python -m vnb.aufschlaege --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-120}" ;;
             *)           python -m vnb.speicherpreise --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-150}" ;;
@@ -45,6 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          [ -d ergebnis/speicherpreise_pdftabellen ] && git add ergebnis/speicherpreise_pdftabellen
           for f in ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv ergebnis/strompreis_aufschlaege_funde.csv ergebnis/speicherpreise_gesperrt.csv ergebnis/speicherpreise_verweise.csv; do
             [ -f "$f" ] && git add "$f"
           done

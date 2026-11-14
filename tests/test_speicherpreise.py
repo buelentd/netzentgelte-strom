@@ -172,3 +172,27 @@ def test_verweise_auf_studien():
 def test_runde5_nur_batteriehersteller():
     assert len(sp.ABFRAGEN5) == 33 and any("Growatt" in q for q in sp.ABFRAGEN5)
     assert not any(k in " ".join(sp.ABFRAGEN5) for k in ("Juratherm", "Flamco", "Alpha Thermotec"))
+
+
+def test_pdf_tabellen_lesen(tmp_path):
+    import io
+    from reportlab.lib.pagesizes import A4
+    from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
+    from reportlab.lib.styles import getSampleStyleSheet
+    from reportlab.lib import colors
+    buf = io.BytesIO()
+    doc = SimpleDocTemplate(buf, pagesize=A4)
+    tab = Table([["Hersteller", "Produkt", "kWh", "Preis EUR/kWh"], ["Pixii", "PowerShaper2", "100", "389"], ["Hithium", "Cabinet", "261", "315"]])
+    tab.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), 0.5, colors.black)]))
+    doc.build([Paragraph("Gewerbespeicher Vergleich 2026: ab 389 EUR/kWh netto", getSampleStyleSheet()["Normal"]), tab])
+
+    class H(sp.Holer):
+        def _bytes(self, url, max_bytes):
+            return buf.getvalue()
+    h = H(pause=0, abrufen=lambda u: (404, "", ""), log=lambda *_: None)
+    zeilen, text = sp.pdf_tabellen(h, "https://memodo.de/vergleich.pdf")
+    assert ["1", "Pixii", "PowerShaper2", "100", "389"] in zeilen and ["1", "Hithium", "Cabinet", "261", "315"] in zeilen
+    r = sp.pdf_liste_lauf(["https://memodo.de/vergleich.pdf"], tmp_path / "t", tmp_path / "f.csv", h, log=lambda *_: None)
+    assert r["tabellen"] == 1 and r["neue_funde"] >= 1
+    tsv = next((tmp_path / "t").glob("*.tsv")).read_text(encoding="utf-8")
+    assert "Pixii\tPowerShaper2\t100\t389" in tsv
