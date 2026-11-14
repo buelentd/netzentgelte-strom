@@ -180,3 +180,10 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Bad Kissingen: HLZF 2027 auf Netznutzungs-Seite gelistet, URL nicht ermittelbar -> Browser-Liste.
 - Kein 2027-Fund per Websuche: Schwedt, Hann. Muenden, Schneverdingen-Neuenkirchen, Zirndorf, Altenburg, Inn-Salzach -> Browser-Liste.
 - Hinweis Schwedt: swaue.de-2027-HLZF vermutlich Stadtwerke Aue zuzuordnen (Aue bereits geliefert), nicht Schwedt.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 18 (5 Zeilen, 2026-11-14)
+
+- Stadtwerke Elmshorn: 2027-PDF vollstaendig lesbar; NS/MS-NS nur W, MS W 11:30-13:30 + 17:15-19:00 in bemerkung.
+- Stadtwerke Forchheim: 2027-PDF lesbar; NS W 16:45-19:45, Umsp MS/NS W 08:15-10:00; MS nur Sommer 09:00-17:00 (Spaltenfolge mit Vorbehalt) in bemerkung.
+- Seite listet HLZF 2027, URL nicht ermittelbar: Eckernfoerder Netzgesellschaft, Eilenburger Stadtwerke -> Browser-Liste.
+- Kein 2027-Fund: Stadtwerke Goch -> Browser-Liste.
