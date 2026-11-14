@@ -240,3 +240,10 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - Gemeindewerke Bovenden: 2027-PDF vollstaendig lesbar; NS/MS-NS W 18:00-20:00, MS F 19:00-20:00 + W 17:45-20:15 in bemerkung.
 - Stadtwerke Bad Reichenhall: 2027-PDF vom NB-Server, Ebenen-/Fenster-Zuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - Kein 2027er Fund per Websuche (2 Suchrunden): Altdorf, Kelheim, Schwarzenberg, Witzenhausen, Zittau, Cham, Plattling, ews Netz (Segeberg) -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 25 (14.11.2026)
+
+- Versorgungsbetriebe Kronshagen: 2027-PDF vollstaendig lesbar; nur Winter (MS 16:45-19:15, MS/NS und NS 17:15-19:30), F/S/H kein HLF.
+- SWR Energie Rödental und HEWA (Stendal, enwg-veroeffentlichungen.de): 2027-PDFs vom NB-Server, Ebenen-/Spaltenzuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Kein 2027er Fund per Websuche: Bramsche, Weilburg, Bad Bramstedt, Brunsbüttel, Böhmetal, Ebermannstadt, Glückstadt -> Browser-Liste.
