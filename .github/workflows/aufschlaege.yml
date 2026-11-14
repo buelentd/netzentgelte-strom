@@ -1,0 +1,57 @@
+name: Aufschläge sammeln (Dauerlauf)
+
+# Sucht belegte Aufschläge, Margen und Vertriebskosten für Gewerbestrom (ct/kWh). Eigene Kette, unabhängig von den Speicherpreisen.
+# Jeder Lauf startet am Ende sofort den nächsten, solange lauf/dauerlauf_aufschlaege.txt mit "an" beginnt.
+on:
+  schedule:
+    - cron: "43 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: aufschlaege
+
+jobs:
+  sammeln:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install protego pdfplumber
+      - name: Sammeln
+        env:
+          SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
+        run: |
+          N=$( [ -f lauf/aufschlaege_runden.log ] && wc -l < lauf/aufschlaege_runden.log || echo 0 )
+          python -m vnb.aufschlaege --abfragen 12 --seiten 200 --start $(( N * 12 ))
+      - name: Committen
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "$(date -u +%Y-%m-%dT%H:%MZ);${{ github.run_id }};aufschlaege;funde=$(wc -l < ergebnis/strompreis_aufschlaege_funde.csv)" >> lauf/aufschlaege_runden.log
+          git add lauf/aufschlaege_runden.log
+          [ -f ergebnis/strompreis_aufschlaege_funde.csv ] && git add ergebnis/strompreis_aufschlaege_funde.csv
+          git commit -m "Aufschläge: neue Funde (Lauf ${{ github.run_id }})" || exit 0
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((2 ** i))
+          done
+          exit 1
+      - name: Nächste Runde sofort starten
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          if grep -qi '^an' lauf/dauerlauf_aufschlaege.txt 2>/dev/null; then
+            gh workflow run aufschlaege.yml --ref "${GITHUB_REF_NAME}" && echo "nächste Runde angestoßen"
+          else
+            echo "Dauerlauf aus"
+          fi

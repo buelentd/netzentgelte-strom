@@ -36,9 +36,9 @@ jobs:
           MODUS=$(sed -n 's/^MODUS=\([a-z0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           if [ "${{ github.event_name }}" != "push" ]; then
             # Dauerlauf: Modus reihum nach Zahl der bisherigen Runden (lauf/speicherpreise_runden.log)
-            MODI=(runde7 runde8 aufschlaege runde2 runde5)
+            MODI=(runde7 runde8 runde2 runde5)
             N=$( [ -f lauf/speicherpreise_runden.log ] && wc -l < lauf/speicherpreise_runden.log || echo 0 )
-            MODUS=${MODI[$(( N % 5 ))]}
+            MODUS=${MODI[$(( N % 4 ))]}
             ABFRAGEN=""; SEITEN=""
           fi
           echo "Modus: $MODUS"

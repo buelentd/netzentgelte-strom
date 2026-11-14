@@ -53,6 +53,11 @@ ABFRAGEN = [
     "Industriestrompreis Gewerbe Vertrieb Marge ct/kWh Beschaffung Studie Aufschlag Großhandel",
     "Stromeinkauf Unternehmen Aufschlag Dienstleister Ausschreibung ct/kWh Beratung Provision Marge",
 ]
+# Dauerlauf: je Branche andere Formulierungen, damit jede Runde neue Seiten findet (Aufschlag/Marge in Gewerbeangeboten)
+BRANCHEN = ["Bäckerei", "Supermarkt", "Imbiss", "Systemgastronomie", "Handwerk", "Büro", "Hotel", "Metzgerei", "Tankstelle", "Autohaus",
+            "Fitnessstudio", "Arztpraxis", "Kühlhaus", "Logistik", "Landwirtschaft", "Gärtnerei"]
+ABFRAGEN += [f"Strom {b} Gewerbe Energiepreis Aufschlag Marge ct/kWh Angebot netto" for b in BRANCHEN]
+ABFRAGEN += [f"Stromtarif {b} Gewerbekunden Vertriebsaufschlag Arbeitspreis ct/kWh" for b in BRANCHEN]
 STICHWORT = re.compile(r"(lieferantenaufschlag|handelsaufschlag|aufpreis|strukturierung\w*|provision\w*|vertriebs\w*|marge\w*|risikoaufschlag|risiko\w*|aufschlag|zuschlag|beschaffung\w*|handling\w*|servicegeb\w*|bilanzkreis\w*|"
                        r"abwicklung\w*|grundpreis|arbeitspreis)", re.I)
 WERT = re.compile(r"(?P<a>\d{1,2}(?:[.,]\d{1,3})?)\s*(?:(?:–|-|—|bis)\s*(?P<b>\d{1,2}(?:[.,]\d{1,3})?)\s*)?(?:ct|cent)\s*(?:/|pro|je)\s*kwh", re.I)
@@ -115,13 +120,14 @@ def speichern(pfad: Path, zeilen: dict[str, dict]):
 
 
 def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_gesamt: int = 120, holer: Holer | None = None,
-         suche=None, log=print) -> dict:
+         suche=None, log=print, start: int = 0) -> dict:
     from .speicherpreise import websuche
     holer = holer or Holer(log=log)
     suche = suche or (lambda q: websuche(schluessel, q) if schluessel else [])
     vorhanden = laden(ziel)
     urls = []
-    for q in ABFRAGEN[:max_abfragen]:
+    n = len(ABFRAGEN)
+    for q in [ABFRAGEN[(start + i) % n] for i in range(min(max_abfragen, n))]:      # ab "start" reihum, damit jede Runde neue Abfragen nutzt
         urls += suche(q)
         time.sleep(1.1 if schluessel else 0)
     gesehen, neu, seiten = set(), 0, 0
@@ -155,5 +161,6 @@ if __name__ == "__main__":
     ap.add_argument("--ziel", default="ergebnis/strompreis_aufschlaege_funde.csv")
     ap.add_argument("--abfragen", type=int, default=10)
     ap.add_argument("--seiten", type=int, default=120)
+    ap.add_argument("--start", type=int, default=0)
     a = ap.parse_args()
-    lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)
+    lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, start=a.start)
