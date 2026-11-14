@@ -297,3 +297,7 @@ Zu den weiteren Hinweisen:
 
 Arbeit geht mit Lieferung 28 bei den 132 offenen Netzbetreibern weiter.
 
+
+## Korrektur Backnang Schwelle (Nachtrag, 14.11.2026)
+
+Hinweis des Kollegen bestaetigt: In der Zeile SNB911602541351 (Stadtwerke Backnang GmbH, 2027) stand in der Spalte schwelle_prozent der Wert 20. Das ist laut PDF-Lesung der Schwelle fuer die Ebene HS/MS+MS; die Konvention der Datei ist der NS-Wert, und die Bemerkung derselben Zeile dokumentiert "MS/NS+NS 30%". Spaltenwert korrigiert: 20 -> 30 (Quelle: eigene, bereits dokumentierte Lesung des Backnang-2027-PDF, keine Neu-Schaetzung). Mindestleistung (100 kW) und alle Zeitfenster unveraendert. Datei weiterhin 376 Datenzeilen, alle 17 Spalten.
