@@ -405,6 +405,6 @@ Gefuellt (ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung)
 
 Zusaetzlich Bemerkungs-Präzisierung: SNB914411628732 BASF InfraService (2027-Zeile: Dokument ist 2026-Inhalt, Werte stehen in der 2026-Zeile, kein 2027-Dokument).
 
-Verbleiben in der Browser-Liste (bewusst nicht gefuellt, nichts geraten): Kulmbach (ADBE-FillSign-Formularfelder ohne Koordinaten), Outokumpu/Nirosta (3 von 4 Ebenenbloecken lesbar, Zuordnung unsicher), GGEW, Baden-Baden, Albstadtwerke, Wilster, Halle Netz (CID ohne CMap), Kaltenkirchen, Passau, Flensburg, Bochum, NHF, Lingen, ENERVIE, TauberEnergie, Duelmen, Herzo (blockiert), SachsenNetze HS.HD-Rester? nein: SachsenNetze ist in Gruppe 3 gefuellt. 7 Preisblaetter ohne HLZF-Tabelle benoetigen keine Werte.
+Verbleiben in der Browser-Liste (bewusst nicht gefuellt, nichts geraten): Kulmbach (ADBE-FillSign-Formularfelder ohne Koordinaten), Outokumpu/Nirosta (3 von 4 Ebenenbloecken lesbar, Zuordnung unsicher), GGEW, Baden-Baden, Albstadtwerke, Wilster, Halle Netz (CID ohne CMap), Kaltenkirchen, Passau, Flensburg, Bochum, NHF, Lingen, ENERVIE, TauberEnergie, Duelmen, Herzo (blockiert). 7 Preisblaetter ohne HLZF-Tabelle benoetigen keine Werte; SachsenNetze HS.HD wurde bereits in Gruppe 3 gefuellt.
 
 Stand nach Gruppe 4: 181/400 der Arbeitsliste mit Zeitwerten (vorher 171).
