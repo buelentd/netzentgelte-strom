@@ -60,6 +60,11 @@ def chemie_aus_text(titel: str, kopf: str) -> str:
     return ""
 
 
+# Dauerlauf: weitere Größen und Bauformen, damit jede Runde neue Abfragen nutzt (Rotation über --start)
+ABFRAGEN_WEITER = ([f"{form} {k} kWh Preis kaufen netto" for k in (50, 75, 125, 150, 200, 225, 250, 261, 300, 372, 400, 500)
+                    for form in ("Gewerbespeicher", "Batteriespeicher Container", "Industriespeicher Schrank", "C&I Speicher Outdoor")]
+                   + [f"{h} Speicher {k} kWh netto Preis" for h in HERSTELLER[:10] for k in (250, 300)])
+ABFRAGEN_ALLE = ABFRAGEN + ABFRAGEN_WEITER
 LINK_KAP = re.compile(r"\d{2,4}[-_ ,.]?\d*\s*[-_ ]?kwh", re.I)
 EURO = re.compile(r"(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d{4,6}(?:,\d{1,2})?)\s*(?:€|eur\b)", re.I)
 KAPAZ = re.compile(r"(\d{2,4}(?:[.,]\d{1,2})?)\s*kwh", re.I)
@@ -225,4 +230,7 @@ if __name__ == "__main__":
         lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), schluessel, max_abfragen=len(ABFRAGEN_CHEMIE), max_seiten=200,
              kategorien=[], abfragen=ABFRAGEN_CHEMIE)
     else:
-        lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), schluessel)
+        start = int(sys.argv[sys.argv.index("--start") + 1]) if "--start" in sys.argv else 0
+        n = len(ABFRAGEN_ALLE)
+        lauf(Path("ergebnis/speicherpreise_produktfunde.csv"), schluessel, max_abfragen=33, max_seiten=250,
+             abfragen=[ABFRAGEN_ALLE[(start + i) % n] for i in range(33)])
