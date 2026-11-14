@@ -17,6 +17,7 @@ Prinzip:
 from __future__ import annotations
 
 import re
+import unicodedata
 from urllib.parse import unquote
 import shutil
 import subprocess
@@ -708,8 +709,8 @@ def artikel_lesen(zeilen: list[str]) -> tuple[dict, list]:
 
 # ---------------------------------------------------------------- SLP
 
-SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungsmessung|lastgang)|standardlastprofil|\bslp\b|"
-                       r"ohne\s+viertelstunden|entnahme\s+mit\s+lastprofil|"
+SLP_START = re.compile(r"ohne\s+(?:\S{1,20}?[\s-])?(?:leistungs?mes+ung|lastgang)|standardlastprofil|\bslp\b|"
+                       r"ohne\s+viertelstunden|entnahme\s+mit\s+lastprofil|verwendung\s+von\s+lastprofilen|"
                        r"entnahme\s+von\s+bis\s+(?:zu\s+)?100\.000\s*kwh", re.I)
 SLP_STOP = re.compile(r"mit\s+(?:registrierender\s+)?leistungsmessung|\bmsb\b|jahresleistungspreis|jahresbenutzungsdauer|"
                       r"monatsleistungspreis|blindarbeit|blindstrom|messstellen|messeinrichtung|z[äa]hlerart|konzessionsabgabe|einspeis|"
@@ -758,6 +759,9 @@ def _slp_kopf(zeilen, von, bis):
             wl = [(m.start() + len(m.group()) / 2, "GP", None) for m in re.finditer(r"grund-?\s*preis", z, re.I)]
             wl += [(m.start() + len(m.group()) / 2, "AP", None) for m in re.finditer(r"arbeits-?\s*preis", z, re.I)]
             if len(wl) >= 2:
+                unten = " ".join(zeilen[i + 1:i + 4])
+                if not ZAHL.search(unten) and re.search(r"€|eur", unten, re.I) and re.search(r"\bct\b|cent", unten, re.I):
+                    wl = [(p_, a_, 1.0) for p_, a_, _ in wl]   # Einheiten untereinander ("€" / "a" und "ct" / "kWh")
                 einh = wl
         if len(einh) >= 2:
             beste = sorted(einh)
@@ -765,7 +769,8 @@ def _slp_kopf(zeilen, von, bis):
             einzel.extend(einh)
     # Spalte "pauschale Reduktion" ist kein Preis: deren Einheit entfernen, fehlende aus anderen Kopfzeilen ergänzen
     reduktion = [m.start() + len(m.group()) / 2 for i in range(von, bis)
-                 for m in re.finditer(r"reduktion|pauschale", zeilen[i], re.I) if not ZAHL.search(zeilen[i])]
+                 for m in re.finditer(r"reduktion|pauschale\b", zeilen[i], re.I)
+                 if not ZAHL.search(zeilen[i]) and len(zeilen[i].strip()) < 60]   # kein Fließtext ("pauschalen Netzentgelt")
     if reduktion and beste:
         beste = [e for e in beste if all(abs(e[0] - r) > 10 for r in reduktion)]
         for e in einzel:
@@ -788,7 +793,9 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
     werte = {"AP": [], "GP": []}
     zeilen_label = {"AP": [], "GP": []}
     im, start, ausgeschlossen = False, 0, False
+    zeilen = [unicodedata.normalize("NFKC", z) for z in zeilen]    # kursive Mathe-Zeichen ("𝒄𝒕", "𝒌𝑾𝒉") -> ct, kWh
     msb_sperre = False                     # nach einer Messstellenbetrieb-Tabelle bis zur nächsten Netzentgelt-Überschrift
+    msb_kapitel = None                     # Kapitelnummer der Messstellenbetrieb-Überschrift ("1.2" -> "1")
     kopf_ausschluss = False                # Ausschluss kam von einem eingerückten Spaltenkopf
     einheit_offen = None                   # Einheit in eigener Zeile ("in ct/kWh") für den Wert darunter
     for i, z in enumerate(zeilen):
@@ -806,7 +813,14 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                 and re.search(r"messstellen|messeinrichtung|z[äa]hlerart|messentgelt|messung\s+und\s+abrechnung", zl, re.I)
                 and not re.search(r"netznutzung\s+und\s+messstellen", zl, re.I)):   # Seitenkopf beider Preisblätter
             msb_sperre, im = True, False   # Überschrift einer Messstellenbetrieb-Tabelle
+            m_nr = re.match(r"\s*(\d+)\.", zl)
+            msb_kapitel = m_nr.group(1) if m_nr else None
             continue
+        if msb_sperre and msb_kapitel and SLP_START.search(zl) and not ZAHL.search(z) and not re.search(
+                r"messstellen|messeinrichtung|z[äa]hler|messentgelt|msb\b", zl, re.I):
+            m_nr = re.match(r"\s*(\d+)\.", zl)
+            if m_nr and m_nr.group(1) != msb_kapitel:
+                msb_sperre = False             # neues Kapitel "2. Preise für Kunden ohne Leistungsmessung"
         zahlen = list(ZAHL.finditer(ohne_spannung(z)))   # "0,4 kV" ist kein Preis
         fliesstext = zl[:1].islower()      # umgebrochener Satz, keine Überschrift
         if FIKTIV.search(zl) and not zahlen:
@@ -831,6 +845,11 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
             # nur kurze Überschriften schließen aus, nicht Fließtext ("… pauschalierten Netzentgelt …")
             # Spaltenköpfe in der Überschrift ("… ohne Leistungsmessung | Niedriglasttarif | Hochlasttarif") zählen mit
             im, start, kopf_ausschluss = True, i, False
+            for k in (i - 2, i - 1):           # Kopf "Grundpreis   Arbeitspreis" steht über der Zeile "ohne Leistungsmessung"
+                if k >= 0 and not ZAHL.search(zeilen[k]) and re.search(r"grund-?\s*preis", zeilen[k], re.I) \
+                        and re.search(r"arbeits-?\s*preis", zeilen[k], re.I):
+                    start = k
+                    break
             spalten = " ".join(re.split(r"\s{3,}", zl)[1:])
             # Überschrift (kein Satz) schließt aus: "Entgelte für unterbrechbare und steuerbare Entnahmestellen ohne …"
             lange_ueberschrift = 70 <= len(kurz) < 130 and not kurz.rstrip().endswith((".", ","))
@@ -903,9 +922,17 @@ def slp_lesen(zeilen: list[str], erg: Ergebnis):
                 worte += [(w.end(), "AP") for w in re.finditer(r"arbeits-?\s*preis", davor, re.I)]
                 if worte:
                     a = max(worte)[1]
+                    lab_vorn = z[:m.start()]
+                    if a == "AP" and re.match(r"\s*(?:ct|cent)\.?(?!\s*/\s*(?!kwh))", danach, re.I) and not _slp_einheit(danach):
+                        art = ("AP", 1.0)          # "Arbeitspreis je kWh   8,85 Ct."
+                    elif (a == "GP" and re.match(r"\s*(?:€|eur(?:o)?)\s*$", danach.strip()[:8], re.I)
+                          and not re.search(r"tag|monat|zähl|zaehl", lab_vorn, re.I)):
+                        art = ("GP", 1.0)          # "Grundpreis per anno   108,00 €"
                     einheit_davor = _slp_einheit(davor)
                     if einheit_davor and einheit_davor[0] == a:
                         art = einheit_davor
+                    elif art is not None:
+                        pass
                     else:
                         if kopf is None:
                             kopf = _slp_kopf(zeilen, start, i)
