@@ -56,6 +56,10 @@ ABFRAGEN = [
 # Dauerlauf: je Branche andere Formulierungen, damit jede Runde neue Seiten findet (Aufschlag/Marge in Gewerbeangeboten)
 BRANCHEN = ["Bäckerei", "Supermarkt", "Imbiss", "Systemgastronomie", "Handwerk", "Büro", "Hotel", "Metzgerei", "Tankstelle", "Autohaus",
             "Fitnessstudio", "Arztpraxis", "Kühlhaus", "Logistik", "Landwirtschaft", "Gärtnerei"]
+ABFRAGEN += ["Bundesnetzagentur Monitoringbericht 2025 Gewerbekunden Neukunden Energiebeschaffung Vertrieb ct/kWh",
+             "Monitoringbericht Elektrizitätsmarkt Gewerbekunden Preisbestandteile Energiebeschaffung Vertrieb Marge ct/kWh Vertragsart",
+             "Bundesnetzagentur Bundeskartellamt Monitoringbericht Strom Nichthaushaltskunden Vertriebskosten Marge",
+             "BDEW Strompreisanalyse Gewerbe Industrie Beschaffung Vertrieb ct/kWh Neuabschluss"]
 ABFRAGEN += ["Preisblatt Übergangsversorgung Strom RLM Dienstleistungsentgelt Aufschlag ct/kWh 2026",
              "Ersatzversorgung Strom Preisblatt Gewerbe RLM Aufschlag auf Beschaffungskosten ct/kWh",
              "Grundversorgung Gewerbe Sondervertrag Preisblatt Aufschlag Spotpreis EEX ct/kWh Stadtwerke 2026",
