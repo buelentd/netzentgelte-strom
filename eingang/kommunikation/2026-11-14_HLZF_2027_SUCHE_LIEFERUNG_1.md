@@ -201,3 +201,16 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - EVDB Energieversorgung Dahlenburg-Bleckede (SNB932388577952): 2027-PDF gefunden, Ebenen-Zuordnung im Extrakt nicht eindeutig -> Werte in bemerkung, Browser-Liste.
 - Stadtwerke Schramberg (SNB944999584793): 2027-PDF auf Veroeffentlichungsseite gelistet, URL nicht ermittelbar -> Browser-Liste.
 - Glauchau (SNB963070917732), Neustrelitz (SNB914630088973), Werdau (SNB962389410347): kein 2027er HLZF-Dokument per Websuche auffindbar -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 21 (14.11.2026)
+
+Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-Liste):
+- stadtwerker Versorgungs GmbH (eh. Stadtwerke Rhede, SNB979326623005): kein 2027er HLZF-Dokument auffindbar.
+- StWL Lauf a.d. Pegnitz (SNB957209230809): Netzzugang-Seite listet HLZF nur bis 2026.
+- Stadtwerke Meiningen (SNB925883927308): kein 2027er Fund.
+- Stadtwerke Bexbach (SNB955586052717): Cookie-Consent, kein Fund.
+- Regionalwerke Wolfhager Land (SNB917014884420): kein 2027er Fund.
+- ENA Energienetze Apolda (SNB913563830420): kein 2027er Fund.
+- KEV Eisenhüttenstadt (SNB912218404412): nur HLZF-2025-PDF auf Netzzugang-Seite; URL-Varianten 2026/2027 liefern denselben 2025er Inhalt.
+- Stadtwerke Hünfeld (SNB964375043041): HLZF-2027-Download auf Netzzugang-Seite gelistet, Datei-URL nicht ermittelbar.
