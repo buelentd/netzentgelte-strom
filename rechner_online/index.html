@@ -185,6 +185,16 @@ a{color:var(--akzent)}
             <span class="klein" id="a-strom-warn" style="color:#a15c00"></span>
             <span class="klein">Ihr gesamter Arbeitspreis in ct/kWh wie auf Ihrer Rechnung: Strombeschaffung, Arbeitspreis des Netzentgelts sowie Steuern, Abgaben und Umlagen (Stromsteuer, Konzessionsabgabe, KWKG-Umlage usw.). Den Leistungspreis brauchen Sie hier nicht, er kommt aus dem Preisblatt Ihres Netzbetreibers. Vorbelegt mit der Annahme (Börse, Aufschlag, Steuern, Netz-Arbeitspreis); überschreiben Sie den Wert mit Ihrem Preis. Feld leeren stellt die Annahme wieder her.</span>
             </div>
+        <div id="ist-aufschlag-felder" style="grid-column:1/-1">
+          <b>Ihr tatsächlicher Abstand zur Börse (aus Ihrer Stromrechnung)</b>
+          <span class="klein">Optional. Aus Jahresverbrauch und Jahresrechnung rechnet der Rechner zurück, was Energie, Vertrieb und Marge Ihres Lieferanten zusammen pro kWh kosten, und stellt es dem Börsenmittel gegenüber. Das ist der Abstand zur Börse, nicht der reine Gewinnaufschlag des Lieferanten.</span>
+          <label class="titel" for="r-summe">Stromrechnung der letzten 12 Monate (€, Summe aller Rechnungen)</label>
+          <input type="number" id="r-summe" min="0" step="10" placeholder="leer = keine Rückrechnung">
+          <label class="titel" for="r-nb">Betrag ist</label>
+          <select id="r-nb"><option value="netto">netto (ohne Umsatzsteuer)</option><option value="brutto">brutto (mit 19 % Umsatzsteuer)</option></select>
+          <label class="titel" for="r-grund">Grundgebühr Ihres Lieferanten (€ pro Jahr, falls auf der Rechnung getrennt, netto)</label>
+          <input type="number" id="r-grund" min="0" step="10" placeholder="leer = 0">
+        </div>
 
         <div>
           <label class="titel" for="ebene">Anschluss</label>
@@ -715,6 +725,18 @@ function lebenAnzeige() { const e = $("leben-anzeige"); if (e) e.textContent = l
 ["a-zyklen", "a-zyklen-ges"].forEach(i => { const e = $(i); if (e) e.addEventListener("input", lebenAnzeige); });
 lebenAnzeige();
 
+// Rückrechnung aus der Stromrechnung: was bleibt nach Abzug von Netzentgelt, Messung, Konzessionsabgabe, Umlagen und Stromsteuer für Energie, Vertrieb und Marge?
+// posten: Beträge in €/Jahr (netto), null = nicht erfasst. Ergebnis ct/kWh netto; der Abstand zur Börse ist KEIN reiner Gewinnaufschlag.
+function istAufschlagBerechnen({ summe, brutto, posten, grundLiefer, kwh, boerseMittel }) {
+  if (!(summe > 0) || !(kwh > 0)) return null;
+  const fehlt = posten.filter(p => p.betrag == null && p.pflicht).map(p => p.name);
+  if (fehlt.length) return { fehlt };
+  const netto = brutto ? summe / 1.19 : summe;
+  const abzug = posten.reduce((a, p) => a + (p.betrag || 0), 0) + (grundLiefer || 0);
+  const rest = netto - abzug, ct = rest / kwh * 100;
+  return { netto, abzug, rest, ct, boerseMittel, abstand: ct - boerseMittel };
+}
+
 // Block "Ihr Strompreis": nur belegte Werte (grün, Preisblatt oder Gesetz), sonst leer; Rechenweg aufklappbar und als Mouseover
 function strompreisBlock(nb, slp, kwh, rl) {
   const plz = $("plz").value.trim(), g = (D.gem || {})[plz];
@@ -755,6 +777,19 @@ function strompreisBlock(nb, slp, kwh, rl) {
   const apRows = zeilen.filter(z => z[1] != null && !/Leistungspreis|Grundpreis|Messentgelt/.test(z[0]));
   const apGesamt = apRows.reduce((a, z) => a + z[1], 0) / kwh * 100;
   const af = $("a-strom"); if (af && !af.dataset.manuell) af.value = String(Math.round(apGesamt * 10) / 10);      // automatisch vorbelegt
+  // Rückrechnung aus der Rechnung (optional): ohne Eingabe bleibt der Block leer
+  const istZ = n => zeilen.find(z => z[0] === n);
+  const posten = [["Netzentgelt Leistungspreis", true], ["Netzentgelt Arbeitspreis", true], ["Netzentgelt Grundpreis", false], ["Messentgelt (Eintarifzähler)", false], ["Messentgelt (Leistungsmessung)", false],
+    ["Konzessionsabgabe", true], ["KWKG-Umlage", true], ["Offshore-Netzumlage", true], ["Aufschlag besondere Netznutzung", true], ["Stromsteuer", true]]
+    .map(([n, pflicht]) => { const z = istZ(n); return z ? { name: n, betrag: z[1], pflicht } : null; }).filter(Boolean);
+  const bmIst = D.boerse.length ? D.boerse.reduce((x, c) => x + c, 0) / D.boerse.length : 0;
+  const ist = istAufschlagBerechnen({ summe: num("r-summe"), brutto: $("r-nb") && $("r-nb").value === "brutto", posten, grundLiefer: num("r-grund"), kwh, boerseMittel: bmIst });
+  let istAufschlagHtml = "";
+  if (ist && ist.fehlt) istAufschlagHtml = `<p class="herkunft"><b>Rückrechnung nicht möglich:</b> Für ${ist.fehlt.join(", ")} fehlt ein Wert (Netzbetreiber, Gemeinde oder Leistung angeben).</p>`;
+  else if (ist) istAufschlagHtml = `<hr class="trenner"><h2>Ihr Abstand zur Börse (aus Ihrer Rechnung)</h2>
+    <p class="herkunft">Ihre Rechnung: <b>${fmt(ist.netto)} €</b> netto pro Jahr bei ${fmt(kwh)} kWh. Abgezogen: Netzentgelt, Messentgelt (soweit erfasst), Konzessionsabgabe, Umlagen, Stromsteuer${num("r-grund") ? " und Ihre Lieferanten-Grundgebühr" : ""} = ${fmt(ist.abzug)} €. Rest für Energie, Vertrieb und Marge: <b>${fmt(ist.rest)} €</b> = <b>${fmt(ist.ct, 2)} ct/kWh netto</b>.</p>
+    <p class="herkunft">Börsenmittel (Day-Ahead, letzte 365 Tage, Energy-Charts, bis ${$("boerse-stand").textContent || "heute"}): ${fmt(ist.boerseMittel, 2)} ct/kWh. <b>Abstand zur Börse: ${ist.abstand >= 0 ? "+" : "−"}${fmt(Math.abs(ist.abstand), 2)} ct/kWh.</b></p>
+    <p class="herkunft">So ist die Zahl zu lesen: Sie enthält Energie, Vertrieb, Absicherung und Marge zusammen, nicht den Gewinn allein. Der Einkaufspreis Ihres Lieferanten ist nicht öffentlich. Bei einem Festpreis hat er zu anderen Zeitpunkten eingekauft als das Börsenmittel; mit Lastgang weicht der lastgewichtete Börsenpreis vom Mittel ab. Das Messentgelt bei Leistungsmessung ist nicht erfasst und steckt im Rest. Ein negativer Wert deutet auf falsche Eingaben oder fehlende Posten hin.</p>${ist.ct < 0 ? `<p class="herkunft" style="color:#b42318"><b>Der Rest ist negativ.</b> Bitte Jahresverbrauch, Rechnungssumme und Anschluss prüfen.</p>` : ""}`;
   const netto = zeilen.reduce((a, z) => a + (z[1] || 0), 0), ust = netto * 0.19;
   const th = `<tr><th>Posten</th><th>€ pro Jahr</th><th>ct/kWh</th></tr>`;
   const tr = ([n, v, weg, gr]) => `<tr title="${weg.replace(/"/g, "&quot;")}"><td><details><summary>${n}</summary><small>${weg}</small></details></td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v) : ""}</td><td class="${gr && v != null ? "g" : ""}">${v != null ? fmt(v / kwh * 100, 2) : ""}</td></tr>`;
@@ -762,7 +797,7 @@ function strompreisBlock(nb, slp, kwh, rl) {
     <tr><td><b>Summe der ausgewiesenen Posten (netto)</b></td><td><b>${fmt(netto)}</b></td><td><b>${fmt(netto / kwh * 100, 2)}</b></td></tr>
     <tr><td title="19 % nach § 12 Abs. 1 UStG"><details><summary>Umsatzsteuer 19 %</summary><small>§ 12 Abs. 1 UStG</small></details></td><td class="g">${fmt(ust)}</td><td class="g">${fmt(ust / kwh * 100, 2)}</td></tr>
     <tr><td><b>Summe brutto (ohne leere Posten)</b></td><td><b>${fmt(netto + ust)}</b></td><td><b>${fmt((netto + ust) / kwh * 100, 2)}</b></td></tr></tbody></table></div>
-    <p class="herkunft"><b>Strompreis, gesamter Arbeitspreis: ${fmt(apGesamt, 2)} ct/kWh netto</b> (Energie, Aufschlag, Netz-Arbeitspreis, Steuern und Umlagen; ohne Leistungspreis, Grundpreis und Messentgelt, ohne Umsatzsteuer). Vergleichbar mit dem Arbeitspreis auf Ihrer Rechnung.</p>
+    <p class="herkunft"><b>Strompreis, gesamter Arbeitspreis: ${fmt(apGesamt, 2)} ct/kWh netto</b> (Energie, Aufschlag, Netz-Arbeitspreis, Steuern und Umlagen; ohne Leistungspreis, Grundpreis und Messentgelt, ohne Umsatzsteuer). Vergleichbar mit dem Arbeitspreis auf Ihrer Rechnung.</p>${istAufschlagHtml}
     <p class="herkunft">Grün: belegt (Preisblatt oder Gesetz). Ohne Farbe: Annahme oder nicht am Dokument bestätigt (Energie, Aufschlag, Messentgelt). Leer: nicht erfasst. Rechenweg: Posten aufklappen oder Maus darüber halten.</p>`;
 }
 
