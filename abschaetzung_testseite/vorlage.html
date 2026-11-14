@@ -635,6 +635,7 @@ function rechnen() {
       if ($("rueckspeisen").checked) hinweise.push({w: 0, t: "Rückspeisung: Für zwischengespeicherten und wieder eingespeisten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten (Stichtag und Bedingungen fachlich prüfen). Hier noch nicht eingerechnet."});
     }
   }
+  if (!slpFall && nb && nb.ns && LASTREIHE) html += lastgangKappungBlock(nb, kwh, kw, rlm(nb.ns, kwh, kw, nb.le));
   let atyp = {html: "", zusatz: 0, erfuellt: false};
   if (!slpFall && nb.ns) { atyp = atypisch(nb, kwh, kw, A, grundlast, laden, kappungInfo); html += atyp.html; }
   if (!slpFall && nb.ns) html = wertschoepfung(html, nb, kwh, kw, b, A, kappungInfo, atyp, tage, hinweise, {grundlast, laden});
@@ -1050,7 +1051,7 @@ $("tage").value = "6";                                   // keine Vorbelegung de
 
 
 // ---------------------------------------------------------------- Lastgang-Upload (CSV, 15 min oder 60 min), alles im Browser
-let LASTGANG = null;                     // {werktag, samstag, sonntag} in kW je Stunde (Mittel), sonst null
+let LASTGANG = null, LASTREIHE = null;                     // {werktag, samstag, sonntag} in kW je Stunde (Mittel), sonst null
 function lgZahl(t) {
   t = (t || "").trim().replace(/^"|"$/g, "").replace(/\s/g, "");
   if (!t || !/^-?[\d.,]+$/.test(t)) return null;
@@ -1110,12 +1111,12 @@ function lastgangLesen(text, einheitWahl) {
   if (!profil.samstag.some(x => x)) profil.samstag = profil.werktag.slice();
   if (!profil.sonntag.some(x => x)) profil.sonntag = profil.samstag.slice();
   const spitzentage = Math.min(365, Math.round(tage.size * faktor)), spitzenh = tage.size ? [...tage.values()].reduce((a, c) => a + c, 0) / tage.size : 1;
-  return {iv, einheit, n: p.length, von: p[0][0], bis: p[p.length - 1][0], luecken, negativ, jahr: energie * faktor, hochgerechnet: faktor !== 1,
+  return {reihe: Float32Array.from(p.map(r => r[1])), iv, einheit, n: p.length, von: p[0][0], bis: p[p.length - 1][0], luecken, negativ, jahr: energie * faktor, hochgerechnet: faktor !== 1,
           spitzeKw: spitze[1], spitzeZeit: spitze[0], stunden: energie * faktor / spitze[1], ausreisser: spitze[1] > 2 * p999 && spitze[1] > p999 + 5,
           p999, profil, spitzentage: Math.max(1, spitzentage), spitzenh: Math.max(0.25, Math.round(spitzenh * 4) / 4)};
 }
 function lastgangAnwenden(r) {
-  LASTGANG = r.profil;
+  LASTGANG = r.profil; LASTREIHE = {iv: r.iv, p: r.reihe, hochgerechnet: r.hochgerechnet};
   $("kwh").value = Math.round(r.jahr); $("kwh-sicher").checked = true;
   $("kw").value = Math.round(r.spitzeKw * 10) / 10; $("kw").dataset.manuell = "1"; $("kw-sicher").checked = true;
   $("a-spitzentage").value = r.spitzentage; $("a-spitzenh").value = r.spitzenh;
@@ -1133,7 +1134,7 @@ let lgText = null;
 function lgVerarbeiten() {
   if (lgText === null) return;
   try { lastgangAnwenden(lastgangLesen(lgText, $("lg-einheit").value)); }
-  catch (err) { LASTGANG = null; $("lg-status").innerHTML = `<b style="color:#b42318">${err.message}</b>`; $("lg-weg").hidden = true; rechnen(); }
+  catch (err) { LASTGANG = null; LASTREIHE = null; $("lg-status").innerHTML = `<b style="color:#b42318">${err.message}</b>`; $("lg-weg").hidden = true; rechnen(); }
 }
 $("lg-datei").addEventListener("change", e => {
   const f = e.target.files[0]; if (!f) return;
@@ -1142,7 +1143,52 @@ $("lg-datei").addEventListener("change", e => {
   rd.readAsText(f, "utf-8");
 });
 $("lg-einheit").addEventListener("change", lgVerarbeiten);
-$("lg-weg").addEventListener("click", () => { LASTGANG = null; lgText = null; $("lg-datei").value = ""; $("lg-status").textContent = ""; $("lg-weg").hidden = true; rechnen(); });
+$("lg-weg").addEventListener("click", () => { LASTGANG = null; LASTREIHE = null; lgText = null; $("lg-datei").value = ""; $("lg-status").textContent = ""; $("lg-weg").hidden = true; rechnen(); });
+
+// ---------------------------------------------------------------- Spitzenkappung Viertelstunde für Viertelstunde mit Ladestand
+function kappungSim(p, dt, ziel, Enutz, P, etaEin) {
+  let soc = Enutz * 0.5, spitze = 0, entl = 0, lad = 0, fehl = 0;
+  for (let i = 0; i < p.length; i++) {
+    const last = p[i]; let aus = last;
+    if (last > ziel) {
+      const d = Math.min(P, last - ziel, soc * etaEin / dt);          // entladen: Speicher gibt kWh/etaEin her, Netz bekommt etaEin
+      soc -= d * dt / etaEin; entl += d * dt; aus = last - d;
+    } else {
+      const c = Math.min(P, ziel - last, (Enutz - soc) / (dt * etaEin));   // nur laden, solange keine neue Spitze entsteht
+      soc += c * dt * etaEin; lad += c * dt; aus = last + c;
+    }
+    if (aus > spitze) spitze = aus;
+    if (aus > ziel + 0.05) fehl++;
+  }
+  return {spitze, entl, lad, fehl};
+}
+function kappungMin(p, dt, peak, Enutz, P, etaEin) {                       // niedrigste Spitze, die der Speicher ohne Lücke hält
+  let lo = Math.max(0, peak - P), hi = peak;
+  if (kappungSim(p, dt, lo, Enutz, P, etaEin).fehl === 0) return {ziel: lo, ...kappungSim(p, dt, lo, Enutz, P, etaEin)};
+  for (let k = 0; k < 24; k++) { const m = (lo + hi) / 2; if (kappungSim(p, dt, m, Enutz, P, etaEin).fehl === 0) hi = m; else lo = m; }
+  return {ziel: hi, ...kappungSim(p, dt, hi, Enutz, P, etaEin)};
+}
+function lastgangKappungBlock(nb, kwh, kw, r) {
+  if (!LASTREIHE || !nb || !nb.ns) return "";
+  const p = LASTREIHE.p, dt = LASTREIHE.iv / 60, peak = Math.max(...p), etaEin = Math.sqrt(ETA);
+  const kapEingabe = parseFloat($("speicher-kwh").value) || 0, preisEingabe = parseFloat($("speicherpreis").value) || 0;
+  const rund = v => Math.max(5, Math.round(v / 5) * 5);
+  const groessen = kapEingabe ? [kapEingabe] : [...new Set([0.1, 0.2, 0.3, 0.5].map(f => rund(peak * f * SPEICHERDAUER)))];
+  const zeilen = groessen.map(kap => {
+    const Enutz = NUTZBAR * kap, P = kap / SPEICHERDAUER, m = kappungMin(p, dt, peak, Enutz, P, etaEin);
+    const nach = rlm(nb.ns, kwh, Math.min(peak, m.ziel), nb.le), ers = r.summe - nach.summe;
+    const preis = preisEingabe || (kap <= 100 ? 450 : kap >= 500 ? 350 : 450 - (kap - 100) * 0.25), kosten = preis * kap;
+    return {kap, P, ziel: m.ziel, gek: peak - m.ziel, ers, kosten, jahre: ers > 0 ? kosten / ers : null, zyk: Enutz > 0 ? m.entl / Enutz * (LASTREIHE.hochgerechnet ? 1 : 1) : 0, verl: m.lad - m.entl, wechsel: r.unter !== nach.unter};
+  });
+  const bester = zeilen.reduce((a, z) => (z.ers > 0 && (!a || z.jahre < a.jahre) ? z : a), null);
+  let h = `<hr class="trenner"><h2>Spitzenkappung mit Ihrem Lastgang</h2><div class="tabelle"><table><thead><tr><th>Speicher</th><th>Leistung</th><th>Spitze danach</th><th>Ersparnis Netzentgelt</th><th>Kosten (Richtwert)</th><th>Amortisation (nur Netzentgelt)</th></tr></thead><tbody>`
+    + zeilen.map(z => `<tr class="${bester && z === bester ? "aktiv" : ""}"><td>${fmt(z.kap)} kWh</td><td>${fmt(z.P, 1)} kW</td><td>${fmt(peak, 1)} → ${fmt(z.ziel, 1)} kW (−${fmt(z.gek, 1)})</td><td>${fmt(z.ers)} €/Jahr${z.wechsel ? " *" : ""}</td><td>${fmt(z.kosten)} €</td><td>${z.jahre ? fmt(z.jahre, 1) + " Jahre" : "keine"}</td></tr>`).join("")
+    + `</tbody></table></div><p class="herkunft">Berechnet über alle ${fmt(p.length)} Messwerte (${LASTREIHE.iv} Minuten): Der Speicher entlädt, sobald die Last über die Zielspitze steigt, und lädt nur, solange dabei keine neue Spitze entsteht. Gesucht wird die niedrigste Spitze, die er das ganze Jahr ohne Lücke hält. Annahmen: ${fmt(NUTZBAR * 100)} % nutzbar, ${SPEICHERDAUER} h Dauer (Leistung = Kapazität ÷ ${SPEICHERDAUER}), Wirkungsgrad ${fmt(ETA * 100)} % hin und zurück, Start bei halbem Ladestand. Preis ${preisEingabe ? "Ihr Wert" : "Richtwert, nicht belegt"}. `
+    + (zeilen.some(z => z.wechsel) ? `* Der Tarif wechselt durch die niedrigere Spitze (unter/ab 2.500 h), die Ersparnis ist kleiner als Kappung × Leistungspreis. ` : "")
+    + (LASTREIHE.hochgerechnet ? `Der Lastgang deckt weniger als ein Jahr ab: Die Spitze eines ganzen Jahres kann höher liegen. ` : "")
+    + `Zyklen im Zeitraum ca. ${fmt(zeilen[zeilen.length - 1].zyk, 0)}, Ladeverluste ${fmt(zeilen[zeilen.length - 1].verl)} kWh (letzte Zeile).</p>`;
+  return h;
+}
 $("form").addEventListener("submit", e => e.preventDefault());
 $("form").addEventListener("input", e => {
   if (e.target.id === "plz") { plzVorschlagen(); nbAnzeigen(); }
