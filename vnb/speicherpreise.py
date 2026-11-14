@@ -1,0 +1,322 @@
+"""Speicherpreise im Netz sammeln: Preise in €/kWh aus Angeboten, Händlerseiten, Ratgebern und Fachmagazinen.
+
+Zweck: belegte Richtwerte für den Rechner statt eines Werts ohne Quelle. Jeder Fund trägt URL, Abrufdatum,
+Textauszug (Kontext), Preis von/bis, netto/brutto, Kapazität, Umfang (nur Hardware oder schlüsselfertig) und
+Art der Quelle. Nichts wird geschätzt: was der Text nicht sagt, bleibt leer oder "unklar".
+
+Regeln wie beim Netzentgelt-Crawler: robots.txt beachten, höchstens 1 Anfrage pro Sekunde je Domain, Timeout 30 s,
+höchstens N Seiten je Domain. Suchtreffer (Brave) werden nicht dauerhaft gespeichert, nur die daraus gelesenen
+Funde mit der Quelladresse. Die Funde sind Kandidaten ("ungeprüft"); in den Rechner geht nur, was am Original
+geprüft und als "geprüft" markiert ist.
+"""
+from __future__ import annotations
+
+import csv
+import datetime as dt
+import hashlib
+import html
+import json
+import re
+import time
+import urllib.parse
+import urllib.request
+from html.parser import HTMLParser
+from pathlib import Path
+
+from protego import Protego
+
+UA = "NetzentgelteStromBot/1.0 (+https://github.com/buelentd/netzentgelte-strom; Marktrecherche Speicherpreise)"
+SPALTEN = ["id", "abruf_datum", "url", "domain", "titel", "art_quelle", "preis_von_eur_kwh", "preis_bis_eur_kwh",
+           "netto_brutto", "kapazitaet_kwh", "umfang", "segment", "veroeffentlicht", "kontext", "status", "pruefnotiz"]
+PREIS_MIN, PREIS_MAX = 80.0, 1800.0          # €/kWh; darunter sind es Strompreise, darüber Ausreißer oder andere Größen
+
+# Abfragen für die Websuche (Brave). Bewusst viele Formulierungen: Angebote, Ratgeber, Fachpresse.
+ABFRAGEN = [
+    "Gewerbespeicher Preis pro kWh netto Angebot",
+    "Batteriespeicher Gewerbe Kosten pro kWh schlüsselfertig",
+    "Industriespeicher Preis €/kWh 2026",
+    "Stromspeicher 100 kWh Preis Gewerbe Industrie 2026",
+    "Gewerbespeicher kaufen Preis 215 kWh",
+    "Peak Shaving Batteriespeicher Kosten pro kWh",
+    "Großspeicher Preise sinken €/kWh Marktübersicht",
+    "BESS Container Preis pro kWh Gewerbe",
+    "Gewerbespeicher Wirtschaftlichkeit Investitionskosten €/kWh",
+    "Batteriespeicher Preisentwicklung Gewerbe 2026 Euro pro Kilowattstunde",
+]
+# feste Startseiten (robots.txt wird trotzdem geprüft)
+STARTSEITEN = [
+    "https://www.pv-magazine.de/marktuebersichten/grosse-batteriespeicher",
+    "https://www.pv-magazine.de/2026/03/03/aktuelle-pv-magazine-marktuebersicht-fuer-gross-und-gewerbespeicher-mit-500-eintraegen/",
+    "https://www.logicenergy.de/neuigkeiten/stromspeicher-100-kwh-preis-2026",
+    "https://www.solarserver.de/2026/04/01/gewerbespeicher-acht-haeufige-fehler-bei-der-wirtschaftlichkeitsberechnung/",
+]
+MAGAZINE = ("pv-magazine", "solarserver", "photovoltaik.eu", "energie-und-management", "pv-magazine.de", "zfk.de", "topagrar",
+            "photovoltaikbüro", "elektroniknet", "heise.de", "ingenieur.de", "energate")
+STUDIEN = ("fraunhofer", "ise.fraunhofer", "dena.de", "agora", "bsw-solar", "bdew", "eupd", "bundesnetzagentur", "iea.org")
+
+ZAHL = r"\d{1,4}(?:[.,]\d{1,2})?"
+PREIS = re.compile(
+    rf"(?P<a>{ZAHL})\s*(?:(?:–|-|—|bis|und)\s*(?P<b>{ZAHL})\s*)?(?:€|euro|eur)\s*(?:/|pro|je|per)\s*(?:kwh|kilowattstunde)", re.I)
+PREIS_VORAN = re.compile(rf"(?:€|euro|eur)\s*(?P<a>{ZAHL})\s*(?:(?:–|-|—|bis)\s*(?P<b>{ZAHL})\s*)?(?:/|pro|je|per)\s*kwh", re.I)
+KAP = re.compile(r"(\d{1,5}(?:[.,]\d+)?)\s*(?:–|-|bis)?\s*(\d{1,5}(?:[.,]\d+)?)?\s*(mwh|kwh)\b(?!\s*(?:/|pro|je))", re.I)
+HEIM = re.compile(r"heimspeicher|hausspeicher|einfamilienhaus|privathaus|balkonkraftwerk|steckdosen", re.I)
+GEWERBE = re.compile(r"gewerbe|industrie|gro(ß|ss)speicher|bess\b|container|peak.?shaving|unternehmen|betrieb", re.I)
+
+
+class _Text(HTMLParser):
+    """Sichtbarer Text einer Seite samt Titel und Veröffentlichungsdatum (meta/JSON-LD)."""
+    SKIP = {"script", "style", "noscript", "svg", "head", "nav", "footer", "form", "iframe"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.teile: list[str] = []
+        self.titel = ""
+        self.datum = ""
+        self._skip = 0
+        self._titel = False
+        self._json = False
+        self._buf: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == "title":
+            self._titel = True
+        if tag == "meta" and not self.datum:
+            n = (a.get("property") or a.get("name") or a.get("itemprop") or "").lower()
+            if n in ("article:published_time", "datepublished", "date", "dc.date", "og:updated_time", "article:modified_time"):
+                self.datum = (a.get("content") or "")[:10]
+        if tag == "script" and (a.get("type") or "").lower() == "application/ld+json":
+            self._json = True
+            self._buf = []
+        if tag in self.SKIP and tag != "head":
+            self._skip += 1
+        if tag in ("p", "br", "li", "tr", "h1", "h2", "h3", "h4", "div", "td", "th"):
+            self.teile.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self._titel = False
+        if tag == "script" and self._json:
+            self._json = False
+            m = re.search(r'"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})', "".join(self._buf))
+            if m and not self.datum:
+                self.datum = m.group(1)
+        if tag in self.SKIP and tag != "head" and self._skip:
+            self._skip -= 1
+
+    def handle_data(self, data):
+        if self._json:
+            self._buf.append(data)
+        elif self._titel:
+            self.titel += data.strip()
+        elif not self._skip:
+            self.teile.append(data)
+
+
+def seitentext(rohhtml: str) -> tuple[str, str, str]:
+    p = _Text()
+    try:
+        p.feed(rohhtml)
+    except Exception:
+        pass
+    text = re.sub(r"[ \t\xa0]+", " ", html.unescape("".join(p.teile)))
+    text = re.sub(r"\n\s*\n+", "\n", text)
+    return text.strip(), re.sub(r"\s+", " ", p.titel)[:160], p.datum
+
+
+def _zahl(s: str) -> float:
+    s = s.strip()
+    if "," in s:
+        s = s.replace(".", "").replace(",", ".")
+    elif re.fullmatch(r"\d{1,3}\.\d{3}", s):
+        s = s.replace(".", "")
+    return float(s)
+
+
+def art_der_quelle(domain: str, text: str) -> str:
+    d = domain.lower()
+    if any(k in d for k in STUDIEN):
+        return "Studie/Verband"
+    if any(k in d for k in MAGAZINE):
+        return "Fachmagazin"
+    if re.search(r"angebot|jetzt anfragen|warenkorb|in den warenkorb|zzgl\. mwst|lieferzeit|kaufen", text[:6000], re.I):
+        return "Händler/Anbieter"
+    if re.search(r"ratgeber|so viel kostet|was kostet|kosten im überblick", text[:3000], re.I):
+        return "Ratgeber"
+    return "unklar"
+
+
+def funde_aus_text(text: str, url: str, titel: str = "", veroeffentlicht: str = "", abruf: str | None = None) -> list[dict]:
+    """Alle plausiblen €/kWh-Angaben einer Seite mit Kontext. Nichts wird ergänzt, was nicht dasteht."""
+    domain = urllib.parse.urlparse(url).netloc.lower().removeprefix("www.")
+    abruf = abruf or dt.date.today().isoformat()
+    art = art_der_quelle(domain, text)
+    out, gesehen = [], set()
+    for rx in (PREIS, PREIS_VORAN):
+        for m in rx.finditer(text):
+            try:
+                a = _zahl(m.group("a"))
+                b = _zahl(m.group("b")) if m.group("b") else a
+            except ValueError:
+                continue
+            if a > b:
+                a, b = b, a
+            if not (PREIS_MIN <= a <= PREIS_MAX and PREIS_MIN <= b <= PREIS_MAX):
+                continue
+            von, bis = max(0, m.start() - 170), min(len(text), m.end() + 170)
+            ctx = re.sub(r"\s+", " ", text[von:bis]).strip()
+            nah = text[max(0, m.start() - 90):m.end() + 90].lower()
+            key = (round(a, 1), round(b, 1), ctx[:80])
+            if key in gesehen:
+                continue
+            gesehen.add(key)
+            nb = "netto" if re.search(r"netto|zzgl\.?\s*mwst|ohne\s*mwst|exkl", nah) else "brutto" if re.search(
+                r"brutto|inkl\.?\s*mwst|inkl\.?\s*ust|einschließlich\s*mwst", nah) else "unklar"
+            kap = KAP.search(nah)
+            kapkwh = ""
+            if kap:
+                v = _zahl(kap.group(1)) * (1000 if kap.group(3).lower() == "mwh" else 1)
+                kapkwh = f"{v:g}"
+            umfang = ("nur Hardware" if re.search(r"nur\s+hardware|ohne\s+(?:montage|installation|wechselrichter)|hardwarepreis|komponenten", nah)
+                      else "schlüsselfertig" if re.search(r"schl[üu]sselfertig|inkl\.?\s*(?:montage|installation|inbetriebnahme)|komplettsystem|turnkey|installiert", nah)
+                      else "unklar")
+            segment = "Heim" if HEIM.search(nah) and not GEWERBE.search(nah) else "Gewerbe/Industrie" if GEWERBE.search(nah) else "unklar"
+            fid = hashlib.sha1(f"{url}|{a}|{b}|{ctx[:60]}".encode()).hexdigest()[:12]
+            out.append({"id": fid, "abruf_datum": abruf, "url": url, "domain": domain, "titel": titel, "art_quelle": art,
+                        "preis_von_eur_kwh": f"{a:g}".replace(".", ","), "preis_bis_eur_kwh": f"{b:g}".replace(".", ","),
+                        "netto_brutto": nb, "kapazitaet_kwh": kapkwh.replace(".", ","), "umfang": umfang, "segment": segment,
+                        "veroeffentlicht": veroeffentlicht, "kontext": ctx, "status": "ungeprüft", "pruefnotiz": ""})
+    return out
+
+
+class Holer:
+    """HTTP mit robots.txt, Drosselung je Domain und Seitenlimit je Domain."""
+
+    def __init__(self, pause: float = 1.0, max_seiten: int = 12, timeout: float = 30.0, log=print, abrufen=None):
+        self.pause, self.max_seiten, self.timeout, self.log = pause, max_seiten, timeout, log
+        self._letzte: dict[str, float] = {}
+        self._anzahl: dict[str, int] = {}
+        self._robots: dict[str, Protego | None] = {}
+        self._abrufen = abrufen or self._http
+
+    def _http(self, url: str) -> tuple[int, str, str]:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
+        with urllib.request.urlopen(req, timeout=self.timeout) as r:
+            ctype = r.headers.get("Content-Type", "")
+            data = r.read(3_000_000)
+            enc = re.search(r"charset=([\w-]+)", ctype)
+            return r.status, ctype, data.decode(enc.group(1) if enc else "utf-8", errors="replace")
+
+    def _erlaubt(self, url: str) -> bool:
+        p = urllib.parse.urlparse(url)
+        basis = f"{p.scheme}://{p.netloc}"
+        if basis not in self._robots:
+            try:
+                st, _, txt = self._abrufen(basis + "/robots.txt")
+                self._robots[basis] = Protego.parse(txt) if st == 200 else None
+            except Exception:
+                self._robots[basis] = None            # keine robots.txt erreichbar: übliche Regel, Zugriff erlaubt
+        r = self._robots[basis]
+        return True if r is None else r.can_fetch(url, UA)
+
+    def holen(self, url: str) -> str | None:
+        p = urllib.parse.urlparse(url)
+        if p.scheme not in ("http", "https") or re.search(r"\.(pdf|jpe?g|png|gif|zip|xlsx?)$", p.path, re.I):
+            return None
+        if not self._erlaubt(url):
+            self.log(f"robots.txt sperrt: {url}")
+            return None
+        if self._anzahl.get(p.netloc, 0) >= self.max_seiten:
+            return None
+        warte = self.pause - (time.time() - self._letzte.get(p.netloc, 0))
+        if warte > 0:
+            time.sleep(warte)
+        self._letzte[p.netloc] = time.time()
+        self._anzahl[p.netloc] = self._anzahl.get(p.netloc, 0) + 1
+        try:
+            st, ctype, txt = self._abrufen(url)
+        except Exception as e:
+            self.log(f"Abruf fehlgeschlagen {url}: {type(e).__name__}: {str(e)[:80]}")
+            return None
+        if st != 200 or "html" not in ctype.lower():
+            return None
+        return txt
+
+
+def bestehende_laden(pfad: Path) -> dict[str, dict]:
+    if not pfad.exists():
+        return {}
+    with open(pfad, encoding="utf-8-sig", newline="") as f:
+        return {r["id"]: r for r in csv.DictReader(f, delimiter=";")}
+
+
+def speichern(pfad: Path, zeilen: dict[str, dict]):
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    with open(pfad, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=SPALTEN, delimiter=";", extrasaction="ignore")
+        w.writeheader()
+        for r in sorted(zeilen.values(), key=lambda r: (r["domain"], r["url"], r["preis_von_eur_kwh"])):
+            w.writerow(r)
+
+
+def websuche(schluessel: str, abfrage: str, abrufen=None) -> list[str]:
+    from .suche import _abrufen as brave, links
+    try:
+        return links((abrufen or brave)(schluessel, abfrage))
+    except Exception:
+        return []
+
+
+def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_gesamt: int = 150, holer: Holer | None = None,
+         suche=None, log=print) -> dict:
+    holer = holer or Holer(log=log)
+    suche = suche or (lambda q: websuche(schluessel, q) if schluessel else [])
+    vorhanden = bestehende_laden(ziel)
+    urls = list(STARTSEITEN)
+    for q in ABFRAGEN[:max_abfragen]:
+        urls += suche(q)
+        time.sleep(1.1 if schluessel else 0)
+    gesehen, neu, seiten = set(), 0, 0
+    for u in urls:
+        u = u.split("#")[0]
+        if u in gesehen:
+            continue
+        gesehen.add(u)
+        if seiten >= max_seiten_gesamt:
+            break
+        roh = holer.holen(u)
+        if roh is None:
+            continue
+        seiten += 1
+        text, titel, datum = seitentext(roh)
+        for f in funde_aus_text(text, u, titel, datum):
+            if f["id"] not in vorhanden:
+                vorhanden[f["id"]] = f
+                neu += 1
+    speichern(ziel, vorhanden)
+    log(f"Speicherpreise: {seiten} Seiten gelesen, {neu} neue Funde, {len(vorhanden)} insgesamt")
+    return {"seiten": seiten, "neu": neu, "gesamt": len(vorhanden)}
+
+
+def auswertung(funde: dict[str, dict]) -> list[dict]:
+    """Spannen nur aus geprüften Funden (netto, bekannter Umfang). Ungeprüfte erscheinen separat als Kandidaten."""
+    import statistics
+    gruppen: dict[tuple, list[float]] = {}
+    for r in funde.values():
+        if r.get("status") != "geprüft":
+            continue
+        v = (float(r["preis_von_eur_kwh"].replace(",", ".")) + float(r["preis_bis_eur_kwh"].replace(",", "."))) / 2
+        gruppen.setdefault((r["umfang"], r["netto_brutto"], r["segment"]), []).append(v)
+    return [{"umfang": k[0], "netto_brutto": k[1], "segment": k[2], "anzahl": len(v), "min": min(v), "median": statistics.median(v), "max": max(v)}
+            for k, v in sorted(gruppen.items())]
+
+
+if __name__ == "__main__":
+    import argparse
+    import os
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--ziel", default="ergebnis/speicherpreise_funde.csv")
+    ap.add_argument("--abfragen", type=int, default=10)
+    ap.add_argument("--seiten", type=int, default=150)
+    a = ap.parse_args()
+    lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)
