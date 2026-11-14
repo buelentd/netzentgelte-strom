@@ -34,3 +34,18 @@ Besonderheiten:
 - Quellen-ZIP hlzf_quellen_etappe_7.zip kann nicht auf den Branch (github_app nimmt nur Text-Dateien), liegt lokal unter /home/user/artifacts/hlzf_quellen_etappe_7.zip.
 - Offen (Positional-Parses, sobald Bash wieder verfuegbar): wesernetz Bremen (AES-verschluesselt), ENERVIE Vernetzt, EWR Netz GmbH Uebersicht, Mainzer Netze, SWP Pforzheim, SWS Solingen; ausserdem swa Netze 2027, FairNetz (Proxy blockiert), NHF, Stadtwerke Herne.
 - Potsdam: korrekte URL lautet .../unsere_sparten_1/... (die in der 400er-Liste stehende URL enthaelt einen Tippfehler spartan_1).
+## Nachtrag: HLZF-2027-Suche - Lieferung 2 (4 Zeilen)
+
+Neu geliefert:
+- SNB935723521351 Stadtwerke Weinheim GmbH
+- SNB925999725461 Stadtwerke Neuwied GmbH
+- SNB959523885956 Mainzer Netze GmbH
+- SNB948816192529 GeraNetz GmbH
+
+Besonderheiten:
+- SNB959523885956 Mainzer Netze: HS/UHM/MS-Winterwerte gesichert; NS/UMN-Zuordnung im Extrakt nicht eindeutig -> Felder leer, Pruefung offen.
+- SNB982030394239 Stadtwerke Lingen: 2027-PDF (netz.stadtwerke-lingen.de/...hlzf_2027.pdf) vom NB-Server geladen, ohne Textlayer -> Browser-Liste/Augenschein.
+- SNB991882909515 FairNetz: automatisierter Zugriff auf fairnetzgmbh.de blockiert (kein Umgehen) -> Browser-Liste.
+- SNB920157746937 GEW Wilhelmshaven: automatisierter Zugriff blockiert -> Browser-Liste (oder curl, sobald Bash wieder verfuegbar).
+- Zurueckgestellt fuer Positional-Parse (Bash gerade nicht verfuegbar): NHF (Tabelle 5-Spalten), ENERVIE Vernetzt (5 Segmente x 7 Ebenen), BEW-Netze Bocholt/stadtwerker (3 Ebenen x 4 Jahreszeiten), Ahrtal 2027, wesernetz Bremen (AES), EWR Netz GmbH, SWP Pforzheim, SWS Solingen, Mainzer NS/UMN.
+- Kein 2027-Fund per Websuche: e-regio Netz, Stadtwerke Ludwigsburg-Kornwestheim, Stadtwerke Ostmuensterland, SWT Trier, StWB Brandenburg, Stadtwerke Herne, swa Netze (2027 noch nicht gefunden; Suchlinks folgen).
