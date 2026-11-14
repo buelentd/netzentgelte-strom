@@ -232,8 +232,14 @@ a{color:var(--akzent)}
           <input type="number" id="ziel" min="0" step="1" placeholder="Vorschlag wird berechnet">
         </div>
         <div>
-          <label class="titel" for="speicherpreis">Speicherpreis (€/kWh Kapazität, installiert. Heimspeicher 2026: Gerät 270 bis 400, schlüsselfertig 500 bis 800; Gewerbe ab 25 kWh meist günstiger, ohne Quelle. Bitte Angebot einholen)</label>
-          <input type="number" id="speicherpreis" min="0" step="10" placeholder="leer = 450 (Richtwert, Angebot einholen)">
+          <label class="titel" for="speicherpreis">Speicherpreis gesamt (€/kWh Kapazität, netto, installiert; leer = Systempreis nach Größe plus Montage unten)</label>
+          <input type="number" id="speicherpreis" min="0" step="10" placeholder="leer = belegter Systempreis (ca. 280 bei 200 bis 250 kWh) plus Montage">
+          <div class="klein">Belegt (Händlerseiten, netto, 14.11.2026): Schrank oder Container mit 225 bis 244 kWh kostet 207 bis 342 €/kWh ohne Montage (SCU 207, TecMaXX 225, SCU Hybrid 332, Kehua 342). Unter 200 kWh ist der Preis nicht belegt (Rechenwert 450, Anbieterangabe).</div>
+        </div>
+        <div>
+          <label class="titel" for="speicher-montage">Montage, Netzanschluss und Inbetriebnahme (€/kWh, netto)</label>
+          <input type="number" id="speicher-montage" min="0" step="10" placeholder="leer = 0 (nicht belegt, Angebot einholen)">
+          <div class="klein">Dafür gibt es noch keinen Beleg. Ohne diesen Posten ist die Amortisation zu optimistisch.</div>
         </div>
       </div>
       </div></details>
@@ -631,7 +637,7 @@ function rechnen() {
       if (preis) {
         const kosten = preis * (kapEingabe || kapazitaet);
         html += `<p class="herkunft">Speicherkosten ca. <b>${fmt(kosten)} €</b> (${fmt(preis)} €/kWh, Platzhalter) · einfache Amortisation nur über Netzentgelt: <b>${ersparnis > 0 ? fmt(kosten / ersparnis, 1) + " Jahre" : "keine"}</b></p>`;
-      } else html += `<p class="herkunft">Speicherpreis: Die Auswertung unten rechnet mit einem Richtwert nach Größe (bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh; nicht belegt, Anbieter-Preisliste fehlt noch). Eigenen Wert in €/kWh eintragen, um damit zu rechnen.</p>`;
+      } else html += `<p class="herkunft">Speicherpreis: Die Auswertung unten rechnet mit dem Systempreis ohne Montage (ab 200 kWh 280 €/kWh, Mitte der belegten Händlerpreise 207 bis 342 netto, Stand 14.11.2026; unter 100 kWh 450, nicht belegt) plus dem Montage-Posten, falls eingetragen (sonst 0, nicht belegt). Eigenen Wert in €/kWh eintragen, um damit zu rechnen.</p>`;
       if ($("rueckspeisen").checked) hinweise.push({w: 0, t: "Rückspeisung: Für zwischengespeicherten und wieder eingespeisten Strom kann die Befreiung nach § 118 Abs. 6 EnWG gelten (Stichtag und Bedingungen fachlich prüfen). Hier noch nicht eingerechnet."});
     }
   }
@@ -833,8 +839,11 @@ function wertschoepfung(html, nb, kwh, kw, b, A, kappung, atyp, tage, hinweise, 
   const einspAuto = k => k > 0 ? (Math.min(k, 10) * 7.70 + Math.max(0, Math.min(k, 40) - 10) * 6.66 + Math.max(0, Math.min(k, 100) - 40) * 5.44 + Math.max(0, k - 100) * dvSatz) / k : 7.70;
   const einsp = $("a-einsp").value !== "" ? num("a-einsp") : einspAuto(kwp);
   const land = D.solar[nb.bl] || D.solar.Bayern;
-  // Speicherpreis: eigene Eingabe, sonst Staffel (geschätzt): bis 100 kWh 450 €/kWh, danach sinkend auf 350 €/kWh bei 500 kWh
-  const preisFuer = c => num("speicherpreis") || (c <= 100 ? 450 : Math.max(350, 450 - (c - 100) / 400 * 100));
+  // Speicherpreis: eigene Eingabe, sonst belegter Systempreis (ab 200 kWh 280, darunter nicht belegt 450) plus Montage
+  // Systempreis ohne Montage: belegt nur für 200 bis 250 kWh (Schrank/Container, netto, Stand 14.11.2026: 206,58 / 225 / 332,40 / 341,64, Mitte 280). Darunter nicht belegt (alter Richtwert 450), dazwischen linear.
+  const SYSTEMPREIS_BELEGT = 280, SYSTEMPREIS_UNBELEGT = 450;
+  const systemPreisFuer = c => c >= 200 ? SYSTEMPREIS_BELEGT : c <= 100 ? SYSTEMPREIS_UNBELEGT : SYSTEMPREIS_UNBELEGT - (c - 100) / 100 * (SYSTEMPREIS_UNBELEGT - SYSTEMPREIS_BELEGT);
+  const preisFuer = c => num("speicherpreis") || (systemPreisFuer(c) + num("speicher-montage"));
   const zuschuss = num("a-foerd") / 100, zins = num("a-zins") / 100;
   // Barwert über die Lebensdauer (Zyklen gesamt ÷ Zyklen pro Tag ÷ 365): Erträge sinken mit dem Kapazitätsabbau, Entsorgung am Ende
   const abbau = num("a-abbau") / 100, entsorgJe = num("a-entsorg");
