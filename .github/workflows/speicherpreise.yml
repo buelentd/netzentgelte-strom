@@ -34,6 +34,8 @@ jobs:
           case "$MODUS" in
             auszuege)    python -m vnb.speicherpreise --auszuege ;;
             runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
+            runde3)      python -m vnb.speicherpreise --runde 3 --abfragen "${ABFRAGEN:-12}" --seiten "${SEITEN:-120}" ;;
+            runde4)      python -m vnb.speicherpreise --runde 4 --seiten "${SEITEN:-120}" ;;
             aufschlaege) python -m vnb.aufschlaege --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-120}" ;;
             *)           python -m vnb.speicherpreise --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-150}" ;;
           esac
@@ -42,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv ergebnis/strompreis_aufschlaege_funde.csv; do
+          for f in ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv ergebnis/strompreis_aufschlaege_funde.csv ergebnis/speicherpreise_gesperrt.csv ergebnis/speicherpreise_verweise.csv; do
             [ -f "$f" ] && git add "$f"
           done
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi

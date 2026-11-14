@@ -52,6 +52,23 @@ ABFRAGEN2 = ([f"{h} Gewerbespeicher Preis pro kWh netto" for h in HERSTELLER]
                  "Stadtwerke Batteriespeicher Kosten Projekt Euro pro kWh Gewerbe", "Fraunhofer ISE Studie Batteriespeicher Gewerbe Systemkosten Euro pro kWh pdf",
                  "BSW Solar Marktdaten Batteriespeicher Preise Gewerbe", "vbw Leitfaden Stromspeicher für Unternehmen pdf", "intilion Industriespeicher Preis pro kWh",
                  "Industriespeicher 1 MWh Preis Euro pro kWh netto Container", "Gewerbespeicher 200 kWh Preis netto schlüsselfertig Angebot"])
+# Runde 3: Originale, die die Fundseiten selbst nennen (Fraunhofer ISE, vbw, pv magazine, Rödl & Partner, BSW, RWTH, intilion ...)
+ABFRAGEN3 = [
+    "Fraunhofer ISE Studie Juli 2024 Batteriespeicher Investition Speicher PV-Dach 30 kWp bis 1 MWp Euro je kWh Tabelle",
+    "Fraunhofer ISE Wirtschaftlichkeit Batteriespeicher Gewerbe Studie pdf Investitionskosten Tabelle 1",
+    "Rödl & Partner Studie Gewerbespeicher Wirtschaftlichkeit Investitionskosten",
+    "vbw Leitfaden Stromspeicher für Unternehmen September 2025 pdf",
+    "pv magazine Marktübersicht Groß- und Gewerbespeicher 2026 Durchschnittspreis Euro pro Kilowattstunde Auswertung",
+    "ISEA RWTH Aachen Battery Charts Gewerbespeicher Systempreise",
+    "intilion Industriespeicher scalestac Preis 1 MWh Euro pro kWh",
+    "BSW Solar Preisindex Batteriespeicher Gewerbe Euro pro kWh",
+    "BloombergNEF Battery Price Survey 2025 stationary storage turnkey",
+    "Batteriespeicher-Report Großspeicher Preiserhebung 2025 Euro pro kWh Quellen",
+    "Bundesnetzagentur Marktstammdatenregister Batteriespeicher Gewerbe Kosten Studie",
+    "Deutsche Energie-Agentur dena Batteriespeicher Gewerbe Kosten Studie pdf",
+]
+VERWEIS = re.compile(r"studie|leitfaden|fraunhofer|marktübersicht|marktuebersicht|bsw|vbw|rwth|isea|intilion|bnef|bloomberg|verbraucherzentrale|"
+                     r"battery.?chart|preisindex|preiserhebung|dena\b|bundesnetzagentur|r[öo]dl|pdf", re.I)
 # feste Startseiten (robots.txt wird trotzdem geprüft)
 STARTSEITEN = [
     "https://www.pv-magazine.de/marktuebersichten/grosse-batteriespeicher",
@@ -82,12 +99,18 @@ class _Text(HTMLParser):
         self.titel = ""
         self.datum = ""
         self._skip = 0
+        self.links: list[tuple[str, str]] = []
+        self._href = None
+        self._anker: list[str] = []
         self._titel = False
         self._json = False
         self._buf: list[str] = []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == "a" and a.get("href"):
+            self._href = a["href"]
+            self._anker = []
         if tag == "title":
             self._titel = True
         if tag == "meta" and not self.datum:
@@ -103,6 +126,9 @@ class _Text(HTMLParser):
             self.teile.append("\n")
 
     def handle_endtag(self, tag):
+        if tag == "a" and self._href:
+            self.links.append((self._href, re.sub(r"\s+", " ", "".join(self._anker)).strip()))
+            self._href = None
         if tag == "title":
             self._titel = False
         if tag == "script" and self._json:
@@ -114,12 +140,31 @@ class _Text(HTMLParser):
             self._skip -= 1
 
     def handle_data(self, data):
+        if self._href is not None:
+            self._anker.append(data)
         if self._json:
             self._buf.append(data)
         elif self._titel:
             self.titel += data.strip()
         elif not self._skip:
             self.teile.append(data)
+
+
+def verweise_aus_html(rohhtml: str, url: str) -> list[tuple[str, str]]:
+    """Ausgehende Links zu fremden Domains, deren Adresse oder Linktext auf Studien, Leitfäden, Marktübersichten u. ä. deutet."""
+    p = _Text()
+    try:
+        p.feed(rohhtml)
+    except Exception:
+        pass
+    eigen = urllib.parse.urlparse(url).netloc.lower().removeprefix("www.")
+    out = []
+    for href, anker in p.links:
+        ziel = urllib.parse.urljoin(url, href).split("#")[0]
+        d = urllib.parse.urlparse(ziel).netloc.lower().removeprefix("www.")
+        if d and d != eigen and ziel.startswith("http") and VERWEIS.search(ziel + " " + anker):
+            out.append((ziel, anker[:100]))
+    return out
 
 
 def seitentext(rohhtml: str) -> tuple[str, str, str]:
@@ -207,6 +252,7 @@ class Holer:
         self._anzahl: dict[str, int] = {}
         self._robots: dict[str, Protego | None] = {}
         self._abrufen = abrufen or self._http
+        self.gesperrt: dict[str, str] = {}          # url -> Grund (403, 429, robots.txt): Liste für den Abruf von Hand im Browser
 
     def _http(self, url: str) -> tuple[int, str, str]:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
@@ -228,7 +274,7 @@ class Holer:
         r = self._robots[basis]
         return True if r is None else r.can_fetch(url, UA)
 
-    def holen_pdf(self, url: str, max_seiten_pdf: int = 15, max_bytes: int = 6_000_000) -> str | None:
+    def holen_pdf(self, url: str, max_seiten_pdf: int = 40, max_bytes: int = 40_000_000) -> str | None:
         """Text einer PDF-Datei (pdfplumber). Dieselben Regeln: robots.txt, Drosselung, Seitenlimit je Domain."""
         p = urllib.parse.urlparse(url)
         if p.scheme not in ("http", "https") or not re.search(r"\.pdf$", p.path, re.I) or not self._erlaubt(url):
@@ -263,6 +309,7 @@ class Holer:
             return None
         if not self._erlaubt(url):
             self.log(f"robots.txt sperrt: {url}")
+            self.gesperrt[url] = "robots.txt"
             return None
         if self._anzahl.get(p.netloc, 0) >= self.max_seiten:
             return None
@@ -275,6 +322,9 @@ class Holer:
             st, ctype, txt = self._abrufen(url)
         except Exception as e:
             self.log(f"Abruf fehlgeschlagen {url}: {type(e).__name__}: {str(e)[:80]}")
+            m = re.search(r"HTTP Error (403|429|401)", str(e))
+            if m:
+                self.gesperrt[url] = f"HTTP {m.group(1)}"
             return None
         if st != 200 or "html" not in ctype.lower():
             return None
@@ -306,11 +356,12 @@ def websuche(schluessel: str, abfrage: str, abrufen=None) -> list[str]:
 
 
 def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_gesamt: int = 150, holer: Holer | None = None,
-         suche=None, log=print, abfragen: list[str] | None = None, startseiten: list[str] | None = None) -> dict:
+         suche=None, log=print, abfragen: list[str] | None = None, startseiten: list[str] | None = None,
+         verweise: dict | None = None, zusatz_urls: list[str] | None = None) -> dict:
     holer = holer or Holer(log=log)
     suche = suche or (lambda q: websuche(schluessel, q) if schluessel else [])
     vorhanden = bestehende_laden(ziel)
-    urls = list(STARTSEITEN if startseiten is None else startseiten)
+    urls = list(STARTSEITEN if startseiten is None else startseiten) + list(zusatz_urls or [])
     for q in (ABFRAGEN if abfragen is None else abfragen)[:max_abfragen]:
         urls += suche(q)
         time.sleep(1.1 if schluessel else 0)
@@ -332,14 +383,52 @@ def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_ge
             if roh is None:
                 continue
             text, titel, datum = seitentext(roh)
+            if verweise is not None and funde_aus_text(text, u, titel, datum):
+                for z, anker in verweise_aus_html(roh, u):
+                    verweise.setdefault(z, {"url": z, "von": u, "anker": anker, "gelesen": ""})
         seiten += 1
         for f in funde_aus_text(text, u, titel, datum):
             if f["id"] not in vorhanden:
                 vorhanden[f["id"]] = f
                 neu += 1
     speichern(ziel, vorhanden)
-    log(f"Speicherpreise: {seiten} Seiten gelesen, {neu} neue Funde, {len(vorhanden)} insgesamt")
+    gesperrte_speichern(ziel.parent / "speicherpreise_gesperrt.csv", holer)
+    log(f"Speicherpreise: {seiten} Seiten gelesen, {neu} neue Funde, {len(vorhanden)} insgesamt, {len(holer.gesperrt)} gesperrt")
     return {"seiten": seiten, "neu": neu, "gesamt": len(vorhanden)}
+
+
+def gesperrte_speichern(pfad: Path, holer: "Holer"):
+    """Gesperrte Adressen (403/429/robots.txt) in eine Liste für den Abruf von Hand im Browser; bestehende Einträge bleiben."""
+    vorhanden = {}
+    if pfad.exists():
+        with open(pfad, encoding="utf-8-sig", newline="") as f:
+            vorhanden = {r["url"]: r for r in csv.DictReader(f, delimiter=";")}
+    for u, grund in holer.gesperrt.items():
+        d = urllib.parse.urlparse(u).netloc.lower().removeprefix("www.")
+        vorhanden.setdefault(u, {"url": u, "domain": d, "grund": grund, "abruf_datum": dt.date.today().isoformat(),
+                                 "erledigt": "", "ablage": ""})
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    with open(pfad, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["url", "domain", "grund", "abruf_datum", "erledigt", "ablage"], delimiter=";")
+        w.writeheader()
+        for r in sorted(vorhanden.values(), key=lambda r: (r["domain"], r["url"])):
+            w.writerow(r)
+
+
+def verweise_laden(pfad: Path) -> dict[str, dict]:
+    if not pfad.exists():
+        return {}
+    with open(pfad, encoding="utf-8-sig", newline="") as f:
+        return {r["url"]: r for r in csv.DictReader(f, delimiter=";")}
+
+
+def verweise_speichern(pfad: Path, v: dict[str, dict]):
+    pfad.parent.mkdir(parents=True, exist_ok=True)
+    with open(pfad, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["url", "von", "anker", "gelesen"], delimiter=";", extrasaction="ignore")
+        w.writeheader()
+        for r in sorted(v.values(), key=lambda r: r["url"]):
+            w.writerow(r)
 
 
 def auswertung(funde: dict[str, dict]) -> list[dict]:
@@ -425,7 +514,19 @@ if __name__ == "__main__":
     if a.auszuege:
         auszuege(Path(a.ziel), Path("ergebnis/speicherpreise_auszuege.csv"))
     else:
-        if a.runde == 2:
+        vp = Path(a.ziel).parent / "speicherpreise_verweise.csv"
+        if a.runde == 3:
+            v = verweise_laden(vp)
+            lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN3, startseiten=[], verweise=v)
+            verweise_speichern(vp, v)
+        elif a.runde == 4:                     # Verweise der Fundseiten abarbeiten (Tiefe 1)
+            v = verweise_laden(vp)
+            offen = [u for u, r in v.items() if not r.get("gelesen")]
+            lauf(Path(a.ziel), "", 0, a.seiten, abfragen=[], startseiten=[], zusatz_urls=offen[: a.seiten])
+            for u in offen[: a.seiten]:
+                v[u]["gelesen"] = dt.date.today().isoformat()
+            verweise_speichern(vp, v)
+        elif a.runde == 2:
             lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN2, startseiten=[])
         else:
             lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)

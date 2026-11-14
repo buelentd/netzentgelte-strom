@@ -141,3 +141,29 @@ def test_runde2_listen_und_pdf(tmp_path):
     f = sp.funde_aus_text(text, "https://a.de/liste.pdf", "Preisliste", "", "2026-11-14")
     assert f and f[0]["preis_von_eur_kwh"] == "389" and f[0]["netto_brutto"] == "netto"
     assert h.holen_pdf("https://a.de/seite.html") is None
+
+
+def test_gesperrte_werden_gelistet(tmp_path):
+    def fake(url):
+        if url.endswith("/robots.txt"):
+            return 404, "", ""
+        raise RuntimeError("HTTP Error 403: Forbidden")
+    h = sp.Holer(pause=0, abrufen=fake, log=lambda *_: None)
+    assert h.holen("https://shop.de/a") is None
+    assert h.gesperrt == {"https://shop.de/a": "HTTP 403"}
+    pfad = tmp_path / "gesperrt.csv"
+    sp.gesperrte_speichern(pfad, h)
+    sp.gesperrte_speichern(pfad, h)                       # zweimal: keine Doppelten
+    zeilen = pfad.read_text(encoding="utf-8-sig").strip().splitlines()
+    assert len(zeilen) == 2 and "shop.de" in zeilen[1] and "HTTP 403" in zeilen[1]
+
+
+def test_verweise_auf_studien():
+    html = ('<p>Preise laut <a href="https://www.ise.fraunhofer.de/studie.pdf">Fraunhofer ISE Studie</a> und '
+            '<a href="/intern">Kontakt</a> und <a href="https://shop.de/x">Shop</a> und '
+            '<a href="https://vbw-bayern.de/leitfaden">vbw Leitfaden</a></p>')
+    v = sp.verweise_aus_html(html, "https://www.beispiel.de/seite")
+    urls = [u for u, _ in v]
+    assert "https://www.ise.fraunhofer.de/studie.pdf" in urls and "https://vbw-bayern.de/leitfaden" in urls
+    assert not any("intern" in u or "shop.de" in u for u in urls)
+    assert len(sp.ABFRAGEN3) >= 10
