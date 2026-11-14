@@ -230,3 +230,13 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - Stadtwerke Ulm/Neu-Ulm Netze: 2027-PDF vollstaendig lesbar; NS F+S, MS/NS nur W, MS/HS in bemerkung.
 - Stadtwerke Kaltenkirchen und Stadtwerke Norderstedt: 2027-PDFs vom NB-Server, Ebenen-/Spaltenzuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - Kein 2027er Fund (erratene URLs 404/Fehlerseite): Haltern am See, Pasewalk, Stein -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 24 (14.11.2026)
+
+- Stadtwerke Dingolfing: 2027-PDF vollstaendig lesbar; nur Winter (NS und MS/NS 11:15-11:45 + 17:00-18:30, MS 17:00-17:45 in bemerkung).
+- EHINGER ENERGIE: 2027-PDF vollstaendig lesbar; NS/MS-NS W 17:00-19:30, MS W 08:00-18:30 in bemerkung.
+- Stadtwerke Eutin: 2027-PDF vollstaendig lesbar; NS/MS-NS W 17:15-19:00, MS W 08:30-13:30 + 17:30-18:45 in bemerkung.
+- Gemeindewerke Bovenden: 2027-PDF vollstaendig lesbar; NS/MS-NS W 18:00-20:00, MS F 19:00-20:00 + W 17:45-20:15 in bemerkung.
+- Stadtwerke Bad Reichenhall: 2027-PDF vom NB-Server, Ebenen-/Fenster-Zuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Kein 2027er Fund per Websuche (2 Suchrunden): Altdorf, Kelheim, Schwarzenberg, Witzenhausen, Zittau, Cham, Plattling, ews Netz (Segeberg) -> Browser-Liste.
