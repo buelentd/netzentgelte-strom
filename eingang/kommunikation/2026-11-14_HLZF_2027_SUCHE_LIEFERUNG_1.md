@@ -271,3 +271,13 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - Stadtwerke Velten (SNB957440824454): 2027-PDF (URL-Muster 2025/2026) lesbar, zwei Tabellen MS/NS, Ebenen-Zuordnung im Extrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
 
 Bestand hlzf_2027_gelesen.csv danach: 368 + 10 = 378 Zeilen (326 mit jahr=2027); von 400 offen noch 132.
+
+## Korrektur Strukturfehler (Nachtrag, 14.11.2026)
+
+Der Kollege hat 20 unbrauchbare Zeilen in `lauf/nutzer_hinweise.csv` gemeldet, der Crawler liest diese Datei. Ursache waren Schreibfehler in den Lieferungen 10-26, KEINE Inhaltsfehler:
+
+- `ergebnis/hlzf/hlzf_2027_gelesen.csv`: 17 feldversetzte Zeilen (SNB927925826730 Pirna, SNB911602541351 Backnang, SNB975283859389 Wedel, SNB910696207785 TEN eG, SNB975061261090 Stauferwerk, SNB936461984224 Schoenebeck, SNB960060046328 Northeim, SNB913280322543 Schwedt, SNB961448362368 Metzingen, SNB912218404412 Eisenhuettenstadt, SNB924431834525 Sigmaringen, SNB944601935326 Dingolfing, SNB928479274794 Ehinger, SNB937094451244 Eutin, SNB957268511697 Bovenden, SNB934967462406 Kronshagen, SNB987569421388 Ramstein): Zeitfenster standen in den falschen Spalten (z. T. in schwelle/mind), URLs verschoben, Bemerkungen mit unquotierten Semikolons. Alle 17 Zeilen anhand der jeweiligen Lieferungsmeldungen rekonstruiert und auf exakt 17 Spalten gebracht. Zeit- und Schwellenwerte stammen unverändert aus den bereits gemeldeten Dokumentablesungen, nichts neu geschaetzt. Zusaetzlich 2 identische Dublettenzeilen entfernt (Schwedt, Kronshagen). Datei jetzt: 376 Datenzeilen, alle 17 Spalten, CSV-Roundtrip geprueft.
+- `lauf/nutzer_hinweise.csv`: 25 defekte Zeilen korrigiert. Jede URL startet jetzt mit https:// (10 reine www.-Angaben ergaenzt, u. a. Bautzen, Meissen, Schwedt, Hann. Muenden, Zirndorf, Neustrelitz), fehlende URLs aus der korrigierten gelesen-CSV nachgetragen (u. a. SNB975061261090, SNB936461984224, SNB960060046328), Fließtext aus der URL-Spalte entfernt, Zeilen mit 2 statt 5 Spalten repariert. Datei jetzt: 187 Datenzeilen, alle 5 Spalten.
+- Die genannten 4 Zeilen ohne jede URL bleiben begruendet leer (kein Fund bzw. kein auswertbares Dokument), ebenso Zerbst und Bad Endorf (blockiert, siehe Browser-Liste oben).
+
+Alle Zahlen aus den Dateien, keine Schaetzungen.
