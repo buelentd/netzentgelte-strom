@@ -43,6 +43,15 @@ ABFRAGEN = [
     "Gewerbespeicher Wirtschaftlichkeit Investitionskosten €/kWh",
     "Batteriespeicher Preisentwicklung Gewerbe 2026 Euro pro Kilowattstunde",
 ]
+HERSTELLER = ["BYD", "Sungrow", "Tesvolt", "Huawei", "Pixii", "Intilion", "SMA", "GoodWe", "Fox ESS", "Sigenergy", "Kehua", "Hithium",
+              "CATL", "Fenecon", "Senec", "E3/DC", "Kostal", "Varta", "sonnen", "Victron"]
+# Runde 2: Hersteller, Angebote, Preislisten (auch PDF), Förderung, Ausschreibungen
+ABFRAGEN2 = ([f"{h} Gewerbespeicher Preis pro kWh netto" for h in HERSTELLER]
+              + ["Gewerbespeicher Preisliste pdf netto kWh", "Gewerbespeicher Angebot pdf Euro pro kWh", "Batteriespeicher Preisliste Großhandel B2B kWh pdf",
+                 "Ausschreibung Batteriespeicher Gewerbe Zuschlag Euro pro kWh", "Förderung Batteriespeicher Unternehmen Investitionskosten Euro pro kWh Projekt",
+                 "Stadtwerke Batteriespeicher Kosten Projekt Euro pro kWh Gewerbe", "Fraunhofer ISE Studie Batteriespeicher Gewerbe Systemkosten Euro pro kWh pdf",
+                 "BSW Solar Marktdaten Batteriespeicher Preise Gewerbe", "vbw Leitfaden Stromspeicher für Unternehmen pdf", "intilion Industriespeicher Preis pro kWh",
+                 "Industriespeicher 1 MWh Preis Euro pro kWh netto Container", "Gewerbespeicher 200 kWh Preis netto schlüsselfertig Angebot"])
 # feste Startseiten (robots.txt wird trotzdem geprüft)
 STARTSEITEN = [
     "https://www.pv-magazine.de/marktuebersichten/grosse-batteriespeicher",
@@ -219,6 +228,35 @@ class Holer:
         r = self._robots[basis]
         return True if r is None else r.can_fetch(url, UA)
 
+    def holen_pdf(self, url: str, max_seiten_pdf: int = 15, max_bytes: int = 6_000_000) -> str | None:
+        """Text einer PDF-Datei (pdfplumber). Dieselben Regeln: robots.txt, Drosselung, Seitenlimit je Domain."""
+        p = urllib.parse.urlparse(url)
+        if p.scheme not in ("http", "https") or not re.search(r"\.pdf$", p.path, re.I) or not self._erlaubt(url):
+            return None
+        if self._anzahl.get(p.netloc, 0) >= self.max_seiten:
+            return None
+        warte = self.pause - (time.time() - self._letzte.get(p.netloc, 0))
+        if warte > 0:
+            time.sleep(warte)
+        self._letzte[p.netloc] = time.time()
+        self._anzahl[p.netloc] = self._anzahl.get(p.netloc, 0) + 1
+        try:
+            daten = self._bytes(url, max_bytes)
+            if not daten.startswith(b"%PDF"):
+                return None
+            import io
+            import pdfplumber
+            with pdfplumber.open(io.BytesIO(daten)) as pdf:
+                return "\n".join((pg.extract_text() or "") for pg in pdf.pages[:max_seiten_pdf])
+        except Exception as e:
+            self.log(f"PDF fehlgeschlagen {url}: {type(e).__name__}: {str(e)[:80]}")
+            return None
+
+    def _bytes(self, url: str, max_bytes: int) -> bytes:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/pdf"})
+        with urllib.request.urlopen(req, timeout=self.timeout) as r:
+            return r.read(max_bytes)
+
     def holen(self, url: str) -> str | None:
         p = urllib.parse.urlparse(url)
         if p.scheme not in ("http", "https") or re.search(r"\.(pdf|jpe?g|png|gif|zip|xlsx?)$", p.path, re.I):
@@ -268,12 +306,12 @@ def websuche(schluessel: str, abfrage: str, abrufen=None) -> list[str]:
 
 
 def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_gesamt: int = 150, holer: Holer | None = None,
-         suche=None, log=print) -> dict:
+         suche=None, log=print, abfragen: list[str] | None = None, startseiten: list[str] | None = None) -> dict:
     holer = holer or Holer(log=log)
     suche = suche or (lambda q: websuche(schluessel, q) if schluessel else [])
     vorhanden = bestehende_laden(ziel)
-    urls = list(STARTSEITEN)
-    for q in ABFRAGEN[:max_abfragen]:
+    urls = list(STARTSEITEN if startseiten is None else startseiten)
+    for q in (ABFRAGEN if abfragen is None else abfragen)[:max_abfragen]:
         urls += suche(q)
         time.sleep(1.1 if schluessel else 0)
     gesehen, neu, seiten = set(), 0, 0
@@ -284,11 +322,17 @@ def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 10, max_seiten_ge
         gesehen.add(u)
         if seiten >= max_seiten_gesamt:
             break
-        roh = holer.holen(u)
-        if roh is None:
-            continue
+        if re.search(r"\.pdf$", urllib.parse.urlparse(u).path, re.I):
+            text = holer.holen_pdf(u)
+            if not text:
+                continue
+            titel, datum = (text.strip().splitlines() or [""])[0][:160], ""
+        else:
+            roh = holer.holen(u)
+            if roh is None:
+                continue
+            text, titel, datum = seitentext(roh)
         seiten += 1
-        text, titel, datum = seitentext(roh)
         for f in funde_aus_text(text, u, titel, datum):
             if f["id"] not in vorhanden:
                 vorhanden[f["id"]] = f
@@ -376,8 +420,12 @@ if __name__ == "__main__":
     ap.add_argument("--abfragen", type=int, default=10)
     ap.add_argument("--seiten", type=int, default=150)
     ap.add_argument("--auszuege", action="store_true", help="zu den vorhandenen Funden Originalauszüge ablegen")
+    ap.add_argument("--runde", type=int, default=1, help="2 = Hersteller, Angebote, Preislisten, PDFs")
     a = ap.parse_args()
     if a.auszuege:
         auszuege(Path(a.ziel), Path("ergebnis/speicherpreise_auszuege.csv"))
     else:
-        lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)
+        if a.runde == 2:
+            lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten, abfragen=ABFRAGEN2, startseiten=[])
+        else:
+            lauf(Path(a.ziel), os.environ.get("SUCHE_SCHLUESSEL", ""), a.abfragen, a.seiten)

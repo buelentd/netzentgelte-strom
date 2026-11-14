@@ -120,3 +120,24 @@ def test_umfang_hardware_vor_komplettsystem():
     assert g[0]["umfang"] == "schlüsselfertig"
     h = sp.funde_aus_text("Hardware ab 450 €/kWh, schlüsselfertig mit Installation mehr.", "https://x.de/c", "", "", "2026-11-14")
     assert h[0]["umfang"] == "unklar"
+
+
+def test_runde2_listen_und_pdf(tmp_path):
+    assert len(sp.ABFRAGEN2) >= 30 and any("BYD" in q for q in sp.ABFRAGEN2)
+
+    class H(sp.Holer):
+        def _bytes(self, url, max_bytes):
+            import io
+            from reportlab.lib.pagesizes import A4
+            from reportlab.pdfgen import canvas
+            buf = io.BytesIO()
+            c = canvas.Canvas(buf, pagesize=A4)
+            c.drawString(60, 760, "Preisliste Gewerbespeicher 2026: Gewerbespeicher 215 kWh 389 EUR/kWh netto zzgl. MwSt, schluesselfertig")
+            c.save()
+            return buf.getvalue()
+    h = H(pause=0, abrufen=lambda u: (404, "", ""), log=lambda *_: None)
+    text = h.holen_pdf("https://a.de/liste.pdf")
+    assert text and "389" in text
+    f = sp.funde_aus_text(text, "https://a.de/liste.pdf", "Preisliste", "", "2026-11-14")
+    assert f and f[0]["preis_von_eur_kwh"] == "389" and f[0]["netto_brutto"] == "netto"
+    assert h.holen_pdf("https://a.de/seite.html") is None

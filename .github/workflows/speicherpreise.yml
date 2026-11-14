@@ -23,25 +23,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install protego
+      - run: pip install protego pdfplumber
       - name: Sammeln
         env:
           SUCHE_SCHLUESSEL: ${{ secrets.SUCHE_SCHLUESSEL }}
         run: |
           ABFRAGEN=$(sed -n 's/^ABFRAGEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
           SEITEN=$(sed -n 's/^SEITEN=\([0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
-          MODUS=$(sed -n 's/^MODUS=\([a-z]*\).*/\1/p' lauf/speicherpreise.env | head -1)
-          if [ "$MODUS" = "auszuege" ]; then
-            python -m vnb.speicherpreise --auszuege
-          else
-            python -m vnb.speicherpreise --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-150}"
-          fi
+          MODUS=$(sed -n 's/^MODUS=\([a-z0-9]*\).*/\1/p' lauf/speicherpreise.env | head -1)
+          case "$MODUS" in
+            auszuege)    python -m vnb.speicherpreise --auszuege ;;
+            runde2)      python -m vnb.speicherpreise --runde 2 --abfragen "${ABFRAGEN:-32}" --seiten "${SEITEN:-250}" ;;
+            aufschlaege) python -m vnb.aufschlaege --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-120}" ;;
+            *)           python -m vnb.speicherpreise --abfragen "${ABFRAGEN:-10}" --seiten "${SEITEN:-150}" ;;
+          esac
       - name: Committen
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv 2>/dev/null || true
+          git add ergebnis/speicherpreise_funde.csv ergebnis/speicherpreise_auszuege.csv ergebnis/strompreis_aufschlaege_funde.csv 2>/dev/null || true
           if git diff --cached --quiet; then echo "keine Änderungen"; exit 0; fi
           git commit -m "Speicherpreise: neue Funde (Lauf ${{ github.run_id }})"
           for i in 1 2 3 4; do
