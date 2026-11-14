@@ -454,7 +454,7 @@ function nbAnzeigen() {
   bereich.innerHTML = "";
   if (!/^\d{5}$/.test(plz)) { gewaehlt = null; return; }
   const liste = nbFuerPlz(plz);
-  if (!liste.length || !PLZ_MIT_PREISEN.includes(plz)) { bereich.innerHTML = '<div class="klein">Für diese Postleitzahl liegen noch keine geprüften Netzentgelte vor. Bitte eine Postleitzahl aus der Vorschlagsliste wählen.</div>'; gewaehlt = null; return; }
+  if (!liste.length || !PLZ_MIT_PREISEN.includes(plz)) { bereich.innerHTML = '<div class="klein">Für dieses Netzgebiet liegt aktuell kein verifiziertes Preisblatt des Netzbetreibers vor. Der Rechner rechnet hier nicht mit Schätzwerten oder Durchschnitten, auch die Rückrechnung aus der Stromrechnung braucht das Netzentgelt. Bitte eine Postleitzahl aus der Vorschlagsliste wählen.</div>'; gewaehlt = null; return; }
   if (!liste.some(e => e.n === gewaehlt)) gewaehlt = liste[0].n;
   if (liste.length > 1) bereich.insertAdjacentHTML("beforeend", '<div class="klein">Mehrere Netzbetreiber in dieser Postleitzahl. Ihr Netzbetreiber steht auf der Netzrechnung.</div>');
   for (const e of liste) {
