@@ -31,7 +31,13 @@ KATEGORIEN = [
 ]
 HERSTELLER = ["Pixii", "Sigenergy", "Dyness", "Hithium", "Fox ESS", "Sunwoda", "Huawei LUNA2000", "BYD", "Sungrow", "Hoymiles", "Tesvolt",
               "Fenecon", "Kehua", "Growatt", "GoodWe", "Deye", "Victron", "Kostal", "SMA", "Intilion"]
-ABFRAGEN = [f"{h} Gewerbespeicher {k} kWh kaufen Preis" for h in HERSTELLER for k in (100, 215)]
+# weitere Marken (idealo-Herstellerfilter Batteriespeicher sowie Heizungs-/Systemanbieter wie Daikin, Viessmann; Wärmespeicher bewusst nicht)
+HERSTELLER_WEITER = ["PYTES", "SofarSolar", "Felicity Solar", "SolarEdge", "Pramac", "VARTA", "G2 Energy Systems", "Daikin", "Viessmann", "Vaillant",
+                     "Stiebel Eltron", "Senec", "E3/DC", "sonnen", "Tesla Megapack", "Enphase", "Solax", "Anker Solix", "EcoFlow", "Zendure",
+                     "LG Energy Solution", "Samsung SDI", "Schneider Electric", "ABB", "Siemens", "Wärtsilä", "CATL", "EVE Energy", "Jinko ESS", "Trina Storage",
+                     "Alpha ESS", "Solarwatt", "Wattkraft", "Kyocera", "Panasonic", "Mitsubishi Electric"]
+ABFRAGEN = ([f"{h} Gewerbespeicher {k} kWh kaufen Preis" for h in HERSTELLER for k in (100, 215)]
+            + [f"{h} Gewerbespeicher Industriespeicher kWh Preis kaufen" for h in HERSTELLER_WEITER])
 LINK_KAP = re.compile(r"\d{2,4}[-_ ,.]?\d*\s*[-_ ]?kwh", re.I)
 EURO = re.compile(r"(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d{4,6}(?:,\d{1,2})?)\s*(?:€|eur\b)", re.I)
 KAPAZ = re.compile(r"(\d{2,4}(?:[.,]\d{1,2})?)\s*kwh", re.I)
@@ -155,7 +161,7 @@ def speichern(pfad: Path, z: dict[str, dict]):
             w.writerow(r)
 
 
-def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 40, max_seiten: int = 300, holer: Holer | None = None, suche=None,
+def lauf(ziel: Path, schluessel: str = "", max_abfragen: int = 90, max_seiten: int = 300, holer: Holer | None = None, suche=None,
          kategorien: list[str] | None = None, abfragen: list[str] | None = None, log=print) -> dict:
     holer = holer or Holer(log=log)
     suche = suche or (lambda q: websuche(schluessel, q) if schluessel else [])
