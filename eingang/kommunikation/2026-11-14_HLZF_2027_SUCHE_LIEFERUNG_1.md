@@ -148,3 +148,9 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Stadtwerke Geesthacht: 2027-PDF nach 2026er URL-Muster erraten und vollstaendig lesbar; NS/MS-NS nur W; MS in bemerkung.
 - Stadtwerke Radolfzell: 2027-PDF lesbar; NS nur F 12:00-13:15; Winter-Zeiten (4 Fenster) nicht eindeutig MS/MS-NS zuordenbar -> msns-Felder leer, Browser-Liste; MS-Herbst in bemerkung.
 - Kein 2027-Fund (erratene URLs 404, Websuche negativ): Stadtwerke Kempen, Netzgesellschaft Bitterfeld-Wolfen, Stadtwerke Freudenstadt -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 14 (3 Zeilen, 2026-11-14)
+
+- Stadtwerke Weissenfels Energienetze: 2027-PDF (hochlastzeitfenster_swe_2027_final.pdf) vom NB-Server lesbar; NS/MS-NS je F 13:00-14:00, S 10:00-11:15 + 15:00-16:00, W 11:00-12:45 + 17:00-18:45, H keins; MS in bemerkung; Ebenen-Zuordnung nach Layoutreihenfolge mit Vorbehalt.
+- Stadtwerke Rinteln: HLZF-2027-PDF auf Netzzugang-Seite gelistet, URL nicht ermittelbar (erratene Varianten 404) -> Browser-Liste.
+- Stadtwerke Annaberg-Buchholz (swa-b.de): 2027-PDF vorhanden, automatisierter Zugriff blockiert -> Browser-Liste.
