@@ -1,25 +1,25 @@
 # Netzentgelte Strom 2027 (SLP und RLM): Zusammenfassung
 
-Stand 13.11.2026 18:30, 831 Netzbetreiber bzw. Netzgebiete
+Stand 14.11.2026 09:35, 831 Netzbetreiber bzw. Netzgebiete
 
 ## Anzahl je Status
 
 | Status | Anzahl | Anteil |
 |---|---:|---:|
-| ok | 423 | 51% |
-| pruefen | 210 | 25% |
+| ok | 444 | 53% |
+| pruefen | 189 | 23% |
 | kein_preisblatt | 162 | 19% |
 | blockiert | 25 | 3% |
 | robots | 10 | 1% |
 | keine_website | 1 | 0% |
 
-Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
+Preisstand (nur ok): vorläufig 388, endgültig 29, unklar 27
 
 ## Spanne SLP-Arbeitspreis Niederspannung (SLP-Werte ok)
 
 - Minimum: 3,15 ct/kWh (Fürstlich Fugger von Glött´sche Elektrizitätswerk GmbH ＆ Co KG)
 - Maximum: 13,94 ct/kWh (Netzbetrieb Hirschberg GmbH ＆ Co. KG)
-- Median: 7,38 ct/kWh (n = 474)
+- Median: 7,38 ct/kWh (n = 496)
 
 ## Spanne NS-Netzentgelt RLM bei 4.000 h (RLM-Werte ok)
 
@@ -49,7 +49,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 2. SWM Infrastruktur GmbH ＆ Co. KG: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 3. Netze BW GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 4. Avacon Netz GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
-- 5. EWE NETZ GmbH: nicht gelesen (HTTP 404)
+- 5. EWE NETZ GmbH: nicht gelesen (nicht im Zwischenspeicher)
 - 6. Mitteldeutsche Netzgesellschaft Strom mbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 7. e-netz Südhessen AG: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 8. Westfalen Weser Netz GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
@@ -85,7 +85,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 39. SachsenNetze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 40. Netze Magdeburg GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 41. Energieversorgung Halle Netz GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
-- 42. SWKiel Netz GmbH: nicht gelesen (robots)
+- 42. SWKiel Netz GmbH: nicht gelesen (nicht im Zwischenspeicher)
 - 43. Mainzer Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 44. Energienetze Offenbach GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 45. Harz Energie Netz GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
@@ -95,7 +95,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 49. MVV Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 - 50. swa Netze GmbH: nicht gelesen (Jahr 2027 nicht im Dokument)
 
-## Status ok, aber Preisstand nicht endgültig (394)
+## Status ok, aber Preisstand nicht endgültig (415)
 
 - 8. Westfalen Weser Netz GmbH: vorläufig
 - 9. enercity Netz GmbH: vorläufig
@@ -103,6 +103,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 21. Bielefelder Netz GmbH: vorläufig
 - 23. Stadtwerke Bochum Netz GmbH: vorläufig
 - 24. Braunschweiger Netz GmbH: vorläufig
+- 36. LEW Verteilnetz GmbH: unklar
 - 51. Abita Energie Otterberg GmbH: vorläufig
 - 52. Ahrtal-Werke GmbH: vorläufig
 - 53. Albstadtwerke GmbH: vorläufig
@@ -143,9 +144,11 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 124. Elektrizitätswerk Oberwössen e.G.: vorläufig
 - 128. Elektrizitätswerk Stern KG Bad Endorf: vorläufig
 - 130. Elektrizitätswerk Unterwössen Döllerer＆Greimel Netz GmbH＆Co.KG: vorläufig
+- 131. Elektrizitätswerk Wennenmühle Schörger GmbH ＆ Co. KG: vorläufig
 - 132. Elektrizitätswerk Wörth a. d. Donau Rupert Heider GmbH ＆ Co. KG: vorläufig
 - 135. Elektroenergieversorgung Cottbus GmbH: vorläufig
 - 136. EMB Energieversorgung Miltenberg- Bürgstadt GmbH ＆ Co. KG: vorläufig
+- 137. ENA Energienetze Apolda GmbH: vorläufig
 - 141. Energie Waldeck-Frankenberg GmbH: vorläufig
 - 142. Energie- und Bäderbetrieb Hauenstein: vorläufig
 - 143. energie- und wassergesellschaft mbh: vorläufig
@@ -153,6 +156,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 147. Energie- und Wasserversorgung Kirchzarten GmbH: vorläufig
 - 148. Energie- und Wasserversorgung Rheine GmbH: vorläufig
 - 154. EnergieSüdwest Netz GmbH: vorläufig
+- 155. Energieversorgung Alzenau GmbH: vorläufig
 - 157. Energieversorgung Dahlenburg-Bleckede AG: vorläufig
 - 158. Energieversorgung Filstal GmbH ＆ Co. KG: vorläufig
 - 159. Energieversorgung Guben GmbH: vorläufig
@@ -168,8 +172,10 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 175. EnR Energienetze Rudolstadt GmbH: vorläufig
 - 176. ENRO Ludwigsfelde Netz GmbH: vorläufig
 - 177. ENRW Energieversorgung Rottweil GmbH ＆ Co. KG: unklar
+- 178. ENWG Energienetze Weimar GmbH ＆ Co. KG: vorläufig
 - 180. EUROGATE Technical Services GmbH: vorläufig
 - 182. EVE Netz GmbH: vorläufig
+- 183. EVG Energieversorgung Gemünden GmbH: vorläufig
 - 187. EVU Späth e.K.: vorläufig
 - 189. EW Geiger GmbH: vorläufig
 - 190. ewag kamenz Energie und Wasserversorgung Aktiengesellschaft Kamenz: vorläufig
@@ -181,9 +187,11 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 205. Gebrüder Eirich GmbH ＆ Co. KG: vorläufig
 - 206. Gebrüder Miller, Elektrizitätsversorgung GmbH ＆ Co. KG: unklar
 - 208. Gemeinde Glattbach: vorläufig
+- 211. Gemeindewerke Bayerisch Gmain: vorläufig
 - 212. Gemeindewerke Bovenden GmbH ＆ Co. KG: vorläufig
 - 214. Gemeindewerke Cadolzburg: vorläufig
 - 215. Gemeindewerke Dudenhofen: unklar
+- 222. Gemeindewerke Grefrath GmbH: vorläufig
 - 223. Gemeindewerke Großkrotzenburg GmbH: vorläufig
 - 224. Gemeindewerke Gundelfingen GmbH: vorläufig
 - 225. Gemeindewerke Halstenbek: vorläufig
@@ -213,6 +221,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 284. KBG Kraftstrom- Bezugsgenossenschaft Homberg eG: vorläufig
 - 285. Keep - Kommunale Eisenberger Energiepartner GmbH: vorläufig
 - 287. KEW Kommunale Energie- und Wasserversorgung AG: vorläufig
+- 288. KommEnergie GmbH: unklar
 - 290. Kommunale Energieversorgung GmbH Eisenhüttenstadt: vorläufig
 - 291. Kommunalunternehmen Gemeindewerke Peißenberg: vorläufig
 - 292. Kommunalunternehmen Gemeindewerke Stammbach Anstalt des öffentlichen Rechts des Marktes Stammbach: vorläufig
@@ -221,6 +230,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 298. Leitungspartner GmbH: vorläufig
 - 299. Licht- und Kraftwerke Helmbrechts GmbH: vorläufig
 - 300. Licht- und Kraftwerke Sonneberg GmbH: vorläufig
+- 301. Licht-, Kraft- und Wasserwerke Kitzingen GmbH: vorläufig
 - 302. LokalWerke GmbH: vorläufig
 - 303. LSW Netz GmbH ＆ Co. KG: vorläufig
 - 304. Mainfranken Netze GmbH: vorläufig
@@ -245,6 +255,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 341. Nordhausen Netz GmbH: vorläufig
 - 342. NordNetz GmbH: vorläufig
 - 343. Nordseeheilbad Borkum GmbH: vorläufig
+- 344. nvb Nordhorner Versorgungsbetriebe GmbH: vorläufig
 - 347. Osterholzer Stadtwerke GmbH ＆ Co. KG: vorläufig
 - 354. Queichtal Energie Offenbach Netz GmbH: vorläufig
 - 355. Raiffeisenbank Altmühl-Jura eG: vorläufig
@@ -267,10 +278,12 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 389. Stadtwerke Bad Aibling: vorläufig
 - 390. Stadtwerke Bad Bergzabern GmbH: unklar
 - 392. Stadtwerke Bad Brückenau GmbH: vorläufig
+- 393. Stadtwerke Bad Dürkheim GmbH: vorläufig
 - 396. Stadtwerke Bad Hersfeld GmbH: vorläufig
 - 398. Stadtwerke Bad Nauheim GmbH: unklar
 - 399. Stadtwerke Bad Neustadt a. d. Saale: vorläufig
 - 400. Stadtwerke Bad Pyrmont GmbH: vorläufig
+- 401. Stadtwerke Bad Reichenhall KU: vorläufig
 - 402. Stadtwerke Bad Rodach: vorläufig
 - 403. Stadtwerke Bad Säckingen GmbH: vorläufig
 - 404. Stadtwerke Bad Salzuflen GmbH: vorläufig
@@ -295,6 +308,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 437. Stadtwerke Burgdorf Netz GmbH: vorläufig
 - 439. Stadtwerke Cham GmbH: vorläufig
 - 441. Stadtwerke Coesfeld GmbH: vorläufig
+- 442. Stadtwerke Crailsheim GmbH: vorläufig
 - 446. Stadtwerke Delitzsch GmbH: vorläufig
 - 450. Stadtwerke Dingolfing GmbH: vorläufig
 - 452. Stadtwerke Ditzingen GmbH ＆ Co. KG: unklar
@@ -304,7 +318,9 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 460. Stadtwerke Eichstätt Versorgungs-GmbH: vorläufig
 - 461. Stadtwerke Eilenburg GmbH: vorläufig
 - 462. Stadtwerke Einbeck GmbH: vorläufig
+- 463. Stadtwerke Elbtal GmbH: unklar
 - 464. Stadtwerke Elm-Lappwald GmbH: vorläufig
+- 465. Stadtwerke Elmshorn: vorläufig
 - 467. Stadtwerke Emmendingen GmbH: vorläufig
 - 469. Stadtwerke Emsdetten GmbH: vorläufig
 - 472. Stadtwerke Eschwege GmbH: vorläufig
@@ -353,6 +369,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 547. Stadtwerke Lauterbach GmbH: vorläufig
 - 548. Stadtwerke Lehrte GmbH: vorläufig
 - 549. Stadtwerke Leine-Solling GmbH: vorläufig
+- 550. Stadtwerke Lemgo GmbH: vorläufig
 - 551. Stadtwerke Lindau (B) GmbH ＆ Co. KG: vorläufig
 - 552. Stadtwerke Lingen GmbH: vorläufig
 - 553. Stadtwerke Lippe-Weser Service GmbH ＆ Co. KG: vorläufig
@@ -380,6 +397,8 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 591. Stadtwerke Neuwied GmbH: vorläufig
 - 592. Stadtwerke Niesky GmbH: vorläufig
 - 593. Stadtwerke Norderney GmbH: vorläufig
+- 598. Stadtwerke Oberkirch GmbH: vorläufig
+- 600. Stadtwerke Oelsnitz/V. GmbH: vorläufig
 - 601. Stadtwerke Oerlinghausen GmbH: unklar
 - 602. Stadtwerke Olbernhau GmbH: vorläufig
 - 604. Stadtwerke Oldenburg in Holstein GmbH: vorläufig
@@ -461,8 +480,10 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 756. Stromversorgung Angermünde GmbH: vorläufig
 - 757. Stromversorgung Inzell eG: vorläufig
 - 758. Stromversorgung Neunkirchen GmbH: vorläufig
+- 759. Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG: vorläufig
 - 760. Stromversorgung Schierling eG: vorläufig
 - 761. Stromversorgung Seebruck eG: vorläufig
+- 764. strotög GmbH Strom für Töging: vorläufig
 - 767. SÜC Energie und H²O GmbH: vorläufig
 - 768. SVH Stromversorgung Haar GmbH: vorläufig
 - 769. SVI - Stromversorgung Ismaning GmbH: vorläufig
@@ -492,9 +513,9 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 825. Werraenergie GmbH: vorläufig
 - 830. YNCORIS GmbH ＆ Co. KG: vorläufig
 
-## Restfälle (408)
+## Restfälle (387)
 
-### pruefen (210)
+### pruefen (189)
 
 - 1. Stromnetz Berlin GmbH: SLP-Werte nicht gefunden
 - 4. Avacon Netz GmbH: SLP-Werte nicht gefunden
@@ -509,7 +530,6 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 33. Syna GmbH: SLP-Werte nicht gefunden
 - 34. Stuttgart Netze GmbH: SLP-Werte nicht gefunden
 - 35. wesernetz Bremen GmbH: SLP-Werte auffällig
-- 36. LEW Verteilnetz GmbH: SLP-Werte nicht gefunden
 - 39. SachsenNetze GmbH: SLP-Werte nicht gefunden
 - 42. SWKiel Netz GmbH: SLP-Werte nicht gefunden
 - 46. Thüga Energienetze GmbH: SLP-Werte nicht gefunden
@@ -520,7 +540,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 67. Blomberg Netz GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 71. Butzbacher Netzbetrieb GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 87. e.wa riss Netze GmbH: SLP-Werte nicht gefunden
-- 88. EGC Infrastruktur und Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0988, 9.8800; RLM-Werte nicht gefunden; SLP-Wer
+- 88. EGC Infrastruktur und Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0988, 9.7100, 11.7600; SLP Artikel-ID: 1-02-0-0
 - 89. EGF EnergieGesellschaft Frankenberg mbH: SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 98. Elektrizitäts-Genossenschaft Röthenbach eG: weitere Preisblätter mit abweichenden NS-Werten: https://eg-roethenbach.de/netznutzung/; RLM-Werte auffällig oder fehlend
 - 100. Elektrizitäts-Genossenschaft Tacherting-Feichten eG: SLP-Arbeitspreis 2.99 ct/kWh außerhalb 3–15; SLP-Werte auffällig
@@ -529,37 +549,30 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 118. Elektrizitätswerk Dießen Stadler GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 126. Elektrizitätswerk S c h w e i g e r  o.H.G: SLP-Werte nicht gefunden
 - 127. Elektrizitätswerk Simbach GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (7.48, 105.37, 126.44, 147.52); SLP-Werte auffällig
-- 131. Elektrizitätswerk Wennenmühle Schörger GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 133. Elektrizitätswerke Reutte GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 137. ENA Energienetze Apolda GmbH: SLP-Werte nicht gefunden
 - 138. enercity GridPartner GmbH: SLP-Werte nicht gefunden
 - 139. eneREGIO GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.eneregio.com/wp-content/uploads/2026/11/Theoretische-Netzentgelte-2027-ohne-Bundeszuschuss-zu-den-Uebertragungsnetzkosten.pdf; RLM-Werte au
 - 150. Energiegenossenschaft für Wittmund eG: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.73, 2.4); SLP-Werte auffällig
 - 152. Energienetze Berlin GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
-- 155. Energieversorgung Alzenau GmbH: SLP-Werte nicht gefunden
 - 168. Energieversorgung Südbaar GmbH ＆ Co. KG: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 170. Energieversorgung Trossingen GmbH: SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
-- 172. energis-Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (8.36, 1.53); SLP-Werte auffällig
+- 172. energis-Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (8.36, 1.53, 3.34); SLP-Werte auffällig
 - 174. ENGIE Deutschland GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
-- 178. ENWG Energienetze Weimar GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 179. Erlanger Stadtwerke AG: SLP-Werte nicht gefunden
+- 179. Erlanger Stadtwerke AG: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 181. EVB Netze GmbH: SLP-Werte nicht gefunden
-- 183. EVG Energieversorgung Gemünden GmbH: SLP-Werte nicht gefunden
 - 184. EVI Energieversorgung Hildesheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 185. EVU der Gemeinde Gochsheim: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 188. EVU Weilerbach: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 195. EZV Energie- und Service GmbH ＆ Co. KG Untermain: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 197. FASTR GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0988, 9.8800; RLM-Werte nicht gefunden; SLP-Wer
+- 197. FASTR GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis 0.10 ct/kWh außerhalb 3–15; SLP Artikel-ID: 1-02-0-002: widersprüchliche Werte 0.0988, 9.7100, 11.7600; SLP Artikel-ID: 1-02-0-0
 - 199. Fischereihafen-Betriebsgesellschaft mbH: SLP-Werte nicht gefunden
 - 201. Freiberger Stromversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 202. Freisinger Stadtwerke Versorgungs-GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.freisinger-stadtwerke.de/de/Netze/Stromnetz/Prefooter/vorlaeufiges-Preisblatt-Strom-2027-Gesamt.pdf; RLM-Werte auffällig oder fehlend
 - 207. GELSENWASSER Energienetze GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; RLM-Werte nicht gefunden; SLP-Werte auffällig
-- 211. Gemeindewerke Bayerisch Gmain: SLP-Werte nicht gefunden
 - 213. Gemeindewerke Budenheim: SLP-Werte nicht gefunden
 - 216. Gemeindewerke Ebersdorf: SLP-Werte nicht gefunden
 - 217. Gemeindewerke Enkenbach-Alsenborn - Elektrizitätswerk: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
 - 220. Gemeindewerke Garmisch-Partenkirchen, KU: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
-- 222. Gemeindewerke Grefrath GmbH: SLP-Werte nicht gefunden
 - 228. Gemeindewerke Herxheim: SLP-Werte nicht gefunden
 - 240. Gemeindewerke Nümbrecht GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 251. Gemeindewerke Wendelstein KU: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -570,32 +583,27 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 275. HEWA GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 276. IGS Netze GmbH: SLP-Werte nicht gefunden
 - 286. KEW Karwendel Energie und Wasser GmbH: SLP-Werte nicht gefunden
-- 288. KommEnergie GmbH: SLP-Werte nicht gefunden
-- 301. Licht-, Kraft- und Wasserwerke Kitzingen GmbH: SLP-Werte nicht gefunden
 - 306. Mainsite GmbH ＆ Co. KG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 310. MEGA Monheimer Elektrizitäts- und Gasversorgung GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP: mehrere Arbeitspreise (10.58, 0.029); RLM-W
 - 315. MVE eurokom Gesellschaft für Energie- und Kommunikationsleistungen mbH: SLP-Werte nicht gefunden
 - 324. Netzgesellschaft Eisenberg mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 332. netzplus GmbH ＆ Co. KG: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
-- 333. Netzwerke Merzig GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.69, 2.25); SLP-Werte auffällig
+- 333. Netzwerke Merzig GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.69, 2.25, 2.68); SLP-Werte auffällig
 - 334. Netzwerke Saarlouis GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (7.21, 1.76); SLP-Werte auffällig
 - 338. NHF Netzgesellschaft Heilbronn-Franken mbH: SLP-Werte nicht gefunden
 - 339. NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 344. nvb Nordhorner Versorgungsbetriebe GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 345. Oberhausener Netzgesellschaft mbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 351. ovag Netz GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 356. REDINET Burgenland GmbH: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (85.0, 43.32, 20.28, 14.52); SLP-Werte auffällig
 - 361. Remstalwerk Netzgesellschaft GmbH: SLP-Werte nicht gefunden
 - 364. Rothmoser GmbH ＆ Co. KG: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.42, 1.28); SLP-Werte auffällig
 - 370. Sömmerdaer Energieversorgung GmbH: SLP-Werte nicht gefunden
-- 371. SSW Netz GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.94, 0.0, 2.78); SLP-Werte auffällig
+- 371. SSW Netz GmbH: SLP-Werte nicht gefunden
 - 380. Stadtwerke Altensteig: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 381. Stadtwerke Amberg Versorgungs GmbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 383. Stadtwerke Annaberg-Buchholz Energie AG: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 386. Stadtwerke Arnstadt Netz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 393. Stadtwerke Bad Dürkheim GmbH: SLP-Werte nicht gefunden
 - 397. Stadtwerke Bad Kissingen GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
-- 401. Stadtwerke Bad Reichenhall KU: SLP-Werte nicht gefunden
 - 412. Stadtwerke Baden-Baden: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 60.0000, 0.1644; RLM-Werte nicht gefunden
 - 415. Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH: SLP-Arbeitspreis fehlt; SLP-Werte auffällig
 - 417. Stadtwerke Bayreuth Energie und Wasser GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
@@ -603,14 +611,11 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 430. Stadtwerke Bretten GmbH: SLP-Werte nicht gefunden
 - 432. Stadtwerke Brunsbüttel GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 435. Stadtwerke Bühl GmbH: NS Artikel-ID: 1-01-4-001: kein Wert; NS Artikel-ID: 1-01-5-001: kein Wert; NS Artikel-ID: 1-01-6-001: kein Wert; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (9.0, 3.6); RLM-Werte auffällig ode
-- 442. Stadtwerke Crailsheim GmbH: SLP-Werte nicht gefunden
 - 444. Stadtwerke Deggendorf GmbH: SLP-Grundpreis fehlt; SLP-Werte auffällig
 - 447. Stadtwerke Detmold GmbH: SLP-Werte nicht gefunden
-- 449. Stadtwerke Dillingen/Saar Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.99, 1.78); SLP-Werte auffällig
+- 449. Stadtwerke Dillingen/Saar Netzgesellschaft mbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (6.99, 1.78, 2.8); SLP-Werte auffällig
 - 457. Stadtwerke Eberbach GmbH: SLP-Werte nicht gefunden
 - 458. Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH: SLP-Werte nicht gefunden
-- 463. Stadtwerke Elbtal GmbH: SLP-Grundpreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
-- 465. Stadtwerke Elmshorn: SLP-Werte nicht gefunden
 - 468. Stadtwerke Emmerich GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (23.72, 0.065, 0.0648); SLP Artikel-ID: 1-02-0-001: widersprüchliche Werte 23.7200, 0.0650, 0.0648
 - 471. Stadtwerke Erkrath GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 474. Stadtwerke EVB Huntetal GmbH: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
@@ -630,7 +635,6 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 529. Stadtwerke Ilmenau GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 532. Stadtwerke Itzehoe GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 538. Stadtwerke Kleve GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
-- 550. Stadtwerke Lemgo GmbH: SLP-Werte nicht gefunden
 - 556. Stadtwerke Ludwigsburg - Kornwestheim GmbH: SLP-Werte nicht gefunden
 - 560. Stadtwerke Lünen GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
 - 567. Stadtwerke Menden GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stadtwerke-menden.de/_Resources/Persistent/0/e/3/8/0e381037ca7f2cd9ccc9fc86d88dd48a6d222ba4/20261014_%20NNE%20SWM%202027%20Strom_vorl%20fik
@@ -643,15 +647,13 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 586. Stadtwerke Neustadt a.d. Aisch GmbH: SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (12.01, 14.29); SLP-Werte auffällig
 - 594. Stadtwerke Norderstedt: SLP-Werte nicht gefunden
 - 597. Stadtwerke Nürtingen GmbH: SLP-Werte nicht gefunden
-- 598. Stadtwerke Oberkirch GmbH: SLP-Werte nicht gefunden
 - 599. Stadtwerke Ochtrup: SLP-Werte nicht gefunden
-- 600. Stadtwerke Oelsnitz/V. GmbH: SLP-Werte nicht gefunden
 - 603. Stadtwerke Olching Stromnetz GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 607. Stadtwerke Pappenheim GmbH: SLP-Arbeitspreis fehlt; SLP: Einheit nicht bestimmbar; SLP-Werte auffällig
 - 610. Stadtwerke Passau GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (5.27, 6.15); RLM-Werte nicht gefunden; SLP-Werte auffällig
 - 612. Stadtwerke Pfarrkirchen: SLP-Werte nicht gefunden
 - 622. Stadtwerke Ramstein-Miesenbach GmbH: mehrere Netzbetreiber mit derselben Website, Zuordnung unklar
-- 623. Stadtwerke Rastatt GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); SLP-Werte nicht gefunden; RLM-Werte auffällig oder fehlend; SLP-Werte nicht gefunden
+- 623. Stadtwerke Rastatt GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 628. Stadtwerke Rinteln GmbH: keine RLM-Werte (Jahresleistungspreissystem) gefunden; RLM-Werte nicht gefunden
 - 629. Stadtwerke Röthenbach a. d. Pegnitz GmbH: Netzbetreibername nicht im Dokument; Netzbetreibername nicht im SLP-Dokument; RLM-Werte auffällig oder fehlend; SLP-Werte auffällig
 - 630. Stadtwerke Rosenheim Netze GmbH: SLP-Werte nicht gefunden
@@ -675,7 +677,7 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 709. Stadtwerke Walldürn GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 711. Stadtwerke Waren GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 714. Stadtwerke Wedel GmbH: SLP-Werte nicht gefunden
-- 716. Stadtwerke Weinheim GmbH: SLP-Werte nicht gefunden
+- 716. Stadtwerke Weinheim GmbH: SLP-Grundpreis fehlt; SLP: mehrere Grundpreise (84.0, 10.14, 12.94, 18.54); SLP-Werte auffällig
 - 720. Stadtwerke Werdau GmbH: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
 - 721. Stadtwerke Werl GmbH: SLP-Werte nicht gefunden
 - 725. Stadtwerke Wilster: NS: mehrere Jahresleistungspreis-Tabellen mit abweichenden Werten (Netzgebiete oder Varianten?); RLM-Werte auffällig oder fehlend
@@ -688,10 +690,8 @@ Preisstand (nur ok): vorläufig 370, endgültig 29, unklar 24
 - 744. Städtische Werke Netz+Service GmbH: SLP-Werte nicht gefunden
 - 751. Stromnetz Kulmbach GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 754. Stromnetz Weilheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 759. Stromversorgung Pfaffenhofen a. d. Ilm GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 764. strotög GmbH Strom für Töging: SLP-Werte nicht gefunden
 - 765. StWB Stadtwerke Brandenburg an der Havel GmbH ＆ Co. KG: SLP-Werte nicht gefunden
-- 766. StWL Städtische Werke Lauf a.d. Pegnitz GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Staedtischen-Werke-Lauf/Netzzugang-Entgelte/StWL-Preisblatt-01.01.2027-vorlaeufig.p
+- 766. StWL Städtische Werke Lauf a.d. Pegnitz GmbH: weitere Preisblätter mit abweichenden NS-Werten: https://www.stwl-lauf.de/de/Kopfnavigation/Netze1/Das-Stromnetz-der-Stromversorgung-Neunkirchen/Netzzugang-Entgelte/SVN-Preisblatt-01.01.2027-vorlaeufi
 - 773. SWE Netz GmbH (Ettlingen): SLP-Arbeitspreis fehlt; SLP: mehrere Arbeitspreise (8.19, 3.69); SLP-Werte auffällig
 - 781. SWP Stadtwerke Pforzheim GmbH ＆ Co. KG: SLP-Werte nicht gefunden
 - 782. SWR Energie GmbH ＆ Co. KG: SLP-Arbeitspreis 2.00 ct/kWh außerhalb 3–15; SLP-Grundpreis fehlt; SLP-Werte auffällig
