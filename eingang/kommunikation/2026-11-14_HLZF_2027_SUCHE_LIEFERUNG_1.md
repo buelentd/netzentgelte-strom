@@ -59,3 +59,11 @@ Neu geliefert:
 Hinweise:
 - WSW Wuppertal (WSW-Netz-S-105-Hochlastfenster_fuer_2027.pdf), e-netze Allgaeu (ENA_Hochlastzeitfenster_2027.pdf) und Stadtwerke Leipzig (files.l.de ...HLZF...2027.pdf) stehen NICHT auf der 400er-Liste, daher keine Zeilen. Leipzig-PDF blockiert beim Proxy-Zugriff.
 - SNB-Konflikt: Die 400er-Liste weist SNB962618092306 den Stadtwerken Schwaebisch Gmuend zu. Im hlzf_2027_gelesen.csv laeuft SNB962618092306 unter SWM Infrastruktur GmbH (Zeile aus Preisblatt-Crawler, Felder leer). Bitte Zuordnung klaeren. Die Zeile bleibt unveraendert.
+## Nachtrag: HLZF-2027-Suche - Lieferung 4 (3 Zeilen)
+
+Neu geliefert (jeweils 2027-PDF vom NB-Server gefunden; Textextrakt ohne eindeutige Zellzuordnung -> Felder leer, Werte in bemerkung gesichert, Browser-Liste/Augenschein empfohlen):
+- SNB998819299022 NHF Netzgesellschaft Heilbronn-Franken mbH (Tabelle-1-Layout wie NHL)
+- SNB929168402344 SWP Stadtwerke Pforzheim GmbH ＆ Co. KG
+- SNB917625393281 Stadtwerke Passau GmbH (Uhrzeit=Endzeitstempel)
+
+Nicht gefunden/404 bzw. nicht lesbar ueber Proxy: Stadtwerke Hof (Erratum-URL 404), Stadtwerke Herne (erratumene 2027-URL 404), SWK Kaiserslautern (Persistent-Ordner-Erratum blockiert), Stadtwerke Luenen (Erratum liefert Cookie-HTML-Seite), Stadtwerke Hilden (erratumene URL liefert Cookie-Consent-Seite).
