@@ -1,19 +1,12 @@
-# Modul 3, Lieferung 2: Netzbetreiber Nr. 20 bis 41 (14.11.2026)
+# Modul 3, Lieferung 2: Nr. 20 bis 41 der Liste (14.11.2026)
 
 ## Zahlen
-- 22 Netzbetreiber bearbeitet (Zeilen 26 bis 47 in `ergebnis/modul3_manuell.csv`):
-  - 18 mit vollständigen HT/ST/NT-Zeiten, alle auf Überlappung und 24-Stunden-Summe geprüft (insgesamt 42 Zeilen geprüft, 0 Fehler)
-  - 13 mit Preisen; bei 9 fehlen eindeutige Preisspalten (leer, begründet im hinweis)
-  - 4 ohne eingetragene Zeiten, weil das Dokument selbst nicht eindeutig ist (Rostock, Herne, Main-Kinzig, Witten): Fenster im hinweis dokumentiert, Gründe: 15-Minuten-Lücken in der Fensterkette (Rostock, Main-Kinzig), nicht lesbare ST-Zelle (Herne), nicht zuordenbare Fenster (Witten). Am Bild klären.
-- Besonderheiten (jeweils im hinweis markiert):
-  - GELSENWASSER: Zeitfenster nur für Quartal 1 ausgewiesen (Q2-Q4-Zeilen leer)
-  - Villingen-Schwenningen und SÜC: Zeitfenster nur für Q2+Q3 (ungewöhnliche Quartalswahl, so im Dokument)
-  - Pforzheim, Kaiserslautern, GELSENWASSER: Spaltenzuordnung aus Tabellenlesung rekonstruiert, bitte am Bild gegenprüfen
-  - infra fürth, Ostmünsterland, Trier: Original-PDF nicht lesbar/nicht auffindbar; Werte aus 14a-Atlas (dort aus dem Preisblatt verifiziert), Original-Bildprüfung offen
+- 22 Netzbetreiber bearbeitet, Datei jetzt 47 Datenzeilen (6 Bestand + 19 aus Lieferung 1 + 22 neu):
+  - 14 mit vollständigen HT/ST/NT-Zeiten (AVU, Potsdam, Harz Energie, GELSENWASSER, NHF, EWF, Pforzheim, EWR Remscheid, Ostmünsterland, Thüga, Gütersloh, Schwerin, LokalWerke, VS) - alle auf 24 h geprüft, 0 Fehler
+  - 6 unklar mit leerer Zeit-Spalte und vollständiger Dokumentation im hinweis (Rostock: Fenster mit 30-60 min Lücken; Herne: ST-Zelle nicht lesbar; Main-Kinzig: Lücken; Witten: HT/ST/NT-Zuordnung unklar; Kaiserslautern: Quartalszuordnung unklar - Zeiten und Preise eingetragen, quartale leer)
+  - 3 ohne auswertbares Dokument (infra fürth: Preisblatt nicht auffindbar; Trier: swt.de blockiert automatisierten Zugriff; SÜC: kein auswertbares PDF)
+- Besonderheiten: Ostmünsterland und Villingen-Schwenningen weisen Zeitfenster nur für Q2/Q3 aus (nicht Q1/Q4 wie sonst üblich); GELSENWASSER nur Q1. Bitte Stichproben am Bild.
 
-## Nachtrag zu Lieferung 1
-- Keine Korrekturen.
-
-## Weiter
-- Nächste Lieferung: Nr. 42 bis 61 der Liste.
-- Danach HLZF 2027 (400er-Liste), offene HLZF (194), Netzentgelte-Lücken 2027.
+## Offen
+- Rest der Liste: Nr. 42 bis 425 (kleinere Netzbetreiber). Fortsetzung folgt in Tranchen à 20 Stück.
+- Danach laut Sammelauftrag: HLZF 2027 (400er-Liste), offene HLZF (194), Netzentgelte 2027 Lücken.
