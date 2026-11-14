@@ -1,0 +1,21 @@
+﻿nr;quelle;quelle_art;groessenklasse;eur_kwh_von;eur_kwh_bis;umfang;netto_brutto;stand;einordnung;bewertung
+1;Sunwoda Oasis Rack Pro+ / A200 / L241 (tela.at, 5 Produkte);Händler-Produktseite;60-241 kWh;181;229;Rack/System ohne Wechselrichter, ohne Montage;brutto (AT 20 %);2026-11;Preis je Produktseite gerechnet, Datenblatt gelesen;belegt, aber nur Hardware
+2;Hithium ESS Cabinet 261 kWh inkl. PCS (tela.at);Händler-Produktseite;261 kWh;184;184;inkl. PCS, ohne Montage;brutto (AT 20 %);2026-11;Produktseite;belegt
+3;Sungrow SBH 10-40 kWh (Geizhals);Preisvergleich;10-40 kWh;251;291;Hardware;netto;2026-11;Produktseite;belegt, aber klein
+4;Fox ESS GMAX 215 kWh / 100 kW (basic-solar.de);Händler (Suchtreffer);215 kWh;195;195;wohl inkl. PCS;0 % MwSt. ausgewiesen;2026-11;Seite 403, nicht am Original geprüft;unbelegt bis Browser-Abruf
+5;Pixii PowerShaper2 50 kW / 41,7 kWh nutzbar (aceflex.de);Händler-Produktseite;42 kWh nutzbar;758;758;inkl. 50 kW Wechselrichter, ohne Montage;unklar (0 % MwSt.-Hinweis);2026-11;Produktseite gelesen;belegt, Netto/Brutto offen
+6;Logic Energy: Auswertung von 74 Komplettsystemen (Stand 19.02.2025), Ø 346 €/kWh;Erhebung (über logicenergy.de);bis ~100 kWh und mehr;346;346;Komplettsysteme, Montage/Anschluss abzugrenzen;unklar;2025-02;Primärquelle ist die Erhebung selbst, noch nicht eingesehen;Original suchen
+7;sunshineenergy.de Preisindex Q3 2026: Gewerbespeicher 100-500 kWh;Anbieter-Marktindex;100-500 kWh;335;435;schlüsselfertig inkl. Leistungselektronik, ohne Netzanschluss;unklar;2026-10;"Q4 2025: 350-460; Index eines Anbieters, Methodik offen";Anbieterangabe
+8;Fraunhofer ISE: Speicher an PV-Dach, in Ratgebern zitiert (rwb-consulting);Studie (zitiert);100-200 kWh nutzbar;450;800;Investition;netto lt. Zitat;2024;Studie selbst noch nicht gelesen (Fraunhofer-PDFs vorhanden: 20 Funde);Original lesen
+9;BMWET-Statistik: Heimspeicher 2024 Ø 706 €/kWh nutzbar (oekovolt zitiert);Statistik (zitiert);Heim;706;706;installiert;netto;2024;Heimspeicher, nur Vergleichsgröße;nicht Gewerbe
+10;Großspeicher-Projekte DE (batteriespeicher-report.de): 4 Projekte ~2 h;Auswertung veröffentlichter Projektsummen;Großspeicher (MW);210;350;Projektsummen je kWh;unklar;2026-02;Projektsummen, Netzanschluss teils enthalten;Großspeicher, andere Klasse
+11;batteriegrossspeicher.de;Ratgeber (KI-Hinweis auf Seite);100-300 kWh;450;750;installiert;unklar;2026-07;u. a. 'KI generiert' lt. Seite;sekundär, schwach
+12;fiegenbaum.solutions;Ratgeber;20-500 kWh;350;600;Komplettsysteme;unklar;2025-06;"100-500 kWh: 350-450; <100 kWh: 400-600";sekundär
+13;buv-consulting.de;Ratgeber;50-200 kWh;400;500;unklar;unklar;2026-07;;sekundär
+14;eleviongreen.de;Ratgeber;bis 500 kWh;350;600;unklar;unklar;;"bis 100 kWh 400-600; bis 500 kWh 350-450";sekundär
+15;reonic.com;Planungssoftware-Ratgeber;100-500 kWh;335;700;Hardware 335-435, installiert 450-700;unklar;2026-09;nennt als Quellen Logic Energy und pv magazine;sekundär (zitiert)
+16;stromfee.me;Anbieter-Ratgeber;Gewerbe;300;800;schlüsselfertig, Kleingewerbe 600-800;unklar;2026-07;;sekundär
+17;lehr-energiesysteme.de;Installateur-Ratgeber;Gewerbe;250;600;unklar;unklar;2026-08;;sekundär
+18;cubeconcepts.de (BESS-Anbieter/Contracting);Eigenwerbung;bis 2 MWh;250;250;schlüsselfertig (Standardpaket Industrie-LFP);unklar;2026-11;"225-250 bei 2-5 MWh; Anbieter hat Eigeninteresse";Anbieterangabe
+19;contracting.green;Ratgeber;Gewerbe/Groß;300;500;komplett installiert;unklar;2026-11;Heim: 250-470 nur Gerät;sekundär
+20;sunshineenergy.de (Text);Anbieter-Ratgeber;30-100 kWh;600;900;schlüsselfertig;unklar;2026-07;;Anbieterangabe
