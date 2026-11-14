@@ -1,4 +1,4 @@
-## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
+﻿## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
 
 Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (22 Zeilen, jahr=2027, nr-Spalte fuer 400er-Liste leer, Stromnetz Berlin mit nr=1):
 - SNB979269087643 Stromnetz Berlin GmbH
@@ -76,3 +76,12 @@ Neu geliefert:
 - SNB969068596941 EWR Netz GmbH: Uebersicht 2027 gefunden, Extrakt nicht zuordenbar -> Felder leer, Browser-Liste
 
 Nicht gefunden (404/blockiert): SWO Netz (erratene URL 404), Stadtwerke Herne (erratene 2027-URL 404, Websuche ohne Herne-Fund), GEW Wilhelmshaven (Zugriff blockiert -> Browser-Liste), wesernetz Bremen/Bremerhaven (liefern Cookie-Consent-Seite statt PDF -> Browser-Liste).
+
+## Nachtrag: Lieferung 6 (2026-11-14)
+
+- SNB915638224585 SWS Netze GmbH (Stralsund): 2027-HLZF-PDF vom NB-Server vollstaendig gelesen und geliefert (NS, MS/NS, MS in Bemerkung; Uhrzeit=Intervallende; nur Werktage).
+- SNB969362778135 SWS Netze Solingen GmbH: 2027-PDF (zeitfenster-netznutzung-2027.pdf) gefunden; Textextrakt ohne eindeutige Zellen-/Ebenen-Zuordnung -> Felder leer, gesicherte Zeiten in Bemerkung, Browser-Liste. 2026er Vergleichs-PDF nicht mehr abrufbar (404).
+- SNB961745390019 Stadtwerke Frankenthal: kein 2027er HLZF-Dokument; Preisblatt 2027 geprueft (kein Paragraph-19-Abschnitt) -> negativ dokumentiert.
+- SNB953453232156 Stadtwerke Sindelfingen: kein 2027er HLZF-Dokument; Preisblatt 2027 geprueft (kein Paragraph-19-Abschnitt) -> negativ dokumentiert.
+- Konsolidierung: 16 bereits frueher dokumentierte Negativ-/Blockiert-Faelle der 400er-Liste als Zeilen mit leeren Feldern aufgenommen (wesernetz Bremen/Bremerhaven Cookie-Consent, FairNetz, SWO 404, Herne 404, GEW Wilhelmshaven blockiert, e-regio/Ludwigsburg/Ostmuensterland/SWT Trier/StWB/SVO ohne 2027-Fund, SWK Kaiserslautern/Luenen nicht abrufbar, Hilden Cookie, Hof 404).
+- Bestand hlzf_2027_gelesen.csv danach: 205 + 20 = 225 Zeilen.
