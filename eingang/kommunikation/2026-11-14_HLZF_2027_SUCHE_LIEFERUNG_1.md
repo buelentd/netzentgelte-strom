@@ -125,3 +125,10 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Stadtwerke Greven: 2027-Uebersichtsblatt gefunden, Ebenen-Zuordnung im Textextrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
 - Stadtwerke Wedel: Cookie-Consent, erratene 2027er URL-Varianten ohne Treffer -> Browser-Liste.
 - SWE Netz Ettlingen: HLZF-2027-Link auf der Netzzugang-Seite vorhanden, PDF-URL nicht ermittelbar -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 11 (4 Zeilen, 2026-11-14)
+
+- Stadtwerke Schwabach: 2027-Bekanntmachung (PDF vom 02.11.2026) vollstaendig lesbar; NS W 16:45-19:30, H 17:00-17:30; MS/NS W 16:45-19:30, H 17:00-17:15; MS W 08:00-14:15 + 17:00-17:45 in bemerkung.
+- Netzwerke Saarlouis: erratene 2027er URL 403 -> Browser-Liste.
+- Stadtwerke Tuttlingen: Cookie-Consent, kein 2027-Fund -> Browser-Liste.
+- Stadtwerke Balingen: 2027er PDF nicht auffindbar (404 auf erratene Varianten) -> Browser-Liste.
