@@ -386,3 +386,25 @@ Gefuellt (12, ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerk
 Browser-Liste mit praezisierter Bemerkung (4, Felder bewusst leer): Passau (Zeiten lesbar, Ebenen-/Saisonzuordnung nicht rekonstruierbar), Flensburg, Bochum, NHF (Fontcodierung nicht entzifferbar).
 
 Stand nach Gruppe 3: 171/400 der Arbeitsliste mit Zeitwerten (vorher 159). Von der 72er-Nacharbeitsliste verbleiben 25 Faelle; mehrere davon sind mit dem neuen Extraktor ebenfalls aussichtsreich (u.a. Hasbergen, Vilshofen, GGEW, Hassloch, Garmisch, Baden-Baden, Rheine), sie folgen in Gruppe 4.
+
+## Nacharbeit Gruppe 4 (2026-11-14): 10 weitere Netzbetreiber gefuellt
+
+Methode wie Gruppe 3 (positionsgenaue Extraktion, Kerning-Verfolgung, Zellzaehlung), Stichproben gegen die PDF-Renderer-Ausgabe bestanden (YNCORIS, Bordesholm, Garmisch, Rheine). Bereits in frueheren Lieferungen gesicherte Zeiten wurden gegen die entzifferten Tabellenzellen verifiziert.
+
+Gefuellt (ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung):
+- SNB984995121813 Hasbergen: NS W 10:45-13:45 + 17:00-20:00; Umsp H 17:00-20:00, W 16:30-19:30; MS W 07:30-10:30, 11:00-14:00, 17:30-20:30; F/S keins
+- SNB936769439815 Annaberg (swa-b.de, PDF jetzt doch ladbar): NS+Umsp nur W 17:00-19:00; MS H 10:15-12:00, W 07:45-12:00 + 16:45-19:45; Schwelle 30, 100 kW
+- SNB967967636034 Vilshofen: NS F 11:30-14:45; Umsp F 09:30-12:30; MS F 11:00-14:00; alle weiteren Zellen entfaellt
+- SNB991400668603 Hassloch: NS nur W 12:00-14:00; Umsp nur W 17:00-20:00; F/S/H keins
+- SNB926937565941 Garmisch: NS W 17:00-19:00; Umsp H 09:30-10:15 + 11:15-12:30 + 14:30-20:00, W 09:15-11:15 + 12:15-12:45 + 13:45-20:15; MS W 11:45-12:15, H 08:45-09:15 + 10:15-12:00
+- SNB932516649124 Rheine: NS W 09:00-15:00 + 16:15-19:00; Umsp W 17:15-19:00; Ebenen-Zuordnung ueber Blockreihenfolge analog Erheblichkeitsschwellen-Tabelle (in bemerkung dokumentiert); Schwelle 30, 100 kW
+- SNB948485211972 YNCORIS (Werksnetz Chemiepark Knapsack): NS F 11:00-14:00, S 06:00-15:45, H 06:30-09:30, W 07:15-10:15; MS nur H 04:00-14:00; MS/NS nicht ausgewiesen
+- SNB973519584647 Bordesholm: NS H 10:30-11:30 + 17:00-20:00, W 06:30-09:30 + 10:00-10:15 + 11:00-13:45 + 15:45-16:00; Umsp H 17:00-20:00, W 06:30-10:15 + 15:45-19:15 + 20:00-21:15 + 22:30-23:30; MS H/W in bemerkung
+- SNB928602915495 Hagenow: NS nur W 18:45-20:00; Umsp nur W 08:30-09:15 + 18:30-20:00; MS H 08:00-13:00
+- SNB945768616967 Eichsfelder Energie: NS+Umsp nur W 17:30-19:15; MS W 10:00-13:15, HS/MS W 09:00-13:30
+
+Zusaetzlich Bemerkungs-Präzisierung: SNB914411628732 BASF InfraService (2027-Zeile: Dokument ist 2026-Inhalt, Werte stehen in der 2026-Zeile, kein 2027-Dokument).
+
+Verbleiben in der Browser-Liste (bewusst nicht gefuellt, nichts geraten): Kulmbach (ADBE-FillSign-Formularfelder ohne Koordinaten), Outokumpu/Nirosta (3 von 4 Ebenenbloecken lesbar, Zuordnung unsicher), GGEW, Baden-Baden, Albstadtwerke, Wilster, Halle Netz (CID ohne CMap), Kaltenkirchen, Passau, Flensburg, Bochum, NHF, Lingen, ENERVIE, TauberEnergie, Duelmen, Herzo (blockiert), SachsenNetze HS.HD-Rester? nein: SachsenNetze ist in Gruppe 3 gefuellt. 7 Preisblaetter ohne HLZF-Tabelle benoetigen keine Werte.
+
+Stand nach Gruppe 4: 181/400 der Arbeitsliste mit Zeitwerten (vorher 171).
