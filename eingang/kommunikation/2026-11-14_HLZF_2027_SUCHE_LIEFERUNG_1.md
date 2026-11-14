@@ -154,3 +154,8 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Stadtwerke Weissenfels Energienetze: 2027-PDF (hochlastzeitfenster_swe_2027_final.pdf) vom NB-Server lesbar; NS/MS-NS je F 13:00-14:00, S 10:00-11:15 + 15:00-16:00, W 11:00-12:45 + 17:00-18:45, H keins; MS in bemerkung; Ebenen-Zuordnung nach Layoutreihenfolge mit Vorbehalt.
 - Stadtwerke Rinteln: HLZF-2027-PDF auf Netzzugang-Seite gelistet, URL nicht ermittelbar (erratene Varianten 404) -> Browser-Liste.
 - Stadtwerke Annaberg-Buchholz (swa-b.de): 2027-PDF vorhanden, automatisierter Zugriff blockiert -> Browser-Liste.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 15 (4 Zeilen, 2026-11-14)
+
+- Stadtwerke Schoenebeck: 2027-PDF vom NB-Server vollstaendig lesbar; NS nur W 11:45-15:15; MS in bemerkung; MS/NS nicht ausgewiesen.
+- Kein 2027-Fund per Websuche (teilweise Cookie-Consent): Stadtwerke Wertheim, Stadtwerke Andernach Energie, Stadtwerke Werl -> Browser-Liste.
