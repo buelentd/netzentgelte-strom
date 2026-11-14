@@ -67,3 +67,12 @@ Neu geliefert (jeweils 2027-PDF vom NB-Server gefunden; Textextrakt ohne eindeut
 - SNB917625393281 Stadtwerke Passau GmbH (Uhrzeit=Endzeitstempel)
 
 Nicht gefunden/404 bzw. nicht lesbar ueber Proxy: Stadtwerke Hof (Erratum-URL 404), Stadtwerke Herne (erratumene 2027-URL 404), SWK Kaiserslautern (Persistent-Ordner-Erratum blockiert), Stadtwerke Luenen (Erratum liefert Cookie-HTML-Seite), Stadtwerke Hilden (erratumene URL liefert Cookie-Consent-Seite).
+## Nachtrag: HLZF-2027-Suche - Lieferung 5 (4 Zeilen)
+
+Neu geliefert:
+- SNB993059842564 Stadtwerk am See GmbH ＆ Co. KG (volle Werte)
+- SNB918576265276 stadtwerker GmbH (BEW-Netze Bocholt): 2027-PDF gefunden, nur ein Zeitensatz je Jahreszeit im Extrakt, Ebenen-Zuordnung unklar -> Felder leer, Browser-Liste
+- SNB921319639913 ENERVIE Vernetzt GmbH: 2027-PDF gefunden (5 Segmente x 7 Ebenen), Extrakt nicht zuordenbar -> Felder leer, Browser-Liste
+- SNB969068596941 EWR Netz GmbH: Uebersicht 2027 gefunden, Extrakt nicht zuordenbar -> Felder leer, Browser-Liste
+
+Nicht gefunden (404/blockiert): SWO Netz (erratene URL 404), Stadtwerke Herne (erratene 2027-URL 404, Websuche ohne Herne-Fund), GEW Wilhelmshaven (Zugriff blockiert -> Browser-Liste), wesernetz Bremen/Bremerhaven (liefern Cookie-Consent-Seite statt PDF -> Browser-Liste).
