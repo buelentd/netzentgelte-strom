@@ -1,4 +1,4 @@
-﻿## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
+## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
 
 Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (22 Zeilen, jahr=2027, nr-Spalte fuer 400er-Liste leer, Stromnetz Berlin mit nr=1):
 - SNB979269087643 Stromnetz Berlin GmbH
@@ -49,3 +49,13 @@ Besonderheiten:
 - SNB920157746937 GEW Wilhelmshaven: automatisierter Zugriff blockiert -> Browser-Liste (oder curl, sobald Bash wieder verfuegbar).
 - Zurueckgestellt fuer Positional-Parse (Bash gerade nicht verfuegbar): NHF (Tabelle 5-Spalten), ENERVIE Vernetzt (5 Segmente x 7 Ebenen), BEW-Netze Bocholt/stadtwerker (3 Ebenen x 4 Jahreszeiten), Ahrtal 2027, wesernetz Bremen (AES), EWR Netz GmbH, SWP Pforzheim, SWS Solingen, Mainzer NS/UMN.
 - Kein 2027-Fund per Websuche: e-regio Netz, Stadtwerke Ludwigsburg-Kornwestheim, Stadtwerke Ostmuensterland, SWT Trier, StWB Brandenburg, Stadtwerke Herne, swa Netze (2027 noch nicht gefunden; Suchlinks folgen).
+## Nachtrag: HLZF-2027-Suche - Lieferung 3 (3 Zeilen)
+
+Neu geliefert:
+- SNB913992545742 E-Werk Netze GmbH ＆ Co. KG (volle Werte)
+- SNB922607376381 Stadtwerke Bochum Netz GmbH (2027-PDF gefunden, Ebenen-Zuordnung der Zellen im Textextrakt nicht eindeutig -> Werte nicht uebernommen, Browser-Liste)
+- SNB978108787379 NHL Netzgesellschaft Heilbronner Land GmbH ＆ Co. KG (2027-PDF gefunden, Spaltenzuordnung Winter Jan-Feb/Dez nicht eindeutig -> Felder leer, Nutzerpruefung)
+
+Hinweise:
+- WSW Wuppertal (WSW-Netz-S-105-Hochlastfenster_fuer_2027.pdf), e-netze Allgaeu (ENA_Hochlastzeitfenster_2027.pdf) und Stadtwerke Leipzig (files.l.de ...HLZF...2027.pdf) stehen NICHT auf der 400er-Liste, daher keine Zeilen. Leipzig-PDF blockiert beim Proxy-Zugriff.
+- SNB-Konflikt: Die 400er-Liste weist SNB962618092306 den Stadtwerken Schwaebisch Gmuend zu. Im hlzf_2027_gelesen.csv laeuft SNB962618092306 unter SWM Infrastruktur GmbH (Zeile aus Preisblatt-Crawler, Felder leer). Bitte Zuordnung klaeren. Die Zeile bleibt unveraendert.
