@@ -1,4 +1,4 @@
-﻿## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
+## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
 
 Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (22 Zeilen, jahr=2027, nr-Spalte fuer 400er-Liste leer, Stromnetz Berlin mit nr=1):
 - SNB979269087643 Stromnetz Berlin GmbH
@@ -85,3 +85,19 @@ Nicht gefunden (404/blockiert): SWO Netz (erratene URL 404), Stadtwerke Herne (e
 - SNB953453232156 Stadtwerke Sindelfingen: kein 2027er HLZF-Dokument; Preisblatt 2027 geprueft (kein Paragraph-19-Abschnitt) -> negativ dokumentiert.
 - Konsolidierung: 16 bereits frueher dokumentierte Negativ-/Blockiert-Faelle der 400er-Liste als Zeilen mit leeren Feldern aufgenommen (wesernetz Bremen/Bremerhaven Cookie-Consent, FairNetz, SWO 404, Herne 404, GEW Wilhelmshaven blockiert, e-regio/Ludwigsburg/Ostmuensterland/SWT Trier/StWB/SVO ohne 2027-Fund, SWK Kaiserslautern/Luenen nicht abrufbar, Hilden Cookie, Hof 404).
 - Bestand hlzf_2027_gelesen.csv danach: 205 + 20 = 225 Zeilen.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 7 (15 Zeilen, 2026-11-14)
+
+Lieferung 7 (alle jahr=2027, nr leer):
+- swa Netze GmbH: volle Werte aus Preisblatt 2027 (Seite 14). NS H 17:15-18:30, W 16:30-19:30; MS/NS H 17:15-18:45, W 16:45-19:15; MS/HS/HS-MS in bemerkung.
+- Energieversorgung Filstal: NS H+W 16:30-19:30, MS/NS W 16:30-19:30; MS W 08:15-14:15, H 09:45-13:15.
+- Stadtwerke Waiblingen: NS W 12:00-13:45 + 17:30-19:45, MS/NS W 17:30-19:45; MS W 09:30-13:45 + 17:30-19:15.
+- Stadtwerke Neustadt a.d. Weinstr.: Umsp MS/NS W 17:00-19:00, NS H 11:30-13:00, MS W 17:00-19:00 (Zuordnung nach Textextrakt-Reihenfolge).
+- Netzgesellschaft Frankfurt (Oder): NS W 10:00-13:00, MS/NS W 09:45-13:00; MS W 08:15-13:00 + 16:30-19:00; Schwellen 20/30, 100 kW, 500 EUR.
+- Stadtwerke Wolfenbuettel: NS W 17:00-19:00, MS/NS W 17:00-19:00; MS W 09:30-09:45 + 11:30-12:00 + 17:00-19:00 (HTML-Tabelle).
+- Heider Energie Woerth: NS W 16:30-19:30, MS/NS W 16:30-19:30; MS W 07:00-09:30 + 16:30-19:30 (HTML-Tabelle).
+- KORREKTUR Stadtwerke Ostmuensterland: 2027-HLZF-Dokument doch gefunden (Download-Link so.de), Zellen nicht eindeutig zuordenbar -> Felder leer, Zeiten in bemerkung, Browser-Liste (ersetzt frueheren Eintrag "kein Dokument").
+- Nicht auswertbar: Stadtwerke Lingen (2027-PDF nur Titelzeile im Textlayer), Stadtwerke Duelmen (Uhrzeiten nicht im Textlayer), Stadtwerke Gronau (Zellen nicht eindeutig zugeordnet) -> Browser-Liste.
+- Kein 2027-Fund: Vereinigte Stadtwerke Netz, Stadtwerke Rastatt, Soest, SWL Verteilungsnetzgesellschaft (Ludwigshafen), Stadtwerke Bruel -> Browser-Liste.
+
+Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 400 Eintraegen fehlten vor Lieferung 7 noch 281 mit 2027-Zeile; Lieferung 7 liefert 15 neue (Bestand danach 240 Zeilen).
