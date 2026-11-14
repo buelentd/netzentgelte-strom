@@ -170,3 +170,13 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Netzzugangs-/Download-Seite listet HLZF 2027, PDF-URL nicht ermittelbar: Stadtwerke Einbeck, Stadtwerke Neuburg -> Browser-Liste.
 - Kein 2027-Fund per Websuche: Bautzen, Meissen -> Browser-Liste.
 - Schwedt: Primaerverdacht swaue.de-HLZF gehoert zu Stadtwerken Aue (nicht Schwedt), keine Zuordnung vorgenommen -> Pruefung laeuft.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 17 (11 Zeilen, 2026-11-14)
+
+- Energieversorgung Suedbaar: 2027-PDF (esb-energie.de) vollstaendig lesbar; NS/MS-NS nur W, MS F/S in bemerkung.
+- Stadtwerke Schuettorf (SWSE): Uebersichtsblatt lesbar, Saison-Zuordnung unklar -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Energie Calw: netz.plus-Uebersichtsblatt 2027 (Zuordnung plausibel, Vorbehalt), Saison-Zuordnung unklar -> Browser-Liste.
+- Herzo Werke: HLZF-2027-URL gelistet, Abruf 404 -> Browser-Liste.
+- Bad Kissingen: HLZF 2027 auf Netznutzungs-Seite gelistet, URL nicht ermittelbar -> Browser-Liste.
+- Kein 2027-Fund per Websuche: Schwedt, Hann. Muenden, Schneverdingen-Neuenkirchen, Zirndorf, Altenburg, Inn-Salzach -> Browser-Liste.
+- Hinweis Schwedt: swaue.de-2027-HLZF vermutlich Stadtwerke Aue zuzuordnen (Aue bereits geliefert), nicht Schwedt.
