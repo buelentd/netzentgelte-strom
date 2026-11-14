@@ -45,3 +45,5 @@ Die Funde-Tabelle (`speicherpreise_funde.csv`) hält Preis-Aussagen von Webseite
 ## Erweiterung der Produkttabelle (14.11.2026)
 
 Zusätzliche Spalten nach den Feldern der Batterietyp-Maske: formfaktor (Schrank, Container, Rack), c_rate, kuehlung, ip_schutz, schallleistung_dba, masse_text, breite_mm, tiefe_mm, hoehe_mm, gewicht_kg, lebensdauer_kalendarisch_jahre, degradation_prozent_jahr, pcs_eur_kw, opex_eur_kwh_jahr, garantie_jahre, garantie_zyklen, garantie_durchsatz_mwh, preisstand (Datum, zu dem der Preis gilt; abruf_datum ist der Tag der Übernahme). Leer, wenn die Quelle den Wert nicht nennt; nichts wird geschätzt. Plattformwerte (nicht modellspezifisch) stehen im pruefnotiz.
+
+Zellchemie: erlaubte Werte wie in der Batterietyp-Workbench des Nutzers (Auswahlliste, Bildschirmfoto 14.11.2026): LFP, NMC, NCA, LTO, Nalon. Andere Schreibweisen der Quelle (z. B. „Lithium-Eisenphosphat") werden darauf abgebildet; was nicht passt, bleibt leer und kommt in den pruefnotiz.
