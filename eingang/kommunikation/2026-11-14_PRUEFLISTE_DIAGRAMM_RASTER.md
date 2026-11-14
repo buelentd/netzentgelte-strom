@@ -26,3 +26,10 @@ Stand 14.11.2026. 16 Netzbetreiber / 17 Zeilen im Arbeitsstand mit Status dokume
 - SNB972740218178 / 564 / Stadtwerke Marburg GmbH, 2027: GrundNetz-PDF ist MS-NS-Dokument ohne lesbare Zeitliste (Raster). 2026 MS ist geliefert.
 - SNB936176430474 / 376 / Stadtwerk Tauberfranken GmbH, 2026+2027: MSP/USP nur Lastgang-Diagramm ohne Zeitliste. NS 2026 (Kasten) ist geliefert.
 - SNB982116062906 Parchim 2027: Nachweis noch offen (s. Etappen-Notizen).
+
+- SNB937406641264 / 385 / Stadtwerke Ansbach GmbH, 2027: Lastgang-Raster ohne Zeitfenster. https://www.stwan.de/Kopfnavigation/Netze/Veroeffentlichungspflichten/Stromnetz/Netzzugang-Entgelte/Hochlastzeitfenster-fuer-2027-MS-1.pdf
+- SNB967127819703 / 523 / Stadtwerke Hockenheim, 2027: 1/4-h-Raster ohne Textmarken (99999-CID). https://www.stadtwerke-hockenheim.de/Topmenue/Netze/Stromnetz/Netzzugang-Entgelte/HLZF-MS-2027-.pdf
+- SNB940437318166 / 336 / NEW Netz GmbH, 2027: nur Raster/Grafik ohne lesbare Zeitliste. https://www.new-netz.de/mediathek/Grafische%20Ermittlung%20HLZ%20NEW%20Netz%202027.pdf
+- SNB938413573104 / 353 / QuartiersNetz Bayern GmbH, 2027: Lastgang-Diagramm, nur 09:15-19:00 annotiert. https://www.swm-infrastruktur.de/dam/swm-infrastruktur/dokumente/strom/netzzugang-bedingungen/hochlastzeitfenster2027/hlzf-hs-ms.pdf
+- SNB965379905076 / 545 / Stadtwerke Langen GmbH, 2027: kein separates HLZF-Dokument, Netzentgelte verweisen nur allgemein. https://stadtwerke-langen.de/wp-content/uploads/2026/10/Stadtwerke-Langen-GmbH-Vorlaeufige-Netzentgelte-Strom-fuer-das-Jahr-2027-Veroeffentlichung-15.10.2026-1.pdf
+- SNB990362338043 / 4 / Avacon Netz GmbH, 2027: HLZF nur als Lastgang-Diagramme ohne Text (S. 3-5). eingang/2027_vorlaeufig/SNB990362338043_0004_hlzf_2027.pdf
