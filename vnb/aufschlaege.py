@@ -56,7 +56,7 @@ def funde_aus_text(text: str, url: str, titel: str = "", veroeffentlicht: str = 
         if not (WERT_MIN <= a <= WERT_MAX and WERT_MIN <= b <= WERT_MAX):
             continue
         davor = text[max(0, m.start() - 160):m.start()]
-        kw = STICHWORT.findall(davor + text[m.end():m.end() + 40])
+        kw = STICHWORT.findall(davor) or STICHWORT.findall(text[m.end():m.end() + 40])    # nächstes Stichwort vor dem Wert zählt zuerst
         if not kw:                                     # nur Angaben mit Bezug zu Aufschlag, Marge, Vertrieb, Beschaffung
             continue
         von, bis = max(0, m.start() - 170), min(len(text), m.end() + 170)
