@@ -6,6 +6,8 @@ Der Rechner soll so weit wie möglich alles automatisieren und berechnen. Jede E
 
 Kandidaten zur weiteren Automatisierung: Messentgelt bei Leistungsmessung (steht in den Netzbetreiber-Preisblättern, noch nicht erfasst), Baukostenzuschuss und Netzanschlusskosten (stehen in vielen Preisblättern und ergänzenden Bedingungen der Netzbetreiber, noch nicht erfasst), Jahr 2027 und Umlagen 2027, Modul-3-Zeiten und -Preise je Netzbetreiber, Spitzenleistung aus Branche und Verbrauch, Stadtwerke-Preisformeln für mehr Netzgebiete.
 
+Zur eingefügten „Vollautomatisierung" (CapEx aus kW-Klasse berechnen): Hardware, VNB-Kette und Tarifformel ja, aber Montage und Zähler-/Wandlerpaket nur, wenn belegte Daten dahinterstehen. Heute gibt es dafür keine. Möglich wäre: (1) Anschlusskosten aus den Netzbetreiber-Preisblättern erfassen (Baukostenzuschuss, Anschlussentgelte), (2) Montagezuschlag aus Händlerangeboten ableiten, die dasselbe System mit und ohne Montage nennen. Die im Text genannten Schwellen (30 kW, 135 kW, 44 A) sind nicht belegt und teils vermischt (135 kW ist die Schwelle in VDE-AR-N 4105, nicht der Wechsel zur Mittelspannung). Die Netzebene wählt der Rechner heute nach Jahresverbrauch (Richtwerte, ebenfalls nicht belegt), nicht nach Leistung.
+
 ## Vor der Freigabe zu besprechen
 
 **Aufteilung der Speicher-Investition im Rechner** (Commit `7da483e9`, noch nicht abgenommen)
