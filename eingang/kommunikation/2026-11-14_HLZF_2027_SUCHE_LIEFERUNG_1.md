@@ -1,4 +1,4 @@
-## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
+﻿## Nachtrag: HLZF-2027-Suche Block 1+2 - Lieferung 1 (22 Zeilen)
 
 Neu in ergebnis/hlzf/hlzf_2027_gelesen.csv geliefert (22 Zeilen, jahr=2027, nr-Spalte fuer 400er-Liste leer, Stromnetz Berlin mit nr=1):
 - SNB979269087643 Stromnetz Berlin GmbH
@@ -108,3 +108,12 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Kein 2027-Fund: Stadtwerke Homburg (Netzentgelte-Seite ohne HLZF, Cookie-Consent), Stadtwerke Amberg (2026er-Muster-URL 404), Stadtwerke Nuertingen (Downloadliste ohne HLZF) -> Browser-Liste.
 - Hinweis: PDF auf stadtwerke-service.de (sites/6, Zeitfenster 2027, mit aus HS/in MS/aus MS/in NS) nennt keinen Netzbetreiber, daher keiner SNB zugeordnet.
 - Bestand hlzf_2027_gelesen.csv danach: 241 + 5 = 246 Zeilen.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 9 (5 Zeilen, 2026-11-14)
+
+- Stadtwerke Pirmasens: 2027-PDF vollstaendig lesbar; NS W 11:00-13:00 + 17:00-19:00, MS/NS W 11:30-13:00 + 17:00-18:45, MS in bemerkung; F/S/H entfaellt.
+- Maintal-Werke: 2027-PDF vollstaendig lesbar (URL enthaelt Tippfehler "hochlastzeifenster"); NS/MS/MS-NS-Werte geliefert.
+- Stadtwerke Itzehoe: 2027-PDF vollstaendig lesbar; NS H 10:00-11:00 + 17:00-19:30, W 10:45-12:00 + 17:30-18:45; MS/NS nur H; MS in bemerkung (Winter 08:30-14:00, Herbst 08:00-11:30).
+- Freitaler Stadtwerke: 2027-PDF vorhanden, Textextrakt ohne eindeutige Jahreszeiten-Zuordnung -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Überlandwerk Erding: 2027-PDF auf stadtwerke-erding.de (dort laut Kontaktdatenblatt auch Netzbetreiber U.Erding) vollstaendig lesbar; NS und MS/NS je H/W 16:45-19:15, MS in bemerkung.
+- Bestand hlzf_2027_gelesen.csv danach: 246 + 5 = 251 Zeilen.
