@@ -17,6 +17,18 @@ Zur eingefügten „Vollautomatisierung" (CapEx aus kW-Klasse berechnen): Hardwa
 - Falls nicht gewünscht: Commit `7da483e9` zurücknehmen (`git revert 7da483e9`).
 - Wichtig: Der Auftrag dazu kam nicht eindeutig von dir (eingefügter Text), die Umsetzung war eigenmächtig.
 
+## Baukostenzuschuss und Anschlussentgelte erfassen (Plan vom Nutzer, 14.11.2026)
+
+Vorbefund (grobe Suche in den 2.357 Preisblatt-PDFs im Repo): Nur bei etwa einem Dutzend Netzbetreiber steht ein Baukostenzuschuss in €/kW in den Netzentgelt-Preisblättern (rund 34 bis 228 €/kW, z. B. swa Netze, Lohr-Karlstadt, Zellingen). Anschlusskosten stehen bei etwa 10 Quellen mit Betrag, sonst „nach Aufwand". Bei den meisten Netzbetreibern liegt der BKZ in anderen Dokumenten („Ergänzende Bedingungen", „Preisblatt Netzanschluss"), die wir noch nicht gesucht haben.
+
+Plan:
+
+1. **Parser** (pdfplumber oder PyMuPDF): Suchbegriffe „Baukostenzuschuss", „BKZ", „§ 11 NAV", „Netzanschlusskosten", „Pauschalbetrag". Regex für Euro-Beträge je kW (`€/kW`, `EUR/kW`) oder feste Pauschalen im Umkreis dieser Begriffe.
+2. **Zuordnung mit Quellenangabe:** Jeder Wert wird mit der MaStR-Nummer als Schlüssel gespeichert, zusammen mit Dateiname, Fundstelle, Netzebene, netto/brutto und Stand (z. B. „BKZ Niederspannung 72,34 €/kW netto, Quelle: <Datei>"). Steht im Dokument „nach Aufwand" oder lässt sich keine Zahl lesen, bleibt der Status „Individuelles VNB-Angebot", kein Schätzwert.
+3. **Suche** der separaten Dokumente über alle 831 Netzbetreiber (wie bei den Hochlastzeitfenstern), inklusive HTML-Seiten und Portalen.
+4. **Vor der Integration klären:** Gilt der Baukostenzuschuss für einen Speicher überhaupt, und wie wendet ihn der jeweilige Netzbetreiber an (Leistungsbereitstellung nach § 11 NAV)? Erst danach darf der Rechner damit rechnen.
+5. **Integration in den Rechner:** Bei Angabe der Speicherleistung (kW) den Baukostenzuschuss automatisch berechnen, mit Quellenangabe des Netzbetreiber-Dokuments. Fehlt der Wert, bleibt das Feld „nicht enthalten".
+
 ## Weitere offene Punkte (aus dem Tagesabschluss 14.11.)
 
 - Impressum, Datenschutz, „ohne Gewähr" auf der Rechner-Seite (fehlt komplett). Dafür nötig: Firmenname, Anschrift, Vertretungsberechtigte, E-Mail, Registernummer.
