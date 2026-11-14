@@ -194,3 +194,10 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Saalfelder Energienetze: 2027-PDF lesbar, Ebenen-Zuordnung der Mehrfach-Fenster nicht eindeutig -> Felder leer, alle Zeiten in bemerkung, Browser-Liste.
 - Website listet HLZF 2027, URL nicht ermittelbar: Stadtwerke Quickborn, Stadtwerke Metzingen (ceasy) -> Browser-Liste.
 - Kein 2027-Fund: T.W.O. Osning -> Browser-Liste.
+
+## Lieferung 20 (14.11.2026)
+
+- Technische Werke Naumburg (SNB978071940108): HLZF-2027-PDF vom NB-Server voll lesbar; NS und MS/NS je W 11:00-14:00 + 17:15-18:30; MS in bemerkung.
+- EVDB Energieversorgung Dahlenburg-Bleckede (SNB932388577952): 2027-PDF gefunden, Ebenen-Zuordnung im Extrakt nicht eindeutig -> Werte in bemerkung, Browser-Liste.
+- Stadtwerke Schramberg (SNB944999584793): 2027-PDF auf Veroeffentlichungsseite gelistet, URL nicht ermittelbar -> Browser-Liste.
+- Glauchau (SNB963070917732), Neustrelitz (SNB914630088973), Werdau (SNB962389410347): kein 2027er HLZF-Dokument per Websuche auffindbar -> Browser-Liste.
