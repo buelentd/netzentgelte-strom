@@ -281,6 +281,7 @@ Der Kollege hat 20 unbrauchbare Zeilen in `lauf/nutzer_hinweise.csv` gemeldet, d
 - Die genannten 4 Zeilen ohne jede URL bleiben begruendet leer (kein Fund bzw. kein auswertbares Dokument), ebenso Zerbst und Bad Endorf (blockiert, siehe Browser-Liste oben).
 
 Alle Zahlen aus den Dateien, keine Schaetzungen.
+
 ## Korrektur Zaehlung gegen 400er-Arbeitsliste (Nachtrag, 14.11.2026)
 
 Der Hinweis des Kollegen ist bestaetigt und verifiziert: Die bisherige Angabe "326 von 400 mit 2027-Zeile" war falsch, 326 + 132 = 458 ging nicht auf.
@@ -296,7 +297,6 @@ Zu den weiteren Hinweisen:
 - Die 20 gemeldeten kaputten Zeilen in `lauf/nutzer_hinweise.csv` sind bereits repariert und gepusht (siehe Abschnitt "Korrektur Strukturfehler" oben, Commit 48520ef): Datei jetzt 187 Datenzeilen, alle 5 Spalten, jede URL mit https:// bzw. begruendet leer, vom Kollegen noch nicht gesehen.
 
 Arbeit geht mit Lieferung 28 bei den 132 offenen Netzbetreibern weiter.
-
 
 ## Korrektur Backnang Schwelle (Nachtrag, 14.11.2026)
 
@@ -324,3 +324,21 @@ Kein 2027-Dokument gefunden -> Browser-Liste:
 Hinweis: Das bei der Websuche gefundene swneustadt.de-2027-PDF (Hochlastzeitfenster-2027-SWN.pdf) gehoert zu den Stadtwerken Neustadt a. d. Weinstrasse, NICHT zu SNB988769717073 (Neustadt a. d. Donau, swn-do.de). Verwechslung ausgeschlossen.
 
 lauf/nutzer_hinweise.csv um 20 Zeilen ergaenzt (je gepruefter NB eine Zeile, alle URLs https://). Bestand: gelesen.csv 396 Datenzeilen (346 mit jahr=2027), davon 288 der 400er-Arbeitsliste erledigt (72 %), 112 offen.
+
+## Lieferung 29 (2026-11-14): Alle 112 restlichen Netzbetreiber der 400er-Liste abgearbeitet
+
+Commit: HLZF-2027-Suche, Lieferung 29. Die 400er-Arbeitsliste ist damit vollstaendig bearbeitet: 400/400 Netzbetreiber haben eine Zeile mit jahr=2027, 0 offen.
+
+**Bestand nach Lieferung 29:**
+- `ergebnis/hlzf/hlzf_2027_gelesen.csv`: 508 Datenzeilen (vorher 396), davon 458 mit jahr=2027; alle Zeilen 17 Spalten, BOM + CRLF, Roundtrip geprueft, keine doppelten MaStR-Nr in den neuen Zeilen.
+- `lauf/nutzer_hinweise.csv`: 319 Datenzeilen (vorher 207); alle URLs beginnen mit https:// bzw. http://.
+
+**Aufschluesselung der 112 neuen Zeilen:**
+- 13 mit vollstaendigen Werten (NS/MSNS-Felder gefuellt, MS-Zeiten in bemerkung): Elmshorn, Niedersachsen Ports, Hemau (Schwelle 30 %, Mindestleistung 100 kW), Farchant, Aschaffenburg, Steinhagen (Vermerk: Tabellen-Einleitung nennt 2026, Titel/Datei 2027), Eisenberg, Detmold, Boeblingen, Riesa, SUEC Coburg, Weidenthal (SWK Kaiserslautern), Hettstedt (PDF-Pfad per URL-Muster ermittelt; Umsp W zusaetzlich 11:45 Uhr, Fensterende im Extrakt unklar).
+- 21 Browser-Liste mit vorhandenem PDF, das nicht voll auswertbar ist (fontkodiert, ohne Textlayer, bildbasiert oder Ebenen-Zuordnung unklar): BASF InfraService Lausitz, Baden-Baden, Rheine, Viernheim (Text nennt 2026, Druckfehler-Verdacht), GGEW Bergstrasse, Energieversorgung Halle Netz, Garmisch-Partenkirchen, Pappenheim, Ohlstadt, Hasbergen, Waldmuencchen, Vilshofen, TauberEnergie Kuhn, Hassloch, Wittmund, Bayreuth, Albstadtwerke, Outokumpu, Bordesholm, YNCORIS, Neumarkt i.d.OPf. Gesicherte Zeiten und Schwellenwerte stehen jeweils in der Spalte bemerkung.
+- 6 Browser-Liste, Seite weist HLZF 2027 aus, PDF nicht automatisch greifbar: Huntetal, Warburg, Mainfranken Netze, UEZ Mainfranken (Downloadcenter, ein PDF gilt moeglicherweise fuer beide), Forchheim, Saarbruecken Netz.
+- 72 ohne Fund: kein HLZF-2027-Dokument auffindbar (Website-URL in nutzer_hinweise.csv hinterlegt). Darunter Stromkontor Netzgesellschaft und Stromkontor Rostock Port (nur xlsx), e-netz Suedhessen (nur generische PDF), SWL-UeNG (sw-lambrecht-Seite ohne 2027-Fund).
+
+**Zaehlung (korrigierte Methode, Join gegen die 400er-Liste):** 400 von 400 Netzbetreibern der Arbeitsliste haben mindestens eine Zeile mit jahr=2027. Die 58 zusaetzlichen 2027-Zeilen gehoeren zu Netzbetreibern ausserhalb der 400er-Liste (Gesamt 458).
+
+Alle 112 Netzbetreiber wurden einzeln per Websuche, URL-Muster-Vergleich (2026->2027) und Seiten-Crawl geprueft; gesperrte Seiten wurden nicht umgangen. Browser-Liste = manuelle Pruefung im Browser noetig.
