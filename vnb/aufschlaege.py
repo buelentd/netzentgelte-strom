@@ -31,8 +31,29 @@ ABFRAGEN = [
     "Energy Brainpool Strompreis Gewerbe Vertriebsaufschlag",
     "Strompreis Zusammensetzung Gewerbe 2026 Energiebeschaffung Vertrieb Marge ct/kWh",
     "Direktvermarktung Aufschlag ct/kWh Marktwert Abzug Gebühr",
+    # Gewerbe-Lieferung, gezielt (Runde 2: Aufschlag auf Börsen- oder Terminmarktpreis, Angebote, Preisformeln)
+    "Spotpreis plus Aufschlag ct/kWh Gewerbekunden RLM Lieferant Börsenpreis Preisformel",
+    "Lieferantenaufschlag Strom Gewerbe ct/kWh Großhandelspreis plus Marge Beispielangebot",
+    "Stromausschreibung Mittelstand Ergebnis Vertriebsmarge ct/kWh Aufschlag Terminmarkt Cal",
+    "Bundesnetzagentur Monitoringbericht Vertriebskosten Marge Gewerbekunden Industrie ct/kWh",
+    "Bundeskartellamt Sektoruntersuchung Strom Vertriebsmarge Gewerbe ct/kWh",
+    "Strukturierte Strombeschaffung Gewerbe Aufschlag Strukturierungskosten Risikoprämie ct/kWh",
+    "Tibber Business Gewerbe Aufschlag ct/kWh Börsenstrompreis",
+    "Rabot Energy Gewerbe dynamischer Stromtarif Aufschlag ct/kWh Grundgebühr",
+    "Octopus Energy Gewerbe dynamischer Tarif Aufschlag ct/kWh Spotpreis",
+    "1Komma5 Gewerbe dynamischer Stromtarif Aufschlag ct/kWh",
+    "Stadtwerke Gewerbe Strom dynamischer Tarif Preisblatt Aufschlag ct/kWh netto",
+    "Börsenstrompreis plus Aufschlag ct/kWh netto Gewerbestrom Beispielrechnung Lastgang",
+    "Strom Gewerbe Preisbestandteile Energiepreis Vertriebsmarge Prozent ct/kWh netto Analyse 2026",
+    "Beschaffungsaufschlag Risikoaufschlag Strompreis Lastprofil Abweichung Mehr-Minder-Mengen ct/kWh",
+    "Bilanzkreis Mehrmengen Aufschlag Strompreis Gewerbe ct/kWh Lieferant Angebotsvergleich",
+    "Energiebeschaffung Gewerbe Strom Handelsaufschlag ct/kWh Terminkontrakt Tranchenbeschaffung Vergleich Anbieter",
+    "Strompreisvergleich Gewerbe RLM Angebot Energiepreis ct/kWh netto Aufschlag auf EEX Terminpreis",
+    "Preis pro kWh Strom Gewerbe Sondervertrag Energiepreis Netto Marge Vergleich Ausschreibungsplattform",
+    "Industriestrompreis Gewerbe Vertrieb Marge ct/kWh Beschaffung Studie Aufschlag Großhandel",
+    "Stromeinkauf Unternehmen Aufschlag Dienstleister Ausschreibung ct/kWh Beratung Provision Marge",
 ]
-STICHWORT = re.compile(r"(vertriebs\w*|marge\w*|risikoaufschlag|risiko\w*|aufschlag|zuschlag|beschaffung\w*|handling\w*|servicegeb\w*|bilanzkreis\w*|"
+STICHWORT = re.compile(r"(lieferantenaufschlag|handelsaufschlag|aufpreis|strukturierung\w*|provision\w*|vertriebs\w*|marge\w*|risikoaufschlag|risiko\w*|aufschlag|zuschlag|beschaffung\w*|handling\w*|servicegeb\w*|bilanzkreis\w*|"
                        r"abwicklung\w*|grundpreis|arbeitspreis)", re.I)
 WERT = re.compile(r"(?P<a>\d{1,2}(?:[.,]\d{1,3})?)\s*(?:(?:–|-|—|bis)\s*(?P<b>\d{1,2}(?:[.,]\d{1,3})?)\s*)?(?:ct|cent)\s*(?:/|pro|je)\s*kwh", re.I)
 GRUPPE = [("Haushalt", r"haushalt|privatkund"), ("RLM/Gewerbe", r"rlm|registrierend|gewerbe|mittelstand|industri|ausschreib|sonderverträg|sondervertrag"),
