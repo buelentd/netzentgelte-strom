@@ -221,3 +221,12 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - Stadtwerke Sigmaringen: 2027-PDF vollstaendig lesbar; NS nur W 10:15-11:00, MS/NS S+H, MS H+W in bemerkung (W-Zelle MS/NS laut Extrakt leer, Vorbehalt).
 - Stadtwerke Nordfriesland-Netz und Stadtwerke Uelzen: 2027-PDFs vom NB-Server (netzveroeffentlichung.com) lesbar, Ebenen-/Jahreszeiten-Zuordnung im Extrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
 - Kein 2027er HLZF-Dokument auffindbar: Stadtwerk Haßfurt, Stadtwerke Sulzbach/Saar, Netzgesellschaft Forst (Lausitz), Stadtwerke Neustadt in Holstein (Hinweis: swneustadt.de-2027er PDF gehoert zu Neustadt a.d. Weinstr., bereits geliefert), Stadtwerke Nortorf -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 23 (14.11.2026)
+
+- Stadtwerke Heidelberg Netze: 2027-PDF vollstaendig lesbar; NS/MS-NS-Werte geliefert, MS/HS/HS-MS in bemerkung.
+- Stadtwerke Pfarrkirchen: 2027-PDF vollstaendig lesbar; MS, MS/NS, NS je nur Fruehling+Sommer geliefert.
+- Stadtwerke Ulm/Neu-Ulm Netze: 2027-PDF vollstaendig lesbar; NS F+S, MS/NS nur W, MS/HS in bemerkung.
+- Stadtwerke Kaltenkirchen und Stadtwerke Norderstedt: 2027-PDFs vom NB-Server, Ebenen-/Spaltenzuordnung im Extrakt nicht eindeutig -> Felder leer, Zeiten in bemerkung, Browser-Liste.
+- Kein 2027er Fund (erratene URLs 404/Fehlerseite): Haltern am See, Pasewalk, Stein -> Browser-Liste.
