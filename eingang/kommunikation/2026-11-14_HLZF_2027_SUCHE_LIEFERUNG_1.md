@@ -117,3 +117,11 @@ Hinweis: Offen-Definition korrigiert - es zaehlen nur Zeilen mit jahr=2027. Von 
 - Freitaler Stadtwerke: 2027-PDF vorhanden, Textextrakt ohne eindeutige Jahreszeiten-Zuordnung -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - Überlandwerk Erding: 2027-PDF auf stadtwerke-erding.de (dort laut Kontaktdatenblatt auch Netzbetreiber U.Erding) vollstaendig lesbar; NS und MS/NS je H/W 16:45-19:15, MS in bemerkung.
 - Bestand hlzf_2027_gelesen.csv danach: 246 + 5 = 251 Zeilen.
+
+## Nachtrag: HLZF-2027-Suche - Lieferung 10 (5 Zeilen, 2026-11-14)
+
+- Stadtwerke Pirna Energie: 2027-PDF vollstaendig lesbar; MS/NS nur Sommer 10:15-13:15, NS nur Winter 16:15-17:30, MS ohne Zeitfenster.
+- Stadtwerke Backnang: 2027-PDF (HLZF-Backnang-2027-alle.pdf) vollstaendig lesbar; Titel enthaelt Druckfehler "2025" (Referenzzeitraum/Feiertage 2027). NS H 09:45-12:45 + 13:00-13:15, W 08:45-13:45 + 16:45-18:00; MS/NS W 16:30-19:30; MS W 16:15-19:15 in bemerkung.
+- Stadtwerke Greven: 2027-Uebersichtsblatt gefunden, Ebenen-Zuordnung im Textextrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
+- Stadtwerke Wedel: Cookie-Consent, erratene 2027er URL-Varianten ohne Treffer -> Browser-Liste.
+- SWE Netz Ettlingen: HLZF-2027-Link auf der Netzzugang-Seite vorhanden, PDF-URL nicht ermittelbar -> Browser-Liste.
