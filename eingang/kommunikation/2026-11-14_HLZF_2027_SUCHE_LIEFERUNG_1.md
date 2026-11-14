@@ -365,3 +365,24 @@ Stand nach Gruppe 1: 149 von 400 Netzbetreibern der Arbeitsliste haben Zeitwerte
 ## Nacharbeit Gruppe 2 (2026-11-14): 10 weitere Netzbetreiber gefuellt
 
 Mainzer Netze (Gegenprobe gegen HTML-Tabelle des NB, alte Saison-Zuordnung teilweise korrigiert), stadtwerker/BEW-Netze, SWS Solingen, Ostmuensterland, Dreieich, HEWA, Ottersberg, SWR Energie, Energie Calw (netz.plus-Uebersichtsblatt), Deggendorf (CMap-Positionsextraktion, zifferngenau). Bad Reichenhall entziffelt, aber Ebenen-/Saison-Zuordnung der Tabellenzeilen wegen Glyphen-Verschiebung im Font (4/2, 9/7) nicht eindeutig -> Zeiten in Bemerkung dokumentiert, Felder leer, Browser-Liste. Neue Zaehlung: 159/400 der Arbeitsliste mit Zeitwerten.
+## Nacharbeit Gruppe 3 (2026-11-14): 12 weitere Netzbetreiber gefuellt
+
+Durchbruch bei der Textextraktion: Bug im Literal-String-Decoder behoben (Bytes wurden paarweise statt einzeln dekodiert, dadurch verschwanden z.B. Doppelpunkte und fuehrende '1'-Ziffern aus Uhrzeiten) sowie neuer positionsgenauer Extraktor mit Kerning-Verfolgung und Tabellengitter-Analyse (Vektorlinien). Damit sind auch frueher als Raster/ohne Textlayer eingestufte PDFs auswertbar (SachsenNetze, Waldmuencchen, Ohlstadt, Pappenheim). Stichproben gegen die PDF-Renderer-Ausgabe bestanden exakt (Kahl, Waldmuencchen, Saalfeld); dabei Fehlerkorrektur: Saalfeld-Winter hat je Ebene EIN Fenster (NS W 10:30-14:30, Umsp W 09:15-12:30, MS W 07:30-12:00), Neumarkt-Spalten sind Herbst/Winter statt Fruehling/Sommer.
+
+Gefuellt (12, ns_*/msns_* = Niederspannung/Umspannung MS-NS, MS-Zeiten in bemerkung):
+- SNB967782555602 Bayreuth: NS W 11:45-12:45 + 17:00-19:00; Umsp MS/NS W 17:00-19:00; MS W 08:15-14:00 + 16:45-19:00; nur Winter, nur Werktage
+- SNB961283575572 Viernheim: NS+Umsp S 14:45-17:45; MS W 13:45-19:30; HS/Umsp HS-MS H 16:15-19:15, W 10:00-20:00; Fliesstext nennt 2026 (Druckfehler-Verdacht)
+- SNB989365725226 Neumarkt: NS S 11:30-15:30; Umsp H 17:00-18:30, W 10:00-12:30 + 17:00-19:00; MS H 07:45-14:00 + 16:30-18:30, W 08:00-15:00 + 16:30-18:30 (alte Saison-Notiz damit korrigiert)
+- SNB968914838013 SachsenNetze HS.HD: NS W 16:00-18:30; Umsp MS/NS W 09:15-12:15 + 16:30-19:15; MS W 07:15-13:30 + 16:00-19:45, H 09:00-12:00 (PDF ist doch kein Raster)
+- SNB958237843443 Saalfeld: NS F 09:00-10:00 + 11:00-13:15, S 10:30-13:15 + 13:30-13:45, H 11:00-13:45 + 14:00-14:15, W 10:30-14:30; Umsp F/S/H/W vollstaendig; MS-Vollsaetze in bemerkung
+- SNB953794435957 Gunzenhausen: NS S 13:30-14:45; Umsp S 13:30-13:45, H 16:30-18:30, W 10:00-12:30 + 16:30-18:45; MS H 08:30-11:30 + 16:30-18:00, W 08:15-13:00
+- SNB962006136537 Kahl: NS+Umsp W 18:00-20:30; MS W 07:45-10:30, 11:15-11:30, 12:00-14:30, 17:45-20:00
+- SNB914963192408 Trostberg: NS W 11:00-13:00 + 17:30-20:30; Umsp W 07:00-10:00; MS H 09:30-12:30
+- SNB957440824454 Velten: NS W 10:30-13:15 + 17:00-19:45 (keine Umsp-Zeile im PDF); MS F 08:30-11:15, W 07:30-10:15
+- SNB971196250442 Waldmuencchen: NS F/S 12:00-15:00, H 11:00-13:00; Umsp F/S 13:00-15:00, W 10:45-13:30; MS F 12:00-14:30
+- SNB975801091031 Ohlstadt: NS H/W 17:30-19:30; Umsp H 17:00-19:00, W 17:30-19:30; MS H 17:00-19:00, W 17:30-19:30
+- SNB954662803168 Pappenheim: Umsp F 12:15-14:45 (keine NS-Zeile im PDF); MS F 11:00-13:15
+
+Browser-Liste mit praezisierter Bemerkung (4, Felder bewusst leer): Passau (Zeiten lesbar, Ebenen-/Saisonzuordnung nicht rekonstruierbar), Flensburg, Bochum, NHF (Fontcodierung nicht entzifferbar).
+
+Stand nach Gruppe 3: 171/400 der Arbeitsliste mit Zeitwerten (vorher 159). Von der 72er-Nacharbeitsliste verbleiben 25 Faelle; mehrere davon sind mit dem neuen Extraktor ebenfalls aussichtsreich (u.a. Hasbergen, Vilshofen, GGEW, Hassloch, Garmisch, Baden-Baden, Rheine), sie folgen in Gruppe 4.
