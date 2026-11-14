@@ -255,3 +255,19 @@ Naechste 8 offene NBs nach Einwohnern geprueft, alle ohne 2027er Fund (Browser-L
 - EVA Vogling & Angrenzer: 2027-PDF lesbar; NS/MS-NS nur Winter 16:30-19:30.
 - Elektrizitäts-Werk Ottersberg und Stadtwerke Gunzenhausen: 2027-PDFs vom NB-Server, Ebenen-/Spalten-Zuordnung im Extrakt nicht eindeutig (Gunzenhausen zusaetzlich Druckfehler 2026 im Fliesstext) -> Felder leer, Zeiten in bemerkung, Browser-Liste.
 - Kein 2027er Fund: Annweiler, SWL Energienetz (Lengerich), Röthenbach a.d. Pegnitz (HLZF-Seite nur bis 2026), Barmstedt -> Browser-Liste.
+
+
+## Nachtrag: Lieferung 27 (14.11.2026)
+
+- Stadtwerke Ludwigslust-Grabow (SNB928200943784): 2027-PDF vom NB-Server voll lesbar; NS und MS/NS je nur Fruehling 12:30-14:45, MS F 11:30-14:45 + S 11:45-15:00 in bemerkung; Uhrzeit = abgelaufene 1/4h, nur Werktage.
+- Stromversorgung Zerbst (SNB918539636471): 2027-PDF laut Websuche vorhanden (uploads/2026/10), automatisierter Zugriff blockiert -> Browser-Liste.
+- Elektrizitaetswerk Stern Bad Endorf (SNB910882213224): Zugriff auf ewerk-stern.de blockiert -> Browser-Liste.
+- Gemeindewerke Kahl (SNB962006136537): 2027-PDF (HLZF_2027-VOE.pdf, Stand 31.10.2026) geladen, Ebenen-/Saison-Zuordnung im stark gesperrten Textlayer nicht eindeutig -> Felder leer, sechs gesicherte Zeiten in bemerkung, Browser-Liste.
+- Eichsfelder Energie- und Wasserversorgung (SNB945768616967): 2027-PDF (Kopie-von-HLZF-2027-EEW-mbH-.pdf) mit Viertelstunden-Raster, Ebenen-Zuordnung nicht eindeutig -> Felder leer, Winter-Zeiten in bemerkung, Browser-Liste.
+- Stadtwerke Grevesmuehlen (SNB991689251534): Veroeffentlichungsliste nur bis 2026 -> kein 2027er Dokument, Browser-Liste.
+- Gemeindewerke Schwarzenbruck (SNB944419421783): 2027-PDF (FGW_Hochlastzeitfenster_2027.pdf) verlinkt und per Direkt-Download gesichert, Textlayer fontkodiert nicht auslesbar -> Felder leer, Browser-Liste.
+- Stadtwerke Bad Sooden-Allendorf (SNB949422762892): Netzentgelte-Seite nur mit Preisblaettern, kein HLZF-Dokument -> Browser-Liste.
+- Gemeindewerke Budenheim (SNB922361841965): Netz-/Marktkommunikationsseiten ohne HLZF-Punkt -> Browser-Liste.
+- Stadtwerke Velten (SNB957440824454): 2027-PDF (URL-Muster 2025/2026) lesbar, zwei Tabellen MS/NS, Ebenen-Zuordnung im Extrakt nicht eindeutig -> Felder leer, gesicherte Zeiten in bemerkung, Browser-Liste.
+
+Bestand hlzf_2027_gelesen.csv danach: 368 + 10 = 378 Zeilen (326 mit jahr=2027); von 400 offen noch 132.
